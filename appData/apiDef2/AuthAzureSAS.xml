@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class sourceXmlPath="C:/ck2000/appData/apiDef2/AuthAzureSAS.xml" license="Bundle">
+    <methods>
+        <method name="SetTokenParam" read="1" axId="101" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="authParamName" type="string" objcName="authParamName" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <iversion>9.5.0.65</iversion>
+            <links2 />
+            <descrip>Adds a token parameter name/value.  This is a value that is included in the string to sign, and is also included as a parameter in the Authorization header.</descrip>
+        </method>
+        <method name="SetNonTokenParam" axId="102" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Adds a non-token parameter name/value.  This is a value that is included in the string to sign, but is NOT included as a parameter in the Authorization header.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <iversion>9.5.0.65</iversion>
+            <links2 />
+        </method>
+        <method name="GenerateToken" axId="103" ax="1" cpp="1" dn="1" status="1">
+            <gType>string</gType>
+            <args2 />
+            <iversion>9.5.0.65</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>azure_shared_access_signature.asp</url>
+                    <text>How to Generate an Azure Service Bus Shared Access Signature (SAS)</text>
+                </link>
+                <link linkType="example">
+                    <url>azure_storage_account_shared_access_signature.asp</url>
+                    <text>How to Generate an Azure Storage Account Shared Access Signature (SAS)</text>
+                </link>
+            </links2>
+            <descrip>Generates and returns the SAS token based on the defined StringToSign and params.</descrip>
+        </method>
+        <method name="Clear" axId="105" ax="1" cpp="1" dn="1" status="1">
+            <gType>void</gType>
+            <args2 />
+            <iversion>9.5.0.65</iversion>
+            <links2 />
+            <descrip>Clears all params set by the methods SetNonTokenParam and SetTokenParam.</descrip>
+        </method>
+    </methods>
+    <properties>
+        <property name="StringToSign" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2 />
+            <links2 />
+            <iversion>9.5.0.65</iversion>
+            <descrip>Defines the format of the string to sign.
+&lt;p&gt;The format is specified as a comma-separated list of names. For example:&lt;/p&gt;
+&lt;pre&gt;
+signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
+&lt;/pre&gt;
+This will result in an actual string-to-sign that is composed of the values for each name separated by newline (LF) chars.  For example:
+&lt;pre&gt;
+signedpermissions + "\n" +  
+signedstart + "\n" +  
+signedexpiry + "\n" +  
+canonicalizedresource + "\n" +  
+signedidentifier + "\n" +  
+signedIP + "\n" +  
+signedProtocol + "\n" +  
+signedversion + "\n" +  
+rscc + "\n" +  
+rscd + "\n" +  
+rsce + "\n" +  
+rscl + "\n" +  
+rsct
+&lt;/pre&gt;</descrip>
+        </property>
+        <property name="AccessKey" axId="104" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2 />
+            <iversion>9.5.0.65</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>azure_shared_access_signature.asp</url>
+                    <text>How to Generate an Azure Service Bus Shared Access Signature (SAS)</text>
+                </link>
+                <link linkType="example">
+                    <url>azure_storage_account_shared_access_signature.asp</url>
+                    <text>How to Generate an Azure Storage Account Shared Access Signature (SAS)</text>
+                </link>
+            </links2>
+            <descrip>This is the signing key (access key) that must be kept private.   It is a base64 string such as "abdTvCZFFoWUyre6erlNN+IOb9qhXgDsyhrxmZvpmxqFDwpl9oD0X9Fy0hIQa6L5UohznRLmkCtUYySO4Y2eaw=="</descrip>
+        </property>
+    </properties>
+    <events />
+    <genericName>AuthAzureSAS</genericName>
+    <cppName>CkAuthAzureSAS</cppName>
+    <dnName>AuthAzureSAS</dnName>
+    <axName>ChilkatAuthAzureSAS</axName>
+    <description>Provides general functionality for Azure Shared Access Signature (SAS) Authorization.
+&lt;p&gt;This class is introduced in Chilkat v9.5.0.65.</description>
+    <nextAxId>106</nextAxId>
+    <clsid>6999AD77-7D2B-4929-B8BA-A253EDE63752</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>4558E02C-E015-41EC-89A3-0A71BC70E627</uuidMidl>
+</class>

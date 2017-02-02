@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Xmp" XojoModuleId="258815322" sourceXmlPath="C:/ck2000/appData/apiDef2/Xmp.xml">
+    <nextAxId>133</nextAxId>
+    <dnName>Xmp</dnName>
+    <cppName>CkXmp</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumEmbedded" axId="101">
+            <gType>int</gType>
+            <descrip>The number of XMP metadata documents found within the JPG or TIFF file loaded by LoadAppFile.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="StructInnerDescrip" axId="100">
+            <gType>bool</gType>
+            <descrip>Determines whether structures are stored with rdf:parseType="Resource", or within an "rdf:Description" sub-node.</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="AddArray" axId="102" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>xml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>arrType</argName>
+                    <objcName>arrType</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+                <arg>
+                    <axType>StringArray</axType>
+                    <dnType>StringArray</dnType>
+                    <cppType>CkStringArray &amp;</cppType>
+                    <argName>values</argName>
+                    <objcName>values</objcName>
+                </arg>
+            </args>
+            <descrip>Adds or replaces an XMP property array.  The XMP metadata to be updated is contained in the XML object passed in the 1st argument.  The 2nd argument specifies the array type, which can be "bag", "seq", or "alt".  The property name should be prefixed with the namespace, such as "dc:subject".</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>xmp_bag_seq_alt.asp</url>
+                    <text>XMP Array Property - Bag, Seq, or Alt</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="xml" type="Xml" objcName="xml" />
+                <arg name="arrType" type="string" objcName="arrType" />
+                <arg name="propName" type="string" objcName="propName" />
+                <arg name="values" type="StringArray" objcName="values" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddNsMapping" axId="103">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>ns</argName>
+                    <objcName>ns</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>uri</argName>
+                    <objcName>uri</objcName>
+                </arg>
+            </args>
+            <descrip>Adds a namespace to URI mapping.  When a property is added via AddSimpleString or any of the other methods, the property name is namespace qualified.  When adding the first property in a namespace, the rdf:Description is automatically added and the URI is obtained from the namespace-to-URI mappings.  The standard (and commonly used) namespace mappings are defined by default.  This is only used if the namespace is custom or not already handled.</descrip>
+            <args2>
+                <arg name="ns" type="string" objcName="ns" />
+                <arg name="uri" type="string" objcName="uri" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddSimpleDate" axId="104" deprecated="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+                <arg>
+                    <axType>date</axType>
+                    <dnType>date</dnType>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>propVal</argName>
+                    <objcName>sysTime</objcName>
+                </arg>
+            </args>
+            <descrip>Adds or replaces an XMP date property. The XMP metadata to be updated is contained in the XML object passed in the 1st argument. The property name should be prefixed with the namespace, such as "xap:CreateDate".</descrip>
+            <links2>
+                <link linkType="external" lang="perl">
+                    <text>More information about using SYSTEMTIME in Perl</text>
+                    <url>http://www.cknotes.com/?p=122</url>
+                </link>
+                <link linkType="external" lang="python">
+                    <text>More information about using SYSTEMTIME in Python</text>
+                    <url>http://www.cknotes.com/?p=374</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+                <arg name="propVal" type="date" objcName="sysTime" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddSimpleInt" axId="105">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>propVal</argName>
+                    <objcName>propVal</objcName>
+                </arg>
+            </args>
+            <descrip>Adds or updates an XMP integer property. The XMP metadata to be updated is contained in the XML object passed in the 1st argument. The property name should be prefixed with the namespace, such as "tiff:XResolution".</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+                <arg name="propVal" type="int" objcName="propVal" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddSimpleStr" axId="106">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propVal</argName>
+                    <objcName>propVal</objcName>
+                </arg>
+            </args>
+            <descrip>Adds or updates a simple XMP string property. The XMP metadata to be updated is contained in the XML object passed in the 1st argument. The property name should be prefixed with the namespace, such as "photoshop:Credit".</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+                <arg name="propVal" type="string" objcName="propVal" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddStructProp" axId="107">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iChilkatXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>structName</argName>
+                    <objcName>structName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propValue</argName>
+                    <objcName>propVal</objcName>
+                </arg>
+            </args>
+            <descrip>Adds or updates an XMP structured property value.  The XMP metadata to be updated is contained in the XML object passed in the 1st argument.  The structure name should be prefixed with the namespace, such as "Iptc4xmpCore:CreatorContactInfo".  The property name within the structure should also be prefixed with the namespace, such as "Iptc4xmpCore:CiAdrCity".</descrip>
+            <args2>
+                <arg name="iChilkatXml" type="Xml" objcName="xml" />
+                <arg name="structName" type="string" objcName="structName" />
+                <arg name="propName" type="string" objcName="propName" />
+                <arg name="propValue" type="string" objcName="propVal" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="Append" axId="108">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a new XMP metadata file to the XMP object.  Any XMPs appended via this method will be present in the file when SaveAppFile is called.  Files containing XMP metadata typically only include a single XMP document, so this method is usually only called when adding XMP metadata to a file for the first time.</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DateToString" axId="109" deprecated="1" noxojo="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>date</axType>
+                    <dnType>date</dnType>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>d</argName>
+                    <objcName>sysTime</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a date to a string representation.  This method is added for convenience (just in case date-to-string conversions are required).</descrip>
+            <links2>
+                <link linkType="external" lang="perl">
+                    <text>More information about using SYSTEMTIME in Perl</text>
+                    <url>http://www.cknotes.com/?p=122</url>
+                </link>
+                <link linkType="external" lang="python">
+                    <text>More information about using SYSTEMTIME in Python</text>
+                    <url>http://www.cknotes.com/?p=374</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="d" type="date" objcName="sysTime" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetArray" axId="110">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+            </args>
+            <descrip>Finds and returns an XMP array property.  The property name should be prefixed with the namespace, such as "dc:subject".</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetEmbedded" axId="111">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth embedded XMP document as a Chilkat XML object.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetProperty" axId="112">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+            </args>
+            <descrip />
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetSimpleDate" axId="113" deprecated="1" noxojo="1" outArgName="outSysTime">
+            <gType systemtime="1">date</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>outSysTime</argName>
+                    <objcName>outSysTime</objcName>
+                </arg>
+            </args>
+            <descrip>Finds and returns an XMP date property.  The property name should be prefixed with the namespace, such as "xap:ModifyDate".</descrip>
+            <links2>
+                <link linkType="external" lang="perl">
+                    <text>More information about using SYSTEMTIME in Perl</text>
+                    <url>http://www.cknotes.com/?p=122</url>
+                </link>
+                <link linkType="external" lang="python">
+                    <text>More information about using SYSTEMTIME in Python</text>
+                    <url>http://www.cknotes.com/?p=374</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetSimpleInt" axId="114">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+            </args>
+            <descrip>Finds and returns an XMP integer property.  The property name should be prefixed with the namespace, such as "tiff:ResolutionUnit".</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetSimpleStr" axId="115" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Finds and returns an XMP simple string property.  The property name should be prefixed with the namespace, such as "photoshop:Source".</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>xmp_getStringProperty.asp</url>
+                    <text>Get a String Property Value from XMP</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetStructPropNames" axId="116">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>structName</argName>
+                    <objcName>structName</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the property names used by an exsting structure within an XMP document.  The contents of the structure can be retrieved by calling GetStructValue for each property name returned by GetStructPropNames.</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="structName" type="string" objcName="structName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetStructValue" axId="117" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>structName</argName>
+                    <objcName>structName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the value of a single item within an XMP structure property.  Property names should always be prefixed with the namespace.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>xmp_getStructureProperty.asp</url>
+                    <text>Get a Structure Property Value from XMP</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="structName" type="string" objcName="structName" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="LoadAppFile" axId="118">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a TIFF or JPG file into the XMP object.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="LoadFromBuffer" axId="119">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>fileData</argName>
+                    <objcName>byteData</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>ext</argName>
+                    <objcName>ext</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a JPG or TIFF from an byte buffer containing the image file data.</descrip>
+            <args2>
+                <arg name="fileData" type="bytes" objcName="byteData" />
+                <arg name="ext" type="string" objcName="ext" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="NewXmp" axId="120">
+            <gType>Xml</gType>
+            <args />
+            <descrip>Creates and returns a new/empty XMP metadata document as a Chilkat XML object.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>xmp_add_new.asp</url>
+                    <text>Add XMP MetaData to JPG or TIFF</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="RemoveAllEmbedded" axId="121" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Removes all XMP metadata documents from an XMP object.  After calling this method, call SaveAppFile to rewrite the JPG or TIFF file with the XMP metadata removed.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveArray" axId="122">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+            </args>
+            <descrip>Removes an XMP array property from the XMP document.</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method name="RemoveEmbedded" axId="123" ax="1" cpp="1" dn="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Removes a single XMP metadata document from the JPG or TIFF file.  Call SaveAppFile to persist the changes to disk.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveNsMapping" axId="124">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>ns</argName>
+                    <objcName>ns</objcName>
+                </arg>
+            </args>
+            <descrip>Removes a namespace-to-URI mapping.</descrip>
+            <args2>
+                <arg name="ns" type="string" objcName="ns" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveSimple" axId="125">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+            </args>
+            <descrip>Removes a simple XMP property from the XMP document.</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveStruct" axId="126">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>structName</argName>
+                    <objcName>structName</objcName>
+                </arg>
+            </args>
+            <descrip>Removes an XMP structure property from the XMP document.</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="structName" type="string" objcName="structName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveStructProp" axId="127">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>iXml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>structName</argName>
+                    <objcName>structName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>propName</argName>
+                    <objcName>propName</objcName>
+                </arg>
+            </args>
+            <descrip>Removes a single member from an XMP structured property.</descrip>
+            <args2>
+                <arg name="iXml" type="Xml" objcName="xml" />
+                <arg name="structName" type="string" objcName="structName" />
+                <arg name="propName" type="string" objcName="propName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SaveAppFile" axId="128">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Persists all changes made to the XMP document(s) by saving the XMP object to a file.  Changes made by adding, updating, or removing properties are not persisted to the filesystem until this is called.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SaveToBuffer" axId="129" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Saves a JPG or TIFF image with updated XMP to a byte buffer.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="StringToDate" axId="130" deprecated="1" noxojo="1" outArgName="outSysTime">
+            <gType systemtime="1">date</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>outSysTime</argName>
+                    <objcName>outSysTime</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a string to a date value.  This method is added for convenience (just in case string-to-date conversions are required).</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="UnlockComponent" axId="131">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>unlockCode</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the XMP component at runtime. This must be called once at the beginning of your application. Passing an arbitrary value initiates a fully-functional 30-day trial. A purchased unlock code is required to use the component beyond 30 days.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="unlockCode" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+    </methods>
+    <genericName>Xmp</genericName>
+    <description>Chilkat XMP is a software component (SDK, toolkit, library, etc) for accessing, manipulating, and adding XMP metadata to JPEG and TIFF files.</description>
+    <clsid>96B3C4B8-9F07-469D-ADAA-E1D14BF50341</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>17F00BC0-F47D-4AC2-9C20-16D73BA9D42D</uuidMidl>
+    <axName>ChilkatXmp</axName>
+</class>

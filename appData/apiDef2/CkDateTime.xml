@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="917517706" sourceXmlPath="C:/ck2000/appData/apiDef2/CkDateTime.xml" license="Free">
+    <nextAxId>126</nextAxId>
+    <dnName>CkDateTime</dnName>
+    <cppName>CkDateTime</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IsDst" axId="101">
+            <gType>int</gType>
+            <descrip>This is the Daylight Saving Time flag.  It can have one of three possible values: 1, 0, or -1.
+It has the value 1 if Daylight Saving Time is in effect, 0 if Daylight Saving Time 
+ is not in effect, and -1 if the information is not available.
+&lt;p&gt;Note:  This is NOT the DST for the current system time. It is the DST that was in effect at the date value
+contained in this object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="UtcOffset" axId="100">
+            <gType>int</gType>
+            <descrip>For the current system's timezone, returns the  
+number of seconds offset from UTC for this date/time. 
+The offset includes daylight savings adjustment. 
+Local timezones west of UTC return a negative offset.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="AddDays" axId="102" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>numDays</argName>
+                    <objcName>numDays</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an integer number of days to the date/time.  To subtract days, pass a negative integer.</descrip>
+            <args2>
+                <arg name="numDays" type="int" objcName="numDays" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DeSerialize" axId="103">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>serializedDateTime</argName>
+                    <objcName>serializedDateTime</objcName>
+                </arg>
+            </args>
+            <descrip>Loads the date/time with a string having the format as produced by the Serialize method, which is a string of SPACE separated integers containing (in this order)  year, month, day, hour, minutes, seconds, and a UTC flag having the value of 1/0.</descrip>
+            <args2>
+                <arg name="serializedDateTime" type="string" objcName="serializedDateTime" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetAsDateTime" axId="120" ax="1" cpp="1" dn="1">
+            <gType>date</gType>
+            <args>
+                <arg>
+                    <dnType>bool</dnType>
+                    <argName>bLocal</argName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time in a native format.  The .NET implementation returns a .NET System.DateTime structure.   The ActiveX implementation returns a Date object.  The C/C++ implementation (and others) returns the date/time in a SYSTEMTIME structure.  On Windows, SYSTEMTIME is defined at &lt;a href="https://msdn.microsoft.com/en-us/library/windows/desktop/ms724950(v=vs.85).aspx"&gt;SYSTEMTIME&lt;/a&gt;.   On non-Windows systems, Chilkat provides a SYSTEMTIME structure definition in SystemTime.h.
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="GetAsDateTimeTicks">
+            <gType>int64</gType>
+            <args>
+                <arg>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time as a 64-bit integer .NET DateTime value.
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.
+&lt;p&gt;
+This is a date and time expressed in the number of 100-nanosecond intervals that have 
+elapsed since January 1, 0001 at 00:00:00.000 in the Gregorian calendar. 
+&lt;p&gt;
+ The DateTime value type represents dates and times with values ranging from 
+ 12:00:00 midnight, January 1, 0001 Anno Domini (Common Era) through 11:59:59 P.M., 
+ December 31, 9999 A.D. (C.E.).
+&lt;p&gt;
+ Time values are measured in 100-nanosecond units called ticks, and a particular 
+ date is the number of ticks since 12:00 midnight, January 1, 0001 A.D. (C.E.) 
+ in the GregorianCalendar calendar (excluding ticks that would be added by leap 
+ seconds). For example, a ticks value of 31241376000000000L represents the date, 
+ Friday, January 01, 0100 12:00:00 midnight. A DateTime value is always expressed 
+ in the context of an explicit or default calendar.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetAsDosDate" axId="104">
+            <gType>unsigned long</gType>
+            <axType>int</axType>
+            <ifdef>#if !defined(CK_USE_UINT_T)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time as a 32-bit DOS date/time bitmask.
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.
+&lt;p&gt;
+The DOS date/time format is a bitmask:
+&lt;pre&gt;
+
+			   24                16                 8                 0
+	    +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+	    |Y|Y|Y|Y|Y|Y|Y|M| |M|M|M|D|D|D|D|D| |h|h|h|h|h|m|m|m| |m|m|m|s|s|s|s|s|
+	    +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+	     \___________/\________/\_________/ \________/\____________/\_________/
+		 year        month       day      hour       minute        second
+&lt;/pre&gt;
+&lt;p&gt;
+	The year is stored as an offset from 1980. Seconds are stored in two-second 
+	increments. (So if the "second" value is 15, it actually represents 30 seconds.)</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" noObjC="1" noC="1" name="GetAsFileTime">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>FILETIME &amp;</cppType>
+                    <argName>fTime</argName>
+                    <objcName>fTime</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time in a Windows FILETIME structure.
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.
+&lt;p&gt;
+For non-Windows systems, the FILETIME structure is defined in the FileTime.h header provided in the Chilkat C/C++ libs distribution.  The structure is defined as follows:
+&lt;pre&gt;
+typedef struct _FILETIME
+    {
+    unsigned long dwLowDateTime;
+    unsigned long dwHighDateTime;
+    } 	FILETIME;
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="fTime" type="cppCustom" cppType="FILETIME &amp;" objcName="fTime" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetAsOleDate" axId="105" ax="1" cpp="1" dn="1">
+            <gType>double</gType>
+            <axType>date</axType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time in a Windows OLE "DATE" format.
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.
+&lt;p&gt;
+The OLE automation date format is a floating point value, 
+counting days since midnight 30 December 1899. Hours and minutes are 
+represented as fractional days.</descrip>
+            <links2>
+                <link linkType="external" lang="activex">
+                    <url>http://www.chilkatforum.com/questions/10519/vb6-get-datetime-last-modified-stamp-of-a-file-on-the-ftp-server</url>
+                    <text>VB6: Get Last Modified Date/Time of File</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+        </method>
+        <method name="GetAsRfc822" axId="106" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time as an RFC822 formatted string.  (An RFC822 format string is what is found in the "Date" header field of an email.)
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetAsSystemTime" cpp="1" noObjC="1" outArgName="outSysTime">
+            <gType systemtime="1">date</gType>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>outSysTime</argName>
+                    <objcName>outSysTime</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time in a Windows SYSTEMTIME structure.
+&lt;p&gt;
+ARG1 indicates whether the date/time returned is local or UTC.
+&lt;p&gt;
+For non-Windows systems, the SYSTEMTIME structure is defined in the SystemTime.h header provided in the Chilkat C/C++ libs distribution.  The structure is defined as follows:
+&lt;pre&gt;
+typedef struct _SYSTEMTIME
+    {
+    unsigned short wYear;
+    unsigned short wMonth;
+    unsigned short wDayOfWeek;
+    unsigned short wDay;
+    unsigned short wHour;
+    unsigned short wMinute;
+    unsigned short wSecond;
+    unsigned short wMilliseconds;
+    
+    // A flag that indicates whether daylight saving time is in effect at the time described. 
+    // The value is positive if daylight saving time is in effect, zero if it is not, 
+    // and negative if the information is not available.
+    int m_isdst;
+    } 	SYSTEMTIME;
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" noObjC="1" name="GetAsTmStruct">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>struct tm &amp;</cppType>
+                    <argName>tmbuf</argName>
+                    <objcName>tmbuf</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time in a Unix "struct tm" structure.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="tmbuf" type="cppCustom" cppType="struct tm &amp;" objcName="tmbuf" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetAsUnixTime" axId="107" ax="1" cpp="1" dn="1">
+            <gType>unsigned long</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the date/time as a 32-bit Unix time.
+&lt;p&gt;
+ARG1 indicates whether the date/time returned is local or UTC.
+&lt;p&gt;
+Note:  With this format, there is a Y2038 problem that pertains to 32-bit signed integers.
+There are approx 31.5 million seconds per year.
+The Unix time is number of seconds since the Epoch, 1970-01-01 00:00:00 +0000 (UTC). 
+In 2012, it's 42 years since 1/1/1970, so the number of seconds
+is approx 1.3 billion.  A 32-bit signed integer ranges from
+ -2,147,483,648 to 2,147,483,647
+ Therefore, if a 32-bit signed integer is used, it turns negative in 2038.
+&lt;p&gt;
+The GetAsUnixTime64 and GetAsUnixTimeDbl methods are provided as solutions to the Y2038 problem.
+&lt;p&gt;
+(Note: The ActiveX Chilkat implementation omits methods that use 64-bit integers because there is no means for passing or returning 64-bit integers in ActiveX.)</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="GetAsUnixTime64">
+            <gType>int64</gType>
+            <args>
+                <arg>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <descrip>The same as GetUnixTime, except returns the date/time as a 64-bit integer.
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="GetAsUnixTimeDbl">
+            <gType>double</gType>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <descrip>The same as GetUnixTime, except returns the date/time as a double.
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" noObjC="1" name="GetDosDateHigh">
+            <gType>unsigned short</gType>
+            <ifdef>#if !defined(CK_USE_UINT_T)</ifdef>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the high-order 16-bit integer of the date/time in DOS format.   (See GetAsDosDate for more information.)</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" noObjC="1" name="GetDosDateLow">
+            <gType>unsigned short</gType>
+            <ifdef>#if !defined(CK_USE_UINT_T)</ifdef>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the low-order 16-bit integer of the date/time in DOS format.   (See GetAsDosDate for more information.)</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetDtObj" axId="115" ax="1" cpp="1" dn="1">
+            <gType>DtObj</gType>
+            <descrip>Gets the date/time as a Chilkat "Dt" object.</descrip>
+            <iversion>9.5.0.47</iversion>
+            <args>
+                <arg>
+                    <argName>bLocal</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>bLocal</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>email_getDateTime.asp</url>
+                    <text>Get Email Date/Time</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+        </method>
+        <method name="LoadTaskResult" axId="117" ax="1" cpp="1" dn="1" noWinRT="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads the date/time from a completed asynchronous task.</descrip>
+            <args>
+                <arg>
+                    <argName>task</argName>
+                    <cppType>CkTask &amp;</cppType>
+                    <dnType>Task</dnType>
+                    <axType>Task</axType>
+                    <objcName>task</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.52</iversion>
+            <args2>
+                <arg name="task" type="Task" objcName="task" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Serialize" axId="108" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Serializes the date/time to a us-ascii string that can be imported at a later time via the DeSerialize method.  The format of the string returned by this method is not intended to match any published standard.  It is formatted to a string with SPACE separated integers containing (in this order)  year, month, day, hour, minutes, seconds, and a UTC flag having the value of 1 or 0.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetFromCurrentSystemTime" axId="109">
+            <gType>bool</gType>
+            <args />
+            <descrip>Sets the date/time from the current system time.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" ax="0" name="SetFromDateTime" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>bool</dnType>
+                    <argName>bLocal</argName>
+                </arg>
+                <arg>
+                    <dnType>date</dnType>
+                    <argName>dt</argName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from a .NET System.DateTime structure.
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" />
+                <arg name="dt" type="date" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="SetFromDateTimeTicks">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <dnType>int64</dnType>
+                    <cppType>__int64</cppType>
+                    <argName>ticks</argName>
+                    <objcName>n</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from a .NET DateTime value represented in ticks.  See GetAsDateTimeTicks for more information.
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="ticks" type="int64" objcName="n" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetFromDosDate" axId="110">
+            <gType>bool</gType>
+            <ifdef>#if !defined(CK_USE_UINT_T)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>unsigned long</dnType>
+                    <cppType>unsigned long</cppType>
+                    <argName>t</argName>
+                    <objcName>t</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from a 32-bit DOS date/time bitmask.  See GetAsDosDate for more information.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="t" type="unsigned long" objcName="t" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" noObjC="1" name="SetFromDosDate2">
+            <gType>bool</gType>
+            <ifdef>#if !defined(CK_USE_UINT_T)</ifdef>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned short</cppType>
+                    <argName>datePart</argName>
+                    <objcName>datePart</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned short</cppType>
+                    <argName>timePart</argName>
+                    <objcName>timePart</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from two 16-bit integers representing the high and low words of a 32-bit DOS date/time bitmask.  See GetAsDosDate for more information.
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="datePart" type="unsigned short" objcName="datePart" />
+                <arg name="timePart" type="unsigned short" objcName="timePart" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFromDtObj" axId="114" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the date/time from a Chilkat "Dt" object.</descrip>
+            <iversion>9.5.0.47</iversion>
+            <args>
+                <arg>
+                    <argName>dt</argName>
+                    <cppType>CkDtObj &amp;</cppType>
+                    <dnType>DtObj</dnType>
+                    <axType>DtObj</axType>
+                    <objcName>dt</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="dt" type="DtObj" objcName="dt" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" noObjC="1" noC="1" name="SetFromFileTime">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>FILETIME &amp;</cppType>
+                    <argName>fTime</argName>
+                    <objcName>fTime</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from a Windows FILETIME structure.
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.
+&lt;p&gt;
+For non-Windows systems, the FILETIME structure is defined in the FileTime.h header provided in the Chilkat C/C++ libs distribution.  The structure is defined as follows:
+&lt;pre&gt;
+typedef struct _FILETIME
+    {
+    unsigned long dwLowDateTime;
+    unsigned long dwHighDateTime;
+    } 	FILETIME;
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="fTime" type="cppCustom" cppType="FILETIME &amp;" objcName="fTime" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFromNtpTime" ax="1" cpp="1" dn="1" axId="116">
+            <gType>bool</gType>
+            <descrip>Sets the date/time from a 32-bit NTP time value.   ARG1  is the number of seconds since 00:00 (midnight) 1 January 1900 GMT.</descrip>
+            <args>
+                <arg>
+                    <argName>ntpSeconds</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>ntpSeconds</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.50</iversion>
+            <args2>
+                <arg name="ntpSeconds" type="int" objcName="ntpSeconds" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFromOleDate" axId="111" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <axType>double</axType>
+                    <dnType>double</dnType>
+                    <cppType>double</cppType>
+                    <argName>dt</argName>
+                    <objcName>dt</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from a Windows OLE "DATE" value.
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; This method was not working correctly.  The problem was discovered just after releasing v9.5.0.65.  It will be fixed in the next version update.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="dt" type="double" objcName="dt" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFromRfc822" axId="112" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>rfc822Str</argName>
+                    <objcName>rfc822Str</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from an RFC822 date/time formatted string.</descrip>
+            <args2>
+                <arg name="rfc822Str" type="string" objcName="rfc822Str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="SetFromSystemTime">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>sysTime</argName>
+                    <objcName>sysTime</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from a Windows SYSTEMTIME structure.
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.
+&lt;p&gt;
+For non-Windows systems, the SYSTEMTIME structure is defined in the SystemTime.h header provided in the Chilkat C/C++ libs distribution.  The structure is defined as follows:
+&lt;pre&gt;
+typedef struct _SYSTEMTIME
+    {
+    unsigned short wYear;
+    unsigned short wMonth;
+    unsigned short wDayOfWeek;
+    unsigned short wDay;
+    unsigned short wHour;
+    unsigned short wMinute;
+    unsigned short wSecond;
+    unsigned short wMilliseconds;
+    
+    // A flag that indicates whether daylight saving time is in effect at the time described. 
+    // The value is positive if daylight saving time is in effect, zero if it is not, 
+    // and negative if the information is not available.
+    int m_isdst;
+    } 	SYSTEMTIME;
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="sysTime" type="date" objcName="sysTime" />
+            </args2>
+            <links2 />
+        </method>
+        <method dn="0" ax="0" name="SetFromTmStruct" axId="124" cpp="1" noObjC="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>struct tm &amp;</cppType>
+                    <argName>tmbuf</argName>
+                    <objcName>tmbuf</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from a Unix "struct tm" structure.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="tmbuf" type="cppCustom" cppType="struct tm &amp;" objcName="tmbuf" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFromUnixTime" axId="113" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>time_t</cppType>
+                    <argName>t</argName>
+                    <objcName>t</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the date/time from a 32-bit UNIX time value.   (See GetAsUnixTime for information about the Y2038 problem.)
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="t" type="unsigned long" objcName="t" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="SetFromUnixTime64">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <dnType>int64</dnType>
+                    <cppType>__int64</cppType>
+                    <argName>t</argName>
+                    <objcName>t</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SetFromUnixTime, except that it uses a 64-bit integer to solve the Y2038 problem.  (See GetAsUnixTime for more information about Y2038).
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="t" type="int64" objcName="t" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="SetFromUnixTimeDbl">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>bLocal</argName>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <cppType>double</cppType>
+                    <argName>d</argName>
+                    <objcName>t</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SetFromUnixTime, except that it uses a double to solve the Y2038 problem.  (See GetAsUnixTime for more information about Y2038).
+&lt;p&gt;
+ARG1 indicates whether the passed in date/time is local or UTC.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+                <arg name="d" type="double" objcName="t" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFromTimestamp" axId="118" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the date/time from an RFC 3339 timestamp format.  (such as "1990-12-31T23:59:60Z:")
+&lt;p&gt;
+(This is an ISO 8061 format like the following: YYYY-MM-DDThh:mm:ssTZD)</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>timestamp</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>timestamp</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="timestamp" type="string" objcName="timestamp" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>parse_timestamp.asp</url>
+                    <text>How to Parse a TimeStamp (such as 2016-11-11T14:32:17.0908971Z)</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetAsTimestamp" axId="119" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Returns the date/time as an RFC 3339 formatted string, such as "1990-12-31T23:59:60Z".
+(This is an ISO 8061 format like the following: YYYY-MM-DDThh:mm:ssTZD)
+&lt;p&gt;
+ARG1 indicates whether a local or UTC time is returned.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>bLocal</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>bLocal</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="DiffSeconds" axId="121" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2>
+                <arg name="dateTimeArg" type="CkDateTime" objcName="dateTimeArg" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.65</iversion>
+            <descrip>Returns the difference in seconds between the ARG1 and this date/time.  The value returned is this object's date/time - ARG1's date/time.  For example, if the returned value is positive, then this object's date/time is more recent than ARG1's date/time.  If the return value is negative, then this object's date/time is older than ARG1's date/time.</descrip>
+        </method>
+        <method name="AddSeconds" axId="122" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Adds an integer number of seconds to the date/time.  To subtract seconds, pass a negative integer.</descrip>
+            <args2>
+                <arg name="numSeconds" type="int" objcName="numSeconds" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>dateTime_addSeconds.asp</url>
+                    <text>DateTime - Add or Subtract Seconds</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.65</iversion>
+        </method>
+        <method name="GetAsUnixTimeStr" axId="123" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Returns the  time in Unix format (in seconds since the epoch: 00:00:00 UTC on 1 January 1970).    
+&lt;p&gt;
+ARG1 indicates whether the date/time returned is local or UTC.</descrip>
+            <args2>
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <iversion>9.5.0.65</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>dateTime_unix_time_string.asp</url>
+                    <text>DateTime - Get as Unix Time String</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetAsIso8601" axId="125" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Returns the date/time in a compatible ISO 8601 format according to the format specified in ARG1.. Examples of ISO 8601 formats include the following:
+&lt;pre&gt;
+    YYYY-MM-DD
+
+    YYYY-MM-DDThh:mmTZD
+
+    YYYY-MM-DDThh:mm:ssTZD
+&lt;/pre&gt;
+For the date portion of these formats, &lt;b&gt;YYYY&lt;/b&gt; is a four-digit year representation, &lt;b&gt;MM&lt;/b&gt; is a two-digit month representation, and &lt;b&gt;DD&lt;/b&gt; is a two-digit day representation. For the time portion, &lt;b&gt;hh&lt;/b&gt; is the hour representation in 24-hour notation, &lt;b&gt;mm&lt;/b&gt; is the two-digit minute representation, and &lt;b&gt;ss&lt;/b&gt; is the two-digit second representation. A time designator &lt;b&gt;T&lt;/b&gt; separates the date and time portions of the string, while a time zone designator &lt;b&gt;TZD&lt;/b&gt; specifies a time zone (UTC). 
+&lt;p&gt;
+ARG2 indicates whether a local or UTC time is returned.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The ARG2 argument is interpreted as the reverse of what is intended .  The problem was discovered just after releasing v9.5.0.65.  It will be fixed in the next version update.</descrip>
+            <args2>
+                <arg name="formatStr" type="string" objcName="formatStr" />
+                <arg name="bLocal" type="bool" objcName="bLocal" />
+            </args2>
+            <iversion>9.5.0.65</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>dateTime_iso_8601_format.asp</url>
+                    <text>DateTime - Get in ISO 8601 Compatible Format</text>
+                </link>
+            </links2>
+        </method>
+    </methods>
+    <genericName>CkDateTime</genericName>
+    <description>A class for holding a date/time value, and for converting it to from many different formats.  The power of this class is that the different date/time formats are implemented across many different operating systems.  Many formats specific to Windows are available on Mac OS X, Linux/Unix, etc., and vice-versa.  To convert a date/time from one format to another, simply set via one format, and get via another format.  This is a freeware class because it is used by many commercial Chilkat components/libs.</description>
+    <clsid>0B30402C-CDB2-45D2-B7BC-7C1F78C72C1C</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>F063D06F-1395-4CB0-AB8A-3C86C80F077E</uuidMidl>
+    <axName>CkDateTime</axName>
+</class>

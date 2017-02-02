@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>PercentDoneEventArgs</genericName>
+    <cppName>CkPercentDoneEventArgs</cppName>
+    <dnName>PercentDoneEventArgs</dnName>
+    <axName>ChilkatPercentDoneEventArgs</axName>
+    <description>Provides data for the OnPercentDone event.</description>
+    <methods />
+    <properties>
+        <property name="Abort" read="1" write="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>Set to _TRUE_ to abort the current method call.</descrip>
+        </property>
+        <property name="PercentDone" read="1" dn="1">
+            <gType>int</gType>
+            <cppType />
+            <descrip>The percentage of the current method call that has completed.  This is a number from 1 to 100.</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

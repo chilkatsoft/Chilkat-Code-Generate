@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Free" XojoModuleId="785384456" sourceXmlPath="C:/ck2000/appData/apiDef2/DtObj.xml">
+    <nextAxId>111</nextAxId>
+    <dnName>DtObj</dnName>
+    <cppName>CkDtObj</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Day" axId="100">
+            <gType>int</gType>
+            <descrip>The day of the month. The valid values for this member are 1 through 31.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Hour" axId="101">
+            <gType>int</gType>
+            <descrip>The hour. The valid values for this member are 0 through 23.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Minute" axId="102">
+            <gType>int</gType>
+            <descrip>The minute. The valid values for this member are 0 through 59.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Month" axId="103">
+            <gType>int</gType>
+            <descrip>The month. The valid values for this member are 1 through 12 where 1 = January and 12 = December.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Second" axId="104">
+            <gType>int</gType>
+            <descrip>The second. The valid values for this member are 0 through 59.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="StructTmMonth" axId="105">
+            <gType>int</gType>
+            <descrip>The month.  The valid values for this member are 0 through 11 where 0 = January and 11 = December.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="StructTmYear" axId="106">
+            <gType>int</gType>
+            <descrip>The year represented as the number of years since 1900.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Utc" axId="107">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this is a UTC time, otherwise _FALSE_ if this is a local time.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Year" axId="108">
+            <gType>int</gType>
+            <descrip>The year, such as 2012.</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="DeSerialize" axId="110" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>serializedDtObj</argName>
+                    <objcName>serializedDtObj</objcName>
+                </arg>
+            </args>
+            <descrip>Loads the date/time with a string having the format as produced by the Serialize method, which is a string of SPACE separated integers containing (in this order)  year, month, day, hour, minutes, seconds, and a UTC flag having the value of 1/0.</descrip>
+            <args2>
+                <arg name="serializedDtObj" type="string" objcName="serializedDtObj" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="Serialize" axId="109" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Serializes the date/time to a us-ascii string that can be imported at a later time via the DeSerialize method.  The format of the string returned by this method is not intended to match any published standard.  It is formatted to a string with SPACE separated integers containing (in this order)  year, month, day, hour, minutes, seconds, and a UTC flag having the value of 1/0.</descrip>
+            <args2 />
+        </method>
+    </methods>
+    <genericName>DtObj</genericName>
+    <description />
+    <clsid>1D304D4B-3E7F-475C-800E-16177166E43A</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>1ACAAAB7-E818-41AE-AF3F-8F6911A91467</uuidMidl>
+    <axName>DtObj</axName>
+</class>

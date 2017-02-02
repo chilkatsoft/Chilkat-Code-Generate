@@ -1,0 +1,1188 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="177642767" sourceXmlPath="C:/ck2000/appData/apiDef2/FileAccess.xml" license="Free">
+    <nextAxId>150</nextAxId>
+    <dnName>FileAccess</dnName>
+    <cppName>CkFileAccess</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="CurrentDir" axId="103">
+            <gType>string</gType>
+            <descrip>The current working directory of the calling process.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="EndOfFile" axId="100">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the current open file is at the end-of-file.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="FileOpenError" axId="101">
+            <gType>int</gType>
+            <descrip>This property is set by the following methods:  FileOpen, OpenForRead, OpenForWrite, OpenForReadWrite, and OpenForAppend.  It provides an error code indicating the failure reason.  Possible values are:
+&lt;p&gt;
+&lt;ol start="0"&gt;
+&lt;li&gt;Success (No error)
+&lt;li&gt;Access denied.
+&lt;li&gt;File not found.
+&lt;li&gt;General (non-specific) open error.
+&lt;li&gt;File aleady exists.
+&lt;li&gt;Path refers to a directory and the access requested involves writing.
+&lt;li&gt;Too many symbolic links were encountered in resolving path.
+&lt;li&gt;The process already has the maximum number of files open.
+&lt;li&gt;Pathname is too long.
+&lt;li&gt;The system limit on the total number of open files has been reached.
+&lt;li&gt;Pathname refers to a device special file and no corresponding device exists.
+&lt;li&gt;Insufficient kernel memory was available.
+&lt;li&gt;Pathname was to be created but the device containing pathname has no room for the new file.
+&lt;li&gt;A component used as a directory in pathname is not, in fact, a directory.
+&lt;li&gt;Pathname refers to a regular file, too large to be opened (this would be a limitation of the underlying operating system, not a limitation imposed by Chilkat).
+&lt;li&gt;Pathname refers to a file on a read-only filesystem and write access was requested.
+&lt;/ol&gt;</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="FileOpenErrorMsg" axId="102">
+            <gType>string</gType>
+            <descrip>The error message text associated with the FileOpenError code.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="AppendAnsi" axId="104" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>text</argName>
+                    <objcName>text</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a string using the ANSI character encoding to the currently open file.</descrip>
+            <args2>
+                <arg name="text" type="string" objcName="text" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="AppendText" axId="105">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>text</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a string using the character encoding specified by ARG1 to the currently open file.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="text" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="AppendUnicodeBOM" axId="106">
+            <gType>bool</gType>
+            <args />
+            <descrip>Appends the 2-byte Unicode BOM (little endian) to the currently open file.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="AppendUtf8BOM" axId="107">
+            <gType>bool</gType>
+            <args />
+            <descrip>Appends the 3-byte utf-8 BOM to the currently open file.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="DirAutoCreate" axId="108" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>dirPath</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Same as DirEnsureExists, except the argument is a file path (the last part of the path is a filename and not a directory).  Creates all missing directories such that ARG1 may be created.</descrip>
+            <args2>
+                <arg name="dirPath" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="DirCreate" axId="109" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>dirPath</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Creates a new directory specified by ARG1.</descrip>
+            <args2>
+                <arg name="dirPath" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="DirDelete" axId="110">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>dirPath</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes the directory specified by ARG1.</descrip>
+            <args2>
+                <arg name="dirPath" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="DirEnsureExists" axId="111" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>filePath</objcName>
+                </arg>
+            </args>
+            <descrip>Creates all directories necessary such that the entire ARG1 exists.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="filePath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FileClose" axId="112">
+            <gType>void</gType>
+            <args />
+            <descrip>Closes the currently open file.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FileContentsEqual" axId="113">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath1</argName>
+                    <objcName>path1</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath2</argName>
+                    <objcName>path2</objcName>
+                </arg>
+            </args>
+            <descrip>Compares the contents of two files and returns _TRUE_ if they are equal and otherwise returns _FALSE_.  The actual contents of the files are only compared if the sizes are equal.  The files are not entirely loaded into memory.  Instead, they are compared chunk by chunk.  This allows for any size files to be compared, regardless of the memory capacity of the computer.</descrip>
+            <args2>
+                <arg name="filePath1" type="string" objcName="path1" />
+                <arg name="filePath2" type="string" objcName="path2" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FileCopy" axId="114">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>existingFilepath</argName>
+                    <objcName>existingPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>newFilepath</argName>
+                    <objcName>newPath</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>failIfExists</argName>
+                    <objcName>failIfExists</objcName>
+                </arg>
+            </args>
+            <descrip>Copys ARG1 to ARG2.  If ARG3 is _TRUE_ and ARG2 already exists, then an error is returned.</descrip>
+            <args2>
+                <arg name="existingFilepath" type="string" objcName="existingPath" />
+                <arg name="newFilepath" type="string" objcName="newPath" />
+                <arg name="failIfExists" type="bool" objcName="failIfExists" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FileDelete" axId="115">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes the file specified by ARG1.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FileExists" axId="116" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if ARG1 exists, otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FileExists3" ax="1" cpp="1" dn="1" axId="140">
+            <gType>int</gType>
+            <descrip>Returns 1 if the file exists, 0 if the file does not exist, and -1 if unable to check because of directory permissions or some other error that prevents the ability to obtain the information.</descrip>
+            <iversion>9.5.0.45</iversion>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FileOpen" axId="117">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>unsigned long</dnType>
+                    <cppType>unsigned long</cppType>
+                    <argName>accessMode</argName>
+                    <objcName>accessMode</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>unsigned long</dnType>
+                    <cppType>unsigned long</cppType>
+                    <argName>shareMode</argName>
+                    <objcName>shareMode</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>unsigned long</dnType>
+                    <cppType>unsigned long</cppType>
+                    <argName>createDisposition</argName>
+                    <objcName>createDisp</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>unsigned long</dnType>
+                    <cppType>unsigned long</cppType>
+                    <argName>attributes</argName>
+                    <objcName>attr</objcName>
+                </arg>
+            </args>
+            <descrip>This method should only be called on Windows operating systems.  It's arguments are similar to the Windows Platform SDK function named CreateFile.  For Linux, MAC OS X, and other operating system, use the OpenForRead, OpenForWrite, OpenForReadWrite, and OpenForAppend methods.
+&lt;p&gt;
+Opens a file for reading or writing.  The arguments mirror the Windows CreateFile function:
+&lt;pre&gt;
+Access Modes:
+GENERIC_READ	(0x80000000)
+GENERIC_WRITE (0x40000000)
+
+Share Modes:
+FILE_SHARE_READ(0x00000001)
+FILE_SHARE_WRITE(0x00000002)
+
+Create Dispositions
+CREATE_NEW          1
+CREATE_ALWAYS       2
+OPEN_EXISTING       3
+OPEN_ALWAYS         4
+TRUNCATE_EXISTING   5
+
+// Attributes:
+FILE_ATTRIBUTE_READONLY         0x00000001
+FILE_ATTRIBUTE_HIDDEN           0x00000002
+FILE_ATTRIBUTE_SYSTEM           0x00000004
+FILE_ATTRIBUTE_DIRECTORY        0x00000010
+FILE_ATTRIBUTE_ARCHIVE          0x00000020
+FILE_ATTRIBUTE_NORMAL           0x00000080
+FILE_ATTRIBUTE_TEMPORARY	   0x00000100
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+                <arg name="accessMode" type="unsigned long" objcName="accessMode" />
+                <arg name="shareMode" type="unsigned long" objcName="shareMode" />
+                <arg name="createDisposition" type="unsigned long" objcName="createDisp" />
+                <arg name="attributes" type="unsigned long" objcName="attr" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FileRead" axId="118" outArgName="outBytes" ax="1" cpp="1" dn="1">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxNumBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Reads bytes from the currently open file.  ARG1 specifies the maximum number of bytes to read.  Returns an empty byte array on error.</descrip>
+            <args2>
+                <arg name="maxNumBytes" type="int" objcName="numBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FileRename" axId="119">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>existingFilepath</argName>
+                    <objcName>existingPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>newFilepath</argName>
+                    <objcName>newPath</objcName>
+                </arg>
+            </args>
+            <descrip>Renames a file from ARG1 to ARG2.</descrip>
+            <args2>
+                <arg name="existingFilepath" type="string" objcName="existingPath" />
+                <arg name="newFilepath" type="string" objcName="newPath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FileSeek" axId="120">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>offset</argName>
+                    <objcName>offset</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>origin</argName>
+                    <objcName>origin</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the file pointer for the currently open file.  The ARG1 is an offset in bytes from the ARG2.  The ARG2 can be one of the following:
+&lt;pre&gt;
+0 = Offset is from beginning of file.
+1 = Offset is from current position of file pointer.
+2 = Offset is from the end-of-file (offset may be negative).
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="offset" type="int" objcName="offset" />
+                <arg name="origin" type="int" objcName="origin" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FileSize" axId="121">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the size, in bytes, of a file.  Returns -1 for failure.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FileWrite" axId="122" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>Writes bytes to the currently open file.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GenBlockId" ax="1" cpp="1" dn="1" axId="141" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>This is purely a utility/convenience method -- initially created to help with block file uploads to Azure Blob storage.  It generates a block ID string that is the decimal representation of the ARG1 in ARG2 chars, and then encoded according to ARG3 (which can be an encoding such as "base64", "hex", "ascii", etc.)     For example, if ARG1 = 8,  ARG2 = 12, and ARG3 = "base64", then the string "00000012" is returned base64 encoded.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>index</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <argName>length</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>length</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="length" type="int" objcName="length" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetNumBlocks" ax="1" cpp="1" dn="1" axId="142">
+            <gType>int</gType>
+            <descrip>Returns the number of blocks in the currently open file.   The number of bytes per block is specified by ARG1.  The number of blocks is the file size divided by the ARG1, plus 1 if the file size is not evenly divisible by ARG1.  For example, if the currently open file is 60500 bytes, and if the ARG1 is 1000 bytes, then this method returns a count of 61 blocks.
+&lt;p&gt;Returns -1 if no file is open.  Return 0 if the file is completely empty (0 bytes).</descrip>
+            <args>
+                <arg>
+                    <argName>blockSize</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>blockSize</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.58</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>fac_read_blocks.asp</url>
+                    <text>File Read Blocks</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="blockSize" type="int" objcName="blockSize" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetTempFilename" axId="123" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>dirPath</argName>
+                    <objcName>dirName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>prefix</argName>
+                    <objcName>prefix</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Creates a temporary filepath of the form ARG1\ARG2_xxxx.TMP  Where "xxxx" are random alpha-numeric chars.   The returned filepath is guaranteed to not already exist.</descrip>
+            <args2>
+                <arg name="dirPath" type="string" objcName="dirName" />
+                <arg name="prefix" type="string" objcName="prefix" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="OpenForAppend" axId="124">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>filePath</objcName>
+                </arg>
+            </args>
+            <descrip>Opens a file for appending.  If ARG1 did not already exists, it is created.  When an existing file is opened with this method, the contents will not be overwritten and the file pointer is positioned at the end of the file.  
+&lt;p&gt;
+If the open/create failed, then error information will be available in the FileOpenError and FileOpenErrorMsg properties.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="filePath" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="OpenForRead" axId="125" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>filePath</objcName>
+                </arg>
+            </args>
+            <descrip>Opens a file for reading.  The file may contain any type of data (binary or text) and it must already exist.  If the open failed, then error information will be available in the FileOpenError and FileOpenErrorMsg properties.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="filePath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="OpenForReadWrite" axId="126">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>filePath</objcName>
+                </arg>
+            </args>
+            <descrip>Opens a file for reading/writing.  If ARG1 did not already exists, it is created.  When an existing file is opened with this method, the contents will not be overwritten, but the file pointer is positioned at the beginning of the file.  
+&lt;p&gt;
+If the open/create failed, then error information will be available in the FileOpenError and FileOpenErrorMsg properties.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="filePath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="OpenForWrite" axId="127">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>filePath</objcName>
+                </arg>
+            </args>
+            <descrip>Opens a file for writing.  If ARG1 did not already exists, it is created.  When an existing file is opened with this method, the contents will be overwritten.  (For example, calling OpenForWrite on an existing file and then immediately closing the file will result in an empty file.)  If the open/create failed, then error information will be available in the FileOpenError and FileOpenErrorMsg properties.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="filePath" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReadBinaryToEncoded" axId="128" ax="1" cpp="1" dn="1" status="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Reads the entire contents of a binary file and returns it as an encoded string (using an encoding such as Base64, Hex, etc.)    The ARG2 may be one of the following strings:  base64, hex, qp, or url.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>base64_encode_file.asp</url>
+                    <text>Base64 Encode a File</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="ReadBlock" ax="1" cpp="1" dn="1" axId="143" outArgName="outBytes">
+            <gType>bytes</gType>
+            <descrip>Reads the Nth block of a file, where the size of each block is specified by ARG2.  The first block is at ARG1 0.  If the block to be read is the last in the file and there is not enough data to fill an entire block, then the partial block is returned.</descrip>
+            <args>
+                <arg>
+                    <argName>blockIndex</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>blockIndex</objcName>
+                </arg>
+                <arg>
+                    <argName>blockSize</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>blockSize</objcName>
+                </arg>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.58</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>fac_read_blocks.asp</url>
+                    <text>File Read Blocks</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="blockIndex" type="int" objcName="blockIndex" />
+                <arg name="blockSize" type="int" objcName="blockSize" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ReadEntireFile" axId="129" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Reads the entire contents of a binary file and returns the data.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ReadEntireTextFile" axId="130" outArgName="outStrFileContents">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStrFileContents</argName>
+                    <objcName>outStrFileContents</objcName>
+                </arg>
+            </args>
+            <descrip>Reads the entire contents of a text file, interprets the bytes according to the character encoding specified by ARG2, and returns the text file as a string.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ReassembleFile" axId="131">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>partsDirPath</argName>
+                    <objcName>partsDirPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>partPrefix</argName>
+                    <objcName>partPrefix</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>partExtension</argName>
+                    <objcName>partExtension</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>reassembledFilename</argName>
+                    <objcName>reassembledFilename</objcName>
+                </arg>
+            </args>
+            <descrip>Reassembles a file previously split by the SplitFile method.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Example: Reassemble a Previously Split File</text>
+                    <url>facReassembleFile.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="partsDirPath" type="string" objcName="partsDirPath" />
+                <arg name="partPrefix" type="string" objcName="partPrefix" />
+                <arg name="partExtension" type="string" objcName="partExtension" />
+                <arg name="reassembledFilename" type="string" objcName="reassembledFilename" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ReplaceStrings" axId="132">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>existingString</argName>
+                    <objcName>existingString</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>replacementString</argName>
+                    <objcName>replacementString</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces all occurrences of ARG3 with ARG4 in a file.   The character encoding, such as utf-8, ansi, etc. is specified by ARG2.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="existingString" type="string" objcName="existingString" />
+                <arg name="replacementString" type="string" objcName="replacementString" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetCurrentDir" axId="133">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>dirPath</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the current working directory for the calling process to ARG1.</descrip>
+            <args2>
+                <arg name="dirPath" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetFileTimes" axId="134">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>CkDateTime</axType>
+                    <dnType>CkDateTime</dnType>
+                    <cppType>CkDateTime &amp;</cppType>
+                    <argName>createTime</argName>
+                    <objcName>create</objcName>
+                </arg>
+                <arg>
+                    <axType>CkDateTime</axType>
+                    <dnType>CkDateTime</dnType>
+                    <cppType>CkDateTime &amp;</cppType>
+                    <argName>lastAccessTime</argName>
+                    <objcName>lastAccess</objcName>
+                </arg>
+                <arg>
+                    <axType>CkDateTime</axType>
+                    <dnType>CkDateTime</dnType>
+                    <cppType>CkDateTime &amp;</cppType>
+                    <argName>lastModTime</argName>
+                    <objcName>lastModified</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the create date/time, the last-access date/time, and the last-modified date/time for a file.  For non-Windows filesystems where create times are not implemented, the ARG2 is ignored.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+                <arg name="createTime" type="CkDateTime" objcName="create" />
+                <arg name="lastAccessTime" type="CkDateTime" objcName="lastAccess" />
+                <arg name="lastModTime" type="CkDateTime" objcName="lastModified" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetLastModified" axId="135">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>CkDateTime</axType>
+                    <dnType>CkDateTime</dnType>
+                    <cppType>CkDateTime &amp;</cppType>
+                    <argName>lastModified</argName>
+                    <objcName>lastModified</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the last-modified date/time for a file.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+                <arg name="lastModified" type="CkDateTime" objcName="lastModified" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SplitFile" axId="136">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>fileToSplit</argName>
+                    <objcName>fileToSplit</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>partPrefix</argName>
+                    <objcName>partPrefix</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>partExtension</argName>
+                    <objcName>partExtension</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>partSize</argName>
+                    <objcName>partSize</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>destDir</argName>
+                    <objcName>destDir</objcName>
+                </arg>
+            </args>
+            <descrip>Splits a file into chunks.   Please refer to the example below:</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Example: Split File into Chunks</text>
+                    <url>facSplitFile.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="fileToSplit" type="string" objcName="fileToSplit" />
+                <arg name="partPrefix" type="string" objcName="partPrefix" />
+                <arg name="partExtension" type="string" objcName="partExtension" />
+                <arg name="partSize" type="int" objcName="partSize" />
+                <arg name="destDir" type="string" objcName="destDir" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="TreeDelete" axId="137">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes an entire directory tree (all files and sub-directories).</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="WriteEntireFile" axId="138">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>fileData</argName>
+                    <objcName>fileData</objcName>
+                </arg>
+            </args>
+            <descrip>Opens/creates ARG1, writes ARG2, and closes the file.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+                <arg name="fileData" type="bytes" objcName="fileData" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="WriteEntireTextFile" axId="139" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>textData</argName>
+                    <objcName>fileData</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>includedPreamble</argName>
+                    <objcName>includePreamble</objcName>
+                </arg>
+            </args>
+            <descrip>Opens ARG1, writes ARG2 using the character encoding specified by ARG3, and closes the file.  If ARG4 is _TRUE_ and the ARG3 is Unicode or utf-8, then the BOM is included at the beginning of the file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>base64_encode_file.asp</url>
+                    <text>Base64 Encode a File</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+                <arg name="textData" type="string" objcName="fileData" />
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="includedPreamble" type="bool" objcName="includePreamble" />
+            </args2>
+        </method>
+        <method name="FileReadBd" axId="144" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Reads bytes from the currently open file.  ARG1 specifies the maximum number of bytes to read.  Appends the bytes to the ARG2.</descrip>
+            <args2>
+                <arg name="maxNumBytes" type="int" objcName="maxNumBytes" />
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>determine_file_type_from_content.asp</url>
+                    <text>Determine File Type from Binary Content of File</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.64</iversion>
+        </method>
+        <method name="FileWriteBd" axId="145" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes the contents of ARG1 to the currently open file.  To specify the entire contents of ARG1, set both ARG2 and ARG3 equal to 0.  To write all remaining data starting at ARG2, then set ARG3 equal to 0.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+                <arg name="offset" type="int" objcName="offset" />
+                <arg name="numBytes" type="int" objcName="numBytes" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.64</iversion>
+        </method>
+        <method name="GetFileName" axId="146" ax="1" cpp="1" dn="1" status="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>fac_path_functions.asp</url>
+                    <text>Demonstrate Directory Path Functions</text>
+                </link>
+            </links2>
+            <descrip>Returns the file name and extension of the specified path string.
+&lt;pre&gt;
+GetFileName('C:\mydir\myfile.ext') returns 'myfile.ext'
+GetFileName('C:\mydir\') returns ''
+&lt;/pre&gt;</descrip>
+        </method>
+        <method name="GetDirectoryName" axId="147" ax="1" cpp="1" dn="1" status="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>fac_path_functions.asp</url>
+                    <text>Demonstrate Directory Path Functions</text>
+                </link>
+            </links2>
+            <descrip>Returns the directory information for the specified path string.
+&lt;pre&gt;
+GetDirectoryName('C:\MyDir\MySubDir\myfile.ext') returns 'C:\MyDir\MySubDir\'
+GetDirectoryName('C:\MyDir\MySubDir') returns 'C:\MyDir\'
+GetDirectoryName('C:\MyDir\') returns 'C:\MyDir\'
+GetDirectoryName('C:\MyDir') returns 'C:\'
+GetDirectoryName('C:\') returns 'C:\'
+&lt;/pre&gt;</descrip>
+        </method>
+        <method name="GetExtension" axId="148" ax="1" cpp="1" dn="1" status="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>fac_path_functions.asp</url>
+                    <text>Demonstrate Directory Path Functions</text>
+                </link>
+            </links2>
+            <descrip>Returns the extension of the specified path string.
+&lt;pre&gt;
+GetExtension('C:\mydir.old\myfile.ext') returns '.ext'
+GetExtension('C:\mydir.old\') returns ''
+&lt;/pre&gt;</descrip>
+        </method>
+        <method name="GetFileNameWithoutExtension" axId="149" ax="1" cpp="1" dn="1" status="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>fac_path_functions.asp</url>
+                    <text>Demonstrate Directory Path Functions</text>
+                </link>
+            </links2>
+            <descrip>Returns the file name of the specified path string without the extension.
+&lt;pre&gt;
+GetFileNameWithoutExtension('C:\mydir\myfile.ext') returns 'myfile'
+GetFileNameWithoutExtension('C:\mydir\') returns ''
+&lt;/pre&gt;</descrip>
+        </method>
+    </methods>
+    <genericName>FileAccess</genericName>
+    <description>API for reading and writing files, creating and deleting directories, deleting directory trees, splitting and re-joining large files, etc.  This is a freeware class.  The reason for its existence is that in some programming languages, file I/O API's are limited or difficult to understand/use.  This API provides an identical FILE I/O API across all programming languages supported by Chilkat.</description>
+    <clsid>A3F78ADD-62C2-475F-9040-80ACBFD412FA</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>CDA20F7F-7E23-471E-82E6-7609EE84CD54</uuidMidl>
+    <axName>CkFileAccess</axName>
+</class>

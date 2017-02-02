@@ -1,0 +1,806 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Crypt" XojoModuleId="936392738" sourceXmlPath="C:/ck2000/appData/apiDef2/Dsa.xml">
+    <nextAxId>142</nextAxId>
+    <dnName>Dsa</dnName>
+    <cppName>CkDsa</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="GroupSize" axId="100">
+            <gType>int</gType>
+            <descrip>The group size (in bits)  to be used in DSA key generation.  The default value is 160 and corresponds to the fact that SHA-1 is used in signature generation.  &lt;b&gt;This property setting should not be changed.&lt;/b&gt;  It exists for future expansion when additional underlying hash algorithms are supported.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Hash" axId="101">
+            <gType>bytes</gType>
+            <descrip>The hash to be signed or verified via the SignHash and Verify methods.  In both cases, the Hash should be set prior to calling SignHash or Verify.  This property may also be set via the SetEncodedHash method.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="HexG" axId="102">
+            <gType>string</gType>
+            <descrip>The "G" part of a public or private DSA key returned as a hex-encoded SSH1-format bignum.  The "G" is the generator.  DSA key params consist of G, P, and Q.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="HexP" axId="103">
+            <gType>string</gType>
+            <descrip>The "P" part of a public or private DSA key returned as a hex-encoded SSH1-format bignum. The "P" is a large prime.  DSA key params consist of G, P, and Q.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="HexQ" axId="104">
+            <gType>string</gType>
+            <descrip>The "Q" part of a public or private DSA key returned as a hex-encoded SSH1-format bignum. DSA key params consist of G, P, and Q.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="HexX" axId="105">
+            <gType>string</gType>
+            <descrip>The "X" part of a DSA private key returned as a hex-encoded SSH1-format bignum.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="HexY" axId="106">
+            <gType>string</gType>
+            <descrip>The "Y" part of a DSA public key returned as a hex-encoded SSH1-format bignum.   (The "Y" value is also accessible w/ a private key, but the "X" value is not available in a DSA public key.)</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Signature" axId="107">
+            <gType>bytes</gType>
+            <descrip>The signature created by calling SignHash.   If verifying a signature, this may be set prior to calling the Verify method.</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="FromDer" axId="108" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>derData</argName>
+                    <objcName>derData</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a DSA private key from in-memory DSA DER encoded bytes.</descrip>
+            <args2>
+                <arg name="derData" type="bytes" objcName="derData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FromDerFile" axId="109">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a DSA private key from a DER-encoded file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_priv_der_to_pem.asp</url>
+                    <text>Convert DSA DER Private Key to PEM</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FromEncryptedPem" axId="110">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemData</argName>
+                    <objcName>pemData</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a DSA private key from an in-memory encrypted PEM-formatted string.  If the PEM passed to this method is unencrypted, the ARG1 is ignored and the PEM is simply loaded.</descrip>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+                <arg name="pemData" type="string" objcName="pemData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FromPem" axId="111">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemData</argName>
+                    <objcName>pemData</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a DSA private key from an in-memory unencrypted PEM-formatted string.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_sign_verify.asp</url>
+                    <text>DSA Signature Create and Verify</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="pemData" type="string" objcName="pemData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FromPublicDer" axId="112">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>derData</argName>
+                    <objcName>derData</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a DSA public key from an in-memory DER-encoded byte array.</descrip>
+            <args2>
+                <arg name="derData" type="bytes" objcName="derData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FromPublicDerFile" axId="113">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a DSA public key from a DER-encoded file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FromPublicPem" axId="114">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemData</argName>
+                    <objcName>pemData</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a DSA public-key from an in-memory PEM string.</descrip>
+            <args2>
+                <arg name="pemData" type="string" objcName="pemData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FromXml" axId="115">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>xmlKey</argName>
+                    <objcName>xmlKey</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a DSA public or private key from an in-memory XML string.</descrip>
+            <args2>
+                <arg name="xmlKey" type="string" objcName="xmlKey" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GenKey" axId="116">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>numBits</argName>
+                    <objcName>numBits</objcName>
+                </arg>
+            </args>
+            <descrip>Generates a new DSA key that is ARG1 bits in length.  The ARG1 should be at least 1024 bits and a multiple of 64.  Typical values are 1024 and 2048.  The newly generated key may be exported by calling one of the To* methods.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_generate_key.asp</url>
+                    <text>DSA Generate Key</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="numBits" type="int" objcName="numBits" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GenKeyFromParamsDer" axId="117">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>derBytes</argName>
+                    <objcName>derBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Generates a new DSA key from in-memory DER parameters created by OpenSSL.  The newly generated key may be exported by calling one of the To* methods.</descrip>
+            <args2>
+                <arg name="derBytes" type="bytes" objcName="derBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GenKeyFromParamsDerFile" axId="118">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Generates a new DSA key from a DER-format parameters file created by OpenSSL.
+An example of using OpenSSL to generate DSA parameters in DER format is:
+&lt;pre&gt;
+openssl dsaparam -outform DER 1024 &lt; seedData.xml &gt; dsaparam.der
+&lt;/pre&gt;
+The newly generated key may be exported by calling one of the To* methods.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_openssl_params.asp</url>
+                    <text>Generate new DSA Key from OpenSSL Parameters File</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GenKeyFromParamsPem" axId="119">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pem</argName>
+                    <objcName>pem</objcName>
+                </arg>
+            </args>
+            <descrip>Generates a new DSA key from parameters (PEM formatted string) created by OpenSSL. The newly generated key may be exported by calling one of the To* methods.</descrip>
+            <args2>
+                <arg name="pem" type="string" objcName="pem" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GenKeyFromParamsPemFile" axId="120">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Generates a new DSA key from a PEM parameters file created by OpenSSL. The newly generated key may be exported by calling one of the To* methods.
+&lt;p&gt;
+OpenSSL provides the ability to generate DSA key parameters.  For example:
+&lt;pre&gt;
+openssl dsaparam 1024 &lt; seedData.txt &gt; dsaparam.pem
+&lt;/pre&gt;
+&lt;p&gt;
+Here is a sample DSA parameters PEM:
+&lt;pre&gt;
+-----BEGIN DSA PARAMETERS-----
+MIIBHgKBgQCXIAx4XzLVZ5ZqOFzdsYWVyH/6E/mVPw4TgMZS6Wxajnbdn1/CUBzE
+RWTUp8SguTSDpjC1Q/nyno0G6Q96VoW+PUXv8qUph8vbSaEdsjYO/8jSfzkGfvsa
+cucr1ythfNyk63aZAKzxeutOmsVe77l6pZI96ROjWF5iizuUB4WgmwIVANxM70wH
+8iPPYVzPZqtXCB66I2SnAoGAIbW2VYRjRdoA7trJgmnfWakghKwV1WyaYrotqeDE
+07/dipp0cNuY0IAJgSmqLHlAkNa2ZNI/c1mNxcwhYzZrnn8CXIqrYmtI33w0PYCx
+KHPqj7puhddFwYS/rFiyWAN0jtCMHlfCVzFGbSzach5QQraPV9YApJXy+ORJ8VPU
+/zo=
+-----END DSA PARAMETERS-----
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GetEncodedHash" axId="121" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the bytes of the Hash property as a hex or base64 encoded string.  The ARG1 should be set to either "hex" or "base64".</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GetEncodedSignature" axId="122" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the bytes of the Signature property as a hex or base64 encoded string.  The ARG1 should be set to either "hex" or "base64".  The Signature property is set when SignHash is called.</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadText" axId="123" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method to load the entire contents of a text file into a string.  It is assumed that the text contains ANSI encoded character data.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveText" axId="124">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>strToSave</argName>
+                    <objcName>strToSave</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method to save a string to a text file.   The text is saved using the ANSI character encoding.</descrip>
+            <args2>
+                <arg name="strToSave" type="string" objcName="strToSave" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetEncodedHash" axId="125">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodedHash</argName>
+                    <objcName>encodedHash</objcName>
+                </arg>
+            </args>
+            <descrip>Provides a way to set the Hash property by passing an encoded string.  The ARG1 can be "hex" or "base64".  The ARG2 contains the encoded bytes of the hash that will be signed or verified via the SignHash and Verify methods.</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="encodedHash" type="string" objcName="encodedHash" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetEncodedSignature" axId="126">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodedSig</argName>
+                    <objcName>encodedSig</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the bytes of the Signature property.  (The signature must be specified prior to calling the Verify method.)  This method allows for the signature to be set via a hex or base64 encoded string.  The ARG1 should be set to either "hex" or "base64".</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="encodedSig" type="string" objcName="encodedSig" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetEncodedSignatureRS" axId="127">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodedR</argName>
+                    <objcName>encodedR</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodedS</argName>
+                    <objcName>encodedS</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the bytes of the Signature property by providing the R and S values in encoded form.  (The signature must be specified prior to calling the Verify method.)  The R and S values may be set via a hex or base64 encoded string.  The ARG1 should be set to either "hex" or "base64".</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="encodedR" type="string" objcName="encodedR" />
+                <arg name="encodedS" type="string" objcName="encodedS" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetKeyExplicit" axId="128">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>groupSizeInBytes</argName>
+                    <objcName>groupSizeInBytes</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pHex</argName>
+                    <objcName>pHex</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>qHex</argName>
+                    <objcName>qHex</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>gHex</argName>
+                    <objcName>gHex</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>xHex</argName>
+                    <objcName>xHex</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the DSA object's private key from explicitly provided ARG2, ARG3, ARG4, and ARG5 values.   The ARG1 specifies the group size (in bytes).  It is typically equal to 20, which is the length of the underlying hash function (SHA-1) for signing.  The ARG2, ARG3, ARG4, and ARG5 values are hex-encoded SSH1-format bignums.</descrip>
+            <args2>
+                <arg name="groupSizeInBytes" type="int" objcName="groupSizeInBytes" />
+                <arg name="pHex" type="string" objcName="pHex" />
+                <arg name="qHex" type="string" objcName="qHex" />
+                <arg name="gHex" type="string" objcName="gHex" />
+                <arg name="xHex" type="string" objcName="xHex" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetPubKeyExplicit" axId="129">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>groupSizeInBytes</argName>
+                    <objcName>groupSizeInBytes</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pHex</argName>
+                    <objcName>pHex</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>qHex</argName>
+                    <objcName>qHex</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>gHex</argName>
+                    <objcName>gHex</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>yHex</argName>
+                    <objcName>yHex</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the DSA object's private key from explicitly provided ARG2, ARG3, ARG4, and ARG5 values.   The ARG1 specifies the group size (in bytes).  It is typically equal to 20, which is the length of the underlying hash function (SHA-1) for signing.  The ARG2, ARG3, ARG4, and ARG5 values are hex-encoded SSH1-format bignums.</descrip>
+            <args2>
+                <arg name="groupSizeInBytes" type="int" objcName="groupSizeInBytes" />
+                <arg name="pHex" type="string" objcName="pHex" />
+                <arg name="qHex" type="string" objcName="qHex" />
+                <arg name="gHex" type="string" objcName="gHex" />
+                <arg name="yHex" type="string" objcName="yHex" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SignHash" axId="130">
+            <gType>bool</gType>
+            <args />
+            <descrip>Signs a hash using the digital signature algorithm.  Before calling this method, set the hash to be signed by either calling SetEncodedHash or by setting the Hash property.  If SignHash returns _TRUE_, the signature may be retrieved by either calling GetEncodedHash, or by accessing the Signature property.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_sign_verify.asp</url>
+                    <text>DSA Signature Create and Verify</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToDer" axId="131" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the DSA private key to a DER-encoded byte array.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ToDerFile" axId="132">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the DSA private key to a DER-format file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_generate_key.asp</url>
+                    <text>DSA Generate Key</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToEncryptedPem" axId="133" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the DSA private key to an in-memory encrypted PEM string.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_generate_key.asp</url>
+                    <text>DSA Generate Key</text>
+                </link>
+                <link linkType="example">
+                    <url>dsa_priv_der_to_pem.asp</url>
+                    <text>Convert DSA DER Private Key to PEM</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToPem" axId="134" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the DSA private key to an in-memory PEM string.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_priv_der_to_pem.asp</url>
+                    <text>Convert DSA DER Private Key to PEM</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToPublicDer" axId="135" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the DSA public key to a DER-encoded byte array.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ToPublicDerFile" axId="136">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the DSA public key to a DER-format file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_generate_key.asp</url>
+                    <text>DSA Generate Key</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToPublicPem" axId="137" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the DSA public key to an in-memory PEM string.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_generate_key.asp</url>
+                    <text>DSA Generate Key</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToXml" axId="138" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bPublicOnly</argName>
+                    <objcName>bPublicOnly</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the DSA private or public key to an in-memory XML string.  The ARG1 determines whether the public or private key is written.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_generate_key.asp</url>
+                    <text>DSA Generate Key</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="bPublicOnly" type="bool" objcName="bPublicOnly" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="139">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>unlockCode</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component. This must be called once prior to calling any other method.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="unlockCode" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="Verify" axId="140">
+            <gType>bool</gType>
+            <args />
+            <descrip>Verifies a DSA signature.   The Hash and Signature properties must  be set prior to calling this method.   (These properties may also be set via the SetEncodedHash and SetEncodedSignature methods.)</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_sign_verify.asp</url>
+                    <text>DSA Signature Create and Verify</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="VerifyKey" axId="141">
+            <gType>bool</gType>
+            <args />
+            <descrip>Verifies that the public or private key contained in the calling Dsa object is valid.   Returns _TRUE_ if valid, otherwise returns _FALSE_.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dsa_sign_verify.asp</url>
+                    <text>DSA Signature Create and Verify</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+    </methods>
+    <genericName>Dsa</genericName>
+    <description>The Digital Signature Algorithm (DSA) is a United States Federal Government standard or FIPS for digital signatures. It was proposed by the National Institute of Standards and Technology (NIST) in August 1991 for use in their Digital Signature Standard (DSS).</description>
+    <clsid>628C899B-7559-4062-9E65-A47386343965</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>D39623DD-417F-4651-8E8B-3BAE5A8F4D4D</uuidMidl>
+    <axName>ChilkatDsa</axName>
+</class>

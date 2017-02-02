@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>DataRateEventArgs</genericName>
+    <cppName>CkDataRateEventArgs</cppName>
+    <dnName>DataRateEventArgs</dnName>
+    <axName>ChilkatDataRateEventArgs</axName>
+    <description>Provides data for events regarding upload and download transfer rates.</description>
+    <methods />
+    <properties>
+        <property name="ByteCount" read="1" dn="1">
+            <gType>int64</gType>
+            <cppType />
+            <descrip>The number of bytes transferred thus far.</descrip>
+        </property>
+        <property name="BytesPerSec" read="1" dn="1">
+            <gType>int</gType>
+            <cppType />
+            <descrip>The current transfer rate in bytes per second.</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

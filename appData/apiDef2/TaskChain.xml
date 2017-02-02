@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Bundle" baseProgress="1" hasEvents="1" XojoModuleId="818448467" sourceXmlPath="C:/ck2000/appData/apiDef2/TaskChain.xml">
+    <genericName>TaskChain</genericName>
+    <cppName>CkTaskChain</cppName>
+    <dnName>TaskChain</dnName>
+    <axName>ChilkatTaskChain</axName>
+    <description>Represents a chain of asynchronous tasks to be run in sequence in a background thread.</description>
+    <methods>
+        <method name="Append" axId="101" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends a task to the task chain.  Can fail if the task is already part of another chain.  (A task can only be part of a single chain.)</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args>
+                <arg>
+                    <argName>task</argName>
+                    <cppType>CkTask &amp;</cppType>
+                    <dnType>Task</dnType>
+                    <axType>Task</axType>
+                    <objcName>task</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>async_taskChain1.asp</url>
+                    <text>Async Task Chain</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="task" type="Task" objcName="task" />
+            </args2>
+        </method>
+        <method name="Cancel" ax="1" cpp="1" dn="1" status="1" axId="107">
+            <gType>bool</gType>
+            <descrip>Cancels execution of the asynchronous task chain.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args />
+            <args2 />
+        </method>
+        <method name="GetTask" ax="1" cpp="1" dn="1" axId="102">
+            <gType>Task</gType>
+            <descrip>Returns the Nth task in the chain.  The 1st task is at index 0.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args>
+                <arg>
+                    <argName>index</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>async_returnObject.asp</url>
+                    <text>Async Methods Returning an Object</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method name="Run" axId="104" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>&lt;nodejs&gt;If a taskCompleted callback function is passed in , then the task chain is started on Node's internal thread pool. Each task in the chain will run, one after the other.  If no callback function is passed, the task chain runs synchronously.&lt;/nodejs&gt;
+&lt;noNodejs&gt;Queues the task chain to run on the internal Chilkat thread pool.  Each task in the chain will run, one after the other.&lt;/noNodejs&gt;</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args />
+            <args2 />
+        </method>
+        <method name="RunSynchronously" axId="105" ax="1" cpp="1" dn="1" noNodeJs="1" status="1">
+            <gType>bool</gType>
+            <descrip>Runs the task chain synchronously.  Then this method returns after all the tasks in the chain have been run.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args />
+            <args2 />
+        </method>
+        <method name="SleepMs" axId="112" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <descrip>Convenience method to force the calling thread to sleep for a number of milliseconds.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args>
+                <arg>
+                    <argName>numMs</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>numMs</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="numMs" type="int" objcName="numMs" />
+            </args2>
+        </method>
+        <method name="Wait" axId="106" ax="1" cpp="1" dn="1" events="1" noNodeJs="1" status="1">
+            <gType>bool</gType>
+            <descrip>Waits for the task chain to complete.  Returns when all of the tasks in the chain have completed, or after ARG1 milliseconds have elapsed.  (A ARG1 value of 0 is to wait indefinitely.) Returns  (_FALSE_) if the task chain has not yet been started by calling the Run method, or if the ARG1 expired.  If the task chain completed, was already completed, was canceled, or aborted, then this method returns _TRUE_.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args>
+                <arg>
+                    <argName>maxWaitMs</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+        </method>
+    </methods>
+    <properties>
+        <property name="Finished" read="1" ax="1" cpp="1" dn="1" axId="110">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the task status is "canceled", "aborted", or "completed".  A task chain can only reach the "canceled" status if it was activated via the Run method, made it onto the internal thread pool thread's queue, was waiting for a pool thread to become available, and was then canceled prior to the task actually starting.</descrip>
+            <iversion>9.5.0.52</iversion>
+        </property>
+        <property name="HeartbeatMs" read="1" write="1" ax="1" cpp="1" dn="1" axId="113">
+            <gType>int</gType>
+            <descrip>The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an application to abort the Wait method. If HeartbeatMs is 0 (the default), no AbortCheck event callbacks will fire.
+&lt;b&gt;Note:&lt;/b&gt; An asynchronous task chain running in a background thread (in one of the thread pool threads) does not fire events.  The task chain's event callbacks pertain only to the Wait method.</descrip>
+            <iversion>9.5.0.52</iversion>
+        </property>
+        <property name="Inert" read="1" ax="1" cpp="1" dn="1" axId="108">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the task status is "empty" or "loaded".  When a task chain is inert, it has been loaded but is not scheduled to run yet.</descrip>
+            <iversion>9.5.0.52</iversion>
+        </property>
+        <property name="Live" read="1" ax="1" cpp="1" dn="1" axId="109">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the task status is "queued" or "running".  When a task chain is live, it is either already running, or is on the thread pool thread's queue waiting for a thread to become available.</descrip>
+            <iversion>9.5.0.52</iversion>
+        </property>
+        <property name="NumTasks" axId="100" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The number of tasks contained within the task chain.</descrip>
+            <iversion>9.5.0.52</iversion>
+        </property>
+        <property name="Status" axId="111" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The current status of the task chain.  Possible values are:
+&lt;ul&gt;
+&lt;li&gt;"empty" -- No tasks have yet been appended to the task chain. 
+&lt;li&gt;"loaded" --  The task chain has been loaded (appended) with one or more task objects.
+&lt;li&gt;"queued" -- The task chain is in the thread pool's queue of tasks awaiting to be run.
+&lt;li&gt;"running" -- The task chain is currently running.
+&lt;li&gt;"canceled" -- The task chain was canceled before it entered the "running" state.
+&lt;li&gt;"aborted" -- The task chain was canceled while it was in the running state.
+&lt;li&gt;"completed" -- The task chain completed.  
+&lt;/ul&gt;</descrip>
+            <iversion>9.5.0.52</iversion>
+        </property>
+        <property name="StatusInt" read="1" ax="1" cpp="1" dn="1" axId="114">
+            <gType>int</gType>
+            <descrip>The current status of the task as an integer value.  Possible values are:
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;1&lt;/b&gt; -- "empty" -- No tasks have yet been appended to the task chain. 
+&lt;li&gt;&lt;b&gt;2&lt;/b&gt; -- "loaded" --  The task chain has been loaded (appended) with one or more task objects.
+&lt;li&gt;&lt;b&gt;3&lt;/b&gt; -- "queued" -- The task chain is in the thread pool's queue of tasks awaiting to be run.
+&lt;li&gt;&lt;b&gt;4&lt;/b&gt; -- "running" -- The task chain is currently running.
+&lt;li&gt;&lt;b&gt;5&lt;/b&gt; -- "canceled" -- The task chain was canceled before it entered the "running" state.
+&lt;li&gt;&lt;b&gt;6&lt;/b&gt; -- "aborted" -- The task chain was canceled while it was in the running state.
+&lt;li&gt;&lt;b&gt;7&lt;/b&gt; -- "completed" -- The task chain completed.  
+&lt;/ul&gt;</descrip>
+            <iversion>9.5.0.52</iversion>
+        </property>
+        <property name="StopOnFailedTask" axId="103" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_ then stops execution of the task chain if any individual task fails.  Task failure is defined by the standard LastMethodSuccess property. If _FALSE_, then all of the tasks in the chain will be run even if some fail.  The default value of this property is _TRUE_.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>async_returnObject.asp</url>
+                    <text>Async Methods Returning an Object</text>
+                </link>
+            </links2>
+        </property>
+    </properties>
+    <events>
+        <standard name="AbortCheck" />
+        <standard name="PercentDone" />
+        <standard name="ProgressInfo" />
+    </events>
+    <clsid>39FFE2A9-BBF3-48ED-AB97-11F202615954</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>605605CB-78F9-4CBF-88AE-FB598F3AC907</uuidEvents>
+    <uuidMidl>CCAD6703-0549-4DDE-8127-97D073A8CCF9</uuidMidl>
+    <nextAxId>115</nextAxId>
+</class>

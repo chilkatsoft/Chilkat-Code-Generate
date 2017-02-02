@@ -1,0 +1,615 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Free" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Stream.xml">
+    <genericName>Stream</genericName>
+    <cppName>CkStream</cppName>
+    <dnName>Stream</dnName>
+    <axName>ChilkatStream</axName>
+    <description>Provides a generic class for streaming from a source to a sink.  Streams can be connected together where the sink of one feeds to the source of another.  
+&lt;p&gt;
+Note: This class was added in Chilkat v9.5.0.56.  Initially it will seem somewhat useless, but over time, streaming functionality will be added to existing Chilkat classes and will be prevalent in new Chilkat classes.</description>
+    <methods>
+        <method name="ReadBytes" axId="107" ax="1" cpp="1" dn="1" events="1" outArgName="outBytes">
+            <gType>bytes</gType>
+            <descrip>Read as much data as is immediately available on the stream.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="ReadBytesENC" axId="116" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>The same as ReadBytes, except returns the received bytes in encoded string form.  The ARG1 argument indicates the encoding, which can be "base64", "hex", or any of the multitude of encodings indicated in the link below.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Binary Encodings Supported by Chilkat</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="ReadNBytes" ax="1" cpp="1" dn="1" events="1" axId="117" outArgName="outBytes">
+            <gType>bytes</gType>
+            <descrip>Reads exactly ARG1 bytes from the stream.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>numBytes</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>numBytes</objcName>
+                </arg>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="numBytes" type="int" objcName="numBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReadNBytesENC" ax="1" cpp="1" dn="1" events="1" axId="118" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>The same as ReadNBytes, except returns the received bytes in encoded string form.  The ARG2 argument indicates the encoding, which can be "base64", "hex", or any of the multitude of encodings indicated in the link below.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>numBytes</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>numBytes</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Binary Encodings Supported by Chilkat</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="numBytes" type="int" objcName="numBytes" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="ReadString" axId="119" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Read as much data as is immediately available on the stream.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.  The data is returned as a string.  The incoming bytes are interpreted according to the StringCharset property.  For example, if utf-8 bytes are expected, then StringCharset should be set to "utf-8" prior to calling ReadString.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="ReadToCRLF" axId="120" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Reads the stream until a CRLF is received.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.  The data is returned as a string.  The incoming bytes are interpreted according to the StringCharset property.  For example, if utf-8 bytes are expected, then StringCharset should be set to "utf-8" prior to calling ReadString.
+&lt;p&gt;
+Note: If the end-of-stream is reached prior to receiving the CRLF, then the remaining data is returned, and the ReadFailReason property will be set to 3 (to indicate end-of-file).  This is the only case where as string would be returned that does not end with CRLF.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="ReadUntilMatch" axId="121" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Reads the stream until the string indicated by ARG1 is received.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.  The data is returned as a string.  The incoming bytes are interpreted according to the StringCharset property.  For example, if utf-8 bytes are expected, then StringCharset should be set to "utf-8" prior to calling ReadString.
+&lt;p&gt;
+Note: If the end-of-stream is reached prior to receiving the match string, then the remaining data is returned, and the ReadFailReason property will be set to 3 (to indicate end-of-file).  This is the only case where as string would be returned that does not end with the desired match string.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>matchStr</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>matchStr</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>firebase_eventStream.asp</url>
+                    <text>Firebase Receive Server-Sent Events (text/event-stream)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="matchStr" type="string" objcName="matchStr" />
+            </args2>
+        </method>
+        <method name="Reset" axId="128" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <descrip>Resets the stream.  If a source or sink is open, then it is closed.  Properties such as EndOfStream and IsWriteClose are reset to default values.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="RunStream" ax="1" cpp="1" dn="1" events="1" status="1" axId="126">
+            <gType>bool</gType>
+            <descrip>Runs the stream to completion.  This method should only be called when the source of the string has been set by any of the following methods: SetSourceBytes, SetSourceString, or SetSourceStream, or when the SourceFile property has been set (giving the stream a file source).   
+&lt;p&gt;
+This method will read the stream source and forward to the sink until the end-of-stream is reached, and all data has been written to the sink.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args />
+            <links2>
+                <link linkType="example">
+                    <url>stream_chain_async.asp</url>
+                    <text>Chaining Asynchronous Streams</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="SetSinkStream" ax="1" cpp="1" dn="1" status="1" axId="113">
+            <gType>bool</gType>
+            <descrip>Sets the stream's sink to ARG1.  Any data written to this stream's sink will become available to ARG1 on its source.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>strm</argName>
+                    <cppType>CkStream &amp;</cppType>
+                    <dnType>Stream</dnType>
+                    <axType>Stream</axType>
+                    <objcName>strm</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="strm" type="Stream" objcName="strm" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetSourceBytes" ax="1" cpp="1" dn="1" status="1" axId="115">
+            <gType>bool</gType>
+            <descrip>Sets the stream's source to the contents of ARG1.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>sourceData</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <dnType>bytes</dnType>
+                    <axType>bytes</axType>
+                    <objcName>sourceData</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="sourceData" type="bytes" objcName="sourceData" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetSourceStream" ax="1" cpp="1" dn="1" status="1" axId="112">
+            <gType>bool</gType>
+            <descrip>Sets the stream's source to be the sink of ARG1.  Any data written to ARG1's sink will become available on this stream's source.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>strm</argName>
+                    <cppType>CkStream &amp;</cppType>
+                    <dnType>Stream</dnType>
+                    <axType>Stream</axType>
+                    <objcName>strm</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>stream_chain_async.asp</url>
+                    <text>Chaining Asynchronous Streams</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="strm" type="Stream" objcName="strm" />
+            </args2>
+        </method>
+        <method name="SetSourceString" axId="114" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the stream's source to the contents of ARG1.  The ARG2 indicates the character encoding to be used for the byte representation of the ARG1.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>srcStr</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>srcStr</objcName>
+                </arg>
+                <arg>
+                    <argName>charset</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="srcStr" type="string" objcName="srcStr" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ToDecimalStr" ax="1" axId="137" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Some programming languages do not support 64-bit integers.  The following properties are implemented as 64-bit ints: Length, NumReceived, NumSent.  The value of these properties can be retrieved in decimal string form by passing the property name in ARG1.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>propertyName</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>propertyName</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="propertyName" type="string" objcName="propertyName" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="WriteByte" axId="122" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes a single byte to the stream.  The ARG1 must have a value from 0 to 255.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>byteVal</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>byteVal</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="byteVal" type="int" objcName="byteVal" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="WriteBytes" axId="123" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes binary bytes to a stream.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>byteData</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <dnType>bytes</dnType>
+                    <axType>bytes</axType>
+                    <objcName>byteData</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="byteData" type="bytes" objcName="byteData" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="WriteBytesENC" axId="124" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes binary bytes to a stream. The byte data is passed in encoded string form, where the ARG2 can be "base64", "hex", or any of the supported binary encodings listed at the link below.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>byteData</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>byteData</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Binary Encodings Supported by Chilkat</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="byteData" type="string" objcName="byteData" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="WriteClose" ax="1" cpp="1" dn="1" status="1" axId="136">
+            <gType>bool</gType>
+            <descrip>Indicates that no more data will be written to the stream.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="WriteString" axId="125" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes a string to a stream. The actual bytes written are the byte representation of the string as indicated by the StringCharset property.  For example, to write utf-8 bytes, first set StringCharset equal to "utf-8" and then call WriteString.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>str</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+    </methods>
+    <properties>
+        <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="138">
+            <gType>bool</gType>
+            <descrip>When set to _TRUE_, causes the currently running method to abort.  Methods that always finish quickly (i.e.have no length file operations or network communications) are not affected.  If no method is running, then this property is automatically reset to _FALSE_ when the next method is called.  When the abort occurs, this property is reset to _FALSE_.  Both synchronous and asynchronous method calls can be aborted.  (A synchronous method call could be aborted by setting this property from a separate thread.)</descrip>
+            <iversion>9.5.0.58</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="CanRead" read="1" ax="1" cpp="1" dn="1" axId="129">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the stream supports reading.  Otherwise _FALSE_.  
+&lt;p&gt;
+&lt;b&gt;Note: &lt;/b&gt;A stream that supports reading, which has already reached the end-of-stream, will still have a CanRead value of _TRUE_.  This property indicates the stream's inherent ability, and not whether or not the stream can be read at a particular moment in time.
+&lt;/p&gt;</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="CanWrite" read="1" ax="1" cpp="1" dn="1" axId="130">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the stream supports writing.  Otherwise _FALSE_.
+&lt;p&gt;
+&lt;b&gt;Note: &lt;/b&gt;A stream that supports writing, which has already been closed for write, will still have a CanWrite value of _TRUE_.  This property indicates the stream's inherent ability, and not whether or not the stream can be written at a particular moment in time.
+&lt;/p&gt;</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="DataAvailable" read="1" ax="1" cpp="1" dn="1" axId="131">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if it is known for sure that data is ready and waiting to be read.   _FALSE_ if it is not known for sure (it may be that data is immediately available, but reading the stream with a ReadTimeoutMs of 0, which is to poll the stream, is the way to find out).</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="DefaultChunkSize" axId="104" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The default internal chunk size for reading or writing.  The default value is 65536.  If this property is set to 0, it will cause the default chunk size (65536) to be used.   Note: The chunk size can have significant performance impact. If performance is an issue, be sure to experiment with different chunk sizes.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="EndOfStream" axId="110" read="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the end-of-stream has already been reached.  When the stream has already ended, all calls to Read* methods will return _FALSE_ with the ReadFailReason set to 3 (already at end-of-stream).</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="IsWriteClosed" axId="111" read="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the stream is closed for writing.  Once closed, no more data may be written to the stream.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="Length" axId="133" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int64</gType>
+            <descrip>The length (in bytes) of the stream's source.  If unknown, then this property will have a value of -1.  This property may be set by the application if it knows in advance the length of the stream.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="Length32" axId="139" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The length (in bytes) of the stream's source.  If unknown, then this property will have a value of -1.  This property may be set by the application if it knows in advance the length of the stream.
+&lt;p&gt;
+Setting this property also sets the Length property (which is a 64-bit integer).</descrip>
+            <iversion>9.5.0.58</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="NumReceived" read="1" ax="1" cpp="1" dn="1" axId="134">
+            <gType>int64</gType>
+            <descrip>The number of bytes received by the stream.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="NumSent" read="1" ax="1" cpp="1" dn="1" axId="135">
+            <gType>int64</gType>
+            <descrip>The number of bytes sent by the stream.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="ReadFailReason" axId="108" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>This property is automatically set when a Read* method is called.  It indicates the reason for failure.  Possible values are:
+&lt;ol start="0"&gt;
+&lt;li&gt;No failure (success)&lt;/li&gt;
+&lt;li&gt;Timeout, or no data is immediately available for a polling read.&lt;/li&gt;
+&lt;li&gt;Aborted by an application callback.&lt;/li&gt;
+&lt;li&gt;Already at end-of-stream.&lt;/li&gt;
+&lt;li&gt;Fatal stream error.&lt;/li&gt;
+&lt;li&gt;Out-of-memory error (this is very unlikely).&lt;/li&gt;
+&lt;/ol&gt;</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="ReadTimeoutMs" axId="101" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The maximum number of seconds to wait while reading.  The default value is 30 seconds (i.e. 30000ms).  A value of 0 indicates a poll.  (A polling read is to return with a timeout if no data is immediately available.)  
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; For most Chilkat timeout related properties, a value of 0 indicates an infinite timeout.  For this property, a value of 0 indicates a poll.  If setting a timeout related property (or method argument) to zero, be sure to understand if 0 means "wait forever" or "poll".
+&lt;p&gt;The timeout value is not a total timeout. It is the maximum time to wait while no additional data is forthcoming.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="SinkFile" axId="106" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Sets the sink  to the path of a file.  The file does not need to exist at the time of setting this property.  The sink file will be automatically opened on demand, when the stream is first written.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; This property takes priority over other potential sinks.  Make sure this property is set to an empty string if the stream's sink is to be something else.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stream_copy_file.asp</url>
+                    <text>Copy a File using a Stream</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="SourceFile" axId="105" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Sets the source to the path of a file.  The file does not need to exist at the time of setting this property.  The source file will be automatically opened on demand, when the stream is first read.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; This property takes priority over other potential sources.  Make sure this property is set to an empty string if the stream's source is to be something else.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stream_copy_file.asp</url>
+                    <text>Copy a File using a Stream</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="StringBom" read="1" write="1" ax="1" cpp="1" dn="1" axId="103">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then include the BOM when creating a string source via SetSourceString where the charset is  utf-8, utf-16, etc.  (The term "BOM" stands for Byte Order Mark, also known as the preamble.)    Also, if _TRUE_, then include the BOM when writing a string via the WriteString method.  The default value of this property is _FALSE_.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="StringCharset" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Indicates the expected character encoding, such as utf-8, windows-1256, utf-16, etc. for methods that read text such as: ReadString, ReadToCRLF, ReadUntilMatch.  Also controls the character encoding when writing strings with the WriteString method.  The supported charsets are indicated at the link below.
+&lt;p&gt;The default value is "utf-8".</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-charsets-character-encodings-supported/</url>
+                    <text>Charsets Supported by Chilkat</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="WriteFailReason" axId="109" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>This property is automatically set when a Write* method is called.  It indicates the reason for failure.  Possible values are:
+&lt;ol start="0"&gt;
+&lt;li&gt;No failure (success)&lt;/li&gt;
+&lt;li&gt;Timeout, or unable to immediately write when the WriteTimeoutMs is 0.&lt;/li&gt;
+&lt;li&gt;Aborted by an application callback.&lt;/li&gt;
+&lt;li&gt;The stream has already ended.&lt;/li&gt;
+&lt;li&gt;Fatal stream error.&lt;/li&gt;
+&lt;li&gt;Out-of-memory error (this is very unlikely).&lt;/li&gt;
+&lt;/ol&gt;</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="WriteTimeoutMs" axId="102" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The maximum number of seconds to wait while writing.  The default value is 30 seconds (i.e. 30000ms).  A value of 0 indicates to return immediately if it is not possible to write to the sink immediately.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="SourceFilePart" read="1" write="1" ax="1" cpp="1" dn="1" axId="140">
+            <gType>int</gType>
+            <descrip>If the source is a file, then this property can be used to stream one part of the file.  
+The SourceFilePartSize property defines the size (in bytes) of each part.  The SourceFilePart and SourceFilePartSize have default values of 0, which means the entire SourceFile is streamed.  
+&lt;p&gt;
+This property is a 0-based index.  For example, if the SourceFilePartSize is 1000, then part 0 is for bytes 0 to 999, part 1 is for bytes 1000 to 1999, etc.</descrip>
+            <iversion>9.5.0.59</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>s3_multipart_upload_parts.asp</url>
+                    <text>S3 Upload the Parts for a Multipart Upload</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="SourceFilePartSize" read="1" write="1" ax="1" cpp="1" dn="1" axId="141">
+            <gType>int</gType>
+            <descrip>If the source is a file, then this property, in conjunction with the SourceFilePart property, can be used to stream a single part of the file.  
+This property defines the size (in bytes) of each part.  The SourceFilePart and SourceFilePartSize have default values of 0, which means that by default, the entire SourceFile is streamed.</descrip>
+            <iversion>9.5.0.59</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>s3_multipart_upload_parts.asp</url>
+                    <text>S3 Upload the Parts for a Multipart Upload</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+    </properties>
+    <events>
+        <standard name="AbortCheck" />
+        <standard name="PercentDone" />
+        <standard name="ProgressInfo" />
+    </events>
+    <clsid>FCC90B64-42F9-47A7-84D3-0DD681A6CA07</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>6A7D825B-AFC7-4CAB-B503-2E7CFDA62FF9</uuidEvents>
+    <uuidMidl>9DF35ADF-B748-4435-B6A5-0EA8397114D7</uuidMidl>
+    <nextAxId>142</nextAxId>
+</class>

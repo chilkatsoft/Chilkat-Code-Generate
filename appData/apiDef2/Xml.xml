@@ -1,0 +1,3287 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="286071397" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/Xml.xml">
+    <axName>ChilkatXml</axName>
+    <dnName>Xml</dnName>
+    <cppName>CkXml</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Cdata" axId="100">
+            <gType>bool</gType>
+            <descrip>When True, causes an XML node's content to be encapsulated in a CDATA section.</descrip>
+            <links>
+                <link>
+                    <text>Using CDATA in XML</text>
+                    <url_asp>http://www.example-code.com/asp/xml_cdata.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/xml_cdata.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/xml_cdata.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/xml_cdata.asp</url_cpp>
+                    <url_objc>http://www.example-code.com/objc/xml_cdata.asp</url_objc>
+                    <url_ios>http://www.example-code.com/ios/xml_cdata.asp</url_ios>
+                    <url_powershell>http://www.example-code.com/powershell/xml_cdata.asp</url_powershell>
+                    <url_mfc>http://www.example-code.com/mfc/xml_cdata.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/xml_cdata.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/xml_cdata.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/xml_cdata.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/xml_cdata.asp</url_java>
+                    <url_android>http://www.example-code.com/android/xml_cdata.asp</url_android>
+                    <url_perl>http://www.example-code.com/perl/xml_cdata.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/xml_cdata.asp</url_php>
+                    <url_phpext>http://www.example-code.com/phpExt/xml_cdata.asp</url_phpext>
+                    <url_python>http://www.example-code.com/python/xml_cdata.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/xml_cdata.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/xml_cdata.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/xml_cdata.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/xml_cdata.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>Using CDATA in XML</text>
+                    <url>xml_cdata.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Content" axId="101">
+            <gType>string</gType>
+            <descrip>The content of the XML node. It is the text between the open and close tags, not including child nodes.  For example:
+&lt;pre&gt;
+_LT_tag1_GT_This is the content_LT_/tag1_GT_
+
+_LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This is the content_LT_/tag2_GT_
+&lt;/pre&gt;
+Because the child nodes are not included, the content of  "tag1" and "tag2"  are both equal to "This is the content".</descrip>
+            <links>
+                <link>
+                    <text>Content vs. Children: A common misconception explained.</text>
+                    <url>http://www.chilkatsoft.com/p/p_472.asp</url>
+                </link>
+                <link>
+                    <text>Setting XML Tag and Content</text>
+                    <url_asp>http://www.example-code.com/asp/xml_tag_and_content.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/xml_tag_and_content.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/xml_tag_and_content.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/xml_tag_and_content.asp</url_cpp>
+                    <url_objc>http://www.example-code.com/objc/xml_tag_and_content.asp</url_objc>
+                    <url_ios>http://www.example-code.com/ios/xml_tag_and_content.asp</url_ios>
+                    <url_powershell>http://www.example-code.com/powershell/xml_tag_and_content.asp</url_powershell>
+                    <url_mfc>http://www.example-code.com/mfc/xml_tag_and_content.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/xml_tag_and_content.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/xml_tag_and_content.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/xml_tag_and_content.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/xml_tag_and_content.asp</url_java>
+                    <url_android>http://www.example-code.com/android/xml_tag_and_content.asp</url_android>
+                    <url_perl>http://www.example-code.com/perl/xml_tag_and_content.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/xml_tag_and_content.asp</url_php>
+                    <url_phpext>http://www.example-code.com/phpExt/xml_tag_and_content.asp</url_phpext>
+                    <url_python>http://www.example-code.com/python/xml_tag_and_content.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/xml_tag_and_content.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/xml_tag_and_content.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/xml_tag_and_content.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/xml_tag_and_content.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>Content vs. Children: A common misconception explained.</text>
+                    <url>http://www.chilkatsoft.com/p/p_472.asp</url>
+                </link>
+                <link linkType="example">
+                    <text>Setting XML Tag and Content</text>
+                    <url>xml_tag_and_content.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ContentInt" axId="102">
+            <gType>int</gType>
+            <descrip>Set/get the content as an integer.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DocType" axId="103">
+            <gType>string</gType>
+            <descrip>The DOCTYPE declaration (if any) for the XML document.</descrip>
+            <links>
+                <link>
+                    <text>Setting the XML DOCTYPE</text>
+                    <url_asp>http://www.example-code.com/asp/xml_doctype.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/xml_doctype.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/xml_doctype.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/xml_doctype.asp</url_cpp>
+                    <url_objc>http://www.example-code.com/objc/xml_doctype.asp</url_objc>
+                    <url_ios>http://www.example-code.com/ios/xml_doctype.asp</url_ios>
+                    <url_powershell>http://www.example-code.com/powershell/xml_doctype.asp</url_powershell>
+                    <url_mfc>http://www.example-code.com/mfc/xml_doctype.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/xml_doctype.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/xml_doctype.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/xml_doctype.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/xml_doctype.asp</url_java>
+                    <url_android>http://www.example-code.com/android/xml_doctype.asp</url_android>
+                    <url_perl>http://www.example-code.com/perl/xml_doctype.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/xml_doctype.asp</url_php>
+                    <url_phpext>http://www.example-code.com/phpExt/xml_doctype.asp</url_phpext>
+                    <url_python>http://www.example-code.com/python/xml_doctype.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/xml_doctype.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/xml_doctype.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/xml_doctype.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/xml_doctype.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>Setting the XML DOCTYPE</text>
+                    <url>xml_doctype.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="EmitBom" read="1" write="1" axId="237" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then emit the BOM (byte order mark, also known as a preamble) for encodings such as utf-8, utf-16, etc.  The defautl value is _FALSE_.  This only applies when writing XML files.  It does not apply when getting the XML as a string via the GetXml method.</descrip>
+            <iversion>9.5.0.44</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="EmitXmlDecl" axId="104" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then the XML declaration is emitted for methods (such as GetXml or SaveXml) where the XML is written to a file or string.  The default value of this property is _TRUE_.   If set to _FALSE_, the XML declaration is not emitted.  (The XML declaration is the 1st line of an XML document starting with "_LT_?xml ...".</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Encoding" axId="105">
+            <gType>string</gType>
+            <descrip>This is the encoding attribute in the XML declaration, such as "utf-8" or "iso-8859-1". The default is "utf-8". This property can be set from any node in the XML document and when set, causes the encoding property to be added to the XML declaration. Setting this property does not cause the document to be converted to a different encoding.
+&lt;p&gt;
+Calling any of the LoadXml* methods causes this property to be set to the charset found within the XML, if any.  If no charset is specified within the loaded XML, then the LoadXml method resets this property to its default value of "utf-8".</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumAttributes" axId="106">
+            <gType>int</gType>
+            <descrip>The number of attributes. For example, the following node has 2 attributes:
+&lt;pre&gt;
+_LT_tag attr1="value1" attr2="value2"&amp;gt; This is the content_LT_/tag&amp;gt;
+&lt;/pre&gt;</descrip>
+            <links>
+                <link>
+                    <text>Methods for Getting Attributes</text>
+                    <url_asp>http://www.example-code.com/asp/xml_get_attributes.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/xml_get_attributes.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/xml_get_attributes.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/xml_get_attributes.asp</url_cpp>
+                    <url_objc>http://www.example-code.com/objc/xml_get_attributes.asp</url_objc>
+                    <url_ios>http://www.example-code.com/ios/xml_get_attributes.asp</url_ios>
+                    <url_powershell>http://www.example-code.com/powershell/xml_get_attributes.asp</url_powershell>
+                    <url_mfc>http://www.example-code.com/mfc/xml_get_attributes.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/xml_get_attributes.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/xml_get_attributes.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/xml_get_attributes.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/xml_get_attributes.asp</url_java>
+                    <url_android>http://www.example-code.com/android/xml_get_attributes.asp</url_android>
+                    <url_perl>http://www.example-code.com/perl/xml_get_attributes.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/xml_get_attributes.asp</url_php>
+                    <url_phpext>http://www.example-code.com/phpExt/xml_get_attributes.asp</url_phpext>
+                    <url_python>http://www.example-code.com/python/xml_get_attributes.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/xml_get_attributes.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/xml_get_attributes.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/xml_get_attributes.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/xml_get_attributes.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>Methods for Getting Attributes</text>
+                    <url>xml_get_attributes.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="NumChildren" axId="107" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The number of direct child nodes contained under this XML node.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SortCaseInsensitive" axId="108">
+            <gType>bool</gType>
+            <descrip>If true (or 1 for ActiveX), then all Sort* methods use case insensitive sorting.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Standalone" axId="109">
+            <gType>bool</gType>
+            <descrip>This is the standalone attribute in the XML declaration. This property can be set from any node in the XML document.  A value of _TRUE_ adds a &lt;b&gt;standalone="yes"&lt;/b&gt; to the XML declaration: 
+&lt;pre&gt;
+_LT_?xml ... standalone="yes"&gt;
+&lt;/pre&gt;</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Tag" axId="110">
+            <gType>string</gType>
+            <descrip>The XML node's tag.</descrip>
+            <links>
+                <link>
+                    <text>Setting XML Tag and Content</text>
+                    <url_asp>http://www.example-code.com/asp/xml_tag_and_content.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/xml_tag_and_content.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/xml_tag_and_content.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/xml_tag_and_content.asp</url_cpp>
+                    <url_objc>http://www.example-code.com/objc/xml_tag_and_content.asp</url_objc>
+                    <url_ios>http://www.example-code.com/ios/xml_tag_and_content.asp</url_ios>
+                    <url_powershell>http://www.example-code.com/powershell/xml_tag_and_content.asp</url_powershell>
+                    <url_mfc>http://www.example-code.com/mfc/xml_tag_and_content.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/xml_tag_and_content.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/xml_tag_and_content.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/xml_tag_and_content.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/xml_tag_and_content.asp</url_java>
+                    <url_android>http://www.example-code.com/android/xml_tag_and_content.asp</url_android>
+                    <url_perl>http://www.example-code.com/perl/xml_tag_and_content.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/xml_tag_and_content.asp</url_php>
+                    <url_phpext>http://www.example-code.com/phpExt/xml_tag_and_content.asp</url_phpext>
+                    <url_python>http://www.example-code.com/python/xml_tag_and_content.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/xml_tag_and_content.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/xml_tag_and_content.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/xml_tag_and_content.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/xml_tag_and_content.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>Setting XML Tag and Content</text>
+                    <url>xml_tag_and_content.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="TreeId" axId="111">
+            <gType>int</gType>
+            <descrip>Each tree (or XML document) has a unique TreeId. This is the ID of the tree, and can be used to determine if two Xml objects belong to the same tree.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="I" axId="240" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>xml_i.asp</url>
+                    <text>Demonstrate the XML "I" Property</text>
+                </link>
+                <link linkType="example">
+                    <url>xml_ijk.asp</url>
+                    <text>Demonstrate the XML  I, J, and K Properties</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.64</iversion>
+            <descrip>Used in tagPaths (and ChilkatPath).  The value of this property is substituted for "i" in "[i]".   See the example below..</descrip>
+        </property>
+        <property name="J" axId="241" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>xml_ijk.asp</url>
+                    <text>Demonstrate the XML  I, J, and K Properties</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.64</iversion>
+            <descrip>Used in tagPaths (and ChilkatPath).  The value of this property is substituted for "j" in "[j]".   See the example below..</descrip>
+        </property>
+        <property name="K" axId="242" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <links2 />
+            <iversion>9.5.0.64</iversion>
+            <descrip>Used in tagPaths (and ChilkatPath).  The value of this property is substituted for "k" in "[k]".   See the example below..</descrip>
+        </property>
+        <property name="EmitCompact" axId="246" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then GetXml and GetXmlSb emit compact XML.  The XML emitted has no unnecessary whitespace, incuding no end-of-lines (CR's and/or LF's).   The default value is _FALSE_, which maintains backward compatibility.</descrip>
+            <args2 />
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xml_emit_compact.asp</url>
+                    <text>XML EmitCompact</text>
+                </link>
+            </links2>
+        </property>
+    </properties>
+    <methods>
+        <method name="AccumulateTagContent" axId="112" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>skipTags</argName>
+                    <objcName>skipTags</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Accumulates the content of all nodes having a specific tag into a single result string.  SkipTags specifies a set of subtrees to be avoided.  The skipTags are formatted as a string of tags delimited by vertical bar characters.   All nodes in sub-trees rooted with a tag appearing in skipTags are not included in the result.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>xml_accumTagContent.asp</url>
+                    <text>XML Accumulate Tag Content</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="skipTags" type="string" objcName="skipTags" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="AddAttribute" axId="113">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an attribute to the calling node in the XML document.  Returns True for success, and False for failure.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Adding Attributes to an XML Node</text>
+                    <url>xml_add_attribute.asp</url>
+                </link>
+                <link linkType="example">
+                    <text>AddAttribute - Insert New Attribute in XML Node</text>
+                    <url>xml_addAttribute.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="AddAttributeInt" axId="114">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an integer attribute to a node.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="AddChildTree" axId="115">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>tree</argName>
+                    <objcName>tree</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an entire subtree as a child. If the child was a subtree within another Xml document then the subtree is effectively transferred from one XML document to another.</descrip>
+            <args2>
+                <arg name="tree" type="Xml" objcName="tree" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddOrUpdateAttribute" axId="116">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an attribute to an XML node.  If an attribute having the specified name already exists, the value is updated.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Update an XML Attribute</text>
+                    <url>xml_update_attribute.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddOrUpdateAttributeI" axId="117">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an integer attribute to an XML node.  If an attribute having the specified name already exists, the value is updated.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddStyleSheet" axId="118">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>styleSheet</argName>
+                    <objcName>styleSheet</objcName>
+                </arg>
+            </args>
+            <descrip>Adds a style sheet declaration to the XML document.  The ARG1 should be a string such as:
+&lt;pre&gt;
+_LT_?xml-stylesheet href="mystyle.css" title="Compact" type="text/css"?&gt;
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="styleSheet" type="string" objcName="styleSheet" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddToAttribute" axId="119">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>amount</argName>
+                    <objcName>amount</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an integer amount to an integer attribute's value.  If the attribute does not  yet exist, this method behaves the same as AddOrUpdateAttributeI.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Update an XML Attribute</text>
+                    <url>xml_update_attribute.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="amount" type="int" objcName="amount" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddToChildContent" axId="120">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>amount</argName>
+                    <objcName>amount</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an integer value to the content of a child node.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="amount" type="int" objcName="amount" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddToContent" axId="121">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>amount</argName>
+                    <objcName>amount</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an integer amount to the node's content.</descrip>
+            <args2>
+                <arg name="amount" type="int" objcName="amount" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="AppendToContent" axId="122">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Appends text to the content of an XML node</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="BEncodeContent" axId="123">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inData</argName>
+                    <objcName>db</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the node's content with 8bit data that is in a specified multibyte character encoding such as utf-8, shift-jis, big5, etc. The data is first B-encoded and the content is set to be the B-encoded string. For example, if called with "Big5"for the charset, you would get a string that looks something like this: "=?Big5?B?pHCtsw==?=". The data is Base64-encoded and stored between the last pair of "?" delimiters. Use the DecodeContent method to retrieve the byte data from a B encoded string.</descrip>
+            <args2>
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="inData" type="bytes" objcName="db" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ChildContentMatches" axId="124" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pattern</argName>
+                    <objcName>pattern</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>caseSensitive</argName>
+                    <objcName>caseSensitive</objcName>
+                </arg>
+            </args>
+            <descrip>Return _TRUE_  if a child at the specified ARG1 contains content that matches a wildcarded ARG2.  Otherwise returns _FALSE_.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="pattern" type="string" objcName="pattern" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ChilkatPath" axId="125" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pathCmd</argName>
+                    <objcName>cmd</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Follows a series of commands to navigate through an XML document to return a piece of data or update the caller's reference to a new XML document node.  
+&lt;p&gt;
+Note: This method not related to the XPath (XML Path) standard in any way.
+&lt;p&gt;
+The ARG1 is formatted as a series of commands separated by vertical bar characters, and terminated with a return-command:
+&lt;pre&gt;
+    &lt;i&gt;command&lt;/i&gt;|&lt;i&gt;command&lt;/i&gt;|&lt;i&gt;command&lt;/i&gt;|...|&lt;i&gt;returnCommand&lt;/i&gt;
+&lt;/pre&gt;
+&lt;p&gt;
+A &lt;i&gt;command&lt;/i&gt; can be any of the following:
+&lt;ol&gt;
+&lt;li&gt;TagName -- Navigate to the 1st direct child with the given tag.&lt;/li&gt;
+&lt;li&gt;TagName[n] -- Navigate to the Nth direct child with the given tag.&lt;/li&gt;
+&lt;li&gt;.. -- Navigate up to the parent&lt;/li&gt;
+&lt;li&gt;TagName{Content} -- Navigate to the 1st direct child with the given tag having the exact content.&lt;/li&gt;
+&lt;li&gt;/T/TagName -- Traverse the XML DOM tree (rooted at the caller) and navigate to the 1st node having the given tag.&lt;/li&gt;
+&lt;li&gt;/C/TagName,ContentPattern -- Traverse the XML DOM tree (rooted at the caller) and navigate to the 1st node having the given tag with content that matches the ContentPattern.  ContentPattern may use one or more asterisk ('*") characters to represent 0 or more of any character.&lt;/li&gt;
+&lt;li&gt;/C/ContentPattern -- Traverse the XML DOM tree (rooted at the caller) and navigate to the 1st node having any tag with content that matches the ContentPattern.  ContentPattern may use one or more asterisk ('*") characters to represent 0 or more of any character.&lt;/li&gt;
+&lt;li&gt;/A/TagName,AttrName,AttrValuePattern -- Traverse the XML DOM tree 
+	(rooted at the caller) and navigate to the 1st node having the 
+	given tag, and attribute, with the attribute value that matches 
+	the AttrValuePattern. AttrValuePattern may use one or more 
+	asterisk ('*") characters to represent 0 or more of any 
+	character.&lt;/li&gt;
+&lt;/ol&gt;
+The &lt;i&gt;returnCommand&lt;/i&gt; can be any of the following:
+&lt;ol&gt;
+&lt;li&gt;*  -- Return the Content of the node.&lt;/li&gt;
+&lt;li&gt;(AttrName) -- Return the value of the given attribute.&lt;/li&gt;
+&lt;li&gt;$ -- Update the caller's internal reference to be the node (arrived at by following the series of commands).  Returns an empty string.&lt;/li&gt;
+&lt;/ol&gt;</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>ChilkatPath Sample Code</text>
+                    <url>xml_ChilkatPath.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="pathCmd" type="string" objcName="cmd" />
+            </args2>
+        </method>
+        <method name="Clear" axId="126" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args />
+            <descrip>Removes all children, attributes, and content from the XML node. Resets the tag name to "unnamed".</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ContentMatches" axId="127">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pattern</argName>
+                    <objcName>pattern</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>caseSensitive</argName>
+                    <objcName>caseSensitive</objcName>
+                </arg>
+            </args>
+            <descrip>Return true if the node's content matches a wildcarded pattern.</descrip>
+            <args2>
+                <arg name="pattern" type="string" objcName="pattern" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="Copy" axId="128">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>node</argName>
+                    <objcName>node</objcName>
+                </arg>
+            </args>
+            <descrip>Copies the tag, content, and attributes to the calling node.</descrip>
+            <args2>
+                <arg name="node" type="Xml" objcName="node" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="CopyRef" axId="129">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>copyFromNode</argName>
+                    <objcName>node</objcName>
+                </arg>
+            </args>
+            <descrip>Discards the caller's current internal reference and copies the internal reference from ARG1.  Effectively updates the caller node to point to the same node in the XML document as ARG1.</descrip>
+            <args2>
+                <arg name="copyFromNode" type="Xml" objcName="node" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DecodeContent" axId="130" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Decodes a node's Q or B-encoded content string and returns the byte data.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DecodeEntities" axId="131" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Utility method to decode HTML entities.  It accepts a string containing (potentially) HTML entities and returns a string with the entities decoded.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="DecryptContent" axId="132">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Decrypts the content of an XML node that was previously 128-bit AES encrypted with the EncryptContent method.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Encrypting and Decrypting Content</text>
+                    <url>xml_encrypt_decrypt.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="EncryptContent" axId="133">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Encrypts the content of the calling XML node using 128-bit CBC AES encryption.   The base64-encoded encrypted content replaces the original content.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Encrypting and Decrypting Content</text>
+                    <url>xml_encrypt_decrypt.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+        </method>
+        <method name="ExtractChildByIndex" axId="134" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Removes and returns the Nth child of an XML node.  The first child is at index 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ExtractChildByName" axId="135" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrValue</argName>
+                    <objcName>attrValue</objcName>
+                </arg>
+            </args>
+            <descrip>Removes and returns the first child node at the specified tag or tag path. The ARG2 and ARG3 may be empty, in which case the first child matching the tag is removed and returned. If ARG2 is specified, then the first child having a tag equal to ARG1, and an attribute with ARG2 is returned. If ARG3 is also specified, then only a child having a tag equal to ARG1, and an attribute named ARG2, with a value equal to ARG3 is returned.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="attrValue" type="string" objcName="attrValue" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_ExtractChildByName.asp</url>
+                    <text>ExtractChildByName using a Tag Path</text>
+                </link>
+            </links2>
+        </method>
+        <method name="FindChild" axId="136" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the child with the given tag or at the specified tag path.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Find Direct Child with Specific Tag</text>
+                    <url>xml_find_child.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_soap_body.asp</url>
+                    <text>Access SOAP Body XML</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+        </method>
+        <method name="FindChild2" axId="137" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Updates the Xml object's internal reference to point to a child at the specified tag or tagPath.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Find Direct Child with Specific Tag</text>
+                    <url>xml_find_child.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+        </method>
+        <method name="FindNextRecord" axId="138" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>contentPattern</argName>
+                    <objcName>contentPattern</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the next record node where the child with a specific tag matches a wildcarded pattern.  This method makes it easy to iterate over high-level records.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="contentPattern" type="string" objcName="contentPattern" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_findNextRecord.asp</url>
+                    <text>Demonstrate the XML FindNextRecord Method</text>
+                </link>
+            </links2>
+        </method>
+        <method name="FindOrAddNewChild" axId="139" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>First checks for a child at ARG1, and if found, returns it. Otherwise creates a new child with empty content.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FirstChild" axId="140">
+            <gType>Xml</gType>
+            <args />
+            <descrip>Returns the first child. A program can step through the children by calling FirstChild, and then NextSibling repeatedly.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Traverse Direct Children via FirstChild / NextSibling, or LastChild / PreviousSibling</text>
+                    <url>xml_traverse_direct_children.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="FirstChild2" axId="141" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Updates the internal reference of the caller to point to its first child.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>More information about XML methods ending in "2"</text>
+                    <url>http://www.cknotes.com/?p=41</url>
+                </link>
+                <link linkType="example">
+                    <text>Traverse Direct Children via FirstChild / NextSibling, or LastChild / PreviousSibling</text>
+                    <url>xml_traverse_direct_children.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetAttrValue" axId="142" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Find and return the value of an attribute having a specified name.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Methods for Getting Attributes</text>
+                    <url>xml_get_attributes.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetAttrValueInt" axId="143">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+            </args>
+            <descrip>Returns an attribute as an integer.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Methods for Getting Attributes</text>
+                    <url>xml_get_attributes.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetAttributeName" axId="144" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the name of the Nth attribute of an XML node.  The first attribute is at index 0.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Methods for Getting Attributes</text>
+                    <url>xml_get_attributes.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetAttributeValue" axId="145" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the value of the Nth attribute of an XML node.  The first attribute is at index 0.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Methods for Getting Attributes</text>
+                    <url>xml_get_attributes.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetAttributeValueInt" axId="146">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns an attribute as an integer.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetBinaryContent" axId="147" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>unzipFlag</argName>
+                    <objcName>unzipFlag</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>decryptFlag</argName>
+                    <objcName>decryptFlag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Returns binary content of an XML node as a byte array.  The content may have been Zip compressed, AES encrypted, or both.  Unzip compression and AES decryption flags should be set appropriately.</descrip>
+            <args2>
+                <arg name="unzipFlag" type="bool" objcName="unzipFlag" />
+                <arg name="decryptFlag" type="bool" objcName="decryptFlag" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetChild" axId="148">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth child of an XML node</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Iterate over Direct Child Nodes by Index</text>
+                    <url>xml_iter_child.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GetChild2" axId="149">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Updates the calling object's internal reference to the Nth child node.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>More information about XML methods ending in "2"</text>
+                    <url>http://www.cknotes.com/?p=41</url>
+                </link>
+                <link linkType="example">
+                    <text>Iterate over Direct Child Nodes by Index</text>
+                    <url>xml_iter_child.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method name="GetChildBoolValue" axId="150" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _FALSE_ if the node's content is "0", otherwise returns _TRUE_ if the node contains a non-zero integer.      The ARG1 can be a tag or a tag path. 
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "colors|primary|red".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_i.asp</url>
+                    <text>Demonstrate the XML "I" Property</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetChildContent" axId="151" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the content of a child having a specified tag.    The ARG1 can be a tag or a tag path. 
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "colors|primary|red".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_i.asp</url>
+                    <text>Demonstrate the XML "I" Property</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetChildContentByIndex" axId="152" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the content of the Nth child node.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Iterate over Direct Child Nodes by Index</text>
+                    <url>xml_iter_child.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>sqs_list_queues.asp</url>
+                    <text>SQS List Queues</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetChildExact" axId="153">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the child having the exact tag and content.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetChildIntValue" axId="154" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the child integer content for a given tag.    The ARG1 can be a tag or a tag path. 
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "colors|primary|red".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_i.asp</url>
+                    <text>Demonstrate the XML "I" Property</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetChildTag" axId="155" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the tag name of the Nth child node.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetChildTagByIndex" axId="156" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the tag name of the Nth child node.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Iterate over Direct Child Nodes by Index</text>
+                    <url>xml_iter_child.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method name="GetChildWithAttr" axId="157" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrValue</argName>
+                    <objcName>attrValue</objcName>
+                </arg>
+            </args>
+            <descrip>Finds and returns the XML child node having both a given tag and an attribute with a given name and value.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>xml_GetChildWithAttr.asp</url>
+                    <text>XML GetChildWithAttr</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="attrValue" type="string" objcName="attrValue" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetChildWithContent" axId="158">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the first child found having the exact content specified.</descrip>
+            <args2>
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetChildWithTag" axId="159" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the child at the specified tag or tag path.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetNthChildWithTag" axId="160">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>n</argName>
+                    <objcName>n</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth child having a tag that matches exactly with the tagName.  Use the NumChildrenHavingTag method to determine how many children have a particular tag.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Iterate over Direct Children with a Specific Tag</text>
+                    <url>xml_iter_childWithTag.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="n" type="int" objcName="n" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GetNthChildWithTag2" axId="161">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>n</argName>
+                    <objcName>n</objcName>
+                </arg>
+            </args>
+            <descrip>Updates the calling object's internal reference to the Nth child node having a specific tag.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Iterate over Direct Children with a Specific Tag</text>
+                    <url>xml_iter_childWithTag.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="n" type="int" objcName="n" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetParent" axId="162">
+            <gType>Xml</gType>
+            <args />
+            <descrip>Returns the parent of this XML node, or NULL if the node is the root of the tree.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GetParent2" axId="163">
+            <gType>bool</gType>
+            <args />
+            <descrip>Updates the internal reference of the caller to its parent.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>More information about XML methods ending in "2"</text>
+                    <url>http://www.cknotes.com/?p=41</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetRoot" axId="164">
+            <gType>Xml</gType>
+            <args />
+            <descrip>Returns the root node of the XML document</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetRoot2" axId="165">
+            <gType>void</gType>
+            <args />
+            <descrip>Updates the internal reference of the caller to the document root.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>More information about XML methods ending in "2"</text>
+                    <url>http://www.cknotes.com/?p=41</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetSelf" axId="166">
+            <gType>Xml</gType>
+            <args />
+            <descrip>Returns a new XML object instance that references the same XML node.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetXml" axId="167" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Generate the XML text document for the XML tree rooted at this node.   If called from the root node of the XML document, then the XML declarator ("_LT_?xml version="1.0" encoding="utf-8" ?&gt;") is included at the beginning of the XML.  Otherwise, it is not included.</descrip>
+            <links2>
+                <link linkType="external" lang="activex">
+                    <url>http://www.chilkatforum.com/questions/9342/sql-server-methods-that-return-long-strings</url>
+                    <text>Long Strings Returned by ActiveX Methods in SQL Server</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="HasAttrWithValue" axId="168">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Returns true if the node contains attribute with the name and value.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="HasAttribute" axId="169">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+            </args>
+            <descrip>Returns true if the node contains an attribute with the specified name.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="HasChildWithContent" axId="170">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Returns true if the node has a direct child node containing the exact content string specified.</descrip>
+            <args2>
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="HasChildWithTag" axId="171" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the node has a child with the given tag (or tag path).  Otherwise returns _FALSE_.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_UpdateChildContent.asp</url>
+                    <text>UpdateChildContent using a Tag Path</text>
+                </link>
+            </links2>
+        </method>
+        <method name="HasChildWithTagAndContent" axId="172" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the node contains child with the given tag (or tag path) and content specified.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="InsertChildTreeAfter" axId="173" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>tree</argName>
+                    <objcName>tree</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an entire subtree as a child. If the child was a subtree within another Xml document then the subtree is effectively transferred from one XML document to another.   The child tree is inserted in a position after the Nth child (of the calling node).</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="tree" type="Xml" objcName="tree" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="InsertChildTreeBefore" axId="174" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>tree</argName>
+                    <objcName>tree</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an entire subtree as a child. If the child was a subtree within another Xml document then the subtree is effectively transferred from one XML document to another.   The child tree is inserted in a position before the Nth child (of the calling node).</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="tree" type="Xml" objcName="tree" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="LastChild" axId="175">
+            <gType>Xml</gType>
+            <args />
+            <descrip>Returns the last Xml child node. A node's children can be enumerated by calling LastChild and then repeatedly calling PreviousSibling, until a NULL is returned.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Traverse Direct Children via FirstChild / NextSibling, or LastChild / PreviousSibling</text>
+                    <url>xml_traverse_direct_children.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LastChild2" axId="176">
+            <gType>bool</gType>
+            <args />
+            <descrip>Updates the internal reference of the caller to its last child.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Traverse Direct Children via FirstChild / NextSibling, or LastChild / PreviousSibling</text>
+                    <url>xml_traverse_direct_children.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="LoadXml" axId="177" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>xmlData</argName>
+                    <objcName>xmlData</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an XML document from a memory buffer and returns _TRUE_ if successful.  The contents of the calling node are replaced with the root node of the XML document loaded.</descrip>
+            <args2>
+                <arg name="xmlData" type="string" objcName="xmlData" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadXml2" axId="178" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>xmlData</argName>
+                    <objcName>xmlData</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>autoTrim</argName>
+                    <objcName>autoTrim</objcName>
+                </arg>
+            </args>
+            <descrip>Same as LoadXml, but an additional argument controls whether or not leading/trailing whitespace is auto-trimmed from each node's content.</descrip>
+            <args2>
+                <arg name="xmlData" type="string" objcName="xmlData" />
+                <arg name="autoTrim" type="bool" objcName="autoTrim" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadXmlFile" axId="179">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>fileName</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an XML document from a file and returns _TRUE_ if successful.  The contents of the calling node are replaced with the root node of the XML document loaded.</descrip>
+            <args2>
+                <arg name="fileName" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadXmlFile2" axId="180">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>fileName</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>autoTrim</argName>
+                    <objcName>autoTrim</objcName>
+                </arg>
+            </args>
+            <descrip>Same as LoadXmlFile, but an additional argument controls whether or not leading/trailing whitespace is auto-trimmed from each node's content.</descrip>
+            <args2>
+                <arg name="fileName" type="string" objcName="path" />
+                <arg name="autoTrim" type="bool" objcName="autoTrim" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="NewChild" axId="181" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Creates a new child having tag and content. The new child is created even if a child with a tag equal to ARG1 already exists. (Use FindOrAddNewChild to prevent creating children having the same tags.)
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "colors|primary|red".   See the example below for details.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Creating a New Child Node</text>
+                    <url>xml_new_child.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_NewChild_using_TagPath.asp</url>
+                    <text>NewChild using a Tag Path</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+        </method>
+        <method name="NewChild2" axId="182" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Creates a new child node, but does not return the node that is created.  The ARG1 can be a tag or a tag path. 
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "colors|primary|red".   See the example below for details.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Creating a New Child Node</text>
+                    <url>xml_new_child.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_newChild2.asp</url>
+                    <text>XML NewChild2 using a Tag Path</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="NewChildAfter" axId="183">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Inserts a new child in a position after the Nth child node.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="NewChildBefore" axId="184">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Inserts a new child in a position before the Nth child node.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="NewChildInt2" axId="185" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Inserts a new child having an integer for content.  The ARG1 can be a tag or a tag path. 
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "colors|primary|red".   See the example below for details.</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_NewChildInt2.asp</url>
+                    <text>Demonstrate the XML NewChildInt2 Method</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="NextSibling" axId="186">
+            <gType>Xml</gType>
+            <args />
+            <descrip>Returns the nodes next sibling, or NULL if there are no more.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Traverse Direct Children via FirstChild / NextSibling, or LastChild / PreviousSibling</text>
+                    <url>xml_traverse_direct_children.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="NextSibling2" axId="187">
+            <gType>bool</gType>
+            <args />
+            <descrip>Updates the internal reference of the caller to its next sibling.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>More information about XML methods ending in "2"</text>
+                    <url>http://www.cknotes.com/?p=41</url>
+                </link>
+                <link linkType="example">
+                    <text>Traverse Direct Children via FirstChild / NextSibling, or LastChild / PreviousSibling</text>
+                    <url>xml_traverse_direct_children.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="NumChildrenHavingTag" axId="188">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the number of children having a specific tag name.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Iterate over Direct Children with a Specific Tag</text>
+                    <url>xml_iter_childWithTag.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="PreviousSibling" axId="189">
+            <gType>Xml</gType>
+            <args />
+            <descrip>Returns the Xml object that is the node's previous sibling, or NULL if there are no more.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Traverse Direct Children via FirstChild / NextSibling, or LastChild / PreviousSibling</text>
+                    <url>xml_traverse_direct_children.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="PreviousSibling2" axId="190">
+            <gType>bool</gType>
+            <args />
+            <descrip>Updates the internal reference of the caller to its previous sibling.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>More information about XML methods ending in "2"</text>
+                    <url>http://www.cknotes.com/?p=41</url>
+                </link>
+                <link linkType="example">
+                    <text>Traverse Direct Children via FirstChild / NextSibling, or LastChild / PreviousSibling</text>
+                    <url>xml_traverse_direct_children.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_2_methods.asp</url>
+                    <text>Benefit of XML Methods Having Names Ending in "2"</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="QEncodeContent" axId="191">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inData</argName>
+                    <objcName>db</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the node's content with 8bit data that is in a specified multibyte character encoding such as utf-8, shift-jis, big5, etc. The data is first Q-encoded and the content is set to be the Q-encoded string. For example, if called with "gb2312"for the charset, you would get a string that looks something like this: "=?gb2312?Q?=C5=B5=BB=F9?=". Character that are not 7bit are represented as "=XX" where XX is the hexidecimal value of the byte. Use the DecodeContent method to retrieve the byte data from a Q encoded string.</descrip>
+            <args2>
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="inData" type="bytes" objcName="db" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="RemoveAllAttributes" axId="192">
+            <gType>bool</gType>
+            <args />
+            <descrip>Removes all attributes from an XML node. Should always return True.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveAllChildren" axId="193">
+            <gType>void</gType>
+            <args />
+            <descrip>Removes all children from the calling node.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="RemoveAttribute" axId="194">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+            </args>
+            <descrip>Removes an attribute by name from and XML node.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="RemoveChild" axId="195" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Removes all children with a given tag or tag path.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Removing / Deleting Child Nodes from XML</text>
+                    <url>xml_remove_child.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_RemoveChild.asp</url>
+                    <text>RemoveChild using a Tag Path</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveChildByIndex" axId="196">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Removes the Nth child from the calling node.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Removing / Deleting Child Nodes from XML</text>
+                    <url>xml_remove_child.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveChildWithContent" axId="197">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Removes all children having the exact content specified.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Removing / Deleting Child Nodes from XML</text>
+                    <url>xml_remove_child.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RemoveFromTree" axId="198">
+            <gType>void</gType>
+            <args />
+            <descrip>Removes the calling object and its sub-tree from the XML document making it the root of its own tree.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Removing / Deleting Child Nodes from XML</text>
+                    <url>xml_remove_child.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveBinaryContent" axId="199">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>unzipFlag</argName>
+                    <objcName>unzipFlag</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>decryptFlag</argName>
+                    <objcName>decryptFlag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Saves a node's binary content to a file.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+                <arg name="unzipFlag" type="bool" objcName="unzipFlag" />
+                <arg name="decryptFlag" type="bool" objcName="decryptFlag" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveXml" axId="200">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>fileName</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Generates XML representing the tree or subtree rooted at this node and writes it to a file.</descrip>
+            <args2>
+                <arg name="fileName" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SearchAllForContent" axId="201" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml *</cppType>
+                    <argName>afterPtr</argName>
+                    <objcName>after</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>contentPattern</argName>
+                    <objcName>contentPattern</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the first node having content matching the ARG2.  The ARG2 is a case-sensitive string that may contain any number of '*'s, each representing 0 or more occurrences of any character. The search is breadth-first over the sub-tree rooted at the caller.   A match is returned only after the search has traversed past the node indicated by ARG1.  To find the 1st occurrence, set ARG1 equal to _NULL_.  (For the ActiveX implementation, the ARG1 should never be _NULL_.  A reference to the caller's node should be passed instead.)
+&lt;p&gt;
+To iterate over matching nodes, the returned node can be passed in ARG1 for the next call to SearchAllForContent, until the method returns _NULL_.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>XML Tree Traversal Order for Search* Methods</text>
+                    <url>xml_searchOrder.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="afterPtr" type="Xml" objcName="after" objPtr="1" />
+                <arg name="contentPattern" type="string" objcName="contentPattern" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SearchAllForContent2" axId="202">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml *</cppType>
+                    <argName>afterPtr</argName>
+                    <objcName>after</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>contentPattern</argName>
+                    <objcName>contentPattern</objcName>
+                </arg>
+            </args>
+            <descrip>Same as SearchAllForContent except the internal reference of the caller is updated to point to the search result (instead of returning a new object).</descrip>
+            <links2 />
+            <args2>
+                <arg name="afterPtr" type="Xml" objcName="after" objPtr="1" />
+                <arg name="contentPattern" type="string" objcName="contentPattern" />
+            </args2>
+        </method>
+        <method name="SearchForAttribute" axId="203" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml *</cppType>
+                    <argName>afterPtr</argName>
+                    <objcName>after</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attr</argName>
+                    <objcName>attr</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>valuePattern</argName>
+                    <objcName>valuePattern</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the first node having a tag equal to ARG2, an attribute named ARG3, whose value matches ARG4.  The ARG4 is a case-sensitive string that may contain any number of '*'s, each representing 0 or more occurrences of any character. The search is breadth-first over the sub-tree rooted at the caller.   A match is returned only after the search has traversed past the node indicated by ARG1.  To find the 1st occurrence, set ARG1 equal to _NULL_.  (For the ActiveX implementation, the ARG1 should never be _NULL_.  A reference to the caller's node should be passed instead.)
+&lt;p&gt;
+To iterate over matching nodes, the returned node can be passed in ARG1 for the next call to SearchForAttribute, until the method returns _NULL_.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>XML SearchForAttribute Method</text>
+                    <url>xml_searchForAttribute.asp</url>
+                </link>
+                <link linkType="example">
+                    <text>XML Tree Traversal Order for Search* Methods</text>
+                    <url>xml_searchOrder.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="afterPtr" type="Xml" objcName="after" objPtr="1" />
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="attr" type="string" objcName="attr" />
+                <arg name="valuePattern" type="string" objcName="valuePattern" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SearchForAttribute2" axId="204">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml *</cppType>
+                    <argName>afterPtr</argName>
+                    <objcName>after</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attr</argName>
+                    <objcName>attr</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>valuePattern</argName>
+                    <objcName>valuePattern</objcName>
+                </arg>
+            </args>
+            <descrip>Same as SearchForAttribute except the internal reference of the caller is updated to point to the search result (instead of returning a new object).</descrip>
+            <links2 />
+            <args2>
+                <arg name="afterPtr" type="Xml" objcName="after" objPtr="1" />
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="attr" type="string" objcName="attr" />
+                <arg name="valuePattern" type="string" objcName="valuePattern" />
+            </args2>
+        </method>
+        <method name="SearchForContent" axId="205" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml *</cppType>
+                    <argName>afterPtr</argName>
+                    <objcName>after</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>contentPattern</argName>
+                    <objcName>contentPattern</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the first node having a tag equal to ARG2, whose content matches ARG3.  The ARG3 is a case-sensitive string that may contain any number of '*'s, each representing 0 or more occurrences of any character. The search is breadth-first over the sub-tree rooted at the caller.   A match is returned only after the search has traversed past the node indicated by ARG1.  To find the 1st occurrence, set ARG1 equal to _NULL_.  (For the ActiveX implementation, the ARG1 should never be _NULL_.  A reference to the caller's node should be passed instead.)
+&lt;p&gt;
+To iterate over matching nodes, the returned node can be passed in ARG1 for the next call to SearchForContent, until the method returns _NULL_.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>XML Tree Traversal Order for Search* Methods</text>
+                    <url>xml_searchOrder.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="afterPtr" type="Xml" objcName="after" objPtr="1" />
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="contentPattern" type="string" objcName="contentPattern" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SearchForContent2" axId="206">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml *</cppType>
+                    <argName>afterPtr</argName>
+                    <objcName>after</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>contentPattern</argName>
+                    <objcName>contentPattern</objcName>
+                </arg>
+            </args>
+            <descrip>Same as SearchForContent except the internal reference of the caller is updated to point to the search result (instead of returning a new object).</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>XML Tree Traversal Order for Search* Methods</text>
+                    <url>xml_searchOrder.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="afterPtr" type="Xml" objcName="after" objPtr="1" />
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="contentPattern" type="string" objcName="contentPattern" />
+            </args2>
+        </method>
+        <method name="SearchForTag" axId="207" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml *</cppType>
+                    <argName>afterPtr</argName>
+                    <objcName>after</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the first node having a tag equal to ARG2. The search is breadth-first over the sub-tree rooted at the caller.   A match is returned only after the search has traversed past the node indicated by ARG1.  To find the 1st occurrence, set ARG1 equal to _NULL_.  (For the ActiveX implementation, the ARG1 should never be _NULL_.  A reference to the caller's node should be passed instead.)
+&lt;p&gt;
+To iterate over matching nodes, the returned node can be passed in ARG1 for the next call to SearchForTag, until the method returns _NULL_.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>XML SearchForTag Method</text>
+                    <url>xml_searchForTag.asp</url>
+                </link>
+                <link linkType="example">
+                    <text>XML Tree Traversal Order for Search* Methods</text>
+                    <url>xml_searchOrder.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="afterPtr" type="Xml" objcName="after" objPtr="1" />
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SearchForTag2" axId="208">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml *</cppType>
+                    <argName>afterPtr</argName>
+                    <objcName>after</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Same as SearchForTag except the internal reference of the caller is updated to point to the search result (instead of returning a new object).</descrip>
+            <links2 />
+            <args2>
+                <arg name="afterPtr" type="Xml" objcName="after" objPtr="1" />
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetBinaryContent" axId="209">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inData</argName>
+                    <objcName>data</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>zipFlag</argName>
+                    <objcName>zipFlag</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>encryptFlag</argName>
+                    <objcName>encryptFlag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the node's content to a block of binary data with optional Zip compression and/or AES encryption.			The binary data is automatically converted to base64 format whenever XML text is generated. If the zipFlag is True, 			the data is first compressed. If the encryptFlag is True, the data is AES encrypted using the Rijndael 128-bit symmetric-encryption algorithm.</descrip>
+            <args2>
+                <arg name="inData" type="bytes" objcName="data" />
+                <arg name="zipFlag" type="bool" objcName="zipFlag" />
+                <arg name="encryptFlag" type="bool" objcName="encryptFlag" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetBinaryContent2" cpp="1" noSwig="1">
+            <gType>bool</gType>
+            <ifdef>#if !defined(CHILKAT_MONO)</ifdef>
+            <args>
+                <arg>
+                    <cppType>const unsigned char *</cppType>
+                    <argName>pByteData</argName>
+                    <objcName>pByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>szByteData</argName>
+                    <objcName>szByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>zipFlag</argName>
+                    <objcName>zipFlag</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>encryptFlag</argName>
+                    <objcName>encryptFlag</objcName>
+                </arg>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SetBinaryContent but the data is provided via a pointer and byte count.</descrip>
+            <args2>
+                <arg name="pByteData" type="cppBytes" objcName="pByteData" />
+                <arg name="szByteData" type="unsigned long" objcName="szByteData" />
+                <arg name="zipFlag" type="bool" objcName="zipFlag" />
+                <arg name="encryptFlag" type="bool" objcName="encryptFlag" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetBinaryContentFromFile" axId="210">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>zipFlag</argName>
+                    <objcName>zipFlag</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>encryptFlag</argName>
+                    <objcName>encryptFlag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the node's content with binary (or text) data from a file.  The file contents can be Zip compressed and/or encrypted, and the result is base-64 encoded.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+                <arg name="zipFlag" type="bool" objcName="zipFlag" />
+                <arg name="encryptFlag" type="bool" objcName="encryptFlag" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SortByAttribute" axId="211">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ascending</argName>
+                    <objcName>ascending</objcName>
+                </arg>
+            </args>
+            <descrip>Sorts the direct child nodes by the value of a specified attribute.</descrip>
+            <args2>
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="ascending" type="bool" objcName="ascending" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SortByAttributeInt" axId="212">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ascending</argName>
+                    <objcName>ascending</objcName>
+                </arg>
+            </args>
+            <descrip>Sorts the direct child nodes by the value of a specified attribute interpreted as an integer (not lexicographically as strings).</descrip>
+            <args2>
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="ascending" type="bool" objcName="ascending" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SortByContent" axId="213">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ascending</argName>
+                    <objcName>ascending</objcName>
+                </arg>
+            </args>
+            <descrip>Sorts the direct child nodes by content.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>XML Sort by Content</text>
+                    <url>xml_sortByContent.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="ascending" type="bool" objcName="ascending" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SortByTag" axId="214">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ascending</argName>
+                    <objcName>ascending</objcName>
+                </arg>
+            </args>
+            <descrip>Sorts the direct child nodes by tag.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>XML Sort by Tag</text>
+                    <url>xml_sortByTag.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="ascending" type="bool" objcName="ascending" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SortRecordsByAttribute" axId="215">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sortTag</argName>
+                    <objcName>sortTag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ascending</argName>
+                    <objcName>ascending</objcName>
+                </arg>
+            </args>
+            <descrip>Sorts the direct child nodes by the content of an attribute in the grandchild nodes.</descrip>
+            <args2>
+                <arg name="sortTag" type="string" objcName="sortTag" />
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="ascending" type="bool" objcName="ascending" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SortRecordsByContent" axId="216">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sortTag</argName>
+                    <objcName>sortTag</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ascending</argName>
+                    <objcName>ascending</objcName>
+                </arg>
+            </args>
+            <descrip>Sorts the direct child nodes by the content of the grandchild nodes.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>XML Sort Records by Content</text>
+                    <url>xml_sortRecordsByContent.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="sortTag" type="string" objcName="sortTag" />
+                <arg name="ascending" type="bool" objcName="ascending" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SortRecordsByContentInt" axId="217">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sortTag</argName>
+                    <objcName>sortTag</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ascending</argName>
+                    <objcName>ascending</objcName>
+                </arg>
+            </args>
+            <descrip>Sorts the direct child nodes by the content of the grandchild nodes.  For sorting purposes, the content is  interpreted as an integer (not lexicographically as for strings).</descrip>
+            <args2>
+                <arg name="sortTag" type="string" objcName="sortTag" />
+                <arg name="ascending" type="bool" objcName="ascending" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SwapNode" axId="218">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>node</argName>
+                    <objcName>node</objcName>
+                </arg>
+            </args>
+            <descrip>Swaps another node's tag, content, and attributes with this one.</descrip>
+            <args2>
+                <arg name="node" type="Xml" objcName="node" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SwapTree" axId="219">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Xml</axType>
+                    <dnType>Xml</dnType>
+                    <cppType>CkXml &amp;</cppType>
+                    <argName>tree</argName>
+                    <objcName>tree</objcName>
+                </arg>
+            </args>
+            <descrip>Swaps another node's tag, content, attributes, and children with this one.</descrip>
+            <args2>
+                <arg name="tree" type="Xml" objcName="tree" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="TagContent" axId="220" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tagName</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the content of the 1st node found in the sub-tree rooted at the caller that has a given tag.  (Note: The search for the node having tag ARG is not limited to the direct children of the caller.)</descrip>
+            <args2>
+                <arg name="tagName" type="string" objcName="tag" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="TagEquals" axId="221">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the node's tag equals the specified string.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnzipContent" axId="222">
+            <gType>bool</gType>
+            <args />
+            <descrip>Unzip the content of the XML node replacing it's content with the decompressed data.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Compress XML Content</text>
+                    <url>xml_compress_content.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnzipTree" axId="223">
+            <gType>bool</gType>
+            <args />
+            <descrip>Unzips and recreates the XML node and the entire subtree, restoring it to the state before it was zip compressed.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Compress XML Tree</text>
+                    <url>xml_compress_tree.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UpdateAttribute" axId="224">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrValue</argName>
+                    <objcName>attrValue</objcName>
+                </arg>
+            </args>
+            <descrip>Adds an attribute to the node if it doesn't already exist. Otherwise it updates the existing attribute with the new value.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Update an XML Attribute</text>
+                    <url>xml_update_attribute.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="attrValue" type="string" objcName="attrValue" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UpdateAttributeInt" axId="225">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Updates an attribute value.  (Call UpdateAttribute if the attribute value is a string.)</descrip>
+            <args2>
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="UpdateChildContent" axId="226" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces the content of a child node.   The ARG1 can be a tag or tag path.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_UpdateChildContent.asp</url>
+                    <text>UpdateChildContent using a Tag Path</text>
+                </link>
+                <link linkType="example">
+                    <url>xml_updateChildContent_example_2.asp</url>
+                    <text>Xml.ChildContent Example #2</text>
+                </link>
+            </links2>
+        </method>
+        <method name="UpdateChildContentInt" axId="227" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces the content of a child node where the content is an integer.  The ARG1 can be a tag or tag path.
+&lt;p&gt;
+Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a series of tags separated by vertical bar characters.  For example: "tagA|tagB|tagC".</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ZipContent" axId="228">
+            <gType>bool</gType>
+            <args />
+            <descrip>Applies Zip compression to the content of an XML node and replaces the content with base64-encoded compressed data.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Compress XML Content</text>
+                    <url>xml_compress_content.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ZipTree" axId="229">
+            <gType>bool</gType>
+            <args />
+            <descrip>Zip compresses the content and entire subtree rooted at the calling XML node and replaces the current content with base64-encoded Zip compressed data.			The node and subtree can be restored by calling UnzipTree. Note that the node name and attributes are unaffected.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Compress XML Tree</text>
+                    <url>xml_compress_tree.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="LoadSb" axId="238" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+                <arg name="autoTrim" type="bool" objcName="autoTrim" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.62</iversion>
+            <descrip>Loads XML from the contents of a StringBuilder object.</descrip>
+        </method>
+        <method name="GetXmlSb" axId="239" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.62</iversion>
+            <descrip>Emits the XML to a StringBuilder object.  (Appends to the existing contents of ARG1.)</descrip>
+        </method>
+        <method name="NumChildrenAt" axId="243" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xml_i.asp</url>
+                    <text>Demonstrate the XML "I" Property</text>
+                </link>
+                <link linkType="example">
+                    <url>xml_ijk.asp</url>
+                    <text>Demonstrate the XML  I, J, and K Properties</text>
+                </link>
+            </links2>
+            <descrip>Returns the number of children for the node indicated by ARG1.   Returns -1 if the node at ARG1 does not exist.</descrip>
+        </method>
+        <method name="UpdateAt" axId="244" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Updates the content for the node indicated by ARG1.  If ARG2 is _TRUE_, then nodes along ARG1 are auto-created as needed.</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="autoCreate" type="bool" objcName="autoCreate" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xml_UpdateAt.asp</url>
+                    <text>Demonstrate the XML UpdateAt Method</text>
+                </link>
+            </links2>
+        </method>
+        <method name="UpdateAttrAt" axId="245" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Updates or adds the attribute value for the node indicated by ARG1.  If ARG2 is _TRUE_, then nodes along ARG1 are auto-created as needed.</descrip>
+            <args2>
+                <arg name="tagPath" type="string" objcName="tagPath" />
+                <arg name="autoCreate" type="bool" objcName="autoCreate" />
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="attrValue" type="string" objcName="attrValue" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xml_UpdateAttrAt.asp</url>
+                    <text>Demonstrate the XML UpdateAttrAt Method</text>
+                </link>
+                <link linkType="example">
+                    <url>xml_updateAttrAt_example_2.asp</url>
+                    <text>Xml.UpdateAttrAt Example #2</text>
+                </link>
+            </links2>
+        </method>
+    </methods>
+    <genericName>Xml</genericName>
+    <description>A free non-validating XML parser component with encryption and compression features.</description>
+    <clsid>501B9600-382D-454D-AA0A-3BC22A87C485</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>2077C1B5-FBD0-40DF-B7AA-E07CBA589CB0</uuidMidl>
+    <nextAxId>247</nextAxId>
+</class>

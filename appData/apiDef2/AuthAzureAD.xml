@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Bundle" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/AuthAzureAD.xml">
+    <genericName>AuthAzureAD</genericName>
+    <cppName>CkAuthAzureAD</cppName>
+    <dnName>AuthAzureAD</dnName>
+    <axName>ChilkatAuthAzureAD</axName>
+    <description>Provides functionality for obtaining an Azure AD access token via OAuth2 for Service to Service Calls Using Client Credentials.  (See https://msdn.microsoft.com/en-us/library/dn645543.aspx)</description>
+    <methods>
+        <method name="ObtainAccessToken" read="1" write="1" axId="107" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sends the HTTP request to fetch the access token.  When this method completes successfully, the access token is available in the AccessToken property.  The ARG1 is an existing connection to login.microsoftonline.com.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>connection</argName>
+                    <cppType>CkSocket &amp;</cppType>
+                    <dnType>Socket</dnType>
+                    <axType>Socket</axType>
+                    <objcName>connection</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="connection" type="Socket" objcName="connection" />
+            </args2>
+        </method>
+    </methods>
+    <properties>
+        <property name="TenantId" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>_TRUE_ if the AccessToken property contains a valid non-expired access token obtained via the call to ObtainAccessToken.</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+        <property name="ClientId" read="1" write="1" ax="1" cpp="1" dn="1" axId="101">
+            <gType>string</gType>
+            <descrip>Specifies the Azure AD client id of the calling web service.  To find the calling application's client ID, in the Azure Management Portal, click &lt;b&gt;Active Directory&lt;/b&gt;, click the directory, click the application, and then click &lt;b&gt;Configure&lt;/b&gt;.</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+        <property name="ClientSecret" read="1" write="1" ax="1" cpp="1" dn="1" axId="102">
+            <gType>string</gType>
+            <descrip>A key registered for the calling web service in Azure AD. To create a key, in the Azure Management Portal, click &lt;b&gt;Active Directory&lt;/b&gt;, click the directory, click the application, and then click &lt;b&gt;Configure&lt;/b&gt;.</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+        <property name="Resource" read="1" write="1" ax="1" cpp="1" dn="1" axId="103">
+            <gType>string</gType>
+            <descrip>The App ID URI of the receiving web service. To find the App ID URI, in the Azure Management Portal, click &lt;b&gt;Active Directory&lt;/b&gt;, click the directory, click the application, and then click &lt;b&gt;Configure&lt;/b&gt;.</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+        <property name="AccessToken" read="1" write="1" ax="1" cpp="1" dn="1" axId="104">
+            <gType>string</gType>
+            <descrip>The access token to be used in Azure AD REST API requests.   This property is set on a successful call to ObtainAccessToken.</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+        <property name="NumSecondsRemaining" read="1" ax="1" cpp="1" dn="1" axId="105">
+            <gType>int</gType>
+            <descrip>If the access token is valid, contains the number of seconds remaining until it expires.   A value of 0 indicates an invalid or expired access token.</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+        <property name="Valid" read="1" ax="1" cpp="1" dn="1" axId="108">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the AccessToken property contains a valid non-expired access token obtained via the call to ObtainAccessToken.</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+    </properties>
+    <events />
+    <clsid>B1BB04F7-7CA9-4BD7-AE19-EA936D611F91</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>30CFF41F-FAF8-4E11-9476-BF32225B6612</uuidEvents>
+    <uuidMidl>B2AA3D60-500A-4725-8430-3A5F16D97D58</uuidMidl>
+    <nextAxId>109</nextAxId>
+</class>

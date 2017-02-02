@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Bundle" sourceXmlPath="C:/ck2000/appData/apiDef2/AuthAws.xml">
+    <genericName>AuthAws</genericName>
+    <cppName>CkAuthAws</cppName>
+    <dnName>AuthAws</dnName>
+    <axName>ChilkatAuthAws</axName>
+    <description>Implements AWS Signature V4 for signing and authenticating AWS REST requests.</description>
+    <methods />
+    <properties>
+        <property name="AccessKey" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The AWS access key.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+        </property>
+        <property name="CanonicalizedResourceV2" read="1" write="1" ax="1" cpp="1" dn="1" axId="106">
+            <gType>string</gType>
+            <descrip>If AWS Signature Version V2 is used, then this property must be set.  The rules for setting the canonicalized resource for the V2 signature method is described here: &lt;a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/RESTAuthentication.html#ConstructingTheCanonicalizedResourceElement"&gt;Constructing the CanonicalizedResource Element&lt;/a&gt;.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>rest_stream_to_file_v2.asp</url>
+                    <text>(using AWS Signature Version 2) Streaming Download to File</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="PrecomputedMd5" read="1" write="1" ax="1" cpp="1" dn="1" axId="107">
+            <gType>string</gType>
+            <descrip>This property can optionally be set for AWS requests that have a non-empty request body.  This should be the base64 encoding of the 16 bytes of the MD5 hash. The most common need for this is if doing an S3 upload from a stream.  (If the pre-computed MD5  is not provided, then Chilkat is forced to stream the entire file into memory so that it can calculate the MD5 for authentication.)
+&lt;p&gt;
+&lt;b&gt;Note: &lt;/b&gt;AWS Signature Version 2 uses the MD5, whereas Signature Version 4 uses SHA256.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+        </property>
+        <property name="PrecomputedSha256" axId="105" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>This property can optionally be set for AWS requests that have a non-empty request body.  This should be the lowercase hex encoding of the 32-bytes of the SHA256 hash. The most common need for this is if doing an S3 upload from a stream.  (If the pre-computed SHA-256 is not provided, then Chilkat is forced to stream the entire file into memory so that it can calculate the SHA-256 for authentication.)
+&lt;p&gt;
+&lt;b&gt;Note: &lt;/b&gt;AWS Signature Version 4 uses the SHA256 hash.  (AWS Signature Version 2 uses MD5)</descrip>
+            <iversion>9.5.0.58</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>s3_file_stream_upload.asp</url>
+                    <text>AWS S3 File Streaming Upload</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="Region" read="1" write="1" ax="1" cpp="1" dn="1" axId="103">
+            <gType>string</gType>
+            <descrip>The AWS  region, such as "us-east-1", "us-west-2", "eu-west-1", "eu-central-1", etc.  The default is "us-east-1".  It is only used when the SignatureVersion property is set to 4.  This property is unused when the SignatureVersion property is set to 2.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+        </property>
+        <property name="SecretKey" axId="101" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The AWS secret key.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+        </property>
+        <property name="ServiceName" read="1" write="1" ax="1" cpp="1" dn="1" axId="104">
+            <gType>string</gType>
+            <descrip>The AWS service namespace, such as "s3", "ses", etc.  See http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#genref-aws-service-namespaces
+&lt;p&gt;This property is unused when the SignatureVersion property is set to 2.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+        </property>
+        <property name="SignatureVersion" read="1" write="1" ax="1" cpp="1" dn="1" axId="108">
+            <gType>int</gType>
+            <descrip>The AWS Signature Version to be used in authentication.  The default value is 4.  This can optionally be set to the value 2 to use the older V2 signature version.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+        </property>
+    </properties>
+    <events />
+    <clsid>0481098A-742F-4E3C-BBF5-B1D94EC62CE0</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>4E737594-4147-4E1D-A1A9-8A55E3FE603E</uuidMidl>
+    <nextAxId>109</nextAxId>
+</class>

@@ -1,0 +1,12 @@
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\bin\x64\Debug\GenSample.exe.config
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\bin\x64\Debug\GenSample.exe
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\bin\x64\Debug\GenSample.pdb
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\obj\x64\Debug\GenSample.csprojResolveAssemblyReference.cache
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\obj\x64\Debug\GenSample.Form1.resources
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\obj\x64\Debug\GenSample.Properties.Resources.resources
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\obj\x64\Debug\GenSample.csproj.GenerateResource.Cache
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\obj\x64\Debug\GenSample.exe
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\obj\x64\Debug\GenSample.pdb
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\bin\x64\Debug\ChilkatApi.dll
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\bin\x64\Debug\ChilkatDotNet45.dll
+C:\ckGitHubProjects\Chilkat-Code-Generate\GenSample\bin\x64\Debug\ChilkatApi.pdb

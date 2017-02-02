@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>FileAddedEventArgs</genericName>
+    <cppName>CkFileAddedEventArgs</cppName>
+    <dnName>FileAddedEventArgs</dnName>
+    <axName>ChilkatFileAddedEventArgs</axName>
+    <description>Provides data for the Chilkat.Zip's OnFileAdded event.</description>
+    <methods />
+    <properties>
+        <property name="Abort" read="1" write="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>Set to _TRUE_ to abort appending files.</descrip>
+        </property>
+        <property name="FileName" read="1" dn="1">
+            <gType>string</gType>
+            <cppType />
+            <descrip>The filename just added to the zip when appending files (such as via the AppendFIles or AppendFilesEx methods)</descrip>
+        </property>
+        <property name="FileSize" read="1" dn="1">
+            <gType>int64</gType>
+            <cppType />
+            <descrip>The size of the file just added via AppendFiles / AppendFilesEx.</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

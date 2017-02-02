@@ -1,0 +1,669 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="609848371" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/PublicKey.xml">
+    <nextAxId>131</nextAxId>
+    <dnName>PublicKey</dnName>
+    <cppName>CkPublicKey</cppName>
+    <properties>
+        <property name="KeyType" read="1" ax="1" cpp="1" dn="1" axId="118">
+            <gType>string</gType>
+            <descrip>The type of public  key.  Can be "empty", "rsa", "dsa", or "ecc".</descrip>
+            <iversion>9.5.0.52</iversion>
+            <links2 />
+            <args2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="GetOpenSslDer" axId="100" ax="1" cpp="1" dn="1" deprecated="1" status="1" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call GetDer with preference for PKCS8 instead.
+&lt;p&gt;
+Gets the public key in PKCS8 DER format.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetOpenSslPem" axId="101" ax="1" cpp="1" dn="1" deprecated="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call GetPem with preference for PKCS8 instead.
+&lt;p&gt;
+Gets the public key in PKCS8 PEM format.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetPkcs1ENC" axId="120" ax="1" cpp="1" dn="1" deprecated="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>This method is deprecated.  Applications should call GetEncoded with preference for PKCS1 instead.
+&lt;p&gt;
+Gets the public key in PKCS1 format and returns in an encoded string, as specified by the ARG1 argument.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Supported Binary Encodings</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="GetPkcs8ENC" axId="119" ax="1" cpp="1" dn="1" deprecated="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>This method is deprecated.  Applications should call GetEncoded with preference for PKCS8 instead.
+&lt;p&gt;
+Gets the public key in PKCS8 format and returns in an encoded string, as specified by the ARG1 argument.</descrip>
+            <args>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.52</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Supported Binary Encodings</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="GetRsaDer" axId="102" ax="1" cpp="1" dn="1" deprecated="1" status="1" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call GetDer with preference for PKCS1 instead.
+&lt;p&gt;
+Gets the public key in PKCS1 DER format.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetXml" axId="103" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Gets the public key in XML format.  The format depends on the key type. The key parts indicated by "..." are base64 encoded.
+&lt;p&gt;
+RSA public keys have this XML format:
+&lt;pre&gt;
+&amp;lt;RSAKeyValue&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;Modulus&amp;gt;...&amp;lt;/Modulus&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;Exponent&amp;gt;...&amp;lt;/Exponent&amp;gt;
+&amp;lt;/RSAKeyValue&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;
+DSA public keys have this XML format:
+&lt;pre&gt;
+&amp;lt;DSAPublicKey&amp;gt;
+    &amp;lt;P&amp;gt;...&amp;lt;/P&amp;gt;
+    &amp;lt;Q&amp;gt;...&amp;lt;/Q&amp;gt;
+    &amp;lt;G&amp;gt;...&amp;lt;/G&amp;gt;
+    &amp;lt;Y&amp;gt;...&amp;lt;/Y&amp;gt;
+&amp;lt;/DSAPublicKey&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;
+ECC public keys have this XML format:
+&lt;pre&gt;
+&amp;lt;ECCPublicKey curve="CURVE_NAME" x="HEX_DATA" y="HEX_DATA"&amp;gt;...&amp;lt;/ECCPublicKey&amp;gt;
+&lt;/pre&gt;</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="LoadBase64" axId="117" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads a public key from base64-encoded DER (can be PKCS1 or PKCS8).</descrip>
+            <args>
+                <arg>
+                    <argName>keyStr</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>keyStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.47</iversion>
+            <args2>
+                <arg name="keyStr" type="string" objcName="keyStr" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadOpenSslDer" axId="104" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromBinary instead.
+&lt;p&gt;
+Loads a public key from in-memory PKCS8 DER formatted byte data.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadOpenSslDerFile" axId="105" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromFile  instead.
+&lt;p&gt;
+Loads a public key from an PKCS8 DER format file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadOpenSslPem" axId="106" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromString instead.
+&lt;p&gt;
+Loads a public key from an PKCS8 PEM string.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadOpenSslPemFile" axId="107" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromFile  instead.
+&lt;p&gt;
+Loads a public key from an PKCS8 PEM file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPkcs1Pem" axId="108" ax="1" cpp="1" dn="1" deprecated="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromString instead.
+&lt;p&gt;
+Loads an RSA public key from PKCS#1 PEM format.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadRsaDer" axId="109" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromBinary instead.
+&lt;p&gt;
+Loads a public key from in-memory PKCS1 DER formatted byte data.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadRsaDerFile" axId="110" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromFile  instead.
+&lt;p&gt;
+Loads a public key from an PKCS1 DER formatted file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadXml" axId="111" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>xml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromString instead.
+&lt;p&gt;
+Loads a public key from an XML string.</descrip>
+            <args2>
+                <arg name="xml" type="string" objcName="xml" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadXmlFile" axId="112" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call LoadFromFile  instead.
+&lt;p&gt;
+Loads a public key from an XML file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SaveOpenSslDerFile" axId="113" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call SaveDerFile with preference for PKCS8 instead.
+&lt;p&gt;
+Saves the public key to an PKCS8 DER format file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SaveOpenSslPemFile" axId="114" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call SavePemFile with preference for PKCS8 instead.
+&lt;p&gt;
+Saves the public key to an PKCS8 PEM format file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>rsa_generatePEM.asp</url>
+                    <text>Generate RSA Public/Private Key Pair and Export to PEM</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method name="SaveRsaDerFile" axId="115" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should call SaveDerFile with preference for PKCS1 instead.
+&lt;p&gt;
+Saves the public key to an PKCS1 DER format file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SaveXmlFile" axId="116" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the public key to an XML file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadFromBinary" ax="1" cpp="1" dn="1" status="1" axId="121">
+            <gType>bool</gType>
+            <descrip>Loads a public key from binary DER.  Auto-recognizes both PKCS1 and PKCS8 formats.</descrip>
+            <args>
+                <arg>
+                    <argName>keyBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <dnType>bytes</dnType>
+                    <axType>bytes</axType>
+                    <objcName>keyBytes</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.58</iversion>
+            <args2>
+                <arg name="keyBytes" type="bytes" objcName="keyBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadFromString" axId="122" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads a public key from any string format, such as PEM, XML, or encoded binary DER (such as base64 encoded binary DER).  The format of the ARG1 is auto-recognized.
+&lt;p&gt;
+Starting in version 9.5.0.66, this method also supports loading the JWK (JSON Web Key) format.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>keyString</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>keyString</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="keyString" type="string" objcName="keyString" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadFromFile" axId="123" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads a public key from a file.  The file can be in any string or binary format such as binary DER (PKCS1 or PKCS8), PEM, XML, or encoded binary DER (such as base64 encoded binary DER).  The format of the contents of the file is auto-recognized.
+&lt;p&gt;
+Starting in version 9.5.0.66, this method also supports loading the JWK (JSON Web Key) format.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetDer" axId="124" outArgName="outBytes" ax="1" cpp="1" dn="1" status="1">
+            <gType>bytes</gType>
+            <descrip>Returns the public key in binary DER format.  If the key type (such as RSA) supports both PKCS1 and PKCS8 formats, then ARG1 determine which format is returned.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>preferPkcs1</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>preferPkcs1</objcName>
+                </arg>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="preferPkcs1" type="bool" objcName="preferPkcs1" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetPem" ax="1" cpp="1" dn="1" status="1" axId="125" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the public key in PEM  format.  If the key type (such as RSA) supports both PKCS1 and PKCS8 formats, then ARG1 determine which format is returned.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>preferPkcs1</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>preferPkcs1</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="preferPkcs1" type="bool" objcName="preferPkcs1" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetEncoded" ax="1" cpp="1" dn="1" status="1" axId="126" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the public key in DER format as an encoded string (such as base64 or hex).  If the key type (such as RSA) supports both PKCS1 and PKCS8 formats, then ARG1 determine which format is returned.  The ARG2 specifies the encoding, which is typically "base64".</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>preferPkcs1</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>preferPkcs1</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="preferPkcs1" type="bool" objcName="preferPkcs1" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SaveDerFile" ax="1" cpp="1" dn="1" status="1" axId="127">
+            <gType>bool</gType>
+            <descrip>Saves the public key to a file in binary DER format.  If the key type (such as RSA) supports both PKCS1 and PKCS8 formats, then ARG1 determine which format is returned.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>preferPkcs1</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>preferPkcs1</objcName>
+                </arg>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="preferPkcs1" type="bool" objcName="preferPkcs1" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SavePemFile" ax="1" cpp="1" dn="1" status="1" axId="128">
+            <gType>bool</gType>
+            <descrip>Saves the public key to a file in PEM format.  If the key type (such as RSA) supports both PKCS1 and PKCS8 formats, then ARG1 determine which format is returned.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>preferPkcs1</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>preferPkcs1</objcName>
+                </arg>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="preferPkcs1" type="bool" objcName="preferPkcs1" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>convert_private_key_to_public_key.asp</url>
+                    <text>Convert RSA Private Key to Public Key</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetJwk" axId="129" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Gets the public key in  JWK (JSON Web Key) format.  
+&lt;p&gt;
+RSA public keys have this JWK format:
+&lt;pre&gt;
+         {"kty":"RSA",
+          "n": "0vx7agoebGcQSuuPiLJXZptN9 ... U8awapJzKnqDKgw",
+          "e":"AQAB"}
+&lt;/pre&gt;
+&lt;p&gt;
+ECC public keys have this JWK format:
+&lt;pre&gt;
+         {"kty":"EC",
+          "crv":"P-256",
+          "x":"MKBCTNIcKUSDii11ySs3526iDZ8AiTo7Tu6KPAqv7D4",
+          "y":"4Etl6SRW2YiLUrN5vfvVHuhp7x8PxltmWWlbbM4IFyM"}
+&lt;/pre&gt;</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>publickey_ecc_get_jwk_format.asp</url>
+                    <text>Get ECC Public Key in JWK Format (JSON Web Key)</text>
+                </link>
+                <link linkType="example">
+                    <url>publickey_rsa_get_jwk_format.asp</url>
+                    <text>Get RSA Public Key in JWK Format (JSON Web Key)</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.66</iversion>
+        </method>
+        <method name="GetJwkThumbprint" axId="130" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Returns the JWK thumbprint for the public key.  This is the  thumbprint of  the JSON Web Key (JWK) as per RFC 7638.</descrip>
+            <args2>
+                <arg name="hashAlg" type="string" objcName="hashAlg" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jwk_public_key_thumbprint.asp</url>
+                    <text>Compute JWK Thumbprint for RSA and EC Public Keys</text>
+                </link>
+            </links2>
+        </method>
+    </methods>
+    <genericName>PublicKey</genericName>
+    <description>Contains an RSA, DSA, or ECC public key.  Provides methods for importing and exporting to/from PEM, DER, PKCS8, PKCS1, and XML formats.  Public keys can be imported/exported to both memory and files.</description>
+    <clsid>3EDACCBC-87DE-45C5-8885-94B6820BE11A</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>D1EC207F-F466-4114-A304-DF34751223A1</uuidMidl>
+    <axName>PublicKey</axName>
+</class>

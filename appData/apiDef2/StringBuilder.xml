@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Free" noBaseEntries="1" sourceXmlPath="C:/ck2000/appData/apiDef2/StringBuilder.xml">
+    <genericName>StringBuilder</genericName>
+    <cppName>CkStringBuilder</cppName>
+    <dnName>StringBuilder</dnName>
+    <axName>ChilkatStringBuilder</axName>
+    <description>A simple class for building strings.  (Represents a mutable string of characters.)
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; This class was introduced in Chilkat v9.5.0.58.</description>
+    <methods>
+        <method name="Append" axId="100" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends a copy of the specified string to this instance.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendInt" ax="1" cpp="1" dn="1" status="1" axId="101">
+            <gType>bool</gType>
+            <descrip>Appends the string representation of a specified 32-bit signed integer to this instance.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendInt64" ax="0" cpp="1" dn="1" status="1" axId="102">
+            <gType>bool</gType>
+            <descrip>Appends the string representation of a specified 64-bit signed integer to this instance.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>__int64</cppType>
+                    <dnType>int64</dnType>
+                    <axType>int64</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="int64" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendEncoded" ax="1" cpp="1" dn="1" status="1" axId="103">
+            <gType>bool</gType>
+            <descrip>Appends binary data using the encoding specified by ARG2, such as "base64", "hex", etc.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>binaryData</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <dnType>bytes</dnType>
+                    <axType>bytes</axType>
+                    <objcName>binaryData</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="binaryData" type="bytes" objcName="binaryData" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>hash_file_sha256.asp</url>
+                    <text>Hash the Contents of a File (SHA256 and other hash algorithms)</text>
+                </link>
+            </links2>
+        </method>
+        <method name="Clear" ax="1" cpp="1" dn="1" axId="104">
+            <gType>void</gType>
+            <descrip>Removes all characters from the current StringBuilder instance.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="Replace" axId="105" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>Replaces all occurrences of a specified string in this instance with another specified string.  Returns the number of replacements.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>value</objcName>
+                </arg>
+                <arg>
+                    <argName>replacement</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>replacement</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="string" objcName="value" />
+                <arg name="replacement" type="string" objcName="replacement" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetAsString" ax="1" cpp="1" dn="1" axId="108" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the contents as a string.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="ContentsEqual" axId="109" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the contents of this object equals the ARG1.  Returns _FALSE_ if unequal.  For case insensitive equality, set ARG2 equal to _FALSE_.</descrip>
+            <iversion>9.5.0.62</iversion>
+            <args>
+                <arg>
+                    <argName>str</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <argName>caseSensitive</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>caseSensitive</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Contains" ax="1" cpp="1" dn="1" axId="110">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the ARG2 is contained within this object.   For case sensitive matching, set ARG2 equal to _TRUE_.  For case-insensitive, set ARG2 equal to _FALSE_.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>str</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <argName>caseSensitive</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>caseSensitive</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Prepend" axId="111" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Prepends a copy of the specified string to this instance.</descrip>
+            <args2>
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <iversion>9.5.0.61</iversion>
+            <links2 />
+        </method>
+        <method name="SetString" axId="112" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets this instance to a copy of the specified string.</descrip>
+            <args2>
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <iversion>9.5.0.61</iversion>
+            <links2 />
+        </method>
+        <method name="Encode" axId="113" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Supported Binary Encodings</text>
+                </link>
+                <link linkType="example">
+                    <url>stringbuilder_encode.asp</url>
+                    <text>StringBuilder Encode</text>
+                </link>
+                <link linkType="example">
+                    <url>edifact_eda_syntax_level_A_encoding.asp</url>
+                    <text>UN/EDIFACT Syntax Level A Encoding/Decoding</text>
+                </link>
+                <link linkType="example">
+                    <url>json_escape_unescape_string.asp</url>
+                    <text>JSON Escape and Unescape a String</text>
+                </link>
+            </links2>
+            <descrip>Encodes to base64, hex, quoted-printable, or URL-encoding. The ARG1 can be set to any of the following strings: "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).   The full up-to-date list of supported binary encodings is available at the link entitled "Supported Binary Encodings" below.</descrip>
+        </method>
+        <method name="GetEncoded" axId="114" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Returns the string contents encoded in an encoding such as base64, hex, quoted-printable, or URL-encoding. The ARG1 can be set to any of the following strings: "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).   The full up-to-date list of supported binary encodings is available at the link entitled "Supported Binary Encodings" below.
+&lt;p&gt;
+Note: The Encode method modifies the content of this object.  The GetEncoded method leaves this object's content unmodified.</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Supported Binary Encodings</text>
+                </link>
+                <link linkType="example">
+                    <url>stringbuilder_getEncoded.asp</url>
+                    <text>StringBuilder GetEncoded</text>
+                </link>
+                <link linkType="example">
+                    <url>stringbuilder_encode_charset.asp</url>
+                    <text>StringBuilder Encode Charset</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetDecoded" axId="115" ax="1" cpp="1" dn="1">
+            <gType>bytes</gType>
+            <descrip>Decodes and returns the decoded bytes. The ARG1 can be set to any of the following strings: "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).   The full up-to-date list of supported binary encodings is available at the link entitled "Supported Binary Encodings" below.</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="Decode" axId="116" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Decodes and replaces the contents with the decoded string. The ARG1 can be set to any of the following strings: "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).   The full up-to-date list of supported binary encodings is available at the link entitled "Supported Binary Encodings" below.
+&lt;p&gt;
+Note: This method can only be called if the encoded content decodes to a string.  The ARG2 indicates the charset to be used in intepreting the decoded bytes.  For example, the ARG2 can be "utf-8", "utf-16", "iso-8859-1", "shift_JIS", etc.</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>json_escape_unescape_string.asp</url>
+                    <text>JSON Escape and Unescape a String</text>
+                </link>
+            </links2>
+        </method>
+        <method name="Trim" axId="117" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2 />
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Trims whitespace from both ends of the string.</descrip>
+        </method>
+        <method name="TrimInsideSpaces" axId="118" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2 />
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Replaces all tabs, CR's, and LF's, with SPACE chars, and removes extra SPACE's so there are no occurances of more than one SPACE char in a row.</descrip>
+        </method>
+        <method name="StartsWith" axId="119" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="substr" type="string" objcName="substr" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Returns _TRUE_ if the string starts with ARG1.  Otherwise returns _FALSE_.  The comparison is case sensitive if ARG2 is _TRUE_, and case insensitive if ARG2 is _FALSE_.</descrip>
+        </method>
+        <method name="EndsWith" axId="120" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the string ends with ARG1.  Otherwise returns _FALSE_.  The comparison is case sensitive if ARG2 is _TRUE_, and case insensitive if ARG2 is _FALSE_.</descrip>
+            <args2>
+                <arg name="substr" type="string" objcName="substr" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="ToLowercase" axId="121" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2 />
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Converts the contents to lowercase.</descrip>
+        </method>
+        <method name="ToUppercase" axId="122" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Converts the contents to uppercase.</descrip>
+            <args2 />
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="ToCRLF" axId="123" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Converts line endings to CRLF (Windows) format.</descrip>
+            <args2 />
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="ToLF" axId="124" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Converts line endings to LF-only (UNIX) format.</descrip>
+            <args2 />
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="EntityDecode" axId="125" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2 />
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringbuilder_entity_decode.asp</url>
+                    <text>StringBuilder EntityDecode</text>
+                </link>
+            </links2>
+            <descrip>Decodes HTML entities.  See &lt;a href="https://duckduckgo.com/?q=html+entities&amp;bext=wfp&amp;ia=web"&gt;HTML entities&lt;/a&gt; for more information about HTML entities.</descrip>
+        </method>
+        <method name="ReplaceWord" axId="126" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>Replaces all word occurrences of a specified string in this instance with another specified string.  Returns the number of replacements made.</descrip>
+            <args2>
+                <arg name="value" type="string" objcName="value" />
+                <arg name="replacement" type="string" objcName="replacement" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringbuilder_replaceWord.asp</url>
+                    <text>StringBuilder ReplaceWord</text>
+                </link>
+            </links2>
+        </method>
+        <method name="ReplaceBetween" axId="127" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2>
+                <arg name="beginMark" type="string" objcName="beginMark" />
+                <arg name="endMark" type="string" objcName="endMark" />
+                <arg name="value" type="string" objcName="value" />
+                <arg name="replacement" type="string" objcName="replacement" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringbuilder_replaceBetween.asp</url>
+                    <text>StringBuilder ReplaceBetween</text>
+                </link>
+            </links2>
+            <descrip>Replaces all occurrences of ARG3 with ARG4, but only where ARG3 is found between ARG1 and ARG2.  Returns the number of replacements made.</descrip>
+        </method>
+        <method name="GetBetween" axId="128" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="beginMark" type="string" objcName="beginMark" />
+                <arg name="endMark" type="string" objcName="endMark" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringbuilder_getBetween.asp</url>
+                    <text>StringBuilder GetBetween</text>
+                </link>
+            </links2>
+            <descrip>Returns the substring found between the 1st occurrence of ARG1 and the next occurrence of ARG2.</descrip>
+        </method>
+        <method name="GetAfterBetween" axId="129" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Begin searching after the 1st occurrence of ARG1 is found, and then return the substring found between the next occurrence of ARG2 and the next occurrence of ARG3.</descrip>
+            <args2>
+                <arg name="searchAfter" type="string" objcName="searchAfter" />
+                <arg name="beginMark" type="string" objcName="beginMark" />
+                <arg name="endMark" type="string" objcName="endMark" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringbuilder_getAfterBetween.asp</url>
+                    <text>StringBuilder GetAfterBetween</text>
+                </link>
+                <link linkType="example">
+                    <url>preprocessor_include.asp</url>
+                    <text>Implement Preprocessor #include with StringBuilder</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetNth" axId="130" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="delimiterChar" type="string" objcName="delimiterChar" />
+                <arg name="exceptDoubleQuoted" type="bool" objcName="exceptDoubleQuoted" />
+                <arg name="exceptEscaped" type="bool" objcName="exceptEscaped" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringbuilder_getNth.asp</url>
+                    <text>StringBuilder GetNth</text>
+                </link>
+            </links2>
+            <descrip>Returns the Nth substring in string that is a list delimted by ARG2.  The first substring is at index 0.  If ARG3 is _TRUE_, then the delimiter char found between double quotes is not treated as a delimiter.  If ARG4 is _TRUE_, then an escaped (with a backslash) delimiter char is not treated as a delimiter.</descrip>
+        </method>
+        <method name="SetNth" axId="131" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the Nth substring in string in a list delimted by ARG3.  The first substring is at index 0.  If ARG4 is _TRUE_, then the delimiter char found between double quotes is not treated as a delimiter.  If ARG5 is _TRUE_, then an escaped (with a backslash) delimiter char is not treated as a delimiter.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="value" type="string" objcName="value" />
+                <arg name="delimiterChar" type="string" objcName="delimiterChar" />
+                <arg name="exceptDoubleQuoted" type="bool" objcName="exceptDoubleQuoted" />
+                <arg name="exceptEscaped" type="bool" objcName="exceptEscaped" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringbuilder_setNth.asp</url>
+                    <text>StringBuilder SetNth</text>
+                </link>
+            </links2>
+        </method>
+        <method name="LoadFile" axId="134" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Loads the contents of a file.</descrip>
+        </method>
+        <method name="WriteFile" axId="135" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes the contents to a file.  If ARG3 is _TRUE_, then the BOM (also known as a preamble), is emitted for charsets that define a BOM (such as utf-8, utf-16, utf-32, etc.)</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="emitBom" type="bool" objcName="emitBom" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="AppendSb" axId="136" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends the contents of another StringBuilder to this instance.</descrip>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="ContentsEqualSb" axId="137" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the contents of this object equals the ARG1.  Returns _FALSE_ if unequal.  For case insensitive equality, set ARG2 equal to _FALSE_.</descrip>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="LastNLines" axId="138" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="numLines" type="int" objcName="numLines" />
+                <arg name="bCrlf" type="bool" objcName="bCrlf" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringbuilder_lastNLines.asp</url>
+                    <text>Get the Last N Lines of a StringBuilder</text>
+                </link>
+            </links2>
+            <descrip>Returns the last N lines of the text.  If fewer than ARG1 lines exists, then all of the text is returned.  If ARG2 is _TRUE_, then the line endings of the returned string are converted to CRLF, otherwise the line endings are converted to LF-only.</descrip>
+        </method>
+        <method name="AppendBd" axId="139" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends the contents of ARG1.   The ARG2 specifies the character encoding of the bytes contained in ARG1.  The ARG2 can be any of the supported encodings listed at &lt;a href="http://cknotes.com/chilkat-charsets-character-encodings-supported/"&gt;Chilkat Supported Character Encodings&lt;/a&gt;.   To append the entire contents of ARG1, set ARG3 and ARG4 equal to zero.  To append a range of ARG1, set the ARG3 and ARG4 to specify the range.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="offset" type="int" objcName="offset" />
+                <arg name="numBytes" type="int" objcName="numBytes" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2 />
+        </method>
+        <method name="ReplaceAllBetween" axId="140" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Replaces the first occurrence of the content found between ARG1 and ARG2 with ARG3.   The ARG1 and ARG2 are included in what is replaced if ARG4 is _TRUE_.</descrip>
+            <args2>
+                <arg name="beginMark" type="string" objcName="beginMark" />
+                <arg name="endMark" type="string" objcName="endMark" />
+                <arg name="replacement" type="string" objcName="replacement" />
+                <arg name="replaceMarks" type="bool" objcName="replaceMarks" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>preprocessor_include.asp</url>
+                    <text>Implement Preprocessor #include with StringBuilder</text>
+                </link>
+            </links2>
+        </method>
+        <method name="AppendLine" axId="141" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends the ARG1 followed by a CRLF or LF  to the end of the curent StringBuilder object.   If ARG2 is _TRUE_, then a CRLF line ending is used.  Otherwise a LF line ending is used.</descrip>
+            <args2>
+                <arg name="value" type="string" objcName="value" />
+                <arg name="crlf" type="bool" objcName="crlf" />
+            </args2>
+            <iversion>9.5.0.65</iversion>
+            <links2 />
+        </method>
+    </methods>
+    <properties>
+        <property name="Length" axId="107" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The number of characters of the string contained within this instance.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="IntValue" axId="133" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <iversion>9.5.0.58</iversion>
+            <links2 />
+            <descrip>Returns the content of the string converted to an integer.</descrip>
+        </property>
+    </properties>
+    <events />
+    <clsid>92B5CBD6-68B3-4C17-A717-696CC27D893E</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>78C0A2E3-8712-4C8E-9FD0-24FB3E003A72</uuidMidl>
+    <nextAxId>142</nextAxId>
+</class>

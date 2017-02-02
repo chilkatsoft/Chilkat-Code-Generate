@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/StreamConnector.xml">
+    <genericName>StreamConnector</genericName>
+    <cppName>CkStreamConnector</cppName>
+    <dnName>StreamConnector</dnName>
+    <axName>ChilkatStreamConnector</axName>
+    <description>This is a utility class that makes it possible to use System.IO.Stream objects with Chilkat.</description>
+    <methods>
+        <method name="SetAsSink" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the ARG1 to be the sink of ARG2.</descrip>
+            <args>
+                <arg>
+                    <argName>dnStream</argName>
+                    <cppType>CkSystem.IO.Stream &amp;</cppType>
+                    <dnType>System.IO.Stream</dnType>
+                    <axType>System.IO.Stream</axType>
+                    <objcName>dnStream</objcName>
+                </arg>
+                <arg>
+                    <argName>strm</argName>
+                    <cppType>CkStream &amp;</cppType>
+                    <dnType>Stream</dnType>
+                    <axType>Stream</axType>
+                    <objcName>strm</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.56</iversion>
+            <links2>
+                <link linkType="example" lang="csharp">
+                    <url>stream_connector_cs.asp</url>
+                    <text>Using a .NET System.IO.Stream with Chilkat</text>
+                </link>
+                <link linkType="example" lang="vbnet">
+                    <url>stream_connector_vbnet.asp</url>
+                    <text>Using a .NET System.IO.Stream with Chilkat</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="dnStream" type="System.IO.Stream" objcName="dnStream" />
+                <arg name="strm" type="Stream" objcName="strm" />
+            </args2>
+        </method>
+        <method name="SetAsSource" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the ARG1 to be the source  of ARG2.</descrip>
+            <iversion>9.5.0.56</iversion>
+            <args>
+                <arg>
+                    <argName>dnStream</argName>
+                    <cppType>CkSystem.IO.Stream &amp;</cppType>
+                    <dnType>System.IO.Stream</dnType>
+                    <axType>System.IO.Stream</axType>
+                    <objcName>dnStream</objcName>
+                </arg>
+                <arg>
+                    <argName>strm</argName>
+                    <cppType>CkStream &amp;</cppType>
+                    <dnType>Stream</dnType>
+                    <axType>Stream</axType>
+                    <objcName>strm</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example" lang="csharp">
+                    <url>stream_connector_cs.asp</url>
+                    <text>Using a .NET System.IO.Stream with Chilkat</text>
+                </link>
+                <link linkType="example" lang="vbnet">
+                    <url>stream_connector_vbnet.asp</url>
+                    <text>Using a .NET System.IO.Stream with Chilkat</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="dnStream" type="System.IO.Stream" objcName="dnStream" />
+                <arg name="strm" type="Stream" objcName="strm" />
+            </args2>
+        </method>
+    </methods>
+    <properties />
+    <events />
+</class>

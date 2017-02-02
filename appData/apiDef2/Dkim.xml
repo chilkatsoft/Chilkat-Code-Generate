@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="719026866" license="Mime" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Dkim.xml">
+    <axName>ChilkatDkim</axName>
+    <dnName>Dkim</dnName>
+    <cppName>CkDkim</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DkimAlg" axId="100">
+            <gType>string</gType>
+            <descrip>The signing algorithm to be used in creating the DKIM-Signature.  Possible values are "rsa-sha256" and "rsa-sha1".  The default value is "rsa-sha256".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DkimBodyLengthCount" axId="101">
+            <gType>int</gType>
+            <descrip>Optional body length count to set a maximum number of body bytes to be hashed when creating the DKIM-Signature field.   The default value is 0, indicating that the entire body should be hashed.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DkimCanon" axId="102">
+            <gType>string</gType>
+            <descrip>Canonicalization algorithm to be used for both header and body when creating the DKIM-Signature.  Possible values are "simple" and "relaxed".  The default value is "relaxed".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DkimDomain" axId="103">
+            <gType>string</gType>
+            <descrip>The domain name of the signing domain when creating the DKIM-Signature.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DkimHeaders" axId="104">
+            <gType>string</gType>
+            <descrip>A colon-separated list of header field names that identify headers presented to the signing algorithm when creating the DKIM-Signature.  The default value is: "mime-version:date:message-id:subject:from:to:content-type".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DkimSelector" axId="105">
+            <gType>string</gType>
+            <descrip>The selector to be used to form the DNS query for the public key.  This property applies to creating a DKIM-Signature.  For example, if the selector is "reykjavik" and the domain is "example-code.com", then the DNS query would be for "reykjavik._domainkey.example-code.com".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DomainKeyAlg" axId="106">
+            <gType>string</gType>
+            <descrip>The signing algorithm to be used in creating the DomainKey-Signature.  The only possible value is "rsa-sha1".  The default value is "rsa-sha1".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DomainKeyCanon" axId="107">
+            <gType>string</gType>
+            <descrip>Canonicalization algorithm to be used for when creating the DomainKey-Signature.  Possible values are "simple" and "nofws".  The default value is "nofws".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DomainKeyDomain" axId="108">
+            <gType>string</gType>
+            <descrip>The domain name of the signing domain when creating the DomainKey-Signature.</descrip>
+        </property>
+        <property name="DomainKeyHeaders" axId="109" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>A colon-separated list of header field names that identify headers presented to the signing algorithm when creating the DomainKey-Signature.  The default value is: "mime-version:date:message-id:subject:from:to:content-type".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DomainKeySelector" axId="110">
+            <gType>string</gType>
+            <descrip>The selector to be used to form the DNS query for the public key.  This property applies to creating a DomainKey-Signature.  For example, if the selector is "reykjavik" and the domain is "example-code.com", then the DNS query would be for "reykjavik._domainkey.example-code.com".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HeartbeatMs" axId="111">
+            <gType>int</gType>
+            <descrip>The number of milliseconds between each AbortCheck event callback.  The AbortCheck callback allows an application to abort any method call prior to completion.  If HeartbeatMs is 0 (the default), no AbortCheck event callbacks will fire.</descrip>
+        </property>
+        <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="128">
+            <gType>bool</gType>
+            <descrip>When set to _TRUE_, causes the currently running method to abort.  Methods that always finish quickly (i.e.have no length file operations or network communications) are not affected.  If no method is running, then this property is automatically reset to _FALSE_ when the next method is called.  When the abort occurs, this property is reset to _FALSE_.  Both synchronous and asynchronous method calls can be aborted.  (A synchronous method call could be aborted by setting this property from a separate thread.)</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+    </properties>
+    <methods>
+        <method name="AddDkimSignature" axId="112" ax="1" cpp="1" dn="1" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>mimeIn</argName>
+                    <objcName>mimeIn</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>mimeOut</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Constructs and prepends a DKIM-Signature header to the MIME.  Prior to calling this method, your program must set both the DkimDomain and DkimSelector properties, and it must load a private key by calling LoadDkimPk or LoadDkimPkFile.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Add DKIM-Signature Header to MIME / Email</text>
+                    <url>dkim_add_signature.asp</url>
+                </link>
+                <link linkType="example">
+                    <text>Send DKIM Signed Email</text>
+                    <url>dkim_sendDkimSigned.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="mimeIn" type="bytes" objcName="mimeIn" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddDomainKeySignature" axId="113" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>mimeIn</argName>
+                    <objcName>mimeIn</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Constructs and prepends a DomainKey-Signature header to the MIME.  Prior to calling this method, your program must set both the DomainKeyDomain and DomainKeySelector properties, and it must load a private key by calling LoadDomainKeyPk or LoadDomainKeyPkFile.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Add DomainKey-Signature Header to MIME / Email</text>
+                    <url>domainKey_add_signature.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="mimeIn" type="bytes" objcName="mimeIn" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadDkimPk" axId="114">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>privateKey</argName>
+                    <objcName>privateKey</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>optionalPassword</argName>
+                    <objcName>optionalPassword</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an RSA private key to be used for creating a DKIM-Signature.  Any valid RSA private key format that is not binary, such as PEM or XML, may be passed to this method.   This method will automatically determine the format and parse it correctly.  A password is only required if key is encrypted, such as for encrypted PEM.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dkim_current_user_cert_store.asp</url>
+                    <text>DKIM Signature using  Windows Current User Certificate Store</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="privateKey" type="string" objcName="privateKey" />
+                <arg name="optionalPassword" type="string" objcName="optionalPassword" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadDkimPkBytes" axId="115">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>privateKeyDer</argName>
+                    <objcName>privateKeyDer</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>optionalPassword</argName>
+                    <objcName>optionalPassword</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an RSA private key to be used for creating a DKIM-Signature.  Any valid RSA private key binary format, such as DER, may be passed to this method.   This method will automatically determine the format and parse it correctly.  A password is only required if key is encrypted.</descrip>
+            <args2>
+                <arg name="privateKeyDer" type="bytes" objcName="privateKeyDer" />
+                <arg name="optionalPassword" type="string" objcName="optionalPassword" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadDkimPkFile" axId="116">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>privateKeyFilePath</argName>
+                    <objcName>privateKeyFilepath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>optionalPassword</argName>
+                    <objcName>optionalPassword</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an RSA private key file to be used for creating a DKIM-Signature.  The file name contains any valid RSA private key format, such as DER, PKCS8, PEM, XML, etc.   This method will automatically determine the format and parse it correctly.  A password is only required if key is encrypted, such as for encrypted PEM or encrypted PKCS8.</descrip>
+            <args2>
+                <arg name="privateKeyFilePath" type="string" objcName="privateKeyFilepath" />
+                <arg name="optionalPassword" type="string" objcName="optionalPassword" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadDomainKeyPk" axId="117">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>privateKey</argName>
+                    <objcName>privateKey</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>optionalPassword</argName>
+                    <objcName>optionalPassword</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an RSA private key to be used for creating a DomainKey-Signature.  Any valid RSA private key format that is not binary, such as PEM or XML, may be passed to this method.   This method will automatically determine the format and parse it correctly.  A password is only required if key is encrypted, such as for encrypted PEM.</descrip>
+            <args2>
+                <arg name="privateKey" type="string" objcName="privateKey" />
+                <arg name="optionalPassword" type="string" objcName="optionalPassword" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadDomainKeyPkBytes" axId="118">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>privateKeyDer</argName>
+                    <objcName>privateKeyDer</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>optionalPassword</argName>
+                    <objcName>optionalPassword</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an RSA private key to be used for creating a DomainKey-Signature.  Any valid RSA private key binary format, such as DER, may be passed to this method.   This method will automatically determine the format and parse it correctly.  A password is only required if key is encrypted.</descrip>
+            <args2>
+                <arg name="privateKeyDer" type="bytes" objcName="privateKeyDer" />
+                <arg name="optionalPassword" type="string" objcName="optionalPassword" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadDomainKeyPkFile" axId="119">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>privateKeyFilePath</argName>
+                    <objcName>privateKeyFilepath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>optionalPassword</argName>
+                    <objcName>optionalPassword</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an RSA private key file to be used for creating a DomainKey-Signature.  The file name contains any valid RSA private key format, such as DER, PKCS8, PEM, XML, etc.   This method will automatically determine the format and parse it correctly.  A password is only required if key is encrypted, such as for encrypted PEM or encrypted PKCS8.</descrip>
+            <args2>
+                <arg name="privateKeyFilePath" type="string" objcName="privateKeyFilepath" />
+                <arg name="optionalPassword" type="string" objcName="optionalPassword" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadPublicKey" axId="120">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>selector</argName>
+                    <objcName>selector</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>domain</argName>
+                    <objcName>domain</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>publicKey</argName>
+                    <objcName>publicKey</objcName>
+                </arg>
+            </args>
+            <descrip>Caches a public key to be used for verifying DKIM and DomainKey signatures for a given selector and domain.  The ARG3 is a string containing an RSA public key in any text format, such as XML, PEM, etc.  This method will automatically detect the format and load the public key correctly.  This method is useful for testing DKIM and DomainKey verification when your public key has not yet been installed in DNS.</descrip>
+            <args2>
+                <arg name="selector" type="string" objcName="selector" />
+                <arg name="domain" type="string" objcName="domain" />
+                <arg name="publicKey" type="string" objcName="publicKey" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadPublicKeyFile" axId="121">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>selector</argName>
+                    <objcName>selector</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>domain</argName>
+                    <objcName>domain</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>publicKeyFilepath</argName>
+                    <objcName>publicKeyFilepath</objcName>
+                </arg>
+            </args>
+            <descrip>Caches a public key to be used for verifying DKIM and DomainKey signatures for a given selector and domain.  The ARG3 is a filepath of an RSA public key in any format.  This method will automatically detect the format and load the public key correctly.  This method is useful for testing DKIM and DomainKey verification when your public key has not yet been installed in DNS.</descrip>
+            <args2>
+                <arg name="selector" type="string" objcName="selector" />
+                <arg name="domain" type="string" objcName="domain" />
+                <arg name="publicKeyFilepath" type="string" objcName="publicKeyFilepath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="NumDkimSignatures" axId="122">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>mimeData</argName>
+                    <objcName>mimeData</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the number of DKIM-Signature header fields found in ARG1.</descrip>
+            <args2>
+                <arg name="mimeData" type="bytes" objcName="mimeData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="NumDomainKeySignatures" axId="123">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>mimeData</argName>
+                    <objcName>mimeData</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the number of DomainKey-Signature header fields found in ARG1.</descrip>
+            <args2>
+                <arg name="mimeData" type="bytes" objcName="mimeData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="PrefetchPublicKey" axId="124">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>selector</argName>
+                    <objcName>selector</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>domain</argName>
+                    <objcName>domain</objcName>
+                </arg>
+            </args>
+            <descrip>Useful if your application is going to verify many emails from a single domain (or a few domains).  This eliminates the need to do a DNS lookup to fetch the public key each time an email's DKIM or DomainKey signature is verified.
+&lt;p&gt;
+This method may be called multiple times -- once for each selector/domain to be pre-fetched.  The verify methods (VerifyDkimSignature and VerifyDomainKeySignature) will use a pre-fetched key if the selector and domain match.</descrip>
+            <args2>
+                <arg name="selector" type="string" objcName="selector" />
+                <arg name="domain" type="string" objcName="domain" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="125">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>unlockCode</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component allowing for the full functionality to be used.   If this method unexpectedly returns _FALSE_, examine the contents of the LastErrorText property to determine the reason for failure.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="unlockCode" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="VerifyDkimSignature" axId="126">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>sigIndex</argName>
+                    <objcName>sigIdx</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>mimeData</argName>
+                    <objcName>mimeData</objcName>
+                </arg>
+            </args>
+            <descrip>Verifies the Nth DKIM-Signature header in the ARG2.  (In most cases, there is only one signature.)  The 1st signature is at ARG1 0.
+&lt;p&gt;
+Important: Many anti-virus programs, such as AVG, will modify the MIME of an email as it is received.  This will cause DKIM signature verification to fail because the body of the MIME is modified.</descrip>
+            <args2>
+                <arg name="sigIndex" type="int" objcName="sigIdx" />
+                <arg name="mimeData" type="bytes" objcName="mimeData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="VerifyDomainKeySignature" axId="127">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>sigIndex</argName>
+                    <objcName>sigIdx</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>mimeData</argName>
+                    <objcName>mimeData</objcName>
+                </arg>
+            </args>
+            <descrip>Verifies the Nth DomainKey-Signature header in the ARG2.  (In most cases, there is only one signature.)  The 1st signature is at ARG1 0.
+&lt;p&gt;
+Important: Many anti-virus programs, such as AVG, will modify the MIME of an email as it is received.  This will cause DomainKey signature verification to fail because the body of the MIME is modified.</descrip>
+            <args2>
+                <arg name="sigIndex" type="int" objcName="sigIdx" />
+                <arg name="mimeData" type="bytes" objcName="mimeData" />
+            </args2>
+        </method>
+    </methods>
+    <genericName>Dkim</genericName>
+    <events>
+        <standard name="AbortCheck" />
+        <standard name="ProgressInfo" />
+        <standard name="TaskCompleted" />
+    </events>
+    <description>DomainKeys API for creating and verifying DKIM-Signature and DomainKey-Signature MIME (email) header fields.  This API is included with the "Chilkat MIME" license.   ("Chilkat MIME" may be referred to as "Chilkat S/MIME" on some chilkatsoft.com web pages.  They are the same product.)</description>
+    <clsid>B70D813F-5CE3-4C93-A793-B21CD8CE133A</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>7C0DF873-A028-47B3-B206-4EFA41F0EFAD</uuidEvents>
+    <uuidMidl>2D924A0F-A828-4482-A1DB-DD80E2FF35EF</uuidMidl>
+    <nextAxId>129</nextAxId>
+</class>

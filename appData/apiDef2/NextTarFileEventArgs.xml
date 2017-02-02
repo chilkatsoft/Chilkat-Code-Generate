@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>NextTarFileEventArgs</genericName>
+    <cppName>CkNextTarFileEventArgs</cppName>
+    <dnName>NextTarFileEventArgs</dnName>
+    <axName>ChilkatNextTarFileEventArgs</axName>
+    <description>Provides data for the OnNextTarFileEvent.</description>
+    <methods />
+    <properties>
+        <property name="FileName" read="1" dn="1">
+            <gType>string</gType>
+            <cppType />
+            <descrip>The name of the next file to be written to a TAR archive.</descrip>
+        </property>
+        <property name="FileSize" read="1" dn="1">
+            <gType>int64</gType>
+            <cppType />
+            <descrip>The size  of the next file to be written to a TAR archive.</descrip>
+        </property>
+        <property name="IsDirectory" read="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>If _TRUE_, then the next file to be written to the TAR archive is a directory entry.</descrip>
+        </property>
+        <property name="Skip" read="1" write="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>Set to _TRUE_ to skip this file from being written to the TAR archive.</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

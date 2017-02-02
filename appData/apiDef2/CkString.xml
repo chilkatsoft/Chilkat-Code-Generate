@@ -1,0 +1,2777 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class sourceXmlPath="C:/ck2000/appData/apiDef2/CkString.xml" license="Free">
+    <axName>CkString</axName>
+    <dnName>CkString</dnName>
+    <cppName>CkString</cppName>
+    <properties>
+        <property name="NumArabic" axId="100" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Arabic characters contained in this string.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumAscii" axId="101" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of us-ascii characters contained in this string.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumCentralEuro" axId="102" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Central European and Eastern European characters found in this string.   These are characters specific to Polish, Czech, Slovak, Hungarian, Slovene, Croatian, Serbian (Latin script), Romanian and Albanian.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="0" dn="0" ax="1" read="1" write="0" name="NumChars" axId="103">
+            <gType>int</gType>
+            <descrip />
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumChinese" axId="104" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Chinese characters contained in this string.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumCyrillic" axId="105" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Cyrillic characters contained in this string. The Cyrillic alphabet also called azbuka, from the old name of the first two letters) is actually a family of alphabets, subsets of which are used by certain East and South Slavic languages "” Belarusian, Bulgarian, Macedonian, Russian, Rusyn, Serbian and Ukrainian"”as well as many other languages of the former Soviet Union, Asia and Eastern Europe.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumGreek" axId="106" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Greek characters contained in this string.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumHebrew" axId="107" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Hebrew characters contained in this string.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumJapanese" axId="108" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Japanese characters contained in this string.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumKorean" axId="109" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Korean characters contained in this string.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumLatin" axId="110" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Latin characters contained in this string.  Latin characters include all major Western European languages, such as German, Spanish, French, Italian, Nordic languages, etc.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumThai" axId="111" read="1" ax="1" cpp="1">
+            <gType>int</gType>
+            <descrip>The number of Thai characters contained in this string.</descrip>
+            <iversion>9.5.0.25</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="0" dn="0" ax="1" read="1" write="0" name="SizeAnsi" axId="112">
+            <gType>int</gType>
+            <descrip>The size, in bytes, of the ANSI encoding of the string.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="0" dn="0" ax="1" read="1" write="0" name="SizeUtf8" axId="113">
+            <gType>int</gType>
+            <descrip>The size, in bytes, of the utf-8 encoding of the string.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="0" dn="0" ax="1" read="1" write="1" name="Str" axId="114">
+            <gType>string</gType>
+            <descrip>The string value of this object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="AnsiCharAt" axId="115" ax="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <argName>index</argName>
+                </arg>
+            </args>
+            <descrip>Returns the ASCII value of the Nth char in the string.  The 1st char is at index 0.</descrip>
+            <args2>
+                <arg name="index" type="int" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Append" axId="116">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>str</argName>
+                </arg>
+            </args>
+            <descrip>The ARG1 is appended to end of this instance.</descrip>
+            <args2>
+                <arg name="str" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="AppendDateRfc3339" axId="117">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>date</axType>
+                    <argName>dt</argName>
+                </arg>
+            </args>
+            <descrip>Appends a date/time string in RFC 3339 format to the end of this instance.</descrip>
+            <args2>
+                <arg name="dt" type="date" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="AppendDateRfc822" axId="118">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>date</axType>
+                    <argName>dateTime</argName>
+                </arg>
+            </args>
+            <descrip>The ARG1 is appended in RFC 822 format to the end of this instance.</descrip>
+            <args2>
+                <arg name="dateTime" type="date" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="AppendEncoded" axId="119">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>str</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>encoding</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>charset</argName>
+                </arg>
+            </args>
+            <descrip>Appends characters from an encoded string.  The encoding may be "base64", "hex", "url", or "quoted-printable".  For example, to append "ABC 123" from a URL-encoded string, call:
+&lt;pre&gt;
+strObj.AppendEncoded("ABC+123","url","iso-8859-1")
+&lt;/pre&gt;</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="str" type="string" />
+                <arg name="encoding" type="string" />
+                <arg name="charset" type="string" />
+            </args2>
+        </method>
+        <method cpp="0" dn="0" ax="1" name="AppendMultibyte" axId="120">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <argName>mbtext</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>charsetEncoding</argName>
+                </arg>
+            </args>
+            <descrip>Appends characters from a byte array.  ARG1 contains the character data.  The input bytes are interpreted according to the character encoding specified by ARG2.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="mbtext" type="bytes" />
+                <arg name="charsetEncoding" type="string" />
+            </args2>
+        </method>
+        <method cpp="0" dn="0" ax="1" name="AppendToFile" axId="121">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>path</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>charsetEncoding</argName>
+                </arg>
+            </args>
+            <descrip>Appends the contents of the string to a file.  The string is first converted to the character encoding specified by ARG2 before being appended to the file.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" />
+                <arg name="charsetEncoding" type="string" />
+            </args2>
+        </method>
+        <method cpp="0" dn="0" ax="1" name="BeginsWith" axId="122">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>str</argName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string begins with ARG1.  Otherwise returns _FALSE_.  This method is case sensitive.</descrip>
+            <args2>
+                <arg name="str" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ChopAfter" axId="123">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>findStr</argName>
+                </arg>
+            </args>
+            <descrip>Truncates the string after the 1st occurrence of ARG1.  If ARG1 is not present, nothing is truncated.</descrip>
+            <args2>
+                <arg name="findStr" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ChopBefore" axId="124">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>findStr</argName>
+                </arg>
+            </args>
+            <descrip>Truncates the string before the 1st occurrence of ARG1.  If ARG1 is not present, nothing is truncated.</descrip>
+            <args2>
+                <arg name="findStr" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Clear" axId="125">
+            <gType>void</gType>
+            <args />
+            <descrip>Clears the string.  After calling this method, the string contains 0 characters.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Contains" axId="126">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>substr</argName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if ARG1 is present in the string (case sensitive), otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="substr" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="EmitMultibyte" axId="127">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>charsetEncoding</argName>
+                </arg>
+            </args>
+            <descrip>Converts the string to a byte array using the character encoding specified by ARG1.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Demystifying ASP Code Pages, Response.Write, Response.BinaryWrite, Strings, and Charsets</text>
+                    <url>http://www.example-code.com/asp/asp-codepages.asp</url>
+                </link>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" />
+            </args2>
+        </method>
+        <method cpp="0" dn="0" ax="1" name="EndsWith" axId="128">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>substr</argName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string ends with ARG1 (case-sensitive).  Otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="substr" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="GetEncoded" axId="129">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>binaryEncoding</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>charsetEncoding</argName>
+                </arg>
+            </args>
+            <descrip>Returns the character string in an encoding use the ARG2 specified.  The ARG1 may be "base64", "hex", "url", or "quoted-printable".  For example:
+&lt;pre&gt;
+(Visual Basic 6.0)
+
+Dim s As New CkString
+
+s.Str = "Ã¨Ã¨Ã¨"
+Text1.Text = s.GetEncoded("hex", "iso-8859-1") &amp; vbCrLf
+Text1.Text = Text.Text &amp; s.GetEncoded("hex", "utf-8") &amp; vbCrLf
+Text1.Text = Text1.Text &amp; s.GetEncoded("hex", "unicode")
+
+'Output:
+'E8E8E8
+'C3A8C3A8C3A8
+'E800E800E800
+&lt;/pre&gt;</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="binaryEncoding" type="string" />
+                <arg name="charsetEncoding" type="string" />
+            </args2>
+        </method>
+        <method cpp="0" dn="0" ax="1" name="HtmlEntityDecode" axId="130">
+            <gType>void</gType>
+            <args />
+            <descrip>Decodes any HTML entities found in the string.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>HTML Entity Decode ASP Example</text>
+                    <url>http://www.example-code.com/asp/asp_html_entity_decode.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="HtmlEntityEncode" axId="131">
+            <gType>void</gType>
+            <args />
+            <descrip>HTML entity encodes all special characters.  (Those characters that might require HTML entity encoding.)</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>ASP HTML Entity Encode Example</text>
+                    <url>http://www.example-code.com/asp/asp_html_entity_encode.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="LastAnsiChar" axId="132">
+            <gType>int</gType>
+            <args />
+            <descrip>Returns the ASCII value of the last character in the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Left" axId="133">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <argName>numChars</argName>
+                </arg>
+            </args>
+            <descrip>Returns a string that is the leftmost ARG1 of this instance.</descrip>
+            <args2>
+                <arg name="numChars" type="int" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Length" axId="134">
+            <gType>int</gType>
+            <args />
+            <descrip>Returns the length, in characters, of the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="LoadFile" axId="135">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>path</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>charsetEncoding</argName>
+                </arg>
+            </args>
+            <descrip>Loads an entire text file into the string object.  The character encoding of the text file is specified by ARG2.  This method allows for text files in any charset to be loaded: utf-8, Unicode, Shift_JIS, iso-8859-1, etc.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" />
+                <arg name="charsetEncoding" type="string" />
+            </args2>
+        </method>
+        <method cpp="0" dn="0" ax="1" name="LoadXmlDoc" axId="136">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <argName>xmlDocumentBytes</argName>
+                </arg>
+            </args>
+            <descrip>Loads an XML document into the CkString.   The ARG1 contains the raw  bytes of the XML document.   The reason for providing a separate method for loading an XML document is because the charset encoding is usually specified using a "charset" attribute at the beginning of the XML document.  The LoadXmlDoc method reads just enough of the XML document to get the charset, and then it knows how to read and interpret the bytes of the entire XML document, so that the bytes of the characters are properly interpeted and loaded into the CkString object.</descrip>
+            <args2>
+                <arg name="xmlDocumentBytes" type="bytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Matches" axId="137">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>strPattern</argName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <argName>caseSensitive</argName>
+                    <objcName>caseSensitive</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string matches the ARG1, which may contain one or more asterisk wildcard characters.  Case-sensitivity is controlled by &lt;caseSensitive&gt;, where 1 = case sensitive, 0 = case insensitive.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>ASP String Patttern Matching</text>
+                    <url>http://www.example-code.com/asp/asp_string_pattern_matching.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="strPattern" type="string" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Mid" axId="138">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <argName>index</argName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <argName>numChars</argName>
+                </arg>
+            </args>
+            <descrip>Same as the VB/VBScript "Mid" function, except that the 1st char is at index 0 (i.e. it is not 1-based).  Returns a substring of length ARG2 starting at ARG1.</descrip>
+            <args2>
+                <arg name="index" type="int" />
+                <arg name="numChars" type="int" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ParseDateRfc3339" axId="139">
+            <gType>date</gType>
+            <args />
+            <descrip>Converts the date string (in RFC 3339 format) to a Date type.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Convert RFC 3339 Date to String and back</text>
+                    <url>http://www.example-code.com/asp/asp_rfc_3339_string.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ParseDateRfc822" axId="140">
+            <gType>date</gType>
+            <args />
+            <descrip>Converts the date string (in RFC 822 format) to a Date type.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Convert RFC 822 Date to String and back</text>
+                    <url>http://www.example-code.com/asp/asp_rfc822_string.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Pluralize" axId="141">
+            <gType>void</gType>
+            <args />
+            <descrip>Pluralizes an English word.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Pluralize English Word</text>
+                    <url>http://www.example-code.com/asp/asp_string_pluralize.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Prepend" axId="142">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>str</argName>
+                </arg>
+            </args>
+            <descrip>Prepends ARG1 to this instance.</descrip>
+            <args2>
+                <arg name="str" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="RemoveAnsiChar" axId="143">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <argName>ch</argName>
+                </arg>
+            </args>
+            <descrip>Removes all occurrences of ARG1 from the string.</descrip>
+            <args2>
+                <arg name="ch" type="int" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ReplaceAll" axId="144">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>findStr</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>replaceStr</argName>
+                </arg>
+            </args>
+            <descrip>Replaces all occurrences of ARG1 with ARG2.  (case sensitive)</descrip>
+            <args2>
+                <arg name="findStr" type="string" />
+                <arg name="replaceStr" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ReplaceAnsiChar" axId="145">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <argName>findCh</argName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <argName>replaceCh</argName>
+                </arg>
+            </args>
+            <descrip>Replaces all occurrences of ARG1 with ARG2.</descrip>
+            <args2>
+                <arg name="findCh" type="int" />
+                <arg name="replaceCh" type="int" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ReplaceFirst" axId="146">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>findStr</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>replaceStr</argName>
+                </arg>
+            </args>
+            <descrip>Replaces the first occurrence of ARG1 with ARG2.  (case sensitive)</descrip>
+            <args2>
+                <arg name="findStr" type="string" />
+                <arg name="replaceStr" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Right" axId="147">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <argName>numChars</argName>
+                </arg>
+            </args>
+            <descrip>Returns a string that is the rightmost ARG1 of this instance.</descrip>
+            <args2>
+                <arg name="numChars" type="int" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" status="1" name="SaveToFile" axId="148">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>path</argName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <argName>charsetEncoding</argName>
+                </arg>
+            </args>
+            <descrip>Saves the string to a file, using the character encoding specified by ARG2.  This method allows for the string to be saved using character encodings such as "utf-8", "Unicode", "Shift-JIS", or anything else...</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" />
+                <arg name="charsetEncoding" type="string" />
+            </args2>
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Shorten" axId="149">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <argName>numChars</argName>
+                </arg>
+            </args>
+            <descrip>Removes the final ARG1 from the string.</descrip>
+            <args2>
+                <arg name="numChars" type="int" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="StrComp" axId="150" ax="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <argName>str</argName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <argName>caseSensitive</argName>
+                    <objcName>caseSensitive</objcName>
+                </arg>
+            </args>
+            <descrip>Lexicographically compares two strings. Returns 0 if both strings are equal.
+A value greater than zero indicates that the first character that does not match has a greater value in the caller's string than in ARG1; And a value less than zero indicates the opposite.</descrip>
+            <args2>
+                <arg name="str" type="string" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="StripHtml" axId="151">
+            <gType>void</gType>
+            <args />
+            <descrip>Strips HTML tags from a string.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Strip HTML from a String</text>
+                    <url>http://www.example-code.com/asp/asp_strip_html.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ToCRLF" axId="152">
+            <gType>void</gType>
+            <args />
+            <descrip>Converts all line endings to CRLF.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="ToLF" axId="153">
+            <gType>void</gType>
+            <args />
+            <descrip>Converts all line endings to bare-LF (Unix/Linux style).</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Trim" axId="154">
+            <gType>void</gType>
+            <args />
+            <descrip>Trim SPACE and Tab characters from both ends of the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Trim2" axId="155">
+            <gType>void</gType>
+            <args />
+            <descrip>Trim SPACE, Tab, CR, and LF characters from both ends of the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="TrimInside" axId="156">
+            <gType>void</gType>
+            <args />
+            <descrip>Replaces all tabs, CR's, and LF's, with SPACE chars, and removes extra SPACE's so there are no occurrences of more than one SPACE char in a row.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Trim Inside SPACE/TAB Characters</text>
+                    <url>http://www.example-code.com/asp/asp_string_triminside.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Unpluralize" axId="157">
+            <gType>void</gType>
+            <args />
+            <descrip>Unpluralizes an English word.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Unpluralize English Word</text>
+                    <url>http://www.example-code.com/asp/asp_string_unpluralize.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="append" cpp="1" dn="1" noObjC="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>The ARG1 is appended to end of this instance.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendAnsi">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Appends an ANSI string to the end of this instance.  ARG1 should always be a null terminated ANSI string regardless of the Utf8 property setting.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendChar">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>char</cppType>
+                    <argName>c</argName>
+                    <objcName>c</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a single ANSI character to the end of this instance.</descrip>
+            <args2>
+                <arg name="c" type="char" objcName="c" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendCurrentDateRfc822">
+            <gType>void</gType>
+            <args />
+            <descrip>Appends the current date/time to the end of this instance.  The date/time is formatted according to the RFC822 standard, which is the typical format used in the "Date" header field of email.  For example: "Fri, 27 Jul 2012 17:41:41 -0500"</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendDateRfc822">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>dateTime</argName>
+                    <objcName>dateTime</objcName>
+                </arg>
+            </args>
+            <descrip>The ARG1 is appended in RFC 822 format to the end of this instance.</descrip>
+            <args2>
+                <arg name="dateTime" type="date" objcName="dateTime" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendDateRfc822Gmt">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>dateTime</argName>
+                    <objcName>dateTime</objcName>
+                </arg>
+            </args>
+            <descrip>The ARG1 is appended in RFC 822 format using GMT to the end of this instance.</descrip>
+            <args2>
+                <arg name="dateTime" type="date" objcName="dateTime" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendEnc">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a string of any character encoding to the end of this instance.  Examples of  ARG2 are: Shift_JIS, windows-1255, iso-8859-2, gb2312, etc.   The ARG1 should point to a null-terminated string that uses the charset specified by ARG2.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendHexData">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const unsigned char *</cppType>
+                    <argName>byteData</argName>
+                    <objcName>byteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Converts the binary data to a hexidecimal string representation and appends to the end of this instance.</descrip>
+            <args2>
+                <arg name="byteData" type="cppBytes" objcName="byteData" />
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="appendInt">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>n</argName>
+                    <objcName>n</objcName>
+                </arg>
+            </args>
+            <descrip>Appends the decimal string representation of an integer to the end of this instance.</descrip>
+            <args2>
+                <arg name="n" type="int" objcName="n" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" noSwig="1" windowsOnly="1" name="appendLastWindowsError">
+            <gType>void</gType>
+            <ifdef>#ifdef WIN32</ifdef>
+            <args />
+            <descrip>For many Win32 Platform SDK functions, such as CreateFile, error information must be retrieved by using the Win32 functions GetLastError and FormatMessage. This method calls these Win32 functions to format the error and appends it to the string.
+&lt;p&gt;
+This method would only be used by Win32 applications that call Platform SDK functions.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendN">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Appends N bytes of character data to the end of this instance.  If the Utf8 property is set to _TRUE_, then ARG1 should point to characters in the utf-8 encoding, otherwise it should point to characters using the ANSI encoding.  Note: ARG2 is not necessarily the number of characters.  It is the length, in bytes, of the string to be appended.  This method exists to allow for non-null terminated strings to be appended.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendNU">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>wideStr</argName>
+                    <objcName>wideStr</objcName>
+                </arg>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>numChars</argName>
+                    <objcName>numChars</objcName>
+                </arg>
+            </args>
+            <descrip>Append N Unicode characters to the end of this instance.  The ARG1 points to the 2-byte per char Unicode string.  The ARG2 is the number of Unicode characters to be appended (not the number of bytes).</descrip>
+            <args2>
+                <arg name="wideStr" type="wideString" objcName="wideStr" />
+                <arg name="numChars" type="int" objcName="numChars" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="1" ax="0" name="appendObfuscated">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <argName>obfuscatedStr</argName>
+                </arg>
+            </args>
+            <descrip>Unobfuscates and appends ARG1 to the end  of this instance.   
+&lt;p&gt;
+The Chilkat string obfuscation algorithm works by taking the utf-8 bytes of the string, base64 encoding it,
+and then scrambling the letters of the base64 encoded string.   It is deterministic in that the same string will always obfuscate to the same result.  It is not a secure way of encrypting a string.  It is only meant to be a simple means of transforming a string into something unintelligible.</descrip>
+            <args2>
+                <arg name="obfuscatedStr" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendRandom">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <descrip>Appends ARG1 random bytes to the end of this instance.   Because arbitrary byte values in the range 0 to 255 do not necessarily represent valid characters, the bytes must be encoded to a string friendly representation such as hex, base64, etc.  The ARG2 specifies the encoding to be used.  Possible values are "hex", "base64", "quoted-printable", "asc", or "url".</descrip>
+            <args2>
+                <arg name="numBytes" type="int" objcName="numBytes" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendStr">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>strObj</argName>
+                    <objcName>strObj</objcName>
+                </arg>
+            </args>
+            <descrip>Appends the contents of ARG1 to the end of this instance.</descrip>
+            <args2>
+                <arg name="strObj" type="CkString" objcName="strObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendU">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>unicode</argName>
+                    <objcName>unicode</objcName>
+                </arg>
+            </args>
+            <descrip>Append a Unicode string to the CkString object.</descrip>
+            <args2>
+                <arg name="unicode" type="wideString" objcName="unicode" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendUtf8">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a utf-8 string to the existing contents of this instance.  ARG1 should always be a null terminated utf-8 string regardless of the Utf8 property setting.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="1" ax="0" name="autoLinkUrls">
+            <gType>void</gType>
+            <args />
+            <descrip>Searches the string for URLS  (http://..., https://...) and auto-links them.   For example, if "http://www.chilkatsoft.com/" is found in the string, it is replaced with "&amp;lt;a href="http://www.chilkatsoft.com/"&gt;http://www.chilkatsoft.com/&amp;lt;/a&gt;"    URLs that are already linked are not modified.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="base64Decode">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>In-place base64 decodes the string and inteprets the results according to the character encoding specified.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="base64DecodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of base64Decode.</descrip>
+            <args2>
+                <arg name="charsetEncoding" type="wideString" objcName="charsetEncoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="base64Encode">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>In-place base64 encodes the string.  Internally, the string is first converted to the character encoding specified and then base-64 encoded.  Typical ARG1 values are "utf-8", "ANSI", "iso-8859-1", etc.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="base64EncodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of base64Encode.</descrip>
+            <args2>
+                <arg name="charsetEncoding" type="wideString" objcName="charsetEncoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="beginsWith">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>Return _TRUE_ if this string begins with ARG1 (case sensitive), otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="substr" type="string" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="beginsWithStr">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>strObj</argName>
+                    <objcName>strObj</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string begins with the contents of ARG1.  Otherwise returns _FALSE_.  This method is case sensitive.</descrip>
+            <args2>
+                <arg name="strObj" type="CkString" objcName="strObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="beginsWithW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of beginsWith.</descrip>
+            <args2>
+                <arg name="str" type="wideString" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="charAt">
+            <gType>char</gType>
+            <args>
+                <arg>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>idx</argName>
+                    <objcName>idx</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the ANSI character at a specified index.The first character is at index 0.</descrip>
+            <args2>
+                <arg name="idx" type="int" objcName="idx" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="charAtU">
+            <gType>wchar_t</gType>
+            <args>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>idx</argName>
+                    <objcName>idx</objcName>
+                </arg>
+            </args>
+            <descrip>Return the Nth character as a Unicode character.</descrip>
+            <args2>
+                <arg name="idx" type="int" objcName="idx" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="chopAtFirstChar">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>char</dnType>
+                    <cppType>char</cppType>
+                    <argName>ch</argName>
+                    <objcName>ch</objcName>
+                </arg>
+            </args>
+            <descrip>Finds the first occurrence of ARG1 and discards the characters at and following ARG1.</descrip>
+            <args2>
+                <arg name="ch" type="char" objcName="ch" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="chopAtStr">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>subStrObj</argName>
+                    <objcName>subStrObj</objcName>
+                </arg>
+            </args>
+            <descrip>Finds the first occurrence of a substring and chops it at that point.  The result is that the substring and all subsequent characters are removed from the string.</descrip>
+            <args2>
+                <arg name="subStrObj" type="CkString" objcName="subStrObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="clear">
+            <gType>void</gType>
+            <args />
+            <descrip>Clears the string.  The string contains 0 characters after calling this method.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="clone">
+            <gType>CkString</gType>
+            <args />
+            <descrip>Creates a copy of the string.  As with any newly created Chilkat object instance returned by a Chilkat method, the returned CkString object must be deleted by the calling application.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="compareStr">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Compare two strings.  A return value = 0 means they are equal.  Return value = 1 indicates that calling object is lexicographically less than  argument.  Return value = -1 indicates that calling object is lexicographically greater than argument.</descrip>
+            <args2>
+                <arg name="str" type="CkString" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="containsSubstring">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string contains the specified substring, otherwise returns _FALSE_.  The string comparison is case-sensitive.</descrip>
+            <args2>
+                <arg name="substr" type="string" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="containsSubstringNoCase">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>Same as containsSubstring except the matching is case insensitive.</descrip>
+            <args2>
+                <arg name="substr" type="string" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="containsSubstringNoCaseW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of containsSubstringNoCase.</descrip>
+            <args2>
+                <arg name="substr" type="wideString" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="containsSubstringW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of containsSubstring.</descrip>
+            <args2>
+                <arg name="substr" type="wideString" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="countCharOccurances">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>char</cppType>
+                    <argName>ch</argName>
+                    <objcName>ch</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the number of occurrences of the specified ANSI char.</descrip>
+            <args2>
+                <arg name="ch" type="char" objcName="ch" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="decodeXMLSpecial">
+            <gType>void</gType>
+            <args />
+            <descrip>Decodes XML special characters. For example,  &amp;amp;lt; is converted to '&lt;'</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="doubleValue">
+            <gType>double</gType>
+            <args />
+            <descrip>Converts the string to a double and returns the value.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="eliminateChar">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>char</dnType>
+                    <cppType>char</cppType>
+                    <argName>ansiChar</argName>
+                    <objcName>ansiChar</objcName>
+                </arg>
+                <arg>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>startIndex</argName>
+                    <objcName>startIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Eliminate all occurrences of a particular ANSI character.</descrip>
+            <args2>
+                <arg name="ansiChar" type="char" objcName="ansiChar" />
+                <arg name="startIndex" type="int" objcName="startIndex" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="encodeXMLSpecial">
+            <gType>void</gType>
+            <args />
+            <descrip>Encodes XML special characters. For example,  '&lt;' is converted to &amp;amp;lt;</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="endsWith">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string ends with ARG1 (case-sensitive).  Otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="substr" type="string" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="endsWithStr">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>substrObj</argName>
+                    <objcName>substrObj</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string ends with the specified substring, otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="substrObj" type="CkString" objcName="substrObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="endsWithW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of endsWith.</descrip>
+            <args2>
+                <arg name="s" type="wideString" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="entityDecode">
+            <gType>void</gType>
+            <args />
+            <descrip>Decodes any HTML entities found within the string, replacing them with the characters represented.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="entityEncode">
+            <gType>void</gType>
+            <args />
+            <descrip>HTML encodes any characters that are special to HTML or cannot be represented by 7-bit us-ascii.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="equals">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the strings are equal, otherwise returns _FALSE_.  (case-sensitive)</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="equalsIgnoreCase">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the strings are equal, otherwise returns _FALSE_.  (case-insensitive)</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="equalsIgnoreCaseStr">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>strObj</argName>
+                    <objcName>strObj</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the strings are equal,  otherwise returns _FALSE_  (case-insensitive)</descrip>
+            <args2>
+                <arg name="strObj" type="CkString" objcName="strObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="equalsIgnoreCaseW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of equalsIgnoreCase.</descrip>
+            <args2>
+                <arg name="s" type="wideString" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="equalsStr">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>strObj</argName>
+                    <objcName>strObj</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the strings are equal, otherwise returns _FALSE_.  (case-sensitive)</descrip>
+            <args2>
+                <arg name="strObj" type="CkString" objcName="strObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="equalsW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the "equals" method.</descrip>
+            <args2>
+                <arg name="s" type="wideString" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getChar">
+            <gType>CkString</gType>
+            <args>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>idx</argName>
+                    <objcName>idx</objcName>
+                </arg>
+            </args>
+            <descrip>Returns a new CkString object containing the Nth character.  (Note, it does not contain the Nth byte, but the Nth character.)  For languages such as Chinese, Japanese, etc. individual characters are represented by multiple or varying number of bytes.</descrip>
+            <args2>
+                <arg name="idx" type="int" objcName="idx" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getEnc">
+            <gType>mbString</gType>
+            <args>
+                <arg>
+                    <gType>string</gType>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                </arg>
+            </args>
+            <descrip>Returns the string encoded according to ARG1.  The ARG1 can be "base64", "hex", or any encoding specified at the link below.</descrip>
+            <args2>
+                <arg name="encoding" type="string" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Binary Encodings Supported by Chilkat</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="0" name="getNumChars">
+            <gType>int</gType>
+            <args />
+            <descrip>Returns the number of characters in the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="getSizeAnsi">
+            <gType>int</gType>
+            <args />
+            <descrip>Returns the size, in bytes, of the ANSI encoding of the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="getSizeUnicode">
+            <gType>int</gType>
+            <args />
+            <descrip>Returns the size, in bytes, of the Unicode encoding of the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="getSizeUtf8">
+            <gType>int</gType>
+            <args />
+            <descrip>Returns the size, in bytes, of the utf-8 encoding of the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="getString">
+            <gType>mbString</gType>
+            <args />
+            <descrip>Returns the contents of this instance.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getStringAnsi">
+            <gType>mbString</gType>
+            <args />
+            <descrip>Returns the string as null-terminated ANSI.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getStringUtf8">
+            <gType>mbString</gType>
+            <args />
+            <descrip>Returns the string as null-terminated utf-8.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getUnicode">
+            <gType>wideString</gType>
+            <args />
+            <descrip>Return a pointer to memory containing the string in Unicode.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="hexDecode">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>Hex decodes a string and inteprets the bytes according to the character encoding specified.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="hexDecodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of hexDecode.</descrip>
+            <args2>
+                <arg name="charsetEncoding" type="wideString" objcName="charsetEncoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="hexEncode">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>Converts the string to the character encoding specified and replaces the string contents with the hex encoding of the character data.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="hexEncodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of hexEncode.</descrip>
+            <args2>
+                <arg name="charsetEncoding" type="wideString" objcName="charsetEncoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="indexOf">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the index of the first occurrence of a substring.  Returns -1 if not found.</descrip>
+            <args2>
+                <arg name="substr" type="string" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="indexOfStr">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>substrObj</argName>
+                    <objcName>substrObj</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the index of the first occurrence of a substring.  Returns -1 if not found.</descrip>
+            <args2>
+                <arg name="substrObj" type="CkString" objcName="substrObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="indexOfW">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of "indexOf".</descrip>
+            <args2>
+                <arg name="s" type="wideString" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="intValue">
+            <gType>int</gType>
+            <args />
+            <descrip>Converts the string to an integer and returns the integer value.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="isEmpty">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns _TRUE_ if the string object is empty, otherwise returns _FALSE_.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="lastChar">
+            <gType>char</gType>
+            <args />
+            <descrip>Returns the last ANSI character in the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" status="1" name="loadFile">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>Load the contents of a text file into the CkString object. The string is cleared before loading.  The character encoding of the text file is specified by ARG2.  This method allows for text files in any charset to be loaded: utf-8, Unicode, Shift_JIS, iso-8859-1, etc.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" status="1" name="loadFileW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of loadFile.</descrip>
+            <args2>
+                <arg name="path" type="wideString" objcName="path" />
+                <arg name="charsetEncoding" type="wideString" objcName="charsetEncoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="0" dn="1" ax="0" status="1" name="loadXmlFile">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <argName>path</argName>
+                </arg>
+            </args>
+            <descrip>Loads an XML document into the CkString.   The reason for providing a separate method for loading an XML document is because the charset encoding is usually specified using a "charset" attribute at the beginning of the XML document.  The LoadXmlFile method reads just enough of the XML document to get the charset, and then it knows how to read and interpret the bytes of the entire XML document, so that the bytes of the characters are properly interpeted and loaded into the CkString object.</descrip>
+            <args2>
+                <arg name="path" type="string" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="matches">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>strPattern</argName>
+                    <objcName>strPattern</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string matches the ARG1, which may contain one or more asterisk wildcard characters.  Returns _FALSE_ if the string does not match.  This method is case-sensitive.</descrip>
+            <args2>
+                <arg name="strPattern" type="string" objcName="strPattern" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="matchesNoCase">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>strPattern</argName>
+                    <objcName>strPattern</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string matches the ARG1, which may contain one or more asterisk wildcard characters.  Returns _FALSE_ if the string does not match.  This method is case-insensitive.</descrip>
+            <args2>
+                <arg name="strPattern" type="string" objcName="strPattern" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="matchesNoCaseW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of matchesNoCase.</descrip>
+            <args2>
+                <arg name="s" type="wideString" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="matchesStr">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>strPatternObj</argName>
+                    <objcName>strPatternObj</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the string matches a pattern, otherwise returns _FALSE_.  The pattern may contain any number of wildcard '*' characters which represent 0 or more occurrences of any character.  This method is case-sensitive.</descrip>
+            <args2>
+                <arg name="strPatternObj" type="CkString" objcName="strPatternObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="matchesW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the "matches" method.</descrip>
+            <args2>
+                <arg name="s" type="wideString" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="minimizeMemory">
+            <gType>void</gType>
+            <args />
+            <descrip>Minimizes the amount of memory consumed by this object.  For example, consider the following:  A CkString object is loaded with the contents of a text file.  The "replaceAllOccurances" method is called, replacing longer substrings with shorter replacements.  The actual string length will become shorter than the internal buffer space that is allocated.  The minimizeMemory method will, if necessary, allocate a new internal buffer that is exactly the size needed to hold the current contents of the string, copy the string to the new internal buffer, and deallocate the old buffer.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method ax="0" name="obfuscate" cpp="1" dn="1">
+            <gType>void</gType>
+            <args />
+            <descrip>Obfuscates the string.  (The unobfuscate method can be called to reverse the obfuscation to restore the original string.)
+&lt;p&gt;
+The Chilkat string obfuscation algorithm works by taking the utf-8 bytes of the string, base64 encoding it,
+and then scrambling the letters of the base64 encoded string.   It is deterministic in that the same string will always obfuscate to the same result.  It is not a secure way of encrypting a string.  It is only meant to be a simple means of transforming a string into something unintelligible.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="prepend">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Prepends ARG1 to this instance.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="prependW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the "prepend" method.</descrip>
+            <args2>
+                <arg name="s" type="wideString" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="qpDecode">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>Quoted-printable decodes the string and interprets the resulting character data according to the specified character encoding.  The result is that the quoted-printable string is in-place decoded.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="qpDecodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the qpDecode method.</descrip>
+            <args2>
+                <arg name="charset" type="wideString" objcName="charset" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="qpEncode">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>Quoted-printable encodes the string. The string is first converted to the charset specified, and those bytes are QP-encoded. The contents of the string are replaced with the QP-encoded result.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="qpEncodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the qpEncode method.</descrip>
+            <args2>
+                <arg name="charset" type="wideString" objcName="charset" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="removeAll">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>Removes all occurrences of ARG1.</descrip>
+            <args2>
+                <arg name="substr" type="CkString" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="removeCharOccurances">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>char</dnType>
+                    <cppType>char</cppType>
+                    <argName>ch</argName>
+                    <objcName>ch</objcName>
+                </arg>
+            </args>
+            <descrip>Removes all occurrences of a specific ANSI character from the string.</descrip>
+            <args2>
+                <arg name="ch" type="char" objcName="ch" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="removeChunk">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>charStartPos</argName>
+                    <objcName>charStartPos</objcName>
+                </arg>
+                <arg>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>numChars</argName>
+                    <objcName>numChars</objcName>
+                </arg>
+            </args>
+            <descrip>Removes a chunk of characters specified by starting index and length.</descrip>
+            <args2>
+                <arg name="charStartPos" type="int" objcName="charStartPos" />
+                <arg name="numChars" type="int" objcName="numChars" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="removeFirst">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>substr</argName>
+                    <objcName>substr</objcName>
+                </arg>
+            </args>
+            <descrip>Removes the first occurrence of a substring.</descrip>
+            <args2>
+                <arg name="substr" type="CkString" objcName="substr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="replaceAll">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>findStrObj</argName>
+                    <objcName>findStrObj</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>replaceStrObj</argName>
+                    <objcName>replaceStrObj</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces all occurrences of a substring with another. The replacement string is allowed to be empty or different in length.</descrip>
+            <args2>
+                <arg name="findStrObj" type="CkString" objcName="findStrObj" />
+                <arg name="replaceStrObj" type="CkString" objcName="replaceStrObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="replaceAllOccurances">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>findStr</argName>
+                    <objcName>findStr</objcName>
+                </arg>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>replaceStr</argName>
+                    <objcName>replaceStr</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces all occurrences of a substring with another substring.  The replacement string is allowed to be empty or different in length.</descrip>
+            <args2>
+                <arg name="findStr" type="string" objcName="findStr" />
+                <arg name="replaceStr" type="string" objcName="replaceStr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="replaceAllOccurancesW">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>pattern</argName>
+                    <objcName>pattern</objcName>
+                </arg>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>replacement</argName>
+                    <objcName>replacement</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the replaceAllOccurances method.</descrip>
+            <args2>
+                <arg name="pattern" type="wideString" objcName="pattern" />
+                <arg name="replacement" type="wideString" objcName="replacement" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="replaceChar">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>char</dnType>
+                    <cppType>char</cppType>
+                    <argName>findCh</argName>
+                    <objcName>findCh</objcName>
+                </arg>
+                <arg>
+                    <dnType>char</dnType>
+                    <cppType>char</cppType>
+                    <argName>replaceCh</argName>
+                    <objcName>replaceCh</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces all occurrences of a specified ANSI character with another.</descrip>
+            <args2>
+                <arg name="findCh" type="char" objcName="findCh" />
+                <arg name="replaceCh" type="char" objcName="replaceCh" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="replaceFirst">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>findStrObj</argName>
+                    <objcName>findStrObj</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>replaceStrObj</argName>
+                    <objcName>replaceStrObj</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces the first occurrence of a substring with another.  The replacement string is allowed to be empty or different in length.</descrip>
+            <args2>
+                <arg name="findStrObj" type="CkString" objcName="findStrObj" />
+                <arg name="replaceStrObj" type="CkString" objcName="replaceStrObj" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="replaceFirstOccurance">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>findStr</argName>
+                    <objcName>findStr</objcName>
+                </arg>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>replaceStr</argName>
+                    <objcName>replaceStr</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces the first occurrence of a substring with another.   The replacement string is allowed to be empty or different in length.  (Chilkat is aware of the misspelling of the word "occurrence", but unfortunately it is too late to change..)</descrip>
+            <args2>
+                <arg name="findStr" type="string" objcName="findStr" />
+                <arg name="replaceStr" type="string" objcName="replaceStr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="replaceFirstOccuranceW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>pattern</argName>
+                    <objcName>pattern</objcName>
+                </arg>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>replacement</argName>
+                    <objcName>replacement</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of replaceFirstOccurrance. (Chilkat is aware of the misspelling of the word "occurrence", but unfortunately it is too late to change..)</descrip>
+            <args2>
+                <arg name="pattern" type="wideString" objcName="pattern" />
+                <arg name="replacement" type="wideString" objcName="replacement" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="saveToFile" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the string to a file using the character encoding specified by ARG2.  If a file of the same name exists, it is overwritten.  For charsets such as "utf-8", "utf-16", or others that have a possible BOM/preamble, the preamble is output by default. To exclude the BOM/preamble, prepend "no-bom-" to the charset name.  For example "no-bom-utf-8".</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" status="1" name="saveToFileW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the saveToFile method.</descrip>
+            <args2>
+                <arg name="path" type="wideString" objcName="path" />
+                <arg name="charset" type="wideString" objcName="charset" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="setStr">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces the contents of the string with another.</descrip>
+            <args2>
+                <arg name="s" type="CkString" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="setString">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Clears the contents of this instance and appends ARG1.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="setStringAnsi">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>Set the CkString object from an ANSI string.</descrip>
+            <args2>
+                <arg name="s" type="string" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="setStringU">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>unicode</argName>
+                    <objcName>unicode</objcName>
+                </arg>
+            </args>
+            <descrip>Set the CkString object from a Unicode string.</descrip>
+            <args2>
+                <arg name="unicode" type="wideString" objcName="unicode" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="setStringUtf8">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>s</argName>
+                    <objcName>s</objcName>
+                </arg>
+            </args>
+            <descrip>Set the string object from a utf-8 string.</descrip>
+            <args2>
+                <arg name="s" type="string" objcName="s" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="shorten">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>n</argName>
+                    <objcName>n</objcName>
+                </arg>
+            </args>
+            <descrip>Discards the last N characters.</descrip>
+            <args2>
+                <arg name="n" type="int" objcName="n" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="split">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <cppType>char</cppType>
+                    <argName>delimiterChar</argName>
+                    <objcName>delimiterChar</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>exceptDoubleQuoted</argName>
+                    <objcName>exceptDoubleQuoted</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>exceptEscaped</argName>
+                    <objcName>exceptEscaped</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>keepEmpty</argName>
+                    <objcName>keepEmpty</objcName>
+                </arg>
+            </args>
+            <descrip>Splits a string into a collection of strings using a delimiter character. If ARG3 is _TRUE_, then delimiter chars escaped with a backslash are ignored. If ARG2 is _TRUE_, then delimiter chars inside quotes are ignored.  If ARG4 is _FALSE_, then empty strings are excluded from being added to the returned CkStringArray object.</descrip>
+            <args2>
+                <arg name="delimiterChar" type="char" objcName="delimiterChar" />
+                <arg name="exceptDoubleQuoted" type="bool" objcName="exceptDoubleQuoted" />
+                <arg name="exceptEscaped" type="bool" objcName="exceptEscaped" />
+                <arg name="keepEmpty" type="bool" objcName="keepEmpty" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="split2">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>delimiterChars</argName>
+                    <objcName>delimiterChars</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>exceptDoubleQuoted</argName>
+                    <objcName>exceptDoubleQuoted</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>exceptEscaped</argName>
+                    <objcName>exceptEscaped</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>keepEmpty</argName>
+                    <objcName>keepEmpty</objcName>
+                </arg>
+            </args>
+            <descrip>Same as "split", except a set of characters can be used for delimiters.</descrip>
+            <args2>
+                <arg name="delimiterChars" type="string" objcName="delimiterChars" />
+                <arg name="exceptDoubleQuoted" type="bool" objcName="exceptDoubleQuoted" />
+                <arg name="exceptEscaped" type="bool" objcName="exceptEscaped" />
+                <arg name="keepEmpty" type="bool" objcName="keepEmpty" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="split2W">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>splitCharSet</argName>
+                    <objcName>splitCharSet</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>exceptDoubleQuoted</argName>
+                    <objcName>exceptDoubleQuoted</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>exceptEscaped</argName>
+                    <objcName>exceptEscaped</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>keepEmpty</argName>
+                    <objcName>keepEmpty</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the split2 method.</descrip>
+            <args2>
+                <arg name="splitCharSet" type="wideString" objcName="splitCharSet" />
+                <arg name="exceptDoubleQuoted" type="bool" objcName="exceptDoubleQuoted" />
+                <arg name="exceptEscaped" type="bool" objcName="exceptEscaped" />
+                <arg name="keepEmpty" type="bool" objcName="keepEmpty" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="splitAtWS">
+            <gType>StringArray</gType>
+            <args />
+            <descrip>Equivalent to split2(" \t\r\n",true,true,false)</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="substring">
+            <gType>CkString</gType>
+            <args>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>startCharIndex</argName>
+                    <objcName>startCharIndex</objcName>
+                </arg>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>numChars</argName>
+                    <objcName>numChars</objcName>
+                </arg>
+            </args>
+            <descrip>Returns a substring specified by starting character position and number of characters.  (The 1st char is at index 0.)</descrip>
+            <args2>
+                <arg name="startCharIndex" type="int" objcName="startCharIndex" />
+                <arg name="numChars" type="int" objcName="numChars" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="toCRLF">
+            <gType>void</gType>
+            <args />
+            <descrip>Converts all line endings to CRLF.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="toLF">
+            <gType>void</gType>
+            <args />
+            <descrip>Converts all line endings to bare-LF (Unix/Linux style line endings).</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="toLowerCase">
+            <gType>void</gType>
+            <args />
+            <descrip>Converts the string to lowercase.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="toUpperCase">
+            <gType>void</gType>
+            <args />
+            <descrip>Converts the string to uppercase.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="tokenize">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>punctuation</argName>
+                    <objcName>punctuation</objcName>
+                </arg>
+            </args>
+            <descrip>Tokenizes a string.  The string is split at whitespace characters, and any single punctuation character is returned as a separate token.  For example, this string:&lt;br&gt;CkStringArray *CkString::tokenize(char *punctuation) const&lt;br&gt;&lt;br&gt;is tokenized to&lt;br&gt;&lt;br&gt;CkStringArray&lt;br&gt;*&lt;br&gt;CkString&lt;br&gt;:&lt;br&gt;:&lt;br&gt;tokenize&lt;br&gt;(&lt;br&gt;*&lt;br&gt;punctuation&lt;br&gt;)&lt;br&gt;const</descrip>
+            <args2>
+                <arg name="punctuation" type="string" objcName="punctuation" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="tokenizeW">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>punctuation</argName>
+                    <objcName>punctuation</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the "tokenize" method.</descrip>
+            <args2>
+                <arg name="punctuation" type="wideString" objcName="punctuation" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="trim">
+            <gType>void</gType>
+            <args />
+            <descrip>Trim SPACE and Tab characters from both ends of the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="trim2">
+            <gType>void</gType>
+            <args />
+            <descrip>Trim SPACE, Tab, CR, and LF characters from both ends of the string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="trimInsideSpaces">
+            <gType>void</gType>
+            <args />
+            <descrip>Replaces all tabs, CR's, and LF's, with SPACE chars, and removes extra SPACE's so there are no occurrences of more than one SPACE char in a row.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="unobfuscate">
+            <gType>void</gType>
+            <args />
+            <descrip>Unobfuscates the string.
+&lt;p&gt;
+The Chilkat string obfuscation algorithm works by taking the utf-8 bytes of the string, base64 encoding it,
+and then scrambling the letters of the base64 encoded string.   It is deterministic in that the same string will always obfuscate to the same result.  It is not a secure way of encrypting a string.  It is only meant to be a simple means of transforming a string into something unintelligible.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="urlDecode">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>URL decodes the string and interprets the resulting byte data in the specified charset encoding.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="urlDecodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the urlDecode method.</descrip>
+            <args2>
+                <arg name="charsetEncoding" type="wideString" objcName="charsetEncoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="0" name="urlEncode">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>URL encodes the string.  The string is first converted to the specified charset encoding, and those bytes are URL-encoded.  The contents of the string are replaced with the URL-encoded result.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Supported Character Encodings</text>
+                    <url>http://www.chilkatsoft.com/p/p_463.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="charsetEncoding" type="string" objcName="charsetEncoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="urlEncodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charsetEncoding</argName>
+                    <objcName>charsetEncoding</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of the urlEncode method.</descrip>
+            <args2>
+                <arg name="charsetEncoding" type="wideString" objcName="charsetEncoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="punyEncode" cpp="1" dn="1">
+            <gType>void</gType>
+            <descrip>In-place encodes the string to punycode.</descrip>
+            <args />
+            <iversion>9.5.0.52</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>punycode.asp</url>
+                    <text>Punycode Encoding / Decoding</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="punyDecode" cpp="1" dn="1">
+            <gType>void</gType>
+            <descrip>In-place decodes the string from punycode.</descrip>
+            <args />
+            <iversion>9.5.0.52</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>punycode.asp</url>
+                    <text>Punycode Encoding / Decoding</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="PunyEncode" ax="1" axId="158">
+            <gType>void</gType>
+            <descrip>In-place encodes the string to punycode.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args />
+            <links2>
+                <link linkType="example">
+                    <url>punycode.asp</url>
+                    <text>Punycode Encoding / Decoding</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="PunyDecode" ax="1" axId="159">
+            <gType>void</gType>
+            <descrip>In-place decodes the string from punycode.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args />
+            <links2>
+                <link linkType="example">
+                    <url>punycode.asp</url>
+                    <text>Punycode Encoding / Decoding</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="removeDelimited" cpp="1" dn="1" noObjC="1">
+            <gType>void</gType>
+            <descrip>Remove all occurrences of strings delimited by ARG1 and ARG2.   Also removes the delimiters.</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args>
+                <arg>
+                    <argName>beginDelim</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>beginDelim</objcName>
+                </arg>
+                <arg>
+                    <argName>endDelim</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>endDelim</objcName>
+                </arg>
+                <arg>
+                    <argName>caseSensitive</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>caseSensitive</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="beginDelim" type="string" objcName="beginDelim" />
+                <arg name="endDelim" type="string" objcName="endDelim" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <links2 />
+        </method>
+    </methods>
+    <genericName>CkString</genericName>
+    <description>The Chilkat string class.</description>
+    <clsid>70A93698-84F4-4B7A-9D04-B354DBC6C3F9</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>47F0E40C-D2E5-4E14-8133-750275823B82</uuidMidl>
+    <nextAxId>160</nextAxId>
+</class>

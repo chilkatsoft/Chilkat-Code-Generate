@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>FileZippedEventArgs</genericName>
+    <cppName>CkFileZippedEventArgs</cppName>
+    <dnName>FileZippedEventArgs</dnName>
+    <axName>ChilkatFileZippedEventArgs</axName>
+    <description>Provides data for the Chilkat.Zip's OnFileZipped event.</description>
+    <methods />
+    <properties>
+        <property name="Abort" read="1" write="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>Set to _TRUE_ to abort the unzip.</descrip>
+        </property>
+        <property name="CompressedSize" read="1" dn="1">
+            <gType>unsigned long</gType>
+            <cppType />
+            <descrip>The compressed size of the file just zipped.</descrip>
+        </property>
+        <property name="FileName" read="1" dn="1">
+            <gType>string</gType>
+            <cppType />
+            <descrip>The name of the file just zipped.</descrip>
+        </property>
+        <property name="FileSize" read="1" dn="1">
+            <gType>int64</gType>
+            <cppType />
+            <descrip>The uncompressed size of the file just zipped.</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

@@ -1,0 +1,1203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="434281359" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/PrivateKey.xml">
+    <nextAxId>144</nextAxId>
+    <dnName>PrivateKey</dnName>
+    <cppName>CkPrivateKey</cppName>
+    <properties>
+        <property name="BitLength" axId="128" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The bit length (strength) of the private key.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="KeyType" read="1" ax="1" cpp="1" dn="1" axId="130">
+            <gType>string</gType>
+            <descrip>The type of private key.  Can be "empty", "rsa", "dsa", or "ecc".</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="Pkcs8EncryptAlg" read="1" write="1" ax="1" cpp="1" dn="1" axId="129">
+            <gType>string</gType>
+            <descrip>The encryption algorithm to be used when exporting the key to encrypted PKCS8.  The default value is "3des".  Possible choices also include "aes128", "aes192", and "aes256".  All of the encryption algorithm choices use CBC mode.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="GetPkcs1ENC" axId="133" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Gets the private key in unencrypted binary DER format, preferring PKCS1 if possible, and returns in an encoded string, as specified by the ARG1 argument.  
+&lt;p&gt;
+RSA keys are returned in PKCS1 ASN.1 DER format:
+&lt;pre&gt;
+RSAPrivateKey ::= SEQUENCE {
+    version           Version,
+    modulus           INTEGER,  -- n
+    publicExponent    INTEGER,  -- e
+    privateExponent   INTEGER,  -- d
+    prime1            INTEGER,  -- p
+    prime2            INTEGER,  -- q
+    exponent1         INTEGER,  -- d mod (p-1)
+    exponent2         INTEGER,  -- d mod (q-1)
+    coefficient       INTEGER,  -- (inverse of q) mod p
+    otherPrimeInfos   OtherPrimeInfos OPTIONAL
+}
+&lt;/pre&gt;
+&lt;p&gt;
+DSA keys are returned in this ASN.1 DER format:
+&lt;pre&gt;
+SEQUENCE(6 elem)
+    INTEGER 0
+    INTEGER(2048 bit) (p) 
+    INTEGER(160 bit) (q) 
+    INTEGER(2044 bit) (g) 
+    INTEGER(2040 bit) (y - public key) 
+    INTEGER(156 bit) (x - private key) 
+&lt;/pre&gt;
+&lt;p&gt;
+ECC keys are returned in this ASN.1 DER format:
+&lt;pre&gt;
+(from RFC 5915)
+ECPrivateKey ::= SEQUENCE {
+    version        INTEGER { ecPrivkeyVer1(1) } (ecPrivkeyVer1),
+    privateKey     OCTET STRING,
+    parameters [0] ECParameters {{ NamedCurve }} OPTIONAL,
+    publicKey  [1] BIT STRING OPTIONAL (This is the ANSI X9.63 public key format.)
+&lt;/pre&gt;</descrip>
+            <iversion>9.5.0.52</iversion>
+            <args>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Supported Binary Encodings</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="GetPkcs8" axId="100" ax="1" cpp="1" dn="1" status="1" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Gets the private key in unencrypted PKCS8 format.  &lt;p&gt;
+RSA keys are returned in PKCS8 ASN.1 DER format:
+&lt;pre&gt;
+SEQUENCE                  // PrivateKeyInfo
++- INTEGER                // Version - 0 (v1998)
++- SEQUENCE               // AlgorithmIdentifier
+   +- OID                 // 1.2.840.113549.1.1.1
+   +- NULL                // Optional Parameters
++- OCTETSTRING            // PrivateKey
+   +- SEQUENCE            // RSAPrivateKey
+      +- INTEGER(0)       // Version - v1998(0)
+      +- INTEGER(N)       // N
+      +- INTEGER(E)       // E
+      +- INTEGER(D)       // D
+      +- INTEGER(P)       // P
+      +- INTEGER(Q)       // Q
+      +- INTEGER(DP)      // d mod p-1
+      +- INTEGER(DQ)      // d mod q-1
+      +- INTEGER(Inv Q)   // INV(q) mod p
+&lt;/pre&gt;
+&lt;p&gt;
+DSA keys are returned in this ASN.1 DER format:
+&lt;pre&gt;
+SEQUENCE                 // PrivateKeyInfo
++- INTEGER                 // Version
++- SEQUENCE              // AlgorithmIdentifier
+    +- OID                       // 1.2.840.10040.4.1
+    +- SEQUENCE           // DSS-Params (Optional Parameters)
+	+- INTEGER(P)      // P
+	+- INTEGER(Q)      // Q
+	+- INTEGER(G)      // G
+    +- OCTETSTRING             // PrivateKey
+	+- INTEGER(X)      // DSAPrivateKey X
+&lt;/pre&gt;
+&lt;p&gt;
+ECC keys are returned in this ASN.1 DER format:
+&lt;pre&gt;
+(from RFC 5915)
+ECPrivateKey ::= SEQUENCE {
+    version        INTEGER { ecPrivkeyVer1(1) } (ecPrivkeyVer1),
+    privateKey     OCTET STRING,
+    parameters [0] ECParameters {{ NamedCurve }} OPTIONAL,
+    publicKey  [1] BIT STRING OPTIONAL (This is the ANSI X9.63 public key format.)
+&lt;/pre&gt;</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetPkcs8ENC" axId="132" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Gets the private key in unencrypted PKCS8 format and returned in an encoded string, as specified by the ARG1 argument.</descrip>
+            <args>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.52</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Supported Binary Encodings</text>
+                </link>
+                <link linkType="example">
+                    <url>rsa_generate_base64_private_key.asp</url>
+                    <text>Generate RSA Key and return Base64 PKCS8 Private Key</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="GetPkcs8Encrypted" axId="101" ax="1" cpp="1" dn="1" status="1" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the private key to password-protected PKCS8 format.   The Pkcs8EncryptAlg property controls the encryption algorithm used to encrypt.</descrip>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetPkcs8EncryptedENC" ax="1" cpp="1" dn="1" axId="134" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Writes the private key to password-protected PKCS8 format and returns as an encoded string as specified by the ARG1 argument.   The Pkcs8EncryptAlg property controls the encryption algorithm used to encrypt.</descrip>
+            <args>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>password</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Supported Binary Encodings</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.52</iversion>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+        </method>
+        <method name="GetPkcs8EncryptedPem" axId="102" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the private key to password-protected PKCS8 PEM format.    The Pkcs8EncryptAlg property controls the encryption algorithm used to encrypt.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>rsa_encryptedPem.asp</url>
+                    <text>Generate RSA Key and Export to Encrypted PEM</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+        </method>
+        <method name="GetPkcs8Pem" axId="103" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Gets the private key in PKCS8 PEM format.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetPublicKey" ax="1" cpp="1" dn="1" axId="131">
+            <gType>PublicKey</gType>
+            <descrip>Returns the public key portion of the private key as a public key object.</descrip>
+            <args />
+            <iversion>9.5.0.52</iversion>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>convert_private_key_to_public_key.asp</url>
+                    <text>Convert RSA Private Key to Public Key</text>
+                </link>
+                <link linkType="example">
+                    <url>ecc_pubilc_from_private_key.asp</url>
+                    <text>Get ECC Public Key from ECC Private Key</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetRsaDer" axId="104" ax="1" cpp="1" dn="1" deprecated="1" status="1" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Gets the private key in PKCS1 DER format.   This method is deprecated and is replaced by the GetPkcs1Der method (given that this object may contain a non-RSA key).</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetRsaPem" axId="105" ax="1" cpp="1" dn="1" deprecated="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Gets the private key in PKCS1 PEM format. This method is deprecated and is replaced by the GetPem method (given that this object may contain a non-RSA key).</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetXml" axId="106" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the private key in XML format.  The private key is returned  unencrypted and the parts are base64 encoded. 
+&lt;p&gt;
+RSA keys have this XML format:
+&lt;pre&gt;
+&amp;lt;RSAKeyValue&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;Modulus&amp;gt;...&amp;lt;/Modulus&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;Exponent&amp;gt;...&amp;lt;/Exponent&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;P&amp;gt;...&amp;lt;/P&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;Q&amp;gt;...&amp;lt;/Q&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;DP&amp;gt;...&amp;lt;/DP&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;DQ&amp;gt;...&amp;lt;/DQ&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;InverseQ&amp;gt;...&amp;lt;/InverseQ&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;D&amp;gt;...&amp;lt;/D&amp;gt;
+&amp;lt;/RSAKeyValue&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;DSA keys have this XML format:
+&lt;pre&gt;
+&amp;lt;DSAKeyValue&amp;gt;
+	&amp;lt;P&amp;gt;...&amp;lt;/P&amp;gt;
+	&amp;lt;Q&amp;gt;...&amp;lt;/Q&amp;gt;
+	&amp;lt;G&amp;gt;...&amp;lt;/G&amp;gt;
+	&amp;lt;Y&amp;gt;...&amp;lt;/Y&amp;gt;
+	&amp;lt;X&amp;gt;...&amp;lt;/X&amp;gt;
+&amp;lt;/DSAKeyValue&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;ECC keys have this XML format.  The CURVE_NAME could be one of secp256r1, secp384r1, secp521r1, secp256k1 (or others as new curves are supported.)
+&lt;pre&gt;
+&amp;lt;ECCKeyValue curve="CURVE_NAME"&amp;gt;...&amp;lt;/ECCKeyValue&amp;gt;
+&lt;/pre&gt;</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="LoadEncryptedPem" axId="107" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemStr</argName>
+                    <objcName>pemStr</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads the private key from an in-memory encrypted PEM string.  An encrypted PEM contains the private key in encrypted PKCS#8 format, where the data begins and ends with the following tags:
+&lt;pre&gt;
+-----BEGIN ENCRYPTED PRIVATE KEY-----
+BASE64 ENCODED DATA
+-----END ENCRYPTED PRIVATE KEY-----
+&lt;/pre&gt;
+&lt;p&gt;For those requiring a deeper understanding: The base64 data contains ASN.1 DER with the following structure:
+&lt;pre&gt;
+EncryptedPrivateKeyInfo ::= SEQUENCE {
+  encryptionAlgorithm  EncryptionAlgorithmIdentifier,
+  encryptedData        EncryptedData
+}
+
+EncryptionAlgorithmIdentifier ::= AlgorithmIdentifier
+
+EncryptedData ::= OCTET STRING
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="pemStr" type="string" objcName="pemStr" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>jwk_thumbprint.asp</url>
+                    <text>Compute JWK Thumbprint for RSA and EC Private Keys</text>
+                </link>
+            </links2>
+        </method>
+        <method name="LoadEncryptedPemFile" axId="108" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from an encrypted PEM file.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPem" axId="109" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Loads the private key from an in-memory PEM string.  If the PEM contains an encrypted private key, then the LoadEncryptedPem method should instead be called.  This method is for loading an unencrypted private key stored in PEM using PKCS#1 or PKCS#8.
+&lt;p&gt;A private key stored in PKCS#1 format begins and ends with the tags:
+&lt;pre&gt;
+-----BEGIN RSA PRIVATE KEY-----
+BASE64 ENCODED DATA
+-----END RSA PRIVATE KEY-----
+&lt;/pre&gt;
+&lt;p&gt;For those requiring a deeper understanding, the PKCS1 base64 contains ASN.1 in DER encoding with the following structure:
+&lt;pre&gt;
+RSAPrivateKey ::= SEQUENCE {
+  version           Version,
+  modulus           INTEGER,  -- n
+  publicExponent    INTEGER,  -- e
+  privateExponent   INTEGER,  -- d
+  prime1            INTEGER,  -- p
+  prime2            INTEGER,  -- q
+  exponent1         INTEGER,  -- d mod (p-1)
+  exponent2         INTEGER,  -- d mod (q-1)
+  coefficient       INTEGER,  -- (inverse of q) mod p
+  otherPrimeInfos   OtherPrimeInfos OPTIONAL
+}
+&lt;/pre&gt;
+&lt;p&gt;A private key stored in PKCS#8 format begins and ends with the tags:
+&lt;pre&gt;
+-----BEGIN PRIVATE KEY-----
+BASE64 ENCODED DATA
+-----END PRIVATE KEY-----
+&lt;/pre&gt;
+&lt;p&gt;For those requiring a deeper understanding, the PKCS8 base64 contains ASN.1 in DER encoding with the following structure:
+&lt;pre&gt;
+PrivateKeyInfo ::= SEQUENCE {
+  version         Version,
+  algorithm       AlgorithmIdentifier,
+  PrivateKey      BIT STRING
+}
+
+AlgorithmIdentifier ::= SEQUENCE {
+  algorithm       OBJECT IDENTIFIER,
+  parameters      ANY DEFINED BY algorithm OPTIONAL
+}
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>jwk_thumbprint.asp</url>
+                    <text>Compute JWK Thumbprint for RSA and EC Private Keys</text>
+                </link>
+            </links2>
+        </method>
+        <method name="LoadPemFile" axId="110" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from a PEM file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>rsa_signWithPEM.asp</url>
+                    <text>Create PKCS1 RSA Signature with PEM Private Key</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method name="LoadPkcs8" axId="111" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from in-memory PKCS8 byte data.
+&lt;p&gt;For those requiring a deeper understanding, the PKCS8 contains ASN.1 in DER encoding with the following structure:
+&lt;pre&gt;
+PrivateKeyInfo ::= SEQUENCE {
+  version         Version,
+  algorithm       AlgorithmIdentifier,
+  PrivateKey      BIT STRING
+}
+
+AlgorithmIdentifier ::= SEQUENCE {
+  algorithm       OBJECT IDENTIFIER,
+  parameters      ANY DEFINED BY algorithm OPTIONAL
+}
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPkcs8Encrypted" axId="112" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from in-memory password-protected PKCS8 byte data.
+&lt;p&gt;For those requiring a deeper understanding, the encrypted PKCS8 contains ASN.1 in DER encoding with the following structure:
+&lt;pre&gt;
+EncryptedPrivateKeyInfo ::= SEQUENCE {
+  encryptionAlgorithm  EncryptionAlgorithmIdentifier,
+  encryptedData        EncryptedData
+}
+
+EncryptionAlgorithmIdentifier ::= AlgorithmIdentifier
+
+EncryptedData ::= OCTET STRING
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPkcs8EncryptedFile" axId="113" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from an encrypted PKCS8 file.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>rsa_signPkcs8_verify.asp</url>
+                    <text>RSA Sign with PKCS8 Encrypted Key</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+        </method>
+        <method name="LoadPkcs8File" axId="114" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from a PKCS8 file.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPvk" axId="115" ax="1" cpp="1" dn="1" noObjC="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from in-memory PVK byte data.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPvkFile" axId="116" ax="1" cpp="1" dn="1" noObjC="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>filename</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from a PVK format file.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="filename" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadRsaDer" axId="117" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Deprecated methods will be removed at some point in the future.  Applications should instead call LoadPkcs1.
+&lt;p&gt;
+Loads a private key from in-memory RSA PKCS#1 DER byte data.
+&lt;p&gt;For those requiring a deeper understanding, the PKCS1 contains ASN.1 in DER encoding with the following structure:
+&lt;pre&gt;
+RSAPrivateKey ::= SEQUENCE {
+  version           Version,
+  modulus           INTEGER,  -- n
+  publicExponent    INTEGER,  -- e
+  privateExponent   INTEGER,  -- d
+  prime1            INTEGER,  -- p
+  prime2            INTEGER,  -- q
+  exponent1         INTEGER,  -- d mod (p-1)
+  exponent2         INTEGER,  -- d mod (q-1)
+  coefficient       INTEGER,  -- (inverse of q) mod p
+  otherPrimeInfos   OtherPrimeInfos OPTIONAL
+}
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadRsaDerFile" axId="118" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Deprecated methods will be removed at some point in the future.  Applications should instead call LoadPkcs1File.
+&lt;p&gt;
+Loads a private key from an RSA DER format file.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>rsa_keyNotes.asp</url>
+                    <text>About RSA Public/Private Keys</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method name="LoadXml" axId="119" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>xml</argName>
+                    <objcName>xml</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from an XML string. 
+&lt;p&gt;
+RSA keys have this XML format:
+&lt;pre&gt;
+&amp;lt;RSAKeyValue&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;Modulus&amp;gt;...&amp;lt;/Modulus&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;Exponent&amp;gt;...&amp;lt;/Exponent&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;P&amp;gt;...&amp;lt;/P&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;Q&amp;gt;...&amp;lt;/Q&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;DP&amp;gt;...&amp;lt;/DP&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;DQ&amp;gt;...&amp;lt;/DQ&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;InverseQ&amp;gt;...&amp;lt;/InverseQ&amp;gt;
+&amp;nbsp;&amp;nbsp;&amp;lt;D&amp;gt;...&amp;lt;/D&amp;gt;
+&amp;lt;/RSAKeyValue&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;DSA keys have this XML format:
+&lt;pre&gt;
+&amp;lt;DSAKeyValue&amp;gt;
+	&amp;lt;P&amp;gt;...&amp;lt;/P&amp;gt;
+	&amp;lt;Q&amp;gt;...&amp;lt;/Q&amp;gt;
+	&amp;lt;G&amp;gt;...&amp;lt;/G&amp;gt;
+	&amp;lt;Y&amp;gt;...&amp;lt;/Y&amp;gt;
+	&amp;lt;X&amp;gt;...&amp;lt;/X&amp;gt;
+&amp;lt;/DSAKeyValue&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;ECC keys have this XML format.  The CURVE_NAME could be one of secp256r1, secp384r1, secp521r1, secp256k1 (or others as new curves are supported.)
+&lt;pre&gt;
+&amp;lt;ECCKeyValue curve="CURVE_NAME"&amp;gt;...&amp;lt;/ECCKeyValue&amp;gt;
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="xml" type="string" objcName="xml" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadXmlFile" axId="120" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a private key from an XML file.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SavePkcs8EncryptedFile" axId="121" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the private key to a password-protected PKCS8 format file.    The Pkcs8EncryptAlg property controls the encryption algorithm used to encrypt.</descrip>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SavePkcs8EncryptedPemFile" axId="122" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the private key to a password-protected PKCS8 PEM format file.    The Pkcs8EncryptAlg property controls the encryption algorithm used to encrypt.</descrip>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SavePkcs8File" axId="123" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the private key to an unencrypted binary PKCS8 format file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SavePkcs8PemFile" axId="124">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the private key to a PKCS8 PEM format file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SaveRsaDerFile" axId="125" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated and applications should instead call SavePkcs1File.
+&lt;p&gt;
+Saves the private key to a binary PKCS1 DER format file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SaveRsaPemFile" axId="126" ax="1" cpp="1" dn="1" deprecated="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>This method is deprecated.  Applications should instead call SavePemFile.
+&lt;p&gt;
+Saves the private key to a PKCS1 PEM format file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>rsa_generatePEM.asp</url>
+                    <text>Generate RSA Public/Private Key Pair and Export to PEM</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveXmlFile" axId="127">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the private key to an XML file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetPkcs1" axId="135" outArgName="outBytes" ax="1" cpp="1" dn="1" status="1">
+            <gType>bytes</gType>
+            <descrip>Gets the private key in unencrypted binary DER format, preferring PKCS1 if possible.
+&lt;p&gt;
+RSA keys are returned in PKCS1 ASN.1 DER format:
+&lt;pre&gt;
+RSAPrivateKey ::= SEQUENCE {
+    version           Version,
+    modulus           INTEGER,  -- n
+    publicExponent    INTEGER,  -- e
+    privateExponent   INTEGER,  -- d
+    prime1            INTEGER,  -- p
+    prime2            INTEGER,  -- q
+    exponent1         INTEGER,  -- d mod (p-1)
+    exponent2         INTEGER,  -- d mod (q-1)
+    coefficient       INTEGER,  -- (inverse of q) mod p
+    otherPrimeInfos   OtherPrimeInfos OPTIONAL
+}
+&lt;/pre&gt;
+&lt;p&gt;
+DSA keys are returned in this ASN.1 DER format:
+&lt;pre&gt;
+SEQUENCE(6 elem)
+    INTEGER 0
+    INTEGER(2048 bit) (p) 
+    INTEGER(160 bit) (q) 
+    INTEGER(2044 bit) (g) 
+    INTEGER(2040 bit) (y - public key) 
+    INTEGER(156 bit) (x - private key) 
+&lt;/pre&gt;
+&lt;p&gt;
+ECC keys are returned in this ASN.1 DER format:
+&lt;pre&gt;
+(from RFC 5915)
+ECPrivateKey ::= SEQUENCE {
+    version        INTEGER { ecPrivkeyVer1(1) } (ecPrivkeyVer1),
+    privateKey     OCTET STRING,
+    parameters [0] ECParameters {{ NamedCurve }} OPTIONAL,
+    publicKey  [1] BIT STRING OPTIONAL (This is the ANSI X9.63 public key format.)
+&lt;/pre&gt;</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetPkcs1Pem" axId="136" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Gets the private key in non-encrypted PEM format, preferring PKCS1 over PKCS8 if possible for the key type.</descrip>
+            <args>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="LoadPkcs1" ax="1" cpp="1" dn="1" status="1" axId="137">
+            <gType>bool</gType>
+            <descrip>Loads an RSA, ECC, or DSA  private key from binary DER.  
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>data</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <dnType>bytes</dnType>
+                    <axType>bytes</axType>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPkcs1File" ax="1" cpp="1" dn="1" status="1" axId="138">
+            <gType>bool</gType>
+            <descrip>Loads a private key from a PKCS1 file.
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.58</iversion>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SavePkcs1File" ax="1" cpp="1" dn="1" status="1" axId="139">
+            <gType>bool</gType>
+            <descrip>Saves the private key to an unencrypted binary PKCS1 format file.</descrip>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.58</iversion>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SavePemFile" ax="1" cpp="1" dn="1" status="1" axId="140">
+            <gType>bool</gType>
+            <descrip>Saves the private key to an unencrypted PKCS1 PEM format file.</descrip>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.58</iversion>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetJwk" axId="141" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Gets the private key in  JWK (JSON Web Key) format.  
+&lt;p&gt;
+RSA keys have this JWK format:
+&lt;pre&gt;
+         {"kty":"RSA",
+          "n":"0vx7agoebGcQ ... JzKnqDKgw",
+          "e":"AQAB",
+          "d":"X4cTteJY_gn4F ... 4jfcKoAC8Q",
+          "p":"83i-7IvMGXoMX ... vn7O0nVbfs",
+          "q":"3dfOR9cuYq-0S ... 4vIcb6yelxk",
+          "dp":"G4sPXkc6Ya9 ... 8YeiKkTiBj0",
+          "dq":"s9lAH9fggBso ... w494Q_cgk",
+          "qi":"GyM_p6JrXySi ... zTKhAVRU"}
+&lt;/pre&gt;
+&lt;p&gt;ECC keys have this JWK format. 
+&lt;pre&gt;
+         {"kty":"EC",
+          "crv":"P-256",
+          "x":"MKBCTNIcKUSDii11ySs3526iDZ8AiTo7Tu6KPAqv7D4",
+          "y":"4Etl6SRW2YiLUrN5vfvVHuhp7x8PxltmWWlbbM4IFyM",
+          "d":"870MB6gfuTJ4HtUnUvYMyJpr5eUZNP4Bk43bVdj3eAE"}
+&lt;/pre&gt;</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>privatekey_rsa_get_jwk_format.asp</url>
+                    <text>Get RSA Private Key in JWK Format (JSON Web Key)</text>
+                </link>
+                <link linkType="example">
+                    <url>privatekey_ecc_get_jwk_format.asp</url>
+                    <text>Get ECC Private Key in JWK Format (JSON Web Key)</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.66</iversion>
+        </method>
+        <method name="LoadJwk" axId="142" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads a private key from an JWK (JSON Web Key) string. 
+&lt;p&gt;
+RSA keys have this JWK format:
+&lt;pre&gt;
+         {"kty":"RSA",
+          "n":"0vx7agoebGcQ ... JzKnqDKgw",
+          "e":"AQAB",
+          "d":"X4cTteJY_gn4F ... 4jfcKoAC8Q",
+          "p":"83i-7IvMGXoMX ... vn7O0nVbfs",
+          "q":"3dfOR9cuYq-0S ... 4vIcb6yelxk",
+          "dp":"G4sPXkc6Ya9 ... 8YeiKkTiBj0",
+          "dq":"s9lAH9fggBso ... w494Q_cgk",
+          "qi":"GyM_p6JrXySi ... zTKhAVRU"}
+&lt;/pre&gt;
+&lt;p&gt;ECC keys have this JWK format. 
+&lt;pre&gt;
+         {"kty":"EC",
+          "crv":"P-256",
+          "x":"MKBCTNIcKUSDii11ySs3526iDZ8AiTo7Tu6KPAqv7D4",
+          "y":"4Etl6SRW2YiLUrN5vfvVHuhp7x8PxltmWWlbbM4IFyM",
+          "d":"870MB6gfuTJ4HtUnUvYMyJpr5eUZNP4Bk43bVdj3eAE"}
+&lt;/pre&gt;
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Each of the private key Load* methods willl auto-recognize the content and will parse appropriately.  The private key should be successfully loaded even when the wrong format data is passed to the wrong method.</descrip>
+            <args2>
+                <arg name="jsonStr" type="string" objcName="jsonStr" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>privatekey_rsa_load_jwk.asp</url>
+                    <text>Load RSA Private Key from JWK Format (JSON Web Key)</text>
+                </link>
+                <link linkType="example">
+                    <url>privatekey_ecc_load_jwk.asp</url>
+                    <text>Load ECC Private Key from JWK Format (JSON Web Key)</text>
+                </link>
+                <link linkType="example">
+                    <url>jwe_rsaes_oaep_aes_gcm.asp</url>
+                    <text>JWE using RSAES-OAEP and AES GCM</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.66</iversion>
+        </method>
+        <method name="GetJwkThumbprint" axId="143" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Returns the JWK thumbprint for the private key.  This is the  thumbprint of  the JSON Web Key (JWK) as per RFC 7638.</descrip>
+            <args2>
+                <arg name="hashAlg" type="string" objcName="hashAlg" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jwk_thumbprint.asp</url>
+                    <text>Compute JWK Thumbprint for RSA and EC Private Keys</text>
+                </link>
+            </links2>
+        </method>
+    </methods>
+    <genericName>PrivateKey</genericName>
+    <description>Contains an RSA, DSA, or ECC  private key.  Provides methods for importing and exporting to/from PEM, DER, PKCS8, PKCS1, PVK, and XML formats.  Private keys can be imported/exported to both memory and files.</description>
+    <clsid>DFFB3371-78AA-45C5-B8A2-32BB1DD5C846</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>C791AB84-B72F-4DEF-82ED-156F4B027876</uuidMidl>
+    <axName>PrivateKey</axName>
+</class>

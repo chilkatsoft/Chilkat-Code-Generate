@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>FtpTreeEventArgs</genericName>
+    <cppName>CkFtpTreeEventArgs</cppName>
+    <dnName>FtpTreeEventArgs</dnName>
+    <axName>ChilkatFtpTreeEventArgs</axName>
+    <description>Provides data for many of the FTP2 events.</description>
+    <methods />
+    <properties>
+        <property name="NumBytes" read="1" dn="1">
+            <gType>unsigned long</gType>
+            <cppType />
+            <descrip>The size of the file in bytes.</descrip>
+        </property>
+        <property name="Path" read="1" dn="1">
+            <gType>string</gType>
+            <cppType />
+            <descrip>A file path.</descrip>
+        </property>
+        <property name="Skip" read="1" write="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>Set to _TRUE_ to skip the file from being uploaded or downloaded (depending on the event).</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="366837545" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/CertStore.xml">
+    <nextAxId>130</nextAxId>
+    <dnName>CertStore</dnName>
+    <cppName>CkCertStore</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="1" name="AvoidWindowsPkAccess" axId="103">
+            <gType>bool</gType>
+            <descrip>Applies only when running on a Microsoft Windows operating system.  If _TRUE_, then any method that returns a certificate will not try to also access the associated private key, assuming one exists.  This is useful if the certificate was installed with high-security such that a private key access would trigger the Windows OS to display a security warning dialog.  The default value of this property is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="NumCertificates" axId="100" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The number of certificates held in the certificate store.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="NumEmailCerts" read="1" ax="1" cpp="1" dn="1" windowsOnly="1" axId="101">
+            <gType>int</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <descrip>(This property only available on Microsoft Windows operating systems.)&lt;br&gt;
+The number of certificates that can be used for sending secure email within this store.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="AddCertificate" axId="104" ax="1" cpp="1" dn="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>Cert</axType>
+                    <dnType>Cert</dnType>
+                    <cppType>CkCert &amp;</cppType>
+                    <argName>cert</argName>
+                    <objcName>cert</objcName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Adds a certificate to the store.  If the certificate is already in the store, it is updated with the new information.</descrip>
+            <args2>
+                <arg name="cert" type="Cert" objcName="cert" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" status="1" name="CreateFileStore" axId="105">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>filename</objcName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Creates a new file-based certificate store.  Certificates may be saved to this store by calling AddCertificate.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="filename" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" status="1" name="CreateMemoryStore" axId="106">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args />
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Creates an in-memory certificate store.  Certificates may be added by calling AddCertificate.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" status="1" name="CreateRegistryStore" axId="107">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>regRoot</argName>
+                    <objcName>regRoot</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>regPath</argName>
+                    <objcName>regPath</objcName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Creates a registry-based certificate store.  ARG1 must be "CurrentUser" or "LocalMachine".  ARG2 is a registry path such as "Software/MyApplication/Certificates".</descrip>
+            <args2>
+                <arg name="regRoot" type="string" objcName="regRoot" />
+                <arg name="regPath" type="string" objcName="regPath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FindCertByRfc822Name" axId="108">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+            </args>
+            <descrip>Locates a certificate by its RFC 822 name and returns it if found.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FindCertBySerial" axId="109">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>serialNumber</objcName>
+                </arg>
+            </args>
+            <descrip>Finds and returns the certificate that has the matching serial number.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="serialNumber" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FindCertBySha1Thumbprint" axId="110">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Finds a certificate by it's SHA-1 thumbprint.  The thumbprint is a hexidecimal string.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FindCertBySubject" axId="111">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>subject</objcName>
+                </arg>
+            </args>
+            <descrip>Finds a certificate where one of the Subject properties (SubjectCN, SubjectE, SubjectO, SubjectOU, SubjectL, SubjectST, SubjectC) matches exactly (but case insensitive) with the passed string. A match in SubjectCN will be tried first, followed by SubjectE, and SubjectO. After that, the first match found in SubjectOU, SubjectL, SubjectST, or SubjectC, but in no guaranteed order, is returned. All matches are case insensitive.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="subject" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FindCertBySubjectCN" axId="112">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>commonName</objcName>
+                </arg>
+            </args>
+            <descrip>Finds a certificate where the SubjectCN property (common name) matches exactly (but case insensitive) with the passed string
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="commonName" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FindCertBySubjectE" axId="113">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>emailAddress</objcName>
+                </arg>
+            </args>
+            <descrip>Finds a certificate where the SubjectE property (email address) matches exactly (but case insensitive) with the passed string. This function differs from FindCertForEmail in that the certificate does not need to match the ForSecureEmail property.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="emailAddress" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>certStore_findCertForEmail.asp</url>
+                    <text>Find Certificate for Email Address in Current-User Certificate Store (Windows-Only)</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FindCertBySubjectO" axId="114">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>organization</objcName>
+                </arg>
+            </args>
+            <descrip>Finds a certificate where the SubjectO property (organization) matches exactly (but case insensitive) with the passed string.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="organization" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" name="FindCertForEmail" axId="115">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>emailAddress</argName>
+                    <objcName>emailAddress</objcName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Finds a certificate that can be used to send secure email to the passed email address. A certificate matches only if the ForSecureEmail property is TRUE, and the email address matches exactly (but case insensitive) with the SubjectE property. Returns NULL if no matches are found.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="emailAddress" type="string" objcName="emailAddress" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetCertificate" axId="116">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth certificate in the store. The first certificate is at index 0.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" name="GetEmailCert" axId="117">
+            <gType>Cert</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Returns the Nth email certificate in the store. The first certificate is at index 0. Use the NumEmailCertificates property to get the number of email certificates.
+&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadPemFile" axId="118">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemPath</argName>
+                    <objcName>pemPath</objcName>
+                </arg>
+            </args>
+            <descrip>Loads the certificates contained within a PEM formatted file.</descrip>
+            <args2>
+                <arg name="pemPath" type="string" objcName="pemPath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadPemStr" axId="119">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemString</argName>
+                    <objcName>pemString</objcName>
+                </arg>
+            </args>
+            <descrip>Loads the certificates contained within an in-memory PEM formatted string.</descrip>
+            <args2>
+                <arg name="pemString" type="string" objcName="pemString" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadPfxData" axId="120">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>pfxData</argName>
+                    <objcName>pfxData</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a PFX from an in-memory image of a PFX file.   Once loaded, the certificates within the PFX may be searched via the Find* methods.   It is also possible to iterate from 0 to NumCertficates-1, calling GetCertificate for each index, to retrieve each certificate within the PFX.</descrip>
+            <args2>
+                <arg name="pfxData" type="bytes" objcName="pfxData" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPfxData2" cpp="1" noSwig="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if !defined(CHILKAT_MONO)</ifdef>
+            <args>
+                <arg>
+                    <cppType>const unsigned char *</cppType>
+                    <argName>pByteData</argName>
+                    <objcName>pByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>szByteData</argName>
+                    <objcName>szByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a PFX from an in-memory image of a PFX file.   Once loaded, the certificates within the PFX may be searched via the Find* methods.   It is also possible to iterate from 0 to NumCertficates-1, calling GetCertificate for each index, to retrieve each certificate within the PFX.</descrip>
+            <args2>
+                <arg name="pByteData" type="cppBytes" objcName="pByteData" />
+                <arg name="szByteData" type="unsigned long" objcName="szByteData" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadPfxFile" axId="121">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxFilename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a PFX file.  Once loaded, the certificates within the PFX may be searched via the Find* methods.   It is also possible to iterate from 0 to NumCertficates-1, calling GetCertificate for each index, to retrieve each certificate within the PFX.</descrip>
+            <args2>
+                <arg name="pfxFilename" type="string" objcName="path" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="OpenChilkatStore" axId="127" ax="1" dn="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <argName>readOnly</argName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Opens the registry-based local machine certificate store having the path "Software/Chilkat/SystemCertificates".   If the certificate store does not exist, it is automatically created.  Setting ARG1 = _TRUE_ causes the certificate store to be opened read-only, and will prevent "permission denied" errors caused by the need for read-write permission.&lt;p&gt; Once loaded, the certificates within the store may be searched via the Find* methods.   An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.</descrip>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args2>
+                <arg name="readOnly" type="bool" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="OpenCurrentUserStore" axId="122" ax="1" cpp="1" dn="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>readOnly</argName>
+                    <objcName>readOnly</objcName>
+                </arg>
+            </args>
+            <descrip>(This method is only available on Microsoft Windows operating systems.)&lt;br&gt;
+Opens the registry-based Current-User\Personal certificate store.  Set ARG1 = _TRUE_ if only fetching certificates and not updating the certificate store (i.e. certificates will not be added or removed).  Setting ARG1 = _TRUE_ causes the certificate store to be opened read-only, and will prevent "permission denied" errors caused by the need for read-write permission.&lt;p&gt; Once loaded, the certificates within the store may be searched via the Find* methods.   An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.</descrip>
+            <args2>
+                <arg name="readOnly" type="bool" objcName="readOnly" />
+            </args2>
+            <links2>
+                <link linkType="example" windowsOnly="1">
+                    <url>certStore_current_user.asp</url>
+                    <text>List Certificates in the Current User Certificate Store (Windows Only)</text>
+                </link>
+            </links2>
+        </method>
+        <method name="OpenFileStore" axId="123" ax="1" cpp="1" dn="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>filename</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>readOnly</argName>
+                    <objcName>readOnly</objcName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Opens a file-based certificate store.&lt;p&gt; Once loaded, the certificates within the store may be searched via the Find* methods.  An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="filename" />
+                <arg name="readOnly" type="bool" objcName="readOnly" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="OpenLocalSystemStore" axId="124" ax="1" cpp="1" dn="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>readOnly</argName>
+                    <objcName>readOnly</objcName>
+                </arg>
+            </args>
+            <descrip>(This method is only available on Microsoft Windows operating systems.)&lt;br&gt;
+Opens the registry-based Local-Computer\Personal certificate store.  Set ARG1 = _TRUE_ if only fetching certificates and not updating the certificate store (i.e. certificates will not be added or removed).  Setting ARG1 = _TRUE_ causes the certificate store to be opened read-only, and will prevent "permission denied" errors caused by the need for read-write permission.&lt;p&gt; Once loaded, the certificates within the store may be searched via the Find* methods.   An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.</descrip>
+            <args2>
+                <arg name="readOnly" type="bool" objcName="readOnly" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="OpenOutlookStore" axId="128" ax="1" dn="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <argName>readOnly</argName>
+                </arg>
+            </args>
+            <descrip>(This method is only available on Microsoft Windows operating systems.)&lt;br&gt;
+Opens the registry-based Current-User\Other People certificate store.  This is the certificate store use by Microsot Outlook.  Set ARG1 = _TRUE_ if only fetching certificates and not updating the certificate store (i.e. certificates will not be added or removed).  Setting ARG1 = _TRUE_ causes the certificate store to be opened read-only, and will prevent "permission denied" errors caused by the need for read-write permission.&lt;p&gt; Once loaded, the certificates within the store may be searched via the Find* methods.   An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.</descrip>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args2>
+                <arg name="readOnly" type="bool" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="OpenRegistryStore" axId="125" ax="1" cpp="1" dn="1" windowsOnly="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>regRoot</argName>
+                    <objcName>regRoot</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>regPath</argName>
+                    <objcName>regPath</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>readOnly</argName>
+                    <objcName>readOnly</objcName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Opens an arbitrary registry-based certificate store. ARG1 must be "CurrentUser" or "LocalMachine".  ARG2 is a registry path such as "Software/MyApplication/Certificates".&lt;p&gt;Setting ARG3 = _TRUE_ causes the certificate store to be opened read-only, and will prevent "permission denied" errors caused by the need for read-write permission.&lt;p&gt; Once loaded, the certificates within the store may be searched via the Find* methods.   An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.</descrip>
+            <args2>
+                <arg name="regRoot" type="string" objcName="regRoot" />
+                <arg name="regPath" type="string" objcName="regPath" />
+                <arg name="readOnly" type="bool" objcName="readOnly" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="OpenWindowsStore" ax="1" cpp="1" dn="1" windowsOnly="1" status="1" axId="129">
+            <gType>bool</gType>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Opens a Microsoft Windows certificate store. ARG1 must be "CurrentUser" or "LocalMachine".  ARG2 is the name of the certificate store to open. It may be any of the following:
+&lt;ul&gt;
+&lt;li&gt;
+AddressBook: Certificate store for other users.
+&lt;li&gt;
+AuthRoot: Certificate store for third-party certification authorities (CAs).
+&lt;li&gt;
+CertificationAuthority: Certificate store for intermediate certification authorities (CAs).
+&lt;li&gt;
+Disallowed: Certificate store for revoked certificates.
+&lt;li&gt;
+My: Certificate store for personal certificates.
+&lt;li&gt;
+Root: Certificate store for trusted root certification authorities (CAs).
+&lt;li&gt;
+TrustedPeople: Certificate store for directly trusted people and resources.
+&lt;li&gt;
+TrustedPublisher: Certificate store for directly trusted publishers.
+&lt;/ul&gt;
+&lt;p&gt;Setting ARG3 = _TRUE_ causes the certificate store to be opened read-only, and will prevent "permission denied" errors caused by the need for read-write permission.&lt;p&gt; Once loaded, the certificates within the store may be searched via the Find* methods.   An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.</descrip>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>storeLocation</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>storeLocation</objcName>
+                </arg>
+                <arg>
+                    <argName>storeName</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>storeName</objcName>
+                </arg>
+                <arg>
+                    <argName>readOnly</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>readOnly</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="storeLocation" type="string" objcName="storeLocation" />
+                <arg name="storeName" type="string" objcName="storeName" />
+                <arg name="readOnly" type="bool" objcName="readOnly" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" status="1" name="RemoveCertificate" axId="126">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_WINCERTSTORE_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>Cert</axType>
+                    <dnType>Cert</dnType>
+                    <cppType>CkCert &amp;</cppType>
+                    <argName>cert</argName>
+                    <objcName>cert</objcName>
+                </arg>
+            </args>
+            <descrip>(This method only available on Microsoft Windows operating systems.)&lt;br&gt;
+Removes the passed certificate from the store. The certificate object passed as the argument can no longer be used once removed.</descrip>
+            <args2>
+                <arg name="cert" type="Cert" objcName="cert" />
+            </args2>
+            <links2 />
+        </method>
+    </methods>
+    <genericName>CertStore</genericName>
+    <description>Represents a collection of certificates.  The certificates may be loaded from a PFX (PKCS#12) or from a Windows-based certificate store.  &lt;p&gt;Many of the methods of this class are only applicable when running on a MS Windows operating system.  The methods for opening, creating, and modifying Windows-based certificate stores (registry-based, file-based, and memory-based) are (of course) Windows-only. However, the methods for loading certs from PFX (PKCS#12), are valid on all supported operating systems, including Linux, MAC OS X, Windows, etc.</description>
+    <clsid>00E685A8-7AE9-4DC5-8C78-54C03A8646FC</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>8CBE1840-52FA-4404-824C-139577309528</uuidMidl>
+    <axName>ChilkatCertStore</axName>
+</class>

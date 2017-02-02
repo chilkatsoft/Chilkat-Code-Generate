@@ -1,0 +1,3182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="339043990" sourceXmlPath="C:/ck2000/appData/apiDef2/Imap.xml" license="Imap" hasEvents="1" baseProgress="1">
+    <axName>ChilkatImap</axName>
+    <dnName>Imap</dnName>
+    <cppName>CkImap</cppName>
+    <properties>
+        <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="237">
+            <gType>bool</gType>
+            <descrip>When set to _TRUE_, causes the currently running method to abort.  Methods that always finish quickly (i.e.have no length file operations or network communications) are not affected.  If no method is running, then this property is automatically reset to _FALSE_ when the next method is called.  When the abort occurs, this property is reset to _FALSE_.  Both synchronous and asynchronous method calls can be aborted.  (A synchronous method call could be aborted by setting this property from a separate thread.)</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AppendSeen" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>When _TRUE_ (the default) the Append method will mark the email appended to a mailbox as already seen.  Otherwise an appended email will be initialized to have a status of unseen.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property write="0" name="AppendUid" axId="101" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The UID of the last email appended to a mailbox via an Append* method.  (Not all IMAP servers report back the UID of the email appended.)</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>imap_append_uid.asp</url>
+                    <text>Upload (Append) Email to an IMAP Mailbox and get the UID of the Appended Email</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="AuthMethod" axId="102" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Can be set to "XOAUTH2", "CRAM-MD5", "NTLM", "PLAIN", or "LOGIN" to select the authentication method.  NTLM is the most secure, and is a synonym for "Windows Integrated Authentication".  The default is "LOGIN" (or the empty string) which is simple plain-text username/password authentication.  Not all IMAP servers support all authentication methods.
+&lt;p&gt;The XOAUTH2 method was added in version 9.5.0.44.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; If SPA (i.e. NTLM) authentication does not succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AuthzId" axId="103" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Applies to the PLAIN authentication method.  May be set to an authorization ID that is to be sent along with the Login and Password for authentication.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AutoDownloadAttachments" axId="104" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If set to _TRUE_, then all Fetch* methods will also automatically download attachments.  If set to _FALSE_, then the Fetch* methods download the email without attachments.  The default value is _TRUE_.
+&lt;p&gt;
+Note: Methods that download headers-only, such as FetchSingleHeader, ignore this property and never download attachments.  Also, signed and/or encrypted emails will always be downloaded in full (with attachments) regardless of this property setting.</descrip>
+            <links>
+                <link>
+                    <text>Fetching IMAP Attachments</text>
+                    <url>http://www.cknotes.com/?p=393</url>
+                </link>
+                <link>
+                    <text>Getting Attachment Information</text>
+                    <url>http://www.cknotes.com/?p=434</url>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>Fetching IMAP Attachments</text>
+                    <url>http://www.cknotes.com/?p=393</url>
+                </link>
+                <link linkType="external">
+                    <text>Getting Attachment Information</text>
+                    <url>http://www.cknotes.com/?p=434</url>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/8437/understanding-imap-email-attachments</url>
+                    <text>Understanding IMAP Email Attachments</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="AutoFix" axId="105">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then the following will occur when a connection is made to an IMAP server:&lt;p&gt;
+1) If the Port property = 993, then sets StartTls = _FALSE_ and Ssl = _TRUE_&lt;br&gt;
+2) If the Port property = 143, sets Ssl = _FALSE_&lt;p&gt;
+The default value of this property is _TRUE_.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ClientIpAddress" axId="106">
+            <gType>string</gType>
+            <descrip>The IP address to use for computers with multiple network interfaces or IP addresses.
+For computers with a single network interface (i.e. most computers), this property should not be set.  For multihoming computers, the default IP address is automatically used if this property is not set.&lt;p&gt;
+The IP address is a string such as in dotted notation using numbers, not domain names, such as "165.164.55.124".</descrip>
+            <links>
+                <link>
+                    <text>Important Bind to Adapter Notes for Windows</text>
+                    <url>http://www.cknotes.com/?p=376</url>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>Important Bind to Adapter Notes for Windows</text>
+                    <url>http://www.cknotes.com/?p=376</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ConnectTimeout" axId="107">
+            <gType>int</gType>
+            <descrip>Maximum number of seconds to wait when connecting to an IMAP server.  The default value is 30 (units are in seconds).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ConnectedToHost" axId="108">
+            <gType>string</gType>
+            <descrip>Contains the IMAP server's domain name (or IP address) if currently connected.  Otherwise returns an empty string.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Domain" axId="109">
+            <gType>string</gType>
+            <descrip>The Windows Domain to use for Windows Integrated Authentication (also known as NTLM).  This may be empty.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HeartbeatMs" axId="110">
+            <gType>int</gType>
+            <descrip>This is the number of milliseconds between each AbortCheck event callback.  The AbortCheck callback allows an application to abort any IMAP operation prior to completion.  If HeartbeatMs is 0, no AbortCheck event callbacks will occur.</descrip>
+            <links>
+                <link>
+                    <text>HeartbeatMs and the AbortCheck Event</text>
+                    <url_cs>http://www.cknotes.com/?p=149</url_cs>
+                    <url_vb.net>http://www.cknotes.com/?p=149</url_vb.net>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external" lang="csharp">
+                    <text>HeartbeatMs and the AbortCheck Event</text>
+                    <url>http://www.cknotes.com/?p=149</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyAuthMethod" axId="111">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy authentication method name.  Valid choices are "Basic" or "NTLM".</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyDomain" axId="112">
+            <gType>string</gType>
+            <descrip>The NTLM authentication domain (optional) if NTLM authentication is used.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyHostname" axId="113">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in dotted decimal notation).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyPassword" axId="114">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy password.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyPort" axId="115">
+            <gType>int</gType>
+            <descrip>If an HTTP proxy is to be used, set this property to the HTTP proxy port number.  (Two commonly used HTTP proxy ports are 8080 and 3128.)</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="HttpProxyUsername" axId="116" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login name.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="KeepSessionLog" axId="117">
+            <gType>bool</gType>
+            <descrip>Turns the in-memory session logging on or off.  If on, the session log can be obtained via the SessionLog property.  The default value is _FALSE_.   
+&lt;p&gt;
+The SessionLog contains the raw commands sent to the IMAP server, and the raw responses received from the IMAP server.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastAppendedMime" axId="118">
+            <gType>string</gType>
+            <descrip>The MIME source of the email last appended during a call to AppendMail, or AppendMime.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastCommand" axId="119">
+            <gType>string</gType>
+            <descrip>The last raw command sent to the IMAP server.  (This information can be used for debugging if problems occur.)</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastIntermediateResponse" axId="120">
+            <gType>string</gType>
+            <descrip>The last intermediate response received from the IMAP server.  (This information can be used for debugging if problems occur.)</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property write="0" name="LastResponse" axId="121" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The raw data of the last response from the IMAP server. (Useful for debugging if problems occur.)   This property is cleared whenever a command is sent to the IMAP server.  If no response is received, then this property will remain empty.  Otherwise, it will contain the last response received from the IMAP server.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="LastResponseCode" read="1" ax="1" cpp="1" dn="1" axId="225">
+            <gType>string</gType>
+            <descrip>The response code part of the last command response, if it exists.
+IMAP status responses MAY include an OPTIONAL "response code".  A response
+   code consists of data inside square brackets in the form of an atom,
+   possibly followed by a space and arguments.  The response code
+   contains additional information or status codes for client software
+   beyond the OK/NO/BAD condition, and are defined when there is a
+   specific action that a client can take based upon the additional
+   information.  Examples of response codes are "NONEXISTENT" and "AUTHENTICATIONFAILED".  The response code strings for a given failure condition may vary depending on the IMAP server implementation.</descrip>
+            <iversion>9.5.0.44</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LoggedInUser" axId="122">
+            <gType>string</gType>
+            <descrip>If logged into an IMAP server, the logged-in username.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumMessages" axId="123">
+            <gType>int</gType>
+            <descrip>After selecting a mailbox (by calling SelectMailbox), this property will
+be updated to reflect the total number of emails in the mailbox.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="PeekMode" axId="124">
+            <gType>bool</gType>
+            <descrip>Set to true to prevent the mail flags (such as the "Seen" flag) from being set when email is retrieved.  The default value of this property is false.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="PercentDoneScale" read="1" write="1" ax="1" cpp="1" dn="1" axId="229">
+            <gType>int</gType>
+            <descrip>This property is only valid in programming environment and languages that allow for event callbacks.
+&lt;p&gt;
+Sets the value to be defined as 100% complete for the purpose of PercentDone event callbacks.  The defaut value of 100 means that at most 100 event PercentDone callbacks will occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress as a percentage completed.   This property may be set to larger numbers to get more fine-grained PercentDone callbacks.  For example, setting this property equal to 1000 will provide callbacks with .1 percent granularity.  For example, a value of 453 would indicate 45.3% competed.  This property is clamped to a minimum value of 10, and a maximum value of 100000.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Port" axId="125">
+            <gType>int</gType>
+            <descrip>The IMAP port number.  If using SSL, be sure to set this to the IMAP SSL port number, which is typically port 993.  (If this is the case, make sure you also set the Ssl property = _TRUE_.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="PreferIpv6" read="1" write="1" ax="1" cpp="1" dn="1" axId="222">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain.   The default value of this property is _FALSE_, which will choose IPv4 over IPv6.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="ReadTimeout" axId="126" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The maximum amount of time (in seconds) that incoming data is allowed to stall while reading any kind of response from an IMAP server.  This is the amount of time that needs to elapse while no additional response bytes are forthcoming.  For the case of long responses, if the data stream halts for more than this amount, it will timeout. This property is not a maximum for the total response time, but only a maximum for the amount of time while no response arrives.   
+&lt;p&gt;
+The default value is 30 seconds.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="RequireSslCertVerify" axId="221" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then the IMAP client will verify the server's SSL certificate.  The certificate is expired, or if the cert's signature is invalid, the connection is not allowed.  The default value of this property is _FALSE_.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SearchCharset" axId="127" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The "CHARSET" to be used in searches issued by the Search method.  The default value is "UTF-8". (If no 8bit chars are found in the search criteria passed to the Search method, then no CHARSET is needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an appropriate multibyte charset.  
+&lt;p&gt;
+In summary, it is unlikely that this property needs to be changed.  It should only be modified if trouble arises with some IMAP servers when non-English chars are used in the search criteria.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property write="0" name="SelectedMailbox" axId="128" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The currently selected mailbox, or an empty string if none.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SendBufferSize" axId="129">
+            <gType>int</gType>
+            <descrip>The buffer size to be used with the underlying TCP/IP socket for sending.  The default value is 32767.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SeparatorChar" axId="130" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The separator character used by the IMAP server for the mailbox hierarchy.  It is typically "/" or ".", but may vary depending on the IMAP server.  The ListMailboxes method has the side-effect of setting this property to the correct value because the IMAP server's response when listing mailboxes includes information about the separator char.
+&lt;p&gt;
+&lt;b&gt;Note: &lt;/b&gt; Starting in version 9.5.0.47, this property changed from a "char" type to a "string" type.  The separator char property will always be a string of length 1 character.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SessionLog" axId="131">
+            <gType>string</gType>
+            <descrip>Contains an in-memory log of the raw commands sent to the IMAP server, and the raw responses received from the IMAP server.  The KeepSessionLog property must be set to _TRUE_ to enable session logging.  Call ClearSessionLog to reset the log.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoRcvBuf" axId="132">
+            <gType>int</gType>
+            <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 0, which indicates that the receive buffer size socket option should not be explicitly set (i.e. the system default value, which may vary from system to system, should be used).   
+&lt;p&gt;
+This property can be changed if download performance seems slow.  It is recommended to be a multiple of 4096.  To see the current system's default receive buffer size, examine the LastErrorText property after calling any method that establishes a connection.  It should be reported under the heading "SO_RCVBUF".  To boost performance, try setting it equal to 2, 3, or 4 times the default value.</descrip>
+            <links>
+                <link>
+                    <text>More Information about TCP performance and Buffer Sizes</text>
+                    <url>http://www.cknotes.com/?p=446</url>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>More Information about TCP performance and Buffer Sizes</text>
+                    <url>http://www.cknotes.com/?p=446</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoSndBuf" axId="133">
+            <gType>int</gType>
+            <descrip>Sets the send buffer size socket option.   Normally, this property should be left unchanged.  The default value is 0, which indicates that the send buffer size socket option should not be explicitly set (i.e. the system default value, which may vary from system to system, should be used).   
+&lt;p&gt;
+This property can be changed if upload performance seems slow.  It is recommended to be a multiple of 4096.  To see the current system's default send buffer size, examine the LastErrorText property after calling any method that establishes a connection.  It should be reported under the heading "SO_SNDBUF".  To boost performance, try setting it equal to 2, 3, or 4 times the default value.</descrip>
+            <links>
+                <link>
+                    <text>More Information about TCP performance and Buffer Sizes</text>
+                    <url>http://www.cknotes.com/?p=446</url>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>More Information about TCP performance and Buffer Sizes</text>
+                    <url>http://www.cknotes.com/?p=446</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksHostname" axId="134">
+            <gType>string</gType>
+            <descrip>The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation).  This property is only used if the SocksVersion property is set to 4 or 5).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksPassword" axId="135">
+            <gType>string</gType>
+            <descrip>The SOCKS5 password (if required).  The SOCKS4 protocol does not include the use of a password, so this does not apply to SOCKS4.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksPort" axId="136">
+            <gType>int</gType>
+            <descrip>The SOCKS4/SOCKS5 proxy port.  The default value is 1080. 
+This property only applies if a SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksUsername" axId="137">
+            <gType>string</gType>
+            <descrip>The SOCKS4/SOCKS5 proxy username.  This property is only used if the SocksVersion property is set to 4 or 5).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksVersion" axId="138">
+            <gType>int</gType>
+            <descrip>SocksVersion
+May be set to one of the following integer values:
+&lt;p&gt;
+&lt;b&gt;0&lt;/b&gt; - No SOCKS proxy is used.  This is the default.&lt;br&gt;
+&lt;b&gt;4&lt;/b&gt; - Connect via a SOCKS4 proxy.&lt;br&gt;
+&lt;b&gt;5&lt;/b&gt; - Connect via a SOCKS5 proxy.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Ssl" axId="139">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the IMAP connection should be TLS/SSL. &lt;p&gt;
+Note: The typical IMAP TLS/SSL port number is 993.  If you set this property = _TRUE_, it is likely that you should also set the Port property = 993.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SslAllowedCiphers" axId="228" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections.  The default (empty string) indicates that all implemented ciphers are possible.  The TLS ciphers supported in Chilkat v9.5.0.55 and later are:
+&lt;pre&gt;
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+&lt;/pre&gt;
+To restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384".   The order should be in terms of preference, with the preferred algorithms listed first.  (Note that the client cannot specifically choose the algorithm is picked because it is the server that chooses.  The client simply provides the server with a list from which to choose.)
+&lt;p&gt;
+The property can also disallow connections with servers having certificates with RSA keys less than a certain size.  By default, server certificates having RSA keys of 512 bits or greater are allowed.  Add the keyword "rsa1024" to disallow connections with servers having keys smaller than 1024 bits.  Add the keyword "rsa2048"  to disallow connections with servers having keys smaller than 2048 bits.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; Prior to Chilkat v9.5.0.55, it was not possible to explicitly list allowed cipher suites.  The deprecated means for indicating allowed ciphers was both incomplete  and unprecise.  For example, the following keywords could be listed to allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4".    These keywords will still be recognized, but programs should be updated to explicitly list the allowed ciphers.&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;secure-renegotiation:&lt;/b&gt; Starting in Chilkat v9.5.0.55, the keyword "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC 5746).&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;best-practices:&lt;/b&gt; Starting in Chilkat v9.5.0.55, this  property may be set to the single keyword "best-practices".  This will allow ciphers based on the current best practices.  As new versions of Chilkat are released, the best practices may change.  Changes will be noted here.  The current best practices are:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the server uses an RSA key, it must be 1024 bits or greater.&lt;/li&gt;
+&lt;li&gt;All renegotations must be secure renegotiations.&lt;/li&gt;
+&lt;li&gt;All ciphers using RC4, DES, or 3DES are disallowed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;b&gt;Example:&lt;/b&gt; The following string would restrict to 2 specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024, secure-renegotiation"&lt;/p&gt;</descrip>
+            <iversion>9.5.0.48</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SslProtocol" axId="140" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Selects the secure protocol to be used for secure (SSL/TLS) connections.  Possible values are:
+&lt;blockquote&gt;
+default&lt;br /&gt;
+TLS 1.2&lt;br /&gt;
+TLS 1.1&lt;br /&gt;
+TLS 1.0&lt;br /&gt;
+SSL 3.0&lt;br /&gt;
+TLS 1.2 or higher&lt;br /&gt;
+TLS 1.1 or higher&lt;br /&gt;
+TLS 1.0 or higher&lt;br /&gt;
+&lt;/blockquote&gt;
+The default value is "default" which will choose the, which allows for the protocol to be selected dynamically at runtime based on the requirements of the server.  Choosing an exact protocol will cause the connection to fail unless that exact protocol is negotiated.  It is better to choose "X or higher" than an exact protocol.   The "default" is effectively "SSL 3.0 or higher".</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SslServerCertVerified" axId="141">
+            <gType>bool</gType>
+            <descrip>Read-only property that returns _TRUE_ if the IMAP server's digital certificate was verified when connecting via SSL / TLS.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="StartTls" axId="142">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then the Connect method will (internallly) convert the connection to TLS/SSL via the STARTTLS IMAP command.  This is called "explict SSL/TLS" because the client explicitly requests the connection be transformed into a TLS/SSL secure channel.  The alternative is "implicit SSL/TLS" where the "Ssl" property is set to _TRUE_ and the IMAP client connects to the well-known TLS/SSL IMAP port of 993.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="TlsCipherSuite" read="1" ax="1" cpp="1" dn="1" axId="231">
+            <gType>string</gType>
+            <descrip>Contains the current or last negotiated TLS cipher suite.  If no TLS connection has yet to be established, or if a connection as attempted and failed, then this will be empty.  A sample cipher suite string looks like this:  TLS_DHE_RSA_WITH_AES_256_CBC_SHA256.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="TlsPinSet" read="1" write="1" ax="1" cpp="1" dn="1" axId="236">
+            <gType>string</gType>
+            <descrip>Specifies a set of pins for Public Key Pinning for TLS connections.  This property lists the expected SPKI fingerprints for the server certificates.  If the server's certificate (sent during the TLS handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the connection fails. The format of this string property is as follows:
+&lt;pre&gt;
+hash_algorithm, encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
+&lt;/pre&gt;
+For example, the following string specifies a single sha256 base64-encoded SPKI fingerprint:
+&lt;pre&gt;
+"sha256, base64, lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
+&lt;/pre&gt;
+This example specifies two SPKI fingerprints:
+&lt;pre&gt;
+"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=, 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
+&lt;/pre&gt;
+Any of the following hash algorithms are allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or ripemd320.
+&lt;p&gt;
+The following encodings are allowed: base64, hex, and any of the encodings indicated in the link below.</descrip>
+            <iversion>9.5.0.55</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Encodings Supported by Chilkat</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="TlsVersion" read="1" ax="1" cpp="1" dn="1" axId="230">
+            <gType>string</gType>
+            <descrip>Contains the current or last negotiated TLS protocol version.  If no TLS connection has yet to be established, or if a connection as attempted and failed, then this will be empty.  Possible values are "SSL 3.0", "TLS 1.0", "TLS 1.1", and "TLS 1.2".</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="UidNext" axId="143">
+            <gType>int</gType>
+            <descrip>A positive integer value containing the UIDNEXT of the currently selected folder, or 0 if it's not available or no folder is selected.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>imap_append_uid.asp</url>
+                    <text>Upload (Append) Email to an IMAP Mailbox and get the UID of the Appended Email</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="UidValidity" axId="144">
+            <gType>int</gType>
+            <descrip>An integer value containing the UIDVALIDITY of the currently selected mailbox, or 0 if no mailbox is selected.
+&lt;p&gt;
+A client can save the UidValidity value for a mailbox and then compare it with the UidValidity on a subsequent session.  If the new value is larger, the IMAP server is not keeping UID's unchanged between sessions.    Most IMAP servers maintain UID's between sessions.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="AddPfxSourceData" axId="145" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>pfxBytes</argName>
+                    <objcName>pfxData</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxPassword</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_  if the underlying TCP socket is connected to the IMAP  server.</descrip>
+            <iversion>9.5.0.46</iversion>
+            <args2>
+                <arg name="pfxBytes" type="bytes" objcName="pfxData" />
+                <arg name="pfxPassword" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AddPfxSourceFile" axId="146" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxFilePath</argName>
+                    <objcName>pfxFilePath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxPassword</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Adds a PFX file to the object's internal list of sources to be searched for certificates and private keys when decrypting.  Multiple PFX files can be added by calling this method once for each.  (On the Windows operating system, the registry-based certificate stores are also automatically searched, so it is commonly not required to explicitly add PFX sources.)
+&lt;p&gt;
+The ARG1 contains the bytes of a PFX file  (also known as PKCS12 or .p12).</descrip>
+            <links2 />
+            <args2>
+                <arg name="pfxFilePath" type="string" objcName="pfxFilePath" />
+                <arg name="pfxPassword" type="string" objcName="password" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="AppendMail" axId="147">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+            </args>
+            <descrip>Appends an email to an IMAP mailbox.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Send Email and Save Copy to "Sent" Mailbox</text>
+                    <url>sendWithCopyToSentMailbox.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>imap_append_uid.asp</url>
+                    <text>Upload (Append) Email to an IMAP Mailbox and get the UID of the Appended Email</text>
+                </link>
+                <link linkType="example">
+                    <url>imap_appendEmail.asp</url>
+                    <text>Upload (Append) Email to an IMAP Mailbox</text>
+                </link>
+                <link linkType="example" async="1">
+                    <url>imap_appendMailAsync.asp</url>
+                    <text>Async Upload (Append) Email to an IMAP Mailbox</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+                <arg name="email" type="Email" objcName="email" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="AppendMime" axId="148">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mimeText</argName>
+                    <objcName>mimeText</objcName>
+                </arg>
+            </args>
+            <descrip>Appends an email (represented as MIME text) to an IMAP mailbox.</descrip>
+            <links2>
+                <link linkType="example" lang="csharp">
+                    <text>Upload .eml File to IMAP Mailbox</text>
+                    <url>imap_AppendMime.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>imap_appendMime.asp</url>
+                    <text>Upload .eml File to an IMAP Mailbox</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+                <arg name="mimeText" type="string" objcName="mimeText" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="AppendMimeWithDate" axId="149" deprecated="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mimeText</argName>
+                    <objcName>mimeText</objcName>
+                </arg>
+                <arg>
+                    <axType>date</axType>
+                    <dnType>date</dnType>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>internalDate</argName>
+                    <objcName>internalDate</objcName>
+                </arg>
+            </args>
+            <descrip>The same as AppendMime, but with an extra argument to allow the internal date of the email on the server to be explicitly specified.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+                <arg name="mimeText" type="string" objcName="mimeText" />
+                <arg name="internalDate" type="date" objcName="internalDate" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="AppendMimeWithDateStr" axId="150">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mimeText</argName>
+                    <objcName>mimeText</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>internalDateStr</argName>
+                    <objcName>internalDateStr</objcName>
+                </arg>
+            </args>
+            <descrip>The same as AppendMimeWithDate, except the date/time is provided in RFC822 string format.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+                <arg name="mimeText" type="string" objcName="mimeText" />
+                <arg name="internalDateStr" type="string" objcName="internalDateStr" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendMimeWithFlags" axId="151" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mimeText</argName>
+                    <objcName>mimeText</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>seen</argName>
+                    <objcName>seen</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>flagged</argName>
+                    <objcName>flagged</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>answered</argName>
+                    <objcName>answered</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>draft</argName>
+                    <objcName>draft</objcName>
+                </arg>
+            </args>
+            <descrip>Same as AppendMime, but allows the flags associated with the email to be set at the same time.  A flag is on if _TRUE_, and off if _FALSE_.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+                <arg name="mimeText" type="string" objcName="mimeText" />
+                <arg name="seen" type="bool" objcName="seen" />
+                <arg name="flagged" type="bool" objcName="flagged" />
+                <arg name="answered" type="bool" objcName="answered" />
+                <arg name="draft" type="bool" objcName="draft" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Capability" axId="217" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Sends a CAPABILITY command to the IMAP server and returns the raw response.</descrip>
+            <args>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>imap_capabilities.asp</url>
+                    <text>IMAP Capability</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="CheckConnection" axId="226" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_  if the underlying TCP socket is connected to the IMAP  server.</descrip>
+            <iversion>9.5.0.46</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="CheckForNewEmail" axId="152">
+            <gType>MessageSet</gType>
+            <args />
+            <descrip>Checks for new email that has arrived since the mailbox was selected (via the SelectMailbox or ExamineMailbox methods), or since the last call to CheckForNewEmail (whichever was most recent).    This method works by closing and re-opening the currently selected mailbox, and then sending a "SEARCH" command for either RECENT emails, or emails having a UID greater than the UIDNEXT value.  A message set object containing the UID's of the new emails is returned, and this may be passed to methods such as FetchBundle to download the new emails.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ClearSessionLog" axId="153">
+            <gType>void</gType>
+            <args />
+            <descrip>Clears the contents of the SessionLog property.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="CloseMailbox" axId="154">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Closes the currently selected mailbox.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Connect" axId="155" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>domainName</argName>
+                    <objcName>hostname</objcName>
+                </arg>
+            </args>
+            <descrip>Connects to an IMAP server, but does not login.  The ARG1 is the domain name of the IMAP server.  (May also use the IPv4 or IPv6 address in string format.)
+&lt;p&gt;
+&lt;b&gt;Important: &lt;/b&gt; All TCP-based Internet communications, regardless of the protocol (such as HTTP, FTP, SSH, IMAP, POP3, SMTP, etc.), and regardless of SSL/TLS, begin with establishing a TCP connection to a remote host:port.  External security-related infrastructure such as software firewalls (Windows Firewall), hardware firewalls, anti-virus, at either source or destination (or both) can block the connection.  If the connection fails, make sure to check all potential external causes of blockage.</descrip>
+            <links2>
+                <link linkType="example" lang="csharp">
+                    <text>IMAP Progress Monitoring</text>
+                    <url>imap_progress.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="domainName" type="string" objcName="hostname" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="Copy" axId="156">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>msgId</argName>
+                    <objcName>msgId</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUid</argName>
+                    <objcName>bUid</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>copyToMailbox</argName>
+                    <objcName>copyToMailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Copies a message from the selected mailbox to ARG3. 
+If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2 is _FALSE_, then ARG1 represents a sequence number.</descrip>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+                <arg name="copyToMailbox" type="string" objcName="copyToMailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="CopyMultiple" axId="157">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>MessageSet</axType>
+                    <dnType>MessageSet</dnType>
+                    <cppType>CkMessageSet &amp;</cppType>
+                    <argName>messageSet</argName>
+                    <objcName>messageSet</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>copyToMailbox</argName>
+                    <objcName>copyToMailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Same as the &lt;i&gt;Copy&lt;/i&gt; method, except an entire set of emails is copied at once.  The set of emails is specified in ARG1.</descrip>
+            <args2>
+                <arg name="messageSet" type="MessageSet" objcName="messageSet" />
+                <arg name="copyToMailbox" type="string" objcName="copyToMailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="CopySequence" axId="158">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>startSeqNum</argName>
+                    <objcName>startSeqNum</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>count</argName>
+                    <objcName>count</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>copyToMailbox</argName>
+                    <objcName>copyToMailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Copies one or more emails from one mailbox to another.  The emails are specified as a range of sequence numbers.  The 1st email in a mailbox is always at sequence number 1.</descrip>
+            <args2>
+                <arg name="startSeqNum" type="int" objcName="startSeqNum" />
+                <arg name="count" type="int" objcName="count" />
+                <arg name="copyToMailbox" type="string" objcName="copyToMailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="CreateMailbox" axId="159">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Creates a new mailbox.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="DeleteMailbox" axId="160">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes an existing mailbox.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="Disconnect" axId="161">
+            <gType>bool</gType>
+            <args />
+            <descrip>Disconnects cleanly from the IMAP server.  A non-success return from this method only indicates that the disconnect was not clean -- and this can typically be ignored.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="ExamineMailbox" axId="162">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Selects a mailbox such that only read-only transactions are allowed.  This method would be called instead of SelectMailbox if the logged-on user has read-only permission.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="Expunge" axId="163">
+            <gType>bool</gType>
+            <args />
+            <descrip>Permanently removes from the currently selected mailbox all messages that have the &lt;i&gt;Deleted&lt;/i&gt; flag set.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="ExpungeAndClose" axId="164">
+            <gType>bool</gType>
+            <args />
+            <descrip>Permanently removes from the currently selected mailbox all messages that have the &lt;i&gt;Deleted&lt;/i&gt; flag set, and closes the mailbox.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="FetchAttachment" axId="165" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>emailObject</argName>
+                    <objcName>email</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>attachmentIndex</argName>
+                    <objcName>attachIndex</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>saveToPath</argName>
+                    <objcName>saveToPath</objcName>
+                </arg>
+            </args>
+            <descrip>Downloads one of an email's attachments and saves it to a file.  If the ARG1 already contains the full email (including the attachments), then no communication with the IMAP server is necessary because the attachment data is already contained within the ARG1.  In this case, the attachment is simply extracted and saved to ARG3.  (As with all Chilkat methods, indexing begins at 0.  The 1st attachment is at ARG2 0.)
+&lt;p&gt;
+Additional Notes:
+&lt;p&gt;
+If the AutoDownloadAttachments property is set to _FALSE_, then emails downloaded via any of the Fetch* methods will not include attachments.  
+&lt;p&gt;
+Note:  "related" items are not considered attachments and are downloaded.  These are images, style sheets, etc. that are embedded within the HTML body of an email.
+&lt;p&gt;
+Also:  All signed and/or encrypted emails must be downloaded in full.
+&lt;p&gt;
+When an email is downloaded without attachments, the attachment information is included in header fields.  The header fields have names beginning with "ckx-imap-".  The attachment information can be obtained via the following methods:
+&lt;blockquote&gt;
+imap.GetMailNumAttach&lt;br&gt;
+imap.GetMailAttachFilename&lt;br&gt;
+imap.GetMailAttachSize&lt;br&gt;
+&lt;/blockquote&gt;</descrip>
+            <args2>
+                <arg name="emailObject" type="Email" objcName="email" />
+                <arg name="attachmentIndex" type="int" objcName="attachIndex" />
+                <arg name="saveToPath" type="string" objcName="saveToPath" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FetchAttachmentBytes" axId="166" outArgName="outBytes" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>attachIndex</argName>
+                    <objcName>attachIndex</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Downloads one of an email's attachments and returns the attachment data as in-memory bytes that may be accessed by an application.  ***See the FetchAttachment method description for more information about fetching attachments.</descrip>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+                <arg name="attachIndex" type="int" objcName="attachIndex" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FetchAttachmentString" axId="167" outArgName="outStr" ax="1" cpp="1" dn="1" events="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>emailObject</argName>
+                    <objcName>email</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>attachmentIndex</argName>
+                    <objcName>attachIndex</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Downloads one of an email's attachments and returns the attachment data as a string.  It only makes sense to call this method for attachments that contain text data.  The ARG3 indicates the character encoding of the text, such as "utf-8" or "windows-1252".  ***See the FetchAttachment method description for more information about fetching attachments.</descrip>
+            <args2>
+                <arg name="emailObject" type="Email" objcName="email" />
+                <arg name="attachmentIndex" type="int" objcName="attachIndex" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="FetchBundle" axId="168">
+            <gType>EmailBundle</gType>
+            <args>
+                <arg>
+                    <axType>MessageSet</axType>
+                    <dnType>MessageSet</dnType>
+                    <cppType>CkMessageSet &amp;</cppType>
+                    <argName>messageSet</argName>
+                    <objcName>messageSet</objcName>
+                </arg>
+            </args>
+            <descrip>Retrieves a set of messages from the IMAP server and returns them in an email bundle object. If the method fails, it may return a NULL reference.</descrip>
+            <links2>
+                <link linkType="example" lang="csharp">
+                    <text>Example: IMAP Progress Monitoring</text>
+                    <url>imap_progress.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="messageSet" type="MessageSet" objcName="messageSet" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="FetchBundleAsMime" axId="169">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <axType>MessageSet</axType>
+                    <dnType>MessageSet</dnType>
+                    <cppType>CkMessageSet &amp;</cppType>
+                    <argName>messageSet</argName>
+                    <objcName>messageSet</objcName>
+                </arg>
+            </args>
+            <descrip>Retrieves a set of messages from the IMAP server and returns them in a string array object (NOTE: it does not return a string array, but an object that represents a string array.)  Each string within the returned object is the complete MIME source of an email.  On failure, a NULL object reference is returned.</descrip>
+            <args2>
+                <arg name="messageSet" type="MessageSet" objcName="messageSet" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="FetchChunk" axId="170">
+            <gType>EmailBundle</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>startSeqNum</argName>
+                    <objcName>startSeqNum</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>count</argName>
+                    <objcName>count</objcName>
+                </arg>
+                <arg>
+                    <axType>MessageSet</axType>
+                    <dnType>MessageSet</dnType>
+                    <cppType>CkMessageSet &amp;</cppType>
+                    <argName>failedSet</argName>
+                    <objcName>failedSet</objcName>
+                </arg>
+                <arg>
+                    <axType>MessageSet</axType>
+                    <dnType>MessageSet</dnType>
+                    <cppType>CkMessageSet &amp;</cppType>
+                    <argName>fetchedSet</argName>
+                    <objcName>fetchedSet</objcName>
+                </arg>
+            </args>
+            <descrip>Fetches a chunk of emails starting at a specific sequence number.  A bundle of fetched emails is returned.  The last two arguments are message sets that are updated with the ids of messages successfully/unsuccessfully fetched.</descrip>
+            <args2>
+                <arg name="startSeqNum" type="int" objcName="startSeqNum" />
+                <arg name="count" type="int" objcName="count" />
+                <arg name="failedSet" type="MessageSet" objcName="failedSet" />
+                <arg name="fetchedSet" type="MessageSet" objcName="fetchedSet" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FetchFlags" axId="171" outArgName="outStrFlags" ax="1" cpp="1" dn="1" events="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>msgId</argName>
+                    <objcName>msgId</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUid</argName>
+                    <objcName>bUid</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStrFlags</argName>
+                    <objcName>outStrFlags</objcName>
+                </arg>
+            </args>
+            <descrip>Fetches the flags for an email.  The bUid argument determines whether the ARG1  is a UID or sequence number.  &lt;p&gt; Returns the SPACE separated list of flags set for the email, such as "\Flagged \Seen $label1".
+&lt;p&gt;
+If an empty string is returned, then it could be that the email referenced by ARG1 does not exist in the currently selected mailbox, or it simply has no flags that are set.  To determine the difference, examine the contents of the LastResponse property.  For the case where the message does not exist, the LastResponse will contain a "NO" and will look something like this:
+&lt;pre&gt;
+aaah NO The specified message set is invalid.
+&lt;/pre&gt;
+For the case where the message exists, but no flags are set, the LastResponse will contain an "OK" in the last response line.  For example:
+&lt;pre&gt;
+...
+aaah OK FETCH completed.
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FetchHeaders" axId="172" ax="1" cpp="1" dn="1" events="1">
+            <gType>EmailBundle</gType>
+            <args>
+                <arg>
+                    <axType>MessageSet</axType>
+                    <dnType>MessageSet</dnType>
+                    <cppType>CkMessageSet &amp;</cppType>
+                    <argName>messageSet</argName>
+                    <objcName>messageSet</objcName>
+                </arg>
+            </args>
+            <descrip>Retrieves a set of message headers from the IMAP server and returns them in an email bundle object. If the method fails, it may return a NULL reference. The following methods are useful for retrieving information about attachments and flags after email headers are retrieved: GetMailNumAttach, GetMailAttachSize, GetMailAttachFilename, GetMailFlag.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Read IMAP Email Headers</text>
+                    <url>imap_readHeaders.asp</url>
+                </link>
+                <link linkType="example" lang="csharp">
+                    <text>Example: IMAP Progress Monitoring</text>
+                    <url>imap_progress.asp</url>
+                </link>
+                <link linkType="external">
+                    <text>Getting Attachment Information</text>
+                    <url>http://www.cknotes.com/?p=434</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="messageSet" type="MessageSet" objcName="messageSet" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="FetchSequence" axId="173">
+            <gType>EmailBundle</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>startSeqNum</argName>
+                    <objcName>startSeqNum</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>numMessages</argName>
+                    <objcName>numMessages</objcName>
+                </arg>
+            </args>
+            <descrip>Downloads email for a range of sequence numbers.  The 1st email in a mailbox is always at sequence number 1.  The total number of emails in the currently selected mailbox is available in the NumMessages property.  If the ARG2 is too large, the method will still succeed, but will return a bundle of emails from ARG1 to the last email in the mailbox.</descrip>
+            <args2>
+                <arg name="startSeqNum" type="int" objcName="startSeqNum" />
+                <arg name="numMessages" type="int" objcName="numMessages" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="FetchSequenceAsMime" axId="174">
+            <gType>StringArray</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>startSeqNum</argName>
+                    <objcName>startSeqNum</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>numMessages</argName>
+                    <objcName>count</objcName>
+                </arg>
+            </args>
+            <descrip>Same as FetchSequence, but instead of returning email objects in a bundle, the raw MIME of each email is returned.</descrip>
+            <args2>
+                <arg name="startSeqNum" type="int" objcName="startSeqNum" />
+                <arg name="numMessages" type="int" objcName="count" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="FetchSequenceHeaders" axId="175" ax="1" cpp="1" dn="1" events="1">
+            <gType>EmailBundle</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>startSeqNum</argName>
+                    <objcName>startSeqNum</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>numMessages</argName>
+                    <objcName>numMessages</objcName>
+                </arg>
+            </args>
+            <descrip>Same as FetchSequence, but only the email headers are returned.  The email objects within the bundle will be lacking bodies and attachments.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; For any method call using sequence numbers, an application must make sure the sequence numbers
+are within the valid range.  When a mailbox is selected, the NumMessages property will have been set,
+and the valid range of sequence numbers is from 1 to NumMessages. An attempt to fetch sequence numbers outside this range will result in an error.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Getting Attachment Information</text>
+                    <url>http://www.cknotes.com/?p=434</url>
+                </link>
+                <link linkType="example">
+                    <url>imap_fetchSequenceHeaders.asp</url>
+                    <text>Fetch Inbox Email Headers</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="startSeqNum" type="int" objcName="startSeqNum" />
+                <arg name="numMessages" type="int" objcName="numMessages" />
+            </args2>
+        </method>
+        <method name="FetchSingle" axId="176" ax="1" cpp="1" dn="1" events="1">
+            <gType>Email</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>msgId</argName>
+                    <objcName>msgId</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUid</argName>
+                    <objcName>bUid</objcName>
+                </arg>
+            </args>
+            <descrip>Retrieves a single message from the IMAP server. If the method fails, it may return a NULL reference.
+If bUid is true, then msgID represents a UID. If bUid is false, then msgID represents a sequence number.</descrip>
+            <links2>
+                <link linkType="example" lang="csharp">
+                    <text>Example: IMAP Progress Monitoring</text>
+                    <url>imap_progress.asp</url>
+                </link>
+                <link linkType="example">
+                    <text>IMAP Download All Email as MIME One at a Time</text>
+                    <url>imap_fetchMimeIndividually.asp</url>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/8437/understanding-imap-email-attachments</url>
+                    <text>Understanding IMAP Email Attachments</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+            </args2>
+        </method>
+        <method name="FetchSingleAsMime" axId="177" outArgName="outStrMime" ax="1" cpp="1" dn="1" events="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>msgId</argName>
+                    <objcName>msgId</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUid</argName>
+                    <objcName>bUid</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStrMime</argName>
+                    <objcName>outStrMime</objcName>
+                </arg>
+            </args>
+            <descrip>Retrieves a single message from the IMAP server and returns a string containing the complete MIME source of the email.  If the method fails, it returns a NULL reference. If bUid is true, then msgID represents a UID. If bUid is false, then msgID represents a sequence number.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>IMAP Download All Email as MIME One at a Time</text>
+                    <url>imap_fetchMimeIndividually.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="FetchSingleHeader" axId="178">
+            <gType>Email</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>msgId</argName>
+                    <objcName>msgId</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUid</argName>
+                    <objcName>bUid</objcName>
+                </arg>
+            </args>
+            <descrip>Retrieves a single message header from the IMAP server. If the method fails, it may return a NULL reference. The following methods are useful for retrieving information about attachments and flags after an email header is retrieved: GetMailNumAttach, GetMailAttachSize, GetMailAttachFilename, GetMailFlag.
+
+If bUid is true, then msgID represents a UID. If bUid is false, then msgID represents a sequence number.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Getting Attachment Information</text>
+                    <url>http://www.cknotes.com/?p=434</url>
+                </link>
+                <link linkType="example">
+                    <url>imap_fetchFullEmail.asp</url>
+                    <text>Fetch Full Email Given Email Header</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="FetchSingleHeaderAsMime" axId="179" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>msgId</argName>
+                    <objcName>msgId</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUID</argName>
+                    <objcName>bUID</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Fetches and returns the MIME of a single email header.</descrip>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUID" type="bool" objcName="bUID" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="GetAllUids" axId="180">
+            <gType>MessageSet</gType>
+            <args />
+            <descrip>Returns a message set object containing all the UIDs in the currently selected mailbox.  A NULL object reference is returned on failure.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetMailAttachFilename" axId="181" ax="1" cpp="1" dn="1" outArgName="outStrFilename">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>attachIndex</argName>
+                    <objcName>attachIndex</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStrFilename</argName>
+                    <objcName>outStrFilename</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth attachment filename. Indexing begins at 0.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Getting Attachment Information</text>
+                    <url>http://www.cknotes.com/?p=434</url>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/8437/understanding-imap-email-attachments</url>
+                    <text>Understanding IMAP Email Attachments</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+                <arg name="attachIndex" type="int" objcName="attachIndex" />
+            </args2>
+        </method>
+        <method name="GetMailAttachSize" axId="182" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>attachIndex</argName>
+                    <objcName>attachIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth attachment size in bytes. Indexing begins at 0.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Getting Attachment Information</text>
+                    <url>http://www.cknotes.com/?p=434</url>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/8437/understanding-imap-email-attachments</url>
+                    <text>Understanding IMAP Email Attachments</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+                <arg name="attachIndex" type="int" objcName="attachIndex" />
+            </args2>
+        </method>
+        <method name="GetMailFlag" axId="183" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>flagName</argName>
+                    <objcName>flagName</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the value of a flag (1 = yes, 0 = no) for an email. 
+Both standard system flags as well as custom flags may be set.  
+Standard system flags typically begin with a backslash character, such as "\Seen", "\Answered", "\Flagged", "\Draft", "\Deleted", and "\Answered".  Custom flags can be anything, such as "NonJunk", "$label1", "$MailFlagBit1", etc. .</descrip>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/8437/understanding-imap-email-attachments</url>
+                    <text>Understanding IMAP Email Attachments</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+                <arg name="flagName" type="string" objcName="flagName" />
+            </args2>
+        </method>
+        <method name="GetMailNumAttach" axId="184" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the number of email attachments.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Getting Attachment Information</text>
+                    <url>http://www.cknotes.com/?p=434</url>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/8437/understanding-imap-email-attachments</url>
+                    <text>Understanding IMAP Email Attachments</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+            </args2>
+        </method>
+        <method name="GetMailSize" axId="185" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the size (in bytes) of the entire email including attachments.</descrip>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/8437/understanding-imap-email-attachments</url>
+                    <text>Understanding IMAP Email Attachments</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+            </args2>
+        </method>
+        <method name="GetMailboxStatus" ax="1" cpp="1" dn="1" events="1" axId="227" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Sends a "Status" command to get the status of a ARG1.   Returns an XML string containing the status values as named attributes.  Possible status values are:
+&lt;ul&gt;&lt;li&gt;messages: The number of messages in the mailbox.
+&lt;li&gt;recent: The number of messages with the \Recent flag set.
+&lt;li&gt;uidnext:  The next unique identifier value of the mailbox.
+&lt;li&gt;uidvalidity: The unique identifier validity value of the mailbox.
+&lt;li&gt;unseen:  The number of messages which do not have the \Seen flag set.
+&lt;/ul&gt;
+&lt;p&gt;
+An example of the string returned by this method is: _LT_status messages="240" recent="0" uidnext="3674" uidvalidity="3" unseen="213" /_GT_</descrip>
+            <args>
+                <arg>
+                    <argName>mailbox</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>mailbox</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.46</iversion>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetQuota" axId="240" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Sends the GETQUOTA command and returns the response in JSON format.     This feature is only possible with IMAP servers that support the QUOTA extension/capability.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>quotaRoot</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>quotaRoot</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>imap_getquota.asp</url>
+                    <text>IMAP Get Quota</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="quotaRoot" type="string" objcName="quotaRoot" />
+            </args2>
+        </method>
+        <method name="GetQuotaRoot" axId="239" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Sends the GETQUOTAROOT command and returns the response in JSON format.      This feature is only possible with IMAP servers that support the QUOTA extension/capability.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>mailboxName</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>mailboxName</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>imap_getquotaroot.asp</url>
+                    <text>IMAP Get Quota Root</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="mailboxName" type="string" objcName="mailboxName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetSslServerCert" axId="186">
+            <gType>Cert</gType>
+            <args />
+            <descrip>Returns the IMAP server's digital certificate (for SSL / TLS connections).</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="HasCapability" axId="238" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the capability indicated by ARG1 is found in the ARG2.  Otherwise returns _FALSE_.</descrip>
+            <args>
+                <arg>
+                    <argName>name</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <argName>capabilityResponse</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>capabilityResponse</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.58</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>imap_capabilities.asp</url>
+                    <text>IMAP Capability</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="capabilityResponse" type="string" objcName="capabilityResponse" />
+            </args2>
+        </method>
+        <method name="IdleCheck" axId="220" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Polls the connection to see if any real-time updates are available.  The ARG1 indicates how long to wait for incoming updates.  This method does not send a command to the IMAP server, it simply checks the connection for already-arrived messages that the IMAP server sent.  This method would only be called after IDLE has already been started via the IdleStart method.&lt;p&gt;
+If updates are available, they are returned in an XML string having the format as shown below.  There is one child node for each notification.  The possible notifcations are:
+&lt;ol&gt;
+&lt;li&gt;flags -- lists flags that have been set or unset for an email.&lt;/li&gt;
+&lt;li&gt;expunge -- provides the sequence number for an email that has been deleted.&lt;/li&gt;
+&lt;li&gt;exists -- reports the new number of messages in the currently selected mailbox.&lt;/li&gt;
+&lt;li&gt;recent -- reports the new number of messages with the /RECENT flag set.&lt;/li&gt;
+&lt;li&gt;raw -- reports an unanticipated response line that was not parsed by Chilkat. This should be reported to support@chilkatoft.com&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A sample showing all possible notifications (except for "raw") is shown below.
+&lt;pre&gt;
+_LT_idle_GT_
+    _LT_flags seqnum="59" uid="11876"_GT_
+        _LT_flag_GT_\Deleted_LT_/flag_GT_
+        _LT_flag_GT_\Seen_LT_/flag_GT_
+    _LT_/flags_GT_
+    _LT_flags seqnum="69" uid="11889"_GT_
+        _LT_flag_GT_\Seen_LT_/flag_GT_
+    _LT_/flags_GT_
+    _LT_expunge_GT_58_LT_/expunge_GT_
+    _LT_expunge_GT_58_LT_/expunge_GT_
+    _LT_expunge_GT_67_LT_/expunge_GT_
+    _LT_exists_GT_115_LT_/exists_GT_
+    _LT_recent_GT_0_LT_/recent_GT_
+_LT_/idle_GT_
+&lt;/pre&gt;
+&lt;p&gt;
+If no updates have been received, the returned XML string has the following format, as shown below.  The 
+&lt;pre&gt;
+_LT_idle_GT__LT_/idle_GT_
+&lt;/pre&gt;
+&lt;p&gt;
+&lt;b&gt;NOTE:&lt;/b&gt;Once IdleStart has been called, this method can and should be called frequently to see if any updates have arrived.  This is NOT the same as polling the IMAP server because it does not send any requests to the IMAP server.  It simply checks to see if any messages (i.e. updates) from the IMAP server are available and waiting to be read.</descrip>
+            <args>
+                <arg>
+                    <argName>timeoutMs</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>timeoutMs</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.26</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>imap_idle.asp</url>
+                    <text>Using IMAP IDLE to Wait for Updates</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="timeoutMs" type="int" objcName="timeoutMs" />
+            </args2>
+        </method>
+        <method name="IdleDone" axId="219" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sends a command to the IMAP server to stop receiving real-time updates.</descrip>
+            <args />
+            <iversion>9.5.0.26</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>imap_idle.asp</url>
+                    <text>Using IMAP IDLE to Wait for Updates</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="IdleStart" axId="218" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sends an IDLE command to the IMAP server to begin receiving real-time updates.</descrip>
+            <args />
+            <iversion>9.5.0.26</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>imap_idle.asp</url>
+                    <text>Using IMAP IDLE to Wait for Updates</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsConnected" axId="187">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns the last known "connected" state with the IMAP server.   IsConnected does not send a message to the IMAP server to determine if it is still connected.  The Noop method may be called to specifically send a no-operation message to determine actual connectivity.
+&lt;p&gt;
+The IsConnected method is useful for checking to see if the component is already in a known disconnected state.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsLoggedIn" axId="188">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns _TRUE_ if already logged into an IMAP server, otherwise returns _FALSE_.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsUnlocked" axId="189">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns _TRUE_ if the component is unlocked, _FALSE_ if not.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="ListMailboxes" axId="190">
+            <gType>Mailboxes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>reference</argName>
+                    <objcName>reference</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>wildcardedMailbox</argName>
+                    <objcName>wildcardedMailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Returns a subset of the complete list of mailboxes available on the IMAP server. This method has the side-effect of setting the SeparatorChar property to the correct character used by the IMAP server, which is typically "/" or ".".  
+&lt;p&gt;
+The reference and wildcardedMailbox parameters are passed unaltered to the IMAP LIST command:
+&lt;pre&gt;&lt;font size="2" face="MS Sans Serif"&gt;
+&lt;b&gt;FROM RFC 3501 (IMAP Protocol)&lt;/b&gt;
+
+      The LIST command returns a subset of names from the complete set
+      of all names available to the client.  Zero or more untagged LIST
+      replies are returned, containing the name attributes, hierarchy
+      delimiter, and name; see the description of the LIST reply for
+      more detail.
+
+      An empty ("" string) reference name argument indicates that the
+      mailbox name is interpreted as by SELECT.  The returned mailbox
+      names MUST match the supplied mailbox name pattern.  A non-empty
+      reference name argument is the name of a mailbox or a level of
+      mailbox hierarchy, and indicates the context in which the mailbox
+      name is interpreted.
+
+      An empty ("" string) mailbox name argument is a special request to
+      return the hierarchy delimiter and the root name of the name given
+      in the reference.  The value returned as the root MAY be the empty
+      string if the reference is non-rooted or is an empty string.  In
+      all cases, a hierarchy delimiter (or NIL if there is no hierarchy)
+      is returned.  This permits a client to get the hierarchy delimiter
+      (or find out that the mailbox names are flat) even when no
+      mailboxes by that name currently exist.
+
+      The reference and mailbox name arguments are interpreted into a
+      canonical form that represents an unambiguous left-to-right
+      hierarchy.  The returned mailbox names will be in the interpreted
+      form.
+
+           Note: The interpretation of the reference argument is
+           implementation-defined.  It depends upon whether the
+           server implementation has a concept of the "current
+           working directory" and leading "break out characters",
+           which override the current working directory.
+
+           For example, on a server which exports a UNIX or NT
+           filesystem, the reference argument contains the current
+           working directory, and the mailbox name argument would
+           contain the name as interpreted in the current working
+           directory.
+
+           If a server implementation has no concept of break out
+           characters, the canonical form is normally the reference
+           name appended with the mailbox name.  Note that if the
+           server implements the namespace convention (section
+           5.1.2), "#" is a break out character and must be treated
+           as such.
+
+           If the reference argument is not a level of mailbox
+           hierarchy (that is, it is a \NoInferiors name), and/or
+           the reference argument does not end with the hierarchy
+           delimiter, it is implementation-dependent how this is
+           interpreted.  For example, a reference of "foo/bar" and
+           mailbox name of "rag/baz" could be interpreted as
+           "foo/bar/rag/baz", "foo/barrag/baz", or "foo/rag/baz".
+           A client SHOULD NOT use such a reference argument except
+           at the explicit request of the user.  A hierarchical
+           browser MUST NOT make any assumptions about server
+           interpretation of the reference unless the reference is
+           a level of mailbox hierarchy AND ends with the hierarchy
+           delimiter.
+
+      Any part of the reference argument that is included in the
+      interpreted form SHOULD prefix the interpreted form.  It SHOULD
+      also be in the same form as the reference name argument.  This
+      rule permits the client to determine if the returned mailbox name
+      is in the context of the reference argument, or if something about
+      the mailbox argument overrode the reference argument.  Without
+      this rule, the client would have to have knowledge of the server's
+      naming semantics including what characters are "breakouts" that
+      override a naming context.
+
+           For example, here are some examples of how references
+           and mailbox names might be interpreted on a UNIX-based
+           server:
+
+               Reference     Mailbox Name  Interpretation
+               ------------  ------------  --------------
+               ~smith/Mail/  foo.*         ~smith/Mail/foo.*
+               archive/      %             archive/%
+               #news.        comp.mail.*   #news.comp.mail.*
+               ~smith/Mail/  /usr/doc/foo  /usr/doc/foo
+               archive/      ~fred/Mail/*  ~fred/Mail/*
+
+           The first three examples demonstrate interpretations in
+           the context of the reference argument.  Note that
+           "~smith/Mail" SHOULD NOT be transformed into something
+           like "/u2/users/smith/Mail", or it would be impossible
+           for the client to determine that the interpretation was
+           in the context of the reference.
+
+      The character "*" is a wildcard, and matches zero or more
+      characters at this position.  The character "%" is similar to "*",
+      but it does not match a hierarchy delimiter.  If the "%" wildcard
+      is the last character of a mailbox name argument, matching levels
+      of hierarchy are also returned.  If these levels of hierarchy are
+      not also selectable mailboxes, they are returned with the
+      \Noselect mailbox name attribute (see the description of the LIST
+      response for more details).
+
+      Server implementations are permitted to "hide" otherwise
+      accessible mailboxes from the wildcard characters, by preventing
+      certain characters or names from matching a wildcard in certain
+      situations.  For example, a UNIX-based server might restrict the
+      interpretation of "*" so that an initial "/" character does not
+      match.
+
+      The special name INBOX is included in the output from LIST, if
+      INBOX is supported by this server for this user and if the
+      uppercase string "INBOX" matches the interpreted reference and
+      mailbox name arguments with wildcards as described above.  The
+      criteria for omitting INBOX is whether SELECT INBOX will return
+      failure; it is not relevant whether the user's real INBOX resides
+      on this or some other server.
+
+&lt;/font&gt;&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="reference" type="string" objcName="reference" />
+                <arg name="wildcardedMailbox" type="string" objcName="wildcardedMailbox" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>imap_listMailboxes.asp</url>
+                    <text>List IMAP Mailboxes</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="ListSubscribed" axId="191">
+            <gType>Mailboxes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>reference</argName>
+                    <objcName>reference</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>wildcardedMailbox</argName>
+                    <objcName>wildcardedMailbox</objcName>
+                </arg>
+            </args>
+            <descrip>The same as ListMailboxes, but returns only the subscribed mailboxes.  (See ListMailboxes for more information.)</descrip>
+            <args2>
+                <arg name="reference" type="string" objcName="reference" />
+                <arg name="wildcardedMailbox" type="string" objcName="wildcardedMailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Login" axId="192" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>loginName</argName>
+                    <objcName>login</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Logs into the IMAP server. The component must first be connected to an IMAP server by calling Connect.  If XOAUTH2 authentication is required, pass the XOAUTH2 access token in place of the password.  (For GMail, the Chilkat HTTP class/object's  G_SvcOauthAccessToken method can be called to obtain an XOAUTH2 access token.)
+&lt;p&gt;To authenticate using XOAUTH2, make sure the AuthMethod property is set to "XOAUTH2".  The XOAUTH2 authentication functionality was added in version 9.5.0.44.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>OAuth2 GMail IMAP Authentication</text>
+                    <url>imap_gmail_oauth2.asp</url>
+                </link>
+                <link linkType="external">
+                    <text>Non-standard Yahoo! IMAP Server Requirements</text>
+                    <url>http://www.cknotes.com/?p=326</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="loginName" type="string" objcName="login" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="Logout" axId="193">
+            <gType>bool</gType>
+            <args />
+            <descrip>Logs out of the IMAP server.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="Noop" axId="194">
+            <gType>bool</gType>
+            <args />
+            <descrip>Sends a NOOP command to the IMAP server and receives the response.  The component must be connected and authenticated for this to succeed.  Sending a NOOP is a good way of determining whether the connection to the IMAP server is up and active.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="RefetchMailFlags" axId="195">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>emailInOut</objcName>
+                </arg>
+            </args>
+            <descrip>Fetches the flags for an email and updates the flags in the email's header. When an email is retrieved from the IMAP server, it embeds the flags into the header in fields beginning with "ckx-". Methods such as GetMailFlag read these header fields.</descrip>
+            <args2>
+                <arg name="email" type="Email" objcName="emailInOut" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="RenameMailbox" axId="196">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>fromMailbox</argName>
+                    <objcName>fromMailbox</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>toMailbox</argName>
+                    <objcName>toMailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Renames a mailbox.</descrip>
+            <args2>
+                <arg name="fromMailbox" type="string" objcName="fromMailbox" />
+                <arg name="toMailbox" type="string" objcName="toMailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="Search" axId="197">
+            <gType>MessageSet</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>criteria</argName>
+                    <objcName>criteria</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUid</argName>
+                    <objcName>bUid</objcName>
+                </arg>
+            </args>
+            <descrip>Searches the selected mailbox for messages that meet a given criteria and returns a message set of all matching messages. If bUid is true, then UIDs are returned in the message set, otherwise sequence numbers are returned.
+
+The criteria is passed through to the low-level IMAP protocol unmodified, so the rules for the IMAP SEARCH command (RFC 3501) apply and are reproduced here:
+
+&lt;pre&gt;&lt;font size="2" face="MS Sans Serif"&gt;
+&lt;b&gt;FROM RFC 3501 (IMAP Protocol)&lt;/b&gt;
+
+      The SEARCH command searches the mailbox for messages that match
+      the given searching criteria.  Searching criteria consist of one
+      or more search keys.  The untagged SEARCH response from the server
+      contains a listing of message sequence numbers corresponding to
+      those messages that match the searching criteria.
+
+      When multiple keys are specified, the result is the intersection
+      (AND function) of all the messages that match those keys.  For
+      example, the criteria DELETED FROM "SMITH" SINCE 1-Feb-1994 refers
+      to all deleted messages from Smith that were placed in the mailbox
+      since February 1, 1994.  A search key can also be a parenthesized
+      list of one or more search keys (e.g., for use with the OR and NOT
+      keys).
+
+      Server implementations MAY exclude [MIME-IMB] body parts with
+      terminal content media types other than TEXT and MESSAGE from
+      consideration in SEARCH matching.
+
+      The OPTIONAL [CHARSET] specification consists of the word
+      "CHARSET" followed by a registered [CHARSET].  It indicates the
+      [CHARSET] of the strings that appear in the search criteria.
+      [MIME-IMB] content transfer encodings, and [MIME-HDRS] strings in
+      [RFC-2822]/[MIME-IMB] headers, MUST be decoded before comparing
+      text in a [CHARSET] other than US-ASCII.  US-ASCII MUST be
+      supported; other [CHARSET]s MAY be supported.
+
+      If the server does not support the specified [CHARSET], it MUST
+      return a tagged NO response (not a BAD).  This response SHOULD
+      contain the BADCHARSET response code, which MAY list the
+      [CHARSET]s supported by the server.
+
+      In all search keys that use strings, a message matches the key if
+      the string is a substring of the field.  The matching is
+      case-insensitive.
+
+      The defined search keys are as follows.  Refer to the Formal
+      Syntax section for the precise syntactic definitions of the
+      arguments.
+
+      
+         Messages with message sequence numbers corresponding to the
+         specified message sequence number set.
+
+      ALL
+         All messages in the mailbox; the default initial key for
+         ANDing.
+
+      ANSWERED
+         Messages with the \Answered flag set.
+
+      BCC 
+         Messages that contain the specified string in the envelope
+         structure's BCC field.
+
+      BEFORE 
+         Messages whose internal date (disregarding time and timezone)
+         is earlier than the specified date.
+
+      BODY 
+         Messages that contain the specified string in the body of the
+         message.
+
+      CC 
+         Messages that contain the specified string in the envelope
+         structure's CC field.
+
+      DELETED
+         Messages with the \Deleted flag set.
+
+      DRAFT
+         Messages with the \Draft flag set.
+
+      FLAGGED
+         Messages with the \Flagged flag set.
+
+      FROM 
+         Messages that contain the specified string in the envelope
+         structure's FROM field.
+
+      HEADER  
+         Messages that have a header with the specified field-name (as
+         defined in [RFC-2822]) and that contains the specified string
+         in the text of the header (what comes after the colon).  If the
+         string to search is zero-length, this matches all messages that
+         have a header line with the specified field-name regardless of
+         the contents.
+
+      KEYWORD 
+         Messages with the specified keyword flag set.
+
+      LARGER 
+         Messages with an [RFC-2822] size larger than the specified
+         number of octets.
+
+      NEW
+         Messages that have the \Recent flag set but not the \Seen flag.
+         This is functionally equivalent to "(RECENT UNSEEN)".
+
+      NOT 
+         Messages that do not match the specified search key.
+
+      OLD
+         Messages that do not have the \Recent flag set.  This is
+         functionally equivalent to "NOT RECENT" (as opposed to "NOT
+         NEW").
+
+      ON 
+         Messages whose internal date (disregarding time and timezone)
+         is within the specified date.
+
+      OR  
+         Messages that match either search key.
+
+      RECENT
+         Messages that have the \Recent flag set.
+
+      SEEN
+         Messages that have the \Seen flag set.
+
+      SENTBEFORE 
+         Messages whose [RFC-2822] Date: header (disregarding time and
+         timezone) is earlier than the specified date.
+
+      SENTON 
+         Messages whose [RFC-2822] Date: header (disregarding time and
+         timezone) is within the specified date.
+
+      SENTSINCE 
+         Messages whose [RFC-2822] Date: header (disregarding time and
+         timezone) is within or later than the specified date.
+
+      SINCE 
+         Messages whose internal date (disregarding time and timezone)
+         is within or later than the specified date.
+
+      SMALLER 
+         Messages with an [RFC-2822] size smaller than the specified
+         number of octets.
+
+      SUBJECT 
+         Messages that contain the specified string in the envelope
+         structure's SUBJECT field.
+
+      TEXT 
+         Messages that contain the specified string in the header or
+         body of the message.
+
+      TO 
+         Messages that contain the specified string in the envelope
+         structure's TO field.
+
+      UID 
+         Messages with unique identifiers corresponding to the specified
+         unique identifier set.  Sequence set ranges are permitted.
+
+      UNANSWERED
+         Messages that do not have the \Answered flag set.
+
+      UNDELETED
+         Messages that do not have the \Deleted flag set.
+
+      UNDRAFT
+         Messages that do not have the \Draft flag set.
+
+      UNFLAGGED
+         Messages that do not have the \Flagged flag set.
+
+      UNKEYWORD 
+         Messages that do not have the specified keyword flag set.
+
+      UNSEEN
+         Messages that do not have the \Seen flag set.
+
+&lt;/font&gt;&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="criteria" type="string" objcName="criteria" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>imap_search.asp</url>
+                    <text>Search IMAP Mailbox for Email Matching Criteria</text>
+                </link>
+            </links2>
+        </method>
+        <method name="SelectMailbox" axId="198" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Selects a mailbox. A mailbox must be selected before some methods, such as Search or FetchSingle, can be called.  If the logged-on user does not have write-access to the mailbox, call ExamineMailbox instead.
+&lt;p&gt;
+Calling this method updates the NumMessages property.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Selecting Public Folders</text>
+                    <url>http://www.cknotes.com/?p=284</url>
+                </link>
+                <link linkType="example">
+                    <url>imap_get_list_of_flags.asp</url>
+                    <text>IMAP Get List of Flags</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="SendRawCommand" axId="199" outArgName="outRawResponse">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>cmd</argName>
+                    <objcName>rawCommand</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outRawResponse</argName>
+                    <objcName>outRawResponse</objcName>
+                </arg>
+            </args>
+            <descrip>Allows for the sending of arbitrary commands to the IMAP server.</descrip>
+            <args2>
+                <arg name="cmd" type="string" objcName="rawCommand" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>imap_move_messages_to_other_mailbox.asp</url>
+                    <text>Move Messages from one Mailbox to Another</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="SendRawCommandB" axId="200" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>cmd</argName>
+                    <objcName>cmd</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SendRawCommand, but instead of returning the response as a string, the binary bytes of the response are returned.</descrip>
+            <args2>
+                <arg name="cmd" type="string" objcName="cmd" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="SendRawCommandC" axId="201" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>cmd</argName>
+                    <objcName>cmd</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SendRawCommandB, except that the command is provided as binary bytes rather than a string.</descrip>
+            <args2>
+                <arg name="cmd" type="bytes" objcName="cmd" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" noObjC="1" status="1" name="SetCSP" axId="202">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CSP_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>Csp</axType>
+                    <dnType>Csp</dnType>
+                    <cppType>CkCsp &amp;</cppType>
+                    <argName>csp</argName>
+                    <objcName>csp</objcName>
+                </arg>
+            </args>
+            <descrip>(Only applies to the Microsoft Windows OS)  Sets the Cryptographic Service Provider (CSP) to be used for encryption or digital signing, or decryption / signature verification.
+&lt;p&gt;
+This is not commonly used becaues the default Microsoft CSP is typically appropriate. 
+One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the GOST R 34.10-2001 and GOST R 34.10-94 providers.</descrip>
+            <args2>
+                <arg name="csp" type="Csp" objcName="csp" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetDecryptCert" ax="1" cpp="1" dn="1" status="1" axId="224">
+            <gType>bool</gType>
+            <descrip>Explicitly specifies the certificate  to be used for decrypting encrypted email.</descrip>
+            <args>
+                <arg>
+                    <argName>cert</argName>
+                    <cppType>CkCert &amp;</cppType>
+                    <dnType>Cert</dnType>
+                    <axType>Cert</axType>
+                    <objcName>cert</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.40</iversion>
+            <args2>
+                <arg name="cert" type="Cert" objcName="cert" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetDecryptCert2" axId="203">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Cert</axType>
+                    <dnType>Cert</dnType>
+                    <cppType>CkCert &amp;</cppType>
+                    <argName>cert</argName>
+                    <objcName>cert</objcName>
+                </arg>
+                <arg>
+                    <axType>PrivateKey</axType>
+                    <dnType>PrivateKey</dnType>
+                    <cppType>CkPrivateKey &amp;</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+            </args>
+            <descrip>Used to explicitly specify the certificate and associated private key to be used for decrypting S/MIME (PKCS7) email.</descrip>
+            <args2>
+                <arg name="cert" type="Cert" objcName="cert" />
+                <arg name="key" type="PrivateKey" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFlag" axId="204" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>msgId</argName>
+                    <objcName>msgId</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUid</argName>
+                    <objcName>bUid</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>flagName</argName>
+                    <objcName>flagName</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Sets a flag for a single message on the IMAP server. If ARG4 = 1, the flag is turned on, if ARG4 = 0, the flag is turned off. Standard system flags such as "\Deleted", "\Seen", "\Answered", "\Flagged", "\Draft", and "\Answered" may be set.  Custom flags such as "NonJunk", "$label1", "$MailFlagBit1", etc. may also be set.&lt;p&gt;
+If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2 is _FALSE_, then ARG1 represents a sequence number.</descrip>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+                <arg name="flagName" type="string" objcName="flagName" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFlags" axId="205" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>MessageSet</axType>
+                    <dnType>MessageSet</dnType>
+                    <cppType>CkMessageSet &amp;</cppType>
+                    <argName>messageSet</argName>
+                    <objcName>messageSet</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>flagName</argName>
+                    <objcName>flagName</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Sets a flag for each message in the message set on the IMAP server. If ARG3 = 1, the flag is turned on, if ARG3 = 0, the flag is turned off. Standard system flags such as "\Deleted", "\Seen", "\Answered", "\Flagged", "\Draft", and "\Answered" may be set.  Custom flags such as "NonJunk", "$label1", "$MailFlagBit1", etc. may also be set.</descrip>
+            <args2>
+                <arg name="messageSet" type="MessageSet" objcName="messageSet" />
+                <arg name="flagName" type="string" objcName="flagName" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetMailFlag" axId="206" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>flagName</argName>
+                    <objcName>flagName</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Sets a flag for a single message on the IMAP server. The UID of the email object is used to find the message on the IMAP server that is to be affected. If ARG3 = 1, the flag is turned on, if ARG3 = 0, the flag is turned off.&lt;p&gt;Both standard system flags as well as custom flags may be set.  
+Standard system flags typically begin with a backslash character, such as "\Deleted", "\Seen", "\Answered", "\Flagged", "\Draft", and "\Answered".  Custom flags can be anything, such as "NonJunk", "$label1", "$MailFlagBit1", etc. .&lt;p&gt;
+Note: When the Chilkat IMAP component downloads an email from an IMAP server, it inserts a "ckx-imap-uid" header field in the email object.  This is subsequently used by this method to get the UID associated with the email.  The "ckx-imap-uid" header must be present for this method to be successful.
+&lt;p&gt;
+Note: Calling this method is identical to calling the SetFlag method, except the UID is automatically obtained from the email object.
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; Setting the "Deleted" flag does not remove the email from the mailbox.  Emails marked "Deleted" are removed when the Expunge method is called.</descrip>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+                <arg name="flagName" type="string" objcName="flagName" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetQuota" axId="241" ax="1" cpp="1" dn="1" events="1">
+            <gType>bool</gType>
+            <descrip>Sets the quota for a ARG1.  The ARG2 should be one of two keywords:"STORAGE" or "MESSAGE". Use "STORAGE" to set the maximum capacity of the combined messages in ARG1.   Use "MESSAGE" to set the maximum number of messages allowed.
+&lt;p&gt;
+If setting a STORAGE quota, the ARG3 is  in units of 1024 octets.  For example, to specify a limit of 500,000,000 bytes, set ARG3 equal to 500,000.  
+&lt;p&gt;This feature is only possible with IMAP servers that support the QUOTA extension/capability.  If an IMAP server supports the QUOTA extension, it likely supports the STORAGE resource.  The MESSAGE resource is less commonly supported.</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args>
+                <arg>
+                    <argName>quotaRoot</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>quotaRoot</objcName>
+                </arg>
+                <arg>
+                    <argName>resource</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>resource</objcName>
+                </arg>
+                <arg>
+                    <argName>quota</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>quota</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="quotaRoot" type="string" objcName="quotaRoot" />
+                <arg name="resource" type="string" objcName="resource" />
+                <arg name="quota" type="int" objcName="quota" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetSslClientCert" axId="207">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Cert</axType>
+                    <dnType>Cert</dnType>
+                    <cppType>CkCert &amp;</cppType>
+                    <argName>cert</argName>
+                    <objcName>cert</objcName>
+                </arg>
+            </args>
+            <descrip>Specifies a client-side certificate to be used for the SSL / TLS connection.  In most cases, servers do not require client-side certificates for SSL/TLS.  A client-side certificate is typically used in high-security situations where the certificate is an additional means to indentify the client to the server.</descrip>
+            <args2>
+                <arg name="cert" type="Cert" objcName="cert" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetSslClientCertPem" axId="208">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemDataOrFilename</argName>
+                    <objcName>pemDataOrPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemPassword</argName>
+                    <objcName>pemPassword</objcName>
+                </arg>
+            </args>
+            <descrip>(Same as SetSslClientCert, but allows a .pfx/.p12 file to be used directly)  Specifies a client-side certificate to be used for the SSL / TLS connection.  In most cases, servers do not require client-side certificates for SSL/TLS.  A client-side certificate is typically used in high-security situations where the certificate is an additional means to indentify the client to the server.
+&lt;p&gt;
+The ARG1 may contain the actual PEM data, or it may contain the path of the PEM file.  This method will automatically recognize whether it is a path or the PEM data itself.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>How to Create a PEM that Contains Certificates and a Private Key</text>
+                    <url>http://www.chilkatforum.com/questions/356/how-to-use-a-client-side-certificate-and-private-key-for-an-ssltls-connection</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="pemDataOrFilename" type="string" objcName="pemDataOrPath" />
+                <arg name="pemPassword" type="string" objcName="pemPassword" />
+            </args2>
+        </method>
+        <method name="SetSslClientCertPfx" axId="209" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxFilename</argName>
+                    <objcName>pfxPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxPassword</argName>
+                    <objcName>pfxPassword</objcName>
+                </arg>
+            </args>
+            <descrip>(Same as SetSslClientCert, but allows a .pfx/.p12 file to be used directly)  Specifies a client-side certificate to be used for the SSL / TLS connection.  In most cases, servers do not require client-side certificates for SSL/TLS.  A client-side certificate is typically used in high-security situations where the certificate is an additional means to indentify the client to the server.</descrip>
+            <args2>
+                <arg name="pfxFilename" type="string" objcName="pfxPath" />
+                <arg name="pfxPassword" type="string" objcName="pfxPassword" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="SshAuthenticatePk" axId="210">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sshLogin</argName>
+                    <objcName>sshLogin</objcName>
+                </arg>
+                <arg>
+                    <axType>SshKey</axType>
+                    <dnType>SshKey</dnType>
+                    <cppType>CkSshKey &amp;</cppType>
+                    <argName>privateKey</argName>
+                    <objcName>privateKey</objcName>
+                </arg>
+            </args>
+            <descrip>Authenticates with the SSH server using public-key authentication.  The corresponding public key must have been installed on the SSH server for the ARG1.   Authentication will succeed if the matching ARG2 is provided.
+&lt;p&gt;
+Important: When reporting problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.</descrip>
+            <args2>
+                <arg name="sshLogin" type="string" objcName="sshLogin" />
+                <arg name="privateKey" type="SshKey" objcName="privateKey" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="SshAuthenticatePw" axId="211">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sshLogin</argName>
+                    <objcName>sshLogin</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sshPassword</argName>
+                    <objcName>sshPassword</objcName>
+                </arg>
+            </args>
+            <descrip>Authenticates with the SSH server using a ARG1 and ARG2.
+&lt;p&gt;
+An SSH tunneling (port forwarding) session always begins by first calling SshTunnel to connect to the SSH server, then calling either AuthenticatePw or AuthenticatePk to authenticate.  Following this, your program should call Connect to connect with the IMAP server (via the SSH tunnel) and then Login to authenticate with the IMAP server.
+&lt;p&gt;
+Note: Once the SSH tunnel is setup by calling SshTunnel and SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the IMAP server use the SSH tunnel.  No changes in programming are required other than making two initial calls to setup the tunnel.
+&lt;p&gt;
+Important: When reporting problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>IMAP SSH Tunneling (Port Forwarding)</text>
+                    <url>imap_sshTunnel.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="sshLogin" type="string" objcName="sshLogin" />
+                <arg name="sshPassword" type="string" objcName="sshPassword" />
+            </args2>
+        </method>
+        <method name="SshCloseTunnel" ax="1" cpp="1" dn="1" events="1" status="1" axId="233">
+            <gType>bool</gType>
+            <descrip>Closes the SSH tunnel previously opened by SshOpenTunnel.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="SshOpenTunnel" axId="232" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Connects to an SSH server and creates a tunnel for IMAP.  The ARG1 is the hostname (or IP address) of the SSH server.  The ARG2 is typically 22, which is the standard SSH port number.
+&lt;p&gt;
+An SSH tunneling (port forwarding) session always begins by first calling SshOpenTunnel to connect to the SSH server, followed by calling either SshAuthenticatePw or SshAuthenticatePk to authenticate.  Your program would then call Connect to connect with the IMAP server (via the SSH tunnel) and then Login to authenticate with the IMAP server.
+&lt;p&gt;
+Note: Once the SSH tunnel is setup by calling SshOpenTunnel and SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the IMAP server use the SSH tunnel.  No changes in programming are required other than making two initial calls to setup the tunnel.
+&lt;p&gt;
+Important: When reporting problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>sshHostname</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>sshHostname</objcName>
+                </arg>
+                <arg>
+                    <argName>sshPort</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>sshPort</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>imap_sshTunnel.asp</url>
+                    <text>IMAP SSH Tunneling (Port Forwarding)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="sshHostname" type="string" objcName="sshHostname" />
+                <arg name="sshPort" type="int" objcName="sshPort" />
+            </args2>
+        </method>
+        <method name="SshTunnel" axId="212" ax="1" deprecated="1" events="1" noC="1" noObjC="1" noWinRT="1" windowsOnly="1" noPublish="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sshServerHostname</argName>
+                    <objcName>sshServerHostname</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>sshPort</argName>
+                    <objcName>sshServerPort</objcName>
+                </arg>
+            </args>
+            <descrip>Connects to an SSH server and creates a tunnel for IMAP.  The ARG1 is the hostname (or IP address) of the SSH server.  The ARG2 is typically 22, which is the standard SSH port number.
+&lt;p&gt;
+An SSH tunneling (port forwarding) session always begins by first calling SshTunnel to connect to the SSH server, followed by calling either SshAuthenticatePw or SshAuthenticatePk to authenticate.  Your program would then call Connect to connect with the IMAP server (via the SSH tunnel) and then Login to authenticate with the IMAP server.
+&lt;p&gt;
+Note: Once the SSH tunnel is setup by calling SshTunnel and SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the IMAP server use the SSH tunnel.  No changes in programming are required other than making two initial calls to setup the tunnel.
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; This method is deprecated.  Programs should instead call SshOpenTunnel. (The only change is in the name of the method.)</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>IMAP SSH Tunneling (Port Forwarding)</text>
+                    <url>imap_sshTunnel.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="sshServerHostname" type="string" objcName="sshServerHostname" />
+                <arg name="sshPort" type="int" objcName="sshServerPort" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="StoreFlags" axId="213">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>msgId</argName>
+                    <objcName>msgId</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bUid</argName>
+                    <objcName>bUid</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>flagNames</argName>
+                    <objcName>flagName</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Sets one or more flags to a specific value for an email.  The email is indicated by either a UID or sequence number, depending on whether ARG2 is _TRUE_ (UID) or _FALSE_ (sequence number).
+&lt;p&gt;
+ARG3 should be a space separated string of flag names.  Both standard and customer flags may be set.  Standard flag names typically begin with a backslash character. For example: "\Seen \Answered".  Custom flag names may also be included.  Custom flags often begin with a $ character, such as "$label1", or "$MailFlagBit0".  Other customer flags may begin with any character, such as "NonJunk".
+&lt;p&gt;
+ARG4 should be 1 to turn the flags on, or 0 to turn the flags off.</descrip>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+                <arg name="flagNames" type="string" objcName="flagName" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="Subscribe" axId="214">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Subscribe to an IMAP mailbox.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="215">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>unlockCode</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component. This must be called once at the beginning of your program to unlock the component. A purchased unlock code is provided when the IMAP component is licensed.  Any string, such as "Hello World", may be passed to this method to automatically begin a fully-functional 30-day trial.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="unlockCode" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="Unsubscribe" axId="216">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mailbox</argName>
+                    <objcName>mailbox</objcName>
+                </arg>
+            </args>
+            <descrip>Unsubscribe from an IMAP mailbox.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="UseCertVault" ax="1" cpp="1" dn="1" status="1" axId="223">
+            <gType>bool</gType>
+            <descrip>Adds an XML certificate vault to the object's internal list of sources to be searched for certificates and private keys when encrypting/decrypting or signing/verifying.  Unlike the AddPfxSourceData and AddPfxSourceFile methods, only a single XML certificate vault can be used.  If UseCertVault is called multiple times, only the last certificate vault will be used, as each call to UseCertVault will replace the certificate vault provided in previous calls.</descrip>
+            <args>
+                <arg>
+                    <argName>vault</argName>
+                    <cppType>CkXmlCertVault &amp;</cppType>
+                    <dnType>XmlCertVault</dnType>
+                    <axType>XmlCertVault</axType>
+                    <objcName>vault</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.40</iversion>
+            <args2>
+                <arg name="vault" type="XmlCertVault" objcName="vault" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="UseSsh" ax="1" cpp="1" dn="1" status="1" axId="235">
+            <gType>bool</gType>
+            <descrip>Uses an existing SSH tunnel for the connection to the IMAP server.  This method is identical to the UseSshTunnel method, except the SSH connection is obtained from an SSH object instead of a Socket object.
+&lt;p&gt;
+This is useful for sharing an existing SSH tunnel connection wth other objects.  (SSH is a protocol where the tunnel contains many logical channels.  IMAP connections can exist simultaneously with other connection within a single SSH tunnel as SSH channels.)</descrip>
+            <iversion>9.5.0.55</iversion>
+            <args>
+                <arg>
+                    <argName>ssh</argName>
+                    <cppType>CkSsh &amp;</cppType>
+                    <dnType>Ssh</dnType>
+                    <axType>Ssh</axType>
+                    <objcName>ssh</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>imap_multiHopSsh.asp</url>
+                    <text>IMAP over Multiple Hop SSH</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="ssh" type="Ssh" objcName="ssh" />
+            </args2>
+        </method>
+        <method name="UseSshTunnel" axId="234" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Uses an existing SSH tunnel.  This is useful for sharing an existing SSH tunnel connection wth other objects.  (SSH is a protocol where the tunnel contains many logical channels.  IMAP connections can exist simultaneously with other connection within a single SSH tunnel as SSH channels.)</descrip>
+            <args>
+                <arg>
+                    <argName>tunnel</argName>
+                    <cppType>CkSocket &amp;</cppType>
+                    <dnType>Socket</dnType>
+                    <axType>Socket</axType>
+                    <objcName>tunnel</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.50</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>imap_useSshTunnel.asp</url>
+                    <text>IMAP Use Existing SSH Tunnel</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tunnel" type="Socket" objcName="tunnel" />
+            </args2>
+        </method>
+        <method name="FetchSingleAsMimeSb" axId="242" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Retrieves a single message from the IMAP server and returns a StringBuilder object containing the complete MIME source of the email.  If the method fails, it returns a NULL reference. If bUid is true, then msgID represents a UID. If bUid is false, then msgID represents a sequence number.</descrip>
+            <args2>
+                <arg name="msgId" type="int" objcName="msgId" />
+                <arg name="bUid" type="bool" objcName="bUid" />
+                <arg name="sbMime" type="StringBuilder" objcName="sbMime" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.62</iversion>
+        </method>
+        <method name="FetchAttachmentSb" axId="243" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Downloads one of an email's attachments and returns the attachment data in a StringBuilder.  It only makes sense to call this method for attachments that contain text data.  The ARG3 indicates the character encoding of the text, such as "utf-8" or "windows-1252".  ***See the FetchAttachment method description for more information about fetching attachments.</descrip>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+                <arg name="attachmentIndex" type="int" objcName="attachmentIndex" />
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.62</iversion>
+        </method>
+        <method name="FetchAttachmentBd" axId="244" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Downloads one of an email's attachments and returns the attachment data in a BinData object.  ***See the FetchAttachment method description for more information about fetching attachments.</descrip>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+                <arg name="attachmentIndex" type="int" objcName="attachmentIndex" />
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.62</iversion>
+        </method>
+        <method name="AppendMimeWithFlagsSb" axId="245" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Same as AppendMimeWithFlags, but the MIME to be uploaded to the IMAP server is passed in a StringBuilder object.</descrip>
+            <args2>
+                <arg name="mailbox" type="string" objcName="mailbox" />
+                <arg name="sbMime" type="StringBuilder" objcName="sbMime" />
+                <arg name="seen" type="bool" objcName="seen" />
+                <arg name="flagged" type="bool" objcName="flagged" />
+                <arg name="answered" type="bool" objcName="answered" />
+                <arg name="draft" type="bool" objcName="draft" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.62</iversion>
+        </method>
+        <method name="MoveMessages" axId="246" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="messageSet" type="MessageSet" objcName="messageSet" />
+                <arg name="destFolder" type="string" objcName="destFolder" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>imap_move_messages.asp</url>
+                    <text>IMAP Move Messages to another Mailbox</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.64</iversion>
+            <descrip>Moves a set of messages from one mailbox to another.  Note: This is only possible if the IMAP server supports the "MOVE" extension.   The ARG1 contains message UIDs or sequence numbers for messages in the currently selected mailbox.  The ARG2 is the destination mailbox/folder.</descrip>
+        </method>
+    </methods>
+    <genericName>Imap</genericName>
+    <events>
+        <standard name="AbortCheck" />
+        <standard name="PercentDone" />
+        <standard name="ProgressInfo" />
+        <standard name="TaskCompleted" />
+    </events>
+    <description>IMAP email component.</description>
+    <clsid>CEDB6B70-ED7D-4F9E-A0BC-66AFB42F7735</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>99395A01-9851-4C8C-9C7E-CEA9E4FE5393</uuidEvents>
+    <uuidMidl>2E0EB5F9-CD80-407B-B5F3-60AE67679967</uuidMidl>
+    <nextAxId>247</nextAxId>
+</class>

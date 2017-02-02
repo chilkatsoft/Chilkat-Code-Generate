@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="102387346" license="Tar" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Tar.xml">
+    <axName>ChilkatTar</axName>
+    <dnName>Tar</dnName>
+    <cppName>CkTar</cppName>
+    <properties>
+        <property name="CaptureXmlListing" read="1" write="1" ax="1" cpp="1" dn="1" axId="133">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then untar methods, such as Untar, UntarGz, UntarBz2, and UntarZ, will also capture an XML listing of the contents in the XmlListing property.  The format of the XML contained in XmlListing is identical to what is returned by the ListXml method.  The  default value is _FALSE_.</descrip>
+            <iversion>9.5.0.46</iversion>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Charset" axId="100">
+            <gType>string</gType>
+            <descrip>Character encoding to be used when interpreting filenames within .tar archives for untar operations.  The default is "utf-8", and this is typically not changed.  (The WriteTar methods always uses utf-8 to store filenames within the TAR archive.)</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DirMode" axId="101">
+            <gType>int</gType>
+            <descrip>The directory permissions to used in WriteTar* methods.  The default is octal 0755.  This is the value to be stored in the "mode" field of each TAR header for a directory entries.</descrip>
+        </property>
+        <property name="DirPrefix" axId="102" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>A prefix to be added to each file's path within the TAR archive as it is being created.  For example, if this property is set to the string "subdir1", then "subdir1/" will be prepended to each file's path within the TAR.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="FileMode" axId="103">
+            <gType>int</gType>
+            <descrip>The file permissions to used in WriteTar* methods.  The default is octal 0644.  This is the value to be stored in the "mode" field of each TAR header for a file entries.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="GroupId" axId="104">
+            <gType>int</gType>
+            <descrip>The default numerical GID to be stored in each TAR header when writing TAR archives.  The default value is 1000.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="GroupName" axId="105">
+            <gType>string</gType>
+            <descrip>The default group name to be stored in each TAR header when writing TAR archives.  The default value is the logged-on username of the application's process.</descrip>
+        </property>
+        <property name="HeartbeatMs" axId="106" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>This is the number of milliseconds between each AbortCheck event callback.  The AbortCheck callback allows an application to abort any TAR operation prior to completion.  If HeartbeatMs is 0, no AbortCheck event callbacks will occur.</descrip>
+        </property>
+        <property name="MatchCaseSensitive" read="1" write="1" ax="1" cpp="1" dn="1" axId="134">
+            <gType>bool</gType>
+            <descrip>Determines whether pattern matching for the MustMatch and MustNotMatch properties is case-sensitive or not.  The default value is _FALSE_.</descrip>
+            <iversion>9.5.0.46</iversion>
+        </property>
+        <property name="MustMatch" read="1" write="1" ax="1" cpp="1" dn="1" axId="135">
+            <gType>string</gType>
+            <descrip>If set, then file paths must match this pattern when creating TAR archives, or when extracting from TAR archives.  If a file does not match, it will not be included when creating a TAR, or it will not be extracted when extracting from a TAR.   This property also applies to methods that create or extract from compressed TAR archives.
+&lt;p&gt;
+The must-match pattern may include 0 or more asterisk characters, each of which represents 0 or more of any character.  For example, the pattern "*.txt" causes only .txt files to be included or extracted. The default value is an empty string, indicating that all files are implicitly matched.</descrip>
+            <iversion>9.5.0.46</iversion>
+        </property>
+        <property name="MustNotMatch" read="1" write="1" ax="1" cpp="1" dn="1" axId="136">
+            <gType>string</gType>
+            <descrip>If set, then file paths must NOT match this pattern when creating TAR archives, or when extracting from TAR archives.  If a file path matches, it will not be included when creating a TAR, or it will not be extracted when extracting from a TAR.   This property also applies to methods that create or extract from compressed TAR archives.
+&lt;p&gt;
+The must-not-match pattern may include 0 or more asterisk characters, each of which represents 0 or more of any character.  For example, the pattern "*.obj" causes all .obj files to be skipped.  The default value is an empty string, indicating that no files are skipped.</descrip>
+            <iversion>9.5.0.46</iversion>
+        </property>
+        <property name="NoAbsolutePaths" axId="107" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then absolute paths are converted to relative paths by removing the leading "/" or "\" character when untarring.  This protects your system from unknowingly untarring files into important system directories, such as C:\Windows\system32.  The  default value is _TRUE_.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumDirRoots" axId="108">
+            <gType>int</gType>
+            <descrip>The total number of directory roots set by calling AddDirRoot (i.e. the number of times AddDirRoot was called by the application).  A TAR archive is created by calling AddDirRoot for one or more directory tree roots, followed by a single call to WriteTar (or WriteTarBz2, WriteTarGz, WriteTarZ).  This allows for TAR archives containing multiple directory trees to be created.</descrip>
+        </property>
+        <property name="PercentDoneScale" read="1" write="1" ax="1" cpp="1" dn="1" axId="140">
+            <gType>int</gType>
+            <descrip>This property is only valid in programming environment and languages that allow for event callbacks.
+&lt;p&gt;
+Sets the value to be defined as 100% complete for the purpose of PercentDone event callbacks.  The defaut value of 100 means that at most 100 event PercentDone callbacks will occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress as a percentage completed.   This property may be set to larger numbers to get more fine-grained PercentDone callbacks.  For example, setting this property equal to 1000 will provide callbacks with .1 percent granularity.  For example, a value of 453 would indicate 45.3% competed.  This property is clamped to a minimum value of 10, and a maximum value of 100000.</descrip>
+            <iversion>9.5.0.49</iversion>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ScriptFileMode" axId="109">
+            <gType>int</gType>
+            <descrip>The file permissions to used in WriteTar* methods for shell script files (.sh, .csh, .bash, .bsh).  The default is octal 0755.  This is the value to be stored in the "mode" field of each TAR header for a file entries.</descrip>
+        </property>
+        <property name="SuppressOutput" read="1" write="1" ax="1" cpp="1" dn="1" axId="137">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then untar methods, such as Untar, UntarGz, UntarBz2, and UntarZ, do not produce any output.  Setting this value equal to _TRUE_ is useful when the CaptureXmlListing is also set to _TRUE_, which enables an application to get the contents of a TAR archive without extracting.  The  default value is _FALSE_.</descrip>
+            <iversion>9.5.0.46</iversion>
+        </property>
+        <property name="UntarCaseSensitive" axId="110" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>This property is deprecated.  Applications should instead use the MatchCaseSensitive property.  Until this property is officially removed, it will behave the same as the MatchCaseSensitive property.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="UntarDebugLog" axId="111">
+            <gType>bool</gType>
+            <descrip>Similar to the VerboseLogging property.  If set to _TRUE_, then information about each file/directory extracted in an untar method call is logged to LastErrorText (or LastErrorXml / LastErrorHtml).  The default value is _FALSE_.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="UntarDiscardPaths" axId="112">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then discard all path information when untarring.  This causes all files to be untarred into a single directory.  The default value is _FALSE_.</descrip>
+        </property>
+        <property name="UntarFromDir" axId="113" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The directory path where files are extracted when untarring.   The default value is ".", meaning that the current working directory of the calling process is used.  If UntarDiscardPaths is set, then all files are untarred into this directory.  Otherwise, the untar operation will re-create a directory tree rooted in this directory.</descrip>
+        </property>
+        <property name="UntarMatchPattern" axId="114" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>This property is deprecated.  The MustMatch property should be used instead.  Until this property is officially removed from the API,  it is identical in behavior the MustMatch property.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="UntarMaxCount" axId="115">
+            <gType>int</gType>
+            <descrip>Limits the number of files extracted during an untar to this count.  The default value is 0 to indicate no maximum.  To untar a single file, one might set the UntarMatchPattern such that it will match only the file to be extracted, and also set UntarMaxCount equal to 1.  This causes an untar to scan the TAR archive until it finds the matching file, extract it, and then return.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="UserId" axId="116">
+            <gType>int</gType>
+            <descrip>The default numerical UID to be stored in each TAR header when writing TAR archives.  The default value is 1000.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="UserName" axId="117">
+            <gType>string</gType>
+            <descrip>The default user name to be stored in each TAR header when writing TAR archives.  The default value is the logged-on username of the application's process.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="WriteFormat" axId="118">
+            <gType>string</gType>
+            <descrip>The TAR format to use when writing a TAR archive.  Valid values are "gnu", "pax", and "ustar".  The default value is "gnu".</descrip>
+        </property>
+        <property name="XmlListing" read="1" write="1" ax="1" cpp="1" dn="1" axId="138">
+            <gType>string</gType>
+            <descrip>Contains the XML listing of the contents of the TAR archive for the last untar method call (such as Untar, UntarGz, etc.) where the CaptureXmlListing property was set to _TRUE_.</descrip>
+            <iversion>9.5.0.46</iversion>
+        </property>
+    </properties>
+    <methods>
+        <method name="AddDirRoot" axId="119" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>dirPath</argName>
+                    <objcName>dirPath</objcName>
+                </arg>
+            </args>
+            <descrip>Adds a directory tree to be included in the next call to one of the WriteTar* methods.  To include multiple directory trees in a .tar, call AddDirRoot multiple times followed by a single call to WriteTar.</descrip>
+            <args2>
+                <arg name="dirPath" type="string" objcName="dirPath" />
+            </args2>
+        </method>
+        <method name="AddFile" ax="1" cpp="1" dn="1" status="1" axId="139">
+            <gType>bool</gType>
+            <descrip>Adds a local file to be included in the next call to one of the WriteTar* methods.  To include multiple files or directory trees in a .tar, call AddFile/AddDirRoot multiple times followed by a single call to WriteTar (or WriteTarGz, or WriteTarBz2).</descrip>
+            <iversion>9.5.0.46</iversion>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetDirRoot" axId="120" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the value of the Nth directory root.   For example, if an application calls AddDirRoot twice, then the NumDirRoots property would have a value of 2, and GetDirRoot(0) would return the path passed to AddDirRoot in the 1st call, and GetDirRoot(1) would return the directory path in the 2nd call to AddDirRoot.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="ListXml" axId="121" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tarPath</argName>
+                    <objcName>tarPath</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Scans a TAR archive and returns XML detailing the files and directories found within the TAR.</descrip>
+            <args2>
+                <arg name="tarPath" type="string" objcName="tarPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="UnlockComponent" axId="122">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>unlockCode</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component allowing for the full functionality to be used.   If this method unexpectedly returns _FALSE_, examine the contents of the LastErrorText property to determine the reason for failure.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="unlockCode" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="Untar" axId="123">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tarPath</argName>
+                    <objcName>tarPath</objcName>
+                </arg>
+            </args>
+            <descrip>Extracts the files and directories from a TAR archive, reconstructing the directory tree(s) in the local filesystem.  The files are extracted to the directory specified by the UntarFromDir property.  Returns the number of files and directories extracted, or -1 for failure.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Untar a .tar Archive</text>
+                    <url>untar.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tarPath" type="string" objcName="tarPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="UntarBz2" axId="124">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tarPath</argName>
+                    <objcName>tarPath</objcName>
+                </arg>
+            </args>
+            <descrip>Extracts the files and directories from a tar.bz2 (or tar.bzip2) archive, reconstructing the directory tree(s) in the local filesystem.  The files are extracted to the directory specified by the UntarFromDir property.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Untar a .tar.bz2 Compressed Archive</text>
+                    <url>untar_bz2.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tarPath" type="string" objcName="tarPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="UntarFirstMatchingToMemory" axId="125" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>tarFileBytes</argName>
+                    <objcName>tarFileBytes</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>matchPattern</argName>
+                    <objcName>matchPattern</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Memory-to-memory untar.  The first file matching the UntarMatchPattern property is extracted and returned.</descrip>
+            <args2>
+                <arg name="tarFileBytes" type="bytes" objcName="tarFileBytes" />
+                <arg name="matchPattern" type="string" objcName="matchPattern" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="UntarFromMemory" axId="126">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>tarFileBytes</argName>
+                    <objcName>tarFileBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Extracts the files and directories from an in-memory TAR archive, reconstructing the directory tree(s) in the local filesystem.  The files are extracted to the directory specified by the UntarFromDir property.  Returns the number of files and directories extracted, or -1 for failure.</descrip>
+            <args2>
+                <arg name="tarFileBytes" type="bytes" objcName="tarFileBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="UntarGz" axId="127">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tarPath</argName>
+                    <objcName>tarPath</objcName>
+                </arg>
+            </args>
+            <descrip>Extracts the files and directories from a tar.gz (or tar.gzip) archive, reconstructing the directory tree(s) in the local filesystem.  The files are extracted to the directory specified by the UntarFromDir property.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Untar a .tar.gz (.tgz) Compressed Archive</text>
+                    <url>untar_gz.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tarPath" type="string" objcName="tarPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="UntarZ" axId="128">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tarPath</argName>
+                    <objcName>tarPath</objcName>
+                </arg>
+            </args>
+            <descrip>Extracts the files and directories from a tar.Z archive, reconstructing the directory tree(s) in the local filesystem.  The files are extracted to the directory specified by the UntarFromDir property.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Untar a .tar.Z (.taz) Compressed Archive</text>
+                    <url>untar_Z.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tarPath" type="string" objcName="tarPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="VerifyTar" axId="129">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tarPath</argName>
+                    <objcName>tarPath</objcName>
+                </arg>
+            </args>
+            <descrip>Verifies that a TAR archive is valid.  This method opens the TAR archive and scans the entire file by walking the TAR headers.  Returns _TRUE_ if no errors were found.  Otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="tarPath" type="string" objcName="tarPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="WriteTar" axId="130">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tarPath</argName>
+                    <objcName>tarPath</objcName>
+                </arg>
+            </args>
+            <descrip>Writes a TAR archive.  The directory trees previously added by calling AddDirRoot one or more times are included in the output TAR archive.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Create TAR Archive</text>
+                    <url>tar_create.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tarPath" type="string" objcName="tarPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="WriteTarBz2" axId="131">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>bz2Path</argName>
+                    <objcName>bz2Path</objcName>
+                </arg>
+            </args>
+            <descrip>Writes a .tar.bz2 compressed TAR archive.  The directory trees previously added by calling AddDirRoot one or more times are included in the output file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Create TAR BZ2 Compressed Archive (.tar.bz2, .tbz, .tbz2, .tb2)</text>
+                    <url>tar_create_bz2.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="bz2Path" type="string" objcName="bz2Path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="WriteTarGz" axId="132">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>gzPath</argName>
+                    <objcName>gzPath</objcName>
+                </arg>
+            </args>
+            <descrip>Writes a .tar.gz (also known as .tgz) compressed TAR archive.  The directory trees previously added by calling AddDirRoot one or more times are included in the output file.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Create Compressed .tgz (.tar.gz) TAR Archive</text>
+                    <url>tar_create_tgz.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="gzPath" type="string" objcName="gzPath" />
+            </args2>
+        </method>
+        <method name="AddDirRoot2" ax="1" cpp="1" dn="1" status="1" axId="141">
+            <gType>bool</gType>
+            <descrip>Adds a directory tree to be included in the next call to one of the WriteTar* methods.  To include multiple directory trees in a .tar, call AddDirRoot2 (and/or AddDirRoot)  multiple times followed by a single call to WriteTar.
+&lt;p&gt;
+The ARG1 adds a prefix to the path in the TAR  for all files added under this root. The ARG1 should not end with a forward-slash char.  For example: This is good: "abc/123", but this is not good: "abc/123/".   If the DirPrefix property is also set, its prefix will added first.</descrip>
+            <args>
+                <arg>
+                    <argName>rootPrefix</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>rootPrefix</objcName>
+                </arg>
+                <arg>
+                    <argName>rootPath</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>rootPath</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.56</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/9577/how-to-include-path-infomation-with-multiplke-calls-to-adddirroot</url>
+                    <text>Adding Path Information with Individual Dir Roots</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="rootPrefix" type="string" objcName="rootPrefix" />
+                <arg name="rootPath" type="string" objcName="rootPath" />
+            </args2>
+        </method>
+    </methods>
+    <genericName>Tar</genericName>
+    <events>
+        <standard name="AbortCheck" />
+        <event name="NextTarFile">
+            <gType>event</gType>
+            <dotNetArgsClass>NextTarFileEventArgs</dotNetArgsClass>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                </arg>
+                <arg>
+                    <argName>fileSize</argName>
+                    <objcName>fileSize</objcName>
+                    <axType>int</axType>
+                    <dnType>int64</dnType>
+                    <cppType>__int64</cppType>
+                </arg>
+                <arg>
+                    <argName>isDirectory</argName>
+                    <objcName>isDirectory</objcName>
+                    <axType>int</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                </arg>
+                <arg out="1">
+                    <argName>skip</argName>
+                    <objcName>skip</objcName>
+                    <axType>int</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool *</cppType>
+                </arg>
+            </args>
+            <descrip>Called for methods that create a TAR archive.  This event is called just before a file is to be added to the TAR.  
+&lt;swig&gt;Return _TRUE_ to skip adding the file.  Return _FALSE_ to allow the file to be added.&lt;/swig&gt;
+&lt;nonSwig&gt;The ARG4 argument may be set to _TRUE_ to prevent the file from being added.&lt;/nonSwig&gt;</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="fileSize" type="int64" objcName="fileSize" />
+                <arg name="isDirectory" type="bool" objcName="isDirectory" />
+                <arg name="skip" type="bool" objcName="skip" ref="1" />
+            </args2>
+        </event>
+        <standard name="PercentDone" />
+        <standard name="ProgressInfo" />
+        <standard name="TaskCompleted" />
+    </events>
+    <description>API for creating and extracting TAR archives.  Also supports creating and extracting .tar.gz (.tgz), .tar.bz2, and .tar.Z (compressed TAR archives, also known as compressed tarball archives).  Can read/write the following TAR formats: (1) GNU tar 1.13.x format, (2) PAX -- POSIX 1003.1-2001 format, (3) USTAR -- POSIX 1003.1-1988 format.</description>
+    <clsid>E54CDB98-DD19-4155-841C-6DBA6618D5D8</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>1BCCF756-2714-431F-A92A-30B7DFFF3A56</uuidEvents>
+    <uuidMidl>6D9CB79B-EDFF-4B36-8A2B-E24A0D94838C</uuidMidl>
+    <nextAxId>142</nextAxId>
+</class>

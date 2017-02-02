@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="666962501" license="Http" sourceXmlPath="C:/ck2000/appData/apiDef2/Cache.xml">
+    <nextAxId>134</nextAxId>
+    <dnName>Cache</dnName>
+    <cppName>CkCache</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastEtagFetched" axId="100">
+            <gType>string</gType>
+            <descrip>The ETag of the last item fetched from cache.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastExpirationFetched" axId="101" deprecated="1" noxojo="1">
+            <gType>date</gType>
+            <descrip>Expiration date/time of the last item fetched from cache.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastExpirationFetchedStr" axId="102">
+            <gType>string</gType>
+            <descrip>Expiration date/time of the last item fetched from cache in RFC822 string format.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastHitExpired" axId="103">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the LastExpirationFetched is before the current date/time.   Otherwise _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastKeyFetched" axId="104">
+            <gType>string</gType>
+            <descrip>The key of the last item fetched from cache.  (For web pages, the key is typically the canonicalized URL.  Otherwise, the key is a unique identifer used to access the cached item.)</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Level" axId="105">
+            <gType>int</gType>
+            <descrip>The number of directory levels in the cache.  Possible values are:
+&lt;blockquote&gt;
+0: All cache files are in a single directory (the cache root).&lt;br /&gt;&lt;br /&gt;
+1: Cache files are located in 256 sub-directories numbered 0 .. 255 directly under the cache root.&lt;br /&gt;&lt;br /&gt;
+2: There are two levels of sub-directories under the cache root.  The 1st level has 256 sub-directories numbered 0 .. 255 directly under the cache root. The 2nd level allows for up to 256 sub-directories (0..255) under each level-1 directory.  Cache files are stored in the leaf directories.
+&lt;/blockquote&gt;</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumRoots" axId="106">
+            <gType>int</gType>
+            <descrip>The number of root directories composing the cache.  A typical multi-root cache would place each root on a separate hard drive.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="AddRoot" axId="107" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Must be called once for each cache root.  For example, if the cache is spread across D:\cacheRoot, E:\cacheRoot, and F:\cacheRoot, an application would setup the cache object by calling AddRoot three times -- once with "D:\cacheRoot", once with "E:\cacheRoot", and once with "F:\cacheRoot".</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>facebook_download_all_photos.asp</url>
+                    <text>Facebook Download all Photos to Local Files</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DeleteAll" axId="108">
+            <gType>int</gType>
+            <args />
+            <descrip>Deletes all items in the cache.  This method completely clears the cache.  All files in the cache are deleted.  (If the cache is multi-level, existing sub-directories are not deleted.)
+&lt;p&gt;
+Returns the number of items (i.e. cache files) deleted.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DeleteAllExpired" axId="109">
+            <gType>int</gType>
+            <args />
+            <descrip>Deletes all expired items from the cache.
+&lt;p&gt;
+Returns the number of items (i.e. cache files) deleted.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="DeleteFromCache" axId="110">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes a single item from the disk cache.  Returns _FALSE_ if the item exists in cache but could not be deleted.  Otherwise returns _TRUE_.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DeleteOlder" axId="111" deprecated="1" noxojo="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>date</axType>
+                    <dnType>date</dnType>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>dateTime</argName>
+                    <objcName>dt</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes all items older than a specified date/time.
+&lt;p&gt;
+Returns the number of items (i.e. cache files) deleted.  Returns -1 on error.</descrip>
+            <args2>
+                <arg name="dateTime" type="date" objcName="dt" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DeleteOlderDt" axId="112">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>CkDateTime</axType>
+                    <dnType>CkDateTime</dnType>
+                    <cppType>CkDateTime &amp;</cppType>
+                    <argName>dateTime</argName>
+                    <objcName>dt</objcName>
+                </arg>
+            </args>
+            <descrip>The same as DeleteOlder, except the ARG1 is passed as a CkDateTime.</descrip>
+            <args2>
+                <arg name="dateTime" type="CkDateTime" objcName="dt" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DeleteOlderStr" axId="113">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>dateTimeStr</argName>
+                    <objcName>dateTimeStr</objcName>
+                </arg>
+            </args>
+            <descrip>The same as DeleteOlder, except the ARG1 is passed as a date/time in RFC822 format.</descrip>
+            <args2>
+                <arg name="dateTimeStr" type="string" objcName="dateTimeStr" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FetchFromCache" axId="114" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Fetches an item from cache.
+&lt;p&gt;
+The ARG1 may be any length and may include any characters.  It should uniquely identify the cached item.  (No two items in the cache should have the same ARG1.)</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>facebook_download_all_photos.asp</url>
+                    <text>Facebook Download all Photos to Local Files</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FetchText" axId="115" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Fetches a text item from the cache and returns it's text content.
+&lt;p&gt;
+The ARG1 may be any length and may include any characters.  It should uniquely identify the cached item.  (No two items in the cache should have the same ARG1.)</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>facebook_download_all_photos.asp</url>
+                    <text>Facebook Download all Photos to Local Files</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetEtag" axId="116" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the eTag for an item in the cache.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetExpiration" axId="117" deprecated="1" noxojo="1" outArgName="outSysTime">
+            <gType systemtime="1">date</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>outSysTime</argName>
+                    <objcName>outSysTime</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the expire date/time for an item in the cache.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetExpirationDt" axId="118">
+            <gType>CkDateTime</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the expiration date/time for an item in the cache as a CkDateTime object.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetExpirationStr" axId="119" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>url</argName>
+                    <objcName>url</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the expiration date/time for an item in the cache in RFC822 string format.</descrip>
+            <args2>
+                <arg name="url" type="string" objcName="url" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetFilename" axId="120" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the absolute file path of the cache file associated with the ARG1.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetRoot" axId="121" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the directory path of the Nth cache root.  (Indexing begins at 0.)</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsCached" axId="122">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the item is found in the cache, otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveText" axId="123" deprecated="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>date</axType>
+                    <dnType>date</dnType>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>expire</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>eTag</argName>
+                    <objcName>eTag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>itemTextData</argName>
+                    <objcName>strData</objcName>
+                </arg>
+            </args>
+            <descrip>Inserts or replaces an text item in the cache.  The ARG3 is optional and may be set to a zero-length string.  Applications may use it as a place to save additional information about the cached item.   The ARG1 may be any length and may include any characters.  It should uniquely identify the cached item.  (No two items in the cache should have the same ARG1.)</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="expireDateTime" type="date" objcName="expire" />
+                <arg name="eTag" type="string" objcName="eTag" />
+                <arg name="itemTextData" type="string" objcName="strData" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveTextDt" axId="124">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>CkDateTime</axType>
+                    <dnType>CkDateTime</dnType>
+                    <cppType>CkDateTime &amp;</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>expire</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>eTag</argName>
+                    <objcName>eTag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>itemTextData</argName>
+                    <objcName>strData</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SaveText, except the expire date/time is passed as a CkDateTime object.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="expireDateTime" type="CkDateTime" objcName="expire" />
+                <arg name="eTag" type="string" objcName="eTag" />
+                <arg name="itemTextData" type="string" objcName="strData" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveTextNoExpire" axId="125">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>eTag</argName>
+                    <objcName>eTag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>itemTextData</argName>
+                    <objcName>strData</objcName>
+                </arg>
+            </args>
+            <descrip>Inserts or replaces an text item in the cache with no expiration date/time.  The ARG2 is optional and may be set to a zero-length string.  Applications may use it as a place to save additional information about the cached item.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="eTag" type="string" objcName="eTag" />
+                <arg name="itemTextData" type="string" objcName="strData" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>facebook_download_all_photos.asp</url>
+                    <text>Facebook Download all Photos to Local Files</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveTextStr" axId="126">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>expireDateTimeStr</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>eTag</argName>
+                    <objcName>eTag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>itemTextData</argName>
+                    <objcName>strData</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SaveText, except the expire date/time is passed as a string in RFC822 format.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="expireDateTime" type="string" objcName="expireDateTimeStr" />
+                <arg name="eTag" type="string" objcName="eTag" />
+                <arg name="itemTextData" type="string" objcName="strData" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveToCache" axId="127" deprecated="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>date</axType>
+                    <dnType>date</dnType>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>expire</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>eTag</argName>
+                    <objcName>eTag</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>itemData</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>Inserts or replaces an item in the cache.  The ARG3 is optional and may be set to a zero-length string.  Applications may use it as a place to save additional information about the cached item.  (The Chilkat HTTP component, when caching a page, writes the eTag (entity-tag) from the HTTP response header to this field.)  
+&lt;p&gt;
+The ARG1 may be any length and may include any characters.  It should uniquely identify the cached item.  (No two items in the cache should have the same ARG1.)</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="expireDateTime" type="date" objcName="expire" />
+                <arg name="eTag" type="string" objcName="eTag" />
+                <arg name="itemData" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveToCacheDt" axId="128">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>CkDateTime</axType>
+                    <dnType>CkDateTime</dnType>
+                    <cppType>CkDateTime &amp;</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>expire</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>eTag</argName>
+                    <objcName>eTag</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>itemData</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SaveToCache, except the expire date/time is passed as a CkDateTime object.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="expireDateTime" type="CkDateTime" objcName="expire" />
+                <arg name="eTag" type="string" objcName="eTag" />
+                <arg name="itemData" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveToCacheNoExpire" axId="129">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>eTag</argName>
+                    <objcName>eTag</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>itemData</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>Inserts or replaces an item in the cache.  The cached item will have no expiration.  The ARG2 is optional and may be set to a zero-length string.  Applications may use it as a place to save additional information about the cached item.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="eTag" type="string" objcName="eTag" />
+                <arg name="itemData" type="bytes" objcName="data" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>facebook_download_all_photos.asp</url>
+                    <text>Facebook Download all Photos to Local Files</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveToCacheStr" axId="130">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>url</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>expireDateTimeStr</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>eTag</argName>
+                    <objcName>eTag</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>itemData</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SaveToCache, except the expire date/time is passed in RFC822 string format.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="url" />
+                <arg name="expireDateTime" type="string" objcName="expireDateTimeStr" />
+                <arg name="eTag" type="string" objcName="eTag" />
+                <arg name="itemData" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UpdateExpiration" axId="131" deprecated="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>date</axType>
+                    <dnType>date</dnType>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>dt</objcName>
+                </arg>
+            </args>
+            <descrip>Updates the expire date/time for a cached item.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="expireDateTime" type="date" objcName="dt" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UpdateExpirationDt" axId="132">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <axType>CkDateTime</axType>
+                    <dnType>CkDateTime</dnType>
+                    <cppType>CkDateTime &amp;</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>dt</objcName>
+                </arg>
+            </args>
+            <descrip>The same as UpdateExpiration, except the ARG2 is passed as a CkDateTime.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="expireDateTime" type="CkDateTime" objcName="dt" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UpdateExpirationStr" axId="133">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>key</argName>
+                    <objcName>url</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>expireDateTime</argName>
+                    <objcName>dateTimeStr</objcName>
+                </arg>
+            </args>
+            <descrip>The same as UpdateExpiration, except the ARG2 is passed in RFC822 string format.</descrip>
+            <args2>
+                <arg name="key" type="string" objcName="url" />
+                <arg name="expireDateTime" type="string" objcName="dateTimeStr" />
+            </args2>
+            <links2 />
+        </method>
+    </methods>
+    <genericName>Cache</genericName>
+    <description />
+    <clsid>68993996-4448-4B92-99B7-3715CE60D316</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>064748FA-01E3-4ACD-8DAD-859556B263BD</uuidMidl>
+    <axName>ChilkatCache</axName>
+</class>

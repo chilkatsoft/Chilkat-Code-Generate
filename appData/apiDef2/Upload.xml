@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="612914397" license="Free" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Upload.xml">
+    <axName>ChilkatUpload</axName>
+    <dnName>Upload</dnName>
+    <cppName>CkUpload</cppName>
+    <properties>
+        <property name="BandwidthThrottleUp" axId="135" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If non-zero, limits (throttles) the upload bandwidth to approximately this maximum number of bytes per second.  The default value of this property is 0.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>upload_asynch_throttled.asp</url>
+                    <text>Bandwidth Throttled Asynchronous HTTP Upload</text>
+                </link>
+            </links2>
+        </property>
+        <property name="ChunkSize" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The chunk size (in bytes) used by the underlying TCP/IP sockets for uploading files.  The default value is 65535.</descrip>
+        </property>
+        <property name="ClientIpAddress" axId="136" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The IP address to use for computers with multiple network interfaces or IP addresses.
+For computers with a single network interface (i.e. most computers), this property should not be set.  For multihoming computers, the default IP address is automatically used if this property is not set.&lt;p&gt;
+The IP address is a string such as in dotted notation using numbers, not domain names, such as "165.164.55.124".</descrip>
+            <iversion>9.5.0.49</iversion>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Expect100Continue" axId="101">
+            <gType>bool</gType>
+            <descrip>When _TRUE_, the request header will included an "Expect: 100-continue" header field.  This indicates that the server should respond with an intermediate response of "100 Continue" or "417 Expectation Failed" response based on the information available in the request header.  This helps avoid situations such as limits on upload sizes.  It allows the server to reject the upload, and then the client can abort prior to uploading the data.&lt;p&gt;
+The default value of this property is _TRUE_.</descrip>
+        </property>
+        <property name="HeartbeatMs" axId="102" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>This property is only valid in programming environment and languages that allow for event callbacks.
+&lt;p&gt;Specifies the time interval in milliseconds between AbortCheck events.  An Upload operation can be aborted via the AbortCheck event.</descrip>
+        </property>
+        <property name="Hostname" axId="103" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The hostname of the HTTP server that is the target of the upload.  Do not include "http://" in the hostname.  It can be a hostname, such as "www.chilkatsoft.com", or an IP address, such as "168.144.70.227".</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="IdleTimeoutMs" axId="104">
+            <gType>int</gType>
+            <descrip>A timeout in milliseconds.  The default value is 30000.  If the upload hangs (i.e. progress halts) for more than this time, the component will abort the upload.  (It will timeout.)</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Login" axId="105">
+            <gType>string</gType>
+            <descrip>The HTTP login for sites requiring authentication.  Chilkat Upload supports Basic HTTP authentication.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumBytesSent" axId="106">
+            <gType>unsigned long</gType>
+            <descrip>After an upload has completed, this property contains the number of bytes sent.  During asynchronous uploads, this property contains the current number of bytes sent while the upload is in progress.</descrip>
+        </property>
+        <property name="Password" axId="107" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The HTTP password for sites requiring authentication.  Chilkat Upload supports Basic HTTP authentication.</descrip>
+        </property>
+        <property name="Path" axId="108" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The path part of the upload URL.  Some examples:&lt;p id="desc"&gt;
+
+If the upload target (i.e. consumer) URL is: http://www.freeaspupload.net/freeaspupload/testUpload.asp, then
+&lt;blockquote&gt;
+Hostname = "www.freeaspupload.net"
+Path = "/freeaspupload/testUpload.asp"
+&lt;/blockquote&gt;
+If the upload target URL is http://www.chilkatsoft.com/cgi-bin/ConsumeUpload.exe, then
+&lt;blockquote&gt;
+Hostname = "www.chilkatsoft.com"
+Path = "/cgi-bin/ConsumeUpload.exe"
+&lt;/blockquote&gt;</descrip>
+        </property>
+        <property name="PercentDoneScale" read="1" write="1" ax="1" cpp="1" dn="1" axId="134">
+            <gType>int</gType>
+            <descrip>This property is only valid in programming environment and languages that allow for event callbacks.
+&lt;p&gt;
+Sets the value to be defined as 100% complete for the purpose of PercentDone event callbacks.  The defaut value of 100 means that at most 100 event PercentDone callbacks will occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress as a percentage completed.   This property may be set to larger numbers to get more fine-grained PercentDone callbacks.  For example, setting this property equal to 1000 will provide callbacks with .1 percent granularity.  For example, a value of 453 would indicate 45.3% competed.  This property is clamped to a minimum value of 10, and a maximum value of 100000.</descrip>
+            <iversion>9.5.0.49</iversion>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="PercentUploaded" axId="109">
+            <gType>unsigned long</gType>
+            <descrip>Contains the current percentage completion (0 to 100) while an asynchronous upload is in progress.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Port" axId="110">
+            <gType>int</gType>
+            <descrip>The port number of the upload target (i.e. consumer) URL.  The default value is 80.  If SSL is used, this should be set to 443 (typically).</descrip>
+        </property>
+        <property name="PreferIpv6" axId="133" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain.   The default value of this property is _FALSE_, which will choose IPv4 over IPv6.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ProxyDomain" axId="111">
+            <gType>string</gType>
+            <descrip>The domain name of a proxy host if an HTTP proxy is used.  Do not include the "http://".  The domain name may be a hostname, such as "www.chilkatsoft.com", or an IP address, such as "168.144.70.227".</descrip>
+            <links>
+                <link>
+                    <text>HTTP Upload using a Proxy Server Example</text>
+                    <url_asp>http://www.example-code.com/asp/upload_proxy_server.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/upload_proxy_server.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/upload_proxy_server.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/upload_proxy_server.asp</url_cpp>
+                    <url_delphi>http://www.example-code.com/delphi/upload_proxy_server.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/upload_proxy_server.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/upload_proxy_server.asp</url_java>
+                    <url_perl>http://www.example-code.com/perl/upload_proxy_server.asp</url_perl>
+                    <url_python>http://www.example-code.com/python/upload_proxy_server.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/upload_proxy_server.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/upload_proxy_server.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/upload_proxy_server.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/upload_proxy_server.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>HTTP Upload using a Proxy Server Example</text>
+                    <url>upload_proxy_server.asp</url>
+                </link>
+            </links2>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ProxyLogin" axId="112">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy login.</descrip>
+        </property>
+        <property name="ProxyPassword" axId="113" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy password.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ProxyPort" axId="114">
+            <gType>int</gType>
+            <descrip>The port number of a proxy server if an HTTP proxy is used.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ResponseBody" axId="115">
+            <gType>bytes</gType>
+            <descrip>An HTTP upload is nothing more than an HTTP POST that contains the content of the files being uploaded.  Just as with any HTTP POST or GET, the server should send an HTTP response that consists of header and body.&lt;p id="desc"&gt;This property contains the body part of the HTTP response.&lt;/p&gt;</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ResponseHeader" axId="116">
+            <gType>string</gType>
+            <descrip>An HTTP upload is nothing more than an HTTP POST that contains the content of the files being uploaded.  Just as with any HTTP POST or GET, the server should send an HTTP response that consists of header and body.&lt;p id="desc"&gt;This property contains the header part of the HTTP response.&lt;/p&gt;</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ResponseStatus" axId="117">
+            <gType>int</gType>
+            <descrip>The HTTP response status code of the HTTP response.  A list of HTTP status codes can be found here: &lt;a href="http://en.wikipedia.org/wiki/List_of_HTTP_status_codes"&gt;HTTP Response Status Codes&lt;/a&gt;.</descrip>
+        </property>
+        <property name="Ssl" axId="118" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Set this to _TRUE_ if the upload is to HTTPS.  For example, if the target of the upload is:
+&lt;blockquote&gt;&lt;b&gt;https://www.myuploadtarget.com/consumeUpload.asp&lt;/b&gt;&lt;/blockquote&gt;
+&lt;p id="desc"&gt;then set:&lt;/p&gt;
+&lt;blockquote&gt;
+Ssl = _TRUE_&lt;br&gt;
+Hostname = "www.myuploadtarget.com"&lt;br&gt;
+Path = "/consumeupload.asp"&lt;br&gt;
+Port = 443&lt;br&gt;
+&lt;/blockquote&gt;</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="TotalUploadSize" axId="119">
+            <gType>unsigned long</gType>
+            <descrip>The total size of the upload (in bytes).  This property will become set at the beginning of an asynchronous upload.  A program may monitor asynchronous uploads by tracking both NumBytesSent and PercentUploaded.
+&lt;p id="desc"&gt;
+This property is also set during synchronous uploads.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="UploadInProgress" axId="120">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous upload is started.  When the asynchronous upload is complete, this property becomes equal to _FALSE_.   A program will typically begin an asynchronous upload by calling BeginUpload, and then periodically checking the value of this property to determine when the upload is complete.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="UploadSuccess" axId="121">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ (success) or _FALSE_ (failed) after an asynchronous upload completes or aborts due to failure.  When a program does an asynchronous upload, it will wait until UploadInProgress becomes _FALSE_.  It will then check the value of this property to determine if the upload was successful or not.</descrip>
+        </property>
+        <property name="TlsPinSet" read="1" write="1" ax="1" cpp="1" dn="1" axId="137">
+            <gType>string</gType>
+            <descrip>Specifies a set of pins for Public Key Pinning for TLS connections.  This property lists the expected SPKI fingerprints for the server certificates.  If the server's certificate (sent during the TLS handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the connection fails. The format of this string property is as follows:
+&lt;pre&gt;
+hash_algorithm, encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
+&lt;/pre&gt;
+For example, the following string specifies a single sha256 base64-encoded SPKI fingerprint:
+&lt;pre&gt;
+"sha256, base64, lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
+&lt;/pre&gt;
+This example specifies two SPKI fingerprints:
+&lt;pre&gt;
+"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=, 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
+&lt;/pre&gt;
+Any of the following hash algorithms are allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or ripemd320.
+&lt;p&gt;
+The following encodings are allowed: base64, hex, and any of the encodings indicated in the link below.</descrip>
+            <iversion>9.5.0.55</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Encodings Supported by Chilkat</text>
+                </link>
+            </links2>
+        </property>
+        <property name="SslAllowedCiphers" axId="138" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections.  The default (empty string) indicates that all implemented ciphers are possible.  The TLS ciphers supported in Chilkat v9.5.0.55 and later are:
+&lt;pre&gt;
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+&lt;/pre&gt;
+To restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384".   The order should be in terms of preference, with the preferred algorithms listed first.  (Note that the client cannot specifically choose the algorithm is picked because it is the server that chooses.  The client simply provides the server with a list from which to choose.)
+&lt;p&gt;
+The property can also disallow connections with servers having certificates with RSA keys less than a certain size.  By default, server certificates having RSA keys of 512 bits or greater are allowed.  Add the keyword "rsa1024" to disallow connections with servers having keys smaller than 1024 bits.  Add the keyword "rsa2048"  to disallow connections with servers having keys smaller than 2048 bits.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; Prior to Chilkat v9.5.0.55, it was not possible to explicitly list allowed cipher suites.  The deprecated means for indicating allowed ciphers was both incomplete  and unprecise.  For example, the following keywords could be listed to allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4".    These keywords will still be recognized, but programs should be updated to explicitly list the allowed ciphers.&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;secure-renegotiation:&lt;/b&gt; Starting in Chilkat v9.5.0.55, the keyword "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC 5746).&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;best-practices:&lt;/b&gt; Starting in Chilkat v9.5.0.55, this  property may be set to the single keyword "best-practices".  This will allow ciphers based on the current best practices.  As new versions of Chilkat are released, the best practices may change.  Changes will be noted here.  The current best practices are:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the server uses an RSA key, it must be 1024 bits or greater.&lt;/li&gt;
+&lt;li&gt;All renegotations must be secure renegotiations.&lt;/li&gt;
+&lt;li&gt;All ciphers using RC4, DES, or 3DES are disallowed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;b&gt;Example:&lt;/b&gt; The following string would restrict to 2 specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024, secure-renegotiation"&lt;/p&gt;</descrip>
+            <iversion>9.5.0.55</iversion>
+        </property>
+        <property name="SslProtocol" axId="139" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Selects the secure protocol to be used for secure (SSL/TLS) connections.  Possible values are:
+&lt;blockquote&gt;
+default&lt;br /&gt;
+TLS 1.2&lt;br /&gt;
+TLS 1.1&lt;br /&gt;
+TLS 1.0&lt;br /&gt;
+SSL 3.0&lt;br /&gt;
+TLS 1.2 or higher&lt;br /&gt;
+TLS 1.1 or higher&lt;br /&gt;
+TLS 1.0 or higher&lt;br /&gt;
+&lt;/blockquote&gt;
+The default value is "default" which will choose the, which allows for the protocol to be selected dynamically at runtime based on the requirements of the server.  Choosing an exact protocol will cause the connection to fail unless that exact protocol is negotiated.  It is better to choose "X or higher" than an exact protocol.   The "default" is effectively "SSL 3.0 or higher".</descrip>
+            <iversion>9.5.0.55</iversion>
+        </property>
+        <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="140">
+            <gType>bool</gType>
+            <descrip>When set to _TRUE_, causes the currently running method to abort.  Methods that always finish quickly (i.e.have no length file operations or network communications) are not affected.  If no method is running, then this property is automatically reset to _FALSE_ when the next method is called.  When the abort occurs, this property is reset to _FALSE_.  Both synchronous and asynchronous method calls can be aborted.  (A synchronous method call could be aborted by setting this property from a separate thread.)</descrip>
+            <iversion>9.5.0.58</iversion>
+        </property>
+    </properties>
+    <methods>
+        <method name="AbortUpload" axId="122" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <ifdef>#ifndef SINGLE_THREADED</ifdef>
+            <args />
+            <descrip>May be called during an asynchronous upload to abort.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddCustomHeader" axId="123">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Adds a custom HTTP header to the HTTP upload.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddFileReference" axId="124">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Adds a file to the list of files to be uploaded in the next call to BlockingUpload, BeginUpload, or UploadToMemory.  To upload more than one file, call this method once for each file to be uploaded.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="filename" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddParam" axId="125">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Adds a custom HTTP request parameter to the upload.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method name="BeginUpload" axId="126" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#ifndef SINGLE_THREADED</ifdef>
+            <args />
+            <descrip>Starts an asynchronous upload.  Only one asynchronous upload may be in progress at a time.  To achieve multiple asynchronous uploads, use multiple instances of the Chilkat Upload object.  Each object instance is capable of managing a single asynchronous upload.&lt;p id="desc"&gt;
+When this method is called, a background thread is started and the asynchronous upload runs in the background.  The upload may be aborted at any time by calling AbortUpload.   The upload is completed (or failed) when UploadInProgress becomes _FALSE_.  At that point, the UploadSuccess property may be checked to determine success (_TRUE_) or failure (_FALSE_).</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Debugging HTTP Upload</text>
+                    <url>http://www.cknotes.com/?p=138</url>
+                </link>
+                <link linkType="external" lang="csharp">
+                    <text>HTTP Upload with Progress Monitoring Events</text>
+                    <url>https://www.chilkatsoft.com/p/p_200.asp</url>
+                </link>
+                <link linkType="external" lang="vbnet">
+                    <text>HTTP Upload with Progress Monitoring Events</text>
+                    <url>https://www.chilkatsoft.com/p/p_200.asp</url>
+                </link>
+                <link linkType="example" lang="perl">
+                    <text>Asynchronous HTTP Upload Example</text>
+                    <url>upload_asynch.asp</url>
+                </link>
+                <link linkType="example">
+                    <text>Asynchronous HTTPS Upload Example</text>
+                    <url>upload_asynchHttps.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="BlockingUpload" axId="127" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Uploads files to a web server using HTTP.  The files to be uploaded are indicated by calling AddFileReference once for each file (prior to calling this method).</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Debugging HTTP Upload</text>
+                    <url>http://www.cknotes.com/?p=138</url>
+                </link>
+                <link linkType="external">
+                    <text>IIS 7.0 Upload Size Limitations</text>
+                    <url>http://www.cknotes.com/?p=100</url>
+                </link>
+                <link linkType="external">
+                    <text>IIS 6.0 Upload Size Limitations</text>
+                    <url>http://www.cknotes.com/?p=136</url>
+                </link>
+                <link linkType="example">
+                    <text>BlockingUpload Example</text>
+                    <url>upload_blocking.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ClearFileReferences" axId="128">
+            <gType>void</gType>
+            <args />
+            <descrip>Clears the internal list of files created by calls to AddFileReference.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ClearParams" axId="129">
+            <gType>void</gType>
+            <args />
+            <descrip>Clears the internal list of params created by calls to AddParam.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SleepMs" axId="130">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>millisec</argName>
+                    <objcName>millisec</objcName>
+                </arg>
+            </args>
+            <descrip>A convenience method for putting the calling process to sleep for N milliseconds.  It is provided here because some programming languages do not provide this capability, and sleeping for short increments of time is helpful when doing asynchronous uploads.</descrip>
+            <args2>
+                <arg name="millisec" type="int" objcName="millisec" />
+            </args2>
+        </method>
+        <method name="UploadToMemory" axId="131" ax="1" cpp="1" dn="1" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the complete HTTP POST to memory.  The POST contains the HTTP header, any custom params added by calling AddParam, and each file to be uploaded.  This is helpful in debugging.  It allows you to see the exact HTTP POST sent to the server if BlockingUpload or BeginUpload is called.</descrip>
+            <args2 />
+        </method>
+    </methods>
+    <events>
+        <standard name="AbortCheck" />
+        <standard name="PercentDone" />
+        <standard name="ProgressInfo" />
+        <standard name="TaskCompleted" />
+    </events>
+    <genericName>Upload</genericName>
+    <description>Chilkat Upload is a freeware component that can be used to upload files over HTTP and HTTPS to a web server.&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Supports both HTTP and HTTPS protocols.&lt;/li&gt;
+&lt;li&gt;Progress monitoring with percentage completion and "heartbeat" monitoring.&lt;/li&gt;
+&lt;li&gt;Abort capability.&lt;/li&gt;
+&lt;li&gt;Asynchronous uploads with real-time monitoring of percentage completion and number of bytes transferred.&lt;/li&gt;
+&lt;li&gt;Add arbitrary HTTP POST form parameters to your upload.&lt;/li&gt;
+&lt;li&gt;Upload multiple files in a single transaction.&lt;/li&gt;
+&lt;li&gt;Add arbitrary (custom) HTTP header fields to the HTTP upload.&lt;/li&gt;
+&lt;li&gt;Retrieve the HTTP response status, header, and body returned by the web server.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/p&gt;</description>
+    <clsid>AC217674-DB08-4F7E-AB20-9F5F1026C464</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>82E9857B-559A-424B-B7F2-C5B96E9A9D3B</uuidEvents>
+    <uuidMidl>D72E7F04-7817-4BA7-8FC2-6C890E94BC86</uuidMidl>
+    <nextAxId>141</nextAxId>
+</class>

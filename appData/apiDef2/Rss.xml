@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Free" baseProgress="1" hasEvents="1" XojoModuleId="359260832" sourceXmlPath="C:/ck2000/appData/apiDef2/Rss.xml">
+    <axName>ChilkatRss</axName>
+    <dnName>Rss</dnName>
+    <cppName>CkRss</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumChannels" axId="101">
+            <gType>int</gType>
+            <descrip>The number of channels in the RSS document.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumItems" axId="100">
+            <gType>int</gType>
+            <descrip>The number of items in the channel.</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="AddNewChannel" axId="102" ax="1" cpp="1" dn="1">
+            <gType>Rss</gType>
+            <args />
+            <descrip>Adds a new channel to the RSS document.  Returns the Rss object representing the Channel which can then be edited.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddNewImage" axId="103">
+            <gType>Rss</gType>
+            <args />
+            <descrip>Adds a new image to the RSS document.  Returns the Rss object representing the image, which can then be edited.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="AddNewItem" axId="104">
+            <gType>Rss</gType>
+            <args />
+            <descrip>Adds a new Item to an Rss channel.  Returns the Rss object representing the item which can then be edited.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="DownloadRss" axId="105">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>url</argName>
+                    <objcName>url</objcName>
+                </arg>
+            </args>
+            <descrip>Downloads an RSS document from the Internet and populates the Rss object with the contents.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Example: Read RSS Feed</text>
+                    <url>rss_read_feed.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="url" type="string" objcName="url" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetAttr" axId="106" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the value of a sub-element attribute. For example, to get the value of the "isPermaLink" attribute of the "guid" sub-element, call item.GetAttr("guid","isPermaLink").</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="attrName" type="string" objcName="attrName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetChannel" axId="107">
+            <gType>Rss</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth channel of an RSS document.  Usually there is only 1 channel per document, so the index argument should be set to 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetCount" axId="108">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Return the number of sub-elements with a specific tag.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetDate" axId="109" deprecated="1" noxojo="1" outArgName="outSysTime">
+            <gType systemtime="1">date</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>outSysTime</argName>
+                    <objcName>outSysTime</objcName>
+                </arg>
+            </args>
+            <descrip>Return the value of a sub-element in date/time format.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetDateStr" axId="110" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>The same as GetDate, except the date/time is returned in RFC822 string format.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetImage" axId="111">
+            <gType>Rss</gType>
+            <args />
+            <descrip>Return the image associated with the channel.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetInt" axId="112">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Return the value of a numeric sub-element as an integer.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetItem" axId="113">
+            <gType>Rss</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Return the Nth item of a channel as an RSS object.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetString" axId="114" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Return the value of an sub-element as a string.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadRssFile" axId="115">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filePath</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Load an RSS document from a file.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadRssString" axId="116">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>rssString</argName>
+                    <objcName>rssString</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an RSS feed document from an in-memory string.</descrip>
+            <args2>
+                <arg name="rssString" type="string" objcName="rssString" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="MGetAttr" axId="117" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Get an attribute value for the Nth sub-element having a specific tag. As an example, an RSS item may have several "category" sub-elements. To get the value of the "domain" attribute for the 3rd category, call MGetAttr("category",2,"domain").</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="index" type="int" objcName="index" />
+                <arg name="attrName" type="string" objcName="attrName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="MGetString" axId="118" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Get the value of the Nth occurrence of a sub-element.  Indexing begins at 0.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="MSetAttr" axId="119">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>idx</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Set an attribute on the Nth occurrence of a sub-element.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="idx" type="int" objcName="index" />
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="MSetString" axId="120">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>idx</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Set the value of the Nth occurrence of a sub-element.  Indexing begins at 0.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="idx" type="int" objcName="index" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="NewRss" axId="121">
+            <gType>void</gType>
+            <args />
+            <descrip>Clears the RSS document.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="Remove" axId="122">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Removes a sub-element from the RSS document.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetAttr" axId="123">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the value of a sub-element attribute.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="attrName" type="string" objcName="attrName" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetDate" axId="124" deprecated="1" noxojo="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>date</axType>
+                    <dnType>date</dnType>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>dateTime</argName>
+                    <objcName>dateTime</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the value of a date/time sub-element.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="dateTime" type="date" objcName="dateTime" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetDateNow" axId="125">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the value of a date/time sub-element to the current system date/time.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetDateStr" axId="126">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>dateTimeStr</argName>
+                    <objcName>dateTimeStr</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SetDate, except the date/time is passed as an RFC822 string.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="dateTimeStr" type="string" objcName="dateTimeStr" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetInt" axId="127">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the value of an integer sub-element.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetString" axId="128">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tag</argName>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>value</argName>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the value of a sub-element.</descrip>
+            <args2>
+                <arg name="tag" type="string" objcName="tag" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToXmlString" axId="129" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the RSS document as an XML string.</descrip>
+            <args2 />
+        </method>
+    </methods>
+    <genericName>Rss</genericName>
+    <events>
+        <standard name="AbortCheck" />
+        <standard name="ProgressInfo" />
+        <standard name="TaskCompleted" />
+    </events>
+    <description>Represents an RSS document or sub-part of a document such as a channel, image, or item.  The RSS API allows one to download, create and modify RSS documents.</description>
+    <clsid>CC55FCB9-0500-45C2-8FED-CCB7D1A54A24</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>CE73FB1C-21FC-4118-B49F-986F7D57496F</uuidEvents>
+    <uuidMidl>270A27B7-1D62-490D-82E4-A35269722E23</uuidMidl>
+    <nextAxId>130</nextAxId>
+</class>

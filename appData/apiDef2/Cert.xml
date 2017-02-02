@@ -1,0 +1,1082 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="144475063" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/Cert.xml">
+    <nextAxId>184</nextAxId>
+    <dnName>Cert</dnName>
+    <cppName>CkCert</cppName>
+    <properties>
+        <property name="AuthorityKeyId" read="1" ax="1" cpp="1" dn="1" axId="176">
+            <gType>string</gType>
+            <descrip>The authority key identifier of the certificate in base64 string format.  This is only present if the certificate contains the extension OID 2.5.29.35.</descrip>
+            <iversion>9.5.0.40</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="1" name="AvoidWindowsPkAccess" axId="100">
+            <gType>bool</gType>
+            <descrip>Applies only when running on a Microsoft Windows operating system.  If _TRUE_, then any method that returns a certificate will not try to also access the associated private key, assuming one exists.  This is useful if the certificate was installed with high-security such that a private key access would trigger the Windows OS to display a security warning dialog.  The default value of this property is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="CertVersion" axId="101">
+            <gType>int</gType>
+            <descrip>The version of the certificate (1, 2, or 3).  A value of 0 indicates an error -- the most likely cause being that the certificate object is empty (i.e. was never loaded with a certificate).   Note: This is not the version of the software, it is the version of the X.509 certificate object.  The version of the Chilkat certificate software is indicated by the Version property.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="0" name="CspName" axId="102">
+            <gType>string</gType>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) If the HasKeyContainer property is _TRUE_, then the certificate is linked to a key container and this property contains the name of the associated CSP (cryptographic service provider).  When a certificate is linked to a key container , the following properties will provide information about the key container and private key: CspName, KeyContainerName, MachineKeyset, and Silent.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="Expired" axId="103">
+            <gType>bool</gType>
+            <descrip>Has a value of _TRUE_ if the certificate or any certificate in the chain of authority has expired. (This information is not available when running on Windows 95/98 computers.)</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ForClientAuthentication" axId="104">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this certificate can be used for client authentication, otherwise _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ForCodeSigning" axId="105">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this certificate can be used for code signing, otherwise _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ForSecureEmail" axId="106">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this certificate can be used for sending secure email, otherwise _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ForServerAuthentication" axId="107">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this certificate can be used for server authentication, otherwise _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ForTimeStamping" axId="108">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this certificate can be used for time stamping, otherwise _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="0" name="HasKeyContainer" axId="109">
+            <gType>bool</gType>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) Indicates whether this certificate is linked to a key container.  If _TRUE_ then the certificate is linked to a key container (usually containing a private key).  If _FALSE_, then it is not. &lt;br&gt;&lt;br&gt; When a certificate is linked to a key container , the following properties will provide information about the key container and private key: CspName, KeyContainerName, MachineKeyset, and Silent.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IntendedKeyUsage" axId="110">
+            <gType>unsigned long</gType>
+            <descrip>Bitflags indicating the intended usages of the certificate.
+The flags are:
+&lt;br&gt;
+Digital Signature: 0x80&lt;br&gt;
+Non-Repudiation: 0x40&lt;br&gt;
+Key Encipherment: 0x20&lt;br&gt;
+Data Encipherment: 0x10&lt;br&gt;
+Key Agreement: 0x08&lt;br&gt;
+Certificate Signing: 0x04&lt;br&gt;
+CRL Signing: 0x02&lt;br&gt;
+Encipher-Only: 0x01&lt;br&gt;</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IsRoot" axId="111">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this is the root certificate, otherwise _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IssuerC" axId="112">
+            <gType>string</gType>
+            <descrip>The certificate issuer's country.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IssuerCN" axId="113">
+            <gType>string</gType>
+            <descrip>The certificate issuer's common name.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IssuerDN" axId="114">
+            <gType>string</gType>
+            <descrip>The issuer's full distinguished name.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IssuerE" axId="115">
+            <gType>string</gType>
+            <descrip>The certificate issuer's email address.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IssuerL" axId="116">
+            <gType>string</gType>
+            <descrip>The certificate issuer's locality, which could be a city, count, township, or other geographic region.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IssuerO" axId="117">
+            <gType>string</gType>
+            <descrip>The certificate issuer's organization, which is typically the company name.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IssuerOU" axId="118">
+            <gType>string</gType>
+            <descrip>The certificate issuer's organizational unit, which is the unit within the organization.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IssuerS" axId="119">
+            <gType>string</gType>
+            <descrip>The certificate issuer's state or province.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="0" name="KeyContainerName" axId="120">
+            <gType>string</gType>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) If the HasKeyContainer property is _TRUE_, then the certificate is linked to a key container and this property contains the name of the key container.  
+&lt;br&gt;&lt;br&gt;
+When a certificate is linked to a key container , the following properties will provide information about the key container and private key: CspName, KeyContainerName, MachineKeyset, and Silent.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="0" name="MachineKeyset" axId="121">
+            <gType>bool</gType>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) If the HasKeyContainer property is _TRUE_, then the certificate is linked to a key container and this property indicates whether the key container is in the machine's keyset or in the keyset specific to the logged on user's account.  If _TRUE_, the key container is within the machine keyset.  If _FALSE_, it's in the user's keyset.  
+&lt;br&gt;&lt;br&gt;
+When a certificate is linked to a key container , the following properties will provide information about the key container and private key: CspName, KeyContainerName, MachineKeyset, and Silent.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="OcspUrl" axId="122">
+            <gType>string</gType>
+            <descrip>If present in the certificate's extensions, returns the OCSP URL of the certificate.  (The Online Certificate Status Protocol (OCSP) is an Internet protocol used for obtaining the revocation status of an X.509 digital certificate.)</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="0" name="PrivateKeyExportable" axId="123">
+            <gType>bool</gType>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.)  Indicates whether the private key was installed with security settings that allow it to be re-exported.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="Revoked" axId="124">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the certificate or any certificate in the chain of authority has been revoked.  This information is not available when running on Windows 95/98 computers.
+&lt;b&gt;Note: &lt;/b&gt;If this property is _FALSE_, it could mean that it was not able to check the revocation status.  Because of this uncertainty, a CheckRevoked method has been added.  It returns an integer indicating one of three possible states: 1 (revoked) , 0 (not revoked), -1 (unable to check revocation status).</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="Rfc822Name" axId="125">
+            <gType>string</gType>
+            <descrip>The RFC-822 name of the certificate.  (Also known as the Subject Alternative Name.)
+&lt;p&gt;
+If the certificate contains a list of Subject Alternative Names, such as a list of host names to be protected by a single SSL certificate, then this property will contain the comma separated list of names.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SelfSigned" axId="126">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this is a self-signed certificate, otherwise _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SerialNumber" axId="127">
+            <gType>string</gType>
+            <descrip>The certificate's serial number as a hexidecimal string.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="Sha1Thumbprint" axId="128">
+            <gType>string</gType>
+            <descrip>Hexidecimal string of the SHA-1 thumbprint for the certificate.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SignatureVerified" axId="129">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the certificate and all certificates in the chain of authority have valid signatures, otherwise returns _FALSE_.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="0" name="Silent" axId="130">
+            <gType>bool</gType>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) If the HasKeyContainer property is _TRUE_, then the certificate is linked to a key container and this property indicates whether accessing the private key will cause the operating system to launch an interactive warning dialog.  If _FALSE_ a warning dialog will be displayed.  If _TRUE_ then private key accesses are silent.
+&lt;br&gt;&lt;br&gt;
+When a certificate is linked to a key container , the following properties will provide information about the key container and private key: CspName, KeyContainerName, MachineKeyset, and Silent.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SubjectC" axId="131">
+            <gType>string</gType>
+            <descrip>The certificate subject's country.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SubjectCN" axId="132">
+            <gType>string</gType>
+            <descrip>The certificate subject's common name.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SubjectDN" axId="133">
+            <gType>string</gType>
+            <descrip>The certificate subject's full distinguished name.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SubjectE" axId="134">
+            <gType>string</gType>
+            <descrip>The certificate subject's email address.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="SubjectKeyId" read="1" ax="1" cpp="1" dn="1" axId="175">
+            <gType>string</gType>
+            <descrip>The subject key identifier of the certificate in base64 string format.  This is only present if the certificate contains the extension OID 2.5.29.14.</descrip>
+            <iversion>9.5.0.40</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SubjectL" axId="135">
+            <gType>string</gType>
+            <descrip>The certificate subject's locality, which could be a city, count, township, or other geographic region.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SubjectO" axId="136">
+            <gType>string</gType>
+            <descrip>The certificate subject's organization, which is typically the company name.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SubjectOU" axId="137">
+            <gType>string</gType>
+            <descrip>The certificate subject's organizational unit, which is the unit within the organization.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SubjectS" axId="138">
+            <gType>string</gType>
+            <descrip>The certificate subject's state or province.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="TrustedRoot" axId="139" read="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the certificate has a trusted root authority, otherwise returns _FALSE_.  
+&lt;p&gt;
+Note: As of version 9.5.0.41, the notion of what your application deems as trusted becomes more specific.  The TrustedRoots class/object was added in v9.5.0.0.  Prior to this, a certificate was considered to be anchored by a trusted root if the certificate chain could be established to a root (self-signed) certificate, AND if the root certificate was located somewhere in the Windows registry-based certificate stores.  There are two problems with this: (1) it's a Windows-only solution.  This property would always return _FALSE_ on non-Windows systems, and (2) it might be considered not a strong enough set of conditions for trusting a root certificate.
+&lt;p&gt;
+As of version 9.5.0.41, this  property pays attention to the new TrustedRoots class/object, which allows for an application to specificallly indicate which root certificates are to be trusted.  Certificates may be added to the TrustedRoots object via the LoadCaCertsPem or AddCert methods, and then activated by calling the TrustedRoots.Activate method.  The activated trusted roots are deemed to be trusted in any Chilkat API method/property that needs to make this determination. In addition, the TrustedRoots object has a property named TrustSystemCaRoots, which defaults to _TRUE_, which allows for backward compatibility.  It will trust CA certificates stored in the Windows registry-based certificate stores, or if on Linux, will trust certificates found in /etc/ssl/certs/ca-certificates.crt.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="ValidFrom" axId="140" read="1" ax="1" cpp="1" dn="1" deprecated="1" noxojo="1">
+            <gType>date</gType>
+            <descrip>The date this certificate becomes (or became) valid.   It is a GMT/UTC date that is returned.</descrip>
+            <links>
+                <link>
+                    <text>More information about using SYSTEMTIME in Perl</text>
+                    <url_perl>http://www.cknotes.com/?p=122</url_perl>
+                </link>
+                <link>
+                    <text>More information about using SYSTEMTIME in Python</text>
+                    <url_python>http://www.cknotes.com/?p=374</url_python>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external" lang="perl">
+                    <text>More information about using SYSTEMTIME in Perl</text>
+                    <url>http://www.cknotes.com/?p=122</url>
+                </link>
+                <link linkType="external" lang="python">
+                    <text>More information about using SYSTEMTIME in Python</text>
+                    <url>http://www.cknotes.com/?p=374</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="ValidFromStr" axId="141" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The date (in RFC822 string format) that this certificate becomes (or became) valid.   It is a GMT/UTC date that is returned.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="ValidTo" axId="142" read="1" ax="1" cpp="1" dn="1" deprecated="1" noxojo="1">
+            <gType>date</gType>
+            <descrip>The date this certificate becomes (or became) invalid.    It is a GMT/UTC date that is returned.</descrip>
+            <links>
+                <link>
+                    <text>More information about using SYSTEMTIME in Perl</text>
+                    <url_perl>http://www.cknotes.com/?p=122</url_perl>
+                </link>
+                <link>
+                    <text>More information about using SYSTEMTIME in Python</text>
+                    <url_python>http://www.cknotes.com/?p=374</url_python>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external" lang="perl">
+                    <text>More information about using SYSTEMTIME in Perl</text>
+                    <url>http://www.cknotes.com/?p=122</url>
+                </link>
+                <link linkType="external" lang="python">
+                    <text>More information about using SYSTEMTIME in Python</text>
+                    <url>http://www.cknotes.com/?p=374</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="ValidToStr" axId="143" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The date (in RFC822 string format)  that this certificate becomes (or became) invalid.   It is a GMT/UTC date that is returned.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="CheckRevoked" axId="144" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args />
+            <descrip>Returns 1 if the certificate has been revoked, 0 if not revoked, and -1 if unable to check the revocation status.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ExportCertDer" axId="145" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Exports the digital certificate to ASN.1 DER format.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ExportCertDerFile" axId="146">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Exports the digital certificate to ASN.1 DER format binary file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ExportCertPem" axId="147" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Exports the digital certificate to an unencrypted PEM formatted string.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ExportCertPemFile" axId="148">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Exports the digital certificate to an unencrypted PEM formatted file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ExportCertXml" axId="149" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Exports a certificate to an XML format where the XML tags are the names of the ASN.1 objects that compose the X.509 certificate.  Binary data is either hex or base64 encoded.  (The binary data for a "bits" ASN.1 tag is hex encoded, whereas for all other ASN.1 tags, such as "octets", it is base64.)</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>tls_server_cert_xml.asp</url>
+                    <text>Get Certificate As XML (and gets Signature Algorithm Identifier)</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ExportPrivateKey" axId="150">
+            <gType>PrivateKey</gType>
+            <args />
+            <descrip>Exports the certificate's private key.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ExportPublicKey" axId="151">
+            <gType>PublicKey</gType>
+            <args />
+            <descrip>Exports the certificate's public key.</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example" async="1">
+                    <url>parse_x509_certificate_extract_keys.asp</url>
+                    <text>How to Parse a X.509 Certificate and Extract its Public Key</text>
+                </link>
+            </links2>
+        </method>
+        <method name="ExportToPfxData" ax="1" cpp="1" dn="1" axId="174" outArgName="outBytes">
+            <gType>bytes</gType>
+            <descrip>Exports the  certificate and private key (if available) to an in-memory PFX image. The ARG1 is what will be required to access the PFX contents at a later time.  If ARG2 is _TRUE_, then the certificates in the chain of authority are also included in the PFX.</descrip>
+            <args>
+                <arg>
+                    <argName>password</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>password</objcName>
+                </arg>
+                <arg>
+                    <argName>includeCertChain</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>includeCertChain</objcName>
+                </arg>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.31</iversion>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+                <arg name="includeCertChain" type="bool" objcName="includeCertChain" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" status="1" name="ExportToPfxFile" axId="152">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxFilename</argName>
+                    <objcName>pfxFilename</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxPassword</argName>
+                    <objcName>pfxPassword</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bIncludeCertChain</argName>
+                    <objcName>bIncludeCertChain</objcName>
+                </arg>
+            </args>
+            <descrip>Exports the  certificate and private key (if available) to a PFX (.pfx or .p12) file.  The output PFX is secured using the ARG2.  If ARG3 is _TRUE_, then the certificates in the chain of authority are also included in the PFX output file.</descrip>
+            <args2>
+                <arg name="pfxFilename" type="string" objcName="pfxFilename" />
+                <arg name="pfxPassword" type="string" objcName="pfxPassword" />
+                <arg name="bIncludeCertChain" type="bool" objcName="bIncludeCertChain" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="FindIssuer" axId="153">
+            <gType>Cert</gType>
+            <args />
+            <descrip>Finds and returns the issuer certificate.  If the certificate is a root or self-issued, then the certificate returned is a copy of the caller certificate.   (The IsRoot property can be check to see if the certificate is a root (or self-issued) certificate.)</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetCertChain" axId="178" ax="1" cpp="1" dn="1">
+            <gType>CertChain</gType>
+            <descrip>Returns a certficate chain object containing all the certificates (including this one), in the chain of authentication to the trusted root (if possible).  If this certificate object was loaded from a PFX, then the certiicates contained in the PFX are automatically available for building the certificate chain.  The UseCertVault method can be called to provide additional certificates that might be required to build the cert chain.  Finally, the TrustedRoots object can be used to provide a way of making trusted root certificates available.
+&lt;p&gt;
+Note: Prior to v9.5.0.50, this method would fail if the certificate chain could not be completed to the root.  Starting in v9.5.0.50, the incomplete certificate chain will be returned.  The certificate chain's ReachesRoot property can be examined to see if the chain was completed to the root.
+&lt;p&gt;
+On Windows systems, the registry-based certificate stores are automatically consulted if needed to locate intermediate or root certificates in the chain.</descrip>
+            <args />
+            <iversion>9.5.0.40</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>http_getServerCert.asp</url>
+                    <text>Get the Server Certificate, Certificate Chain, and Root CA Certificate</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="GetEncoded" axId="154" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns a base64 encoded string representation of the certificate's binary DER format, which can be passed to SetFromEncoded to recreate the certificate object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetExtensionAsXml" ax="1" cpp="1" dn="1" axId="180" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the certificate extension data in XML format (converted from ASN.1).  The ARG1 is an OID, such as the ones listed here: http://www.alvestrand.no/objectid/2.5.29.html
+&lt;p&gt;
+Note: In many cases, the data within the XML is returned base64 encoded.  An application may need to take one further step to base64 decode the information contained within the XML.</descrip>
+            <args>
+                <arg>
+                    <argName>oid</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>oid</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.49</iversion>
+            <args2>
+                <arg name="oid" type="string" objcName="oid" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetPrivateKeyPem" axId="155" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Exports the certificate's private key to a PEM string (if the private key is available).</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetSpkiFingerprint" ax="1" cpp="1" dn="1" axId="183" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the SPKI Fingerprint suitable for use in pinning.  (See RFC 7469.)  An SPKI Fingerprint is defined as the output of a known cryptographic hash algorithm whose input is the DER-encoded ASN.1 representation of  the Subject Public Key Info (SPKI) of an X.509 certificate.  The ARG1 specifies the hash algorithm and may be "sha256", "sha384", "sha512", "sha1", "md2", "md5", "haval", "ripemd128", "ripemd160","ripemd256", or "ripemd320".   The ARG2 specifies the encoding, and may be "base64", "hex", or any of the encoding modes specified in the article at the link below.</descrip>
+            <args>
+                <arg>
+                    <argName>hashAlg</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>hashAlg</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.55</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>List of Chilkat Encoding Modes</text>
+                </link>
+                <link linkType="example">
+                    <url>spki_fingerprint.asp</url>
+                    <text>SPKI Fingerprint</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="hashAlg" type="string" objcName="hashAlg" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetValidFromDt" axId="156">
+            <gType>CkDateTime</gType>
+            <args />
+            <descrip>Returns the date/time this certificate becomes (or became) valid.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetValidToDt" axId="157">
+            <gType>CkDateTime</gType>
+            <args />
+            <descrip>Returns the date/time this certificate becomes (or became) invalid.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="HasPrivateKey" axId="158">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns true if the private key is installed on the local system for the certificate.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" windowsOnly="1" noObjC="1" status="1" name="LinkPrivateKey" axId="159">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>keyContainerName</argName>
+                    <objcName>keyContainerName</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bMachineKeyset</argName>
+                    <objcName>bMachineKeyset</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bForSigning</argName>
+                    <objcName>bForSigning</objcName>
+                </arg>
+            </args>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) Associates a private key with a certificate.  The private key is specified by providing the name of the key container where it can be found.  The 2nd argument indicates whether the key container is from the machine-wide keyset (_TRUE_), or from the keyset specific to the logged-on user (_FALSE_).  Private keys can be imported into a key container by calling the KeyContainer's ImportPrivateKey method.  Once a certificate has been linked, the private key is available for creating digital signatures or decrypting.  Note: Certificates imported from a PFX or from a Certificate Authority will already be "linked" and it is not necessary to call this method.</descrip>
+            <args2>
+                <arg name="keyContainerName" type="string" objcName="keyContainerName" />
+                <arg name="bMachineKeyset" type="bool" objcName="bMachineKeyset" />
+                <arg name="bForSigning" type="bool" objcName="bForSigning" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" noObjC="1" status="1" name="LoadByCommonName" axId="160">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>cn</argName>
+                    <objcName>cn</objcName>
+                </arg>
+            </args>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) Searches the Windows Local Machine and Current User registry-based certificate stores for a certificate having the common name specified.  If found, the certificate is loaded and ready for use.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Select Cert for Encrypted Email</text>
+                    <url>smtp_findCertForEncryptedEmail.asp</url>
+                </link>
+                <link linkType="example" windowsOnly="1">
+                    <url>crypt_create_p7m_using_installed_cert.asp</url>
+                    <text>Create P7M Using Pre-Installed Windows Certificate</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="cn" type="string" objcName="cn" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" noObjC="1" status="1" name="LoadByEmailAddress" axId="161">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>emailAddress</argName>
+                    <objcName>emailAddress</objcName>
+                </arg>
+            </args>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) Searches the Windows Local Machine and Current User registry-based certificate stores for a certificate containing the email address specified.  If found, the certificate is loaded and ready for use.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Select Cert for Encrypted Email</text>
+                    <url>smtp_findCertForEncryptedEmail.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="emailAddress" type="string" objcName="emailAddress" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" noObjC="1" status="1" name="LoadByIssuerAndSerialNumber" axId="162">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>issuerCN</argName>
+                    <objcName>issuerCN</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>serialNumber</argName>
+                    <objcName>serialNumber</objcName>
+                </arg>
+            </args>
+            <descrip>(Relevant only when running on a Microsoft Windows operating system.) Searches the Windows Local Machine and Current User registry-based certificate stores for a certificate matching the ARG1 and having an issuer matching the  ARG2.  If found, the certificate is loaded and ready for use.</descrip>
+            <args2>
+                <arg name="issuerCN" type="string" objcName="issuerCN" />
+                <arg name="serialNumber" type="string" objcName="serialNumber" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadFromBase64" axId="163">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodedCert</argName>
+                    <objcName>encodedCert</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an ASN.1 or DER encoded certificate represented in a Base64 string.</descrip>
+            <args2>
+                <arg name="encodedCert" type="string" objcName="encodedCert" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadFromBinary" axId="164">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>Loads an X.509 certificate from ASN.1 DER encoded bytes.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadFromBinary2" cpp="1" noSwig="1">
+            <gType>bool</gType>
+            <ifdef>#if !defined(CHILKAT_MONO)</ifdef>
+            <args>
+                <arg>
+                    <cppType>const unsigned char *</cppType>
+                    <argName>pByteData</argName>
+                    <objcName>pByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>szByteData</argName>
+                    <objcName>szByteData</objcName>
+                </arg>
+            </args>
+            <descrip>The same as LoadFromBinary, but instead of using a CkByteData object, the pointer to the byte data and length (in number of bytes) are specified directly in the method arguments.</descrip>
+            <args2>
+                <arg name="pByteData" type="cppBytes" objcName="pByteData" />
+                <arg name="szByteData" type="unsigned long" objcName="szByteData" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadFromFile" axId="165">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a certificate from a .cer, .crt, .p7b, or .pem file. This method accepts certificates from files in any of the following formats:&lt;br&gt;1. DER encoded binary X.509 (.CER)&lt;br&gt;2. Base-64 encoded X.509 (.CER)&lt;br&gt;3. Cryptographic Message Syntax Standard - PKCS #7 Certificates (.P7B)&lt;br&gt;4. PEM format&lt;br&gt;This method decodes the certificate based on the contents if finds within the file, and not based on the file extension. If your certificate is in a file having a different extension, try loading it using this method before assuming it won't work. This method does not load .p12 or .pfx (PKCS #12) files.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2>
+                <link linkType="example" async="1">
+                    <url>parse_x509_certificate_extract_keys.asp</url>
+                    <text>How to Parse a X.509 Certificate and Extract its Public Key</text>
+                </link>
+            </links2>
+        </method>
+        <method name="LoadPem" ax="1" cpp="1" dn="1" status="1" axId="181">
+            <gType>bool</gType>
+            <descrip>Loads the certificate from a PEM string.</descrip>
+            <args>
+                <arg>
+                    <argName>strPem</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>strPem</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.49</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>cert_getPublicKey.asp</url>
+                    <text>Load Certificate from PEM and Access the Public Key</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="strPem" type="string" objcName="strPem" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadPfxData" axId="166">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>pfxData</argName>
+                    <objcName>pfxData</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a PFX from an in-memory image of a PFX file.   Note: If the PFX contains multiple certificates, the 1st certificate in the PFX is loaded.</descrip>
+            <args2>
+                <arg name="pfxData" type="bytes" objcName="pfxData" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadPfxData2" cpp="1" noSwig="1" status="1">
+            <gType>bool</gType>
+            <ifdef>#if !defined(CHILKAT_MONO)</ifdef>
+            <args>
+                <arg>
+                    <cppType>const unsigned char *</cppType>
+                    <argName>pByteData</argName>
+                    <objcName>pByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>szByteData</argName>
+                    <objcName>szByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a PFX from an in-memory image of a PFX file. Note: If the PFX contains multiple certificates, the 1st certificate in the PFX is loaded.</descrip>
+            <args2>
+                <arg name="pByteData" type="cppBytes" objcName="pByteData" />
+                <arg name="szByteData" type="unsigned long" objcName="szByteData" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadPfxFile" axId="167">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxPath</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>password</argName>
+                    <objcName>password</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a PFX file.  Note: If the PFX contains multiple certificates, the 1st certificate in the PFX is loaded.</descrip>
+            <args2>
+                <arg name="pfxPath" type="string" objcName="path" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadTaskResult" axId="182" ax="1" cpp="1" dn="1" noWinRT="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads the certificate from a completed asynchronous task.</descrip>
+            <args>
+                <arg>
+                    <argName>task</argName>
+                    <cppType>CkTask &amp;</cppType>
+                    <dnType>Task</dnType>
+                    <axType>Task</axType>
+                    <objcName>task</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.52</iversion>
+            <args2>
+                <arg name="task" type="Task" objcName="task" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="PemFileToDerFile" axId="168">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>fromPath</argName>
+                    <objcName>fromPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>toPath</argName>
+                    <objcName>toPath</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a PEM file to a DER file.</descrip>
+            <args2>
+                <arg name="fromPath" type="string" objcName="fromPath" />
+                <arg name="toPath" type="string" objcName="toPath" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveToFile" axId="169">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves a certificate object to a .cer file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetFromEncoded" axId="170" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodedCert</argName>
+                    <objcName>encodedCert</objcName>
+                </arg>
+            </args>
+            <descrip>Initializes the certificate object from a base64 encoded string representation of the certificate's binary DER format.</descrip>
+            <args2>
+                <arg name="encodedCert" type="string" objcName="encodedCert" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetPrivateKey" axId="171">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>PrivateKey</axType>
+                    <dnType>PrivateKey</dnType>
+                    <cppType>CkPrivateKey &amp;</cppType>
+                    <argName>privKey</argName>
+                    <objcName>privKey</objcName>
+                </arg>
+            </args>
+            <descrip>Used to associate a private key with the certificate for subsequent (PKCS7) signature creation or decryption.</descrip>
+            <args2>
+                <arg name="privKey" type="PrivateKey" objcName="privKey" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetPrivateKeyPem" axId="172">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>privKeyPem</argName>
+                    <objcName>privKeyPem</objcName>
+                </arg>
+            </args>
+            <descrip>Same as SetPrivateKey, but the key is provided in unencrypted PEM format.  (Note: The ARG1 is not a file path, it is the actual  PEM text.)</descrip>
+            <args2>
+                <arg name="privKeyPem" type="string" objcName="privKeyPem" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="UseCertVault" ax="1" cpp="1" dn="1" status="1" axId="177">
+            <gType>bool</gType>
+            <descrip>Adds an XML certificate vault to the object's internal list of sources to be searched for certificates for help in building certificate chains and verifying the certificate signature to the trusted root.</descrip>
+            <args>
+                <arg>
+                    <argName>vault</argName>
+                    <cppType>CkXmlCertVault &amp;</cppType>
+                    <dnType>XmlCertVault</dnType>
+                    <axType>XmlCertVault</axType>
+                    <objcName>vault</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.40</iversion>
+            <args2>
+                <arg name="vault" type="XmlCertVault" objcName="vault" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="VerifySignature" ax="1" cpp="1" dn="1" axId="179">
+            <gType>bool</gType>
+            <descrip>Verifies the certificate signature, as well as the signatures of all certificates in the chain of authentication to the trusted root.  Returns _TRUE_ if all signatures are verified to the trusted root.  Otherwise returns _FALSE_.</descrip>
+            <args />
+            <iversion>9.5.0.40</iversion>
+            <args2 />
+            <links2 />
+        </method>
+    </methods>
+    <genericName>Cert</genericName>
+    <description>Digital certificate component / class</description>
+    <clsid>B4EC2631-0DC1-4791-B691-BE333E574CC2</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>2CABA7DB-F1DD-4E6D-943B-330CF27F6A5D</uuidMidl>
+    <axName>ChilkatCert</axName>
+</class>

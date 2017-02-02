@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="799189222" sourceXmlPath="C:/ck2000/appData/apiDef2/Mailboxes.xml" license="Imap" noBaseEntries="1">
+    <nextAxId>111</nextAxId>
+    <dnName>Mailboxes</dnName>
+    <cppName>CkMailboxes</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="Count" axId="100">
+            <gType>int</gType>
+            <descrip>The number of mailboxes in the collection.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The Mailboxes class is for use with the Chilkat IMAP component.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="GetFlags" axId="105" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Returns a comma-separated list of flags for the Nth mailbox.  For example, "\HasNoChildren,\Important".</descrip>
+            <args>
+                <arg>
+                    <argName>index</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetMailboxIndex" ax="1" cpp="1" dn="1" axId="109">
+            <gType>int</gType>
+            <descrip>Returns the index of the mailbox having the specified name.</descrip>
+            <args>
+                <arg>
+                    <argName>mbxName</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>mbxName</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="mbxName" type="string" objcName="mbxName" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetName" axId="104" outArgName="outStrName">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStrName</argName>
+                    <objcName>outStrName</objcName>
+                </arg>
+            </args>
+            <descrip>The name of the Nth mailbox in this collection. Indexing begins at 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetNthFlag" ax="1" cpp="1" dn="1" axId="108" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the name of the Nth flag for the Mth mailbox.  The ARG1 is the index of the mailbox.  The ARG2 is the  index of the flag.</descrip>
+            <args>
+                <arg>
+                    <argName>index</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <argName>flagIndex</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>flagIndex</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="flagIndex" type="int" objcName="flagIndex" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetNumFlags" ax="1" cpp="1" dn="1" axId="107">
+            <gType>int</gType>
+            <descrip>Returns the number of flags for the Nth mailbox.  Returns -1 if the ARG1 is out of range.</descrip>
+            <args>
+                <arg>
+                    <argName>index</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="HasFlag" ax="1" cpp="1" dn="1" axId="106">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the Nth mailbox has the specified flag set.  The flag name is case insensitive and should begin with a backslash character, such as "\Flagged".  The ARG1 is the index of the Nth mailbox.</descrip>
+            <args>
+                <arg>
+                    <argName>index</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <argName>flagName</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>flagName</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="flagName" type="string" objcName="flagName" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="HasInferiors" axId="101" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the Nth mailbox has inferiors (i.e. sub-mailboxes), or if it is possible to create child mailboxes in the future.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; the HasNoChildren attribute/flag should not be confused with the IMAP4 [RFC-2060] defined attribute Noinferiors which indicates that no child mailboxes exist now AND none can be created in the future.</descrip>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/9211/imap-ckmailboxeshasinferiors-is-always-true</url>
+                    <text>HasInferiors always True?  (Why HasInferiors is Often Misunderstood)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsMarked" axId="102">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the Nth mailbox is marked.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsSelectable" axId="103">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the Nth mailbox is selectable.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadTaskResult" ax="1" cpp="1" dn="1" noWinRT="1" status="1" axId="110">
+            <gType>bool</gType>
+            <descrip>Loads the mailboxes object from a completed asynchronous task.</descrip>
+            <args>
+                <arg>
+                    <argName>task</argName>
+                    <cppType>CkTask &amp;</cppType>
+                    <dnType>Task</dnType>
+                    <axType>Task</axType>
+                    <objcName>task</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.52</iversion>
+            <args2>
+                <arg name="task" type="Task" objcName="task" />
+            </args2>
+            <links2 />
+        </method>
+    </methods>
+    <genericName>Mailboxes</genericName>
+    <description>Represents a collection of IMAP mailboxes.</description>
+    <clsid>2F332CE0-6FCA-41B7-80BB-07D9D2AC86C7</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>2DB04566-D0BC-4FCF-926A-3E11B37E0B01</uuidMidl>
+    <axName>Mailboxes</axName>
+</class>

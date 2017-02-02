@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Html" XojoModuleId="618245774" sourceXmlPath="C:/ck2000/appData/apiDef2/HtmlToXml.xml">
+    <nextAxId>118</nextAxId>
+    <dnName>HtmlToXml</dnName>
+    <cppName>CkHtmlToXml</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DropCustomTags" axId="103">
+            <gType>bool</gType>
+            <descrip>If set to true, then any non-standard HTML tags will be dropped when converting to XML.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Html" axId="100">
+            <gType>string</gType>
+            <descrip>The HTML to be converted by the ToXml method.  To convert HTML to XML, first set this property to the HTML string and then call ToXml.  The ConvertFile method can do file-to-file conversions.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Nbsp" axId="101">
+            <gType>int</gType>
+            <descrip>Determines how to handle &amp;nbsp; HTML entities.  The default value, 0 will cause _AMP_nbsp; entites to be convert to normal space characters (ASCII value 32).  If this property is set to 1, then _AMP_nbsp;'s will be converted to _AMP_#160.  If set to 2, then _AMP_nbps;'s are dropped.  If set to 3, then _AMP_nbsp's are left unmodified.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="XmlCharset" axId="102">
+            <gType>string</gType>
+            <descrip>The charset, such as "utf-8" or "iso-8859-1" of the XML to be created.  If XmlCharset is empty, the XML is created in the same character encoding as the HTML.  Otherwise the HTML is converted XML and converted to this charset.</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="ConvertFile" axId="104" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inHtmlPath</argName>
+                    <objcName>inHtmlPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>destXmlPath</argName>
+                    <objcName>destXmlPath</objcName>
+                </arg>
+            </args>
+            <descrip>Converts an HTML file to a well-formed XML file that can be parsed for the purpose of programmatically extracting information.</descrip>
+            <args2>
+                <arg name="inHtmlPath" type="string" objcName="inHtmlPath" />
+                <arg name="destXmlPath" type="string" objcName="destXmlPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DropTagType" axId="105">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tagName</argName>
+                    <objcName>tagName</objcName>
+                </arg>
+            </args>
+            <descrip>Allows for any specified tag to be dropped from the output XML.   To drop more than one tag, call this method once for each tag type to be dropped.</descrip>
+            <args2>
+                <arg name="tagName" type="string" objcName="tagName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="DropTextFormattingTags" axId="106">
+            <gType>void</gType>
+            <args />
+            <descrip>Causes text formatting tags to be dropped from the XML output. Text formatting tags are:  b, font, i, u, br, center, em, strong, big, tt, s, small, strike, sub, and sup.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsUnlocked" axId="107">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns _TRUE_ if the component is already unlocked.  Otherwise returns _FALSE_.</descrip>
+            <args2 />
+        </method>
+        <method name="ReadFile" axId="116" ax="1" cpp="1" dn="1" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for reading a complete file into a byte array.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ReadFileToString" axId="108" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>srcCharset</argName>
+                    <objcName>srcCharset</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for reading a text file into a string.  The character encoding of the text file is specified by ARG2.  Valid values, such as "iso-8895-1" or "utf-8" are listed at: &lt;a href="http://blog.chilkatsoft.com/?p=463"&gt;List of Charsets&lt;/a&gt;.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+                <arg name="srcCharset" type="string" objcName="srcCharset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetHtmlBytes" axId="109">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inData</argName>
+                    <objcName>inData</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the Html property from a byte array.</descrip>
+            <args2>
+                <arg name="inData" type="bytes" objcName="inData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetHtmlFromFile" axId="110">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the Html property by loading the HTML from a file.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToXml" axId="111" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts the HTML in the "Html" property to XML and returns the XML string.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="UndropTagType" axId="112">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>tagName</argName>
+                    <objcName>tagName</objcName>
+                </arg>
+            </args>
+            <descrip>Causes a specified type of tag to NOT be dropped in the output XML.</descrip>
+            <args2>
+                <arg name="tagName" type="string" objcName="tagName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="UndropTextFormattingTags" axId="113">
+            <gType>void</gType>
+            <args />
+            <descrip>Causes text formatting tags to NOT be dropped from the XML output. Text formatting tags are: b, font, i, u, br, center, em, strong, big, tt, s, small, strike, sub, and sup.   
+&lt;p&gt;
+&lt;b&gt;Important: &lt;/b&gt;Text formatting tags are dropped by default.  Call this method to prevent text formatting tags from being dropped.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="114">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>code</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component.  An arbitrary unlock code may be passed to automatically begin a 30-day trial.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="code" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+        <method name="WriteFile" axId="117" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <argName>fileData</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>fileData</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for saving a byte array to a file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="fileData" type="bytes" objcName="fileData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="WriteStringToFile" axId="115">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>stringToWrite</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for saving a string to a file. The character encoding of the output text file is specified by ARG3 (the string is converted to this charset when writing).  Valid values, such as "iso-8895-1" or "utf-8" are listed at: &lt;a href="http://blog.chilkatsoft.com/?p=463"&gt;List of Charsets&lt;/a&gt;.</descrip>
+            <args2>
+                <arg name="stringToWrite" type="string" objcName="str" />
+                <arg name="filename" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="Xml" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>This is the same as the "ToXml" method.  It converts the HTML in the "Html" property to XML and returns the XML string.</descrip>
+            <args2 />
+        </method>
+    </methods>
+    <genericName>HtmlToXml</genericName>
+    <description>Class for converting HTML to well-formed XML for the purpose of programmatically extracting (scraping) information from any HTML page.</description>
+    <clsid>907F3EC0-A455-4B36-8FDC-F3A2B22F1BD2</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>FE82184C-B69F-4B58-9DBC-463FB2F6A422</uuidMidl>
+    <axName>HtmlToXml</axName>
+</class>

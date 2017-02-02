@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="147431530" sourceXmlPath="C:/ck2000/appData/apiDef2/HttpResponse.xml" license="Http">
+    <axName>ChilkatHttpResponse</axName>
+    <dnName>HttpResponse</dnName>
+    <cppName>CkHttpResponse</cppName>
+    <properties>
+        <property write="0" name="Body" axId="100" read="1" ax="1" cpp="1" dn="1">
+            <gType>bytes</gType>
+            <descrip>The response body returned as a byte array.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property write="0" name="BodyQP" axId="101" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The same as the Body property, but returned as a quoted-printable encoded string.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property write="0" name="BodyStr" axId="102" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The response body returned as a string.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property write="0" name="Charset" axId="103" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The response charset, such as "iso-8859-1", if applicable.  Obviously, responses for GIF and JPG files will not have a charset.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ContentLength" axId="104">
+            <gType>unsigned long</gType>
+            <descrip>The content length of the response, in bytes.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property dn="0" ax="0" write="0" name="ContentLength64" read="1" cpp="1" noObjC="1">
+            <gType>int64</gType>
+            <descrip>The content length of the response, in number of bytes, returned as a 64-bit integer.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property write="0" name="Date" axId="105" read="1" ax="1" cpp="1" dn="1" deprecated="1" noxojo="1">
+            <gType>date</gType>
+            <descrip>The Date response header field, returned in a date/time data type.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="DateStr" axId="106">
+            <gType>string</gType>
+            <descrip>Returns the content of the Date response header field in RFC822 date/time string format.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property write="0" name="Domain" axId="107" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The domain of the HTTP server that created this response.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="FinalRedirectUrl" read="1" ax="1" cpp="1" dn="1" axId="130">
+            <gType>string</gType>
+            <descrip>Returns the redirect URL for 301/302 responses.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="FullMime" axId="108">
+            <gType>string</gType>
+            <descrip>Returns the full MIME (header + body) of the HTTP response.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="Header" axId="109">
+            <gType>string</gType>
+            <descrip>The full text of the response header.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property write="0" name="NumCookies" axId="110" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The number of cookies included in the response.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumHeaderFields" axId="111">
+            <gType>int</gType>
+            <descrip>The number of response header fields.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property write="0" name="StatusCode" axId="112" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The status code (as an integer) from the first line of an HTTP response.  If the StatusLine = "HTTP/1.0 200 OK", the response status code returned is 200.</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property write="0" name="StatusLine" axId="113" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The first line of an HTTP response, such as "HTTP/1.0 200 OK".</descrip>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="StatusText" read="1" ax="1" cpp="1" dn="1" axId="129">
+            <gType>string</gType>
+            <descrip>The text that follows the status code in the 1st line of the HTTP response.  For example, i the first line of an HTTP response is "HTTP/1.0 200 OK", then this property contains "OK".</descrip>
+            <iversion>9.5.0.49</iversion>
+            <links2 />
+            <args2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="GetCookieDomain" axId="114" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the domain of the Nth cookie in the response.  Indexing begins at 0.  The number of response cookies is specified in the NumCookies property.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetCookieExpires" axId="115" deprecated="1" noxojo="1" outArgName="outSysTime">
+            <gType systemtime="1">date</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>SYSTEMTIME &amp;</cppType>
+                    <argName>outSysTime</argName>
+                    <objcName>outSysTime</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the expiration date/time of the Nth cookie in the response.  Indexing begins at 0.  The number of response cookies is specified in the NumCookies property.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetCookieExpiresStr" axId="116" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the expiration date/time of the Nth cookie in the response.  Indexing begins at 0.  The number of response cookies is specified in the NumCookies property.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetCookieName" axId="117" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the name of the Nth cookie returned in the response.  Indexing begins at 0.  The number of response cookies is specified in the NumCookies property.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetCookiePath" axId="118" outArgName="outStr" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the path of the Nth cookie returned in the response.  Indexing begins at 0.  The number of response cookies is specified in the NumCookies property.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetCookieValue" axId="119" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the value of the Nth cookie returned in the response.  Indexing begins at 0.  The number of response cookies is specified in the NumCookies property.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetHeaderField" axId="120" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>fieldName</argName>
+                    <objcName>fieldName</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the value of a response header field accessed by field name.</descrip>
+            <args2>
+                <arg name="fieldName" type="string" objcName="fieldName" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetHeaderFieldAttr" axId="121" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>fieldName</argName>
+                    <objcName>fieldName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>attrName</argName>
+                    <objcName>attrName</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns a response header field attribute. As an example, the response charset is simply the GetHeaderFieldAttr("content-type","charset")</descrip>
+            <args2>
+                <arg name="fieldName" type="string" objcName="fieldName" />
+                <arg name="attrName" type="string" objcName="attrName" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetHeaderName" axId="122" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Gets the name of the Nth response header field.  Indexing begins at 0.  The number of response headers is specified by the NumHeaderFields property.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetHeaderValue" axId="123" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Gets the value of the Nth response header field.  Indexing begins at 0.  The number of response headers is specified by the NumHeaderFields property.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadTaskResult" axId="131" ax="1" cpp="1" dn="1" noWinRT="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads the HTTP response from a completed asynchronous task.  A failed return value indicates that no HTTP response was received in the HTTP asynchronous method call (i.e. the asynchronous HTTP request failed in such a way that no response was received).</descrip>
+            <args>
+                <arg>
+                    <argName>task</argName>
+                    <cppType>CkTask &amp;</cppType>
+                    <dnType>Task</dnType>
+                    <axType>Task</axType>
+                    <objcName>task</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.52</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>async_http_response.asp</url>
+                    <text>Getting the HTTP Response after an Asynchronous HTTP Request Completes</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="task" type="Task" objcName="task" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveBodyBinary" axId="124">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the body of the HTTP response to a file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveBodyText" axId="125">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bCrlf</argName>
+                    <objcName>bCrlf</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the HTTP response body to a file.    This method provides control over CRLF vs bare-LF line-endings.  If ARG1 is _TRUE_, then line endings are automatically converted to CRLF if necessary.  If ARG1 is _FALSE_, then line-endings are automatically converted to bare-LF's (Unix style) if necessary.
+&lt;p&gt;
+To save the HTTP response body exactly as-is (with no line-ending manipulation), then call  SaveBodyBinary.</descrip>
+            <args2>
+                <arg name="bCrlf" type="bool" objcName="bCrlf" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="UrlEncParamValue" axId="126" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodedParamString</argName>
+                    <objcName>encodedParams</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>paramName</argName>
+                    <objcName>paramName</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for parsing a param's value out of a URL-encoded param string.  For example, if a caller passes the following string in ARG1:
+&lt;pre&gt;oauth_token=ABC&amp;oauth_token_secret=123&amp;oauth_callback_confirmed=true&lt;/pre&gt;
+and "oauth_token_secret" in ARG2, then the return value would be "123".</descrip>
+            <args2>
+                <arg name="encodedParamString" type="string" objcName="encodedParams" />
+                <arg name="paramName" type="string" objcName="paramName" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetBodySb" axId="132" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <links2 />
+            <descrip>Copies the response body to a Chilkat StringBuilder object.</descrip>
+            <iversion>9.5.0.64</iversion>
+        </method>
+        <method name="GetBodyBd" axId="133" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Copies the response body to a BinData object.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.64</iversion>
+        </method>
+    </methods>
+    <genericName>HttpResponse</genericName>
+    <description>Represents a complete HTTP response.</description>
+    <clsid>65EA825E-648E-4BF0-8AA3-4E7724F75B07</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>C143C715-0FED-4392-B207-1CA3CDF84C88</uuidMidl>
+    <nextAxId>134</nextAxId>
+</class>

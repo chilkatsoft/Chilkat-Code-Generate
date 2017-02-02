@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="429093724" sourceXmlPath="C:/ck2000/appData/apiDef2/Hashtable.xml" license="Free" noBaseEntries="1">
+    <genericName>Hashtable</genericName>
+    <cppName>CkHashtable</cppName>
+    <dnName>Hashtable</dnName>
+    <axName>ChilkatHashtable</axName>
+    <description>Represents a collection of key/value pairs that are stored in a hash table.
+&lt;p&gt;&lt;b&gt;Note: This class was added in Chilkat v9.5.0.51&lt;/b&gt;</description>
+    <methods>
+        <method name="AddInt" axId="101" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Adds or replaces an entry with the given key and integer value to the hash table.  Returns _TRUE_ if a new hash entry was added or replaced.  Returns _FALSE_ if an out-of-memory condition occurred.</descrip>
+            <args>
+                <arg>
+                    <argName>key</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.51</iversion>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AddStr" ax="1" cpp="1" dn="1" status="1" axId="100">
+            <gType>bool</gType>
+            <descrip>Adds or replaces an entry with the given key and string value to the hash table.  Returns _TRUE_ if a new hash entry was added or replaced.  Returns _FALSE_ if an out-of-memory condition occurred.</descrip>
+            <args>
+                <arg>
+                    <argName>key</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.51</iversion>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Clear" axId="102" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <descrip>Removes all elements from the Hashtable.</descrip>
+            <iversion>9.5.0.51</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="ClearWithNewCapacity" ax="1" cpp="1" dn="1" status="1" axId="107">
+            <gType>bool</gType>
+            <descrip>Removes all elements from the Hashtable and re-sizes with the specified ARG1.  
+&lt;p&gt;
+The capacity is the number of buckets in the hash table. In the case of a "hash collision", a single bucket stores multiple entries, which must be searched sequentially. 
+One rule of thumb is to set the capacity to twice the number of expected items to be hashed.  It's also preferable to set the capacity to a prime number. (The 1st 10,000 prime numbers are listed here: https://primes.utm.edu/lists/small/10000.txt )
+&lt;p&gt;
+The initial default capacity of the hash table is 521.</descrip>
+            <iversion>9.5.0.51</iversion>
+            <args>
+                <arg>
+                    <argName>capacity</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>capacity</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="capacity" type="int" objcName="capacity" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Contains" axId="103" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Determines if a given key is contained within the hash table.  Returns _TRUE_ if the key exists, otherwise returns _FALSE_.</descrip>
+            <iversion>9.5.0.51</iversion>
+            <args>
+                <arg>
+                    <argName>key</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>key</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LookupInt" ax="1" cpp="1" dn="1" axId="106">
+            <gType>int</gType>
+            <descrip>Returns the integer value associated with the specified key.    If the key is not in the hash table, the return value is 0.</descrip>
+            <iversion>9.5.0.51</iversion>
+            <args>
+                <arg>
+                    <argName>key</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>key</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LookupStr" ax="1" cpp="1" dn="1" axId="105" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the string value associated with the specified key.</descrip>
+            <iversion>9.5.0.51</iversion>
+            <args>
+                <arg>
+                    <argName>key</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>key</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Remove" ax="1" cpp="1" dn="1" axId="104">
+            <gType>bool</gType>
+            <descrip>Removes the entry with the specified key from the hash table.  Returns _TRUE_ if the key existed and was removed. Returns _FALSE_ if the key did not already exist.</descrip>
+            <iversion>9.5.0.51</iversion>
+            <args>
+                <arg>
+                    <argName>key</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>key</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetKeys" axId="108" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="strTable" type="StringTable" objcName="strTable" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>hashtable_serialize_to_xml.asp</url>
+                    <text>Serialize / Deserialize Hashtable to/from XML</text>
+                </link>
+            </links2>
+            <descrip>Appends the complete set of hashtable key strings to ARG1.</descrip>
+        </method>
+        <method name="AddQueryParams" axId="109" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="queryParams" type="string" objcName="queryParams" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Adds URL query parameters into the hashtable.  The ARG1 has the form: "field1=value1&amp;field2=value2&amp;field3=value3...".   It is assumed that the values are URL encoded, and this method automatically URL decodes the values prior to inserting into the hashtable.</descrip>
+        </method>
+        <method name="ToXmlSb" axId="110" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="sbXml" type="StringBuilder" objcName="sbXml" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>hashtable_serialize_to_xml.asp</url>
+                    <text>Serialize / Deserialize Hashtable to/from XML</text>
+                </link>
+            </links2>
+            <descrip>Serializes the hash table to XML format.  The XML is appended to ARG1.</descrip>
+        </method>
+        <method name="AddFromXmlSb" axId="111" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="sbXml" type="StringBuilder" objcName="sbXml" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>hashtable_serialize_to_xml.asp</url>
+                    <text>Serialize / Deserialize Hashtable to/from XML</text>
+                </link>
+            </links2>
+            <descrip>Adds to the hash table from XML previously created by calling ToXmlSb.</descrip>
+        </method>
+        <method name="ContainsIntKey" axId="113" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Determines if a given key is contained within the hash table.  Returns _TRUE_ if the key exists, otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="key" type="int" objcName="key" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2 />
+        </method>
+    </methods>
+    <properties />
+    <events />
+    <clsid>F28D37F7-F537-45B0-BD88-A5877FC649DD</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>D9F89B84-C49F-432A-82BF-F44C1BF16871</uuidMidl>
+    <nextAxId>114</nextAxId>
+</class>

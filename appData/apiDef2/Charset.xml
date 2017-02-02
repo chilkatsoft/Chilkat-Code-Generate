@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Charset" XojoModuleId="418497211" sourceXmlPath="C:/ck2000/appData/apiDef2/Charset.xml">
+    <nextAxId>141</nextAxId>
+    <dnName>Charset</dnName>
+    <cppName>CkCharset</cppName>
+    <properties>
+        <property name="AltToCharset" read="1" write="1" ax="1" cpp="1" dn="1" axId="100">
+            <gType>string</gType>
+            <descrip>If the ErrorAction property is set to 6, then this property controls how errors are handled.  It specifies an alternate "To" charset.  When a character in the input data cannot be converted to the target charset, an attempt is made to convert it to the AltToCharset.  If that fails, the input character is dropped.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ErrorAction" axId="101">
+            <gType>int</gType>
+            <descrip>Controls how errors are handled.  When a character in the input data cannot be converted to the target charset, the action taken is controlled by this property.  The possible settings are:  (0) drop the error characters, (1) substitute the data set by the SetErrorBytes or SetErrorString method, (2) convert to a hex-escaped string (&amp;#xXXXX), (3) RESERVED, (4) RESERVED, (5) RESERVED, (6) convert the error character to the AltToCharset instead, if that fails then drop the character, (7) Pass non-convertible characters to the output unchanged.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="FromCharset" axId="102">
+            <gType>string</gType>
+            <descrip>Tells the charset converter the charset of the input data for a conversion.  Possible values are:
+&lt;pre&gt;&lt;font size="2" face="MS Sans Serif"&gt;
+us-ascii
+unicode  (also known as UTF16LE or simply UTF16)
+unicodefffe  (also known as UTF16BE)
+ebcdic
+iso-8859-1
+iso-8859-2
+iso-8859-3
+iso-8859-4
+iso-8859-5
+iso-8859-6
+iso-8859-7
+iso-8859-8
+iso-8859-9
+iso-8859-13
+iso-8859-15
+windows-874
+windows-1250
+windows-1251
+windows-1252
+windows-1253
+windows-1254
+windows-1255
+windows-1256
+windows-1257
+windows-1258
+utf-7
+utf-8
+utf-32
+utf-32be
+shift_jis
+gb2312
+ks_c_5601-1987
+big5
+iso-2022-jp
+iso-2022-kr
+euc-jp
+euc-kr
+macintosh
+x-mac-japanese
+x-mac-chinesetrad
+x-mac-korean
+x-mac-arabic
+x-mac-hebrew
+x-mac-greek
+x-mac-cyrillic
+x-mac-chinesesimp
+x-mac-romanian
+x-mac-ukrainian
+x-mac-thai
+x-mac-ce
+x-mac-icelandic
+x-mac-turkish
+x-mac-croatian
+asmo-708
+dos-720
+dos-862
+ibm01140
+ibm01141
+ibm01142
+ibm01143
+ibm01144
+ibm01145
+ibm01146
+ibm01147
+ibm01148
+ibm01149
+ibm037
+ibm437
+ibm500
+ibm737
+ibm775
+ibm850
+ibm852
+ibm855
+ibm857
+ibm00858
+ibm860
+ibm861
+ibm863
+ibm864
+ibm865
+cp866
+ibm869
+ibm870
+cp875
+koi8-r
+koi8-u
+&lt;/font&gt;&lt;/pre&gt;</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastInputAsHex" axId="103">
+            <gType>string</gType>
+            <descrip>If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact bytes that are sent to the converter to be seen (for debugging purposes).  This property shows the last input data in a hexidecimalized string.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastInputAsQP" axId="104">
+            <gType>string</gType>
+            <descrip>If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact bytes that are sent to the converter to be seen (for debugging purposes).  This property shows the last input data in a quoted-printable string.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastOutputAsHex" axId="105">
+            <gType>string</gType>
+            <descrip>If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact bytes that are sent to the converter to be seen (for debugging purposes).  This property shows the last output data in a hexidecimalized string.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastOutputAsQP" axId="106">
+            <gType>string</gType>
+            <descrip>If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact bytes that are sent to the converter to be seen (for debugging purposes).  This property shows the last output data in a quoted-printable string.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SaveLast" axId="107">
+            <gType>bool</gType>
+            <descrip>Tells the component to keep the input/output byte data in memory after a conversion is complete so the data can be examined via the LastInputAsHex/QP and LastOutputAsHex/QP properties.  (for debugging purposes)</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ToCharset" axId="108">
+            <gType>string</gType>
+            <descrip>Tells the charset converter the target charset for a conversion.  Possible values are:
+&lt;pre&gt;&lt;font size="2" face="MS Sans Serif"&gt;
+us-ascii
+unicode  (also known as UTF16LE or simply UTF16)
+unicodefffe  (also known as UTF16BE)
+ebcdic
+iso-8859-1
+iso-8859-2
+iso-8859-3
+iso-8859-4
+iso-8859-5
+iso-8859-6
+iso-8859-7
+iso-8859-8
+iso-8859-9
+iso-8859-13
+iso-8859-15
+windows-874
+windows-1250
+windows-1251
+windows-1252
+windows-1253
+windows-1254
+windows-1255
+windows-1256
+windows-1257
+windows-1258
+utf-7
+utf-8
+utf-32
+utf-32be
+shift_jis
+gb2312
+ks_c_5601-1987
+big5
+iso-2022-jp
+iso-2022-kr
+euc-jp
+euc-kr
+macintosh
+x-mac-japanese
+x-mac-chinesetrad
+x-mac-korean
+x-mac-arabic
+x-mac-hebrew
+x-mac-greek
+x-mac-cyrillic
+x-mac-chinesesimp
+x-mac-romanian
+x-mac-ukrainian
+x-mac-thai
+x-mac-ce
+x-mac-icelandic
+x-mac-turkish
+x-mac-croatian
+asmo-708
+dos-720
+dos-862
+ibm01140
+ibm01141
+ibm01142
+ibm01143
+ibm01144
+ibm01145
+ibm01146
+ibm01147
+ibm01148
+ibm01149
+ibm037
+ibm437
+ibm500
+ibm737
+ibm775
+ibm850
+ibm852
+ibm855
+ibm857
+ibm00858
+ibm860
+ibm861
+ibm863
+ibm864
+ibm865
+cp866
+ibm869
+ibm870
+cp875
+koi8-r
+koi8-u
+&lt;/font&gt;&lt;/pre&gt;</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="CharsetToCodePage" axId="109" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charsetName</argName>
+                    <objcName>charsetName</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a charset name to a code page number.  For example, "iso-8859-1" converts to code page 28591.</descrip>
+            <args2>
+                <arg name="charsetName" type="string" objcName="charsetName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="CodePageToCharset" axId="110" outArgName="outCharset">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>codePage</argName>
+                    <objcName>codePage</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outCharset</argName>
+                    <objcName>outCharset</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a code page number to a charset name.  For example, 65001 converts to "utf-8".</descrip>
+            <args2>
+                <arg name="codePage" type="int" objcName="codePage" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ConvertData" axId="111" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inData</argName>
+                    <objcName>inData</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Converts character data from one charset to another.  Before calling ConvertData, the FromCharset and ToCharset properties must be set to the source and destination charset names, such as "iso-8859-1" or "Shift_JIS".</descrip>
+            <args2>
+                <arg name="inData" type="bytes" objcName="inData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ConvertFile" axId="112">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inPath</argName>
+                    <objcName>srcPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>destPath</argName>
+                    <objcName>destPath</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a file from one character encoding to another.  The FromCharset and ToCharset properties specify the source and destination character encodings.  If the ToCharset is utf-16 or utf-8, then the preamble (also known as BOM) is included in the output.  (Call ConvertFileNoPreamble to suppress the output of the BOM.)</descrip>
+            <args2>
+                <arg name="inPath" type="string" objcName="srcPath" />
+                <arg name="destPath" type="string" objcName="destPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ConvertFileNoPreamble" axId="113">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inPath</argName>
+                    <objcName>srcPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>destPath</argName>
+                    <objcName>destPath</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a file from one character encoding to another.  The FromCharset and ToCharset properties specify the source and destination character encodings.  No preamble (also known as BOM) is included in the output.</descrip>
+            <args2>
+                <arg name="inPath" type="string" objcName="srcPath" />
+                <arg name="destPath" type="string" objcName="destPath" />
+            </args2>
+        </method>
+        <method name="ConvertFromUnicode" axId="136" ax="1" cpp="1" dn="1" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <argName>inData</argName>
+                    <cppType>const char *</cppType>
+                    <objcName>inData</objcName>
+                </arg>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Converts Unicode (utf-16)  text to the charset specified by the ToCharset property.</descrip>
+            <args2>
+                <arg name="inData" type="string" objcName="inData" />
+            </args2>
+        </method>
+        <method name="ConvertFromUtf16" ax="1" cpp="1" dn="1" axId="139" outArgName="outMbData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>uniData</argName>
+                    <objcName>uniData</objcName>
+                    <dnType>bytes</dnType>
+                    <axType>bytes</axType>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outMbData</argName>
+                    <objcName>outMbData</objcName>
+                </arg>
+            </args>
+            <descrip>Converts utf-16  text to the charset specified by the ToCharset property.</descrip>
+            <args2>
+                <arg name="uniData" type="bytes" objcName="uniData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ConvertHtml" axId="114" outArgName="outHtml">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inData</argName>
+                    <objcName>htmlIn</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outHtml</argName>
+                    <objcName>outHtml</objcName>
+                </arg>
+            </args>
+            <descrip>Converts HTML text from one character encoding to another.  The FromCharset and ToCharset properties must be set prior to calling this method.  This method automatically edits the META tag within the HTML that indicates the charset.</descrip>
+            <args2>
+                <arg name="inData" type="bytes" objcName="htmlIn" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ConvertHtmlFile" axId="115">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inPath</argName>
+                    <objcName>srcPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>destPath</argName>
+                    <objcName>destPath</objcName>
+                </arg>
+            </args>
+            <descrip>Converts an HTML file from one character encoding to another.  The ToCharset properties must be set prior to calling this method.  If the FromCharset is not set, it is obtained from the HTML META tag that indicates the charset.  This method automatically edits the META tag within the HTML that indicates the charset.</descrip>
+            <args2>
+                <arg name="inPath" type="string" objcName="srcPath" />
+                <arg name="destPath" type="string" objcName="destPath" />
+            </args2>
+        </method>
+        <method name="ConvertToUnicode" axId="137" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <argName>inData</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>inData</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts multibyte character data to a Unicode string.  The FromCharset property should be set before calling this method.</descrip>
+            <args2>
+                <arg name="inData" type="bytes" objcName="inData" />
+            </args2>
+        </method>
+        <method name="ConvertToUtf16" ax="1" cpp="1" dn="1" axId="140" outArgName="outUniData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>mbData</argName>
+                    <objcName>mbData</objcName>
+                    <dnType>bytes</dnType>
+                    <axType>bytes</axType>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outUniData</argName>
+                    <objcName>outUniData</objcName>
+                </arg>
+            </args>
+            <descrip>To be documented soon.</descrip>
+            <args2>
+                <arg name="mbData" type="bytes" objcName="mbData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="EntityEncodeDec" axId="116" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>inStr</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts non-US-ASCII characters to Unicode decimal entities (_AMP_#xxxxx;)</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="inStr" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="EntityEncodeHex" axId="117" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>inStr</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts non-US-ASCII characters to Unicode hex entities (_AMP_#xXXXX;)</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="inStr" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetHtmlCharset" axId="118" outArgName="outCharset">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inData</argName>
+                    <objcName>htmlData</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outCharset</argName>
+                    <objcName>outCharset</objcName>
+                </arg>
+            </args>
+            <descrip>Examines HTML text and extracts the charset name specified by the META tag, if present.</descrip>
+            <args2>
+                <arg name="inData" type="bytes" objcName="htmlData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetHtmlFileCharset" axId="119" outArgName="outCharset">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>htmlFilePath</argName>
+                    <objcName>htmlPath</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outCharset</argName>
+                    <objcName>outCharset</objcName>
+                </arg>
+            </args>
+            <descrip>Examines an HTML file and extracts the charset name specified by the META tag, if present.</descrip>
+            <args2>
+                <arg name="htmlFilePath" type="string" objcName="htmlPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="HtmlDecodeToStr" axId="120" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inStr</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts HTML entities to Unicode characters.</descrip>
+            <args2>
+                <arg name="inStr" type="string" objcName="str" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="HtmlEntityDecode" axId="121" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inHtml</argName>
+                    <objcName>inData</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Decodes HTML entities.  See http://www.w3.org/TR/REC-html40/sgml/entities.html for information on HTML entities.  Examples of HTML entities are _AMP_lt; , _AMP_#229; , _AMP_#xE5; , _AMP_#x6C34; , _AMP_Iacute; , etc.</descrip>
+            <args2>
+                <arg name="inHtml" type="bytes" objcName="inData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="HtmlEntityDecodeFile" axId="122">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inPath</argName>
+                    <objcName>srcPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>destPath</argName>
+                    <objcName>destPath</objcName>
+                </arg>
+            </args>
+            <descrip>Decodes HTML entities in a file and creates a new HTML file with the entities decoded.  See http://www.w3.org/TR/REC-html40/sgml/entities.html for information on HTML entities.  Examples of HTML entities are _AMP_lt; , _AMP_#229; , _AMP_#xE5; , _AMP_#x6C34; , _AMP_Iacute; , etc.</descrip>
+            <args2>
+                <arg name="inPath" type="string" objcName="srcPath" />
+                <arg name="destPath" type="string" objcName="destPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsUnlocked" axId="123">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns true if the component is unlocked.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="LowerCase" axId="124" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inStr</argName>
+                    <objcName>inStr</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a string to lowercase.</descrip>
+            <args2>
+                <arg name="inStr" type="string" objcName="inStr" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ReadFile" axId="125" outArgName="outData">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for reading the entire contents of a file into a byte array.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ReadFileToString" axId="126" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>srcCharset</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Reads a text file and returns the text converted to a Unicode string.  The filename is specified by the first method argument, and the charset of the text data is specified by the 2nd method argument.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="srcCharset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetErrorBytes" axId="127">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>If the ErrorAction property is set to 1, the bytes passed to this method are used as the result for any characters that cannot be converted during a conversion.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SetErrorString" axId="128">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>If the ErrorAction property is set to 1, the string passed to this method is used as the result for any characters that cannot be converted during a conversion.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="129">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>unlockCode</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component.  This method must be called once at the beginning of the program.  Properties can be get/set without unlocking, but methods will not work unless the component has been unlocked.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="unlockCode" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="UpperCase" axId="130" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inStr</argName>
+                    <objcName>inStr</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a string to uppercase.</descrip>
+            <args2>
+                <arg name="inStr" type="string" objcName="inStr" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="UrlDecodeStr" axId="131" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>inStr</argName>
+                    <objcName>inStr</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>URL decodes a string.</descrip>
+            <args2>
+                <arg name="inStr" type="string" objcName="inStr" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="VerifyData" axId="132">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>inData</argName>
+                    <objcName>charData</objcName>
+                </arg>
+            </args>
+            <descrip>Returns true if the byte data conforms to the charset passed in the first argument.</descrip>
+            <args2>
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="inData" type="bytes" objcName="charData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="VerifyFile" axId="133">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Returns true if the file contains character data that conforms to the charset passed in the 1st argument.</descrip>
+            <args2>
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="WriteFile" axId="134">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>byteData</argName>
+                    <objcName>dataBuf</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for saving an entire byte array to a file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="byteData" type="bytes" objcName="dataBuf" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="WriteStringToFile" axId="135">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>textData</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>Converts a Unicode string to a multibyte charset and writes the multibyte text data to a file.  The destination charset is specified in the 2nd method argument.</descrip>
+            <args2>
+                <arg name="textData" type="string" objcName="str" />
+                <arg name="path" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+        </method>
+    </methods>
+    <genericName>Charset</genericName>
+    <description>A component/class for converting character data from one encoding to another. This software is unique in that the data required for converting to/from the supported charsets is entirely embedded witin the Chilkat DLL/library. It does not depend on what code pages may or may not be installed on a particular computer. This allows programs to operate correctly regardless of the locale, OS version, or other factors.</description>
+    <clsid>DF519DD3-CF6D-4BC1-A68C-9049FFF6713D</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>54E9A3A9-44F6-4E38-AA16-F27FB906EE7A</uuidMidl>
+    <axName>ChilkatCharset</axName>
+</class>

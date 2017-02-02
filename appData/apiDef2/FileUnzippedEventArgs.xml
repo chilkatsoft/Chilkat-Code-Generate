@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>FileUnzippedEventArgs</genericName>
+    <cppName>CkFileUnzippedEventArgs</cppName>
+    <dnName>FileUnzippedEventArgs</dnName>
+    <axName>ChilkatFileUnzippedEventArgs</axName>
+    <description>Provides data for the Chilkat.Zip's OnFileUnzipped event.</description>
+    <methods />
+    <properties>
+        <property name="Abort" read="1" write="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>Set to _TRUE_ to abort the unzip.</descrip>
+        </property>
+        <property name="CompressedSize" read="1" dn="1">
+            <gType>int64</gType>
+            <cppType />
+            <descrip>The compressed size of the file just unzipped.</descrip>
+        </property>
+        <property name="FileName" read="1" dn="1">
+            <gType>string</gType>
+            <cppType />
+            <descrip>The name of the file just unzipped.</descrip>
+        </property>
+        <property name="FileSize" read="1" dn="1">
+            <gType>int64</gType>
+            <cppType />
+            <descrip>The uncompressed size of the file just unzipped.</descrip>
+        </property>
+        <property name="IsDirectory" read="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>_TRUE_ if the zip entry just unzipped is a directory.</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

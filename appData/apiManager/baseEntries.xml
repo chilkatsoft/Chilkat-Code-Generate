@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<baseEntries>
+    <genericName>Base</genericName>
+    <axName>Base</axName>
+    <dnName>Base</dnName>
+    <cppName>Base</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" baseEntry="1" read="1" write="0" name="LastErrorHtml" axId="1">
+            <gType>string</gType>
+            <cppType>CkString &amp;</cppType>
+            <descrip>Provides information in HTML format about the last method/property called.  If a method call returns a value indicating failure, or behaves unexpectedly, examine this property to get more information.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" baseEntry="1" read="1" write="0" name="LastErrorText" axId="2">
+            <gType>string</gType>
+            <cppType>CkString &amp;</cppType>
+            <descrip>Provides information in plain-text format about the last method/property called.  If a method call returns a value indicating failure, or behaves unexpectedly, examine this property to get more information.</descrip>
+            <links>
+			    <link>
+			        <text>Concept of LastErrorText</text>
+			        <url>http://www.cknotes.com/?p=423</url>
+			    </link>
+			    <link>
+			        <text>LastErrorText Standard Information</text>
+			        <url>http://www.cknotes.com/?p=316</url>
+			    </link>
+			</links>
+        </property>
+        <property cpp="1" dn="1" ax="1" baseEntry="1" read="1" write="0" name="LastErrorXml" axId="3">
+            <gType>string</gType>
+            <cppType>CkString &amp;</cppType>
+            <descrip>Provides information in XML format about the last method/property called.  If a method call returns a value indicating failure, or behaves unexpectedly, examine this property to get more information.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" baseEntry="1" read="1" write="0" name="Version" axId="4">
+            <gType>string</gType>
+            <cppType>CkString &amp;</cppType>
+            <descrip>Version of the component/library, such as "9.5.0.63"</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" baseEntry="1" read="1" write="1" name="DebugLogFilePath" axId="5">
+            <gType>string</gType>
+            <cppType>CkString &amp;</cppType>
+            <descrip>If set to a file path, causes each Chilkat method or property call to automatically append it's LastErrorText to the specified log file.  The information is appended such that if a hang or crash occurs, it is possible to see the context in which the problem occurred, as well as a history of all Chilkat calls up to the point of the problem.  The VerboseLogging property can be set to provide more detailed information.
+&lt;p&gt;
+This property is typically used for debugging the rare cases where a Chilkat method call hangs or generates an exception that halts program execution (i.e. crashes). 
+A hang or crash should generally never happen. The typical causes of a hang are:
+&lt;ol&gt;
+    &lt;li&gt;a timeout related property was set to 0 to explicitly indicate that an infinite timeout is desired, 
+    &lt;li&gt;the hang is actually a hang within an event callback (i.e. it is a hang within the application code), or 
+    &lt;li&gt;there is an internal problem (bug) in the Chilkat code that causes the hang.
+&lt;/ol&gt;
+</descrip>
+        </property>
+        <property cpp="1" dn="0" ax="0" baseEntry="1" read="1" write="1" noWinRT="1" name="Utf8">
+            <gType>bool</gType>
+            <cppType>bool</cppType>
+            <descrip>When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_ (the default), then "const char *" arguments are interpreted as ANSI strings.
+
+Also, when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8 representation.  If set to _FALSE_, all "const char *" return values are ANSI strings.
+</descrip>
+			<links>
+			    <link>
+			        <text>More about the Utf8 Property</text>
+			        <url_cpp>http://www.cknotes.com/?p=98</url_cpp>
+			    </link>
+			    <link>
+			        <text>C++ CkString Examples</text>
+			        <url_cpp>http://www.example-code.com/vcpp/string.asp</url_cpp>
+			    </link>
+			    <link>
+			        <text>Non-English String Literals in C++ Source Code</text>
+			        <url_cpp>http://www.cknotes.com/?p=110</url_cpp>
+			    </link>
+			</links>
+        </property>
+        <property cpp="1" dn="1" ax="1" baseEntry="1" read="1" write="1" name="VerboseLogging" axId="6">
+            <gType>bool</gType>
+            <cppType>bool</cppType>
+            <descrip>If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain more verbose information. The default value is _FALSE_.  Verbose logging should only be used for debugging.  The potentially large quantity of logged information may adversely affect peformance.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" baseEntry="1" read="1" write="1" name="LastMethodSuccess" axId="9">
+            <gType>bool</gType>
+            <cppType>bool</cppType>
+            <descrip>Indicate whether the last method call succeeded or failed.  A value of _TRUE_ indicates success, a value of _FALSE_ indicates failure.  This property is automatically set for method calls.  It is not modified by property accesses.  The property is automatically set to indicate success for the following types of method calls:
+            &lt;ul&gt;
+            &lt;li&gt;Any method that returns a string.
+            &lt;li&gt;Any method returning a Chilkat object, binary bytes, or a date/time.
+            &lt;li&gt;Any method returning a standard boolean status value where success = _TRUE_ and failure = _FALSE_.
+            &lt;li&gt;Any method returning an integer where failure is defined by a return value less than zero.
+            &lt;/ul&gt;
+            &lt;p&gt;Note: Methods that do not fit the above requirements will always set this property equal to _TRUE_.  For example, a method that returns no value (such as a "void" in C++) will technically always succeed.
+            </descrip>
+             <iversion>9.5.0.52</iversion>
+       </property>
+        <property cpp="0" dn="0" ax="1" baseEntry="1" read="1" write="0" name="LastStringResult" noWinRT="1" axId="10">
+            <gType>string</gType>
+            <cppType>CkString &amp;</cppType>
+            <descrip>The string return value of the last (string returning) method called.  Only available if Chilkat.Global.KeepStringResult is set to _TRUE_.  This provides a means for obtaining large string results in the SQL Server environment (where limitations exist in getting long strings returned by method calls, but where temp tables can be used for string properties).</descrip>
+             <iversion>9.5.0.52</iversion>
+            <links2>
+                <link linkType="external">
+                    <text>Long Strings Returned by ActiveX Methods in SQL Server</text>
+                    <url>http://www.chilkatforum.com/questions/9342/sql-server-methods-that-return-long-strings</url>
+                </link>
+            </links2>
+        </property>
+        <property cpp="0" dn="0" ax="1" baseEntry="1" read="1" write="0" noWinRT="1" name="LastBinaryResult" axId="11">
+            <gType>bytes</gType>
+            <cppType>CkByteData &amp;</cppType>
+            <descrip>The binary data returned by the last (binary data returning) method called.  Only available if Chilkat.Global.KeepBinaryResult is set to _TRUE_.  This provides a means for obtaining large varbinary results in the SQL Server environment (where limitations exist in getting large amounts of data returned by method calls, but where temp tables can be used for binary properties).</descrip>
+             <iversion>9.5.0.52</iversion>
+        </property>
+        <property cpp="0" dn="0" ax="1" baseEntry="1" read="1" write="0" noWinRT="1" name="LastStringResultLen" axId="12">
+            <gType>int</gType>
+            <cppType>int</cppType>
+            <descrip>The length, in characters, of the string contained in the LastStringResult property.</descrip>
+             <iversion>9.5.0.53</iversion>
+        </property>
+    </properties>
+    <methods>
+        <method cpp="1" dn="1" ax="0" baseEntry="1" status="1" noWinRT="1" name="SaveLastError" axId="7">
+            <gType>bool</gType>
+            <cppType>bool</cppType>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+    </methods>
+</baseEntries>

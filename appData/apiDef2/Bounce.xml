@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Bounce" XojoModuleId="619536387" sourceXmlPath="C:/ck2000/appData/apiDef2/Bounce.xml">
+    <nextAxId>108</nextAxId>
+    <dnName>Bounce</dnName>
+    <cppName>CkBounce</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="BounceAddress" axId="102">
+            <gType>string</gType>
+            <descrip>The bounced email address when a bounced email is recognized.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="BounceData" axId="100">
+            <gType>string</gType>
+            <descrip>The raw body of the bounced mail.</descrip>
+        </property>
+        <property name="BounceType" axId="101" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>A number representing the type of bounce that was recognized.&lt;br&gt;A value of 0 indicates "No Bounce". Other values are: &lt;br&gt;&lt;br&gt;1. Hard Bounce. The email could not be delivered and BounceAddress contains the failed email address. &lt;br&gt;2. Soft Bounce. A temporary condition exists causing the email delivery to fail. The BounceAddress property contains the failed email address. &lt;br&gt;3. General Bounced Mail, cannot determine if it is hard or soft, and the email address is not available. &lt;br&gt;4. General Bounced Mail, cannot determine if it is hard or soft, but an email address is available. &lt;br&gt;5. Mail Block. A bounce occured because the sender was blocked. &lt;br&gt;6. Auto-Reply/Out-of-Office email. &lt;br&gt;7. Transient message, such as "Delivery Status / No Action Required". &lt;br&gt;8. Subscribe request. &lt;br&gt;9. Unsubscribe request. &lt;br&gt;10. Virus email notification. &lt;br&gt;11. Suspected Bounce, but no other information is available &lt;br&gt;12. Challenge/Response - Auto-reply message sent by SPAM software where only verified email addresses are accepted. &lt;br&gt;13. Address Change Notification Messages. 
+&lt;br&gt;14. Success DSN indicating that the message was successfully relayed.
+&lt;br&gt;15. Abuse/fraud feedback report.</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="ExamineEmail" axId="107" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Email</axType>
+                    <dnType>Email</dnType>
+                    <cppType>CkEmail &amp;</cppType>
+                    <argName>email</argName>
+                    <objcName>email</objcName>
+                </arg>
+            </args>
+            <descrip>Examines an email and sets the properties (BounceType, BounceAddress, BounceData) according to how the email is classified. This feature can only be used if Chilkat Mail is downloaded and installed, and it also requires Chilkat Mail to be licensed in addition to Chilkat Bounce.</descrip>
+            <args2>
+                <arg name="email" type="Email" objcName="email" />
+            </args2>
+        </method>
+        <method name="ExamineEml" axId="103" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>emlFilename</argName>
+                    <objcName>emlPath</objcName>
+                </arg>
+            </args>
+            <descrip>Examines an email from a .eml file and sets the properties (BounceType, BounceAddress, BounceData) according to how the email is classified.</descrip>
+            <args2>
+                <arg name="emlFilename" type="string" objcName="emlPath" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ExamineMime" axId="104">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>mimeText</argName>
+                    <objcName>mimeString</objcName>
+                </arg>
+            </args>
+            <descrip>Examines an email represented as raw MIME text and sets the properties (BounceType, BounceAddress, BounceData) according to how the email is classified. The return value is 1 for a successful classification, or 0 for a failure.</descrip>
+            <args2>
+                <arg name="mimeText" type="string" objcName="mimeString" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="105">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>unlockCode</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component. This must be called once at the beginning of your program to unlock the component. A purchased unlock code is provided when the Bounce component is licensed. 
+&lt;p&gt;
+A purchased unlock code for the bounce component/library will included the substring "BOUNCE", or can be a Bundle unlock code.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="unlockCode" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+    </methods>
+    <genericName>Bounce</genericName>
+    <description>Recognize a variety of bounced email messages and extract the email address from a bounced email message.</description>
+    <clsid>01AFB62C-BE3C-4706-B77E-CB20DEDA1D4D</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>32C35CC7-1CA6-4897-B21A-116D6DD42381</uuidMidl>
+    <axName>ChilkatBounce</axName>
+</class>

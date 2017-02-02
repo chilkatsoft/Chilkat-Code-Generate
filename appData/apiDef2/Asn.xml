@@ -1,0 +1,703 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="633173837" sourceXmlPath="C:/ck2000/appData/apiDef2/Asn.xml" license="Bundle">
+    <genericName>Asn</genericName>
+    <cppName>CkAsn</cppName>
+    <dnName>Asn</dnName>
+    <axName>ChilkatAsn</axName>
+    <description>For creating, loading, parsing, converting, and saving ASN.1</description>
+    <methods>
+        <method name="AppendBigInt" axId="119" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 integer, but one that is a big (huge) integer that is too large to be represented by an integer variable.  The bytes composing the integer are passed in encoded string format (such as base64, hex, etc.).  The byte order must be big-endian.  The ARG2 may be any of the following encodings: "Base64", "Hex", "Base58", "modBase64", "Base32", "UU", "QP" (for quoted-printable), "URL" (for url-encoding),  "Q", "B", "url_oath", "url_rfc1738", "url_rfc2396", and "url_rfc3986".   The ARG2 name is case insensitive (for example, both "Base64" and "base64" are treated the same).</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>encodedBytes</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encodedBytes</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_create_csr.asp</url>
+                    <text>Using the ASN.1 API to Create a Certificate Request (CSR)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="encodedBytes" type="string" objcName="encodedBytes" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="AppendBits" ax="1" cpp="1" dn="1" status="1" axId="122">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 bit string to the caller's sub-items.  The bytes containing the bits are passed in encoded string format (such as base64, hex, etc.).  The byte order must be big-endian (MSB first).  The ARG2 may be any of the following encodings: "Base64", "Hex", "Base58", "modBase64", "Base32", "UU", "QP" (for quoted-printable), "URL" (for url-encoding),  "Q", "B", "url_oath", "url_rfc1738", "url_rfc2396", and "url_rfc3986".   The ARG2 name is case insensitive (for example, both "Base64" and "base64" are treated the same).</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>encodedBytes</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encodedBytes</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="encodedBytes" type="string" objcName="encodedBytes" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendBool" ax="1" cpp="1" dn="1" status="1" axId="117">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 boolean item to the caller's sub-items.  Items may only be appended to constructed data types such as Sequence and Set.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="bool" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendContextConstructed" ax="1" cpp="1" dn="1" status="1" axId="132">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 context-specific constructed item to the caller's sub-items.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>tag</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>tag</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_create_csr.asp</url>
+                    <text>Using the ASN.1 API to Create a Certificate Request (CSR)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="tag" type="int" objcName="tag" />
+            </args2>
+        </method>
+        <method name="AppendContextPrimitive" ax="1" cpp="1" dn="1" status="1" axId="133">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 context-specific primitive item to the caller's sub-items. The bytes are passed in encoded string format (such as base64, hex, etc.).  The ARG3 may be any of the following encodings: "Base64", "Hex", "Base58", "modBase64", "Base32", "UU", "QP" (for quoted-printable), "URL" (for url-encoding),  "Q", "B", "url_oath", "url_rfc1738", "url_rfc2396", and "url_rfc3986".   The ARG3 name is case insensitive (for example, both "Base64" and "base64" are treated the same).</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>tag</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>tag</objcName>
+                </arg>
+                <arg>
+                    <argName>encodedBytes</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encodedBytes</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="tag" type="int" objcName="tag" />
+                <arg name="encodedBytes" type="string" objcName="encodedBytes" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendInt" ax="1" cpp="1" dn="1" status="1" axId="118">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 integer item to the caller's sub-items.  Items may only be appended to constructed data types such as Sequence and Set.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendNull" ax="1" cpp="1" dn="1" status="1" axId="116">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 null item to the caller's sub-items.  Items may only be appended to constructed data types such as Sequence and Set.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AppendOctets" axId="123" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 octet string to the caller's sub-items.  The bytes are passed in encoded string format (such as base64, hex, etc.).  The ARG2 may be any of the following encodings: "Base64", "Hex", "Base58", "modBase64", "Base32", "UU", "QP" (for quoted-printable), "URL" (for url-encoding),  "Q", "B", "url_oath", "url_rfc1738", "url_rfc2396", and "url_rfc3986".   The ARG2 name is case insensitive (for example, both "Base64" and "base64" are treated the same).</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>encodedBytes</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encodedBytes</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="encodedBytes" type="string" objcName="encodedBytes" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendOid" ax="1" cpp="1" dn="1" status="1" axId="124">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 OID (object identifier)  to the caller's sub-items.  The OID is passed in string form, such as "1.2.840.113549.1.9.1".</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>oid</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>oid</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="oid" type="string" objcName="oid" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendSequence" axId="125" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 sequence item to the caller's sub-items.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args />
+            <links2>
+                <link linkType="example">
+                    <url>asn_create_csr.asp</url>
+                    <text>Using the ASN.1 API to Create a Certificate Request (CSR)</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="AppendSequence2" ax="1" cpp="1" dn="1" status="1" axId="134">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 sequence item to the caller's sub-items, and updates the internal reference to point to the newly appended sequence item.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AppendSequenceR" ax="1" cpp="1" dn="1" status="1" axId="136">
+            <gType>Asn</gType>
+            <descrip>Appends an ASN.1 sequence item to the caller's sub-items, and returns the newly appended sequence item.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AppendSet" axId="126" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 set item to the caller's sub-items.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args />
+            <links2>
+                <link linkType="example">
+                    <url>asn_create_csr.asp</url>
+                    <text>Using the ASN.1 API to Create a Certificate Request (CSR)</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="AppendSet2" ax="1" cpp="1" dn="1" status="1" axId="135">
+            <gType>bool</gType>
+            <descrip>Appends an ASN.1 set item to the caller's sub-items, and updates the internal reference to point to the newly appended set item.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AppendSetR" ax="1" cpp="1" dn="1" status="1" axId="137">
+            <gType>Asn</gType>
+            <descrip>Appends an ASN.1 set item to the caller's sub-items, and returns the newly appended set item.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AppendString" ax="1" cpp="1" dn="1" status="1" axId="121">
+            <gType>bool</gType>
+            <descrip>Appends a string  item  to the caller's sub-items.  The ARG1 specifies the type of string to be added.  It may be "utf8", "ia5", "t61", "printable", "visible", "numeric", "universal", or "bmp".  The ARG2 must conform to the ASN.1 restrictions imposed for a given string type.  The "utf8", "bmp", and "universal" types have no restrictions on what characters are allowed.  In general, unless a specific type of string is required, choose the "utf8" type.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>strType</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>strType</objcName>
+                </arg>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="strType" type="string" objcName="strType" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AppendTime" ax="1" cpp="1" dn="1" status="1" axId="120">
+            <gType>bool</gType>
+            <descrip>Appends a UTCTime item  to the caller's sub-items.  The ARG1 specifies the format of the ARG2.  It should be set to "utc".  (In the future, this method will be expanded to append GeneralizedTime items by using "generalized" for ARG1.)   To append the current date/time, set ARG2 equal to the empty string or the keyword "now".   Otherwise, the ARG2 should be in the UTC time format "YYMMDDhhmm[ss]Z" or "YYMMDDhhmm[ss](+|-)hhmm".</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>timeFormat</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>timeFormat</objcName>
+                </arg>
+                <arg>
+                    <argName>dateTimeStr</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>dateTimeStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="timeFormat" type="string" objcName="timeFormat" />
+                <arg name="dateTimeStr" type="string" objcName="dateTimeStr" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AsnToXml" axId="100" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Converts ASN.1 to XML and returns the XML string.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_convert.asp</url>
+                    <text>Convert ASN.1 to/from Binary DER, XML, and Base64</text>
+                </link>
+                <link linkType="example">
+                    <url>asn_pem_to_xml.asp</url>
+                    <text>Load PEM ASN.1 and Convert to XML</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="DeleteSubItem" ax="1" cpp="1" dn="1" status="1" axId="131">
+            <gType>bool</gType>
+            <descrip>Discards the Nth sub-item.  (The 1st sub-item is at index 0.)</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>index</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetBinaryDer" axId="104" ax="1" cpp="1" dn="1" outArgName="outBytes">
+            <gType>bytes</gType>
+            <descrip>Returns the ASN.1 in binary DER form.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>outBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetEncodedContent" ax="1" cpp="1" dn="1" status="1" axId="127" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the content of the ASN.1 item in encoded string form.  The ARG1 may be any of the following encodings: "Base64", "Hex", "Base58", "modBase64", "Base32", "UU", "QP" (for quoted-printable), "URL" (for url-encoding),  "Q", "B", "url_oath", "url_rfc1738", "url_rfc2396", and "url_rfc3986".   The ARG1 name is case insensitive (for example, both "Base64" and "base64" are treated the same).</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GetEncodedDer" axId="103" ax="1" cpp="1" dn="1" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Returns the binary DER in encoded string form.  The ARG1 indicates the encoding and can be "base64", "hex", "uu", "quoted-printable", "base32", or "modbase64".</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_convert.asp</url>
+                    <text>Convert ASN.1 to/from Binary DER, XML, and Base64</text>
+                </link>
+                <link linkType="example">
+                    <url>asn_create_csr.asp</url>
+                    <text>Using the ASN.1 API to Create a Certificate Request (CSR)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="GetLastSubItem" ax="1" cpp="1" dn="1" axId="130">
+            <gType>Asn</gType>
+            <descrip>Returns the last ASN.1 sub-item.  This method can be called immediately after any Append* method to access the appended item.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="GetSubItem" ax="1" cpp="1" dn="1" axId="129">
+            <gType>Asn</gType>
+            <descrip>Returns the Nth ASN.1 sub-item.  The 1st sub-item is at index 0.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>index</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_create_csr.asp</url>
+                    <text>Using the ASN.1 API to Create a Certificate Request (CSR)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method name="LoadAsnXml" axId="102" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads ASN.1 from the XML representation (such as that created by the AsnToXml method).</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>xmlStr</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>xmlStr</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_convert.asp</url>
+                    <text>Convert ASN.1 to/from Binary DER, XML, and Base64</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="xmlStr" type="string" objcName="xmlStr" />
+            </args2>
+        </method>
+        <method name="LoadBinary" axId="105" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads ASN.1 from binary DER.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>derBytes</argName>
+                    <cppType>CkByteData &amp;</cppType>
+                    <dnType>bytes</dnType>
+                    <axType>bytes</axType>
+                    <objcName>derBytes</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="derBytes" type="bytes" objcName="derBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="LoadBinaryFile" axId="107" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads ASN.1 from a binary DER file.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_convert.asp</url>
+                    <text>Convert ASN.1 to/from Binary DER, XML, and Base64</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method name="LoadEncoded" axId="101" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads ASN.1 from an encoded string.  The ARG2 can be "base64", "hex", "uu", "quoted-printable", "base32", or "modbase64".</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>asnContent</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>asnContent</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_convert.asp</url>
+                    <text>Convert ASN.1 to/from Binary DER, XML, and Base64</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="asnContent" type="string" objcName="asnContent" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method name="SetEncodedContent" axId="128" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the content of this primitive ASN.1 item.  The ARG2 may be any of the following encodings: "Base64", "Hex", "Base58", "modBase64", "Base32", "UU", "QP" (for quoted-printable), "URL" (for url-encoding),  "Q", "B", "url_oath", "url_rfc1738", "url_rfc2396", and "url_rfc3986".   The ARG2 name is case insensitive (for example, both "Base64" and "base64" are treated the same).</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>encodedBytes</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encodedBytes</objcName>
+                </arg>
+                <arg>
+                    <argName>encoding</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="encodedBytes" type="string" objcName="encodedBytes" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="WriteBinaryDer" axId="108" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes the ASN.1 in binary DER form to a file.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args>
+                <arg>
+                    <argName>path</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>asn_convert.asp</url>
+                    <text>Convert ASN.1 to/from Binary DER, XML, and Base64</text>
+                </link>
+                <link linkType="example">
+                    <url>asn_create_csr.asp</url>
+                    <text>Using the ASN.1 API to Create a Certificate Request (CSR)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+    </methods>
+    <properties>
+        <property name="BoolValue" read="1" write="1" ax="1" cpp="1" dn="1" axId="114">
+            <gType>bool</gType>
+            <descrip>The ASN.1 item's boolean value if it is a boolean item.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="Constructed" axId="112" read="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if this ASN.1 item is a constructed item.  Sequence and Set items are constructed and can contain sub-items.  All other tags (boolean, integer, octets, utf8String, etc.) are primitive (non-constructed).</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="ContentStr" read="1" write="1" ax="1" cpp="1" dn="1" axId="113">
+            <gType>string</gType>
+            <descrip>The ASN.1 item's content if it is an ASN.1 string type (such as Utf8String, BmpString, PrintableString, VisibleString, T61String, IA5String, NumericString, or UniversalString).</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="IntValue" read="1" write="1" ax="1" cpp="1" dn="1" axId="115">
+            <gType>int</gType>
+            <descrip>The ASN.1 item's integer value if it is a small integer item.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumSubItems" read="1" ax="1" cpp="1" dn="1" axId="109">
+            <gType>int</gType>
+            <descrip>The number of sub-items contained within this ASN.1 item.  Only constructed items, such as Sequence and Set will contain sub-iitems.  Primitive items such as OIDs, octet strings, integers, etc. will never contain sub-items.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="Tag" axId="110" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The ASN.1 item's tag as a descriptive string.  Possible values are:
+&lt;pre&gt;
+boolean
+integer
+bitString
+octets
+null
+oid
+utf8String
+relativeOid
+sequence
+set
+numericString
+printableString
+t61String
+ia5String
+utcTime
+bmpString
+&lt;/pre&gt;</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="TagValue" axId="111" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The ASN.1 item's tag as a integer value.  The integer values for possible tags are as follows:
+&lt;pre&gt;
+boolean (1)
+integer (2)
+bitString (3)
+octets (4)
+null (5)
+oid (6)
+utf8String (12)
+relativeOid (13)
+sequence (16)
+set (17)
+numericString (18)
+printableString (19)
+t61String (20)
+ia5String (22)
+utcTime (23)
+bmpString (30)
+&lt;/pre&gt;</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+    </properties>
+    <events />
+    <clsid>2935F301-12A9-47A9-97C4-8B7879124EF1</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>4A129764-F661-4DD9-B357-8F523B17FF94</uuidMidl>
+    <nextAxId>138</nextAxId>
+</class>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Html" XojoModuleId="606166535" sourceXmlPath="C:/ck2000/appData/apiDef2/HtmlToText.xml">
+    <nextAxId>108</nextAxId>
+    <dnName>HtmlToText</dnName>
+    <cppName>CkHtmlToText</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="DecodeHtmlEntities" axId="102">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then  HTML entities are automatically decoded.  For example _AMP_amp; is automatically decoded to _AMP_.  If this property is set to _FALSE_, then HTML entities are not decoded.  The default value is _TRUE_.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="RightMargin" axId="100">
+            <gType>int</gType>
+            <descrip>Used to control wrapping of text.  The default value is 80.  When the text gets close to this margin, the converter will try to break the line at a SPACE character.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SuppressLinks" axId="101">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then link URL's are preserved inline.  For example, the following HTML fragment:
+&lt;p&gt;
+&lt;pre&gt;
+&lt;p&gt;_LT_p&gt;Test _LT_a href="http://www.chilkatsoft.com/"&gt;chilkat_LT_/a&gt;_LT_/p&gt;
+&lt;/pre&gt;
+converts to:
+&lt;pre&gt;
+Test chilkat _LT_http://www.chilkatsoft.com/&gt;
+&lt;/pre&gt;
+If this property is _FALSE_, the above HTML would convert to:
+&lt;pre&gt;
+Test chilkat
+&lt;/pre&gt;
+The default value of this property is _TRUE_.</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="IsUnlocked" axId="107" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns _TRUE_ if the component is already unlocked.  Otherwise returns _FALSE_.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ReadFileToString" axId="103" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>srcCharset</argName>
+                    <objcName>srcCharset</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for reading a text file into a string.  The character encoding of the text file is specified by ARG2.  Valid values, such as "iso-8895-1" or "utf-8" are listed at: &lt;a href="http://blog.chilkatsoft.com/?p=463"&gt;List of Charsets&lt;/a&gt;.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+                <arg name="srcCharset" type="string" objcName="srcCharset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ToText" axId="104" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>html</argName>
+                    <objcName>html</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Converts HTML to plain-text.</descrip>
+            <args2>
+                <arg name="html" type="string" objcName="html" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="105">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>code</argName>
+                    <objcName>code</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component.  An arbitrary unlock code may be passed to automatically begin a 30-day trial.
+&lt;p&gt;
+This class is included with the Chilkat HTML-to-XML conversion component license.</descrip>
+            <args2>
+                <arg name="code" type="string" objcName="code" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="WriteStringToFile" axId="106">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>stringToWrite</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method for saving a string to a file. The character encoding of the output text file is specified by ARG3 (the string is converted to this charset when writing).  Valid values, such as "iso-8895-1" or "utf-8" are listed at: &lt;a href="http://blog.chilkatsoft.com/?p=463"&gt;List of Charsets&lt;/a&gt;.</descrip>
+            <args2>
+                <arg name="stringToWrite" type="string" objcName="str" />
+                <arg name="filename" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+        </method>
+    </methods>
+    <genericName>HtmlToText</genericName>
+    <description>HTML to plain-text conversion component.  The internal conversion process is much more sophisticated than can be accomplished with the simple regular-expression freeware codes found in the Internet.  This is more than simply removing HTML tags from an HTML document.</description>
+    <clsid>540054E6-D577-4E92-B730-86E83ADD9172</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>7919C172-F7FD-40BB-9A28-ACC2EA4ED66F</uuidMidl>
+    <axName>HtmlToText</axName>
+</class>

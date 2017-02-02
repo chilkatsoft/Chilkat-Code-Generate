@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/CkByteData.xml">
+    <dnName>CkByteData</dnName>
+    <cppName>CkByteData</cppName>
+    <properties />
+    <methods>
+        <method name="append" cpp="1" noObjC="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>db</argName>
+                    <objcName>db</objcName>
+                </arg>
+            </args>
+            <descrip>Appends byte data to the data already contained in the object.</descrip>
+            <args2>
+                <arg name="db" type="bytes" objcName="db" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="append2">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const void *</cppType>
+                    <argName>pByteData</argName>
+                    <objcName>pByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>szByteData</argName>
+                    <objcName>szByteData</objcName>
+                </arg>
+            </args>
+            <descrip>Appends bytes to the data already contained in the object.</descrip>
+            <args2>
+                <arg name="pByteData" type="cppBytes" objcName="pByteData" />
+                <arg name="szByteData" type="unsigned long" objcName="szByteData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendChar">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>char</cppType>
+                    <argName>ch</argName>
+                    <objcName>ch</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a single byte.</descrip>
+            <args2>
+                <arg name="ch" type="char" objcName="ch" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendCharN">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>char</cppType>
+                    <argName>ch</argName>
+                    <objcName>ch</objcName>
+                </arg>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>numTimes</argName>
+                    <objcName>numTimes</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a single char N times. The equivalent of calling appendChar N times.</descrip>
+            <args2>
+                <arg name="ch" type="char" objcName="ch" />
+                <arg name="numTimes" type="int" objcName="numTimes" />
+            </args2>
+        </method>
+        <method name="appendEncoded" cpp="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <descrip>Appends binary data from an encoded string.  The encoding can be specified as "hex", "base64", "url", "quoted-printable", "modBase64", "base58", or "base32".  The input string is decoded from the specified encoding and the binary data is appended to the calling object's content.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendEncodedW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <descrip />
+            <args2>
+                <arg name="str" type="wideString" objcName="str" />
+                <arg name="encoding" type="wideString" objcName="encoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendFile">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Opens a file for binary read, appends the file contents, and closes the file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendFileW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip />
+            <args2>
+                <arg name="path" type="wideString" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendInt">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>intValue</argName>
+                    <objcName>intValue</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>littleEndian</argName>
+                    <objcName>littleEndian</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a 32-bit signed integer (4 bytes) to the data already contained in the object.  ARG2 determines whether the big endian or little endian byte ordering is used.</descrip>
+            <args2>
+                <arg name="intValue" type="int" objcName="intValue" />
+                <arg name="littleEndian" type="bool" objcName="littleEndian" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendRandom">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Appends ARG1 random bytes to the data already contained within the object.</descrip>
+            <args2>
+                <arg name="numBytes" type="int" objcName="numBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendRange">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>byteData</argName>
+                    <objcName>byteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a range of bytes from ARG1 to the data contained withing the caller.  The first byte is at index 0.</descrip>
+            <args2>
+                <arg name="byteData" type="bytes" objcName="byteData" />
+                <arg name="index" type="unsigned long" objcName="index" />
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendShort">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>short</cppType>
+                    <argName>shortValue</argName>
+                    <objcName>shortValue</objcName>
+                </arg>
+                <arg>
+                    <cppType>bool</cppType>
+                    <argName>littleEndian</argName>
+                    <objcName>littleEndian</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a 16-bit signed integer (2 bytes) to the data already contained in the object.  ARG2 determines whether the big endian or little endian byte ordering is used.</descrip>
+            <args2>
+                <arg name="shortValue" type="short" objcName="shortValue" />
+                <arg name="littleEndian" type="bool" objcName="littleEndian" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendStr">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Appends a null-terminated string to the data, without including the terminating null.</descrip>
+            <args2>
+                <arg name="str" type="string" objcName="str" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="appendStrW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip />
+            <args2>
+                <arg name="str" type="wideString" objcName="str" />
+                <arg name="charset" type="wideString" objcName="charset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="beginsWith">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>byteDataObj</argName>
+                    <objcName>byteDataObj</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the caller's data begins with the exact bytes contained within ARG1.</descrip>
+            <args2>
+                <arg name="byteDataObj" type="bytes" objcName="byteDataObj" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="beginsWith2">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const void *</cppType>
+                    <argName>pByteData</argName>
+                    <objcName>pByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>szByteData</argName>
+                    <objcName>szByteData</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_ if the caller's data begins with specified bytes.</descrip>
+            <args2>
+                <arg name="pByteData" type="cppBytes" objcName="pByteData" />
+                <arg name="szByteData" type="unsigned long" objcName="szByteData" />
+            </args2>
+        </method>
+        <method name="borrowData" cpp="1" noSwig="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>void *</cppType>
+                    <argName>pByteData</argName>
+                    <objcName>pByteData</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>szByteData</argName>
+                    <objcName>szByteData</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the CkByteData's data pointer and size to memory outside the object.  This is useful in cases where a CkByteData object is needed, but copying data into the CkByteData is not desired.
+&lt;p&gt;&lt;b&gt;Note: &lt;/b&gt;The borrowData method can only be used for data that is being passed into a Chilkat method call.  It is not for use as a buffer for Chilkat to deposit data.  This is not the intent of the method.</descrip>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/9059/ckbytedataborrowdata-not-working</url>
+                    <text>More detailed explanation of borrowData</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="pByteData" type="cppBytes" objcName="pByteData" />
+                <arg name="szByteData" type="unsigned long" objcName="szByteData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="byteSwap4321">
+            <gType>void</gType>
+            <args />
+            <descrip>4321 byte swaps the data contained within the object.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="clear">
+            <gType>void</gType>
+            <args />
+            <descrip>Clears the CkByteData object of all data.</descrip>
+            <args2 />
+        </method>
+        <method name="encode" cpp="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Encodes binary data according to the encoding requested.  The encoding can be specified as "hex", "base64", "url", "quoted-printable", "modBase64", "base58", "base32", "qp-&lt;lineLength&gt;", "url_rfc1738", "url_rfc2396", or "url_rfc3986".</descrip>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="str" type="CkString" objcName="str" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="encodeW">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>str</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip />
+            <args2>
+                <arg name="encoding" type="wideString" objcName="encoding" />
+                <arg name="str" type="CkString" objcName="str" />
+            </args2>
+        </method>
+        <method name="ensureBuffer" cpp="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>expectedNumBytes</argName>
+                    <objcName>expectedNumBytes</objcName>
+                </arg>
+            </args>
+            <descrip>This method can be called to help optimize internal memory re-allocation.  If, for example, many calls will be made to append data, and the total size is approximately known, then this method can be called to pre-allocate the internal buffer to the expected total size.</descrip>
+            <args2>
+                <arg name="expectedNumBytes" type="unsigned long" objcName="expectedNumBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="equals">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>compareBytes</argName>
+                    <objcName>compareBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_  if ARG1 contains exactly the same content as the caller.  Otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="compareBytes" type="bytes" objcName="compareBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="equals2">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const void *</cppType>
+                    <argName>pCompareBytes</argName>
+                    <objcName>pCompareBytes</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Returns _TRUE_  if the bytes pointed to by  ARG1 contains exactly the same content as the caller.  Otherwise returns _FALSE_.</descrip>
+            <args2>
+                <arg name="pCompareBytes" type="cppBytes" objcName="pCompareBytes" />
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="findBytes">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>byteDataObj</argName>
+                    <objcName>byteDataObj</objcName>
+                </arg>
+            </args>
+            <descrip>Locates the first occurrence of the bytes contained in ARG1 and returns the index of where these bytes occur in the caller's data. Returns -1 if not found.</descrip>
+            <args2>
+                <arg name="byteDataObj" type="bytes" objcName="byteDataObj" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="findBytes2">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>const void *</cppType>
+                    <argName>findBytes</argName>
+                    <objcName>findBytes</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>findBytesLen</argName>
+                    <objcName>findBytesLen</objcName>
+                </arg>
+            </args>
+            <descrip>Locates the first occurrence of the specified bytes and returns the index of where these bytes occur in the caller's data. Returns -1 if not found.</descrip>
+            <args2>
+                <arg name="findBytes" type="cppBytes" objcName="findBytes" />
+                <arg name="findBytesLen" type="unsigned long" objcName="findBytesLen" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getByte">
+            <gType>cppByte</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>byteIndex</argName>
+                    <objcName>byteIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth byte of the binary data.  The 1st byte is at index 0.</descrip>
+            <args2>
+                <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
+            </args2>
+        </method>
+        <method name="getBytes" cpp="1" deprecated="1">
+            <gType>cppBytes</gType>
+            <args />
+            <descrip>Returns a pointer to the bytes contained within the object.  Be very careful with the pointer that is returned.  If more data is appended to the object, an internal reallocation may occur such that the previously returned pointer is no longer valid.
+&lt;p&gt;This method is identical to the &lt;b&gt;getData&lt;/b&gt; method.  Use getData instead.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getChar">
+            <gType>char</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>byteIndex</argName>
+                    <objcName>byteIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth byte of the binary content as a "char".  The 1st byte is at index 0.</descrip>
+            <args2>
+                <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
+            </args2>
+        </method>
+        <method dn="0" ax="0" name="getData" cpp="1">
+            <gType>cppBytes</gType>
+            <args />
+            <descrip>Returns a pointer to the internal buffer.  Be careful with this method because if additional data is appended, the data within the object may be relocated and the pointer may cease to be valid.</descrip>
+            <args2 />
+        </method>
+        <method dn="0" ax="0" name="getDataAt" cpp="1">
+            <gType>cppBytes</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>byteIndex</argName>
+                    <objcName>byteIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Same as getData, except it gets a pointer to the data at a byte offset.  (0 = the start of buffer)</descrip>
+            <args2>
+                <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
+            </args2>
+        </method>
+        <method name="getEncoded" cpp="1" noC="1" outArgName="outStr">
+            <gType>mbString</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the binary data as an encoded string.  The encoding may be "base64", "hex", "quoted-printable" (or "qp"), "url", "asc", "url_rfc1738", "url_rfc2396", "url_rfc3986", or "url_oauth".</descrip>
+            <iversion>9.5.0.47</iversion>
+            <args2>
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getEncodedW">
+            <gType>wideString</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>encoding</argName>
+                    <objcName>encoding</objcName>
+                </arg>
+            </args>
+            <descrip>The utf-16 version of getEncoded.</descrip>
+            <args2>
+                <arg name="encoding" type="wideString" objcName="encoding" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getInt">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>byteIndex</argName>
+                    <objcName>byteIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the 4-byte integer located at a specific byte index.</descrip>
+            <args2>
+                <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getRange">
+            <gType>cppBytes</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>byteIndex</argName>
+                    <objcName>byteIndex</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Copies a range of bytes to a separate internal memory buffer and returns the pointer to the bytes.  The returned pointer is only valid while the object exists.  Also, any subsequent calls to getRange, getRangeStr, or to_s will invalidate the buffer.</descrip>
+            <args2>
+                <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+        </method>
+        <method noSwig="1" cpp="1" dn="0" ax="0" name="getShort">
+            <gType>short</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>byteIndex</argName>
+                    <objcName>byteIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the 2-byte  integer located at a specific byte index.</descrip>
+            <args2>
+                <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="getSize">
+            <gType>unsigned long</gType>
+            <args />
+            <descrip>Returns the number of bytes in the data buffer.</descrip>
+            <args2 />
+        </method>
+        <method noSwig="1" cpp="1" dn="0" ax="0" name="getUInt">
+            <gType>unsigned long</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>byteIndex</argName>
+                    <objcName>byteIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the 4-byte  unsigned integer located at a specific byte index.</descrip>
+            <args2>
+                <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
+            </args2>
+        </method>
+        <method noSwig="1" cpp="1" dn="0" ax="0" name="getUShort">
+            <gType>unsigned short</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>byteIndex</argName>
+                    <objcName>byteIndex</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the 2-byte  unsigned integer located at a specific byte index.</descrip>
+            <args2>
+                <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="is7bit">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns _TRUE_ if all the bytes are in the range 0x00 to 0x7F.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="loadFile">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Equivalent to clear() followed by appendFile().</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="loadFileW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip />
+            <args2>
+                <arg name="path" type="wideString" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="pad">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>blockSize</argName>
+                    <objcName>blockSize</objcName>
+                </arg>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>paddingScheme</argName>
+                    <objcName>paddingScheme</objcName>
+                </arg>
+            </args>
+            <descrip>Pads the data to a multiple of the ARG1 using a cryptographic padding scheme specified by ARG2.  The possible integer values for ARG2 are the same as those listed for the PaddingScheme property of the CkCrypt2 class.</descrip>
+            <args2>
+                <arg name="blockSize" type="int" objcName="blockSize" />
+                <arg name="paddingScheme" type="int" objcName="paddingScheme" />
+            </args2>
+        </method>
+        <method name="preAllocate" cpp="1" deprecated="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>expectedNumBytes</argName>
+                    <objcName>expectedNumBytes</objcName>
+                </arg>
+            </args>
+            <descrip>This method can be called to help optimize internal memory re-allocation.  If, for example, many calls will be made to append data, and the total size is approximately known, then this method can be called to pre-allocate the internal buffer to the expected total size.
+&lt;p&gt;This method is identical to the &lt;b&gt;ensureBuffer&lt;/b&gt; method.  Use ensureBuffer instead.</descrip>
+            <args2>
+                <arg name="expectedNumBytes" type="unsigned long" objcName="expectedNumBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="removeChunk">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>startIndex</argName>
+                    <objcName>startIndex</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Removes (discards) a range from the data.</descrip>
+            <args2>
+                <arg name="startIndex" type="unsigned long" objcName="startIndex" />
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+        </method>
+        <method noSwig="1" cpp="1" dn="0" ax="0" name="removeData">
+            <gType>cppBytes</gType>
+            <args />
+            <descrip>Removes the data from the CkByteData object.  The caller will receivea pointer to the memory buffer, and is responsible for deleting it.&lt;br&gt; Example: &lt;br&gt;	unsigned char *data = byteData.removeData();&lt;br&gt;	... do something with the data....&lt;br&gt;	delete [] data;</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="0" ax="0" name="replaceChar">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned char</cppType>
+                    <argName>existingByteValue</argName>
+                    <objcName>existingByteValue</objcName>
+                </arg>
+                <arg>
+                    <cppType>unsigned char</cppType>
+                    <argName>replacementByteValue</argName>
+                    <objcName>replacementByteValue</objcName>
+                </arg>
+            </args>
+            <descrip>Replaces all occurrences of ARG1 with ARG2.</descrip>
+            <args2>
+                <arg name="existingByteValue" type="cppByte" objcName="existingByteValue" />
+                <arg name="replacementByteValue" type="cppByte" objcName="replacementByteValue" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="saveFile">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves the byte data to a file.  If the file already exists, it will be overwritten.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="saveFileW">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <cppType>const wchar_t *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip />
+            <args2>
+                <arg name="path" type="wideString" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="shorten">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Discards N bytes from the end of the data.</descrip>
+            <args2>
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="to_ws">
+            <gType>wideString</gType>
+            <args>
+                <arg>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip />
+            <args2>
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="0" ax="0" name="unpad">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>blockSize</argName>
+                    <objcName>blockSize</objcName>
+                </arg>
+                <arg>
+                    <cppType>int</cppType>
+                    <argName>paddingScheme</argName>
+                    <objcName>paddingScheme</objcName>
+                </arg>
+            </args>
+            <descrip>Unpads the data from a multiple of the ARG1 to the original data size using a cryptographic padding scheme specified by ARG2.  The possible integer values for ARG2 are the same as those listed for the PaddingScheme property of the CkCrypt2 class.</descrip>
+            <args2>
+                <arg name="blockSize" type="int" objcName="blockSize" />
+                <arg name="paddingScheme" type="int" objcName="paddingScheme" />
+            </args2>
+        </method>
+    </methods>
+    <genericName>CkByteData</genericName>
+    <description>Represents a chunk of byte data and provides methods for accessing it, adding to it, or saving and loading from files.</description>
+    <axName>CkByteData</axName>
+</class>

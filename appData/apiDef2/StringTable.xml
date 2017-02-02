@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class sourceXmlPath="C:/ck2000/appData/apiDef2/StringTable.xml" license="Free">
+    <methods>
+        <method name="AppendFromFile" axId="102" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends strings, one per line, from a file.  Each line in the ARG3 should be no longer than the length specified in ARG1.  The ARG2 indicates the character encoding of the contents of the file, such as "utf-8", "iso-8859-1", "Shift_JIS", etc.</descrip>
+            <args2>
+                <arg name="maxLineLen" type="int" objcName="maxLineLen" />
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="Append" axId="103" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends a string to the table.</descrip>
+            <args2>
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+        </method>
+        <method name="StringAt" axId="104" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Returns the Nth string in the table.  The ARG1 is 0-based.  (The first string is at index 0.)</descrip>
+        </method>
+        <method name="SaveToFile" axId="105" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="bCrlf" type="bool" objcName="bCrlf" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Saves the string table to a file.  The ARG1 is the character encoding to use, such as "utf-8", "iso-8859-1", "windows-1252", "Shift_JIS", "gb2312", etc.   If ARG2 is _TRUE_, then CRLF line endings are used, otherwise LF-only line endings are used.</descrip>
+        </method>
+        <method name="SplitAndAppend" axId="106" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="inStr" type="string" objcName="inStr" />
+                <arg name="delimiterChar" type="string" objcName="delimiterChar" />
+                <arg name="exceptDoubleQuoted" type="bool" objcName="exceptDoubleQuoted" />
+                <arg name="exceptEscaped" type="bool" objcName="exceptEscaped" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringTable_splitAndAppend.asp</url>
+                    <text>StringTable SplitAndAppend Example</text>
+                </link>
+            </links2>
+            <descrip>Splits a string into parts based on a single character ARG2.  If ARG3 is _TRUE_, then the delimiter char found between double quotes is not treated as a delimiter.  If ARG4 is _TRUE_, then an escaped (with a backslash) delimiter char is not treated as a delimiter.</descrip>
+        </method>
+        <method name="AppendFromSb" axId="107" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends strings, one per line, from the contents of a StringBuilder object.</descrip>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <iversion>9.5.0.62</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>stringTable_appendFromSb.asp</url>
+                    <text>Load StringTable from a StringBuilder</text>
+                </link>
+            </links2>
+        </method>
+        <method name="Clear" axId="108" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args2 />
+            <iversion>9.5.0.62</iversion>
+            <links2 />
+            <descrip>Removes all the strings from the table.</descrip>
+        </method>
+        <method name="IntAt" axId="109" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>Returns the Nth string in the table, converted to an integer value.  The ARG1 is 0-based.  (The first string is at index 0.)   Returns -1 if no string is found at the specified index.  Returns 0 if the string at the specified index exist, but is not an integer.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <iversion>9.5.0.63</iversion>
+            <links2 />
+        </method>
+    </methods>
+    <properties>
+        <property name="Count" axId="100" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <links2 />
+            <descrip>The number of strings in the table.</descrip>
+            <iversion>9.5.0.62</iversion>
+        </property>
+    </properties>
+    <events />
+    <genericName>StringTable</genericName>
+    <cppName>CkStringTable</cppName>
+    <dnName>StringTable</dnName>
+    <axName>ChilkatStringTable</axName>
+    <description>A memory efficient class for holding a large number of strings  (accessible by index).   The primary use is as a read-only table of strings that is built once and then used by the application.
+&lt;p&gt;
+This class is introduced in Chilkat v9.5.0.62.</description>
+    <nextAxId>110</nextAxId>
+    <clsid>4E17ECD2-EA48-4BB4-8F30-94D74C577034</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>589D07F4-1FED-450D-B896-87C88DC56F70</uuidMidl>
+</class>

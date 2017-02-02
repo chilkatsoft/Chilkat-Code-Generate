@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>TaskCompletedEventArgs</genericName>
+    <cppName>CkTaskCompletedEventArgs</cppName>
+    <dnName>TaskCompletedEventArgs</dnName>
+    <axName>ChilkatTaskCompletedEventArgs</axName>
+    <description>Provides the args for the OnTaskCompleted event.</description>
+    <methods />
+    <properties>
+        <property name="task" read="1" dn="1">
+            <gType>Task</gType>
+            <cppType />
+            <descrip>The task object that has completed (or aborted/canceled).</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

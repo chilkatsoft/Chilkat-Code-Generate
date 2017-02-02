@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Bundle" sourceXmlPath="C:/ck2000/appData/apiDef2/Jws.xml">
+    <methods>
+        <method name="SetProtectedHeader" axId="101" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="json" type="JsonObject" objcName="json" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>jws_hmac_sha_256.asp</url>
+                    <text>JWS Using HMAC SHA-256</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.66</iversion>
+            <descrip>Sets a signature's protected header.  The ARG1 is the index of the signature.  The 1st signature is at index 0.  In most cases, a JWS contains a single signature at index 0.</descrip>
+        </method>
+        <method name="SetUnprotectedHeader" axId="102" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets a signature's optional unprotected header.  The ARG1 is the index of the signature.  The 1st signature is at index 0.  In most cases, a JWS contains a single signature at index 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="json" type="JsonObject" objcName="json" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example" async="1">
+                    <url>jws_create_flattened_serialization.asp</url>
+                    <text>Create JWS using the Flattened JSON Serialization Format</text>
+                </link>
+            </links2>
+        </method>
+        <method name="CreateJws" axId="103" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2 />
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jws_hmac_sha_256.asp</url>
+                    <text>JWS Using HMAC SHA-256</text>
+                </link>
+                <link linkType="example">
+                    <url>jws_create_ecdsa_p256_sha256.asp</url>
+                    <text>Create a JWS Using ECDSA P-256 SHA-256</text>
+                </link>
+                <link linkType="example">
+                    <url>jws_create_ecdsa_p521_sha512.asp</url>
+                    <text>Create  a JWS Using ECDSA P-521 SHA-512</text>
+                </link>
+            </links2>
+            <descrip>Creates and returns the JWS containing one or more signatures according to the previously set payload, headers, and keys.</descrip>
+        </method>
+        <method name="CreateJwsSb" axId="104" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Creates and returns the JWS by appending it to the contents of ARG1.</descrip>
+            <args2>
+                <arg name="sbJws" type="StringBuilder" objcName="sbJws" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </method>
+        <method name="SetPayloadSb" axId="105" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="sbPayload" type="StringBuilder" objcName="sbPayload" />
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="includeBom" type="bool" objcName="includeBom" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+            <descrip>Sets the JWS payload from the contents of ARG1.  The ARG2 specifies the byte representation to be used for the string that is to be the payload.  (For example, "utf-8", "windows-1252", "utf-16", etc.).   If ARG3 is _TRUE_, then the byte-order-mark (BOM), also known as preamble, if one exists for the given ARG2, is included in the payload.   Normally, ARG3 should be set to _FALSE_.</descrip>
+        </method>
+        <method name="SetPayloadBd" axId="106" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the JWS payload from the contents of ARG1.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </method>
+        <method name="GetPayloadSb" axId="107" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Returns the JWS payload by appending it to the ARG2.  The ARG1 specifies the byte representation to be used in interpreting the bytes of  the payload.  (For example, "utf-8", "windows-1252", "utf-16", etc.)</descrip>
+            <args2>
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="sbPayload" type="StringBuilder" objcName="sbPayload" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </method>
+        <method name="GetPayloadBd" axId="108" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Returns the JWS payload by appending it to the ARG1.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </method>
+        <method name="LoadJwsSb" axId="109" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="sbJws" type="StringBuilder" objcName="sbJws" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jws_validate_rsa_sha256.asp</url>
+                    <text>Validate JWS Using RSASSA-PKCS1-v1_5 SHA-256</text>
+                </link>
+            </links2>
+            <descrip>Loads a JWS from the contents of ARG1.</descrip>
+        </method>
+        <method name="LoadJws" axId="110" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads a JWS contained in ARG1.</descrip>
+            <args2>
+                <arg name="jwsStr" type="string" objcName="jwsStr" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jws_hmac_sha_256.asp</url>
+                    <text>JWS Using HMAC SHA-256</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetProtectedHeader" axId="111" ax="1" cpp="1" dn="1">
+            <gType>JsonObject</gType>
+            <descrip>Returns the protected header for the Nth signature.  The ARG1 is the index of the signature.  The 1st signature is at index 0.  In most cases, a JWS contains a single signature at index 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jws_hmac_sha_256.asp</url>
+                    <text>JWS Using HMAC SHA-256</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetUnprotectedHeader" axId="112" ax="1" cpp="1" dn="1">
+            <gType>JsonObject</gType>
+            <descrip>Returns the optional unprotected header for the Nth signature.  The ARG1 is the index of the signature.  The 1st signature is at index 0.  In most cases, a JWS contains a single signature at index 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </method>
+        <method name="SetMacKey" axId="114" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="key" type="string" objcName="key" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jws_hmac_sha_256.asp</url>
+                    <text>JWS Using HMAC SHA-256</text>
+                </link>
+            </links2>
+            <descrip>Sets the MAC key to be used for creating or validating a signature for the algorithms "HS256", "HS384", or "HS512".   The ARG2 is an encoded string representation of the MAC key bytes.   The ARG3 is an encoding, such as "base64url", "base64", "hex", etc.  The 1st signature is at index 0.  (Most JWSs only contain a single signature.)</descrip>
+        </method>
+        <method name="SetMacKeyBd" axId="115" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the MAC key to be used for creating or validating a signature for the algorithms "HS256", "HS384", or "HS512".   The ARG2 contains the binary bytes of the MAC key for the Nth signature.  The 1st signature is at index 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="key" type="BinData" objcName="key" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </method>
+        <method name="SetPrivateKey" axId="116" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the private key (ECC or RSA) to be used in creating a signature for the following algorithms:
+&lt;pre&gt;
+RS256
+RS384
+RS512
+ES256
+ES384
+ES512
+PS256
+PS384
+PS512
+&lt;/pre&gt;
+The JWS algorithms are described in RFC 7518, section 3.1.  Here is a summary:
+&lt;pre&gt;
+   +--------------+-------------------------------+--------------------+
+   | "alg" Param  | Digital Signature or MAC      | Implementation     |
+   | Value        | Algorithm                     | Requirements       |
+   +--------------+-------------------------------+--------------------+
+   | HS256        | HMAC using SHA-256            | Required           |
+   | HS384        | HMAC using SHA-384            | Optional           |
+   | HS512        | HMAC using SHA-512            | Optional           |
+   | RS256        | RSASSA-PKCS1-v1_5 using       | Recommended        |
+   |              | SHA-256                       |                    |
+   | RS384        | RSASSA-PKCS1-v1_5 using       | Optional           |
+   |              | SHA-384                       |                    |
+   | RS512        | RSASSA-PKCS1-v1_5 using       | Optional           |
+   |              | SHA-512                       |                    |
+   | ES256        | ECDSA using P-256 and SHA-256 | Recommended+       |
+   | ES384        | ECDSA using P-384 and SHA-384 | Optional           |
+   | ES512        | ECDSA using P-521 and SHA-512 | Optional           |
+   | PS256        | RSASSA-PSS using SHA-256 and  | Optional           |
+   |              | MGF1 with SHA-256             |                    |
+   | PS384        | RSASSA-PSS using SHA-384 and  | Optional           |
+   |              | MGF1 with SHA-384             |                    |
+   | PS512        | RSASSA-PSS using SHA-512 and  | Optional           |
+   |              | MGF1 with SHA-512             |                    |
+   | none         | No digital signature or MAC   | Optional           |
+   |              | performed                     |                    |
+   +--------------+-------------------------------+--------------------+
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="privKey" type="PrivateKey" objcName="privKey" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </method>
+        <method name="SetPublicKey" axId="117" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the public key (ECC or RSA) to be used in validating a signature for the following algorithms:
+&lt;pre&gt;
+RS256
+RS384
+RS512
+ES256
+ES384
+ES512
+PS256
+PS384
+PS512
+&lt;/pre&gt;</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="pubKey" type="PublicKey" objcName="pubKey" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </method>
+        <method name="Validate" axId="118" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jws_hmac_sha_256.asp</url>
+                    <text>JWS Using HMAC SHA-256</text>
+                </link>
+                <link linkType="example">
+                    <url>jws_validate_rsa_sha256.asp</url>
+                    <text>Validate JWS Using RSASSA-PKCS1-v1_5 SHA-256</text>
+                </link>
+                <link linkType="example">
+                    <url>jws_validate_ecdsa_p256_sha256.asp</url>
+                    <text>Validate a JWS Using ECDSA P-256 SHA-256</text>
+                </link>
+                <link linkType="example">
+                    <url>jws_validate_general_json_serialization.asp</url>
+                    <text>Validate JWS with Multiple Signatures using the General JSON Serialization Format</text>
+                </link>
+            </links2>
+            <descrip>Validates the Nth signature or MAC using the Nth public key or MAC key.  
+&lt;p&gt;
+Returns 1 if the signature was validated, thus verifying that the signer used the same MAC key or the matching private key.  
+&lt;br&gt;Returns 0 if the incorrect public key or MAC key was provided.  
+&lt;br&gt;Returns -1 for any other error, such as if no public key or MAC key was previously set for the given ARG1.
+&lt;p&gt;
+Prior to calling this method, a program should provide the public key or MAC key via the SetPublicKey, SetMacKey, or SetMacKeyBd methods.</descrip>
+        </method>
+        <method name="SetPayload" axId="121" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the JWS payload from the contents of ARG1.  The ARG2 specifies the byte representation to be used for the string that is to be the payload.  (For example, "utf-8", "windows-1252", "utf-16", etc.).   If ARG3 is _TRUE_, then the byte-order-mark (BOM), also known as preamble, if one exists for the given ARG2, is included in the payload.   Normally, ARG3 should be set to _FALSE_.</descrip>
+            <args2>
+                <arg name="payload" type="string" objcName="payload" />
+                <arg name="charset" type="string" objcName="charset" />
+                <arg name="includeBom" type="bool" objcName="includeBom" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jws_hmac_sha_256.asp</url>
+                    <text>JWS Using HMAC SHA-256</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetPayload" axId="122" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Returns the JWS payload.  The ARG1 specifies the byte representation to be used in interpreting the bytes of  the payload.  (For example, "utf-8", "windows-1252", "utf-16", etc.)</descrip>
+            <args2>
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>jws_hmac_sha_256.asp</url>
+                    <text>JWS Using HMAC SHA-256</text>
+                </link>
+            </links2>
+        </method>
+    </methods>
+    <properties>
+        <property name="NumSignatures" axId="113" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+            <descrip>The number of signatures contained in this JWS.</descrip>
+        </property>
+        <property name="PreferCompact" axId="119" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Controls whether to use the JWS Compact Serialization or JWS JSON Serialization when creating JWSs.  The default value is _TRUE_, which is to choose the compact serialization when possible.  If multiple signatures exist, or if any unprotected headers exist, then JWS JSON Serialization is used regardless of this property setting.</descrip>
+            <args2 />
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </property>
+        <property name="PreferFlattened" axId="120" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Controls whether to use the flattened or general JWE JSON Serialization when creating JWSs.  The default value is _TRUE_, which is to choose the flattened serialization when possible.  If multiple signatures exist, then the general (non-flattened) JWS JSON Serialization is used regardless of this property setting.</descrip>
+            <args2 />
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+        </property>
+    </properties>
+    <events />
+    <genericName>Jws</genericName>
+    <cppName>CkJws</cppName>
+    <dnName>Jws</dnName>
+    <axName>ChilkatJws</axName>
+    <description>An API for JSON Web Signature (JWS).  Provides the ability to create and verify JWSs.</description>
+    <nextAxId>123</nextAxId>
+    <clsid>F9B4FBE1-4059-4C53-8342-585BC9D68947</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>623BCB7F-A659-48E0-8310-630137759D2B</uuidMidl>
+</class>

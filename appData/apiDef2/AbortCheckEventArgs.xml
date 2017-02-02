@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class hidden="1" dnEventArgs="1">
+    <genericName>AbortCheckEventArgs</genericName>
+    <cppName>CkAbortCheckEventArgs</cppName>
+    <dnName>AbortCheckEventArgs</dnName>
+    <axName>ChilkatAbortCheckEventArgs</axName>
+    <description>Provides output data for the AbortCheck event.</description>
+    <methods />
+    <properties>
+        <property name="Abort" read="1" write="1" dn="1">
+            <gType>bool</gType>
+            <cppType />
+            <descrip>If set to _TRUE_, then aborts the current method call.</descrip>
+        </property>
+    </properties>
+    <events />
+</class>

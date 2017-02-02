@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="926144045" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/DirTree.xml">
+    <axName>CkDirTree</axName>
+    <dnName>DirTree</dnName>
+    <cppName>CkDirTree</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="BaseDir" axId="100">
+            <gType>string</gType>
+            <descrip>Begin iterating from this directory.</descrip>
+            <links>
+                <link>
+                    <text>Iterate over Files and Directories in Filesystem Directory Tree</text>
+                    <url_asp>http://www.example-code.com/asp/dirTree_iterate.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/dirTree_iterate.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/dirTree_iterate.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/dirTree_iterate.asp</url_cpp>
+                    <url_mfc>http://www.example-code.com/mfc/dirTree_iterate.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/dirTree_iterate.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/dirTree_iterate.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/dirTree_iterate.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/dirTree_iterate.asp</url_java>
+                    <url_perl>http://www.example-code.com/perl/dirTree_iterate.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/dirTree_iterate.asp</url_php>
+                    <url_python>http://www.example-code.com/python/dirTree_iterate.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/dirTree_iterate.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/dirTree_iterate.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/dirTree_iterate.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/dirTree_iterate.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>Iterate over Files and Directories in Filesystem Directory Tree</text>
+                    <url>dirTree_iterate.asp</url>
+                </link>
+            </links2>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="DoneIterating" axId="101">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when the last file or sub-directory has been iterated.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="FileSize32" axId="102">
+            <gType>int</gType>
+            <descrip>The file size of the current file in the iteration. (0 if it is a directory.)</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="0" read="1" write="0" name="FileSize64">
+            <gType>int64</gType>
+            <descrip>The file size as a 64-bit integer of the current file in the iteration. (0 if it is a directory.)</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="FullPath" axId="103">
+            <gType>string</gType>
+            <descrip>The absolute directory path of the current file or sub-directory.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="FullUncPath" axId="104">
+            <gType>string</gType>
+            <descrip>The absolute UNC directory path of the current file or sub-directory.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IsDirectory" axId="105">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the current position is a sub-directory, _FALSE_ if it is a file.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Recurse" axId="106">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, the iteration will be recursive.  If _FALSE_ the iteration is non-recursive.   The default value is _TRUE_.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="RelativePath" axId="107">
+            <gType>string</gType>
+            <descrip>The relative directory path  of the current file or sub-directory.  (Relative to the BaseDir)</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="AdvancePosition" axId="109" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Advances the current position in the directory tree traversal to the next file or sub-directory.
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; If AdvancePosition returns _FALSE_, it can be an error, or it could be that there are no more files and directories.  To distinguish between the two cases, examine the DoneIterating property.  If DoneIterating is _TRUE_, then the _FALSE_ return value is not an error, but instead indicates that the end has been reached.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Iterate over Files and Directories in Filesystem Directory Tree</text>
+                    <url>dirTree_iterate.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="BeginIterate" axId="108" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Begins a directory tree traversal.  After calling this method, the various property values such as Fullpath, FileSize32, etc. can be retrieved for the 1st file / sub-directory in the traversal.
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; If BeginIterate returns _FALSE_, it can be an error, or it could be that there are 0 files and directories.  To distinguish between the two cases, examine the DoneIterating property.  If DoneIterating is _TRUE_, then the _FALSE_ return value is not an error, but instead indicates 0 files/directories.</descrip>
+            <args2 />
+        </method>
+    </methods>
+    <genericName>DirTree</genericName>
+    <description>API for iterating over the files and sub-directories in a directory tree.  The intent of this class is to provide a simplified, non-recursive way to iterate over an entire directory tree.</description>
+    <clsid>ABC37F7C-0423-42E4-BBD2-E713B8BD3BA1</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>C8B4F6DF-1E35-43B9-913C-B235F91B6D4D</uuidMidl>
+    <nextAxId>110</nextAxId>
+</class>

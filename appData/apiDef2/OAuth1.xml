@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="697794436" sourceXmlPath="C:/ck2000/appData/apiDef2/OAuth1.xml" license="Bundle">
+    <genericName>OAuth1</genericName>
+    <cppName>CkOAuth1</cppName>
+    <dnName>OAuth1</dnName>
+    <axName>ChilkatOAuth1</axName>
+    <description>OAuth 1.0a signature generator.</description>
+    <methods>
+        <method name="AddParam" axId="118" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Adds an extra name/value parameter to the OAuth1 signature.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <args>
+                <arg>
+                    <argName>name</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>name</objcName>
+                </arg>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>rest_oauth1_params.asp</url>
+                    <text>REST OAuth1 with Params</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+        </method>
+        <method name="GenNonce" ax="1" cpp="1" dn="1" status="1" axId="120">
+            <gType>bool</gType>
+            <descrip>Generates a random nonce ARG1 in length and sets the Nonce property to the hex encoded value.</descrip>
+            <iversion>9.5.0.55</iversion>
+            <args>
+                <arg>
+                    <argName>numBytes</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="numBytes" type="int" objcName="numBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="GenTimestamp" ax="1" cpp="1" dn="1" status="1" axId="121">
+            <gType>bool</gType>
+            <descrip>Sets the Timestamp property to the current date/time.</descrip>
+            <iversion>9.5.0.55</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="Generate" axId="117" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Generate the signature based on the property settings.  Input properties are OauthVersion, OauthMethod, Url, ConsumerKey, ConsumerSecret, Token, TokenSecret, Nonce, and Timestamp.   Properties set by this method include: BaseString, Signature, HmacKey, EncodedSignature, QueryString, GeneratedUrl, andAuthorizationHeader.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <args />
+            <links2>
+                <link linkType="example">
+                    <url>oauth1_signature.asp</url>
+                    <text>Generate OAuth 1.0 Signature</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="RemoveParam" axId="119" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Removes a name/value parameter from the OAuth1 signature.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <args>
+                <arg>
+                    <argName>name</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>name</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SetRsaKey" axId="122" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="privKey" type="PrivateKey" objcName="privKey" />
+            </args2>
+            <iversion>9.5.0.64</iversion>
+            <links2 />
+            <descrip>Sets the RSA key to be used when the SignatureMethod is set to "RSA-SHA1" or "RSA-SHA2".</descrip>
+        </method>
+    </methods>
+    <properties>
+        <property name="AuthorizationHeader" read="1" ax="1" cpp="1" dn="1" axId="115">
+            <gType>string</gType>
+            <descrip>The authorization header.  This is what would be included in the Authorization HTTP request header if it is going to be used as the means for providing the OAuth1 authorization information.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="BaseString" axId="111" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>This is the exact string that was signed.  For example, if the signature method is HMAC-SHA1, the BaseString is the exact string that passed to the HMAC-SHA1.   An application does not set the BaseString property.  The BaseString is exposed as a property to allow for debugging and to see the exact string that is signed.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="ConsumerKey" read="1" write="1" ax="1" cpp="1" dn="1" axId="103">
+            <gType>string</gType>
+            <descrip>The consumer key.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="ConsumerSecret" read="1" write="1" ax="1" cpp="1" dn="1" axId="104">
+            <gType>string</gType>
+            <descrip>The consumer secret.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="EncodedSignature" axId="114" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The URL encoded representation of the Signature property</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="GeneratedUrl" read="1" ax="1" cpp="1" dn="1" axId="116">
+            <gType>string</gType>
+            <descrip>The URL that includes the OAuth1 query params.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="HmacKey" axId="112" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The exact HMAC key used to sign the BaseString.  An application does not directly set the HmacKey.  The HmacKey property is read-only and is provided for debugging to see the exact HMAC key used to sign the BaseString.  The HMAC key is composed from the consumer secret (if it exists) and the token secret (if it exists).</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="Nonce" read="1" write="1" ax="1" cpp="1" dn="1" axId="107">
+            <gType>string</gType>
+            <descrip>The nonce.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="OauthMethod" axId="101" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The HTTP method, such as "GET", "POST", "PUT", "DELETE", or "HEAD".  Defaults to "GET".</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="OauthUrl" read="1" write="1" ax="1" cpp="1" dn="1" axId="102">
+            <gType>string</gType>
+            <descrip>The OAuth URL, such as "http://echo.lab.madgex.com/echo.ashx".    See http://bettiolo.github.io/oauth-reference-page/ to compare Chilkat results with another tool's results.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="OauthVersion" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The oauth_version.  Defaults to "1.0".  May be set to the empty string to exclude.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="QueryString" axId="110" read="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Contains the normalized set of request parameters that are signed.  This is a read-only property made available for debugging purposes.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="Signature" read="1" ax="1" cpp="1" dn="1" axId="113">
+            <gType>string</gType>
+            <descrip>The generated base64 signature.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="SignatureMethod" axId="109" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The signature method.  Defaults to "HMAC-SHA1".   Other possible choices are "HMAC1-SHA256", "RSA-SHA1", and "RSA-SHA2".</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="Timestamp" read="1" write="1" ax="1" cpp="1" dn="1" axId="108">
+            <gType>string</gType>
+            <descrip>The timestamp, such as "1441632569".</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="Token" read="1" write="1" ax="1" cpp="1" dn="1" axId="105">
+            <gType>string</gType>
+            <descrip>The token.</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+        <property name="TokenSecret" read="1" write="1" ax="1" cpp="1" dn="1" axId="106">
+            <gType>string</gType>
+            <descrip>The token secret</descrip>
+            <iversion>9.5.0.53</iversion>
+            <links2 />
+            <args2 />
+        </property>
+    </properties>
+    <events />
+    <clsid>E59035A9-E94D-47E8-92BF-59A4EB1AAC83</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>47C1D4CA-692B-46D4-A127-5691075D0F6A</uuidMidl>
+    <nextAxId>123</nextAxId>
+</class>

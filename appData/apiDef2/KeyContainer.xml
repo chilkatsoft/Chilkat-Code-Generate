@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class deprecated="1" windowsOnly="1" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/KeyContainer.xml">
+    <axName>KeyContainer</axName>
+    <dnName>KeyContainer</dnName>
+    <cppName>CkKeyContainer</cppName>
+    <properties>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ContainerName" axId="102">
+            <gType>string</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <descrip>The name of the currently open key container.</descrip>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IsMachineKeyset" axId="100">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <descrip>_TRUE_ if the currently open key container is from the machine keyset, otherwise _FALSE_.</descrip>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IsOpen" axId="101">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <descrip>_TRUE_ if the object currently has a key container open, otherwise _FALSE_.</descrip>
+            <args2 />
+        </property>
+    </properties>
+    <methods>
+        <method name="CloseContainer" axId="103" ax="1" cpp="1" dn="1" noObjC="1" windowsOnly="1">
+            <gType>void</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args />
+            <descrip>Closes the currently opened key container (if this object has one opened).</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="CreateContainer" axId="104">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>machineKeyset</argName>
+                </arg>
+            </args>
+            <descrip>Creates a new key container with a given name in the machine or user keyset.  If a key container having the same name already exists, it is opened.</descrip>
+            <args2>
+                <arg name="name" type="string" />
+                <arg name="machineKeyset" type="bool" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="DeleteContainer" axId="105">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args />
+            <descrip>Deletes a key container with a given name in the machine or user keyset.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="FetchContainerNames" axId="106">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bMachineKeyset</argName>
+                </arg>
+            </args>
+            <descrip>Fetches the container names for the machine or user keyset.  After this method has been called successfully, the GetNumContainers method can be called to get the number of key containers in the given keyset, and the GetContainerName method can be called to retrieve each key container's name by index.</descrip>
+            <args2>
+                <arg name="bMachineKeyset" type="bool" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="GenerateKeyPair" axId="107">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bKeyExchangePair</argName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>keyLengthInBits</argName>
+                </arg>
+            </args>
+            <descrip>Generates a new key pair in the currently open key container.  Each key container can contain two public/private key pairs: one for key exchange, and one for signature creation.  The 1st argument determines which key pair is generated.  A value of _TRUE_ causes a new key-exchange key pair to be generated, a value of _FALSE_ causes a new signature key pair to be generated.  The size of the key (in bits) can range from 384 to 16384, with a typical value being 1024 or 2048 bits.</descrip>
+            <args2>
+                <arg name="bKeyExchangePair" type="bool" />
+                <arg name="keyLengthInBits" type="int" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GenerateUuid" axId="108" outArgName="outGuid">
+            <gType>string</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outGuid</argName>
+                </arg>
+            </args>
+            <descrip>This method is provided as a convenient way of generating unique key container names.  There are no set rules for naming key containers.  However, if your application is to generate a large number of keys, using a UUID for the key container name is wise to ensure uniqueness.</descrip>
+            <args2 />
+        </method>
+        <method name="GetNthContainerName" ax="1" cpp="1" dn="1" axId="116" outArgName="outName">
+            <gType>string</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bMachineKeyset</argName>
+                    <axType>bool</axType>
+                    <objcName>bMachineKeyset</objcName>
+                </arg>
+                <arg>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <axType>int</axType>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outName</argName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth key container name.  The FetchContainerNames method must have been previously called with the same keyset (machine or user).  The index ranges from 0 to GetNumContainers() - 1.</descrip>
+            <args2>
+                <arg name="bMachineKeyset" type="bool" objcName="bMachineKeyset" />
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetNumContainers" axId="109">
+            <gType>int</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bMachineKeyset</argName>
+                </arg>
+            </args>
+            <descrip>Returns the number of key containers in existence for the given keyset (machine or user).  The FetchContainerNames method must have been previously called with the same keyset (machine or user).</descrip>
+            <args2>
+                <arg name="bMachineKeyset" type="bool" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetPrivateKey" axId="110">
+            <gType>PrivateKey</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bKeyExchangePair</argName>
+                </arg>
+            </args>
+            <descrip>A key container can hold two public/private key pairs -- a key-exchange pair and a signature pair. This method returns the private key for one of the key pairs. Passing a _TRUE_ returns the key-exchange pair, passing _FALSE_ returns the signature pair. A null reference is returned on failure.</descrip>
+            <args2>
+                <arg name="bKeyExchangePair" type="bool" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetPublicKey" axId="111">
+            <gType>PublicKey</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bKeyExchangePair</argName>
+                </arg>
+            </args>
+            <descrip>A key container can hold two public/private key pairs -- a key-exchange pair and a signature pair.  This method returns the public key for one of the key pairs.  Passing a _TRUE_ returns the key-exchange pair, passing _FALSE_ returns the signature pair.  A null reference is returned on failure.</descrip>
+            <args2>
+                <arg name="bKeyExchangePair" type="bool" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ImportPrivateKey" axId="112">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>PrivateKey</axType>
+                    <dnType>PrivateKey</dnType>
+                    <cppType>CkPrivateKey &amp;</cppType>
+                    <argName>key</argName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bKeyExchangePair</argName>
+                </arg>
+            </args>
+            <descrip>Imports a private key into the key container.  The 1st argument is the private key to be imported, and the 2nd argument determines if the key-exchange private key (_TRUE_) or signature private key (_FALSE_)  is replaced.  Note: A private key actually contains the key material for both the public and private key.  When you have a private key, you effectively have both the public and private key of a key pair.</descrip>
+            <args2>
+                <arg name="key" type="PrivateKey" />
+                <arg name="bKeyExchangePair" type="bool" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="ImportPublicKey" axId="113">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>PublicKey</axType>
+                    <dnType>PublicKey</dnType>
+                    <cppType>CkPublicKey &amp;</cppType>
+                    <argName>key</argName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>bKeyExchangePair</argName>
+                </arg>
+            </args>
+            <descrip>Imports a public key into the key container.  The 1st argument is the public key to be imported, and the 2nd argument determines if the key-exchange public key (_TRUE_) or signature public key (_FALSE_)  is replaced.</descrip>
+            <args2>
+                <arg name="key" type="PublicKey" />
+                <arg name="bKeyExchangePair" type="bool" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="OpenContainer" axId="114">
+            <gType>bool</gType>
+            <ifdef>#if defined(CK_CRYPTOAPI_INCLUDED)</ifdef>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>name</argName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>needPrivateKeyAccess</argName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>machineKeyset</argName>
+                </arg>
+            </args>
+            <descrip>Opens an existing key container in either the machine or user keyset.</descrip>
+            <args2>
+                <arg name="name" type="string" />
+                <arg name="needPrivateKeyAccess" type="bool" />
+                <arg name="machineKeyset" type="bool" />
+            </args2>
+        </method>
+    </methods>
+    <genericName>KeyContainer</genericName>
+    <description>Represents a key container on a Windows operating system.  Each Windows system has a "machine keyset" where named key containers are potentially accessible to all processes.  The "machine keyset" is a machine-wide container for key containers.  Each user account also has it's own set of key containers.  Therefore, when you open or create a key container by name, you must also indicate whether it's the "machine keyset" or the user account's keyset.&lt;p id="classDesc" align="center"&gt;
+    The KeyContainer object provides methods opening, creating, and deleting key containers by name.  It also provides the ability to import public/private keys into a key container, or to export public/private keys from a key container.  It can generate new key pairs.  It can also enumerate the names of existing key containers.&lt;p&gt;&lt;b&gt;This class is specific to the Windows operating system, and therefore is only available on Windows systems.&lt;/b&gt;</description>
+    <clsid>5B9D28CC-9FE1-4601-89E3-681DD583B290</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>C374E6D6-2B8E-4030-89EC-3DE7FC67257F</uuidMidl>
+    <nextAxId>117</nextAxId>
+</class>

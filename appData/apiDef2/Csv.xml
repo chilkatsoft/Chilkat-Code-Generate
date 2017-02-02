@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class license="Free" XojoModuleId="227184472" sourceXmlPath="C:/ck2000/appData/apiDef2/Csv.xml">
+    <nextAxId>126</nextAxId>
+    <dnName>Csv</dnName>
+    <cppName>CkCsv</cppName>
+    <properties>
+        <property name="AutoTrim" axId="105" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then the strings returned by GetCell and GetCellByName are auto-trimmed of whitespace from both ends.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Crlf" axId="100">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then CRLF line endings are used when saving the CSV to a file or to a string (i.e. for the methods SaveFile, SaveFile2, SaveToString).  If _FALSE_ then bare LF line-endings are used.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Delimiter" axId="101">
+            <gType>string</gType>
+            <descrip>The character that separates fields in a record.  It is a comma by default.
+If the Delimiter property is not explicitly set, the CSV component will detect the delimiter when loading a CSV.  
+(Semicolons are typically used in locales where the comma is used as a decimal point.)</descrip>
+        </property>
+        <property name="EscapeBackslash" read="1" write="1" ax="1" cpp="1" dn="1" axId="125">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then the backslash character is treated as an escape character when reading/writing CSVs.   The default is _FALSE_.</descrip>
+            <iversion>9.5.0.44</iversion>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HasColumnNames" axId="102">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ prior to loading a CSV if the 1st record contains column names.   This allows the CSV parser to correctly load the column names and not treat them as data.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumColumns" axId="103">
+            <gType>int</gType>
+            <descrip>The number of columns in the 1st row, which may be the row containing column names if HasColumnNames is _TRUE_.</descrip>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumRows" axId="104">
+            <gType>int</gType>
+            <descrip>The number of data rows.  If the CSV has column names, the 1st row is not included in the count.  Also, empty lines containing only whitespace characters that follow the last non-empty row are not included.</descrip>
+        </property>
+    </properties>
+    <methods>
+        <method name="DeleteColumn" axId="106" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes the Nth column.  (The 1st column is at index 0.)</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="DeleteColumnByName" axId="107">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>columnName</argName>
+                    <objcName>columnName</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes a column specified by name.</descrip>
+            <args2>
+                <arg name="columnName" type="string" objcName="columnName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="DeleteRow" axId="108">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Deletes the entire Nth row.  (The 1st row is at index 0.)</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetCell" axId="109" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>row</argName>
+                    <objcName>row</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>col</argName>
+                    <objcName>col</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the contents of the cell at ARG1, ARG2.  Indexing begins at 0.  (The topmost/leftmost cell is at 0,0)</descrip>
+            <args2>
+                <arg name="row" type="int" objcName="row" />
+                <arg name="col" type="int" objcName="col" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetCellByName" axId="110" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>rowIndex</argName>
+                    <objcName>row</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>columnName</argName>
+                    <objcName>columnName</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>The same as GetCell, but the column is specified by name instead of by index.</descrip>
+            <args2>
+                <arg name="rowIndex" type="int" objcName="row" />
+                <arg name="columnName" type="string" objcName="columnName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetColumnName" axId="111" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the name of the Nth column.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetIndex" axId="112">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>columnName</argName>
+                    <objcName>columnName</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the column index for a given column.</descrip>
+            <args2>
+                <arg name="columnName" type="string" objcName="columnName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetNumCols" axId="113">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>row</argName>
+                    <objcName>row</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the number of columns for a specific row.  If the row is larger than the number of rows in the CSV, a zero is returned.</descrip>
+            <args2>
+                <arg name="row" type="int" objcName="row" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadFile" axId="114">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a CSV from a file.  It is assumed that the CSV file contains ANSI characters.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadFile2" axId="115">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a CSV from a file.  The ARG2 specifies the character encoding of the CSV file.  A list of supported character encodings may be found on this page: &lt;a href="http://www.chilkatsoft.com/p/p_463.asp"&gt;Supported Charsets&lt;/a&gt;.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="LoadFromString" axId="116">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>csvData</argName>
+                    <objcName>csvData</objcName>
+                </arg>
+            </args>
+            <descrip>Loads a CSV document from an in-memory string variable.</descrip>
+            <args2>
+                <arg name="csvData" type="string" objcName="csvData" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="RowMatches" axId="117">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>rowIndex</argName>
+                    <objcName>row</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>matchPattern</argName>
+                    <objcName>matchPattern</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>caseSensitive</argName>
+                    <objcName>bCaseSensitive</objcName>
+                </arg>
+            </args>
+            <descrip>Compares the contents of an entire row to a wildcarded match pattern where "*" can be used any number of times to match 0 or more of any character.   Returns _TRUE_ if a match was found, otherwise returns _FALSE_.   If ARG3 is _TRUE_, then the pattern match is case sensitive, otherwise it is case insensitive.</descrip>
+            <args2>
+                <arg name="rowIndex" type="int" objcName="row" />
+                <arg name="matchPattern" type="string" objcName="matchPattern" />
+                <arg name="caseSensitive" type="bool" objcName="bCaseSensitive" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveFile" axId="118">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>path</argName>
+                    <objcName>path</objcName>
+                </arg>
+            </args>
+            <descrip>Saves a CSV to a file.  The output file is written using the ANSI character encoding.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SaveFile2" axId="119">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>filename</argName>
+                    <objcName>path</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>charset</argName>
+                    <objcName>charset</objcName>
+                </arg>
+            </args>
+            <descrip>Saves a CSV to a file.  The ARG2 specifies the character encoding to use for the CSV file.  The text data is converted to this charset when saving.  A list of supported character encodings may be found on this page: &lt;a href="http://www.chilkatsoft.com/p/p_463.asp"&gt;Supported Charsets&lt;/a&gt;.</descrip>
+            <args2>
+                <arg name="filename" type="string" objcName="path" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="SaveToString" axId="120" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Writes the entire CSV document to a string variable.</descrip>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetCell" axId="121">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>row</argName>
+                    <objcName>row</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>col</argName>
+                    <objcName>col</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>content</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the contents for a single cell in the CSV.  The content may include any characters including CRLF's, double-quotes, and the delimiter character.   The Save* methods automatically double-quote fields with special chars when saving.  The Load* methods automatically parse double-quoted and/or escaped fields correctly when loading.</descrip>
+            <args2>
+                <arg name="row" type="int" objcName="row" />
+                <arg name="col" type="int" objcName="col" />
+                <arg name="content" type="string" objcName="content" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetCellByName" axId="122">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>rowIndex</argName>
+                    <objcName>row</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>columnName</argName>
+                    <objcName>columnName</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>contentStr</argName>
+                    <objcName>content</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SetCell, except the column is specified by name instead of by index.</descrip>
+            <args2>
+                <arg name="rowIndex" type="int" objcName="row" />
+                <arg name="columnName" type="string" objcName="columnName" />
+                <arg name="contentStr" type="string" objcName="content" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetColumnName" axId="123">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>columnName</argName>
+                    <objcName>columnName</objcName>
+                </arg>
+            </args>
+            <descrip>Sets the name of the Nth column.  The first column is at index 0.   This method would only return _FALSE_ if an invalid index is passed (such as a negative number).</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="columnName" type="string" objcName="columnName" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SortByColumn" axId="124">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>columnName</argName>
+                    <objcName>columnName</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ascending</argName>
+                    <objcName>bAscending</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>caseSensitive</argName>
+                    <objcName>bCaseSensitive</objcName>
+                </arg>
+            </args>
+            <descrip>Sorts the rows in the CSV by the contents of a specific column.  If ARG2 is _TRUE_, the sort is in ascending order, otherwise descending order.  If ARG3 is _TRUE_ then the sorting is case sensitive.</descrip>
+            <args2>
+                <arg name="columnName" type="string" objcName="columnName" />
+                <arg name="ascending" type="bool" objcName="bAscending" />
+                <arg name="caseSensitive" type="bool" objcName="bCaseSensitive" />
+            </args2>
+        </method>
+    </methods>
+    <genericName>Csv</genericName>
+    <description />
+    <clsid>E9464A9F-B8D4-443D-88C3-DF3E9C6308AA</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>3B8C1209-EEFB-408B-8FA3-A59EE8034072</uuidMidl>
+    <axName>ChilkatCsv</axName>
+</class>

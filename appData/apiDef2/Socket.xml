@@ -1,0 +1,2586 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class XojoModuleId="266543040" license="Socket" hasEvents="1" baseProgress="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Socket.xml">
+    <axName>ChilkatSocket</axName>
+    <dnName>Socket</dnName>
+    <cppName>CkSocket</cppName>
+    <properties>
+        <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="260">
+            <gType>bool</gType>
+            <descrip>When set to _TRUE_, causes the currently running method to abort.  Methods that always finish quickly (i.e.have no length file operations or network communications) are not affected.  If no method is running, then this property is automatically reset to _FALSE_ when the next method is called.  When the abort occurs, this property is reset to _FALSE_.  Both synchronous and asynchronous method calls can be aborted.  (A synchronous method call could be aborted by setting this property from a separate thread.)</descrip>
+            <iversion>9.5.0.58</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AcceptFailReason" axId="255" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If a AcceptNextConnection method fails, this property can be checked to determine the reason for failure.
+&lt;p&gt;
+Possible values are:
+&lt;pre&gt;
+0 = Success
+1 = An async operation is  in progress.
+3 = An unspecified internal failure, perhaps out-of-memory, caused the failure.
+5 = Timeout.  No connections were accepted in the amount of time alotted.
+6 = The receive was aborted by the application in an event callback.
+9 = An unspecified fatal socket error occurred (less common).
+20 = Must first bind and listen on a port.
+99 = The component is not unlocked.
+
+Errors Relating to the SSL/TLS Handshake:
+100 = TLS internal error.
+102 = Unexpected handshake message.
+109 = Failed to read handshake messages.
+114 = Failed to send change cipher spec handshake message.
+115 = Failed to send finished handshake message.
+116 = Client's Finished message is invalid.
+117 = Unable to agree on TLS protocol version.
+118 = Unable to agree on a cipher spec.
+119 = Failed to read the client's hello message.
+120 = Failed to send handshake messages.
+121 = Failed to process client cert message.
+122 = Failed to process client cert URL message.
+123 = Failed to process client key exchange message.
+124 = Failed to process certificate verify message.
+&lt;/pre&gt;</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncAcceptFinished" axId="100" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous accept operation completes.  Once the asynchronous accept has finished, the success/failure is available in the AsyncAcceptSuccess boolean property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncAcceptLog" axId="101" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>string</gType>
+            <descrip>Contains the last-error information for an asynchronous accept operation.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncAcceptSuccess" axId="102" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous accept operation completes and is successful.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncConnectFinished" axId="103" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous connect operation completes. 
+ Once the asynchronous connect has finished, the success/failure is available in the AsyncConnectSuccess boolean property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncConnectLog" axId="104" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>string</gType>
+            <descrip>Contains the last-error information for an asynchronous connect operation.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncConnectSuccess" axId="105" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous connect operation completes and is successful.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncDnsFinished" axId="106" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous DNS query completes. The success status is available in the AsyncDnsSuccess property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncDnsLog" axId="107" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>string</gType>
+            <descrip>Contains the last-error information for an asynchronous DNS query.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncDnsResult" axId="108" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>string</gType>
+            <descrip>The IP address of the last asynchronous DNS query completed.  The IP address is in nnn.nnn.nnn.nnn string form.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncDnsSuccess" axId="109" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous DNS query completes and is successful.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncReceiveFinished" axId="110" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous receive operation completes.  Once the asynchronous receive has finished, the success/failure is available in the AsyncReceiveSuccess boolean property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncReceiveLog" axId="111" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>string</gType>
+            <descrip>Contains the last-error information for an asynchronous receive operation.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncReceiveSuccess" axId="112" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous receive operation completes and is successful.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncReceivedBytes" axId="113" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bytes</gType>
+            <descrip>Contains the data received in an asynchronous receive operation (when receiving bytes asynchronously).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncReceivedString" axId="114" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>string</gType>
+            <descrip>Contains the string received in an asynchronous receive operation (when receiving a string asynchronously).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncSendFinished" axId="115" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous send operation completes.  Once the asynchronous send has finished, the success/failure is available in the AsyncSendSuccess boolean property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncSendLog" axId="116" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>string</gType>
+            <descrip>Contains the last-error information for an asynchronous send operation.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="AsyncSendSuccess" axId="117" read="1" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>bool</gType>
+            <descrip>Set to _TRUE_ when an asynchronous send operation completes and is successful.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="BandwidthThrottleDown" axId="240" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If non-zero, limits (throttles) the receiving bandwidth to approximately this maximum number of bytes per second.  The default value of this property is 0.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="BandwidthThrottleUp" axId="239" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If non-zero, limits (throttles) the sending bandwidth to approximately this maximum number of bytes per second.  The default value of this property is 0.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>rest_upload_bandwidth_throttle.asp</url>
+                    <text>REST Upload Bandwidth Throttle</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="BigEndian" axId="118" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Applies to the SendCount and ReceiveCount methods.  If BigEndian is set to _TRUE_ (the default) then the 4-byte count is in big endian format.  Otherwise it is little endian.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="ClientIpAddress" axId="119" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>The IP address to use for computers with multiple network interfaces or IP addresses.
+For computers with a single network interface (i.e. most computers), this property should not be set.  For multihoming computers, the default IP address is automatically used if this property is not set.&lt;p&gt;
+The IP address is a string such as in dotted notation using numbers, not domain names, such as "165.164.55.124".</descrip>
+            <links>
+                <link>
+                    <text>Important Bind to Adapter Notes for Windows</text>
+                    <url>http://www.cknotes.com/?p=376</url>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>Important Bind to Adapter Notes for Windows</text>
+                    <url>http://www.cknotes.com/?p=376</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property read="1" write="1" name="ClientPort" axId="120" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>Normally left at the default value of 0, in which case a unique port is assigned with a value between 
+1024 and 5000.   This property would only be changed if it is specifically required.  For example, one 
+customer's requirements are as follows:
+&lt;blockquote&gt;
+"I have to connect to a Siemens PLC IP server on a technical network.
+This machine expects that I connect to its server  from a specific IP address using a specific port
+otherwise the build in security disconnect the IP connection."
+&lt;/blockquote&gt;</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="ConnectFailReason" axId="121" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If the Connect method fails, this property can be checked to determine the reason for failure.
+&lt;p&gt;
+Possible values are:
+&lt;pre&gt;
+0 = success
+
+Normal (non-SSL) sockets:
+1 = empty hostname
+2 = DNS lookup failed
+3 = DNS timeout
+4 = Aborted by application.
+5 = Internal failure.
+6 = Connect Timed Out
+7 = Connect Rejected (or failed for some other reason)
+
+SSL/TLS:
+100 = TLS internal error.
+101 = Failed to send client hello.
+102 = Unexpected handshake message.
+103 = Failed to read server hello.
+104 = No server certificate.
+105 = Unexpected TLS protocol version.
+106 = Server certificate verify failed (the server certificate is expired or the cert's signature verification failed).
+107 = Unacceptable TLS protocol version.
+109 = Failed to read handshake messages.
+110 = Failed to send client certificate handshake message.
+111 = Failed to send client key exchange handshake message.
+112 = Client certificate's private key not accessible.
+113 = Failed to send client cert verify handshake message.
+114 = Failed to send change cipher spec handshake message.
+115 = Failed to send finished handshake message.
+116 = Server's Finished message is invalid.
+&lt;/pre&gt;</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="DebugConnectDelayMs" axId="122" read="1" write="1" ax="1" cpp="1" dn="1" noWinRT="1">
+            <gType>int</gType>
+            <descrip>Used to simulate a long wait when connecting to a remote server.  If your application wishes to test for the handling of timeouts, you may set this value to a number of milliseconds greater than max-wait specified in the Connect method call.  The default value is 0.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="DebugDnsDelayMs" axId="123" read="1" write="1" ax="1" cpp="1" dn="1" noWinRT="1">
+            <gType>int</gType>
+            <descrip>Used to simulate a long wait when doing a DNS lookup.  If your application wishes to test for the handling of timeouts, you may set this value to a number of milliseconds greater than max-wait specified in the DnsLookup method call.  The default value is 0.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property write="0" name="ElapsedSeconds" axId="124" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>Contains the number of seconds since the last call to StartTiming, otherwise contains 0.  (The StartTiming method and ElapsedSeconds property is provided for convenience.)</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HeartbeatMs" axId="125">
+            <gType>int</gType>
+            <descrip>The number of milliseconds between periodic heartbeat callbacks for blocking socket operations (connect, accept, dns query, send, receive).  Set this to 0 to disable heartbeat events.  The default value is 1000 (i.e. 1 heartbeat callback per second).</descrip>
+            <links>
+                <link>
+                    <text>HeartbeatMs and the AbortCheck Event</text>
+                    <url_cs>http://www.cknotes.com/?p=149</url_cs>
+                    <url_vb.net>http://www.cknotes.com/?p=149</url_vb.net>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external" lang="csharp">
+                    <text>HeartbeatMs and the AbortCheck Event</text>
+                    <url>http://www.cknotes.com/?p=149</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyAuthMethod" axId="126">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy authentication method name.  Valid choices are "Basic" or "NTLM".</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyDomain" axId="127">
+            <gType>string</gType>
+            <descrip>The NTLM authentication domain (optional) if NTLM authentication is used.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyHostname" axId="128">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in dotted decimal notation).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyPassword" axId="129">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy password.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyPort" axId="130">
+            <gType>int</gType>
+            <descrip>If an HTTP proxy is to be used, set this property to the HTTP proxy port number.  (Two commonly used HTTP proxy ports are 8080 and 3128.)</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyUsername" axId="131">
+            <gType>string</gType>
+            <descrip>If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login name.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="IsConnected" axId="132" read="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the socket is connected.  Otherwise returns _FALSE_.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="KeepAlive" read="1" write="1" ax="1" cpp="1" dn="1" axId="235">
+            <gType>bool</gType>
+            <descrip>Controls whether the SO_KEEPALIVE socket option is used for the underlying TCP/IP socket.  The default value is _TRUE_.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="KeepSessionLog" axId="133">
+            <gType>bool</gType>
+            <descrip>Controls whether socket (or SSL) communications are logged to the SessionLog string property.  To turn on session logging, set this property = _TRUE_, otherwise set to _FALSE_ (which is the default value).</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>socket_keep_session_log.asp</url>
+                    <text>Demonstrates KeepSessionLog and SessionLog</text>
+                </link>
+            </links2>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastMethodFailed" axId="134">
+            <gType>bool</gType>
+            <descrip>_TRUE_ if the last method called on this object failed.  This provides an easier (less confusing) way of determining whether a method such as ReceiveBytes succeeded or failed.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ListenIpv6" axId="135">
+            <gType>bool</gType>
+            <descrip>If set to _TRUE_, then a socket that listens for incoming connections (via the BindAndList and AcceptNextConnection method calls) will use IPv6 and not IPv4.  The default value is _FALSE_ for IPv4.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LocalIpAddress" axId="136">
+            <gType>string</gType>
+            <descrip>The local IP address for a bound or connected socket.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="LocalPort" axId="137">
+            <gType>int</gType>
+            <descrip>The local port for a bound or connected socket.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="MaxReadIdleMs" axId="138">
+            <gType>int</gType>
+            <descrip>The maximum number of milliseconds to wait on a socket read operation while no additional data is forthcoming.  To wait indefinitely, set this property to 0.  The default value is 0.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="MaxSendIdleMs" axId="139" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The maximum number of milliseconds to wait for the socket to become writeable on a socket write operation.  To wait indefinitely, set this property to 0.  The default value is 0.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="MyIpAddress" axId="140">
+            <gType>string</gType>
+            <descrip>The local IP address of the local computer.  For multi-homed computers (i.e. computers with multiple IP adapters) this property returns the default IP address.  
+&lt;p&gt;
+Note: This will be the internal IP address, not an external IP address.  (For example, if your computer is on a LAN, it is likely to be an IP address beginning with "192.168.".
+&lt;p&gt;
+Important: Use LocalIpAddress and LocalIpPort to get the local IP/port for a bound or connected socket.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumReceivedClientCerts" axId="141">
+            <gType>int</gType>
+            <descrip>If the socket is the server-side of an SSL/TLS connection, the property represents the number of client-side certificates received during the SSL/TLS handshake (i.e. connection process).  Each client-side cert may be retrieved by calling the GetReceivedClientCert method and passing an integer index value from 0 to N-1, where N is the number of client certs received.
+&lt;p&gt;
+Note: A client only sends a certificate if 2-way SSL/TLS is required.  In other words, if the server demands a certificate from the client.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="NumSocketsInSet" axId="142" read="1" ax="1" cpp="1" dn="1" noWinRT="1">
+            <gType>int</gType>
+            <descrip>If this socket is a "socket set", then NumSocketsInSet returns the number of sockets contained in the set.  A socket object can become a "socket set" by calling the TakeSocket method on one or more connected sockets.  This makes it possible to select for reading on the set (i.e. wait for data to arrive from any one of multiple sockets).  See the following methods and properties for more information:  TakeSocket, SelectorIndex, SelectorReadIndex, SelectorWriteIndex, SelectForReading, SelectForWriting.</descrip>
+            <links>
+                <link>
+                    <text>Socket Select for Reading</text>
+                    <url_asp>http://www.example-code.com/asp/socket_select.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/socket_select.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/socket_select.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/socket_select.asp</url_cpp>
+                    <url_mfc>http://www.example-code.com/mfc/socket_select.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/socket_select.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/socket_select.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/socket_select.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/socket_select.asp</url_java>
+                    <url_perl>http://www.example-code.com/perl/socket_select.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/socket_select.asp</url_php>
+                    <url_python>http://www.example-code.com/python/socket_select.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/socket_select.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/socket_select.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/socket_select.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/socket_select.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>Socket Select for Reading</text>
+                    <url>socket_select.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumSslAcceptableClientCAs" axId="143">
+            <gType>int</gType>
+            <descrip>If connected as an SSL/TLS client to an SSL/TLS server where the server requires a client-side certificate for authentication, then this property contains the number of acceptable certificate authorities sent by the server during connection establishment handshake.  The GetSslAcceptableClientCaDn method may be called to get the Distinguished Name (DN) of each acceptable CA.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="ObjectId" axId="144">
+            <gType>int</gType>
+            <descrip>Each socket object is assigned a unique object ID.  This ID is passed in event callbacks to allow your application to associate the event with the socket object.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="PercentDoneScale" axId="238" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>This property is only valid in programming environment and languages that allow for event callbacks.
+&lt;p&gt;
+Sets the value to be defined as 100% complete for the purpose of PercentDone event callbacks.  The defaut value of 100 means that at most 100 event PercentDone callbacks will occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress as a percentage completed.   This property may be set to larger numbers to get more fine-grained PercentDone callbacks.  For example, setting this property equal to 1000 will provide callbacks with .1 percent granularity.  For example, a value of 453 would indicate 45.3% competed.  This property is clamped to a minimum value of 10, and a maximum value of 100000.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="PreferIpv6" read="1" write="1" ax="1" cpp="1" dn="1" axId="232">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain.   The default value of this property is _FALSE_, which will choose IPv4 over IPv6.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="ReceiveFailReason" axId="236" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If a Receive method fails, this property can be checked to determine the reason for failure.
+&lt;p&gt;
+Possible values are:
+&lt;pre&gt;
+0 = Success
+1 = An async receive operation is already in progress.
+2 = The socket is not connected, such as if it was never connected, or if the connection was previously lost.
+3 = An unspecified internal failure, perhaps out-of-memory, caused the failure.
+4 = Invalid parameters were passed to the receive method call.
+5 = Timeout.  Data stopped arriving for more than the amount of time specified by the MaxReadIdleMs property.
+6 = The receive was aborted by the application in an event callback.
+7 = The connection was lost -- the remote peer reset the connection. (The connection was forcibly closed by the peer.)
+8 = An established connection was aborted by the software in your host machine. (See https://www.chilkatsoft.com/p/p_299.asp )
+9 = An unspecified fatal socket error occurred (less common).
+10 = The connection was closed by the peer.
+&lt;/pre&gt;</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="ReceivePacketSize" axId="145">
+            <gType>int</gType>
+            <descrip>The number of bytes to receive at a time (internally).  This setting has an effect on methods such as ReadBytes and ReadString where the number of bytes to read is not explicitly specified.  The default value is 4096.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="ReceivedCount" axId="146" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>Any method that receives data will increase the value of this property by the number of bytes received. The application may reset this property to 0 at any point.  It is provided as a way to keep count of the total number of bytes received on a socket connection, regardless of which method calls are used to receive the data.
+&lt;p&gt;
+Note: The ReceivedCount may be larger than the number of bytes returned by some methods.  For methods such as ReceiveUntilMatch, the excess received on the socket (beyond the match), is buffered by Chilkat for subsequent method calls.  The ReceivedCount is updated based on the actual number of bytes received on the underlying socket in real-time.  (The ReceivedCount does not include the overhead bytes associated with the TLS and/or SSH protocols.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="ReceivedInt" read="1" write="1" ax="1" cpp="1" dn="1" axId="247">
+            <gType>int</gType>
+            <descrip>Contains the last integer received via a call to ReceiveByte, ReceiveInt16, or ReceiveInt32.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="RemoteIpAddress" axId="147">
+            <gType>string</gType>
+            <descrip>When a socket is connected, the remote IP address of the connected peer is available in this property.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="RemotePort" axId="148">
+            <gType>int</gType>
+            <descrip>When a socket is connected, the remote port of the connected peer is available in this property.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="RequireSslCertVerify" read="1" write="1" ax="1" cpp="1" dn="1" axId="229">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then the SSL/TLS client will verify the server's SSL certificate.  The certificate is expired, or if the cert's signature is invalid, the connection is not allowed.  The default value of this property is _FALSE_.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SelectorIndex" axId="149" read="1" write="1" ax="1" cpp="1" dn="1" noWinRT="1">
+            <gType>int</gType>
+            <descrip>If this socket contains a collection of connected sockets (i.e. it is a "socket set") then method calls and property gets/sets are routed to the contained socket indicated by this property.  Indexing begins at 0.   See the TakeSocket method and SelectForReading method for more information.</descrip>
+            <links>
+                <link>
+                    <text>Socket Select for Reading</text>
+                    <url_asp>http://www.example-code.com/asp/socket_select.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/socket_select.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/socket_select.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/socket_select.asp</url_cpp>
+                    <url_mfc>http://www.example-code.com/mfc/socket_select.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/socket_select.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/socket_select.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/socket_select.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/socket_select.asp</url_java>
+                    <url_perl>http://www.example-code.com/perl/socket_select.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/socket_select.asp</url_php>
+                    <url_python>http://www.example-code.com/python/socket_select.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/socket_select.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/socket_select.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/socket_select.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/socket_select.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>Socket Select for Reading</text>
+                    <url>socket_select.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="SelectorReadIndex" axId="150" read="1" write="1" ax="1" cpp="1" dn="1" noWinRT="1">
+            <gType>int</gType>
+            <descrip>When SelectForReading returns a number greater than 0 indicating that 1 or more sockets are ready for reading, this property is used to select the socket in the "ready set" for reading.   See the example below:</descrip>
+            <links>
+                <link>
+                    <text>Socket Select for Reading</text>
+                    <url_asp>http://www.example-code.com/asp/socket_select.asp</url_asp>
+                    <url_sql>http://www.example-code.com/sql/socket_select.asp</url_sql>
+                    <url_cs>http://www.example-code.com/csharp/socket_select.asp</url_cs>
+                    <url_cpp>http://www.example-code.com/vcpp/socket_select.asp</url_cpp>
+                    <url_mfc>http://www.example-code.com/mfc/socket_select.asp</url_mfc>
+                    <url_c>http://www.example-code.com/C/socket_select.asp</url_c>
+                    <url_delphi>http://www.example-code.com/delphi/socket_select.asp</url_delphi>
+                    <url_foxpro>http://www.example-code.com/foxpro/socket_select.asp</url_foxpro>
+                    <url_java>http://www.example-code.com/java/socket_select.asp</url_java>
+                    <url_perl>http://www.example-code.com/perl/socket_select.asp</url_perl>
+                    <url_php>http://www.example-code.com/php/socket_select.asp</url_php>
+                    <url_python>http://www.example-code.com/python/socket_select.asp</url_python>
+                    <url_ruby>http://www.example-code.com/ruby/socket_select.asp</url_ruby>
+                    <url_vb.net>http://www.example-code.com/vbdotnet/socket_select.asp</url_vb.net>
+                    <url_vb6>http://www.example-code.com/vb/socket_select.asp</url_vb6>
+                    <url_vbscript>http://www.example-code.com/vbscript/socket_select.asp</url_vbscript>
+                </link>
+            </links>
+            <links2>
+                <link linkType="example">
+                    <text>Socket Select for Reading</text>
+                    <url>socket_select.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="SelectorWriteIndex" axId="151" read="1" write="1" ax="1" cpp="1" dn="1" noWinRT="1">
+            <gType>int</gType>
+            <descrip>When SelectForWriting returns a number greater than 0 indicating that one or more sockets are ready for writing, this property is used to select the socket in the "ready set" for writing.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SendFailReason" axId="237" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If a Send method fails, this property can be checked to determine the reason for failure.
+&lt;p&gt;
+Possible values are:
+&lt;pre&gt;
+0 = Success
+1 = An async receive operation is already in progress.
+2 = The socket is not connected, such as if it was never connected, or if the connection was previously lost.
+3 = An unspecified internal failure, perhaps out-of-memory, caused the failure.
+4 = Invalid parameters were passed to the receive method call.
+5 = Timeout.  Data stopped arriving for more than the amount of time specified by the MaxReadIdleMs property.
+6 = The receive was aborted by the application in an event callback.
+7 = The connection was lost -- the remote peer reset the connection. (The connection was forcibly closed by the peer.)
+8 = An established connection was aborted by the software in your host machine. (See https://www.chilkatsoft.com/p/p_299.asp )
+9 = An unspecified fatal socket error occurred (less common).
+10 = The connection was closed by the peer.
+11 = Decoding error (possible in SendString when coverting to the StringCharset, or in SendBytesENC).
+&lt;/pre&gt;</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SendPacketSize" axId="152" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The number of bytes to send at a time (internally).  This can also be though of as the "chunk size".  If a large amount of data is to be sent, the data is sent in chunks equal to this size in bytes. The default value is 65535.  (Note: This only applies to non-SSL/TLS connections.  SSL and TLS have their own pre-defined packet sizes.)</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="0" name="SessionLog" axId="153">
+            <gType>string</gType>
+            <descrip>Contains a log of the bytes sent and received on this socket.  The KeepSessionLog property must be set to _TRUE_ for logging to occur.</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>socket_keep_session_log.asp</url>
+                    <text>Demonstrates KeepSessionLog and SessionLog</text>
+                </link>
+            </links2>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SessionLogEncoding" axId="154">
+            <gType>string</gType>
+            <descrip>Controls how the data is encoded in the SessionLog.  Possible values are "esc" and "hex".  The default value is "esc".
+&lt;p&gt;
+When set to "hex", the bytes are encoded as a hexidecimalized string.
+The "esc" encoding is a C-string like encoding, and is more compact than hex if most of the data to be logged is text.  Printable us-ascii chars are unmodified.  Common "C" control chars are represented as "\r", "\n", "\t", etc.  Non-printable and byte values greater than 0x80 are escaped using a backslash and hex encoding: \xHH.   Certain printable chars are backslashed: SPACE, double-quote, single-quote, etc.</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>socket_keep_session_log.asp</url>
+                    <text>Demonstrates KeepSessionLog and SessionLog</text>
+                </link>
+            </links2>
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoRcvBuf" axId="155">
+            <gType>int</gType>
+            <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 0, which indicates that the receive buffer size socket option should not be explicitly set (i.e. the system default value, which may vary from system to system, should be used).   
+&lt;p&gt;
+This property can be changed if download performance seems slow.  It is recommended to be a multiple of 4096.  To see the current system's default receive buffer size, examine the LastErrorText property after calling any method that establishes a connection.  It should be reported under the heading "SO_RCVBUF".  To boost performance, try setting it equal to 2, 3, or 4 times the default value.</descrip>
+            <links>
+                <link>
+                    <text>More Information about TCP performance and Buffer Sizes</text>
+                    <url>http://www.cknotes.com/?p=446</url>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>More Information about TCP performance and Buffer Sizes</text>
+                    <url>http://www.cknotes.com/?p=446</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoReuseAddr" axId="156">
+            <gType>bool</gType>
+            <descrip>Sets the SO_REUSEADDR socket option for a socket that will bind to a port and listen for incoming connections.  The default value is _TRUE_, meaning that the SO_REUSEADDR socket option is set.  If the socket option must be unset, set this property equal to _FALSE_ prior to calling BindAndListen or InitSslServer.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoSndBuf" axId="157">
+            <gType>int</gType>
+            <descrip>Sets the send buffer size socket option.   Normally, this property should be left unchanged.  The default value is 0, which indicates that the send buffer size socket option should not be explicitly set (i.e. the system default value, which may vary from system to system, should be used).   
+&lt;p&gt;
+This property can be changed if upload performance seems slow.  It is recommended to be a multiple of 4096.  To see the current system's default send buffer size, examine the LastErrorText property after calling any method that establishes a connection.  It should be reported under the heading "SO_SNDBUF".  To boost performance, try setting it equal to 2, 3, or 4 times the default value.</descrip>
+            <links>
+                <link>
+                    <text>More Information about TCP performance and Buffer Sizes</text>
+                    <url>http://www.cknotes.com/?p=446</url>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>More Information about TCP performance and Buffer Sizes</text>
+                    <url>http://www.cknotes.com/?p=446</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksHostname" axId="158">
+            <gType>string</gType>
+            <descrip>The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation).  This property is only used if the SocksVersion property is set to 4 or 5).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksPassword" axId="159">
+            <gType>string</gType>
+            <descrip>The SOCKS5 password (if required).  The SOCKS4 protocol does not include the use of a password, so this does not apply to SOCKS4.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksPort" axId="160">
+            <gType>int</gType>
+            <descrip>The SOCKS4/SOCKS5 proxy port.  The default value is 1080. 
+This property only applies if a SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksUsername" axId="161">
+            <gType>string</gType>
+            <descrip>The SOCKS4/SOCKS5 proxy username.  This property is only used if the SocksVersion property is set to 4 or 5).</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksVersion" axId="162">
+            <gType>int</gType>
+            <descrip>SocksVersion
+May be set to one of the following integer values:
+&lt;p&gt;
+&lt;b&gt;0&lt;/b&gt; - No SOCKS proxy is used.  This is the default.&lt;br&gt;
+&lt;b&gt;4&lt;/b&gt; - Connect via a SOCKS4 proxy.&lt;br&gt;
+&lt;b&gt;5&lt;/b&gt; - Connect via a SOCKS5 proxy.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Ssl" axId="163">
+            <gType>bool</gType>
+            <descrip>Set this property to _TRUE_ if the socket requires an SSL connection.  The default value is _FALSE_.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SslAllowedCiphers" axId="234" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections.  The default (empty string) indicates that all implemented ciphers are possible.  The TLS ciphers supported in Chilkat v9.5.0.55 and later are:
+&lt;pre&gt;
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+TLS_RSA_WITH_AES_256_CBC_SHA256
+TLS_RSA_WITH_AES_256_GCM_SHA384
+TLS_RSA_WITH_AES_256_CBC_SHA
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+TLS_RSA_WITH_AES_128_CBC_SHA256
+TLS_RSA_WITH_AES_128_GCM_SHA256
+TLS_RSA_WITH_AES_128_CBC_SHA
+TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_RSA_WITH_3DES_EDE_CBC_SHA
+TLS_ECDHE_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_SHA
+TLS_RSA_WITH_RC4_128_MD5
+TLS_DHE_RSA_WITH_DES_CBC_SHA
+TLS_RSA_WITH_DES_CBC_SHA
+&lt;/pre&gt;
+To restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384".   The order should be in terms of preference, with the preferred algorithms listed first.  (Note that the client cannot specifically choose the algorithm is picked because it is the server that chooses.  The client simply provides the server with a list from which to choose.)
+&lt;p&gt;
+The property can also disallow connections with servers having certificates with RSA keys less than a certain size.  By default, server certificates having RSA keys of 512 bits or greater are allowed.  Add the keyword "rsa1024" to disallow connections with servers having keys smaller than 1024 bits.  Add the keyword "rsa2048"  to disallow connections with servers having keys smaller than 2048 bits.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; Prior to Chilkat v9.5.0.55, it was not possible to explicitly list allowed cipher suites.  The deprecated means for indicating allowed ciphers was both incomplete  and unprecise.  For example, the following keywords could be listed to allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4".    These keywords will still be recognized, but programs should be updated to explicitly list the allowed ciphers.&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;secure-renegotiation:&lt;/b&gt; Starting in Chilkat v9.5.0.55, the keyword "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC 5746).&lt;/p&gt;
+&lt;p&gt;
+&lt;b&gt;best-practices:&lt;/b&gt; Starting in Chilkat v9.5.0.55, this  property may be set to the single keyword "best-practices".  This will allow ciphers based on the current best practices.  As new versions of Chilkat are released, the best practices may change.  Changes will be noted here.  The current best practices are:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the server uses an RSA key, it must be 1024 bits or greater.&lt;/li&gt;
+&lt;li&gt;All renegotations must be secure renegotiations.&lt;/li&gt;
+&lt;li&gt;All ciphers using RC4, DES, or 3DES are disallowed.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+&lt;b&gt;Example:&lt;/b&gt; The following string would restrict to 2 specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024, secure-renegotiation"&lt;/p&gt;</descrip>
+            <iversion>9.5.0.48</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="SslProtocol" axId="164" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Selects the secure protocol to be used for secure (SSL/TLS) connections.  Possible values are:
+&lt;blockquote&gt;
+default&lt;br /&gt;
+TLS 1.2&lt;br /&gt;
+TLS 1.1&lt;br /&gt;
+TLS 1.0&lt;br /&gt;
+SSL 3.0&lt;br /&gt;
+TLS 1.2 or higher&lt;br /&gt;
+TLS 1.1 or higher&lt;br /&gt;
+TLS 1.0 or higher&lt;br /&gt;
+&lt;/blockquote&gt;
+The default value is "default" which will choose the, which allows for the protocol to be selected dynamically at runtime based on the requirements of the server.  Choosing an exact protocol will cause the connection to fail unless that exact protocol is negotiated.  It is better to choose "X or higher" than an exact protocol.   The "default" is effectively "SSL 3.0 or higher".</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="StringCharset" axId="165" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>A charset such as "utf-8", "windows-1252", "Shift_JIS", "iso-8859-1", etc.  Methods for sending and receiving strings will use this charset as the encoding.  Strings sent on the socket are first converted (if necessary) to this encoding.  When reading, it is assumed that the bytes received are converted FROM this charset if necessary.  This ONLY APPLIES TO THE SendString and ReceiveString methods.  The default value is "ansi".</descrip>
+            <links>
+                <link>
+                    <text>Chilkat Socket Programming: Important "Must Know" Concepts</text>
+                    <url>http://www.cknotes.com/?p=302</url>
+                </link>
+            </links>
+            <links2>
+                <link linkType="external">
+                    <text>Chilkat Socket Programming: Important "Must Know" Concepts</text>
+                    <url>http://www.cknotes.com/?p=302</url>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="TcpNoDelay" axId="166" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Controls whether the TCP_NODELAY socket option is used for the underlying TCP/IP socket.  The default value is _FALSE_.  Setting the value to _TRUE_ disables the Nagle algorithm and allows for better performance when small amounts of data are sent on the socket connection.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="TlsCipherSuite" read="1" ax="1" cpp="1" dn="1" axId="242">
+            <gType>string</gType>
+            <descrip>Contains the current or last negotiated TLS cipher suite.  If no TLS connection has yet to be established, or if a connection as attempted and failed, then this will be empty.  A sample cipher suite string looks like this:  TLS_DHE_RSA_WITH_AES_256_CBC_SHA256.</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="TlsPinSet" read="1" write="1" ax="1" cpp="1" dn="1" axId="259">
+            <gType>string</gType>
+            <descrip>Specifies a set of pins for Public Key Pinning for TLS connections.  This property lists the expected SPKI fingerprints for the server certificates.  If the server's certificate (sent during the TLS handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the connection fails. The format of this string property is as follows:
+&lt;pre&gt;
+hash_algorithm, encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
+&lt;/pre&gt;
+For example, the following string specifies a single sha256 base64-encoded SPKI fingerprint:
+&lt;pre&gt;
+"sha256, base64, lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
+&lt;/pre&gt;
+This example specifies two SPKI fingerprints:
+&lt;pre&gt;
+"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=, 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
+&lt;/pre&gt;
+Any of the following hash algorithms are allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or ripemd320.
+&lt;p&gt;
+The following encodings are allowed: base64, hex, and any of the encodings indicated in the link below.</descrip>
+            <iversion>9.5.0.55</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Encodings Supported by Chilkat</text>
+                </link>
+            </links2>
+            <args2 />
+        </property>
+        <property name="TlsVersion" read="1" ax="1" cpp="1" dn="1" axId="241">
+            <gType>string</gType>
+            <descrip>Contains the current or last negotiated TLS protocol version.  If no TLS connection has yet to be established, or if a connection as attempted and failed, then this will be empty.  Possible values are "SSL 3.0", "TLS 1.0", "TLS 1.1", and "TLS 1.2".</descrip>
+            <iversion>9.5.0.49</iversion>
+            <args2 />
+            <links2 />
+        </property>
+        <property cpp="1" dn="1" ax="1" read="1" write="1" name="UserData" axId="167">
+            <gType>string</gType>
+            <descrip>Provides a way to store text data with the socket object.  The UserData is purely for convenience and is not involved in the socket communications in any way.  An application might use this property to keep extra information associated with the socket.</descrip>
+            <args2 />
+            <links2 />
+        </property>
+        <property name="ListenPort" axId="261" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <iversion>9.5.0.59</iversion>
+            <descrip>The BindAndListen method will find a random unused port to listen on if you bind to port 0.   This chosen listen port is available via this property.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>socket_listen_random_unused_port.asp</url>
+                    <text>Bind and Listen on a Randomly Selected Unused Port</text>
+                </link>
+            </links2>
+        </property>
+    </properties>
+    <methods>
+        <method name="AcceptNextConnection" axId="168" ax="1" cpp="1" dn="1" events="1">
+            <gType>Socket</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <descrip>Blocking call to accept the next incoming connection on the socket.  ARG1 specifies the maximum time to wait (in milliseconds).  Set this to 0 to wait indefinitely.  If successful, a new socket object is returned.
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; If accepting an SSL/TLS connection, the SSL handshake is part of the connection establishment process.  This involves a few back-and-forth messages between the client and server to establish algorithms and a shared key to create the secure channel.  The sending and receiving of these messages are governed by the &lt;b&gt;MaxReadIdleMs and MaxSendIdleMs&lt;/b&gt; properties.  If these properties are set to 0 (and this is the default unless changed by your application), then the AcceptNextConnection can hang indefinitely during the SSL handshake process.  Make sure these properties are set to appropriate values before calling this method.</descrip>
+            <args2>
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AddSslAcceptableClientCaDn" axId="169" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>certAuthDN</argName>
+                    <objcName>certAuthDN</objcName>
+                </arg>
+            </args>
+            <descrip>If this object is a server-side socket accepting SSL/TLS connections, and wishes to require a client-side certificate for authentication, then it should make one or more calls to this method to identify the CA's it will accept for client-side certificates.
+&lt;p&gt;
+If no CA DN's are added by this method, then client certificates from any root CA are accepted.
+&lt;p&gt;
+&lt;b&gt;Important: If calling this method, it must be called before calling InitSslServer.&lt;/b&gt;</descrip>
+            <args2>
+                <arg name="certAuthDN" type="string" objcName="certAuthDN" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>tls_accept_client_cert_authentication.asp</url>
+                    <text>Accept TLS Connection with Client Authentication</text>
+                </link>
+            </links2>
+        </method>
+        <method name="AsyncAcceptAbort" axId="170" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>void</gType>
+            <args />
+            <descrip>Call this to abort an asynchronous socket connect that is running in a background thread.  Asynchronous connects are initiated by calling AsyncAcceptStart.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncAcceptSocket" axId="171" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>Socket</gType>
+            <args />
+            <descrip>Returns the socket object for the connection accepted asynchronously in a background thread (via AsyncAcceptStart).  The connected socket can only be retrieved once.  A subsequent call to AsyncAcceptSocket will return a NULL reference until another connection is accepted asynchronously.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncAcceptStart" axId="172" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <descrip>Initiates a background thread to wait for and accept the next incoming TCP connection.  The method will fail if an asynchronous operation is already in progress.  The timeout (in milliseconds) is passed in ARG1.  To wait indefinitely, set ARG1 to 0.  Asynchronous accept operations can be aborted by calling AsyncAcceptAbort.  When the async accept operation completes, the AsyncAcceptFinished property will become _TRUE_.  If the accept was successful, the AsyncAcceptSuccess property is set to _TRUE_ and the connected socket can be retrieved via the AsyncAcceptSocket method.  A debug log is available in the AsyncAcceptLog property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2>
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AsyncConnectAbort" axId="173" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>void</gType>
+            <args />
+            <descrip>Aborts an asynchronous connect operation running in a background thread (started by calling AsyncConnectStart).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncConnectStart" axId="174" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>hostname</argName>
+                    <objcName>hostname</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>port</argName>
+                    <objcName>port</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ssl</argName>
+                    <objcName>ssl</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <descrip>Initiates a background thread to establish a TCP connection with a remote host:port.  The method will fail if an asynchronous operation is already in progress, or if the timeout expired.  The timeout (in milliseconds) is passed in ARG4.  To wait indefinitely, set ARG4 to 0.    Set ARG3 = _TRUE_ to esablish an SSL connection.  Asynchronous connect operations can be aborted by calling AsyncConnectAbort.  When the async connect operation completes, the AsyncConnectFinished property will become _TRUE_.  If the connect was successful, the AsyncConnectSuccess property is set to _TRUE_.  A debug log is available in the AsyncConnectLog property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2>
+                <arg name="hostname" type="string" objcName="hostname" />
+                <arg name="port" type="int" objcName="port" />
+                <arg name="ssl" type="bool" objcName="ssl" />
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AsyncDnsAbort" axId="175" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>void</gType>
+            <args />
+            <descrip>Aborts an asynchronous DNS lookup running in a background thread (started via the AsyncDnsStart method).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncDnsStart" axId="176" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>hostname</argName>
+                    <objcName>hostname</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <descrip>Initiates a background thread to do a DNS query (i.e. to resolve a hostname to an IP address).  The method will fail if an asynchronous operation is already in progress, or if the timeout expired.  The timeout (in milliseconds) is passed in ARG2.  To wait indefinitely, set ARG2 to 0.   Asynchronous DNS lookups can be aborted by calling AsyncDnsAbort.  When the async DNS operation completes, the AsyncDnsFinished property will become _TRUE_.  If the DNS query was successful, the AsyncDnsSuccess property is set to _TRUE_.  A debug log is available in the AsyncDnsLog property.  Finally, the DNS query result (i.e. IP address) is available in nnn.nnn.nnn.nnn string form in the AsyncDnsResult property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2>
+                <arg name="hostname" type="string" objcName="hostname" />
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AsyncReceiveAbort" axId="177" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>void</gType>
+            <args />
+            <descrip>Aborts an asynchronous receive running in a background thread (started via one of the AsyncReceive* methods).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncReceiveBytes" axId="178" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Initiates a background thread to receive bytes on an already-connected socket (ssl or non-ssl).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncReceiveBytesN" axId="179" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>unsigned long</dnType>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Initiates a background thread to receive exactly ARG1 bytes on an already-connected socket (ssl or non-ssl).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2>
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AsyncReceiveString" axId="180" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Initiates a background thread to receive text on an already-connected socket (ssl or non-ssl).   The component interprets the received bytes according to the charset specified in the StringCharset property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncReceiveToCRLF" axId="181" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Initiates a background thread to receive text on an already-connected socket (ssl or non-ssl).  The asynchronous receive does not complete until a CRLF is received.   The component interprets the received bytes according to the charset specified in the StringCharset property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncReceiveUntilMatch" axId="182" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>matchStr</argName>
+                    <objcName>matchStr</objcName>
+                </arg>
+            </args>
+            <descrip>Initiates a background thread to receive text on an already-connected socket (ssl or non-ssl).  The asynchronous receive does not complete until the exact string specified by ARG1 is received.   The component interprets the received bytes according to the charset specified in the StringCharset property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2>
+                <arg name="matchStr" type="string" objcName="matchStr" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AsyncSendAbort" axId="183" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" noxojo="1">
+            <gType>void</gType>
+            <args />
+            <descrip>Aborts an asynchronous send running in a background thread (started via one of the AsyncSend* methods).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="AsyncSendByteData" axId="184" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>Initiates a background thread to send bytes on an already-connected socket (SSL/TLS or unencrypted).  This method is redundant and identical to SendBytes.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AsyncSendBytes" axId="185" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>byteData</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>Initiates a background thread to send bytes on an already-connected socket (ssl or non-ssl).
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2>
+                <arg name="byteData" type="bytes" objcName="data" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="AsyncSendString" axId="186" ax="1" cpp="1" dn="1" deprecated="1" noWinRT="1" status="1" noxojo="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>stringToSend</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Initiates a background thread to send text on an already-connected socket (ssl or non-ssl).  Before sending, the ARG1 is first converted (if necessary) to the charset specified by the StringCharset property.
+&lt;p&gt;
+This  functionality is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.  Applications should use the new model, which is identified by methods having names ending with "Async" and return a task object.</descrip>
+            <args2>
+                <arg name="stringToSend" type="string" objcName="str" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="BindAndListen" axId="187" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>port</argName>
+                    <objcName>port</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>backLog</argName>
+                    <objcName>backlog</objcName>
+                </arg>
+            </args>
+            <descrip>Binds a TCP socket to a port and configures it to listen for incoming connections.  The size of the backlog is passed in ARG2.  The ARG2 is necessary when multiple connections arrive at the same time, or close enough in time such that they cannot be serviced immediately.  (A typical value to use for ARG2 is 5.) This method should be called once prior to receiving incoming connection requests via the AcceptNextConnection or AsyncAcceptStart methods.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt;This method will find a random unused port to listen on if you bind to port 0.  The chosen port is available via the read-only ListenPort property after this method returns successful.
+&lt;p&gt;
+To bind and listen using IPv6, set the ListenIpv6 property = _TRUE_ prior to calling this method.
+&lt;p&gt;
+What is a reasonable value for ARG2?  The answer depends on how many simultaneous incoming connections could be expected, and how quickly your application can process an incoming connection and then return to accept the next connection.</descrip>
+            <args2>
+                <arg name="port" type="int" objcName="port" />
+                <arg name="backLog" type="int" objcName="backlog" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>socket_listen_random_unused_port.asp</url>
+                    <text>Bind and Listen on a Randomly Selected Unused Port</text>
+                </link>
+            </links2>
+        </method>
+        <method name="BuildHttpGetRequest" ax="1" cpp="1" dn="1" axId="230" outArgName="outStr">
+            <gType>string</gType>
+            <descrip>Convenience method for building a simple HTTP GET request from a URL.</descrip>
+            <args>
+                <arg>
+                    <argName>url</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>url</objcName>
+                </arg>
+                <arg>
+                    <argName>outStr</argName>
+                    <cppType>CkString &amp;</cppType>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.35</iversion>
+            <args2>
+                <arg name="url" type="string" objcName="url" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="CheckWriteable" axId="189" ax="1" cpp="1" dn="1" events="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <descrip>Determines if the socket is writeable.  Returns one of the following integer values:
+&lt;p&gt;
+1:  If the socket is connected and ready for writing.&lt;br&gt;
+0:  If a timeout occurred or if the application aborted the method during an event callback.&lt;br&gt;
+-1: The socket is not connected.
+&lt;p&gt;A ARG1 value of 0 indicates a poll.</descrip>
+            <args2>
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="ClearSessionLog" axId="190">
+            <gType>void</gType>
+            <args />
+            <descrip>Clears the contents of the SessionLog property.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="CloneSocket" axId="233" ax="1" cpp="1" dn="1">
+            <gType>Socket</gType>
+            <args />
+            <descrip>Creates a copy that shares the same underlying TCP (or SSL/TLS) connection.  This allows for simultaneous reading/writing by different threads on the socket.  When using asynchronous reading/writing, it is not necessary to clone the socket.  However, if separate background threads are making synchronous calls to read/write, then one thread may use the original socket, and the other should use a clone.</descrip>
+            <iversion>9.5.0.47</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/7150/socket-is-locked-internally-while-waiting-for-some-data-and-we-are-not-able-to-send-data-at-the-same-time-from-another-thread</url>
+                    <text>Simultaneous Reading/Writing a Socket from Different Threads</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method name="Close" axId="191" ax="1" cpp="1" dn="1" events="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <descrip>Cleanly terminates and closes a TCP, TLS, or SSH channel connection.  The ARG1 applies to SSL/TLS connections because there is a handshake that occurs during secure channel shutdown.</descrip>
+            <args2>
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="Connect" axId="192" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>hostname</argName>
+                    <objcName>hostname</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>port</argName>
+                    <objcName>port</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ssl</argName>
+                    <objcName>ssl</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <descrip>Establishes a secure SSL/TLS or a plain non-secure TCP connection with a remote host:port.  This is a blocking call.   The maximum wait time (in milliseconds) is passed in ARG4.  This is the amount of time the app is willing to wait for the TCP connection to be accepted.
+&lt;p&gt;
+To establish an SSL/TLS connection, set ARG3 = _TRUE_, otherwise set ARG3 = _FALSE_ for a normal TCP connection.  Note: The timeouts that apply to the internal SSL/TLS handshaking messages are the MaxReadIdleMs and MaxSendIdleMs properties.
+&lt;p&gt;
+Note: Connections do not automatically close because of inactivity.  A connection will remain open indefinitely even if there is no activity.
+&lt;p&gt;
+&lt;b&gt;Important: &lt;/b&gt; All TCP-based Internet communications, regardless of the protocol (such as HTTP, FTP, SSH, IMAP, POP3, SMTP, etc.), and regardless of SSL/TLS, begin with establishing a TCP connection to a remote host:port.  External security-related infrastructure such as software firewalls (Windows Firewall), hardware firewalls, anti-virus, at either source or destination (or both) can block the connection.  If the connection fails, make sure to check all potential external causes of blockage.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Chilkat Socket Programming: Important "Must Know" Concepts</text>
+                    <url>http://www.cknotes.com/?p=302</url>
+                </link>
+                <link linkType="example">
+                    <url>socket_connect_fail.asp</url>
+                    <text>Socket Connect Failure Cases</text>
+                </link>
+                <link linkType="external" async="1">
+                    <url>https://github.com/chilkatsoft/CSharp-Async-Sockets/blob/master/AsyncSockets/Form1.cs</url>
+                    <text>Chilkat C# Async Sockets Example on GitHub</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="hostname" type="string" objcName="hostname" />
+                <arg name="port" type="int" objcName="port" />
+                <arg name="ssl" type="bool" objcName="ssl" />
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="ConvertFromSsl" axId="193">
+            <gType>bool</gType>
+            <args />
+            <descrip>Closes the secure (TLS/SSL) channel leaving the socket in a connected state where data sent and received is unencrypted.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="ConvertToSsl" axId="194">
+            <gType>bool</gType>
+            <args />
+            <descrip>Converts a non-SSL/TLS connected socket to a secure channel using TLS/SSL.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="0" dn="0" ax="1" name="Dispose" axId="228">
+            <gType>void</gType>
+            <args />
+            <descrip />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="DnsCacheClear" ax="1" cpp="1" dn="1" axId="231">
+            <gType>void</gType>
+            <descrip>Clears the Chilkat-wide in-memory hostname-to-IP address DNS cache.   Chilkat automatically maintains this in-memory cache to prevent redundant DNS lookups.  If the TTL on the DNS A records being accessed are short and/or these DNS records change frequently, then this method can be called clear the internal cache.  Note: The DNS cache is used/shared among all Chilkat objects in a program, and clearing the cache affects all Chilkat objects.</descrip>
+            <args />
+            <iversion>9.5.0.38</iversion>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="DnsLookup" axId="195" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>hostname</argName>
+                    <objcName>hostname</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Performs a DNS query to resolve a hostname to an IP address.  The IP address is returned if successful.  The maximum time to wait (in milliseconds) is passed in ARG2.  To wait indefinitely, set ARG2 = 0.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>dnsLookup.asp</url>
+                    <text>DNS Lookup</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="hostname" type="string" objcName="hostname" />
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetMyCert" axId="196">
+            <gType>Cert</gType>
+            <args />
+            <descrip>Returns the digital certificate to be used for SSL connections. This method would only be called by an SSL server application.  The SSL certificate is initially specified by calling InitSslServer. &lt;p&gt;</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetReceivedClientCert" axId="197">
+            <gType>Cert</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+            </args>
+            <descrip>Returns the Nth client certificate received during an SSL/TLS handshake.  This method only applies to the server-side of an SSL/TLS connection.  The 1st client certificate is at index 0.  The NumReceivedClientCerts property indicates the number of client certificates received during the SSL/TLS connection establishment.   
+&lt;p&gt;
+Client certificates are customarily only sent when the server demands client-side authentication, as in 2-way SSL/TLS.   This method provides the ability for the server to access and examine the client-side certs immediately after a connection is established.  (Of course, if the client-side certs are inadequate for authentication, then the application can choose to immediately disconnect.)</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetSslAcceptableClientCaDn" axId="198" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>index</argName>
+                    <objcName>index</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>If connected as an SSL/TLS client to an SSL/TLS server where the server requires a client-side certificate for authentication, then the NumSslAcceptableClientCAs property contains the number of acceptable certificate authorities sent by the server during connection establishment handshake.  This method may be called to get the Distinguished Name (DN) of each acceptable CA.  The ARG1 should range from 0 to NumSslAcceptableClientCAs - 1.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" name="GetSslServerCert" axId="199">
+            <gType>Cert</gType>
+            <args />
+            <descrip>Returns the SSL server's digital certificate.  This method would only be called by the client-side of an SSL connection.  It returns the certificate of the remote SSL server for the current SSL connection.   If the socket is not connected, or is not connected via SSL, then a NULL reference is returned.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>tls_spki_fingerprint.asp</url>
+                    <text>Get TLS Server's SPKI Fingerprint</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="InitSslServer" axId="200">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Cert</axType>
+                    <dnType>Cert</dnType>
+                    <cppType>CkCert &amp;</cppType>
+                    <argName>cert</argName>
+                    <objcName>cert</objcName>
+                </arg>
+            </args>
+            <descrip>SSL Server applications should call this method with the SSL server certificate to be used for SSL connections.   It should be called prior to accepting connections.  This method has an intended side-effect: If not already connected, then the Ssl property is set to _TRUE_.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>SSL Server Example</text>
+                    <url>ssl_server.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="cert" type="Cert" objcName="cert" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="IsUnlocked" axId="201">
+            <gType>bool</gType>
+            <args />
+            <descrip>Returns _TRUE_ if the component is unlocked.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="LoadTaskResult" ax="1" cpp="1" dn="1" noWinRT="1" status="1" axId="256">
+            <gType>bool</gType>
+            <descrip>Loads the socket object from a completed asynchronous task.</descrip>
+            <args>
+                <arg>
+                    <argName>task</argName>
+                    <cppType>CkTask &amp;</cppType>
+                    <dnType>Task</dnType>
+                    <axType>Task</axType>
+                    <objcName>task</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.52</iversion>
+            <args2>
+                <arg name="task" type="Task" objcName="task" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="PollDataAvailable" axId="202" ax="1" cpp="1" dn="1" events="1">
+            <gType>bool</gType>
+            <args />
+            <descrip>Check to see if data is available for reading on the socket.  Returns _TRUE_ if data is waiting and _FALSE_ if no data is waiting to be read.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="ReceiveByte" ax="1" cpp="1" dn="1" events="1" status="1" axId="248">
+            <gType>bool</gType>
+            <descrip>Receives a single byte.  The received byte will be available in the ReceivedInt property.  If ARG1 is _TRUE_, then a value from 0 to 255 is returned in ReceivedInt.  If ARG1 is _FALSE_, then a value from -128 to +127 is returned.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>bUnsigned</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>bUnsigned</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="bUnsigned" type="bool" objcName="bUnsigned" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReceiveBytes" axId="203" outArgName="outData" ax="1" cpp="1" dn="1" events="1">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Receives as much data as is immediately available on a connected TCP socket.  If no data is immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Chilkat Socket Programming: Important "Must Know" Concepts</text>
+                    <url>http://www.cknotes.com/?p=302</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="ReceiveBytesENC" axId="204" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodingAlg</argName>
+                    <objcName>encodingAlg</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>The same as ReceiveBytes, except the bytes are returned in encoded string form according to ARG1.  The ARG1 can be "Base64", "modBase64", "Base32", "UU", "QP" (for quoted-printable), "URL" (for url-encoding), "Hex", "Q", "B", "url_oath", "url_rfc1738", "url_rfc2396", or "url_rfc3986".</descrip>
+            <args2>
+                <arg name="encodingAlg" type="string" objcName="encodingAlg" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReceiveBytesN" axId="205" outArgName="outData" ax="1" cpp="1" dn="1" events="1">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>unsigned long</dnType>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outData</argName>
+                    <objcName>outData</objcName>
+                </arg>
+            </args>
+            <descrip>Reads exactly ARG1 bytes from a connected SSL or non-SSL socket.  This method blocks until ARG1 bytes are read or the read times out.  The timeout is specified by the MaxReadIdleMs property (in milliseconds).</descrip>
+            <args2>
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+            <links2>
+                <link linkType="external" async="1">
+                    <url>https://github.com/chilkatsoft/CSharp-Async-Sockets/blob/master/AsyncSockets/Form1.cs</url>
+                    <text>Chilkat C# Async Sockets Example on GitHub</text>
+                </link>
+            </links2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="ReceiveBytesToFile" axId="206">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>appendFilename</argName>
+                    <objcName>appendPath</objcName>
+                </arg>
+            </args>
+            <descrip>Receives as much data as is immediately available on a connected TCP socket.  If no data is immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive.  
+&lt;p&gt;
+The received data is appended to the file specified by ARG1.</descrip>
+            <args2>
+                <arg name="appendFilename" type="string" objcName="appendPath" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReceiveCount" axId="207" ax="1" cpp="1" dn="1" events="1">
+            <gType>int</gType>
+            <args />
+            <descrip>Receives a 4-byte signed integer and returns the value received.  Returns -1 on error.</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method name="ReceiveInt16" ax="1" cpp="1" dn="1" events="1" status="1" axId="249">
+            <gType>bool</gType>
+            <descrip>Receives a 16-bit integer (2 bytes).  The received integer will be available in the ReceivedInt property.  Set ARG1 equal to _TRUE_ if the incoming 16-bit integer is in big-endian byte order.  Otherwise set ARG1 equal to _FALSE_ for receving a little-endian integer.  If ARG2 is _TRUE_, the ReceivedInt will range from 0 to 65,535.  If ARG2 is _FALSE_, the ReceivedInt will range from -32,768 through 32,767.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>bigEndian</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>bigEndian</objcName>
+                </arg>
+                <arg>
+                    <argName>bUnsigned</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>bUnsigned</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="bigEndian" type="bool" objcName="bigEndian" />
+                <arg name="bUnsigned" type="bool" objcName="bUnsigned" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReceiveInt32" ax="1" cpp="1" dn="1" events="1" status="1" axId="250">
+            <gType>bool</gType>
+            <descrip>Receives a 32-bit integer (4 bytes).  The received integer will be available in the ReceivedInt property.  Set ARG1 equal to _TRUE_ if the incoming 32-bit integer is in big-endian byte order.  Otherwise set ARG1 equal to _FALSE_ for receving a little-endian integer.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>bigEndian</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>bigEndian</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>socket_sshTunnel.asp</url>
+                    <text>TCP Socket through SSH Tunnel (Port Forwarding)</text>
+                </link>
+                <link linkType="example">
+                    <url>socket_nist_time_server.asp</url>
+                    <text>Get Current Date/Time from NIST Time Server</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="bigEndian" type="bool" objcName="bigEndian" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="ReceiveNBytesENC" axId="208" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>unsigned long</dnType>
+                    <cppType>unsigned long</cppType>
+                    <argName>numBytes</argName>
+                    <objcName>numBytes</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodingAlg</argName>
+                    <objcName>encodingAlg</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>The same as ReceiveBytesN, except the bytes are returned in encoded string form using the encoding specified by ARG1.  The ARG1 can be "Base64", "modBase64", "Base32", "UU", "QP" (for quoted-printable), "URL" (for url-encoding), "Hex", "Q", "B", "url_oath", "url_rfc1738", "url_rfc2396", or "url_rfc3986".</descrip>
+            <args2>
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+                <arg name="encodingAlg" type="string" objcName="encodingAlg" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReceiveString" axId="209" outArgName="outStr" ax="1" cpp="1" dn="1" events="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Receives as much data as is immediately available on a TCP/IP or SSL socket. If no data is immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive.  The incoming bytes are interpreted according to the StringCharset property and returned as a string.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Chilkat Socket Programming: Important "Must Know" Concepts</text>
+                    <url>http://www.cknotes.com/?p=302</url>
+                </link>
+                <link linkType="example">
+                    <text>Example Code: Receiving a String</text>
+                    <url>socket_receiveString.asp</url>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="ReceiveStringMaxN" axId="210" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxByteCount</argName>
+                    <objcName>maxBytes</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Same as ReceiveString, but limits the amount of data returned to a maximum of ARG1 bytes.&lt;p&gt;
+(Receives as much data as is immediately available on the TCP/IP or SSL socket. If no data is immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive.  The incoming bytes are interpreted according to the StringCharset property and returned as a string.)</descrip>
+            <args2>
+                <arg name="maxByteCount" type="int" objcName="maxBytes" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="ReceiveStringUntilByte" axId="211" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>lookForByte</argName>
+                    <objcName>byteValue</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Receives bytes on a connected SSL or non-SSL socket until a specific 1-byte value is read.  Returns a string containing all the bytes up to but &lt;b&gt;excluding&lt;/b&gt; the ARG1.</descrip>
+            <args2>
+                <arg name="lookForByte" type="int" objcName="byteValue" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReceiveToCRLF" axId="212" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Reads text from the connected TCP/IP or SSL socket until a CRLF is received.  Returns the text up to and including the CRLF.  The incoming bytes are interpreted according to the charset specified by the StringCharset property.</descrip>
+            <links2>
+                <link linkType="example">
+                    <url>socket_receiveToCrlf.asp</url>
+                    <text>Receive Text until CRLF</text>
+                </link>
+                <link linkType="example">
+                    <url>socket_tlsSshTunnel.asp</url>
+                    <text>TLS Connection within SSH Tunnel (Port Forwarding)</text>
+                </link>
+            </links2>
+            <args2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" name="ReceiveUntilByte" axId="213" outArgName="outBytes">
+            <gType>bytes</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>lookForByte</argName>
+                    <objcName>byteValue</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>outBytes</argName>
+                    <objcName>outBytes</objcName>
+                </arg>
+            </args>
+            <descrip>Receives bytes on the TCP/IP or SSL socket until a specific 1-byte value is read.  Returns all the bytes up to and including the ARG1.</descrip>
+            <args2>
+                <arg name="lookForByte" type="int" objcName="byteValue" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="ReceiveUntilMatch" axId="214" outArgName="outStr" ax="1" cpp="1" dn="1" events="1">
+            <gType>string</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>matchStr</argName>
+                    <objcName>matchStr</objcName>
+                </arg>
+                <arg>
+                    <cppType>CkString &amp;</cppType>
+                    <argName>outStr</argName>
+                    <objcName>outStr</objcName>
+                </arg>
+            </args>
+            <descrip>Reads text from the connected TCP/IP or SSL socket until a matching string (ARG1) is received.  Returns the text up to and including the matching string.  As an example, to one might read the header of an HTTP request or a MIME message by reading up to the first double CRLF ("\r\n\r\n").  The incoming bytes are interpreted according to the charset specified by the StringCharset property.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>SSL Client Example</text>
+                    <url>ssl_client.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>socket_receiveToCrlf.asp</url>
+                    <text>Receive Text until CRLF</text>
+                </link>
+                <link linkType="external" async="1">
+                    <url>https://github.com/chilkatsoft/CSharp-Async-Sockets/blob/master/AsyncSockets/Form1.cs</url>
+                    <text>Chilkat C# Async Sockets Example on GitHub</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="matchStr" type="string" objcName="matchStr" />
+            </args2>
+        </method>
+        <method name="SelectForReading" axId="215" ax="1" cpp="1" dn="1" events="1" noWinRT="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>timeoutMs</argName>
+                    <objcName>timeoutMs</objcName>
+                </arg>
+            </args>
+            <descrip>Wait for data to arrive on this socket, or any of the contained sockets if the caller is a "socket set".  
+(see the example at the link below for more detailed information)
+Waits a maximum 
+of ARG1 milliseconds.  If maxWaitMs = 0, then it is effectively a poll. 
+Returns the number of sockets with data available for reading.
+If no sockets have data available for reading, then a value of 0 is 
+returned.  A value of -1 indicates an error condition. 
+Note: when the remote peer (in this case the web server) disconnects, 
+the socket will appear as if it has data available.  A "ready" socket 
+is one where either data is available for reading or the socket has 
+become disconnected. 
+&lt;p&gt;
+If the peer closed the connection, it will not be discovered until an attempt is made to read the socket.  If the read fails, then the IsConnected property may be checked to see if the connection was closed.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Socket Select for Reading</text>
+                    <url>socket_select.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="timeoutMs" type="int" objcName="timeoutMs" />
+            </args2>
+        </method>
+        <method name="SelectForWriting" axId="216" ax="1" cpp="1" dn="1" events="1" noWinRT="1">
+            <gType>int</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>timeoutMs</argName>
+                    <objcName>timeoutMs</objcName>
+                </arg>
+            </args>
+            <descrip>Waits until it is known that data can be written to one or more sockets without it blocking.
+&lt;p&gt;
+Socket writes are typically buffered by the operating system.  When an application writes
+data to a socket, the operating system appends it to the socket's outgoing send buffers
+and returns immediately.  However, if the OS send buffers become filled up (because
+the sender is sending data faster than the remote receiver can read it), then a socket write
+can block (until outgoing send buffer space becomes available). 
+&lt;p&gt;
+Waits a maximum 
+of ARG1 milliseconds.  If maxWaitMs = 0, then it is effectively a poll. 
+Returns the number of sockets such that data can be written without blocking.
+A value of -1 indicates an error condition.</descrip>
+            <args2>
+                <arg name="timeoutMs" type="int" objcName="timeoutMs" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SendByte" axId="253" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sends a single byte.  The integer must have a value from 0 to 255.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>value</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="int" objcName="value" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SendBytes" axId="217" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>bytes</axType>
+                    <dnType>bytes</dnType>
+                    <cppType>CkByteData &amp;</cppType>
+                    <argName>data</argName>
+                    <objcName>data</objcName>
+                </arg>
+            </args>
+            <descrip>Sends bytes over a connected SSL or non-SSL socket.  If transmission halts for more than MaxSendIdleMs milliseconds, the send is aborted.  This is a blocking (synchronous) method.  It returns only after the bytes have been sent.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>Chilkat Socket Programming: Important "Must Know" Concepts</text>
+                    <url>http://www.cknotes.com/?p=302</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="data" type="bytes" objcName="data" />
+            </args2>
+        </method>
+        <method name="SendBytesENC" axId="218" ax="1" cpp="1" dn="1" events="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodedBytes</argName>
+                    <objcName>encodedBytes</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>encodingAlg</argName>
+                    <objcName>encodingAlg</objcName>
+                </arg>
+            </args>
+            <descrip>The same as SendBytes, except the bytes are provided in encoded string form as specified by ARG2.   
+The ARG2 can be "Base64", "modBase64", "Base32", "Base58", "UU", "QP" (for quoted-printable), "URL" (for url-encoding), "Hex", "Q", "B", "url_oauth", "url_rfc1738", "url_rfc2396", and "url_rfc3986".</descrip>
+            <args2>
+                <arg name="encodedBytes" type="string" objcName="encodedBytes" />
+                <arg name="encodingAlg" type="string" objcName="encodingAlg" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" events="1" status="1" name="SendCount" axId="219">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>byteCount</argName>
+                    <objcName>byteCount</objcName>
+                </arg>
+            </args>
+            <descrip>Sends a 4-byte signed integer on the connection.  The receiver may call ReceiveCount to receive the integer.  The SendCount and ReceiveCount methods are handy for sending byte counts prior to sending data.  The sender would send a count followed by the data, and the receiver would receive the count first, and then knows how many data bytes it should expect to receive.</descrip>
+            <args2>
+                <arg name="byteCount" type="int" objcName="byteCount" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SendInt16" ax="1" cpp="1" dn="1" events="1" status="1" axId="252">
+            <gType>bool</gType>
+            <descrip>Sends a 16-bit integer (2 bytes).  Set ARG2 equal to _TRUE_ to send the integer in big-endian byte order (this is the standard network byte order).  Otherwise set ARG2 equal to _FALSE_ to send  in little-endian byte order.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>value</objcName>
+                </arg>
+                <arg>
+                    <argName>bigEndian</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>bigEndian</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="int" objcName="value" />
+                <arg name="bigEndian" type="bool" objcName="bigEndian" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SendInt32" ax="1" cpp="1" dn="1" events="1" status="1" axId="251">
+            <gType>bool</gType>
+            <descrip>Sends a 32-bit integer (4 bytes).  Set ARG2 equal to _TRUE_ to send the integer in big-endian byte order (this is the standard network byte order).  Otherwise set ARG2 equal to _FALSE_ to send  in little-endian byte order.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>value</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>value</objcName>
+                </arg>
+                <arg>
+                    <argName>bigEndian</argName>
+                    <cppType>bool</cppType>
+                    <dnType>bool</dnType>
+                    <axType>bool</axType>
+                    <objcName>bigEndian</objcName>
+                </arg>
+            </args>
+            <args2>
+                <arg name="value" type="int" objcName="value" />
+                <arg name="bigEndian" type="bool" objcName="bigEndian" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SendString" axId="220" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>stringToSend</argName>
+                    <objcName>str</objcName>
+                </arg>
+            </args>
+            <descrip>Sends a string over a connected SSL or non-SSL (TCP/IP)  socket. If transmission halts for more than MaxSendIdleMs milliseconds, the send is aborted.  The string is sent in the charset encoding specified by the StringCharset property.
+&lt;p&gt;
+This is a blocking (synchronous) method.  It returns after the string has been sent.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>SSL Client Example</text>
+                    <url>ssl_client.asp</url>
+                </link>
+                <link linkType="external" async="1">
+                    <url>https://github.com/chilkatsoft/CSharp-Async-Sockets/blob/master/AsyncSockets/Form1.cs</url>
+                    <text>Chilkat C# Async Sockets Example on GitHub</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="stringToSend" type="string" objcName="str" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetSslClientCert" axId="221">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Cert</axType>
+                    <dnType>Cert</dnType>
+                    <cppType>CkCert &amp;</cppType>
+                    <argName>cert</argName>
+                    <objcName>cert</objcName>
+                </arg>
+            </args>
+            <descrip>A client-side certificate for SSL/TLS connections is optional.  It should be used only if the server demands it.  This method allows the certificate to be specified using a certificate object.</descrip>
+            <args2>
+                <arg name="cert" type="Cert" objcName="cert" />
+            </args2>
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="SetSslClientCertPem" axId="222">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemDataOrFilename</argName>
+                    <objcName>pemDataOrPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pemPassword</argName>
+                    <objcName>pemPassword</objcName>
+                </arg>
+            </args>
+            <descrip>A client-side certificate for SSL/TLS connections is optional.  It should be used only if the server demands it.  This method allows the certificate to be specified using a PEM file.</descrip>
+            <links2>
+                <link linkType="external">
+                    <text>How to Create a PEM that Contains Certificates and a Private Key</text>
+                    <url>http://www.chilkatforum.com/questions/356/how-to-use-a-client-side-certificate-and-private-key-for-an-ssltls-connection</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="pemDataOrFilename" type="string" objcName="pemDataOrPath" />
+                <arg name="pemPassword" type="string" objcName="pemPassword" />
+            </args2>
+        </method>
+        <method name="SetSslClientCertPfx" axId="223" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxFilename</argName>
+                    <objcName>pfxPath</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>pfxPassword</argName>
+                    <objcName>pfxPassword</objcName>
+                </arg>
+            </args>
+            <descrip>A client-side certificate for SSL/TLS connections is optional.  It should be used only if the server demands it.  This method allows the certificate to be specified using a PFX file.</descrip>
+            <args2>
+                <arg name="pfxFilename" type="string" objcName="pfxPath" />
+                <arg name="pfxPassword" type="string" objcName="pfxPassword" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SleepMs" axId="224" ax="1" cpp="1" dn="1">
+            <gType>void</gType>
+            <args>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>millisec</argName>
+                    <objcName>millisec</objcName>
+                </arg>
+            </args>
+            <descrip>Convenience method to force the calling thread to sleep for a number of milliseconds.</descrip>
+            <args2>
+                <arg name="millisec" type="int" objcName="millisec" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SshAuthenticatePk" ax="1" cpp="1" dn="1" events="1" status="1" axId="246">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sshLogin</argName>
+                    <objcName>sshLogin</objcName>
+                </arg>
+                <arg>
+                    <axType>SshKey</axType>
+                    <dnType>SshKey</dnType>
+                    <cppType>CkSshKey &amp;</cppType>
+                    <argName>privateKey</argName>
+                    <objcName>privateKey</objcName>
+                </arg>
+            </args>
+            <descrip>Authenticates with the SSH server using public-key authentication.  The corresponding public key must have been installed on the SSH server for the ARG1.   Authentication will succeed if the matching ARG2 is provided.
+&lt;p&gt;
+Important: When reporting problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args2>
+                <arg name="sshLogin" type="string" objcName="sshLogin" />
+                <arg name="privateKey" type="SshKey" objcName="privateKey" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SshAuthenticatePw" ax="1" cpp="1" dn="1" events="1" status="1" axId="245">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sshLogin</argName>
+                    <objcName>sshLogin</objcName>
+                </arg>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>sshPassword</argName>
+                    <objcName>sshPassword</objcName>
+                </arg>
+            </args>
+            <descrip>Authenticates with the SSH server using a ARG1 and ARG2.   This method is only used for SSH tunneling.  The tunnel is established by calling SshOpenTunnel, then (if necessary) authenticated by calling SshAuthenticatePw or SshAuthenticatePk.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args2>
+                <arg name="sshLogin" type="string" objcName="sshLogin" />
+                <arg name="sshPassword" type="string" objcName="sshPassword" />
+            </args2>
+            <links2 />
+        </method>
+        <method name="SshCloseTunnel" ax="1" cpp="1" dn="1" events="1" status="1" axId="244">
+            <gType>bool</gType>
+            <descrip>Closes the SSH tunnel previously opened by SshOpenTunnel.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method name="SshOpenChannel" axId="254" ax="1" cpp="1" dn="1" events="1">
+            <gType>Socket</gType>
+            <descrip>Opens a new channel within an SSH tunnel.  Returns the socket that is connected to the destination host:port through the SSH tunnel via port forwarding.  If ARG3 is _TRUE_, the connection is TLS (i.e. TLS inside the SSH tunnel).  Returns the socket object that is the port-forwarded tunneled connection.  Any number of channels may be opened within a single SSH tunnel, and may be port-forwarded to different remote host:port endpoints.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>hostname</argName>
+                    <objcName>hostname</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>port</argName>
+                    <objcName>port</objcName>
+                </arg>
+                <arg>
+                    <axType>bool</axType>
+                    <dnType>bool</dnType>
+                    <cppType>bool</cppType>
+                    <argName>ssl</argName>
+                    <objcName>ssl</objcName>
+                </arg>
+                <arg>
+                    <axType>int</axType>
+                    <dnType>int</dnType>
+                    <cppType>int</cppType>
+                    <argName>maxWaitMs</argName>
+                    <objcName>maxWaitMs</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>socket_sshTunnel.asp</url>
+                    <text>TCP Socket through SSH Tunnel (Port Forwarding)</text>
+                </link>
+                <link linkType="example">
+                    <url>socket_tlsSshTunnel.asp</url>
+                    <text>TLS Connection within SSH Tunnel (Port Forwarding)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="hostname" type="string" objcName="hostname" />
+                <arg name="port" type="int" objcName="port" />
+                <arg name="ssl" type="bool" objcName="ssl" />
+                <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
+            </args2>
+        </method>
+        <method name="SshOpenTunnel" axId="243" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Connects to an SSH server and creates a tunnel for port forwarding.  The ARG1 is the hostname (or IP address) of the SSH server.  The ARG2 is typically 22, which is the standard SSH port number.
+&lt;p&gt;
+An SSH tunneling (port forwarding) session always begins by first calling SshOpenTunnel to connect to the SSH server, followed by calling either SshAuthenticatePw or SshAuthenticatePk to authenticate.  A  program would then call SshOpenChannel to connect to the destination server (via the SSH tunnel).  Any number of channels can be opened over the same SSH tunnel.</descrip>
+            <iversion>9.5.0.50</iversion>
+            <args>
+                <arg>
+                    <argName>sshHostname</argName>
+                    <cppType>const char *</cppType>
+                    <dnType>string</dnType>
+                    <axType>string</axType>
+                    <objcName>sshHostname</objcName>
+                </arg>
+                <arg>
+                    <argName>sshPort</argName>
+                    <cppType>int</cppType>
+                    <dnType>int</dnType>
+                    <axType>int</axType>
+                    <objcName>sshPort</objcName>
+                </arg>
+            </args>
+            <iversion>9.5.0.50</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>socket_sshTunnel.asp</url>
+                    <text>TCP Socket through SSH Tunnel (Port Forwarding)</text>
+                </link>
+                <link linkType="example">
+                    <url>socket_tlsSshTunnel.asp</url>
+                    <text>TLS Connection within SSH Tunnel (Port Forwarding)</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="sshHostname" type="string" objcName="sshHostname" />
+                <arg name="sshPort" type="int" objcName="sshPort" />
+            </args2>
+        </method>
+        <method cpp="1" dn="1" ax="1" name="StartTiming" axId="225">
+            <gType>void</gType>
+            <args />
+            <descrip>Used in combination with the ElapsedSeconds property, which will contain the number of seconds since the last call to this method. (The StartTiming method and ElapsedSeconds property is provided for convenience.)</descrip>
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="TakeSocket" axId="226">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>Socket</axType>
+                    <dnType>Socket</dnType>
+                    <cppType>CkSocket &amp;</cppType>
+                    <argName>sock</argName>
+                    <objcName>sock</objcName>
+                </arg>
+            </args>
+            <descrip>Takes ownership of the ARG1.   ARG1 is added to the internal set of connected sockets.
+The caller object is now effectively a "socket set", i.e. a collection of connected sockets.
+Method calls are routed to the internal sockets based on the value of the SelectorIndex property.
+For example, if SelectorIndex equals 2, then a call to SendBytes is actually a call to SendBytes
+on the 3rd socket in the set.  (Indexing begins at 0.)  Likewise, getting and setting properties
+are also routed to the contained socket based on SelectorIndex.  It is possible to wait on a  
+set of sockets for data to arrive on any of them by calling SelectForReading.  See the example link below.</descrip>
+            <links2>
+                <link linkType="example">
+                    <text>Socket Select for Reading</text>
+                    <url>socket_select.asp</url>
+                </link>
+            </links2>
+            <args2>
+                <arg name="sock" type="Socket" objcName="sock" />
+            </args2>
+        </method>
+        <method name="TlsRenegotiate" ax="1" cpp="1" dn="1" events="1" status="1" axId="258">
+            <gType>bool</gType>
+            <descrip>Initiates a renegotiation of the TLS security parameters.  This sends a ClientHello to re-do the TLS handshake to establish new TLS security params.</descrip>
+            <iversion>9.5.0.55</iversion>
+            <args />
+            <args2 />
+            <links2 />
+        </method>
+        <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="227">
+            <gType>bool</gType>
+            <args>
+                <arg>
+                    <axType>string</axType>
+                    <dnType>string</dnType>
+                    <cppType>const char *</cppType>
+                    <argName>unlockCode</argName>
+                    <objcName>code</objcName>
+                </arg>
+            </args>
+            <descrip>Unlocks the component allowing for the full functionality to be used.  An arbitrary string can be passed to initiate a fully-functional 30-day trial.</descrip>
+            <args2>
+                <arg name="unlockCode" type="string" objcName="code" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <text>Diagnosing UnlockComponent Problems</text>
+                    <url>http://www.cknotes.com/?p=168</url>
+                </link>
+                <link linkType="external">
+                    <text>UnlockComponent LastErrorText shows exact string passed to it.</text>
+                    <url>http://www.cknotes.com/?p=315</url>
+                </link>
+                <link linkType="external">
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <url>http://www.cknotes.com/?p=317</url>
+                </link>
+                <link linkType="external">
+                    <text>LastErrorText Standard Information</text>
+                    <url>http://www.cknotes.com/?p=316</url>
+                </link>
+            </links2>
+        </method>
+        <method name="UseSsh" ax="1" cpp="1" dn="1" status="1" axId="257">
+            <gType>bool</gType>
+            <descrip>Uses an existing SSH tunnel for the connection.  This is an alternative way of establishing a socket connection through an SSH tunnel. There are four ways of running a TCP or SSL/TLS connection through an SSH tunnel:
+&lt;ol&gt;&lt;li&gt;&lt;b&gt;UseSsh&lt;/b&gt;
+&lt;ol&gt;&lt;li&gt;Establish the SSH connection and authenticate using the Chilkat SSH object. &lt;/li&gt;
+&lt;li&gt;Call UseSsh to indicate that the connections should be made through the SSH tunnel.&lt;/li&gt;
+&lt;li&gt;Call the Connect method to establish the TCP or SSL/TLS connection with a destination host:port.  The connection is not direct, but will instead be routed through the SSH tunnel and then port-forwarded (from the SSH server) to the destination host:port.  (Had UseSsh not been called, the connection would be direct.)
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;SshOpenTunnel&lt;/b&gt;
+&lt;ol&gt;&lt;li&gt;Call the Socket object's SshOpenTunnel method to connect to an SSH server.&lt;/li&gt;
+&lt;li&gt;Call SshAuthenticatePw to authenticate with the SSH server.&lt;/li&gt;
+&lt;li&gt;Instead of calling Connect to connect with the destination host:port, the SshOpenChannel method is called to connect via port-forwarding through the SSH tunnel.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;SshTunnel object with dynamic port forwarding&lt;/b&gt;
+&lt;ol&gt;
+&lt;li&gt;The Chilkat SSH Tunnel object is utilized to run in a background thread.  It connects and authenticates with an SSH server, and then listens at a port chosen by the application, and behaves as a SOCKS5 proxy server.&lt;/li&gt;
+&lt;li&gt;The Socket object sets the SOCKS5 proxy host:port to localhost:_LT_port_GT_, &lt;/li&gt;
+&lt;li&gt;The Socket's Connect method is called to connect via the SSH Tunnel.  The connection is routed through the SSH tunnel via dynamic port forwarding.&lt;/li&gt;
+&lt;li&gt;Once the background SSH Tunnel thread is running, it can handle any number of incoming connections from the foreground thread, other threads, or even other programs that are local or remote.  Each incoming connection is routed via dynamic port forwarding to it's chosen destnation host:port on it's own logical SSH channel.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;b&gt;SshTunnel object with hard-coded port forwarding&lt;/b&gt;
+&lt;ol&gt;
+&lt;li&gt;The Chilkat SSH Tunnel object is utilized to run in a background thread.  It connects and authenticates with an SSH server, and then listens at a port chosen by the application.  It does not behave as a SOCKS5 proxy server, but instead has a hard-coded destination host:port.&lt;/li&gt;
+&lt;li&gt;The Socket's Connect method is called to connect to localhost:_LT_port_GT_.   The connection is automatically port-forwarded through the SSH tunnel to the hard-coded destination host:port.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+In all cases, the SSH tunnels can hold both unencrypted TCP connections and SSL/TLS connections.</descrip>
+            <iversion>9.5.0.55</iversion>
+            <args>
+                <arg>
+                    <argName>ssh</argName>
+                    <cppType>CkSsh &amp;</cppType>
+                    <dnType>Ssh</dnType>
+                    <axType>Ssh</axType>
+                    <objcName>ssh</objcName>
+                </arg>
+            </args>
+            <links2>
+                <link linkType="example">
+                    <url>socket_multiHopSsh.asp</url>
+                    <text>TCP or TLS over Multiple Hop SSH to Remote Server</text>
+                </link>
+            </links2>
+            <args2>
+                <arg name="ssh" type="Ssh" objcName="ssh" />
+            </args2>
+        </method>
+        <method name="ReceiveBd" axId="262" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Receives as much data as is immediately available on a connected TCP socket and appends the incoming data to ARG1.  If no data is immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.65</iversion>
+        </method>
+        <method name="ReceiveSb" axId="263" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Receives as much data as is immediately available on the connection. If no data is immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive.  The incoming bytes are interpreted according to the StringCharset property and appended to ARG1.</descrip>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.65</iversion>
+        </method>
+        <method name="SendBd" axId="264" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sends bytes from ARG1 over a connected SSL or non-SSL socket.  If transmission halts for more than MaxSendIdleMs milliseconds, the send is aborted.  This is a blocking (synchronous) method.  It returns only after the bytes have been sent.  
+&lt;p&gt;
+Set ARG2 and/or ARG3 to non-zero values to send a portion of the ARG1.   If ARG2 and ARG3 are both 0, then the entire ARG1 is sent.  If ARG2 is non-zero and ARG3 is zero, then the bytes starting at ARG2 until the end are sent.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+                <arg name="offset" type="unsigned long" objcName="offset" />
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.65</iversion>
+        </method>
+        <method name="SendSb" axId="265" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sends the contents of ARG1 over the connection. If transmission halts for more than MaxSendIdleMs milliseconds, the send is aborted.  The string is sent in the charset encoding specified by the StringCharset property.
+&lt;p&gt;
+This is a blocking (synchronous) method.  It returns after the string has been sent.</descrip>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.65</iversion>
+        </method>
+        <method name="ReceiveBdN" axId="266" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Reads exactly ARG1 bytes from the connection.  This method blocks until ARG1 bytes are read or the read times out.  The timeout is specified by the MaxReadIdleMs property (in milliseconds).</descrip>
+            <args2>
+                <arg name="numBytes" type="unsigned long" objcName="numBytes" />
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.65</iversion>
+        </method>
+    </methods>
+    <genericName>Socket</genericName>
+    <events>
+        <standard name="AbortCheck" />
+        <standard name="PercentDone" />
+        <standard name="ProgressInfo" />
+        <standard name="TaskCompleted" />
+    </events>
+    <description>TCP socket component with SSL capability.  Supports both asynchronous connect, accept, send, and read operations in all programming languages.  The ActiveX and .NET socket components also include heartbeat, completion, and other events when blocking methods are called.  DNS is supported in both synchronous and asynchronous modes.  Supports the ability to abort all operations: connect, accept, send, receive, DNS lookups, etc. prior to completion.</description>
+    <clsid>C3FC6EA1-3982-45AA-8CB8-B3BFC9DFDDC7</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidEvents>8DB781F8-8225-45D1-87F8-AE0828601F98</uuidEvents>
+    <uuidMidl>93FCA31B-08C3-4E72-836B-B31123F7C2CC</uuidMidl>
+    <nextAxId>267</nextAxId>
+</class>
