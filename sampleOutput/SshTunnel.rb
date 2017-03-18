@@ -1,0 +1,141 @@
+module Chilkat
+	class CkSshTunnel 
+		def get_AbortCurrent() end
+		def set_AbortCurrent(newval) end
+		def get_AcceptLog() end
+		def set_AcceptLog(newval) end
+		def get_AcceptLogPath() end
+		def set_AcceptLogPath(newval) end
+		def get_ConnectTimeoutMs() end
+		def set_ConnectTimeoutMs(newval) end
+		def get_DebugLogFilePath() end
+		def set_DebugLogFilePath(newval) end
+		def get_DestHostname() end
+		def set_DestHostname(newval) end
+		def get_DestPort() end
+		def set_DestPort(newval) end
+		def get_DynamicPortForwarding() end
+		def set_DynamicPortForwarding(newval) end
+		def get_HostKeyFingerprint() end
+		def get_HttpProxyAuthMethod() end
+		def set_HttpProxyAuthMethod(newval) end
+		def get_HttpProxyDomain() end
+		def set_HttpProxyDomain(newval) end
+		def get_HttpProxyHostname() end
+		def set_HttpProxyHostname(newval) end
+		def get_HttpProxyPassword() end
+		def set_HttpProxyPassword(newval) end
+		def get_HttpProxyPort() end
+		def set_HttpProxyPort(newval) end
+		def get_HttpProxyUsername() end
+		def set_HttpProxyUsername(newval) end
+		def get_IdleTimeoutMs() end
+		def set_IdleTimeoutMs(newval) end
+		def get_InboundSocksPassword() end
+		def set_InboundSocksPassword(newval) end
+		def get_InboundSocksUsername() end
+		def set_InboundSocksUsername(newval) end
+		def get_IsAccepting() end
+		def get_KeepAcceptLog() end
+		def set_KeepAcceptLog(newval) end
+		def get_KeepTunnelLog() end
+		def set_KeepTunnelLog(newval) end
+		def get_LastErrorHtml() end
+		def get_LastErrorText() end
+		def get_LastErrorXml() end
+		def get_LastMethodSuccess() end
+		def set_LastMethodSuccess(newval) end
+		def get_LastStringResult() end
+		def get_LastStringResultLen() end
+		def get_ListenBindIpAddress() end
+		def set_ListenBindIpAddress(newval) end
+		def get_ListenPort() end
+		def get_OutboundBindIpAddress() end
+		def set_OutboundBindIpAddress(newval) end
+		def get_OutboundBindPort() end
+		def set_OutboundBindPort(newval) end
+		def get_SocksHostname() end
+		def set_SocksHostname(newval) end
+		def get_SocksPassword() end
+		def set_SocksPassword(newval) end
+		def get_SocksPort() end
+		def set_SocksPort(newval) end
+		def get_SocksUsername() end
+		def set_SocksUsername(newval) end
+		def get_SocksVersion() end
+		def set_SocksVersion(newval) end
+		def get_SoRcvBuf() end
+		def set_SoRcvBuf(newval) end
+		def get_SoSndBuf() end
+		def set_SoSndBuf(newval) end
+		def get_TcpNoDelay() end
+		def set_TcpNoDelay(newval) end
+		def get_TunnelLog() end
+		def set_TunnelLog(newval) end
+		def get_TunnelLogPath() end
+		def set_TunnelLogPath(newval) end
+		def get_VerboseLogging() end
+		def set_VerboseLogging(newval) end
+		def get_Version() end
+
+		# Method: AuthenticatePk
+		def AuthenticatePk(username, privateKey)
+			# ...
+		end
+
+		# Method: AuthenticatePw
+		def AuthenticatePw(login, password)
+			# ...
+		end
+
+		# Method: AuthenticatePwPk
+		def AuthenticatePwPk(username, password, privateKey)
+			# ...
+		end
+
+		# Method: BeginAccepting
+		def BeginAccepting(listenPort)
+			# ...
+		end
+
+		# Method: CloseTunnel
+		def CloseTunnel(waitForThreads)
+			# ...
+		end
+
+		# Method: Connect
+		def Connect(hostname, port)
+			# ...
+		end
+
+		# Method: ConnectThroughSsh
+		def ConnectThroughSsh(ssh, hostname, port)
+			# ...
+		end
+
+		# Method: DisconnectAllClients
+		def DisconnectAllClients(waitForThreads)
+			# ...
+		end
+
+		# Method: GetCurrentState
+		def GetCurrentState()
+			# ...
+		end
+
+		# Method: IsSshConnected
+		def IsSshConnected()
+			# ...
+		end
+
+		# Method: StopAccepting
+		def StopAccepting(waitForThread)
+			# ...
+		end
+
+		# Method: UnlockComponent
+		def UnlockComponent(unlockCode)
+			# ...
+		end
+	end
+end
