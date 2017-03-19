@@ -44,51 +44,153 @@ module Chilkat
 		def set_Workstation(newval) end
 
 		# Method: CompareType3
+		#
+		# ==== Attributes
+		#
+		# +msg1+ - String
+, 		# +msg2+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  msg1 [String]
+, 		# @param  msg2 [String]
+		# @return  [TrueClass, FalseClass]
 		def CompareType3(msg1, msg2)
 			# ...
 		end
 
 		# Method: GenType1
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def GenType1()
 			# ...
 		end
 
 		# Method: GenType2
+		#
+		# ==== Attributes
+		#
+		# +type1Msg+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  type1Msg [String]
+		# @return  [String]
 		def GenType2(type1Msg)
 			# ...
 		end
 
 		# Method: GenType3
+		#
+		# ==== Attributes
+		#
+		# +type2Msg+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  type2Msg [String]
+		# @return  [String]
 		def GenType3(type2Msg)
 			# ...
 		end
 
 		# Method: LoadType3
+		#
+		# ==== Attributes
+		#
+		# +type3Msg+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  type3Msg [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadType3(type3Msg)
 			# ...
 		end
 
 		# Method: ParseType1
+		#
+		# ==== Attributes
+		#
+		# +type1Msg+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  type1Msg [String]
+		# @return  [String]
 		def ParseType1(type1Msg)
 			# ...
 		end
 
 		# Method: ParseType2
+		#
+		# ==== Attributes
+		#
+		# +type2Msg+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  type2Msg [String]
+		# @return  [String]
 		def ParseType2(type2Msg)
 			# ...
 		end
 
 		# Method: ParseType3
+		#
+		# ==== Attributes
+		#
+		# +type3Msg+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  type3Msg [String]
+		# @return  [String]
 		def ParseType3(type3Msg)
 			# ...
 		end
 
 		# Method: SetFlag
+		#
+		# ==== Attributes
+		#
+		# +flagLetter+ - String
+, 		# +onOrOff+ - TrueClass, FalseClass
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  flagLetter [String]
+, 		# @param  onOrOff [TrueClass, FalseClass]
+		# @return  [TrueClass, FalseClass]
 		def SetFlag(flagLetter, onOrOff)
 			# ...
 		end
 
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +unlockCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  unlockCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

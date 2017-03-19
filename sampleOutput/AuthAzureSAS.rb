@@ -18,21 +18,63 @@ module Chilkat
 		def get_Version() end
 
 		# Method: Clear
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def Clear()
 			# ...
 		end
 
 		# Method: GenerateToken
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def GenerateToken()
 			# ...
 		end
 
 		# Method: SetNonTokenParam
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+, 		# +value+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+, 		# @param  value [String]
+		# @return  [TrueClass, FalseClass]
 		def SetNonTokenParam(name, value)
 			# ...
 		end
 
 		# Method: SetTokenParam
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+, 		# +authParamName+ - String
+, 		# +value+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+, 		# @param  authParamName [String]
+, 		# @param  value [String]
+		# @return  [TrueClass, FalseClass]
 		def SetTokenParam(name, authParamName, value)
 			# ...
 		end

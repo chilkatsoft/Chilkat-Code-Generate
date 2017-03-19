@@ -72,7 +72,8 @@ namespace GenSample
         bool generateClassToSb(XClass xclass, StringBuilder sbOut, Chilkat.Log log)
             {
             // We're just going to generate some pseudo-code...
-            sbOut.Append("module Chilkat\r\n\tclass Ck" + xclass.GenericName + " \r\n");
+            string preamble = xclass.GenericName.StartsWith("Ck") ? "" : "Ck";
+            sbOut.Append("module Chilkat\r\n\tclass " + preamble + xclass.GenericName + " \r\n");
 
             // We could generate constructors, destructors, creation functions, etc. here...
 
@@ -102,7 +103,7 @@ namespace GenSample
                 // (What you do here depends on your needs..)
                 if (xmethod.Deprecated) continue;
                 if (!xmethod.AxEnabled) continue;     // We don't want properties that do not exist in the ActiveX..
-                if (xmethod.IsBytes || xmethod.HasArgWithGt(ChilkatTypes.GT_BYTES)) continue;  // Maybe we don't want to deal with binary return values or args..
+                //if (xmethod.IsBytes || xmethod.HasArgWithGt(ChilkatTypes.GT_BYTES)) continue;  // Maybe we don't want to deal with binary return values or args..
                 // ...
 
                 if (!generateMethod(xmethod, xclass, sbOut, log)) return false;
@@ -131,9 +132,11 @@ namespace GenSample
             }
 
         bool generateMethod(XMethod xmethod, XClass xclass, StringBuilder sbOut, Chilkat.Log log)
-            {
-            sbOut.Append("\r\n\t\t# Method: " + xmethod.EntryName + "\r\n");
-            
+        {
+            sbOut.Append("\r\n\t\t# Method: " + xmethod.EntryName + "\r\n\t\t#\r\n");
+            sbOut.Append("\t\t# ==== Attributes\r\n\t\t#\r\n");
+           
+
             if (!genMethodSignature(xmethod, xclass, sbOut, log)) return false;
 
             //sbOut.Append("\t\t\t{\r\n");
@@ -146,11 +149,31 @@ namespace GenSample
 
         bool genMethodSignature(XMethod xmethod, XClass xclass, StringBuilder sbOut, Chilkat.Log log)
             {
-            string rtnType = m_types.gtToAxI(xmethod.m_gt, xmethod.GenericType);
+            string rtnType = m_types.gtToRubyDuck(xmethod.m_gt, xmethod.GenericType);
+            int i = 1;
+            foreach (MethodArg arg in xmethod.Args)
+            {
+                if (i > 1) sbOut.Append(", "); 
+                sbOut.Append("\t\t# +" + arg.Name + "+ - " + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "\r\n");
+                i++;
+            }
+            sbOut.Append("\t\t# returns " + rtnType + "\r\n");
+            sbOut.Append("\t\t#\r\n\t\t# YARD =>\r\n\t\t#\r\n");
+
+            foreach (MethodArg arg in xmethod.Args)
+            {
+                if (i > 1) sbOut.Append(", ");
+                sbOut.Append("\t\t# @param  " + arg.Name + " [" + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "]\r\n");
+                i++;
+            }
+
+            sbOut.Append("\t\t# @return  [" + rtnType + "]\r\n");
+          
+
             sbOut.Append("\t\tdef " + xmethod.EntryName + "(");
 
             // Iterate over the method args..
-            int i = 1;
+            i = 1;
             foreach (MethodArg arg in xmethod.Args)
                 {
                 if (i > 1) sbOut.Append(", ");
@@ -162,5 +185,9 @@ namespace GenSample
             return true;
             }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
+    }
     }

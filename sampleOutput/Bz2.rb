@@ -16,16 +16,144 @@ module Chilkat
 		def get_Version() end
 
 		# Method: CompressFile
+		#
+		# ==== Attributes
+		#
+		# +inFilename+ - String
+, 		# +toPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inFilename [String]
+, 		# @param  toPath [String]
+		# @return  [TrueClass, FalseClass]
 		def CompressFile(inFilename, toPath)
 			# ...
 		end
 
+		# Method: CompressFileToMem
+		#
+		# ==== Attributes
+		#
+		# +inFilename+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inFilename [String]
+		# @return  [CkByteData]
+		def CompressFileToMem(inFilename)
+			# ...
+		end
+
+		# Method: CompressMemory
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+		# @return  [CkByteData]
+		def CompressMemory(inData)
+			# ...
+		end
+
+		# Method: CompressMemToFile
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+, 		# +toPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+, 		# @param  toPath [String]
+		# @return  [TrueClass, FalseClass]
+		def CompressMemToFile(inData, toPath)
+			# ...
+		end
+
 		# Method: UncompressFile
+		#
+		# ==== Attributes
+		#
+		# +inFilename+ - String
+, 		# +toPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inFilename [String]
+, 		# @param  toPath [String]
+		# @return  [TrueClass, FalseClass]
 		def UncompressFile(inFilename, toPath)
 			# ...
 		end
 
+		# Method: UncompressFileToMem
+		#
+		# ==== Attributes
+		#
+		# +inFilename+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inFilename [String]
+		# @return  [CkByteData]
+		def UncompressFileToMem(inFilename)
+			# ...
+		end
+
+		# Method: UncompressMemory
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+		# @return  [CkByteData]
+		def UncompressMemory(inData)
+			# ...
+		end
+
+		# Method: UncompressMemToFile
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+, 		# +toPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+, 		# @param  toPath [String]
+		# @return  [TrueClass, FalseClass]
+		def UncompressMemToFile(inData, toPath)
+			# ...
+		end
+
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +regCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  regCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(regCode)
 			# ...
 		end

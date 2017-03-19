@@ -20,26 +20,80 @@ module Chilkat
 		def get_Version() end
 
 		# Method: IsUnlocked
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
 
 		# Method: ReadFileToString
+		#
+		# ==== Attributes
+		#
+		# +filename+ - String
+, 		# +srcCharset+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  filename [String]
+, 		# @param  srcCharset [String]
+		# @return  [String]
 		def ReadFileToString(filename, srcCharset)
 			# ...
 		end
 
 		# Method: ToText
+		#
+		# ==== Attributes
+		#
+		# +html+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  html [String]
+		# @return  [String]
 		def ToText(html)
 			# ...
 		end
 
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +code+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  code [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(code)
 			# ...
 		end
 
 		# Method: WriteStringToFile
+		#
+		# ==== Attributes
+		#
+		# +stringToWrite+ - String
+, 		# +filename+ - String
+, 		# +charset+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  stringToWrite [String]
+, 		# @param  filename [String]
+, 		# @param  charset [String]
+		# @return  [TrueClass, FalseClass]
 		def WriteStringToFile(stringToWrite, filename, charset)
 			# ...
 		end

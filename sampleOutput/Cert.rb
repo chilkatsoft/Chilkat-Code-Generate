@@ -59,166 +59,548 @@ module Chilkat
 		def get_Version() end
 
 		# Method: CheckRevoked
+		#
+		# ==== Attributes
+		#
+		# returns Fixnum
+		#
+		# YARD =>
+		#
+		# @return  [Fixnum]
 		def CheckRevoked()
 			# ...
 		end
 
+		# Method: ExportCertDer
+		#
+		# ==== Attributes
+		#
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+		# @return  [CkByteData]
+		def ExportCertDer()
+			# ...
+		end
+
 		# Method: ExportCertDerFile
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
 		def ExportCertDerFile(path)
 			# ...
 		end
 
 		# Method: ExportCertPem
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def ExportCertPem()
 			# ...
 		end
 
 		# Method: ExportCertPemFile
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
 		def ExportCertPemFile(path)
 			# ...
 		end
 
 		# Method: ExportCertXml
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def ExportCertXml()
 			# ...
 		end
 
 		# Method: ExportPrivateKey
+		#
+		# ==== Attributes
+		#
+		# returns CkPrivateKey
+		#
+		# YARD =>
+		#
+		# @return  [CkPrivateKey]
 		def ExportPrivateKey()
 			# ...
 		end
 
 		# Method: ExportPublicKey
+		#
+		# ==== Attributes
+		#
+		# returns CkPublicKey
+		#
+		# YARD =>
+		#
+		# @return  [CkPublicKey]
 		def ExportPublicKey()
 			# ...
 		end
 
+		# Method: ExportToPfxData
+		#
+		# ==== Attributes
+		#
+		# +password+ - String
+, 		# +includeCertChain+ - TrueClass, FalseClass
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  password [String]
+, 		# @param  includeCertChain [TrueClass, FalseClass]
+		# @return  [CkByteData]
+		def ExportToPfxData(password, includeCertChain)
+			# ...
+		end
+
 		# Method: ExportToPfxFile
+		#
+		# ==== Attributes
+		#
+		# +pfxFilename+ - String
+, 		# +pfxPassword+ - String
+, 		# +bIncludeCertChain+ - TrueClass, FalseClass
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  pfxFilename [String]
+, 		# @param  pfxPassword [String]
+, 		# @param  bIncludeCertChain [TrueClass, FalseClass]
+		# @return  [TrueClass, FalseClass]
 		def ExportToPfxFile(pfxFilename, pfxPassword, bIncludeCertChain)
 			# ...
 		end
 
 		# Method: FindIssuer
+		#
+		# ==== Attributes
+		#
+		# returns CkCert
+		#
+		# YARD =>
+		#
+		# @return  [CkCert]
 		def FindIssuer()
 			# ...
 		end
 
 		# Method: GetCertChain
+		#
+		# ==== Attributes
+		#
+		# returns CkCertChain
+		#
+		# YARD =>
+		#
+		# @return  [CkCertChain]
 		def GetCertChain()
 			# ...
 		end
 
 		# Method: GetEncoded
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def GetEncoded()
 			# ...
 		end
 
 		# Method: GetExtensionAsXml
+		#
+		# ==== Attributes
+		#
+		# +oid+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  oid [String]
+		# @return  [String]
 		def GetExtensionAsXml(oid)
 			# ...
 		end
 
 		# Method: GetPrivateKeyPem
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def GetPrivateKeyPem()
 			# ...
 		end
 
 		# Method: GetSpkiFingerprint
+		#
+		# ==== Attributes
+		#
+		# +hashAlg+ - String
+, 		# +encoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  hashAlg [String]
+, 		# @param  encoding [String]
+		# @return  [String]
 		def GetSpkiFingerprint(hashAlg, encoding)
 			# ...
 		end
 
 		# Method: GetValidFromDt
+		#
+		# ==== Attributes
+		#
+		# returns CkDateTime
+		#
+		# YARD =>
+		#
+		# @return  [CkDateTime]
 		def GetValidFromDt()
 			# ...
 		end
 
 		# Method: GetValidToDt
+		#
+		# ==== Attributes
+		#
+		# returns CkDateTime
+		#
+		# YARD =>
+		#
+		# @return  [CkDateTime]
 		def GetValidToDt()
 			# ...
 		end
 
 		# Method: HasPrivateKey
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def HasPrivateKey()
 			# ...
 		end
 
 		# Method: LinkPrivateKey
+		#
+		# ==== Attributes
+		#
+		# +keyContainerName+ - String
+, 		# +bMachineKeyset+ - TrueClass, FalseClass
+, 		# +bForSigning+ - TrueClass, FalseClass
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  keyContainerName [String]
+, 		# @param  bMachineKeyset [TrueClass, FalseClass]
+, 		# @param  bForSigning [TrueClass, FalseClass]
+		# @return  [TrueClass, FalseClass]
 		def LinkPrivateKey(keyContainerName, bMachineKeyset, bForSigning)
 			# ...
 		end
 
 		# Method: LoadByCommonName
+		#
+		# ==== Attributes
+		#
+		# +cn+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  cn [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadByCommonName(cn)
 			# ...
 		end
 
 		# Method: LoadByEmailAddress
+		#
+		# ==== Attributes
+		#
+		# +emailAddress+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  emailAddress [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadByEmailAddress(emailAddress)
 			# ...
 		end
 
 		# Method: LoadByIssuerAndSerialNumber
+		#
+		# ==== Attributes
+		#
+		# +issuerCN+ - String
+, 		# +serialNumber+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  issuerCN [String]
+, 		# @param  serialNumber [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadByIssuerAndSerialNumber(issuerCN, serialNumber)
 			# ...
 		end
 
 		# Method: LoadFromBase64
+		#
+		# ==== Attributes
+		#
+		# +encodedCert+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  encodedCert [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadFromBase64(encodedCert)
 			# ...
 		end
 
+		# Method: LoadFromBinary
+		#
+		# ==== Attributes
+		#
+		# +data+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  data [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		def LoadFromBinary(data)
+			# ...
+		end
+
 		# Method: LoadFromFile
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadFromFile(path)
 			# ...
 		end
 
 		# Method: LoadPem
+		#
+		# ==== Attributes
+		#
+		# +strPem+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  strPem [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadPem(strPem)
 			# ...
 		end
 
+		# Method: LoadPfxData
+		#
+		# ==== Attributes
+		#
+		# +pfxData+ - CkByteData
+, 		# +password+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  pfxData [CkByteData]
+, 		# @param  password [String]
+		# @return  [TrueClass, FalseClass]
+		def LoadPfxData(pfxData, password)
+			# ...
+		end
+
 		# Method: LoadPfxFile
+		#
+		# ==== Attributes
+		#
+		# +pfxPath+ - String
+, 		# +password+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  pfxPath [String]
+, 		# @param  password [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadPfxFile(pfxPath, password)
 			# ...
 		end
 
 		# Method: LoadTaskResult
+		#
+		# ==== Attributes
+		#
+		# +task+ - CkTask
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  task [CkTask]
+		# @return  [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
 
 		# Method: PemFileToDerFile
+		#
+		# ==== Attributes
+		#
+		# +fromPath+ - String
+, 		# +toPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  fromPath [String]
+, 		# @param  toPath [String]
+		# @return  [TrueClass, FalseClass]
 		def PemFileToDerFile(fromPath, toPath)
 			# ...
 		end
 
 		# Method: SaveToFile
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
 		def SaveToFile(path)
 			# ...
 		end
 
 		# Method: SetFromEncoded
+		#
+		# ==== Attributes
+		#
+		# +encodedCert+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  encodedCert [String]
+		# @return  [TrueClass, FalseClass]
 		def SetFromEncoded(encodedCert)
 			# ...
 		end
 
 		# Method: SetPrivateKey
+		#
+		# ==== Attributes
+		#
+		# +privKey+ - CkPrivateKey
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  privKey [CkPrivateKey]
+		# @return  [TrueClass, FalseClass]
 		def SetPrivateKey(privKey)
 			# ...
 		end
 
 		# Method: SetPrivateKeyPem
+		#
+		# ==== Attributes
+		#
+		# +privKeyPem+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  privKeyPem [String]
+		# @return  [TrueClass, FalseClass]
 		def SetPrivateKeyPem(privKeyPem)
 			# ...
 		end
 
 		# Method: UseCertVault
+		#
+		# ==== Attributes
+		#
+		# +vault+ - CkXmlCertVault
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  vault [CkXmlCertVault]
+		# @return  [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
 
 		# Method: VerifySignature
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def VerifySignature()
 			# ...
 		end

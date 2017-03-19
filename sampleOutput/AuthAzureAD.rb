@@ -26,6 +26,16 @@ module Chilkat
 		def get_Version() end
 
 		# Method: ObtainAccessToken
+		#
+		# ==== Attributes
+		#
+		# +connection+ - CkSocket
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  connection [CkSocket]
+		# @return  [TrueClass, FalseClass]
 		def ObtainAccessToken(connection)
 			# ...
 		end

@@ -61,71 +61,245 @@ module Chilkat
 		def set_XmlListing(newval) end
 
 		# Method: AddDirRoot
+		#
+		# ==== Attributes
+		#
+		# +dirPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  dirPath [String]
+		# @return  [TrueClass, FalseClass]
 		def AddDirRoot(dirPath)
 			# ...
 		end
 
 		# Method: AddDirRoot2
+		#
+		# ==== Attributes
+		#
+		# +rootPrefix+ - String
+, 		# +rootPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  rootPrefix [String]
+, 		# @param  rootPath [String]
+		# @return  [TrueClass, FalseClass]
 		def AddDirRoot2(rootPrefix, rootPath)
 			# ...
 		end
 
 		# Method: AddFile
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
 		def AddFile(path)
 			# ...
 		end
 
 		# Method: GetDirRoot
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetDirRoot(index)
 			# ...
 		end
 
 		# Method: ListXml
+		#
+		# ==== Attributes
+		#
+		# +tarPath+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  tarPath [String]
+		# @return  [String]
 		def ListXml(tarPath)
 			# ...
 		end
 
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +unlockCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  unlockCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
 		# Method: Untar
+		#
+		# ==== Attributes
+		#
+		# +tarPath+ - String
+		# returns Fixnum
+		#
+		# YARD =>
+		#
+, 		# @param  tarPath [String]
+		# @return  [Fixnum]
 		def Untar(tarPath)
 			# ...
 		end
 
 		# Method: UntarBz2
+		#
+		# ==== Attributes
+		#
+		# +tarPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  tarPath [String]
+		# @return  [TrueClass, FalseClass]
 		def UntarBz2(tarPath)
 			# ...
 		end
 
+		# Method: UntarFirstMatchingToMemory
+		#
+		# ==== Attributes
+		#
+		# +tarFileBytes+ - CkByteData
+, 		# +matchPattern+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  tarFileBytes [CkByteData]
+, 		# @param  matchPattern [String]
+		# @return  [CkByteData]
+		def UntarFirstMatchingToMemory(tarFileBytes, matchPattern)
+			# ...
+		end
+
+		# Method: UntarFromMemory
+		#
+		# ==== Attributes
+		#
+		# +tarFileBytes+ - CkByteData
+		# returns Fixnum
+		#
+		# YARD =>
+		#
+, 		# @param  tarFileBytes [CkByteData]
+		# @return  [Fixnum]
+		def UntarFromMemory(tarFileBytes)
+			# ...
+		end
+
 		# Method: UntarGz
+		#
+		# ==== Attributes
+		#
+		# +tarPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  tarPath [String]
+		# @return  [TrueClass, FalseClass]
 		def UntarGz(tarPath)
 			# ...
 		end
 
 		# Method: UntarZ
+		#
+		# ==== Attributes
+		#
+		# +tarPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  tarPath [String]
+		# @return  [TrueClass, FalseClass]
 		def UntarZ(tarPath)
 			# ...
 		end
 
 		# Method: VerifyTar
+		#
+		# ==== Attributes
+		#
+		# +tarPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  tarPath [String]
+		# @return  [TrueClass, FalseClass]
 		def VerifyTar(tarPath)
 			# ...
 		end
 
 		# Method: WriteTar
+		#
+		# ==== Attributes
+		#
+		# +tarPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  tarPath [String]
+		# @return  [TrueClass, FalseClass]
 		def WriteTar(tarPath)
 			# ...
 		end
 
 		# Method: WriteTarBz2
+		#
+		# ==== Attributes
+		#
+		# +bz2Path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  bz2Path [String]
+		# @return  [TrueClass, FalseClass]
 		def WriteTarBz2(bz2Path)
 			# ...
 		end
 
 		# Method: WriteTarGz
+		#
+		# ==== Attributes
+		#
+		# +gzPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  gzPath [String]
+		# @return  [TrueClass, FalseClass]
 		def WriteTarGz(gzPath)
 			# ...
 		end

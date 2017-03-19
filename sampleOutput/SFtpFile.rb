@@ -30,16 +30,40 @@ module Chilkat
 		def get_Uid() end
 
 		# Method: GetCreateDt
+		#
+		# ==== Attributes
+		#
+		# returns CkDateTime
+		#
+		# YARD =>
+		#
+		# @return  [CkDateTime]
 		def GetCreateDt()
 			# ...
 		end
 
 		# Method: GetLastAccessDt
+		#
+		# ==== Attributes
+		#
+		# returns CkDateTime
+		#
+		# YARD =>
+		#
+		# @return  [CkDateTime]
 		def GetLastAccessDt()
 			# ...
 		end
 
 		# Method: GetLastModifiedDt
+		#
+		# ==== Attributes
+		#
+		# returns CkDateTime
+		#
+		# YARD =>
+		#
+		# @return  [CkDateTime]
 		def GetLastModifiedDt()
 			# ...
 		end

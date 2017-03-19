@@ -28,16 +28,44 @@ module Chilkat
 		def get_Version() end
 
 		# Method: GetP12
+		#
+		# ==== Attributes
+		#
+		# returns CkPfx
+		#
+		# YARD =>
+		#
+		# @return  [CkPfx]
 		def GetP12()
 			# ...
 		end
 
 		# Method: ObtainAccessToken
+		#
+		# ==== Attributes
+		#
+		# +connection+ - CkSocket
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  connection [CkSocket]
+		# @return  [TrueClass, FalseClass]
 		def ObtainAccessToken(connection)
 			# ...
 		end
 
 		# Method: SetP12
+		#
+		# ==== Attributes
+		#
+		# +key+ - CkPfx
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  key [CkPfx]
+		# @return  [TrueClass, FalseClass]
 		def SetP12(key)
 			# ...
 		end

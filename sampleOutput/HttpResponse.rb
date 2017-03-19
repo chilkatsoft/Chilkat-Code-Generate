@@ -28,76 +28,232 @@ module Chilkat
 		def get_Version() end
 
 		# Method: GetBodyBd
+		#
+		# ==== Attributes
+		#
+		# +binData+ - CkBinData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  binData [CkBinData]
+		# @return  [TrueClass, FalseClass]
 		def GetBodyBd(binData)
 			# ...
 		end
 
 		# Method: GetBodySb
+		#
+		# ==== Attributes
+		#
+		# +sb+ - CkStringBuilder
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  sb [CkStringBuilder]
+		# @return  [TrueClass, FalseClass]
 		def GetBodySb(sb)
 			# ...
 		end
 
 		# Method: GetCookieDomain
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetCookieDomain(index)
 			# ...
 		end
 
 		# Method: GetCookieExpiresStr
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetCookieExpiresStr(index)
 			# ...
 		end
 
 		# Method: GetCookieName
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetCookieName(index)
 			# ...
 		end
 
 		# Method: GetCookiePath
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetCookiePath(index)
 			# ...
 		end
 
 		# Method: GetCookieValue
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetCookieValue(index)
 			# ...
 		end
 
 		# Method: GetHeaderField
+		#
+		# ==== Attributes
+		#
+		# +fieldName+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  fieldName [String]
+		# @return  [String]
 		def GetHeaderField(fieldName)
 			# ...
 		end
 
 		# Method: GetHeaderFieldAttr
+		#
+		# ==== Attributes
+		#
+		# +fieldName+ - String
+, 		# +attrName+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  fieldName [String]
+, 		# @param  attrName [String]
+		# @return  [String]
 		def GetHeaderFieldAttr(fieldName, attrName)
 			# ...
 		end
 
 		# Method: GetHeaderName
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetHeaderName(index)
 			# ...
 		end
 
 		# Method: GetHeaderValue
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetHeaderValue(index)
 			# ...
 		end
 
 		# Method: LoadTaskResult
+		#
+		# ==== Attributes
+		#
+		# +task+ - CkTask
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  task [CkTask]
+		# @return  [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
 
 		# Method: SaveBodyBinary
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
 		def SaveBodyBinary(path)
 			# ...
 		end
 
 		# Method: SaveBodyText
+		#
+		# ==== Attributes
+		#
+		# +bCrlf+ - TrueClass, FalseClass
+, 		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  bCrlf [TrueClass, FalseClass]
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
 		def SaveBodyText(bCrlf, path)
 			# ...
 		end
 
 		# Method: UrlEncParamValue
+		#
+		# ==== Attributes
+		#
+		# +encodedParamString+ - String
+, 		# +paramName+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  encodedParamString [String]
+, 		# @param  paramName [String]
+		# @return  [String]
 		def UrlEncParamValue(encodedParamString, paramName)
 			# ...
 		end

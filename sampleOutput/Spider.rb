@@ -60,106 +60,304 @@ module Chilkat
 		def set_WindDownCount(newval) end
 
 		# Method: AddAvoidOutboundLinkPattern
+		#
+		# ==== Attributes
+		#
+		# +pattern+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  pattern [String]
+		# @return  [nil]
 		def AddAvoidOutboundLinkPattern(pattern)
 			# ...
 		end
 
 		# Method: AddAvoidPattern
+		#
+		# ==== Attributes
+		#
+		# +pattern+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  pattern [String]
+		# @return  [nil]
 		def AddAvoidPattern(pattern)
 			# ...
 		end
 
 		# Method: AddMustMatchPattern
+		#
+		# ==== Attributes
+		#
+		# +pattern+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  pattern [String]
+		# @return  [nil]
 		def AddMustMatchPattern(pattern)
 			# ...
 		end
 
 		# Method: AddUnspidered
+		#
+		# ==== Attributes
+		#
+		# +url+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  url [String]
+		# @return  [nil]
 		def AddUnspidered(url)
 			# ...
 		end
 
 		# Method: CanonicalizeUrl
+		#
+		# ==== Attributes
+		#
+		# +url+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  url [String]
+		# @return  [String]
 		def CanonicalizeUrl(url)
 			# ...
 		end
 
 		# Method: ClearFailedUrls
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def ClearFailedUrls()
 			# ...
 		end
 
 		# Method: ClearOutboundLinks
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def ClearOutboundLinks()
 			# ...
 		end
 
 		# Method: ClearSpideredUrls
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def ClearSpideredUrls()
 			# ...
 		end
 
 		# Method: CrawlNext
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def CrawlNext()
 			# ...
 		end
 
 		# Method: FetchRobotsText
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def FetchRobotsText()
 			# ...
 		end
 
 		# Method: GetAvoidPattern
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetAvoidPattern(index)
 			# ...
 		end
 
 		# Method: GetBaseDomain
+		#
+		# ==== Attributes
+		#
+		# +domain+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  domain [String]
+		# @return  [String]
 		def GetBaseDomain(domain)
 			# ...
 		end
 
 		# Method: GetFailedUrl
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetFailedUrl(index)
 			# ...
 		end
 
 		# Method: GetOutboundLink
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetOutboundLink(index)
 			# ...
 		end
 
 		# Method: GetSpideredUrl
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetSpideredUrl(index)
 			# ...
 		end
 
 		# Method: GetUnspideredUrl
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetUnspideredUrl(index)
 			# ...
 		end
 
 		# Method: GetUrlDomain
+		#
+		# ==== Attributes
+		#
+		# +url+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  url [String]
+		# @return  [String]
 		def GetUrlDomain(url)
 			# ...
 		end
 
 		# Method: Initialize
+		#
+		# ==== Attributes
+		#
+		# +domain+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  domain [String]
+		# @return  [nil]
 		def Initialize(domain)
 			# ...
 		end
 
 		# Method: RecrawlLast
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def RecrawlLast()
 			# ...
 		end
 
 		# Method: SkipUnspidered
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [nil]
 		def SkipUnspidered(index)
 			# ...
 		end
 
 		# Method: SleepMs
+		#
+		# ==== Attributes
+		#
+		# +numMilliseconds+ - Fixnum
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  numMilliseconds [Fixnum]
+		# @return  [nil]
 		def SleepMs(numMilliseconds)
 			# ...
 		end

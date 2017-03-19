@@ -4,3 +4,9 @@ C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\bin\x64\Debug\ChilkatDotNet
 C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\obj\x64\Debug\ChilkatApi.dll
 C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\obj\x64\Debug\ChilkatApi.pdb
 C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\obj\x64\Debug\ChilkatApi.csprojResolveAssemblyReference.cache
+D:\ASPACK\FACTORY\symforge\_lib\Chilkat-Code-Generate\ChilkatApi\bin\x64\Debug\ChilkatApi.dll
+D:\ASPACK\FACTORY\symforge\_lib\Chilkat-Code-Generate\ChilkatApi\bin\x64\Debug\ChilkatApi.pdb
+D:\ASPACK\FACTORY\symforge\_lib\Chilkat-Code-Generate\ChilkatApi\bin\x64\Debug\ChilkatDotNet45.dll
+D:\ASPACK\FACTORY\symforge\_lib\Chilkat-Code-Generate\ChilkatApi\obj\x64\Debug\ChilkatApi.csprojResolveAssemblyReference.cache
+D:\ASPACK\FACTORY\symforge\_lib\Chilkat-Code-Generate\ChilkatApi\obj\x64\Debug\ChilkatApi.dll
+D:\ASPACK\FACTORY\symforge\_lib\Chilkat-Code-Generate\ChilkatApi\obj\x64\Debug\ChilkatApi.pdb

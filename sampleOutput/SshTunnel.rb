@@ -79,61 +79,191 @@ module Chilkat
 		def get_Version() end
 
 		# Method: AuthenticatePk
+		#
+		# ==== Attributes
+		#
+		# +username+ - String
+, 		# +privateKey+ - CkSshKey
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  username [String]
+, 		# @param  privateKey [CkSshKey]
+		# @return  [TrueClass, FalseClass]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
 
 		# Method: AuthenticatePw
+		#
+		# ==== Attributes
+		#
+		# +login+ - String
+, 		# +password+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  login [String]
+, 		# @param  password [String]
+		# @return  [TrueClass, FalseClass]
 		def AuthenticatePw(login, password)
 			# ...
 		end
 
 		# Method: AuthenticatePwPk
+		#
+		# ==== Attributes
+		#
+		# +username+ - String
+, 		# +password+ - String
+, 		# +privateKey+ - CkSshKey
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  username [String]
+, 		# @param  password [String]
+, 		# @param  privateKey [CkSshKey]
+		# @return  [TrueClass, FalseClass]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
 
 		# Method: BeginAccepting
+		#
+		# ==== Attributes
+		#
+		# +listenPort+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  listenPort [Fixnum]
+		# @return  [TrueClass, FalseClass]
 		def BeginAccepting(listenPort)
 			# ...
 		end
 
 		# Method: CloseTunnel
+		#
+		# ==== Attributes
+		#
+		# +waitForThreads+ - TrueClass, FalseClass
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  waitForThreads [TrueClass, FalseClass]
+		# @return  [TrueClass, FalseClass]
 		def CloseTunnel(waitForThreads)
 			# ...
 		end
 
 		# Method: Connect
+		#
+		# ==== Attributes
+		#
+		# +hostname+ - String
+, 		# +port+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  hostname [String]
+, 		# @param  port [Fixnum]
+		# @return  [TrueClass, FalseClass]
 		def Connect(hostname, port)
 			# ...
 		end
 
 		# Method: ConnectThroughSsh
+		#
+		# ==== Attributes
+		#
+		# +ssh+ - CkSsh
+, 		# +hostname+ - String
+, 		# +port+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  ssh [CkSsh]
+, 		# @param  hostname [String]
+, 		# @param  port [Fixnum]
+		# @return  [TrueClass, FalseClass]
 		def ConnectThroughSsh(ssh, hostname, port)
 			# ...
 		end
 
 		# Method: DisconnectAllClients
+		#
+		# ==== Attributes
+		#
+		# +waitForThreads+ - TrueClass, FalseClass
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  waitForThreads [TrueClass, FalseClass]
+		# @return  [TrueClass, FalseClass]
 		def DisconnectAllClients(waitForThreads)
 			# ...
 		end
 
 		# Method: GetCurrentState
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def GetCurrentState()
 			# ...
 		end
 
 		# Method: IsSshConnected
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def IsSshConnected()
 			# ...
 		end
 
 		# Method: StopAccepting
+		#
+		# ==== Attributes
+		#
+		# +waitForThread+ - TrueClass, FalseClass
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  waitForThread [TrueClass, FalseClass]
+		# @return  [TrueClass, FalseClass]
 		def StopAccepting(waitForThread)
 			# ...
 		end
 
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +unlockCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  unlockCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

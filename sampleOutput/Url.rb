@@ -14,6 +14,16 @@ module Chilkat
 		def get_Ssl() end
 
 		# Method: ParseUrl
+		#
+		# ==== Attributes
+		#
+		# +url+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  url [String]
+		# @return  [TrueClass, FalseClass]
 		def ParseUrl(url)
 			# ...
 		end

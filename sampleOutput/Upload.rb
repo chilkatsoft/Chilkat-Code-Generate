@@ -61,47 +61,146 @@ module Chilkat
 		def get_Version() end
 
 		# Method: AbortUpload
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def AbortUpload()
 			# ...
 		end
 
 		# Method: AddCustomHeader
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+, 		# +value+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+, 		# @param  value [String]
+		# @return  [nil]
 		def AddCustomHeader(name, value)
 			# ...
 		end
 
 		# Method: AddFileReference
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+, 		# +filename+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+, 		# @param  filename [String]
+		# @return  [nil]
 		def AddFileReference(name, filename)
 			# ...
 		end
 
 		# Method: AddParam
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+, 		# +value+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+, 		# @param  value [String]
+		# @return  [nil]
 		def AddParam(name, value)
 			# ...
 		end
 
 		# Method: BeginUpload
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def BeginUpload()
 			# ...
 		end
 
 		# Method: BlockingUpload
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def BlockingUpload()
 			# ...
 		end
 
 		# Method: ClearFileReferences
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def ClearFileReferences()
 			# ...
 		end
 
 		# Method: ClearParams
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def ClearParams()
 			# ...
 		end
 
 		# Method: SleepMs
+		#
+		# ==== Attributes
+		#
+		# +millisec+ - Fixnum
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  millisec [Fixnum]
+		# @return  [nil]
 		def SleepMs(millisec)
+			# ...
+		end
+
+		# Method: UploadToMemory
+		#
+		# ==== Attributes
+		#
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+		# @return  [CkByteData]
+		def UploadToMemory()
 			# ...
 		end
 	end

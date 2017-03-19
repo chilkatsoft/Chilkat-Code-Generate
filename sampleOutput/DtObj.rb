@@ -32,11 +32,29 @@ module Chilkat
 		def set_Year(newval) end
 
 		# Method: DeSerialize
+		#
+		# ==== Attributes
+		#
+		# +serializedDtObj+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  serializedDtObj [String]
+		# @return  [nil]
 		def DeSerialize(serializedDtObj)
 			# ...
 		end
 
 		# Method: Serialize
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def Serialize()
 			# ...
 		end

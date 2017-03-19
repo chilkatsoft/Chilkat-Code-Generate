@@ -24,11 +24,27 @@ module Chilkat
 		def get_Version() end
 
 		# Method: AdvancePosition
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def AdvancePosition()
 			# ...
 		end
 
 		# Method: BeginIterate
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def BeginIterate()
 			# ...
 		end

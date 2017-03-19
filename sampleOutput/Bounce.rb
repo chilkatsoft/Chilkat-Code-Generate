@@ -17,21 +17,61 @@ module Chilkat
 		def get_Version() end
 
 		# Method: ExamineEmail
+		#
+		# ==== Attributes
+		#
+		# +email+ - CkEmail
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  email [CkEmail]
+		# @return  [TrueClass, FalseClass]
 		def ExamineEmail(email)
 			# ...
 		end
 
 		# Method: ExamineEml
+		#
+		# ==== Attributes
+		#
+		# +emlFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  emlFilename [String]
+		# @return  [TrueClass, FalseClass]
 		def ExamineEml(emlFilename)
 			# ...
 		end
 
 		# Method: ExamineMime
+		#
+		# ==== Attributes
+		#
+		# +mimeText+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  mimeText [String]
+		# @return  [TrueClass, FalseClass]
 		def ExamineMime(mimeText)
 			# ...
 		end
 
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +unlockCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  unlockCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

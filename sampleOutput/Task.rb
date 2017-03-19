@@ -29,61 +29,193 @@ module Chilkat
 		def get_Version() end
 
 		# Method: Cancel
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def Cancel()
 			# ...
 		end
 
 		# Method: ClearProgressLog
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def ClearProgressLog()
 			# ...
 		end
 
+		# Method: CopyResultBytes
+		#
+		# ==== Attributes
+		#
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+		# @return  [CkByteData]
+		def CopyResultBytes()
+			# ...
+		end
+
 		# Method: GetResultBool
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def GetResultBool()
 			# ...
 		end
 
+		# Method: GetResultBytes
+		#
+		# ==== Attributes
+		#
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+		# @return  [CkByteData]
+		def GetResultBytes()
+			# ...
+		end
+
 		# Method: GetResultInt
+		#
+		# ==== Attributes
+		#
+		# returns Fixnum
+		#
+		# YARD =>
+		#
+		# @return  [Fixnum]
 		def GetResultInt()
 			# ...
 		end
 
 		# Method: GetResultString
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def GetResultString()
 			# ...
 		end
 
 		# Method: ProgressInfoName
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def ProgressInfoName(index)
 			# ...
 		end
 
 		# Method: ProgressInfoValue
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def ProgressInfoValue(index)
 			# ...
 		end
 
 		# Method: RemoveProgressInfo
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [nil]
 		def RemoveProgressInfo(index)
 			# ...
 		end
 
 		# Method: Run
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def Run()
 			# ...
 		end
 
 		# Method: RunSynchronously
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def RunSynchronously()
 			# ...
 		end
 
 		# Method: SleepMs
+		#
+		# ==== Attributes
+		#
+		# +numMs+ - Fixnum
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  numMs [Fixnum]
+		# @return  [nil]
 		def SleepMs(numMs)
 			# ...
 		end
 
 		# Method: Wait
+		#
+		# ==== Attributes
+		#
+		# +maxWaitMs+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  maxWaitMs [Fixnum]
+		# @return  [TrueClass, FalseClass]
 		def Wait(maxWaitMs)
 			# ...
 		end

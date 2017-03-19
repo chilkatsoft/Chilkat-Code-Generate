@@ -33,16 +33,42 @@ module Chilkat
 		def get_Version() end
 
 		# Method: DnsClearCache
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def DnsClearCache()
 			# ...
 		end
 
 		# Method: FinalizeThreadPool
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def FinalizeThreadPool()
 			# ...
 		end
 
 		# Method: UnlockBundle
+		#
+		# ==== Attributes
+		#
+		# +bundleUnlockCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  bundleUnlockCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockBundle(bundleUnlockCode)
 			# ...
 		end

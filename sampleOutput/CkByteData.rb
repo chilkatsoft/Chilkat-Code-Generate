@@ -1,4 +1,4 @@
 module Chilkat
-	class CkCkByteData 
+	class CkByteData 
 	end
 end

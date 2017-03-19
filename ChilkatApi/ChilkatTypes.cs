@@ -1324,8 +1324,47 @@ namespace ChilkatApi
             throw new Exception();
             }
 
-	// Only pass Chilkat generic object types
-	static public string genericObjToSwigObj(string genericType)
+
+        //Ruby is Duck. No strictly variable types defined. This is just for documentation helping.
+        public string gtToRubyDuck(int gt, string genericType = "")
+        {
+            if (gt == GT_VOID) return "nil";
+            if (gt == GT_STRING) return "String";
+            if (gt == GT_INT) return "Fixnum";
+            if (gt == GT_INT64) return "Bignum";
+            if (gt == GT_BOOL) return "TrueClass, FalseClass";
+            if (gt == GT_DATE) return "Object";
+            if (gt == GT_BYTES) return "CkByteData";
+
+            if (gt == GT_CPP_P_BYTEDATA) return "Object";
+
+            if (gt == GT_CPP_SZ_BYTEDATA) return "Integer";
+            if (gt == GT_CPP_WIDE_STRING) return "String";
+            if (gt == GT_CPP_WIDE_CHAR) return "String";
+            if (gt == GT_CPP_CHAR) return "String";
+            if (gt == GT_CPP_DOUBLE) return "Float";
+            if (gt == GT_CPP_BYTE) return "Fixnum";
+            if (gt == GT_CPP_SHORT) return "Fixnum";
+            if (gt == GT_CPP_UNSIGNED_SHORT) return "Fixnum";
+            if (gt == GT_UNSIGNED_INT) return "Fixnum";
+
+            if (gt == GT_OBJECT)
+            {
+                if (genericType.Length == 0) throw new Exception();
+                if (genericType.StartsWith("Ck"))
+                {
+                    return genericType;
+                }
+                else
+                {
+                    return "Ck" + genericType;
+                }
+            }
+
+            throw new Exception();
+        }
+        // Only pass Chilkat generic object types
+        static public string genericObjToSwigObj(string genericType)
 	    {
             if (genericType.StartsWith("Ck"))
                 {

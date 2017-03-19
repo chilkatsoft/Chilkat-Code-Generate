@@ -45,31 +45,83 @@ module Chilkat
 		def get_Version() end
 
 		# Method: Cancel
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def Cancel()
 			# ...
 		end
 
 		# Method: Monitor
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def Monitor()
 			# ...
 		end
 
 		# Method: RefreshAccessToken
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def RefreshAccessToken()
 			# ...
 		end
 
 		# Method: SleepMs
+		#
+		# ==== Attributes
+		#
+		# +millisec+ - Fixnum
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  millisec [Fixnum]
+		# @return  [nil]
 		def SleepMs(millisec)
 			# ...
 		end
 
 		# Method: StartAuth
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
 		def StartAuth()
 			# ...
 		end
 
 		# Method: UseConnection
+		#
+		# ==== Attributes
+		#
+		# +sock+ - CkSocket
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  sock [CkSocket]
+		# @return  [TrueClass, FalseClass]
 		def UseConnection(sock)
 			# ...
 		end

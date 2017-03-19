@@ -28,26 +28,82 @@ module Chilkat
 		def get_Version() end
 
 		# Method: GenCsrBd
+		#
+		# ==== Attributes
+		#
+		# +privKey+ - CkPrivateKey
+, 		# +csrData+ - CkBinData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  privKey [CkPrivateKey]
+, 		# @param  csrData [CkBinData]
+		# @return  [TrueClass, FalseClass]
 		def GenCsrBd(privKey, csrData)
 			# ...
 		end
 
 		# Method: GenCsrPem
+		#
+		# ==== Attributes
+		#
+		# +privKey+ - CkPrivateKey
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  privKey [CkPrivateKey]
+		# @return  [String]
 		def GenCsrPem(privKey)
 			# ...
 		end
 
 		# Method: GetSubjectField
+		#
+		# ==== Attributes
+		#
+		# +oid+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  oid [String]
+		# @return  [String]
 		def GetSubjectField(oid)
 			# ...
 		end
 
 		# Method: LoadCsrPem
+		#
+		# ==== Attributes
+		#
+		# +csrPemStr+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  csrPemStr [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadCsrPem(csrPemStr)
 			# ...
 		end
 
 		# Method: SetSubjectField
+		#
+		# ==== Attributes
+		#
+		# +oid+ - String
+, 		# +value+ - String
+, 		# +asnType+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  oid [String]
+, 		# @param  value [String]
+, 		# @param  asnType [String]
+		# @return  [TrueClass, FalseClass]
 		def SetSubjectField(oid, value, asnType)
 			# ...
 		end

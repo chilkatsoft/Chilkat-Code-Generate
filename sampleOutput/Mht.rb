@@ -87,111 +87,355 @@ module Chilkat
 		def set_WebSitePassword(newval) end
 
 		# Method: AddCacheRoot
+		#
+		# ==== Attributes
+		#
+		# +dir+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  dir [String]
+		# @return  [nil]
 		def AddCacheRoot(dir)
 			# ...
 		end
 
 		# Method: AddCustomHeader
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+, 		# +value+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+, 		# @param  value [String]
+		# @return  [nil]
 		def AddCustomHeader(name, value)
 			# ...
 		end
 
 		# Method: AddExternalStyleSheet
+		#
+		# ==== Attributes
+		#
+		# +url+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  url [String]
+		# @return  [nil]
 		def AddExternalStyleSheet(url)
 			# ...
 		end
 
 		# Method: ClearCustomHeaders
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def ClearCustomHeaders()
 			# ...
 		end
 
 		# Method: ExcludeImagesMatching
+		#
+		# ==== Attributes
+		#
+		# +pattern+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  pattern [String]
+		# @return  [nil]
 		def ExcludeImagesMatching(pattern)
 			# ...
 		end
 
 		# Method: GetAndSaveEML
+		#
+		# ==== Attributes
+		#
+		# +url_or_htmlFilepath+ - String
+, 		# +emlPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  url_or_htmlFilepath [String]
+, 		# @param  emlPath [String]
+		# @return  [TrueClass, FalseClass]
 		def GetAndSaveEML(url_or_htmlFilepath, emlPath)
 			# ...
 		end
 
 		# Method: GetAndSaveMHT
+		#
+		# ==== Attributes
+		#
+		# +url_or_htmlFilepath+ - String
+, 		# +mhtPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  url_or_htmlFilepath [String]
+, 		# @param  mhtPath [String]
+		# @return  [TrueClass, FalseClass]
 		def GetAndSaveMHT(url_or_htmlFilepath, mhtPath)
 			# ...
 		end
 
 		# Method: GetAndZipEML
+		#
+		# ==== Attributes
+		#
+		# +url_or_htmlFilepath+ - String
+, 		# +zipEntryFilename+ - String
+, 		# +zipFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  url_or_htmlFilepath [String]
+, 		# @param  zipEntryFilename [String]
+, 		# @param  zipFilename [String]
+		# @return  [TrueClass, FalseClass]
 		def GetAndZipEML(url_or_htmlFilepath, zipEntryFilename, zipFilename)
 			# ...
 		end
 
 		# Method: GetAndZipMHT
+		#
+		# ==== Attributes
+		#
+		# +url_or_htmlFilepath+ - String
+, 		# +zipEntryFilename+ - String
+, 		# +zipFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  url_or_htmlFilepath [String]
+, 		# @param  zipEntryFilename [String]
+, 		# @param  zipFilename [String]
+		# @return  [TrueClass, FalseClass]
 		def GetAndZipMHT(url_or_htmlFilepath, zipEntryFilename, zipFilename)
 			# ...
 		end
 
 		# Method: GetCacheRoot
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
 		def GetCacheRoot(index)
 			# ...
 		end
 
 		# Method: GetEML
+		#
+		# ==== Attributes
+		#
+		# +url_or_htmlFilepath+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  url_or_htmlFilepath [String]
+		# @return  [String]
 		def GetEML(url_or_htmlFilepath)
 			# ...
 		end
 
 		# Method: GetMHT
+		#
+		# ==== Attributes
+		#
+		# +url_or_htmlFilepath+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  url_or_htmlFilepath [String]
+		# @return  [String]
 		def GetMHT(url_or_htmlFilepath)
 			# ...
 		end
 
 		# Method: HtmlToEML
+		#
+		# ==== Attributes
+		#
+		# +htmlText+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  htmlText [String]
+		# @return  [String]
 		def HtmlToEML(htmlText)
 			# ...
 		end
 
 		# Method: HtmlToEMLFile
+		#
+		# ==== Attributes
+		#
+		# +html+ - String
+, 		# +emlFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  html [String]
+, 		# @param  emlFilename [String]
+		# @return  [TrueClass, FalseClass]
 		def HtmlToEMLFile(html, emlFilename)
 			# ...
 		end
 
 		# Method: HtmlToMHT
+		#
+		# ==== Attributes
+		#
+		# +htmlText+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  htmlText [String]
+		# @return  [String]
 		def HtmlToMHT(htmlText)
 			# ...
 		end
 
 		# Method: HtmlToMHTFile
+		#
+		# ==== Attributes
+		#
+		# +html+ - String
+, 		# +mhtFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  html [String]
+, 		# @param  mhtFilename [String]
+		# @return  [TrueClass, FalseClass]
 		def HtmlToMHTFile(html, mhtFilename)
 			# ...
 		end
 
 		# Method: IsUnlocked
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
 
 		# Method: RemoveCustomHeader
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+		# @return  [nil]
 		def RemoveCustomHeader(name)
 			# ...
 		end
 
 		# Method: RestoreDefaults
+		#
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
 		def RestoreDefaults()
 			# ...
 		end
 
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +unlockCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  unlockCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
 		# Method: UnpackMHT
+		#
+		# ==== Attributes
+		#
+		# +mhtFilename+ - String
+, 		# +unpackDir+ - String
+, 		# +htmlFilename+ - String
+, 		# +partsSubDir+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  mhtFilename [String]
+, 		# @param  unpackDir [String]
+, 		# @param  htmlFilename [String]
+, 		# @param  partsSubDir [String]
+		# @return  [TrueClass, FalseClass]
 		def UnpackMHT(mhtFilename, unpackDir, htmlFilename, partsSubDir)
 			# ...
 		end
 
 		# Method: UnpackMHTString
+		#
+		# ==== Attributes
+		#
+		# +mhtString+ - String
+, 		# +unpackDir+ - String
+, 		# +htmlFilename+ - String
+, 		# +partsSubDir+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  mhtString [String]
+, 		# @param  unpackDir [String]
+, 		# @param  htmlFilename [String]
+, 		# @param  partsSubDir [String]
+		# @return  [TrueClass, FalseClass]
 		def UnpackMHTString(mhtString, unpackDir, htmlFilename, partsSubDir)
 			# ...
 		end

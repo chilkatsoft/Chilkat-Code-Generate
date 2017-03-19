@@ -8,6 +8,16 @@ module Chilkat
 		def get_Retry() end
 
 		# Method: LoadEvent
+		#
+		# ==== Attributes
+		#
+		# +eventText+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  eventText [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadEvent(eventText)
 			# ...
 		end

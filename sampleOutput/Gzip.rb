@@ -26,81 +26,480 @@ module Chilkat
 		def get_Version() end
 
 		# Method: CompressFile
+		#
+		# ==== Attributes
+		#
+		# +inFilename+ - String
+, 		# +destPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inFilename [String]
+, 		# @param  destPath [String]
+		# @return  [TrueClass, FalseClass]
 		def CompressFile(inFilename, destPath)
 			# ...
 		end
 
 		# Method: CompressFile2
+		#
+		# ==== Attributes
+		#
+		# +inFilename+ - String
+, 		# +embeddedFilename+ - String
+, 		# +destPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inFilename [String]
+, 		# @param  embeddedFilename [String]
+, 		# @param  destPath [String]
+		# @return  [TrueClass, FalseClass]
 		def CompressFile2(inFilename, embeddedFilename, destPath)
 			# ...
 		end
 
+		# Method: CompressFileToMem
+		#
+		# ==== Attributes
+		#
+		# +inFilename+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inFilename [String]
+		# @return  [CkByteData]
+		def CompressFileToMem(inFilename)
+			# ...
+		end
+
+		# Method: CompressMemory
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+		# @return  [CkByteData]
+		def CompressMemory(inData)
+			# ...
+		end
+
+		# Method: CompressMemToFile
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+, 		# +destPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+, 		# @param  destPath [String]
+		# @return  [TrueClass, FalseClass]
+		def CompressMemToFile(inData, destPath)
+			# ...
+		end
+
+		# Method: CompressString
+		#
+		# ==== Attributes
+		#
+		# +inStr+ - String
+, 		# +destCharset+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inStr [String]
+, 		# @param  destCharset [String]
+		# @return  [CkByteData]
+		def CompressString(inStr, destCharset)
+			# ...
+		end
+
 		# Method: CompressStringENC
+		#
+		# ==== Attributes
+		#
+		# +inStr+ - String
+, 		# +charset+ - String
+, 		# +encoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  inStr [String]
+, 		# @param  charset [String]
+, 		# @param  encoding [String]
+		# @return  [String]
 		def CompressStringENC(inStr, charset, encoding)
 			# ...
 		end
 
 		# Method: CompressStringToFile
+		#
+		# ==== Attributes
+		#
+		# +inStr+ - String
+, 		# +destCharset+ - String
+, 		# +destPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inStr [String]
+, 		# @param  destCharset [String]
+, 		# @param  destPath [String]
+		# @return  [TrueClass, FalseClass]
 		def CompressStringToFile(inStr, destCharset, destPath)
 			# ...
 		end
 
+		# Method: Decode
+		#
+		# ==== Attributes
+		#
+		# +encodedStr+ - String
+, 		# +encoding+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  encodedStr [String]
+, 		# @param  encoding [String]
+		# @return  [CkByteData]
+		def Decode(encodedStr, encoding)
+			# ...
+		end
+
 		# Method: DeflateStringENC
+		#
+		# ==== Attributes
+		#
+		# +inString+ - String
+, 		# +charsetName+ - String
+, 		# +outputEncoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  inString [String]
+, 		# @param  charsetName [String]
+, 		# @param  outputEncoding [String]
+		# @return  [String]
 		def DeflateStringENC(inString, charsetName, outputEncoding)
 			# ...
 		end
 
+		# Method: Encode
+		#
+		# ==== Attributes
+		#
+		# +byteData+ - CkByteData
+, 		# +encoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  byteData [CkByteData]
+, 		# @param  encoding [String]
+		# @return  [String]
+		def Encode(byteData, encoding)
+			# ...
+		end
+
 		# Method: ExamineFile
+		#
+		# ==== Attributes
+		#
+		# +inGzFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inGzFilename [String]
+		# @return  [TrueClass, FalseClass]
 		def ExamineFile(inGzFilename)
 			# ...
 		end
 
+		# Method: ExamineMemory
+		#
+		# ==== Attributes
+		#
+		# +inGzData+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inGzData [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		def ExamineMemory(inGzData)
+			# ...
+		end
+
 		# Method: GetDt
+		#
+		# ==== Attributes
+		#
+		# returns CkDateTime
+		#
+		# YARD =>
+		#
+		# @return  [CkDateTime]
 		def GetDt()
 			# ...
 		end
 
 		# Method: InflateStringENC
+		#
+		# ==== Attributes
+		#
+		# +inString+ - String
+, 		# +convertFromCharset+ - String
+, 		# +inputEncoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  inString [String]
+, 		# @param  convertFromCharset [String]
+, 		# @param  inputEncoding [String]
+		# @return  [String]
 		def InflateStringENC(inString, convertFromCharset, inputEncoding)
 			# ...
 		end
 
 		# Method: IsUnlocked
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
 
+		# Method: ReadFile
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [CkByteData]
+		def ReadFile(path)
+			# ...
+		end
+
 		# Method: SetDt
+		#
+		# ==== Attributes
+		#
+		# +dt+ - CkDateTime
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  dt [CkDateTime]
+		# @return  [TrueClass, FalseClass]
 		def SetDt(dt)
 			# ...
 		end
 
 		# Method: UncompressFile
+		#
+		# ==== Attributes
+		#
+		# +srcPath+ - String
+, 		# +destPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  srcPath [String]
+, 		# @param  destPath [String]
+		# @return  [TrueClass, FalseClass]
 		def UncompressFile(srcPath, destPath)
 			# ...
 		end
 
+		# Method: UncompressFileToMem
+		#
+		# ==== Attributes
+		#
+		# +inFilename+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inFilename [String]
+		# @return  [CkByteData]
+		def UncompressFileToMem(inFilename)
+			# ...
+		end
+
 		# Method: UncompressFileToString
+		#
+		# ==== Attributes
+		#
+		# +gzFilename+ - String
+, 		# +charset+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  gzFilename [String]
+, 		# @param  charset [String]
+		# @return  [String]
 		def UncompressFileToString(gzFilename, charset)
 			# ...
 		end
 
+		# Method: UncompressMemory
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+		# @return  [CkByteData]
+		def UncompressMemory(inData)
+			# ...
+		end
+
+		# Method: UncompressMemToFile
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+, 		# +destPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+, 		# @param  destPath [String]
+		# @return  [TrueClass, FalseClass]
+		def UncompressMemToFile(inData, destPath)
+			# ...
+		end
+
+		# Method: UncompressString
+		#
+		# ==== Attributes
+		#
+		# +inData+ - CkByteData
+, 		# +inCharset+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  inData [CkByteData]
+, 		# @param  inCharset [String]
+		# @return  [String]
+		def UncompressString(inData, inCharset)
+			# ...
+		end
+
 		# Method: UncompressStringENC
+		#
+		# ==== Attributes
+		#
+		# +inStr+ - String
+, 		# +charset+ - String
+, 		# +encoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  inStr [String]
+, 		# @param  charset [String]
+, 		# @param  encoding [String]
+		# @return  [String]
 		def UncompressStringENC(inStr, charset, encoding)
 			# ...
 		end
 
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +unlockCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  unlockCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
 		# Method: UnTarGz
+		#
+		# ==== Attributes
+		#
+		# +tgzFilename+ - String
+, 		# +destDir+ - String
+, 		# +bNoAbsolute+ - TrueClass, FalseClass
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  tgzFilename [String]
+, 		# @param  destDir [String]
+, 		# @param  bNoAbsolute [TrueClass, FalseClass]
+		# @return  [TrueClass, FalseClass]
 		def UnTarGz(tgzFilename, destDir, bNoAbsolute)
 			# ...
 		end
 
+		# Method: WriteFile
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+, 		# +binaryData+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+, 		# @param  binaryData [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		def WriteFile(path, binaryData)
+			# ...
+		end
+
 		# Method: XfdlToXml
+		#
+		# ==== Attributes
+		#
+		# +xfldData+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  xfldData [String]
+		# @return  [String]
 		def XfdlToXml(xfldData)
 			# ...
 		end

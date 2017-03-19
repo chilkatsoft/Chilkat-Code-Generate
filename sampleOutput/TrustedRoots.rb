@@ -17,31 +17,87 @@ module Chilkat
 		def get_Version() end
 
 		# Method: Activate
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def Activate()
 			# ...
 		end
 
 		# Method: AddCert
+		#
+		# ==== Attributes
+		#
+		# +cert+ - CkCert
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  cert [CkCert]
+		# @return  [TrueClass, FalseClass]
 		def AddCert(cert)
 			# ...
 		end
 
 		# Method: AddJavaKeyStore
+		#
+		# ==== Attributes
+		#
+		# +keystore+ - CkJavaKeyStore
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  keystore [CkJavaKeyStore]
+		# @return  [TrueClass, FalseClass]
 		def AddJavaKeyStore(keystore)
 			# ...
 		end
 
 		# Method: Deactivate
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def Deactivate()
 			# ...
 		end
 
 		# Method: GetCert
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns CkCert
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [CkCert]
 		def GetCert(index)
 			# ...
 		end
 
 		# Method: LoadCaCertsPem
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
 		def LoadCaCertsPem(path)
 			# ...
 		end

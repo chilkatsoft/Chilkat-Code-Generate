@@ -41,31 +41,89 @@ module Chilkat
 		def get_Version() end
 
 		# Method: AddParam
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+, 		# +value+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+, 		# @param  value [String]
+		# @return  [TrueClass, FalseClass]
 		def AddParam(name, value)
 			# ...
 		end
 
 		# Method: Generate
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def Generate()
 			# ...
 		end
 
 		# Method: GenNonce
+		#
+		# ==== Attributes
+		#
+		# +numBytes+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  numBytes [Fixnum]
+		# @return  [TrueClass, FalseClass]
 		def GenNonce(numBytes)
 			# ...
 		end
 
 		# Method: GenTimestamp
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
 		def GenTimestamp()
 			# ...
 		end
 
 		# Method: RemoveParam
+		#
+		# ==== Attributes
+		#
+		# +name+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  name [String]
+		# @return  [TrueClass, FalseClass]
 		def RemoveParam(name)
 			# ...
 		end
 
 		# Method: SetRsaKey
+		#
+		# ==== Attributes
+		#
+		# +privKey+ - CkPrivateKey
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  privKey [CkPrivateKey]
+		# @return  [TrueClass, FalseClass]
 		def SetRsaKey(privKey)
 			# ...
 		end

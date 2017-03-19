@@ -16,31 +16,95 @@ module Chilkat
 		def get_Version() end
 
 		# Method: CreateE
+		#
+		# ==== Attributes
+		#
+		# +numBits+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  numBits [Fixnum]
+		# @return  [String]
 		def CreateE(numBits)
 			# ...
 		end
 
 		# Method: FindK
+		#
+		# ==== Attributes
+		#
+		# +E+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  E [String]
+		# @return  [String]
 		def FindK(E)
 			# ...
 		end
 
 		# Method: GenPG
+		#
+		# ==== Attributes
+		#
+		# +numBits+ - Fixnum
+, 		# +G+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  numBits [Fixnum]
+, 		# @param  G [Fixnum]
+		# @return  [TrueClass, FalseClass]
 		def GenPG(numBits, G)
 			# ...
 		end
 
 		# Method: SetPG
+		#
+		# ==== Attributes
+		#
+		# +p+ - String
+, 		# +g+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  p [String]
+, 		# @param  g [Fixnum]
+		# @return  [TrueClass, FalseClass]
 		def SetPG(p, g)
 			# ...
 		end
 
 		# Method: UnlockComponent
+		#
+		# ==== Attributes
+		#
+		# +unlockCode+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  unlockCode [String]
+		# @return  [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
 		# Method: UseKnownPrime
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [nil]
 		def UseKnownPrime(index)
 			# ...
 		end
