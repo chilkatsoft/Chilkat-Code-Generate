@@ -71,6 +71,7 @@ module Chilkat
 		# This method has been deprecated. Do not use it.
 		#
 		# @param newval [Object]
+		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_FileDateTime(newval) end
 
@@ -97,6 +98,20 @@ module Chilkat
 		# returns String
 		# @return [String]
 		def get_FileNameHex() end
+
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_HeartbeatMs() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_HeartbeatMs(newval) end
 
 		# returns Bignum
 		# @return [Bignum]

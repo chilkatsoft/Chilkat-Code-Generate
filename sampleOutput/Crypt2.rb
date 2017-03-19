@@ -35,6 +35,7 @@ module Chilkat
 		# This method has been deprecated. Do not use it.
 		#
 		# @param newval [Bignum]
+		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_ByteSwapOnDecrypt(newval) end
 
@@ -167,6 +168,20 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_HavalRounds(newval) end
+
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_HeartbeatMs() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_HeartbeatMs(newval) end
 
 		# returns Bignum
 		# @return [Bignum]

@@ -324,6 +324,20 @@ module Chilkat
 
 		# returns Bignum
 		# @return [Bignum]
+		#
+		# @event
+		def get_HeartbeatMs() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_HeartbeatMs(newval) end
+
+		# returns Bignum
+		# @return [Bignum]
 		def get_IgnoreMustRevalidate() end
 
 		# ==== Attributes
@@ -353,6 +367,7 @@ module Chilkat
 		# This method has been deprecated. Do not use it.
 		#
 		# @param newval [Bignum]
+		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_KeepEventLog(newval) end
 
@@ -657,6 +672,20 @@ module Chilkat
 		#
 		# @param newval [String]
 		def set_Password(newval) end
+
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_PercentDoneScale() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_PercentDoneScale(newval) end
 
 		# returns Bignum
 		# @return [Bignum]
@@ -967,6 +996,7 @@ module Chilkat
 		# This method has been deprecated. Do not use it.
 		#
 		# @param newval [Bignum]
+		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_UseBgThread(newval) end
 

@@ -102,6 +102,20 @@ module Chilkat
 
 		# returns Bignum
 		# @return [Bignum]
+		#
+		# @event
+		def get_HeartbeatMs() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_HeartbeatMs(newval) end
+
+		# returns Bignum
+		# @return [Bignum]
 		def get_IgnoreMustRevalidate() end
 
 		# ==== Attributes

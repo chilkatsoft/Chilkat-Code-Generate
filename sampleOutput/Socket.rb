@@ -210,6 +210,20 @@ module Chilkat
 		# @return [Bignum]
 		def get_ElapsedSeconds() end
 
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_HeartbeatMs() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_HeartbeatMs(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyAuthMethod() end
@@ -393,6 +407,20 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_ObjectId() end
+
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_PercentDoneScale() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_PercentDoneScale(newval) end
 
 		# returns Bignum
 		# @return [Bignum]

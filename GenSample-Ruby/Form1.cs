@@ -88,7 +88,7 @@ namespace GenSample
                 //if (xprop.Deprecated) continue;
                 if (!xprop.AxEnabled) continue;     // We don't want properties that do not exist in the ActiveX..
                 //if (xprop.IsBytes) continue;  // maybe we don't want to deal with the few properties that are binary data.
-                if (xprop.IsEventRelated()) continue;
+                //if (xprop.IsEventRelated()) continue;
                 // ...
 
                 if (!generateProperty(xprop, xclass, sbOut, log)) return false;
@@ -120,13 +120,17 @@ namespace GenSample
             {
             // All properties have getters..
             // Types can be emitted using an existing conversion, or you could write your own..
-
+       
             sbOut.Append("\t\t# returns " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n");
             if (xprop.Deprecated)
                 sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
             sbOut.Append("\t\t# @return [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
             if (xprop.Deprecated)
                 sbOut.Append("\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
+
+            if (xprop.IsEventRelated())
+                sbOut.Append("\t\t#\r\n\t\t# @event\r\n");
+
             sbOut.Append("\t\tdef get_" + xprop.EntryName + "() end\r\n\r\n");
 
             // If the property is not read-only, generate the setter.
@@ -139,8 +143,11 @@ namespace GenSample
                     sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
                 sbOut.Append("\t\t#\r\n");
                 sbOut.Append("\t\t# @param newval [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
+
+                if (xprop.IsEventRelated())
+                    sbOut.Append("\t\t#\r\n\t\t# @event\r\n");
                 if (xprop.Deprecated)
-                    sbOut.Append("\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
+                    sbOut.Append("\t\t#\r\n\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
                 sbOut.Append("\t\tdef set_" + xprop.EntryName + "(newval) end\r\n\r\n");
                 }
 

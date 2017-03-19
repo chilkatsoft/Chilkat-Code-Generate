@@ -55,6 +55,7 @@ module Chilkat
 		# This method has been deprecated. Do not use it.
 		#
 		# @param newval [Object]
+		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_EmailDate(newval) end
 
@@ -165,6 +166,7 @@ module Chilkat
 		# This method has been deprecated. Do not use it.
 		#
 		# @param newval [Object]
+		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_LocalDate(newval) end
 

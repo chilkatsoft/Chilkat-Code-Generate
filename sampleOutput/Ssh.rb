@@ -100,6 +100,20 @@ module Chilkat
 		# @param newval [String]
 		def set_ForceCipher(newval) end
 
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_HeartbeatMs() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_HeartbeatMs(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HostKeyAlg() end

@@ -80,6 +80,20 @@ module Chilkat
 		# @param newval [String]
 		def set_GroupName(newval) end
 
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_HeartbeatMs() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_HeartbeatMs(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
@@ -157,6 +171,20 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumDirRoots() end
+
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_PercentDoneScale() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_PercentDoneScale(newval) end
 
 		# returns Bignum
 		# @return [Bignum]

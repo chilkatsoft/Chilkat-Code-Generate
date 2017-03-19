@@ -60,6 +60,20 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_Expect100Continue(newval) end
 
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_HeartbeatMs() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_HeartbeatMs(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Hostname() end
@@ -147,6 +161,20 @@ module Chilkat
 		#
 		# @param newval [String]
 		def set_Path(newval) end
+
+		# returns Bignum
+		# @return [Bignum]
+		#
+		# @event
+		def get_PercentDoneScale() end
+
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
+		#
+		# @event
+		def set_PercentDoneScale(newval) end
 
 		# returns Bignum
 		# @return [Bignum]
