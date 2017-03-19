@@ -1,37 +1,121 @@
 module Chilkat
 	class CkZipEntry 
+		# returns String
+		# @return [String]
 		def get_Comment() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Comment(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_CompressedLength() end
+		# returns String
+		# @return [String]
 		def get_CompressedLengthStr() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_CompressionLevel() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_CompressionLevel(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_CompressionMethod() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_CompressionMethod(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Crc() end
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_EntryID() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_EntryType() end
+		# returns String
+		# @return [String]
 		def get_FileDateTimeStr() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_FileDateTimeStr(newval) end
+		# returns String
+		# @return [String]
 		def get_FileName() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_FileName(newval) end
+		# returns String
+		# @return [String]
 		def get_FileNameHex() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IsDirectory() end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_TextFlag() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_TextFlag(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UncompressedLength() end
+		# returns String
+		# @return [String]
 		def get_UncompressedLengthStr() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
 
 		# Method: AppendData

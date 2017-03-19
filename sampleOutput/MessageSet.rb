@@ -1,9 +1,23 @@
 module Chilkat
 	class CkMessageSet 
+		# returns Bignum
+		# @return [Bignum]
 		def get_Count() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_HasUids() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_HasUids(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
 
 		# Method: ContainsId

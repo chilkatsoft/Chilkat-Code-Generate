@@ -1,83 +1,293 @@
 module Chilkat
 	class CkEmail 
+		# returns String
+		# @return [String]
 		def get_Body() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Body(newval) end
+		# returns String
+		# @return [String]
 		def get_BounceAddress() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_BounceAddress(newval) end
+		# returns String
+		# @return [String]
 		def get_Charset() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Charset(newval) end
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Decrypted() end
+		# returns String
+		# @return [String]
 		def get_EmailDateStr() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_EmailDateStr(newval) end
+		# returns String
+		# @return [String]
 		def get_EncryptedBy() end
+		# returns String
+		# @return [String]
 		def get_FileDistList() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_FileDistList(newval) end
+		# returns String
+		# @return [String]
 		def get_From() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_From(newval) end
+		# returns String
+		# @return [String]
 		def get_FromAddress() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_FromAddress(newval) end
+		# returns String
+		# @return [String]
 		def get_FromName() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_FromName(newval) end
+		# returns String
+		# @return [String]
 		def get_Header() end
+		# returns String
+		# @return [String]
 		def get_Language() end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns String
+		# @return [String]
 		def get_LocalDateStr() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_LocalDateStr(newval) end
+		# returns String
+		# @return [String]
 		def get_Mailer() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Mailer(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumAlternatives() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumAttachedMessages() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumAttachments() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumBcc() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumCC() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumDaysOld() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumHeaderFields() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumRelatedItems() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumReplacePatterns() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumReports() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumTo() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_OverwriteExisting() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_OverwriteExisting(newval) end
+		# returns String
+		# @return [String]
 		def get_Pkcs7CryptAlg() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Pkcs7CryptAlg(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Pkcs7KeyLength() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_Pkcs7KeyLength(newval) end
+		# returns String
+		# @return [String]
 		def get_PreferredCharset() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_PreferredCharset(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PrependHeaders() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_PrependHeaders(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ReceivedEncrypted() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ReceivedSigned() end
+		# returns String
+		# @return [String]
 		def get_ReplyTo() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ReplyTo(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ReturnReceipt() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ReturnReceipt(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SendEncrypted() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SendEncrypted(newval) end
+		# returns String
+		# @return [String]
 		def get_Sender() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Sender(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SendSigned() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SendSigned(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SignaturesValid() end
+		# returns String
+		# @return [String]
 		def get_SignedBy() end
+		# returns String
+		# @return [String]
 		def get_SigningHashAlg() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SigningHashAlg(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Size() end
+		# returns String
+		# @return [String]
 		def get_Subject() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Subject(newval) end
+		# returns String
+		# @return [String]
 		def get_Uidl() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UnpackUseRelPaths() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UnpackUseRelPaths(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
 
 		# Method: AddAttachmentBd

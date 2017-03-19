@@ -1,192 +1,738 @@
 module Chilkat
 	class CkHttp 
+		# returns Bignum
+		# @return [Bignum]
 		def get_AbortCurrent() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+		# returns String
+		# @return [String]
 		def get_Accept() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Accept(newval) end
+		# returns String
+		# @return [String]
 		def get_AcceptCharset() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_AcceptCharset(newval) end
+		# returns String
+		# @return [String]
 		def get_AcceptLanguage() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_AcceptLanguage(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_AllowGzip() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AllowGzip(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_AllowHeaderFolding() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AllowHeaderFolding(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_AutoAddHostHeader() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AutoAddHostHeader(newval) end
+		# returns String
+		# @return [String]
 		def get_AwsAccessKey() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_AwsAccessKey(newval) end
+		# returns String
+		# @return [String]
 		def get_AwsEndpoint() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_AwsEndpoint(newval) end
+		# returns String
+		# @return [String]
 		def get_AwsRegion() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_AwsRegion(newval) end
+		# returns String
+		# @return [String]
 		def get_AwsSecretKey() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_AwsSecretKey(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_AwsSignatureVersion() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AwsSignatureVersion(newval) end
+		# returns String
+		# @return [String]
 		def get_AwsSubResources() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_AwsSubResources(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_BandwidthThrottleDown() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_BandwidthThrottleDown(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_BandwidthThrottleUp() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_BandwidthThrottleUp(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_BasicAuth() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_BasicAuth(newval) end
+		# returns String
+		# @return [String]
 		def get_ClientIpAddress() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ClientIpAddress(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ConnectFailReason() end
+		# returns String
+		# @return [String]
 		def get_Connection() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Connection(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ConnectTimeout() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ConnectTimeout(newval) end
+		# returns String
+		# @return [String]
 		def get_CookieDir() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_CookieDir(newval) end
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_DefaultFreshPeriod() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_DefaultFreshPeriod(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_DigestAuth() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_DigestAuth(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_FetchFromCache() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_FetchFromCache(newval) end
+		# returns String
+		# @return [String]
 		def get_FinalRedirectUrl() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_FollowRedirects() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_FollowRedirects(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_FreshnessAlgorithm() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_FreshnessAlgorithm(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IgnoreMustRevalidate() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_IgnoreMustRevalidate(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IgnoreNoCache() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_IgnoreNoCache(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_KeepResponseBody() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_KeepResponseBody(newval) end
+		# returns String
+		# @return [String]
 		def get_LastContentType() end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns String
+		# @return [String]
 		def get_LastHeader() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastModDate() end
+		# returns String
+		# @return [String]
 		def get_LastResponseBody() end
+		# returns String
+		# @return [String]
 		def get_LastResponseHeader() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStatus() end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LMFactor() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LMFactor(newval) end
+		# returns String
+		# @return [String]
 		def get_Login() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Login(newval) end
+		# returns String
+		# @return [String]
 		def get_LoginDomain() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_LoginDomain(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_MaxConnections() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_MaxConnections(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_MaxFreshPeriod() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_MaxFreshPeriod(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_MaxResponseSize() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_MaxResponseSize(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_MaxUrlLen() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_MaxUrlLen(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_MimicFireFox() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_MimicFireFox(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_MimicIE() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_MimicIE(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_MinFreshPeriod() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_MinFreshPeriod(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NegotiateAuth() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_NegotiateAuth(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NtlmAuth() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_NtlmAuth(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumCacheLevels() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_NumCacheLevels(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumCacheRoots() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_OAuth1() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_OAuth1(newval) end
+		# returns String
+		# @return [String]
 		def get_OAuthCallback() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_OAuthCallback(newval) end
+		# returns String
+		# @return [String]
 		def get_OAuthConsumerKey() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_OAuthConsumerKey(newval) end
+		# returns String
+		# @return [String]
 		def get_OAuthConsumerSecret() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_OAuthConsumerSecret(newval) end
+		# returns String
+		# @return [String]
 		def get_OAuthRealm() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_OAuthRealm(newval) end
+		# returns String
+		# @return [String]
 		def get_OAuthSigMethod() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_OAuthSigMethod(newval) end
+		# returns String
+		# @return [String]
 		def get_OAuthToken() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_OAuthToken(newval) end
+		# returns String
+		# @return [String]
 		def get_OAuthTokenSecret() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_OAuthTokenSecret(newval) end
+		# returns String
+		# @return [String]
 		def get_OAuthVerifier() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_OAuthVerifier(newval) end
+		# returns String
+		# @return [String]
 		def get_Password() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Password(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PreferIpv6() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_PreferIpv6(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyAuthMethod() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyAuthMethod(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyDomain() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyDomain(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyLogin() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyLogin(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyLoginDomain() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyLoginDomain(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyPassword() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyPassword(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ProxyPort() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ProxyPort(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ReadTimeout() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ReadTimeout(newval) end
+		# returns String
+		# @return [String]
 		def get_RedirectVerb() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_RedirectVerb(newval) end
+		# returns String
+		# @return [String]
 		def get_Referer() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Referer(newval) end
+		# returns String
+		# @return [String]
 		def get_RequiredContentType() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_RequiredContentType(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_RequireSslCertVerify() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_RequireSslCertVerify(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_S3Ssl() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_S3Ssl(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SaveCookies() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SaveCookies(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SendBufferSize() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SendBufferSize(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SendCookies() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SendCookies(newval) end
+		# returns String
+		# @return [String]
 		def get_SessionLogFilename() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SessionLogFilename(newval) end
+		# returns String
+		# @return [String]
 		def get_SocksHostname() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SocksHostname(newval) end
+		# returns String
+		# @return [String]
 		def get_SocksPassword() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SocksPassword(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SocksPort() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SocksPort(newval) end
+		# returns String
+		# @return [String]
 		def get_SocksUsername() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SocksUsername(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SocksVersion() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SocksVersion(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SoRcvBuf() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SoRcvBuf(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SoSndBuf() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SoSndBuf(newval) end
+		# returns String
+		# @return [String]
 		def get_SslAllowedCiphers() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SslAllowedCiphers(newval) end
+		# returns String
+		# @return [String]
 		def get_SslProtocol() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SslProtocol(newval) end
+		# returns String
+		# @return [String]
 		def get_StreamResponseBodyPath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_StreamResponseBodyPath(newval) end
+		# returns String
+		# @return [String]
 		def get_TlsCipherSuite() end
+		# returns String
+		# @return [String]
 		def get_TlsPinSet() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_TlsPinSet(newval) end
+		# returns String
+		# @return [String]
 		def get_TlsVersion() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UpdateCache() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UpdateCache(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UseIEProxy() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UseIEProxy(newval) end
+		# returns String
+		# @return [String]
 		def get_UserAgent() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_UserAgent(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_WasRedirected() end
 
 		# Method: AddCacheRoot

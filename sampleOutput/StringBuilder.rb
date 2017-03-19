@@ -1,9 +1,23 @@
 module Chilkat
 	class CkStringBuilder 
+		# returns Bignum
+		# @return [Bignum]
 		def get_IntValue() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_IntValue(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Length() end
 
 		# Method: Append

@@ -74,56 +74,106 @@ namespace ChilkatApi
             }
 
         static public string genericToAxPrimitive(int gt, string genericType = "")
-            {
+        {
             if (gt == GT_STRING)
-                {
+            {
                 return "BSTR";
-                }
+            }
             else if (gt == GT_INT || gt == GT_BOOL || gt == GT_UNSIGNED_INT || gt == GT_CPP_SZ_BYTEDATA)
-                {
+            {
                 return "LONG";
-                }
+            }
             else if (gt == GT_CPP_CHAR)
-                {
+            {
                 return "CHAR";
-                }
+            }
             else if (gt == GT_INT64)
-                {
+            {
                 return "LONG";
-                }
+            }
             else if (gt == GT_BYTES)
-                {
+            {
                 return "VARIANT";
-                }
+            }
             else if (gt == GT_DATE)
-                {
+            {
                 return "DATE";
-                }
-	    else if (gt == GT_VOID)
-		{
-		return "void";
-		}
+            }
+            else if (gt == GT_VOID)
+            {
+                return "void";
+            }
             //else if (gt == GT_EVENT)
             //    {
             //    return "void";
             //    }
-	    else if (gt == GT_CPP_DOUBLE)
-                {
+            else if (gt == GT_CPP_DOUBLE)
+            {
                 // Should really be DATE?
                 return "double";
-                }
+            }
             else if (gt == GT_OBJECT)
-                {
+            {
                 // It's an object, such as "Cert".
                 return null;
-                }
-            else
-                {
-                throw new Exception();
-                }
             }
+            else
+            {
+                throw new Exception();
+            }
+        }
 
-	static public int genericToGt(string genericType)
+        static public string genericToRubyPrimitive(int gt, string genericType = "")
+        {
+            if (gt == GT_STRING)
+            {
+                return "String";
+            }
+            else if (gt == GT_INT || gt == GT_BOOL || gt == GT_UNSIGNED_INT || gt == GT_CPP_SZ_BYTEDATA)
+            {
+                return "Bignum";
+            }
+            else if (gt == GT_CPP_CHAR)
+            {
+                return "String";
+            }
+            else if (gt == GT_INT64)
+            {
+                return "Bignum";
+            }
+            else if (gt == GT_BYTES)
+            {
+                return "Fixnum";
+            }
+            else if (gt == GT_DATE)
+            {
+                return "Object";
+            }
+            else if (gt == GT_VOID)
+            {
+                return "nil";
+            }
+            //else if (gt == GT_EVENT)
+            //    {
+            //    return "void";
+            //    }
+            else if (gt == GT_CPP_DOUBLE)
+            {
+                // Should really be DATE?
+                return "Float";
+            }
+            else if (gt == GT_OBJECT)
+            {
+                // It's an object, such as "Cert".
+                return null;
+            }
+            else
+            {
+                throw new Exception();
+            }
+        }
+
+        static public int genericToGt(string genericType)
 	    {
             if (genericType.Length == 0) throw new Exception();
 

@@ -1,39 +1,131 @@
 module Chilkat
 	class CkRest 
+		# returns Bignum
+		# @return [Bignum]
 		def get_AllowHeaderFolding() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AllowHeaderFolding(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_AllowHeaderQB() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AllowHeaderQB(newval) end
+		# returns String
+		# @return [String]
 		def get_Authorization() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Authorization(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ConnectFailReason() end
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns String
+		# @return [String]
 		def get_Host() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Host(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IdleTimeoutMs() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_IdleTimeoutMs(newval) end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastRequestHeader() end
+		# returns String
+		# @return [String]
 		def get_LastRequestStartLine() end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumResponseHeaders() end
+		# returns String
+		# @return [String]
 		def get_PartSelector() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_PartSelector(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PercentDoneOnSend() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_PercentDoneOnSend(newval) end
+		# returns String
+		# @return [String]
 		def get_ResponseHeader() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ResponseStatusCode() end
+		# returns String
+		# @return [String]
 		def get_ResponseStatusText() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_StreamNonChunked() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_StreamNonChunked(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
 
 		# Method: AddHeader

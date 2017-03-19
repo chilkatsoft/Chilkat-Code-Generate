@@ -1,20 +1,54 @@
 module Chilkat
 	class CkString 
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumArabic() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumAscii() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumCentralEuro() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumChars() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumChinese() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumCyrillic() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumGreek() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumHebrew() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumJapanese() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumKorean() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumLatin() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumThai() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SizeAnsi() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SizeUtf8() end
+		# returns String
+		# @return [String]
 		def get_Str() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Str(newval) end
 
 		# Method: AnsiCharAt

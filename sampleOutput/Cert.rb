@@ -1,61 +1,183 @@
 module Chilkat
 	class CkCert 
+		# returns String
+		# @return [String]
 		def get_AuthorityKeyId() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_AvoidWindowsPkAccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AvoidWindowsPkAccess(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_CertVersion() end
+		# returns String
+		# @return [String]
 		def get_CspName() end
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Expired() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ForClientAuthentication() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ForCodeSigning() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ForSecureEmail() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ForServerAuthentication() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ForTimeStamping() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_HasKeyContainer() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IntendedKeyUsage() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IsRoot() end
+		# returns String
+		# @return [String]
 		def get_IssuerC() end
+		# returns String
+		# @return [String]
 		def get_IssuerCN() end
+		# returns String
+		# @return [String]
 		def get_IssuerDN() end
+		# returns String
+		# @return [String]
 		def get_IssuerE() end
+		# returns String
+		# @return [String]
 		def get_IssuerL() end
+		# returns String
+		# @return [String]
 		def get_IssuerO() end
+		# returns String
+		# @return [String]
 		def get_IssuerOU() end
+		# returns String
+		# @return [String]
 		def get_IssuerS() end
+		# returns String
+		# @return [String]
 		def get_KeyContainerName() end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_MachineKeyset() end
+		# returns String
+		# @return [String]
 		def get_OcspUrl() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PrivateKeyExportable() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Revoked() end
+		# returns String
+		# @return [String]
 		def get_Rfc822Name() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SelfSigned() end
+		# returns String
+		# @return [String]
 		def get_SerialNumber() end
+		# returns String
+		# @return [String]
 		def get_Sha1Thumbprint() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SignatureVerified() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Silent() end
+		# returns String
+		# @return [String]
 		def get_SubjectC() end
+		# returns String
+		# @return [String]
 		def get_SubjectCN() end
+		# returns String
+		# @return [String]
 		def get_SubjectDN() end
+		# returns String
+		# @return [String]
 		def get_SubjectE() end
+		# returns String
+		# @return [String]
 		def get_SubjectKeyId() end
+		# returns String
+		# @return [String]
 		def get_SubjectL() end
+		# returns String
+		# @return [String]
 		def get_SubjectO() end
+		# returns String
+		# @return [String]
 		def get_SubjectOU() end
+		# returns String
+		# @return [String]
 		def get_SubjectS() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_TrustedRoot() end
+		# returns String
+		# @return [String]
 		def get_ValidFromStr() end
+		# returns String
+		# @return [String]
 		def get_ValidToStr() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
 
 		# Method: CheckRevoked

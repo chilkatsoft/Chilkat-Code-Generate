@@ -1,63 +1,227 @@
 module Chilkat
 	class CkUpload 
+		# returns Bignum
+		# @return [Bignum]
 		def get_AbortCurrent() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_BandwidthThrottleUp() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_BandwidthThrottleUp(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ChunkSize() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ChunkSize(newval) end
+		# returns String
+		# @return [String]
 		def get_ClientIpAddress() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ClientIpAddress(newval) end
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Expect100Continue() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_Expect100Continue(newval) end
+		# returns String
+		# @return [String]
 		def get_Hostname() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Hostname(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IdleTimeoutMs() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_IdleTimeoutMs(newval) end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns String
+		# @return [String]
 		def get_Login() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Login(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumBytesSent() end
+		# returns String
+		# @return [String]
 		def get_Password() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Password(newval) end
+		# returns String
+		# @return [String]
 		def get_Path() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Path(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PercentUploaded() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Port() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_Port(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PreferIpv6() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_PreferIpv6(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyDomain() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyDomain(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyLogin() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyLogin(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyPassword() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyPassword(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ProxyPort() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ProxyPort(newval) end
+		# returns String
+		# @return [String]
 		def get_ResponseHeader() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ResponseStatus() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Ssl() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_Ssl(newval) end
+		# returns String
+		# @return [String]
 		def get_SslAllowedCiphers() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SslAllowedCiphers(newval) end
+		# returns String
+		# @return [String]
 		def get_SslProtocol() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SslProtocol(newval) end
+		# returns String
+		# @return [String]
 		def get_TlsPinSet() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_TlsPinSet(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_TotalUploadSize() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UploadInProgress() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UploadSuccess() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
 
 		# Method: AbortUpload

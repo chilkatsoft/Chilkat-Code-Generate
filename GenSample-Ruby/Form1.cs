@@ -120,11 +120,19 @@ namespace GenSample
             {
             // All properties have getters..
             // Types can be emitted using an existing conversion, or you could write your own..
+
+            sbOut.Append("\t\t# returns " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n");
+            sbOut.Append("\t\t# @return [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
             sbOut.Append("\t\tdef get_" + xprop.EntryName + "() end\r\n");
 
             // If the property is not read-only, generate the setter.
             if (!xprop.ReadOnly)
                 {
+
+                sbOut.Append("\t\t# ==== Attributes\r\n");
+                sbOut.Append("\t\t# +newval+ - " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n");
+                sbOut.Append("\t\t#\r\n");
+                sbOut.Append("\t\t# @param newval [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
                 sbOut.Append("\t\tdef set_" + xprop.EntryName + "(newval) end\r\n");
                 }
 

@@ -1,7 +1,15 @@
 module Chilkat
 	class CkBinData 
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumBytes() end
 
 		# Method: AppendBd

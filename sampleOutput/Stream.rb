@@ -1,49 +1,169 @@
 module Chilkat
 	class CkStream 
+		# returns Bignum
+		# @return [Bignum]
 		def get_AbortCurrent() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_CanRead() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_CanWrite() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_DataAvailable() end
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_DefaultChunkSize() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_DefaultChunkSize(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_EndOfStream() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IsWriteClosed() end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Length() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_Length(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Length32() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_Length32(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumReceived() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumSent() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ReadFailReason() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ReadTimeoutMs() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ReadTimeoutMs(newval) end
+		# returns String
+		# @return [String]
 		def get_SinkFile() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SinkFile(newval) end
+		# returns String
+		# @return [String]
 		def get_SourceFile() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SourceFile(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SourceFilePart() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SourceFilePart(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SourceFilePartSize() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SourceFilePartSize(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_StringBom() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_StringBom(newval) end
+		# returns String
+		# @return [String]
 		def get_StringCharset() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_StringCharset(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_WriteFailReason() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_WriteTimeoutMs() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_WriteTimeoutMs(newval) end
 
 		# Method: ReadBytes

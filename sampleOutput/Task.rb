@@ -1,31 +1,95 @@
 module Chilkat
 	class CkTask 
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Finished() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Inert() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_KeepProgressLog() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_KeepProgressLog(newval) end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_Live() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PercentDone() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ProgressLogSize() end
+		# returns String
+		# @return [String]
 		def get_ResultErrorText() end
+		# returns String
+		# @return [String]
 		def get_ResultType() end
+		# returns String
+		# @return [String]
 		def get_Status() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_StatusInt() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_TaskId() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_TaskSuccess() end
+		# returns String
+		# @return [String]
 		def get_UserData() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_UserData(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
 
 		# Method: Cancel

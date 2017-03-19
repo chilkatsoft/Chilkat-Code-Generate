@@ -1,89 +1,337 @@
 module Chilkat
 	class CkMht 
+		# returns Bignum
+		# @return [Bignum]
 		def get_AbortCurrent() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+		# returns String
+		# @return [String]
 		def get_BaseUrl() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_BaseUrl(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ConnectTimeout() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ConnectTimeout(newval) end
+		# returns String
+		# @return [String]
 		def get_DebugHtmlAfter() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugHtmlAfter(newval) end
+		# returns String
+		# @return [String]
 		def get_DebugHtmlBefore() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugHtmlBefore(newval) end
+		# returns String
+		# @return [String]
 		def get_DebugLogFilePath() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_DebugTagCleaning() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_DebugTagCleaning(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_EmbedImages() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_EmbedImages(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_EmbedLocalOnly() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_EmbedLocalOnly(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_FetchFromCache() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_FetchFromCache(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IgnoreMustRevalidate() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_IgnoreMustRevalidate(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_IgnoreNoCache() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_IgnoreNoCache(newval) end
+		# returns String
+		# @return [String]
 		def get_LastErrorHtml() end
+		# returns String
+		# @return [String]
 		def get_LastErrorText() end
+		# returns String
+		# @return [String]
 		def get_LastErrorXml() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastMethodSuccess() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# @return [String]
 		def get_LastStringResult() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NoScripts() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_NoScripts(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NtlmAuth() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_NtlmAuth(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumCacheLevels() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_NumCacheLevels(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumCacheRoots() end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PreferIpv6() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_PreferIpv6(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_PreferMHTScripts() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_PreferMHTScripts(newval) end
+		# returns String
+		# @return [String]
 		def get_Proxy() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_Proxy(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyLogin() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyLogin(newval) end
+		# returns String
+		# @return [String]
 		def get_ProxyPassword() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_ProxyPassword(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_ReadTimeout() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_ReadTimeout(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_RequireSslCertVerify() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_RequireSslCertVerify(newval) end
+		# returns String
+		# @return [String]
 		def get_SocksHostname() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SocksHostname(newval) end
+		# returns String
+		# @return [String]
 		def get_SocksPassword() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SocksPassword(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SocksPort() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SocksPort(newval) end
+		# returns String
+		# @return [String]
 		def get_SocksUsername() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_SocksUsername(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_SocksVersion() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_SocksVersion(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UnpackDirect() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UnpackDirect(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UnpackUseRelPaths() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UnpackUseRelPaths(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UpdateCache() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UpdateCache(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UseCids() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UseCids(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UseFilename() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UseFilename(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UseIEProxy() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UseIEProxy(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_UseInline() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_UseInline(newval) end
+		# returns Bignum
+		# @return [Bignum]
 		def get_VerboseLogging() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		#
+		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+		# returns String
+		# @return [String]
 		def get_Version() end
+		# returns String
+		# @return [String]
 		def get_WebSiteLogin() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_WebSiteLogin(newval) end
+		# returns String
+		# @return [String]
 		def get_WebSiteLoginDomain() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_WebSiteLoginDomain(newval) end
+		# returns String
+		# @return [String]
 		def get_WebSitePassword() end
+		# ==== Attributes
+		# +newval+ - String
+		#
+		# @param newval [String]
 		def set_WebSitePassword(newval) end
 
 		# Method: AddCacheRoot
