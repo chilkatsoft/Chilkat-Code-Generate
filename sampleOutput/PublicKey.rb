@@ -109,6 +109,36 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetOpenSslDer
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+		# @return  [CkByteData]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetOpenSslDer()
+			# ...
+		end
+
+		# Method: GetOpenSslPem
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetOpenSslPem()
+			# ...
+		end
+
 		# Method: GetPem
 		#
 		# ==== Attributes
@@ -121,6 +151,55 @@ module Chilkat
 , 		# @param  preferPkcs1 [TrueClass, FalseClass]
 		# @return  [String]
 		def GetPem(preferPkcs1)
+			# ...
+		end
+
+		# Method: GetPkcs1ENC
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +encoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  encoding [String]
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetPkcs1ENC(encoding)
+			# ...
+		end
+
+		# Method: GetPkcs8ENC
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +encoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  encoding [String]
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetPkcs8ENC(encoding)
+			# ...
+		end
+
+		# Method: GetRsaDer
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+		# @return  [CkByteData]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetRsaDer()
 			# ...
 		end
 
@@ -197,6 +276,159 @@ module Chilkat
 			# ...
 		end
 
+		# Method: LoadOpenSslDer
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +data+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  data [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadOpenSslDer(data)
+			# ...
+		end
+
+		# Method: LoadOpenSslDerFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadOpenSslDerFile(path)
+			# ...
+		end
+
+		# Method: LoadOpenSslPem
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +str+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  str [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadOpenSslPem(str)
+			# ...
+		end
+
+		# Method: LoadOpenSslPemFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadOpenSslPemFile(path)
+			# ...
+		end
+
+		# Method: LoadPkcs1Pem
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +str+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  str [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadPkcs1Pem(str)
+			# ...
+		end
+
+		# Method: LoadRsaDer
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +data+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  data [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadRsaDer(data)
+			# ...
+		end
+
+		# Method: LoadRsaDerFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadRsaDerFile(path)
+			# ...
+		end
+
+		# Method: LoadXml
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +xml+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  xml [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadXml(xml)
+			# ...
+		end
+
+		# Method: LoadXmlFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadXmlFile(path)
+			# ...
+		end
+
 		# Method: SaveDerFile
 		#
 		# ==== Attributes
@@ -214,6 +446,40 @@ module Chilkat
 			# ...
 		end
 
+		# Method: SaveOpenSslDerFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SaveOpenSslDerFile(path)
+			# ...
+		end
+
+		# Method: SaveOpenSslPemFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SaveOpenSslPemFile(path)
+			# ...
+		end
+
 		# Method: SavePemFile
 		#
 		# ==== Attributes
@@ -228,6 +494,23 @@ module Chilkat
 , 		# @param  path [String]
 		# @return  [TrueClass, FalseClass]
 		def SavePemFile(preferPkcs1, path)
+			# ...
+		end
+
+		# Method: SaveRsaDerFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SaveRsaDerFile(path)
 			# ...
 		end
 

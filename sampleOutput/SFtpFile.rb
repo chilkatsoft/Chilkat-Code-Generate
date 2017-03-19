@@ -1,5 +1,10 @@
 module Chilkat
 	class CkSFtpFile 
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_CreateTime() end
 		# returns String
 		# @return [String]
 		def get_CreateTimeStr() end
@@ -57,6 +62,11 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_IsSystem() end
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_LastAccessTime() end
 		# returns String
 		# @return [String]
 		def get_LastAccessTimeStr() end
@@ -68,6 +78,11 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_LastModifiedTime() end
 		# returns String
 		# @return [String]
 		def get_LastModifiedTimeStr() end

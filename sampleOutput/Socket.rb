@@ -12,6 +12,96 @@ module Chilkat
 		# @return [Bignum]
 		def get_AcceptFailReason() end
 		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncAcceptFinished() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncAcceptLog() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncAcceptSuccess() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncConnectFinished() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncConnectLog() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncConnectSuccess() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncDnsFinished() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncDnsLog() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncDnsResult() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncDnsSuccess() end
+		# returns Fixnum
+		# This method has been deprecated. Do not use it.
+		# @return [Fixnum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncReceivedBytes() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncReceivedString() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncReceiveFinished() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncReceiveLog() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncReceiveSuccess() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncSendFinished() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncSendLog() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncSendSuccess() end
+		# returns Bignum
 		# @return [Bignum]
 		def get_BandwidthThrottleDown() end
 		# ==== Attributes
@@ -485,6 +575,285 @@ module Chilkat
 , 		# @param  certAuthDN [String]
 		# @return  [TrueClass, FalseClass]
 		def AddSslAcceptableClientCaDn(certAuthDN)
+			# ...
+		end
+
+		# Method: AsyncAcceptAbort
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncAcceptAbort()
+			# ...
+		end
+
+		# Method: AsyncAcceptSocket
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns CkSocket
+		#
+		# YARD =>
+		#
+		# @return  [CkSocket]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncAcceptSocket()
+			# ...
+		end
+
+		# Method: AsyncAcceptStart
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +maxWaitMs+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  maxWaitMs [Fixnum]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncAcceptStart(maxWaitMs)
+			# ...
+		end
+
+		# Method: AsyncConnectAbort
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncConnectAbort()
+			# ...
+		end
+
+		# Method: AsyncConnectStart
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +hostname+ - String
+, 		# +port+ - Fixnum
+, 		# +ssl+ - TrueClass, FalseClass
+, 		# +maxWaitMs+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  hostname [String]
+, 		# @param  port [Fixnum]
+, 		# @param  ssl [TrueClass, FalseClass]
+, 		# @param  maxWaitMs [Fixnum]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncConnectStart(hostname, port, ssl, maxWaitMs)
+			# ...
+		end
+
+		# Method: AsyncDnsAbort
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncDnsAbort()
+			# ...
+		end
+
+		# Method: AsyncDnsStart
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +hostname+ - String
+, 		# +maxWaitMs+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  hostname [String]
+, 		# @param  maxWaitMs [Fixnum]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncDnsStart(hostname, maxWaitMs)
+			# ...
+		end
+
+		# Method: AsyncReceiveAbort
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncReceiveAbort()
+			# ...
+		end
+
+		# Method: AsyncReceiveBytes
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncReceiveBytes()
+			# ...
+		end
+
+		# Method: AsyncReceiveBytesN
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +numBytes+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  numBytes [Fixnum]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncReceiveBytesN(numBytes)
+			# ...
+		end
+
+		# Method: AsyncReceiveString
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncReceiveString()
+			# ...
+		end
+
+		# Method: AsyncReceiveToCRLF
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncReceiveToCRLF()
+			# ...
+		end
+
+		# Method: AsyncReceiveUntilMatch
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +matchStr+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  matchStr [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncReceiveUntilMatch(matchStr)
+			# ...
+		end
+
+		# Method: AsyncSendAbort
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncSendAbort()
+			# ...
+		end
+
+		# Method: AsyncSendByteData
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +data+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  data [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncSendByteData(data)
+			# ...
+		end
+
+		# Method: AsyncSendBytes
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +byteData+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  byteData [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncSendBytes(byteData)
+			# ...
+		end
+
+		# Method: AsyncSendString
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +stringToSend+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  stringToSend [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncSendString(stringToSend)
 			# ...
 		end
 

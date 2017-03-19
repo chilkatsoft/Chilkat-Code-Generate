@@ -213,6 +213,11 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_LastSendQFilename() end
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastSmtpStatus() end
@@ -1171,6 +1176,23 @@ module Chilkat
 			# ...
 		end
 
+		# Method: LoadQueuedEmail
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns CkEmail
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [CkEmail]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadQueuedEmail(path)
+			# ...
+		end
+
 		# Method: LoadXmlEmail
 		#
 		# ==== Attributes
@@ -1537,6 +1559,48 @@ module Chilkat
 			# ...
 		end
 
+		# Method: SendMimeBytesQ
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +from+ - String
+, 		# +recipients+ - String
+, 		# +mimeData+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  from [String]
+, 		# @param  recipients [String]
+, 		# @param  mimeData [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SendMimeBytesQ(from, recipients, mimeData)
+			# ...
+		end
+
+		# Method: SendMimeQ
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +fromAddr+ - String
+, 		# +recipients+ - String
+, 		# +mimeSource+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  fromAddr [String]
+, 		# @param  recipients [String]
+, 		# @param  mimeSource [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SendMimeQ(fromAddr, recipients, mimeSource)
+			# ...
+		end
+
 		# Method: SendMimeToList
 		#
 		# ==== Attributes
@@ -1553,6 +1617,42 @@ module Chilkat
 , 		# @param  mimeSource [String]
 		# @return  [TrueClass, FalseClass]
 		def SendMimeToList(fromAddr, distListFilename, mimeSource)
+			# ...
+		end
+
+		# Method: SendQ
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +email+ - CkEmail
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  email [CkEmail]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SendQ(email)
+			# ...
+		end
+
+		# Method: SendQ2
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +email+ - CkEmail
+, 		# +queueDir+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  email [CkEmail]
+, 		# @param  queueDir [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SendQ2(email, queueDir)
 			# ...
 		end
 
@@ -1801,6 +1901,27 @@ module Chilkat
 , 		# @param  sshPort [Fixnum]
 		# @return  [TrueClass, FalseClass]
 		def SshOpenTunnel(sshHostname, sshPort)
+			# ...
+		end
+
+		# Method: SshTunnel
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +bSmtp+ - TrueClass, FalseClass
+, 		# +sshServerHostname+ - String
+, 		# +sshPort+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  bSmtp [TrueClass, FalseClass]
+, 		# @param  sshServerHostname [String]
+, 		# @param  sshPort [Fixnum]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SshTunnel(bSmtp, sshServerHostname, sshPort)
 			# ...
 		end
 

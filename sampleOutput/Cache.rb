@@ -23,6 +23,11 @@ module Chilkat
 		# returns String
 		# @return [String]
 		def get_LastEtagFetched() end
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_LastExpirationFetched() end
 		# returns String
 		# @return [String]
 		def get_LastExpirationFetchedStr() end
@@ -125,6 +130,23 @@ module Chilkat
 			# ...
 		end
 
+		# Method: DeleteOlder
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +dateTime+ - Object
+		# returns Fixnum
+		#
+		# YARD =>
+		#
+, 		# @param  dateTime [Object]
+		# @return  [Fixnum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def DeleteOlder(dateTime)
+			# ...
+		end
+
 		# Method: DeleteOlderDt
 		#
 		# ==== Attributes
@@ -197,6 +219,23 @@ module Chilkat
 , 		# @param  key [String]
 		# @return  [String]
 		def GetEtag(key)
+			# ...
+		end
+
+		# Method: GetExpiration
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +key+ - String
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  key [String]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetExpiration(key)
 			# ...
 		end
 
@@ -275,6 +314,29 @@ module Chilkat
 			# ...
 		end
 
+		# Method: SaveText
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +key+ - String
+, 		# +expireDateTime+ - Object
+, 		# +eTag+ - String
+, 		# +itemTextData+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  key [String]
+, 		# @param  expireDateTime [Object]
+, 		# @param  eTag [String]
+, 		# @param  itemTextData [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SaveText(key, expireDateTime, eTag, itemTextData)
+			# ...
+		end
+
 		# Method: SaveTextDt
 		#
 		# ==== Attributes
@@ -336,6 +398,29 @@ module Chilkat
 			# ...
 		end
 
+		# Method: SaveToCache
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +key+ - String
+, 		# +expireDateTime+ - Object
+, 		# +eTag+ - String
+, 		# +itemData+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  key [String]
+, 		# @param  expireDateTime [Object]
+, 		# @param  eTag [String]
+, 		# @param  itemData [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SaveToCache(key, expireDateTime, eTag, itemData)
+			# ...
+		end
+
 		# Method: SaveToCacheDt
 		#
 		# ==== Attributes
@@ -394,6 +479,25 @@ module Chilkat
 , 		# @param  itemData [CkByteData]
 		# @return  [TrueClass, FalseClass]
 		def SaveToCacheStr(key, expireDateTime, eTag, itemData)
+			# ...
+		end
+
+		# Method: UpdateExpiration
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +key+ - String
+, 		# +expireDateTime+ - Object
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  key [String]
+, 		# @param  expireDateTime [Object]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UpdateExpiration(key, expireDateTime)
 			# ...
 		end
 

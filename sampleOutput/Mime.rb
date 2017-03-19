@@ -846,6 +846,23 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetSignatureSigningTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetSignatureSigningTime(index)
+			# ...
+		end
+
 		# Method: GetSignatureSigningTimeStr
 		#
 		# ==== Attributes

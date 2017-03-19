@@ -230,6 +230,36 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetRsaDer
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+		# @return  [CkByteData]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetRsaDer()
+			# ...
+		end
+
+		# Method: GetRsaPem
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetRsaPem()
+			# ...
+		end
+
 		# Method: GetXml
 		#
 		# ==== Attributes
@@ -450,6 +480,40 @@ module Chilkat
 			# ...
 		end
 
+		# Method: LoadRsaDer
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +data+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  data [CkByteData]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadRsaDer(data)
+			# ...
+		end
+
+		# Method: LoadRsaDerFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def LoadRsaDerFile(path)
+			# ...
+		end
+
 		# Method: LoadXml
 		#
 		# ==== Attributes
@@ -571,6 +635,40 @@ module Chilkat
 , 		# @param  path [String]
 		# @return  [TrueClass, FalseClass]
 		def SavePkcs8PemFile(path)
+			# ...
+		end
+
+		# Method: SaveRsaDerFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SaveRsaDerFile(path)
+			# ...
+		end
+
+		# Method: SaveRsaPemFile
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SaveRsaPemFile(path)
 			# ...
 		end
 

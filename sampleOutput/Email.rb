@@ -35,6 +35,18 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_Decrypted() end
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_EmailDate() end
+		# ==== Attributes
+		# +newval+ - Object
+		# This method has been deprecated. Do not use it.
+		#
+		# @param newval [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def set_EmailDate(newval) end
 		# returns String
 		# @return [String]
 		def get_EmailDateStr() end
@@ -110,6 +122,18 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_LocalDate() end
+		# ==== Attributes
+		# +newval+ - Object
+		# This method has been deprecated. Do not use it.
+		#
+		# @param newval [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def set_LocalDate(newval) end
 		# returns String
 		# @return [String]
 		def get_LocalDateStr() end
@@ -1016,6 +1040,25 @@ module Chilkat
 		#
 		# @return  [CkEmail]
 		def Clone()
+			# ...
+		end
+
+		# Method: ComputeGlobalKey
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +encoding+ - String
+, 		# +bFold+ - TrueClass, FalseClass
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  encoding [String]
+, 		# @param  bFold [TrueClass, FalseClass]
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def ComputeGlobalKey(encoding, bFold)
 			# ...
 		end
 

@@ -49,6 +49,46 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_AllowMlsd(newval) end
 		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncBytesReceived() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncBytesReceivedStr() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncBytesSent() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncBytesSentStr() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncFinished() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncLog() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncPercentDone() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_AsyncSuccess() end
+		# returns Bignum
 		# @return [Bignum]
 		def get_AuthSsl() end
 		# ==== Attributes
@@ -339,6 +379,11 @@ module Chilkat
 		# @return [Bignum]
 		def get_LoginVerified() end
 		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_NumFilesAndDirs() end
+		# returns Bignum
 		# @return [Bignum]
 		def get_PartialTransfer() end
 		# returns Bignum
@@ -472,6 +517,18 @@ module Chilkat
 		# returns String
 		# @return [String]
 		def get_SessionLog() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_SkipFinalReply() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		# This method has been deprecated. Do not use it.
+		#
+		# @param newval [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def set_SkipFinalReply(newval) end
 		# returns String
 		# @return [String]
 		def get_SocksHostname() end
@@ -677,6 +734,78 @@ module Chilkat
 , 		# @param  charset [String]
 		# @return  [TrueClass, FalseClass]
 		def AppendFileFromTextData(remoteFilename, textData, charset)
+			# ...
+		end
+
+		# Method: AsyncAbort
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncAbort()
+			# ...
+		end
+
+		# Method: AsyncAppendFileStart
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +localFilename+ - String
+, 		# +remoteFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  localFilename [String]
+, 		# @param  remoteFilename [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncAppendFileStart(localFilename, remoteFilename)
+			# ...
+		end
+
+		# Method: AsyncGetFileStart
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +remoteFilename+ - String
+, 		# +localFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  remoteFilename [String]
+, 		# @param  localFilename [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncGetFileStart(remoteFilename, localFilename)
+			# ...
+		end
+
+		# Method: AsyncPutFileStart
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +localFilename+ - String
+, 		# +remoteFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  localFilename [String]
+, 		# @param  remoteFilename [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AsyncPutFileStart(localFilename, remoteFilename)
 			# ...
 		end
 
@@ -969,6 +1098,40 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetCreateTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetCreateTime(index)
+			# ...
+		end
+
+		# Method: GetCreateTimeByName
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +filename+ - String
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  filename [String]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetCreateTimeByName(filename)
+			# ...
+		end
+
 		# Method: GetCreateTimeByNameStr
 		#
 		# ==== Attributes
@@ -1168,6 +1331,40 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetLastAccessTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetLastAccessTime(index)
+			# ...
+		end
+
+		# Method: GetLastAccessTimeByName
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +filename+ - String
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  filename [String]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetLastAccessTimeByName(filename)
+			# ...
+		end
+
 		# Method: GetLastAccessTimeByNameStr
 		#
 		# ==== Attributes
@@ -1225,6 +1422,40 @@ module Chilkat
 , 		# @param  filename [String]
 		# @return  [CkDateTime]
 		def GetLastModDtByName(filename)
+			# ...
+		end
+
+		# Method: GetLastModifiedTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetLastModifiedTime(index)
+			# ...
+		end
+
+		# Method: GetLastModifiedTimeByName
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +filename+ - String
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  filename [String]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetLastModifiedTimeByName(filename)
 			# ...
 		end
 
@@ -1756,6 +1987,23 @@ module Chilkat
 			# ...
 		end
 
+		# Method: SetOldestDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +oldestDateTime+ - Object
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  oldestDateTime [Object]
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetOldestDate(oldestDateTime)
+			# ...
+		end
+
 		# Method: SetOldestDateStr
 		#
 		# ==== Attributes
@@ -1783,6 +2031,25 @@ module Chilkat
 , 		# @param  option [String]
 		# @return  [TrueClass, FalseClass]
 		def SetOption(option)
+			# ...
+		end
+
+		# Method: SetRemoteFileDateTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +dt+ - Object
+, 		# +remoteFilename+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  dt [Object]
+, 		# @param  remoteFilename [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetRemoteFileDateTime(dt, remoteFilename)
 			# ...
 		end
 

@@ -727,6 +727,27 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetFileCreateTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +pathOrHandle+ - String
+, 		# +bFollowLinks+ - TrueClass, FalseClass
+, 		# +bIsHandle+ - TrueClass, FalseClass
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  pathOrHandle [String]
+, 		# @param  bFollowLinks [TrueClass, FalseClass]
+, 		# @param  bIsHandle [TrueClass, FalseClass]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetFileCreateTime(pathOrHandle, bFollowLinks, bIsHandle)
+			# ...
+		end
+
 		# Method: GetFileCreateTimeStr
 		#
 		# ==== Attributes
@@ -765,6 +786,27 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetFileLastAccess
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +pathOrHandle+ - String
+, 		# +bFollowLinks+ - TrueClass, FalseClass
+, 		# +bIsHandle+ - TrueClass, FalseClass
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  pathOrHandle [String]
+, 		# @param  bFollowLinks [TrueClass, FalseClass]
+, 		# @param  bIsHandle [TrueClass, FalseClass]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetFileLastAccess(pathOrHandle, bFollowLinks, bIsHandle)
+			# ...
+		end
+
 		# Method: GetFileLastAccessDt
 		#
 		# ==== Attributes
@@ -800,6 +842,27 @@ module Chilkat
 , 		# @param  bIsHandle [TrueClass, FalseClass]
 		# @return  [String]
 		def GetFileLastAccessStr(pathOrHandle, bFollowLinks, bIsHandle)
+			# ...
+		end
+
+		# Method: GetFileLastModified
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +pathOrHandle+ - String
+, 		# +bFollowLinks+ - TrueClass, FalseClass
+, 		# +bIsHandle+ - TrueClass, FalseClass
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  pathOrHandle [String]
+, 		# @param  bFollowLinks [TrueClass, FalseClass]
+, 		# @param  bIsHandle [TrueClass, FalseClass]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetFileLastModified(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
 
@@ -1242,6 +1305,27 @@ module Chilkat
 			# ...
 		end
 
+		# Method: SetCreateTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +pathOrHandle+ - String
+, 		# +isHandle+ - TrueClass, FalseClass
+, 		# +createDateTime+ - Object
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  pathOrHandle [String]
+, 		# @param  isHandle [TrueClass, FalseClass]
+, 		# @param  createDateTime [Object]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetCreateTime(pathOrHandle, isHandle, createDateTime)
+			# ...
+		end
+
 		# Method: SetCreateTimeStr
 		#
 		# ==== Attributes
@@ -1280,6 +1364,27 @@ module Chilkat
 			# ...
 		end
 
+		# Method: SetLastAccessTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +pathOrHandle+ - String
+, 		# +isHandle+ - TrueClass, FalseClass
+, 		# +accessDateTime+ - Object
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  pathOrHandle [String]
+, 		# @param  isHandle [TrueClass, FalseClass]
+, 		# @param  accessDateTime [Object]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetLastAccessTime(pathOrHandle, isHandle, accessDateTime)
+			# ...
+		end
+
 		# Method: SetLastAccessTimeStr
 		#
 		# ==== Attributes
@@ -1315,6 +1420,27 @@ module Chilkat
 , 		# @param  modifiedDateTime [CkDateTime]
 		# @return  [TrueClass, FalseClass]
 		def SetLastModifiedDt(pathOrHandle, isHandle, modifiedDateTime)
+			# ...
+		end
+
+		# Method: SetLastModifiedTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +pathOrHandle+ - String
+, 		# +isHandle+ - TrueClass, FalseClass
+, 		# +modifiedDateTime+ - Object
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  pathOrHandle [String]
+, 		# @param  isHandle [TrueClass, FalseClass]
+, 		# @param  modifiedDateTime [Object]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetLastModifiedTime(pathOrHandle, isHandle, modifiedDateTime)
 			# ...
 		end
 

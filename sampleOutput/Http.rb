@@ -129,6 +129,46 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_BasicAuth(newval) end
 		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_BgLastErrorText() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_BgPercentDone() end
+		# returns Fixnum
+		# This method has been deprecated. Do not use it.
+		# @return [Fixnum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_BgResultData() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_BgResultInt() end
+		# returns String
+		# This method has been deprecated. Do not use it.
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_BgResultString() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_BgTaskFinished() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_BgTaskRunning() end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_BgTaskSuccess() end
+		# returns String
 		# @return [String]
 		def get_ClientIpAddress() end
 		# ==== Attributes
@@ -188,6 +228,11 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_DigestAuth(newval) end
 		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_EventLogCount() end
+		# returns Bignum
 		# @return [Bignum]
 		def get_FetchFromCache() end
 		# ==== Attributes
@@ -230,6 +275,18 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_IgnoreNoCache(newval) end
+		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_KeepEventLog() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		# This method has been deprecated. Do not use it.
+		#
+		# @param newval [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def set_KeepEventLog(newval) end
 		# returns Bignum
 		# @return [Bignum]
 		def get_KeepResponseBody() end
@@ -708,6 +765,18 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UpdateCache(newval) end
 		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_UseBgThread() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		# This method has been deprecated. Do not use it.
+		#
+		# @param newval [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def set_UseBgThread(newval) end
+		# returns Bignum
 		# @return [Bignum]
 		def get_UseIEProxy() end
 		# ==== Attributes
@@ -750,6 +819,70 @@ module Chilkat
 , 		# @param  dir [String]
 		# @return  [nil]
 		def AddCacheRoot(dir)
+			# ...
+		end
+
+		# Method: AddQuickHeader
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +headerFieldName+ - String
+, 		# +headerFieldValue+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  headerFieldName [String]
+, 		# @param  headerFieldValue [String]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AddQuickHeader(headerFieldName, headerFieldValue)
+			# ...
+		end
+
+		# Method: BgResponseObject
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns CkHttpResponse
+		#
+		# YARD =>
+		#
+		# @return  [CkHttpResponse]
+		# @deprecated This method has been deprecated. Do not use it.
+		def BgResponseObject()
+			# ...
+		end
+
+		# Method: BgTaskAbort
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def BgTaskAbort()
+			# ...
+		end
+
+		# Method: ClearBgEventLog
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def ClearBgEventLog()
 			# ...
 		end
 
@@ -878,6 +1011,40 @@ module Chilkat
 , 		# @param  sb [CkStringBuilder]
 		# @return  [TrueClass, FalseClass]
 		def DownloadSb(url, charset, sb)
+			# ...
+		end
+
+		# Method: EventLogName
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def EventLogName(index)
+			# ...
+		end
+
+		# Method: EventLogValue
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def EventLogValue(index)
 			# ...
 		end
 

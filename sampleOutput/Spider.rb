@@ -94,6 +94,11 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_LastModDate() end
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end

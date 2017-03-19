@@ -47,6 +47,18 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_EntryType() end
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_FileDateTime() end
+		# ==== Attributes
+		# +newval+ - Object
+		# This method has been deprecated. Do not use it.
+		#
+		# @param newval [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def set_FileDateTime(newval) end
 		# returns String
 		# @return [String]
 		def get_FileDateTimeStr() end

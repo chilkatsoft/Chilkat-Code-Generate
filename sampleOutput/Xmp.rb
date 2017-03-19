@@ -95,6 +95,27 @@ module Chilkat
 			# ...
 		end
 
+		# Method: AddSimpleDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +iXml+ - CkXml
+, 		# +propName+ - String
+, 		# +propVal+ - Object
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  iXml [CkXml]
+, 		# @param  propName [String]
+, 		# @param  propVal [Object]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AddSimpleDate(iXml, propName, propVal)
+			# ...
+		end
+
 		# Method: AddSimpleInt
 		#
 		# ==== Attributes
@@ -169,6 +190,23 @@ module Chilkat
 			# ...
 		end
 
+		# Method: DateToString
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +d+ - Object
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  d [Object]
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def DateToString(d)
+			# ...
+		end
+
 		# Method: GetArray
 		#
 		# ==== Attributes
@@ -215,6 +253,25 @@ module Chilkat
 , 		# @param  propName [String]
 		# @return  [CkXml]
 		def GetProperty(iXml, propName)
+			# ...
+		end
+
+		# Method: GetSimpleDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +iXml+ - CkXml
+, 		# +propName+ - String
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  iXml [CkXml]
+, 		# @param  propName [String]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetSimpleDate(iXml, propName)
 			# ...
 		end
 
@@ -471,6 +528,23 @@ module Chilkat
 		#
 		# @return  [CkByteData]
 		def SaveToBuffer()
+			# ...
+		end
+
+		# Method: StringToDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +str+ - String
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  str [String]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def StringToDate(str)
 			# ...
 		end
 

@@ -575,5 +575,127 @@ module Chilkat
 		def StreamChunkFromFile(path, offset, numBytes)
 			# ...
 		end
+
+		# Method: UseGet
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UseGet()
+			# ...
+		end
+
+		# Method: UseHead
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UseHead()
+			# ...
+		end
+
+		# Method: UsePost
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UsePost()
+			# ...
+		end
+
+		# Method: UsePostMultipartForm
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UsePostMultipartForm()
+			# ...
+		end
+
+		# Method: UsePut
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UsePut()
+			# ...
+		end
+
+		# Method: UseUpload
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UseUpload()
+			# ...
+		end
+
+		# Method: UseUploadPut
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# returns nil
+		#
+		# YARD =>
+		#
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UseUploadPut()
+			# ...
+		end
+
+		# Method: UseXmlHttp
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +xmlBody+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  xmlBody [String]
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UseXmlHttp(xmlBody)
+			# ...
+		end
 	end
 end

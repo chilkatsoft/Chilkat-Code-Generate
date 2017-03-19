@@ -20,6 +20,18 @@ module Chilkat
 		# @return [Bignum]
 		def get_BlockSize() end
 		# returns Bignum
+		# This method has been deprecated. Do not use it.
+		# @return [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_ByteSwapOnDecrypt() end
+		# ==== Attributes
+		# +newval+ - Bignum
+		# This method has been deprecated. Do not use it.
+		#
+		# @param newval [Bignum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def set_ByteSwapOnDecrypt(newval) end
+		# returns Bignum
 		# @return [Bignum]
 		def get_CadesEnabled() end
 		# ==== Attributes
@@ -1048,6 +1060,23 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetSignatureSigningTime
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetSignatureSigningTime(index)
+			# ...
+		end
+
 		# Method: GetSignatureSigningTimeStr
 		#
 		# ==== Attributes
@@ -1296,6 +1325,74 @@ module Chilkat
 , 		# @param  index [Fixnum]
 		# @return  [TrueClass, FalseClass]
 		def HasSignatureSigningTime(index)
+			# ...
+		end
+
+		# Method: HmacBytes
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +inBytes+ - CkByteData
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inBytes [CkByteData]
+		# @return  [CkByteData]
+		# @deprecated This method has been deprecated. Do not use it.
+		def HmacBytes(inBytes)
+			# ...
+		end
+
+		# Method: HmacBytesENC
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +inBytes+ - CkByteData
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  inBytes [CkByteData]
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def HmacBytesENC(inBytes)
+			# ...
+		end
+
+		# Method: HmacString
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +inText+ - String
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+, 		# @param  inText [String]
+		# @return  [CkByteData]
+		# @deprecated This method has been deprecated. Do not use it.
+		def HmacString(inText)
+			# ...
+		end
+
+		# Method: HmacStringENC
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +inText+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  inText [String]
+		# @return  [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def HmacStringENC(inText)
 			# ...
 		end
 
@@ -1876,6 +1973,59 @@ module Chilkat
 , 		# @param  cert [CkCert]
 		# @return  [TrueClass, FalseClass]
 		def SetEncryptCert(cert)
+			# ...
+		end
+
+		# Method: SetHmacKeyBytes
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +keyBytes+ - CkByteData
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  keyBytes [CkByteData]
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetHmacKeyBytes(keyBytes)
+			# ...
+		end
+
+		# Method: SetHmacKeyEncoded
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +key+ - String
+, 		# +encoding+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  key [String]
+, 		# @param  encoding [String]
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetHmacKeyEncoded(key, encoding)
+			# ...
+		end
+
+		# Method: SetHmacKeyString
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +key+ - String
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  key [String]
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetHmacKeyString(key)
 			# ...
 		end
 

@@ -450,6 +450,27 @@ module Chilkat
 			# ...
 		end
 
+		# Method: AppendMimeWithDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +mailbox+ - String
+, 		# +mimeText+ - String
+, 		# +internalDate+ - Object
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  mailbox [String]
+, 		# @param  mimeText [String]
+, 		# @param  internalDate [Object]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AppendMimeWithDate(mailbox, mimeText, internalDate)
+			# ...
+		end
+
 		# Method: AppendMimeWithDateStr
 		#
 		# ==== Attributes
@@ -1743,6 +1764,25 @@ module Chilkat
 , 		# @param  sshPort [Fixnum]
 		# @return  [TrueClass, FalseClass]
 		def SshOpenTunnel(sshHostname, sshPort)
+			# ...
+		end
+
+		# Method: SshTunnel
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +sshServerHostname+ - String
+, 		# +sshPort+ - Fixnum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  sshServerHostname [String]
+, 		# @param  sshPort [Fixnum]
+		# @return  [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SshTunnel(sshServerHostname, sshPort)
 			# ...
 		end
 

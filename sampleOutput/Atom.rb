@@ -69,6 +69,25 @@ module Chilkat
 			# ...
 		end
 
+		# Method: AddElementDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +tag+ - String
+, 		# +dateTime+ - Object
+		# returns Fixnum
+		#
+		# YARD =>
+		#
+, 		# @param  tag [String]
+, 		# @param  dateTime [Object]
+		# @return  [Fixnum]
+		# @deprecated This method has been deprecated. Do not use it.
+		def AddElementDate(tag, dateTime)
+			# ...
+		end
+
 		# Method: AddElementDateStr
 		#
 		# ==== Attributes
@@ -330,6 +349,25 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetElementDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +tag+ - String
+, 		# +index+ - Fixnum
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  tag [String]
+, 		# @param  index [Fixnum]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetElementDate(tag, index)
+			# ...
+		end
+
 		# Method: GetElementDateStr
 		#
 		# ==== Attributes
@@ -551,6 +589,27 @@ module Chilkat
 , 		# @param  value [String]
 		# @return  [nil]
 		def UpdateElement(tag, index, value)
+			# ...
+		end
+
+		# Method: UpdateElementDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +tag+ - String
+, 		# +index+ - Fixnum
+, 		# +dateTime+ - Object
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  tag [String]
+, 		# @param  index [Fixnum]
+, 		# @param  dateTime [Object]
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def UpdateElementDate(tag, index, dateTime)
 			# ...
 		end
 

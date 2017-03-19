@@ -15,6 +15,11 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_ContentLength() end
+		# returns Object
+		# This method has been deprecated. Do not use it.
+		# @return [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def get_Date() end
 		# returns String
 		# @return [String]
 		def get_DateStr() end
@@ -133,6 +138,23 @@ module Chilkat
 , 		# @param  index [Fixnum]
 		# @return  [String]
 		def GetCookieDomain(index)
+			# ...
+		end
+
+		# Method: GetCookieExpires
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetCookieExpires(index)
 			# ...
 		end
 

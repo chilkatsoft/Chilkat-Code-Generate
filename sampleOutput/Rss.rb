@@ -153,6 +153,23 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +tag+ - String
+		# returns Object
+		#
+		# YARD =>
+		#
+, 		# @param  tag [String]
+		# @return  [Object]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetDate(tag)
+			# ...
+		end
+
 		# Method: GetDateStr
 		#
 		# ==== Attributes
@@ -376,6 +393,25 @@ module Chilkat
 , 		# @param  value [String]
 		# @return  [nil]
 		def SetAttr(tag, attrName, value)
+			# ...
+		end
+
+		# Method: SetDate
+		#
+		# This method has been deprecated. Do not use it.
+		# ==== Attributes
+		#
+		# +tag+ - String
+, 		# +dateTime+ - Object
+		# returns nil
+		#
+		# YARD =>
+		#
+, 		# @param  tag [String]
+, 		# @param  dateTime [Object]
+		# @return  [nil]
+		# @deprecated This method has been deprecated. Do not use it.
+		def SetDate(tag, dateTime)
 			# ...
 		end
 
