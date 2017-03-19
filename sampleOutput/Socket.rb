@@ -148,6 +148,9 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_KeepSessionLog(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_LastBinaryResult() end
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end

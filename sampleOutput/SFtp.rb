@@ -8,6 +8,9 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_AccumulateBuffer() end
 		# returns Bignum
 		# @return [Bignum]
 		def get_AuthFailReason() end
@@ -197,6 +200,9 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_KeepSessionLog(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_LastBinaryResult() end
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end

@@ -87,7 +87,7 @@ namespace GenSample
                 // (What you do here depends on your needs..)
                 if (xprop.Deprecated) continue;
                 if (!xprop.AxEnabled) continue;     // We don't want properties that do not exist in the ActiveX..
-                if (xprop.IsBytes) continue;  // maybe we don't want to deal with the few properties that are binary data.
+                //if (xprop.IsBytes) continue;  // maybe we don't want to deal with the few properties that are binary data.
                 if (xprop.IsEventRelated()) continue;
                 // ...
 

@@ -1,5 +1,5 @@
 module Chilkat
-	class CkTaskChain 
+	class CkCreateCS 
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
@@ -8,12 +8,6 @@ module Chilkat
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
-		# returns Bignum
-		# @return [Bignum]
-		def get_Finished() end
-		# returns Bignum
-		# @return [Bignum]
-		def get_Inert() end
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
@@ -42,24 +36,12 @@ module Chilkat
 		def get_LastStringResultLen() end
 		# returns Bignum
 		# @return [Bignum]
-		def get_Live() end
-		# returns Bignum
-		# @return [Bignum]
-		def get_NumTasks() end
-		# returns String
-		# @return [String]
-		def get_Status() end
-		# returns Bignum
-		# @return [Bignum]
-		def get_StatusInt() end
-		# returns Bignum
-		# @return [Bignum]
-		def get_StopOnFailedTask() end
+		def get_ReadOnly() end
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_StopOnFailedTask(newval) end
+		def set_ReadOnly(newval) end
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
@@ -72,102 +54,132 @@ module Chilkat
 		# @return [String]
 		def get_Version() end
 
-		# Method: Append
+		# Method: CreateFileStore
 		#
 		# ==== Attributes
 		#
-		# +task+ - CkTask
-		# returns TrueClass, FalseClass
+		# +path+ - String
+		# returns CkCertStore
 		#
 		# YARD =>
 		#
-, 		# @param  task [CkTask]
-		# @return  [TrueClass, FalseClass]
-		def Append(task)
+, 		# @param  path [String]
+		# @return  [CkCertStore]
+		def CreateFileStore(path)
 			# ...
 		end
 
-		# Method: Cancel
+		# Method: CreateMemoryStore
 		#
 		# ==== Attributes
 		#
-		# returns TrueClass, FalseClass
+		# returns CkCertStore
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
-		def Cancel()
+		# @return  [CkCertStore]
+		def CreateMemoryStore()
 			# ...
 		end
 
-		# Method: GetTask
+		# Method: CreateRegistryStore
 		#
 		# ==== Attributes
 		#
-		# +index+ - Fixnum
-		# returns CkTask
+		# +regRoot+ - String
+, 		# +regPath+ - String
+		# returns CkCertStore
 		#
 		# YARD =>
 		#
-, 		# @param  index [Fixnum]
-		# @return  [CkTask]
-		def GetTask(index)
+, 		# @param  regRoot [String]
+, 		# @param  regPath [String]
+		# @return  [CkCertStore]
+		def CreateRegistryStore(regRoot, regPath)
 			# ...
 		end
 
-		# Method: Run
+		# Method: OpenChilkatStore
 		#
 		# ==== Attributes
 		#
-		# returns TrueClass, FalseClass
+		# returns CkCertStore
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
-		def Run()
+		# @return  [CkCertStore]
+		def OpenChilkatStore()
 			# ...
 		end
 
-		# Method: RunSynchronously
+		# Method: OpenCurrentUserStore
 		#
 		# ==== Attributes
 		#
-		# returns TrueClass, FalseClass
+		# returns CkCertStore
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
-		def RunSynchronously()
+		# @return  [CkCertStore]
+		def OpenCurrentUserStore()
 			# ...
 		end
 
-		# Method: SleepMs
+		# Method: OpenFileStore
 		#
 		# ==== Attributes
 		#
-		# +numMs+ - Fixnum
-		# returns nil
+		# +path+ - String
+		# returns CkCertStore
 		#
 		# YARD =>
 		#
-, 		# @param  numMs [Fixnum]
-		# @return  [nil]
-		def SleepMs(numMs)
+, 		# @param  path [String]
+		# @return  [CkCertStore]
+		def OpenFileStore(path)
 			# ...
 		end
 
-		# Method: Wait
+		# Method: OpenLocalSystemStore
 		#
 		# ==== Attributes
 		#
-		# +maxWaitMs+ - Fixnum
-		# returns TrueClass, FalseClass
+		# returns CkCertStore
 		#
 		# YARD =>
 		#
-, 		# @param  maxWaitMs [Fixnum]
-		# @return  [TrueClass, FalseClass]
-		def Wait(maxWaitMs)
+		# @return  [CkCertStore]
+		def OpenLocalSystemStore()
+			# ...
+		end
+
+		# Method: OpenOutlookStore
+		#
+		# ==== Attributes
+		#
+		# returns CkCertStore
+		#
+		# YARD =>
+		#
+		# @return  [CkCertStore]
+		def OpenOutlookStore()
+			# ...
+		end
+
+		# Method: OpenRegistryStore
+		#
+		# ==== Attributes
+		#
+		# +regRoot+ - String
+, 		# +regPath+ - String
+		# returns CkCertStore
+		#
+		# YARD =>
+		#
+, 		# @param  regRoot [String]
+, 		# @param  regPath [String]
+		# @return  [CkCertStore]
+		def OpenRegistryStore(regRoot, regPath)
 			# ...
 		end
 	end

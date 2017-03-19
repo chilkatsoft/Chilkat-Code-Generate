@@ -11,6 +11,9 @@ module Chilkat
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_LastBinaryResult() end
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end

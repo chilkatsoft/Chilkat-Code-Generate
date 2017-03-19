@@ -16,6 +16,14 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_GroupSize(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_Hash() end
+		# ==== Attributes
+		# +newval+ - Fixnum
+		#
+		# @param newval [Fixnum]
+		def set_Hash(newval) end
 		# returns String
 		# @return [String]
 		def get_HexG() end
@@ -31,6 +39,9 @@ module Chilkat
 		# returns String
 		# @return [String]
 		def get_HexY() end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_LastBinaryResult() end
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
@@ -54,6 +65,14 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_Signature() end
+		# ==== Attributes
+		# +newval+ - Fixnum
+		#
+		# @param newval [Fixnum]
+		def set_Signature(newval) end
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end

@@ -147,6 +147,14 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_IterationCount(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_IV() end
+		# ==== Attributes
+		# +newval+ - Fixnum
+		#
+		# @param newval [Fixnum]
+		def set_IV(newval) end
 		# returns Bignum
 		# @return [Bignum]
 		def get_KeyLength() end
@@ -155,6 +163,9 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_KeyLength(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_LastBinaryResult() end
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastChunk() end
@@ -237,6 +248,22 @@ module Chilkat
 		#
 		# @param newval [Bignum]
 		def set_Rc2EffectiveKeyLength(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_Salt() end
+		# ==== Attributes
+		# +newval+ - Fixnum
+		#
+		# @param newval [Fixnum]
+		def set_Salt(newval) end
+		# returns Fixnum
+		# @return [Fixnum]
+		def get_SecretKey() end
+		# ==== Attributes
+		# +newval+ - Fixnum
+		#
+		# @param newval [Fixnum]
+		def set_SecretKey(newval) end
 		# returns String
 		# @return [String]
 		def get_UuFilename() end

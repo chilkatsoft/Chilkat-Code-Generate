@@ -1,5 +1,5 @@
 module Chilkat
-	class CkCertChain 
+	class CkCgi 
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
@@ -36,15 +36,6 @@ module Chilkat
 		def get_LastStringResultLen() end
 		# returns Bignum
 		# @return [Bignum]
-		def get_NumCerts() end
-		# returns Bignum
-		# @return [Bignum]
-		def get_NumExpiredCerts() end
-		# returns Bignum
-		# @return [Bignum]
-		def get_ReachesRoot() end
-		# returns Bignum
-		# @return [Bignum]
 		def get_VerboseLogging() end
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -54,48 +45,5 @@ module Chilkat
 		# returns String
 		# @return [String]
 		def get_Version() end
-
-		# Method: GetCert
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns CkCert
-		#
-		# YARD =>
-		#
-, 		# @param  index [Fixnum]
-		# @return  [CkCert]
-		def GetCert(index)
-			# ...
-		end
-
-		# Method: IsRootTrusted
-		#
-		# ==== Attributes
-		#
-		# +trustedRoots+ - CkTrustedRoots
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
-, 		# @param  trustedRoots [CkTrustedRoots]
-		# @return  [TrueClass, FalseClass]
-		def IsRootTrusted(trustedRoots)
-			# ...
-		end
-
-		# Method: VerifyCertSignatures
-		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
-		def VerifyCertSignatures()
-			# ...
-		end
 	end
 end
