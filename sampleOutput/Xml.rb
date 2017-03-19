@@ -3,169 +3,213 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_Cdata() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_Cdata(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Content() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Content(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ContentInt() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ContentInt(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DocType() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DocType(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_EmitBom() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_EmitBom(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_EmitCompact() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_EmitCompact(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_EmitXmlDecl() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_EmitXmlDecl(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Encoding() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Encoding(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_I() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_I(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_J() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_J(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_K() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_K(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumAttributes() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumChildren() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SortCaseInsensitive() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SortCaseInsensitive(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_Standalone() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_Standalone(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Tag() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Tag(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_TreeId() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 
 		# Method: AccumulateTagContent
 		#

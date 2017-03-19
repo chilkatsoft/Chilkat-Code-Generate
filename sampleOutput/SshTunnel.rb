@@ -3,305 +3,383 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_AbortCurrent() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+
 		# returns String
 		# @return [String]
 		def get_AcceptLog() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_AcceptLog(newval) end
+
 		# returns String
 		# @return [String]
 		def get_AcceptLogPath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_AcceptLogPath(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ConnectTimeoutMs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ConnectTimeoutMs(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DestHostname() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DestHostname(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_DestPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_DestPort(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_DynamicPortForwarding() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_DynamicPortForwarding(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HostKeyFingerprint() end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyAuthMethod() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyAuthMethod(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyDomain() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyDomain(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyHostname() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyHostname(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyPassword(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_HttpProxyPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_HttpProxyPort(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyUsername() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyUsername(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IdleTimeoutMs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_IdleTimeoutMs(newval) end
+
 		# returns String
 		# @return [String]
 		def get_InboundSocksPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_InboundSocksPassword(newval) end
+
 		# returns String
 		# @return [String]
 		def get_InboundSocksUsername() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_InboundSocksUsername(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IsAccepting() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_KeepAcceptLog() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_KeepAcceptLog(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_KeepTunnelLog() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_KeepTunnelLog(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns String
 		# @return [String]
 		def get_ListenBindIpAddress() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ListenBindIpAddress(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ListenPort() end
+
 		# returns String
 		# @return [String]
 		def get_OutboundBindIpAddress() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_OutboundBindIpAddress(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_OutboundBindPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_OutboundBindPort(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SocksHostname() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksHostname(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SocksPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksPassword(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SocksPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SocksPort(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SocksUsername() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksUsername(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SocksVersion() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SocksVersion(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SoRcvBuf() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SoRcvBuf(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SoSndBuf() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SoSndBuf(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_TcpNoDelay() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_TcpNoDelay(newval) end
+
 		# returns String
 		# @return [String]
 		def get_TunnelLog() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_TunnelLog(newval) end
+
 		# returns String
 		# @return [String]
 		def get_TunnelLogPath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_TunnelLogPath(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 
 		# Method: AuthenticatePk
 		#

@@ -3,17 +3,21 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumFilesAndDirs() end
+
 		# returns String
 		# @return [String]
 		def get_OriginalPath() end
+
 
 		# Method: GetFilename
 		#

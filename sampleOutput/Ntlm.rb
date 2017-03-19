@@ -3,168 +3,211 @@ module Chilkat
 		# returns String
 		# @return [String]
 		def get_ClientChallenge() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ClientChallenge(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DnsComputerName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DnsComputerName(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DnsDomainName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DnsDomainName(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Domain() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Domain(newval) end
+
 		# returns String
 		# @return [String]
 		def get_EncodingMode() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_EncodingMode(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Flags() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Flags(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns String
 		# @return [String]
 		def get_NetBiosComputerName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_NetBiosComputerName(newval) end
+
 		# returns String
 		# @return [String]
 		def get_NetBiosDomainName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_NetBiosDomainName(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NtlmVersion() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_NtlmVersion(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_OemCodePage() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_OemCodePage(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Password() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Password(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ServerChallenge() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ServerChallenge(newval) end
+
 		# returns String
 		# @return [String]
 		def get_TargetName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_TargetName(newval) end
+
 		# returns String
 		# @return [String]
 		def get_UserName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_UserName(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 		# returns String
 		# @return [String]
 		def get_Workstation() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Workstation(newval) end
+
 
 		# Method: CompareType3
 		#

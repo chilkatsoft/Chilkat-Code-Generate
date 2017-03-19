@@ -3,235 +3,295 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_CaptureXmlListing() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_CaptureXmlListing(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Charset() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Charset(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_DirMode() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_DirMode(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DirPrefix() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DirPrefix(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_FileMode() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_FileMode(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_GroupId() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_GroupId(newval) end
+
 		# returns String
 		# @return [String]
 		def get_GroupName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_GroupName(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_MatchCaseSensitive() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_MatchCaseSensitive(newval) end
+
 		# returns String
 		# @return [String]
 		def get_MustMatch() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_MustMatch(newval) end
+
 		# returns String
 		# @return [String]
 		def get_MustNotMatch() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_MustNotMatch(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NoAbsolutePaths() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_NoAbsolutePaths(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumDirRoots() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ScriptFileMode() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ScriptFileMode(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SuppressOutput() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SuppressOutput(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_UntarCaseSensitive() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_UntarCaseSensitive(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_UntarDebugLog() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_UntarDebugLog(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_UntarDiscardPaths() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_UntarDiscardPaths(newval) end
+
 		# returns String
 		# @return [String]
 		def get_UntarFromDir() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_UntarFromDir(newval) end
+
 		# returns String
 		# @return [String]
 		def get_UntarMatchPattern() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_UntarMatchPattern(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_UntarMaxCount() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_UntarMaxCount(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_UserId() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_UserId(newval) end
+
 		# returns String
 		# @return [String]
 		def get_UserName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_UserName(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 		# returns String
 		# @return [String]
 		def get_WriteFormat() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_WriteFormat(newval) end
+
 		# returns String
 		# @return [String]
 		def get_XmlListing() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_XmlListing(newval) end
+
 
 		# Method: AddDirRoot
 		#

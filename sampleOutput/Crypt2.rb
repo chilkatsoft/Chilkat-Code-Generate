@@ -3,27 +3,33 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_AbortCurrent() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_BCryptWorkFactor() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_BCryptWorkFactor(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_BlockSize() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_ByteSwapOnDecrypt() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		# This method has been deprecated. Do not use it.
@@ -31,278 +37,349 @@ module Chilkat
 		# @param newval [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_ByteSwapOnDecrypt(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_CadesEnabled() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_CadesEnabled(newval) end
+
 		# returns String
 		# @return [String]
 		def get_CadesSigPolicyHash() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_CadesSigPolicyHash(newval) end
+
 		# returns String
 		# @return [String]
 		def get_CadesSigPolicyId() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_CadesSigPolicyId(newval) end
+
 		# returns String
 		# @return [String]
 		def get_CadesSigPolicyUri() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_CadesSigPolicyUri(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Charset() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Charset(newval) end
+
 		# returns String
 		# @return [String]
 		def get_CipherMode() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_CipherMode(newval) end
+
 		# returns String
 		# @return [String]
 		def get_CompressionAlgorithm() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_CompressionAlgorithm(newval) end
+
 		# returns String
 		# @return [String]
 		def get_CryptAlgorithm() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_CryptAlgorithm(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns String
 		# @return [String]
 		def get_EncodingMode() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_EncodingMode(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_FirstChunk() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_FirstChunk(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HashAlgorithm() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HashAlgorithm(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_HavalRounds() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_HavalRounds(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IncludeCertChain() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_IncludeCertChain(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_InitialCount() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_InitialCount(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IterationCount() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_IterationCount(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_IV() end
+
 		# ==== Attributes
 		# +newval+ - Fixnum
 		#
 		# @param newval [Fixnum]
 		def set_IV(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_KeyLength() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_KeyLength(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastChunk() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastChunk(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns String
 		# @return [String]
 		def get_MacAlgorithm() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_MacAlgorithm(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumSignerCerts() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_PaddingScheme() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_PaddingScheme(newval) end
+
 		# returns String
 		# @return [String]
 		def get_PbesAlgorithm() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_PbesAlgorithm(newval) end
+
 		# returns String
 		# @return [String]
 		def get_PbesPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_PbesPassword(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Pkcs7CryptAlg() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Pkcs7CryptAlg(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_Rc2EffectiveKeyLength() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_Rc2EffectiveKeyLength(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_Salt() end
+
 		# ==== Attributes
 		# +newval+ - Fixnum
 		#
 		# @param newval [Fixnum]
 		def set_Salt(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_SecretKey() end
+
 		# ==== Attributes
 		# +newval+ - Fixnum
 		#
 		# @param newval [Fixnum]
 		def set_SecretKey(newval) end
+
 		# returns String
 		# @return [String]
 		def get_UuFilename() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_UuFilename(newval) end
+
 		# returns String
 		# @return [String]
 		def get_UuMode() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_UuMode(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 
 		# Method: AddEncryptCert
 		#

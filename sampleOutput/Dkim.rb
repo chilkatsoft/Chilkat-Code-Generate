@@ -3,144 +3,181 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_AbortCurrent() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DkimAlg() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DkimAlg(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_DkimBodyLengthCount() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_DkimBodyLengthCount(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DkimCanon() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DkimCanon(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DkimDomain() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DkimDomain(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DkimHeaders() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DkimHeaders(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DkimSelector() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DkimSelector(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DomainKeyAlg() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DomainKeyAlg(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DomainKeyCanon() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DomainKeyCanon(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DomainKeyDomain() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DomainKeyDomain(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DomainKeyHeaders() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DomainKeyHeaders(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DomainKeySelector() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DomainKeySelector(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 
 		# Method: AddDkimSignature
 		#

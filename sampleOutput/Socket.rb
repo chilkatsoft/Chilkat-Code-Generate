@@ -3,550 +3,689 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_AbortCurrent() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_AcceptFailReason() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncAcceptFinished() end
+
 		# returns String
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncAcceptLog() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncAcceptSuccess() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncConnectFinished() end
+
 		# returns String
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncConnectLog() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncConnectSuccess() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncDnsFinished() end
+
 		# returns String
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncDnsLog() end
+
 		# returns String
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncDnsResult() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncDnsSuccess() end
+
 		# returns Fixnum
 		# This method has been deprecated. Do not use it.
 		# @return [Fixnum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncReceivedBytes() end
+
 		# returns String
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncReceivedString() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncReceiveFinished() end
+
 		# returns String
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncReceiveLog() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncReceiveSuccess() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncSendFinished() end
+
 		# returns String
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncSendLog() end
+
 		# returns Bignum
 		# This method has been deprecated. Do not use it.
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncSendSuccess() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_BandwidthThrottleDown() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_BandwidthThrottleDown(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_BandwidthThrottleUp() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_BandwidthThrottleUp(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_BigEndian() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_BigEndian(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ClientIpAddress() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ClientIpAddress(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ClientPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ClientPort(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ConnectFailReason() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_DebugConnectDelayMs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_DebugConnectDelayMs(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_DebugDnsDelayMs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_DebugDnsDelayMs(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ElapsedSeconds() end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyAuthMethod() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyAuthMethod(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyDomain() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyDomain(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyHostname() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyHostname(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyPassword(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_HttpProxyPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_HttpProxyPort(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyUsername() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyUsername(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IsConnected() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_KeepAlive() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_KeepAlive(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_KeepSessionLog() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_KeepSessionLog(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodFailed() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ListenIpv6() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ListenIpv6(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ListenPort() end
+
 		# returns String
 		# @return [String]
 		def get_LocalIpAddress() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LocalPort() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_MaxReadIdleMs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_MaxReadIdleMs(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_MaxSendIdleMs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_MaxSendIdleMs(newval) end
+
 		# returns String
 		# @return [String]
 		def get_MyIpAddress() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumReceivedClientCerts() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumSocketsInSet() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumSslAcceptableClientCAs() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ObjectId() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_PreferIpv6() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_PreferIpv6(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ReceivedCount() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ReceivedCount(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ReceivedInt() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ReceivedInt(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ReceiveFailReason() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ReceivePacketSize() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ReceivePacketSize(newval) end
+
 		# returns String
 		# @return [String]
 		def get_RemoteIpAddress() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_RemotePort() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_RequireSslCertVerify() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_RequireSslCertVerify(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SelectorIndex() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SelectorIndex(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SelectorReadIndex() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SelectorReadIndex(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SelectorWriteIndex() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SelectorWriteIndex(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SendFailReason() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SendPacketSize() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SendPacketSize(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SessionLog() end
+
 		# returns String
 		# @return [String]
 		def get_SessionLogEncoding() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SessionLogEncoding(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SocksHostname() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksHostname(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SocksPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksPassword(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SocksPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SocksPort(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SocksUsername() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksUsername(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SocksVersion() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SocksVersion(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SoRcvBuf() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SoRcvBuf(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SoReuseAddr() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SoReuseAddr(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SoSndBuf() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SoSndBuf(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_Ssl() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_Ssl(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SslAllowedCiphers() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SslAllowedCiphers(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SslProtocol() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SslProtocol(newval) end
+
 		# returns String
 		# @return [String]
 		def get_StringCharset() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_StringCharset(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_TcpNoDelay() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_TcpNoDelay(newval) end
+
 		# returns String
 		# @return [String]
 		def get_TlsCipherSuite() end
+
 		# returns String
 		# @return [String]
 		def get_TlsPinSet() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_TlsPinSet(newval) end
+
 		# returns String
 		# @return [String]
 		def get_TlsVersion() end
+
 		# returns String
 		# @return [String]
 		def get_UserData() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_UserData(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 
 		# Method: AcceptNextConnection
 		#

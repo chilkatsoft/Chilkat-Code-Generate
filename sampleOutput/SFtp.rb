@@ -3,401 +3,505 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_AbortCurrent() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_AccumulateBuffer() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_AuthFailReason() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_BandwidthThrottleDown() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_BandwidthThrottleDown(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_BandwidthThrottleUp() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_BandwidthThrottleUp(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ClientIdentifier() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ClientIdentifier(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ClientIpAddress() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ClientIpAddress(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ConnectTimeoutMs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ConnectTimeoutMs(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_DisconnectCode() end
+
 		# returns String
 		# @return [String]
 		def get_DisconnectReason() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_EnableCache() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_EnableCache(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_EnableCompression() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_EnableCompression(newval) end
+
 		# returns String
 		# @return [String]
 		def get_FilenameCharset() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_FilenameCharset(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ForceCipher() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ForceCipher(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ForceV3() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ForceV3(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HostKeyAlg() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HostKeyAlg(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HostKeyFingerprint() end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyAuthMethod() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyAuthMethod(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyDomain() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyDomain(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyHostname() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyHostname(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyPassword(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_HttpProxyPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_HttpProxyPort(newval) end
+
 		# returns String
 		# @return [String]
 		def get_HttpProxyUsername() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_HttpProxyUsername(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IdleTimeoutMs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_IdleTimeoutMs(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IncludeDotDirs() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_IncludeDotDirs(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_InitializeFailCode() end
+
 		# returns String
 		# @return [String]
 		def get_InitializeFailReason() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IsConnected() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_KeepSessionLog() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_KeepSessionLog(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_MaxPacketSize() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_MaxPacketSize(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_PasswordChangeRequested() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_PreferIpv6() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_PreferIpv6(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_PreserveDate() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_PreserveDate(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ProtocolVersion() end
+
 		# returns String
 		# @return [String]
 		def get_ReadDirMustMatch() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ReadDirMustMatch(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ReadDirMustNotMatch() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ReadDirMustNotMatch(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SessionLog() end
+
 		# returns String
 		# @return [String]
 		def get_SocksHostname() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksHostname(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SocksPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksPassword(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SocksPort() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SocksPort(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SocksUsername() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SocksUsername(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SocksVersion() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SocksVersion(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SoRcvBuf() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SoRcvBuf(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_SoSndBuf() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_SoSndBuf(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SyncDirectives() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SyncDirectives(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SyncedFiles() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SyncedFiles(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SyncMustMatch() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SyncMustMatch(newval) end
+
 		# returns String
 		# @return [String]
 		def get_SyncMustNotMatch() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_SyncMustNotMatch(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_TcpNoDelay() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_TcpNoDelay(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_UploadChunkSize() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_UploadChunkSize(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_UtcMode() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_UtcMode(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 
 		# Method: AccumulateBytes
 		#

@@ -3,98 +3,127 @@ module Chilkat
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_Body() end
+
 		# returns String
 		# @return [String]
 		def get_BodyQP() end
+
 		# returns String
 		# @return [String]
 		def get_BodyStr() end
+
 		# returns String
 		# @return [String]
 		def get_Charset() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ContentLength() end
+
 		# returns Object
 		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_Date() end
+
 		# returns String
 		# @return [String]
 		def get_DateStr() end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Domain() end
+
 		# returns String
 		# @return [String]
 		def get_FinalRedirectUrl() end
+
 		# returns String
 		# @return [String]
 		def get_FullMime() end
+
 		# returns String
 		# @return [String]
 		def get_Header() end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumCookies() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumHeaderFields() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_StatusCode() end
+
 		# returns String
 		# @return [String]
 		def get_StatusLine() end
+
 		# returns String
 		# @return [String]
 		def get_StatusText() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 
 		# Method: GetBodyBd
 		#

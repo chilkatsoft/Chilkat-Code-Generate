@@ -3,329 +3,413 @@ module Chilkat
 		# returns Bignum
 		# @return [Bignum]
 		def get_AbortCurrent() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
+
 		# returns String
 		# @return [String]
 		def get_AppendFromDir() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_AppendFromDir(newval) end
+
 		# returns String
 		# @return [String]
 		def get_AutoRun() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_AutoRun(newval) end
+
 		# returns String
 		# @return [String]
 		def get_AutoRunParams() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_AutoRunParams(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_AutoTemp() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_AutoTemp(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_CaseSensitive() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_CaseSensitive(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ClearArchiveAttribute() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ClearArchiveAttribute(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ClearReadOnlyAttr() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ClearReadOnlyAttr(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Comment() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_Comment(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DebugLogFilePath() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
+
 		# returns String
 		# @return [String]
 		def get_DecryptPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_DecryptPassword(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_DiscardPaths() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_DiscardPaths(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_Encryption() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_Encryption(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_EncryptKeyLength() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_EncryptKeyLength(newval) end
+
 		# returns String
 		# @return [String]
 		def get_EncryptPassword() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_EncryptPassword(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ExeDefaultDir() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ExeDefaultDir(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ExeFinishNotifier() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ExeFinishNotifier(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ExeIconFile() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ExeIconFile(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ExeNoInterface() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ExeNoInterface(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ExeSilentProgress() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ExeSilentProgress(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ExeTitle() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ExeTitle(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ExeUnzipCaption() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ExeUnzipCaption(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ExeUnzipDir() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ExeUnzipDir(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_ExeWaitForSetup() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_ExeWaitForSetup(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ExeXmlConfig() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ExeXmlConfig(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_FileCount() end
+
 		# returns String
 		# @return [String]
 		def get_FileName() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_FileName(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_HasZipFormatErrors() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_IgnoreAccessDenied() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_IgnoreAccessDenied(newval) end
+
 		# returns Fixnum
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorHtml() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorText() end
+
 		# returns String
 		# @return [String]
 		def get_LastErrorXml() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastMethodSuccess() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_LastMethodSuccess(newval) end
+
 		# returns String
 		# @return [String]
 		def get_LastStringResult() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_LastStringResultLen() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_NumEntries() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_OemCodePage() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_OemCodePage(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_OverwriteExisting() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_OverwriteExisting(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_PasswordProtect() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_PasswordProtect(newval) end
+
 		# returns String
 		# @return [String]
 		def get_PathPrefix() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_PathPrefix(newval) end
+
 		# returns String
 		# @return [String]
 		def get_TempDir() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_TempDir(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_TextFlag() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_TextFlag(newval) end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_VerboseLogging() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_VerboseLogging(newval) end
+
 		# returns String
 		# @return [String]
 		def get_Version() end
+
 		# returns Bignum
 		# @return [Bignum]
 		def get_Zipx() end
+
 		# ==== Attributes
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
 		def set_Zipx(newval) end
+
 		# returns String
 		# @return [String]
 		def get_ZipxDefaultAlg() end
+
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
 		def set_ZipxDefaultAlg(newval) end
+
 
 		# Method: AddEmbedded
 		#
