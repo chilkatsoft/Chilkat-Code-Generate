@@ -50,6 +50,10 @@ module Chilkat
 
 		# returns Bignum
 		# @return [Bignum]
+		def get_NumSecretKeys() end
+
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumTrustedCerts() end
 
 		# returns Bignum
@@ -122,6 +126,29 @@ module Chilkat
 , 		# @param  password [String]
 		# @return  [TrueClass, FalseClass]
 		def AddPrivateKey(cert, alias, password)
+			# ...
+		end
+
+		# Method: AddSecretKey
+		#
+		# ==== Attributes
+		#
+		# +encodedKeyBytes+ - String
+, 		# +encoding+ - String
+, 		# +algorithm+ - String
+, 		# +alias+ - String
+, 		# +password+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  encodedKeyBytes [String]
+, 		# @param  encoding [String]
+, 		# @param  algorithm [String]
+, 		# @param  alias [String]
+, 		# @param  password [String]
+		# @return  [TrueClass, FalseClass]
+		def AddSecretKey(encodedKeyBytes, encoding, algorithm, alias, password)
 			# ...
 		end
 
@@ -261,6 +288,40 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetSecretKey
+		#
+		# ==== Attributes
+		#
+		# +password+ - String
+, 		# +index+ - Fixnum
+, 		# +encoding+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  password [String]
+, 		# @param  index [Fixnum]
+, 		# @param  encoding [String]
+		# @return  [String]
+		def GetSecretKey(password, index, encoding)
+			# ...
+		end
+
+		# Method: GetSecretKeyAlias
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns String
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [String]
+		def GetSecretKeyAlias(index)
+			# ...
+		end
+
 		# Method: GetTrustedCert
 		#
 		# ==== Attributes
@@ -341,6 +402,23 @@ module Chilkat
 , 		# @param  path [String]
 		# @return  [TrueClass, FalseClass]
 		def LoadFile(password, path)
+			# ...
+		end
+
+		# Method: LoadJwkSet
+		#
+		# ==== Attributes
+		#
+		# +password+ - String
+, 		# +jwkSet+ - CkJsonObject
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  password [String]
+, 		# @param  jwkSet [CkJsonObject]
+		# @return  [TrueClass, FalseClass]
+		def LoadJwkSet(password, jwkSet)
 			# ...
 		end
 

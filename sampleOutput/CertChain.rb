@@ -101,6 +101,21 @@ module Chilkat
 			# ...
 		end
 
+		# Method: LoadX5C
+		#
+		# ==== Attributes
+		#
+		# +jwk+ - CkJsonObject
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  jwk [CkJsonObject]
+		# @return  [TrueClass, FalseClass]
+		def LoadX5C(jwk)
+			# ...
+		end
+
 		# Method: VerifyCertSignatures
 		#
 		# ==== Attributes

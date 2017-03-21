@@ -504,6 +504,21 @@ module Chilkat
 			# ...
 		end
 
+		# Method: GetLastModified
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns CkDateTime
+		#
+		# YARD =>
+		#
+, 		# @param  path [String]
+		# @return  [CkDateTime]
+		def GetLastModified(path)
+			# ...
+		end
+
 		# Method: GetNumBlocks
 		#
 		# ==== Attributes

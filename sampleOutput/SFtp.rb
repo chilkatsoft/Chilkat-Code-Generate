@@ -1418,6 +1418,19 @@ module Chilkat
 			# ...
 		end
 
+		# Method: SendIgnore
+		#
+		# ==== Attributes
+		#
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @return  [TrueClass, FalseClass]
+		def SendIgnore()
+			# ...
+		end
+
 		# Method: SetCreateDt
 		#
 		# ==== Attributes

@@ -981,6 +981,21 @@ module Chilkat
 			# ...
 		end
 
+		# Method: OpenBd
+		#
+		# ==== Attributes
+		#
+		# +binData+ - CkBinData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  binData [CkBinData]
+		# @return  [TrueClass, FalseClass]
+		def OpenBd(binData)
+			# ...
+		end
+
 		# Method: OpenEmbedded
 		#
 		# ==== Attributes
@@ -1294,6 +1309,21 @@ module Chilkat
 		#
 		# @return  [TrueClass, FalseClass]
 		def VerifyPassword()
+			# ...
+		end
+
+		# Method: WriteBd
+		#
+		# ==== Attributes
+		#
+		# +binData+ - CkBinData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  binData [CkBinData]
+		# @return  [TrueClass, FalseClass]
+		def WriteBd(binData)
 			# ...
 		end
 

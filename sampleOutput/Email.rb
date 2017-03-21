@@ -216,6 +216,10 @@ module Chilkat
 
 		# returns Bignum
 		# @return [Bignum]
+		def get_NumDigests() end
+
+		# returns Bignum
+		# @return [Bignum]
 		def get_NumHeaderFields() end
 
 		# returns Bignum
@@ -860,18 +864,18 @@ module Chilkat
 		#
 		# ==== Attributes
 		#
-		# +content+ - String
+		# +fileNameInHtml+ - String
+, 		# +content+ - String
 , 		# +charset+ - String
-, 		# +fileNameInHtml+ - String
 		# returns nil
 		#
 		# YARD =>
 		#
+, 		# @param  fileNameInHtml [String]
 , 		# @param  content [String]
 , 		# @param  charset [String]
-, 		# @param  fileNameInHtml [String]
 		# @return  [nil]
-		def AddRelatedString2(content, charset, fileNameInHtml)
+		def AddRelatedString2(fileNameInHtml, content, charset)
 			# ...
 		end
 
@@ -1686,6 +1690,21 @@ module Chilkat
 , 		# @param  fieldName [String]
 		# @return  [String]
 		def GetDeliveryStatusInfo(fieldName)
+			# ...
+		end
+
+		# Method: GetDigest
+		#
+		# ==== Attributes
+		#
+		# +index+ - Fixnum
+		# returns CkEmail
+		#
+		# YARD =>
+		#
+, 		# @param  index [Fixnum]
+		# @return  [CkEmail]
+		def GetDigest(index)
 			# ...
 		end
 

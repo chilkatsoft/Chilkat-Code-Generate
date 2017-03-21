@@ -368,6 +368,25 @@ module Chilkat
 			# ...
 		end
 
+		# Method: CreateDeb
+		#
+		# ==== Attributes
+		#
+		# +controlPath+ - String
+, 		# +dataPath+ - String
+, 		# +debPath+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+, 		# @param  controlPath [String]
+, 		# @param  dataPath [String]
+, 		# @param  debPath [String]
+		# @return  [TrueClass, FalseClass]
+		def CreateDeb(controlPath, dataPath, debPath)
+			# ...
+		end
+
 		# Method: GetDirRoot
 		#
 		# ==== Attributes
