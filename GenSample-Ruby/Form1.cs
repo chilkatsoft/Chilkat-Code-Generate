@@ -178,7 +178,7 @@ namespace GenSample
             int i = 1;
             foreach (MethodArg arg in xmethod.Args)
             {
-                if (i > 1) sbOut.Append(", "); 
+                //if (i > 1) sbOut.Append(", "); 
                 sbOut.Append("\t\t# +" + arg.Name + "+ - " + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "\r\n");
                 i++;
             }
@@ -187,7 +187,7 @@ namespace GenSample
 
             foreach (MethodArg arg in xmethod.Args)
             {
-                if (i > 1) sbOut.Append(", ");
+                //if (i > 1) sbOut.Append(", ");
                 sbOut.Append("\t\t# @param  " + arg.Name + " [" + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "]\r\n");
                 i++;
             }
