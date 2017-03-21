@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="310776880" license="Bundle" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Pem.xml">
+<class XojoModuleId="310776880" license="Bundle" baseProgress="1" hasEvents="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Pem.xml">
     <genericName>Pem</genericName>
     <cppName>CkPem</cppName>
     <dnName>Pem</dnName>
@@ -90,6 +90,7 @@
                 <arg name="privKey" type="PrivateKey" objcName="privKey" />
                 <arg name="certChain" type="CertChain" objcName="certChain" />
             </args2>
+            <links2 />
         </method>
         <method name="AddPublicKey" ax="1" cpp="1" dn="1" status="1" axId="128">
             <gType>bool</gType>
@@ -107,6 +108,7 @@
             <args2>
                 <arg name="pubkey" type="PublicKey" objcName="pubkey" />
             </args2>
+            <links2 />
         </method>
         <method name="Clear" ax="1" cpp="1" dn="1" status="1" axId="129">
             <gType>bool</gType>
@@ -114,6 +116,7 @@
             <iversion>9.5.0.49</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="GetCert" axId="104" ax="1" cpp="1" dn="1">
             <gType>Cert</gType>
@@ -131,6 +134,12 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2>
+                <link linkType="example">
+                    <url>pem_load_ecc.asp</url>
+                    <text>Load Encrypted PEM Containing ECC Private Key and Certs and Examine Contents</text>
+                </link>
+            </links2>
         </method>
         <method name="GetEncodedItem" ax="1" cpp="1" dn="1" axId="131" outArgName="outStr">
             <gType>string</gType>
@@ -177,6 +186,7 @@
                 <arg name="encoding" type="string" objcName="encoding" />
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method name="GetPrivateKey" axId="105" ax="1" cpp="1" dn="1">
             <gType>PrivateKey</gType>
@@ -194,6 +204,12 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2>
+                <link linkType="example">
+                    <url>pem_load_ecc.asp</url>
+                    <text>Load Encrypted PEM Containing ECC Private Key and Certs and Examine Contents</text>
+                </link>
+            </links2>
         </method>
         <method name="GetPublicKey" ax="1" cpp="1" dn="1" axId="124">
             <gType>PublicKey</gType>
@@ -211,6 +227,7 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method name="LoadP7b" ax="1" cpp="1" dn="1" events="1" status="1" axId="113">
             <gType>bool</gType>
@@ -228,6 +245,7 @@
             <args2>
                 <arg name="p7bData" type="bytes" objcName="p7bData" />
             </args2>
+            <links2 />
         </method>
         <method name="LoadP7bFile" axId="106" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
@@ -276,6 +294,7 @@
                 <arg name="pemContent" type="string" objcName="pemContent" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="LoadPemFile" axId="112" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
@@ -324,6 +343,7 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method name="RemovePrivateKey" ax="1" cpp="1" dn="1" status="1" axId="122">
             <gType>bool</gType>
@@ -341,6 +361,7 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method name="ToJks" axId="116" ax="1" cpp="1" dn="1">
             <gType>JavaKeyStore</gType>
@@ -407,6 +428,7 @@
                 </arg>
             </args>
             <args2 />
+            <links2 />
         </method>
         <method name="ToPemEx" axId="117" ax="1" cpp="1" dn="1" status="1" outArgName="outStr">
             <gType>string</gType>
@@ -510,6 +532,7 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
                 <arg name="encryptAlg" type="string" objcName="encryptAlg" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="ToPfx" axId="115" ax="1" cpp="1" dn="1">
             <gType>Pfx</gType>
@@ -558,6 +581,7 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
                 <arg name="encoding" type="string" objcName="encoding" />
                 <arg name="itemData" type="string" objcName="itemData" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <properties>
@@ -565,11 +589,15 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
             <gType>bool</gType>
             <descrip>When set to _TRUE_, each of the Load* methods appends to the current contents of this PEM object.  When set to _FALSE_, a Load* method replaces the contents of this PEM object.  The default is _FALSE_.</descrip>
             <iversion>9.5.0.49</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="HeartbeatMs" axId="114" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>This is the number of milliseconds between each AbortCheck event callback.  The AbortCheck callback allows an application to abort any event-enabled methods prior to completion.  If HeartbeatMs is 0 (the default), no AbortCheck event callbacks will fire.</descrip>
             <iversion>9.5.0.49</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="NumCerts" axId="100" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
@@ -581,11 +609,14 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
                     <text>Iterate Keys and Certs in PEM</text>
                 </link>
             </links2>
+            <args2 />
         </property>
         <property name="NumCsrs" read="1" ax="1" cpp="1" dn="1" axId="130">
             <gType>int</gType>
             <descrip>The number of certificate signing requests (CSRs)  in the loaded PEM.</descrip>
             <iversion>9.5.0.50</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="NumPrivateKeys" axId="101" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
@@ -597,11 +628,14 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
                     <text>Iterate Keys and Certs in PEM</text>
                 </link>
             </links2>
+            <args2 />
         </property>
         <property name="NumPublicKeys" axId="123" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>The number of public keys in the loaded PEM.  To get the 1st public key, call GetPublicKey(0).</descrip>
             <iversion>9.5.0.49</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="PrivateKeyFormat" read="1" write="1" ax="1" cpp="1" dn="1" axId="126">
             <gType>string</gType>
@@ -610,6 +644,8 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
 The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE KEY.&lt;br&gt;
 The PKCS8 format uses the PEM header: BEGIN PRIVATE  KEY.</descrip>
             <iversion>9.5.0.49</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="PublicKeyFormat" axId="125" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
@@ -624,6 +660,7 @@ The PKCS8 format uses the PEM header: BEGIN PUBLIC  KEY.</descrip>
                     <text>Write PKCS1 or PKCS8 Public Key PEM</text>
                 </link>
             </links2>
+            <args2 />
         </property>
     </properties>
     <events />

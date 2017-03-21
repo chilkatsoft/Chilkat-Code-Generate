@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="114147433" sourceXmlPath="C:/ck2000/appData/apiDef2/Zip.xml" license="Zip" hasEvents="1">
+<class XojoModuleId="114147433" license="Zip" hasEvents="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Zip.xml">
     <axName>ChilkatZip</axName>
     <dnName>Zip</dnName>
     <cppName>CkZip</cppName>
@@ -852,7 +852,12 @@ Note: This method only updates the zip object.  To update (rewrite) a zip file, 
             <args2>
                 <arg name="entry" type="ZipEntry" objcName="entry" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>zip_remove_file.asp</url>
+                    <text>Remove a File from a .zip</text>
+                </link>
+            </links2>
         </method>
         <method name="ExcludeDir" axId="155" ax="1" cpp="1" dn="1">
             <gType>void</gType>
@@ -1525,7 +1530,7 @@ For example, to specify the text for the self-extractor's main dialog unzip butt
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -1787,7 +1792,7 @@ http://www.chilkatsoft.com/d2/SaExtract.zip</descrip>
             </links2>
             <args2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" name="WriteToMemory" axId="194" outArgName="outData">
+        <method name="WriteToMemory" axId="194" outArgName="outData" ax="1" cpp="1" dn="1" events="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -1866,6 +1871,26 @@ Note: This method only updates the zip object.  To update (rewrite) a zip file, 
                 <arg name="encoding" type="string" objcName="encoding" />
                 <arg name="data" type="string" objcName="data" />
             </args2>
+        </method>
+        <method name="WriteBd" axId="202" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Same as WriteZip, but instead of writing the Zip to a file, it writes to ARG1.  Zips that are written to ARG1 can be opened by calling OpenBd.  Note: Both WriteBd and OpenBd are added in Chilkat v9.5.0.66</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.66</iversion>
+        </method>
+        <method name="OpenBd" axId="203" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.66</iversion>
+            <descrip>Open a Zip contained in ARG1.  
+&lt;p&gt;
+When a zip is opened, the PasswordProtect and Encryption properties will be appropriately set.  If the zip is password protected (i.e. uses older Zip 2.0 encrypion), then the PasswordProtect property will be set to _TRUE_.  If the zip is strong encrypted, the Encryption property will be set to a value 1 through 4, where 4 indicates WinZip compatible AES encryption.</descrip>
         </method>
     </methods>
     <genericName>Zip</genericName>
@@ -2240,5 +2265,5 @@ Note: This method only updates the zip object.  To update (rewrite) a zip file, 
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>F0C2D9C1-0B80-432D-A60C-0957A5A03AAE</uuidEvents>
     <uuidMidl>EFE9ADE4-0851-49E2-BC0B-AB26E0353B1B</uuidMidl>
-    <nextAxId>202</nextAxId>
+    <nextAxId>204</nextAxId>
 </class>

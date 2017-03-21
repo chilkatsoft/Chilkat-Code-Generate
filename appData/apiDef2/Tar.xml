@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="102387346" license="Tar" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Tar.xml">
+<class XojoModuleId="102387346" sourceXmlPath="c:/ck2000/appData/apiDef2/Tar.xml" license="Tar" hasEvents="1">
     <axName>ChilkatTar</axName>
     <dnName>Tar</dnName>
     <cppName>CkTar</cppName>
@@ -8,39 +8,57 @@
             <gType>bool</gType>
             <descrip>If _TRUE_, then untar methods, such as Untar, UntarGz, UntarBz2, and UntarZ, will also capture an XML listing of the contents in the XmlListing property.  The format of the XML contained in XmlListing is identical to what is returned by the ListXml method.  The  default value is _FALSE_.</descrip>
             <iversion>9.5.0.46</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="Charset" axId="100">
             <gType>string</gType>
             <descrip>Character encoding to be used when interpreting filenames within .tar archives for untar operations.  The default is "utf-8", and this is typically not changed.  (The WriteTar methods always uses utf-8 to store filenames within the TAR archive.)</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="DirMode" axId="101">
             <gType>int</gType>
             <descrip>The directory permissions to used in WriteTar* methods.  The default is octal 0755.  This is the value to be stored in the "mode" field of each TAR header for a directory entries.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="DirPrefix" axId="102" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>A prefix to be added to each file's path within the TAR archive as it is being created.  For example, if this property is set to the string "subdir1", then "subdir1/" will be prepended to each file's path within the TAR.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="FileMode" axId="103">
             <gType>int</gType>
             <descrip>The file permissions to used in WriteTar* methods.  The default is octal 0644.  This is the value to be stored in the "mode" field of each TAR header for a file entries.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="GroupId" axId="104">
             <gType>int</gType>
             <descrip>The default numerical GID to be stored in each TAR header when writing TAR archives.  The default value is 1000.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="GroupName" axId="105">
             <gType>string</gType>
             <descrip>The default group name to be stored in each TAR header when writing TAR archives.  The default value is the logged-on username of the application's process.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="HeartbeatMs" axId="106" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>This is the number of milliseconds between each AbortCheck event callback.  The AbortCheck callback allows an application to abort any TAR operation prior to completion.  If HeartbeatMs is 0, no AbortCheck event callbacks will occur.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="MatchCaseSensitive" read="1" write="1" ax="1" cpp="1" dn="1" axId="134">
             <gType>bool</gType>
             <descrip>Determines whether pattern matching for the MustMatch and MustNotMatch properties is case-sensitive or not.  The default value is _FALSE_.</descrip>
             <iversion>9.5.0.46</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="MustMatch" read="1" write="1" ax="1" cpp="1" dn="1" axId="135">
             <gType>string</gType>
@@ -48,6 +66,8 @@
 &lt;p&gt;
 The must-match pattern may include 0 or more asterisk characters, each of which represents 0 or more of any character.  For example, the pattern "*.txt" causes only .txt files to be included or extracted. The default value is an empty string, indicating that all files are implicitly matched.</descrip>
             <iversion>9.5.0.46</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="MustNotMatch" read="1" write="1" ax="1" cpp="1" dn="1" axId="136">
             <gType>string</gType>
@@ -55,14 +75,20 @@ The must-match pattern may include 0 or more asterisk characters, each of which 
 &lt;p&gt;
 The must-not-match pattern may include 0 or more asterisk characters, each of which represents 0 or more of any character.  For example, the pattern "*.obj" causes all .obj files to be skipped.  The default value is an empty string, indicating that no files are skipped.</descrip>
             <iversion>9.5.0.46</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="NoAbsolutePaths" axId="107" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>If _TRUE_, then absolute paths are converted to relative paths by removing the leading "/" or "\" character when untarring.  This protects your system from unknowingly untarring files into important system directories, such as C:\Windows\system32.  The  default value is _TRUE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumDirRoots" axId="108">
             <gType>int</gType>
             <descrip>The total number of directory roots set by calling AddDirRoot (i.e. the number of times AddDirRoot was called by the application).  A TAR archive is created by calling AddDirRoot for one or more directory tree roots, followed by a single call to WriteTar (or WriteTarBz2, WriteTarGz, WriteTarZ).  This allows for TAR archives containing multiple directory trees to be created.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="PercentDoneScale" read="1" write="1" ax="1" cpp="1" dn="1" axId="140">
             <gType>int</gType>
@@ -70,56 +96,82 @@ The must-not-match pattern may include 0 or more asterisk characters, each of wh
 &lt;p&gt;
 Sets the value to be defined as 100% complete for the purpose of PercentDone event callbacks.  The defaut value of 100 means that at most 100 event PercentDone callbacks will occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress as a percentage completed.   This property may be set to larger numbers to get more fine-grained PercentDone callbacks.  For example, setting this property equal to 1000 will provide callbacks with .1 percent granularity.  For example, a value of 453 would indicate 45.3% competed.  This property is clamped to a minimum value of 10, and a maximum value of 100000.</descrip>
             <iversion>9.5.0.49</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="ScriptFileMode" axId="109">
             <gType>int</gType>
             <descrip>The file permissions to used in WriteTar* methods for shell script files (.sh, .csh, .bash, .bsh).  The default is octal 0755.  This is the value to be stored in the "mode" field of each TAR header for a file entries.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="SuppressOutput" read="1" write="1" ax="1" cpp="1" dn="1" axId="137">
             <gType>bool</gType>
             <descrip>If _TRUE_, then untar methods, such as Untar, UntarGz, UntarBz2, and UntarZ, do not produce any output.  Setting this value equal to _TRUE_ is useful when the CaptureXmlListing is also set to _TRUE_, which enables an application to get the contents of a TAR archive without extracting.  The  default value is _FALSE_.</descrip>
             <iversion>9.5.0.46</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="UntarCaseSensitive" axId="110" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>This property is deprecated.  Applications should instead use the MatchCaseSensitive property.  Until this property is officially removed, it will behave the same as the MatchCaseSensitive property.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UntarDebugLog" axId="111">
             <gType>bool</gType>
             <descrip>Similar to the VerboseLogging property.  If set to _TRUE_, then information about each file/directory extracted in an untar method call is logged to LastErrorText (or LastErrorXml / LastErrorHtml).  The default value is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UntarDiscardPaths" axId="112">
             <gType>bool</gType>
             <descrip>If _TRUE_, then discard all path information when untarring.  This causes all files to be untarred into a single directory.  The default value is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="UntarFromDir" axId="113" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>The directory path where files are extracted when untarring.   The default value is ".", meaning that the current working directory of the calling process is used.  If UntarDiscardPaths is set, then all files are untarred into this directory.  Otherwise, the untar operation will re-create a directory tree rooted in this directory.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="UntarMatchPattern" axId="114" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>This property is deprecated.  The MustMatch property should be used instead.  Until this property is officially removed from the API,  it is identical in behavior the MustMatch property.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UntarMaxCount" axId="115">
             <gType>int</gType>
             <descrip>Limits the number of files extracted during an untar to this count.  The default value is 0 to indicate no maximum.  To untar a single file, one might set the UntarMatchPattern such that it will match only the file to be extracted, and also set UntarMaxCount equal to 1.  This causes an untar to scan the TAR archive until it finds the matching file, extract it, and then return.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UserId" axId="116">
             <gType>int</gType>
             <descrip>The default numerical UID to be stored in each TAR header when writing TAR archives.  The default value is 1000.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UserName" axId="117">
             <gType>string</gType>
             <descrip>The default user name to be stored in each TAR header when writing TAR archives.  The default value is the logged-on username of the application's process.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="WriteFormat" axId="118">
             <gType>string</gType>
             <descrip>The TAR format to use when writing a TAR archive.  Valid values are "gnu", "pax", and "ustar".  The default value is "gnu".</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="XmlListing" read="1" write="1" ax="1" cpp="1" dn="1" axId="138">
             <gType>string</gType>
             <descrip>Contains the XML listing of the contents of the TAR archive for the last untar method call (such as Untar, UntarGz, etc.) where the CaptureXmlListing property was set to _TRUE_.</descrip>
             <iversion>9.5.0.46</iversion>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <methods>
@@ -138,6 +190,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             <args2>
                 <arg name="dirPath" type="string" objcName="dirPath" />
             </args2>
+            <links2 />
         </method>
         <method name="AddFile" ax="1" cpp="1" dn="1" status="1" axId="139">
             <gType>bool</gType>
@@ -155,6 +208,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetDirRoot" axId="120" outArgName="outStr">
             <gType>string</gType>
@@ -176,6 +230,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="ListXml" axId="121" outArgName="outStr">
             <gType>string</gType>
@@ -197,6 +252,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             <args2>
                 <arg name="tarPath" type="string" objcName="tarPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="UnlockComponent" axId="122">
             <gType>bool</gType>
@@ -223,7 +279,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -304,6 +360,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
                 <arg name="tarFileBytes" type="bytes" objcName="tarFileBytes" />
                 <arg name="matchPattern" type="string" objcName="matchPattern" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="UntarFromMemory" axId="126">
             <gType>int</gType>
@@ -320,6 +377,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             <args2>
                 <arg name="tarFileBytes" type="bytes" objcName="tarFileBytes" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="UntarGz" axId="127">
             <gType>bool</gType>
@@ -380,8 +438,9 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             <args2>
                 <arg name="tarPath" type="string" objcName="tarPath" />
             </args2>
+            <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="WriteTar" axId="130">
+        <method name="WriteTar" axId="130" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -480,6 +539,17 @@ The ARG1 adds a prefix to the path in the TAR  for all files added under this ro
                 <arg name="rootPath" type="string" objcName="rootPath" />
             </args2>
         </method>
+        <method name="CreateDeb" axId="142" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="controlPath" type="string" objcName="controlPath" />
+                <arg name="dataPath" type="string" objcName="dataPath" />
+                <arg name="debPath" type="string" objcName="debPath" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.66</iversion>
+            <descrip>Creates a .deb Debian binary package archive from a control.tar.gz and data.tar.gz.  The ARG1 is the path to the control.tar.gz file (or equivalent), and the ARG2 is the path to the data.tar.gz file.  The output file path (.deb) is specified in ARG3.</descrip>
+        </method>
     </methods>
     <genericName>Tar</genericName>
     <events>
@@ -526,6 +596,7 @@ The ARG1 adds a prefix to the path in the TAR  for all files added under this ro
                 <arg name="isDirectory" type="bool" objcName="isDirectory" />
                 <arg name="skip" type="bool" objcName="skip" ref="1" />
             </args2>
+            <links2 />
         </event>
         <standard name="PercentDone" />
         <standard name="ProgressInfo" />
@@ -536,5 +607,5 @@ The ARG1 adds a prefix to the path in the TAR  for all files added under this ro
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>1BCCF756-2714-431F-A92A-30B7DFFF3A56</uuidEvents>
     <uuidMidl>6D9CB79B-EDFF-4B36-8A2B-E24A0D94838C</uuidMidl>
-    <nextAxId>142</nextAxId>
+    <nextAxId>143</nextAxId>
 </class>

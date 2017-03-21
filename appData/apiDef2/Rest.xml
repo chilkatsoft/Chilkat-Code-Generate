@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Bundle" hasEvents="1" baseProgress="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Rest.xml">
+<class sourceXmlPath="c:/ck2000/appData/apiDef2/Rest.xml" license="Bundle" hasEvents="1" baseProgress="1">
     <genericName>Rest</genericName>
     <cppName>CkRest</cppName>
     <dnName>Rest</dnName>
@@ -1104,7 +1104,9 @@ If the response body was streamed to ARG3, then the string return value of the F
             <gType>bool</gType>
             <descrip>Sets the connection to be used for sending the REST request. The ARG1 should be an already-connected socket.  It may be a TLS connection, an unencrypted connection, through an HTTP proxy, a SOCKS proxy, or even through SSH tunnels.  All of the connection related functionality is handled by the Chilkat Socket API.
 &lt;p&gt;
-The ARG2 indicates whether connection should automatically be established as needed for subsequent REST requests.</descrip>
+The ARG2 indicates whether connection should automatically be established as needed for subsequent REST requests.
+&lt;p&gt;
+&lt;b&gt;Important: &lt;/b&gt; The UseConnection method is provided as a means for handling more complicated connections -- such as connections through proxies, tunnels, etc.   If your application is connecting directly to the HTTP server, then simply call this class's Connect method.</descrip>
             <iversion>9.5.0.58</iversion>
             <args>
                 <arg>

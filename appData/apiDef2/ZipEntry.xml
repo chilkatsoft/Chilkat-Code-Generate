@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Zip" baseProgress="1" hasEvents="1" XojoModuleId="790934615" sourceXmlPath="C:/ck2000/appData/apiDef2/ZipEntry.xml">
+<class license="Zip" baseProgress="1" hasEvents="1" XojoModuleId="790934615" sourceXmlPath="c:/ck2000/appData/apiDef2/ZipEntry.xml">
     <axName>ChilkatZipEntry</axName>
     <dnName>ZipEntry</dnName>
     <cppName>CkZipEntry</cppName>
@@ -360,7 +360,12 @@ When the zip is written by calling WriteZip or WriteToMemory, all of the zip ent
                 <arg name="strContent" type="string" objcName="inStr" />
                 <arg name="charset" type="string" objcName="charset" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>zip_update_file.asp</url>
+                    <text>Replace/Update a FIle in a .zip</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="SetDt" axId="128">
             <gType>void</gType>

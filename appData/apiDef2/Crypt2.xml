@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="500368711" license="Crypt" hasEvents="1" baseProgress="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Crypt2.xml">
+<class XojoModuleId="500368711" license="Crypt" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Crypt2.xml">
     <axName>ChilkatCrypt2</axName>
     <dnName>Crypt2</dnName>
     <cppName>CkCrypt2</cppName>
@@ -2607,6 +2607,10 @@ The hash algorithm is specified by the HashAlgorithm property.
                     <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
                     <text>Supported Binary Encodings</text>
                 </link>
+                <link linkType="example">
+                    <url>crypt_opaque_pkcs7_cms_signature.asp</url>
+                    <text>Create and Verify an Opaque PKCS7/CMS Signature</text>
+                </link>
             </links2>
             <args2>
                 <arg name="str" type="string" objcName="str" />
@@ -2704,6 +2708,10 @@ The hash algorithm is specified by the HashAlgorithm property.
                 <link linkType="external">
                     <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
                     <text>Supported Binary Encodings</text>
+                </link>
+                <link linkType="example">
+                    <url>crypt_opaque_pkcs7_cms_signature.asp</url>
+                    <text>Create and Verify an Opaque PKCS7/CMS Signature</text>
                 </link>
             </links2>
             <args2>
@@ -3448,7 +3456,12 @@ There is no minimum or maximum password length.  The password string is transfor
                 <arg name="cert" type="Cert" objcName="cert" />
                 <arg name="privateKey" type="PrivateKey" objcName="key" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>crypt_opaque_pkcs7_cms_signature.asp</url>
+                    <text>Create and Verify an Opaque PKCS7/CMS Signature</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SetVerifyCert" axId="220">
             <gType>bool</gType>
@@ -3466,7 +3479,12 @@ There is no minimum or maximum password length.  The password string is transfor
             <args2>
                 <arg name="cert" type="Cert" objcName="cert" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>crypt_opaque_pkcs7_cms_signature.asp</url>
+                    <text>Create and Verify an Opaque PKCS7/CMS Signature</text>
+                </link>
+            </links2>
         </method>
         <method cpp="0" dn="0" ax="1" name="Shorten" axId="236">
             <gType>bytes</gType>
@@ -3670,7 +3688,7 @@ There is no minimum or maximum password length.  The password string is transfor
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">

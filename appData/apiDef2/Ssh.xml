@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="649209598" license="Ssh" hasEvents="1" baseProgress="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Ssh.xml">
+<class XojoModuleId="649209598" sourceXmlPath="c:/ck2000/appData/apiDef2/Ssh.xml" license="Ssh" hasEvents="1" baseProgress="1">
     <axName>ChilkatSsh</axName>
     <dnName>Ssh</dnName>
     <cppName>CkSsh</cppName>
@@ -1422,10 +1422,10 @@ In most cases, a server will automatically initiate key re-exchange whenever it 
             <args2 />
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="SendIgnore" axId="169">
+        <method name="SendIgnore" axId="169" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args />
-            <descrip>Sends an IGNORE message to the SSH server.  This is one way of verifying that the connection to the SSH server is open and valid.  The SSH server does not response it an IGNORE message, it simply ignores it.  IGNORE messages are not associated with a channel (in other words, you do not need to first open a channel prior to sending an IGNORE message).</descrip>
+            <descrip>Sends an IGNORE message to the SSH server.  This is one way of verifying that the connection to the SSH server is open and valid.  The SSH server does not respond to an IGNORE message. It simply ignores it.  IGNORE messages are not associated with a channel (in other words, you do not need to first open a channel prior to sending an IGNORE message).</descrip>
             <args2 />
             <links2 />
         </method>
@@ -1944,7 +1944,7 @@ _LT_error_GT_error_message_LT_/error_GT_
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">

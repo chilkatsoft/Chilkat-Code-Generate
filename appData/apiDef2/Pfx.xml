@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Free" XojoModuleId="122503894" sourceXmlPath="C:/ck2000/appData/apiDef2/Pfx.xml">
+<class license="Free" XojoModuleId="122503894" sourceXmlPath="c:/ck2000/appData/apiDef2/Pfx.xml">
     <genericName>Pfx</genericName>
     <cppName>CkPfx</cppName>
     <dnName>Pfx</dnName>
@@ -30,6 +30,7 @@
                 <arg name="cert" type="Cert" objcName="cert" />
                 <arg name="includeChain" type="bool" objcName="includeChain" />
             </args2>
+            <links2 />
         </method>
         <method name="AddPrivateKey" ax="1" cpp="1" dn="1" status="1" axId="107">
             <gType>bool</gType>
@@ -78,6 +79,7 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method name="GetPrivateKey" ax="1" cpp="1" dn="1" axId="103">
             <gType>PrivateKey</gType>
@@ -148,6 +150,7 @@
                 <arg name="pemStr" type="string" objcName="pemStr" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="LoadPfxBytes" ax="1" cpp="1" dn="1" status="1" axId="104">
             <gType>bool</gType>
@@ -173,6 +176,7 @@
                 <arg name="pfxData" type="bytes" objcName="pfxData" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="LoadPfxEncoded" axId="105" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -265,6 +269,7 @@
             <args2>
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="ToEncodedString" axId="112" ax="1" cpp="1" dn="1" status="1" outArgName="outStr">
             <gType>string</gType>
@@ -326,6 +331,7 @@
                 <arg name="password" type="string" objcName="password" />
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method name="ToJavaKeyStore" ax="1" cpp="1" dn="1" axId="113">
             <gType>JavaKeyStore</gType>
@@ -359,6 +365,16 @@
                 <arg name="alias" type="string" objcName="alias" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2>
+                <link linkType="example">
+                    <url>pfx_to_jwkset.asp</url>
+                    <text>Convert PFX to JWK Set</text>
+                </link>
+                <link linkType="example">
+                    <url>pfx_to_jks.asp</url>
+                    <text>Convert PKCS12 / PFX to Java Keystore (JKS)</text>
+                </link>
+            </links2>
         </method>
         <method name="ToPem" axId="114" ax="1" cpp="1" dn="1" status="1" outArgName="outStr">
             <gType>string</gType>
@@ -394,6 +410,16 @@
                 </arg>
             </args>
             <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>pfx_convert_to_pem.asp</url>
+                    <text>Convert PFX to PEM</text>
+                </link>
+                <link linkType="example">
+                    <url>pfx_ecc_cert_to_pem.asp</url>
+                    <text>Convert PFX with ECC Private Key and Cert to PEM</text>
+                </link>
+            </links2>
         </method>
         <method name="ToPemEx" axId="116" ax="1" cpp="1" dn="1" status="1" outArgName="outStr">
             <gType>string</gType>
@@ -497,6 +523,16 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
                 <arg name="encryptAlg" type="string" objcName="encryptAlg" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2>
+                <link linkType="example">
+                    <url>pfx_convert_to_encrypted_pem.asp</url>
+                    <text>Convert PFX to Encrypted PEM</text>
+                </link>
+                <link linkType="example">
+                    <url>pfx_ecc_cert_to_encrypted_pem.asp</url>
+                    <text>Convert PFX with ECC Private Key and Cert to Encrypted PEM</text>
+                </link>
+            </links2>
         </method>
         <method name="UseCertVault" ax="1" cpp="1" dn="1" status="1" axId="109">
             <gType>bool</gType>
@@ -514,6 +550,7 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
             <args2>
                 <arg name="vault" type="XmlCertVault" objcName="vault" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <properties>
@@ -521,11 +558,15 @@ issuer=/C=GB/ST=Greater Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA D
             <gType>int</gType>
             <descrip>The number of certificates contained in the PFX.</descrip>
             <iversion>9.5.0.40</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="NumPrivateKeys" read="1" ax="1" cpp="1" dn="1" axId="101">
             <gType>int</gType>
             <descrip>The number of private keys contained in the PFX.</descrip>
             <iversion>9.5.0.40</iversion>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <events />

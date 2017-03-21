@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Bundle" baseProgress="1" hasEvents="1" XojoModuleId="818448467" sourceXmlPath="C:/ck2000/appData/apiDef2/TaskChain.xml">
+<class XojoModuleId="818448467" sourceXmlPath="c:/ck2000/appData/apiDef2/TaskChain.xml" license="Bundle">
     <genericName>TaskChain</genericName>
     <cppName>CkTaskChain</cppName>
     <dnName>TaskChain</dnName>
@@ -35,6 +35,7 @@
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="GetTask" ax="1" cpp="1" dn="1" axId="102">
             <gType>Task</gType>
@@ -66,6 +67,7 @@
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="RunSynchronously" axId="105" ax="1" cpp="1" dn="1" noNodeJs="1" status="1">
             <gType>bool</gType>
@@ -73,6 +75,7 @@
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="SleepMs" axId="112" ax="1" cpp="1" dn="1">
             <gType>void</gType>
@@ -90,8 +93,9 @@
             <args2>
                 <arg name="numMs" type="int" objcName="numMs" />
             </args2>
+            <links2 />
         </method>
-        <method name="Wait" axId="106" ax="1" cpp="1" dn="1" events="1" noNodeJs="1" status="1">
+        <method name="Wait" axId="106" ax="1" cpp="1" dn="1" noNodeJs="1" status="1">
             <gType>bool</gType>
             <descrip>Waits for the task chain to complete.  Returns when all of the tasks in the chain have completed, or after ARG1 milliseconds have elapsed.  (A ARG1 value of 0 is to wait indefinitely.) Returns  (_FALSE_) if the task chain has not yet been started by calling the Run method, or if the ARG1 expired.  If the task chain completed, was already completed, was canceled, or aborted, then this method returns _TRUE_.</descrip>
             <iversion>9.5.0.52</iversion>
@@ -107,6 +111,7 @@
             <args2>
                 <arg name="maxWaitMs" type="int" objcName="maxWaitMs" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <properties>
@@ -114,27 +119,37 @@
             <gType>bool</gType>
             <descrip>_TRUE_ if the task status is "canceled", "aborted", or "completed".  A task chain can only reach the "canceled" status if it was activated via the Run method, made it onto the internal thread pool thread's queue, was waiting for a pool thread to become available, and was then canceled prior to the task actually starting.</descrip>
             <iversion>9.5.0.52</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="HeartbeatMs" read="1" write="1" ax="1" cpp="1" dn="1" axId="113">
             <gType>int</gType>
             <descrip>The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an application to abort the Wait method. If HeartbeatMs is 0 (the default), no AbortCheck event callbacks will fire.
 &lt;b&gt;Note:&lt;/b&gt; An asynchronous task chain running in a background thread (in one of the thread pool threads) does not fire events.  The task chain's event callbacks pertain only to the Wait method.</descrip>
             <iversion>9.5.0.52</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="Inert" read="1" ax="1" cpp="1" dn="1" axId="108">
             <gType>bool</gType>
             <descrip>_TRUE_ if the task status is "empty" or "loaded".  When a task chain is inert, it has been loaded but is not scheduled to run yet.</descrip>
             <iversion>9.5.0.52</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="Live" read="1" ax="1" cpp="1" dn="1" axId="109">
             <gType>bool</gType>
             <descrip>_TRUE_ if the task status is "queued" or "running".  When a task chain is live, it is either already running, or is on the thread pool thread's queue waiting for a thread to become available.</descrip>
             <iversion>9.5.0.52</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="NumTasks" axId="100" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>The number of tasks contained within the task chain.</descrip>
             <iversion>9.5.0.52</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="Status" axId="111" read="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
@@ -149,6 +164,8 @@
 &lt;li&gt;"completed" -- The task chain completed.  
 &lt;/ul&gt;</descrip>
             <iversion>9.5.0.52</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="StatusInt" read="1" ax="1" cpp="1" dn="1" axId="114">
             <gType>int</gType>
@@ -163,6 +180,8 @@
 &lt;li&gt;&lt;b&gt;7&lt;/b&gt; -- "completed" -- The task chain completed.  
 &lt;/ul&gt;</descrip>
             <iversion>9.5.0.52</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="StopOnFailedTask" axId="103" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
@@ -174,6 +193,7 @@
                     <text>Async Methods Returning an Object</text>
                 </link>
             </links2>
+            <args2 />
         </property>
     </properties>
     <events>

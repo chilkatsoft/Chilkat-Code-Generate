@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="833940869" sourceXmlPath="C:/ck2000/appData/apiDef2/Rsa.xml" license="Rsa">
+<class XojoModuleId="833940869" license="Rsa" sourceXmlPath="c:/ck2000/appData/apiDef2/Rsa.xml">
     <axName>ChilkatRsa</axName>
     <dnName>Rsa</dnName>
     <cppName>CkRsa</cppName>
@@ -953,7 +953,12 @@ An error is indicated when a byte array of 0 length is returned.</descrip>
                 <arg name="strToBeHashed" type="string" objcName="str" />
                 <arg name="hashAlgorithm" type="string" objcName="hashAlg" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>rsa_sha256_signature_using_java_keystore.asp</url>
+                    <text>RSA SHA256 Signature using Private Key from Java Keystore</text>
+                </link>
+            </links2>
         </method>
         <method name="SignStringENC" axId="132" ax="1" cpp="1" dn="1" outArgName="outStr">
             <gType>string</gType>
@@ -1055,7 +1060,7 @@ An error is indicated when null reference is returned.</descrip>
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">

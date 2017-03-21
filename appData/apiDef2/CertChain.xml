@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="105271757" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/CertChain.xml">
+<class XojoModuleId="105271757" sourceXmlPath="c:/ck2000/appData/apiDef2/CertChain.xml" license="Free">
     <genericName>CertChain</genericName>
     <cppName>CkCertChain</cppName>
     <dnName>CertChain</dnName>
@@ -22,6 +22,7 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method name="IsRootTrusted" axId="104" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
@@ -39,6 +40,7 @@
             <args2>
                 <arg name="trustedRoots" type="TrustedRoots" objcName="trustedRoots" />
             </args2>
+            <links2 />
         </method>
         <method name="VerifyCertSignatures" axId="103" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
@@ -46,6 +48,16 @@
             <args />
             <iversion>9.5.0.40</iversion>
             <args2 />
+            <links2 />
+        </method>
+        <method name="LoadX5C" axId="106" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="jwk" type="JsonObject" objcName="jwk" />
+            </args2>
+            <iversion>9.5.0.66</iversion>
+            <links2 />
+            <descrip>Loads a certificate chain from the "x5c" parameter of a JWK (JSON Web Key).</descrip>
         </method>
     </methods>
     <properties>
@@ -53,21 +65,27 @@
             <gType>int</gType>
             <descrip>The number of certificates in the chain.  The end-user subscriber certificate is at index 0.  This is the certificate most removed from the trusted root.  Intermediate certificates are at indices 1 to NumCerts - 2.  The trusted root (or self-signed certificate) is at index NumCerts - 1.</descrip>
             <iversion>9.5.0.40</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="NumExpiredCerts" axId="101" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>Returns the number of certificates in the chain that have expired.</descrip>
             <iversion>9.5.0.40</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="ReachesRoot" read="1" ax="1" cpp="1" dn="1" axId="105">
             <gType>bool</gType>
             <descrip>_TRUE_ if this certificate chain extends all the way to the root certificate.   The root certificate is either a trusted CA root or a self-signed certificate.  In both cases, the issuer of a root certificate is itself.</descrip>
             <iversion>9.5.0.44</iversion>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <events />
     <clsid>30CE0223-B0E1-49CA-97A7-9FC0B49DDB13</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>E05C10E0-F9E3-4E4E-8784-E4DA4285A085</uuidMidl>
-    <nextAxId>106</nextAxId>
+    <nextAxId>107</nextAxId>
 </class>

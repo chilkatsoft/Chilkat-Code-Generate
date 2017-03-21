@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="205846349" sourceXmlPath="C:/ck2000/appData/apiDef2/Mime.xml" license="Mime">
+<class XojoModuleId="205846349" sourceXmlPath="c:/ck2000/appData/apiDef2/Mime.xml" license="Mime">
     <axName>ChilkatMime</axName>
     <dnName>Mime</dnName>
     <cppName>CkMime</cppName>
@@ -239,10 +239,15 @@ then the value of the Protocol property is "application/x-pkcs7-signature".</des
             <links2 />
             <args2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="1" name="UnwrapExtras" axId="117">
+        <property name="UnwrapExtras" axId="117" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>Controls whether extra (informative) header fields are added to the MIME message when unwrapping security.</descrip>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smime_verify_signature.asp</url>
+                    <text>Decrypt S/MIME and Verify S/MIME Signatures</text>
+                </link>
+            </links2>
             <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UseMmDescription" axId="118">
@@ -336,7 +341,7 @@ The default value of this property is _TRUE_, meaning that "x-" is used by defau
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" status="1" name="AddDetachedSignature" axId="121">
+        <method name="AddDetachedSignature" axId="121" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -640,7 +645,7 @@ _LT_sequence&gt;
             <args2 />
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="ContainsEncryptedParts" axId="133">
+        <method name="ContainsEncryptedParts" axId="133" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <args />
             <descrip>Returns _TRUE_ if the MIME message contains encrypted parts.
@@ -649,9 +654,14 @@ Note: This method examines the MIME as-is.  If UnwrapSecurity is called and it i
 &lt;p&gt;
 Note:  If a signed MIME message is then encrypted, then it is not possible to know that the MIME is both encrypted and signed until UnwrapSecurity is called.  (In other words, it is not possible to know the contents of the encrypted MIME until it is decrypted.) Therefore, the ContainsSignedParts method would return _FALSE_.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smime_verify_signature.asp</url>
+                    <text>Decrypt S/MIME and Verify S/MIME Signatures</text>
+                </link>
+            </links2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="ContainsSignedParts" axId="134">
+        <method name="ContainsSignedParts" axId="134" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <args />
             <descrip>Returns _TRUE_ if the MIME message contains signed parts.
@@ -662,7 +672,12 @@ Note:  If a signed MIME message is then encrypted, then it is not possible to kn
 &lt;p&gt;
 Note: The same concept also applies to opaque signatures, such as with the MIME produced by calling ConvertToSigned.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smime_verify_signature.asp</url>
+                    <text>Decrypt S/MIME and Verify S/MIME Signatures</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="Convert8Bit" axId="135">
             <gType>void</gType>
@@ -1080,7 +1095,7 @@ Note: This is commonly referred to as an "opaque" signature.</descrip>
             </links2>
             <args2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="GetEncryptCert" axId="151">
+        <method name="GetEncryptCert" axId="151" ax="1" cpp="1" dn="1">
             <gType>Cert</gType>
             <args>
                 <arg>
@@ -1095,7 +1110,12 @@ Note: This is commonly referred to as an "opaque" signature.</descrip>
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smime_verify_signature.asp</url>
+                    <text>Decrypt S/MIME and Verify S/MIME Signatures</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="GetEntireBody" axId="152" outArgName="outStr">
             <gType>string</gType>
@@ -1346,7 +1366,7 @@ In the above example, to access the value of the "protocol" attribute, call GetH
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="GetSignerCert" axId="163">
+        <method name="GetSignerCert" axId="163" ax="1" cpp="1" dn="1">
             <gType>Cert</gType>
             <args>
                 <arg>
@@ -1361,7 +1381,12 @@ In the above example, to access the value of the "protocol" attribute, call GetH
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smime_verify_signature.asp</url>
+                    <text>Decrypt S/MIME and Verify S/MIME Signatures</text>
+                </link>
+            </links2>
         </method>
         <method name="GetSignerCertChain" ax="1" cpp="1" dn="1" axId="210">
             <gType>CertChain</gType>
@@ -2041,7 +2066,7 @@ One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the 
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -2050,14 +2075,19 @@ One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the 
                 </link>
             </links2>
         </method>
-        <method cpp="1" dn="1" ax="1" status="1" name="UnwrapSecurity" axId="207">
+        <method name="UnwrapSecurity" axId="207" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
             <args />
             <descrip>Decrypts and/or verifies all digital signatures contained within the MIME message, and returns _TRUE_ if all decryptions and verifications succeeded. Otherwise returns _FALSE_. After unwrapping, the information regarding security and certificates can be obtained by the methods GetSignerCert and GetEncryptCert, and the properties NumEncryptCerts and NumSignerCerts.&lt;p&gt;
 The MIME is restored to the original structure/content prior to all signing and/or encryption.&lt;p&gt;
 The difference between UnwrapSecurity and methods such as Verify or Decrypt is that UnwrapSecurity will recursively traverse the MIME to decrypt and/or verify all parts.  Also, UnwrapSecurity will unwrap layers until no further encrypted/signed content is found.  For example, if a MIME message was encrypted and then subsequently signed, then UnwrapSecurity will verify and unwrap the detached signature/signed-data layer, and then decrypt the "enveloped data".</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smime_verify_signature.asp</url>
+                    <text>Decrypt S/MIME and Verify S/MIME Signatures</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="UrlEncodeBody" axId="208">
             <gType>void</gType>

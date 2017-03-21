@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="463857220" license="Bundle" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Task.xml">
+<class XojoModuleId="463857220" sourceXmlPath="c:/ck2000/appData/apiDef2/Task.xml" license="Bundle">
     <genericName>Task</genericName>
     <cppName>CkTask</cppName>
     <dnName>Task</dnName>
@@ -19,6 +19,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="ClearProgressLog" axId="119" ax="1" cpp="1" dn="1">
             <gType>void</gType>
@@ -26,6 +27,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="CopyResultBytes" ax="1" cpp="1" dn="1" axId="109" outArgName="outBytes">
             <gType>bytes</gType>
@@ -39,6 +41,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
                 </arg>
             </args>
             <args2 />
+            <links2 />
         </method>
         <method name="GetResultBool" ax="1" cpp="1" dn="1" axId="107">
             <gType>bool</gType>
@@ -46,6 +49,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="GetResultBytes" ax="1" cpp="1" dn="1" axId="108" outArgName="outBytes">
             <gType>bytes</gType>
@@ -59,6 +63,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
                 </arg>
             </args>
             <args2 />
+            <links2 />
         </method>
         <method name="GetResultInt" ax="1" cpp="1" dn="1" axId="106">
             <gType>int</gType>
@@ -66,6 +71,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="GetResultString" ax="1" cpp="1" dn="1" axId="105" outArgName="outStr">
             <gType>string</gType>
@@ -79,6 +85,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
                 </arg>
             </args>
             <args2 />
+            <links2 />
         </method>
         <method name="ProgressInfoName" axId="120" ax="1" cpp="1" dn="1" outArgName="outStr">
             <gType>string</gType>
@@ -152,6 +159,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method name="Run" axId="100" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -185,6 +193,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
+            <links2 />
         </method>
         <method name="SleepMs" axId="116" ax="1" cpp="1" dn="1">
             <gType>void</gType>
@@ -202,8 +211,9 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <args2>
                 <arg name="numMs" type="int" objcName="numMs" />
             </args2>
+            <links2 />
         </method>
-        <method name="Wait" axId="110" ax="1" cpp="1" dn="1" events="1" noNodeJs="1" status="1">
+        <method name="Wait" axId="110" ax="1" cpp="1" dn="1" noNodeJs="1" status="1">
             <gType>bool</gType>
             <descrip>Waits for the task to complete.  Returns when task has completed, or after ARG1 milliseconds have elapsed.  (A ARG1 value of 0 is to wait indefinitely.) Returns  (_FALSE_) if the task has not yet been started by calling the Run method, or if the ARG1 expired.  If the task  completed, was already completed, was canceled or aborted, then this method returns _TRUE_.</descrip>
             <iversion>9.5.0.52</iversion>
@@ -233,6 +243,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <descrip>_TRUE_ if the task status is "canceled", "aborted", or "completed".  A task can only reach the "canceled" status if it was activated via the Run method, made it onto the internal thread pool thread's queue, was waiting for a pool thread to become available, and was then canceled prior to the task actually starting.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="HeartbeatMs" read="1" write="1" ax="1" cpp="1" dn="1" axId="125">
             <gType>int</gType>
@@ -240,12 +251,14 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
 &lt;b&gt;Note:&lt;/b&gt; An asynchronous task running in a background thread (in one of the thread pool threads) does not fire events.  The task's event callbacks pertain only to the Wait method.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="Inert" read="1" ax="1" cpp="1" dn="1" axId="112">
             <gType>bool</gType>
             <descrip>_TRUE_ if the task status is "empty" or "loaded".  When a task is inert, it has been loaded but is not scheduled to run yet.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="KeepProgressLog" axId="118" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
@@ -264,6 +277,7 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
             <descrip>_TRUE_ if the task status is "queued" or "running".  When a task is live, it is either already running, or is on the thread pool thread's queue waiting for a thread to become available.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="PercentDone" axId="111" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
@@ -272,18 +286,21 @@ The method returns _TRUE_ if the task was in the "queued" or "running" state and
 Also, the value of the PercentDoneScale property of the asynchronous method's object determines the scale, such as 0 to 100, or 0 to 1000, etc.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="ProgressLogSize" axId="117" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>What would normally be a ProgressInfo event callback (assuming Chilkat supports event callbacks for this language)  is instead saved to an in-memory progress log that can be examined and pruned while the task is still running.  This property returns the number of progress log entries that are currently available.  (Note: the progress log is only kept if the KeepProgressLog property is turned on.  By default, the KeepProgressLog is turned off.)</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="ResultErrorText" read="1" ax="1" cpp="1" dn="1" axId="103">
             <gType>string</gType>
             <descrip>The LastErrorText for the task's asynchronous method.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="ResultType" axId="102" read="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
@@ -292,6 +309,7 @@ Also, the value of the PercentDoneScale property of the asynchronous method's ob
 For example, if the synchronous version of the method returned a boolean, then in the asynchronous version of the method, the boolean return value is made available via the GetResultBool method.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="Status" axId="104" read="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
@@ -307,6 +325,7 @@ For example, if the synchronous version of the method returned a boolean, then i
 &lt;/ul&gt;</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="StatusInt" axId="123" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
@@ -322,24 +341,28 @@ For example, if the synchronous version of the method returned a boolean, then i
 &lt;/ul&gt;</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="TaskId" read="1" ax="1" cpp="1" dn="1" axId="126">
             <gType>int</gType>
             <descrip>A unique integer ID assigned to this task.   The purpose of this property is to help an application identify the task if a TaskCompleted event callback is used.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="TaskSuccess" read="1" ax="1" cpp="1" dn="1" axId="124">
             <gType>bool</gType>
             <descrip>This is the value of the LastMethodSuccess property of the underlying task object.  This property is only valid for those methods where the LastMethodSuccess property would be valid had the method been called synchronously.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
         <property name="UserData" read="1" write="1" ax="1" cpp="1" dn="1" axId="127">
             <gType>string</gType>
             <descrip>An application may use this property to attach some user-specific information with the task, which may be useful if a TaskCompleted event callback is used.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
+            <links2 />
         </property>
     </properties>
     <events />

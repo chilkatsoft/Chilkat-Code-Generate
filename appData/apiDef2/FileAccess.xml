@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="177642767" sourceXmlPath="C:/ck2000/appData/apiDef2/FileAccess.xml" license="Free">
-    <nextAxId>150</nextAxId>
+<class XojoModuleId="177642767" sourceXmlPath="c:/ck2000/appData/apiDef2/FileAccess.xml" license="Free">
+    <nextAxId>151</nextAxId>
     <dnName>FileAccess</dnName>
     <cppName>CkFileAccess</cppName>
     <properties>
@@ -869,7 +869,7 @@ If the open/create failed, then error information will be available in the FileO
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="SetFileTimes" axId="134">
+        <method name="SetFileTimes" axId="134" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -910,7 +910,7 @@ If the open/create failed, then error information will be available in the FileO
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="SetLastModified" axId="135">
+        <method name="SetLastModified" axId="135" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -1177,6 +1177,15 @@ GetExtension('C:\mydir.old\') returns ''
 GetFileNameWithoutExtension('C:\mydir\myfile.ext') returns 'myfile'
 GetFileNameWithoutExtension('C:\mydir\') returns ''
 &lt;/pre&gt;</descrip>
+        </method>
+        <method name="GetLastModified" axId="150" ax="1" cpp="1" dn="1">
+            <gType>CkDateTime</gType>
+            <descrip>Gets the last-modified date/time for a file.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.66</iversion>
         </method>
     </methods>
     <genericName>FileAccess</genericName>

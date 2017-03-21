@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="973394229" license="Ssh" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/SFtp.xml">
+<class XojoModuleId="973394229" sourceXmlPath="c:/ck2000/appData/apiDef2/SFtp.xml" license="Ssh" hasEvents="1">
     <axName>ChilkatSFtp</axName>
     <dnName>SFtp</dnName>
     <cppName>CkSFtp</cppName>
@@ -848,7 +848,7 @@ The last-modified date/time is only preserved when the PreserveDate property is 
                 <arg name="localFilePath" type="string" objcName="localFilePath" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="Eof" axId="157">
+        <method name="Eof" axId="157" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -1325,7 +1325,7 @@ Note: Servers running the SFTP v3 protocol or lower do not have the ability to r
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" noObjC="1" name="GetFileSize32" axId="170">
+        <method name="GetFileSize32" axId="170" ax="1" cpp="1" dn="1" events="1" noObjC="1">
             <gType>int</gType>
             <args>
                 <arg>
@@ -2727,7 +2727,7 @@ A purchased unlock code for SFTP should contain the substring "SSH" (or it can b
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -3153,6 +3153,13 @@ A list of supported character encodings is found on this page: &lt;a href="http:
                 </link>
             </links2>
         </method>
+        <method name="SendIgnore" axId="228" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args2 />
+            <links2 />
+            <iversion>9.5.0.66</iversion>
+            <descrip>Sends an IGNORE message to the SSH server.  This is one way of verifying that the connection to the SSH server is open and valid.  The SSH server does not respond to an IGNORE message. It simply ignores it.  IGNORE messages are not associated with a channel (i.e., you do not need to first open a channel prior to sending an IGNORE message).</descrip>
+        </method>
     </methods>
     <genericName>SFtp</genericName>
     <events>
@@ -3218,5 +3225,5 @@ A list of supported character encodings is found on this page: &lt;a href="http:
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>97DAB705-84AB-4228-8EB7-2A3E657462F7</uuidEvents>
     <uuidMidl>2701FB1F-7865-4CD0-8E1B-2BB97F701946</uuidMidl>
-    <nextAxId>228</nextAxId>
+    <nextAxId>229</nextAxId>
 </class>

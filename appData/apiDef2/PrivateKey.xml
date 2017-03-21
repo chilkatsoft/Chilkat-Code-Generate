@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="434281359" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/PrivateKey.xml">
+<class XojoModuleId="434281359" license="Free" sourceXmlPath="c:/ck2000/appData/apiDef2/PrivateKey.xml">
     <nextAxId>144</nextAxId>
     <dnName>PrivateKey</dnName>
     <cppName>CkPrivateKey</cppName>
@@ -360,7 +360,12 @@ RSA keys have this XML format:
 &amp;lt;ECCKeyValue curve="CURVE_NAME"&amp;gt;...&amp;lt;/ECCKeyValue&amp;gt;
 &lt;/pre&gt;</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>rsa_key_modulus.asp</url>
+                    <text>Get RSA Key Modulus from .cer or .key</text>
+                </link>
+            </links2>
         </method>
         <method name="LoadEncryptedPem" axId="107" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>

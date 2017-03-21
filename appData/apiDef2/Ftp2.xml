@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="276290402" sourceXmlPath="C:/ck2000/appData/apiDef2/Ftp2.xml" license="Ftp2" hasEvents="1">
+<class XojoModuleId="276290402" license="Ftp2" hasEvents="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Ftp2.xml">
     <axName>ChilkatFtp2</axName>
     <dnName>Ftp2</dnName>
     <cppName>CkFtp2</cppName>
@@ -1152,8 +1152,7 @@ Note: If the AutoFeat property is _TRUE_, then the FTP server's features are aut
             <gType>bool</gType>
             <descrip>Enables internal features that can help when downloading extremely large files.  In some cases, if the time required to download a file is  long, the control connection is closed by the server or other network infrastructure because it was idle for so long.  Setting this property equal to _TRUE_ will keep the control connection very slightly used to prevent this from happening.  
 &lt;p&gt;
-The default value of this property is _FALSE_.  This property should only be set to _TRUE_ if this sort of problem is encountered.  
-</descrip>
+The default value of this property is _FALSE_.  This property should only be set to _TRUE_ if this sort of problem is encountered.</descrip>
             <args2 />
             <links2 />
             <iversion>9.5.0.66</iversion>
@@ -3542,6 +3541,10 @@ The ARG1 should be a date/time string in RFC822 format, such as "Tue, 25 Sep 201
                     <text>Setting FTP date/time not supported by all FTP servers.</text>
                     <url>http://www.cknotes.com/?p=153</url>
                 </link>
+                <link linkType="example">
+                    <url>ftp_setRemoteFileDt.asp</url>
+                    <text>FTP Set Remote File Date/Time Equal to Local File's Last-Modified Date/Time</text>
+                </link>
             </links2>
             <args2>
                 <arg name="dt" type="CkDateTime" objcName="dt" />
@@ -3917,7 +3920,7 @@ system at the server.  The method returns the FTP server's response string. Refe
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">

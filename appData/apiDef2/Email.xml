@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="626604223" license="Email" sourceXmlPath="C:/ck2000/appData/apiDef2/Email.xml">
+<class XojoModuleId="626604223" sourceXmlPath="c:/ck2000/appData/apiDef2/Email.xml" license="Email">
     <axName>ChilkatEmail</axName>
     <dnName>Email</dnName>
     <cppName>CkEmail</cppName>
@@ -374,7 +374,7 @@ Note: If an email is downloaded from an IMAP server without attachments, then th
             <args2 />
             <links2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumReports" axId="125">
+        <property name="NumReports" axId="125" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>(For multipart/report emails that have sub-parts with Content-Types such as message/feedback-report.)   Any MIME sub-part within the email that has a Content-Type of "message/*", but is not a "message/rfc822", is considered to be a "report" and is included in this count.  (A "message/rfc822" is considered an attached message and is handled by the NumAttachedMessages property and the GetAttachedMessage method.)  
 
@@ -461,7 +461,12 @@ All others: iso-8859-*&lt;br&gt;
 &lt;p&gt;
 This allows for charsets such as iso-2022-jp to be chosen instead of the default.  If the preferred charset does not apply to the situation, it is not used.  For example, if the preferred charset is iso-2022-jp, but the email contains Greek characters, then the preferred charset is ignored.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>email_charset.asp</url>
+                    <text>Controlling Charset of HTML Email</text>
+                </link>
+            </links2>
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="PrependHeaders" axId="131">
             <gType>bool</gType>
@@ -479,7 +484,12 @@ This allows for charsets such as iso-2022-jp to be chosen instead of the default
             <gType>bool</gType>
             <descrip>_TRUE_ if this email was originally received with a digital signature, otherwise _FALSE_.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>pop3_verifySignedEmail.asp</url>
+                    <text>POP3 Verify Signed (S/MIME) Email</text>
+                </link>
+            </links2>
         </property>
         <property name="ReplyTo" axId="134" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
@@ -497,22 +507,6 @@ This allows for charsets such as iso-2022-jp to be chosen instead of the default
             <gType>bool</gType>
             <descrip>Set to _TRUE_ if this email should be sent encrypted.</descrip>
             <links>
-                <link>
-                    <text>Auto-Select Cert and Send Encrypted Email</text>
-                    <url_asp>http://www.example-code.com/asp/smtp_sendEncrypted.asp</url_asp>
-                    <url_cs>http://www.example-code.com/csharp/smtp_sendEncrypted.asp</url_cs>
-                    <url_cpp>http://www.example-code.com/vcpp/smtp_sendEncrypted.asp</url_cpp>
-                    <url_delphi>http://www.example-code.com/delphi/smtp_sendEncrypted.asp</url_delphi>
-                    <url_foxpro>http://www.example-code.com/foxpro/smtp_sendEncrypted.asp</url_foxpro>
-                    <url_java>http://www.example-code.com/java/smtp_sendEncrypted.asp</url_java>
-                    <url_perl>http://www.example-code.com/perl/smtp_sendEncrypted.asp</url_perl>
-                    <url_python>http://www.example-code.com/python/smtp_sendEncrypted.asp</url_python>
-                    <url_ruby>http://www.example-code.com/ruby/smtp_sendEncrypted.asp</url_ruby>
-                    <url_vb.net>http://www.example-code.com/vbdotnet/smtp_sendEncrypted.asp</url_vb.net>
-                    <url_vb6>http://www.example-code.com/vb/smtp_sendEncrypted.asp</url_vb6>
-                    <url_vbscript>http://www.example-code.com/vbscript/smtp_sendEncrypted.asp</url_vbscript>
-                    <url_php>http://www.example-code.com/php/smtp_sendEncrypted.asp</url_php>
-                </link>
                 <link>
                     <text>Using a .cer Certificate File for Encrypted Email</text>
                     <url_asp>http://www.example-code.com/asp/smtp_sendEncryptedCer.asp</url_asp>
@@ -552,10 +546,6 @@ This allows for charsets such as iso-2022-jp to be chosen instead of the default
             </links>
             <links2>
                 <link linkType="example">
-                    <text>Auto-Select Cert and Send Encrypted Email</text>
-                    <url>smtp_sendEncrypted.asp</url>
-                </link>
-                <link linkType="example">
                     <text>Using a .cer Certificate File for Encrypted Email</text>
                     <url>smtp_sendEncryptedCer.asp</url>
                 </link>
@@ -592,7 +582,12 @@ This is the address of the actual sender acting on behalf of the author listed i
             <gType>bool</gType>
             <descrip>_TRUE_ if the email was received with one or more digital signatures, and if all the signatures were validated indicating that the email was not altered.  Otherwise this property is set to _FALSE_.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>pop3_verifySignedEmail.asp</url>
+                    <text>POP3 Verify Signed (S/MIME) Email</text>
+                </link>
+            </links2>
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="SignedBy" axId="139">
             <gType>string</gType>
@@ -635,6 +630,18 @@ Important:  Emails downloaded via the IMAP protocol do not have UIDL's.  UIDL's 
             <descrip>Applies to the UnpackHtml method.  If _TRUE_, then relative paths are used within the HTML for the links to the related files (images and style sheets) that were unpacked to the filesystem.  Otherwise absolute paths are used.   The default value is _TRUE_.</descrip>
             <args2 />
             <links2 />
+        </property>
+        <property name="NumDigests" axId="320" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>Returns the number of message/rfc822 parts contained within the multipart/digest enclosure.  If no multipart/digest enclosure exists, then this property has the value of 0.    The GetDigest method is called to get the Nth digest as an email object.</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>parse_multipart_digest_email.asp</url>
+                    <text>Parsing a Multipart/Digest Email</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.66</iversion>
         </property>
     </properties>
     <methods>
@@ -1339,40 +1346,27 @@ Note: Outlook.com will not properly display embedded HTMl images when the ARG2 i
                 <arg name="str" type="string" objcName="str" />
                 <arg name="charset" type="string" objcName="charset" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smtp_html_email_external_css.asp</url>
+                    <text>Send HTML Email with External CSS as Related Item</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="AddRelatedString2" axId="168">
             <gType>void</gType>
-            <args>
-                <arg>
-                    <axType>string</axType>
-                    <dnType>string</dnType>
-                    <cppType>const char *</cppType>
-                    <argName>content</argName>
-                    <objcName>str</objcName>
-                </arg>
-                <arg>
-                    <axType>string</axType>
-                    <dnType>string</dnType>
-                    <cppType>const char *</cppType>
-                    <argName>charset</argName>
-                    <objcName>charset</objcName>
-                </arg>
-                <arg>
-                    <axType>string</axType>
-                    <dnType>string</dnType>
-                    <cppType>const char *</cppType>
-                    <argName>fileNameInHtml</argName>
-                    <objcName>filenameInHtml</objcName>
-                </arg>
-            </args>
             <descrip>Adds a related item to the email from an in-memory string. Related items are things such as images and style sheets that are embedded within an HTML email. They are not considered attachments because their sole purpose is to participate in the display of the HTML.  The filenameInHtml argument should be set to the filename used in the HTML img tag's src attribute (if it's an image), or the URL referenced in an HTML link tag for a stylesheet.  The charset argument indicates that the content should first be converted to the specified charset prior to adding to the email.  It should hava a value such as "iso-8859-1", "utf-8", "Shift_JIS", etc.</descrip>
             <args2>
+                <arg name="fileNameInHtml" type="string" objcName="filenameInHtml" />
                 <arg name="content" type="string" objcName="str" />
                 <arg name="charset" type="string" objcName="charset" />
-                <arg name="fileNameInHtml" type="string" objcName="filenameInHtml" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smtp_html_email_css_content_location.asp</url>
+                    <text>Send HTML Email with CSS as Related Item using Content-Location</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="AddStringAttachment" axId="169">
             <gType>bool</gType>
@@ -2103,7 +2097,7 @@ To traverse the chain  to the root, one would  write a loop that on first iterat
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="GetAttachedMessage" axId="202">
+        <method name="GetAttachedMessage" axId="202" ax="1" cpp="1" dn="1">
             <gType>Email</gType>
             <args>
                 <arg>
@@ -2168,7 +2162,7 @@ then the method arguments should contain the values  0, "Content-Type", "name".<
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="GetAttachedMessageFilename" axId="203" outArgName="outStr">
+        <method name="GetAttachedMessageFilename" axId="203" outArgName="outStr" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -2184,7 +2178,20 @@ then the method arguments should contain the values  0, "Content-Type", "name".<
                     <objcName>outStr</objcName>
                 </arg>
             </args>
-            <descrip>Returns the filename of the Nth attached (embedded) email.  The filename is the "filename" attribute of the content-disposition header field found within the Nth message/rfc822 sub-part of the calling email object.</descrip>
+            <descrip>Returns the filename of the Nth attached (embedded) email.  The filename is the "filename" attribute of the content-disposition header field found within the Nth message/rfc822 sub-part of the calling email object.
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; The attached message filename is only present if the &lt;b&gt;Content-Disposition&lt;/b&gt; header exists AND contains a "filename" attribute.  If questions arise, one could open the email in a text editor to examine the MIME sub-header for the attached message (where the Content-Type = "message/rfc822").  For example, here is a sub-header that has a filename:
+&lt;pre&gt;
+Content-Type: message/rfc822; name="GetAttachedMessageAttr.eml"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="GetAttachedMessageAttr.eml"
+&lt;/pre&gt;
+Here is an attached message sub-header that does NOT have a filename:
+&lt;pre&gt;
+Content-Type: message/rfc822
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment
+&lt;/pre&gt;</descrip>
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
@@ -3381,7 +3388,12 @@ It is defined in RFC 3462</descrip>
             <args />
             <descrip>Return the certificate used to digitally sign this email.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>pop3_verifySignedEmail.asp</url>
+                    <text>POP3 Verify Signed (S/MIME) Email</text>
+                </link>
+            </links2>
         </method>
         <method name="GetSignedByCertChain" ax="1" cpp="1" dn="1" axId="301">
             <gType>CertChain</gType>
@@ -4630,11 +4642,27 @@ The 16-byte MD5 hash is returned as an encoded string.  The ARG1 determines the 
             <iversion>9.5.0.65</iversion>
             <links2 />
         </method>
+        <method name="GetDigest" axId="321" ax="1" cpp="1" dn="1">
+            <gType>Email</gType>
+            <descrip>Returns an digest contained within a multipart/digest as an email object.   The 1st digest is at index 0.  Use the NumDigests property to get the number of digests available.
+&lt;p&gt;
+&lt;b&gt;Note: &lt;/b&gt; This example requires Chilkat v9.5.0.66 or greater.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>parse_multipart_digest_email.asp</url>
+                    <text>Parsing a Multipart/Digest Email</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.66</iversion>
+        </method>
     </methods>
     <genericName>Email</genericName>
     <description>Represents a complete Email object.</description>
     <clsid>78EBC21F-0841-4D47-9DD4-E324F122205F</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>3EC2BC0F-8ECB-4008-AEB7-758972455492</uuidMidl>
-    <nextAxId>320</nextAxId>
+    <nextAxId>322</nextAxId>
 </class>

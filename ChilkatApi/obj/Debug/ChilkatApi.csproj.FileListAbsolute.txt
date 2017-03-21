@@ -1,1 +1,6 @@
 C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\obj\Debug\ChilkatApi.csprojResolveAssemblyReference.cache
+C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\bin\Debug\ChilkatApi.dll
+C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\bin\Debug\ChilkatApi.pdb
+C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\bin\Debug\ChilkatDotNet45.dll
+C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\obj\Debug\ChilkatApi.dll
+C:\ckGitHubProjects\Chilkat-Code-Generate\ChilkatApi\obj\Debug\ChilkatApi.pdb
