@@ -121,14 +121,14 @@ namespace GenSample
             // All properties have getters..
             // Types can be emitted using an existing conversion, or you could write your own..
 
-            if (!xprop.ReadOnly && xprop.m_gt > 0)
+            if (!xprop.ReadOnly && !lowerCaseAlt && xprop.m_gt > 0)
                 sbOut.Append("\t\t# +newval+ - ["+ m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType) + "]\r\n");
 
             sbOut.Append("\t\t# returns " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n\t\t#\r\n");
             if (xprop.Deprecated)
                 sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
 
-                if (!xprop.ReadOnly && xprop.m_gt > 0)
+                if (!xprop.ReadOnly && !lowerCaseAlt && xprop.m_gt > 0)
                     sbOut.Append("\t\t# @param newval [" + m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType) + "]\r\n");
             sbOut.Append("\t\t# @return [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
             if (xprop.Deprecated)
