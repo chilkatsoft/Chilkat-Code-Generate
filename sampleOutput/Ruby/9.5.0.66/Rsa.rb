@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Charset(newval) end
+		def put_Charset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_EncodingMode(newval) end
+		def put_EncodingMode(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -124,7 +124,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -152,7 +152,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LittleEndian(newval) end
+		def put_LittleEndian(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -165,7 +165,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_NoUnpad(newval) end
+		def put_NoUnpad(newval) end
 
 		# returns Bignum
 		#
@@ -183,7 +183,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_OaepHash(newval) end
+		def put_OaepHash(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -209,7 +209,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_OaepPadding(newval) end
+		def put_OaepPadding(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -222,7 +222,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

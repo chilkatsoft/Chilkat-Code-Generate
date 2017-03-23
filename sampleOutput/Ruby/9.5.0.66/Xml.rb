@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Cdata(newval) end
+		def put_Cdata(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -24,7 +24,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Content(newval) end
+		def put_Content(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_ContentInt(newval) end
+		def put_ContentInt(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DocType(newval) end
+		def put_DocType(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -115,7 +115,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_EmitBom(newval) end
+		def put_EmitBom(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -128,7 +128,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_EmitCompact(newval) end
+		def put_EmitCompact(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -141,7 +141,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_EmitXmlDecl(newval) end
+		def put_EmitXmlDecl(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -154,7 +154,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Encoding(newval) end
+		def put_Encoding(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -180,7 +180,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_I(newval) end
+		def put_I(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -193,7 +193,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_J(newval) end
+		def put_J(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -206,7 +206,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_K(newval) end
+		def put_K(newval) end
 
 		# returns Fixnum
 		#
@@ -254,7 +254,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -292,7 +292,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SortCaseInsensitive(newval) end
+		def put_SortCaseInsensitive(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -305,7 +305,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Standalone(newval) end
+		def put_Standalone(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -318,7 +318,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Tag(newval) end
+		def put_Tag(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -349,7 +349,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

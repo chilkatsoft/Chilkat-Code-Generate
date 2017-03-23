@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -46,7 +46,7 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		def put_HeartbeatMs(newval) end
 
 		# returns Bignum
 		#
@@ -64,7 +64,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_KeepProgressLog(newval) end
+		def put_KeepProgressLog(newval) end
 
 		# returns Fixnum
 		#
@@ -112,7 +112,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -200,7 +200,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_UserData(newval) end
+		def put_UserData(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -226,7 +226,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

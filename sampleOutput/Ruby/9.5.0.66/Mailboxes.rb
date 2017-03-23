@@ -16,7 +16,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 
 		# Method: GetFlags

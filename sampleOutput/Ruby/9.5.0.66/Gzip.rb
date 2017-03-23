@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		def put_AbortCurrent(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -24,7 +24,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Comment(newval) end
+		def put_Comment(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_CompressionLevel(newval) end
+		def put_CompressionLevel(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - Fixnum
 		#
 		# @param newval [Fixnum]
-		def set_ExtraData(newval) end
+		def put_ExtraData(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -102,7 +102,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Filename(newval) end
+		def put_Filename(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -132,7 +132,7 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		def put_HeartbeatMs(newval) end
 
 		# returns Fixnum
 		#
@@ -180,7 +180,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# +newval+ - [Object]
 		# returns Object
@@ -198,7 +198,7 @@ module Chilkat
 		# @param newval [Object]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
-		def set_LastMod(newval) end
+		def put_LastMod(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -211,7 +211,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_LastModStr(newval) end
+		def put_LastModStr(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -252,7 +252,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UseCurrentDate(newval) end
+		def put_UseCurrentDate(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -265,7 +265,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

@@ -81,7 +81,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Str(newval) end
+		def put_Str(newval) end
 
 		# +newval+ - [String]
 		# returns String

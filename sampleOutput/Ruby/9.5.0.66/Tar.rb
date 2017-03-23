@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_CaptureXmlListing(newval) end
+		def put_CaptureXmlListing(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -24,7 +24,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Charset(newval) end
+		def put_Charset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -76,7 +76,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DirMode(newval) end
+		def put_DirMode(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DirPrefix(newval) end
+		def put_DirPrefix(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -115,7 +115,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_FileMode(newval) end
+		def put_FileMode(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -128,7 +128,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_GroupId(newval) end
+		def put_GroupId(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -141,7 +141,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_GroupName(newval) end
+		def put_GroupName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -171,7 +171,7 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		def put_HeartbeatMs(newval) end
 
 		# returns Fixnum
 		#
@@ -219,7 +219,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -247,7 +247,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_MatchCaseSensitive(newval) end
+		def put_MatchCaseSensitive(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -260,7 +260,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_MustMatch(newval) end
+		def put_MustMatch(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -286,7 +286,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_MustNotMatch(newval) end
+		def put_MustNotMatch(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -312,7 +312,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_NoAbsolutePaths(newval) end
+		def put_NoAbsolutePaths(newval) end
 
 		# returns Bignum
 		#
@@ -334,7 +334,7 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_PercentDoneScale(newval) end
+		def put_PercentDoneScale(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -347,7 +347,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_ScriptFileMode(newval) end
+		def put_ScriptFileMode(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -360,7 +360,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SuppressOutput(newval) end
+		def put_SuppressOutput(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -373,7 +373,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UntarCaseSensitive(newval) end
+		def put_UntarCaseSensitive(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -386,7 +386,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UntarDebugLog(newval) end
+		def put_UntarDebugLog(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -399,7 +399,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UntarDiscardPaths(newval) end
+		def put_UntarDiscardPaths(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -412,7 +412,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_UntarFromDir(newval) end
+		def put_UntarFromDir(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -438,7 +438,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_UntarMatchPattern(newval) end
+		def put_UntarMatchPattern(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -464,7 +464,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UntarMaxCount(newval) end
+		def put_UntarMaxCount(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -477,7 +477,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UserId(newval) end
+		def put_UserId(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -490,7 +490,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_UserName(newval) end
+		def put_UserName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -516,7 +516,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#
@@ -539,7 +539,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_WriteFormat(newval) end
+		def put_WriteFormat(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -565,7 +565,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_XmlListing(newval) end
+		def put_XmlListing(newval) end
 
 		# +newval+ - [String]
 		# returns String

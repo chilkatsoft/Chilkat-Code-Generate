@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DropCustomTags(newval) end
+		def put_DropCustomTags(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Html(newval) end
+		def put_Html(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -111,7 +111,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -139,7 +139,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Nbsp(newval) end
+		def put_Nbsp(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -152,7 +152,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#
@@ -175,7 +175,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_XmlCharset(newval) end
+		def put_XmlCharset(newval) end
 
 		# +newval+ - [String]
 		# returns String

@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Boundary(newval) end
+		def put_Boundary(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Charset(newval) end
+		def put_Charset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ContentType(newval) end
+		def put_ContentType(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -115,7 +115,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_EntireHeader(newval) end
+		def put_EntireHeader(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -141,7 +141,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_HttpVerb(newval) end
+		def put_HttpVerb(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -167,7 +167,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_HttpVersion(newval) end
+		def put_HttpVersion(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -228,7 +228,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -266,7 +266,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Path(newval) end
+		def put_Path(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -292,7 +292,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SendCharset(newval) end
+		def put_SendCharset(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -305,7 +305,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

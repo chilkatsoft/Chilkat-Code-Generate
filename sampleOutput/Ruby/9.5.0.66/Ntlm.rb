@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ClientChallenge(newval) end
+		def put_ClientChallenge(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DnsComputerName(newval) end
+		def put_DnsComputerName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DnsDomainName(newval) end
+		def put_DnsDomainName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -115,7 +115,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Domain(newval) end
+		def put_Domain(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -141,7 +141,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_EncodingMode(newval) end
+		def put_EncodingMode(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -167,7 +167,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Flags(newval) end
+		def put_Flags(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -228,7 +228,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -256,7 +256,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_NetBiosComputerName(newval) end
+		def put_NetBiosComputerName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -282,7 +282,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_NetBiosDomainName(newval) end
+		def put_NetBiosDomainName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -308,7 +308,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_NtlmVersion(newval) end
+		def put_NtlmVersion(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -321,7 +321,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_OemCodePage(newval) end
+		def put_OemCodePage(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -334,7 +334,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Password(newval) end
+		def put_Password(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -360,7 +360,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ServerChallenge(newval) end
+		def put_ServerChallenge(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -386,7 +386,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_TargetName(newval) end
+		def put_TargetName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -412,7 +412,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_UserName(newval) end
+		def put_UserName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -438,7 +438,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#
@@ -461,7 +461,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Workstation(newval) end
+		def put_Workstation(newval) end
 
 		# +newval+ - [String]
 		# returns String

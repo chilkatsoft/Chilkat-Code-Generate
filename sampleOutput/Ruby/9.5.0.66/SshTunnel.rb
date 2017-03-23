@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		def put_AbortCurrent(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -24,7 +24,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_AcceptLog(newval) end
+		def put_AcceptLog(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_AcceptLogPath(newval) end
+		def put_AcceptLogPath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -76,7 +76,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_ConnectTimeoutMs(newval) end
+		def put_ConnectTimeoutMs(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -115,7 +115,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DestHostname(newval) end
+		def put_DestHostname(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -141,7 +141,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DestPort(newval) end
+		def put_DestPort(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -154,7 +154,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DynamicPortForwarding(newval) end
+		def put_DynamicPortForwarding(newval) end
 
 		# returns String
 		#
@@ -177,7 +177,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_HttpProxyAuthMethod(newval) end
+		def put_HttpProxyAuthMethod(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -203,7 +203,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_HttpProxyDomain(newval) end
+		def put_HttpProxyDomain(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -229,7 +229,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_HttpProxyHostname(newval) end
+		def put_HttpProxyHostname(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -255,7 +255,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_HttpProxyPassword(newval) end
+		def put_HttpProxyPassword(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -281,7 +281,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_HttpProxyPort(newval) end
+		def put_HttpProxyPort(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -294,7 +294,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_HttpProxyUsername(newval) end
+		def put_HttpProxyUsername(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -320,7 +320,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_IdleTimeoutMs(newval) end
+		def put_IdleTimeoutMs(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -333,7 +333,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_InboundSocksPassword(newval) end
+		def put_InboundSocksPassword(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -359,7 +359,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_InboundSocksUsername(newval) end
+		def put_InboundSocksUsername(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -390,7 +390,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_KeepAcceptLog(newval) end
+		def put_KeepAcceptLog(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -403,7 +403,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_KeepTunnelLog(newval) end
+		def put_KeepTunnelLog(newval) end
 
 		# returns Fixnum
 		#
@@ -451,7 +451,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -479,7 +479,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ListenBindIpAddress(newval) end
+		def put_ListenBindIpAddress(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -510,7 +510,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_OutboundBindIpAddress(newval) end
+		def put_OutboundBindIpAddress(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -536,7 +536,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_OutboundBindPort(newval) end
+		def put_OutboundBindPort(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -549,7 +549,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SocksHostname(newval) end
+		def put_SocksHostname(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -575,7 +575,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SocksPassword(newval) end
+		def put_SocksPassword(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -601,7 +601,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SocksPort(newval) end
+		def put_SocksPort(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -614,7 +614,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SocksUsername(newval) end
+		def put_SocksUsername(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -640,7 +640,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SocksVersion(newval) end
+		def put_SocksVersion(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -653,7 +653,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SoRcvBuf(newval) end
+		def put_SoRcvBuf(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -666,7 +666,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SoSndBuf(newval) end
+		def put_SoSndBuf(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -679,7 +679,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_TcpNoDelay(newval) end
+		def put_TcpNoDelay(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -692,7 +692,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_TunnelLog(newval) end
+		def put_TunnelLog(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -718,7 +718,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_TunnelLogPath(newval) end
+		def put_TunnelLogPath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -744,7 +744,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_AllowHeaderFolding(newval) end
+		def put_AllowHeaderFolding(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -24,7 +24,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_AllowHeaderQB(newval) end
+		def put_AllowHeaderQB(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Authorization(newval) end
+		def put_Authorization(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -68,7 +68,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -98,7 +98,7 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		def put_HeartbeatMs(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -111,7 +111,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Host(newval) end
+		def put_Host(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -137,7 +137,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_IdleTimeoutMs(newval) end
+		def put_IdleTimeoutMs(newval) end
 
 		# returns Fixnum
 		#
@@ -185,7 +185,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -238,7 +238,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_PartSelector(newval) end
+		def put_PartSelector(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -264,7 +264,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_PercentDoneOnSend(newval) end
+		def put_PercentDoneOnSend(newval) end
 
 		# returns String
 		#
@@ -302,7 +302,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_StreamNonChunked(newval) end
+		def put_StreamNonChunked(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -315,7 +315,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

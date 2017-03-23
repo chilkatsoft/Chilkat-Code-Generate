@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_AltToCharset(newval) end
+		def put_AltToCharset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_ErrorAction(newval) end
+		def put_ErrorAction(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -76,7 +76,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_FromCharset(newval) end
+		def put_FromCharset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -157,7 +157,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -205,7 +205,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SaveLast(newval) end
+		def put_SaveLast(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -218,7 +218,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ToCharset(newval) end
+		def put_ToCharset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -244,7 +244,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

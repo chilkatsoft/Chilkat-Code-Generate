@@ -31,7 +31,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ConsumerKey(newval) end
+		def put_ConsumerKey(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -57,7 +57,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ConsumerSecret(newval) end
+		def put_ConsumerSecret(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -83,7 +83,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -174,7 +174,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -202,7 +202,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Nonce(newval) end
+		def put_Nonce(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -228,7 +228,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_OauthMethod(newval) end
+		def put_OauthMethod(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -254,7 +254,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_OauthUrl(newval) end
+		def put_OauthUrl(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -280,7 +280,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_OauthVersion(newval) end
+		def put_OauthVersion(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -326,7 +326,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SignatureMethod(newval) end
+		def put_SignatureMethod(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -352,7 +352,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Timestamp(newval) end
+		def put_Timestamp(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -378,7 +378,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Token(newval) end
+		def put_Token(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -404,7 +404,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_TokenSecret(newval) end
+		def put_TokenSecret(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -430,7 +430,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

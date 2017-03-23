@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_AccessToken(newval) end
+		def put_AccessToken(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_EmailAddress(newval) end
+		def put_EmailAddress(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_ExpireNumSeconds(newval) end
+		def put_ExpireNumSeconds(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -102,7 +102,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_JsonKey(newval) end
+		def put_JsonKey(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -163,7 +163,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -196,7 +196,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Scope(newval) end
+		def put_Scope(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -222,7 +222,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SubEmailAddress(newval) end
+		def put_SubEmailAddress(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -253,7 +253,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

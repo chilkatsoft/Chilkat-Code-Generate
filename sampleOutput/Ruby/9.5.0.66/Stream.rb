@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		def put_AbortCurrent(newval) end
 
 		# returns Bignum
 		#
@@ -39,7 +39,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -65,7 +65,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DefaultChunkSize(newval) end
+		def put_DefaultChunkSize(newval) end
 
 		# returns Bignum
 		#
@@ -123,7 +123,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -151,7 +151,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Length(newval) end
+		def put_Length(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -164,7 +164,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Length32(newval) end
+		def put_Length32(newval) end
 
 		# returns Bignum
 		#
@@ -192,7 +192,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_ReadTimeoutMs(newval) end
+		def put_ReadTimeoutMs(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -205,7 +205,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SinkFile(newval) end
+		def put_SinkFile(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -231,7 +231,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SourceFile(newval) end
+		def put_SourceFile(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -257,7 +257,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SourceFilePart(newval) end
+		def put_SourceFilePart(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -270,7 +270,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SourceFilePartSize(newval) end
+		def put_SourceFilePartSize(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -283,7 +283,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_StringBom(newval) end
+		def put_StringBom(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -296,7 +296,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_StringCharset(newval) end
+		def put_StringCharset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -322,7 +322,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#
@@ -350,7 +350,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_WriteTimeoutMs(newval) end
+		def put_WriteTimeoutMs(newval) end
 
 
 		# Method: ReadBytes

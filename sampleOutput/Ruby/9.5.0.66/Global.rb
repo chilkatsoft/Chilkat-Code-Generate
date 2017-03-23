@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_AnsiCodePage(newval) end
+		def put_AnsiCodePage(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -24,7 +24,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DefaultNtlmVersion(newval) end
+		def put_DefaultNtlmVersion(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DefaultUtf8(newval) end
+		def put_DefaultUtf8(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -76,7 +76,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DnsTimeToLive(newval) end
+		def put_DnsTimeToLive(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_EnableDnsCaching(newval) end
+		def put_EnableDnsCaching(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -102,7 +102,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_KeepBinaryResult(newval) end
+		def put_KeepBinaryResult(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -115,7 +115,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_KeepStringResult(newval) end
+		def put_KeepStringResult(newval) end
 
 		# returns Fixnum
 		#
@@ -163,7 +163,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -191,7 +191,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_MaxThreads(newval) end
+		def put_MaxThreads(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -204,7 +204,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ThreadPoolLogPath(newval) end
+		def put_ThreadPoolLogPath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -235,7 +235,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

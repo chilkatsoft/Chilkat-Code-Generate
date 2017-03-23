@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_GroupSize(newval) end
+		def put_GroupSize(newval) end
 
 		# +newval+ - [CkByteData]
 		# returns Fixnum
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - Fixnum
 		#
 		# @param newval [Fixnum]
-		def set_Hash(newval) end
+		def put_Hash(newval) end
 
 		# returns String
 		#
@@ -148,7 +148,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -176,7 +176,7 @@ module Chilkat
 		# +newval+ - Fixnum
 		#
 		# @param newval [Fixnum]
-		def set_Signature(newval) end
+		def put_Signature(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -189,7 +189,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

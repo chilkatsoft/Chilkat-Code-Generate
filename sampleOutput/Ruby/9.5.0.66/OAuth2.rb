@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_AccessToken(newval) end
+		def put_AccessToken(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -52,7 +52,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_AuthorizationEndpoint(newval) end
+		def put_AuthorizationEndpoint(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -78,7 +78,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ClientId(newval) end
+		def put_ClientId(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -104,7 +104,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ClientSecret(newval) end
+		def put_ClientSecret(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -130,7 +130,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_CodeChallenge(newval) end
+		def put_CodeChallenge(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -143,7 +143,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_CodeChallengeMethod(newval) end
+		def put_CodeChallengeMethod(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -169,7 +169,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -240,7 +240,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -268,7 +268,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_ListenPort(newval) end
+		def put_ListenPort(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -281,7 +281,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_LocalHost(newval) end
+		def put_LocalHost(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -307,7 +307,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_RedirectAllowHtml(newval) end
+		def put_RedirectAllowHtml(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -333,7 +333,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_RedirectDenyHtml(newval) end
+		def put_RedirectDenyHtml(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -359,7 +359,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_RefreshToken(newval) end
+		def put_RefreshToken(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -385,7 +385,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Scope(newval) end
+		def put_Scope(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -411,7 +411,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_TokenEndpoint(newval) end
+		def put_TokenEndpoint(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -437,7 +437,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_TokenType(newval) end
+		def put_TokenType(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -463,7 +463,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

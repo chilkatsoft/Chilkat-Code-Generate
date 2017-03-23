@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		def put_AbortCurrent(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -24,7 +24,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DkimAlg(newval) end
+		def put_DkimAlg(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -76,7 +76,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_DkimBodyLengthCount(newval) end
+		def put_DkimBodyLengthCount(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DkimCanon(newval) end
+		def put_DkimCanon(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -115,7 +115,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DkimDomain(newval) end
+		def put_DkimDomain(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -141,7 +141,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DkimHeaders(newval) end
+		def put_DkimHeaders(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -167,7 +167,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DkimSelector(newval) end
+		def put_DkimSelector(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -193,7 +193,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DomainKeyAlg(newval) end
+		def put_DomainKeyAlg(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -219,7 +219,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DomainKeyCanon(newval) end
+		def put_DomainKeyCanon(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -245,7 +245,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DomainKeyDomain(newval) end
+		def put_DomainKeyDomain(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -271,7 +271,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DomainKeyHeaders(newval) end
+		def put_DomainKeyHeaders(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -297,7 +297,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DomainKeySelector(newval) end
+		def put_DomainKeySelector(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -327,7 +327,7 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		def put_HeartbeatMs(newval) end
 
 		# returns Fixnum
 		#
@@ -375,7 +375,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -403,7 +403,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

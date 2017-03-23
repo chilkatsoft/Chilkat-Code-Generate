@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Body(newval) end
+		def put_Body(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_BounceAddress(newval) end
+		def put_BounceAddress(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Charset(newval) end
+		def put_Charset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -89,7 +89,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -125,7 +125,7 @@ module Chilkat
 		# @param newval [Object]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
-		def set_EmailDate(newval) end
+		def put_EmailDate(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -138,7 +138,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_EmailDateStr(newval) end
+		def put_EmailDateStr(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -174,7 +174,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_FileDistList(newval) end
+		def put_FileDistList(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -200,7 +200,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_From(newval) end
+		def put_From(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -226,7 +226,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_FromAddress(newval) end
+		def put_FromAddress(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -252,7 +252,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_FromName(newval) end
+		def put_FromName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -333,7 +333,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -366,7 +366,7 @@ module Chilkat
 		# @param newval [Object]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
-		def set_LocalDate(newval) end
+		def put_LocalDate(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -379,7 +379,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_LocalDateStr(newval) end
+		def put_LocalDateStr(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -405,7 +405,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Mailer(newval) end
+		def put_Mailer(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -491,7 +491,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_OverwriteExisting(newval) end
+		def put_OverwriteExisting(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -504,7 +504,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Pkcs7CryptAlg(newval) end
+		def put_Pkcs7CryptAlg(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -530,7 +530,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Pkcs7KeyLength(newval) end
+		def put_Pkcs7KeyLength(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -543,7 +543,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_PreferredCharset(newval) end
+		def put_PreferredCharset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -569,7 +569,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_PrependHeaders(newval) end
+		def put_PrependHeaders(newval) end
 
 		# returns Bignum
 		#
@@ -592,7 +592,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ReplyTo(newval) end
+		def put_ReplyTo(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -618,7 +618,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_ReturnReceipt(newval) end
+		def put_ReturnReceipt(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -631,7 +631,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SendEncrypted(newval) end
+		def put_SendEncrypted(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -644,7 +644,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Sender(newval) end
+		def put_Sender(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -670,7 +670,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SendSigned(newval) end
+		def put_SendSigned(newval) end
 
 		# returns Bignum
 		#
@@ -698,7 +698,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SigningHashAlg(newval) end
+		def put_SigningHashAlg(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -729,7 +729,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Subject(newval) end
+		def put_Subject(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -765,7 +765,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UnpackUseRelPaths(newval) end
+		def put_UnpackUseRelPaths(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -778,7 +778,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

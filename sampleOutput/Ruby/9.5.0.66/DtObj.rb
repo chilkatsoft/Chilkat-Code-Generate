@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Day(newval) end
+		def put_Day(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -24,7 +24,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -50,7 +50,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Hour(newval) end
+		def put_Hour(newval) end
 
 		# returns Fixnum
 		#
@@ -98,7 +98,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -126,7 +126,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Minute(newval) end
+		def put_Minute(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -139,7 +139,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Month(newval) end
+		def put_Month(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -152,7 +152,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Second(newval) end
+		def put_Second(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -165,7 +165,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_StructTmMonth(newval) end
+		def put_StructTmMonth(newval) end
 
 		# +newval+ - [Fixnum]
 		# returns Bignum
@@ -178,7 +178,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_StructTmYear(newval) end
+		def put_StructTmYear(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -191,7 +191,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Utc(newval) end
+		def put_Utc(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -204,7 +204,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#
@@ -227,7 +227,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Year(newval) end
+		def put_Year(newval) end
 
 
 		# Method: DeSerialize

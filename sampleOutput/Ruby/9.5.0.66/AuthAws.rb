@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_AccessKey(newval) end
+		def put_AccessKey(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_CanonicalizedResourceV2(newval) end
+		def put_CanonicalizedResourceV2(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -124,7 +124,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -152,7 +152,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_PrecomputedMd5(newval) end
+		def put_PrecomputedMd5(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -178,7 +178,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_PrecomputedSha256(newval) end
+		def put_PrecomputedSha256(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -204,7 +204,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Region(newval) end
+		def put_Region(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -230,7 +230,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SecretKey(newval) end
+		def put_SecretKey(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -256,7 +256,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ServiceName(newval) end
+		def put_ServiceName(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -282,7 +282,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_SignatureVersion(newval) end
+		def put_SignatureVersion(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -295,7 +295,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#

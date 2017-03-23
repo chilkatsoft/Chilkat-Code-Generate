@@ -11,7 +11,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Boundary(newval) end
+		def put_Boundary(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -37,7 +37,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Charset(newval) end
+		def put_Charset(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -63,7 +63,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_ContentType(newval) end
+		def put_ContentType(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -99,7 +99,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -125,7 +125,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Disposition(newval) end
+		def put_Disposition(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -151,7 +151,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Encoding(newval) end
+		def put_Encoding(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -177,7 +177,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Filename(newval) end
+		def put_Filename(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -238,7 +238,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		def put_LastMethodSuccess(newval) end
 
 		# returns String
 		#
@@ -266,7 +266,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Micalg(newval) end
+		def put_Micalg(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -292,7 +292,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Name(newval) end
+		def put_Name(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -338,7 +338,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Pkcs7CryptAlg(newval) end
+		def put_Pkcs7CryptAlg(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -364,7 +364,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_Pkcs7KeyLength(newval) end
+		def put_Pkcs7KeyLength(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -377,7 +377,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_Protocol(newval) end
+		def put_Protocol(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -403,7 +403,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def set_SigningHashAlg(newval) end
+		def put_SigningHashAlg(newval) end
 
 		# +newval+ - [String]
 		# returns String
@@ -429,7 +429,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UnwrapExtras(newval) end
+		def put_UnwrapExtras(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -442,7 +442,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UseMmDescription(newval) end
+		def put_UseMmDescription(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -455,7 +455,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_UseXPkcs7(newval) end
+		def put_UseXPkcs7(newval) end
 
 		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
@@ -468,7 +468,7 @@ module Chilkat
 		# +newval+ - Bignum
 		#
 		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		def put_VerboseLogging(newval) end
 
 		# returns String
 		#
