@@ -174,7 +174,7 @@ namespace GenSample
                if (lowerCaseAlt)
                     sbOut.Append("\t\tdef " + xprop.EntryNameLowercaseNoCk + "(newval) end\r\n\r\n");
                else
-                    sbOut.Append("\t\tdef set_" + xprop.EntryName + "(newval) end\r\n\r\n");
+                    sbOut.Append("\t\tdef put_" + xprop.EntryName + "(newval) end\r\n\r\n");
 
             }
 
