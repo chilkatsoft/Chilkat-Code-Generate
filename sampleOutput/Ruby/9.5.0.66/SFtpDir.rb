@@ -1,8 +1,11 @@
 module Chilkat
 	class CkSFtpDir 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -11,14 +14,17 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumFilesAndDirs() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_OriginalPath() end
 
 		# returns String
+		#
 		# @return [String]
 		def originalPath() end
 

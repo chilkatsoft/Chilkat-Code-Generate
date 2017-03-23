@@ -120,10 +120,16 @@ namespace GenSample
             {
             // All properties have getters..
             // Types can be emitted using an existing conversion, or you could write your own..
-       
-            sbOut.Append("\t\t# returns " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n");
+
+            if (!xprop.ReadOnly && xprop.m_gt > 0)
+                sbOut.Append("\t\t# +newval+ - ["+ m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType) + "]\r\n");
+
+            sbOut.Append("\t\t# returns " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n\t\t#\r\n");
             if (xprop.Deprecated)
                 sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
+
+                if (!xprop.ReadOnly && xprop.m_gt > 0)
+                    sbOut.Append("\t\t# @param newval [" + m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType) + "]\r\n");
             sbOut.Append("\t\t# @return [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
             if (xprop.Deprecated)
                 sbOut.Append("\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
@@ -131,12 +137,26 @@ namespace GenSample
             if (xprop.IsEventRelated())
                 sbOut.Append("\t\t#\r\n\t\t# @event\r\n");
 
-            if(lowerCaseAlt)
-                sbOut.Append("\t\tdef " + xprop.EntryNameLowercaseNoCk + "() end\r\n\r\n");
-            else
-                sbOut.Append("\t\tdef get_" + xprop.EntryName + "() end\r\n\r\n");
+                if (lowerCaseAlt)
+                {
+                    sbOut.Append("\t\tdef " + xprop.EntryNameLowercaseNoCk + "() end\r\n\r\n");
+                }
+                else
+                {
 
-            // If the property is not read-only, generate the setter.
+                    if (!xprop.ReadOnly)
+                    {
+                        sbOut.Append("\t\tdef get_" + xprop.EntryName + "(newval) end\r\n\r\n");
+                    }
+                    else
+                    {
+
+                        sbOut.Append("\t\tdef get_" + xprop.EntryName + "() end\r\n\r\n");
+                    }
+                    
+                }
+
+                // If the property is not read-only, generate the setter.
             if (!xprop.ReadOnly)
                 {
 

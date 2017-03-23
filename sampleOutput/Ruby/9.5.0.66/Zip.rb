@@ -1,8 +1,11 @@
 module Chilkat
 	class CkZip 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_AbortCurrent() end
+		def get_AbortCurrent(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -10,9 +13,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_AppendFromDir() end
+		def get_AppendFromDir(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -20,7 +26,10 @@ module Chilkat
 		# @param newval [String]
 		def set_AppendFromDir(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def appendFromDir() end
 
@@ -30,9 +39,12 @@ module Chilkat
 		# @param newval [String]
 		def appendFromDir(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_AutoRun() end
+		def get_AutoRun(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -40,7 +52,10 @@ module Chilkat
 		# @param newval [String]
 		def set_AutoRun(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def autoRun() end
 
@@ -50,9 +65,12 @@ module Chilkat
 		# @param newval [String]
 		def autoRun(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_AutoRunParams() end
+		def get_AutoRunParams(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -60,7 +78,10 @@ module Chilkat
 		# @param newval [String]
 		def set_AutoRunParams(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def autoRunParams() end
 
@@ -70,9 +91,12 @@ module Chilkat
 		# @param newval [String]
 		def autoRunParams(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_AutoTemp() end
+		def get_AutoTemp(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -80,9 +104,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_AutoTemp(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_CaseSensitive() end
+		def get_CaseSensitive(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -90,9 +117,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_CaseSensitive(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_ClearArchiveAttribute() end
+		def get_ClearArchiveAttribute(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -100,9 +130,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ClearArchiveAttribute(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_ClearReadOnlyAttr() end
+		def get_ClearReadOnlyAttr(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -110,9 +143,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ClearReadOnlyAttr(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Comment() end
+		def get_Comment(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -120,7 +156,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Comment(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def comment() end
 
@@ -130,9 +169,12 @@ module Chilkat
 		# @param newval [String]
 		def comment(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -140,7 +182,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -150,9 +195,12 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DecryptPassword() end
+		def get_DecryptPassword(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -160,7 +208,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DecryptPassword(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def decryptPassword() end
 
@@ -170,9 +221,12 @@ module Chilkat
 		# @param newval [String]
 		def decryptPassword(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_DiscardPaths() end
+		def get_DiscardPaths(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -180,9 +234,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_DiscardPaths(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_Encryption() end
+		def get_Encryption(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -190,9 +247,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_Encryption(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_EncryptKeyLength() end
+		def get_EncryptKeyLength(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -200,9 +260,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_EncryptKeyLength(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_EncryptPassword() end
+		def get_EncryptPassword(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -210,7 +273,10 @@ module Chilkat
 		# @param newval [String]
 		def set_EncryptPassword(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def encryptPassword() end
 
@@ -220,9 +286,12 @@ module Chilkat
 		# @param newval [String]
 		def encryptPassword(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ExeDefaultDir() end
+		def get_ExeDefaultDir(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -230,7 +299,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ExeDefaultDir(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def exeDefaultDir() end
 
@@ -240,9 +312,12 @@ module Chilkat
 		# @param newval [String]
 		def exeDefaultDir(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_ExeFinishNotifier() end
+		def get_ExeFinishNotifier(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -250,9 +325,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ExeFinishNotifier(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ExeIconFile() end
+		def get_ExeIconFile(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -260,7 +338,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ExeIconFile(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def exeIconFile() end
 
@@ -270,9 +351,12 @@ module Chilkat
 		# @param newval [String]
 		def exeIconFile(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_ExeNoInterface() end
+		def get_ExeNoInterface(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -280,9 +364,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ExeNoInterface(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_ExeSilentProgress() end
+		def get_ExeSilentProgress(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -290,9 +377,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ExeSilentProgress(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ExeTitle() end
+		def get_ExeTitle(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -300,7 +390,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ExeTitle(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def exeTitle() end
 
@@ -310,9 +403,12 @@ module Chilkat
 		# @param newval [String]
 		def exeTitle(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ExeUnzipCaption() end
+		def get_ExeUnzipCaption(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -320,7 +416,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ExeUnzipCaption(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def exeUnzipCaption() end
 
@@ -330,9 +429,12 @@ module Chilkat
 		# @param newval [String]
 		def exeUnzipCaption(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ExeUnzipDir() end
+		def get_ExeUnzipDir(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -340,7 +442,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ExeUnzipDir(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def exeUnzipDir() end
 
@@ -350,9 +455,12 @@ module Chilkat
 		# @param newval [String]
 		def exeUnzipDir(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_ExeWaitForSetup() end
+		def get_ExeWaitForSetup(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -360,9 +468,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ExeWaitForSetup(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ExeXmlConfig() end
+		def get_ExeXmlConfig(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -370,7 +481,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ExeXmlConfig(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def exeXmlConfig() end
 
@@ -381,12 +495,16 @@ module Chilkat
 		def exeXmlConfig(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_FileCount() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_FileName() end
+		def get_FileName(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -394,7 +512,10 @@ module Chilkat
 		# @param newval [String]
 		def set_FileName(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def fileName() end
 
@@ -405,14 +526,18 @@ module Chilkat
 		def fileName(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_HasZipFormatErrors() end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs() end
+		def get_HeartbeatMs(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -422,9 +547,12 @@ module Chilkat
 		# @event
 		def set_HeartbeatMs(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_IgnoreAccessDenied() end
+		def get_IgnoreAccessDenied(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -433,36 +561,46 @@ module Chilkat
 		def set_IgnoreAccessDenied(newval) end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -471,24 +609,31 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumEntries() end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_OemCodePage() end
+		def get_OemCodePage(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -496,9 +641,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_OemCodePage(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_OverwriteExisting() end
+		def get_OverwriteExisting(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -506,9 +654,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_OverwriteExisting(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_PasswordProtect() end
+		def get_PasswordProtect(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -516,9 +667,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_PasswordProtect(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_PathPrefix() end
+		def get_PathPrefix(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -526,7 +680,10 @@ module Chilkat
 		# @param newval [String]
 		def set_PathPrefix(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def pathPrefix() end
 
@@ -536,11 +693,14 @@ module Chilkat
 		# @param newval [String]
 		def pathPrefix(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_PercentDoneScale() end
+		def get_PercentDoneScale(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -550,9 +710,12 @@ module Chilkat
 		# @event
 		def set_PercentDoneScale(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_TempDir() end
+		def get_TempDir(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -560,7 +723,10 @@ module Chilkat
 		# @param newval [String]
 		def set_TempDir(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def tempDir() end
 
@@ -570,9 +736,12 @@ module Chilkat
 		# @param newval [String]
 		def tempDir(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_TextFlag() end
+		def get_TextFlag(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -580,9 +749,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_TextFlag(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -591,16 +763,21 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_Zipx() end
+		def get_Zipx(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -608,9 +785,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_Zipx(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ZipxDefaultAlg() end
+		def get_ZipxDefaultAlg(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -618,7 +798,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ZipxDefaultAlg(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def zipxDefaultAlg() end
 

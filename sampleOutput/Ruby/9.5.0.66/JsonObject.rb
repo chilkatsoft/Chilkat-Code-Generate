@@ -1,8 +1,11 @@
 module Chilkat
 	class CkJsonObject 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -10,7 +13,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -20,9 +26,12 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DelimiterChar() end
+		def get_DelimiterChar(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -30,7 +39,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DelimiterChar(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def delimiterChar() end
 
@@ -40,9 +52,12 @@ module Chilkat
 		# @param newval [String]
 		def delimiterChar(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_EmitCompact() end
+		def get_EmitCompact(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -50,9 +65,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_EmitCompact(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_EmitCrLf() end
+		def get_EmitCrLf(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -60,9 +78,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_EmitCrLf(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_I() end
+		def get_I(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -70,9 +91,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_I(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_J() end
+		def get_J(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -80,9 +104,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_J(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_K() end
+		def get_K(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -91,36 +118,46 @@ module Chilkat
 		def set_K(newval) end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -129,24 +166,31 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_Size() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -155,10 +199,12 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 

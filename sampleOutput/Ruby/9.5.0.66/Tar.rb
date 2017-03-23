@@ -1,8 +1,11 @@
 module Chilkat
 	class CkTar 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_CaptureXmlListing() end
+		def get_CaptureXmlListing(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -10,9 +13,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_CaptureXmlListing(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Charset() end
+		def get_Charset(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -20,7 +26,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Charset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def charset() end
 
@@ -30,9 +39,12 @@ module Chilkat
 		# @param newval [String]
 		def charset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -40,7 +52,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -50,9 +65,12 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_DirMode() end
+		def get_DirMode(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -60,9 +78,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_DirMode(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DirPrefix() end
+		def get_DirPrefix(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -70,7 +91,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DirPrefix(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def dirPrefix() end
 
@@ -80,9 +104,12 @@ module Chilkat
 		# @param newval [String]
 		def dirPrefix(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_FileMode() end
+		def get_FileMode(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -90,9 +117,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_FileMode(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_GroupId() end
+		def get_GroupId(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -100,9 +130,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_GroupId(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_GroupName() end
+		def get_GroupName(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -110,7 +143,10 @@ module Chilkat
 		# @param newval [String]
 		def set_GroupName(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def groupName() end
 
@@ -120,11 +156,14 @@ module Chilkat
 		# @param newval [String]
 		def groupName(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs() end
+		def get_HeartbeatMs(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -135,36 +174,46 @@ module Chilkat
 		def set_HeartbeatMs(newval) end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -173,20 +222,26 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_MatchCaseSensitive() end
+		def get_MatchCaseSensitive(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -194,9 +249,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_MatchCaseSensitive(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_MustMatch() end
+		def get_MustMatch(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -204,7 +262,10 @@ module Chilkat
 		# @param newval [String]
 		def set_MustMatch(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def mustMatch() end
 
@@ -214,9 +275,12 @@ module Chilkat
 		# @param newval [String]
 		def mustMatch(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_MustNotMatch() end
+		def get_MustNotMatch(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -224,7 +288,10 @@ module Chilkat
 		# @param newval [String]
 		def set_MustNotMatch(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def mustNotMatch() end
 
@@ -234,9 +301,12 @@ module Chilkat
 		# @param newval [String]
 		def mustNotMatch(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_NoAbsolutePaths() end
+		def get_NoAbsolutePaths(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -245,14 +315,18 @@ module Chilkat
 		def set_NoAbsolutePaths(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumDirRoots() end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_PercentDoneScale() end
+		def get_PercentDoneScale(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -262,9 +336,12 @@ module Chilkat
 		# @event
 		def set_PercentDoneScale(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ScriptFileMode() end
+		def get_ScriptFileMode(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -272,9 +349,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ScriptFileMode(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_SuppressOutput() end
+		def get_SuppressOutput(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -282,9 +362,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_SuppressOutput(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UntarCaseSensitive() end
+		def get_UntarCaseSensitive(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -292,9 +375,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UntarCaseSensitive(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UntarDebugLog() end
+		def get_UntarDebugLog(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -302,9 +388,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UntarDebugLog(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UntarDiscardPaths() end
+		def get_UntarDiscardPaths(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -312,9 +401,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UntarDiscardPaths(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_UntarFromDir() end
+		def get_UntarFromDir(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -322,7 +414,10 @@ module Chilkat
 		# @param newval [String]
 		def set_UntarFromDir(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def untarFromDir() end
 
@@ -332,9 +427,12 @@ module Chilkat
 		# @param newval [String]
 		def untarFromDir(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_UntarMatchPattern() end
+		def get_UntarMatchPattern(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -342,7 +440,10 @@ module Chilkat
 		# @param newval [String]
 		def set_UntarMatchPattern(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def untarMatchPattern() end
 
@@ -352,9 +453,12 @@ module Chilkat
 		# @param newval [String]
 		def untarMatchPattern(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_UntarMaxCount() end
+		def get_UntarMaxCount(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -362,9 +466,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UntarMaxCount(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_UserId() end
+		def get_UserId(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -372,9 +479,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UserId(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_UserName() end
+		def get_UserName(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -382,7 +492,10 @@ module Chilkat
 		# @param newval [String]
 		def set_UserName(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def userName() end
 
@@ -392,9 +505,12 @@ module Chilkat
 		# @param newval [String]
 		def userName(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -403,16 +519,21 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_WriteFormat() end
+		def get_WriteFormat(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -420,7 +541,10 @@ module Chilkat
 		# @param newval [String]
 		def set_WriteFormat(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def writeFormat() end
 
@@ -430,9 +554,12 @@ module Chilkat
 		# @param newval [String]
 		def writeFormat(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_XmlListing() end
+		def get_XmlListing(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -440,7 +567,10 @@ module Chilkat
 		# @param newval [String]
 		def set_XmlListing(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def xmlListing() end
 

@@ -1,8 +1,11 @@
 module Chilkat
 	class CkMht 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_AbortCurrent() end
+		def get_AbortCurrent(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -10,9 +13,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_BaseUrl() end
+		def get_BaseUrl(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -20,7 +26,10 @@ module Chilkat
 		# @param newval [String]
 		def set_BaseUrl(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def baseUrl() end
 
@@ -30,9 +39,12 @@ module Chilkat
 		# @param newval [String]
 		def baseUrl(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ConnectTimeout() end
+		def get_ConnectTimeout(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -40,9 +52,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ConnectTimeout(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugHtmlAfter() end
+		def get_DebugHtmlAfter(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -50,7 +65,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugHtmlAfter(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugHtmlAfter() end
 
@@ -60,9 +78,12 @@ module Chilkat
 		# @param newval [String]
 		def debugHtmlAfter(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugHtmlBefore() end
+		def get_DebugHtmlBefore(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -70,7 +91,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugHtmlBefore(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugHtmlBefore() end
 
@@ -80,9 +104,12 @@ module Chilkat
 		# @param newval [String]
 		def debugHtmlBefore(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -90,7 +117,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -100,9 +130,12 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_DebugTagCleaning() end
+		def get_DebugTagCleaning(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -110,9 +143,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_DebugTagCleaning(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_EmbedImages() end
+		def get_EmbedImages(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -120,9 +156,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_EmbedImages(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_EmbedLocalOnly() end
+		def get_EmbedLocalOnly(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -130,9 +169,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_EmbedLocalOnly(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_FetchFromCache() end
+		def get_FetchFromCache(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -140,11 +182,14 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_FetchFromCache(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs() end
+		def get_HeartbeatMs(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -154,9 +199,12 @@ module Chilkat
 		# @event
 		def set_HeartbeatMs(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_IgnoreMustRevalidate() end
+		def get_IgnoreMustRevalidate(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -164,9 +212,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_IgnoreMustRevalidate(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_IgnoreNoCache() end
+		def get_IgnoreNoCache(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -175,36 +226,46 @@ module Chilkat
 		def set_IgnoreNoCache(newval) end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -213,20 +274,26 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_NoScripts() end
+		def get_NoScripts(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -234,9 +301,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_NoScripts(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_NtlmAuth() end
+		def get_NtlmAuth(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -244,9 +314,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_NtlmAuth(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_NumCacheLevels() end
+		def get_NumCacheLevels(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -255,12 +328,16 @@ module Chilkat
 		def set_NumCacheLevels(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumCacheRoots() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_PreferIpv6() end
+		def get_PreferIpv6(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -268,9 +345,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_PreferIpv6(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_PreferMHTScripts() end
+		def get_PreferMHTScripts(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -278,9 +358,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_PreferMHTScripts(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Proxy() end
+		def get_Proxy(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -288,7 +371,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Proxy(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def proxy() end
 
@@ -298,9 +384,12 @@ module Chilkat
 		# @param newval [String]
 		def proxy(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ProxyLogin() end
+		def get_ProxyLogin(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -308,7 +397,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ProxyLogin(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def proxyLogin() end
 
@@ -318,9 +410,12 @@ module Chilkat
 		# @param newval [String]
 		def proxyLogin(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ProxyPassword() end
+		def get_ProxyPassword(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -328,7 +423,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ProxyPassword(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def proxyPassword() end
 
@@ -338,9 +436,12 @@ module Chilkat
 		# @param newval [String]
 		def proxyPassword(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ReadTimeout() end
+		def get_ReadTimeout(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -348,9 +449,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ReadTimeout(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_RequireSslCertVerify() end
+		def get_RequireSslCertVerify(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -358,9 +462,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_RequireSslCertVerify(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_SocksHostname() end
+		def get_SocksHostname(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -368,7 +475,10 @@ module Chilkat
 		# @param newval [String]
 		def set_SocksHostname(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def socksHostname() end
 
@@ -378,9 +488,12 @@ module Chilkat
 		# @param newval [String]
 		def socksHostname(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_SocksPassword() end
+		def get_SocksPassword(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -388,7 +501,10 @@ module Chilkat
 		# @param newval [String]
 		def set_SocksPassword(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def socksPassword() end
 
@@ -398,9 +514,12 @@ module Chilkat
 		# @param newval [String]
 		def socksPassword(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SocksPort() end
+		def get_SocksPort(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -408,9 +527,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_SocksPort(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_SocksUsername() end
+		def get_SocksUsername(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -418,7 +540,10 @@ module Chilkat
 		# @param newval [String]
 		def set_SocksUsername(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def socksUsername() end
 
@@ -428,9 +553,12 @@ module Chilkat
 		# @param newval [String]
 		def socksUsername(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SocksVersion() end
+		def get_SocksVersion(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -438,9 +566,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_SocksVersion(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UnpackDirect() end
+		def get_UnpackDirect(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -448,9 +579,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UnpackDirect(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UnpackUseRelPaths() end
+		def get_UnpackUseRelPaths(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -458,9 +592,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UnpackUseRelPaths(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UpdateCache() end
+		def get_UpdateCache(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -468,9 +605,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UpdateCache(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UseCids() end
+		def get_UseCids(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -478,9 +618,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UseCids(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UseFilename() end
+		def get_UseFilename(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -488,9 +631,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UseFilename(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UseIEProxy() end
+		def get_UseIEProxy(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -498,9 +644,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UseIEProxy(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UseInline() end
+		def get_UseInline(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -508,9 +657,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UseInline(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -519,16 +671,21 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_WebSiteLogin() end
+		def get_WebSiteLogin(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -536,7 +693,10 @@ module Chilkat
 		# @param newval [String]
 		def set_WebSiteLogin(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def webSiteLogin() end
 
@@ -546,9 +706,12 @@ module Chilkat
 		# @param newval [String]
 		def webSiteLogin(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_WebSiteLoginDomain() end
+		def get_WebSiteLoginDomain(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -556,7 +719,10 @@ module Chilkat
 		# @param newval [String]
 		def set_WebSiteLoginDomain(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def webSiteLoginDomain() end
 
@@ -566,9 +732,12 @@ module Chilkat
 		# @param newval [String]
 		def webSiteLoginDomain(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_WebSitePassword() end
+		def get_WebSitePassword(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -576,7 +745,10 @@ module Chilkat
 		# @param newval [String]
 		def set_WebSitePassword(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def webSitePassword() end
 

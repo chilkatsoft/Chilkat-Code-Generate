@@ -1,8 +1,11 @@
 module Chilkat
 	class CkHttpRequest 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Boundary() end
+		def get_Boundary(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -10,7 +13,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Boundary(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def boundary() end
 
@@ -20,9 +26,12 @@ module Chilkat
 		# @param newval [String]
 		def boundary(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Charset() end
+		def get_Charset(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -30,7 +39,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Charset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def charset() end
 
@@ -40,9 +52,12 @@ module Chilkat
 		# @param newval [String]
 		def charset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ContentType() end
+		def get_ContentType(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -50,7 +65,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ContentType(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def contentType() end
 
@@ -60,9 +78,12 @@ module Chilkat
 		# @param newval [String]
 		def contentType(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -70,7 +91,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -80,9 +104,12 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_EntireHeader() end
+		def get_EntireHeader(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -90,7 +117,10 @@ module Chilkat
 		# @param newval [String]
 		def set_EntireHeader(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def entireHeader() end
 
@@ -100,9 +130,12 @@ module Chilkat
 		# @param newval [String]
 		def entireHeader(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_HttpVerb() end
+		def get_HttpVerb(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -110,7 +143,10 @@ module Chilkat
 		# @param newval [String]
 		def set_HttpVerb(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def httpVerb() end
 
@@ -120,9 +156,12 @@ module Chilkat
 		# @param newval [String]
 		def httpVerb(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_HttpVersion() end
+		def get_HttpVersion(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -130,7 +169,10 @@ module Chilkat
 		# @param newval [String]
 		def set_HttpVersion(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def httpVersion() end
 
@@ -141,36 +183,46 @@ module Chilkat
 		def httpVersion(newval) end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -179,28 +231,36 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumHeaderFields() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumParams() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Path() end
+		def get_Path(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -208,7 +268,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Path(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def path() end
 
@@ -218,9 +281,12 @@ module Chilkat
 		# @param newval [String]
 		def path(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_SendCharset() end
+		def get_SendCharset(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -228,9 +294,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_SendCharset(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -239,10 +308,12 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 

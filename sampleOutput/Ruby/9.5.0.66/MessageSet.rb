@@ -1,12 +1,16 @@
 module Chilkat
 	class CkMessageSet 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_Count() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_HasUids() end
+		def get_HasUids(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -14,9 +18,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_HasUids(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum

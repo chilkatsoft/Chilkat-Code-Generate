@@ -1,16 +1,21 @@
 module Chilkat
 	class CkCert 
 		# returns String
+		#
 		# @return [String]
 		def get_AuthorityKeyId() end
 
 		# returns String
+		#
 		# @return [String]
 		def authorityKeyId() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_AvoidWindowsPkAccess() end
+		def get_AvoidWindowsPkAccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -19,20 +24,26 @@ module Chilkat
 		def set_AvoidWindowsPkAccess(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_CertVersion() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_CspName() end
 
 		# returns String
+		#
 		# @return [String]
 		def cspName() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -40,7 +51,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -51,144 +65,181 @@ module Chilkat
 		def debugLogFilePath(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_Expired() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ForClientAuthentication() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ForCodeSigning() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ForSecureEmail() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ForServerAuthentication() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ForTimeStamping() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_HasKeyContainer() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_IntendedKeyUsage() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_IsRoot() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_IssuerC() end
 
 		# returns String
+		#
 		# @return [String]
 		def ıssuerC() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_IssuerCN() end
 
 		# returns String
+		#
 		# @return [String]
 		def ıssuerCN() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_IssuerDN() end
 
 		# returns String
+		#
 		# @return [String]
 		def ıssuerDN() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_IssuerE() end
 
 		# returns String
+		#
 		# @return [String]
 		def ıssuerE() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_IssuerL() end
 
 		# returns String
+		#
 		# @return [String]
 		def ıssuerL() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_IssuerO() end
 
 		# returns String
+		#
 		# @return [String]
 		def ıssuerO() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_IssuerOU() end
 
 		# returns String
+		#
 		# @return [String]
 		def ıssuerOU() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_IssuerS() end
 
 		# returns String
+		#
 		# @return [String]
 		def ıssuerS() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_KeyContainerName() end
 
 		# returns String
+		#
 		# @return [String]
 		def keyContainerName() end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -197,180 +248,225 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_MachineKeyset() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_OcspUrl() end
 
 		# returns String
+		#
 		# @return [String]
 		def ocspUrl() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_PrivateKeyExportable() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_Revoked() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Rfc822Name() end
 
 		# returns String
+		#
 		# @return [String]
 		def rfc822Name() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_SelfSigned() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SerialNumber() end
 
 		# returns String
+		#
 		# @return [String]
 		def serialNumber() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Sha1Thumbprint() end
 
 		# returns String
+		#
 		# @return [String]
 		def sha1Thumbprint() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_SignatureVerified() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_Silent() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectC() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectC() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectCN() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectCN() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectDN() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectDN() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectE() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectE() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectKeyId() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectKeyId() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectL() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectL() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectO() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectO() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectOU() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectOU() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SubjectS() end
 
 		# returns String
+		#
 		# @return [String]
 		def subjectS() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_TrustedRoot() end
 
 		# returns Object
+		#
 		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_ValidFrom() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_ValidFromStr() end
 
 		# returns String
+		#
 		# @return [String]
 		def validFromStr() end
 
 		# returns Object
+		#
 		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_ValidTo() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_ValidToStr() end
 
 		# returns String
+		#
 		# @return [String]
 		def validToStr() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -379,10 +475,12 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 

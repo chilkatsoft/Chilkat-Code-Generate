@@ -1,8 +1,11 @@
 module Chilkat
 	class CkRest 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_AllowHeaderFolding() end
+		def get_AllowHeaderFolding(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -10,9 +13,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_AllowHeaderFolding(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_AllowHeaderQB() end
+		def get_AllowHeaderQB(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -20,9 +26,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_AllowHeaderQB(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Authorization() end
+		def get_Authorization(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -30,7 +39,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Authorization(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def authorization() end
 
@@ -41,12 +53,16 @@ module Chilkat
 		def authorization(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ConnectFailReason() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -54,7 +70,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -64,11 +83,14 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs() end
+		def get_HeartbeatMs(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -78,9 +100,12 @@ module Chilkat
 		# @event
 		def set_HeartbeatMs(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Host() end
+		def get_Host(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -88,7 +113,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Host(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def host() end
 
@@ -98,9 +126,12 @@ module Chilkat
 		# @param newval [String]
 		def host(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_IdleTimeoutMs() end
+		def get_IdleTimeoutMs(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -109,36 +140,46 @@ module Chilkat
 		def set_IdleTimeoutMs(newval) end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -147,40 +188,51 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastRequestHeader() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastRequestHeader() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastRequestStartLine() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastRequestStartLine() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumResponseHeaders() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_PartSelector() end
+		def get_PartSelector(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -188,7 +240,10 @@ module Chilkat
 		# @param newval [String]
 		def set_PartSelector(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def partSelector() end
 
@@ -198,9 +253,12 @@ module Chilkat
 		# @param newval [String]
 		def partSelector(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_PercentDoneOnSend() end
+		def get_PercentDoneOnSend(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -209,28 +267,36 @@ module Chilkat
 		def set_PercentDoneOnSend(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_ResponseHeader() end
 
 		# returns String
+		#
 		# @return [String]
 		def responseHeader() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ResponseStatusCode() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_ResponseStatusText() end
 
 		# returns String
+		#
 		# @return [String]
 		def responseStatusText() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_StreamNonChunked() end
+		def get_StreamNonChunked(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -238,9 +304,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_StreamNonChunked(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -249,10 +318,12 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 

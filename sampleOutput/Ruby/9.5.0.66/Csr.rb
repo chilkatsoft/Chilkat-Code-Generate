@@ -1,8 +1,11 @@
 module Chilkat
 	class CkCsr 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_CommonName() end
+		def get_CommonName(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -10,7 +13,10 @@ module Chilkat
 		# @param newval [String]
 		def set_CommonName(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def commonName() end
 
@@ -20,9 +26,12 @@ module Chilkat
 		# @param newval [String]
 		def commonName(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Company() end
+		def get_Company(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -30,7 +39,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Company(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def company() end
 
@@ -40,9 +52,12 @@ module Chilkat
 		# @param newval [String]
 		def company(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_CompanyDivision() end
+		def get_CompanyDivision(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -50,7 +65,10 @@ module Chilkat
 		# @param newval [String]
 		def set_CompanyDivision(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def companyDivision() end
 
@@ -60,9 +78,12 @@ module Chilkat
 		# @param newval [String]
 		def companyDivision(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Country() end
+		def get_Country(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -70,7 +91,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Country(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def country() end
 
@@ -80,9 +104,12 @@ module Chilkat
 		# @param newval [String]
 		def country(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -90,7 +117,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -100,9 +130,12 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_EmailAddress() end
+		def get_EmailAddress(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -110,7 +143,10 @@ module Chilkat
 		# @param newval [String]
 		def set_EmailAddress(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def emailAddress() end
 
@@ -121,36 +157,46 @@ module Chilkat
 		def emailAddress(newval) end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -159,20 +205,26 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Locality() end
+		def get_Locality(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -180,7 +232,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Locality(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def locality() end
 
@@ -190,9 +245,12 @@ module Chilkat
 		# @param newval [String]
 		def locality(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_State() end
+		def get_State(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -200,7 +258,10 @@ module Chilkat
 		# @param newval [String]
 		def set_State(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def state() end
 
@@ -210,9 +271,12 @@ module Chilkat
 		# @param newval [String]
 		def state(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -221,10 +285,12 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 

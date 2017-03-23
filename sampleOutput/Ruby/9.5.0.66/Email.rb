@@ -1,8 +1,11 @@
 module Chilkat
 	class CkEmail 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Body() end
+		def get_Body(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -10,7 +13,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Body(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def body() end
 
@@ -20,9 +26,12 @@ module Chilkat
 		# @param newval [String]
 		def body(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_BounceAddress() end
+		def get_BounceAddress(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -30,7 +39,10 @@ module Chilkat
 		# @param newval [String]
 		def set_BounceAddress(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def bounceAddress() end
 
@@ -40,9 +52,12 @@ module Chilkat
 		# @param newval [String]
 		def bounceAddress(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Charset() end
+		def get_Charset(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -50,7 +65,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Charset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def charset() end
 
@@ -60,9 +78,12 @@ module Chilkat
 		# @param newval [String]
 		def charset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -70,7 +91,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -81,14 +105,18 @@ module Chilkat
 		def debugLogFilePath(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_Decrypted() end
 
+		# +newval+ - [Object]
 		# returns Object
+		#
 		# This method has been deprecated. Do not use it.
+		# @param newval [Object]
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
-		def get_EmailDate() end
+		def get_EmailDate(newval) end
 
 		# ==== Attributes
 		# +newval+ - Object
@@ -99,9 +127,12 @@ module Chilkat
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_EmailDate(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_EmailDateStr() end
+		def get_EmailDateStr(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -109,7 +140,10 @@ module Chilkat
 		# @param newval [String]
 		def set_EmailDateStr(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def emailDateStr() end
 
@@ -120,16 +154,21 @@ module Chilkat
 		def emailDateStr(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_EncryptedBy() end
 
 		# returns String
+		#
 		# @return [String]
 		def encryptedBy() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_FileDistList() end
+		def get_FileDistList(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -137,7 +176,10 @@ module Chilkat
 		# @param newval [String]
 		def set_FileDistList(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def fileDistList() end
 
@@ -147,9 +189,12 @@ module Chilkat
 		# @param newval [String]
 		def fileDistList(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_From() end
+		def get_From(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -157,7 +202,10 @@ module Chilkat
 		# @param newval [String]
 		def set_From(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def from() end
 
@@ -167,9 +215,12 @@ module Chilkat
 		# @param newval [String]
 		def from(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_FromAddress() end
+		def get_FromAddress(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -177,7 +228,10 @@ module Chilkat
 		# @param newval [String]
 		def set_FromAddress(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def fromAddress() end
 
@@ -187,9 +241,12 @@ module Chilkat
 		# @param newval [String]
 		def fromAddress(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_FromName() end
+		def get_FromName(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -197,7 +254,10 @@ module Chilkat
 		# @param newval [String]
 		def set_FromName(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def fromName() end
 
@@ -208,52 +268,66 @@ module Chilkat
 		def fromName(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Header() end
 
 		# returns String
+		#
 		# @return [String]
 		def header() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Language() end
 
 		# returns String
+		#
 		# @return [String]
 		def language() end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -262,22 +336,28 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
+		# +newval+ - [Object]
 		# returns Object
+		#
 		# This method has been deprecated. Do not use it.
+		# @param newval [Object]
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
-		def get_LocalDate() end
+		def get_LocalDate(newval) end
 
 		# ==== Attributes
 		# +newval+ - Object
@@ -288,9 +368,12 @@ module Chilkat
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_LocalDate(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_LocalDateStr() end
+		def get_LocalDateStr(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -298,7 +381,10 @@ module Chilkat
 		# @param newval [String]
 		def set_LocalDateStr(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def localDateStr() end
 
@@ -308,9 +394,12 @@ module Chilkat
 		# @param newval [String]
 		def localDateStr(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Mailer() end
+		def get_Mailer(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -318,7 +407,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Mailer(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def mailer() end
 
@@ -329,56 +421,71 @@ module Chilkat
 		def mailer(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumAlternatives() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumAttachedMessages() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumAttachments() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumBcc() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumCC() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumDaysOld() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumDigests() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumHeaderFields() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumRelatedItems() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumReplacePatterns() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumReports() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumTo() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_OverwriteExisting() end
+		def get_OverwriteExisting(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -386,9 +493,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_OverwriteExisting(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Pkcs7CryptAlg() end
+		def get_Pkcs7CryptAlg(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -396,7 +506,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Pkcs7CryptAlg(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def pkcs7CryptAlg() end
 
@@ -406,9 +519,12 @@ module Chilkat
 		# @param newval [String]
 		def pkcs7CryptAlg(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_Pkcs7KeyLength() end
+		def get_Pkcs7KeyLength(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -416,9 +532,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_Pkcs7KeyLength(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_PreferredCharset() end
+		def get_PreferredCharset(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -426,7 +545,10 @@ module Chilkat
 		# @param newval [String]
 		def set_PreferredCharset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def preferredCharset() end
 
@@ -436,9 +558,12 @@ module Chilkat
 		# @param newval [String]
 		def preferredCharset(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_PrependHeaders() end
+		def get_PrependHeaders(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -447,16 +572,21 @@ module Chilkat
 		def set_PrependHeaders(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ReceivedEncrypted() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ReceivedSigned() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_ReplyTo() end
+		def get_ReplyTo(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -464,7 +594,10 @@ module Chilkat
 		# @param newval [String]
 		def set_ReplyTo(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def replyTo() end
 
@@ -474,9 +607,12 @@ module Chilkat
 		# @param newval [String]
 		def replyTo(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_ReturnReceipt() end
+		def get_ReturnReceipt(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -484,9 +620,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ReturnReceipt(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_SendEncrypted() end
+		def get_SendEncrypted(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -494,9 +633,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_SendEncrypted(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Sender() end
+		def get_Sender(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -504,7 +646,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Sender(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def sender() end
 
@@ -514,9 +659,12 @@ module Chilkat
 		# @param newval [String]
 		def sender(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_SendSigned() end
+		def get_SendSigned(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -525,20 +673,26 @@ module Chilkat
 		def set_SendSigned(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_SignaturesValid() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_SignedBy() end
 
 		# returns String
+		#
 		# @return [String]
 		def signedBy() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_SigningHashAlg() end
+		def get_SigningHashAlg(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -546,7 +700,10 @@ module Chilkat
 		# @param newval [String]
 		def set_SigningHashAlg(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def signingHashAlg() end
 
@@ -557,12 +714,16 @@ module Chilkat
 		def signingHashAlg(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_Size() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Subject() end
+		def get_Subject(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -570,7 +731,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Subject(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def subject() end
 
@@ -581,16 +745,21 @@ module Chilkat
 		def subject(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Uidl() end
 
 		# returns String
+		#
 		# @return [String]
 		def uidl() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_UnpackUseRelPaths() end
+		def get_UnpackUseRelPaths(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -598,9 +767,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_UnpackUseRelPaths(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -609,10 +781,12 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 

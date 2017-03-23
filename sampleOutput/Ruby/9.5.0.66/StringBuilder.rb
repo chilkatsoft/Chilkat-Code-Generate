@@ -1,8 +1,11 @@
 module Chilkat
 	class CkStringBuilder 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_IntValue() end
+		def get_IntValue(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -10,9 +13,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_IntValue(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -21,6 +27,7 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_Length() end
 

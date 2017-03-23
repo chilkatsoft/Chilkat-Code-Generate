@@ -1,8 +1,11 @@
 module Chilkat
 	class CkStream 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_AbortCurrent() end
+		def get_AbortCurrent(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -11,20 +14,26 @@ module Chilkat
 		def set_AbortCurrent(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_CanRead() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_CanWrite() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_DataAvailable() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -32,7 +41,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -42,9 +54,12 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_DefaultChunkSize() end
+		def get_DefaultChunkSize(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -53,44 +68,56 @@ module Chilkat
 		def set_DefaultChunkSize(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_EndOfStream() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_IsWriteClosed() end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -99,20 +126,26 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
+		# +newval+ - [Bignum]
 		# returns Bignum
+		#
+		# @param newval [Bignum]
 		# @return [Bignum]
-		def get_Length() end
+		def get_Length(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -120,9 +153,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_Length(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_Length32() end
+		def get_Length32(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -131,20 +167,26 @@ module Chilkat
 		def set_Length32(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumReceived() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumSent() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ReadFailReason() end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ReadTimeoutMs() end
+		def get_ReadTimeoutMs(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -152,9 +194,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_ReadTimeoutMs(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_SinkFile() end
+		def get_SinkFile(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -162,7 +207,10 @@ module Chilkat
 		# @param newval [String]
 		def set_SinkFile(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def sinkFile() end
 
@@ -172,9 +220,12 @@ module Chilkat
 		# @param newval [String]
 		def sinkFile(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_SourceFile() end
+		def get_SourceFile(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -182,7 +233,10 @@ module Chilkat
 		# @param newval [String]
 		def set_SourceFile(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def sourceFile() end
 
@@ -192,9 +246,12 @@ module Chilkat
 		# @param newval [String]
 		def sourceFile(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SourceFilePart() end
+		def get_SourceFilePart(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -202,9 +259,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_SourceFilePart(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SourceFilePartSize() end
+		def get_SourceFilePartSize(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -212,9 +272,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_SourceFilePartSize(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_StringBom() end
+		def get_StringBom(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -222,9 +285,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_StringBom(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_StringCharset() end
+		def get_StringCharset(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -232,7 +298,10 @@ module Chilkat
 		# @param newval [String]
 		def set_StringCharset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def stringCharset() end
 
@@ -242,9 +311,12 @@ module Chilkat
 		# @param newval [String]
 		def stringCharset(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -253,20 +325,26 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_WriteFailReason() end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_WriteTimeoutMs() end
+		def get_WriteTimeoutMs(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum

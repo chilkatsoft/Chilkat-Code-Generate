@@ -236,7 +236,6 @@ namespace ChilkatApi
                 }
             }
 
-
         // cached ActiveX ID.
         private int m_axId = 0;
 

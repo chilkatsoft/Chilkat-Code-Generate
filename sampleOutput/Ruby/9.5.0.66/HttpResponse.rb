@@ -1,54 +1,68 @@
 module Chilkat
 	class CkHttpResponse 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_Body() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_BodyQP() end
 
 		# returns String
+		#
 		# @return [String]
 		def bodyQP() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_BodyStr() end
 
 		# returns String
+		#
 		# @return [String]
 		def bodyStr() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Charset() end
 
 		# returns String
+		#
 		# @return [String]
 		def charset() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_ContentLength() end
 
 		# returns Object
+		#
 		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_Date() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_DateStr() end
 
 		# returns String
+		#
 		# @return [String]
 		def dateStr() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -56,7 +70,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -67,68 +84,86 @@ module Chilkat
 		def debugLogFilePath(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Domain() end
 
 		# returns String
+		#
 		# @return [String]
 		def domain() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_FinalRedirectUrl() end
 
 		# returns String
+		#
 		# @return [String]
 		def finalRedirectUrl() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_FullMime() end
 
 		# returns String
+		#
 		# @return [String]
 		def fullMime() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Header() end
 
 		# returns String
+		#
 		# @return [String]
 		def header() end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -137,48 +172,61 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumCookies() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumHeaderFields() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_StatusCode() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_StatusLine() end
 
 		# returns String
+		#
 		# @return [String]
 		def statusLine() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_StatusText() end
 
 		# returns String
+		#
 		# @return [String]
 		def statusText() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -187,10 +235,12 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 

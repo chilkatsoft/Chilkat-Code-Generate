@@ -1,8 +1,11 @@
 module Chilkat
 	class CkCrypt2 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_AbortCurrent() end
+		def get_AbortCurrent(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -10,9 +13,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_AbortCurrent(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_BCryptWorkFactor() end
+		def get_BCryptWorkFactor(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -21,14 +27,18 @@ module Chilkat
 		def set_BCryptWorkFactor(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_BlockSize() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
 		# This method has been deprecated. Do not use it.
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
 		# @deprecated This method has been deprecated. Do not use it.
-		def get_ByteSwapOnDecrypt() end
+		def get_ByteSwapOnDecrypt(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -39,9 +49,12 @@ module Chilkat
 		# @deprecated This method has been deprecated. Do not use it.
 		def set_ByteSwapOnDecrypt(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_CadesEnabled() end
+		def get_CadesEnabled(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -49,9 +62,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_CadesEnabled(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_CadesSigPolicyHash() end
+		def get_CadesSigPolicyHash(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -59,7 +75,10 @@ module Chilkat
 		# @param newval [String]
 		def set_CadesSigPolicyHash(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def cadesSigPolicyHash() end
 
@@ -69,9 +88,12 @@ module Chilkat
 		# @param newval [String]
 		def cadesSigPolicyHash(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_CadesSigPolicyId() end
+		def get_CadesSigPolicyId(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -79,7 +101,10 @@ module Chilkat
 		# @param newval [String]
 		def set_CadesSigPolicyId(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def cadesSigPolicyId() end
 
@@ -89,9 +114,12 @@ module Chilkat
 		# @param newval [String]
 		def cadesSigPolicyId(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_CadesSigPolicyUri() end
+		def get_CadesSigPolicyUri(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -99,7 +127,10 @@ module Chilkat
 		# @param newval [String]
 		def set_CadesSigPolicyUri(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def cadesSigPolicyUri() end
 
@@ -109,9 +140,12 @@ module Chilkat
 		# @param newval [String]
 		def cadesSigPolicyUri(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Charset() end
+		def get_Charset(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -119,7 +153,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Charset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def charset() end
 
@@ -129,9 +166,12 @@ module Chilkat
 		# @param newval [String]
 		def charset(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_CipherMode() end
+		def get_CipherMode(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -139,7 +179,10 @@ module Chilkat
 		# @param newval [String]
 		def set_CipherMode(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def cipherMode() end
 
@@ -149,9 +192,12 @@ module Chilkat
 		# @param newval [String]
 		def cipherMode(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_CompressionAlgorithm() end
+		def get_CompressionAlgorithm(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -159,7 +205,10 @@ module Chilkat
 		# @param newval [String]
 		def set_CompressionAlgorithm(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def compressionAlgorithm() end
 
@@ -169,9 +218,12 @@ module Chilkat
 		# @param newval [String]
 		def compressionAlgorithm(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_CryptAlgorithm() end
+		def get_CryptAlgorithm(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -179,7 +231,10 @@ module Chilkat
 		# @param newval [String]
 		def set_CryptAlgorithm(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def cryptAlgorithm() end
 
@@ -189,9 +244,12 @@ module Chilkat
 		# @param newval [String]
 		def cryptAlgorithm(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -199,7 +257,10 @@ module Chilkat
 		# @param newval [String]
 		def set_DebugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -209,9 +270,12 @@ module Chilkat
 		# @param newval [String]
 		def debugLogFilePath(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_EncodingMode() end
+		def get_EncodingMode(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -219,7 +283,10 @@ module Chilkat
 		# @param newval [String]
 		def set_EncodingMode(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def encodingMode() end
 
@@ -229,9 +296,12 @@ module Chilkat
 		# @param newval [String]
 		def encodingMode(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_FirstChunk() end
+		def get_FirstChunk(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -239,9 +309,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_FirstChunk(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_HashAlgorithm() end
+		def get_HashAlgorithm(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -249,7 +322,10 @@ module Chilkat
 		# @param newval [String]
 		def set_HashAlgorithm(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def hashAlgorithm() end
 
@@ -259,9 +335,12 @@ module Chilkat
 		# @param newval [String]
 		def hashAlgorithm(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_HavalRounds() end
+		def get_HavalRounds(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -269,11 +348,14 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_HavalRounds(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs() end
+		def get_HeartbeatMs(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -283,9 +365,12 @@ module Chilkat
 		# @event
 		def set_HeartbeatMs(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_IncludeCertChain() end
+		def get_IncludeCertChain(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -293,9 +378,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_IncludeCertChain(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_InitialCount() end
+		def get_InitialCount(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -303,9 +391,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_InitialCount(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_IterationCount() end
+		def get_IterationCount(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -313,9 +404,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_IterationCount(newval) end
 
+		# +newval+ - [CkByteData]
 		# returns Fixnum
+		#
+		# @param newval [CkByteData]
 		# @return [Fixnum]
-		def get_IV() end
+		def get_IV(newval) end
 
 		# ==== Attributes
 		# +newval+ - Fixnum
@@ -323,9 +417,12 @@ module Chilkat
 		# @param newval [Fixnum]
 		def set_IV(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_KeyLength() end
+		def get_KeyLength(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -334,12 +431,16 @@ module Chilkat
 		def set_KeyLength(newval) end
 
 		# returns Fixnum
+		#
 		# @return [Fixnum]
 		def get_LastBinaryResult() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastChunk() end
+		def get_LastChunk(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -348,32 +449,41 @@ module Chilkat
 		def set_LastChunk(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorText() end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastErrorXml() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastErrorXml() end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_LastMethodSuccess() end
+		def get_LastMethodSuccess(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -382,20 +492,26 @@ module Chilkat
 		def set_LastMethodSuccess(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_LastStringResult() end
 
 		# returns String
+		#
 		# @return [String]
 		def lastStringResult() end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_MacAlgorithm() end
+		def get_MacAlgorithm(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -403,7 +519,10 @@ module Chilkat
 		# @param newval [String]
 		def set_MacAlgorithm(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def macAlgorithm() end
 
@@ -414,12 +533,16 @@ module Chilkat
 		def macAlgorithm(newval) end
 
 		# returns Bignum
+		#
 		# @return [Bignum]
 		def get_NumSignerCerts() end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_PaddingScheme() end
+		def get_PaddingScheme(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -427,9 +550,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_PaddingScheme(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_PbesAlgorithm() end
+		def get_PbesAlgorithm(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -437,7 +563,10 @@ module Chilkat
 		# @param newval [String]
 		def set_PbesAlgorithm(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def pbesAlgorithm() end
 
@@ -447,9 +576,12 @@ module Chilkat
 		# @param newval [String]
 		def pbesAlgorithm(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_PbesPassword() end
+		def get_PbesPassword(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -457,7 +589,10 @@ module Chilkat
 		# @param newval [String]
 		def set_PbesPassword(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def pbesPassword() end
 
@@ -467,9 +602,12 @@ module Chilkat
 		# @param newval [String]
 		def pbesPassword(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_Pkcs7CryptAlg() end
+		def get_Pkcs7CryptAlg(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -477,7 +615,10 @@ module Chilkat
 		# @param newval [String]
 		def set_Pkcs7CryptAlg(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def pkcs7CryptAlg() end
 
@@ -487,9 +628,12 @@ module Chilkat
 		# @param newval [String]
 		def pkcs7CryptAlg(newval) end
 
+		# +newval+ - [Fixnum]
 		# returns Bignum
+		#
+		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_Rc2EffectiveKeyLength() end
+		def get_Rc2EffectiveKeyLength(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -497,9 +641,12 @@ module Chilkat
 		# @param newval [Bignum]
 		def set_Rc2EffectiveKeyLength(newval) end
 
+		# +newval+ - [CkByteData]
 		# returns Fixnum
+		#
+		# @param newval [CkByteData]
 		# @return [Fixnum]
-		def get_Salt() end
+		def get_Salt(newval) end
 
 		# ==== Attributes
 		# +newval+ - Fixnum
@@ -507,9 +654,12 @@ module Chilkat
 		# @param newval [Fixnum]
 		def set_Salt(newval) end
 
+		# +newval+ - [CkByteData]
 		# returns Fixnum
+		#
+		# @param newval [CkByteData]
 		# @return [Fixnum]
-		def get_SecretKey() end
+		def get_SecretKey(newval) end
 
 		# ==== Attributes
 		# +newval+ - Fixnum
@@ -517,9 +667,12 @@ module Chilkat
 		# @param newval [Fixnum]
 		def set_SecretKey(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_UuFilename() end
+		def get_UuFilename(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -527,7 +680,10 @@ module Chilkat
 		# @param newval [String]
 		def set_UuFilename(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def uuFilename() end
 
@@ -537,9 +693,12 @@ module Chilkat
 		# @param newval [String]
 		def uuFilename(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
-		def get_UuMode() end
+		def get_UuMode(newval) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -547,7 +706,10 @@ module Chilkat
 		# @param newval [String]
 		def set_UuMode(newval) end
 
+		# +newval+ - [String]
 		# returns String
+		#
+		# @param newval [String]
 		# @return [String]
 		def uuMode() end
 
@@ -557,9 +719,12 @@ module Chilkat
 		# @param newval [String]
 		def uuMode(newval) end
 
+		# +newval+ - [TrueClass, FalseClass]
 		# returns Bignum
+		#
+		# @param newval [TrueClass, FalseClass]
 		# @return [Bignum]
-		def get_VerboseLogging() end
+		def get_VerboseLogging(newval) end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -568,10 +733,12 @@ module Chilkat
 		def set_VerboseLogging(newval) end
 
 		# returns String
+		#
 		# @return [String]
 		def get_Version() end
 
 		# returns String
+		#
 		# @return [String]
 		def version() end
 
