@@ -171,10 +171,16 @@ namespace GenSample
                     sbOut.Append("\t\t#\r\n\t\t# @event\r\n");
                 if (xprop.Deprecated)
                     sbOut.Append("\t\t#\r\n\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
-               if (lowerCaseAlt)
-                    sbOut.Append("\t\tdef " + xprop.EntryNameLowercaseNoCk + "(newval) end\r\n\r\n");
-               else
-                    sbOut.Append("\t\tdef put_" + xprop.EntryName + "(newval) end\r\n\r\n");
+                    if (lowerCaseAlt && xprop.ReadOnly)
+                    {
+
+                        sbOut.Append("\t\tdef " + xprop.EntryNameLowercaseNoCk + "() end\r\n\r\n");
+                    }
+                    else
+                    {
+                        sbOut.Append("\t\tdef put_" + xprop.EntryName + "(newval) end\r\n\r\n");
+
+                }
 
             }
 
