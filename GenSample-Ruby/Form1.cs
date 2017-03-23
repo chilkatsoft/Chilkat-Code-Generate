@@ -62,8 +62,8 @@ namespace GenSample
 
             StringBuilder sbSourceFile = new StringBuilder();
             if (!generateClassToSb(xclass,sbSourceFile,log)) return false;
-
-            GenBase.writeFileIfModified(AppDataDir.BaseDir + "/sampleOutput/" + genericClassName + ".rb", sbSourceFile.ToString());
+            
+            GenBase.writeFileIfModified(AppDataDir.BaseDir + "/sampleOutput/Ruby/" + ChilkatApi.GenBase.m_generateForMicroVersion + "/" +  genericClassName + ".rb", sbSourceFile.ToString());
 
             return true;
             }
@@ -87,12 +87,12 @@ namespace GenSample
                 // (What you do here depends on your needs..)
                 //if (xprop.Deprecated) continue;
                 if (!xprop.AxEnabled) continue;     // We don't want properties that do not exist in the ActiveX..
-                //if (xprop.IsBytes) continue;  // maybe we don't want to deal with the few properties that are binary data.
-                //if (xprop.IsEventRelated()) continue;
-                // ...
+                                                    //if (xprop.IsBytes) continue;  // maybe we don't want to deal with the few properties that are binary data.
+                    //if (xprop.IsEventRelated()) continue;
+                    // ...
 
-                if (!generateProperty(xprop, xclass, sbOut, log)) return false;
-                }
+               if (!generateProperty(xprop, xclass, sbOut, log)) return false;
+            }
 
             // Loop over methods and generate each...
             for (i = 0; i < xclass.NumMethods; i++)
@@ -116,7 +116,7 @@ namespace GenSample
             return true;
             }
 
-        bool generateProperty(XProperty xprop, XClass xclass, StringBuilder sbOut, Chilkat.Log log)
+        bool generateProperty(XProperty xprop, XClass xclass, StringBuilder sbOut, Chilkat.Log log, bool lowerCaseAlt = false)
             {
             // All properties have getters..
             // Types can be emitted using an existing conversion, or you could write your own..
@@ -131,7 +131,10 @@ namespace GenSample
             if (xprop.IsEventRelated())
                 sbOut.Append("\t\t#\r\n\t\t# @event\r\n");
 
-            sbOut.Append("\t\tdef get_" + xprop.EntryName + "() end\r\n\r\n");
+            if(lowerCaseAlt)
+                sbOut.Append("\t\tdef " + xprop.EntryNameLowercaseNoCk + "() end\r\n\r\n");
+            else
+                sbOut.Append("\t\tdef get_" + xprop.EntryName + "() end\r\n\r\n");
 
             // If the property is not read-only, generate the setter.
             if (!xprop.ReadOnly)
@@ -148,9 +151,15 @@ namespace GenSample
                     sbOut.Append("\t\t#\r\n\t\t# @event\r\n");
                 if (xprop.Deprecated)
                     sbOut.Append("\t\t#\r\n\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
-                sbOut.Append("\t\tdef set_" + xprop.EntryName + "(newval) end\r\n\r\n");
-                }
+               if (lowerCaseAlt)
+                    sbOut.Append("\t\tdef " + xprop.EntryNameLowercaseNoCk + "(newval) end\r\n\r\n");
+               else
+                    sbOut.Append("\t\tdef set_" + xprop.EntryName + "(newval) end\r\n\r\n");
 
+            }
+
+            if (!lowerCaseAlt && xprop.ToLowerCaseStringMethod() != null)
+                generateProperty(xprop, xclass, sbOut, log, true);
             return true;
             }
 
