@@ -112,6 +112,7 @@ namespace GenSample
 
 
             sbOut.Append("\tend\r\n");
+
             sbOut.Append("end\r\n");
             return true;
         }
@@ -142,13 +143,13 @@ namespace GenSample
 
             }
 
-            if (!lowerCaseAlt && xprop.HasCppOutputArg && (!xprop.ReadOnly || xprop.IsBaseEntry))
-                sbOut.Append("\t\t# +" + param + "+ - [" + klass + "]\r\n");
+            //if (!lowerCaseAlt && xprop.HasCppOutputArg && (!xprop.ReadOnly || xprop.IsBaseEntry))
+            //    sbOut.Append("\t\t# +" + param + "+ - [" + klass + "]\r\n");
 
-            if (!xprop.ReadOnly)
-                sbOut.Append("\t\t# returns " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n\t\t#\r\n");
-            if (xprop.Deprecated)
-                sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
+            //if (!xprop.ReadOnly)
+            //    sbOut.Append("\t\t# returns " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n\t\t#\r\n");
+            //if (xprop.Deprecated)
+            //    sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
 
             if (!lowerCaseAlt && xprop.HasCppOutputArg && (!xprop.ReadOnly || xprop.IsBaseEntry))
                 sbOut.Append("\t\t# @param " + param + " [" + klass + "]\r\n\t\t#\r\n");
@@ -185,11 +186,11 @@ namespace GenSample
             if (!xprop.ReadOnly)
             {
 
-                sbOut.Append("\t\t# ==== Attributes\r\n");
+                /*sbOut.Append("\t\t# ==== Attributes\r\n");
                 sbOut.Append("\t\t# +newval+ - " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n");
                 if (xprop.Deprecated)
                     sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
-                sbOut.Append("\t\t#\r\n");
+                sbOut.Append("\t\t#\r\n");*/
                 sbOut.Append("\t\t# @param newval [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
 
                 if (xprop.IsEventRelated())
@@ -214,36 +215,41 @@ namespace GenSample
             return true;
         }
 
-        bool generateMethod(XMethod xmethod, XClass xclass, StringBuilder sbOut, Chilkat.Log log)
+        bool generateMethod(XMethod xmethod, XClass xclass, StringBuilder sbOut, Chilkat.Log log, bool lowerCaseAlt = false)
         {
             sbOut.Append("\r\n\t\t# Method: " + xmethod.EntryName + "\r\n\t\t#\r\n");
-            if (xmethod.Deprecated)
-                sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
-            sbOut.Append("\t\t# ==== Attributes\r\n\t\t#\r\n");
+            //if (xmethod.Deprecated)
+            //    sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
+            //sbOut.Append("\t\t# ==== Attributes\r\n\t\t#\r\n");
 
 
-            if (!genMethodSignature(xmethod, xclass, sbOut, log)) return false;
+            if (!genMethodSignature(xmethod, xclass, sbOut, log, lowerCaseAlt)) return false;
 
             //sbOut.Append("\t\t\t{\r\n");
             // Generate the method body here. This would include whatever code is necessary to prep input args,
             // make the call to the Chilkat API, and return the result..
             sbOut.Append("\t\t\t# ...\r\n");
-            sbOut.Append("\t\tend\r\n");
+            sbOut.Append("\t\tend\r\n\r\n");
+
+            if (!lowerCaseAlt && xmethod.ToLowerCaseStringMethod() != null)
+                generateMethod(xmethod, xclass, sbOut, log, true);
             return true;
         }
 
-        bool genMethodSignature(XMethod xmethod, XClass xclass, StringBuilder sbOut, Chilkat.Log log)
+        bool genMethodSignature(XMethod xmethod, XClass xclass, StringBuilder sbOut, Chilkat.Log log, bool lowerCaseAlt = false)
         {
+          
             string rtnType = m_types.gtToRubyDuck(xmethod.m_gt, xmethod.GenericType);
+           
             int i = 1;
-            foreach (MethodArg arg in xmethod.Args)
+            /*foreach (MethodArg arg in xmethod.Args)
             {
                 //if (i > 1) sbOut.Append(", "); 
                 sbOut.Append("\t\t# +" + arg.Name + "+ - " + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "\r\n");
                 i++;
             }
             sbOut.Append("\t\t# returns " + rtnType + "\r\n");
-            sbOut.Append("\t\t#\r\n\t\t# YARD =>\r\n\t\t#\r\n");
+            sbOut.Append("\t\t#\r\n\t\t# YARD =>\r\n\t\t#\r\n");*/
 
             foreach (MethodArg arg in xmethod.Args)
             {
@@ -252,13 +258,23 @@ namespace GenSample
                 i++;
             }
 
+            if (!lowerCaseAlt && (xmethod.m_gt == 1 || xmethod.m_gt == 6))
+                sbOut.Append("\t\t# @param " + xmethod.CppOutputArgName + " [" + xmethod.CppOutputArgCppType.Replace(" &", "") + "]\r\n");
+            
             sbOut.Append("\t\t# @return [" + rtnType + "]\r\n");
             if (xmethod.Deprecated)
                 sbOut.Append("\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
 
 
-            sbOut.Append("\t\tdef " + xmethod.EntryName + "(");
-
+            if (!lowerCaseAlt)
+            {
+                
+                sbOut.Append("\t\tdef " + xmethod.EntryName + "(");
+            }
+            else
+            {
+                sbOut.Append("\t\tdef " + xmethod.EntryNameLowercaseNoCk + "(");
+            }
             // Iterate over the method args..
             i = 1;
             foreach (MethodArg arg in xmethod.Args)
@@ -266,6 +282,12 @@ namespace GenSample
                 if (i > 1) sbOut.Append(", ");
                 sbOut.Append(arg.Name);
                 i++;
+            }
+
+            if (!lowerCaseAlt  && (xmethod.m_gt == 1 || xmethod.m_gt == 6))
+            {
+                if (i > 1) sbOut.Append(", ");
+                sbOut.Append(xmethod.CppOutputArgName);
             }
 
             sbOut.Append(")\r\n");
