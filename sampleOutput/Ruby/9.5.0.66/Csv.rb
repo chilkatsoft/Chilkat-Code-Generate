@@ -1,37 +1,34 @@
 module Chilkat
 	class CkCsv 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AutoTrim(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AutoTrim() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AutoTrim(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_Crlf(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Crlf() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_Crlf(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -39,10 +36,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -50,14 +45,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Delimiter(newval) end
+		def get_Delimiter(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -65,10 +61,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Delimiter(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def delimiter() end
 
@@ -76,127 +70,120 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def delimiter(newval) end
+		def put_Delimiter(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_EscapeBackslash(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_EscapeBackslash() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_EscapeBackslash(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_HasColumnNames(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_HasColumnNames() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_HasColumnNames(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumColumns() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumRows() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -210,8 +197,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def DeleteColumn(index)
 			# ...
 		end
@@ -225,8 +212,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  columnName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param columnName [String]
+		# @return [TrueClass, FalseClass]
 		def DeleteColumnByName(columnName)
 			# ...
 		end
@@ -240,8 +227,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def DeleteRow(index)
 			# ...
 		end
@@ -256,9 +243,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  row [Fixnum]
-		# @param  col [Fixnum]
-		# @return  [String]
+		# @param row [Fixnum]
+		# @param col [Fixnum]
+		# @return [String]
 		def GetCell(row, col)
 			# ...
 		end
@@ -273,9 +260,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  rowIndex [Fixnum]
-		# @param  columnName [String]
-		# @return  [String]
+		# @param rowIndex [Fixnum]
+		# @param columnName [String]
+		# @return [String]
 		def GetCellByName(rowIndex, columnName)
 			# ...
 		end
@@ -289,8 +276,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetColumnName(index)
 			# ...
 		end
@@ -304,8 +291,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  columnName [String]
-		# @return  [Fixnum]
+		# @param columnName [String]
+		# @return [Fixnum]
 		def GetIndex(columnName)
 			# ...
 		end
@@ -319,8 +306,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  row [Fixnum]
-		# @return  [Fixnum]
+		# @param row [Fixnum]
+		# @return [Fixnum]
 		def GetNumCols(row)
 			# ...
 		end
@@ -334,8 +321,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def LoadFile(path)
 			# ...
 		end
@@ -350,9 +337,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def LoadFile2(filename, charset)
 			# ...
 		end
@@ -366,8 +353,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  csvData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param csvData [String]
+		# @return [TrueClass, FalseClass]
 		def LoadFromString(csvData)
 			# ...
 		end
@@ -383,10 +370,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  rowIndex [Fixnum]
-		# @param  matchPattern [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param rowIndex [Fixnum]
+		# @param matchPattern [String]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RowMatches(rowIndex, matchPattern, caseSensitive)
 			# ...
 		end
@@ -400,8 +387,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def SaveFile(path)
 			# ...
 		end
@@ -416,10 +403,25 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def SaveFile2(filename, charset)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -431,7 +433,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def SaveToString()
 			# ...
 		end
@@ -447,10 +449,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  row [Fixnum]
-		# @param  col [Fixnum]
-		# @param  content [String]
-		# @return  [TrueClass, FalseClass]
+		# @param row [Fixnum]
+		# @param col [Fixnum]
+		# @param content [String]
+		# @return [TrueClass, FalseClass]
 		def SetCell(row, col, content)
 			# ...
 		end
@@ -466,10 +468,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  rowIndex [Fixnum]
-		# @param  columnName [String]
-		# @param  contentStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param rowIndex [Fixnum]
+		# @param columnName [String]
+		# @param contentStr [String]
+		# @return [TrueClass, FalseClass]
 		def SetCellByName(rowIndex, columnName, contentStr)
 			# ...
 		end
@@ -484,9 +486,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  columnName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param columnName [String]
+		# @return [TrueClass, FalseClass]
 		def SetColumnName(index, columnName)
 			# ...
 		end
@@ -502,10 +504,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  columnName [String]
-		# @param  ascending [TrueClass, FalseClass]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param columnName [String]
+		# @param ascending [TrueClass, FalseClass]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SortByColumn(columnName, ascending, caseSensitive)
 			# ...
 		end

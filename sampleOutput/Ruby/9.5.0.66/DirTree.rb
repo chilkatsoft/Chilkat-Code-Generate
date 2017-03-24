@@ -1,11 +1,12 @@
 module Chilkat
 	class CkDirTree 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_BaseDir(newval) end
+		def get_BaseDir(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_BaseDir(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def baseDir() end
 
@@ -24,14 +23,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def baseDir(newval) end
+		def put_BaseDir(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -39,10 +39,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -50,149 +48,133 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_DoneIterating() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_FileSize32() end
 
-		# returns String
-		#
+		# @return [Bignum]
+		def get_FileSize64() end
+
 		# @return [String]
 		def get_FullPath() end
 
-		# returns String
-		#
 		# @return [String]
 		def fullPath() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_FullUncPath() end
 
-		# returns String
-		#
 		# @return [String]
 		def fullUncPath() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsDirectory() end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_Recurse(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Recurse() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_Recurse(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_RelativePath() end
 
-		# returns String
-		#
 		# @return [String]
 		def relativePath() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -205,7 +187,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AdvancePosition()
 			# ...
 		end
@@ -218,8 +200,23 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def BeginIterate()
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 	end

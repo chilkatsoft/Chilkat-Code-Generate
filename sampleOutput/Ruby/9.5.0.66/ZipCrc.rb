@@ -1,17 +1,26 @@
 module Chilkat
 	class CkZipCrc 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: BeginStream
@@ -22,7 +31,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def BeginStream()
 			# ...
 		end
@@ -36,8 +45,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [Fixnum]
+		# @param data [CkByteData]
+		# @return [Fixnum]
 		def CalculateCrc(data)
 			# ...
 		end
@@ -50,7 +59,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def EndStream()
 			# ...
 		end
@@ -64,8 +73,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [Fixnum]
+		# @param path [String]
+		# @return [Fixnum]
 		def FileCrc(path)
 			# ...
 		end
@@ -79,8 +88,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [nil]
+		# @param data [CkByteData]
+		# @return [nil]
 		def MoreData(data)
 			# ...
 		end
@@ -94,8 +103,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  crc [Fixnum]
-		# @return  [String]
+		# @param crc [Fixnum]
+		# @return [String]
 		def ToHex(crc)
 			# ...
 		end

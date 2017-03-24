@@ -1,16 +1,15 @@
 module Chilkat
 	class CkPrivateKey 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_BitLength() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -18,10 +17,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -29,87 +26,77 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_KeyType() end
 
-		# returns String
-		#
 		# @return [String]
 		def keyType() end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Pkcs8EncryptAlg(newval) end
+		def get_Pkcs8EncryptAlg(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -117,10 +104,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Pkcs8EncryptAlg(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def pkcs8EncryptAlg() end
 
@@ -128,28 +113,36 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def pkcs8EncryptAlg(newval) end
+		def put_Pkcs8EncryptAlg(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -162,7 +155,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetJwk()
 			# ...
 		end
@@ -176,8 +169,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  hashAlg [String]
-		# @return  [String]
+		# @param hashAlg [String]
+		# @return [String]
 		def GetJwkThumbprint(hashAlg)
 			# ...
 		end
@@ -190,7 +183,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def GetPkcs1()
 			# ...
 		end
@@ -204,8 +197,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @return  [String]
+		# @param encoding [String]
+		# @return [String]
 		def GetPkcs1ENC(encoding)
 			# ...
 		end
@@ -218,7 +211,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetPkcs1Pem()
 			# ...
 		end
@@ -231,7 +224,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def GetPkcs8()
 			# ...
 		end
@@ -245,8 +238,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @return  [String]
+		# @param encoding [String]
+		# @return [String]
 		def GetPkcs8ENC(encoding)
 			# ...
 		end
@@ -260,8 +253,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  password [String]
-		# @return  [CkByteData]
+		# @param password [String]
+		# @return [CkByteData]
 		def GetPkcs8Encrypted(password)
 			# ...
 		end
@@ -276,9 +269,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @param  password [String]
-		# @return  [String]
+		# @param encoding [String]
+		# @param password [String]
+		# @return [String]
 		def GetPkcs8EncryptedENC(encoding, password)
 			# ...
 		end
@@ -292,8 +285,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  password [String]
-		# @return  [String]
+		# @param password [String]
+		# @return [String]
 		def GetPkcs8EncryptedPem(password)
 			# ...
 		end
@@ -306,7 +299,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetPkcs8Pem()
 			# ...
 		end
@@ -319,7 +312,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkPublicKey]
+		# @return [CkPublicKey]
 		def GetPublicKey()
 			# ...
 		end
@@ -333,7 +326,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetRsaDer()
 			# ...
@@ -348,7 +341,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetRsaPem()
 			# ...
@@ -362,7 +355,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetXml()
 			# ...
 		end
@@ -377,9 +370,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pemStr [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pemStr [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def LoadEncryptedPem(pemStr, password)
 			# ...
 		end
@@ -394,9 +387,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def LoadEncryptedPemFile(path, password)
 			# ...
 		end
@@ -410,8 +403,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  jsonStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param jsonStr [String]
+		# @return [TrueClass, FalseClass]
 		def LoadJwk(jsonStr)
 			# ...
 		end
@@ -425,8 +418,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPem(str)
 			# ...
 		end
@@ -440,8 +433,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPemFile(path)
 			# ...
 		end
@@ -455,8 +448,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param data [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs1(data)
 			# ...
 		end
@@ -470,8 +463,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs1File(path)
 			# ...
 		end
@@ -485,8 +478,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param data [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs8(data)
 			# ...
 		end
@@ -501,9 +494,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param data [CkByteData]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs8Encrypted(data, password)
 			# ...
 		end
@@ -518,9 +511,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs8EncryptedFile(path, password)
 			# ...
 		end
@@ -534,8 +527,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs8File(path)
 			# ...
 		end
@@ -550,9 +543,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param data [CkByteData]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPvk(data, password)
 			# ...
 		end
@@ -567,9 +560,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPvkFile(path, password)
 			# ...
 		end
@@ -584,8 +577,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param data [CkByteData]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDer(data)
 			# ...
@@ -601,8 +594,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDerFile(path)
 			# ...
@@ -617,8 +610,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xml [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xml [String]
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xml)
 			# ...
 		end
@@ -632,9 +625,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def LoadXmlFile(path)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -647,8 +655,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def SavePemFile(path)
 			# ...
 		end
@@ -662,8 +670,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def SavePkcs1File(path)
 			# ...
 		end
@@ -678,9 +686,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  password [String]
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param password [String]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def SavePkcs8EncryptedFile(password, path)
 			# ...
 		end
@@ -695,9 +703,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  password [String]
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param password [String]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def SavePkcs8EncryptedPemFile(password, path)
 			# ...
 		end
@@ -711,8 +719,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def SavePkcs8File(path)
 			# ...
 		end
@@ -726,8 +734,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def SavePkcs8PemFile(path)
 			# ...
 		end
@@ -742,8 +750,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaDerFile(path)
 			# ...
@@ -759,8 +767,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaPemFile(path)
 			# ...
@@ -775,8 +783,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def SaveXmlFile(path)
 			# ...
 		end

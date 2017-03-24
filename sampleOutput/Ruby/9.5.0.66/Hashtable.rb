@@ -1,17 +1,26 @@
 module Chilkat
 	class CkHashtable 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: AddFromXmlSb
@@ -23,8 +32,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sbXml [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param sbXml [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def AddFromXmlSb(sbXml)
 			# ...
 		end
@@ -39,9 +48,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param value [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def AddInt(key, value)
 			# ...
 		end
@@ -55,8 +64,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  queryParams [String]
-		# @return  [TrueClass, FalseClass]
+		# @param queryParams [String]
+		# @return [TrueClass, FalseClass]
 		def AddQueryParams(queryParams)
 			# ...
 		end
@@ -71,9 +80,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def AddStr(key, value)
 			# ...
 		end
@@ -86,7 +95,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -100,8 +109,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  capacity [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param capacity [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def ClearWithNewCapacity(capacity)
 			# ...
 		end
@@ -115,8 +124,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @return [TrueClass, FalseClass]
 		def Contains(key)
 			# ...
 		end
@@ -130,8 +139,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param key [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def ContainsIntKey(key)
 			# ...
 		end
@@ -145,8 +154,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strTable [CkStringTable]
-		# @return  [TrueClass, FalseClass]
+		# @param strTable [CkStringTable]
+		# @return [TrueClass, FalseClass]
 		def GetKeys(strTable)
 			# ...
 		end
@@ -160,8 +169,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [Fixnum]
+		# @param key [String]
+		# @return [Fixnum]
 		def LookupInt(key)
 			# ...
 		end
@@ -175,8 +184,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [String]
+		# @param key [String]
+		# @return [String]
 		def LookupStr(key)
 			# ...
 		end
@@ -190,8 +199,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @return [TrueClass, FalseClass]
 		def Remove(key)
 			# ...
 		end
@@ -205,8 +214,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sbXml [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param sbXml [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def ToXmlSb(sbXml)
 			# ...
 		end

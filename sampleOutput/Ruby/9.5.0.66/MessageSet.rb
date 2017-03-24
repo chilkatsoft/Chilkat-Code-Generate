@@ -1,35 +1,40 @@
 module Chilkat
 	class CkMessageSet 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_Count() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_HasUids(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_HasUids() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_HasUids(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: ContainsId
@@ -41,8 +46,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  msgId [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param msgId [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def ContainsId(msgId)
 			# ...
 		end
@@ -56,8 +61,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @return [TrueClass, FalseClass]
 		def FromCompactString(str)
 			# ...
 		end
@@ -71,8 +76,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [Fixnum]
+		# @param index [Fixnum]
+		# @return [Fixnum]
 		def GetId(index)
 			# ...
 		end
@@ -86,8 +91,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  id [Fixnum]
-		# @return  [nil]
+		# @param id [Fixnum]
+		# @return [nil]
 		def InsertId(id)
 			# ...
 		end
@@ -101,8 +106,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  task [CkTask]
-		# @return  [TrueClass, FalseClass]
+		# @param task [CkTask]
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -116,8 +121,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  id [Fixnum]
-		# @return  [nil]
+		# @param id [Fixnum]
+		# @return [nil]
 		def RemoveId(id)
 			# ...
 		end
@@ -130,7 +135,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ToCommaSeparatedStr()
 			# ...
 		end
@@ -143,7 +148,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ToCompactString()
 			# ...
 		end

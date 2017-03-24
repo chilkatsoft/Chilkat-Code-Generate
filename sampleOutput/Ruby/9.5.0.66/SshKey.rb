@@ -1,11 +1,12 @@
 module Chilkat
 	class CkSshKey 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Comment(newval) end
+		def get_Comment(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Comment(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def comment() end
 
@@ -24,14 +23,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def comment(newval) end
+		def put_Comment(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -39,10 +39,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -50,92 +48,80 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsDsaKey() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsPrivateKey() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsRsaKey() end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Password(newval) end
+		def get_Password(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -143,10 +129,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Password(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def password() end
 
@@ -154,28 +138,36 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def password(newval) end
+		def put_Password(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -189,8 +181,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  keyStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param keyStr [String]
+		# @return [TrueClass, FalseClass]
 		def FromOpenSshPrivateKey(keyStr)
 			# ...
 		end
@@ -204,8 +196,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  keyStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param keyStr [String]
+		# @return [TrueClass, FalseClass]
 		def FromOpenSshPublicKey(keyStr)
 			# ...
 		end
@@ -219,8 +211,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  keyStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param keyStr [String]
+		# @return [TrueClass, FalseClass]
 		def FromPuttyPrivateKey(keyStr)
 			# ...
 		end
@@ -234,8 +226,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  keyStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param keyStr [String]
+		# @return [TrueClass, FalseClass]
 		def FromRfc4716PublicKey(keyStr)
 			# ...
 		end
@@ -249,8 +241,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlKey [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xmlKey [String]
+		# @return [TrueClass, FalseClass]
 		def FromXml(xmlKey)
 			# ...
 		end
@@ -264,8 +256,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBits [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param numBits [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def GenerateDsaKey(numBits)
 			# ...
 		end
@@ -280,9 +272,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBits [Fixnum]
-		# @param  exponent [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param numBits [Fixnum]
+		# @param exponent [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def GenerateRsaKey(numBits, exponent)
 			# ...
 		end
@@ -295,7 +287,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GenFingerprint()
 			# ...
 		end
@@ -309,9 +301,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [String]
+		# @param filename [String]
+		# @return [String]
 		def LoadText(filename)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -325,9 +332,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strToSave [String]
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param strToSave [String]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def SaveText(strToSave, filename)
 			# ...
 		end
@@ -341,8 +348,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bEncrypt [TrueClass, FalseClass]
-		# @return  [String]
+		# @param bEncrypt [TrueClass, FalseClass]
+		# @return [String]
 		def ToOpenSshPrivateKey(bEncrypt)
 			# ...
 		end
@@ -355,7 +362,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ToOpenSshPublicKey()
 			# ...
 		end
@@ -369,8 +376,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bEncrypt [TrueClass, FalseClass]
-		# @return  [String]
+		# @param bEncrypt [TrueClass, FalseClass]
+		# @return [String]
 		def ToPuttyPrivateKey(bEncrypt)
 			# ...
 		end
@@ -383,7 +390,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ToRfc4716PublicKey()
 			# ...
 		end
@@ -396,7 +403,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ToXml()
 			# ...
 		end

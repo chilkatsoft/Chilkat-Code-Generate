@@ -1,11 +1,12 @@
 module Chilkat
 	class CkJwe 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -24,122 +23,117 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumRecipients() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_PreferCompact(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_PreferCompact() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_PreferCompact(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_PreferFlattened(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_PreferFlattened() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_PreferFlattened(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -154,9 +148,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @return [String]
 		def Decrypt(index, charset)
 			# ...
 		end
@@ -171,9 +165,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  bd [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param bd [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def DecryptBd(index, bd)
 			# ...
 		end
@@ -189,10 +183,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  charset [String]
-		# @param  contentSb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @param contentSb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def DecryptSb(index, charset, contentSb)
 			# ...
 		end
@@ -207,9 +201,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  content [String]
-		# @param  charset [String]
-		# @return  [String]
+		# @param content [String]
+		# @param charset [String]
+		# @return [String]
 		def Encrypt(content, charset)
 			# ...
 		end
@@ -224,9 +218,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  contentBd [CkBinData]
-		# @param  jweSb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param contentBd [CkBinData]
+		# @param jweSb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def EncryptBd(contentBd, jweSb)
 			# ...
 		end
@@ -242,10 +236,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  contentSb [CkStringBuilder]
-		# @param  charset [String]
-		# @param  jweSb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param contentSb [CkStringBuilder]
+		# @param charset [String]
+		# @param jweSb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def EncryptSb(contentSb, charset, jweSb)
 			# ...
 		end
@@ -261,10 +255,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  paramName [String]
-		# @param  paramValue [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [Fixnum]
+		# @param paramName [String]
+		# @param paramValue [String]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [Fixnum]
 		def FindRecipient(paramName, paramValue, caseSensitive)
 			# ...
 		end
@@ -278,8 +272,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  jwe [String]
-		# @return  [TrueClass, FalseClass]
+		# @param jwe [String]
+		# @return [TrueClass, FalseClass]
 		def LoadJwe(jwe)
 			# ...
 		end
@@ -293,9 +287,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def LoadJweSb(sb)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -309,9 +318,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  aad [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param aad [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def SetAad(aad, charset)
 			# ...
 		end
@@ -325,8 +334,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  aad [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param aad [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def SetAadBd(aad)
 			# ...
 		end
@@ -341,9 +350,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def SetPassword(index, password)
 			# ...
 		end
@@ -358,9 +367,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  privKey [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param privKey [CkPrivateKey]
+		# @return [TrueClass, FalseClass]
 		def SetPrivateKey(index, privKey)
 			# ...
 		end
@@ -374,8 +383,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  json [CkJsonObject]
-		# @return  [TrueClass, FalseClass]
+		# @param json [CkJsonObject]
+		# @return [TrueClass, FalseClass]
 		def SetProtectedHeader(json)
 			# ...
 		end
@@ -390,9 +399,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  pubKey [CkPublicKey]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param pubKey [CkPublicKey]
+		# @return [TrueClass, FalseClass]
 		def SetPublicKey(index, pubKey)
 			# ...
 		end
@@ -407,9 +416,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  json [CkJsonObject]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param json [CkJsonObject]
+		# @return [TrueClass, FalseClass]
 		def SetRecipientHeader(index, json)
 			# ...
 		end
@@ -423,8 +432,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  json [CkJsonObject]
-		# @return  [TrueClass, FalseClass]
+		# @param json [CkJsonObject]
+		# @return [TrueClass, FalseClass]
 		def SetUnprotectedHeader(json)
 			# ...
 		end
@@ -440,10 +449,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  encodedKey [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param encodedKey [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def SetWrappingKey(index, encodedKey, encoding)
 			# ...
 		end

@@ -1,24 +1,23 @@
 module Chilkat
 	class CkCertStore 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AvoidWindowsPkAccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AvoidWindowsPkAccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AvoidWindowsPkAccess(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -26,10 +25,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -37,101 +34,98 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumCertificates() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumEmailCerts() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -145,8 +139,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def AddCertificate(cert)
 			# ...
 		end
@@ -160,8 +154,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def CreateFileStore(filename)
 			# ...
 		end
@@ -174,7 +168,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CreateMemoryStore()
 			# ...
 		end
@@ -189,9 +183,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  regRoot [String]
-		# @param  regPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param regRoot [String]
+		# @param regPath [String]
+		# @return [TrueClass, FalseClass]
 		def CreateRegistryStore(regRoot, regPath)
 			# ...
 		end
@@ -205,8 +199,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [CkCert]
+		# @param name [String]
+		# @return [CkCert]
 		def FindCertByRfc822Name(name)
 			# ...
 		end
@@ -220,8 +214,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkCert]
+		# @param str [String]
+		# @return [CkCert]
 		def FindCertBySerial(str)
 			# ...
 		end
@@ -235,8 +229,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkCert]
+		# @param str [String]
+		# @return [CkCert]
 		def FindCertBySha1Thumbprint(str)
 			# ...
 		end
@@ -250,8 +244,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkCert]
+		# @param str [String]
+		# @return [CkCert]
 		def FindCertBySubject(str)
 			# ...
 		end
@@ -265,8 +259,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkCert]
+		# @param str [String]
+		# @return [CkCert]
 		def FindCertBySubjectCN(str)
 			# ...
 		end
@@ -280,8 +274,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkCert]
+		# @param str [String]
+		# @return [CkCert]
 		def FindCertBySubjectE(str)
 			# ...
 		end
@@ -295,8 +289,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkCert]
+		# @param str [String]
+		# @return [CkCert]
 		def FindCertBySubjectO(str)
 			# ...
 		end
@@ -310,8 +304,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  emailAddress [String]
-		# @return  [CkCert]
+		# @param emailAddress [String]
+		# @return [CkCert]
 		def FindCertForEmail(emailAddress)
 			# ...
 		end
@@ -325,8 +319,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkCert]
+		# @param index [Fixnum]
+		# @return [CkCert]
 		def GetCertificate(index)
 			# ...
 		end
@@ -340,8 +334,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkCert]
+		# @param index [Fixnum]
+		# @return [CkCert]
 		def GetEmailCert(index)
 			# ...
 		end
@@ -355,8 +349,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pemPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pemPath [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPemFile(pemPath)
 			# ...
 		end
@@ -370,8 +364,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pemString [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pemString [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPemStr(pemString)
 			# ...
 		end
@@ -386,10 +380,29 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxData [CkByteData]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxData [CkByteData]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPfxData(pfxData, password)
+			# ...
+		end
+
+		# Method: LoadPfxData2
+		#
+		# ==== Attributes
+		#
+		# +pByteData+ - Object
+		# +szByteData+ - Fixnum
+		# +password+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param pByteData [Object]
+		# @param szByteData [Fixnum]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
+		def LoadPfxData2(pByteData, szByteData, password)
 			# ...
 		end
 
@@ -403,9 +416,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxFilename [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxFilename [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPfxFile(pfxFilename, password)
 			# ...
 		end
@@ -419,8 +432,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  readOnly [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param readOnly [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def OpenChilkatStore(readOnly)
 			# ...
 		end
@@ -434,8 +447,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  readOnly [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param readOnly [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def OpenCurrentUserStore(readOnly)
 			# ...
 		end
@@ -450,9 +463,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @param  readOnly [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @param readOnly [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def OpenFileStore(filename, readOnly)
 			# ...
 		end
@@ -466,8 +479,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  readOnly [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param readOnly [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def OpenLocalSystemStore(readOnly)
 			# ...
 		end
@@ -481,8 +494,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  readOnly [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param readOnly [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def OpenOutlookStore(readOnly)
 			# ...
 		end
@@ -498,10 +511,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  regRoot [String]
-		# @param  regPath [String]
-		# @param  readOnly [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param regRoot [String]
+		# @param regPath [String]
+		# @param readOnly [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def OpenRegistryStore(regRoot, regPath, readOnly)
 			# ...
 		end
@@ -517,10 +530,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  storeLocation [String]
-		# @param  storeName [String]
-		# @param  readOnly [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param storeLocation [String]
+		# @param storeName [String]
+		# @param readOnly [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def OpenWindowsStore(storeLocation, storeName, readOnly)
 			# ...
 		end
@@ -534,9 +547,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def RemoveCertificate(cert)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 	end

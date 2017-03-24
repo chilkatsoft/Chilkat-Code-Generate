@@ -129,9 +129,17 @@ namespace ChilkatApi
             {
                 return "String";
             }
-            else if (gt == GT_INT || gt == GT_BOOL || gt == GT_UNSIGNED_INT || gt == GT_CPP_SZ_BYTEDATA)
+            else if (gt == GT_INT || gt == GT_UNSIGNED_INT)
             {
                 return "Bignum";
+            }
+            else if (gt == GT_BOOL)
+            {
+                return "TrueClass, FalseClass";
+            }
+            else if (gt == GT_CPP_SZ_BYTEDATA)
+            {
+                return "CkByteData";
             }
             else if (gt == GT_CPP_CHAR)
             {
@@ -1397,6 +1405,8 @@ namespace ChilkatApi
             if (gt == GT_CPP_SHORT) return "Fixnum";
             if (gt == GT_CPP_UNSIGNED_SHORT) return "Fixnum";
             if (gt == GT_UNSIGNED_INT) return "Fixnum";
+            if (gt == GT_CPP_MULTIBYTE_STRING) return "String";
+            if (gt == GT_CPP_CUSTOM) return "Object";
 
             if (gt == GT_OBJECT)
             {

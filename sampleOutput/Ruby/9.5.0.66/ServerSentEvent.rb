@@ -1,52 +1,47 @@
 module Chilkat
 	class CkServerSentEvent 
-		# returns String
-		#
 		# @return [String]
 		def get_Data() end
 
-		# returns String
-		#
 		# @return [String]
 		def data() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_EventName() end
 
-		# returns String
-		#
 		# @return [String]
 		def eventName() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastEventId() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastEventId() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_Retry() end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: LoadEvent
@@ -58,8 +53,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  eventText [String]
-		# @return  [TrueClass, FalseClass]
+		# @param eventText [String]
+		# @return [TrueClass, FalseClass]
 		def LoadEvent(eventText)
 			# ...
 		end

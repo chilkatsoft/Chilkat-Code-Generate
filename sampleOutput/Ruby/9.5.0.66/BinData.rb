@@ -1,22 +1,29 @@
 module Chilkat
 	class CkBinData 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumBytes() end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: AppendBd
@@ -28,8 +35,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param binData [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def AppendBd(binData)
 			# ...
 		end
@@ -43,8 +50,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param data [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def AppendBinary(data)
 			# ...
 		end
@@ -58,8 +65,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def AppendBom(charset)
 			# ...
 		end
@@ -74,9 +81,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encData [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encData [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def AppendEncoded(encData, encoding)
 			# ...
 		end
@@ -91,9 +98,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def AppendEncodedSb(sb, encoding)
 			# ...
 		end
@@ -108,9 +115,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def AppendSb(sb, charset)
 			# ...
 		end
@@ -125,9 +132,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def AppendString(str, charset)
 			# ...
 		end
@@ -140,7 +147,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Clear()
 			# ...
 		end
@@ -154,8 +161,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param binData [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def ContentsEqual(binData)
 			# ...
 		end
@@ -168,7 +175,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def GetBinary()
 			# ...
 		end
@@ -183,9 +190,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @return [CkByteData]
 		def GetBinaryChunk(offset, numBytes)
 			# ...
 		end
@@ -199,8 +206,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @return  [String]
+		# @param encoding [String]
+		# @return [String]
 		def GetEncoded(encoding)
 			# ...
 		end
@@ -216,10 +223,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @param  encoding [String]
-		# @return  [String]
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @param encoding [String]
+		# @return [String]
 		def GetEncodedChunk(offset, numBytes, encoding)
 			# ...
 		end
@@ -234,9 +241,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param encoding [String]
+		# @param sb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def GetEncodedSb(encoding, sb)
 			# ...
 		end
@@ -250,8 +257,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param data [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def LoadBinary(data)
 			# ...
 		end
@@ -266,9 +273,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encData [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encData [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def LoadEncoded(encData, encoding)
 			# ...
 		end
@@ -282,8 +289,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def LoadFile(path)
 			# ...
 		end
@@ -298,9 +305,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def RemoveChunk(offset, numBytes)
 			# ...
 		end
@@ -314,8 +321,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path)
 			# ...
 		end

@@ -1,89 +1,78 @@
 module Chilkat
 	class CkMailMan 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AbortCurrent(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AbortCurrent() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AbortCurrent(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AllOrNone(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AllOrNone() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AllOrNone(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AutoFix(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AutoFix() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AutoFix(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AutoGenMessageId(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AutoGenMessageId() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AutoGenMessageId(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AutoSmtpRset(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AutoSmtpRset() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AutoSmtpRset(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AutoUnwrapSecurity(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AutoUnwrapSecurity() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AutoUnwrapSecurity(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ClientIpAddress(newval) end
+		def get_ClientIpAddress(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -91,10 +80,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ClientIpAddress(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def clientIpAddress() end
 
@@ -102,19 +89,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def clientIpAddress(newval) end
+		def put_ClientIpAddress(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ConnectFailReason() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ConnectTimeout(newval) end
+		def get_ConnectTimeout() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -122,12 +105,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_ConnectTimeout(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -135,10 +119,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -146,14 +128,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DsnEnvid(newval) end
+		def get_DsnEnvid(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -161,10 +144,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DsnEnvid(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dsnEnvid() end
 
@@ -172,14 +153,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dsnEnvid(newval) end
+		def put_DsnEnvid(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DsnNotify(newval) end
+		def get_DsnNotify(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -187,10 +169,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DsnNotify(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dsnNotify() end
 
@@ -198,14 +178,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dsnNotify(newval) end
+		def put_DsnNotify(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DsnRet(newval) end
+		def get_DsnRet(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -213,10 +194,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DsnRet(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dsnRet() end
 
@@ -224,27 +203,26 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dsnRet(newval) end
+		def put_DsnRet(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_EmbedCertChain(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_EmbedCertChain() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_EmbedCertChain(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Filter(newval) end
+		def get_Filter(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -252,10 +230,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Filter(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def filter() end
 
@@ -263,16 +239,14 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def filter(newval) end
+		def put_Filter(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs(newval) end
+		def get_HeartbeatMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -282,12 +256,13 @@ module Chilkat
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HeloHostname(newval) end
+		def get_HeloHostname(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -295,10 +270,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HeloHostname(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def heloHostname() end
 
@@ -306,14 +279,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def heloHostname(newval) end
+		def put_HeloHostname(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyAuthMethod(newval) end
+		def get_HttpProxyAuthMethod(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -321,10 +295,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyAuthMethod(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyAuthMethod() end
 
@@ -332,14 +304,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyAuthMethod(newval) end
+		def put_HttpProxyAuthMethod(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyDomain(newval) end
+		def get_HttpProxyDomain(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -347,10 +320,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyDomain(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyDomain() end
 
@@ -358,14 +329,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyDomain(newval) end
+		def put_HttpProxyDomain(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyHostname(newval) end
+		def get_HttpProxyHostname(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -373,10 +345,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyHostname(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyHostname() end
 
@@ -384,14 +354,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyHostname(newval) end
+		def put_HttpProxyHostname(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyPassword(newval) end
+		def get_HttpProxyPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -399,10 +370,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyPassword() end
 
@@ -410,14 +379,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyPassword(newval) end
+		def put_HttpProxyPassword(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_HttpProxyPort(newval) end
+		def get_HttpProxyPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -425,12 +392,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_HttpProxyPort(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyUsername(newval) end
+		def get_HttpProxyUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -438,10 +406,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyUsername() end
 
@@ -449,132 +415,112 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyUsername(newval) end
+		def put_HttpProxyUsername(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_ImmediateDelete(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_ImmediateDelete() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_ImmediateDelete(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_IncludeRootCert(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_IncludeRootCert() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_IncludeRootCert(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsPop3Connected() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsSmtpConnected() end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
-		#
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_LastSendQFilename() end
 
-		# returns String
-		#
 		# This method has been deprecated. Do not use it.
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def lastSendQFilename() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastSmtpStatus() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LogMailReceivedFilename(newval) end
+		def get_LogMailReceivedFilename(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -582,10 +528,8 @@ module Chilkat
 		# @param newval [String]
 		def put_LogMailReceivedFilename(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def logMailReceivedFilename() end
 
@@ -593,14 +537,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def logMailReceivedFilename(newval) end
+		def put_LogMailReceivedFilename(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LogMailSentFilename(newval) end
+		def get_LogMailSentFilename(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -608,10 +553,8 @@ module Chilkat
 		# @param newval [String]
 		def put_LogMailSentFilename(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def logMailSentFilename() end
 
@@ -619,14 +562,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def logMailSentFilename(newval) end
+		def put_LogMailSentFilename(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_MailHost(newval) end
+		def get_MailHost(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -634,10 +578,8 @@ module Chilkat
 		# @param newval [String]
 		def put_MailHost(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def mailHost() end
 
@@ -645,14 +587,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def mailHost(newval) end
+		def put_MailHost(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_MailPort(newval) end
+		def get_MailPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -660,12 +600,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_MailPort(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_MaxCount(newval) end
+		def get_MaxCount() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -673,12 +611,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_MaxCount(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_OAuth2AccessToken(newval) end
+		def get_OAuth2AccessToken(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -686,10 +625,8 @@ module Chilkat
 		# @param newval [String]
 		def put_OAuth2AccessToken(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def oAuth2AccessToken() end
 
@@ -697,27 +634,26 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def oAuth2AccessToken(newval) end
+		def put_OAuth2AccessToken(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_OpaqueSigning(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_OpaqueSigning() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_OpaqueSigning(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_P7mEncryptAttachFilename(newval) end
+		def get_P7mEncryptAttachFilename(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -725,10 +661,8 @@ module Chilkat
 		# @param newval [String]
 		def put_P7mEncryptAttachFilename(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def p7mEncryptAttachFilename() end
 
@@ -736,14 +670,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def p7mEncryptAttachFilename(newval) end
+		def put_P7mEncryptAttachFilename(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_P7mSigAttachFilename(newval) end
+		def get_P7mSigAttachFilename(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -751,10 +686,8 @@ module Chilkat
 		# @param newval [String]
 		def put_P7mSigAttachFilename(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def p7mSigAttachFilename() end
 
@@ -762,14 +695,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def p7mSigAttachFilename(newval) end
+		def put_P7mSigAttachFilename(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_P7sSigAttachFilename(newval) end
+		def get_P7sSigAttachFilename(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -777,10 +711,8 @@ module Chilkat
 		# @param newval [String]
 		def put_P7sSigAttachFilename(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def p7sSigAttachFilename() end
 
@@ -788,16 +720,14 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def p7sSigAttachFilename(newval) end
+		def put_P7sSigAttachFilename(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_PercentDoneScale(newval) end
+		def get_PercentDoneScale() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -807,58 +737,47 @@ module Chilkat
 		# @event
 		def put_PercentDoneScale(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_Pop3SessionId() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_Pop3SessionLog() end
 
-		# returns String
-		#
 		# @return [String]
 		def pop3SessionLog() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_Pop3SPA(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Pop3SPA() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_Pop3SPA(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_Pop3SslServerCertVerified() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_Pop3Stls(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Pop3Stls() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_Pop3Stls(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PopPassword(newval) end
+		def get_PopPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -866,10 +785,8 @@ module Chilkat
 		# @param newval [String]
 		def put_PopPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def popPassword() end
 
@@ -877,14 +794,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def popPassword(newval) end
+		def put_PopPassword(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PopPasswordBase64(newval) end
+		def get_PopPasswordBase64(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -892,10 +810,8 @@ module Chilkat
 		# @param newval [String]
 		def put_PopPasswordBase64(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def popPasswordBase64() end
 
@@ -903,27 +819,26 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def popPasswordBase64(newval) end
+		def put_PopPasswordBase64(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_PopSsl(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_PopSsl() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_PopSsl(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PopUsername(newval) end
+		def get_PopUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -931,10 +846,8 @@ module Chilkat
 		# @param newval [String]
 		def put_PopUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def popUsername() end
 
@@ -942,27 +855,23 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def popUsername(newval) end
+		def put_PopUsername(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_PreferIpv6(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_PreferIpv6() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_PreferIpv6(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ReadTimeout(newval) end
+		def get_ReadTimeout() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -970,38 +879,32 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_ReadTimeout(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_RequireSslCertVerify(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_RequireSslCertVerify() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_RequireSslCertVerify(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_ResetDateOnLoad(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_ResetDateOnLoad() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_ResetDateOnLoad(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SendBufferSize(newval) end
+		def get_SendBufferSize() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -1009,25 +912,21 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SendBufferSize(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_SendIndividual(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_SendIndividual() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_SendIndividual(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SizeLimit(newval) end
+		def get_SizeLimit() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -1035,12 +934,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SizeLimit(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SmtpAuthMethod(newval) end
+		def get_SmtpAuthMethod(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1048,10 +948,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SmtpAuthMethod(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def smtpAuthMethod() end
 
@@ -1059,24 +957,21 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def smtpAuthMethod(newval) end
+		def put_SmtpAuthMethod(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_SmtpFailReason() end
 
-		# returns String
-		#
 		# @return [String]
 		def smtpFailReason() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SmtpHost(newval) end
+		def get_SmtpHost(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1084,10 +979,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SmtpHost(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def smtpHost() end
 
@@ -1095,14 +988,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def smtpHost(newval) end
+		def put_SmtpHost(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SmtpLoginDomain(newval) end
+		def get_SmtpLoginDomain(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1110,10 +1004,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SmtpLoginDomain(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def smtpLoginDomain() end
 
@@ -1121,14 +1013,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def smtpLoginDomain(newval) end
+		def put_SmtpLoginDomain(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SmtpPassword(newval) end
+		def get_SmtpPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1136,10 +1029,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SmtpPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def smtpPassword() end
 
@@ -1147,27 +1038,23 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def smtpPassword(newval) end
+		def put_SmtpPassword(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_SmtpPipelining(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_SmtpPipelining() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_SmtpPipelining(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SmtpPort(newval) end
+		def get_SmtpPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -1175,40 +1062,33 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SmtpPort(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_SmtpSessionLog() end
 
-		# returns String
-		#
 		# @return [String]
 		def smtpSessionLog() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_SmtpSsl(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_SmtpSsl() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_SmtpSsl(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_SmtpSslServerCertVerified() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SmtpUsername(newval) end
+		def get_SmtpUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1216,10 +1096,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SmtpUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def smtpUsername() end
 
@@ -1227,14 +1105,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def smtpUsername(newval) end
+		def put_SmtpUsername(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksHostname(newval) end
+		def get_SocksHostname(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1242,10 +1121,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksHostname(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksHostname() end
 
@@ -1253,14 +1130,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksPassword(newval) end
+		def get_SocksPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1268,10 +1146,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksPassword() end
 
@@ -1279,14 +1155,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SocksPort(newval) end
+		def get_SocksPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -1294,12 +1168,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SocksPort(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksUsername(newval) end
+		def get_SocksUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1307,10 +1182,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksUsername() end
 
@@ -1318,14 +1191,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SocksVersion(newval) end
+		def get_SocksVersion() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -1333,12 +1204,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SocksVersion(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SoRcvBuf(newval) end
+		def get_SoRcvBuf() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -1346,12 +1215,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SoRcvBuf(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SoSndBuf(newval) end
+		def get_SoSndBuf() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -1359,12 +1226,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SoSndBuf(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SslAllowedCiphers(newval) end
+		def get_SslAllowedCiphers(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1372,10 +1240,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SslAllowedCiphers(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def sslAllowedCiphers() end
 
@@ -1383,14 +1249,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def sslAllowedCiphers(newval) end
+		def put_SslAllowedCiphers(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SslProtocol(newval) end
+		def get_SslProtocol(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1398,10 +1265,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SslProtocol(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def sslProtocol() end
 
@@ -1409,37 +1274,32 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def sslProtocol(newval) end
+		def put_SslProtocol(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_StartTLS(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_StartTLS() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_StartTLS(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_TlsCipherSuite() end
 
-		# returns String
-		#
 		# @return [String]
 		def tlsCipherSuite() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_TlsPinSet(newval) end
+		def get_TlsPinSet(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -1447,10 +1307,8 @@ module Chilkat
 		# @param newval [String]
 		def put_TlsPinSet(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def tlsPinSet() end
 
@@ -1458,51 +1316,53 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def tlsPinSet(newval) end
+		def put_TlsPinSet(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_TlsVersion() end
 
-		# returns String
-		#
 		# @return [String]
 		def tlsVersion() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_UseApop(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_UseApop() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_UseApop(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -1517,9 +1377,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxData [CkByteData]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxData [CkByteData]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceData(pfxData, password)
 			# ...
 		end
@@ -1534,9 +1394,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxFilePath [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxFilePath [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceFile(pfxFilePath, password)
 			# ...
 		end
@@ -1549,7 +1409,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def CheckMail()
 			# ...
 		end
@@ -1562,7 +1422,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearBadEmailAddresses()
 			# ...
 		end
@@ -1575,7 +1435,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearPop3SessionLog()
 			# ...
 		end
@@ -1588,7 +1448,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearSmtpSessionLog()
 			# ...
 		end
@@ -1601,7 +1461,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CloseSmtpConnection()
 			# ...
 		end
@@ -1614,7 +1474,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkEmailBundle]
+		# @return [CkEmailBundle]
 		def CopyMail()
 			# ...
 		end
@@ -1628,8 +1488,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  emailBundle [CkEmailBundle]
-		# @return  [TrueClass, FalseClass]
+		# @param emailBundle [CkEmailBundle]
+		# @return [TrueClass, FalseClass]
 		def DeleteBundle(emailBundle)
 			# ...
 		end
@@ -1643,8 +1503,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  msgnum [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param msgnum [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def DeleteByMsgnum(msgnum)
 			# ...
 		end
@@ -1658,8 +1518,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidl [String]
-		# @return  [TrueClass, FalseClass]
+		# @param uidl [String]
+		# @return [TrueClass, FalseClass]
 		def DeleteByUidl(uidl)
 			# ...
 		end
@@ -1673,8 +1533,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @return  [TrueClass, FalseClass]
+		# @param email [CkEmail]
+		# @return [TrueClass, FalseClass]
 		def DeleteEmail(email)
 			# ...
 		end
@@ -1688,8 +1548,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidlArray [CkStringArray]
-		# @return  [TrueClass, FalseClass]
+		# @param uidlArray [CkStringArray]
+		# @return [TrueClass, FalseClass]
 		def DeleteMultiple(uidlArray)
 			# ...
 		end
@@ -1703,8 +1563,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  msgnum [Fixnum]
-		# @return  [CkEmail]
+		# @param msgnum [Fixnum]
+		# @return [CkEmail]
 		def FetchByMsgnum(msgnum)
 			# ...
 		end
@@ -1718,8 +1578,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidl [String]
-		# @return  [CkEmail]
+		# @param uidl [String]
+		# @return [CkEmail]
 		def FetchEmail(uidl)
 			# ...
 		end
@@ -1733,8 +1593,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidl [String]
-		# @return  [CkByteData]
+		# @param uidl [String]
+		# @return [CkByteData]
 		def FetchMime(uidl)
 			# ...
 		end
@@ -1748,8 +1608,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  msgnum [Fixnum]
-		# @return  [CkByteData]
+		# @param msgnum [Fixnum]
+		# @return [CkByteData]
 		def FetchMimeByMsgnum(msgnum)
 			# ...
 		end
@@ -1763,8 +1623,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidlArray [CkStringArray]
-		# @return  [CkEmailBundle]
+		# @param uidlArray [CkStringArray]
+		# @return [CkEmailBundle]
 		def FetchMultiple(uidlArray)
 			# ...
 		end
@@ -1779,9 +1639,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidlArray [CkStringArray]
-		# @param  numBodyLines [Fixnum]
-		# @return  [CkEmailBundle]
+		# @param uidlArray [CkStringArray]
+		# @param numBodyLines [Fixnum]
+		# @return [CkEmailBundle]
 		def FetchMultipleHeaders(uidlArray, numBodyLines)
 			# ...
 		end
@@ -1795,8 +1655,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidlArray [CkStringArray]
-		# @return  [CkStringArray]
+		# @param uidlArray [CkStringArray]
+		# @return [CkStringArray]
 		def FetchMultipleMime(uidlArray)
 			# ...
 		end
@@ -1811,9 +1671,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBodyLines [Fixnum]
-		# @param  messageNumber [Fixnum]
-		# @return  [CkEmail]
+		# @param numBodyLines [Fixnum]
+		# @param messageNumber [Fixnum]
+		# @return [CkEmail]
 		def FetchSingleHeader(numBodyLines, messageNumber)
 			# ...
 		end
@@ -1828,9 +1688,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBodyLines [Fixnum]
-		# @param  uidl [String]
-		# @return  [CkEmail]
+		# @param numBodyLines [Fixnum]
+		# @param uidl [String]
+		# @return [CkEmail]
 		def FetchSingleHeaderByUidl(numBodyLines, uidl)
 			# ...
 		end
@@ -1844,8 +1704,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBodyLines [Fixnum]
-		# @return  [CkEmailBundle]
+		# @param numBodyLines [Fixnum]
+		# @return [CkEmailBundle]
 		def GetAllHeaders(numBodyLines)
 			# ...
 		end
@@ -1859,9 +1719,22 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strArray [CkStringArray]
-		# @return  [nil]
+		# @param strArray [CkStringArray]
+		# @return [nil]
 		def GetBadEmailAddresses(strArray)
+			# ...
+		end
+
+		# Method: GetBadEmailAddrs
+		#
+		# ==== Attributes
+		#
+		# returns CkStringArray
+		#
+		# YARD =>
+		#
+		# @return [CkStringArray]
+		def GetBadEmailAddrs()
 			# ...
 		end
 
@@ -1874,8 +1747,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @return  [CkEmail]
+		# @param email [CkEmail]
+		# @return [CkEmail]
 		def GetFullEmail(email)
 			# ...
 		end
@@ -1891,10 +1764,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBodyLines [Fixnum]
-		# @param  fromIndex [Fixnum]
-		# @param  toIndex [Fixnum]
-		# @return  [CkEmailBundle]
+		# @param numBodyLines [Fixnum]
+		# @param fromIndex [Fixnum]
+		# @param toIndex [Fixnum]
+		# @return [CkEmailBundle]
 		def GetHeaders(numBodyLines, fromIndex, toIndex)
 			# ...
 		end
@@ -1907,7 +1780,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetMailboxCount()
 			# ...
 		end
@@ -1920,7 +1793,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetMailboxInfoXml()
 			# ...
 		end
@@ -1933,7 +1806,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetMailboxSize()
 			# ...
 		end
@@ -1946,7 +1819,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetPop3SslServerCert()
 			# ...
 		end
@@ -1959,7 +1832,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkStringArray]
+		# @return [CkStringArray]
 		def GetSentToEmailAddrs()
 			# ...
 		end
@@ -1973,8 +1846,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidl [String]
-		# @return  [Fixnum]
+		# @param uidl [String]
+		# @return [Fixnum]
 		def GetSizeByUidl(uidl)
 			# ...
 		end
@@ -1987,7 +1860,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetSmtpSslServerCert()
 			# ...
 		end
@@ -2000,7 +1873,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkStringArray]
+		# @return [CkStringArray]
 		def GetUidls()
 			# ...
 		end
@@ -2013,7 +1886,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsSmtpDsnCapable()
 			# ...
 		end
@@ -2026,7 +1899,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -2040,8 +1913,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  emlFilename [String]
-		# @return  [CkEmail]
+		# @param emlFilename [String]
+		# @return [CkEmail]
 		def LoadEml(emlFilename)
 			# ...
 		end
@@ -2055,8 +1928,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mbxFileName [String]
-		# @return  [CkEmailBundle]
+		# @param mbxFileName [String]
+		# @return [CkEmailBundle]
 		def LoadMbx(mbxFileName)
 			# ...
 		end
@@ -2070,8 +1943,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mimeText [String]
-		# @return  [CkEmail]
+		# @param mimeText [String]
+		# @return [CkEmail]
 		def LoadMime(mimeText)
 			# ...
 		end
@@ -2086,8 +1959,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [CkEmail]
+		# @param path [String]
+		# @return [CkEmail]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadQueuedEmail(path)
 			# ...
@@ -2102,8 +1975,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [CkEmail]
+		# @param filename [String]
+		# @return [CkEmail]
 		def LoadXmlEmail(filename)
 			# ...
 		end
@@ -2117,8 +1990,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlString [String]
-		# @return  [CkEmail]
+		# @param xmlString [String]
+		# @return [CkEmail]
 		def LoadXmlEmailString(xmlString)
 			# ...
 		end
@@ -2132,8 +2005,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [CkEmailBundle]
+		# @param filename [String]
+		# @return [CkEmailBundle]
 		def LoadXmlFile(filename)
 			# ...
 		end
@@ -2147,8 +2020,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlString [String]
-		# @return  [CkEmailBundle]
+		# @param xmlString [String]
+		# @return [CkEmailBundle]
 		def LoadXmlString(xmlString)
 			# ...
 		end
@@ -2162,8 +2035,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  emailAddress [String]
-		# @return  [String]
+		# @param emailAddress [String]
+		# @return [String]
 		def MxLookup(emailAddress)
 			# ...
 		end
@@ -2177,8 +2050,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  emailAddress [String]
-		# @return  [CkStringArray]
+		# @param emailAddress [String]
+		# @return [CkStringArray]
 		def MxLookupAll(emailAddress)
 			# ...
 		end
@@ -2191,7 +2064,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def OpenSmtpConnection()
 			# ...
 		end
@@ -2204,7 +2077,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Pop3Authenticate()
 			# ...
 		end
@@ -2217,7 +2090,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Pop3BeginSession()
 			# ...
 		end
@@ -2230,7 +2103,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Pop3Connect()
 			# ...
 		end
@@ -2243,7 +2116,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Pop3EndSession()
 			# ...
 		end
@@ -2256,7 +2129,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Pop3EndSessionNoQuit()
 			# ...
 		end
@@ -2269,7 +2142,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Pop3Noop()
 			# ...
 		end
@@ -2282,7 +2155,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Pop3Reset()
 			# ...
 		end
@@ -2297,9 +2170,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  command [String]
-		# @param  charset [String]
-		# @return  [String]
+		# @param command [String]
+		# @param charset [String]
+		# @return [String]
 		def Pop3SendRawCommand(command, charset)
 			# ...
 		end
@@ -2317,12 +2190,12 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fromAddr [String]
-		# @param  toAddr [String]
-		# @param  subject [String]
-		# @param  body [String]
-		# @param  smtpServer [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fromAddr [String]
+		# @param toAddr [String]
+		# @param subject [String]
+		# @param body [String]
+		# @param smtpServer [String]
+		# @return [TrueClass, FalseClass]
 		def QuickSend(fromAddr, toAddr, subject, body, smtpServer)
 			# ...
 		end
@@ -2336,8 +2209,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @return  [String]
+		# @param email [CkEmail]
+		# @return [String]
 		def RenderToMime(email)
 			# ...
 		end
@@ -2352,9 +2225,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @param  renderedMime [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param email [CkEmail]
+		# @param renderedMime [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def RenderToMimeBd(email, renderedMime)
 			# ...
 		end
@@ -2368,8 +2241,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @return  [CkByteData]
+		# @param email [CkEmail]
+		# @return [CkByteData]
 		def RenderToMimeBytes(email)
 			# ...
 		end
@@ -2384,10 +2257,25 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @param  renderedMime [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param email [CkEmail]
+		# @param renderedMime [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def RenderToMimeSb(email, renderedMime)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -2400,8 +2288,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bundle [CkEmailBundle]
-		# @return  [TrueClass, FalseClass]
+		# @param bundle [CkEmailBundle]
+		# @return [TrueClass, FalseClass]
 		def SendBundle(bundle)
 			# ...
 		end
@@ -2415,8 +2303,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @return  [TrueClass, FalseClass]
+		# @param email [CkEmail]
+		# @return [TrueClass, FalseClass]
 		def SendEmail(email)
 			# ...
 		end
@@ -2432,10 +2320,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fromAddr [String]
-		# @param  recipients [String]
-		# @param  mimeSource [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fromAddr [String]
+		# @param recipients [String]
+		# @param mimeSource [String]
+		# @return [TrueClass, FalseClass]
 		def SendMime(fromAddr, recipients, mimeSource)
 			# ...
 		end
@@ -2451,10 +2339,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fromAddr [String]
-		# @param  recipients [String]
-		# @param  mimeSource [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param fromAddr [String]
+		# @param recipients [String]
+		# @param mimeSource [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def SendMimeBytes(fromAddr, recipients, mimeSource)
 			# ...
 		end
@@ -2471,10 +2359,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  from [String]
-		# @param  recipients [String]
-		# @param  mimeData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param from [String]
+		# @param recipients [String]
+		# @param mimeData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SendMimeBytesQ(from, recipients, mimeData)
 			# ...
@@ -2492,10 +2380,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fromAddr [String]
-		# @param  recipients [String]
-		# @param  mimeSource [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fromAddr [String]
+		# @param recipients [String]
+		# @param mimeSource [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SendMimeQ(fromAddr, recipients, mimeSource)
 			# ...
@@ -2512,10 +2400,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fromAddr [String]
-		# @param  distListFilename [String]
-		# @param  mimeSource [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fromAddr [String]
+		# @param distListFilename [String]
+		# @param mimeSource [String]
+		# @return [TrueClass, FalseClass]
 		def SendMimeToList(fromAddr, distListFilename, mimeSource)
 			# ...
 		end
@@ -2530,8 +2418,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @return  [TrueClass, FalseClass]
+		# @param email [CkEmail]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SendQ(email)
 			# ...
@@ -2548,9 +2436,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @param  queueDir [String]
-		# @return  [TrueClass, FalseClass]
+		# @param email [CkEmail]
+		# @param queueDir [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SendQ2(email, queueDir)
 			# ...
@@ -2566,9 +2454,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  emailObj [CkEmail]
-		# @param  recipientList [CkStringArray]
-		# @return  [TrueClass, FalseClass]
+		# @param emailObj [CkEmail]
+		# @param recipientList [CkStringArray]
+		# @return [TrueClass, FalseClass]
 		def SendToDistributionList(emailObj, recipientList)
 			# ...
 		end
@@ -2582,8 +2470,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  csp [CkCsp]
-		# @return  [TrueClass, FalseClass]
+		# @param csp [CkCsp]
+		# @return [TrueClass, FalseClass]
 		def SetCSP(csp)
 			# ...
 		end
@@ -2597,8 +2485,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def SetDecryptCert(cert)
 			# ...
 		end
@@ -2613,9 +2501,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @param  privateKey [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @param privateKey [CkPrivateKey]
+		# @return [TrueClass, FalseClass]
 		def SetDecryptCert2(cert, privateKey)
 			# ...
 		end
@@ -2629,8 +2517,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -2645,9 +2533,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pemDataOrFilename [String]
-		# @param  pemPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pemDataOrFilename [String]
+		# @param pemPassword [String]
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPem(pemDataOrFilename, pemPassword)
 			# ...
 		end
@@ -2662,9 +2550,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxFilename [String]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxFilename [String]
+		# @param pfxPassword [String]
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPfx(pfxFilename, pfxPassword)
 			# ...
 		end
@@ -2677,7 +2565,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SmtpAuthenticate()
 			# ...
 		end
@@ -2690,7 +2578,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SmtpConnect()
 			# ...
 		end
@@ -2703,7 +2591,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SmtpNoop()
 			# ...
 		end
@@ -2716,7 +2604,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SmtpReset()
 			# ...
 		end
@@ -2732,10 +2620,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  command [String]
-		# @param  charset [String]
-		# @param  bEncodeBase64 [TrueClass, FalseClass]
-		# @return  [String]
+		# @param command [String]
+		# @param charset [String]
+		# @param bEncodeBase64 [TrueClass, FalseClass]
+		# @return [String]
 		def SmtpSendRawCommand(command, charset, bEncodeBase64)
 			# ...
 		end
@@ -2750,9 +2638,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bSmtp [String]
-		# @param  sshUsername [CkSshKey]
-		# @return  [TrueClass, FalseClass]
+		# @param bSmtp [String]
+		# @param sshUsername [CkSshKey]
+		# @return [TrueClass, FalseClass]
 		def SshAuthenticatePk(bSmtp, sshUsername)
 			# ...
 		end
@@ -2767,9 +2655,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bSmtp [String]
-		# @param  sshLogin [String]
-		# @return  [TrueClass, FalseClass]
+		# @param bSmtp [String]
+		# @param sshLogin [String]
+		# @return [TrueClass, FalseClass]
 		def SshAuthenticatePw(bSmtp, sshLogin)
 			# ...
 		end
@@ -2782,7 +2670,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SshCloseTunnel()
 			# ...
 		end
@@ -2797,9 +2685,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sshHostname [String]
-		# @param  sshPort [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param sshHostname [String]
+		# @param sshPort [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def SshOpenTunnel(sshHostname, sshPort)
 			# ...
 		end
@@ -2816,10 +2704,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bSmtp [TrueClass, FalseClass]
-		# @param  sshServerHostname [String]
-		# @param  sshPort [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param bSmtp [TrueClass, FalseClass]
+		# @param sshServerHostname [String]
+		# @param sshPort [Fixnum]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SshTunnel(bSmtp, sshServerHostname, sshPort)
 			# ...
@@ -2833,7 +2721,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkEmailBundle]
+		# @return [CkEmailBundle]
 		def TransferMail()
 			# ...
 		end
@@ -2847,8 +2735,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uidlArray [CkStringArray]
-		# @return  [CkStringArray]
+		# @param uidlArray [CkStringArray]
+		# @return [CkStringArray]
 		def TransferMultipleMime(uidlArray)
 			# ...
 		end
@@ -2862,8 +2750,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  code [String]
-		# @return  [TrueClass, FalseClass]
+		# @param code [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(code)
 			# ...
 		end
@@ -2877,8 +2765,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  vault [CkXmlCertVault]
-		# @return  [TrueClass, FalseClass]
+		# @param vault [CkXmlCertVault]
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -2892,8 +2780,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  ssh [CkSsh]
-		# @return  [TrueClass, FalseClass]
+		# @param ssh [CkSsh]
+		# @return [TrueClass, FalseClass]
 		def UseSsh(ssh)
 			# ...
 		end
@@ -2907,8 +2795,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tunnel [CkSocket]
-		# @return  [TrueClass, FalseClass]
+		# @param tunnel [CkSocket]
+		# @return [TrueClass, FalseClass]
 		def UseSshTunnel(tunnel)
 			# ...
 		end
@@ -2921,7 +2809,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyPopConnection()
 			# ...
 		end
@@ -2934,7 +2822,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyPopLogin()
 			# ...
 		end
@@ -2949,9 +2837,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  email [CkEmail]
-		# @param  badAddrs [CkStringArray]
-		# @return  [TrueClass, FalseClass]
+		# @param email [CkEmail]
+		# @param badAddrs [CkStringArray]
+		# @return [TrueClass, FalseClass]
 		def VerifyRecips(email, badAddrs)
 			# ...
 		end
@@ -2964,7 +2852,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifySmtpConnection()
 			# ...
 		end
@@ -2977,7 +2865,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifySmtpLogin()
 			# ...
 		end

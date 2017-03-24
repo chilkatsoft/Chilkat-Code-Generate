@@ -1,11 +1,12 @@
 module Chilkat
 	class CkMime 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Boundary(newval) end
+		def get_Boundary(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Boundary(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def boundary() end
 
@@ -24,14 +23,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def boundary(newval) end
+		def put_Boundary(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Charset(newval) end
+		def get_Charset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -39,10 +39,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def charset() end
 
@@ -50,14 +48,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def charset(newval) end
+		def put_Charset(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ContentType(newval) end
+		def get_ContentType(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -65,10 +64,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ContentType(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def contentType() end
 
@@ -76,24 +73,21 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def contentType(newval) end
+		def put_ContentType(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_CurrentDateTime() end
 
-		# returns String
-		#
 		# @return [String]
 		def currentDateTime() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -101,10 +95,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -112,14 +104,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Disposition(newval) end
+		def get_Disposition(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -127,10 +120,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Disposition(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def disposition() end
 
@@ -138,14 +129,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def disposition(newval) end
+		def put_Disposition(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Encoding(newval) end
+		def get_Encoding(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -153,10 +145,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Encoding(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def encoding() end
 
@@ -164,14 +154,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def encoding(newval) end
+		def put_Encoding(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Filename(newval) end
+		def get_Filename(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -179,10 +170,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Filename(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def filename() end
 
@@ -190,77 +179,71 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def filename(newval) end
+		def put_Filename(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Micalg(newval) end
+		def get_Micalg(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -268,10 +251,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Micalg(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def micalg() end
 
@@ -279,14 +260,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def micalg(newval) end
+		def put_Micalg(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Name(newval) end
+		def get_Name(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -294,10 +276,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Name(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def name() end
 
@@ -305,34 +285,27 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def name(newval) end
+		def put_Name(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumEncryptCerts() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumHeaderFields() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumParts() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumSignerCerts() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Pkcs7CryptAlg(newval) end
+		def get_Pkcs7CryptAlg(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -340,10 +313,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Pkcs7CryptAlg(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def pkcs7CryptAlg() end
 
@@ -351,14 +322,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def pkcs7CryptAlg(newval) end
+		def put_Pkcs7CryptAlg(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_Pkcs7KeyLength(newval) end
+		def get_Pkcs7KeyLength() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -366,12 +335,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_Pkcs7KeyLength(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Protocol(newval) end
+		def get_Protocol(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -379,10 +349,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Protocol(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def protocol() end
 
@@ -390,14 +358,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def protocol(newval) end
+		def put_Protocol(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SigningHashAlg(newval) end
+		def get_SigningHashAlg(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -405,10 +374,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SigningHashAlg(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def signingHashAlg() end
 
@@ -416,67 +383,69 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def signingHashAlg(newval) end
+		def put_SigningHashAlg(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_UnwrapExtras(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_UnwrapExtras() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_UnwrapExtras(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_UseMmDescription(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_UseMmDescription() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_UseMmDescription(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_UseXPkcs7(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_UseXPkcs7() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_UseXPkcs7(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -489,7 +458,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def AddContentLength()
 			# ...
 		end
@@ -503,8 +472,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def AddDecryptCert(cert)
 			# ...
 		end
@@ -518,8 +487,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def AddDetachedSignature(cert)
 			# ...
 		end
@@ -534,9 +503,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @param  transferHeaderFields [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @param transferHeaderFields [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddDetachedSignature2(cert, transferHeaderFields)
 			# ...
 		end
@@ -551,9 +520,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @param  privateKey [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @param privateKey [CkPrivateKey]
+		# @return [TrueClass, FalseClass]
 		def AddDetachedSignaturePk(cert, privateKey)
 			# ...
 		end
@@ -569,10 +538,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @param  privateKey [CkPrivateKey]
-		# @param  transferHeaderFields [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @param privateKey [CkPrivateKey]
+		# @param transferHeaderFields [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddDetachedSignaturePk2(cert, privateKey, transferHeaderFields)
 			# ...
 		end
@@ -586,8 +555,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def AddEncryptCert(cert)
 			# ...
 		end
@@ -602,9 +571,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def AddHeaderField(name, value)
 			# ...
 		end
@@ -619,9 +588,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxFileData [CkByteData]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxFileData [CkByteData]
+		# @param pfxPassword [String]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceData(pfxFileData, pfxPassword)
 			# ...
 		end
@@ -636,9 +605,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxFilePath [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxFilePath [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceFile(pfxFilePath, password)
 			# ...
 		end
@@ -652,8 +621,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mime [CkMime]
-		# @return  [TrueClass, FalseClass]
+		# @param mime [CkMime]
+		# @return [TrueClass, FalseClass]
 		def AppendPart(mime)
 			# ...
 		end
@@ -667,8 +636,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def AppendPartFromFile(filename)
 			# ...
 		end
@@ -681,7 +650,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def AsnBodyToXml()
 			# ...
 		end
@@ -694,7 +663,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearEncryptCerts()
 			# ...
 		end
@@ -707,7 +676,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ContainsEncryptedParts()
 			# ...
 		end
@@ -720,7 +689,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ContainsSignedParts()
 			# ...
 		end
@@ -733,7 +702,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def Convert8Bit()
 			# ...
 		end
@@ -746,7 +715,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ConvertToMultipartAlt()
 			# ...
 		end
@@ -759,7 +728,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ConvertToMultipartMixed()
 			# ...
 		end
@@ -773,8 +742,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def ConvertToSigned(cert)
 			# ...
 		end
@@ -789,9 +758,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @param  privateKey [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @param privateKey [CkPrivateKey]
+		# @return [TrueClass, FalseClass]
 		def ConvertToSignedPk(cert, privateKey)
 			# ...
 		end
@@ -804,7 +773,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Decrypt()
 			# ...
 		end
@@ -819,9 +788,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @param  privateKey [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @param privateKey [CkPrivateKey]
+		# @return [TrueClass, FalseClass]
 		def Decrypt2(cert, privateKey)
 			# ...
 		end
@@ -835,8 +804,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def DecryptUsingCert(cert)
 			# ...
 		end
@@ -851,9 +820,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxData [CkByteData]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxData [CkByteData]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def DecryptUsingPfxData(pfxData, password)
 			# ...
 		end
@@ -868,9 +837,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pfxFilePath [String]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pfxFilePath [String]
+		# @param pfxPassword [String]
+		# @return [TrueClass, FalseClass]
 		def DecryptUsingPfxFile(pfxFilePath, pfxPassword)
 			# ...
 		end
@@ -884,8 +853,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def Encrypt(cert)
 			# ...
 		end
@@ -898,7 +867,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def EncryptN()
 			# ...
 		end
@@ -912,8 +881,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  dirPath [String]
-		# @return  [CkStringArray]
+		# @param dirPath [String]
+		# @return [CkStringArray]
 		def ExtractPartsToFiles(dirPath)
 			# ...
 		end
@@ -927,8 +896,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [CkCert]
+		# @param cert [CkCert]
+		# @return [CkCert]
 		def FindIssuer(cert)
 			# ...
 		end
@@ -941,7 +910,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def GetBodyBinary()
 			# ...
 		end
@@ -954,7 +923,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetBodyDecoded()
 			# ...
 		end
@@ -967,7 +936,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetBodyEncoded()
 			# ...
 		end
@@ -981,8 +950,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkCert]
+		# @param index [Fixnum]
+		# @return [CkCert]
 		def GetEncryptCert(index)
 			# ...
 		end
@@ -995,7 +964,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetEntireBody()
 			# ...
 		end
@@ -1008,7 +977,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetEntireHead()
 			# ...
 		end
@@ -1022,8 +991,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fieldName [String]
-		# @return  [String]
+		# @param fieldName [String]
+		# @return [String]
 		def GetHeaderField(fieldName)
 			# ...
 		end
@@ -1038,9 +1007,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  attrName [String]
-		# @return  [String]
+		# @param name [String]
+		# @param attrName [String]
+		# @return [String]
 		def GetHeaderFieldAttribute(name, attrName)
 			# ...
 		end
@@ -1054,8 +1023,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetHeaderFieldName(index)
 			# ...
 		end
@@ -1069,8 +1038,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetHeaderFieldValue(index)
 			# ...
 		end
@@ -1083,7 +1052,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetMime()
 			# ...
 		end
@@ -1097,8 +1066,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bindat [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param bindat [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def GetMimeBd(bindat)
 			# ...
 		end
@@ -1111,7 +1080,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def GetMimeBytes()
 			# ...
 		end
@@ -1125,8 +1094,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def GetMimeSb(sb)
 			# ...
 		end
@@ -1140,8 +1109,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkMime]
+		# @param index [Fixnum]
+		# @return [CkMime]
 		def GetPart(index)
 			# ...
 		end
@@ -1156,8 +1125,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [Object]
+		# @param index [Fixnum]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetSignatureSigningTime(index)
 			# ...
@@ -1172,8 +1141,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetSignatureSigningTimeStr(index)
 			# ...
 		end
@@ -1187,8 +1156,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkCert]
+		# @param index [Fixnum]
+		# @return [CkCert]
 		def GetSignerCert(index)
 			# ...
 		end
@@ -1202,8 +1171,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkCertChain]
+		# @param index [Fixnum]
+		# @return [CkCertChain]
 		def GetSignerCertChain(index)
 			# ...
 		end
@@ -1217,8 +1186,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fmt [String]
-		# @return  [String]
+		# @param fmt [String]
+		# @return [String]
 		def GetStructure(fmt)
 			# ...
 		end
@@ -1231,7 +1200,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetXml()
 			# ...
 		end
@@ -1245,8 +1214,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def HasSignatureSigningTime(index)
 			# ...
 		end
@@ -1259,7 +1228,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsApplicationData()
 			# ...
 		end
@@ -1272,7 +1241,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsAttachment()
 			# ...
 		end
@@ -1285,7 +1254,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsAudio()
 			# ...
 		end
@@ -1298,7 +1267,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsEncrypted()
 			# ...
 		end
@@ -1311,7 +1280,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsHtml()
 			# ...
 		end
@@ -1324,7 +1293,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsImage()
 			# ...
 		end
@@ -1337,7 +1306,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsMultipart()
 			# ...
 		end
@@ -1350,7 +1319,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsMultipartAlternative()
 			# ...
 		end
@@ -1363,7 +1332,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsMultipartMixed()
 			# ...
 		end
@@ -1376,7 +1345,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsMultipartRelated()
 			# ...
 		end
@@ -1389,7 +1358,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsPlainText()
 			# ...
 		end
@@ -1402,7 +1371,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsSigned()
 			# ...
 		end
@@ -1415,7 +1384,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsText()
 			# ...
 		end
@@ -1428,7 +1397,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -1441,7 +1410,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsVideo()
 			# ...
 		end
@@ -1454,7 +1423,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsXml()
 			# ...
 		end
@@ -1468,8 +1437,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mimeMsg [String]
-		# @return  [TrueClass, FalseClass]
+		# @param mimeMsg [String]
+		# @return [TrueClass, FalseClass]
 		def LoadMime(mimeMsg)
 			# ...
 		end
@@ -1483,8 +1452,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bindat [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param bindat [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def LoadMimeBd(bindat)
 			# ...
 		end
@@ -1498,8 +1467,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param binData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def LoadMimeBytes(binData)
 			# ...
 		end
@@ -1513,8 +1482,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fileName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fileName [String]
+		# @return [TrueClass, FalseClass]
 		def LoadMimeFile(fileName)
 			# ...
 		end
@@ -1528,8 +1497,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def LoadMimeSb(sb)
 			# ...
 		end
@@ -1543,8 +1512,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xml [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xml [String]
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xml)
 			# ...
 		end
@@ -1558,8 +1527,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fileName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fileName [String]
+		# @return [TrueClass, FalseClass]
 		def LoadXmlFile(fileName)
 			# ...
 		end
@@ -1573,8 +1542,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mimeObject [CkMime]
-		# @return  [TrueClass, FalseClass]
+		# @param mimeObject [CkMime]
+		# @return [TrueClass, FalseClass]
 		def NewMessageRfc822(mimeObject)
 			# ...
 		end
@@ -1587,7 +1556,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def NewMultipartAlternative()
 			# ...
 		end
@@ -1600,7 +1569,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def NewMultipartMixed()
 			# ...
 		end
@@ -1613,7 +1582,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def NewMultipartRelated()
 			# ...
 		end
@@ -1628,9 +1597,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fieldName [String]
-		# @param  bAllOccurrences [TrueClass, FalseClass]
-		# @return  [nil]
+		# @param fieldName [String]
+		# @param bAllOccurrences [TrueClass, FalseClass]
+		# @return [nil]
 		def RemoveHeaderField(fieldName, bAllOccurrences)
 			# ...
 		end
@@ -1644,8 +1613,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def RemovePart(index)
 			# ...
 		end
@@ -1659,9 +1628,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def SaveBody(filename)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -1674,8 +1658,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def SaveMime(filename)
 			# ...
 		end
@@ -1689,8 +1673,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def SaveXml(filename)
 			# ...
 		end
@@ -1704,8 +1688,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [nil]
+		# @param str [String]
+		# @return [nil]
 		def SetBody(str)
 			# ...
 		end
@@ -1719,8 +1703,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param binData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def SetBodyFromBinary(binData)
 			# ...
 		end
@@ -1735,9 +1719,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @param  str [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encoding [String]
+		# @param str [String]
+		# @return [TrueClass, FalseClass]
 		def SetBodyFromEncoded(encoding, str)
 			# ...
 		end
@@ -1751,8 +1735,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fileName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fileName [String]
+		# @return [TrueClass, FalseClass]
 		def SetBodyFromFile(fileName)
 			# ...
 		end
@@ -1766,8 +1750,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @return [TrueClass, FalseClass]
 		def SetBodyFromHtml(str)
 			# ...
 		end
@@ -1781,8 +1765,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @return [TrueClass, FalseClass]
 		def SetBodyFromPlainText(str)
 			# ...
 		end
@@ -1796,8 +1780,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @return [TrueClass, FalseClass]
 		def SetBodyFromXml(str)
 			# ...
 		end
@@ -1811,8 +1795,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  csp [CkCsp]
-		# @return  [TrueClass, FalseClass]
+		# @param csp [CkCsp]
+		# @return [TrueClass, FalseClass]
 		def SetCSP(csp)
 			# ...
 		end
@@ -1827,9 +1811,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def SetHeaderField(name, value)
 			# ...
 		end
@@ -1843,8 +1827,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @param cert [CkCert]
+		# @return [TrueClass, FalseClass]
 		def SetVerifyCert(cert)
 			# ...
 		end
@@ -1858,8 +1842,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -1872,7 +1856,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnwrapSecurity()
 			# ...
 		end
@@ -1886,8 +1870,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  charset [String]
-		# @return  [nil]
+		# @param charset [String]
+		# @return [nil]
 		def UrlEncodeBody(charset)
 			# ...
 		end
@@ -1901,8 +1885,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  vault [CkXmlCertVault]
-		# @return  [TrueClass, FalseClass]
+		# @param vault [CkXmlCertVault]
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -1915,7 +1899,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Verify()
 			# ...
 		end

@@ -1,11 +1,12 @@
 module Chilkat
 	class CkHtmlToXml 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -24,27 +23,26 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_DropCustomTags(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_DropCustomTags() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_DropCustomTags(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Html(newval) end
+		def get_Html(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -52,10 +50,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Html(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def html() end
 
@@ -63,77 +59,68 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def html(newval) end
+		def put_Html(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_Nbsp(newval) end
+		def get_Nbsp() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -141,35 +128,44 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_Nbsp(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_XmlCharset(newval) end
+		def get_XmlCharset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -177,10 +173,8 @@ module Chilkat
 		# @param newval [String]
 		def put_XmlCharset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def xmlCharset() end
 
@@ -188,7 +182,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def xmlCharset(newval) end
+		def put_XmlCharset(newval) end
 
 
 		# Method: ConvertFile
@@ -201,9 +195,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inHtmlPath [String]
-		# @param  destXmlPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param inHtmlPath [String]
+		# @param destXmlPath [String]
+		# @return [TrueClass, FalseClass]
 		def ConvertFile(inHtmlPath, destXmlPath)
 			# ...
 		end
@@ -217,8 +211,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagName [String]
-		# @return  [nil]
+		# @param tagName [String]
+		# @return [nil]
 		def DropTagType(tagName)
 			# ...
 		end
@@ -231,7 +225,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def DropTextFormattingTags()
 			# ...
 		end
@@ -244,7 +238,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -258,8 +252,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [CkByteData]
+		# @param path [String]
+		# @return [CkByteData]
 		def ReadFile(path)
 			# ...
 		end
@@ -274,10 +268,25 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @param  srcCharset [String]
-		# @return  [String]
+		# @param filename [String]
+		# @param srcCharset [String]
+		# @return [String]
 		def ReadFileToString(filename, srcCharset)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -290,8 +299,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inData [CkByteData]
-		# @return  [nil]
+		# @param inData [CkByteData]
+		# @return [nil]
 		def SetHtmlBytes(inData)
 			# ...
 		end
@@ -305,8 +314,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def SetHtmlFromFile(filename)
 			# ...
 		end
@@ -319,7 +328,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ToXml()
 			# ...
 		end
@@ -333,8 +342,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagName [String]
-		# @return  [nil]
+		# @param tagName [String]
+		# @return [nil]
 		def UndropTagType(tagName)
 			# ...
 		end
@@ -347,7 +356,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def UndropTextFormattingTags()
 			# ...
 		end
@@ -361,8 +370,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -377,9 +386,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @param  fileData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @param fileData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path, fileData)
 			# ...
 		end
@@ -395,11 +404,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  stringToWrite [String]
-		# @param  filename [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param stringToWrite [String]
+		# @param filename [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def WriteStringToFile(stringToWrite, filename, charset)
+			# ...
+		end
+
+		# Method: Xml
+		#
+		# ==== Attributes
+		#
+		# returns String
+		#
+		# YARD =>
+		#
+		# @return [String]
+		def Xml()
 			# ...
 		end
 	end

@@ -1,24 +1,23 @@
 module Chilkat
 	class CkXml 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_Cdata(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Cdata() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_Cdata(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Content(newval) end
+		def get_Content(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -26,10 +25,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Content(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def content() end
 
@@ -37,14 +34,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def content(newval) end
+		def put_Content(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ContentInt(newval) end
+		def get_ContentInt() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -52,12 +47,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_ContentInt(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -65,10 +61,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -76,14 +70,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DocType(newval) end
+		def get_DocType(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -91,10 +86,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DocType(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def docType() end
 
@@ -102,53 +95,48 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def docType(newval) end
+		def put_DocType(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_EmitBom(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_EmitBom() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_EmitBom(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_EmitCompact(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_EmitCompact() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_EmitCompact(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_EmitXmlDecl(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_EmitXmlDecl() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_EmitXmlDecl(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Encoding(newval) end
+		def get_Encoding(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -156,10 +144,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Encoding(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def encoding() end
 
@@ -167,14 +153,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def encoding(newval) end
+		def put_Encoding(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_I(newval) end
+		def get_I() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -182,12 +166,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_I(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_J(newval) end
+		def get_J() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -195,12 +177,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_J(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_K(newval) end
+		def get_K() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -208,111 +188,97 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_K(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumAttributes() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumChildren() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_SortCaseInsensitive(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_SortCaseInsensitive() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_SortCaseInsensitive(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_Standalone(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Standalone() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_Standalone(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Tag(newval) end
+		def get_Tag(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -320,10 +286,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Tag(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def tag() end
 
@@ -331,33 +295,39 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def tag(newval) end
+		def put_Tag(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_TreeId() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -372,9 +342,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  skipTags [String]
-		# @return  [String]
+		# @param tag [String]
+		# @param skipTags [String]
+		# @return [String]
 		def AccumulateTagContent(tag, skipTags)
 			# ...
 		end
@@ -389,9 +359,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def AddAttribute(name, value)
 			# ...
 		end
@@ -406,9 +376,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def AddAttributeInt(name, value)
 			# ...
 		end
@@ -422,8 +392,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tree [CkXml]
-		# @return  [TrueClass, FalseClass]
+		# @param tree [CkXml]
+		# @return [TrueClass, FalseClass]
 		def AddChildTree(tree)
 			# ...
 		end
@@ -438,9 +408,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @param name [String]
+		# @param value [String]
+		# @return [nil]
 		def AddOrUpdateAttribute(name, value)
 			# ...
 		end
@@ -455,9 +425,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [Fixnum]
-		# @return  [nil]
+		# @param name [String]
+		# @param value [Fixnum]
+		# @return [nil]
 		def AddOrUpdateAttributeI(name, value)
 			# ...
 		end
@@ -471,8 +441,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  styleSheet [String]
-		# @return  [nil]
+		# @param styleSheet [String]
+		# @return [nil]
 		def AddStyleSheet(styleSheet)
 			# ...
 		end
@@ -487,9 +457,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  amount [Fixnum]
-		# @return  [nil]
+		# @param name [String]
+		# @param amount [Fixnum]
+		# @return [nil]
 		def AddToAttribute(name, amount)
 			# ...
 		end
@@ -504,9 +474,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  amount [Fixnum]
-		# @return  [nil]
+		# @param tag [String]
+		# @param amount [Fixnum]
+		# @return [nil]
 		def AddToChildContent(tag, amount)
 			# ...
 		end
@@ -520,8 +490,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  amount [Fixnum]
-		# @return  [nil]
+		# @param amount [Fixnum]
+		# @return [nil]
 		def AddToContent(amount)
 			# ...
 		end
@@ -535,8 +505,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @return [TrueClass, FalseClass]
 		def AppendToContent(str)
 			# ...
 		end
@@ -551,9 +521,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  charset [String]
-		# @param  inData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param charset [String]
+		# @param inData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def BEncodeContent(charset, inData)
 			# ...
 		end
@@ -569,10 +539,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  pattern [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param tagPath [String]
+		# @param pattern [String]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ChildContentMatches(tagPath, pattern, caseSensitive)
 			# ...
 		end
@@ -586,8 +556,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathCmd [String]
-		# @return  [String]
+		# @param pathCmd [String]
+		# @return [String]
 		def ChilkatPath(pathCmd)
 			# ...
 		end
@@ -600,7 +570,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -615,9 +585,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pattern [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param pattern [String]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ContentMatches(pattern, caseSensitive)
 			# ...
 		end
@@ -631,8 +601,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  node [CkXml]
-		# @return  [nil]
+		# @param node [CkXml]
+		# @return [nil]
 		def Copy(node)
 			# ...
 		end
@@ -646,8 +616,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  copyFromNode [CkXml]
-		# @return  [nil]
+		# @param copyFromNode [CkXml]
+		# @return [nil]
 		def CopyRef(copyFromNode)
 			# ...
 		end
@@ -660,7 +630,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def DecodeContent()
 			# ...
 		end
@@ -674,8 +644,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def DecodeEntities(str)
 			# ...
 		end
@@ -689,8 +659,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def DecryptContent(password)
 			# ...
 		end
@@ -704,8 +674,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def EncryptContent(password)
 			# ...
 		end
@@ -719,8 +689,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkXml]
+		# @param index [Fixnum]
+		# @return [CkXml]
 		def ExtractChildByIndex(index)
 			# ...
 		end
@@ -736,10 +706,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  attrName [String]
-		# @param  attrValue [String]
-		# @return  [CkXml]
+		# @param tagPath [String]
+		# @param attrName [String]
+		# @param attrValue [String]
+		# @return [CkXml]
 		def ExtractChildByName(tagPath, attrName, attrValue)
 			# ...
 		end
@@ -753,8 +723,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [CkXml]
+		# @param tagPath [String]
+		# @return [CkXml]
 		def FindChild(tagPath)
 			# ...
 		end
@@ -768,8 +738,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tagPath [String]
+		# @return [TrueClass, FalseClass]
 		def FindChild2(tagPath)
 			# ...
 		end
@@ -784,9 +754,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  contentPattern [String]
-		# @return  [CkXml]
+		# @param tagPath [String]
+		# @param contentPattern [String]
+		# @return [CkXml]
 		def FindNextRecord(tagPath, contentPattern)
 			# ...
 		end
@@ -800,8 +770,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [CkXml]
+		# @param tagPath [String]
+		# @return [CkXml]
 		def FindOrAddNewChild(tagPath)
 			# ...
 		end
@@ -814,7 +784,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkXml]
+		# @return [CkXml]
 		def FirstChild()
 			# ...
 		end
@@ -827,7 +797,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def FirstChild2()
 			# ...
 		end
@@ -841,8 +811,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetAttributeName(index)
 			# ...
 		end
@@ -856,8 +826,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetAttributeValue(index)
 			# ...
 		end
@@ -871,8 +841,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [Fixnum]
+		# @param index [Fixnum]
+		# @return [Fixnum]
 		def GetAttributeValueInt(index)
 			# ...
 		end
@@ -886,8 +856,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [String]
+		# @param name [String]
+		# @return [String]
 		def GetAttrValue(name)
 			# ...
 		end
@@ -901,8 +871,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [Fixnum]
+		# @param name [String]
+		# @return [Fixnum]
 		def GetAttrValueInt(name)
 			# ...
 		end
@@ -918,10 +888,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unzipFlag [TrueClass, FalseClass]
-		# @param  decryptFlag [TrueClass, FalseClass]
-		# @param  password [String]
-		# @return  [CkByteData]
+		# @param unzipFlag [TrueClass, FalseClass]
+		# @param decryptFlag [TrueClass, FalseClass]
+		# @param password [String]
+		# @return [CkByteData]
 		def GetBinaryContent(unzipFlag, decryptFlag, password)
 			# ...
 		end
@@ -935,8 +905,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkXml]
+		# @param index [Fixnum]
+		# @return [CkXml]
 		def GetChild(index)
 			# ...
 		end
@@ -950,8 +920,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def GetChild2(index)
 			# ...
 		end
@@ -965,8 +935,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tagPath [String]
+		# @return [TrueClass, FalseClass]
 		def GetChildBoolValue(tagPath)
 			# ...
 		end
@@ -980,8 +950,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [String]
+		# @param tagPath [String]
+		# @return [String]
 		def GetChildContent(tagPath)
 			# ...
 		end
@@ -995,8 +965,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetChildContentByIndex(index)
 			# ...
 		end
@@ -1011,9 +981,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  content [String]
-		# @return  [CkXml]
+		# @param tag [String]
+		# @param content [String]
+		# @return [CkXml]
 		def GetChildExact(tag, content)
 			# ...
 		end
@@ -1027,8 +997,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [Fixnum]
+		# @param tagPath [String]
+		# @return [Fixnum]
 		def GetChildIntValue(tagPath)
 			# ...
 		end
@@ -1042,8 +1012,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetChildTag(index)
 			# ...
 		end
@@ -1057,8 +1027,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetChildTagByIndex(index)
 			# ...
 		end
@@ -1074,10 +1044,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  attrName [String]
-		# @param  attrValue [String]
-		# @return  [CkXml]
+		# @param tagPath [String]
+		# @param attrName [String]
+		# @param attrValue [String]
+		# @return [CkXml]
 		def GetChildWithAttr(tagPath, attrName, attrValue)
 			# ...
 		end
@@ -1091,8 +1061,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  content [String]
-		# @return  [CkXml]
+		# @param content [String]
+		# @return [CkXml]
 		def GetChildWithContent(content)
 			# ...
 		end
@@ -1106,8 +1076,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [CkXml]
+		# @param tagPath [String]
+		# @return [CkXml]
 		def GetChildWithTag(tagPath)
 			# ...
 		end
@@ -1122,9 +1092,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  n [Fixnum]
-		# @return  [CkXml]
+		# @param tag [String]
+		# @param n [Fixnum]
+		# @return [CkXml]
 		def GetNthChildWithTag(tag, n)
 			# ...
 		end
@@ -1139,9 +1109,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  n [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param tag [String]
+		# @param n [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def GetNthChildWithTag2(tag, n)
 			# ...
 		end
@@ -1154,7 +1124,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkXml]
+		# @return [CkXml]
 		def GetParent()
 			# ...
 		end
@@ -1167,7 +1137,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetParent2()
 			# ...
 		end
@@ -1180,7 +1150,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkXml]
+		# @return [CkXml]
 		def GetRoot()
 			# ...
 		end
@@ -1193,7 +1163,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def GetRoot2()
 			# ...
 		end
@@ -1206,7 +1176,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkXml]
+		# @return [CkXml]
 		def GetSelf()
 			# ...
 		end
@@ -1219,7 +1189,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetXml()
 			# ...
 		end
@@ -1233,8 +1203,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def GetXmlSb(sb)
 			# ...
 		end
@@ -1248,8 +1218,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @return [TrueClass, FalseClass]
 		def HasAttribute(name)
 			# ...
 		end
@@ -1264,9 +1234,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def HasAttrWithValue(name, value)
 			# ...
 		end
@@ -1280,8 +1250,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  content [String]
-		# @return  [TrueClass, FalseClass]
+		# @param content [String]
+		# @return [TrueClass, FalseClass]
 		def HasChildWithContent(content)
 			# ...
 		end
@@ -1295,8 +1265,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tagPath [String]
+		# @return [TrueClass, FalseClass]
 		def HasChildWithTag(tagPath)
 			# ...
 		end
@@ -1311,9 +1281,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  content [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tagPath [String]
+		# @param content [String]
+		# @return [TrueClass, FalseClass]
 		def HasChildWithTagAndContent(tagPath, content)
 			# ...
 		end
@@ -1328,9 +1298,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  tree [CkXml]
-		# @return  [nil]
+		# @param index [Fixnum]
+		# @param tree [CkXml]
+		# @return [nil]
 		def InsertChildTreeAfter(index, tree)
 			# ...
 		end
@@ -1345,9 +1315,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  tree [CkXml]
-		# @return  [nil]
+		# @param index [Fixnum]
+		# @param tree [CkXml]
+		# @return [nil]
 		def InsertChildTreeBefore(index, tree)
 			# ...
 		end
@@ -1360,7 +1330,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkXml]
+		# @return [CkXml]
 		def LastChild()
 			# ...
 		end
@@ -1373,7 +1343,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LastChild2()
 			# ...
 		end
@@ -1388,9 +1358,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @param  autoTrim [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @param autoTrim [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadSb(sb, autoTrim)
 			# ...
 		end
@@ -1404,8 +1374,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xmlData [String]
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xmlData)
 			# ...
 		end
@@ -1420,9 +1390,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlData [String]
-		# @param  autoTrim [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param xmlData [String]
+		# @param autoTrim [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadXml2(xmlData, autoTrim)
 			# ...
 		end
@@ -1436,8 +1406,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fileName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fileName [String]
+		# @return [TrueClass, FalseClass]
 		def LoadXmlFile(fileName)
 			# ...
 		end
@@ -1452,9 +1422,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fileName [String]
-		# @param  autoTrim [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param fileName [String]
+		# @param autoTrim [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadXmlFile2(fileName, autoTrim)
 			# ...
 		end
@@ -1469,9 +1439,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  content [String]
-		# @return  [CkXml]
+		# @param tagPath [String]
+		# @param content [String]
+		# @return [CkXml]
 		def NewChild(tagPath, content)
 			# ...
 		end
@@ -1486,9 +1456,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  content [String]
-		# @return  [nil]
+		# @param tagPath [String]
+		# @param content [String]
+		# @return [nil]
 		def NewChild2(tagPath, content)
 			# ...
 		end
@@ -1504,10 +1474,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  tag [String]
-		# @param  content [String]
-		# @return  [CkXml]
+		# @param index [Fixnum]
+		# @param tag [String]
+		# @param content [String]
+		# @return [CkXml]
 		def NewChildAfter(index, tag, content)
 			# ...
 		end
@@ -1523,10 +1493,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  tag [String]
-		# @param  content [String]
-		# @return  [CkXml]
+		# @param index [Fixnum]
+		# @param tag [String]
+		# @param content [String]
+		# @return [CkXml]
 		def NewChildBefore(index, tag, content)
 			# ...
 		end
@@ -1541,9 +1511,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  value [Fixnum]
-		# @return  [nil]
+		# @param tagPath [String]
+		# @param value [Fixnum]
+		# @return [nil]
 		def NewChildInt2(tagPath, value)
 			# ...
 		end
@@ -1556,7 +1526,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkXml]
+		# @return [CkXml]
 		def NextSibling()
 			# ...
 		end
@@ -1569,7 +1539,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def NextSibling2()
 			# ...
 		end
@@ -1583,8 +1553,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [Fixnum]
+		# @param tagPath [String]
+		# @return [Fixnum]
 		def NumChildrenAt(tagPath)
 			# ...
 		end
@@ -1598,8 +1568,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @return [Fixnum]
 		def NumChildrenHavingTag(tag)
 			# ...
 		end
@@ -1612,7 +1582,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkXml]
+		# @return [CkXml]
 		def PreviousSibling()
 			# ...
 		end
@@ -1625,7 +1595,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def PreviousSibling2()
 			# ...
 		end
@@ -1640,9 +1610,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  charset [String]
-		# @param  inData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param charset [String]
+		# @param inData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def QEncodeContent(charset, inData)
 			# ...
 		end
@@ -1655,7 +1625,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RemoveAllAttributes()
 			# ...
 		end
@@ -1668,7 +1638,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def RemoveAllChildren()
 			# ...
 		end
@@ -1682,8 +1652,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveAttribute(name)
 			# ...
 		end
@@ -1697,8 +1667,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @return  [nil]
+		# @param tagPath [String]
+		# @return [nil]
 		def RemoveChild(tagPath)
 			# ...
 		end
@@ -1712,8 +1682,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [nil]
+		# @param index [Fixnum]
+		# @return [nil]
 		def RemoveChildByIndex(index)
 			# ...
 		end
@@ -1727,8 +1697,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  content [String]
-		# @return  [nil]
+		# @param content [String]
+		# @return [nil]
 		def RemoveChildWithContent(content)
 			# ...
 		end
@@ -1741,7 +1711,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def RemoveFromTree()
 			# ...
 		end
@@ -1758,12 +1728,27 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @param  unzipFlag [TrueClass, FalseClass]
-		# @param  decryptFlag [TrueClass, FalseClass]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @param unzipFlag [TrueClass, FalseClass]
+		# @param decryptFlag [TrueClass, FalseClass]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def SaveBinaryContent(filename, unzipFlag, decryptFlag, password)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -1776,8 +1761,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fileName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fileName [String]
+		# @return [TrueClass, FalseClass]
 		def SaveXml(fileName)
 			# ...
 		end
@@ -1792,9 +1777,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  afterPtr [CkXml]
-		# @param  contentPattern [String]
-		# @return  [CkXml]
+		# @param afterPtr [CkXml]
+		# @param contentPattern [String]
+		# @return [CkXml]
 		def SearchAllForContent(afterPtr, contentPattern)
 			# ...
 		end
@@ -1809,9 +1794,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  afterPtr [CkXml]
-		# @param  contentPattern [String]
-		# @return  [TrueClass, FalseClass]
+		# @param afterPtr [CkXml]
+		# @param contentPattern [String]
+		# @return [TrueClass, FalseClass]
 		def SearchAllForContent2(afterPtr, contentPattern)
 			# ...
 		end
@@ -1828,11 +1813,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  afterPtr [CkXml]
-		# @param  tag [String]
-		# @param  attr [String]
-		# @param  valuePattern [String]
-		# @return  [CkXml]
+		# @param afterPtr [CkXml]
+		# @param tag [String]
+		# @param attr [String]
+		# @param valuePattern [String]
+		# @return [CkXml]
 		def SearchForAttribute(afterPtr, tag, attr, valuePattern)
 			# ...
 		end
@@ -1849,11 +1834,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  afterPtr [CkXml]
-		# @param  tag [String]
-		# @param  attr [String]
-		# @param  valuePattern [String]
-		# @return  [TrueClass, FalseClass]
+		# @param afterPtr [CkXml]
+		# @param tag [String]
+		# @param attr [String]
+		# @param valuePattern [String]
+		# @return [TrueClass, FalseClass]
 		def SearchForAttribute2(afterPtr, tag, attr, valuePattern)
 			# ...
 		end
@@ -1869,10 +1854,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  afterPtr [CkXml]
-		# @param  tag [String]
-		# @param  contentPattern [String]
-		# @return  [CkXml]
+		# @param afterPtr [CkXml]
+		# @param tag [String]
+		# @param contentPattern [String]
+		# @return [CkXml]
 		def SearchForContent(afterPtr, tag, contentPattern)
 			# ...
 		end
@@ -1888,10 +1873,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  afterPtr [CkXml]
-		# @param  tag [String]
-		# @param  contentPattern [String]
-		# @return  [TrueClass, FalseClass]
+		# @param afterPtr [CkXml]
+		# @param tag [String]
+		# @param contentPattern [String]
+		# @return [TrueClass, FalseClass]
 		def SearchForContent2(afterPtr, tag, contentPattern)
 			# ...
 		end
@@ -1906,9 +1891,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  afterPtr [CkXml]
-		# @param  tag [String]
-		# @return  [CkXml]
+		# @param afterPtr [CkXml]
+		# @param tag [String]
+		# @return [CkXml]
 		def SearchForTag(afterPtr, tag)
 			# ...
 		end
@@ -1923,9 +1908,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  afterPtr [CkXml]
-		# @param  tag [String]
-		# @return  [TrueClass, FalseClass]
+		# @param afterPtr [CkXml]
+		# @param tag [String]
+		# @return [TrueClass, FalseClass]
 		def SearchForTag2(afterPtr, tag)
 			# ...
 		end
@@ -1942,12 +1927,35 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inData [CkByteData]
-		# @param  zipFlag [TrueClass, FalseClass]
-		# @param  encryptFlag [TrueClass, FalseClass]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param inData [CkByteData]
+		# @param zipFlag [TrueClass, FalseClass]
+		# @param encryptFlag [TrueClass, FalseClass]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def SetBinaryContent(inData, zipFlag, encryptFlag, password)
+			# ...
+		end
+
+		# Method: SetBinaryContent2
+		#
+		# ==== Attributes
+		#
+		# +pByteData+ - Object
+		# +szByteData+ - Fixnum
+		# +zipFlag+ - TrueClass, FalseClass
+		# +encryptFlag+ - TrueClass, FalseClass
+		# +password+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param pByteData [Object]
+		# @param szByteData [Fixnum]
+		# @param zipFlag [TrueClass, FalseClass]
+		# @param encryptFlag [TrueClass, FalseClass]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
+		def SetBinaryContent2(pByteData, szByteData, zipFlag, encryptFlag, password)
 			# ...
 		end
 
@@ -1963,11 +1971,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @param  zipFlag [TrueClass, FalseClass]
-		# @param  encryptFlag [TrueClass, FalseClass]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @param zipFlag [TrueClass, FalseClass]
+		# @param encryptFlag [TrueClass, FalseClass]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def SetBinaryContentFromFile(filename, zipFlag, encryptFlag, password)
 			# ...
 		end
@@ -1982,9 +1990,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  attrName [String]
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @param attrName [String]
+		# @param ascending [TrueClass, FalseClass]
+		# @return [nil]
 		def SortByAttribute(attrName, ascending)
 			# ...
 		end
@@ -1999,9 +2007,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  attrName [String]
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @param attrName [String]
+		# @param ascending [TrueClass, FalseClass]
+		# @return [nil]
 		def SortByAttributeInt(attrName, ascending)
 			# ...
 		end
@@ -2015,8 +2023,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @param ascending [TrueClass, FalseClass]
+		# @return [nil]
 		def SortByContent(ascending)
 			# ...
 		end
@@ -2030,8 +2038,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @param ascending [TrueClass, FalseClass]
+		# @return [nil]
 		def SortByTag(ascending)
 			# ...
 		end
@@ -2047,10 +2055,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sortTag [String]
-		# @param  attrName [String]
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @param sortTag [String]
+		# @param attrName [String]
+		# @param ascending [TrueClass, FalseClass]
+		# @return [nil]
 		def SortRecordsByAttribute(sortTag, attrName, ascending)
 			# ...
 		end
@@ -2065,9 +2073,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sortTag [String]
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @param sortTag [String]
+		# @param ascending [TrueClass, FalseClass]
+		# @return [nil]
 		def SortRecordsByContent(sortTag, ascending)
 			# ...
 		end
@@ -2082,9 +2090,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sortTag [String]
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @param sortTag [String]
+		# @param ascending [TrueClass, FalseClass]
+		# @return [nil]
 		def SortRecordsByContentInt(sortTag, ascending)
 			# ...
 		end
@@ -2098,8 +2106,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  node [CkXml]
-		# @return  [TrueClass, FalseClass]
+		# @param node [CkXml]
+		# @return [TrueClass, FalseClass]
 		def SwapNode(node)
 			# ...
 		end
@@ -2113,8 +2121,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tree [CkXml]
-		# @return  [TrueClass, FalseClass]
+		# @param tree [CkXml]
+		# @return [TrueClass, FalseClass]
 		def SwapTree(tree)
 			# ...
 		end
@@ -2128,8 +2136,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagName [String]
-		# @return  [String]
+		# @param tagName [String]
+		# @return [String]
 		def TagContent(tagName)
 			# ...
 		end
@@ -2143,8 +2151,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tag [String]
+		# @return [TrueClass, FalseClass]
 		def TagEquals(tag)
 			# ...
 		end
@@ -2157,7 +2165,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnzipContent()
 			# ...
 		end
@@ -2170,7 +2178,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnzipTree()
 			# ...
 		end
@@ -2186,10 +2194,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  autoCreate [TrueClass, FalseClass]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tagPath [String]
+		# @param autoCreate [TrueClass, FalseClass]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def UpdateAt(tagPath, autoCreate, value)
 			# ...
 		end
@@ -2206,11 +2214,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  autoCreate [TrueClass, FalseClass]
-		# @param  attrName [String]
-		# @param  attrValue [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tagPath [String]
+		# @param autoCreate [TrueClass, FalseClass]
+		# @param attrName [String]
+		# @param attrValue [String]
+		# @return [TrueClass, FalseClass]
 		def UpdateAttrAt(tagPath, autoCreate, attrName, attrValue)
 			# ...
 		end
@@ -2225,9 +2233,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  attrName [String]
-		# @param  attrValue [String]
-		# @return  [TrueClass, FalseClass]
+		# @param attrName [String]
+		# @param attrValue [String]
+		# @return [TrueClass, FalseClass]
 		def UpdateAttribute(attrName, attrValue)
 			# ...
 		end
@@ -2242,9 +2250,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  attrName [String]
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param attrName [String]
+		# @param value [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def UpdateAttributeInt(attrName, value)
 			# ...
 		end
@@ -2259,9 +2267,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @param tagPath [String]
+		# @param value [String]
+		# @return [nil]
 		def UpdateChildContent(tagPath, value)
 			# ...
 		end
@@ -2276,9 +2284,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tagPath [String]
-		# @param  value [Fixnum]
-		# @return  [nil]
+		# @param tagPath [String]
+		# @param value [Fixnum]
+		# @return [nil]
 		def UpdateChildContentInt(tagPath, value)
 			# ...
 		end
@@ -2291,7 +2299,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ZipContent()
 			# ...
 		end
@@ -2304,7 +2312,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ZipTree()
 			# ...
 		end

@@ -1,31 +1,24 @@
 module Chilkat
 	class CkOAuth1 
-		# returns String
-		#
 		# @return [String]
 		def get_AuthorizationHeader() end
 
-		# returns String
-		#
 		# @return [String]
 		def authorizationHeader() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_BaseString() end
 
-		# returns String
-		#
 		# @return [String]
 		def baseString() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ConsumerKey(newval) end
+		def get_ConsumerKey(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -33,10 +26,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ConsumerKey(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def consumerKey() end
 
@@ -44,14 +35,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def consumerKey(newval) end
+		def put_ConsumerKey(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ConsumerSecret(newval) end
+		def get_ConsumerSecret(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -59,10 +51,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ConsumerSecret(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def consumerSecret() end
 
@@ -70,14 +60,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def consumerSecret(newval) end
+		def put_ConsumerSecret(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -85,10 +76,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -96,107 +85,89 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_EncodedSignature() end
 
-		# returns String
-		#
 		# @return [String]
 		def encodedSignature() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_GeneratedUrl() end
 
-		# returns String
-		#
 		# @return [String]
 		def generatedUrl() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_HmacKey() end
 
-		# returns String
-		#
 		# @return [String]
 		def hmacKey() end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Nonce(newval) end
+		def get_Nonce(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -204,10 +175,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Nonce(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def nonce() end
 
@@ -215,14 +184,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def nonce(newval) end
+		def put_Nonce(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_OauthMethod(newval) end
+		def get_OauthMethod(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -230,10 +200,8 @@ module Chilkat
 		# @param newval [String]
 		def put_OauthMethod(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def oauthMethod() end
 
@@ -241,14 +209,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def oauthMethod(newval) end
+		def put_OauthMethod(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_OauthUrl(newval) end
+		def get_OauthUrl(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -256,10 +225,8 @@ module Chilkat
 		# @param newval [String]
 		def put_OauthUrl(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def oauthUrl() end
 
@@ -267,14 +234,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def oauthUrl(newval) end
+		def put_OauthUrl(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_OauthVersion(newval) end
+		def get_OauthVersion(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -282,10 +250,8 @@ module Chilkat
 		# @param newval [String]
 		def put_OauthVersion(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def oauthVersion() end
 
@@ -293,34 +259,27 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def oauthVersion(newval) end
+		def put_OauthVersion(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_QueryString() end
 
-		# returns String
-		#
 		# @return [String]
 		def queryString() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_Signature() end
 
-		# returns String
-		#
 		# @return [String]
 		def signature() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SignatureMethod(newval) end
+		def get_SignatureMethod(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -328,10 +287,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SignatureMethod(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def signatureMethod() end
 
@@ -339,14 +296,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def signatureMethod(newval) end
+		def put_SignatureMethod(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Timestamp(newval) end
+		def get_Timestamp(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -354,10 +312,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Timestamp(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def timestamp() end
 
@@ -365,14 +321,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def timestamp(newval) end
+		def put_Timestamp(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Token(newval) end
+		def get_Token(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -380,10 +337,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Token(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def token() end
 
@@ -391,14 +346,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def token(newval) end
+		def put_Token(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_TokenSecret(newval) end
+		def get_TokenSecret(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -406,10 +362,8 @@ module Chilkat
 		# @param newval [String]
 		def put_TokenSecret(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def tokenSecret() end
 
@@ -417,28 +371,36 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def tokenSecret(newval) end
+		def put_TokenSecret(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -453,9 +415,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def AddParam(name, value)
 			# ...
 		end
@@ -468,7 +430,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Generate()
 			# ...
 		end
@@ -482,8 +444,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBytes [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param numBytes [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def GenNonce(numBytes)
 			# ...
 		end
@@ -496,7 +458,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GenTimestamp()
 			# ...
 		end
@@ -510,9 +472,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveParam(name)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -525,8 +502,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  privKey [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @param privKey [CkPrivateKey]
+		# @return [TrueClass, FalseClass]
 		def SetRsaKey(privKey)
 			# ...
 		end

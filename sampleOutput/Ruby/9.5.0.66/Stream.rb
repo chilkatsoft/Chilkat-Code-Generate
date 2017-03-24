@@ -1,39 +1,32 @@
 module Chilkat
 	class CkStream 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AbortCurrent(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AbortCurrent() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AbortCurrent(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_CanRead() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_CanWrite() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_DataAvailable() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -41,10 +34,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -52,14 +43,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_DefaultChunkSize(newval) end
+		def get_DefaultChunkSize() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -67,85 +56,72 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_DefaultChunkSize(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_EndOfStream() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsWriteClosed() end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [Bignum]
 		# returns Bignum
 		#
-		# @param newval [Bignum]
 		# @return [Bignum]
-		def get_Length(newval) end
+		def get_Length() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -153,12 +129,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_Length(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_Length32(newval) end
+		def get_Length32() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -166,27 +140,19 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_Length32(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumReceived() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumSent() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ReadFailReason() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ReadTimeoutMs(newval) end
+		def get_ReadTimeoutMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -194,12 +160,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_ReadTimeoutMs(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SinkFile(newval) end
+		def get_SinkFile(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -207,10 +174,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SinkFile(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def sinkFile() end
 
@@ -218,14 +183,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def sinkFile(newval) end
+		def put_SinkFile(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SourceFile(newval) end
+		def get_SourceFile(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -233,10 +199,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SourceFile(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def sourceFile() end
 
@@ -244,14 +208,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def sourceFile(newval) end
+		def put_SourceFile(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SourceFilePart(newval) end
+		def get_SourceFilePart() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -259,12 +221,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SourceFilePart(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SourceFilePartSize(newval) end
+		def get_SourceFilePartSize() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -272,25 +232,24 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SourceFilePartSize(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_StringBom(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_StringBom() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_StringBom(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_StringCharset(newval) end
+		def get_StringCharset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -298,10 +257,8 @@ module Chilkat
 		# @param newval [String]
 		def put_StringCharset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def stringCharset() end
 
@@ -309,42 +266,46 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def stringCharset(newval) end
+		def put_StringCharset(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_WriteFailReason() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_WriteTimeoutMs(newval) end
+		def get_WriteTimeoutMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -361,7 +322,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def ReadBytes()
 			# ...
 		end
@@ -375,8 +336,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @return  [String]
+		# @param encoding [String]
+		# @return [String]
 		def ReadBytesENC(encoding)
 			# ...
 		end
@@ -390,8 +351,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
+		# @param numBytes [Fixnum]
+		# @return [CkByteData]
 		def ReadNBytes(numBytes)
 			# ...
 		end
@@ -406,9 +367,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBytes [Fixnum]
-		# @param  encoding [String]
-		# @return  [String]
+		# @param numBytes [Fixnum]
+		# @param encoding [String]
+		# @return [String]
 		def ReadNBytesENC(numBytes, encoding)
 			# ...
 		end
@@ -421,7 +382,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ReadString()
 			# ...
 		end
@@ -434,7 +395,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ReadToCRLF()
 			# ...
 		end
@@ -448,8 +409,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  matchStr [String]
-		# @return  [String]
+		# @param matchStr [String]
+		# @return [String]
 		def ReadUntilMatch(matchStr)
 			# ...
 		end
@@ -462,7 +423,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def Reset()
 			# ...
 		end
@@ -475,8 +436,23 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RunStream()
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -489,8 +465,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strm [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @param strm [CkStream]
+		# @return [TrueClass, FalseClass]
 		def SetSinkStream(strm)
 			# ...
 		end
@@ -504,8 +480,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sourceData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param sourceData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def SetSourceBytes(sourceData)
 			# ...
 		end
@@ -519,8 +495,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strm [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @param strm [CkStream]
+		# @return [TrueClass, FalseClass]
 		def SetSourceStream(strm)
 			# ...
 		end
@@ -535,9 +511,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  srcStr [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param srcStr [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def SetSourceString(srcStr, charset)
 			# ...
 		end
@@ -551,8 +527,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  propertyName [String]
-		# @return  [String]
+		# @param propertyName [String]
+		# @return [String]
 		def ToDecimalStr(propertyName)
 			# ...
 		end
@@ -566,8 +542,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  byteVal [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param byteVal [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def WriteByte(byteVal)
 			# ...
 		end
@@ -581,8 +557,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  byteData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param byteData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def WriteBytes(byteData)
 			# ...
 		end
@@ -597,9 +573,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  byteData [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param byteData [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def WriteBytesENC(byteData, encoding)
 			# ...
 		end
@@ -612,7 +588,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def WriteClose()
 			# ...
 		end
@@ -626,8 +602,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @return [TrueClass, FalseClass]
 		def WriteString(str)
 			# ...
 		end

@@ -1,11 +1,12 @@
 module Chilkat
 	class CkCompression 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Algorithm(newval) end
+		def get_Algorithm(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Algorithm(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def algorithm() end
 
@@ -24,14 +23,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def algorithm(newval) end
+		def put_Algorithm(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Charset(newval) end
+		def get_Charset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -39,10 +39,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def charset() end
 
@@ -50,14 +48,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def charset(newval) end
+		def put_Charset(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -65,10 +64,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -76,14 +73,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_EncodingMode(newval) end
+		def get_EncodingMode(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -91,10 +89,8 @@ module Chilkat
 		# @param newval [String]
 		def put_EncodingMode(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def encodingMode() end
 
@@ -102,16 +98,14 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def encodingMode(newval) end
+		def put_EncodingMode(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs(newval) end
+		def get_HeartbeatMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -121,89 +115,90 @@ module Chilkat
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -217,8 +212,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
+		# @param data [CkByteData]
+		# @return [CkByteData]
 		def BeginCompressBytes(data)
 			# ...
 		end
@@ -232,8 +227,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @return [String]
 		def BeginCompressBytesENC(data)
 			# ...
 		end
@@ -247,8 +242,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkByteData]
+		# @param str [String]
+		# @return [CkByteData]
 		def BeginCompressString(str)
 			# ...
 		end
@@ -262,8 +257,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def BeginCompressStringENC(str)
 			# ...
 		end
@@ -277,8 +272,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
+		# @param data [CkByteData]
+		# @return [CkByteData]
 		def BeginDecompressBytes(data)
 			# ...
 		end
@@ -292,8 +287,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkByteData]
+		# @param str [String]
+		# @return [CkByteData]
 		def BeginDecompressBytesENC(str)
 			# ...
 		end
@@ -307,8 +302,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @return [String]
 		def BeginDecompressString(data)
 			# ...
 		end
@@ -322,8 +317,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def BeginDecompressStringENC(str)
 			# ...
 		end
@@ -337,8 +332,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param binData [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def CompressBd(binData)
 			# ...
 		end
@@ -352,8 +347,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
+		# @param data [CkByteData]
+		# @return [CkByteData]
 		def CompressBytes(data)
 			# ...
 		end
@@ -367,8 +362,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @return [String]
 		def CompressBytesENC(data)
 			# ...
 		end
@@ -383,9 +378,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  srcPath [String]
-		# @param  destPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param srcPath [String]
+		# @param destPath [String]
+		# @return [TrueClass, FalseClass]
 		def CompressFile(srcPath, destPath)
 			# ...
 		end
@@ -399,8 +394,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strm [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @param strm [CkStream]
+		# @return [TrueClass, FalseClass]
 		def CompressStream(strm)
 			# ...
 		end
@@ -414,8 +409,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkByteData]
+		# @param str [String]
+		# @return [CkByteData]
 		def CompressString(str)
 			# ...
 		end
@@ -429,8 +424,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def CompressStringENC(str)
 			# ...
 		end
@@ -444,8 +439,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param binData [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def DecompressBd(binData)
 			# ...
 		end
@@ -459,8 +454,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
+		# @param data [CkByteData]
+		# @return [CkByteData]
 		def DecompressBytes(data)
 			# ...
 		end
@@ -474,8 +469,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedCompressedData [String]
-		# @return  [CkByteData]
+		# @param encodedCompressedData [String]
+		# @return [CkByteData]
 		def DecompressBytesENC(encodedCompressedData)
 			# ...
 		end
@@ -490,9 +485,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  srcPath [String]
-		# @param  destPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param srcPath [String]
+		# @param destPath [String]
+		# @return [TrueClass, FalseClass]
 		def DecompressFile(srcPath, destPath)
 			# ...
 		end
@@ -506,8 +501,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strm [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @param strm [CkStream]
+		# @return [TrueClass, FalseClass]
 		def DecompressStream(strm)
 			# ...
 		end
@@ -521,8 +516,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @return [String]
 		def DecompressString(data)
 			# ...
 		end
@@ -536,8 +531,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedCompressedData [String]
-		# @return  [String]
+		# @param encodedCompressedData [String]
+		# @return [String]
 		def DecompressStringENC(encodedCompressedData)
 			# ...
 		end
@@ -550,7 +545,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def EndCompressBytes()
 			# ...
 		end
@@ -563,7 +558,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def EndCompressBytesENC()
 			# ...
 		end
@@ -576,7 +571,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def EndCompressString()
 			# ...
 		end
@@ -589,7 +584,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def EndCompressStringENC()
 			# ...
 		end
@@ -602,7 +597,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def EndDecompressBytes()
 			# ...
 		end
@@ -615,7 +610,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def EndDecompressBytesENC()
 			# ...
 		end
@@ -628,7 +623,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def EndDecompressString()
 			# ...
 		end
@@ -641,7 +636,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def EndDecompressStringENC()
 			# ...
 		end
@@ -655,8 +650,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
+		# @param data [CkByteData]
+		# @return [CkByteData]
 		def MoreCompressBytes(data)
 			# ...
 		end
@@ -670,8 +665,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @return [String]
 		def MoreCompressBytesENC(data)
 			# ...
 		end
@@ -685,8 +680,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkByteData]
+		# @param str [String]
+		# @return [CkByteData]
 		def MoreCompressString(str)
 			# ...
 		end
@@ -700,8 +695,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def MoreCompressStringENC(str)
 			# ...
 		end
@@ -715,8 +710,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
+		# @param data [CkByteData]
+		# @return [CkByteData]
 		def MoreDecompressBytes(data)
 			# ...
 		end
@@ -730,8 +725,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkByteData]
+		# @param str [String]
+		# @return [CkByteData]
 		def MoreDecompressBytesENC(str)
 			# ...
 		end
@@ -745,8 +740,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @return [String]
 		def MoreDecompressString(data)
 			# ...
 		end
@@ -760,9 +755,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def MoreDecompressStringENC(str)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -775,8 +785,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

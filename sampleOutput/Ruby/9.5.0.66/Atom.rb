@@ -1,16 +1,15 @@
 module Chilkat
 	class CkAtom 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -18,10 +17,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -29,96 +26,95 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumEntries() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -133,9 +129,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  value [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @param value [String]
+		# @return [Fixnum]
 		def AddElement(tag, value)
 			# ...
 		end
@@ -151,9 +147,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  dateTime [Object]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @param dateTime [Object]
+		# @return [Fixnum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AddElementDate(tag, dateTime)
 			# ...
@@ -169,9 +165,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  dateTimeStr [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @param dateTimeStr [String]
+		# @return [Fixnum]
 		def AddElementDateStr(tag, dateTimeStr)
 			# ...
 		end
@@ -186,9 +182,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  dateTime [CkDateTime]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @param dateTime [CkDateTime]
+		# @return [Fixnum]
 		def AddElementDt(tag, dateTime)
 			# ...
 		end
@@ -203,9 +199,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  htmlStr [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @param htmlStr [String]
+		# @return [Fixnum]
 		def AddElementHtml(tag, htmlStr)
 			# ...
 		end
@@ -220,9 +216,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  xmlStr [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @param xmlStr [String]
+		# @return [Fixnum]
 		def AddElementXHtml(tag, xmlStr)
 			# ...
 		end
@@ -237,9 +233,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  xmlStr [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @param xmlStr [String]
+		# @return [Fixnum]
 		def AddElementXml(tag, xmlStr)
 			# ...
 		end
@@ -253,8 +249,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlStr [String]
-		# @return  [nil]
+		# @param xmlStr [String]
+		# @return [nil]
 		def AddEntry(xmlStr)
 			# ...
 		end
@@ -271,11 +267,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  rel [String]
-		# @param  href [String]
-		# @param  title [String]
-		# @param  typ [String]
-		# @return  [nil]
+		# @param rel [String]
+		# @param href [String]
+		# @param title [String]
+		# @param typ [String]
+		# @return [nil]
 		def AddLink(rel, href, title, typ)
 			# ...
 		end
@@ -292,11 +288,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  name [String]
-		# @param  uri [String]
-		# @param  email [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param name [String]
+		# @param uri [String]
+		# @param email [String]
+		# @return [nil]
 		def AddPerson(tag, name, uri, email)
 			# ...
 		end
@@ -311,9 +307,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @return [nil]
 		def DeleteElement(tag, index)
 			# ...
 		end
@@ -329,10 +325,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  attrName [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param attrName [String]
+		# @return [nil]
 		def DeleteElementAttr(tag, index, attrName)
 			# ...
 		end
@@ -347,9 +343,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @return [nil]
 		def DeletePerson(tag, index)
 			# ...
 		end
@@ -363,8 +359,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  url [String]
-		# @return  [TrueClass, FalseClass]
+		# @param url [String]
+		# @return [TrueClass, FalseClass]
 		def DownloadAtom(url)
 			# ...
 		end
@@ -379,9 +375,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetElement(tag, index)
 			# ...
 		end
@@ -397,10 +393,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  attrName [String]
-		# @return  [String]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param attrName [String]
+		# @return [String]
 		def GetElementAttr(tag, index, attrName)
 			# ...
 		end
@@ -414,8 +410,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @return [Fixnum]
 		def GetElementCount(tag)
 			# ...
 		end
@@ -431,9 +427,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [Object]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetElementDate(tag, index)
 			# ...
@@ -449,9 +445,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetElementDateStr(tag, index)
 			# ...
 		end
@@ -466,9 +462,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [CkDateTime]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @return [CkDateTime]
 		def GetElementDt(tag, index)
 			# ...
 		end
@@ -482,8 +478,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkAtom]
+		# @param index [Fixnum]
+		# @return [CkAtom]
 		def GetEntry(index)
 			# ...
 		end
@@ -497,8 +493,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  relName [String]
-		# @return  [String]
+		# @param relName [String]
+		# @return [String]
 		def GetLinkHref(relName)
 			# ...
 		end
@@ -514,10 +510,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  tag2 [String]
-		# @return  [String]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param tag2 [String]
+		# @return [String]
 		def GetPersonInfo(tag, index, tag2)
 			# ...
 		end
@@ -531,8 +527,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  attrName [String]
-		# @return  [String]
+		# @param attrName [String]
+		# @return [String]
 		def GetTopAttr(attrName)
 			# ...
 		end
@@ -546,8 +542,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tag [String]
+		# @return [TrueClass, FalseClass]
 		def HasElement(tag)
 			# ...
 		end
@@ -561,8 +557,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xmlStr [String]
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xmlStr)
 			# ...
 		end
@@ -575,7 +571,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def NewEntry()
 			# ...
 		end
@@ -588,8 +584,23 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def NewFeed()
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -605,11 +616,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  attrName [String]
-		# @param  attrValue [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param attrName [String]
+		# @param attrValue [String]
+		# @return [nil]
 		def SetElementAttr(tag, index, attrName, attrValue)
 			# ...
 		end
@@ -624,9 +635,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  attrName [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @param attrName [String]
+		# @param value [String]
+		# @return [nil]
 		def SetTopAttr(attrName, value)
 			# ...
 		end
@@ -639,7 +650,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ToXmlString()
 			# ...
 		end
@@ -655,10 +666,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  value [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param value [String]
+		# @return [nil]
 		def UpdateElement(tag, index, value)
 			# ...
 		end
@@ -675,10 +686,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  dateTime [Object]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param dateTime [Object]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UpdateElementDate(tag, index, dateTime)
 			# ...
@@ -695,10 +706,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  dateTimeStr [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param dateTimeStr [String]
+		# @return [nil]
 		def UpdateElementDateStr(tag, index, dateTimeStr)
 			# ...
 		end
@@ -714,10 +725,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  dateTime [CkDateTime]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param dateTime [CkDateTime]
+		# @return [nil]
 		def UpdateElementDt(tag, index, dateTime)
 			# ...
 		end
@@ -733,10 +744,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  htmlStr [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param htmlStr [String]
+		# @return [nil]
 		def UpdateElementHtml(tag, index, htmlStr)
 			# ...
 		end
@@ -752,10 +763,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  xmlStr [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param xmlStr [String]
+		# @return [nil]
 		def UpdateElementXHtml(tag, index, xmlStr)
 			# ...
 		end
@@ -771,10 +782,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  xmlStr [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param xmlStr [String]
+		# @return [nil]
 		def UpdateElementXml(tag, index, xmlStr)
 			# ...
 		end
@@ -792,12 +803,12 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  name [String]
-		# @param  uri [String]
-		# @param  email [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param name [String]
+		# @param uri [String]
+		# @param email [String]
+		# @return [nil]
 		def UpdatePerson(tag, index, name, uri, email)
 			# ...
 		end

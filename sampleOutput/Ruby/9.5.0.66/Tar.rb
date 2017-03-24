@@ -1,24 +1,23 @@
 module Chilkat
 	class CkTar 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_CaptureXmlListing(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_CaptureXmlListing() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_CaptureXmlListing(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Charset(newval) end
+		def get_Charset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -26,10 +25,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def charset() end
 
@@ -37,14 +34,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def charset(newval) end
+		def put_Charset(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -52,10 +50,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -63,14 +59,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_DirMode(newval) end
+		def get_DirMode() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -78,12 +72,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_DirMode(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DirPrefix(newval) end
+		def get_DirPrefix(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -91,10 +86,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DirPrefix(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dirPrefix() end
 
@@ -102,14 +95,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dirPrefix(newval) end
+		def put_DirPrefix(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_FileMode(newval) end
+		def get_FileMode() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -117,12 +108,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_FileMode(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_GroupId(newval) end
+		def get_GroupId() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -130,12 +119,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_GroupId(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_GroupName(newval) end
+		def get_GroupName(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -143,10 +133,8 @@ module Chilkat
 		# @param newval [String]
 		def put_GroupName(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def groupName() end
 
@@ -154,16 +142,14 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def groupName(newval) end
+		def put_GroupName(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs(newval) end
+		def get_HeartbeatMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -173,88 +159,80 @@ module Chilkat
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_MatchCaseSensitive(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_MatchCaseSensitive() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_MatchCaseSensitive(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_MustMatch(newval) end
+		def get_MustMatch(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -262,10 +240,8 @@ module Chilkat
 		# @param newval [String]
 		def put_MustMatch(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def mustMatch() end
 
@@ -273,14 +249,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def mustMatch(newval) end
+		def put_MustMatch(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_MustNotMatch(newval) end
+		def get_MustNotMatch(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -288,10 +265,8 @@ module Chilkat
 		# @param newval [String]
 		def put_MustNotMatch(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def mustNotMatch() end
 
@@ -299,34 +274,28 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def mustNotMatch(newval) end
+		def put_MustNotMatch(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_NoAbsolutePaths(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_NoAbsolutePaths() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_NoAbsolutePaths(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumDirRoots() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_PercentDoneScale(newval) end
+		def get_PercentDoneScale() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -336,12 +305,10 @@ module Chilkat
 		# @event
 		def put_PercentDoneScale(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ScriptFileMode(newval) end
+		def get_ScriptFileMode() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -349,64 +316,57 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_ScriptFileMode(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_SuppressOutput(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_SuppressOutput() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_SuppressOutput(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_UntarCaseSensitive(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_UntarCaseSensitive() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_UntarCaseSensitive(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_UntarDebugLog(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_UntarDebugLog() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_UntarDebugLog(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_UntarDiscardPaths(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_UntarDiscardPaths() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_UntarDiscardPaths(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_UntarFromDir(newval) end
+		def get_UntarFromDir(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -414,10 +374,8 @@ module Chilkat
 		# @param newval [String]
 		def put_UntarFromDir(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def untarFromDir() end
 
@@ -425,14 +383,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def untarFromDir(newval) end
+		def put_UntarFromDir(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_UntarMatchPattern(newval) end
+		def get_UntarMatchPattern(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -440,10 +399,8 @@ module Chilkat
 		# @param newval [String]
 		def put_UntarMatchPattern(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def untarMatchPattern() end
 
@@ -451,14 +408,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def untarMatchPattern(newval) end
+		def put_UntarMatchPattern(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_UntarMaxCount(newval) end
+		def get_UntarMaxCount() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -466,12 +421,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_UntarMaxCount(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_UserId(newval) end
+		def get_UserId() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -479,12 +432,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_UserId(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_UserName(newval) end
+		def get_UserName(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -492,10 +446,8 @@ module Chilkat
 		# @param newval [String]
 		def put_UserName(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def userName() end
 
@@ -503,37 +455,46 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def userName(newval) end
+		def put_UserName(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_WriteFormat(newval) end
+		def get_WriteFormat(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -541,10 +502,8 @@ module Chilkat
 		# @param newval [String]
 		def put_WriteFormat(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def writeFormat() end
 
@@ -552,14 +511,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def writeFormat(newval) end
+		def put_WriteFormat(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_XmlListing(newval) end
+		def get_XmlListing(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -567,10 +527,8 @@ module Chilkat
 		# @param newval [String]
 		def put_XmlListing(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def xmlListing() end
 
@@ -578,7 +536,7 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def xmlListing(newval) end
+		def put_XmlListing(newval) end
 
 
 		# Method: AddDirRoot
@@ -590,8 +548,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  dirPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param dirPath [String]
+		# @return [TrueClass, FalseClass]
 		def AddDirRoot(dirPath)
 			# ...
 		end
@@ -606,9 +564,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  rootPrefix [String]
-		# @param  rootPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param rootPrefix [String]
+		# @param rootPath [String]
+		# @return [TrueClass, FalseClass]
 		def AddDirRoot2(rootPrefix, rootPath)
 			# ...
 		end
@@ -622,8 +580,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def AddFile(path)
 			# ...
 		end
@@ -639,10 +597,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  controlPath [String]
-		# @param  dataPath [String]
-		# @param  debPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param controlPath [String]
+		# @param dataPath [String]
+		# @param debPath [String]
+		# @return [TrueClass, FalseClass]
 		def CreateDeb(controlPath, dataPath, debPath)
 			# ...
 		end
@@ -656,8 +614,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetDirRoot(index)
 			# ...
 		end
@@ -671,9 +629,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarPath [String]
-		# @return  [String]
+		# @param tarPath [String]
+		# @return [String]
 		def ListXml(tarPath)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -686,8 +659,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -701,8 +674,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarPath [String]
-		# @return  [Fixnum]
+		# @param tarPath [String]
+		# @return [Fixnum]
 		def Untar(tarPath)
 			# ...
 		end
@@ -716,8 +689,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tarPath [String]
+		# @return [TrueClass, FalseClass]
 		def UntarBz2(tarPath)
 			# ...
 		end
@@ -732,9 +705,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarFileBytes [CkByteData]
-		# @param  matchPattern [String]
-		# @return  [CkByteData]
+		# @param tarFileBytes [CkByteData]
+		# @param matchPattern [String]
+		# @return [CkByteData]
 		def UntarFirstMatchingToMemory(tarFileBytes, matchPattern)
 			# ...
 		end
@@ -748,8 +721,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarFileBytes [CkByteData]
-		# @return  [Fixnum]
+		# @param tarFileBytes [CkByteData]
+		# @return [Fixnum]
 		def UntarFromMemory(tarFileBytes)
 			# ...
 		end
@@ -763,8 +736,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tarPath [String]
+		# @return [TrueClass, FalseClass]
 		def UntarGz(tarPath)
 			# ...
 		end
@@ -778,8 +751,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tarPath [String]
+		# @return [TrueClass, FalseClass]
 		def UntarZ(tarPath)
 			# ...
 		end
@@ -793,8 +766,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tarPath [String]
+		# @return [TrueClass, FalseClass]
 		def VerifyTar(tarPath)
 			# ...
 		end
@@ -808,8 +781,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tarPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tarPath [String]
+		# @return [TrueClass, FalseClass]
 		def WriteTar(tarPath)
 			# ...
 		end
@@ -823,8 +796,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bz2Path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param bz2Path [String]
+		# @return [TrueClass, FalseClass]
 		def WriteTarBz2(bz2Path)
 			# ...
 		end
@@ -838,8 +811,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  gzPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param gzPath [String]
+		# @return [TrueClass, FalseClass]
 		def WriteTarGz(gzPath)
 			# ...
 		end

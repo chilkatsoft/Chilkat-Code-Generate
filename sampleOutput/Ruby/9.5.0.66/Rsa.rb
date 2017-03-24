@@ -1,11 +1,12 @@
 module Chilkat
 	class CkRsa 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Charset(newval) end
+		def get_Charset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def charset() end
 
@@ -24,14 +23,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def charset(newval) end
+		def put_Charset(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -39,10 +39,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -50,14 +48,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_EncodingMode(newval) end
+		def get_EncodingMode(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -65,10 +64,8 @@ module Chilkat
 		# @param newval [String]
 		def put_EncodingMode(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def encodingMode() end
 
@@ -76,108 +73,96 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def encodingMode(newval) end
+		def put_EncodingMode(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LittleEndian(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LittleEndian() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LittleEndian(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_NoUnpad(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_NoUnpad() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_NoUnpad(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumBits() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_OaepHash(newval) end
+		def get_OaepHash(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -185,10 +170,8 @@ module Chilkat
 		# @param newval [String]
 		def put_OaepHash(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def oaepHash() end
 
@@ -196,41 +179,47 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def oaepHash(newval) end
+		def put_OaepHash(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_OaepPadding(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_OaepPadding() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_OaepPadding(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -245,9 +234,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inData [CkByteData]
-		# @param  usePrivateKey [TrueClass, FalseClass]
-		# @return  [CkByteData]
+		# @param inData [CkByteData]
+		# @param usePrivateKey [TrueClass, FalseClass]
+		# @return [CkByteData]
 		def DecryptBytes(inData, usePrivateKey)
 			# ...
 		end
@@ -262,9 +251,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @param  bUsePrivateKey [TrueClass, FalseClass]
-		# @return  [CkByteData]
+		# @param str [String]
+		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @return [CkByteData]
 		def DecryptBytesENC(str, bUsePrivateKey)
 			# ...
 		end
@@ -279,9 +268,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binarySig [CkByteData]
-		# @param  usePrivateKey [TrueClass, FalseClass]
-		# @return  [String]
+		# @param binarySig [CkByteData]
+		# @param usePrivateKey [TrueClass, FalseClass]
+		# @return [String]
 		def DecryptString(binarySig, usePrivateKey)
 			# ...
 		end
@@ -296,9 +285,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedSig [String]
-		# @param  usePrivateKey [TrueClass, FalseClass]
-		# @return  [String]
+		# @param encodedSig [String]
+		# @param usePrivateKey [TrueClass, FalseClass]
+		# @return [String]
 		def DecryptStringENC(encodedSig, usePrivateKey)
 			# ...
 		end
@@ -313,9 +302,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binaryData [CkByteData]
-		# @param  usePrivateKey [TrueClass, FalseClass]
-		# @return  [CkByteData]
+		# @param binaryData [CkByteData]
+		# @param usePrivateKey [TrueClass, FalseClass]
+		# @return [CkByteData]
 		def EncryptBytes(binaryData, usePrivateKey)
 			# ...
 		end
@@ -330,9 +319,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @param  bUsePrivateKey [TrueClass, FalseClass]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @return [String]
 		def EncryptBytesENC(data, bUsePrivateKey)
 			# ...
 		end
@@ -347,9 +336,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  stringToEncrypt [String]
-		# @param  usePrivateKey [TrueClass, FalseClass]
-		# @return  [CkByteData]
+		# @param stringToEncrypt [String]
+		# @param usePrivateKey [TrueClass, FalseClass]
+		# @return [CkByteData]
 		def EncryptString(stringToEncrypt, usePrivateKey)
 			# ...
 		end
@@ -364,9 +353,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @param  bUsePrivateKey [TrueClass, FalseClass]
-		# @return  [String]
+		# @param str [String]
+		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @return [String]
 		def EncryptStringENC(str, bUsePrivateKey)
 			# ...
 		end
@@ -379,7 +368,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ExportPrivateKey()
 			# ...
 		end
@@ -392,7 +381,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkPrivateKey]
+		# @return [CkPrivateKey]
 		def ExportPrivateKeyObj()
 			# ...
 		end
@@ -405,7 +394,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ExportPublicKey()
 			# ...
 		end
@@ -418,7 +407,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkPublicKey]
+		# @return [CkPublicKey]
 		def ExportPublicKeyObj()
 			# ...
 		end
@@ -432,8 +421,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBits [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param numBits [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def GenerateKey(numBits)
 			# ...
 		end
@@ -447,8 +436,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlKey [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xmlKey [String]
+		# @return [TrueClass, FalseClass]
 		def ImportPrivateKey(xmlKey)
 			# ...
 		end
@@ -462,8 +451,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @param key [CkPrivateKey]
+		# @return [TrueClass, FalseClass]
 		def ImportPrivateKeyObj(key)
 			# ...
 		end
@@ -477,8 +466,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlKey [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xmlKey [String]
+		# @return [TrueClass, FalseClass]
 		def ImportPublicKey(xmlKey)
 			# ...
 		end
@@ -492,8 +481,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [CkPublicKey]
-		# @return  [TrueClass, FalseClass]
+		# @param key [CkPublicKey]
+		# @return [TrueClass, FalseClass]
 		def ImportPublicKeyObj(key)
 			# ...
 		end
@@ -507,8 +496,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
+		# @param data [CkByteData]
+		# @return [CkByteData]
 		def OpenSslSignBytes(data)
 			# ...
 		end
@@ -522,8 +511,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @return [String]
 		def OpenSslSignBytesENC(data)
 			# ...
 		end
@@ -537,8 +526,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkByteData]
+		# @param str [String]
+		# @return [CkByteData]
 		def OpenSslSignString(str)
 			# ...
 		end
@@ -552,8 +541,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def OpenSslSignStringENC(str)
 			# ...
 		end
@@ -567,8 +556,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  signature [CkByteData]
-		# @return  [CkByteData]
+		# @param signature [CkByteData]
+		# @return [CkByteData]
 		def OpenSslVerifyBytes(signature)
 			# ...
 		end
@@ -582,8 +571,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [CkByteData]
+		# @param str [String]
+		# @return [CkByteData]
 		def OpenSslVerifyBytesENC(str)
 			# ...
 		end
@@ -597,8 +586,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [String]
+		# @param data [CkByteData]
+		# @return [String]
 		def OpenSslVerifyString(data)
 			# ...
 		end
@@ -612,9 +601,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def OpenSslVerifyStringENC(str)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -628,9 +632,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binaryData [CkByteData]
-		# @param  hashAlgorithm [String]
-		# @return  [CkByteData]
+		# @param binaryData [CkByteData]
+		# @param hashAlgorithm [String]
+		# @return [CkByteData]
 		def SignBytes(binaryData, hashAlgorithm)
 			# ...
 		end
@@ -645,9 +649,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binaryData [CkByteData]
-		# @param  hashAlgorithm [String]
-		# @return  [String]
+		# @param binaryData [CkByteData]
+		# @param hashAlgorithm [String]
+		# @return [String]
 		def SignBytesENC(binaryData, hashAlgorithm)
 			# ...
 		end
@@ -662,9 +666,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  hashBytes [CkByteData]
-		# @param  hashAlg [String]
-		# @return  [CkByteData]
+		# @param hashBytes [CkByteData]
+		# @param hashAlg [String]
+		# @return [CkByteData]
 		def SignHash(hashBytes, hashAlg)
 			# ...
 		end
@@ -679,9 +683,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedHash [String]
-		# @param  hashAlg [String]
-		# @return  [String]
+		# @param encodedHash [String]
+		# @param hashAlg [String]
+		# @return [String]
 		def SignHashENC(encodedHash, hashAlg)
 			# ...
 		end
@@ -696,9 +700,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strToBeHashed [String]
-		# @param  hashAlgorithm [String]
-		# @return  [CkByteData]
+		# @param strToBeHashed [String]
+		# @param hashAlgorithm [String]
+		# @return [CkByteData]
 		def SignString(strToBeHashed, hashAlgorithm)
 			# ...
 		end
@@ -713,9 +717,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strToBeHashed [String]
-		# @param  hashAlgorithm [String]
-		# @return  [String]
+		# @param strToBeHashed [String]
+		# @param hashAlgorithm [String]
+		# @return [String]
 		def SignStringENC(strToBeHashed, hashAlgorithm)
 			# ...
 		end
@@ -729,8 +733,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [String]
+		# @param filename [String]
+		# @return [String]
 		def SnkToXml(filename)
 			# ...
 		end
@@ -744,8 +748,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -761,10 +765,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  originalData [CkByteData]
-		# @param  hashAlgorithm [String]
-		# @param  signatureBytes [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param originalData [CkByteData]
+		# @param hashAlgorithm [String]
+		# @param signatureBytes [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def VerifyBytes(originalData, hashAlgorithm, signatureBytes)
 			# ...
 		end
@@ -780,10 +784,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  originalData [CkByteData]
-		# @param  hashAlgorithm [String]
-		# @param  encodedSig [String]
-		# @return  [TrueClass, FalseClass]
+		# @param originalData [CkByteData]
+		# @param hashAlgorithm [String]
+		# @param encodedSig [String]
+		# @return [TrueClass, FalseClass]
 		def VerifyBytesENC(originalData, hashAlgorithm, encodedSig)
 			# ...
 		end
@@ -799,10 +803,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  hashBytes [CkByteData]
-		# @param  hashAlg [String]
-		# @param  sigBytes [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param hashBytes [CkByteData]
+		# @param hashAlg [String]
+		# @param sigBytes [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def VerifyHash(hashBytes, hashAlg, sigBytes)
 			# ...
 		end
@@ -818,10 +822,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedHash [String]
-		# @param  hashAlg [String]
-		# @param  encodedSig [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encodedHash [String]
+		# @param hashAlg [String]
+		# @param encodedSig [String]
+		# @return [TrueClass, FalseClass]
 		def VerifyHashENC(encodedHash, hashAlg, encodedSig)
 			# ...
 		end
@@ -835,8 +839,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xml [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xml [String]
+		# @return [TrueClass, FalseClass]
 		def VerifyPrivateKey(xml)
 			# ...
 		end
@@ -852,10 +856,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  originalString [String]
-		# @param  hashAlgorithm [String]
-		# @param  binarySig [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param originalString [String]
+		# @param hashAlgorithm [String]
+		# @param binarySig [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def VerifyString(originalString, hashAlgorithm, binarySig)
 			# ...
 		end
@@ -871,10 +875,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  originalString [String]
-		# @param  hashAlgorithm [String]
-		# @param  encodedSig [String]
-		# @return  [TrueClass, FalseClass]
+		# @param originalString [String]
+		# @param hashAlgorithm [String]
+		# @param encodedSig [String]
+		# @return [TrueClass, FalseClass]
 		def VerifyStringENC(originalString, hashAlgorithm, encodedSig)
 			# ...
 		end

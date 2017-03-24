@@ -1,24 +1,23 @@
 module Chilkat
 	class CkSshTunnel 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AbortCurrent(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AbortCurrent() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AbortCurrent(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_AcceptLog(newval) end
+		def get_AcceptLog(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -26,10 +25,8 @@ module Chilkat
 		# @param newval [String]
 		def put_AcceptLog(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def acceptLog() end
 
@@ -37,14 +34,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def acceptLog(newval) end
+		def put_AcceptLog(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_AcceptLogPath(newval) end
+		def get_AcceptLogPath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -52,10 +50,8 @@ module Chilkat
 		# @param newval [String]
 		def put_AcceptLogPath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def acceptLogPath() end
 
@@ -63,14 +59,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def acceptLogPath(newval) end
+		def put_AcceptLogPath(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ConnectTimeoutMs(newval) end
+		def get_ConnectTimeoutMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -78,12 +72,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_ConnectTimeoutMs(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -91,10 +86,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -102,14 +95,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DestHostname(newval) end
+		def get_DestHostname(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -117,10 +111,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DestHostname(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def destHostname() end
 
@@ -128,14 +120,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def destHostname(newval) end
+		def put_DestHostname(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_DestPort(newval) end
+		def get_DestPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -143,35 +133,30 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_DestPort(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_DynamicPortForwarding(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_DynamicPortForwarding() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_DynamicPortForwarding(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_HostKeyFingerprint() end
 
-		# returns String
-		#
 		# @return [String]
 		def hostKeyFingerprint() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyAuthMethod(newval) end
+		def get_HttpProxyAuthMethod(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -179,10 +164,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyAuthMethod(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyAuthMethod() end
 
@@ -190,14 +173,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyAuthMethod(newval) end
+		def put_HttpProxyAuthMethod(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyDomain(newval) end
+		def get_HttpProxyDomain(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -205,10 +189,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyDomain(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyDomain() end
 
@@ -216,14 +198,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyDomain(newval) end
+		def put_HttpProxyDomain(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyHostname(newval) end
+		def get_HttpProxyHostname(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -231,10 +214,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyHostname(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyHostname() end
 
@@ -242,14 +223,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyHostname(newval) end
+		def put_HttpProxyHostname(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyPassword(newval) end
+		def get_HttpProxyPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -257,10 +239,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyPassword() end
 
@@ -268,14 +248,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyPassword(newval) end
+		def put_HttpProxyPassword(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_HttpProxyPort(newval) end
+		def get_HttpProxyPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -283,12 +261,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_HttpProxyPort(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyUsername(newval) end
+		def get_HttpProxyUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -296,10 +275,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyUsername() end
 
@@ -307,14 +284,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyUsername(newval) end
+		def put_HttpProxyUsername(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_IdleTimeoutMs(newval) end
+		def get_IdleTimeoutMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -322,12 +297,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_IdleTimeoutMs(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_InboundSocksPassword(newval) end
+		def get_InboundSocksPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -335,10 +311,8 @@ module Chilkat
 		# @param newval [String]
 		def put_InboundSocksPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def ınboundSocksPassword() end
 
@@ -346,14 +320,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def ınboundSocksPassword(newval) end
+		def put_InboundSocksPassword(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_InboundSocksUsername(newval) end
+		def get_InboundSocksUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -361,10 +336,8 @@ module Chilkat
 		# @param newval [String]
 		def put_InboundSocksUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def ınboundSocksUsername() end
 
@@ -372,108 +345,96 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def ınboundSocksUsername(newval) end
+		def put_InboundSocksUsername(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsAccepting() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_KeepAcceptLog(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_KeepAcceptLog() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_KeepAcceptLog(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_KeepTunnelLog(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_KeepTunnelLog() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_KeepTunnelLog(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ListenBindIpAddress(newval) end
+		def get_ListenBindIpAddress(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -481,10 +442,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ListenBindIpAddress(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def listenBindIpAddress() end
 
@@ -492,19 +451,18 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def listenBindIpAddress(newval) end
+		def put_ListenBindIpAddress(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ListenPort() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_OutboundBindIpAddress(newval) end
+		def get_OutboundBindIpAddress(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -512,10 +470,8 @@ module Chilkat
 		# @param newval [String]
 		def put_OutboundBindIpAddress(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def outboundBindIpAddress() end
 
@@ -523,14 +479,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def outboundBindIpAddress(newval) end
+		def put_OutboundBindIpAddress(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_OutboundBindPort(newval) end
+		def get_OutboundBindPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -538,12 +492,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_OutboundBindPort(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksHostname(newval) end
+		def get_SocksHostname(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -551,10 +506,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksHostname(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksHostname() end
 
@@ -562,14 +515,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksPassword(newval) end
+		def get_SocksPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -577,10 +531,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksPassword() end
 
@@ -588,14 +540,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SocksPort(newval) end
+		def get_SocksPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -603,12 +553,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SocksPort(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksUsername(newval) end
+		def get_SocksUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -616,10 +567,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksUsername() end
 
@@ -627,14 +576,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SocksVersion(newval) end
+		def get_SocksVersion() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -642,12 +589,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SocksVersion(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SoRcvBuf(newval) end
+		def get_SoRcvBuf() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -655,12 +600,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SoRcvBuf(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SoSndBuf(newval) end
+		def get_SoSndBuf() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -668,25 +611,24 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SoSndBuf(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_TcpNoDelay(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_TcpNoDelay() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_TcpNoDelay(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_TunnelLog(newval) end
+		def get_TunnelLog(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -694,10 +636,8 @@ module Chilkat
 		# @param newval [String]
 		def put_TunnelLog(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def tunnelLog() end
 
@@ -705,14 +645,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def tunnelLog(newval) end
+		def put_TunnelLog(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_TunnelLogPath(newval) end
+		def get_TunnelLogPath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -720,10 +661,8 @@ module Chilkat
 		# @param newval [String]
 		def put_TunnelLogPath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def tunnelLogPath() end
 
@@ -731,28 +670,36 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def tunnelLogPath(newval) end
+		def put_TunnelLogPath(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -767,9 +714,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  username [String]
-		# @param  privateKey [CkSshKey]
-		# @return  [TrueClass, FalseClass]
+		# @param username [String]
+		# @param privateKey [CkSshKey]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
@@ -784,9 +731,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  login [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param login [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePw(login, password)
 			# ...
 		end
@@ -802,10 +749,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  username [String]
-		# @param  password [String]
-		# @param  privateKey [CkSshKey]
-		# @return  [TrueClass, FalseClass]
+		# @param username [String]
+		# @param password [String]
+		# @param privateKey [CkSshKey]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
@@ -819,8 +766,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  listenPort [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param listenPort [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def BeginAccepting(listenPort)
 			# ...
 		end
@@ -834,8 +781,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  waitForThreads [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param waitForThreads [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CloseTunnel(waitForThreads)
 			# ...
 		end
@@ -850,9 +797,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  hostname [String]
-		# @param  port [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param hostname [String]
+		# @param port [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def Connect(hostname, port)
 			# ...
 		end
@@ -868,10 +815,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  ssh [CkSsh]
-		# @param  hostname [String]
-		# @param  port [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param ssh [CkSsh]
+		# @param hostname [String]
+		# @param port [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def ConnectThroughSsh(ssh, hostname, port)
 			# ...
 		end
@@ -885,8 +832,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  waitForThreads [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param waitForThreads [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def DisconnectAllClients(waitForThreads)
 			# ...
 		end
@@ -899,7 +846,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetCurrentState()
 			# ...
 		end
@@ -912,8 +859,23 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsSshConnected()
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -926,8 +888,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  waitForThread [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param waitForThread [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def StopAccepting(waitForThread)
 			# ...
 		end
@@ -941,8 +903,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

@@ -1,32 +1,35 @@
 module Chilkat
 	class CkSFtpDir 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumFilesAndDirs() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_OriginalPath() end
 
-		# returns String
-		#
 		# @return [String]
 		def originalPath() end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: GetFilename
@@ -38,8 +41,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetFilename(index)
 			# ...
 		end
@@ -53,8 +56,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkSFtpFile]
+		# @param index [Fixnum]
+		# @return [CkSFtpFile]
 		def GetFileObject(index)
 			# ...
 		end
@@ -68,8 +71,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  task [CkTask]
-		# @return  [TrueClass, FalseClass]
+		# @param task [CkTask]
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end

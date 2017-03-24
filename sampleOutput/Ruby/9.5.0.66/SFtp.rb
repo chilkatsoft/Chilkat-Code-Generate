@@ -1,34 +1,26 @@
 module Chilkat
 	class CkSFtp 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AbortCurrent(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AbortCurrent() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AbortCurrent(newval) end
 
-		# returns Fixnum
-		#
 		# @return [Fixnum]
 		def get_AccumulateBuffer() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_AuthFailReason() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_BandwidthThrottleDown(newval) end
+		def get_BandwidthThrottleDown() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -36,12 +28,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_BandwidthThrottleDown(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_BandwidthThrottleUp(newval) end
+		def get_BandwidthThrottleUp() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -49,12 +39,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_BandwidthThrottleUp(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ClientIdentifier(newval) end
+		def get_ClientIdentifier(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -62,10 +53,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ClientIdentifier(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def clientIdentifier() end
 
@@ -73,14 +62,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def clientIdentifier(newval) end
+		def put_ClientIdentifier(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ClientIpAddress(newval) end
+		def get_ClientIpAddress(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -88,10 +78,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ClientIpAddress(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def clientIpAddress() end
 
@@ -99,14 +87,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def clientIpAddress(newval) end
+		def put_ClientIpAddress(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ConnectTimeoutMs(newval) end
+		def get_ConnectTimeoutMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -114,12 +100,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_ConnectTimeoutMs(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -127,10 +114,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -138,55 +123,46 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_DisconnectCode() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_DisconnectReason() end
 
-		# returns String
-		#
 		# @return [String]
 		def disconnectReason() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_EnableCache(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_EnableCache() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_EnableCache(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_EnableCompression(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_EnableCompression() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_EnableCompression(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_FilenameCharset(newval) end
+		def get_FilenameCharset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -194,10 +170,8 @@ module Chilkat
 		# @param newval [String]
 		def put_FilenameCharset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def filenameCharset() end
 
@@ -205,14 +179,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def filenameCharset(newval) end
+		def put_FilenameCharset(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ForceCipher(newval) end
+		def get_ForceCipher(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -220,10 +195,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ForceCipher(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def forceCipher() end
 
@@ -231,29 +204,25 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def forceCipher(newval) end
+		def put_ForceCipher(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_ForceV3(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_ForceV3() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_ForceV3(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs(newval) end
+		def get_HeartbeatMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -263,12 +232,13 @@ module Chilkat
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HostKeyAlg(newval) end
+		def get_HostKeyAlg(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -276,10 +246,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HostKeyAlg(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def hostKeyAlg() end
 
@@ -287,24 +255,21 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def hostKeyAlg(newval) end
+		def put_HostKeyAlg(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_HostKeyFingerprint() end
 
-		# returns String
-		#
 		# @return [String]
 		def hostKeyFingerprint() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyAuthMethod(newval) end
+		def get_HttpProxyAuthMethod(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -312,10 +277,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyAuthMethod(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyAuthMethod() end
 
@@ -323,14 +286,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyAuthMethod(newval) end
+		def put_HttpProxyAuthMethod(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyDomain(newval) end
+		def get_HttpProxyDomain(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -338,10 +302,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyDomain(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyDomain() end
 
@@ -349,14 +311,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyDomain(newval) end
+		def put_HttpProxyDomain(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyHostname(newval) end
+		def get_HttpProxyHostname(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -364,10 +327,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyHostname(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyHostname() end
 
@@ -375,14 +336,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyHostname(newval) end
+		def put_HttpProxyHostname(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyPassword(newval) end
+		def get_HttpProxyPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -390,10 +352,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyPassword() end
 
@@ -401,14 +361,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyPassword(newval) end
+		def put_HttpProxyPassword(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_HttpProxyPort(newval) end
+		def get_HttpProxyPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -416,12 +374,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_HttpProxyPort(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyUsername(newval) end
+		def get_HttpProxyUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -429,10 +388,8 @@ module Chilkat
 		# @param newval [String]
 		def put_HttpProxyUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def httpProxyUsername() end
 
@@ -440,14 +397,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def httpProxyUsername(newval) end
+		def put_HttpProxyUsername(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_IdleTimeoutMs(newval) end
+		def get_IdleTimeoutMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -455,121 +410,100 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_IdleTimeoutMs(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_IncludeDotDirs(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_IncludeDotDirs() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_IncludeDotDirs(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_InitializeFailCode() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_InitializeFailReason() end
 
-		# returns String
-		#
 		# @return [String]
 		def ınitializeFailReason() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_IsConnected() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_KeepSessionLog(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_KeepSessionLog() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_KeepSessionLog(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_MaxPacketSize(newval) end
+		def get_MaxPacketSize() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -577,19 +511,15 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_MaxPacketSize(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_PasswordChangeRequested() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_PercentDoneScale(newval) end
+		def get_PercentDoneScale() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -599,43 +529,38 @@ module Chilkat
 		# @event
 		def put_PercentDoneScale(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_PreferIpv6(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_PreferIpv6() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_PreferIpv6(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_PreserveDate(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_PreserveDate() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_PreserveDate(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ProtocolVersion() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ReadDirMustMatch(newval) end
+		def get_ReadDirMustMatch(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -643,10 +568,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ReadDirMustMatch(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def readDirMustMatch() end
 
@@ -654,14 +577,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def readDirMustMatch(newval) end
+		def put_ReadDirMustMatch(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ReadDirMustNotMatch(newval) end
+		def get_ReadDirMustNotMatch(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -669,10 +593,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ReadDirMustNotMatch(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def readDirMustNotMatch() end
 
@@ -680,24 +602,21 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def readDirMustNotMatch(newval) end
+		def put_ReadDirMustNotMatch(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_SessionLog() end
 
-		# returns String
-		#
 		# @return [String]
 		def sessionLog() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksHostname(newval) end
+		def get_SocksHostname(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -705,10 +624,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksHostname(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksHostname() end
 
@@ -716,14 +633,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksPassword(newval) end
+		def get_SocksPassword(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -731,10 +649,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksPassword(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksPassword() end
 
@@ -742,14 +658,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SocksPort(newval) end
+		def get_SocksPort() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -757,12 +671,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SocksPort(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksUsername(newval) end
+		def get_SocksUsername(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -770,10 +685,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SocksUsername(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def socksUsername() end
 
@@ -781,14 +694,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def socksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SocksVersion(newval) end
+		def get_SocksVersion() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -796,12 +707,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SocksVersion(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SoRcvBuf(newval) end
+		def get_SoRcvBuf() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -809,12 +718,10 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SoRcvBuf(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_SoSndBuf(newval) end
+		def get_SoSndBuf() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -822,12 +729,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_SoSndBuf(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SyncDirectives(newval) end
+		def get_SyncDirectives(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -835,10 +743,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SyncDirectives(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def syncDirectives() end
 
@@ -846,14 +752,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def syncDirectives(newval) end
+		def put_SyncDirectives(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SyncedFiles(newval) end
+		def get_SyncedFiles(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -861,10 +768,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SyncedFiles(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def syncedFiles() end
 
@@ -872,14 +777,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def syncedFiles(newval) end
+		def put_SyncedFiles(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SyncMustMatch(newval) end
+		def get_SyncMustMatch(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -887,10 +793,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SyncMustMatch(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def syncMustMatch() end
 
@@ -898,14 +802,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def syncMustMatch(newval) end
+		def put_SyncMustMatch(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SyncMustNotMatch(newval) end
+		def get_SyncMustNotMatch(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -913,10 +818,8 @@ module Chilkat
 		# @param newval [String]
 		def put_SyncMustNotMatch(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def syncMustNotMatch() end
 
@@ -924,27 +827,23 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def syncMustNotMatch(newval) end
+		def put_SyncMustNotMatch(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_TcpNoDelay(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_TcpNoDelay() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_TcpNoDelay(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_UploadChunkSize(newval) end
+		def get_UploadChunkSize() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -952,39 +851,45 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_UploadChunkSize(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_UtcMode(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_UtcMode() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_UtcMode(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -999,9 +904,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  maxBytes [Fixnum]
-		# @return  [Fixnum]
+		# @param handle [String]
+		# @param maxBytes [Fixnum]
+		# @return [Fixnum]
 		def AccumulateBytes(handle, maxBytes)
 			# ...
 		end
@@ -1016,9 +921,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  n1 [String]
-		# @param  n2 [String]
-		# @return  [String]
+		# @param n1 [String]
+		# @param n2 [String]
+		# @return [String]
 		def Add64(n1, n2)
 			# ...
 		end
@@ -1033,9 +938,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  username [String]
-		# @param  privateKey [CkSshKey]
-		# @return  [TrueClass, FalseClass]
+		# @param username [String]
+		# @param privateKey [CkSshKey]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
@@ -1050,9 +955,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  login [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param login [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePw(login, password)
 			# ...
 		end
@@ -1068,10 +973,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  username [String]
-		# @param  password [String]
-		# @param  privateKey [CkSshKey]
-		# @return  [TrueClass, FalseClass]
+		# @param username [String]
+		# @param password [String]
+		# @param privateKey [CkSshKey]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
@@ -1084,7 +989,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearAccumulateBuffer()
 			# ...
 		end
@@ -1097,7 +1002,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearCache()
 			# ...
 		end
@@ -1110,7 +1015,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearSessionLog()
 			# ...
 		end
@@ -1124,8 +1029,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @return [TrueClass, FalseClass]
 		def CloseHandle(handle)
 			# ...
 		end
@@ -1140,9 +1045,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  domainName [String]
-		# @param  port [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param domainName [String]
+		# @param port [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def Connect(domainName, port)
 			# ...
 		end
@@ -1158,10 +1063,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sshConn [CkSsh]
-		# @param  hostname [String]
-		# @param  port [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param sshConn [CkSsh]
+		# @param hostname [String]
+		# @param port [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def ConnectThroughSsh(sshConn, hostname, port)
 			# ...
 		end
@@ -1177,10 +1082,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  localFilename [String]
-		# @param  remoteFilename [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param localFilename [String]
+		# @param remoteFilename [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CopyFileAttr(localFilename, remoteFilename, isHandle)
 			# ...
 		end
@@ -1194,8 +1099,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def CreateDir(path)
 			# ...
 		end
@@ -1208,7 +1113,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def Disconnect()
 			# ...
 		end
@@ -1223,9 +1128,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  remoteFilePath [String]
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param remoteFilePath [String]
+		# @param binData [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def DownloadBd(remoteFilePath, binData)
 			# ...
 		end
@@ -1240,9 +1145,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  toFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @param toFilename [String]
+		# @return [TrueClass, FalseClass]
 		def DownloadFile(handle, toFilename)
 			# ...
 		end
@@ -1257,9 +1162,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  remoteFilePath [String]
-		# @param  localFilePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param remoteFilePath [String]
+		# @param localFilePath [String]
+		# @return [TrueClass, FalseClass]
 		def DownloadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -1275,10 +1180,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  remoteFilePath [String]
-		# @param  charset [String]
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param remoteFilePath [String]
+		# @param charset [String]
+		# @param sb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def DownloadSb(remoteFilePath, charset, sb)
 			# ...
 		end
@@ -1292,8 +1197,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @return [TrueClass, FalseClass]
 		def Eof(handle)
 			# ...
 		end
@@ -1309,10 +1214,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [CkDateTime]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [CkDateTime]
 		def GetFileCreateDt(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1329,10 +1234,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [Object]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileCreateTime(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1349,10 +1254,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [String]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [String]
 		def GetFileCreateTimeStr(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1368,10 +1273,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [String]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [String]
 		def GetFileGroup(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1388,10 +1293,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [Object]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileLastAccess(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1408,10 +1313,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [CkDateTime]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [CkDateTime]
 		def GetFileLastAccessDt(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1427,10 +1332,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [String]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [String]
 		def GetFileLastAccessStr(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1447,10 +1352,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [Object]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileLastModified(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1467,10 +1372,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [CkDateTime]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [CkDateTime]
 		def GetFileLastModifiedDt(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1486,10 +1391,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [String]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [String]
 		def GetFileLastModifiedStr(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1505,10 +1410,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [String]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [String]
 		def GetFileOwner(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1524,10 +1429,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [Fixnum]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [Fixnum]
 		def GetFilePermissions(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1543,11 +1448,30 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [Fixnum]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [Fixnum]
 		def GetFileSize32(pathOrHandle, bFollowLinks, bIsHandle)
+			# ...
+		end
+
+		# Method: GetFileSize64
+		#
+		# ==== Attributes
+		#
+		# +pathOrHandle+ - String
+		# +bFollowLinks+ - TrueClass, FalseClass
+		# +bIsHandle+ - TrueClass, FalseClass
+		# returns Bignum
+		#
+		# YARD =>
+		#
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [Bignum]
+		def GetFileSize64(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
 
@@ -1562,10 +1486,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bFollowLinks [TrueClass, FalseClass]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @return  [String]
+		# @param pathOrHandle [String]
+		# @param bFollowLinks [TrueClass, FalseClass]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @return [String]
 		def GetFileSizeStr(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1578,7 +1502,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def InitializeSftp()
 			# ...
 		end
@@ -1592,8 +1516,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @return [TrueClass, FalseClass]
 		def LastReadFailed(handle)
 			# ...
 		end
@@ -1607,8 +1531,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @return  [Fixnum]
+		# @param handle [String]
+		# @return [Fixnum]
 		def LastReadNumBytes(handle)
 			# ...
 		end
@@ -1622,8 +1546,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [String]
+		# @param path [String]
+		# @return [String]
 		def OpenDir(path)
 			# ...
 		end
@@ -1639,10 +1563,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  remotePath [String]
-		# @param  access [String]
-		# @param  createDisposition [String]
-		# @return  [String]
+		# @param remotePath [String]
+		# @param access [String]
+		# @param createDisposition [String]
+		# @return [String]
 		def OpenFile(remotePath, access, createDisposition)
 			# ...
 		end
@@ -1656,8 +1580,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @return  [CkSFtpDir]
+		# @param handle [String]
+		# @return [CkSFtpDir]
 		def ReadDir(handle)
 			# ...
 		end
@@ -1672,9 +1596,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
+		# @param handle [String]
+		# @param numBytes [Fixnum]
+		# @return [CkByteData]
 		def ReadFileBytes(handle, numBytes)
 			# ...
 		end
@@ -1690,11 +1614,30 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
+		# @param handle [String]
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @return [CkByteData]
 		def ReadFileBytes32(handle, offset, numBytes)
+			# ...
+		end
+
+		# Method: ReadFileBytes64
+		#
+		# ==== Attributes
+		#
+		# +handle+ - String
+		# +offset+ - Bignum
+		# +numBytes+ - Fixnum
+		# returns CkByteData
+		#
+		# YARD =>
+		#
+		# @param handle [String]
+		# @param offset [Bignum]
+		# @param numBytes [Fixnum]
+		# @return [CkByteData]
+		def ReadFileBytes64(handle, offset, numBytes)
 			# ...
 		end
 
@@ -1709,10 +1652,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  offset [String]
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
+		# @param handle [String]
+		# @param offset [String]
+		# @param numBytes [Fixnum]
+		# @return [CkByteData]
 		def ReadFileBytes64s(handle, offset, numBytes)
 			# ...
 		end
@@ -1728,10 +1671,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  numBytes [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
+		# @param handle [String]
+		# @param numBytes [Fixnum]
+		# @param charset [String]
+		# @return [String]
 		def ReadFileText(handle, numBytes, charset)
 			# ...
 		end
@@ -1748,12 +1691,33 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
+		# @param handle [String]
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @param charset [String]
+		# @return [String]
 		def ReadFileText32(handle, offset, numBytes, charset)
+			# ...
+		end
+
+		# Method: ReadFileText64
+		#
+		# ==== Attributes
+		#
+		# +handle+ - String
+		# +offset+ - Bignum
+		# +numBytes+ - Fixnum
+		# +charset+ - String
+		# returns String
+		#
+		# YARD =>
+		#
+		# @param handle [String]
+		# @param offset [Bignum]
+		# @param numBytes [Fixnum]
+		# @param charset [String]
+		# @return [String]
+		def ReadFileText64(handle, offset, numBytes, charset)
 			# ...
 		end
 
@@ -1769,11 +1733,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  offset [String]
-		# @param  numBytes [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
+		# @param handle [String]
+		# @param offset [String]
+		# @param numBytes [Fixnum]
+		# @param charset [String]
+		# @return [String]
 		def ReadFileText64s(handle, offset, numBytes, charset)
 			# ...
 		end
@@ -1788,9 +1752,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  originalPath [String]
-		# @param  composePath [String]
-		# @return  [String]
+		# @param originalPath [String]
+		# @param composePath [String]
+		# @return [String]
 		def RealPath(originalPath, composePath)
 			# ...
 		end
@@ -1804,8 +1768,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveDir(path)
 			# ...
 		end
@@ -1819,8 +1783,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveFile(filename)
 			# ...
 		end
@@ -1835,9 +1799,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  oldPath [String]
-		# @param  newPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param oldPath [String]
+		# @param newPath [String]
+		# @return [TrueClass, FalseClass]
 		def RenameFileOrDir(oldPath, newPath)
 			# ...
 		end
@@ -1852,9 +1816,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  remoteFilePath [String]
-		# @param  localFilePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param remoteFilePath [String]
+		# @param localFilePath [String]
+		# @return [TrueClass, FalseClass]
 		def ResumeDownloadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -1869,10 +1833,25 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  remoteFilePath [String]
-		# @param  localFilePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param remoteFilePath [String]
+		# @param localFilePath [String]
+		# @return [TrueClass, FalseClass]
 		def ResumeUploadFileByName(remoteFilePath, localFilePath)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -1884,7 +1863,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SendIgnore()
 			# ...
 		end
@@ -1900,10 +1879,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @param  createDateTime [CkDateTime]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @param createDateTime [CkDateTime]
+		# @return [TrueClass, FalseClass]
 		def SetCreateDt(pathOrHandle, isHandle, createDateTime)
 			# ...
 		end
@@ -1920,10 +1899,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @param  createDateTime [Object]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @param createDateTime [Object]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetCreateTime(pathOrHandle, isHandle, createDateTime)
 			# ...
@@ -1940,10 +1919,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @param  dateTimeStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @param dateTimeStr [String]
+		# @return [TrueClass, FalseClass]
 		def SetCreateTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -1959,10 +1938,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @param  accessDateTime [CkDateTime]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @param accessDateTime [CkDateTime]
+		# @return [TrueClass, FalseClass]
 		def SetLastAccessDt(pathOrHandle, isHandle, accessDateTime)
 			# ...
 		end
@@ -1979,10 +1958,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @param  accessDateTime [Object]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @param accessDateTime [Object]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetLastAccessTime(pathOrHandle, isHandle, accessDateTime)
 			# ...
@@ -1999,10 +1978,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @param  dateTimeStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @param dateTimeStr [String]
+		# @return [TrueClass, FalseClass]
 		def SetLastAccessTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -2018,10 +1997,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @param  modifiedDateTime [CkDateTime]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @param modifiedDateTime [CkDateTime]
+		# @return [TrueClass, FalseClass]
 		def SetLastModifiedDt(pathOrHandle, isHandle, modifiedDateTime)
 			# ...
 		end
@@ -2038,10 +2017,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @param  modifiedDateTime [Object]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @param modifiedDateTime [Object]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetLastModifiedTime(pathOrHandle, isHandle, modifiedDateTime)
 			# ...
@@ -2058,10 +2037,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  bIsHandle [TrueClass, FalseClass]
-		# @param  dateTimeStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param bIsHandle [TrueClass, FalseClass]
+		# @param dateTimeStr [String]
+		# @return [TrueClass, FalseClass]
 		def SetLastModifiedTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -2078,11 +2057,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @param  owner [String]
-		# @param  group [String]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @param owner [String]
+		# @param group [String]
+		# @return [TrueClass, FalseClass]
 		def SetOwnerAndGroup(pathOrHandle, isHandle, owner, group)
 			# ...
 		end
@@ -2098,10 +2077,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  pathOrHandle [String]
-		# @param  isHandle [TrueClass, FalseClass]
-		# @param  permissions [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param pathOrHandle [String]
+		# @param isHandle [TrueClass, FalseClass]
+		# @param permissions [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def SetPermissions(pathOrHandle, isHandle, permissions)
 			# ...
 		end
@@ -2118,11 +2097,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  remoteRoot [String]
-		# @param  localRoot [String]
-		# @param  mode [Fixnum]
-		# @param  recurse [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param remoteRoot [String]
+		# @param localRoot [String]
+		# @param mode [Fixnum]
+		# @param recurse [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SyncTreeDownload(remoteRoot, localRoot, mode, recurse)
 			# ...
 		end
@@ -2139,11 +2118,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  localBaseDir [String]
-		# @param  remoteBaseDir [String]
-		# @param  mode [Fixnum]
-		# @param  bRecurse [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param localBaseDir [String]
+		# @param remoteBaseDir [String]
+		# @param mode [Fixnum]
+		# @param bRecurse [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SyncTreeUpload(localBaseDir, remoteBaseDir, mode, bRecurse)
 			# ...
 		end
@@ -2157,8 +2136,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -2173,9 +2152,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binData [CkBinData]
-		# @param  remoteFilePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param binData [CkBinData]
+		# @param remoteFilePath [String]
+		# @return [TrueClass, FalseClass]
 		def UploadBd(binData, remoteFilePath)
 			# ...
 		end
@@ -2190,9 +2169,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  fromFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @param fromFilename [String]
+		# @return [TrueClass, FalseClass]
 		def UploadFile(handle, fromFilename)
 			# ...
 		end
@@ -2207,9 +2186,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  remoteFilePath [String]
-		# @param  localFilePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param remoteFilePath [String]
+		# @param localFilePath [String]
+		# @return [TrueClass, FalseClass]
 		def UploadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -2226,11 +2205,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @param  remoteFilePath [String]
-		# @param  charset [String]
-		# @param  includeBom [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @param remoteFilePath [String]
+		# @param charset [String]
+		# @param includeBom [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UploadSb(sb, remoteFilePath, charset, includeBom)
 			# ...
 		end
@@ -2245,9 +2224,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  byteData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @param byteData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def WriteFileBytes(handle, byteData)
 			# ...
 		end
@@ -2263,11 +2242,30 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  offset [Fixnum]
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @param offset [Fixnum]
+		# @param data [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def WriteFileBytes32(handle, offset, data)
+			# ...
+		end
+
+		# Method: WriteFileBytes64
+		#
+		# ==== Attributes
+		#
+		# +handle+ - String
+		# +offset64+ - Bignum
+		# +data+ - CkByteData
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param handle [String]
+		# @param offset64 [Bignum]
+		# @param data [CkByteData]
+		# @return [TrueClass, FalseClass]
+		def WriteFileBytes64(handle, offset64, data)
 			# ...
 		end
 
@@ -2282,10 +2280,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  offset64 [String]
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @param offset64 [String]
+		# @param data [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def WriteFileBytes64s(handle, offset64, data)
 			# ...
 		end
@@ -2301,10 +2299,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  charset [String]
-		# @param  textData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @param charset [String]
+		# @param textData [String]
+		# @return [TrueClass, FalseClass]
 		def WriteFileText(handle, charset, textData)
 			# ...
 		end
@@ -2321,12 +2319,33 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  offset32 [Fixnum]
-		# @param  charset [String]
-		# @param  textData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @param offset32 [Fixnum]
+		# @param charset [String]
+		# @param textData [String]
+		# @return [TrueClass, FalseClass]
 		def WriteFileText32(handle, offset32, charset, textData)
+			# ...
+		end
+
+		# Method: WriteFileText64
+		#
+		# ==== Attributes
+		#
+		# +handle+ - String
+		# +offset64+ - Bignum
+		# +charset+ - String
+		# +textData+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param handle [String]
+		# @param offset64 [Bignum]
+		# @param charset [String]
+		# @param textData [String]
+		# @return [TrueClass, FalseClass]
+		def WriteFileText64(handle, offset64, charset, textData)
 			# ...
 		end
 
@@ -2342,11 +2361,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  handle [String]
-		# @param  offset64 [String]
-		# @param  charset [String]
-		# @param  textData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param handle [String]
+		# @param offset64 [String]
+		# @param charset [String]
+		# @param textData [String]
+		# @return [TrueClass, FalseClass]
 		def WriteFileText64s(handle, offset64, charset, textData)
 			# ...
 		end

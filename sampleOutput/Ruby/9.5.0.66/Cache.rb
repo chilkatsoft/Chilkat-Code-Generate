@@ -1,11 +1,12 @@
 module Chilkat
 	class CkCache 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -24,119 +23,94 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastEtagFetched() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastEtagFetched() end
 
-		# returns Object
-		#
 		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_LastExpirationFetched() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastExpirationFetchedStr() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastExpirationFetchedStr() end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_LastHitExpired() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastKeyFetched() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastKeyFetched() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_Level(newval) end
+		def get_Level() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -144,31 +118,37 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_Level(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumRoots() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -182,8 +162,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [nil]
+		# @param path [String]
+		# @return [nil]
 		def AddRoot(path)
 			# ...
 		end
@@ -196,7 +176,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def DeleteAll()
 			# ...
 		end
@@ -209,7 +189,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def DeleteAllExpired()
 			# ...
 		end
@@ -223,8 +203,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @return [TrueClass, FalseClass]
 		def DeleteFromCache(key)
 			# ...
 		end
@@ -239,8 +219,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  dateTime [Object]
-		# @return  [Fixnum]
+		# @param dateTime [Object]
+		# @return [Fixnum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def DeleteOlder(dateTime)
 			# ...
@@ -255,8 +235,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  dateTime [CkDateTime]
-		# @return  [Fixnum]
+		# @param dateTime [CkDateTime]
+		# @return [Fixnum]
 		def DeleteOlderDt(dateTime)
 			# ...
 		end
@@ -270,8 +250,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  dateTimeStr [String]
-		# @return  [Fixnum]
+		# @param dateTimeStr [String]
+		# @return [Fixnum]
 		def DeleteOlderStr(dateTimeStr)
 			# ...
 		end
@@ -285,8 +265,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [CkByteData]
+		# @param key [String]
+		# @return [CkByteData]
 		def FetchFromCache(key)
 			# ...
 		end
@@ -300,8 +280,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [String]
+		# @param key [String]
+		# @return [String]
 		def FetchText(key)
 			# ...
 		end
@@ -315,8 +295,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [String]
+		# @param key [String]
+		# @return [String]
 		def GetEtag(key)
 			# ...
 		end
@@ -331,8 +311,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [Object]
+		# @param key [String]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetExpiration(key)
 			# ...
@@ -347,8 +327,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [CkDateTime]
+		# @param key [String]
+		# @return [CkDateTime]
 		def GetExpirationDt(key)
 			# ...
 		end
@@ -362,8 +342,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  url [String]
-		# @return  [String]
+		# @param url [String]
+		# @return [String]
 		def GetExpirationStr(url)
 			# ...
 		end
@@ -377,8 +357,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [String]
+		# @param key [String]
+		# @return [String]
 		def GetFilename(key)
 			# ...
 		end
@@ -392,8 +372,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetRoot(index)
 			# ...
 		end
@@ -407,9 +387,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @return [TrueClass, FalseClass]
 		def IsCached(key)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -426,11 +421,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [Object]
-		# @param  eTag [String]
-		# @param  itemTextData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [Object]
+		# @param eTag [String]
+		# @param itemTextData [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveText(key, expireDateTime, eTag, itemTextData)
 			# ...
@@ -448,11 +443,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [CkDateTime]
-		# @param  eTag [String]
-		# @param  itemTextData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [CkDateTime]
+		# @param eTag [String]
+		# @param itemTextData [String]
+		# @return [TrueClass, FalseClass]
 		def SaveTextDt(key, expireDateTime, eTag, itemTextData)
 			# ...
 		end
@@ -468,10 +463,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  eTag [String]
-		# @param  itemTextData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param eTag [String]
+		# @param itemTextData [String]
+		# @return [TrueClass, FalseClass]
 		def SaveTextNoExpire(key, eTag, itemTextData)
 			# ...
 		end
@@ -488,11 +483,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [String]
-		# @param  eTag [String]
-		# @param  itemTextData [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [String]
+		# @param eTag [String]
+		# @param itemTextData [String]
+		# @return [TrueClass, FalseClass]
 		def SaveTextStr(key, expireDateTime, eTag, itemTextData)
 			# ...
 		end
@@ -510,11 +505,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [Object]
-		# @param  eTag [String]
-		# @param  itemData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [Object]
+		# @param eTag [String]
+		# @param itemData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveToCache(key, expireDateTime, eTag, itemData)
 			# ...
@@ -532,11 +527,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [CkDateTime]
-		# @param  eTag [String]
-		# @param  itemData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [CkDateTime]
+		# @param eTag [String]
+		# @param itemData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def SaveToCacheDt(key, expireDateTime, eTag, itemData)
 			# ...
 		end
@@ -552,10 +547,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  eTag [String]
-		# @param  itemData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param eTag [String]
+		# @param itemData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def SaveToCacheNoExpire(key, eTag, itemData)
 			# ...
 		end
@@ -572,11 +567,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [String]
-		# @param  eTag [String]
-		# @param  itemData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [String]
+		# @param eTag [String]
+		# @param itemData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def SaveToCacheStr(key, expireDateTime, eTag, itemData)
 			# ...
 		end
@@ -592,9 +587,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [Object]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [Object]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UpdateExpiration(key, expireDateTime)
 			# ...
@@ -610,9 +605,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [CkDateTime]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [CkDateTime]
+		# @return [TrueClass, FalseClass]
 		def UpdateExpirationDt(key, expireDateTime)
 			# ...
 		end
@@ -627,9 +622,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  key [String]
-		# @param  expireDateTime [String]
-		# @return  [TrueClass, FalseClass]
+		# @param key [String]
+		# @param expireDateTime [String]
+		# @return [TrueClass, FalseClass]
 		def UpdateExpirationStr(key, expireDateTime)
 			# ...
 		end

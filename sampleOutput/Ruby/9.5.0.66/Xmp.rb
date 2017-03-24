@@ -1,11 +1,12 @@
 module Chilkat
 	class CkXmp 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -24,109 +23,106 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumEmbedded() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_StructInnerDescrip(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_StructInnerDescrip() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_StructInnerDescrip(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -143,11 +139,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xml [CkXml]
-		# @param  arrType [String]
-		# @param  propName [String]
-		# @param  values [CkStringArray]
-		# @return  [TrueClass, FalseClass]
+		# @param xml [CkXml]
+		# @param arrType [String]
+		# @param propName [String]
+		# @param values [CkStringArray]
+		# @return [TrueClass, FalseClass]
 		def AddArray(xml, arrType, propName, values)
 			# ...
 		end
@@ -162,9 +158,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  ns [String]
-		# @param  uri [String]
-		# @return  [nil]
+		# @param ns [String]
+		# @param uri [String]
+		# @return [nil]
 		def AddNsMapping(ns, uri)
 			# ...
 		end
@@ -181,10 +177,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @param  propVal [Object]
-		# @return  [TrueClass, FalseClass]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @param propVal [Object]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AddSimpleDate(iXml, propName, propVal)
 			# ...
@@ -201,10 +197,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @param  propVal [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @param propVal [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def AddSimpleInt(iXml, propName, propVal)
 			# ...
 		end
@@ -220,10 +216,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @param  propVal [String]
-		# @return  [TrueClass, FalseClass]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @param propVal [String]
+		# @return [TrueClass, FalseClass]
 		def AddSimpleStr(iXml, propName, propVal)
 			# ...
 		end
@@ -240,11 +236,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iChilkatXml [CkXml]
-		# @param  structName [String]
-		# @param  propName [String]
-		# @param  propValue [String]
-		# @return  [TrueClass, FalseClass]
+		# @param iChilkatXml [CkXml]
+		# @param structName [String]
+		# @param propName [String]
+		# @param propValue [String]
+		# @return [TrueClass, FalseClass]
 		def AddStructProp(iChilkatXml, structName, propName, propValue)
 			# ...
 		end
@@ -258,8 +254,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @return  [TrueClass, FalseClass]
+		# @param iXml [CkXml]
+		# @return [TrueClass, FalseClass]
 		def Append(iXml)
 			# ...
 		end
@@ -274,8 +270,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  d [Object]
-		# @return  [String]
+		# @param d [Object]
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def DateToString(d)
 			# ...
@@ -291,9 +287,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @return  [CkStringArray]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @return [CkStringArray]
 		def GetArray(iXml, propName)
 			# ...
 		end
@@ -307,8 +303,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkXml]
+		# @param index [Fixnum]
+		# @return [CkXml]
 		def GetEmbedded(index)
 			# ...
 		end
@@ -323,9 +319,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @return  [CkXml]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @return [CkXml]
 		def GetProperty(iXml, propName)
 			# ...
 		end
@@ -341,9 +337,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @return  [Object]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetSimpleDate(iXml, propName)
 			# ...
@@ -359,9 +355,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @return  [Fixnum]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @return [Fixnum]
 		def GetSimpleInt(iXml, propName)
 			# ...
 		end
@@ -376,9 +372,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @return  [String]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @return [String]
 		def GetSimpleStr(iXml, propName)
 			# ...
 		end
@@ -393,9 +389,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  structName [String]
-		# @return  [CkStringArray]
+		# @param iXml [CkXml]
+		# @param structName [String]
+		# @return [CkStringArray]
 		def GetStructPropNames(iXml, structName)
 			# ...
 		end
@@ -411,10 +407,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  structName [String]
-		# @param  propName [String]
-		# @return  [String]
+		# @param iXml [CkXml]
+		# @param structName [String]
+		# @param propName [String]
+		# @return [String]
 		def GetStructValue(iXml, structName, propName)
 			# ...
 		end
@@ -428,8 +424,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def LoadAppFile(filename)
 			# ...
 		end
@@ -444,9 +440,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  fileData [CkByteData]
-		# @param  ext [String]
-		# @return  [TrueClass, FalseClass]
+		# @param fileData [CkByteData]
+		# @param ext [String]
+		# @return [TrueClass, FalseClass]
 		def LoadFromBuffer(fileData, ext)
 			# ...
 		end
@@ -459,7 +455,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkXml]
+		# @return [CkXml]
 		def NewXmp()
 			# ...
 		end
@@ -472,7 +468,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RemoveAllEmbedded()
 			# ...
 		end
@@ -487,9 +483,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveArray(iXml, propName)
 			# ...
 		end
@@ -503,8 +499,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def RemoveEmbedded(index)
 			# ...
 		end
@@ -518,8 +514,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  ns [String]
-		# @return  [nil]
+		# @param ns [String]
+		# @return [nil]
 		def RemoveNsMapping(ns)
 			# ...
 		end
@@ -534,9 +530,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  propName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param iXml [CkXml]
+		# @param propName [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveSimple(iXml, propName)
 			# ...
 		end
@@ -551,9 +547,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  structName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param iXml [CkXml]
+		# @param structName [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveStruct(iXml, structName)
 			# ...
 		end
@@ -569,10 +565,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  iXml [CkXml]
-		# @param  structName [String]
-		# @param  propName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param iXml [CkXml]
+		# @param structName [String]
+		# @param propName [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveStructProp(iXml, structName, propName)
 			# ...
 		end
@@ -586,9 +582,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filename [String]
+		# @return [TrueClass, FalseClass]
 		def SaveAppFile(filename)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -600,7 +611,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def SaveToBuffer()
 			# ...
 		end
@@ -615,8 +626,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [Object]
+		# @param str [String]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def StringToDate(str)
 			# ...
@@ -631,8 +642,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

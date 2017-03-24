@@ -1,22 +1,29 @@
 module Chilkat
 	class CkMailboxes 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_Count() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: GetFlags
@@ -28,8 +35,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetFlags(index)
 			# ...
 		end
@@ -43,8 +50,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mbxName [String]
-		# @return  [Fixnum]
+		# @param mbxName [String]
+		# @return [Fixnum]
 		def GetMailboxIndex(mbxName)
 			# ...
 		end
@@ -58,8 +65,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def GetName(index)
 			# ...
 		end
@@ -74,9 +81,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  flagIndex [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @param flagIndex [Fixnum]
+		# @return [String]
 		def GetNthFlag(index, flagIndex)
 			# ...
 		end
@@ -90,8 +97,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [Fixnum]
+		# @param index [Fixnum]
+		# @return [Fixnum]
 		def GetNumFlags(index)
 			# ...
 		end
@@ -106,9 +113,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  flagName [String]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param flagName [String]
+		# @return [TrueClass, FalseClass]
 		def HasFlag(index, flagName)
 			# ...
 		end
@@ -122,8 +129,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def HasInferiors(index)
 			# ...
 		end
@@ -137,8 +144,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def IsMarked(index)
 			# ...
 		end
@@ -152,8 +159,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def IsSelectable(index)
 			# ...
 		end
@@ -167,8 +174,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  task [CkTask]
-		# @return  [TrueClass, FalseClass]
+		# @param task [CkTask]
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end

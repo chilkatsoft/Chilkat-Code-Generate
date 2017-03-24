@@ -1,11 +1,12 @@
 module Chilkat
 	class CkPrng 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -24,77 +23,71 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PrngName(newval) end
+		def get_PrngName(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -102,10 +95,8 @@ module Chilkat
 		# @param newval [String]
 		def put_PrngName(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def prngName() end
 
@@ -113,28 +104,36 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def prngName(newval) end
+		def put_PrngName(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -149,9 +148,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  entropy [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param entropy [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def AddEntropy(entropy, encoding)
 			# ...
 		end
@@ -165,8 +164,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  entropy [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param entropy [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def AddEntropyBytes(entropy)
 			# ...
 		end
@@ -179,7 +178,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ExportEntropy()
 			# ...
 		end
@@ -192,7 +191,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def FirebasePushId()
 			# ...
 		end
@@ -207,9 +206,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBytes [Fixnum]
-		# @param  encoding [String]
-		# @return  [String]
+		# @param numBytes [Fixnum]
+		# @param encoding [String]
+		# @return [String]
 		def GenRandom(numBytes, encoding)
 			# ...
 		end
@@ -224,9 +223,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBytes [Fixnum]
-		# @param  bd [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param numBytes [Fixnum]
+		# @param bd [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def GenRandomBd(numBytes, bd)
 			# ...
 		end
@@ -240,8 +239,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
+		# @param numBytes [Fixnum]
+		# @return [CkByteData]
 		def GenRandomBytes(numBytes)
 			# ...
 		end
@@ -256,9 +255,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBytes [Fixnum]
-		# @param  encoding [String]
-		# @return  [String]
+		# @param numBytes [Fixnum]
+		# @param encoding [String]
+		# @return [String]
 		def GetEntropy(numBytes, encoding)
 			# ...
 		end
@@ -272,8 +271,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
+		# @param numBytes [Fixnum]
+		# @return [CkByteData]
 		def GetEntropyBytes(numBytes)
 			# ...
 		end
@@ -287,8 +286,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  entropy [String]
-		# @return  [TrueClass, FalseClass]
+		# @param entropy [String]
+		# @return [TrueClass, FalseClass]
 		def ImportEntropy(entropy)
 			# ...
 		end
@@ -303,9 +302,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  low [Fixnum]
-		# @param  high [Fixnum]
-		# @return  [Fixnum]
+		# @param low [Fixnum]
+		# @param high [Fixnum]
+		# @return [Fixnum]
 		def RandomInt(low, high)
 			# ...
 		end
@@ -323,12 +322,12 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  length [Fixnum]
-		# @param  mustIncludeDigit [TrueClass, FalseClass]
-		# @param  upperAndLowercase [TrueClass, FalseClass]
-		# @param  mustHaveOneOf [String]
-		# @param  excludeChars [String]
-		# @return  [String]
+		# @param length [Fixnum]
+		# @param mustIncludeDigit [TrueClass, FalseClass]
+		# @param upperAndLowercase [TrueClass, FalseClass]
+		# @param mustHaveOneOf [String]
+		# @param excludeChars [String]
+		# @return [String]
 		def RandomPassword(length, mustIncludeDigit, upperAndLowercase, mustHaveOneOf, excludeChars)
 			# ...
 		end
@@ -345,12 +344,27 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  length [Fixnum]
-		# @param  bDigits [TrueClass, FalseClass]
-		# @param  bLower [TrueClass, FalseClass]
-		# @param  bUpper [TrueClass, FalseClass]
-		# @return  [String]
+		# @param length [Fixnum]
+		# @param bDigits [TrueClass, FalseClass]
+		# @param bLower [TrueClass, FalseClass]
+		# @param bUpper [TrueClass, FalseClass]
+		# @return [String]
 		def RandomString(length, bDigits, bLower, bUpper)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 	end

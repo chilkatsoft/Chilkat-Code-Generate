@@ -1,11 +1,12 @@
 module Chilkat
 	class CkRss 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -24,101 +23,98 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumChannels() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumItems() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -131,7 +127,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkRss]
+		# @return [CkRss]
 		def AddNewChannel()
 			# ...
 		end
@@ -144,7 +140,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkRss]
+		# @return [CkRss]
 		def AddNewImage()
 			# ...
 		end
@@ -157,7 +153,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkRss]
+		# @return [CkRss]
 		def AddNewItem()
 			# ...
 		end
@@ -171,8 +167,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  url [String]
-		# @return  [TrueClass, FalseClass]
+		# @param url [String]
+		# @return [TrueClass, FalseClass]
 		def DownloadRss(url)
 			# ...
 		end
@@ -187,9 +183,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  attrName [String]
-		# @return  [String]
+		# @param tag [String]
+		# @param attrName [String]
+		# @return [String]
 		def GetAttr(tag, attrName)
 			# ...
 		end
@@ -203,8 +199,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkRss]
+		# @param index [Fixnum]
+		# @return [CkRss]
 		def GetChannel(index)
 			# ...
 		end
@@ -218,8 +214,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @return [Fixnum]
 		def GetCount(tag)
 			# ...
 		end
@@ -234,8 +230,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [Object]
+		# @param tag [String]
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetDate(tag)
 			# ...
@@ -250,8 +246,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [String]
+		# @param tag [String]
+		# @return [String]
 		def GetDateStr(tag)
 			# ...
 		end
@@ -264,7 +260,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkRss]
+		# @return [CkRss]
 		def GetImage()
 			# ...
 		end
@@ -278,8 +274,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [Fixnum]
+		# @param tag [String]
+		# @return [Fixnum]
 		def GetInt(tag)
 			# ...
 		end
@@ -293,8 +289,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkRss]
+		# @param index [Fixnum]
+		# @return [CkRss]
 		def GetItem(index)
 			# ...
 		end
@@ -308,8 +304,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [String]
+		# @param tag [String]
+		# @return [String]
 		def GetString(tag)
 			# ...
 		end
@@ -323,8 +319,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  filePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param filePath [String]
+		# @return [TrueClass, FalseClass]
 		def LoadRssFile(filePath)
 			# ...
 		end
@@ -338,8 +334,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  rssString [String]
-		# @return  [TrueClass, FalseClass]
+		# @param rssString [String]
+		# @return [TrueClass, FalseClass]
 		def LoadRssString(rssString)
 			# ...
 		end
@@ -355,10 +351,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  attrName [String]
-		# @return  [String]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param attrName [String]
+		# @return [String]
 		def MGetAttr(tag, index, attrName)
 			# ...
 		end
@@ -373,9 +369,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def MGetString(tag, index)
 			# ...
 		end
@@ -392,11 +388,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  idx [Fixnum]
-		# @param  attrName [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tag [String]
+		# @param idx [Fixnum]
+		# @param attrName [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def MSetAttr(tag, idx, attrName, value)
 			# ...
 		end
@@ -412,10 +408,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  idx [Fixnum]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tag [String]
+		# @param idx [Fixnum]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def MSetString(tag, idx, value)
 			# ...
 		end
@@ -428,7 +424,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def NewRss()
 			# ...
 		end
@@ -442,9 +438,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @return [nil]
 		def Remove(tag)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -459,10 +470,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  attrName [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param attrName [String]
+		# @param value [String]
+		# @return [nil]
 		def SetAttr(tag, attrName, value)
 			# ...
 		end
@@ -478,9 +489,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  dateTime [Object]
-		# @return  [nil]
+		# @param tag [String]
+		# @param dateTime [Object]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetDate(tag, dateTime)
 			# ...
@@ -495,8 +506,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @return [nil]
 		def SetDateNow(tag)
 			# ...
 		end
@@ -511,9 +522,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  dateTimeStr [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param dateTimeStr [String]
+		# @return [nil]
 		def SetDateStr(tag, dateTimeStr)
 			# ...
 		end
@@ -528,9 +539,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  value [Fixnum]
-		# @return  [nil]
+		# @param tag [String]
+		# @param value [Fixnum]
+		# @return [nil]
 		def SetInt(tag, value)
 			# ...
 		end
@@ -545,9 +556,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @param tag [String]
+		# @param value [String]
+		# @return [nil]
 		def SetString(tag, value)
 			# ...
 		end
@@ -560,7 +571,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ToXmlString()
 			# ...
 		end

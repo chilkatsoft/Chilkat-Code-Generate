@@ -1,29 +1,26 @@
 module Chilkat
 	class CkAsn 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_BoolValue(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_BoolValue() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_BoolValue(newval) end
 
-		# returns Bignum
-		#
-		# @return [Bignum]
+		# @return [TrueClass, FalseClass]
 		def get_Constructed() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ContentStr(newval) end
+		def get_ContentStr(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -31,10 +28,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ContentStr(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def contentStr() end
 
@@ -42,14 +37,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def contentStr(newval) end
+		def put_ContentStr(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -57,10 +53,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -68,14 +62,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_IntValue(newval) end
+		def get_IntValue() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -83,109 +75,102 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_IntValue(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumSubItems() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_Tag() end
 
-		# returns String
-		#
 		# @return [String]
 		def tag() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_TagValue() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -200,9 +185,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedBytes [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encodedBytes [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def AppendBigInt(encodedBytes, encoding)
 			# ...
 		end
@@ -217,9 +202,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedBytes [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encodedBytes [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def AppendBits(encodedBytes, encoding)
 			# ...
 		end
@@ -233,8 +218,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param value [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendBool(value)
 			# ...
 		end
@@ -248,8 +233,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param tag [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def AppendContextConstructed(tag)
 			# ...
 		end
@@ -265,10 +250,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  tag [Fixnum]
-		# @param  encodedBytes [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param tag [Fixnum]
+		# @param encodedBytes [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def AppendContextPrimitive(tag, encodedBytes, encoding)
 			# ...
 		end
@@ -282,8 +267,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param value [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def AppendInt(value)
 			# ...
 		end
@@ -296,7 +281,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendNull()
 			# ...
 		end
@@ -311,9 +296,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedBytes [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encodedBytes [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def AppendOctets(encodedBytes, encoding)
 			# ...
 		end
@@ -327,8 +312,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  oid [String]
-		# @return  [TrueClass, FalseClass]
+		# @param oid [String]
+		# @return [TrueClass, FalseClass]
 		def AppendOid(oid)
 			# ...
 		end
@@ -341,7 +326,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendSequence()
 			# ...
 		end
@@ -354,7 +339,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendSequence2()
 			# ...
 		end
@@ -367,7 +352,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkAsn]
+		# @return [CkAsn]
 		def AppendSequenceR()
 			# ...
 		end
@@ -380,7 +365,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendSet()
 			# ...
 		end
@@ -393,7 +378,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendSet2()
 			# ...
 		end
@@ -406,7 +391,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkAsn]
+		# @return [CkAsn]
 		def AppendSetR()
 			# ...
 		end
@@ -421,9 +406,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  strType [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param strType [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def AppendString(strType, value)
 			# ...
 		end
@@ -438,9 +423,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  timeFormat [String]
-		# @param  dateTimeStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param timeFormat [String]
+		# @param dateTimeStr [String]
+		# @return [TrueClass, FalseClass]
 		def AppendTime(timeFormat, dateTimeStr)
 			# ...
 		end
@@ -453,7 +438,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def AsnToXml()
 			# ...
 		end
@@ -467,8 +452,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def DeleteSubItem(index)
 			# ...
 		end
@@ -481,7 +466,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def GetBinaryDer()
 			# ...
 		end
@@ -495,8 +480,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @return  [String]
+		# @param encoding [String]
+		# @return [String]
 		def GetEncodedContent(encoding)
 			# ...
 		end
@@ -510,8 +495,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @return  [String]
+		# @param encoding [String]
+		# @return [String]
 		def GetEncodedDer(encoding)
 			# ...
 		end
@@ -524,7 +509,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkAsn]
+		# @return [CkAsn]
 		def GetLastSubItem()
 			# ...
 		end
@@ -538,8 +523,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [CkAsn]
+		# @param index [Fixnum]
+		# @return [CkAsn]
 		def GetSubItem(index)
 			# ...
 		end
@@ -553,8 +538,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  xmlStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @param xmlStr [String]
+		# @return [TrueClass, FalseClass]
 		def LoadAsnXml(xmlStr)
 			# ...
 		end
@@ -568,8 +553,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  derBytes [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param derBytes [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def LoadBinary(derBytes)
 			# ...
 		end
@@ -583,8 +568,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def LoadBinaryFile(path)
 			# ...
 		end
@@ -599,10 +584,25 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  asnContent [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param asnContent [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def LoadEncoded(asnContent, encoding)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -616,9 +616,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encodedBytes [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encodedBytes [String]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def SetEncodedContent(encodedBytes, encoding)
 			# ...
 		end
@@ -632,8 +632,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def WriteBinaryDer(path)
 			# ...
 		end

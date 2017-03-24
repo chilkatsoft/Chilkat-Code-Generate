@@ -1,11 +1,9 @@
 module Chilkat
 	class CkStringBuilder 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_IntValue(newval) end
+		def get_IntValue() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -13,23 +11,30 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_IntValue(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_Length() end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: Append
@@ -41,8 +46,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def Append(value)
 			# ...
 		end
@@ -59,11 +64,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binData [CkBinData]
-		# @param  charset [String]
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param binData [CkBinData]
+		# @param charset [String]
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def AppendBd(binData, charset, offset, numBytes)
 			# ...
 		end
@@ -78,9 +83,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  binaryData [CkByteData]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @param binaryData [CkByteData]
+		# @param encoding [String]
+		# @return [TrueClass, FalseClass]
 		def AppendEncoded(binaryData, encoding)
 			# ...
 		end
@@ -94,9 +99,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param value [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def AppendInt(value)
+			# ...
+		end
+
+		# Method: AppendInt64
+		#
+		# ==== Attributes
+		#
+		# +value+ - Bignum
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param value [Bignum]
+		# @return [TrueClass, FalseClass]
+		def AppendInt64(value)
 			# ...
 		end
 
@@ -110,9 +130,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [String]
-		# @param  crlf [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param value [String]
+		# @param crlf [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendLine(value, crlf)
 			# ...
 		end
@@ -126,8 +146,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def AppendSb(sb)
 			# ...
 		end
@@ -140,7 +160,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -155,9 +175,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Contains(str, caseSensitive)
 			# ...
 		end
@@ -172,9 +192,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param str [String]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ContentsEqual(str, caseSensitive)
 			# ...
 		end
@@ -189,9 +209,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sb [CkStringBuilder]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param sb [CkStringBuilder]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ContentsEqualSb(sb, caseSensitive)
 			# ...
 		end
@@ -206,9 +226,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encoding [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def Decode(encoding, charset)
 			# ...
 		end
@@ -223,9 +243,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param encoding [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def Encode(encoding, charset)
 			# ...
 		end
@@ -240,9 +260,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  substr [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param substr [String]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def EndsWith(substr, caseSensitive)
 			# ...
 		end
@@ -255,7 +275,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def EntityDecode()
 			# ...
 		end
@@ -271,10 +291,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  searchAfter [String]
-		# @param  beginMark [String]
-		# @param  endMark [String]
-		# @return  [String]
+		# @param searchAfter [String]
+		# @param beginMark [String]
+		# @param endMark [String]
+		# @return [String]
 		def GetAfterBetween(searchAfter, beginMark, endMark)
 			# ...
 		end
@@ -287,7 +307,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def GetAsString()
 			# ...
 		end
@@ -302,9 +322,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  beginMark [String]
-		# @param  endMark [String]
-		# @return  [String]
+		# @param beginMark [String]
+		# @param endMark [String]
+		# @return [String]
 		def GetBetween(beginMark, endMark)
 			# ...
 		end
@@ -318,8 +338,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @return  [CkByteData]
+		# @param encoding [String]
+		# @return [CkByteData]
 		def GetDecoded(encoding)
 			# ...
 		end
@@ -334,9 +354,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  encoding [String]
-		# @param  charset [String]
-		# @return  [String]
+		# @param encoding [String]
+		# @param charset [String]
+		# @return [String]
 		def GetEncoded(encoding, charset)
 			# ...
 		end
@@ -353,11 +373,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  delimiterChar [String]
-		# @param  exceptDoubleQuoted [TrueClass, FalseClass]
-		# @param  exceptEscaped [TrueClass, FalseClass]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @param delimiterChar [String]
+		# @param exceptDoubleQuoted [TrueClass, FalseClass]
+		# @param exceptEscaped [TrueClass, FalseClass]
+		# @return [String]
 		def GetNth(index, delimiterChar, exceptDoubleQuoted, exceptEscaped)
 			# ...
 		end
@@ -372,9 +392,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  numLines [Fixnum]
-		# @param  bCrlf [TrueClass, FalseClass]
-		# @return  [String]
+		# @param numLines [Fixnum]
+		# @param bCrlf [TrueClass, FalseClass]
+		# @return [String]
 		def LastNLines(numLines, bCrlf)
 			# ...
 		end
@@ -389,9 +409,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def LoadFile(path, charset)
 			# ...
 		end
@@ -405,8 +425,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def Prepend(value)
 			# ...
 		end
@@ -421,9 +441,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [String]
-		# @param  replacement [String]
-		# @return  [Fixnum]
+		# @param value [String]
+		# @param replacement [String]
+		# @return [Fixnum]
 		def Replace(value, replacement)
 			# ...
 		end
@@ -440,11 +460,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  beginMark [String]
-		# @param  endMark [String]
-		# @param  replacement [String]
-		# @param  replaceMarks [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param beginMark [String]
+		# @param endMark [String]
+		# @param replacement [String]
+		# @param replaceMarks [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ReplaceAllBetween(beginMark, endMark, replacement, replaceMarks)
 			# ...
 		end
@@ -461,11 +481,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  beginMark [String]
-		# @param  endMark [String]
-		# @param  value [String]
-		# @param  replacement [String]
-		# @return  [Fixnum]
+		# @param beginMark [String]
+		# @param endMark [String]
+		# @param value [String]
+		# @param replacement [String]
+		# @return [Fixnum]
 		def ReplaceBetween(beginMark, endMark, value, replacement)
 			# ...
 		end
@@ -480,9 +500,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [String]
-		# @param  replacement [String]
-		# @return  [Fixnum]
+		# @param value [String]
+		# @param replacement [String]
+		# @return [Fixnum]
 		def ReplaceWord(value, replacement)
 			# ...
 		end
@@ -500,12 +520,12 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @param  value [String]
-		# @param  delimiterChar [String]
-		# @param  exceptDoubleQuoted [TrueClass, FalseClass]
-		# @param  exceptEscaped [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param index [Fixnum]
+		# @param value [String]
+		# @param delimiterChar [String]
+		# @param exceptDoubleQuoted [TrueClass, FalseClass]
+		# @param exceptEscaped [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetNth(index, value, delimiterChar, exceptDoubleQuoted, exceptEscaped)
 			# ...
 		end
@@ -519,8 +539,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def SetString(value)
 			# ...
 		end
@@ -535,9 +555,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  substr [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param substr [String]
+		# @param caseSensitive [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def StartsWith(substr, caseSensitive)
 			# ...
 		end
@@ -550,7 +570,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ToCRLF()
 			# ...
 		end
@@ -563,7 +583,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ToLF()
 			# ...
 		end
@@ -576,7 +596,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ToLowercase()
 			# ...
 		end
@@ -589,7 +609,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ToUppercase()
 			# ...
 		end
@@ -602,7 +622,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Trim()
 			# ...
 		end
@@ -615,7 +635,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def TrimInsideSpaces()
 			# ...
 		end
@@ -631,10 +651,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @param  charset [String]
-		# @param  emitBom [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @param charset [String]
+		# @param emitBom [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path, charset, emitBom)
 			# ...
 		end

@@ -1,11 +1,12 @@
 module Chilkat
 	class CkCharset 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_AltToCharset(newval) end
+		def get_AltToCharset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -13,10 +14,8 @@ module Chilkat
 		# @param newval [String]
 		def put_AltToCharset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def altToCharset() end
 
@@ -24,14 +23,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def altToCharset(newval) end
+		def put_AltToCharset(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -39,10 +39,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -50,14 +48,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_ErrorAction(newval) end
+		def get_ErrorAction() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -65,12 +61,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_ErrorAction(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_FromCharset(newval) end
+		def get_FromCharset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -78,10 +75,8 @@ module Chilkat
 		# @param newval [String]
 		def put_FromCharset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def fromCharset() end
 
@@ -89,130 +84,106 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def fromCharset(newval) end
+		def put_FromCharset(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastInputAsHex() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastInputAsHex() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastInputAsQP() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastInputAsQP() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastOutputAsHex() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastOutputAsHex() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastOutputAsQP() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastOutputAsQP() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_SaveLast(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_SaveLast() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_SaveLast(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ToCharset(newval) end
+		def get_ToCharset(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -220,10 +191,8 @@ module Chilkat
 		# @param newval [String]
 		def put_ToCharset(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def toCharset() end
 
@@ -231,28 +200,36 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def toCharset(newval) end
+		def put_ToCharset(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -266,8 +243,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  charsetName [String]
-		# @return  [Fixnum]
+		# @param charsetName [String]
+		# @return [Fixnum]
 		def CharsetToCodePage(charsetName)
 			# ...
 		end
@@ -281,8 +258,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  codePage [Fixnum]
-		# @return  [String]
+		# @param codePage [Fixnum]
+		# @return [String]
 		def CodePageToCharset(codePage)
 			# ...
 		end
@@ -296,8 +273,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inData [CkByteData]
-		# @return  [CkByteData]
+		# @param inData [CkByteData]
+		# @return [CkByteData]
 		def ConvertData(inData)
 			# ...
 		end
@@ -312,9 +289,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inPath [String]
-		# @param  destPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param inPath [String]
+		# @param destPath [String]
+		# @return [TrueClass, FalseClass]
 		def ConvertFile(inPath, destPath)
 			# ...
 		end
@@ -329,9 +306,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inPath [String]
-		# @param  destPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param inPath [String]
+		# @param destPath [String]
+		# @return [TrueClass, FalseClass]
 		def ConvertFileNoPreamble(inPath, destPath)
 			# ...
 		end
@@ -345,8 +322,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inData [String]
-		# @return  [CkByteData]
+		# @param inData [String]
+		# @return [CkByteData]
 		def ConvertFromUnicode(inData)
 			# ...
 		end
@@ -360,8 +337,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  uniData [CkByteData]
-		# @return  [CkByteData]
+		# @param uniData [CkByteData]
+		# @return [CkByteData]
 		def ConvertFromUtf16(uniData)
 			# ...
 		end
@@ -375,8 +352,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inData [CkByteData]
-		# @return  [CkByteData]
+		# @param inData [CkByteData]
+		# @return [CkByteData]
 		def ConvertHtml(inData)
 			# ...
 		end
@@ -391,9 +368,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inPath [String]
-		# @param  destPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param inPath [String]
+		# @param destPath [String]
+		# @return [TrueClass, FalseClass]
 		def ConvertHtmlFile(inPath, destPath)
 			# ...
 		end
@@ -407,8 +384,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inData [CkByteData]
-		# @return  [String]
+		# @param inData [CkByteData]
+		# @return [String]
 		def ConvertToUnicode(inData)
 			# ...
 		end
@@ -422,8 +399,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mbData [CkByteData]
-		# @return  [CkByteData]
+		# @param mbData [CkByteData]
+		# @return [CkByteData]
 		def ConvertToUtf16(mbData)
 			# ...
 		end
@@ -437,8 +414,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def EntityEncodeDec(str)
 			# ...
 		end
@@ -452,8 +429,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @return  [String]
+		# @param str [String]
+		# @return [String]
 		def EntityEncodeHex(str)
 			# ...
 		end
@@ -467,8 +444,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inData [CkByteData]
-		# @return  [String]
+		# @param inData [CkByteData]
+		# @return [String]
 		def GetHtmlCharset(inData)
 			# ...
 		end
@@ -482,8 +459,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  htmlFilePath [String]
-		# @return  [String]
+		# @param htmlFilePath [String]
+		# @return [String]
 		def GetHtmlFileCharset(htmlFilePath)
 			# ...
 		end
@@ -497,8 +474,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inStr [String]
-		# @return  [String]
+		# @param inStr [String]
+		# @return [String]
 		def HtmlDecodeToStr(inStr)
 			# ...
 		end
@@ -512,8 +489,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inHtml [CkByteData]
-		# @return  [CkByteData]
+		# @param inHtml [CkByteData]
+		# @return [CkByteData]
 		def HtmlEntityDecode(inHtml)
 			# ...
 		end
@@ -528,9 +505,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inPath [String]
-		# @param  destPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param inPath [String]
+		# @param destPath [String]
+		# @return [TrueClass, FalseClass]
 		def HtmlEntityDecodeFile(inPath, destPath)
 			# ...
 		end
@@ -543,7 +520,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -557,8 +534,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inStr [String]
-		# @return  [String]
+		# @param inStr [String]
+		# @return [String]
 		def LowerCase(inStr)
 			# ...
 		end
@@ -572,8 +549,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @return  [CkByteData]
+		# @param path [String]
+		# @return [CkByteData]
 		def ReadFile(path)
 			# ...
 		end
@@ -588,10 +565,25 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @param  charset [String]
-		# @return  [String]
+		# @param path [String]
+		# @param charset [String]
+		# @return [String]
 		def ReadFileToString(path, charset)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -604,8 +596,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  data [CkByteData]
-		# @return  [nil]
+		# @param data [CkByteData]
+		# @return [nil]
 		def SetErrorBytes(data)
 			# ...
 		end
@@ -620,9 +612,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  str [String]
-		# @param  charset [String]
-		# @return  [nil]
+		# @param str [String]
+		# @param charset [String]
+		# @return [nil]
 		def SetErrorString(str, charset)
 			# ...
 		end
@@ -636,8 +628,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -651,8 +643,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inStr [String]
-		# @return  [String]
+		# @param inStr [String]
+		# @return [String]
 		def UpperCase(inStr)
 			# ...
 		end
@@ -666,8 +658,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  inStr [String]
-		# @return  [String]
+		# @param inStr [String]
+		# @return [String]
 		def UrlDecodeStr(inStr)
 			# ...
 		end
@@ -682,9 +674,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  charset [String]
-		# @param  inData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param charset [String]
+		# @param inData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def VerifyData(charset, inData)
 			# ...
 		end
@@ -699,9 +691,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  charset [String]
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @param charset [String]
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
 		def VerifyFile(charset, path)
 			# ...
 		end
@@ -716,9 +708,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  path [String]
-		# @param  byteData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param path [String]
+		# @param byteData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path, byteData)
 			# ...
 		end
@@ -734,10 +726,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  textData [String]
-		# @param  path [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @param textData [String]
+		# @param path [String]
+		# @param charset [String]
+		# @return [TrueClass, FalseClass]
 		def WriteStringToFile(textData, path, charset)
 			# ...
 		end

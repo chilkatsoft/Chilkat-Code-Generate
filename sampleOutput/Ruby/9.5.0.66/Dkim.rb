@@ -1,24 +1,23 @@
 module Chilkat
 	class CkDkim 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AbortCurrent(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AbortCurrent() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AbortCurrent(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -26,10 +25,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -37,14 +34,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DkimAlg(newval) end
+		def get_DkimAlg(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -52,10 +50,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DkimAlg(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dkimAlg() end
 
@@ -63,14 +59,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dkimAlg(newval) end
+		def put_DkimAlg(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_DkimBodyLengthCount(newval) end
+		def get_DkimBodyLengthCount() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -78,12 +72,13 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_DkimBodyLengthCount(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DkimCanon(newval) end
+		def get_DkimCanon(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -91,10 +86,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DkimCanon(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dkimCanon() end
 
@@ -102,14 +95,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dkimCanon(newval) end
+		def put_DkimCanon(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DkimDomain(newval) end
+		def get_DkimDomain(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -117,10 +111,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DkimDomain(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dkimDomain() end
 
@@ -128,14 +120,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dkimDomain(newval) end
+		def put_DkimDomain(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DkimHeaders(newval) end
+		def get_DkimHeaders(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -143,10 +136,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DkimHeaders(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dkimHeaders() end
 
@@ -154,14 +145,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dkimHeaders(newval) end
+		def put_DkimHeaders(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DkimSelector(newval) end
+		def get_DkimSelector(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -169,10 +161,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DkimSelector(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def dkimSelector() end
 
@@ -180,14 +170,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def dkimSelector(newval) end
+		def put_DkimSelector(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DomainKeyAlg(newval) end
+		def get_DomainKeyAlg(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -195,10 +186,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DomainKeyAlg(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def domainKeyAlg() end
 
@@ -206,14 +195,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def domainKeyAlg(newval) end
+		def put_DomainKeyAlg(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DomainKeyCanon(newval) end
+		def get_DomainKeyCanon(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -221,10 +211,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DomainKeyCanon(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def domainKeyCanon() end
 
@@ -232,14 +220,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def domainKeyCanon(newval) end
+		def put_DomainKeyCanon(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DomainKeyDomain(newval) end
+		def get_DomainKeyDomain(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -247,10 +236,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DomainKeyDomain(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def domainKeyDomain() end
 
@@ -258,14 +245,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def domainKeyDomain(newval) end
+		def put_DomainKeyDomain(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DomainKeyHeaders(newval) end
+		def get_DomainKeyHeaders(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -273,10 +261,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DomainKeyHeaders(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def domainKeyHeaders() end
 
@@ -284,14 +270,15 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def domainKeyHeaders(newval) end
+		def put_DomainKeyHeaders(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DomainKeySelector(newval) end
+		def get_DomainKeySelector(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -299,10 +286,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DomainKeySelector(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def domainKeySelector() end
 
@@ -310,16 +295,14 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def domainKeySelector(newval) end
+		def put_DomainKeySelector(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs(newval) end
+		def get_HeartbeatMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -329,89 +312,90 @@ module Chilkat
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -425,8 +409,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mimeIn [CkByteData]
-		# @return  [CkByteData]
+		# @param mimeIn [CkByteData]
+		# @return [CkByteData]
 		def AddDkimSignature(mimeIn)
 			# ...
 		end
@@ -440,8 +424,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mimeIn [CkByteData]
-		# @return  [CkByteData]
+		# @param mimeIn [CkByteData]
+		# @return [CkByteData]
 		def AddDomainKeySignature(mimeIn)
 			# ...
 		end
@@ -456,9 +440,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  privateKey [String]
-		# @param  optionalPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param privateKey [String]
+		# @param optionalPassword [String]
+		# @return [TrueClass, FalseClass]
 		def LoadDkimPk(privateKey, optionalPassword)
 			# ...
 		end
@@ -473,9 +457,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  privateKeyDer [CkByteData]
-		# @param  optionalPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param privateKeyDer [CkByteData]
+		# @param optionalPassword [String]
+		# @return [TrueClass, FalseClass]
 		def LoadDkimPkBytes(privateKeyDer, optionalPassword)
 			# ...
 		end
@@ -490,9 +474,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  privateKeyFilePath [String]
-		# @param  optionalPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param privateKeyFilePath [String]
+		# @param optionalPassword [String]
+		# @return [TrueClass, FalseClass]
 		def LoadDkimPkFile(privateKeyFilePath, optionalPassword)
 			# ...
 		end
@@ -507,9 +491,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  privateKey [String]
-		# @param  optionalPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param privateKey [String]
+		# @param optionalPassword [String]
+		# @return [TrueClass, FalseClass]
 		def LoadDomainKeyPk(privateKey, optionalPassword)
 			# ...
 		end
@@ -524,9 +508,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  privateKeyDer [CkByteData]
-		# @param  optionalPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param privateKeyDer [CkByteData]
+		# @param optionalPassword [String]
+		# @return [TrueClass, FalseClass]
 		def LoadDomainKeyPkBytes(privateKeyDer, optionalPassword)
 			# ...
 		end
@@ -541,9 +525,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  privateKeyFilePath [String]
-		# @param  optionalPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @param privateKeyFilePath [String]
+		# @param optionalPassword [String]
+		# @return [TrueClass, FalseClass]
 		def LoadDomainKeyPkFile(privateKeyFilePath, optionalPassword)
 			# ...
 		end
@@ -559,10 +543,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  selector [String]
-		# @param  domain [String]
-		# @param  publicKey [String]
-		# @return  [TrueClass, FalseClass]
+		# @param selector [String]
+		# @param domain [String]
+		# @param publicKey [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPublicKey(selector, domain, publicKey)
 			# ...
 		end
@@ -578,10 +562,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  selector [String]
-		# @param  domain [String]
-		# @param  publicKeyFilepath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param selector [String]
+		# @param domain [String]
+		# @param publicKeyFilepath [String]
+		# @return [TrueClass, FalseClass]
 		def LoadPublicKeyFile(selector, domain, publicKeyFilepath)
 			# ...
 		end
@@ -595,8 +579,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mimeData [CkByteData]
-		# @return  [Fixnum]
+		# @param mimeData [CkByteData]
+		# @return [Fixnum]
 		def NumDkimSignatures(mimeData)
 			# ...
 		end
@@ -610,8 +594,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  mimeData [CkByteData]
-		# @return  [Fixnum]
+		# @param mimeData [CkByteData]
+		# @return [Fixnum]
 		def NumDomainKeySignatures(mimeData)
 			# ...
 		end
@@ -626,10 +610,25 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  selector [String]
-		# @param  domain [String]
-		# @return  [TrueClass, FalseClass]
+		# @param selector [String]
+		# @param domain [String]
+		# @return [TrueClass, FalseClass]
 		def PrefetchPublicKey(selector, domain)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -642,8 +641,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @param unlockCode [String]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -658,9 +657,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sigIndex [Fixnum]
-		# @param  mimeData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param sigIndex [Fixnum]
+		# @param mimeData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def VerifyDkimSignature(sigIndex, mimeData)
 			# ...
 		end
@@ -675,9 +674,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  sigIndex [Fixnum]
-		# @param  mimeData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param sigIndex [Fixnum]
+		# @param mimeData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def VerifyDomainKeySignature(sigIndex, mimeData)
 			# ...
 		end

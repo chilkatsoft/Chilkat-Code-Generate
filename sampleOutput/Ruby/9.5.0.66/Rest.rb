@@ -1,37 +1,34 @@
 module Chilkat
 	class CkRest 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AllowHeaderFolding(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AllowHeaderFolding() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AllowHeaderFolding(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_AllowHeaderQB(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_AllowHeaderQB() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_AllowHeaderQB(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Authorization(newval) end
+		def get_Authorization(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -39,10 +36,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Authorization(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def authorization() end
 
@@ -50,19 +45,18 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def authorization(newval) end
+		def put_Authorization(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ConnectFailReason() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath(newval) end
+		def get_DebugLogFilePath(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -70,10 +64,8 @@ module Chilkat
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def debugLogFilePath() end
 
@@ -81,16 +73,14 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
 		#
 		# @event
-		def get_HeartbeatMs(newval) end
+		def get_HeartbeatMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -100,12 +90,13 @@ module Chilkat
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Host(newval) end
+		def get_Host(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -113,10 +104,8 @@ module Chilkat
 		# @param newval [String]
 		def put_Host(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def host() end
 
@@ -124,14 +113,12 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def host(newval) end
+		def put_Host(newval) end
 
-		# +newval+ - [Fixnum]
 		# returns Bignum
 		#
-		# @param newval [Fixnum]
 		# @return [Bignum]
-		def get_IdleTimeoutMs(newval) end
+		def get_IdleTimeoutMs() end
 
 		# ==== Attributes
 		# +newval+ - Bignum
@@ -139,100 +126,84 @@ module Chilkat
 		# @param newval [Bignum]
 		def put_IdleTimeoutMs(newval) end
 
-		# returns Fixnum
+		# +ckByteData+ - [CkByteData]
+		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_LastMethodSuccess(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_LastMethodSuccess() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastRequestHeader() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastRequestHeader() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_LastRequestStartLine() end
 
-		# returns String
-		#
 		# @return [String]
 		def lastRequestStartLine() end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_NumResponseHeaders() end
 
-		# +newval+ - [String]
+		# +ckStr+ - [CkString]
 		# returns String
 		#
-		# @param newval [String]
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PartSelector(newval) end
+		def get_PartSelector(ckStr) end
 
 		# ==== Attributes
 		# +newval+ - String
@@ -240,10 +211,8 @@ module Chilkat
 		# @param newval [String]
 		def put_PartSelector(newval) end
 
-		# +newval+ - [String]
 		# returns String
 		#
-		# @param newval [String]
 		# @return [String]
 		def partSelector() end
 
@@ -251,79 +220,73 @@ module Chilkat
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def partSelector(newval) end
+		def put_PartSelector(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_PercentDoneOnSend(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_PercentDoneOnSend() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_PercentDoneOnSend(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def get_ResponseHeader() end
 
-		# returns String
-		#
 		# @return [String]
 		def responseHeader() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ResponseStatusCode() end
 
-		# returns String
-		#
 		# @return [String]
 		def get_ResponseStatusText() end
 
-		# returns String
-		#
 		# @return [String]
 		def responseStatusText() end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_StreamNonChunked(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_StreamNonChunked() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		def put_StreamNonChunked(newval) end
 
-		# +newval+ - [TrueClass, FalseClass]
-		# returns Bignum
+		# returns TrueClass, FalseClass
 		#
-		# @param newval [TrueClass, FalseClass]
-		# @return [Bignum]
-		def get_VerboseLogging(newval) end
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
 
 		# ==== Attributes
-		# +newval+ - Bignum
+		# +newval+ - TrueClass, FalseClass
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# returns TrueClass, FalseClass
+		#
+		# @return [TrueClass, FalseClass]
+		def get_VerboseLogging() end
+
+		# ==== Attributes
+		# +newval+ - TrueClass, FalseClass
+		#
+		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# returns String
+		# +ckStr+ - [CkString]
+		# @param ckStr [CkString]
 		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
-		#
 		# @return [String]
 		def version() end
 
@@ -338,9 +301,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def AddHeader(name, value)
 			# ...
 		end
@@ -357,11 +320,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  domain [String]
-		# @param  mwsSecretKey [String]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param domain [String]
+		# @param mwsSecretKey [String]
+		# @return [TrueClass, FalseClass]
 		def AddMwsSignature(httpVerb, uriPath, domain, mwsSecretKey)
 			# ...
 		end
@@ -376,9 +339,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [String]
+		# @return [TrueClass, FalseClass]
 		def AddQueryParam(name, value)
 			# ...
 		end
@@ -392,8 +355,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  queryString [String]
-		# @return  [TrueClass, FalseClass]
+		# @param queryString [String]
+		# @return [TrueClass, FalseClass]
 		def AddQueryParams(queryString)
 			# ...
 		end
@@ -408,9 +371,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @param  value [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @param value [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def AddQueryParamSb(name, value)
 			# ...
 		end
@@ -423,7 +386,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ClearAllHeaders()
 			# ...
 		end
@@ -436,7 +399,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ClearAllParts()
 			# ...
 		end
@@ -449,7 +412,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ClearAllQueryParams()
 			# ...
 		end
@@ -462,7 +425,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearResponseBodyStream()
 			# ...
 		end
@@ -479,11 +442,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  hostname [String]
-		# @param  port [Fixnum]
-		# @param  tls [TrueClass, FalseClass]
-		# @param  autoReconnect [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param hostname [String]
+		# @param port [Fixnum]
+		# @param tls [TrueClass, FalseClass]
+		# @param autoReconnect [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Connect(hostname, port, tls, autoReconnect)
 			# ...
 		end
@@ -497,8 +460,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  maxWaitMs [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @param maxWaitMs [Fixnum]
+		# @return [TrueClass, FalseClass]
 		def Disconnect(maxWaitMs)
 			# ...
 		end
@@ -515,11 +478,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  binData [CkBinData]
-		# @param  responseBody [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param binData [CkBinData]
+		# @param responseBody [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def FullRequestBd(httpVerb, uriPath, binData, responseBody)
 			# ...
 		end
@@ -535,10 +498,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  bodyBytes [CkByteData]
-		# @return  [String]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param bodyBytes [CkByteData]
+		# @return [String]
 		def FullRequestBinary(httpVerb, uriPath, bodyBytes)
 			# ...
 		end
@@ -553,9 +516,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @return  [String]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @return [String]
 		def FullRequestFormUrlEncoded(httpVerb, uriPath)
 			# ...
 		end
@@ -570,9 +533,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @return  [String]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @return [String]
 		def FullRequestMultipart(httpVerb, uriPath)
 			# ...
 		end
@@ -587,9 +550,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @return  [String]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @return [String]
 		def FullRequestNoBody(httpVerb, uriPath)
 			# ...
 		end
@@ -605,10 +568,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param binData [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def FullRequestNoBodyBd(httpVerb, uriPath, binData)
 			# ...
 		end
@@ -624,10 +587,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param sb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def FullRequestNoBodySb(httpVerb, uriPath, sb)
 			# ...
 		end
@@ -644,11 +607,11 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  requestBody [CkStringBuilder]
-		# @param  responseBody [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param requestBody [CkStringBuilder]
+		# @param responseBody [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def FullRequestSb(httpVerb, uriPath, requestBody, responseBody)
 			# ...
 		end
@@ -664,10 +627,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  stream [CkStream]
-		# @return  [String]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param stream [CkStream]
+		# @return [String]
 		def FullRequestStream(httpVerb, uriPath, stream)
 			# ...
 		end
@@ -683,10 +646,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  bodyText [String]
-		# @return  [String]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param bodyText [String]
+		# @return [String]
 		def FullRequestString(httpVerb, uriPath, bodyText)
 			# ...
 		end
@@ -700,8 +663,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  responseBody [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param responseBody [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def ReadRespBd(responseBody)
 			# ...
 		end
@@ -714,7 +677,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkByteData]
+		# @return [CkByteData]
 		def ReadRespBodyBinary()
 			# ...
 		end
@@ -729,9 +692,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  stream [CkStream]
-		# @param  autoSetStreamCharset [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param stream [CkStream]
+		# @param autoSetStreamCharset [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ReadRespBodyStream(stream, autoSetStreamCharset)
 			# ...
 		end
@@ -744,7 +707,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [String]
+		# @return [String]
 		def ReadRespBodyString()
 			# ...
 		end
@@ -757,7 +720,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def ReadResponseHeader()
 			# ...
 		end
@@ -771,8 +734,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  responseBody [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param responseBody [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def ReadRespSb(responseBody)
 			# ...
 		end
@@ -785,7 +748,7 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @return  [CkUrl]
+		# @return [CkUrl]
 		def RedirectUrl()
 			# ...
 		end
@@ -799,8 +762,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveHeader(name)
 			# ...
 		end
@@ -814,8 +777,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [TrueClass, FalseClass]
+		# @param name [String]
+		# @return [TrueClass, FalseClass]
 		def RemoveQueryParam(name)
 			# ...
 		end
@@ -829,8 +792,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  name [String]
-		# @return  [String]
+		# @param name [String]
+		# @return [String]
 		def ResponseHdrByName(name)
 			# ...
 		end
@@ -844,8 +807,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def ResponseHdrName(index)
 			# ...
 		end
@@ -859,9 +822,24 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
+		# @param index [Fixnum]
+		# @return [String]
 		def ResponseHdrValue(index)
+			# ...
+		end
+
+		# Method: SaveLastError
+		#
+		# ==== Attributes
+		#
+		# +path+ - String
+		# returns TrueClass, FalseClass
+		#
+		# YARD =>
+		#
+		# @param path [String]
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
 
@@ -876,10 +854,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  body [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param body [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def SendReqBd(httpVerb, uriPath, body)
 			# ...
 		end
@@ -895,10 +873,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  body [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param body [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def SendReqBinaryBody(httpVerb, uriPath, body)
 			# ...
 		end
@@ -913,9 +891,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @return [TrueClass, FalseClass]
 		def SendReqFormUrlEncoded(httpVerb, uriPath)
 			# ...
 		end
@@ -930,9 +908,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @return [TrueClass, FalseClass]
 		def SendReqMultipart(httpVerb, uriPath)
 			# ...
 		end
@@ -947,9 +925,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @return [TrueClass, FalseClass]
 		def SendReqNoBody(httpVerb, uriPath)
 			# ...
 		end
@@ -965,10 +943,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  bodySb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param bodySb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def SendReqSb(httpVerb, uriPath, bodySb)
 			# ...
 		end
@@ -984,10 +962,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  stream [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param stream [CkStream]
+		# @return [TrueClass, FalseClass]
 		def SendReqStreamBody(httpVerb, uriPath, stream)
 			# ...
 		end
@@ -1003,10 +981,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  httpVerb [String]
-		# @param  uriPath [String]
-		# @param  bodyText [String]
-		# @return  [TrueClass, FalseClass]
+		# @param httpVerb [String]
+		# @param uriPath [String]
+		# @param bodyText [String]
+		# @return [TrueClass, FalseClass]
 		def SendReqStringBody(httpVerb, uriPath, bodyText)
 			# ...
 		end
@@ -1020,8 +998,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  authProvider [CkAuthAws]
-		# @return  [TrueClass, FalseClass]
+		# @param authProvider [CkAuthAws]
+		# @return [TrueClass, FalseClass]
 		def SetAuthAws(authProvider)
 			# ...
 		end
@@ -1035,8 +1013,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  authProvider [CkAuthAzureAD]
-		# @return  [TrueClass, FalseClass]
+		# @param authProvider [CkAuthAzureAD]
+		# @return [TrueClass, FalseClass]
 		def SetAuthAzureAD(authProvider)
 			# ...
 		end
@@ -1050,8 +1028,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  authProvider [CkAuthAzureSAS]
-		# @return  [TrueClass, FalseClass]
+		# @param authProvider [CkAuthAzureSAS]
+		# @return [TrueClass, FalseClass]
 		def SetAuthAzureSas(authProvider)
 			# ...
 		end
@@ -1065,8 +1043,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  authProvider [CkAuthAzureStorage]
-		# @return  [TrueClass, FalseClass]
+		# @param authProvider [CkAuthAzureStorage]
+		# @return [TrueClass, FalseClass]
 		def SetAuthAzureStorage(authProvider)
 			# ...
 		end
@@ -1081,9 +1059,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  username [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @param username [String]
+		# @param password [String]
+		# @return [TrueClass, FalseClass]
 		def SetAuthBasic(username, password)
 			# ...
 		end
@@ -1097,8 +1075,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  authProvider [CkAuthGoogle]
-		# @return  [TrueClass, FalseClass]
+		# @param authProvider [CkAuthGoogle]
+		# @return [TrueClass, FalseClass]
 		def SetAuthGoogle(authProvider)
 			# ...
 		end
@@ -1113,9 +1091,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  authProvider [CkOAuth1]
-		# @param  useQueryParams [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param authProvider [CkOAuth1]
+		# @param useQueryParams [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetAuthOAuth1(authProvider, useQueryParams)
 			# ...
 		end
@@ -1129,8 +1107,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  authProvider [CkOAuth2]
-		# @return  [TrueClass, FalseClass]
+		# @param authProvider [CkOAuth2]
+		# @return [TrueClass, FalseClass]
 		def SetAuthOAuth2(authProvider)
 			# ...
 		end
@@ -1144,8 +1122,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bodyData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @param bodyData [CkBinData]
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodyBd(bodyData)
 			# ...
 		end
@@ -1159,8 +1137,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bodyData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @param bodyData [CkByteData]
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodyBinary(bodyData)
 			# ...
 		end
@@ -1174,8 +1152,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bodySb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @param bodySb [CkStringBuilder]
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodySb(bodySb)
 			# ...
 		end
@@ -1189,8 +1167,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  stream [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @param stream [CkStream]
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodyStream(stream)
 			# ...
 		end
@@ -1204,8 +1182,8 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  bodyText [String]
-		# @return  [TrueClass, FalseClass]
+		# @param bodyText [String]
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodyString(bodyText)
 			# ...
 		end
@@ -1221,10 +1199,10 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  expectedStatus [Fixnum]
-		# @param  autoSetStreamCharset [TrueClass, FalseClass]
-		# @param  responseStream [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @param expectedStatus [Fixnum]
+		# @param autoSetStreamCharset [TrueClass, FalseClass]
+		# @param responseStream [CkStream]
+		# @return [TrueClass, FalseClass]
 		def SetResponseBodyStream(expectedStatus, autoSetStreamCharset, responseStream)
 			# ...
 		end
@@ -1239,9 +1217,9 @@ module Chilkat
 		#
 		# YARD =>
 		#
-		# @param  connection [CkSocket]
-		# @param  autoReconnect [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @param connection [CkSocket]
+		# @param autoReconnect [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UseConnection(connection, autoReconnect)
 			# ...
 		end
