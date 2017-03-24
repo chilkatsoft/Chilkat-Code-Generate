@@ -224,11 +224,11 @@ namespace GenSample
             foreach (MethodArg arg in xmethod.Args)
             {
                 //if (i > 1) sbOut.Append(", ");
-                sbOut.Append("\t\t# @param  " + arg.Name + " [" + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "]\r\n");
+                sbOut.Append("\t\t# @param " + arg.Name + " [" + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "]\r\n");
                 i++;
             }
 
-            sbOut.Append("\t\t# @return  [" + rtnType + "]\r\n");
+            sbOut.Append("\t\t# @return [" + rtnType + "]\r\n");
             if (xmethod.Deprecated)
                 sbOut.Append("\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
 
