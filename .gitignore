@@ -51,3 +51,7 @@ _ReSharper.Caches
 *.suo
 obj/
 
+# Remove user specific settings
+
+*.DotSettings.user
+
