@@ -86,7 +86,7 @@ namespace GenSample
                 // Skip some properties we may not want..
                 // (What you do here depends on your needs..)
                 //if (xprop.Deprecated) continue;
-                if (!xprop.AxEnabled) continue;     // We don't want properties that do not exist in the ActiveX..
+                //if (!xprop.AxEnabled) continue;     // We don't want properties that do not exist in the ActiveX..
                                                     //if (xprop.IsBytes) continue;  // maybe we don't want to deal with the few properties that are binary data.
                     //if (xprop.IsEventRelated()) continue;
                     // ...
@@ -102,7 +102,7 @@ namespace GenSample
                 // Skip some properties we may not want..
                 // (What you do here depends on your needs..)
                 //if (xmethod.Deprecated) continue;
-                if (!xmethod.AxEnabled) continue;     // We don't want properties that do not exist in the ActiveX..
+                //if (!xmethod.AxEnabled) continue;     // We don't want properties that do not exist in the ActiveX..
                 //if (xmethod.IsBytes || xmethod.HasArgWithGt(ChilkatTypes.GT_BYTES)) continue;  // Maybe we don't want to deal with binary return values or args..
                 // ...
 
@@ -121,15 +121,15 @@ namespace GenSample
             // All properties have getters..
             // Types can be emitted using an existing conversion, or you could write your own..
 
-            if (!xprop.ReadOnly && !lowerCaseAlt && xprop.m_gt > 0)
-                sbOut.Append("\t\t# +newval+ - ["+ m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType) + "]\r\n");
+            if (!lowerCaseAlt && xprop.IsBaseEntry)
+                sbOut.Append("\t\t# +newval+ - ["+ xprop.IsObject.ToString() + " - " + m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType) + "]\r\n");
 
             sbOut.Append("\t\t# returns " + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "\r\n\t\t#\r\n");
             if (xprop.Deprecated)
                 sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
 
-                if (!xprop.ReadOnly && !lowerCaseAlt && xprop.m_gt > 0)
-                    sbOut.Append("\t\t# @param newval [" + m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType) + "]\r\n");
+            if (!lowerCaseAlt && xprop.IsBaseEntry)
+                sbOut.Append("\t\t# @param newval [" + m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType) + "]\r\n");
             sbOut.Append("\t\t# @return [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
             if (xprop.Deprecated)
                 sbOut.Append("\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
@@ -144,8 +144,9 @@ namespace GenSample
                 else
                 {
 
-                    if (!xprop.ReadOnly)
+                    if (!xprop.ReadOnly || xprop.IsBaseEntry)
                     {
+                        //MessageBox.Show(xprop.NumArgs.ToString());
                         sbOut.Append("\t\tdef get_" + xprop.EntryName + "(newval) end\r\n\r\n");
                     }
                     else
