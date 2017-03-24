@@ -3,28 +3,17 @@ module Chilkat
 		# @return [Bignum]
 		def get_BitLength() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
@@ -34,13 +23,11 @@ module Chilkat
 		# @return [String]
 		def keyType() end
 
-		# +ckByteData+ - [CkByteData]
 		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
 		def get_LastBinaryResult(ckByteData) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -49,7 +36,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorHtml() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -58,7 +44,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorText() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -67,18 +52,12 @@ module Chilkat
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -90,54 +69,32 @@ module Chilkat
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Pkcs8EncryptAlg(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Pkcs8EncryptAlg(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def pkcs8EncryptAlg() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Pkcs8EncryptAlg(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -149,644 +106,539 @@ module Chilkat
 
 		# Method: GetJwk
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GetJwk()
+		# @return [TrueClass, FalseClass]
+		def GetJwk(outStr)
 			# ...
 		end
+
+
+		# Method: GetJwk
+		#
+		#
+		# @return [String]
+		def getJwk()
+			# ...
+		end
+
 
 		# Method: GetJwkThumbprint
 		#
-		# ==== Attributes
-		#
-		# +hashAlg+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param hashAlg [String]
-		# @return [String]
-		def GetJwkThumbprint(hashAlg)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetJwkThumbprint(hashAlg, outStr)
 			# ...
 		end
+
+
+		# Method: GetJwkThumbprint
+		#
+		# @param hashAlg [String]
+		#
+		# @return [String]
+		def getJwkThumbprint(hashAlg)
+			# ...
+		end
+
 
 		# Method: GetPkcs1
 		#
-		# ==== Attributes
+		# @param outBytes [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
-		def GetPkcs1()
+		# @return [TrueClass, FalseClass]
+		def GetPkcs1(outBytes)
 			# ...
 		end
+
 
 		# Method: GetPkcs1ENC
 		#
-		# ==== Attributes
-		#
-		# +encoding+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param encoding [String]
-		# @return [String]
-		def GetPkcs1ENC(encoding)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetPkcs1ENC(encoding, outStr)
 			# ...
 		end
+
+
+		# Method: GetPkcs1ENC
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getPkcs1ENC(encoding)
+			# ...
+		end
+
 
 		# Method: GetPkcs1Pem
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GetPkcs1Pem()
+		# @return [TrueClass, FalseClass]
+		def GetPkcs1Pem(outStr)
 			# ...
 		end
+
+
+		# Method: GetPkcs1Pem
+		#
+		#
+		# @return [String]
+		def getPkcs1Pem()
+			# ...
+		end
+
 
 		# Method: GetPkcs8
 		#
-		# ==== Attributes
+		# @param outData [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
-		def GetPkcs8()
+		# @return [TrueClass, FalseClass]
+		def GetPkcs8(outData)
 			# ...
 		end
+
 
 		# Method: GetPkcs8ENC
 		#
-		# ==== Attributes
-		#
-		# +encoding+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param encoding [String]
-		# @return [String]
-		def GetPkcs8ENC(encoding)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetPkcs8ENC(encoding, outStr)
 			# ...
 		end
+
+
+		# Method: GetPkcs8ENC
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getPkcs8ENC(encoding)
+			# ...
+		end
+
 
 		# Method: GetPkcs8Encrypted
 		#
-		# ==== Attributes
-		#
-		# +password+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param password [String]
-		# @return [CkByteData]
-		def GetPkcs8Encrypted(password)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetPkcs8Encrypted(password, outBytes)
 			# ...
 		end
+
 
 		# Method: GetPkcs8EncryptedENC
 		#
-		# ==== Attributes
+		# @param encoding [String]
+		# @param password [String]
+		# @param outStr [CkString]
 		#
-		# +encoding+ - String
-		# +password+ - String
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def GetPkcs8EncryptedENC(encoding, password, outStr)
+			# ...
+		end
+
+
+		# Method: GetPkcs8EncryptedENC
 		#
 		# @param encoding [String]
 		# @param password [String]
+		#
 		# @return [String]
-		def GetPkcs8EncryptedENC(encoding, password)
+		def getPkcs8EncryptedENC(encoding, password)
 			# ...
 		end
+
 
 		# Method: GetPkcs8EncryptedPem
 		#
-		# ==== Attributes
-		#
-		# +password+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param password [String]
-		# @return [String]
-		def GetPkcs8EncryptedPem(password)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetPkcs8EncryptedPem(password, outStr)
 			# ...
 		end
+
+
+		# Method: GetPkcs8EncryptedPem
+		#
+		# @param password [String]
+		#
+		# @return [String]
+		def getPkcs8EncryptedPem(password)
+			# ...
+		end
+
 
 		# Method: GetPkcs8Pem
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GetPkcs8Pem()
+		# @return [TrueClass, FalseClass]
+		def GetPkcs8Pem(outStr)
 			# ...
 		end
 
+
+		# Method: GetPkcs8Pem
+		#
+		#
+		# @return [String]
+		def getPkcs8Pem()
+			# ...
+		end
+
+
 		# Method: GetPublicKey
 		#
-		# ==== Attributes
-		#
-		# returns CkPublicKey
-		#
-		# YARD =>
 		#
 		# @return [CkPublicKey]
 		def GetPublicKey()
 			# ...
 		end
 
+
 		# Method: GetRsaDer
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# @param outData [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
-		def GetRsaDer()
+		def GetRsaDer(outData)
 			# ...
 		end
+
 
 		# Method: GetRsaPem
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
+		# @return [TrueClass, FalseClass]
+		# @deprecated This method has been deprecated. Do not use it.
+		def GetRsaPem(outStr)
+			# ...
+		end
+
+
+		# Method: GetRsaPem
 		#
-		# YARD =>
 		#
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
-		def GetRsaPem()
+		def getRsaPem()
 			# ...
 		end
+
 
 		# Method: GetXml
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GetXml()
+		# @return [TrueClass, FalseClass]
+		def GetXml(outStr)
 			# ...
 		end
 
+
+		# Method: GetXml
+		#
+		#
+		# @return [String]
+		def getXml()
+			# ...
+		end
+
+
 		# Method: LoadEncryptedPem
-		#
-		# ==== Attributes
-		#
-		# +pemStr+ - String
-		# +password+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param pemStr [String]
 		# @param password [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadEncryptedPem(pemStr, password)
 			# ...
 		end
 
+
 		# Method: LoadEncryptedPemFile
-		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# +password+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param path [String]
 		# @param password [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadEncryptedPemFile(path, password)
 			# ...
 		end
 
+
 		# Method: LoadJwk
 		#
-		# ==== Attributes
-		#
-		# +jsonStr+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param jsonStr [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadJwk(jsonStr)
 			# ...
 		end
 
+
 		# Method: LoadPem
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param str [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPem(str)
 			# ...
 		end
 
+
 		# Method: LoadPemFile
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPemFile(path)
 			# ...
 		end
 
+
 		# Method: LoadPkcs1
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPkcs1(data)
 			# ...
 		end
 
+
 		# Method: LoadPkcs1File
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPkcs1File(path)
 			# ...
 		end
 
+
 		# Method: LoadPkcs8
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPkcs8(data)
 			# ...
 		end
 
+
 		# Method: LoadPkcs8Encrypted
-		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# +password+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param data [CkByteData]
 		# @param password [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPkcs8Encrypted(data, password)
 			# ...
 		end
 
+
 		# Method: LoadPkcs8EncryptedFile
-		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# +password+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param path [String]
 		# @param password [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPkcs8EncryptedFile(path, password)
 			# ...
 		end
 
+
 		# Method: LoadPkcs8File
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPkcs8File(path)
 			# ...
 		end
 
+
 		# Method: LoadPvk
-		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# +password+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param data [CkByteData]
 		# @param password [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPvk(data, password)
 			# ...
 		end
 
+
 		# Method: LoadPvkFile
-		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# +password+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param path [String]
 		# @param password [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadPvkFile(path, password)
 			# ...
 		end
 
+
 		# Method: LoadRsaDer
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDer(data)
 			# ...
 		end
 
+
 		# Method: LoadRsaDerFile
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDerFile(path)
 			# ...
 		end
 
+
 		# Method: LoadXml
 		#
-		# ==== Attributes
-		#
-		# +xml+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param xml [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadXml(xml)
 			# ...
 		end
 
+
 		# Method: LoadXmlFile
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadXmlFile(path)
 			# ...
 		end
 
+
 		# Method: SaveLastError
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
 
+
 		# Method: SavePemFile
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SavePemFile(path)
 			# ...
 		end
 
+
 		# Method: SavePkcs1File
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SavePkcs1File(path)
 			# ...
 		end
 
+
 		# Method: SavePkcs8EncryptedFile
-		#
-		# ==== Attributes
-		#
-		# +password+ - String
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param password [String]
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SavePkcs8EncryptedFile(password, path)
 			# ...
 		end
 
+
 		# Method: SavePkcs8EncryptedPemFile
-		#
-		# ==== Attributes
-		#
-		# +password+ - String
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param password [String]
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SavePkcs8EncryptedPemFile(password, path)
 			# ...
 		end
 
+
 		# Method: SavePkcs8File
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SavePkcs8File(path)
 			# ...
 		end
 
+
 		# Method: SavePkcs8PemFile
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SavePkcs8PemFile(path)
 			# ...
 		end
 
+
 		# Method: SaveRsaDerFile
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaDerFile(path)
 			# ...
 		end
 
+
 		# Method: SaveRsaPemFile
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaPemFile(path)
 			# ...
 		end
 
+
 		# Method: SaveXmlFile
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveXmlFile(path)
 			# ...
 		end
+
 	end
 end

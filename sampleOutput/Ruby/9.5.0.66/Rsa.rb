@@ -1,87 +1,52 @@
 module Chilkat
 	class CkRsa 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Charset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def charset() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_EncodingMode(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_EncodingMode(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def encodingMode() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_EncodingMode(newval) end
 
-		# +ckByteData+ - [CkByteData]
 		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
 		def get_LastBinaryResult(ckByteData) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -90,7 +55,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorHtml() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -99,7 +63,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorText() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -108,18 +71,12 @@ module Chilkat
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -131,90 +88,53 @@ module Chilkat
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LittleEndian() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LittleEndian(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_NoUnpad() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_NoUnpad(newval) end
 
 		# @return [Bignum]
 		def get_NumBits() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_OaepHash(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_OaepHash(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def oaepHash() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_OaepHash(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_OaepPadding() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_OaepPadding(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -226,661 +146,604 @@ module Chilkat
 
 		# Method: DecryptBytes
 		#
-		# ==== Attributes
-		#
-		# +inData+ - CkByteData
-		# +usePrivateKey+ - TrueClass, FalseClass
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param inData [CkByteData]
 		# @param usePrivateKey [TrueClass, FalseClass]
-		# @return [CkByteData]
-		def DecryptBytes(inData, usePrivateKey)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def DecryptBytes(inData, usePrivateKey, outData)
 			# ...
 		end
+
 
 		# Method: DecryptBytesENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# +bUsePrivateKey+ - TrueClass, FalseClass
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param str [String]
 		# @param bUsePrivateKey [TrueClass, FalseClass]
-		# @return [CkByteData]
-		def DecryptBytesENC(str, bUsePrivateKey)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def DecryptBytesENC(str, bUsePrivateKey, outData)
 			# ...
 		end
+
 
 		# Method: DecryptString
 		#
-		# ==== Attributes
+		# @param binarySig [CkByteData]
+		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# +binarySig+ - CkByteData
-		# +usePrivateKey+ - TrueClass, FalseClass
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def DecryptString(binarySig, usePrivateKey, outStr)
+			# ...
+		end
+
+
+		# Method: DecryptString
 		#
 		# @param binarySig [CkByteData]
 		# @param usePrivateKey [TrueClass, FalseClass]
+		#
 		# @return [String]
-		def DecryptString(binarySig, usePrivateKey)
+		def decryptString(binarySig, usePrivateKey)
 			# ...
 		end
+
 
 		# Method: DecryptStringENC
 		#
-		# ==== Attributes
+		# @param encodedSig [String]
+		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# +encodedSig+ - String
-		# +usePrivateKey+ - TrueClass, FalseClass
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def DecryptStringENC(encodedSig, usePrivateKey, outStr)
+			# ...
+		end
+
+
+		# Method: DecryptStringENC
 		#
 		# @param encodedSig [String]
 		# @param usePrivateKey [TrueClass, FalseClass]
+		#
 		# @return [String]
-		def DecryptStringENC(encodedSig, usePrivateKey)
+		def decryptStringENC(encodedSig, usePrivateKey)
 			# ...
 		end
+
 
 		# Method: EncryptBytes
 		#
-		# ==== Attributes
-		#
-		# +binaryData+ - CkByteData
-		# +usePrivateKey+ - TrueClass, FalseClass
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param binaryData [CkByteData]
 		# @param usePrivateKey [TrueClass, FalseClass]
-		# @return [CkByteData]
-		def EncryptBytes(binaryData, usePrivateKey)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def EncryptBytes(binaryData, usePrivateKey, outData)
 			# ...
 		end
+
 
 		# Method: EncryptBytesENC
 		#
-		# ==== Attributes
+		# @param data [CkByteData]
+		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# +data+ - CkByteData
-		# +bUsePrivateKey+ - TrueClass, FalseClass
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def EncryptBytesENC(data, bUsePrivateKey, outStr)
+			# ...
+		end
+
+
+		# Method: EncryptBytesENC
 		#
 		# @param data [CkByteData]
 		# @param bUsePrivateKey [TrueClass, FalseClass]
+		#
 		# @return [String]
-		def EncryptBytesENC(data, bUsePrivateKey)
+		def encryptBytesENC(data, bUsePrivateKey)
 			# ...
 		end
+
 
 		# Method: EncryptString
 		#
-		# ==== Attributes
-		#
-		# +stringToEncrypt+ - String
-		# +usePrivateKey+ - TrueClass, FalseClass
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param stringToEncrypt [String]
 		# @param usePrivateKey [TrueClass, FalseClass]
-		# @return [CkByteData]
-		def EncryptString(stringToEncrypt, usePrivateKey)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def EncryptString(stringToEncrypt, usePrivateKey, outData)
 			# ...
 		end
+
 
 		# Method: EncryptStringENC
 		#
-		# ==== Attributes
+		# @param str [String]
+		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# +str+ - String
-		# +bUsePrivateKey+ - TrueClass, FalseClass
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def EncryptStringENC(str, bUsePrivateKey, outStr)
+			# ...
+		end
+
+
+		# Method: EncryptStringENC
 		#
 		# @param str [String]
 		# @param bUsePrivateKey [TrueClass, FalseClass]
+		#
 		# @return [String]
-		def EncryptStringENC(str, bUsePrivateKey)
+		def encryptStringENC(str, bUsePrivateKey)
 			# ...
 		end
+
 
 		# Method: ExportPrivateKey
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def ExportPrivateKey()
+		# @return [TrueClass, FalseClass]
+		def ExportPrivateKey(outStr)
 			# ...
 		end
 
+
+		# Method: ExportPrivateKey
+		#
+		#
+		# @return [String]
+		def exportPrivateKey()
+			# ...
+		end
+
+
 		# Method: ExportPrivateKeyObj
 		#
-		# ==== Attributes
-		#
-		# returns CkPrivateKey
-		#
-		# YARD =>
 		#
 		# @return [CkPrivateKey]
 		def ExportPrivateKeyObj()
 			# ...
 		end
 
+
 		# Method: ExportPublicKey
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def ExportPublicKey()
+		# @return [TrueClass, FalseClass]
+		def ExportPublicKey(outStr)
 			# ...
 		end
 
+
+		# Method: ExportPublicKey
+		#
+		#
+		# @return [String]
+		def exportPublicKey()
+			# ...
+		end
+
+
 		# Method: ExportPublicKeyObj
 		#
-		# ==== Attributes
-		#
-		# returns CkPublicKey
-		#
-		# YARD =>
 		#
 		# @return [CkPublicKey]
 		def ExportPublicKeyObj()
 			# ...
 		end
 
+
 		# Method: GenerateKey
 		#
-		# ==== Attributes
-		#
-		# +numBits+ - Fixnum
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param numBits [Fixnum]
+		#
 		# @return [TrueClass, FalseClass]
 		def GenerateKey(numBits)
 			# ...
 		end
 
+
 		# Method: ImportPrivateKey
 		#
-		# ==== Attributes
-		#
-		# +xmlKey+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param xmlKey [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def ImportPrivateKey(xmlKey)
 			# ...
 		end
 
+
 		# Method: ImportPrivateKeyObj
 		#
-		# ==== Attributes
-		#
-		# +key+ - CkPrivateKey
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param key [CkPrivateKey]
+		#
 		# @return [TrueClass, FalseClass]
 		def ImportPrivateKeyObj(key)
 			# ...
 		end
 
+
 		# Method: ImportPublicKey
 		#
-		# ==== Attributes
-		#
-		# +xmlKey+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param xmlKey [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def ImportPublicKey(xmlKey)
 			# ...
 		end
 
+
 		# Method: ImportPublicKeyObj
 		#
-		# ==== Attributes
-		#
-		# +key+ - CkPublicKey
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param key [CkPublicKey]
+		#
 		# @return [TrueClass, FalseClass]
 		def ImportPublicKeyObj(key)
 			# ...
 		end
 
+
 		# Method: OpenSslSignBytes
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [CkByteData]
-		def OpenSslSignBytes(data)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def OpenSslSignBytes(data, outBytes)
 			# ...
 		end
+
 
 		# Method: OpenSslSignBytesENC
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [String]
-		def OpenSslSignBytesENC(data)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def OpenSslSignBytesENC(data, outStr)
 			# ...
 		end
+
+
+		# Method: OpenSslSignBytesENC
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def openSslSignBytesENC(data)
+			# ...
+		end
+
 
 		# Method: OpenSslSignString
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [CkByteData]
-		def OpenSslSignString(str)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def OpenSslSignString(str, outBytes)
 			# ...
 		end
+
 
 		# Method: OpenSslSignStringENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [String]
-		def OpenSslSignStringENC(str)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def OpenSslSignStringENC(str, outStr)
 			# ...
 		end
+
+
+		# Method: OpenSslSignStringENC
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def openSslSignStringENC(str)
+			# ...
+		end
+
 
 		# Method: OpenSslVerifyBytes
 		#
-		# ==== Attributes
-		#
-		# +signature+ - CkByteData
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param signature [CkByteData]
-		# @return [CkByteData]
-		def OpenSslVerifyBytes(signature)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def OpenSslVerifyBytes(signature, outBytes)
 			# ...
 		end
+
 
 		# Method: OpenSslVerifyBytesENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [CkByteData]
-		def OpenSslVerifyBytesENC(str)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def OpenSslVerifyBytesENC(str, outBytes)
 			# ...
 		end
+
 
 		# Method: OpenSslVerifyString
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [String]
-		def OpenSslVerifyString(data)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def OpenSslVerifyString(data, outStr)
 			# ...
 		end
+
+
+		# Method: OpenSslVerifyString
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def openSslVerifyString(data)
+			# ...
+		end
+
 
 		# Method: OpenSslVerifyStringENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [String]
-		def OpenSslVerifyStringENC(str)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def OpenSslVerifyStringENC(str, outStr)
 			# ...
 		end
 
+
+		# Method: OpenSslVerifyStringENC
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def openSslVerifyStringENC(str)
+			# ...
+		end
+
+
 		# Method: SaveLastError
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
 
+
 		# Method: SignBytes
-		#
-		# ==== Attributes
-		#
-		# +binaryData+ - CkByteData
-		# +hashAlgorithm+ - String
-		# returns CkByteData
-		#
-		# YARD =>
 		#
 		# @param binaryData [CkByteData]
 		# @param hashAlgorithm [String]
-		# @return [CkByteData]
-		def SignBytes(binaryData, hashAlgorithm)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def SignBytes(binaryData, hashAlgorithm, outData)
 			# ...
 		end
+
 
 		# Method: SignBytesENC
 		#
-		# ==== Attributes
+		# @param binaryData [CkByteData]
+		# @param hashAlgorithm [String]
+		# @param outStr [CkString]
 		#
-		# +binaryData+ - CkByteData
-		# +hashAlgorithm+ - String
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def SignBytesENC(binaryData, hashAlgorithm, outStr)
+			# ...
+		end
+
+
+		# Method: SignBytesENC
 		#
 		# @param binaryData [CkByteData]
 		# @param hashAlgorithm [String]
+		#
 		# @return [String]
-		def SignBytesENC(binaryData, hashAlgorithm)
+		def signBytesENC(binaryData, hashAlgorithm)
 			# ...
 		end
+
 
 		# Method: SignHash
 		#
-		# ==== Attributes
-		#
-		# +hashBytes+ - CkByteData
-		# +hashAlg+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param hashBytes [CkByteData]
 		# @param hashAlg [String]
-		# @return [CkByteData]
-		def SignHash(hashBytes, hashAlg)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def SignHash(hashBytes, hashAlg, outBytes)
 			# ...
 		end
+
 
 		# Method: SignHashENC
 		#
-		# ==== Attributes
+		# @param encodedHash [String]
+		# @param hashAlg [String]
+		# @param outStr [CkString]
 		#
-		# +encodedHash+ - String
-		# +hashAlg+ - String
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def SignHashENC(encodedHash, hashAlg, outStr)
+			# ...
+		end
+
+
+		# Method: SignHashENC
 		#
 		# @param encodedHash [String]
 		# @param hashAlg [String]
+		#
 		# @return [String]
-		def SignHashENC(encodedHash, hashAlg)
+		def signHashENC(encodedHash, hashAlg)
 			# ...
 		end
+
 
 		# Method: SignString
 		#
-		# ==== Attributes
-		#
-		# +strToBeHashed+ - String
-		# +hashAlgorithm+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param strToBeHashed [String]
 		# @param hashAlgorithm [String]
-		# @return [CkByteData]
-		def SignString(strToBeHashed, hashAlgorithm)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def SignString(strToBeHashed, hashAlgorithm, outData)
 			# ...
 		end
+
 
 		# Method: SignStringENC
 		#
-		# ==== Attributes
+		# @param strToBeHashed [String]
+		# @param hashAlgorithm [String]
+		# @param outStr [CkString]
 		#
-		# +strToBeHashed+ - String
-		# +hashAlgorithm+ - String
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def SignStringENC(strToBeHashed, hashAlgorithm, outStr)
+			# ...
+		end
+
+
+		# Method: SignStringENC
 		#
 		# @param strToBeHashed [String]
 		# @param hashAlgorithm [String]
+		#
 		# @return [String]
-		def SignStringENC(strToBeHashed, hashAlgorithm)
+		def signStringENC(strToBeHashed, hashAlgorithm)
 			# ...
 		end
+
 
 		# Method: SnkToXml
 		#
-		# ==== Attributes
-		#
-		# +filename+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param filename [String]
-		# @return [String]
-		def SnkToXml(filename)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def SnkToXml(filename, outStr)
 			# ...
 		end
 
+
+		# Method: SnkToXml
+		#
+		# @param filename [String]
+		#
+		# @return [String]
+		def snkToXml(filename)
+			# ...
+		end
+
+
 		# Method: UnlockComponent
 		#
-		# ==== Attributes
-		#
-		# +unlockCode+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param unlockCode [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
+
 		# Method: VerifyBytes
-		#
-		# ==== Attributes
-		#
-		# +originalData+ - CkByteData
-		# +hashAlgorithm+ - String
-		# +signatureBytes+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param originalData [CkByteData]
 		# @param hashAlgorithm [String]
 		# @param signatureBytes [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def VerifyBytes(originalData, hashAlgorithm, signatureBytes)
 			# ...
 		end
 
+
 		# Method: VerifyBytesENC
-		#
-		# ==== Attributes
-		#
-		# +originalData+ - CkByteData
-		# +hashAlgorithm+ - String
-		# +encodedSig+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param originalData [CkByteData]
 		# @param hashAlgorithm [String]
 		# @param encodedSig [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def VerifyBytesENC(originalData, hashAlgorithm, encodedSig)
 			# ...
 		end
 
+
 		# Method: VerifyHash
-		#
-		# ==== Attributes
-		#
-		# +hashBytes+ - CkByteData
-		# +hashAlg+ - String
-		# +sigBytes+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param hashBytes [CkByteData]
 		# @param hashAlg [String]
 		# @param sigBytes [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def VerifyHash(hashBytes, hashAlg, sigBytes)
 			# ...
 		end
 
+
 		# Method: VerifyHashENC
-		#
-		# ==== Attributes
-		#
-		# +encodedHash+ - String
-		# +hashAlg+ - String
-		# +encodedSig+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param encodedHash [String]
 		# @param hashAlg [String]
 		# @param encodedSig [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def VerifyHashENC(encodedHash, hashAlg, encodedSig)
 			# ...
 		end
 
+
 		# Method: VerifyPrivateKey
 		#
-		# ==== Attributes
-		#
-		# +xml+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param xml [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def VerifyPrivateKey(xml)
 			# ...
 		end
 
+
 		# Method: VerifyString
-		#
-		# ==== Attributes
-		#
-		# +originalString+ - String
-		# +hashAlgorithm+ - String
-		# +binarySig+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param originalString [String]
 		# @param hashAlgorithm [String]
 		# @param binarySig [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def VerifyString(originalString, hashAlgorithm, binarySig)
 			# ...
 		end
 
+
 		# Method: VerifyStringENC
-		#
-		# ==== Attributes
-		#
-		# +originalString+ - String
-		# +hashAlgorithm+ - String
-		# +encodedSig+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param originalString [String]
 		# @param hashAlgorithm [String]
 		# @param encodedSig [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def VerifyStringENC(originalString, hashAlgorithm, encodedSig)
 			# ...
 		end
+
 	end
 end

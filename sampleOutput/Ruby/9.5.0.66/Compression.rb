@@ -1,127 +1,76 @@
 module Chilkat
 	class CkCompression 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Algorithm(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Algorithm(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def algorithm() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Algorithm(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Charset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def charset() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_EncodingMode(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_EncodingMode(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def encodingMode() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_EncodingMode(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		#
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# +ckByteData+ - [CkByteData]
 		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
 		def get_LastBinaryResult(ckByteData) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -130,7 +79,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorHtml() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -139,7 +87,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorText() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -148,18 +95,12 @@ module Chilkat
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -171,29 +112,18 @@ module Chilkat
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -205,590 +135,584 @@ module Chilkat
 
 		# Method: BeginCompressBytes
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [CkByteData]
-		def BeginCompressBytes(data)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def BeginCompressBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: BeginCompressBytesENC
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [String]
-		def BeginCompressBytesENC(data)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def BeginCompressBytesENC(data, outStr)
 			# ...
 		end
+
+
+		# Method: BeginCompressBytesENC
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def beginCompressBytesENC(data)
+			# ...
+		end
+
 
 		# Method: BeginCompressString
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [CkByteData]
-		def BeginCompressString(str)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def BeginCompressString(str, outData)
 			# ...
 		end
+
 
 		# Method: BeginCompressStringENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [String]
-		def BeginCompressStringENC(str)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def BeginCompressStringENC(str, outStr)
 			# ...
 		end
+
+
+		# Method: BeginCompressStringENC
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def beginCompressStringENC(str)
+			# ...
+		end
+
 
 		# Method: BeginDecompressBytes
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [CkByteData]
-		def BeginDecompressBytes(data)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def BeginDecompressBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: BeginDecompressBytesENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [CkByteData]
-		def BeginDecompressBytesENC(str)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def BeginDecompressBytesENC(str, outData)
 			# ...
 		end
+
 
 		# Method: BeginDecompressString
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [String]
-		def BeginDecompressString(data)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def BeginDecompressString(data, outStr)
 			# ...
 		end
+
+
+		# Method: BeginDecompressString
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def beginDecompressString(data)
+			# ...
+		end
+
 
 		# Method: BeginDecompressStringENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [String]
-		def BeginDecompressStringENC(str)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def BeginDecompressStringENC(str, outStr)
 			# ...
 		end
 
+
+		# Method: BeginDecompressStringENC
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def beginDecompressStringENC(str)
+			# ...
+		end
+
+
 		# Method: CompressBd
 		#
-		# ==== Attributes
-		#
-		# +binData+ - CkBinData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param binData [CkBinData]
+		#
 		# @return [TrueClass, FalseClass]
 		def CompressBd(binData)
 			# ...
 		end
 
+
 		# Method: CompressBytes
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [CkByteData]
-		def CompressBytes(data)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def CompressBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: CompressBytesENC
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [String]
-		def CompressBytesENC(data)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def CompressBytesENC(data, outStr)
 			# ...
 		end
 
+
+		# Method: CompressBytesENC
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def compressBytesENC(data)
+			# ...
+		end
+
+
 		# Method: CompressFile
-		#
-		# ==== Attributes
-		#
-		# +srcPath+ - String
-		# +destPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param srcPath [String]
 		# @param destPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def CompressFile(srcPath, destPath)
 			# ...
 		end
 
+
 		# Method: CompressStream
 		#
-		# ==== Attributes
-		#
-		# +strm+ - CkStream
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param strm [CkStream]
+		#
 		# @return [TrueClass, FalseClass]
 		def CompressStream(strm)
 			# ...
 		end
 
+
 		# Method: CompressString
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [CkByteData]
-		def CompressString(str)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def CompressString(str, outData)
 			# ...
 		end
+
 
 		# Method: CompressStringENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [String]
-		def CompressStringENC(str)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def CompressStringENC(str, outStr)
 			# ...
 		end
 
+
+		# Method: CompressStringENC
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def compressStringENC(str)
+			# ...
+		end
+
+
 		# Method: DecompressBd
 		#
-		# ==== Attributes
-		#
-		# +binData+ - CkBinData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param binData [CkBinData]
+		#
 		# @return [TrueClass, FalseClass]
 		def DecompressBd(binData)
 			# ...
 		end
 
+
 		# Method: DecompressBytes
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [CkByteData]
-		def DecompressBytes(data)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def DecompressBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: DecompressBytesENC
 		#
-		# ==== Attributes
-		#
-		# +encodedCompressedData+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param encodedCompressedData [String]
-		# @return [CkByteData]
-		def DecompressBytesENC(encodedCompressedData)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def DecompressBytesENC(encodedCompressedData, outData)
 			# ...
 		end
 
+
 		# Method: DecompressFile
-		#
-		# ==== Attributes
-		#
-		# +srcPath+ - String
-		# +destPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param srcPath [String]
 		# @param destPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def DecompressFile(srcPath, destPath)
 			# ...
 		end
 
+
 		# Method: DecompressStream
 		#
-		# ==== Attributes
-		#
-		# +strm+ - CkStream
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param strm [CkStream]
+		#
 		# @return [TrueClass, FalseClass]
 		def DecompressStream(strm)
 			# ...
 		end
 
+
 		# Method: DecompressString
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [String]
-		def DecompressString(data)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def DecompressString(data, outStr)
 			# ...
 		end
+
+
+		# Method: DecompressString
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def decompressString(data)
+			# ...
+		end
+
 
 		# Method: DecompressStringENC
 		#
-		# ==== Attributes
-		#
-		# +encodedCompressedData+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param encodedCompressedData [String]
-		# @return [String]
-		def DecompressStringENC(encodedCompressedData)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def DecompressStringENC(encodedCompressedData, outStr)
 			# ...
 		end
+
+
+		# Method: DecompressStringENC
+		#
+		# @param encodedCompressedData [String]
+		#
+		# @return [String]
+		def decompressStringENC(encodedCompressedData)
+			# ...
+		end
+
 
 		# Method: EndCompressBytes
 		#
-		# ==== Attributes
+		# @param outData [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
-		def EndCompressBytes()
+		# @return [TrueClass, FalseClass]
+		def EndCompressBytes(outData)
 			# ...
 		end
+
 
 		# Method: EndCompressBytesENC
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def EndCompressBytesENC()
+		# @return [TrueClass, FalseClass]
+		def EndCompressBytesENC(outStr)
 			# ...
 		end
+
+
+		# Method: EndCompressBytesENC
+		#
+		#
+		# @return [String]
+		def endCompressBytesENC()
+			# ...
+		end
+
 
 		# Method: EndCompressString
 		#
-		# ==== Attributes
+		# @param outData [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
-		def EndCompressString()
+		# @return [TrueClass, FalseClass]
+		def EndCompressString(outData)
 			# ...
 		end
+
 
 		# Method: EndCompressStringENC
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def EndCompressStringENC()
+		# @return [TrueClass, FalseClass]
+		def EndCompressStringENC(outStr)
 			# ...
 		end
+
+
+		# Method: EndCompressStringENC
+		#
+		#
+		# @return [String]
+		def endCompressStringENC()
+			# ...
+		end
+
 
 		# Method: EndDecompressBytes
 		#
-		# ==== Attributes
+		# @param outData [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
-		def EndDecompressBytes()
+		# @return [TrueClass, FalseClass]
+		def EndDecompressBytes(outData)
 			# ...
 		end
+
 
 		# Method: EndDecompressBytesENC
 		#
-		# ==== Attributes
+		# @param outData [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
-		def EndDecompressBytesENC()
+		# @return [TrueClass, FalseClass]
+		def EndDecompressBytesENC(outData)
 			# ...
 		end
+
 
 		# Method: EndDecompressString
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def EndDecompressString()
+		# @return [TrueClass, FalseClass]
+		def EndDecompressString(outStr)
 			# ...
 		end
+
+
+		# Method: EndDecompressString
+		#
+		#
+		# @return [String]
+		def endDecompressString()
+			# ...
+		end
+
 
 		# Method: EndDecompressStringENC
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def EndDecompressStringENC()
+		# @return [TrueClass, FalseClass]
+		def EndDecompressStringENC(outStr)
 			# ...
 		end
+
+
+		# Method: EndDecompressStringENC
+		#
+		#
+		# @return [String]
+		def endDecompressStringENC()
+			# ...
+		end
+
 
 		# Method: MoreCompressBytes
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [CkByteData]
-		def MoreCompressBytes(data)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def MoreCompressBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: MoreCompressBytesENC
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [String]
-		def MoreCompressBytesENC(data)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def MoreCompressBytesENC(data, outStr)
 			# ...
 		end
+
+
+		# Method: MoreCompressBytesENC
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def moreCompressBytesENC(data)
+			# ...
+		end
+
 
 		# Method: MoreCompressString
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [CkByteData]
-		def MoreCompressString(str)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def MoreCompressString(str, outData)
 			# ...
 		end
+
 
 		# Method: MoreCompressStringENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [String]
-		def MoreCompressStringENC(str)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def MoreCompressStringENC(str, outStr)
 			# ...
 		end
+
+
+		# Method: MoreCompressStringENC
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def moreCompressStringENC(str)
+			# ...
+		end
+
 
 		# Method: MoreDecompressBytes
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [CkByteData]
-		def MoreDecompressBytes(data)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def MoreDecompressBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: MoreDecompressBytesENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [CkByteData]
-		def MoreDecompressBytesENC(str)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def MoreDecompressBytesENC(str, outData)
 			# ...
 		end
+
 
 		# Method: MoreDecompressString
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
-		# @return [String]
-		def MoreDecompressString(data)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def MoreDecompressString(data, outStr)
 			# ...
 		end
+
+
+		# Method: MoreDecompressString
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def moreDecompressString(data)
+			# ...
+		end
+
 
 		# Method: MoreDecompressStringENC
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
-		# @return [String]
-		def MoreDecompressStringENC(str)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def MoreDecompressStringENC(str, outStr)
 			# ...
 		end
 
+
+		# Method: MoreDecompressStringENC
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def moreDecompressStringENC(str)
+			# ...
+		end
+
+
 		# Method: SaveLastError
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
 
+
 		# Method: UnlockComponent
 		#
-		# ==== Attributes
-		#
-		# +unlockCode+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param unlockCode [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
+
 	end
 end

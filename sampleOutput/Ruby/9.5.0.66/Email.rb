@@ -1,149 +1,86 @@
 module Chilkat
 	class CkEmail 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Body(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Body(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def body() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Body(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_BounceAddress(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_BounceAddress(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def bounceAddress() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_BounceAddress(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Charset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def charset() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
 		# @return [TrueClass, FalseClass]
 		def get_Decrypted() end
 
-		# +newval+ - [Object]
-		# returns Object
-		#
-		# This method has been deprecated. Do not use it.
 		# @param newval [Object]
 		#
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_EmailDate(newval) end
 
-		# ==== Attributes
-		# +newval+ - Object
-		# This method has been deprecated. Do not use it.
-		#
 		# @param newval [Object]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def put_EmailDate(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_EmailDateStr(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_EmailDateStr(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def emailDateStr() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_EmailDateStr(newval) end
 
@@ -153,103 +90,59 @@ module Chilkat
 		# @return [String]
 		def encryptedBy() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_FileDistList(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_FileDistList(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def fileDistList() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_FileDistList(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_From(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_From(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def from() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_From(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_FromAddress(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_FromAddress(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def fromAddress() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_FromAddress(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_FromName(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_FromName(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def fromName() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_FromName(newval) end
 
@@ -265,13 +158,11 @@ module Chilkat
 		# @return [String]
 		def language() end
 
-		# +ckByteData+ - [CkByteData]
 		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
 		def get_LastBinaryResult(ckByteData) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -280,7 +171,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorHtml() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -289,7 +179,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorText() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -298,18 +187,12 @@ module Chilkat
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -321,72 +204,42 @@ module Chilkat
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# +newval+ - [Object]
-		# returns Object
-		#
-		# This method has been deprecated. Do not use it.
 		# @param newval [Object]
 		#
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_LocalDate(newval) end
 
-		# ==== Attributes
-		# +newval+ - Object
-		# This method has been deprecated. Do not use it.
-		#
 		# @param newval [Object]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def put_LocalDate(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_LocalDateStr(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_LocalDateStr(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def localDateStr() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_LocalDateStr(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Mailer(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Mailer(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def mailer() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Mailer(newval) end
 
@@ -426,86 +279,49 @@ module Chilkat
 		# @return [Bignum]
 		def get_NumTo() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_OverwriteExisting() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_OverwriteExisting(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Pkcs7CryptAlg(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Pkcs7CryptAlg(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def pkcs7CryptAlg() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Pkcs7CryptAlg(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_Pkcs7KeyLength() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_Pkcs7KeyLength(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_PreferredCharset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_PreferredCharset(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def preferredCharset() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_PreferredCharset(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_PrependHeaders() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_PrependHeaders(newval) end
 
@@ -515,86 +331,49 @@ module Chilkat
 		# @return [TrueClass, FalseClass]
 		def get_ReceivedSigned() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_ReplyTo(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_ReplyTo(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def replyTo() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_ReplyTo(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_ReturnReceipt() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_ReturnReceipt(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_SendEncrypted() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_SendEncrypted(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Sender(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Sender(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def sender() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Sender(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_SendSigned() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_SendSigned(newval) end
 
@@ -607,56 +386,34 @@ module Chilkat
 		# @return [String]
 		def signedBy() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_SigningHashAlg(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_SigningHashAlg(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def signingHashAlg() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_SigningHashAlg(newval) end
 
 		# @return [Bignum]
 		def get_Size() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Subject(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Subject(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def subject() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Subject(newval) end
 
@@ -666,40 +423,24 @@ module Chilkat
 		# @return [String]
 		def uidl() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_UnpackUseRelPaths() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_UnpackUseRelPaths(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -711,2785 +452,2484 @@ module Chilkat
 
 		# Method: AddAttachmentBd
 		#
-		# ==== Attributes
-		#
-		# +filename+ - String
-		# +binData+ - CkBinData
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param filename [String]
 		# @param binData [CkBinData]
 		# @param contentType [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddAttachmentBd(filename, binData, contentType)
 			# ...
 		end
 
+
 		# Method: AddAttachmentHeader
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +fieldValue+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param fieldName [String]
 		# @param fieldValue [String]
+		#
 		# @return [nil]
 		def AddAttachmentHeader(index, fieldName, fieldValue)
 			# ...
 		end
 
+
 		# Method: AddBcc
-		#
-		# ==== Attributes
-		#
-		# +friendlyName+ - String
-		# +emailAddress+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param friendlyName [String]
 		# @param emailAddress [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddBcc(friendlyName, emailAddress)
 			# ...
 		end
 
+
 		# Method: AddCC
-		#
-		# ==== Attributes
-		#
-		# +friendlyName+ - String
-		# +emailAddress+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param friendlyName [String]
 		# @param emailAddress [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddCC(friendlyName, emailAddress)
 			# ...
 		end
 
+
 		# Method: AddDataAttachment
-		#
-		# ==== Attributes
-		#
-		# +fileName+ - String
-		# +content+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param fileName [String]
 		# @param content [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddDataAttachment(fileName, content)
 			# ...
 		end
 
+
 		# Method: AddDataAttachment2
-		#
-		# ==== Attributes
-		#
-		# +fileName+ - String
-		# +content+ - CkByteData
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param fileName [String]
 		# @param content [CkByteData]
 		# @param contentType [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddDataAttachment2(fileName, content, contentType)
 			# ...
 		end
 
+
 		# Method: AddEncryptCert
 		#
-		# ==== Attributes
-		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param cert [CkCert]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddEncryptCert(cert)
 			# ...
 		end
 
+
 		# Method: AddFileAttachment
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param path [String]
-		# @return [String]
-		def AddFileAttachment(path)
+		# @param outStrContentType [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def AddFileAttachment(path, outStrContentType)
 			# ...
 		end
 
+
+		# Method: AddFileAttachment
+		#
+		# @param path [String]
+		#
+		# @return [String]
+		def addFileAttachment(path)
+			# ...
+		end
+
+
 		# Method: AddFileAttachment2
-		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param path [String]
 		# @param contentType [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddFileAttachment2(path, contentType)
 			# ...
 		end
 
+
 		# Method: AddHeaderField
-		#
-		# ==== Attributes
-		#
-		# +fieldName+ - String
-		# +fieldValue+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param fieldName [String]
 		# @param fieldValue [String]
+		#
 		# @return [nil]
 		def AddHeaderField(fieldName, fieldValue)
 			# ...
 		end
 
+
 		# Method: AddHeaderField2
-		#
-		# ==== Attributes
-		#
-		# +fieldName+ - String
-		# +fieldValue+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param fieldName [String]
 		# @param fieldValue [String]
+		#
 		# @return [nil]
 		def AddHeaderField2(fieldName, fieldValue)
 			# ...
 		end
 
+
 		# Method: AddHtmlAlternativeBody
 		#
-		# ==== Attributes
-		#
-		# +body+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param body [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddHtmlAlternativeBody(body)
 			# ...
 		end
 
+
 		# Method: AddiCalendarAlternativeBody
-		#
-		# ==== Attributes
-		#
-		# +icalContent+ - String
-		# +methodName+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param icalContent [String]
 		# @param methodName [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddiCalendarAlternativeBody(icalContent, methodName)
 			# ...
 		end
 
+
 		# Method: AddMultipleBcc
 		#
-		# ==== Attributes
-		#
-		# +commaSeparatedAddresses+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param commaSeparatedAddresses [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddMultipleBcc(commaSeparatedAddresses)
 			# ...
 		end
 
+
 		# Method: AddMultipleCC
 		#
-		# ==== Attributes
-		#
-		# +commaSeparatedAddresses+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param commaSeparatedAddresses [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddMultipleCC(commaSeparatedAddresses)
 			# ...
 		end
 
+
 		# Method: AddMultipleTo
 		#
-		# ==== Attributes
-		#
-		# +commaSeparatedAddresses+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param commaSeparatedAddresses [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddMultipleTo(commaSeparatedAddresses)
 			# ...
 		end
 
+
 		# Method: AddPfxSourceData
-		#
-		# ==== Attributes
-		#
-		# +pfxBytes+ - CkByteData
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param pfxBytes [CkByteData]
 		# @param pfxPassword [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddPfxSourceData(pfxBytes, pfxPassword)
 			# ...
 		end
 
+
 		# Method: AddPfxSourceFile
-		#
-		# ==== Attributes
-		#
-		# +pfxFilePath+ - String
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param pfxFilePath [String]
 		# @param pfxPassword [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddPfxSourceFile(pfxFilePath, pfxPassword)
 			# ...
 		end
 
+
 		# Method: AddPlainTextAlternativeBody
 		#
-		# ==== Attributes
-		#
-		# +body+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param body [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddPlainTextAlternativeBody(body)
 			# ...
 		end
 
+
 		# Method: AddRelatedBd
-		#
-		# ==== Attributes
-		#
-		# +filename+ - String
-		# +binData+ - CkBinData
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param filename [String]
 		# @param binData [CkBinData]
-		# @return [String]
-		def AddRelatedBd(filename, binData)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def AddRelatedBd(filename, binData, outStr)
 			# ...
 		end
 
+
+		# Method: AddRelatedBd
+		#
+		# @param filename [String]
+		# @param binData [CkBinData]
+		#
+		# @return [String]
+		def addRelatedBd(filename, binData)
+			# ...
+		end
+
+
 		# Method: AddRelatedBd2
-		#
-		# ==== Attributes
-		#
-		# +binData+ - CkBinData
-		# +fileNameInHtml+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param binData [CkBinData]
 		# @param fileNameInHtml [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddRelatedBd2(binData, fileNameInHtml)
 			# ...
 		end
 
+
 		# Method: AddRelatedData
-		#
-		# ==== Attributes
-		#
-		# +fileName+ - String
-		# +inData+ - CkByteData
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param fileName [String]
 		# @param inData [CkByteData]
-		# @return [String]
-		def AddRelatedData(fileName, inData)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def AddRelatedData(fileName, inData, outStr)
 			# ...
 		end
 
+
+		# Method: AddRelatedData
+		#
+		# @param fileName [String]
+		# @param inData [CkByteData]
+		#
+		# @return [String]
+		def addRelatedData(fileName, inData)
+			# ...
+		end
+
+
 		# Method: AddRelatedData2
-		#
-		# ==== Attributes
-		#
-		# +inData+ - CkByteData
-		# +fileNameInHtml+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param inData [CkByteData]
 		# @param fileNameInHtml [String]
+		#
 		# @return [nil]
 		def AddRelatedData2(inData, fileNameInHtml)
 			# ...
 		end
 
+
 		# Method: AddRelatedData2P
-		#
-		# ==== Attributes
-		#
-		# +pBytes+ - Object
-		# +szBytes+ - Fixnum
-		# +fileNameInHtml+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param pBytes [Object]
 		# @param szBytes [Fixnum]
 		# @param fileNameInHtml [String]
+		#
 		# @return [nil]
 		def AddRelatedData2P(pBytes, szBytes, fileNameInHtml)
 			# ...
 		end
 
+
 		# Method: AddRelatedDataP
-		#
-		# ==== Attributes
-		#
-		# +nameInHtml+ - String
-		# +pBytes+ - Object
-		# +szBytes+ - Fixnum
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param nameInHtml [String]
 		# @param pBytes [Object]
 		# @param szBytes [Fixnum]
-		# @return [String]
-		def AddRelatedDataP(nameInHtml, pBytes, szBytes)
+		# @param outStrContentId [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def AddRelatedDataP(nameInHtml, pBytes, szBytes, outStrContentId)
 			# ...
 		end
+
+
+		# Method: AddRelatedDataP
+		#
+		# @param nameInHtml [String]
+		# @param pBytes [Object]
+		# @param szBytes [Fixnum]
+		#
+		# @return [String]
+		def addRelatedDataP(nameInHtml, pBytes, szBytes)
+			# ...
+		end
+
 
 		# Method: AddRelatedFile
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param path [String]
-		# @return [String]
-		def AddRelatedFile(path)
+		# @param outStrContentID [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def AddRelatedFile(path, outStrContentID)
 			# ...
 		end
 
+
+		# Method: AddRelatedFile
+		#
+		# @param path [String]
+		#
+		# @return [String]
+		def addRelatedFile(path)
+			# ...
+		end
+
+
 		# Method: AddRelatedFile2
-		#
-		# ==== Attributes
-		#
-		# +filenameOnDisk+ - String
-		# +filenameInHtml+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param filenameOnDisk [String]
 		# @param filenameInHtml [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddRelatedFile2(filenameOnDisk, filenameInHtml)
 			# ...
 		end
 
+
 		# Method: AddRelatedHeader
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +fieldValue+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param fieldName [String]
 		# @param fieldValue [String]
+		#
 		# @return [nil]
 		def AddRelatedHeader(index, fieldName, fieldValue)
 			# ...
 		end
 
+
 		# Method: AddRelatedString
-		#
-		# ==== Attributes
-		#
-		# +nameInHtml+ - String
-		# +str+ - String
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param nameInHtml [String]
 		# @param str [String]
 		# @param charset [String]
-		# @return [String]
-		def AddRelatedString(nameInHtml, str, charset)
+		# @param outCid [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def AddRelatedString(nameInHtml, str, charset, outCid)
 			# ...
 		end
 
+
+		# Method: AddRelatedString
+		#
+		# @param nameInHtml [String]
+		# @param str [String]
+		# @param charset [String]
+		#
+		# @return [String]
+		def addRelatedString(nameInHtml, str, charset)
+			# ...
+		end
+
+
 		# Method: AddRelatedString2
-		#
-		# ==== Attributes
-		#
-		# +fileNameInHtml+ - String
-		# +content+ - String
-		# +charset+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param fileNameInHtml [String]
 		# @param content [String]
 		# @param charset [String]
+		#
 		# @return [nil]
 		def AddRelatedString2(fileNameInHtml, content, charset)
 			# ...
 		end
 
+
 		# Method: AddStringAttachment
-		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# +content+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param path [String]
 		# @param content [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddStringAttachment(path, content)
 			# ...
 		end
 
+
 		# Method: AddStringAttachment2
-		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# +content+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param path [String]
 		# @param content [String]
 		# @param charset [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddStringAttachment2(path, content, charset)
 			# ...
 		end
 
+
 		# Method: AddTo
-		#
-		# ==== Attributes
-		#
-		# +friendlyName+ - String
-		# +emailAddress+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param friendlyName [String]
 		# @param emailAddress [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddTo(friendlyName, emailAddress)
 			# ...
 		end
 
+
 		# Method: AesDecrypt
 		#
-		# ==== Attributes
-		#
-		# +password+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param password [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AesDecrypt(password)
 			# ...
 		end
 
+
 		# Method: AesEncrypt
 		#
-		# ==== Attributes
-		#
-		# +password+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param password [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AesEncrypt(password)
 			# ...
 		end
 
+
 		# Method: AppendToBody
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param str [String]
+		#
 		# @return [nil]
 		def AppendToBody(str)
 			# ...
 		end
 
+
 		# Method: AspUnpack
-		#
-		# ==== Attributes
-		#
-		# +prefix+ - String
-		# +saveDir+ - String
-		# +urlPath+ - String
-		# +cleanFiles+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param prefix [String]
 		# @param saveDir [String]
 		# @param urlPath [String]
 		# @param cleanFiles [TrueClass, FalseClass]
+		#
 		# @return [TrueClass, FalseClass]
 		def AspUnpack(prefix, saveDir, urlPath, cleanFiles)
 			# ...
 		end
 
+
 		# Method: AspUnpack2
-		#
-		# ==== Attributes
-		#
-		# +prefix+ - String
-		# +saveDir+ - String
-		# +urlPath+ - String
-		# +cleanFiles+ - TrueClass, FalseClass
-		# returns CkByteData
-		#
-		# YARD =>
 		#
 		# @param prefix [String]
 		# @param saveDir [String]
 		# @param urlPath [String]
 		# @param cleanFiles [TrueClass, FalseClass]
-		# @return [CkByteData]
-		def AspUnpack2(prefix, saveDir, urlPath, cleanFiles)
+		# @param outHtml [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def AspUnpack2(prefix, saveDir, urlPath, cleanFiles, outHtml)
 			# ...
 		end
 
+
 		# Method: AttachMessage
 		#
-		# ==== Attributes
-		#
-		# +mimeBytes+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param mimeBytes [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def AttachMessage(mimeBytes)
 			# ...
 		end
 
+
 		# Method: BEncodeBytes
-		#
-		# ==== Attributes
-		#
-		# +inData+ - CkByteData
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param inData [CkByteData]
 		# @param charset [String]
-		# @return [String]
-		def BEncodeBytes(inData, charset)
+		# @param outEncodedStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def BEncodeBytes(inData, charset, outEncodedStr)
 			# ...
 		end
+
+
+		# Method: BEncodeBytes
+		#
+		# @param inData [CkByteData]
+		# @param charset [String]
+		#
+		# @return [String]
+		def bEncodeBytes(inData, charset)
+			# ...
+		end
+
 
 		# Method: BEncodeString
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
 		# @param charset [String]
-		# @return [String]
-		def BEncodeString(str, charset)
+		# @param outEncodedStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def BEncodeString(str, charset, outEncodedStr)
 			# ...
 		end
 
+
+		# Method: BEncodeString
+		#
+		# @param str [String]
+		# @param charset [String]
+		#
+		# @return [String]
+		def bEncodeString(str, charset)
+			# ...
+		end
+
+
 		# Method: ClearBcc
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def ClearBcc()
 			# ...
 		end
 
+
 		# Method: ClearCC
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def ClearCC()
 			# ...
 		end
 
+
 		# Method: ClearEncryptCerts
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def ClearEncryptCerts()
 			# ...
 		end
 
+
 		# Method: ClearTo
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def ClearTo()
 			# ...
 		end
 
+
 		# Method: Clone
 		#
-		# ==== Attributes
-		#
-		# returns CkEmail
-		#
-		# YARD =>
 		#
 		# @return [CkEmail]
 		def Clone()
 			# ...
 		end
 
+
 		# Method: ComputeGlobalKey
-		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
-		#
-		# +encoding+ - String
-		# +bFold+ - TrueClass, FalseClass
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param encoding [String]
 		# @param bFold [TrueClass, FalseClass]
-		# @return [String]
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
-		def ComputeGlobalKey(encoding, bFold)
+		def ComputeGlobalKey(encoding, bFold, outStr)
 			# ...
 		end
+
+
+		# Method: ComputeGlobalKey
+		#
+		# @param encoding [String]
+		# @param bFold [TrueClass, FalseClass]
+		#
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def computeGlobalKey(encoding, bFold)
+			# ...
+		end
+
 
 		# Method: ComputeGlobalKey2
 		#
-		# ==== Attributes
-		#
-		# +encoding+ - String
-		# +bFold+ - TrueClass, FalseClass
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param encoding [String]
 		# @param bFold [TrueClass, FalseClass]
-		# @return [String]
-		def ComputeGlobalKey2(encoding, bFold)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def ComputeGlobalKey2(encoding, bFold, outStr)
 			# ...
 		end
 
+
+		# Method: ComputeGlobalKey2
+		#
+		# @param encoding [String]
+		# @param bFold [TrueClass, FalseClass]
+		#
+		# @return [String]
+		def computeGlobalKey2(encoding, bFold)
+			# ...
+		end
+
+
 		# Method: CreateDsn
-		#
-		# ==== Attributes
-		#
-		# +humanReadableMessage+ - String
-		# +xmlStatusFields+ - String
-		# +bHeaderOnly+ - TrueClass, FalseClass
-		# returns CkEmail
-		#
-		# YARD =>
 		#
 		# @param humanReadableMessage [String]
 		# @param xmlStatusFields [String]
 		# @param bHeaderOnly [TrueClass, FalseClass]
+		#
 		# @return [CkEmail]
 		def CreateDsn(humanReadableMessage, xmlStatusFields, bHeaderOnly)
 			# ...
 		end
 
+
 		# Method: CreateForward
 		#
-		# ==== Attributes
-		#
-		# returns CkEmail
-		#
-		# YARD =>
 		#
 		# @return [CkEmail]
 		def CreateForward()
 			# ...
 		end
 
+
 		# Method: CreateMdn
-		#
-		# ==== Attributes
-		#
-		# +humanReadableMessage+ - String
-		# +xmlStatusFields+ - String
-		# +bHeaderOnly+ - TrueClass, FalseClass
-		# returns CkEmail
-		#
-		# YARD =>
 		#
 		# @param humanReadableMessage [String]
 		# @param xmlStatusFields [String]
 		# @param bHeaderOnly [TrueClass, FalseClass]
+		#
 		# @return [CkEmail]
 		def CreateMdn(humanReadableMessage, xmlStatusFields, bHeaderOnly)
 			# ...
 		end
 
+
 		# Method: CreateReply
 		#
-		# ==== Attributes
-		#
-		# returns CkEmail
-		#
-		# YARD =>
 		#
 		# @return [CkEmail]
 		def CreateReply()
 			# ...
 		end
 
+
 		# Method: CreateTempMht
 		#
-		# ==== Attributes
-		#
-		# +inFilename+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param inFilename [String]
-		# @return [String]
-		def CreateTempMht(inFilename)
+		# @param outPath [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def CreateTempMht(inFilename, outPath)
 			# ...
 		end
 
+
+		# Method: CreateTempMht
+		#
+		# @param inFilename [String]
+		#
+		# @return [String]
+		def createTempMht(inFilename)
+			# ...
+		end
+
+
 		# Method: DropAttachments
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def DropAttachments()
 			# ...
 		end
 
+
 		# Method: DropRelatedItem
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
+		#
 		# @return [nil]
 		def DropRelatedItem(index)
 			# ...
 		end
 
+
 		# Method: DropRelatedItems
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def DropRelatedItems()
 			# ...
 		end
 
+
 		# Method: DropSingleAttachment
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
+		#
 		# @return [TrueClass, FalseClass]
 		def DropSingleAttachment(index)
 			# ...
 		end
 
+
 		# Method: FindIssuer
 		#
-		# ==== Attributes
-		#
-		# +cert+ - CkCert
-		# returns CkCert
-		#
-		# YARD =>
-		#
 		# @param cert [CkCert]
+		#
 		# @return [CkCert]
 		def FindIssuer(cert)
 			# ...
 		end
 
+
 		# Method: GenerateFilename
 		#
-		# ==== Attributes
+		# @param outStrFilename [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GenerateFilename()
+		# @return [TrueClass, FalseClass]
+		def GenerateFilename(outStrFilename)
 			# ...
 		end
+
+
+		# Method: GenerateFilename
+		#
+		#
+		# @return [String]
+		def generateFilename()
+			# ...
+		end
+
 
 		# Method: GetAlternativeBody
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetAlternativeBody(index)
+		# @param outStrBody [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAlternativeBody(index, outStrBody)
 			# ...
 		end
+
+
+		# Method: GetAlternativeBody
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAlternativeBody(index)
+			# ...
+		end
+
 
 		# Method: GetAlternativeBodyByContentType
 		#
-		# ==== Attributes
-		#
-		# +contentType+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param contentType [String]
-		# @return [String]
-		def GetAlternativeBodyByContentType(contentType)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAlternativeBodyByContentType(contentType, outStr)
 			# ...
 		end
+
+
+		# Method: GetAlternativeBodyByContentType
+		#
+		# @param contentType [String]
+		#
+		# @return [String]
+		def getAlternativeBodyByContentType(contentType)
+			# ...
+		end
+
 
 		# Method: GetAlternativeContentType
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetAlternativeContentType(index)
+		# @param outStrContentType [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAlternativeContentType(index, outStrContentType)
 			# ...
 		end
+
+
+		# Method: GetAlternativeContentType
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAlternativeContentType(index)
+			# ...
+		end
+
 
 		# Method: GetAltHeaderField
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
 		# @param fieldName [String]
-		# @return [String]
-		def GetAltHeaderField(index, fieldName)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAltHeaderField(index, fieldName, outStr)
 			# ...
 		end
 
-		# Method: GetAttachedMessage
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns CkEmail
-		#
-		# YARD =>
+
+		# Method: GetAltHeaderField
 		#
 		# @param index [Fixnum]
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getAltHeaderField(index, fieldName)
+			# ...
+		end
+
+
+		# Method: GetAttachedMessage
+		#
+		# @param index [Fixnum]
+		#
 		# @return [CkEmail]
 		def GetAttachedMessage(index)
 			# ...
 		end
 
+
 		# Method: GetAttachedMessageAttr
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +attrName+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param fieldName [String]
 		# @param attrName [String]
-		# @return [String]
-		def GetAttachedMessageAttr(index, fieldName, attrName)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachedMessageAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
+
+
+		# Method: GetAttachedMessageAttr
+		#
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getAttachedMessageAttr(index, fieldName, attrName)
+			# ...
+		end
+
 
 		# Method: GetAttachedMessageFilename
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetAttachedMessageFilename(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachedMessageFilename(index, outStr)
 			# ...
 		end
 
+
+		# Method: GetAttachedMessageFilename
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAttachedMessageFilename(index)
+			# ...
+		end
+
+
 		# Method: GetAttachmentAttr
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +attrName+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param fieldName [String]
 		# @param attrName [String]
-		# @return [String]
-		def GetAttachmentAttr(index, fieldName, attrName)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
+
+
+		# Method: GetAttachmentAttr
+		#
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getAttachmentAttr(index, fieldName, attrName)
+			# ...
+		end
+
 
 		# Method: GetAttachmentContentID
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetAttachmentContentID(index)
+		# @param outStrContentID [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentContentID(index, outStrContentID)
 			# ...
 		end
+
+
+		# Method: GetAttachmentContentID
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAttachmentContentID(index)
+			# ...
+		end
+
 
 		# Method: GetAttachmentContentType
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetAttachmentContentType(index)
+		# @param outStrContentType [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentContentType(index, outStrContentType)
 			# ...
 		end
+
+
+		# Method: GetAttachmentContentType
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAttachmentContentType(index)
+			# ...
+		end
+
 
 		# Method: GetAttachmentData
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [CkByteData]
-		def GetAttachmentData(index)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentData(index, outData)
 			# ...
 		end
+
 
 		# Method: GetAttachmentFilename
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetAttachmentFilename(index)
+		# @param outStrFilename [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentFilename(index, outStrFilename)
 			# ...
 		end
+
+
+		# Method: GetAttachmentFilename
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAttachmentFilename(index)
+			# ...
+		end
+
 
 		# Method: GetAttachmentHeader
 		#
-		# ==== Attributes
-		#
-		# +attachIndex+ - Fixnum
-		# +fieldName+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param attachIndex [Fixnum]
 		# @param fieldName [String]
-		# @return [String]
-		def GetAttachmentHeader(attachIndex, fieldName)
+		# @param outFieldValue [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentHeader(attachIndex, fieldName, outFieldValue)
 			# ...
 		end
 
+
+		# Method: GetAttachmentHeader
+		#
+		# @param attachIndex [Fixnum]
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getAttachmentHeader(attachIndex, fieldName)
+			# ...
+		end
+
+
 		# Method: GetAttachmentSize
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns Fixnum
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
+		#
 		# @return [Fixnum]
 		def GetAttachmentSize(index)
 			# ...
 		end
 
+
 		# Method: GetAttachmentString
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param charset [String]
-		# @return [String]
-		def GetAttachmentString(index, charset)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentString(index, charset, outStr)
 			# ...
 		end
+
+
+		# Method: GetAttachmentString
+		#
+		# @param index [Fixnum]
+		# @param charset [String]
+		#
+		# @return [String]
+		def getAttachmentString(index, charset)
+			# ...
+		end
+
 
 		# Method: GetAttachmentStringCrLf
 		#
-		# ==== Attributes
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @param outStrData [CkString]
 		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentStringCrLf(index, charset, outStrData)
+			# ...
+		end
+
+
+		# Method: GetAttachmentStringCrLf
 		#
 		# @param index [Fixnum]
 		# @param charset [String]
+		#
 		# @return [String]
-		def GetAttachmentStringCrLf(index, charset)
+		def getAttachmentStringCrLf(index, charset)
 			# ...
 		end
+
 
 		# Method: GetBcc
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetBcc(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetBcc(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetBcc
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getBcc(index)
+			# ...
+		end
+
 
 		# Method: GetBccAddr
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetBccAddr(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetBccAddr(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetBccAddr
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getBccAddr(index)
+			# ...
+		end
+
 
 		# Method: GetBccName
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetBccName(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetBccName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetBccName
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getBccName(index)
+			# ...
+		end
+
 
 		# Method: GetCC
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetCC(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetCC(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCC
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCC(index)
+			# ...
+		end
+
 
 		# Method: GetCcAddr
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetCcAddr(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetCcAddr(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCcAddr
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCcAddr(index)
+			# ...
+		end
+
 
 		# Method: GetCcName
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetCcName(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetCcName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCcName
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCcName(index)
+			# ...
+		end
+
 
 		# Method: GetDeliveryStatusInfo
 		#
-		# ==== Attributes
-		#
-		# +fieldName+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param fieldName [String]
-		# @return [String]
-		def GetDeliveryStatusInfo(fieldName)
+		# @param outFieldValue [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetDeliveryStatusInfo(fieldName, outFieldValue)
 			# ...
 		end
 
+
+		# Method: GetDeliveryStatusInfo
+		#
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getDeliveryStatusInfo(fieldName)
+			# ...
+		end
+
+
 		# Method: GetDigest
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns CkEmail
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
+		#
 		# @return [CkEmail]
 		def GetDigest(index)
 			# ...
 		end
 
+
 		# Method: GetDsnFinalRecipients
 		#
-		# ==== Attributes
-		#
-		# returns CkStringArray
-		#
-		# YARD =>
 		#
 		# @return [CkStringArray]
 		def GetDsnFinalRecipients()
 			# ...
 		end
 
+
 		# Method: GetDt
 		#
-		# ==== Attributes
-		#
-		# returns CkDateTime
-		#
-		# YARD =>
 		#
 		# @return [CkDateTime]
 		def GetDt()
 			# ...
 		end
 
+
 		# Method: GetEncryptCert
 		#
-		# ==== Attributes
-		#
-		# returns CkCert
-		#
-		# YARD =>
 		#
 		# @return [CkCert]
 		def GetEncryptCert()
 			# ...
 		end
 
+
 		# Method: GetEncryptedByCert
 		#
-		# ==== Attributes
-		#
-		# returns CkCert
-		#
-		# YARD =>
 		#
 		# @return [CkCert]
 		def GetEncryptedByCert()
 			# ...
 		end
 
+
 		# Method: GetFileContent
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param path [String]
-		# @return [CkByteData]
-		def GetFileContent(path)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetFileContent(path, outData)
 			# ...
 		end
+
 
 		# Method: GetHeaderField
 		#
-		# ==== Attributes
-		#
-		# +fieldName+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param fieldName [String]
-		# @return [String]
-		def GetHeaderField(fieldName)
+		# @param outStrFieldData [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetHeaderField(fieldName, outStrFieldData)
 			# ...
 		end
+
+
+		# Method: GetHeaderField
+		#
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getHeaderField(fieldName)
+			# ...
+		end
+
 
 		# Method: GetHeaderFieldName
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetHeaderFieldName(index)
+		# @param outStrFieldName [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetHeaderFieldName(index, outStrFieldName)
 			# ...
 		end
+
+
+		# Method: GetHeaderFieldName
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getHeaderFieldName(index)
+			# ...
+		end
+
 
 		# Method: GetHeaderFieldValue
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetHeaderFieldValue(index)
+		# @param outStrFieldValue [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetHeaderFieldValue(index, outStrFieldValue)
 			# ...
 		end
+
+
+		# Method: GetHeaderFieldValue
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getHeaderFieldValue(index)
+			# ...
+		end
+
 
 		# Method: GetHtmlBody
 		#
-		# ==== Attributes
+		# @param outStrBody [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GetHtmlBody()
+		# @return [TrueClass, FalseClass]
+		def GetHtmlBody(outStrBody)
 			# ...
 		end
 
+
+		# Method: GetHtmlBody
+		#
+		#
+		# @return [String]
+		def getHtmlBody()
+			# ...
+		end
+
+
 		# Method: GetImapUid
 		#
-		# ==== Attributes
-		#
-		# returns Fixnum
-		#
-		# YARD =>
 		#
 		# @return [Fixnum]
 		def GetImapUid()
 			# ...
 		end
 
+
 		# Method: GetLinkedDomains
 		#
-		# ==== Attributes
-		#
-		# returns CkStringArray
-		#
-		# YARD =>
 		#
 		# @return [CkStringArray]
 		def GetLinkedDomains()
 			# ...
 		end
 
+
 		# Method: GetMbHeaderField
-		#
-		# ==== Attributes
-		#
-		# +fieldName+ - String
-		# +charset+ - String
-		# returns CkByteData
-		#
-		# YARD =>
 		#
 		# @param fieldName [String]
 		# @param charset [String]
-		# @return [CkByteData]
-		def GetMbHeaderField(fieldName, charset)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetMbHeaderField(fieldName, charset, outBytes)
 			# ...
 		end
+
 
 		# Method: GetMbHtmlBody
 		#
-		# ==== Attributes
-		#
-		# +charset+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param charset [String]
-		# @return [CkByteData]
-		def GetMbHtmlBody(charset)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetMbHtmlBody(charset, outData)
 			# ...
 		end
+
 
 		# Method: GetMbPlainTextBody
 		#
-		# ==== Attributes
-		#
-		# +charset+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param charset [String]
-		# @return [CkByteData]
-		def GetMbPlainTextBody(charset)
+		# @param outData [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetMbPlainTextBody(charset, outData)
 			# ...
 		end
+
 
 		# Method: GetMime
 		#
-		# ==== Attributes
+		# @param outStrMime [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GetMime()
+		# @return [TrueClass, FalseClass]
+		def GetMime(outStrMime)
 			# ...
 		end
 
+
+		# Method: GetMime
+		#
+		#
+		# @return [String]
+		def getMime()
+			# ...
+		end
+
+
 		# Method: GetMimeBd
 		#
-		# ==== Attributes
-		#
-		# +bindat+ - CkBinData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param bindat [CkBinData]
+		#
 		# @return [TrueClass, FalseClass]
 		def GetMimeBd(bindat)
 			# ...
 		end
 
+
 		# Method: GetMimeBinary
 		#
-		# ==== Attributes
+		# @param outBytes [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
-		def GetMimeBinary()
+		# @return [TrueClass, FalseClass]
+		def GetMimeBinary(outBytes)
 			# ...
 		end
 
+
 		# Method: GetMimeSb
 		#
-		# ==== Attributes
-		#
-		# +sb+ - CkStringBuilder
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param sb [CkStringBuilder]
+		#
 		# @return [TrueClass, FalseClass]
 		def GetMimeSb(sb)
 			# ...
 		end
 
+
 		# Method: GetNthBinaryPartOfType
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +contentType+ - String
-		# +inlineOnly+ - TrueClass, FalseClass
-		# +excludeAttachments+ - TrueClass, FalseClass
-		# returns CkByteData
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param contentType [String]
 		# @param inlineOnly [TrueClass, FalseClass]
 		# @param excludeAttachments [TrueClass, FalseClass]
-		# @return [CkByteData]
-		def GetNthBinaryPartOfType(index, contentType, inlineOnly, excludeAttachments)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetNthBinaryPartOfType(index, contentType, inlineOnly, excludeAttachments, outBytes)
 			# ...
 		end
+
 
 		# Method: GetNthTextPartOfType
 		#
-		# ==== Attributes
+		# @param index [Fixnum]
+		# @param contentType [String]
+		# @param inlineOnly [TrueClass, FalseClass]
+		# @param excludeAttachments [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# +index+ - Fixnum
-		# +contentType+ - String
-		# +inlineOnly+ - TrueClass, FalseClass
-		# +excludeAttachments+ - TrueClass, FalseClass
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def GetNthTextPartOfType(index, contentType, inlineOnly, excludeAttachments, outStr)
+			# ...
+		end
+
+
+		# Method: GetNthTextPartOfType
 		#
 		# @param index [Fixnum]
 		# @param contentType [String]
 		# @param inlineOnly [TrueClass, FalseClass]
 		# @param excludeAttachments [TrueClass, FalseClass]
+		#
 		# @return [String]
-		def GetNthTextPartOfType(index, contentType, inlineOnly, excludeAttachments)
+		def getNthTextPartOfType(index, contentType, inlineOnly, excludeAttachments)
 			# ...
 		end
 
+
 		# Method: GetNumPartsOfType
-		#
-		# ==== Attributes
-		#
-		# +contentType+ - String
-		# +inlineOnly+ - TrueClass, FalseClass
-		# +excludeAttachments+ - TrueClass, FalseClass
-		# returns Fixnum
-		#
-		# YARD =>
 		#
 		# @param contentType [String]
 		# @param inlineOnly [TrueClass, FalseClass]
 		# @param excludeAttachments [TrueClass, FalseClass]
+		#
 		# @return [Fixnum]
 		def GetNumPartsOfType(contentType, inlineOnly, excludeAttachments)
 			# ...
 		end
 
+
 		# Method: GetPlainTextBody
 		#
-		# ==== Attributes
+		# @param outStrBody [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GetPlainTextBody()
+		# @return [TrueClass, FalseClass]
+		def GetPlainTextBody(outStrBody)
 			# ...
 		end
 
+
+		# Method: GetPlainTextBody
+		#
+		#
+		# @return [String]
+		def getPlainTextBody()
+			# ...
+		end
+
+
 		# Method: GetRelatedAttr
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +attrName+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param fieldName [String]
 		# @param attrName [String]
-		# @return [String]
-		def GetRelatedAttr(index, fieldName, attrName)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetRelatedAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
+
+
+		# Method: GetRelatedAttr
+		#
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getRelatedAttr(index, fieldName, attrName)
+			# ...
+		end
+
 
 		# Method: GetRelatedContentID
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetRelatedContentID(index)
+		# @param outStrContentID [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetRelatedContentID(index, outStrContentID)
 			# ...
 		end
+
+
+		# Method: GetRelatedContentID
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getRelatedContentID(index)
+			# ...
+		end
+
 
 		# Method: GetRelatedContentLocation
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetRelatedContentLocation(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetRelatedContentLocation(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetRelatedContentLocation
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getRelatedContentLocation(index)
+			# ...
+		end
+
 
 		# Method: GetRelatedContentType
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetRelatedContentType(index)
+		# @param outStrContentType [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetRelatedContentType(index, outStrContentType)
 			# ...
 		end
+
+
+		# Method: GetRelatedContentType
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getRelatedContentType(index)
+			# ...
+		end
+
 
 		# Method: GetRelatedData
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [CkByteData]
-		def GetRelatedData(index)
+		# @param outBuffer [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetRelatedData(index, outBuffer)
 			# ...
 		end
+
 
 		# Method: GetRelatedFilename
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetRelatedFilename(index)
+		# @param outStrFilename [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetRelatedFilename(index, outStrFilename)
 			# ...
 		end
+
+
+		# Method: GetRelatedFilename
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getRelatedFilename(index)
+			# ...
+		end
+
 
 		# Method: GetRelatedString
 		#
-		# ==== Attributes
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @param outStrData [CkString]
 		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def GetRelatedString(index, charset, outStrData)
+			# ...
+		end
+
+
+		# Method: GetRelatedString
 		#
 		# @param index [Fixnum]
 		# @param charset [String]
+		#
 		# @return [String]
-		def GetRelatedString(index, charset)
+		def getRelatedString(index, charset)
 			# ...
 		end
+
 
 		# Method: GetRelatedStringCrLf
 		#
-		# ==== Attributes
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @param outStr [CkString]
 		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def GetRelatedStringCrLf(index, charset, outStr)
+			# ...
+		end
+
+
+		# Method: GetRelatedStringCrLf
 		#
 		# @param index [Fixnum]
 		# @param charset [String]
+		#
 		# @return [String]
-		def GetRelatedStringCrLf(index, charset)
+		def getRelatedStringCrLf(index, charset)
 			# ...
 		end
+
 
 		# Method: GetReplacePattern
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetReplacePattern(index)
+		# @param outStrPattern [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetReplacePattern(index, outStrPattern)
 			# ...
 		end
+
+
+		# Method: GetReplacePattern
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getReplacePattern(index)
+			# ...
+		end
+
 
 		# Method: GetReplaceString
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetReplaceString(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetReplaceString(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetReplaceString
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getReplaceString(index)
+			# ...
+		end
+
 
 		# Method: GetReplaceString2
 		#
-		# ==== Attributes
-		#
-		# +pattern+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param pattern [String]
-		# @return [String]
-		def GetReplaceString2(pattern)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetReplaceString2(pattern, outStr)
 			# ...
 		end
+
+
+		# Method: GetReplaceString2
+		#
+		# @param pattern [String]
+		#
+		# @return [String]
+		def getReplaceString2(pattern)
+			# ...
+		end
+
 
 		# Method: GetReport
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetReport(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetReport(index, outStr)
 			# ...
 		end
 
+
+		# Method: GetReport
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getReport(index)
+			# ...
+		end
+
+
 		# Method: GetSignedByCert
 		#
-		# ==== Attributes
-		#
-		# returns CkCert
-		#
-		# YARD =>
 		#
 		# @return [CkCert]
 		def GetSignedByCert()
 			# ...
 		end
 
+
 		# Method: GetSignedByCertChain
 		#
-		# ==== Attributes
-		#
-		# returns CkCertChain
-		#
-		# YARD =>
 		#
 		# @return [CkCertChain]
 		def GetSignedByCertChain()
 			# ...
 		end
 
+
 		# Method: GetSigningCert
 		#
-		# ==== Attributes
-		#
-		# returns CkCert
-		#
-		# YARD =>
 		#
 		# @return [CkCert]
 		def GetSigningCert()
 			# ...
 		end
 
+
 		# Method: GetTo
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetTo(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetTo(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetTo
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getTo(index)
+			# ...
+		end
+
 
 		# Method: GetToAddr
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetToAddr(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetToAddr(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetToAddr
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getToAddr(index)
+			# ...
+		end
+
 
 		# Method: GetToName
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetToName(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetToName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetToName
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getToName(index)
+			# ...
+		end
+
 
 		# Method: GetXml
 		#
-		# ==== Attributes
+		# @param outStrXml [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def GetXml()
+		# @return [TrueClass, FalseClass]
+		def GetXml(outStrXml)
 			# ...
 		end
 
+
+		# Method: GetXml
+		#
+		#
+		# @return [String]
+		def getXml()
+			# ...
+		end
+
+
 		# Method: HasHeaderMatching
-		#
-		# ==== Attributes
-		#
-		# +fieldName+ - String
-		# +valuePattern+ - String
-		# +caseSensitive+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param fieldName [String]
 		# @param valuePattern [String]
 		# @param caseSensitive [TrueClass, FalseClass]
+		#
 		# @return [TrueClass, FalseClass]
 		def HasHeaderMatching(fieldName, valuePattern, caseSensitive)
 			# ...
 		end
 
+
 		# Method: HasHtmlBody
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def HasHtmlBody()
 			# ...
 		end
 
+
 		# Method: HasPlainTextBody
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def HasPlainTextBody()
 			# ...
 		end
 
+
 		# Method: IsMultipartReport
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def IsMultipartReport()
 			# ...
 		end
 
+
 		# Method: LoadBodyFromFile
-		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +isHtml+ - TrueClass, FalseClass
-		# +charset+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param filePath [String]
 		# @param isHtml [TrueClass, FalseClass]
 		# @param charset [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadBodyFromFile(filePath, isHtml, charset)
 			# ...
 		end
 
+
 		# Method: LoadEml
 		#
-		# ==== Attributes
-		#
-		# +mimePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param mimePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadEml(mimePath)
 			# ...
 		end
 
+
 		# Method: LoadTaskResult
 		#
-		# ==== Attributes
-		#
-		# +task+ - CkTask
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param task [CkTask]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
 
+
 		# Method: LoadXml
 		#
-		# ==== Attributes
-		#
-		# +xmlPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param xmlPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadXml(xmlPath)
 			# ...
 		end
 
+
 		# Method: LoadXmlString
 		#
-		# ==== Attributes
-		#
-		# +xmlStr+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param xmlStr [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def LoadXmlString(xmlStr)
 			# ...
 		end
 
+
 		# Method: QEncodeBytes
-		#
-		# ==== Attributes
-		#
-		# +inData+ - CkByteData
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param inData [CkByteData]
 		# @param charset [String]
-		# @return [String]
-		def QEncodeBytes(inData, charset)
+		# @param outEncodedStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def QEncodeBytes(inData, charset, outEncodedStr)
 			# ...
 		end
+
+
+		# Method: QEncodeBytes
+		#
+		# @param inData [CkByteData]
+		# @param charset [String]
+		#
+		# @return [String]
+		def qEncodeBytes(inData, charset)
+			# ...
+		end
+
 
 		# Method: QEncodeString
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param str [String]
 		# @param charset [String]
-		# @return [String]
-		def QEncodeString(str, charset)
+		# @param outEncodedStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def QEncodeString(str, charset, outEncodedStr)
 			# ...
 		end
 
+
+		# Method: QEncodeString
+		#
+		# @param str [String]
+		# @param charset [String]
+		#
+		# @return [String]
+		def qEncodeString(str, charset)
+			# ...
+		end
+
+
 		# Method: RemoveAttachedMessage
 		#
-		# ==== Attributes
-		#
-		# +idx+ - Fixnum
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param idx [Fixnum]
+		#
 		# @return [nil]
 		def RemoveAttachedMessage(idx)
 			# ...
 		end
 
+
 		# Method: RemoveAttachedMessages
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def RemoveAttachedMessages()
 			# ...
 		end
 
+
 		# Method: RemoveAttachmentPaths
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def RemoveAttachmentPaths()
 			# ...
 		end
 
+
 		# Method: RemoveHeaderField
 		#
-		# ==== Attributes
-		#
-		# +fieldName+ - String
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param fieldName [String]
+		#
 		# @return [nil]
 		def RemoveHeaderField(fieldName)
 			# ...
 		end
 
+
 		# Method: RemoveHtmlAlternative
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def RemoveHtmlAlternative()
 			# ...
 		end
 
+
 		# Method: RemovePlainTextAlternative
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def RemovePlainTextAlternative()
 			# ...
 		end
 
+
 		# Method: SaveAllAttachments
 		#
-		# ==== Attributes
-		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param dirPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveAllAttachments(dirPath)
 			# ...
 		end
 
+
 		# Method: SaveAttachedFile
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param dirPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveAttachedFile(index, dirPath)
 			# ...
 		end
 
+
 		# Method: SaveEml
 		#
-		# ==== Attributes
-		#
-		# +emlFilePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param emlFilePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveEml(emlFilePath)
 			# ...
 		end
 
+
 		# Method: SaveLastError
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
 
+
 		# Method: SaveRelatedItem
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param dirPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveRelatedItem(index, dirPath)
 			# ...
 		end
 
+
 		# Method: SaveXml
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveXml(path)
 			# ...
 		end
 
+
 		# Method: SetAttachmentCharset
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param charset [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetAttachmentCharset(index, charset)
 			# ...
 		end
 
+
 		# Method: SetAttachmentDisposition
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +disposition+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param disposition [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetAttachmentDisposition(index, disposition)
 			# ...
 		end
 
+
 		# Method: SetAttachmentFilename
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +filename+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param filename [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetAttachmentFilename(index, filename)
 			# ...
 		end
 
+
 		# Method: SetBinaryBody
-		#
-		# ==== Attributes
-		#
-		# +byteData+ - CkByteData
-		# +contentType+ - String
-		# +disposition+ - String
-		# +filename+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param byteData [CkByteData]
 		# @param contentType [String]
 		# @param disposition [String]
 		# @param filename [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetBinaryBody(byteData, contentType, disposition, filename)
 			# ...
 		end
 
+
 		# Method: SetCSP
 		#
-		# ==== Attributes
-		#
-		# +csp+ - CkCsp
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param csp [CkCsp]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetCSP(csp)
 			# ...
 		end
 
+
 		# Method: SetDecryptCert
 		#
-		# ==== Attributes
-		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param cert [CkCert]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetDecryptCert(cert)
 			# ...
 		end
 
+
 		# Method: SetDecryptCert2
-		#
-		# ==== Attributes
-		#
-		# +cert+ - CkCert
-		# +key+ - CkPrivateKey
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param cert [CkCert]
 		# @param key [CkPrivateKey]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetDecryptCert2(cert, key)
 			# ...
 		end
 
+
 		# Method: SetDt
 		#
-		# ==== Attributes
-		#
-		# +dt+ - CkDateTime
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param dt [CkDateTime]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetDt(dt)
 			# ...
 		end
 
+
 		# Method: SetEdifactBody
-		#
-		# ==== Attributes
-		#
-		# +message+ - String
-		# +name+ - String
-		# +filename+ - String
-		# +charset+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param message [String]
 		# @param name [String]
 		# @param filename [String]
 		# @param charset [String]
+		#
 		# @return [nil]
 		def SetEdifactBody(message, name, filename, charset)
 			# ...
 		end
 
+
 		# Method: SetEncryptCert
 		#
-		# ==== Attributes
-		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param cert [CkCert]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetEncryptCert(cert)
 			# ...
 		end
 
+
 		# Method: SetFromMimeBd
 		#
-		# ==== Attributes
-		#
-		# +bindat+ - CkBinData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param bindat [CkBinData]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetFromMimeBd(bindat)
 			# ...
 		end
 
+
 		# Method: SetFromMimeBytes
 		#
-		# ==== Attributes
-		#
-		# +mimeBytes+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param mimeBytes [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetFromMimeBytes(mimeBytes)
 			# ...
 		end
 
+
 		# Method: SetFromMimeBytes2
-		#
-		# ==== Attributes
-		#
-		# +mimeBytes+ - CkByteData
-		# +charset+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param mimeBytes [CkByteData]
 		# @param charset [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetFromMimeBytes2(mimeBytes, charset)
 			# ...
 		end
 
+
 		# Method: SetFromMimeSb
 		#
-		# ==== Attributes
-		#
-		# +sb+ - CkStringBuilder
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param sb [CkStringBuilder]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetFromMimeSb(sb)
 			# ...
 		end
 
+
 		# Method: SetFromMimeText
 		#
-		# ==== Attributes
-		#
-		# +mimeText+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param mimeText [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetFromMimeText(mimeText)
 			# ...
 		end
 
+
 		# Method: SetFromXmlText
 		#
-		# ==== Attributes
-		#
-		# +xmlStr+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param xmlStr [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetFromXmlText(xmlStr)
 			# ...
 		end
 
+
 		# Method: SetHtmlBody
 		#
-		# ==== Attributes
-		#
-		# +html+ - String
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param html [String]
+		#
 		# @return [nil]
 		def SetHtmlBody(html)
 			# ...
 		end
 
+
 		# Method: SetMbHtmlBody
-		#
-		# ==== Attributes
-		#
-		# +charset+ - String
-		# +inData+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param charset [String]
 		# @param inData [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetMbHtmlBody(charset, inData)
 			# ...
 		end
 
+
 		# Method: SetMbPlainTextBody
-		#
-		# ==== Attributes
-		#
-		# +charset+ - String
-		# +inData+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param charset [String]
 		# @param inData [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetMbPlainTextBody(charset, inData)
 			# ...
 		end
 
+
 		# Method: SetRelatedFilename
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetRelatedFilename(index, path)
 			# ...
 		end
 
+
 		# Method: SetReplacePattern
-		#
-		# ==== Attributes
-		#
-		# +pattern+ - String
-		# +replaceString+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param pattern [String]
 		# @param replaceString [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetReplacePattern(pattern, replaceString)
 			# ...
 		end
 
+
 		# Method: SetSigningCert
 		#
-		# ==== Attributes
-		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param cert [CkCert]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetSigningCert(cert)
 			# ...
 		end
 
+
 		# Method: SetSigningCert2
-		#
-		# ==== Attributes
-		#
-		# +cert+ - CkCert
-		# +key+ - CkPrivateKey
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param cert [CkCert]
 		# @param key [CkPrivateKey]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetSigningCert2(cert, key)
 			# ...
 		end
 
+
 		# Method: SetTextBody
-		#
-		# ==== Attributes
-		#
-		# +bodyText+ - String
-		# +contentType+ - String
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @param bodyText [String]
 		# @param contentType [String]
+		#
 		# @return [nil]
 		def SetTextBody(bodyText, contentType)
 			# ...
 		end
 
+
 		# Method: UidlEquals
 		#
-		# ==== Attributes
-		#
-		# +e+ - CkEmail
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param e [CkEmail]
+		#
 		# @return [TrueClass, FalseClass]
 		def UidlEquals(e)
 			# ...
 		end
 
+
 		# Method: UnpackHtml
-		#
-		# ==== Attributes
-		#
-		# +unpackDir+ - String
-		# +htmlFilename+ - String
-		# +partsSubdir+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param unpackDir [String]
 		# @param htmlFilename [String]
 		# @param partsSubdir [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def UnpackHtml(unpackDir, htmlFilename, partsSubdir)
 			# ...
 		end
 
+
 		# Method: UnSpamify
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def UnSpamify()
 			# ...
 		end
 
+
 		# Method: UnzipAttachments
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def UnzipAttachments()
 			# ...
 		end
 
+
 		# Method: UseCertVault
 		#
-		# ==== Attributes
-		#
-		# +vault+ - CkXmlCertVault
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param vault [CkXmlCertVault]
+		#
 		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
 
+
 		# Method: ZipAttachments
 		#
-		# ==== Attributes
-		#
-		# +zipFilename+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param zipFilename [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def ZipAttachments(zipFilename)
 			# ...
 		end
+
 	end
 end

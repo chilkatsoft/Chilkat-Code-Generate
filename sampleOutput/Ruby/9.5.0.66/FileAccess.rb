@@ -6,28 +6,17 @@ module Chilkat
 		# @return [String]
 		def currentDir() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
@@ -43,13 +32,11 @@ module Chilkat
 		# @return [String]
 		def fileOpenErrorMsg() end
 
-		# +ckByteData+ - [CkByteData]
 		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
 		def get_LastBinaryResult(ckByteData) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -58,7 +45,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorHtml() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -67,7 +53,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorText() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -76,18 +61,12 @@ module Chilkat
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -99,29 +78,18 @@ module Chilkat
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -133,790 +101,612 @@ module Chilkat
 
 		# Method: AppendAnsi
 		#
-		# ==== Attributes
-		#
-		# +text+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param text [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AppendAnsi(text)
 			# ...
 		end
 
+
 		# Method: AppendText
-		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param str [String]
 		# @param charset [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AppendText(str, charset)
 			# ...
 		end
 
+
 		# Method: AppendUnicodeBOM
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def AppendUnicodeBOM()
 			# ...
 		end
 
+
 		# Method: AppendUtf8BOM
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def AppendUtf8BOM()
 			# ...
 		end
 
+
 		# Method: DirAutoCreate
 		#
-		# ==== Attributes
-		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param dirPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def DirAutoCreate(dirPath)
 			# ...
 		end
 
+
 		# Method: DirCreate
 		#
-		# ==== Attributes
-		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param dirPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def DirCreate(dirPath)
 			# ...
 		end
 
+
 		# Method: DirDelete
 		#
-		# ==== Attributes
-		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param dirPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def DirDelete(dirPath)
 			# ...
 		end
 
+
 		# Method: DirEnsureExists
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def DirEnsureExists(filePath)
 			# ...
 		end
 
+
 		# Method: FileClose
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def FileClose()
 			# ...
 		end
 
+
 		# Method: FileContentsEqual
-		#
-		# ==== Attributes
-		#
-		# +filePath1+ - String
-		# +filePath2+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param filePath1 [String]
 		# @param filePath2 [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileContentsEqual(filePath1, filePath2)
 			# ...
 		end
 
+
 		# Method: FileCopy
-		#
-		# ==== Attributes
-		#
-		# +existingFilepath+ - String
-		# +newFilepath+ - String
-		# +failIfExists+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param existingFilepath [String]
 		# @param newFilepath [String]
 		# @param failIfExists [TrueClass, FalseClass]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileCopy(existingFilepath, newFilepath, failIfExists)
 			# ...
 		end
 
+
 		# Method: FileDelete
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileDelete(filePath)
 			# ...
 		end
 
+
 		# Method: FileExists
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileExists(filePath)
 			# ...
 		end
 
+
 		# Method: FileExists3
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns Fixnum
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [Fixnum]
 		def FileExists3(path)
 			# ...
 		end
 
+
 		# Method: FileOpen
-		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +accessMode+ - Fixnum
-		# +shareMode+ - Fixnum
-		# +createDisposition+ - Fixnum
-		# +attributes+ - Fixnum
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param filePath [String]
 		# @param accessMode [Fixnum]
 		# @param shareMode [Fixnum]
 		# @param createDisposition [Fixnum]
 		# @param attributes [Fixnum]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileOpen(filePath, accessMode, shareMode, createDisposition, attributes)
 			# ...
 		end
 
+
 		# Method: FileRead
 		#
-		# ==== Attributes
-		#
-		# +maxNumBytes+ - Fixnum
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param maxNumBytes [Fixnum]
-		# @return [CkByteData]
-		def FileRead(maxNumBytes)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def FileRead(maxNumBytes, outBytes)
 			# ...
 		end
 
+
 		# Method: FileReadBd
-		#
-		# ==== Attributes
-		#
-		# +maxNumBytes+ - Fixnum
-		# +binData+ - CkBinData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param maxNumBytes [Fixnum]
 		# @param binData [CkBinData]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileReadBd(maxNumBytes, binData)
 			# ...
 		end
 
+
 		# Method: FileRename
-		#
-		# ==== Attributes
-		#
-		# +existingFilepath+ - String
-		# +newFilepath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param existingFilepath [String]
 		# @param newFilepath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileRename(existingFilepath, newFilepath)
 			# ...
 		end
 
+
 		# Method: FileSeek
-		#
-		# ==== Attributes
-		#
-		# +offset+ - Fixnum
-		# +origin+ - Fixnum
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param offset [Fixnum]
 		# @param origin [Fixnum]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileSeek(offset, origin)
 			# ...
 		end
 
+
 		# Method: FileSize
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns Fixnum
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
+		#
 		# @return [Fixnum]
 		def FileSize(filePath)
 			# ...
 		end
 
+
 		# Method: FileWrite
 		#
-		# ==== Attributes
-		#
-		# +data+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param data [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileWrite(data)
 			# ...
 		end
 
+
 		# Method: FileWriteBd
-		#
-		# ==== Attributes
-		#
-		# +binData+ - CkBinData
-		# +offset+ - Fixnum
-		# +numBytes+ - Fixnum
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param binData [CkBinData]
 		# @param offset [Fixnum]
 		# @param numBytes [Fixnum]
+		#
 		# @return [TrueClass, FalseClass]
 		def FileWriteBd(binData, offset, numBytes)
 			# ...
 		end
 
+
 		# Method: GenBlockId
-		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# +length+ - Fixnum
-		# +encoding+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param index [Fixnum]
 		# @param length [Fixnum]
 		# @param encoding [String]
-		# @return [String]
-		def GenBlockId(index, length, encoding)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GenBlockId(index, length, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: GenBlockId
+		#
+		# @param index [Fixnum]
+		# @param length [Fixnum]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def genBlockId(index, length, encoding)
+			# ...
+		end
+
 
 		# Method: GetDirectoryName
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param path [String]
-		# @return [String]
-		def GetDirectoryName(path)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetDirectoryName(path, outStr)
 			# ...
 		end
+
+
+		# Method: GetDirectoryName
+		#
+		# @param path [String]
+		#
+		# @return [String]
+		def getDirectoryName(path)
+			# ...
+		end
+
 
 		# Method: GetExtension
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param path [String]
-		# @return [String]
-		def GetExtension(path)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetExtension(path, outStr)
 			# ...
 		end
+
+
+		# Method: GetExtension
+		#
+		# @param path [String]
+		#
+		# @return [String]
+		def getExtension(path)
+			# ...
+		end
+
 
 		# Method: GetFileName
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param path [String]
-		# @return [String]
-		def GetFileName(path)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetFileName(path, outStr)
 			# ...
 		end
+
+
+		# Method: GetFileName
+		#
+		# @param path [String]
+		#
+		# @return [String]
+		def getFileName(path)
+			# ...
+		end
+
 
 		# Method: GetFileNameWithoutExtension
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param path [String]
-		# @return [String]
-		def GetFileNameWithoutExtension(path)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetFileNameWithoutExtension(path, outStr)
 			# ...
 		end
 
-		# Method: GetLastModified
-		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns CkDateTime
-		#
-		# YARD =>
+
+		# Method: GetFileNameWithoutExtension
 		#
 		# @param path [String]
+		#
+		# @return [String]
+		def getFileNameWithoutExtension(path)
+			# ...
+		end
+
+
+		# Method: GetLastModified
+		#
+		# @param path [String]
+		#
 		# @return [CkDateTime]
 		def GetLastModified(path)
 			# ...
 		end
 
+
 		# Method: GetNumBlocks
 		#
-		# ==== Attributes
-		#
-		# +blockSize+ - Fixnum
-		# returns Fixnum
-		#
-		# YARD =>
-		#
 		# @param blockSize [Fixnum]
+		#
 		# @return [Fixnum]
 		def GetNumBlocks(blockSize)
 			# ...
 		end
 
+
 		# Method: GetTempFilename
-		#
-		# ==== Attributes
-		#
-		# +dirPath+ - String
-		# +prefix+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param dirPath [String]
 		# @param prefix [String]
-		# @return [String]
-		def GetTempFilename(dirPath, prefix)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetTempFilename(dirPath, prefix, outStr)
 			# ...
 		end
 
+
+		# Method: GetTempFilename
+		#
+		# @param dirPath [String]
+		# @param prefix [String]
+		#
+		# @return [String]
+		def getTempFilename(dirPath, prefix)
+			# ...
+		end
+
+
 		# Method: OpenForAppend
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def OpenForAppend(filePath)
 			# ...
 		end
 
+
 		# Method: OpenForRead
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def OpenForRead(filePath)
 			# ...
 		end
 
+
 		# Method: OpenForReadWrite
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def OpenForReadWrite(filePath)
 			# ...
 		end
 
+
 		# Method: OpenForWrite
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def OpenForWrite(filePath)
 			# ...
 		end
 
+
 		# Method: ReadBinaryToEncoded
-		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +encoding+ - String
-		# returns String
-		#
-		# YARD =>
 		#
 		# @param filePath [String]
 		# @param encoding [String]
-		# @return [String]
-		def ReadBinaryToEncoded(filePath, encoding)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def ReadBinaryToEncoded(filePath, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: ReadBinaryToEncoded
+		#
+		# @param filePath [String]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def readBinaryToEncoded(filePath, encoding)
+			# ...
+		end
+
 
 		# Method: ReadBlock
 		#
-		# ==== Attributes
-		#
-		# +blockIndex+ - Fixnum
-		# +blockSize+ - Fixnum
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param blockIndex [Fixnum]
 		# @param blockSize [Fixnum]
-		# @return [CkByteData]
-		def ReadBlock(blockIndex, blockSize)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def ReadBlock(blockIndex, blockSize, outBytes)
 			# ...
 		end
+
 
 		# Method: ReadEntireFile
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
-		# @return [CkByteData]
-		def ReadEntireFile(filePath)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def ReadEntireFile(filePath, outBytes)
 			# ...
 		end
+
 
 		# Method: ReadEntireTextFile
 		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +charset+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param filePath [String]
 		# @param charset [String]
-		# @return [String]
-		def ReadEntireTextFile(filePath, charset)
+		# @param outStrFileContents [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def ReadEntireTextFile(filePath, charset, outStrFileContents)
 			# ...
 		end
 
+
+		# Method: ReadEntireTextFile
+		#
+		# @param filePath [String]
+		# @param charset [String]
+		#
+		# @return [String]
+		def readEntireTextFile(filePath, charset)
+			# ...
+		end
+
+
 		# Method: ReassembleFile
-		#
-		# ==== Attributes
-		#
-		# +partsDirPath+ - String
-		# +partPrefix+ - String
-		# +partExtension+ - String
-		# +reassembledFilename+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param partsDirPath [String]
 		# @param partPrefix [String]
 		# @param partExtension [String]
 		# @param reassembledFilename [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def ReassembleFile(partsDirPath, partPrefix, partExtension, reassembledFilename)
 			# ...
 		end
 
+
 		# Method: ReplaceStrings
-		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +charset+ - String
-		# +existingString+ - String
-		# +replacementString+ - String
-		# returns Fixnum
-		#
-		# YARD =>
 		#
 		# @param filePath [String]
 		# @param charset [String]
 		# @param existingString [String]
 		# @param replacementString [String]
+		#
 		# @return [Fixnum]
 		def ReplaceStrings(filePath, charset, existingString, replacementString)
 			# ...
 		end
 
+
 		# Method: SaveLastError
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
 
+
 		# Method: SetCurrentDir
 		#
-		# ==== Attributes
-		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param dirPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetCurrentDir(dirPath)
 			# ...
 		end
 
+
 		# Method: SetFileTimes
-		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +createTime+ - CkDateTime
-		# +lastAccessTime+ - CkDateTime
-		# +lastModTime+ - CkDateTime
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param filePath [String]
 		# @param createTime [CkDateTime]
 		# @param lastAccessTime [CkDateTime]
 		# @param lastModTime [CkDateTime]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetFileTimes(filePath, createTime, lastAccessTime, lastModTime)
 			# ...
 		end
 
+
 		# Method: SetLastModified
-		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +lastModified+ - CkDateTime
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param filePath [String]
 		# @param lastModified [CkDateTime]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetLastModified(filePath, lastModified)
 			# ...
 		end
 
+
 		# Method: SplitFile
-		#
-		# ==== Attributes
-		#
-		# +fileToSplit+ - String
-		# +partPrefix+ - String
-		# +partExtension+ - String
-		# +partSize+ - Fixnum
-		# +destDir+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param fileToSplit [String]
 		# @param partPrefix [String]
 		# @param partExtension [String]
 		# @param partSize [Fixnum]
 		# @param destDir [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SplitFile(fileToSplit, partPrefix, partExtension, partSize, destDir)
 			# ...
 		end
 
+
 		# Method: TreeDelete
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def TreeDelete(path)
 			# ...
 		end
 
+
 		# Method: WriteEntireFile
-		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +fileData+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param filePath [String]
 		# @param fileData [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteEntireFile(filePath, fileData)
 			# ...
 		end
 
+
 		# Method: WriteEntireTextFile
-		#
-		# ==== Attributes
-		#
-		# +filePath+ - String
-		# +textData+ - String
-		# +charset+ - String
-		# +includedPreamble+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param filePath [String]
 		# @param textData [String]
 		# @param charset [String]
 		# @param includedPreamble [TrueClass, FalseClass]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteEntireTextFile(filePath, textData, charset, includedPreamble)
 			# ...
 		end
+
 	end
 end

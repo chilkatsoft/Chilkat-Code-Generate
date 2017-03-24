@@ -1,13 +1,8 @@
 module Chilkat
 	class CkStream 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_AbortCurrent(newval) end
 
@@ -20,39 +15,23 @@ module Chilkat
 		# @return [TrueClass, FalseClass]
 		def get_DataAvailable() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_DefaultChunkSize() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_DefaultChunkSize(newval) end
 
@@ -62,13 +41,11 @@ module Chilkat
 		# @return [TrueClass, FalseClass]
 		def get_IsWriteClosed() end
 
-		# +ckByteData+ - [CkByteData]
 		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
 		def get_LastBinaryResult(ckByteData) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -77,7 +54,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorHtml() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -86,7 +62,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorText() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -95,18 +70,12 @@ module Chilkat
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -118,25 +87,15 @@ module Chilkat
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_Length() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_Length(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_Length32() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_Length32(newval) end
 
@@ -149,148 +108,84 @@ module Chilkat
 		# @return [Bignum]
 		def get_ReadFailReason() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ReadTimeoutMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_ReadTimeoutMs(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_SinkFile(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_SinkFile(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def sinkFile() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_SinkFile(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_SourceFile(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_SourceFile(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def sourceFile() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_SourceFile(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_SourceFilePart() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_SourceFilePart(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_SourceFilePartSize() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_SourceFilePartSize(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_StringBom() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_StringBom(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_StringCharset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_StringCharset(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def stringCharset() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_StringCharset(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -302,310 +197,275 @@ module Chilkat
 		# @return [Bignum]
 		def get_WriteFailReason() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_WriteTimeoutMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_WriteTimeoutMs(newval) end
 
 
 		# Method: ReadBytes
 		#
-		# ==== Attributes
+		# @param outBytes [CkByteData]
 		#
-		# returns CkByteData
-		#
-		# YARD =>
-		#
-		# @return [CkByteData]
-		def ReadBytes()
+		# @return [TrueClass, FalseClass]
+		def ReadBytes(outBytes)
 			# ...
 		end
+
 
 		# Method: ReadBytesENC
 		#
-		# ==== Attributes
-		#
-		# +encoding+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param encoding [String]
-		# @return [String]
-		def ReadBytesENC(encoding)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def ReadBytesENC(encoding, outStr)
 			# ...
 		end
+
+
+		# Method: ReadBytesENC
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def readBytesENC(encoding)
+			# ...
+		end
+
 
 		# Method: ReadNBytes
 		#
-		# ==== Attributes
-		#
-		# +numBytes+ - Fixnum
-		# returns CkByteData
-		#
-		# YARD =>
-		#
 		# @param numBytes [Fixnum]
-		# @return [CkByteData]
-		def ReadNBytes(numBytes)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def ReadNBytes(numBytes, outBytes)
 			# ...
 		end
+
 
 		# Method: ReadNBytesENC
 		#
-		# ==== Attributes
+		# @param numBytes [Fixnum]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# +numBytes+ - Fixnum
-		# +encoding+ - String
-		# returns String
-		#
-		# YARD =>
+		# @return [TrueClass, FalseClass]
+		def ReadNBytesENC(numBytes, encoding, outStr)
+			# ...
+		end
+
+
+		# Method: ReadNBytesENC
 		#
 		# @param numBytes [Fixnum]
 		# @param encoding [String]
+		#
 		# @return [String]
-		def ReadNBytesENC(numBytes, encoding)
+		def readNBytesENC(numBytes, encoding)
 			# ...
 		end
+
 
 		# Method: ReadString
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def ReadString()
+		# @return [TrueClass, FalseClass]
+		def ReadString(outStr)
 			# ...
 		end
+
+
+		# Method: ReadString
+		#
+		#
+		# @return [String]
+		def readString()
+			# ...
+		end
+
 
 		# Method: ReadToCRLF
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def ReadToCRLF()
+		# @return [TrueClass, FalseClass]
+		def ReadToCRLF(outStr)
 			# ...
 		end
+
+
+		# Method: ReadToCRLF
+		#
+		#
+		# @return [String]
+		def readToCRLF()
+			# ...
+		end
+
 
 		# Method: ReadUntilMatch
 		#
-		# ==== Attributes
-		#
-		# +matchStr+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param matchStr [String]
-		# @return [String]
-		def ReadUntilMatch(matchStr)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def ReadUntilMatch(matchStr, outStr)
 			# ...
 		end
 
+
+		# Method: ReadUntilMatch
+		#
+		# @param matchStr [String]
+		#
+		# @return [String]
+		def readUntilMatch(matchStr)
+			# ...
+		end
+
+
 		# Method: Reset
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def Reset()
 			# ...
 		end
 
+
 		# Method: RunStream
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def RunStream()
 			# ...
 		end
 
+
 		# Method: SaveLastError
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
 
+
 		# Method: SetSinkStream
 		#
-		# ==== Attributes
-		#
-		# +strm+ - CkStream
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param strm [CkStream]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetSinkStream(strm)
 			# ...
 		end
 
+
 		# Method: SetSourceBytes
 		#
-		# ==== Attributes
-		#
-		# +sourceData+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param sourceData [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetSourceBytes(sourceData)
 			# ...
 		end
 
+
 		# Method: SetSourceStream
 		#
-		# ==== Attributes
-		#
-		# +strm+ - CkStream
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param strm [CkStream]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetSourceStream(strm)
 			# ...
 		end
 
+
 		# Method: SetSourceString
-		#
-		# ==== Attributes
-		#
-		# +srcStr+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param srcStr [String]
 		# @param charset [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SetSourceString(srcStr, charset)
 			# ...
 		end
 
+
 		# Method: ToDecimalStr
 		#
-		# ==== Attributes
-		#
-		# +propertyName+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param propertyName [String]
-		# @return [String]
-		def ToDecimalStr(propertyName)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def ToDecimalStr(propertyName, outStr)
 			# ...
 		end
 
+
+		# Method: ToDecimalStr
+		#
+		# @param propertyName [String]
+		#
+		# @return [String]
+		def toDecimalStr(propertyName)
+			# ...
+		end
+
+
 		# Method: WriteByte
 		#
-		# ==== Attributes
-		#
-		# +byteVal+ - Fixnum
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param byteVal [Fixnum]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteByte(byteVal)
 			# ...
 		end
 
+
 		# Method: WriteBytes
 		#
-		# ==== Attributes
-		#
-		# +byteData+ - CkByteData
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param byteData [CkByteData]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteBytes(byteData)
 			# ...
 		end
 
+
 		# Method: WriteBytesENC
-		#
-		# ==== Attributes
-		#
-		# +byteData+ - String
-		# +encoding+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param byteData [String]
 		# @param encoding [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteBytesENC(byteData, encoding)
 			# ...
 		end
 
+
 		# Method: WriteClose
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def WriteClose()
 			# ...
 		end
 
+
 		# Method: WriteString
 		#
-		# ==== Attributes
-		#
-		# +str+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param str [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteString(str)
 			# ...
 		end
+
 	end
 end

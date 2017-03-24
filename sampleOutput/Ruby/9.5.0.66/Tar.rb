@@ -1,171 +1,100 @@
 module Chilkat
 	class CkTar 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_CaptureXmlListing() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_CaptureXmlListing(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_Charset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def charset() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_Charset(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_DirMode() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_DirMode(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DirPrefix(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DirPrefix(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def dirPrefix() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DirPrefix(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_FileMode() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_FileMode(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_GroupId() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_GroupId(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_GroupName(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_GroupName(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def groupName() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_GroupName(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		#
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# +ckByteData+ - [CkByteData]
 		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
 		def get_LastBinaryResult(ckByteData) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -174,7 +103,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorHtml() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -183,7 +111,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorText() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -192,18 +119,12 @@ module Chilkat
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -215,271 +136,155 @@ module Chilkat
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_MatchCaseSensitive() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_MatchCaseSensitive(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_MustMatch(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_MustMatch(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def mustMatch() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_MustMatch(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_MustNotMatch(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_MustNotMatch(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def mustNotMatch() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_MustNotMatch(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_NoAbsolutePaths() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_NoAbsolutePaths(newval) end
 
 		# @return [Bignum]
 		def get_NumDirRoots() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_PercentDoneScale() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		#
 		# @event
 		def put_PercentDoneScale(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ScriptFileMode() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_ScriptFileMode(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_SuppressOutput() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_SuppressOutput(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_UntarCaseSensitive() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_UntarCaseSensitive(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_UntarDebugLog() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_UntarDebugLog(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_UntarDiscardPaths() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_UntarDiscardPaths(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_UntarFromDir(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_UntarFromDir(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def untarFromDir() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_UntarFromDir(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_UntarMatchPattern(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_UntarMatchPattern(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def untarMatchPattern() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_UntarMatchPattern(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_UntarMaxCount() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_UntarMaxCount(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_UserId() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_UserId(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_UserName(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_UserName(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def userName() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_UserName(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -488,333 +293,240 @@ module Chilkat
 		# @return [String]
 		def version() end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_WriteFormat(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_WriteFormat(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def writeFormat() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_WriteFormat(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_XmlListing(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_XmlListing(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def xmlListing() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_XmlListing(newval) end
 
 
 		# Method: AddDirRoot
 		#
-		# ==== Attributes
-		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param dirPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddDirRoot(dirPath)
 			# ...
 		end
 
+
 		# Method: AddDirRoot2
-		#
-		# ==== Attributes
-		#
-		# +rootPrefix+ - String
-		# +rootPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param rootPrefix [String]
 		# @param rootPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddDirRoot2(rootPrefix, rootPath)
 			# ...
 		end
 
+
 		# Method: AddFile
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def AddFile(path)
 			# ...
 		end
 
+
 		# Method: CreateDeb
-		#
-		# ==== Attributes
-		#
-		# +controlPath+ - String
-		# +dataPath+ - String
-		# +debPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @param controlPath [String]
 		# @param dataPath [String]
 		# @param debPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def CreateDeb(controlPath, dataPath, debPath)
 			# ...
 		end
 
+
 		# Method: GetDirRoot
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetDirRoot(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetDirRoot(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetDirRoot
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getDirRoot(index)
+			# ...
+		end
+
 
 		# Method: ListXml
 		#
-		# ==== Attributes
-		#
-		# +tarPath+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param tarPath [String]
-		# @return [String]
-		def ListXml(tarPath)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def ListXml(tarPath, outStr)
 			# ...
 		end
 
+
+		# Method: ListXml
+		#
+		# @param tarPath [String]
+		#
+		# @return [String]
+		def listXml(tarPath)
+			# ...
+		end
+
+
 		# Method: SaveLastError
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
 
+
 		# Method: UnlockComponent
 		#
-		# ==== Attributes
-		#
-		# +unlockCode+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param unlockCode [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
+
 		# Method: Untar
 		#
-		# ==== Attributes
-		#
-		# +tarPath+ - String
-		# returns Fixnum
-		#
-		# YARD =>
-		#
 		# @param tarPath [String]
+		#
 		# @return [Fixnum]
 		def Untar(tarPath)
 			# ...
 		end
 
+
 		# Method: UntarBz2
 		#
-		# ==== Attributes
-		#
-		# +tarPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param tarPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def UntarBz2(tarPath)
 			# ...
 		end
 
+
 		# Method: UntarFirstMatchingToMemory
-		#
-		# ==== Attributes
-		#
-		# +tarFileBytes+ - CkByteData
-		# +matchPattern+ - String
-		# returns CkByteData
-		#
-		# YARD =>
 		#
 		# @param tarFileBytes [CkByteData]
 		# @param matchPattern [String]
-		# @return [CkByteData]
-		def UntarFirstMatchingToMemory(tarFileBytes, matchPattern)
+		# @param outBytes [CkByteData]
+		#
+		# @return [TrueClass, FalseClass]
+		def UntarFirstMatchingToMemory(tarFileBytes, matchPattern, outBytes)
 			# ...
 		end
 
+
 		# Method: UntarFromMemory
 		#
-		# ==== Attributes
-		#
-		# +tarFileBytes+ - CkByteData
-		# returns Fixnum
-		#
-		# YARD =>
-		#
 		# @param tarFileBytes [CkByteData]
+		#
 		# @return [Fixnum]
 		def UntarFromMemory(tarFileBytes)
 			# ...
 		end
 
+
 		# Method: UntarGz
 		#
-		# ==== Attributes
-		#
-		# +tarPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param tarPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def UntarGz(tarPath)
 			# ...
 		end
 
+
 		# Method: UntarZ
 		#
-		# ==== Attributes
-		#
-		# +tarPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param tarPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def UntarZ(tarPath)
 			# ...
 		end
 
+
 		# Method: VerifyTar
 		#
-		# ==== Attributes
-		#
-		# +tarPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param tarPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def VerifyTar(tarPath)
 			# ...
 		end
 
+
 		# Method: WriteTar
 		#
-		# ==== Attributes
-		#
-		# +tarPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param tarPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteTar(tarPath)
 			# ...
 		end
 
+
 		# Method: WriteTarBz2
 		#
-		# ==== Attributes
-		#
-		# +bz2Path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param bz2Path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteTarBz2(bz2Path)
 			# ...
 		end
 
+
 		# Method: WriteTarGz
 		#
-		# ==== Attributes
-		#
-		# +gzPath+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param gzPath [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def WriteTarGz(gzPath)
 			# ...
 		end
+
 	end
 end

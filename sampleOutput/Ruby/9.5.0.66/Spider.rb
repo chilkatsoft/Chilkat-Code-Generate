@@ -1,96 +1,54 @@
 module Chilkat
 	class CkSpider 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_AbortCurrent(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_AvoidHttps() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_AvoidHttps(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_CacheDir(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_CacheDir(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def cacheDir() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_CacheDir(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_ChopAtQuery() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_ChopAtQuery(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ConnectTimeout() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_ConnectTimeout(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_DebugLogFilePath(newval) end
 
@@ -100,39 +58,27 @@ module Chilkat
 		# @return [String]
 		def domain() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_FetchFromCache() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_FetchFromCache(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		#
 		# @event
 		def put_HeartbeatMs(newval) end
 
-		# +ckByteData+ - [CkByteData]
 		# @param ckByteData [CkByteData]
 		#
 		# @return [Fixnum]
 		def get_LastBinaryResult(ckByteData) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -141,7 +87,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorHtml() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -150,7 +95,6 @@ module Chilkat
 		# @return [String]
 		def lastErrorText() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -186,18 +130,12 @@ module Chilkat
 		# @return [String]
 		def lastHtmlTitle() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_LastModDate() end
@@ -208,7 +146,6 @@ module Chilkat
 		# @return [String]
 		def lastModDateStr() end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -226,25 +163,15 @@ module Chilkat
 		# @return [String]
 		def lastUrl() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_MaxResponseSize() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_MaxResponseSize(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_MaxUrlLen() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_MaxUrlLen(newval) end
 
@@ -263,173 +190,98 @@ module Chilkat
 		# @return [Bignum]
 		def get_NumUnspidered() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_PreferIpv6() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_PreferIpv6(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_ProxyDomain(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_ProxyDomain(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def proxyDomain() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_ProxyDomain(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_ProxyLogin(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_ProxyLogin(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def proxyLogin() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_ProxyLogin(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_ProxyPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_ProxyPassword(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def proxyPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_ProxyPassword(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ProxyPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_ProxyPort(newval) end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_ReadTimeout() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_ReadTimeout(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_UpdateCache() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_UpdateCache(newval) end
 
-		# +ckStr+ - [CkString]
-		# returns String
-		#
 		# @param ckStr [CkString]
 		#
 		# @return [String]
 		def get_UserAgent(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_UserAgent(newval) end
 
-		# returns String
-		#
 		# @return [String]
 		def userAgent() end
 
-		# ==== Attributes
-		# +newval+ - String
-		#
 		# @param newval [String]
 		def put_UserAgent(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_VerboseLogging(newval) end
 
-		# +ckStr+ - [CkString]
 		# @param ckStr [CkString]
 		#
 		# @return [String]
@@ -438,334 +290,323 @@ module Chilkat
 		# @return [String]
 		def version() end
 
-		# returns Bignum
-		#
 		# @return [Bignum]
 		def get_WindDownCount() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		#
 		# @param newval [Bignum]
 		def put_WindDownCount(newval) end
 
 
 		# Method: AddAvoidOutboundLinkPattern
 		#
-		# ==== Attributes
-		#
-		# +pattern+ - String
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param pattern [String]
+		#
 		# @return [nil]
 		def AddAvoidOutboundLinkPattern(pattern)
 			# ...
 		end
 
+
 		# Method: AddAvoidPattern
 		#
-		# ==== Attributes
-		#
-		# +pattern+ - String
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param pattern [String]
+		#
 		# @return [nil]
 		def AddAvoidPattern(pattern)
 			# ...
 		end
 
+
 		# Method: AddMustMatchPattern
 		#
-		# ==== Attributes
-		#
-		# +pattern+ - String
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param pattern [String]
+		#
 		# @return [nil]
 		def AddMustMatchPattern(pattern)
 			# ...
 		end
 
+
 		# Method: AddUnspidered
 		#
-		# ==== Attributes
-		#
-		# +url+ - String
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param url [String]
+		#
 		# @return [nil]
 		def AddUnspidered(url)
 			# ...
 		end
 
+
 		# Method: CanonicalizeUrl
 		#
-		# ==== Attributes
-		#
-		# +url+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param url [String]
-		# @return [String]
-		def CanonicalizeUrl(url)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def CanonicalizeUrl(url, outStr)
 			# ...
 		end
 
+
+		# Method: CanonicalizeUrl
+		#
+		# @param url [String]
+		#
+		# @return [String]
+		def canonicalizeUrl(url)
+			# ...
+		end
+
+
 		# Method: ClearFailedUrls
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def ClearFailedUrls()
 			# ...
 		end
 
+
 		# Method: ClearOutboundLinks
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def ClearOutboundLinks()
 			# ...
 		end
 
+
 		# Method: ClearSpideredUrls
 		#
-		# ==== Attributes
-		#
-		# returns nil
-		#
-		# YARD =>
 		#
 		# @return [nil]
 		def ClearSpideredUrls()
 			# ...
 		end
 
+
 		# Method: CrawlNext
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def CrawlNext()
 			# ...
 		end
 
+
 		# Method: FetchRobotsText
 		#
-		# ==== Attributes
+		# @param outStr [CkString]
 		#
-		# returns String
-		#
-		# YARD =>
-		#
-		# @return [String]
-		def FetchRobotsText()
+		# @return [TrueClass, FalseClass]
+		def FetchRobotsText(outStr)
 			# ...
 		end
+
+
+		# Method: FetchRobotsText
+		#
+		#
+		# @return [String]
+		def fetchRobotsText()
+			# ...
+		end
+
 
 		# Method: GetAvoidPattern
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetAvoidPattern(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetAvoidPattern(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetAvoidPattern
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAvoidPattern(index)
+			# ...
+		end
+
 
 		# Method: GetBaseDomain
 		#
-		# ==== Attributes
-		#
-		# +domain+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param domain [String]
-		# @return [String]
-		def GetBaseDomain(domain)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetBaseDomain(domain, outStr)
 			# ...
 		end
+
+
+		# Method: GetBaseDomain
+		#
+		# @param domain [String]
+		#
+		# @return [String]
+		def getBaseDomain(domain)
+			# ...
+		end
+
 
 		# Method: GetFailedUrl
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetFailedUrl(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetFailedUrl(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetFailedUrl
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getFailedUrl(index)
+			# ...
+		end
+
 
 		# Method: GetOutboundLink
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetOutboundLink(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetOutboundLink(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetOutboundLink
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getOutboundLink(index)
+			# ...
+		end
+
 
 		# Method: GetSpideredUrl
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetSpideredUrl(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetSpideredUrl(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetSpideredUrl
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getSpideredUrl(index)
+			# ...
+		end
+
 
 		# Method: GetUnspideredUrl
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
-		# @return [String]
-		def GetUnspideredUrl(index)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetUnspideredUrl(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetUnspideredUrl
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getUnspideredUrl(index)
+			# ...
+		end
+
 
 		# Method: GetUrlDomain
 		#
-		# ==== Attributes
-		#
-		# +url+ - String
-		# returns String
-		#
-		# YARD =>
-		#
 		# @param url [String]
-		# @return [String]
-		def GetUrlDomain(url)
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def GetUrlDomain(url, outStr)
 			# ...
 		end
 
+
+		# Method: GetUrlDomain
+		#
+		# @param url [String]
+		#
+		# @return [String]
+		def getUrlDomain(url)
+			# ...
+		end
+
+
 		# Method: Initialize
 		#
-		# ==== Attributes
-		#
-		# +domain+ - String
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param domain [String]
+		#
 		# @return [nil]
 		def Initialize(domain)
 			# ...
 		end
 
+
 		# Method: RecrawlLast
 		#
-		# ==== Attributes
-		#
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
 		#
 		# @return [TrueClass, FalseClass]
 		def RecrawlLast()
 			# ...
 		end
 
+
 		# Method: SaveLastError
 		#
-		# ==== Attributes
-		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param path [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
 
+
 		# Method: SkipUnspidered
 		#
-		# ==== Attributes
-		#
-		# +index+ - Fixnum
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param index [Fixnum]
+		#
 		# @return [nil]
 		def SkipUnspidered(index)
 			# ...
 		end
 
+
 		# Method: SleepMs
 		#
-		# ==== Attributes
-		#
-		# +numMilliseconds+ - Fixnum
-		# returns nil
-		#
-		# YARD =>
-		#
 		# @param numMilliseconds [Fixnum]
+		#
 		# @return [nil]
 		def SleepMs(numMilliseconds)
 			# ...
 		end
+
 	end
 end

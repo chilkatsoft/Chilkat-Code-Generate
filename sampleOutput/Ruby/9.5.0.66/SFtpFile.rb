@@ -1,6 +1,5 @@
 module Chilkat
 	class CkSFtpFile 
-		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_CreateTime() end
@@ -74,7 +73,6 @@ module Chilkat
 		# @return [TrueClass, FalseClass]
 		def get_IsSystem() end
 
-		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_LastAccessTime() end
@@ -85,18 +83,12 @@ module Chilkat
 		# @return [String]
 		def lastAccessTimeStr() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
-		# This method has been deprecated. Do not use it.
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_LastModifiedTime() end
@@ -131,55 +123,38 @@ module Chilkat
 		# @return [Bignum]
 		def get_Uid() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
 
 		# Method: GetCreateDt
 		#
-		# ==== Attributes
-		#
-		# returns CkDateTime
-		#
-		# YARD =>
 		#
 		# @return [CkDateTime]
 		def GetCreateDt()
 			# ...
 		end
 
+
 		# Method: GetLastAccessDt
 		#
-		# ==== Attributes
-		#
-		# returns CkDateTime
-		#
-		# YARD =>
 		#
 		# @return [CkDateTime]
 		def GetLastAccessDt()
 			# ...
 		end
 
+
 		# Method: GetLastModifiedDt
 		#
-		# ==== Attributes
-		#
-		# returns CkDateTime
-		#
-		# YARD =>
 		#
 		# @return [CkDateTime]
 		def GetLastModifiedDt()
 			# ...
 		end
+
 	end
 end

@@ -18,14 +18,9 @@ module Chilkat
 		# @return [String]
 		def hostType() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_LastMethodSuccess(newval) end
 
@@ -65,31 +60,21 @@ module Chilkat
 		# @return [TrueClass, FalseClass]
 		def get_Ssl() end
 
-		# returns TrueClass, FalseClass
-		#
 		# @return [TrueClass, FalseClass]
 		def get_Utf8() end
 
-		# ==== Attributes
-		# +newval+ - TrueClass, FalseClass
-		#
 		# @param newval [TrueClass, FalseClass]
 		def put_Utf8(newval) end
 
 
 		# Method: ParseUrl
 		#
-		# ==== Attributes
-		#
-		# +url+ - String
-		# returns TrueClass, FalseClass
-		#
-		# YARD =>
-		#
 		# @param url [String]
+		#
 		# @return [TrueClass, FalseClass]
 		def ParseUrl(url)
 			# ...
 		end
+
 	end
 end
