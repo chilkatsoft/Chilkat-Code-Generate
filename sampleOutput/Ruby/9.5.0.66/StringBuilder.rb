@@ -1,635 +1,708 @@
 module Chilkat
 	class CkStringBuilder 
-		# returns Bignum
+		# Returns the content of the string converted to an integer.
+		#
 		# @return [Bignum]
 		def get_IntValue() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Returns the content of the string converted to an integer.
 		#
 		# @param newval [Bignum]
-		def set_IntValue(newval) end
+		def put_IntValue(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns Bignum
+		# The number of characters of the string contained within this instance.
+		#
 		# @return [Bignum]
 		def get_Length() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: Append
 		#
-		# ==== Attributes
+		# Appends a copy of the specified string to this instance.
 		#
-		# +value+ - String
-		# returns TrueClass, FalseClass
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Append(value)
 			# ...
 		end
 
+
 		# Method: AppendBd
 		#
-		# ==== Attributes
+		# Appends the contents of ARG1. The ARG2 specifies the character encoding of the bytes contained in
+		# ARG1. The ARG2 can be any of the supported encodings listed at Chilkat Supported Character
+		# Encodings. To append the entire contents of ARG1, set ARG3 and ARG4 equal to zero. To append a range
+		# of ARG1, set the ARG3 and ARG4 to specify the range.
 		#
-		# +binData+ - CkBinData
-		# +charset+ - String
-		# +offset+ - Fixnum
-		# +numBytes+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param binData [CkBinData]
+		# @param charset [String]
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  binData [CkBinData]
-		# @param  charset [String]
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendBd(binData, charset, offset, numBytes)
 			# ...
 		end
 
+
 		# Method: AppendEncoded
 		#
-		# ==== Attributes
+		# Appends binary data using the encoding specified by ARG2, such as "base64", "hex", etc.
 		#
-		# +binaryData+ - CkByteData
-		# +encoding+ - String
-		# returns TrueClass, FalseClass
+		# @param binaryData [CkByteData]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  binaryData [CkByteData]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendEncoded(binaryData, encoding)
 			# ...
 		end
 
+
 		# Method: AppendInt
 		#
-		# ==== Attributes
+		# Appends the string representation of a specified 32-bit signed integer to this instance.
 		#
-		# +value+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param value [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendInt(value)
 			# ...
 		end
 
+
+		# Method: AppendInt64
+		#
+		# Appends the string representation of a specified 64-bit signed integer to this instance.
+		#
+		# @param value [Bignum]
+		#
+		# @return [TrueClass, FalseClass]
+		def AppendInt64(value)
+			# ...
+		end
+
+
 		# Method: AppendLine
 		#
-		# ==== Attributes
+		# Appends the ARG1 followed by a CRLF or LF to the end of the curent StringBuilder object. If ARG2 is
+		# _TRUE_, then a CRLF line ending is used. Otherwise a LF line ending is used.
 		#
-		# +value+ - String
-		# +crlf+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param value [String]
+		# @param crlf [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  value [String]
-		# @param  crlf [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendLine(value, crlf)
 			# ...
 		end
 
+
 		# Method: AppendSb
 		#
-		# ==== Attributes
+		# Appends the contents of another StringBuilder to this instance.
 		#
-		# +sb+ - CkStringBuilder
-		# returns TrueClass, FalseClass
+		# @param sb [CkStringBuilder]
 		#
-		# YARD =>
-		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendSb(sb)
 			# ...
 		end
 
+
 		# Method: Clear
 		#
-		# ==== Attributes
+		# Removes all characters from the current StringBuilder instance.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def Clear()
 			# ...
 		end
 
+
 		# Method: Contains
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the ARG2 is contained within this object. For case sensitive matching, set ARG2
+		# equal to _TRUE_. For case-insensitive, set ARG2 equal to _FALSE_.
 		#
-		# +str+ - String
-		# +caseSensitive+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param str [String]
+		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Contains(str, caseSensitive)
 			# ...
 		end
 
+
 		# Method: ContentsEqual
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the contents of this object equals the ARG1. Returns _FALSE_ if unequal. For case
+		# insensitive equality, set ARG2 equal to _FALSE_.
 		#
-		# +str+ - String
-		# +caseSensitive+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param str [String]
+		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ContentsEqual(str, caseSensitive)
 			# ...
 		end
 
+
 		# Method: ContentsEqualSb
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the contents of this object equals the ARG1. Returns _FALSE_ if unequal. For case
+		# insensitive equality, set ARG2 equal to _FALSE_.
 		#
-		# +sb+ - CkStringBuilder
-		# +caseSensitive+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param sb [CkStringBuilder]
+		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  sb [CkStringBuilder]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ContentsEqualSb(sb, caseSensitive)
 			# ...
 		end
 
+
 		# Method: Decode
 		#
-		# ==== Attributes
+		# Decodes and replaces the contents with the decoded string. The ARG1 can be set to any of the
+		# following strings: "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B",
+		# "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML
+		# entity encoding). The full up-to-date list of supported binary encodings is available at the link
+		# entitled "Supported Binary Encodings" below.
+		# 
+		# Note: This method can only be called if
+		# the encoded content decodes to a string. The ARG2 indicates the charset to be used in intepreting
+		# the decoded bytes. For example, the ARG2 can be "utf-8", "utf-16", "iso-8859-1", "shift_JIS", etc.
 		#
-		# +encoding+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param encoding [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Decode(encoding, charset)
 			# ...
 		end
 
+
 		# Method: Encode
 		#
-		# ==== Attributes
+		# Encodes to base64, hex, quoted-printable, or URL-encoding. The ARG1 can be set to any of the
+		# following strings: "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B",
+		# "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML
+		# entity encoding). The full up-to-date list of supported binary encodings is available at the link
+		# entitled "Supported Binary Encodings" below.
 		#
-		# +encoding+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param encoding [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Encode(encoding, charset)
 			# ...
 		end
 
+
 		# Method: EndsWith
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the string ends with ARG1. Otherwise returns _FALSE_. The comparison is case
+		# sensitive if ARG2 is _TRUE_, and case insensitive if ARG2 is _FALSE_.
 		#
-		# +substr+ - String
-		# +caseSensitive+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param substr [String]
+		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  substr [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def EndsWith(substr, caseSensitive)
 			# ...
 		end
 
+
 		# Method: EntityDecode
 		#
-		# ==== Attributes
+		# Decodes HTML entities. See HTML entities for more information about HTML entities.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def EntityDecode()
 			# ...
 		end
 
+
 		# Method: GetAfterBetween
 		#
-		# ==== Attributes
+		# Begin searching after the 1st occurrence of ARG1 is found, and then return the substring found
+		# between the next occurrence of ARG2 and the next occurrence of ARG3.
 		#
-		# +searchAfter+ - String
-		# +beginMark+ - String
-		# +endMark+ - String
-		# returns String
+		# @param searchAfter [String]
+		# @param beginMark [String]
+		# @param endMark [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  searchAfter [String]
-		# @param  beginMark [String]
-		# @param  endMark [String]
-		# @return  [String]
-		def GetAfterBetween(searchAfter, beginMark, endMark)
+		# @return [TrueClass, FalseClass]
+		def GetAfterBetween(searchAfter, beginMark, endMark, outStr)
 			# ...
 		end
+
+
+		# Method: GetAfterBetween
+		#
+		# Begin searching after the 1st occurrence of ARG1 is found, and then return the substring found
+		# between the next occurrence of ARG2 and the next occurrence of ARG3.
+		#
+		# @param searchAfter [String]
+		# @param beginMark [String]
+		# @param endMark [String]
+		#
+		# @return [String]
+		def getAfterBetween(searchAfter, beginMark, endMark)
+			# ...
+		end
+
 
 		# Method: GetAsString
 		#
-		# ==== Attributes
+		# Returns the contents as a string.
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GetAsString()
+		# @return [TrueClass, FalseClass]
+		def GetAsString(outStr)
 			# ...
 		end
+
+
+		# Method: GetAsString
+		#
+		# Returns the contents as a string.
+		#
+		#
+		# @return [String]
+		def getAsString()
+			# ...
+		end
+
 
 		# Method: GetBetween
 		#
-		# ==== Attributes
+		# Returns the substring found between the 1st occurrence of ARG1 and the next occurrence of ARG2.
 		#
-		# +beginMark+ - String
-		# +endMark+ - String
-		# returns String
+		# @param beginMark [String]
+		# @param endMark [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  beginMark [String]
-		# @param  endMark [String]
-		# @return  [String]
-		def GetBetween(beginMark, endMark)
+		# @return [TrueClass, FalseClass]
+		def GetBetween(beginMark, endMark, outStr)
 			# ...
 		end
+
+
+		# Method: GetBetween
+		#
+		# Returns the substring found between the 1st occurrence of ARG1 and the next occurrence of ARG2.
+		#
+		# @param beginMark [String]
+		# @param endMark [String]
+		#
+		# @return [String]
+		def getBetween(beginMark, endMark)
+			# ...
+		end
+
 
 		# Method: GetDecoded
 		#
-		# ==== Attributes
+		# Decodes and returns the decoded bytes. The ARG1 can be set to any of the following strings:
+		# "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B", "url_rc1738",
+		# "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).
+		# The full up-to-date list of supported binary encodings is available at the link entitled "Supported
+		# Binary Encodings" below.
 		#
-		# +encoding+ - String
-		# returns CkByteData
+		# @param encoding [String]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @return  [CkByteData]
-		def GetDecoded(encoding)
+		# @return [TrueClass, FalseClass]
+		def GetDecoded(encoding, outBytes)
 			# ...
 		end
+
 
 		# Method: GetEncoded
 		#
-		# ==== Attributes
+		# Returns the string contents encoded in an encoding such as base64, hex, quoted-printable, or
+		# URL-encoding. The ARG1 can be set to any of the following strings: "base64", "hex",
+		# "quoted-printable" (or "qp"), "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396", "url_rfc3986",
+		# "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding). The full up-to-date list of
+		# supported binary encodings is available at the link entitled "Supported Binary Encodings"
+		# below.
+		# 
+		# Note: The Encode method modifies the content of this object. The GetEncoded
+		# method leaves this object's content unmodified.
 		#
-		# +encoding+ - String
-		# +charset+ - String
-		# returns String
+		# @param encoding [String]
+		# @param charset [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @param  charset [String]
-		# @return  [String]
-		def GetEncoded(encoding, charset)
+		# @return [TrueClass, FalseClass]
+		def GetEncoded(encoding, charset, outStr)
 			# ...
 		end
+
+
+		# Method: GetEncoded
+		#
+		# Returns the string contents encoded in an encoding such as base64, hex, quoted-printable, or
+		# URL-encoding. The ARG1 can be set to any of the following strings: "base64", "hex",
+		# "quoted-printable" (or "qp"), "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396", "url_rfc3986",
+		# "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding). The full up-to-date list of
+		# supported binary encodings is available at the link entitled "Supported Binary Encodings"
+		# below.
+		# 
+		# Note: The Encode method modifies the content of this object. The GetEncoded
+		# method leaves this object's content unmodified.
+		#
+		# @param encoding [String]
+		# @param charset [String]
+		#
+		# @return [String]
+		def getEncoded(encoding, charset)
+			# ...
+		end
+
 
 		# Method: GetNth
 		#
-		# ==== Attributes
+		# Returns the Nth substring in string that is a list delimted by ARG2. The first substring is at index
+		# 0. If ARG3 is _TRUE_, then the delimiter char found between double quotes is not treated as a
+		# delimiter. If ARG4 is _TRUE_, then an escaped (with a backslash) delimiter char is not treated as a
+		# delimiter.
 		#
-		# +index+ - Fixnum
-		# +delimiterChar+ - String
-		# +exceptDoubleQuoted+ - TrueClass, FalseClass
-		# +exceptEscaped+ - TrueClass, FalseClass
-		# returns String
+		# @param index [Fixnum]
+		# @param delimiterChar [String]
+		# @param exceptDoubleQuoted [TrueClass, FalseClass]
+		# @param exceptEscaped [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  delimiterChar [String]
-		# @param  exceptDoubleQuoted [TrueClass, FalseClass]
-		# @param  exceptEscaped [TrueClass, FalseClass]
-		# @return  [String]
-		def GetNth(index, delimiterChar, exceptDoubleQuoted, exceptEscaped)
+		# @return [TrueClass, FalseClass]
+		def GetNth(index, delimiterChar, exceptDoubleQuoted, exceptEscaped, outStr)
 			# ...
 		end
+
+
+		# Method: GetNth
+		#
+		# Returns the Nth substring in string that is a list delimted by ARG2. The first substring is at index
+		# 0. If ARG3 is _TRUE_, then the delimiter char found between double quotes is not treated as a
+		# delimiter. If ARG4 is _TRUE_, then an escaped (with a backslash) delimiter char is not treated as a
+		# delimiter.
+		#
+		# @param index [Fixnum]
+		# @param delimiterChar [String]
+		# @param exceptDoubleQuoted [TrueClass, FalseClass]
+		# @param exceptEscaped [TrueClass, FalseClass]
+		#
+		# @return [String]
+		def getNth(index, delimiterChar, exceptDoubleQuoted, exceptEscaped)
+			# ...
+		end
+
 
 		# Method: LastNLines
 		#
-		# ==== Attributes
+		# Returns the last N lines of the text. If fewer than ARG1 lines exists, then all of the text is
+		# returned. If ARG2 is _TRUE_, then the line endings of the returned string are converted to CRLF,
+		# otherwise the line endings are converted to LF-only.
 		#
-		# +numLines+ - Fixnum
-		# +bCrlf+ - TrueClass, FalseClass
-		# returns String
+		# @param numLines [Fixnum]
+		# @param bCrlf [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  numLines [Fixnum]
-		# @param  bCrlf [TrueClass, FalseClass]
-		# @return  [String]
-		def LastNLines(numLines, bCrlf)
+		# @return [TrueClass, FalseClass]
+		def LastNLines(numLines, bCrlf, outStr)
 			# ...
 		end
 
+
+		# Method: LastNLines
+		#
+		# Returns the last N lines of the text. If fewer than ARG1 lines exists, then all of the text is
+		# returned. If ARG2 is _TRUE_, then the line endings of the returned string are converted to CRLF,
+		# otherwise the line endings are converted to LF-only.
+		#
+		# @param numLines [Fixnum]
+		# @param bCrlf [TrueClass, FalseClass]
+		#
+		# @return [String]
+		def lastNLines(numLines, bCrlf)
+			# ...
+		end
+
+
 		# Method: LoadFile
 		#
-		# ==== Attributes
+		# Loads the contents of a file.
 		#
-		# +path+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadFile(path, charset)
 			# ...
 		end
 
+
 		# Method: Prepend
 		#
-		# ==== Attributes
+		# Prepends a copy of the specified string to this instance.
 		#
-		# +value+ - String
-		# returns TrueClass, FalseClass
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Prepend(value)
 			# ...
 		end
 
+
 		# Method: Replace
 		#
-		# ==== Attributes
+		# Replaces all occurrences of a specified string in this instance with another specified string.
+		# Returns the number of replacements.
 		#
-		# +value+ - String
-		# +replacement+ - String
-		# returns Fixnum
+		# @param value [String]
+		# @param replacement [String]
 		#
-		# YARD =>
-		#
-		# @param  value [String]
-		# @param  replacement [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def Replace(value, replacement)
 			# ...
 		end
 
+
 		# Method: ReplaceAllBetween
 		#
-		# ==== Attributes
+		# Replaces the first occurrence of the content found between ARG1 and ARG2 with ARG3. The ARG1 and
+		# ARG2 are included in what is replaced if ARG4 is _TRUE_.
 		#
-		# +beginMark+ - String
-		# +endMark+ - String
-		# +replacement+ - String
-		# +replaceMarks+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param beginMark [String]
+		# @param endMark [String]
+		# @param replacement [String]
+		# @param replaceMarks [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  beginMark [String]
-		# @param  endMark [String]
-		# @param  replacement [String]
-		# @param  replaceMarks [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ReplaceAllBetween(beginMark, endMark, replacement, replaceMarks)
 			# ...
 		end
 
+
 		# Method: ReplaceBetween
 		#
-		# ==== Attributes
+		# Replaces all occurrences of ARG3 with ARG4, but only where ARG3 is found between ARG1 and ARG2.
+		# Returns the number of replacements made.
 		#
-		# +beginMark+ - String
-		# +endMark+ - String
-		# +value+ - String
-		# +replacement+ - String
-		# returns Fixnum
+		# @param beginMark [String]
+		# @param endMark [String]
+		# @param value [String]
+		# @param replacement [String]
 		#
-		# YARD =>
-		#
-		# @param  beginMark [String]
-		# @param  endMark [String]
-		# @param  value [String]
-		# @param  replacement [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def ReplaceBetween(beginMark, endMark, value, replacement)
 			# ...
 		end
 
+
 		# Method: ReplaceWord
 		#
-		# ==== Attributes
+		# Replaces all word occurrences of a specified string in this instance with another specified string.
+		# Returns the number of replacements made.
 		#
-		# +value+ - String
-		# +replacement+ - String
-		# returns Fixnum
+		# @param value [String]
+		# @param replacement [String]
 		#
-		# YARD =>
-		#
-		# @param  value [String]
-		# @param  replacement [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def ReplaceWord(value, replacement)
 			# ...
 		end
 
+
 		# Method: SetNth
 		#
-		# ==== Attributes
+		# Sets the Nth substring in string in a list delimted by ARG3. The first substring is at index 0. If
+		# ARG4 is _TRUE_, then the delimiter char found between double quotes is not treated as a delimiter.
+		# If ARG5 is _TRUE_, then an escaped (with a backslash) delimiter char is not treated as a delimiter.
 		#
-		# +index+ - Fixnum
-		# +value+ - String
-		# +delimiterChar+ - String
-		# +exceptDoubleQuoted+ - TrueClass, FalseClass
-		# +exceptEscaped+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
+		# @param value [String]
+		# @param delimiterChar [String]
+		# @param exceptDoubleQuoted [TrueClass, FalseClass]
+		# @param exceptEscaped [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  value [String]
-		# @param  delimiterChar [String]
-		# @param  exceptDoubleQuoted [TrueClass, FalseClass]
-		# @param  exceptEscaped [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetNth(index, value, delimiterChar, exceptDoubleQuoted, exceptEscaped)
 			# ...
 		end
 
+
 		# Method: SetString
 		#
-		# ==== Attributes
+		# Sets this instance to a copy of the specified string.
 		#
-		# +value+ - String
-		# returns TrueClass, FalseClass
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetString(value)
 			# ...
 		end
 
+
 		# Method: StartsWith
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the string starts with ARG1. Otherwise returns _FALSE_. The comparison is case
+		# sensitive if ARG2 is _TRUE_, and case insensitive if ARG2 is _FALSE_.
 		#
-		# +substr+ - String
-		# +caseSensitive+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param substr [String]
+		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  substr [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def StartsWith(substr, caseSensitive)
 			# ...
 		end
 
+
 		# Method: ToCRLF
 		#
-		# ==== Attributes
+		# Converts line endings to CRLF (Windows) format.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ToCRLF()
 			# ...
 		end
 
+
 		# Method: ToLF
 		#
-		# ==== Attributes
+		# Converts line endings to LF-only (UNIX) format.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ToLF()
 			# ...
 		end
 
+
 		# Method: ToLowercase
 		#
-		# ==== Attributes
+		# Converts the contents to lowercase.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ToLowercase()
 			# ...
 		end
 
+
 		# Method: ToUppercase
 		#
-		# ==== Attributes
+		# Converts the contents to uppercase.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ToUppercase()
 			# ...
 		end
 
+
 		# Method: Trim
 		#
-		# ==== Attributes
+		# Trims whitespace from both ends of the string.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Trim()
 			# ...
 		end
 
+
 		# Method: TrimInsideSpaces
 		#
-		# ==== Attributes
+		# Replaces all tabs, CR's, and LF's, with SPACE chars, and removes extra SPACE's so there are no
+		# occurances of more than one SPACE char in a row.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def TrimInsideSpaces()
 			# ...
 		end
 
+
 		# Method: WriteFile
 		#
-		# ==== Attributes
+		# Writes the contents to a file. If ARG3 is _TRUE_, then the BOM (also known as a preamble), is
+		# emitted for charsets that define a BOM (such as utf-8, utf-16, utf-32, etc.)
 		#
-		# +path+ - String
-		# +charset+ - String
-		# +emitBom+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param path [String]
+		# @param charset [String]
+		# @param emitBom [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @param  charset [String]
-		# @param  emitBom [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path, charset, emitBom)
 			# ...
 		end
+
 	end
 end

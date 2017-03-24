@@ -1,319 +1,354 @@
 module Chilkat
 	class CkBinData 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns Bignum
+		# The number of bytes contained within the object.
+		#
 		# @return [Bignum]
 		def get_NumBytes() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
 
 
 		# Method: AppendBd
 		#
-		# ==== Attributes
+		# Appends the contents of another BinData to this object.
 		#
-		# +binData+ - CkBinData
-		# returns TrueClass, FalseClass
+		# @param binData [CkBinData]
 		#
-		# YARD =>
-		#
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendBd(binData)
 			# ...
 		end
 
+
 		# Method: AppendBinary
 		#
-		# ==== Attributes
+		# Appends binary data to the current contents, if any.
 		#
-		# +data+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param data [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendBinary(data)
 			# ...
 		end
 
+
 		# Method: AppendBom
 		#
-		# ==== Attributes
+		# Appends the appropriate BOM (byte order mark), also known as a "preamble", for the given charset. If
+		# the ARG1 has no defined BOM, then nothing is appended. An application would typically call this to
+		# append the utf-8, utf-16, or utf-32 BOM.
 		#
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendBom(charset)
 			# ...
 		end
 
+
 		# Method: AppendEncoded
 		#
-		# ==== Attributes
+		# Appends encoded binary data to the current data. The ARG2 may be "Base64", "modBase64", "base64Url",
+		# "Base32", "Base58", "QP" (for quoted-printable), "URL" (for url-encoding), "Hex", or any of the
+		# encodings found at Chilkat Binary Encodings List.
 		#
-		# +encData+ - String
-		# +encoding+ - String
-		# returns TrueClass, FalseClass
+		# @param encData [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  encData [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendEncoded(encData, encoding)
 			# ...
 		end
 
+
 		# Method: AppendEncodedSb
 		#
-		# ==== Attributes
+		# Decodes the contents of ARG1 and appends the decoded bytes to this object. The ARG2 may be "Base64",
+		# "modBase64", "base64Url", "Base32", "Base58", "QP" (for quoted-printable), "URL" (for url-encoding),
+		# "Hex", or any of the encodings found at Chilkat Binary Encodings List.
 		#
-		# +sb+ - CkStringBuilder
-		# +encoding+ - String
-		# returns TrueClass, FalseClass
+		# @param sb [CkStringBuilder]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  sb [CkStringBuilder]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendEncodedSb(sb, encoding)
 			# ...
 		end
 
+
 		# Method: AppendSb
 		#
-		# ==== Attributes
+		# Appends the contents of a StringBuilder to this object.
 		#
-		# +sb+ - CkStringBuilder
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param sb [CkStringBuilder]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  sb [CkStringBuilder]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendSb(sb, charset)
 			# ...
 		end
 
+
 		# Method: AppendString
 		#
-		# ==== Attributes
+		# Appends a string to this object. (This does not append the BOM. If a BOM is required, the AppendBom
+		# method can be called to append the appropriate BOM.)
 		#
-		# +str+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param str [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendString(str, charset)
 			# ...
 		end
 
+
 		# Method: Clear
 		#
-		# ==== Attributes
+		# Clears the contents.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Clear()
 			# ...
 		end
 
+
 		# Method: ContentsEqual
 		#
-		# ==== Attributes
+		# Return _TRUE_ if the contents of this object equals the contents of ARG1.
 		#
-		# +binData+ - CkBinData
-		# returns TrueClass, FalseClass
+		# @param binData [CkBinData]
 		#
-		# YARD =>
-		#
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ContentsEqual(binData)
 			# ...
 		end
 
+
 		# Method: GetBinary
 		#
-		# ==== Attributes
+		# Retrieves the binary data contained within the object.
 		#
-		# returns CkByteData
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @return  [CkByteData]
-		def GetBinary()
+		# @return [TrueClass, FalseClass]
+		def GetBinary(outBytes)
 			# ...
 		end
+
 
 		# Method: GetBinaryChunk
 		#
-		# ==== Attributes
+		# Retrieves a chunk of the binary data contained within the object.
 		#
-		# +offset+ - Fixnum
-		# +numBytes+ - Fixnum
-		# returns CkByteData
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
-		def GetBinaryChunk(offset, numBytes)
+		# @return [TrueClass, FalseClass]
+		def GetBinaryChunk(offset, numBytes, outBytes)
 			# ...
 		end
+
 
 		# Method: GetEncoded
 		#
-		# ==== Attributes
+		# Retrieves the binary data as an encoded string. The ARG1 may be "Base64", "modBase64", "base64Url",
+		# "Base32", "Base58", "QP" (for quoted-printable), "URL" (for url-encoding), "Hex", or any of the
+		# encodings found at Chilkat Binary Encodings List.
 		#
-		# +encoding+ - String
-		# returns String
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @return  [String]
-		def GetEncoded(encoding)
+		# @return [TrueClass, FalseClass]
+		def GetEncoded(encoding, outStr)
 			# ...
 		end
+
+
+		# Method: GetEncoded
+		#
+		# Retrieves the binary data as an encoded string. The ARG1 may be "Base64", "modBase64", "base64Url",
+		# "Base32", "Base58", "QP" (for quoted-printable), "URL" (for url-encoding), "Hex", or any of the
+		# encodings found at Chilkat Binary Encodings List.
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getEncoded(encoding)
+			# ...
+		end
+
 
 		# Method: GetEncodedChunk
 		#
-		# ==== Attributes
+		# Retrieves a chunk of the binary data and returns it in encoded form. The ARG3 may be "Base64",
+		# "modBase64", "base64Url", "Base32", "Base58", "QP" (for quoted-printable), "URL" (for url-encoding),
+		# "Hex", or any of the encodings found at Chilkat Binary Encodings List.
 		#
-		# +offset+ - Fixnum
-		# +numBytes+ - Fixnum
-		# +encoding+ - String
-		# returns String
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @param  encoding [String]
-		# @return  [String]
-		def GetEncodedChunk(offset, numBytes, encoding)
+		# @return [TrueClass, FalseClass]
+		def GetEncodedChunk(offset, numBytes, encoding, outStr)
 			# ...
 		end
 
+
+		# Method: GetEncodedChunk
+		#
+		# Retrieves a chunk of the binary data and returns it in encoded form. The ARG3 may be "Base64",
+		# "modBase64", "base64Url", "Base32", "Base58", "QP" (for quoted-printable), "URL" (for url-encoding),
+		# "Hex", or any of the encodings found at Chilkat Binary Encodings List.
+		#
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getEncodedChunk(offset, numBytes, encoding)
+			# ...
+		end
+
+
 		# Method: GetEncodedSb
 		#
-		# ==== Attributes
+		# Writes the encoded data to a StringBuilder. The ARG1 may be "Base64", "modBase64", "base64Url",
+		# "Base32", "Base58", "QP" (for quoted-printable), "URL" (for url-encoding), "Hex", or any of the
+		# encodings found at Chilkat Binary Encodings List.
 		#
-		# +encoding+ - String
-		# +sb+ - CkStringBuilder
-		# returns TrueClass, FalseClass
+		# @param encoding [String]
+		# @param sb [CkStringBuilder]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetEncodedSb(encoding, sb)
 			# ...
 		end
 
+
 		# Method: LoadBinary
 		#
-		# ==== Attributes
+		# Loads binary data and replaces the current contents, if any.
 		#
-		# +data+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param data [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadBinary(data)
 			# ...
 		end
 
+
 		# Method: LoadEncoded
 		#
-		# ==== Attributes
+		# Loads binary data from an encoded string, replacing the current contents, if any. The ARG2 may be
+		# "Base64", "modBase64", "base64Url", "Base32", "Base58", "QP" (for quoted-printable), "URL" (for
+		# url-encoding), "Hex", or any of the encodings found at Chilkat Binary Encodings List.
 		#
-		# +encData+ - String
-		# +encoding+ - String
-		# returns TrueClass, FalseClass
+		# @param encData [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  encData [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadEncoded(encData, encoding)
 			# ...
 		end
 
+
 		# Method: LoadFile
 		#
-		# ==== Attributes
+		# Loads data from a file.
 		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadFile(path)
 			# ...
 		end
 
+
 		# Method: RemoveChunk
 		#
-		# ==== Attributes
+		# Removes a chunk of bytes from the binary data.
 		#
-		# +offset+ - Fixnum
-		# +numBytes+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param offset [Fixnum]
+		# @param numBytes [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  offset [Fixnum]
-		# @param  numBytes [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RemoveChunk(offset, numBytes)
 			# ...
 		end
 
+
 		# Method: WriteFile
 		#
-		# ==== Attributes
+		# Writes the contents to a file.
 		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path)
 			# ...
 		end
+
 	end
 end

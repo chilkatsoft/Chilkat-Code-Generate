@@ -1,2273 +1,4029 @@
 module Chilkat
 	class CkImap 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
 		#
-		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AbortCurrent(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When _TRUE_ (the default) the Append method will mark the email appended to a mailbox as already
+		# seen. Otherwise an appended email will be initialized to have a status of unseen.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AppendSeen() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When _TRUE_ (the default) the Append method will mark the email appended to a mailbox as already
+		# seen. Otherwise an appended email will be initialized to have a status of unseen.
 		#
-		# @param newval [Bignum]
-		def set_AppendSeen(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AppendSeen(newval) end
 
-		# returns Bignum
+		# The UID of the last email appended to a mailbox via an Append* method. (Not all IMAP servers report
+		# back the UID of the email appended.)
+		#
 		# @return [Bignum]
 		def get_AppendUid() end
 
-		# returns String
+		# Can be set to "XOAUTH2", "CRAM-MD5", "NTLM", "PLAIN", or "LOGIN" to select the authentication
+		# method. NTLM is the most secure, and is a synonym for "Windows Integrated Authentication". The
+		# default is "LOGIN" (or the empty string) which is simple plain-text username/password
+		# authentication. Not all IMAP servers support all authentication methods.
+		# The XOAUTH2 method
+		# was added in version 9.5.0.44.
+		# 
+		# Note: If SPA (i.e. NTLM) authentication does not
+		# succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_AuthMethod() end
+		def get_AuthMethod(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Can be set to "XOAUTH2", "CRAM-MD5", "NTLM", "PLAIN", or "LOGIN" to select the authentication
+		# method. NTLM is the most secure, and is a synonym for "Windows Integrated Authentication". The
+		# default is "LOGIN" (or the empty string) which is simple plain-text username/password
+		# authentication. Not all IMAP servers support all authentication methods.
+		# The XOAUTH2 method
+		# was added in version 9.5.0.44.
+		# 
+		# Note: If SPA (i.e. NTLM) authentication does not
+		# succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @param newval [String]
-		def set_AuthMethod(newval) end
+		def put_AuthMethod(newval) end
 
-		# returns String
+		# Can be set to "XOAUTH2", "CRAM-MD5", "NTLM", "PLAIN", or "LOGIN" to select the authentication
+		# method. NTLM is the most secure, and is a synonym for "Windows Integrated Authentication". The
+		# default is "LOGIN" (or the empty string) which is simple plain-text username/password
+		# authentication. Not all IMAP servers support all authentication methods.
+		# The XOAUTH2 method
+		# was added in version 9.5.0.44.
+		# 
+		# Note: If SPA (i.e. NTLM) authentication does not
+		# succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.
+		#
 		# @return [String]
 		def authMethod() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Can be set to "XOAUTH2", "CRAM-MD5", "NTLM", "PLAIN", or "LOGIN" to select the authentication
+		# method. NTLM is the most secure, and is a synonym for "Windows Integrated Authentication". The
+		# default is "LOGIN" (or the empty string) which is simple plain-text username/password
+		# authentication. Not all IMAP servers support all authentication methods.
+		# The XOAUTH2 method
+		# was added in version 9.5.0.44.
+		# 
+		# Note: If SPA (i.e. NTLM) authentication does not
+		# succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @param newval [String]
-		def authMethod(newval) end
+		def put_AuthMethod(newval) end
 
-		# returns String
+		# Applies to the PLAIN authentication method. May be set to an authorization ID that is to be sent
+		# along with the Login and Password for authentication.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_AuthzId() end
+		def get_AuthzId(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Applies to the PLAIN authentication method. May be set to an authorization ID that is to be sent
+		# along with the Login and Password for authentication.
 		#
 		# @param newval [String]
-		def set_AuthzId(newval) end
+		def put_AuthzId(newval) end
 
-		# returns String
+		# Applies to the PLAIN authentication method. May be set to an authorization ID that is to be sent
+		# along with the Login and Password for authentication.
+		#
 		# @return [String]
 		def authzId() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Applies to the PLAIN authentication method. May be set to an authorization ID that is to be sent
+		# along with the Login and Password for authentication.
 		#
 		# @param newval [String]
-		def authzId(newval) end
+		def put_AuthzId(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If set to _TRUE_, then all Fetch* methods will also automatically download attachments. If set to
+		# _FALSE_, then the Fetch* methods download the email without attachments. The default value is
+		# _TRUE_.
+		# 
+		# Note: Methods that download headers-only, such as FetchSingleHeader, ignore
+		# this property and never download attachments. Also, signed and/or encrypted emails will always be
+		# downloaded in full (with attachments) regardless of this property setting.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AutoDownloadAttachments() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then all Fetch* methods will also automatically download attachments. If set to
+		# _FALSE_, then the Fetch* methods download the email without attachments. The default value is
+		# _TRUE_.
+		# 
+		# Note: Methods that download headers-only, such as FetchSingleHeader, ignore
+		# this property and never download attachments. Also, signed and/or encrypted emails will always be
+		# downloaded in full (with attachments) regardless of this property setting.
 		#
-		# @param newval [Bignum]
-		def set_AutoDownloadAttachments(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AutoDownloadAttachments(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then the following will occur when a connection is made to an IMAP server:
+		# 1) If
+		# the Port property = 993, then sets StartTls = _FALSE_ and Ssl = _TRUE_
+		# 2) If the Port property
+		# = 143, sets Ssl = _FALSE_
+		# The default value of this property is _TRUE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AutoFix() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then the following will occur when a connection is made to an IMAP server:
+		# 1) If
+		# the Port property = 993, then sets StartTls = _FALSE_ and Ssl = _TRUE_
+		# 2) If the Port property
+		# = 143, sets Ssl = _FALSE_
+		# The default value of this property is _TRUE_.
 		#
-		# @param newval [Bignum]
-		def set_AutoFix(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AutoFix(newval) end
 
-		# returns String
+		# The IP address to use for computers with multiple network interfaces or IP addresses.
+		# For
+		# computers with a single network interface (i.e. most computers), this property should not be set.
+		# For multihoming computers, the default IP address is automatically used if this property is not
+		# set.
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
+		# such as "165.164.55.124".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ClientIpAddress() end
+		def get_ClientIpAddress(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The IP address to use for computers with multiple network interfaces or IP addresses.
+		# For
+		# computers with a single network interface (i.e. most computers), this property should not be set.
+		# For multihoming computers, the default IP address is automatically used if this property is not
+		# set.
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
+		# such as "165.164.55.124".
 		#
 		# @param newval [String]
-		def set_ClientIpAddress(newval) end
+		def put_ClientIpAddress(newval) end
 
-		# returns String
+		# The IP address to use for computers with multiple network interfaces or IP addresses.
+		# For
+		# computers with a single network interface (i.e. most computers), this property should not be set.
+		# For multihoming computers, the default IP address is automatically used if this property is not
+		# set.
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
+		# such as "165.164.55.124".
+		#
 		# @return [String]
 		def clientIpAddress() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The IP address to use for computers with multiple network interfaces or IP addresses.
+		# For
+		# computers with a single network interface (i.e. most computers), this property should not be set.
+		# For multihoming computers, the default IP address is automatically used if this property is not
+		# set.
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
+		# such as "165.164.55.124".
 		#
 		# @param newval [String]
-		def clientIpAddress(newval) end
+		def put_ClientIpAddress(newval) end
 
-		# returns String
+		# Contains the IMAP server's domain name (or IP address) if currently connected. Otherwise returns an
+		# empty string.
+		#
 		# @return [String]
 		def get_ConnectedToHost() end
 
-		# returns String
+		# Contains the IMAP server's domain name (or IP address) if currently connected. Otherwise returns an
+		# empty string.
+		#
 		# @return [String]
 		def connectedToHost() end
 
-		# returns Bignum
+		# Maximum number of seconds to wait when connecting to an IMAP server. The default value is 30 (units
+		# are in seconds).
+		#
 		# @return [Bignum]
 		def get_ConnectTimeout() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Maximum number of seconds to wait when connecting to an IMAP server. The default value is 30 (units
+		# are in seconds).
 		#
 		# @param newval [Bignum]
-		def set_ConnectTimeout(newval) end
+		def put_ConnectTimeout(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# The Windows Domain to use for Windows Integrated Authentication (also known as NTLM). This may be
+		# empty.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Domain() end
+		def get_Domain(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The Windows Domain to use for Windows Integrated Authentication (also known as NTLM). This may be
+		# empty.
 		#
 		# @param newval [String]
-		def set_Domain(newval) end
+		def put_Domain(newval) end
 
-		# returns String
+		# The Windows Domain to use for Windows Integrated Authentication (also known as NTLM). This may be
+		# empty.
+		#
 		# @return [String]
 		def domain() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The Windows Domain to use for Windows Integrated Authentication (also known as NTLM). This may be
+		# empty.
 		#
 		# @param newval [String]
-		def domain(newval) end
+		def put_Domain(newval) end
 
-		# returns Bignum
+		# This is the number of milliseconds between each AbortCheck event callback. The AbortCheck callback
+		# allows an application to abort any IMAP operation prior to completion. If HeartbeatMs is 0, no
+		# AbortCheck event callbacks will occur.
+		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# This is the number of milliseconds between each AbortCheck event callback. The AbortCheck callback
+		# allows an application to abort any IMAP operation prior to completion. If HeartbeatMs is 0, no
+		# AbortCheck event callbacks will occur.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		#
+		# @!method
+		def put_HeartbeatMs(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# authentication method name. Valid choices are "Basic" or "NTLM".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyAuthMethod() end
+		def get_HttpProxyAuthMethod(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# authentication method name. Valid choices are "Basic" or "NTLM".
 		#
 		# @param newval [String]
-		def set_HttpProxyAuthMethod(newval) end
+		def put_HttpProxyAuthMethod(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# authentication method name. Valid choices are "Basic" or "NTLM".
+		#
 		# @return [String]
 		def httpProxyAuthMethod() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# authentication method name. Valid choices are "Basic" or "NTLM".
 		#
 		# @param newval [String]
-		def httpProxyAuthMethod(newval) end
+		def put_HttpProxyAuthMethod(newval) end
 
-		# returns String
+		# The NTLM authentication domain (optional) if NTLM authentication is used.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyDomain() end
+		def get_HttpProxyDomain(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The NTLM authentication domain (optional) if NTLM authentication is used.
 		#
 		# @param newval [String]
-		def set_HttpProxyDomain(newval) end
+		def put_HttpProxyDomain(newval) end
 
-		# returns String
+		# The NTLM authentication domain (optional) if NTLM authentication is used.
+		#
 		# @return [String]
 		def httpProxyDomain() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The NTLM authentication domain (optional) if NTLM authentication is used.
 		#
 		# @param newval [String]
-		def httpProxyDomain(newval) end
+		def put_HttpProxyDomain(newval) end
 
-		# returns String
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
+		# dotted decimal notation).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyHostname() end
+		def get_HttpProxyHostname(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
+		# dotted decimal notation).
 		#
 		# @param newval [String]
-		def set_HttpProxyHostname(newval) end
+		def put_HttpProxyHostname(newval) end
 
-		# returns String
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
+		# dotted decimal notation).
+		#
 		# @return [String]
 		def httpProxyHostname() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
+		# dotted decimal notation).
 		#
 		# @param newval [String]
-		def httpProxyHostname(newval) end
+		def put_HttpProxyHostname(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# password.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyPassword() end
+		def get_HttpProxyPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# password.
 		#
 		# @param newval [String]
-		def set_HttpProxyPassword(newval) end
+		def put_HttpProxyPassword(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# password.
+		#
 		# @return [String]
 		def httpProxyPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# password.
 		#
 		# @param newval [String]
-		def httpProxyPassword(newval) end
+		def put_HttpProxyPassword(newval) end
 
-		# returns Bignum
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy port number. (Two commonly used
+		# HTTP proxy ports are 8080 and 3128.)
+		#
 		# @return [Bignum]
 		def get_HttpProxyPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy port number. (Two commonly used
+		# HTTP proxy ports are 8080 and 3128.)
 		#
 		# @param newval [Bignum]
-		def set_HttpProxyPort(newval) end
+		def put_HttpProxyPort(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
+		# name.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyUsername() end
+		def get_HttpProxyUsername(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
+		# name.
 		#
 		# @param newval [String]
-		def set_HttpProxyUsername(newval) end
+		def put_HttpProxyUsername(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
+		# name.
+		#
 		# @return [String]
 		def httpProxyUsername() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
+		# name.
 		#
 		# @param newval [String]
-		def httpProxyUsername(newval) end
+		def put_HttpProxyUsername(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Turns the in-memory session logging on or off. If on, the session log can be obtained via the
+		# SessionLog property. The default value is _FALSE_. 
+		# 
+		# The SessionLog contains the raw
+		# commands sent to the IMAP server, and the raw responses received from the IMAP server.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_KeepSessionLog() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Turns the in-memory session logging on or off. If on, the session log can be obtained via the
+		# SessionLog property. The default value is _FALSE_. 
+		# 
+		# The SessionLog contains the raw
+		# commands sent to the IMAP server, and the raw responses received from the IMAP server.
 		#
-		# @param newval [Bignum]
-		def set_KeepSessionLog(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_KeepSessionLog(newval) end
 
-		# returns String
+		# The MIME source of the email last appended during a call to AppendMail, or AppendMime.
+		#
 		# @return [String]
 		def get_LastAppendedMime() end
 
-		# returns String
+		# The MIME source of the email last appended during a call to AppendMail, or AppendMime.
+		#
 		# @return [String]
 		def lastAppendedMime() end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# The last raw command sent to the IMAP server. (This information can be used for debugging if
+		# problems occur.)
+		#
 		# @return [String]
 		def get_LastCommand() end
 
-		# returns String
+		# The last raw command sent to the IMAP server. (This information can be used for debugging if
+		# problems occur.)
+		#
 		# @return [String]
 		def lastCommand() end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns String
+		# The last intermediate response received from the IMAP server. (This information can be used for
+		# debugging if problems occur.)
+		#
 		# @return [String]
 		def get_LastIntermediateResponse() end
 
-		# returns String
+		# The last intermediate response received from the IMAP server. (This information can be used for
+		# debugging if problems occur.)
+		#
 		# @return [String]
 		def lastIntermediateResponse() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The raw data of the last response from the IMAP server. (Useful for debugging if problems occur.)
+		# This property is cleared whenever a command is sent to the IMAP server. If no response is received,
+		# then this property will remain empty. Otherwise, it will contain the last response received from the
+		# IMAP server.
+		#
 		# @return [String]
 		def get_LastResponse() end
 
-		# returns String
+		# The raw data of the last response from the IMAP server. (Useful for debugging if problems occur.)
+		# This property is cleared whenever a command is sent to the IMAP server. If no response is received,
+		# then this property will remain empty. Otherwise, it will contain the last response received from the
+		# IMAP server.
+		#
 		# @return [String]
 		def lastResponse() end
 
-		# returns String
+		# The response code part of the last command response, if it exists.
+		# IMAP status responses MAY
+		# include an OPTIONAL "response code". A response
+		# code consists of data inside square brackets in
+		# the form of an atom,
+		# possibly followed by a space and arguments. The response code
+		#
+		# contains additional information or status codes for client software
+		# beyond the OK/NO/BAD
+		# condition, and are defined when there is a
+		# specific action that a client can take based upon
+		# the additional
+		# information. Examples of response codes are "NONEXISTENT" and
+		# "AUTHENTICATIONFAILED". The response code strings for a given failure condition may vary depending
+		# on the IMAP server implementation.
+		#
 		# @return [String]
 		def get_LastResponseCode() end
 
-		# returns String
+		# The response code part of the last command response, if it exists.
+		# IMAP status responses MAY
+		# include an OPTIONAL "response code". A response
+		# code consists of data inside square brackets in
+		# the form of an atom,
+		# possibly followed by a space and arguments. The response code
+		#
+		# contains additional information or status codes for client software
+		# beyond the OK/NO/BAD
+		# condition, and are defined when there is a
+		# specific action that a client can take based upon
+		# the additional
+		# information. Examples of response codes are "NONEXISTENT" and
+		# "AUTHENTICATIONFAILED". The response code strings for a given failure condition may vary depending
+		# on the IMAP server implementation.
+		#
 		# @return [String]
 		def lastResponseCode() end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns String
+		# If logged into an IMAP server, the logged-in username.
+		#
 		# @return [String]
 		def get_LoggedInUser() end
 
-		# returns String
+		# If logged into an IMAP server, the logged-in username.
+		#
 		# @return [String]
 		def loggedInUser() end
 
-		# returns Bignum
+		# After selecting a mailbox (by calling SelectMailbox), this property will
+		# be updated to reflect
+		# the total number of emails in the mailbox.
+		#
 		# @return [Bignum]
 		def get_NumMessages() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Set to true to prevent the mail flags (such as the "Seen" flag) from being set when email is
+		# retrieved. The default value of this property is false.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_PeekMode() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Set to true to prevent the mail flags (such as the "Seen" flag) from being set when email is
+		# retrieved. The default value of this property is false.
 		#
-		# @param newval [Bignum]
-		def set_PeekMode(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_PeekMode(newval) end
 
-		# returns Bignum
+		# This property is only valid in programming environment and languages that allow for event
+		# callbacks.
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
+		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
+		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
+		# PercentDone callbacks. For example, setting this property equal to 1000 will provide callbacks with
+		# .1 percent granularity. For example, a value of 453 would indicate 45.3% competed. This property is
+		# clamped to a minimum value of 10, and a maximum value of 100000.
+		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_PercentDoneScale() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# This property is only valid in programming environment and languages that allow for event
+		# callbacks.
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
+		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
+		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
+		# PercentDone callbacks. For example, setting this property equal to 1000 will provide callbacks with
+		# .1 percent granularity. For example, a value of 453 would indicate 45.3% competed. This property is
+		# clamped to a minimum value of 10, and a maximum value of 100000.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_PercentDoneScale(newval) end
+		#
+		# @!method
+		def put_PercentDoneScale(newval) end
 
-		# returns Bignum
+		# The IMAP port number. If using SSL, be sure to set this to the IMAP SSL port number, which is
+		# typically port 993. (If this is the case, make sure you also set the Ssl property = _TRUE_.
+		#
 		# @return [Bignum]
 		def get_Port() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The IMAP port number. If using SSL, be sure to set this to the IMAP SSL port number, which is
+		# typically port 993. (If this is the case, make sure you also set the Ssl property = _TRUE_.
 		#
 		# @param newval [Bignum]
-		def set_Port(newval) end
+		def put_Port(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
+		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_PreferIpv6() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
+		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [Bignum]
-		def set_PreferIpv6(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_PreferIpv6(newval) end
 
-		# returns Bignum
+		# The maximum amount of time (in seconds) that incoming data is allowed to stall while reading any
+		# kind of response from an IMAP server. This is the amount of time that needs to elapse while no
+		# additional response bytes are forthcoming. For the case of long responses, if the data stream halts
+		# for more than this amount, it will timeout. This property is not a maximum for the total response
+		# time, but only a maximum for the amount of time while no response arrives. 
+		# 
+		# The default
+		# value is 30 seconds.
+		#
 		# @return [Bignum]
 		def get_ReadTimeout() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The maximum amount of time (in seconds) that incoming data is allowed to stall while reading any
+		# kind of response from an IMAP server. This is the amount of time that needs to elapse while no
+		# additional response bytes are forthcoming. For the case of long responses, if the data stream halts
+		# for more than this amount, it will timeout. This property is not a maximum for the total response
+		# time, but only a maximum for the amount of time while no response arrives. 
+		# 
+		# The default
+		# value is 30 seconds.
 		#
 		# @param newval [Bignum]
-		def set_ReadTimeout(newval) end
+		def put_ReadTimeout(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then the IMAP client will verify the server's SSL certificate. The certificate is
+		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
+		# this property is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_RequireSslCertVerify() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then the IMAP client will verify the server's SSL certificate. The certificate is
+		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
+		# this property is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_RequireSslCertVerify(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_RequireSslCertVerify(newval) end
 
-		# returns String
+		# The "CHARSET" to be used in searches issued by the Search method. The default value is "UTF-8". (If
+		# no 8bit chars are found in the search criteria passed to the Search method, then no CHARSET is
+		# needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the
+		# pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an
+		# appropriate multibyte charset. 
+		# 
+		# In summary, it is unlikely that this property needs to
+		# be changed. It should only be modified if trouble arises with some IMAP servers when non-English
+		# chars are used in the search criteria.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SearchCharset() end
+		def get_SearchCharset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The "CHARSET" to be used in searches issued by the Search method. The default value is "UTF-8". (If
+		# no 8bit chars are found in the search criteria passed to the Search method, then no CHARSET is
+		# needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the
+		# pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an
+		# appropriate multibyte charset. 
+		# 
+		# In summary, it is unlikely that this property needs to
+		# be changed. It should only be modified if trouble arises with some IMAP servers when non-English
+		# chars are used in the search criteria.
 		#
 		# @param newval [String]
-		def set_SearchCharset(newval) end
+		def put_SearchCharset(newval) end
 
-		# returns String
+		# The "CHARSET" to be used in searches issued by the Search method. The default value is "UTF-8". (If
+		# no 8bit chars are found in the search criteria passed to the Search method, then no CHARSET is
+		# needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the
+		# pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an
+		# appropriate multibyte charset. 
+		# 
+		# In summary, it is unlikely that this property needs to
+		# be changed. It should only be modified if trouble arises with some IMAP servers when non-English
+		# chars are used in the search criteria.
+		#
 		# @return [String]
 		def searchCharset() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The "CHARSET" to be used in searches issued by the Search method. The default value is "UTF-8". (If
+		# no 8bit chars are found in the search criteria passed to the Search method, then no CHARSET is
+		# needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the
+		# pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an
+		# appropriate multibyte charset. 
+		# 
+		# In summary, it is unlikely that this property needs to
+		# be changed. It should only be modified if trouble arises with some IMAP servers when non-English
+		# chars are used in the search criteria.
 		#
 		# @param newval [String]
-		def searchCharset(newval) end
+		def put_SearchCharset(newval) end
 
-		# returns String
+		# The currently selected mailbox, or an empty string if none.
+		#
 		# @return [String]
 		def get_SelectedMailbox() end
 
-		# returns String
+		# The currently selected mailbox, or an empty string if none.
+		#
 		# @return [String]
 		def selectedMailbox() end
 
-		# returns Bignum
+		# The buffer size to be used with the underlying TCP/IP socket for sending. The default value is
+		# 32767.
+		#
 		# @return [Bignum]
 		def get_SendBufferSize() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The buffer size to be used with the underlying TCP/IP socket for sending. The default value is
+		# 32767.
 		#
 		# @param newval [Bignum]
-		def set_SendBufferSize(newval) end
+		def put_SendBufferSize(newval) end
 
-		# returns String
+		# The separator character used by the IMAP server for the mailbox hierarchy. It is typically "/" or
+		# ".", but may vary depending on the IMAP server. The ListMailboxes method has the side-effect of
+		# setting this property to the correct value because the IMAP server's response when listing mailboxes
+		# includes information about the separator char.
+		# 
+		# Note: Starting in version 9.5.0.47, this
+		# property changed from a "char" type to a "string" type. The separator char property will always be a
+		# string of length 1 character.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SeparatorChar() end
+		def get_SeparatorChar(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The separator character used by the IMAP server for the mailbox hierarchy. It is typically "/" or
+		# ".", but may vary depending on the IMAP server. The ListMailboxes method has the side-effect of
+		# setting this property to the correct value because the IMAP server's response when listing mailboxes
+		# includes information about the separator char.
+		# 
+		# Note: Starting in version 9.5.0.47, this
+		# property changed from a "char" type to a "string" type. The separator char property will always be a
+		# string of length 1 character.
 		#
 		# @param newval [String]
-		def set_SeparatorChar(newval) end
+		def put_SeparatorChar(newval) end
 
-		# returns String
+		# The separator character used by the IMAP server for the mailbox hierarchy. It is typically "/" or
+		# ".", but may vary depending on the IMAP server. The ListMailboxes method has the side-effect of
+		# setting this property to the correct value because the IMAP server's response when listing mailboxes
+		# includes information about the separator char.
+		# 
+		# Note: Starting in version 9.5.0.47, this
+		# property changed from a "char" type to a "string" type. The separator char property will always be a
+		# string of length 1 character.
+		#
 		# @return [String]
 		def separatorChar() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The separator character used by the IMAP server for the mailbox hierarchy. It is typically "/" or
+		# ".", but may vary depending on the IMAP server. The ListMailboxes method has the side-effect of
+		# setting this property to the correct value because the IMAP server's response when listing mailboxes
+		# includes information about the separator char.
+		# 
+		# Note: Starting in version 9.5.0.47, this
+		# property changed from a "char" type to a "string" type. The separator char property will always be a
+		# string of length 1 character.
 		#
 		# @param newval [String]
-		def separatorChar(newval) end
+		def put_SeparatorChar(newval) end
 
-		# returns String
+		# Contains an in-memory log of the raw commands sent to the IMAP server, and the raw responses
+		# received from the IMAP server. The KeepSessionLog property must be set to _TRUE_ to enable session
+		# logging. Call ClearSessionLog to reset the log.
+		#
 		# @return [String]
 		def get_SessionLog() end
 
-		# returns String
+		# Contains an in-memory log of the raw commands sent to the IMAP server, and the raw responses
+		# received from the IMAP server. The KeepSessionLog property must be set to _TRUE_ to enable session
+		# logging. Call ClearSessionLog to reset the log.
+		#
 		# @return [String]
 		def sessionLog() end
 
-		# returns String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksHostname() end
+		def get_SocksHostname(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [String]
-		def set_SocksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
+		#
 		# @return [String]
 		def socksHostname() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [String]
-		def socksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# returns String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksPassword() end
+		def get_SocksPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
 		#
 		# @param newval [String]
-		def set_SocksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# returns String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
+		#
 		# @return [String]
 		def socksPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
 		#
 		# @param newval [String]
-		def socksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# returns Bignum
+		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
+		# This property only applies if a
+		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
+		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
+		# This property only applies if a
+		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [Bignum]
-		def set_SocksPort(newval) end
+		def put_SocksPort(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksUsername() end
+		def get_SocksUsername(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
 		#
 		# @param newval [String]
-		def set_SocksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
+		#
 		# @return [String]
 		def socksUsername() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
 		#
 		# @param newval [String]
-		def socksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# returns Bignum
+		# SocksVersion
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
+		# proxy is used. This is the default.
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
+		# SOCKS5 proxy.
+		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# SocksVersion
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
+		# proxy is used. This is the default.
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
+		# SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
-		def set_SocksVersion(newval) end
+		def put_SocksVersion(newval) end
 
-		# returns Bignum
+		# Sets the receive buffer size socket option. Normally, this property should be left unchanged. The
+		# default value is 0, which indicates that the receive buffer size socket option should not be
+		# explicitly set (i.e. the system default value, which may vary from system to system, should be
+		# used). 
+		# 
+		# This property can be changed if download performance seems slow. It is
+		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
+		# examine the LastErrorText property after calling any method that establishes a connection. It should
+		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
+		# times the default value.
+		#
 		# @return [Bignum]
 		def get_SoRcvBuf() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Sets the receive buffer size socket option. Normally, this property should be left unchanged. The
+		# default value is 0, which indicates that the receive buffer size socket option should not be
+		# explicitly set (i.e. the system default value, which may vary from system to system, should be
+		# used). 
+		# 
+		# This property can be changed if download performance seems slow. It is
+		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
+		# examine the LastErrorText property after calling any method that establishes a connection. It should
+		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
+		# times the default value.
 		#
 		# @param newval [Bignum]
-		def set_SoRcvBuf(newval) end
+		def put_SoRcvBuf(newval) end
 
-		# returns Bignum
+		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
+		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
+		# set (i.e. the system default value, which may vary from system to system, should be used).
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
+		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
+		# property after calling any method that establishes a connection. It should be reported under the
+		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
+		# value.
+		#
 		# @return [Bignum]
 		def get_SoSndBuf() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
+		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
+		# set (i.e. the system default value, which may vary from system to system, should be used).
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
+		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
+		# property after calling any method that establishes a connection. It should be reported under the
+		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
+		# value.
 		#
 		# @param newval [Bignum]
-		def set_SoSndBuf(newval) end
+		def put_SoSndBuf(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# _TRUE_ if the IMAP connection should be TLS/SSL. 
+		# Note: The typical IMAP TLS/SSL port number
+		# is 993. If you set this property = _TRUE_, it is likely that you should also set the Port property =
+		# 993.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_Ssl() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# _TRUE_ if the IMAP connection should be TLS/SSL. 
+		# Note: The typical IMAP TLS/SSL port number
+		# is 993. If you set this property = _TRUE_, it is likely that you should also set the Port property =
+		# 993.
 		#
-		# @param newval [Bignum]
-		def set_Ssl(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_Ssl(newval) end
 
-		# returns String
+		# Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections. The default
+		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
+		# Chilkat v9.5.0.55 and later
+		# are:
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
+		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
+		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
+		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
+		# picked because it is the server that chooses. The client simply provides the server with a list from
+		# which to choose.)
+		# 
+		# The property can also disallow connections with servers having
+		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
+		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
+		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
+		# having keys smaller than 2048 bits.
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
+		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
+		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
+		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
+		# be recognized, but programs should be updated to explicitly list the allowed
+		# ciphers.
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
+		# 5746).
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
+		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
+		# current best practices are:
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
+		# or greater.
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
+		# or 3DES are disallowed.
+		# 
+		# 
+		# Example: The following string would restrict to 2
+		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
+		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
+		# secure-renegotiation"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SslAllowedCiphers() end
+		def get_SslAllowedCiphers(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections. The default
+		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
+		# Chilkat v9.5.0.55 and later
+		# are:
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
+		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
+		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
+		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
+		# picked because it is the server that chooses. The client simply provides the server with a list from
+		# which to choose.)
+		# 
+		# The property can also disallow connections with servers having
+		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
+		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
+		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
+		# having keys smaller than 2048 bits.
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
+		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
+		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
+		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
+		# be recognized, but programs should be updated to explicitly list the allowed
+		# ciphers.
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
+		# 5746).
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
+		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
+		# current best practices are:
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
+		# or greater.
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
+		# or 3DES are disallowed.
+		# 
+		# 
+		# Example: The following string would restrict to 2
+		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
+		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
+		# secure-renegotiation"
 		#
 		# @param newval [String]
-		def set_SslAllowedCiphers(newval) end
+		def put_SslAllowedCiphers(newval) end
 
-		# returns String
+		# Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections. The default
+		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
+		# Chilkat v9.5.0.55 and later
+		# are:
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
+		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
+		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
+		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
+		# picked because it is the server that chooses. The client simply provides the server with a list from
+		# which to choose.)
+		# 
+		# The property can also disallow connections with servers having
+		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
+		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
+		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
+		# having keys smaller than 2048 bits.
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
+		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
+		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
+		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
+		# be recognized, but programs should be updated to explicitly list the allowed
+		# ciphers.
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
+		# 5746).
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
+		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
+		# current best practices are:
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
+		# or greater.
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
+		# or 3DES are disallowed.
+		# 
+		# 
+		# Example: The following string would restrict to 2
+		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
+		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
+		# secure-renegotiation"
+		#
 		# @return [String]
 		def sslAllowedCiphers() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections. The default
+		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
+		# Chilkat v9.5.0.55 and later
+		# are:
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
+		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
+		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
+		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
+		# picked because it is the server that chooses. The client simply provides the server with a list from
+		# which to choose.)
+		# 
+		# The property can also disallow connections with servers having
+		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
+		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
+		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
+		# having keys smaller than 2048 bits.
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
+		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
+		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
+		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
+		# be recognized, but programs should be updated to explicitly list the allowed
+		# ciphers.
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
+		# 5746).
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
+		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
+		# current best practices are:
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
+		# or greater.
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
+		# or 3DES are disallowed.
+		# 
+		# 
+		# Example: The following string would restrict to 2
+		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
+		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
+		# secure-renegotiation"
 		#
 		# @param newval [String]
-		def sslAllowedCiphers(newval) end
+		def put_SslAllowedCiphers(newval) end
 
-		# returns String
+		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
+		# are:
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
+		# higher
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
+		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
+		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
+		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
+		# "default" is effectively "SSL 3.0 or higher".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SslProtocol() end
+		def get_SslProtocol(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
+		# are:
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
+		# higher
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
+		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
+		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
+		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
+		# "default" is effectively "SSL 3.0 or higher".
 		#
 		# @param newval [String]
-		def set_SslProtocol(newval) end
+		def put_SslProtocol(newval) end
 
-		# returns String
+		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
+		# are:
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
+		# higher
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
+		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
+		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
+		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
+		# "default" is effectively "SSL 3.0 or higher".
+		#
 		# @return [String]
 		def sslProtocol() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
+		# are:
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
+		# higher
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
+		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
+		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
+		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
+		# "default" is effectively "SSL 3.0 or higher".
 		#
 		# @param newval [String]
-		def sslProtocol(newval) end
+		def put_SslProtocol(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Read-only property that returns _TRUE_ if the IMAP server's digital certificate was verified when
+		# connecting via SSL / TLS.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_SslServerCertVerified() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then the Connect method will (internallly) convert the connection to TLS/SSL via the
+		# STARTTLS IMAP command. This is called "explict SSL/TLS" because the client explicitly requests the
+		# connection be transformed into a TLS/SSL secure channel. The alternative is "implicit SSL/TLS" where
+		# the "Ssl" property is set to _TRUE_ and the IMAP client connects to the well-known TLS/SSL IMAP port
+		# of 993.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_StartTls() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then the Connect method will (internallly) convert the connection to TLS/SSL via the
+		# STARTTLS IMAP command. This is called "explict SSL/TLS" because the client explicitly requests the
+		# connection be transformed into a TLS/SSL secure channel. The alternative is "implicit SSL/TLS" where
+		# the "Ssl" property is set to _TRUE_ and the IMAP client connects to the well-known TLS/SSL IMAP port
+		# of 993.
 		#
-		# @param newval [Bignum]
-		def set_StartTls(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_StartTls(newval) end
 
-		# returns String
+		# Contains the current or last negotiated TLS cipher suite. If no TLS connection has yet to be
+		# established, or if a connection as attempted and failed, then this will be empty. A sample cipher
+		# suite string looks like this: TLS_DHE_RSA_WITH_AES_256_CBC_SHA256.
+		#
 		# @return [String]
 		def get_TlsCipherSuite() end
 
-		# returns String
+		# Contains the current or last negotiated TLS cipher suite. If no TLS connection has yet to be
+		# established, or if a connection as attempted and failed, then this will be empty. A sample cipher
+		# suite string looks like this: TLS_DHE_RSA_WITH_AES_256_CBC_SHA256.
+		#
 		# @return [String]
 		def tlsCipherSuite() end
 
-		# returns String
+		# Specifies a set of pins for Public Key Pinning for TLS connections. This property lists the expected
+		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
+		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
+		# connection fails. The format of this string property is as follows:
+		# 
+		# hash_algorithm,
+		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
+		# 
+		# For example, the following string
+		# specifies a single sha256 base64-encoded SPKI fingerprint:
+		# 
+		# "sha256, base64,
+		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
+		# 
+		# This example specifies two SPKI
+		# fingerprints:
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
+		# 
+		# Any of the following hash algorithms are
+		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
+		# ripemd320.
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
+		# indicated in the link below.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_TlsPinSet() end
+		def get_TlsPinSet(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Specifies a set of pins for Public Key Pinning for TLS connections. This property lists the expected
+		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
+		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
+		# connection fails. The format of this string property is as follows:
+		# 
+		# hash_algorithm,
+		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
+		# 
+		# For example, the following string
+		# specifies a single sha256 base64-encoded SPKI fingerprint:
+		# 
+		# "sha256, base64,
+		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
+		# 
+		# This example specifies two SPKI
+		# fingerprints:
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
+		# 
+		# Any of the following hash algorithms are
+		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
+		# ripemd320.
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
+		# indicated in the link below.
 		#
 		# @param newval [String]
-		def set_TlsPinSet(newval) end
+		def put_TlsPinSet(newval) end
 
-		# returns String
+		# Specifies a set of pins for Public Key Pinning for TLS connections. This property lists the expected
+		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
+		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
+		# connection fails. The format of this string property is as follows:
+		# 
+		# hash_algorithm,
+		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
+		# 
+		# For example, the following string
+		# specifies a single sha256 base64-encoded SPKI fingerprint:
+		# 
+		# "sha256, base64,
+		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
+		# 
+		# This example specifies two SPKI
+		# fingerprints:
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
+		# 
+		# Any of the following hash algorithms are
+		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
+		# ripemd320.
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
+		# indicated in the link below.
+		#
 		# @return [String]
 		def tlsPinSet() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Specifies a set of pins for Public Key Pinning for TLS connections. This property lists the expected
+		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
+		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
+		# connection fails. The format of this string property is as follows:
+		# 
+		# hash_algorithm,
+		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
+		# 
+		# For example, the following string
+		# specifies a single sha256 base64-encoded SPKI fingerprint:
+		# 
+		# "sha256, base64,
+		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
+		# 
+		# This example specifies two SPKI
+		# fingerprints:
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
+		# 
+		# Any of the following hash algorithms are
+		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
+		# ripemd320.
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
+		# indicated in the link below.
 		#
 		# @param newval [String]
-		def tlsPinSet(newval) end
+		def put_TlsPinSet(newval) end
 
-		# returns String
+		# Contains the current or last negotiated TLS protocol version. If no TLS connection has yet to be
+		# established, or if a connection as attempted and failed, then this will be empty. Possible values
+		# are "SSL 3.0", "TLS 1.0", "TLS 1.1", and "TLS 1.2".
+		#
 		# @return [String]
 		def get_TlsVersion() end
 
-		# returns String
+		# Contains the current or last negotiated TLS protocol version. If no TLS connection has yet to be
+		# established, or if a connection as attempted and failed, then this will be empty. Possible values
+		# are "SSL 3.0", "TLS 1.0", "TLS 1.1", and "TLS 1.2".
+		#
 		# @return [String]
 		def tlsVersion() end
 
-		# returns Bignum
+		# A positive integer value containing the UIDNEXT of the currently selected folder, or 0 if it's not
+		# available or no folder is selected.
+		#
 		# @return [Bignum]
 		def get_UidNext() end
 
-		# returns Bignum
+		# An integer value containing the UIDVALIDITY of the currently selected mailbox, or 0 if no mailbox is
+		# selected.
+		# 
+		# A client can save the UidValidity value for a mailbox and then compare it
+		# with the UidValidity on a subsequent session. If the new value is larger, the IMAP server is not
+		# keeping UID's unchanged between sessions. Most IMAP servers maintain UID's between sessions.
+		#
 		# @return [Bignum]
 		def get_UidValidity() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AddPfxSourceData
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the underlying TCP socket is connected to the IMAP server.
 		#
-		# +pfxBytes+ - CkByteData
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param pfxBytes [CkByteData]
+		# @param pfxPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  pfxBytes [CkByteData]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceData(pfxBytes, pfxPassword)
 			# ...
 		end
 
+
 		# Method: AddPfxSourceFile
 		#
-		# ==== Attributes
+		# Adds a PFX file to the object's internal list of sources to be searched for certificates and private
+		# keys when decrypting. Multiple PFX files can be added by calling this method once for each. (On the
+		# Windows operating system, the registry-based certificate stores are also automatically searched, so
+		# it is commonly not required to explicitly add PFX sources.)
+		# 
+		# The ARG1 contains the bytes
+		# of a PFX file (also known as PKCS12 or .p12).
 		#
-		# +pfxFilePath+ - String
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param pfxFilePath [String]
+		# @param pfxPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  pfxFilePath [String]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceFile(pfxFilePath, pfxPassword)
 			# ...
 		end
 
+
 		# Method: AppendMail
 		#
-		# ==== Attributes
+		# Appends an email to an IMAP mailbox.
 		#
-		# +mailbox+ - String
-		# +email+ - CkEmail
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
+		# @param email [CkEmail]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @param  email [CkEmail]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendMail(mailbox, email)
 			# ...
 		end
 
+
 		# Method: AppendMime
 		#
-		# ==== Attributes
+		# Appends an email (represented as MIME text) to an IMAP mailbox.
 		#
-		# +mailbox+ - String
-		# +mimeText+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
+		# @param mimeText [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @param  mimeText [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendMime(mailbox, mimeText)
 			# ...
 		end
 
+
 		# Method: AppendMimeWithDate
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# The same as AppendMime, but with an extra argument to allow the internal date of the email on the
+		# server to be explicitly specified.
 		#
-		# +mailbox+ - String
-		# +mimeText+ - String
-		# +internalDate+ - Object
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
+		# @param mimeText [String]
+		# @param internalDate [Object]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @param  mimeText [String]
-		# @param  internalDate [Object]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AppendMimeWithDate(mailbox, mimeText, internalDate)
 			# ...
 		end
 
+
 		# Method: AppendMimeWithDateStr
 		#
-		# ==== Attributes
+		# The same as AppendMimeWithDate, except the date/time is provided in RFC822 string format.
 		#
-		# +mailbox+ - String
-		# +mimeText+ - String
-		# +internalDateStr+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
+		# @param mimeText [String]
+		# @param internalDateStr [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @param  mimeText [String]
-		# @param  internalDateStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendMimeWithDateStr(mailbox, mimeText, internalDateStr)
 			# ...
 		end
 
+
 		# Method: AppendMimeWithFlags
 		#
-		# ==== Attributes
+		# Same as AppendMime, but allows the flags associated with the email to be set at the same time. A
+		# flag is on if _TRUE_, and off if _FALSE_.
 		#
-		# +mailbox+ - String
-		# +mimeText+ - String
-		# +seen+ - TrueClass, FalseClass
-		# +flagged+ - TrueClass, FalseClass
-		# +answered+ - TrueClass, FalseClass
-		# +draft+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
+		# @param mimeText [String]
+		# @param seen [TrueClass, FalseClass]
+		# @param flagged [TrueClass, FalseClass]
+		# @param answered [TrueClass, FalseClass]
+		# @param draft [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @param  mimeText [String]
-		# @param  seen [TrueClass, FalseClass]
-		# @param  flagged [TrueClass, FalseClass]
-		# @param  answered [TrueClass, FalseClass]
-		# @param  draft [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendMimeWithFlags(mailbox, mimeText, seen, flagged, answered, draft)
 			# ...
 		end
 
+
 		# Method: AppendMimeWithFlagsSb
 		#
-		# ==== Attributes
+		# Same as AppendMimeWithFlags, but the MIME to be uploaded to the IMAP server is passed in a
+		# StringBuilder object.
 		#
-		# +mailbox+ - String
-		# +sbMime+ - CkStringBuilder
-		# +seen+ - TrueClass, FalseClass
-		# +flagged+ - TrueClass, FalseClass
-		# +answered+ - TrueClass, FalseClass
-		# +draft+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
+		# @param sbMime [CkStringBuilder]
+		# @param seen [TrueClass, FalseClass]
+		# @param flagged [TrueClass, FalseClass]
+		# @param answered [TrueClass, FalseClass]
+		# @param draft [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @param  sbMime [CkStringBuilder]
-		# @param  seen [TrueClass, FalseClass]
-		# @param  flagged [TrueClass, FalseClass]
-		# @param  answered [TrueClass, FalseClass]
-		# @param  draft [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendMimeWithFlagsSb(mailbox, sbMime, seen, flagged, answered, draft)
 			# ...
 		end
 
+
 		# Method: Capability
 		#
-		# ==== Attributes
+		# Sends a CAPABILITY command to the IMAP server and returns the raw response.
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def Capability()
+		# @return [TrueClass, FalseClass]
+		def Capability(outStr)
 			# ...
 		end
 
+
+		# Method: Capability
+		#
+		# Sends a CAPABILITY command to the IMAP server and returns the raw response.
+		#
+		#
+		# @return [String]
+		def capability()
+			# ...
+		end
+
+
 		# Method: CheckConnection
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the underlying TCP socket is connected to the IMAP server.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CheckConnection()
 			# ...
 		end
 
+
 		# Method: CheckForNewEmail
 		#
-		# ==== Attributes
+		# Checks for new email that has arrived since the mailbox was selected (via the SelectMailbox or
+		# ExamineMailbox methods), or since the last call to CheckForNewEmail (whichever was most recent).
+		# This method works by closing and re-opening the currently selected mailbox, and then sending a
+		# "SEARCH" command for either RECENT emails, or emails having a UID greater than the UIDNEXT value. A
+		# message set object containing the UID's of the new emails is returned, and this may be passed to
+		# methods such as FetchBundle to download the new emails.
 		#
-		# returns CkMessageSet
 		#
-		# YARD =>
-		#
-		# @return  [CkMessageSet]
+		# @return [CkMessageSet]
 		def CheckForNewEmail()
 			# ...
 		end
 
+
 		# Method: ClearSessionLog
 		#
-		# ==== Attributes
+		# Clears the contents of the SessionLog property.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearSessionLog()
 			# ...
 		end
 
+
 		# Method: CloseMailbox
 		#
-		# ==== Attributes
+		# Closes the currently selected mailbox.
 		#
-		# +mailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CloseMailbox(mailbox)
 			# ...
 		end
 
+
 		# Method: Connect
 		#
-		# ==== Attributes
+		# Connects to an IMAP server, but does not login. The ARG1 is the domain name of the IMAP server. (May
+		# also use the IPv4 or IPv6 address in string format.)
+		# 
+		# Important: All TCP-based Internet
+		# communications, regardless of the protocol (such as HTTP, FTP, SSH, IMAP, POP3, SMTP, etc.), and
+		# regardless of SSL/TLS, begin with establishing a TCP connection to a remote host:port. External
+		# security-related infrastructure such as software firewalls (Windows Firewall), hardware firewalls,
+		# anti-virus, at either source or destination (or both) can block the connection. If the connection
+		# fails, make sure to check all potential external causes of blockage.
 		#
-		# +domainName+ - String
-		# returns TrueClass, FalseClass
+		# @param domainName [String]
 		#
-		# YARD =>
-		#
-		# @param  domainName [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Connect(domainName)
 			# ...
 		end
 
+
 		# Method: Copy
 		#
-		# ==== Attributes
+		# Copies a message from the selected mailbox to ARG3. 
+		# If ARG2 is _TRUE_, then ARG1 represents a
+		# UID. If ARG2 is _FALSE_, then ARG1 represents a sequence number.
 		#
-		# +msgId+ - Fixnum
-		# +bUid+ - TrueClass, FalseClass
-		# +copyToMailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
+		# @param copyToMailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  msgId [Fixnum]
-		# @param  bUid [TrueClass, FalseClass]
-		# @param  copyToMailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Copy(msgId, bUid, copyToMailbox)
 			# ...
 		end
 
+
 		# Method: CopyMultiple
 		#
-		# ==== Attributes
+		# Same as the Copy method, except an entire set of emails is copied at once. The set of emails is
+		# specified in ARG1.
 		#
-		# +messageSet+ - CkMessageSet
-		# +copyToMailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param messageSet [CkMessageSet]
+		# @param copyToMailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  messageSet [CkMessageSet]
-		# @param  copyToMailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CopyMultiple(messageSet, copyToMailbox)
 			# ...
 		end
 
+
 		# Method: CopySequence
 		#
-		# ==== Attributes
+		# Copies one or more emails from one mailbox to another. The emails are specified as a range of
+		# sequence numbers. The 1st email in a mailbox is always at sequence number 1.
 		#
-		# +startSeqNum+ - Fixnum
-		# +count+ - Fixnum
-		# +copyToMailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param startSeqNum [Fixnum]
+		# @param count [Fixnum]
+		# @param copyToMailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  startSeqNum [Fixnum]
-		# @param  count [Fixnum]
-		# @param  copyToMailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CopySequence(startSeqNum, count, copyToMailbox)
 			# ...
 		end
 
+
 		# Method: CreateMailbox
 		#
-		# ==== Attributes
+		# Creates a new mailbox.
 		#
-		# +mailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CreateMailbox(mailbox)
 			# ...
 		end
 
+
 		# Method: DeleteMailbox
 		#
-		# ==== Attributes
+		# Deletes an existing mailbox.
 		#
-		# +mailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def DeleteMailbox(mailbox)
 			# ...
 		end
 
+
 		# Method: Disconnect
 		#
-		# ==== Attributes
+		# Disconnects cleanly from the IMAP server. A non-success return from this method only indicates that
+		# the disconnect was not clean -- and this can typically be ignored.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Disconnect()
 			# ...
 		end
 
+
 		# Method: ExamineMailbox
 		#
-		# ==== Attributes
+		# Selects a mailbox such that only read-only transactions are allowed. This method would be called
+		# instead of SelectMailbox if the logged-on user has read-only permission.
 		#
-		# +mailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ExamineMailbox(mailbox)
 			# ...
 		end
 
+
 		# Method: Expunge
 		#
-		# ==== Attributes
+		# Permanently removes from the currently selected mailbox all messages that have the Deleted flag set.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Expunge()
 			# ...
 		end
 
+
 		# Method: ExpungeAndClose
 		#
-		# ==== Attributes
+		# Permanently removes from the currently selected mailbox all messages that have the Deleted flag set,
+		# and closes the mailbox.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ExpungeAndClose()
 			# ...
 		end
 
+
 		# Method: FetchAttachment
 		#
-		# ==== Attributes
+		# Downloads one of an email's attachments and saves it to a file. If the ARG1 already contains the
+		# full email (including the attachments), then no communication with the IMAP server is necessary
+		# because the attachment data is already contained within the ARG1. In this case, the attachment is
+		# simply extracted and saved to ARG3. (As with all Chilkat methods, indexing begins at 0. The 1st
+		# attachment is at ARG2 0.)
+		# 
+		# Additional Notes:
+		# 
+		# If the AutoDownloadAttachments
+		# property is set to _FALSE_, then emails downloaded via any of the Fetch* methods will not include
+		# attachments. 
+		# 
+		# Note: "related" items are not considered attachments and are downloaded.
+		# These are images, style sheets, etc. that are embedded within the HTML body of an
+		# email.
+		# 
+		# Also: All signed and/or encrypted emails must be downloaded in
+		# full.
+		# 
+		# When an email is downloaded without attachments, the attachment information is
+		# included in header fields. The header fields have names beginning with "ckx-imap-". The attachment
+		# information can be obtained via the following
+		# methods:
+		# 
+		# imap.GetMailNumAttach
+		# imap.GetMailAttachFilename
+		# imap.GetMailAttachSize
 		#
-		# +emailObject+ - CkEmail
-		# +attachmentIndex+ - Fixnum
-		# +saveToPath+ - String
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
+		# @param emailObject [CkEmail]
+		# @param attachmentIndex [Fixnum]
+		# @param saveToPath [String]
 		#
-		# @param  emailObject [CkEmail]
-		# @param  attachmentIndex [Fixnum]
-		# @param  saveToPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def FetchAttachment(emailObject, attachmentIndex, saveToPath)
 			# ...
 		end
 
+
 		# Method: FetchAttachmentBd
 		#
-		# ==== Attributes
+		# Downloads one of an email's attachments and returns the attachment data in a BinData object. ***See
+		# the FetchAttachment method description for more information about fetching attachments.
 		#
-		# +email+ - CkEmail
-		# +attachmentIndex+ - Fixnum
-		# +binData+ - CkBinData
-		# returns TrueClass, FalseClass
+		# @param email [CkEmail]
+		# @param attachmentIndex [Fixnum]
+		# @param binData [CkBinData]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @param  attachmentIndex [Fixnum]
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def FetchAttachmentBd(email, attachmentIndex, binData)
 			# ...
 		end
 
+
 		# Method: FetchAttachmentBytes
 		#
-		# ==== Attributes
+		# Downloads one of an email's attachments and returns the attachment data as in-memory bytes that may
+		# be accessed by an application. ***See the FetchAttachment method description for more information
+		# about fetching attachments.
 		#
-		# +email+ - CkEmail
-		# +attachIndex+ - Fixnum
-		# returns CkByteData
+		# @param email [CkEmail]
+		# @param attachIndex [Fixnum]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @param  attachIndex [Fixnum]
-		# @return  [CkByteData]
-		def FetchAttachmentBytes(email, attachIndex)
+		# @return [TrueClass, FalseClass]
+		def FetchAttachmentBytes(email, attachIndex, outBytes)
 			# ...
 		end
 
+
 		# Method: FetchAttachmentSb
 		#
-		# ==== Attributes
+		# Downloads one of an email's attachments and returns the attachment data in a StringBuilder. It only
+		# makes sense to call this method for attachments that contain text data. The ARG3 indicates the
+		# character encoding of the text, such as "utf-8" or "windows-1252". ***See the FetchAttachment method
+		# description for more information about fetching attachments.
 		#
-		# +email+ - CkEmail
-		# +attachmentIndex+ - Fixnum
-		# +charset+ - String
-		# +sb+ - CkStringBuilder
-		# returns TrueClass, FalseClass
+		# @param email [CkEmail]
+		# @param attachmentIndex [Fixnum]
+		# @param charset [String]
+		# @param sb [CkStringBuilder]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @param  attachmentIndex [Fixnum]
-		# @param  charset [String]
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def FetchAttachmentSb(email, attachmentIndex, charset, sb)
 			# ...
 		end
 
+
 		# Method: FetchAttachmentString
 		#
-		# ==== Attributes
+		# Downloads one of an email's attachments and returns the attachment data as a string. It only makes
+		# sense to call this method for attachments that contain text data. The ARG3 indicates the character
+		# encoding of the text, such as "utf-8" or "windows-1252". ***See the FetchAttachment method
+		# description for more information about fetching attachments.
 		#
-		# +emailObject+ - CkEmail
-		# +attachmentIndex+ - Fixnum
-		# +charset+ - String
-		# returns String
+		# @param emailObject [CkEmail]
+		# @param attachmentIndex [Fixnum]
+		# @param charset [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  emailObject [CkEmail]
-		# @param  attachmentIndex [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
-		def FetchAttachmentString(emailObject, attachmentIndex, charset)
+		# @return [TrueClass, FalseClass]
+		def FetchAttachmentString(emailObject, attachmentIndex, charset, outStr)
 			# ...
 		end
 
+
+		# Method: FetchAttachmentString
+		#
+		# Downloads one of an email's attachments and returns the attachment data as a string. It only makes
+		# sense to call this method for attachments that contain text data. The ARG3 indicates the character
+		# encoding of the text, such as "utf-8" or "windows-1252". ***See the FetchAttachment method
+		# description for more information about fetching attachments.
+		#
+		# @param emailObject [CkEmail]
+		# @param attachmentIndex [Fixnum]
+		# @param charset [String]
+		#
+		# @return [String]
+		def fetchAttachmentString(emailObject, attachmentIndex, charset)
+			# ...
+		end
+
+
 		# Method: FetchBundle
 		#
-		# ==== Attributes
+		# Retrieves a set of messages from the IMAP server and returns them in an email bundle object. If the
+		# method fails, it may return a NULL reference.
 		#
-		# +messageSet+ - CkMessageSet
-		# returns CkEmailBundle
+		# @param messageSet [CkMessageSet]
 		#
-		# YARD =>
-		#
-		# @param  messageSet [CkMessageSet]
-		# @return  [CkEmailBundle]
+		# @return [CkEmailBundle]
 		def FetchBundle(messageSet)
 			# ...
 		end
 
+
 		# Method: FetchBundleAsMime
 		#
-		# ==== Attributes
+		# Retrieves a set of messages from the IMAP server and returns them in a string array object (NOTE: it
+		# does not return a string array, but an object that represents a string array.) Each string within
+		# the returned object is the complete MIME source of an email. On failure, a NULL object reference is
+		# returned.
 		#
-		# +messageSet+ - CkMessageSet
-		# returns CkStringArray
+		# @param messageSet [CkMessageSet]
 		#
-		# YARD =>
-		#
-		# @param  messageSet [CkMessageSet]
-		# @return  [CkStringArray]
+		# @return [CkStringArray]
 		def FetchBundleAsMime(messageSet)
 			# ...
 		end
 
+
 		# Method: FetchChunk
 		#
-		# ==== Attributes
+		# Fetches a chunk of emails starting at a specific sequence number. A bundle of fetched emails is
+		# returned. The last two arguments are message sets that are updated with the ids of messages
+		# successfully/unsuccessfully fetched.
 		#
-		# +startSeqNum+ - Fixnum
-		# +count+ - Fixnum
-		# +failedSet+ - CkMessageSet
-		# +fetchedSet+ - CkMessageSet
-		# returns CkEmailBundle
+		# @param startSeqNum [Fixnum]
+		# @param count [Fixnum]
+		# @param failedSet [CkMessageSet]
+		# @param fetchedSet [CkMessageSet]
 		#
-		# YARD =>
-		#
-		# @param  startSeqNum [Fixnum]
-		# @param  count [Fixnum]
-		# @param  failedSet [CkMessageSet]
-		# @param  fetchedSet [CkMessageSet]
-		# @return  [CkEmailBundle]
+		# @return [CkEmailBundle]
 		def FetchChunk(startSeqNum, count, failedSet, fetchedSet)
 			# ...
 		end
 
+
 		# Method: FetchFlags
 		#
-		# ==== Attributes
+		# Fetches the flags for an email. The bUid argument determines whether the ARG1 is a UID or sequence
+		# number. Returns the SPACE separated list of flags set for the email, such as "\Flagged \Seen
+		# $label1".
+		# 
+		# If an empty string is returned, then it could be that the email referenced by
+		# ARG1 does not exist in the currently selected mailbox, or it simply has no flags that are set. To
+		# determine the difference, examine the contents of the LastResponse property. For the case where the
+		# message does not exist, the LastResponse will contain a "NO" and will look something like
+		# this:
+		# 
+		# aaah NO The specified message set is invalid.
+		# 
+		# For the case where the
+		# message exists, but no flags are set, the LastResponse will contain an "OK" in the last response
+		# line. For example:
+		# 
+		# ...
+		# aaah OK FETCH completed.
 		#
-		# +msgId+ - Fixnum
-		# +bUid+ - TrueClass, FalseClass
-		# returns String
 		#
-		# YARD =>
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
+		# @param outStrFlags [CkString]
 		#
-		# @param  msgId [Fixnum]
-		# @param  bUid [TrueClass, FalseClass]
-		# @return  [String]
-		def FetchFlags(msgId, bUid)
+		# @return [TrueClass, FalseClass]
+		def FetchFlags(msgId, bUid, outStrFlags)
 			# ...
 		end
 
+
+		# Method: FetchFlags
+		#
+		# Fetches the flags for an email. The bUid argument determines whether the ARG1 is a UID or sequence
+		# number. Returns the SPACE separated list of flags set for the email, such as "\Flagged \Seen
+		# $label1".
+		# 
+		# If an empty string is returned, then it could be that the email referenced by
+		# ARG1 does not exist in the currently selected mailbox, or it simply has no flags that are set. To
+		# determine the difference, examine the contents of the LastResponse property. For the case where the
+		# message does not exist, the LastResponse will contain a "NO" and will look something like
+		# this:
+		# 
+		# aaah NO The specified message set is invalid.
+		# 
+		# For the case where the
+		# message exists, but no flags are set, the LastResponse will contain an "OK" in the last response
+		# line. For example:
+		# 
+		# ...
+		# aaah OK FETCH completed.
+		#
+		#
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
+		#
+		# @return [String]
+		def fetchFlags(msgId, bUid)
+			# ...
+		end
+
+
 		# Method: FetchHeaders
 		#
-		# ==== Attributes
+		# Retrieves a set of message headers from the IMAP server and returns them in an email bundle object.
+		# If the method fails, it may return a NULL reference. The following methods are useful for retrieving
+		# information about attachments and flags after email headers are retrieved: GetMailNumAttach,
+		# GetMailAttachSize, GetMailAttachFilename, GetMailFlag.
 		#
-		# +messageSet+ - CkMessageSet
-		# returns CkEmailBundle
+		# @param messageSet [CkMessageSet]
 		#
-		# YARD =>
-		#
-		# @param  messageSet [CkMessageSet]
-		# @return  [CkEmailBundle]
+		# @return [CkEmailBundle]
 		def FetchHeaders(messageSet)
 			# ...
 		end
 
+
 		# Method: FetchSequence
 		#
-		# ==== Attributes
+		# Downloads email for a range of sequence numbers. The 1st email in a mailbox is always at sequence
+		# number 1. The total number of emails in the currently selected mailbox is available in the
+		# NumMessages property. If the ARG2 is too large, the method will still succeed, but will return a
+		# bundle of emails from ARG1 to the last email in the mailbox.
 		#
-		# +startSeqNum+ - Fixnum
-		# +numMessages+ - Fixnum
-		# returns CkEmailBundle
+		# @param startSeqNum [Fixnum]
+		# @param numMessages [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  startSeqNum [Fixnum]
-		# @param  numMessages [Fixnum]
-		# @return  [CkEmailBundle]
+		# @return [CkEmailBundle]
 		def FetchSequence(startSeqNum, numMessages)
 			# ...
 		end
 
+
 		# Method: FetchSequenceAsMime
 		#
-		# ==== Attributes
+		# Same as FetchSequence, but instead of returning email objects in a bundle, the raw MIME of each
+		# email is returned.
 		#
-		# +startSeqNum+ - Fixnum
-		# +numMessages+ - Fixnum
-		# returns CkStringArray
+		# @param startSeqNum [Fixnum]
+		# @param numMessages [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  startSeqNum [Fixnum]
-		# @param  numMessages [Fixnum]
-		# @return  [CkStringArray]
+		# @return [CkStringArray]
 		def FetchSequenceAsMime(startSeqNum, numMessages)
 			# ...
 		end
 
+
 		# Method: FetchSequenceHeaders
 		#
-		# ==== Attributes
+		# Same as FetchSequence, but only the email headers are returned. The email objects within the bundle
+		# will be lacking bodies and attachments.
+		# 
+		# Note: For any method call using sequence
+		# numbers, an application must make sure the sequence numbers
+		# are within the valid range. When a
+		# mailbox is selected, the NumMessages property will have been set,
+		# and the valid range of
+		# sequence numbers is from 1 to NumMessages. An attempt to fetch sequence numbers outside this range
+		# will result in an error.
 		#
-		# +startSeqNum+ - Fixnum
-		# +numMessages+ - Fixnum
-		# returns CkEmailBundle
+		# @param startSeqNum [Fixnum]
+		# @param numMessages [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  startSeqNum [Fixnum]
-		# @param  numMessages [Fixnum]
-		# @return  [CkEmailBundle]
+		# @return [CkEmailBundle]
 		def FetchSequenceHeaders(startSeqNum, numMessages)
 			# ...
 		end
 
+
 		# Method: FetchSingle
 		#
-		# ==== Attributes
+		# Retrieves a single message from the IMAP server. If the method fails, it may return a NULL
+		# reference.
+		# If bUid is true, then msgID represents a UID. If bUid is false, then msgID
+		# represents a sequence number.
 		#
-		# +msgId+ - Fixnum
-		# +bUid+ - TrueClass, FalseClass
-		# returns CkEmail
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  msgId [Fixnum]
-		# @param  bUid [TrueClass, FalseClass]
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def FetchSingle(msgId, bUid)
 			# ...
 		end
 
+
 		# Method: FetchSingleAsMime
 		#
-		# ==== Attributes
+		# Retrieves a single message from the IMAP server and returns a string containing the complete MIME
+		# source of the email. If the method fails, it returns a NULL reference. If bUid is true, then msgID
+		# represents a UID. If bUid is false, then msgID represents a sequence number.
 		#
-		# +msgId+ - Fixnum
-		# +bUid+ - TrueClass, FalseClass
-		# returns String
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
+		# @param outStrMime [CkString]
 		#
-		# YARD =>
-		#
-		# @param  msgId [Fixnum]
-		# @param  bUid [TrueClass, FalseClass]
-		# @return  [String]
-		def FetchSingleAsMime(msgId, bUid)
+		# @return [TrueClass, FalseClass]
+		def FetchSingleAsMime(msgId, bUid, outStrMime)
 			# ...
 		end
 
+
+		# Method: FetchSingleAsMime
+		#
+		# Retrieves a single message from the IMAP server and returns a string containing the complete MIME
+		# source of the email. If the method fails, it returns a NULL reference. If bUid is true, then msgID
+		# represents a UID. If bUid is false, then msgID represents a sequence number.
+		#
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
+		#
+		# @return [String]
+		def fetchSingleAsMime(msgId, bUid)
+			# ...
+		end
+
+
 		# Method: FetchSingleAsMimeSb
 		#
-		# ==== Attributes
+		# Retrieves a single message from the IMAP server and returns a StringBuilder object containing the
+		# complete MIME source of the email. If the method fails, it returns a NULL reference. If bUid is
+		# true, then msgID represents a UID. If bUid is false, then msgID represents a sequence number.
 		#
-		# +msgId+ - Fixnum
-		# +bUid+ - TrueClass, FalseClass
-		# +sbMime+ - CkStringBuilder
-		# returns TrueClass, FalseClass
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
+		# @param sbMime [CkStringBuilder]
 		#
-		# YARD =>
-		#
-		# @param  msgId [Fixnum]
-		# @param  bUid [TrueClass, FalseClass]
-		# @param  sbMime [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def FetchSingleAsMimeSb(msgId, bUid, sbMime)
 			# ...
 		end
 
+
 		# Method: FetchSingleHeader
 		#
-		# ==== Attributes
+		# Retrieves a single message header from the IMAP server. If the method fails, it may return a NULL
+		# reference. The following methods are useful for retrieving information about attachments and flags
+		# after an email header is retrieved: GetMailNumAttach, GetMailAttachSize, GetMailAttachFilename,
+		# GetMailFlag.
+		# 
+		# If bUid is true, then msgID represents a UID. If bUid is false, then msgID
+		# represents a sequence number.
 		#
-		# +msgId+ - Fixnum
-		# +bUid+ - TrueClass, FalseClass
-		# returns CkEmail
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  msgId [Fixnum]
-		# @param  bUid [TrueClass, FalseClass]
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def FetchSingleHeader(msgId, bUid)
 			# ...
 		end
 
+
 		# Method: FetchSingleHeaderAsMime
 		#
-		# ==== Attributes
+		# Fetches and returns the MIME of a single email header.
 		#
-		# +msgId+ - Fixnum
-		# +bUID+ - TrueClass, FalseClass
-		# returns String
+		# @param msgId [Fixnum]
+		# @param bUID [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  msgId [Fixnum]
-		# @param  bUID [TrueClass, FalseClass]
-		# @return  [String]
-		def FetchSingleHeaderAsMime(msgId, bUID)
+		# @return [TrueClass, FalseClass]
+		def FetchSingleHeaderAsMime(msgId, bUID, outStr)
 			# ...
 		end
 
+
+		# Method: FetchSingleHeaderAsMime
+		#
+		# Fetches and returns the MIME of a single email header.
+		#
+		# @param msgId [Fixnum]
+		# @param bUID [TrueClass, FalseClass]
+		#
+		# @return [String]
+		def fetchSingleHeaderAsMime(msgId, bUID)
+			# ...
+		end
+
+
 		# Method: GetAllUids
 		#
-		# ==== Attributes
+		# Returns a message set object containing all the UIDs in the currently selected mailbox. A NULL
+		# object reference is returned on failure.
 		#
-		# returns CkMessageSet
 		#
-		# YARD =>
-		#
-		# @return  [CkMessageSet]
+		# @return [CkMessageSet]
 		def GetAllUids()
 			# ...
 		end
 
+
 		# Method: GetMailAttachFilename
 		#
-		# ==== Attributes
+		# Returns the Nth attachment filename. Indexing begins at 0.
 		#
-		# +email+ - CkEmail
-		# +attachIndex+ - Fixnum
-		# returns String
+		# @param email [CkEmail]
+		# @param attachIndex [Fixnum]
+		# @param outStrFilename [CkString]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @param  attachIndex [Fixnum]
-		# @return  [String]
-		def GetMailAttachFilename(email, attachIndex)
+		# @return [TrueClass, FalseClass]
+		def GetMailAttachFilename(email, attachIndex, outStrFilename)
 			# ...
 		end
 
+
+		# Method: GetMailAttachFilename
+		#
+		# Returns the Nth attachment filename. Indexing begins at 0.
+		#
+		# @param email [CkEmail]
+		# @param attachIndex [Fixnum]
+		#
+		# @return [String]
+		def getMailAttachFilename(email, attachIndex)
+			# ...
+		end
+
+
 		# Method: GetMailAttachSize
 		#
-		# ==== Attributes
+		# Returns the Nth attachment size in bytes. Indexing begins at 0.
 		#
-		# +email+ - CkEmail
-		# +attachIndex+ - Fixnum
-		# returns Fixnum
+		# @param email [CkEmail]
+		# @param attachIndex [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @param  attachIndex [Fixnum]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetMailAttachSize(email, attachIndex)
 			# ...
 		end
 
+
 		# Method: GetMailboxStatus
 		#
-		# ==== Attributes
+		# Sends a "Status" command to get the status of a ARG1. Returns an XML string containing the status
+		# values as named attributes. Possible status values are:
+		# messages: The number of messages in
+		# the mailbox.
+		# recent: The number of messages with the \Recent flag set.
+		# uidnext: The next
+		# unique identifier value of the mailbox.
+		# uidvalidity: The unique identifier validity value of
+		# the mailbox.
+		# unseen: The number of messages which do not have the \Seen flag
+		# set.
+		# 
+		# 
+		# An example of the string returned by this method is: _LT_status
+		# messages="240" recent="0" uidnext="3674" uidvalidity="3" unseen="213" /_GT_
 		#
-		# +mailbox+ - String
-		# returns String
+		# @param mailbox [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @return  [String]
-		def GetMailboxStatus(mailbox)
+		# @return [TrueClass, FalseClass]
+		def GetMailboxStatus(mailbox, outStr)
 			# ...
 		end
 
+
+		# Method: GetMailboxStatus
+		#
+		# Sends a "Status" command to get the status of a ARG1. Returns an XML string containing the status
+		# values as named attributes. Possible status values are:
+		# messages: The number of messages in
+		# the mailbox.
+		# recent: The number of messages with the \Recent flag set.
+		# uidnext: The next
+		# unique identifier value of the mailbox.
+		# uidvalidity: The unique identifier validity value of
+		# the mailbox.
+		# unseen: The number of messages which do not have the \Seen flag
+		# set.
+		# 
+		# 
+		# An example of the string returned by this method is: _LT_status
+		# messages="240" recent="0" uidnext="3674" uidvalidity="3" unseen="213" /_GT_
+		#
+		# @param mailbox [String]
+		#
+		# @return [String]
+		def getMailboxStatus(mailbox)
+			# ...
+		end
+
+
 		# Method: GetMailFlag
 		#
-		# ==== Attributes
+		# Returns the value of a flag (1 = yes, 0 = no) for an email. 
+		# Both standard system flags as
+		# well as custom flags may be set. 
+		# Standard system flags typically begin with a backslash
+		# character, such as "\Seen", "\Answered", "\Flagged", "\Draft", "\Deleted", and "\Answered". Custom
+		# flags can be anything, such as "NonJunk", "$label1", "$MailFlagBit1", etc. .
 		#
-		# +email+ - CkEmail
-		# +flagName+ - String
-		# returns Fixnum
+		# @param email [CkEmail]
+		# @param flagName [String]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @param  flagName [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetMailFlag(email, flagName)
 			# ...
 		end
 
+
 		# Method: GetMailNumAttach
 		#
-		# ==== Attributes
+		# Returns the number of email attachments.
 		#
-		# +email+ - CkEmail
-		# returns Fixnum
+		# @param email [CkEmail]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetMailNumAttach(email)
 			# ...
 		end
 
+
 		# Method: GetMailSize
 		#
-		# ==== Attributes
+		# Returns the size (in bytes) of the entire email including attachments.
 		#
-		# +email+ - CkEmail
-		# returns Fixnum
+		# @param email [CkEmail]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetMailSize(email)
 			# ...
 		end
 
+
 		# Method: GetQuota
 		#
-		# ==== Attributes
+		# Sends the GETQUOTA command and returns the response in JSON format. This feature is only possible
+		# with IMAP servers that support the QUOTA extension/capability.
 		#
-		# +quotaRoot+ - String
-		# returns String
+		# @param quotaRoot [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  quotaRoot [String]
-		# @return  [String]
-		def GetQuota(quotaRoot)
+		# @return [TrueClass, FalseClass]
+		def GetQuota(quotaRoot, outStr)
 			# ...
 		end
+
+
+		# Method: GetQuota
+		#
+		# Sends the GETQUOTA command and returns the response in JSON format. This feature is only possible
+		# with IMAP servers that support the QUOTA extension/capability.
+		#
+		# @param quotaRoot [String]
+		#
+		# @return [String]
+		def getQuota(quotaRoot)
+			# ...
+		end
+
 
 		# Method: GetQuotaRoot
 		#
-		# ==== Attributes
+		# Sends the GETQUOTAROOT command and returns the response in JSON format. This feature is only
+		# possible with IMAP servers that support the QUOTA extension/capability.
 		#
-		# +mailboxName+ - String
-		# returns String
+		# @param mailboxName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  mailboxName [String]
-		# @return  [String]
-		def GetQuotaRoot(mailboxName)
+		# @return [TrueClass, FalseClass]
+		def GetQuotaRoot(mailboxName, outStr)
 			# ...
 		end
 
+
+		# Method: GetQuotaRoot
+		#
+		# Sends the GETQUOTAROOT command and returns the response in JSON format. This feature is only
+		# possible with IMAP servers that support the QUOTA extension/capability.
+		#
+		# @param mailboxName [String]
+		#
+		# @return [String]
+		def getQuotaRoot(mailboxName)
+			# ...
+		end
+
+
 		# Method: GetSslServerCert
 		#
-		# ==== Attributes
+		# Returns the IMAP server's digital certificate (for SSL / TLS connections).
 		#
-		# returns CkCert
 		#
-		# YARD =>
-		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetSslServerCert()
 			# ...
 		end
 
+
 		# Method: HasCapability
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the capability indicated by ARG1 is found in the ARG2. Otherwise returns _FALSE_.
 		#
-		# +name+ - String
-		# +capabilityResponse+ - String
-		# returns TrueClass, FalseClass
+		# @param name [String]
+		# @param capabilityResponse [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  capabilityResponse [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HasCapability(name, capabilityResponse)
 			# ...
 		end
 
+
 		# Method: IdleCheck
 		#
-		# ==== Attributes
+		# Polls the connection to see if any real-time updates are available. The ARG1 indicates how long to
+		# wait for incoming updates. This method does not send a command to the IMAP server, it simply checks
+		# the connection for already-arrived messages that the IMAP server sent. This method would only be
+		# called after IDLE has already been started via the IdleStart method.
+		# If updates are available,
+		# they are returned in an XML string having the format as shown below. There is one child node for
+		# each notification. The possible notifcations are:
+		# 
+		# flags -- lists flags that have been
+		# set or unset for an email.
+		# expunge -- provides the sequence number for an email that has been
+		# deleted.
+		# exists -- reports the new number of messages in the currently selected
+		# mailbox.
+		# recent -- reports the new number of messages with the /RECENT flag set.
+		# raw --
+		# reports an unanticipated response line that was not parsed by Chilkat. This should be reported to
+		# support@chilkatoft.com
+		# 
+		# A sample showing all possible notifications (except for "raw")
+		# is shown below.
+		# 
+		# _LT_idle_GT_
+		# _LT_flags seqnum="59" uid="11876"_GT_
 		#
-		# +timeoutMs+ - Fixnum
-		# returns String
+		# _LT_flag_GT_\Deleted_LT_/flag_GT_
+		# _LT_flag_GT_\Seen_LT_/flag_GT_
+		# _LT_/flags_GT_
 		#
-		# YARD =>
+		# _LT_flags seqnum="69" uid="11889"_GT_
+		# _LT_flag_GT_\Seen_LT_/flag_GT_
+		# _LT_/flags_GT_
 		#
-		# @param  timeoutMs [Fixnum]
-		# @return  [String]
-		def IdleCheck(timeoutMs)
+		# _LT_expunge_GT_58_LT_/expunge_GT_
+		# _LT_expunge_GT_58_LT_/expunge_GT_
+		#
+		# _LT_expunge_GT_67_LT_/expunge_GT_
+		# _LT_exists_GT_115_LT_/exists_GT_
+		#
+		# _LT_recent_GT_0_LT_/recent_GT_
+		# _LT_/idle_GT_
+		# 
+		# 
+		# If no updates have been
+		# received, the returned XML string has the following format, as shown below. The
+		# # 
+		# _LT_idle_GT__LT_/idle_GT_
+		# 
+		# 
+		# NOTE:Once IdleStart has been called, this
+		# method can and should be called frequently to see if any updates have arrived. This is NOT the same
+		# as polling the IMAP server because it does not send any requests to the IMAP server. It simply
+		# checks to see if any messages (i.e. updates) from the IMAP server are available and waiting to be
+		# read.
+		#
+		# @param timeoutMs [Fixnum]
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def IdleCheck(timeoutMs, outStr)
 			# ...
 		end
 
+
+		# Method: IdleCheck
+		#
+		# Polls the connection to see if any real-time updates are available. The ARG1 indicates how long to
+		# wait for incoming updates. This method does not send a command to the IMAP server, it simply checks
+		# the connection for already-arrived messages that the IMAP server sent. This method would only be
+		# called after IDLE has already been started via the IdleStart method.
+		# If updates are available,
+		# they are returned in an XML string having the format as shown below. There is one child node for
+		# each notification. The possible notifcations are:
+		# 
+		# flags -- lists flags that have been
+		# set or unset for an email.
+		# expunge -- provides the sequence number for an email that has been
+		# deleted.
+		# exists -- reports the new number of messages in the currently selected
+		# mailbox.
+		# recent -- reports the new number of messages with the /RECENT flag set.
+		# raw --
+		# reports an unanticipated response line that was not parsed by Chilkat. This should be reported to
+		# support@chilkatoft.com
+		# 
+		# A sample showing all possible notifications (except for "raw")
+		# is shown below.
+		# 
+		# _LT_idle_GT_
+		# _LT_flags seqnum="59" uid="11876"_GT_
+		#
+		# _LT_flag_GT_\Deleted_LT_/flag_GT_
+		# _LT_flag_GT_\Seen_LT_/flag_GT_
+		# _LT_/flags_GT_
+		#
+		# _LT_flags seqnum="69" uid="11889"_GT_
+		# _LT_flag_GT_\Seen_LT_/flag_GT_
+		# _LT_/flags_GT_
+		#
+		# _LT_expunge_GT_58_LT_/expunge_GT_
+		# _LT_expunge_GT_58_LT_/expunge_GT_
+		#
+		# _LT_expunge_GT_67_LT_/expunge_GT_
+		# _LT_exists_GT_115_LT_/exists_GT_
+		#
+		# _LT_recent_GT_0_LT_/recent_GT_
+		# _LT_/idle_GT_
+		# 
+		# 
+		# If no updates have been
+		# received, the returned XML string has the following format, as shown below. The
+		# # 
+		# _LT_idle_GT__LT_/idle_GT_
+		# 
+		# 
+		# NOTE:Once IdleStart has been called, this
+		# method can and should be called frequently to see if any updates have arrived. This is NOT the same
+		# as polling the IMAP server because it does not send any requests to the IMAP server. It simply
+		# checks to see if any messages (i.e. updates) from the IMAP server are available and waiting to be
+		# read.
+		#
+		# @param timeoutMs [Fixnum]
+		#
+		# @return [String]
+		def ıdleCheck(timeoutMs)
+			# ...
+		end
+
+
 		# Method: IdleDone
 		#
-		# ==== Attributes
+		# Sends a command to the IMAP server to stop receiving real-time updates.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IdleDone()
 			# ...
 		end
 
+
 		# Method: IdleStart
 		#
-		# ==== Attributes
+		# Sends an IDLE command to the IMAP server to begin receiving real-time updates.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IdleStart()
 			# ...
 		end
 
+
 		# Method: IsConnected
 		#
-		# ==== Attributes
+		# Returns the last known "connected" state with the IMAP server. IsConnected does not send a message
+		# to the IMAP server to determine if it is still connected. The Noop method may be called to
+		# specifically send a no-operation message to determine actual connectivity.
+		# 
+		# The
+		# IsConnected method is useful for checking to see if the component is already in a known disconnected
+		# state.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsConnected()
 			# ...
 		end
 
+
 		# Method: IsLoggedIn
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if already logged into an IMAP server, otherwise returns _FALSE_.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsLoggedIn()
 			# ...
 		end
 
+
 		# Method: IsUnlocked
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the component is unlocked, _FALSE_ if not.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
 
+
 		# Method: ListMailboxes
 		#
-		# ==== Attributes
+		# Returns a subset of the complete list of mailboxes available on the IMAP server. This method has the
+		# side-effect of setting the SeparatorChar property to the correct character used by the IMAP server,
+		# which is typically "/" or ".". 
+		# 
+		# The reference and wildcardedMailbox parameters are
+		# passed unaltered to the IMAP LIST command:
+		# 
+		# FROM RFC 3501 (IMAP Protocol)
+		# 
 		#
-		# +reference+ - String
-		# +wildcardedMailbox+ - String
-		# returns CkMailboxes
+		# The LIST command returns a subset of names from the complete set
+		# of all names available to the
+		# client. Zero or more untagged LIST
+		# replies are returned, containing the name attributes,
+		# hierarchy
+		# delimiter, and name; see the description of the LIST reply for
+		# more
+		# detail.
+		# 
+		# An empty ("" string) reference name argument indicates that the
+		# mailbox
+		# name is interpreted as by SELECT. The returned mailbox
+		# names MUST match the supplied mailbox
+		# name pattern. A non-empty
+		# reference name argument is the name of a mailbox or a level of
 		#
-		# YARD =>
+		# mailbox hierarchy, and indicates the context in which the mailbox
+		# name is
+		# interpreted.
+		# 
+		# An empty ("" string) mailbox name argument is a special request to
 		#
-		# @param  reference [String]
-		# @param  wildcardedMailbox [String]
-		# @return  [CkMailboxes]
+		# return the hierarchy delimiter and the root name of the name given
+		# in the reference. The value
+		# returned as the root MAY be the empty
+		# string if the reference is non-rooted or is an empty
+		# string. In
+		# all cases, a hierarchy delimiter (or NIL if there is no hierarchy)
+		# is returned.
+		# This permits a client to get the hierarchy delimiter
+		# (or find out that the mailbox names are
+		# flat) even when no
+		# mailboxes by that name currently exist.
+		# 
+		# The reference and
+		# mailbox name arguments are interpreted into a
+		# canonical form that represents an unambiguous
+		# left-to-right
+		# hierarchy. The returned mailbox names will be in the interpreted
+		#
+		# form.
+		# 
+		# Note: The interpretation of the reference argument is
+		# implementation-defined.
+		# It depends upon whether the
+		# server implementation has a concept of the "current
+		# working
+		# directory" and leading "break out characters",
+		# which override the current working
+		# directory.
+		# 
+		# For example, on a server which exports a UNIX or NT
+		# filesystem, the
+		# reference argument contains the current
+		# working directory, and the mailbox name argument
+		# would
+		# contain the name as interpreted in the current working
+		# directory.
+		# 
+		# If a
+		# server implementation has no concept of break out
+		# characters, the canonical form is normally
+		# the reference
+		# name appended with the mailbox name. Note that if the
+		# server implements the
+		# namespace convention (section
+		# 5.1.2), "#" is a break out character and must be treated
+		# as
+		# such.
+		# 
+		# If the reference argument is not a level of mailbox
+		# hierarchy (that is, it is
+		# a \NoInferiors name), and/or
+		# the reference argument does not end with the hierarchy
+		#
+		# delimiter, it is implementation-dependent how this is
+		# interpreted. For example, a reference of
+		# "foo/bar" and
+		# mailbox name of "rag/baz" could be interpreted as
+		# "foo/bar/rag/baz",
+		# "foo/barrag/baz", or "foo/rag/baz".
+		# A client SHOULD NOT use such a reference argument
+		# except
+		# at the explicit request of the user. A hierarchical
+		# browser MUST NOT make any
+		# assumptions about server
+		# interpretation of the reference unless the reference is
+		# a level
+		# of mailbox hierarchy AND ends with the hierarchy
+		# delimiter.
+		# 
+		# Any part of the
+		# reference argument that is included in the
+		# interpreted form SHOULD prefix the interpreted form.
+		# It SHOULD
+		# also be in the same form as the reference name argument. This
+		# rule permits the
+		# client to determine if the returned mailbox name
+		# is in the context of the reference argument,
+		# or if something about
+		# the mailbox argument overrode the reference argument. Without
+		# this
+		# rule, the client would have to have knowledge of the server's
+		# naming semantics including what
+		# characters are "breakouts" that
+		# override a naming context.
+		# 
+		# For example, here are
+		# some examples of how references
+		# and mailbox names might be interpreted on a UNIX-based
+		#
+		# server:
+		# 
+		# Reference Mailbox Name Interpretation
+		# ------------ ------------
+		# --------------
+		# ~smith/Mail/ foo.* ~smith/Mail/foo.*
+		# archive/ % archive/%
+		# #news.
+		# comp.mail.* #news.comp.mail.*
+		# ~smith/Mail/ /usr/doc/foo /usr/doc/foo
+		# archive/ ~fred/Mail/*
+		# ~fred/Mail/*
+		# 
+		# The first three examples demonstrate interpretations in
+		# the context of
+		# the reference argument. Note that
+		# "~smith/Mail" SHOULD NOT be transformed into something
+		#
+		# like "/u2/users/smith/Mail", or it would be impossible
+		# for the client to determine that the
+		# interpretation was
+		# in the context of the reference.
+		# 
+		# The character "*" is a
+		# wildcard, and matches zero or more
+		# characters at this position. The character "%" is similar to
+		# "*",
+		# but it does not match a hierarchy delimiter. If the "%" wildcard
+		# is the last
+		# character of a mailbox name argument, matching levels
+		# of hierarchy are also returned. If these
+		# levels of hierarchy are
+		# not also selectable mailboxes, they are returned with the
+		#
+		# \Noselect mailbox name attribute (see the description of the LIST
+		# response for more
+		# details).
+		# 
+		# Server implementations are permitted to "hide" otherwise
+		# accessible
+		# mailboxes from the wildcard characters, by preventing
+		# certain characters or names from matching
+		# a wildcard in certain
+		# situations. For example, a UNIX-based server might restrict the
+		#
+		# interpretation of "*" so that an initial "/" character does not
+		# match.
+		# 
+		# The special
+		# name INBOX is included in the output from LIST, if
+		# INBOX is supported by this server for this
+		# user and if the
+		# uppercase string "INBOX" matches the interpreted reference and
+		# mailbox
+		# name arguments with wildcards as described above. The
+		# criteria for omitting INBOX is whether
+		# SELECT INBOX will return
+		# failure; it is not relevant whether the user's real INBOX
+		# resides
+		# on this or some other server.
+		# 
+		#
+		#
+		# @param reference [String]
+		# @param wildcardedMailbox [String]
+		#
+		# @return [CkMailboxes]
 		def ListMailboxes(reference, wildcardedMailbox)
 			# ...
 		end
 
+
 		# Method: ListSubscribed
 		#
-		# ==== Attributes
+		# The same as ListMailboxes, but returns only the subscribed mailboxes. (See ListMailboxes for more
+		# information.)
 		#
-		# +reference+ - String
-		# +wildcardedMailbox+ - String
-		# returns CkMailboxes
+		# @param reference [String]
+		# @param wildcardedMailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  reference [String]
-		# @param  wildcardedMailbox [String]
-		# @return  [CkMailboxes]
+		# @return [CkMailboxes]
 		def ListSubscribed(reference, wildcardedMailbox)
 			# ...
 		end
 
+
 		# Method: Login
 		#
-		# ==== Attributes
+		# Logs into the IMAP server. The component must first be connected to an IMAP server by calling
+		# Connect. If XOAUTH2 authentication is required, pass the XOAUTH2 access token in place of the
+		# password. (For GMail, the Chilkat HTTP class/object's G_SvcOauthAccessToken method can be called to
+		# obtain an XOAUTH2 access token.)
+		# To authenticate using XOAUTH2, make sure the AuthMethod
+		# property is set to "XOAUTH2". The XOAUTH2 authentication functionality was added in version
+		# 9.5.0.44.
 		#
-		# +loginName+ - String
-		# +password+ - String
-		# returns TrueClass, FalseClass
+		# @param loginName [String]
+		# @param password [String]
 		#
-		# YARD =>
-		#
-		# @param  loginName [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Login(loginName, password)
 			# ...
 		end
 
+
 		# Method: Logout
 		#
-		# ==== Attributes
+		# Logs out of the IMAP server.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Logout()
 			# ...
 		end
 
+
 		# Method: MoveMessages
 		#
-		# ==== Attributes
+		# Moves a set of messages from one mailbox to another. Note: This is only possible if the IMAP server
+		# supports the "MOVE" extension. The ARG1 contains message UIDs or sequence numbers for messages in
+		# the currently selected mailbox. The ARG2 is the destination mailbox/folder.
 		#
-		# +messageSet+ - CkMessageSet
-		# +destFolder+ - String
-		# returns TrueClass, FalseClass
+		# @param messageSet [CkMessageSet]
+		# @param destFolder [String]
 		#
-		# YARD =>
-		#
-		# @param  messageSet [CkMessageSet]
-		# @param  destFolder [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def MoveMessages(messageSet, destFolder)
 			# ...
 		end
 
+
 		# Method: Noop
 		#
-		# ==== Attributes
+		# Sends a NOOP command to the IMAP server and receives the response. The component must be connected
+		# and authenticated for this to succeed. Sending a NOOP is a good way of determining whether the
+		# connection to the IMAP server is up and active.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Noop()
 			# ...
 		end
 
+
 		# Method: RefetchMailFlags
 		#
-		# ==== Attributes
+		# Fetches the flags for an email and updates the flags in the email's header. When an email is
+		# retrieved from the IMAP server, it embeds the flags into the header in fields beginning with "ckx-".
+		# Methods such as GetMailFlag read these header fields.
 		#
-		# +email+ - CkEmail
-		# returns TrueClass, FalseClass
+		# @param email [CkEmail]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RefetchMailFlags(email)
 			# ...
 		end
 
+
 		# Method: RenameMailbox
 		#
-		# ==== Attributes
+		# Renames a mailbox.
 		#
-		# +fromMailbox+ - String
-		# +toMailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param fromMailbox [String]
+		# @param toMailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  fromMailbox [String]
-		# @param  toMailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RenameMailbox(fromMailbox, toMailbox)
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: Search
 		#
-		# ==== Attributes
+		# Searches the selected mailbox for messages that meet a given criteria and returns a message set of
+		# all matching messages. If bUid is true, then UIDs are returned in the message set, otherwise
+		# sequence numbers are returned.
+		# 
+		# The criteria is passed through to the low-level IMAP
+		# protocol unmodified, so the rules for the IMAP SEARCH command (RFC 3501) apply and are reproduced
+		# here:
+		# 
+		# 
+		# FROM RFC 3501 (IMAP Protocol)
+		# 
+		# The SEARCH command searches the
+		# mailbox for messages that match
+		# the given searching criteria. Searching criteria consist of
+		# one
+		# or more search keys. The untagged SEARCH response from the server
+		# contains a listing
+		# of message sequence numbers corresponding to
+		# those messages that match the searching
+		# criteria.
+		# 
+		# When multiple keys are specified, the result is the intersection
+		# (AND
+		# function) of all the messages that match those keys. For
+		# example, the criteria DELETED FROM
+		# "SMITH" SINCE 1-Feb-1994 refers
+		# to all deleted messages from Smith that were placed in the
+		# mailbox
+		# since February 1, 1994. A search key can also be a parenthesized
+		# list of one or
+		# more search keys (e.g., for use with the OR and NOT
+		# keys).
+		# 
+		# Server implementations
+		# MAY exclude [MIME-IMB] body parts with
+		# terminal content media types other than TEXT and MESSAGE
+		# from
+		# consideration in SEARCH matching.
+		# 
+		# The OPTIONAL [CHARSET] specification
+		# consists of the word
+		# "CHARSET" followed by a registered [CHARSET]. It indicates the
 		#
-		# +criteria+ - String
-		# +bUid+ - TrueClass, FalseClass
-		# returns CkMessageSet
+		# [CHARSET] of the strings that appear in the search criteria.
+		# [MIME-IMB] content transfer
+		# encodings, and [MIME-HDRS] strings in
+		# [RFC-2822]/[MIME-IMB] headers, MUST be decoded before
+		# comparing
+		# text in a [CHARSET] other than US-ASCII. US-ASCII MUST be
+		# supported; other
+		# [CHARSET]s MAY be supported.
+		# 
+		# If the server does not support the specified [CHARSET], it
+		# MUST
+		# return a tagged NO response (not a BAD). This response SHOULD
+		# contain the BADCHARSET
+		# response code, which MAY list the
+		# [CHARSET]s supported by the server.
+		# 
+		# In all search
+		# keys that use strings, a message matches the key if
+		# the string is a substring of the field. The
+		# matching is
+		# case-insensitive.
+		# 
+		# The defined search keys are as follows. Refer to the
+		# Formal
+		# Syntax section for the precise syntactic definitions of the
 		#
-		# YARD =>
+		# arguments.
+		# 
+		# 
+		# Messages with message sequence numbers corresponding to the
 		#
-		# @param  criteria [String]
-		# @param  bUid [TrueClass, FalseClass]
-		# @return  [CkMessageSet]
+		# specified message sequence number set.
+		# 
+		# ALL
+		# All messages in the mailbox; the default
+		# initial key for
+		# ANDing.
+		# 
+		# ANSWERED
+		# Messages with the \Answered flag
+		# set.
+		# 
+		# BCC 
+		# Messages that contain the specified string in the envelope
+		#
+		# structure's BCC field.
+		# 
+		# BEFORE 
+		# Messages whose internal date (disregarding time and
+		# timezone)
+		# is earlier than the specified date.
+		# 
+		# BODY 
+		# Messages that contain the
+		# specified string in the body of the
+		# message.
+		# 
+		# CC 
+		# Messages that contain the
+		# specified string in the envelope
+		# structure's CC field.
+		# 
+		# DELETED
+		# Messages with
+		# the \Deleted flag set.
+		# 
+		# DRAFT
+		# Messages with the \Draft flag set.
+		# 
+		#
+		# FLAGGED
+		# Messages with the \Flagged flag set.
+		# 
+		# FROM 
+		# Messages that contain the
+		# specified string in the envelope
+		# structure's FROM field.
+		# 
+		# HEADER 
+		# Messages that
+		# have a header with the specified field-name (as
+		# defined in [RFC-2822]) and that contains the
+		# specified string
+		# in the text of the header (what comes after the colon). If the
+		# string to
+		# search is zero-length, this matches all messages that
+		# have a header line with the specified
+		# field-name regardless of
+		# the contents.
+		# 
+		# KEYWORD 
+		# Messages with the specified
+		# keyword flag set.
+		# 
+		# LARGER 
+		# Messages with an [RFC-2822] size larger than the
+		# specified
+		# number of octets.
+		# 
+		# NEW
+		# Messages that have the \Recent flag set but
+		# not the \Seen flag.
+		# This is functionally equivalent to "(RECENT UNSEEN)".
+		# 
+		# NOT
+		# # Messages that do not match the specified search key.
+		# 
+		# OLD
+		# Messages that do not
+		# have the \Recent flag set. This is
+		# functionally equivalent to "NOT RECENT" (as opposed to
+		# "NOT
+		# NEW").
+		# 
+		# ON 
+		# Messages whose internal date (disregarding time and
+		# timezone)
+		# is within the specified date.
+		# 
+		# OR 
+		# Messages that match either search
+		# key.
+		# 
+		# RECENT
+		# Messages that have the \Recent flag set.
+		# 
+		# SEEN
+		# Messages
+		# that have the \Seen flag set.
+		# 
+		# SENTBEFORE 
+		# Messages whose [RFC-2822] Date: header
+		# (disregarding time and
+		# timezone) is earlier than the specified date.
+		# 
+		# SENTON 
+		#
+		# Messages whose [RFC-2822] Date: header (disregarding time and
+		# timezone) is within the specified
+		# date.
+		# 
+		# SENTSINCE 
+		# Messages whose [RFC-2822] Date: header (disregarding time
+		# and
+		# timezone) is within or later than the specified date.
+		# 
+		# SINCE 
+		# Messages
+		# whose internal date (disregarding time and timezone)
+		# is within or later than the specified
+		# date.
+		# 
+		# SMALLER 
+		# Messages with an [RFC-2822] size smaller than the specified
+		#
+		# number of octets.
+		# 
+		# SUBJECT 
+		# Messages that contain the specified string in the
+		# envelope
+		# structure's SUBJECT field.
+		# 
+		# TEXT 
+		# Messages that contain the specified
+		# string in the header or
+		# body of the message.
+		# 
+		# TO 
+		# Messages that contain the
+		# specified string in the envelope
+		# structure's TO field.
+		# 
+		# UID 
+		# Messages with
+		# unique identifiers corresponding to the specified
+		# unique identifier set. Sequence set ranges
+		# are permitted.
+		# 
+		# UNANSWERED
+		# Messages that do not have the \Answered flag
+		# set.
+		# 
+		# UNDELETED
+		# Messages that do not have the \Deleted flag set.
+		# 
+		#
+		# UNDRAFT
+		# Messages that do not have the \Draft flag set.
+		# 
+		# UNFLAGGED
+		# Messages that
+		# do not have the \Flagged flag set.
+		# 
+		# UNKEYWORD 
+		# Messages that do not have the
+		# specified keyword flag set.
+		# 
+		# UNSEEN
+		# Messages that do not have the \Seen flag
+		# set.
+		# 
+		#
+		#
+		# @param criteria [String]
+		# @param bUid [TrueClass, FalseClass]
+		#
+		# @return [CkMessageSet]
 		def Search(criteria, bUid)
 			# ...
 		end
 
+
 		# Method: SelectMailbox
 		#
-		# ==== Attributes
+		# Selects a mailbox. A mailbox must be selected before some methods, such as Search or FetchSingle,
+		# can be called. If the logged-on user does not have write-access to the mailbox, call ExamineMailbox
+		# instead.
+		# 
+		# Calling this method updates the NumMessages property.
 		#
-		# +mailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SelectMailbox(mailbox)
 			# ...
 		end
 
+
 		# Method: SendRawCommand
 		#
-		# ==== Attributes
+		# Allows for the sending of arbitrary commands to the IMAP server.
 		#
-		# +cmd+ - String
-		# returns String
+		# @param cmd [String]
+		# @param outRawResponse [CkString]
 		#
-		# YARD =>
-		#
-		# @param  cmd [String]
-		# @return  [String]
-		def SendRawCommand(cmd)
+		# @return [TrueClass, FalseClass]
+		def SendRawCommand(cmd, outRawResponse)
 			# ...
 		end
+
+
+		# Method: SendRawCommand
+		#
+		# Allows for the sending of arbitrary commands to the IMAP server.
+		#
+		# @param cmd [String]
+		#
+		# @return [String]
+		def sendRawCommand(cmd)
+			# ...
+		end
+
 
 		# Method: SendRawCommandB
 		#
-		# ==== Attributes
+		# The same as SendRawCommand, but instead of returning the response as a string, the binary bytes of
+		# the response are returned.
 		#
-		# +cmd+ - String
-		# returns CkByteData
+		# @param cmd [String]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  cmd [String]
-		# @return  [CkByteData]
-		def SendRawCommandB(cmd)
+		# @return [TrueClass, FalseClass]
+		def SendRawCommandB(cmd, outBytes)
 			# ...
 		end
+
 
 		# Method: SendRawCommandC
 		#
-		# ==== Attributes
+		# The same as SendRawCommandB, except that the command is provided as binary bytes rather than a
+		# string.
 		#
-		# +cmd+ - CkByteData
-		# returns CkByteData
+		# @param cmd [CkByteData]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  cmd [CkByteData]
-		# @return  [CkByteData]
-		def SendRawCommandC(cmd)
+		# @return [TrueClass, FalseClass]
+		def SendRawCommandC(cmd, outBytes)
 			# ...
 		end
 
+
 		# Method: SetCSP
 		#
-		# ==== Attributes
+		# (Only applies to the Microsoft Windows OS) Sets the Cryptographic Service Provider (CSP) to be used
+		# for encryption or digital signing, or decryption / signature verification.
+		# 
+		# This is not
+		# commonly used becaues the default Microsoft CSP is typically appropriate. 
+		# One instance where
+		# SetCSP is necessary is when using the Crypto-Pro CSP for the GOST R 34.10-2001 and GOST R 34.10-94
+		# providers.
 		#
-		# +csp+ - CkCsp
-		# returns TrueClass, FalseClass
+		# @param csp [CkCsp]
 		#
-		# YARD =>
-		#
-		# @param  csp [CkCsp]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetCSP(csp)
 			# ...
 		end
 
+
 		# Method: SetDecryptCert
 		#
-		# ==== Attributes
+		# Explicitly specifies the certificate to be used for decrypting encrypted email.
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetDecryptCert(cert)
 			# ...
 		end
 
+
 		# Method: SetDecryptCert2
 		#
-		# ==== Attributes
+		# Used to explicitly specify the certificate and associated private key to be used for decrypting
+		# S/MIME (PKCS7) email.
 		#
-		# +cert+ - CkCert
-		# +key+ - CkPrivateKey
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
+		# @param key [CkPrivateKey]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @param  key [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetDecryptCert2(cert, key)
 			# ...
 		end
 
+
 		# Method: SetFlag
 		#
-		# ==== Attributes
+		# Sets a flag for a single message on the IMAP server. If ARG4 = 1, the flag is turned on, if ARG4 =
+		# 0, the flag is turned off. Standard system flags such as "\Deleted", "\Seen", "\Answered",
+		# "\Flagged", "\Draft", and "\Answered" may be set. Custom flags such as "NonJunk", "$label1",
+		# "$MailFlagBit1", etc. may also be set.
+		# If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2
+		# is _FALSE_, then ARG1 represents a sequence number.
 		#
-		# +msgId+ - Fixnum
-		# +bUid+ - TrueClass, FalseClass
-		# +flagName+ - String
-		# +value+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
+		# @param flagName [String]
+		# @param value [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  msgId [Fixnum]
-		# @param  bUid [TrueClass, FalseClass]
-		# @param  flagName [String]
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetFlag(msgId, bUid, flagName, value)
 			# ...
 		end
 
+
 		# Method: SetFlags
 		#
-		# ==== Attributes
+		# Sets a flag for each message in the message set on the IMAP server. If ARG3 = 1, the flag is turned
+		# on, if ARG3 = 0, the flag is turned off. Standard system flags such as "\Deleted", "\Seen",
+		# "\Answered", "\Flagged", "\Draft", and "\Answered" may be set. Custom flags such as "NonJunk",
+		# "$label1", "$MailFlagBit1", etc. may also be set.
 		#
-		# +messageSet+ - CkMessageSet
-		# +flagName+ - String
-		# +value+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param messageSet [CkMessageSet]
+		# @param flagName [String]
+		# @param value [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  messageSet [CkMessageSet]
-		# @param  flagName [String]
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetFlags(messageSet, flagName, value)
 			# ...
 		end
 
+
 		# Method: SetMailFlag
 		#
-		# ==== Attributes
+		# Sets a flag for a single message on the IMAP server. The UID of the email object is used to find the
+		# message on the IMAP server that is to be affected. If ARG3 = 1, the flag is turned on, if ARG3 = 0,
+		# the flag is turned off.Both standard system flags as well as custom flags may be set.
+		# # Standard system flags typically begin with a backslash character, such as "\Deleted", "\Seen",
+		# "\Answered", "\Flagged", "\Draft", and "\Answered". Custom flags can be anything, such as "NonJunk",
+		# "$label1", "$MailFlagBit1", etc. .
+		# Note: When the Chilkat IMAP component downloads an email
+		# from an IMAP server, it inserts a "ckx-imap-uid" header field in the email object. This is
+		# subsequently used by this method to get the UID associated with the email. The "ckx-imap-uid" header
+		# must be present for this method to be successful.
+		# 
+		# Note: Calling this method is
+		# identical to calling the SetFlag method, except the UID is automatically obtained from the email
+		# object.
+		# 
+		# Important: Setting the "Deleted" flag does not remove the email from the
+		# mailbox. Emails marked "Deleted" are removed when the Expunge method is called.
 		#
-		# +email+ - CkEmail
-		# +flagName+ - String
-		# +value+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param email [CkEmail]
+		# @param flagName [String]
+		# @param value [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @param  flagName [String]
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetMailFlag(email, flagName, value)
 			# ...
 		end
 
+
 		# Method: SetQuota
 		#
-		# ==== Attributes
+		# Sets the quota for a ARG1. The ARG2 should be one of two keywords:"STORAGE" or "MESSAGE". Use
+		# "STORAGE" to set the maximum capacity of the combined messages in ARG1. Use "MESSAGE" to set the
+		# maximum number of messages allowed.
+		# 
+		# If setting a STORAGE quota, the ARG3 is in units of
+		# 1024 octets. For example, to specify a limit of 500,000,000 bytes, set ARG3 equal to 500,000.
+		# # This feature is only possible with IMAP servers that support the QUOTA extension/capability. If
+		# an IMAP server supports the QUOTA extension, it likely supports the STORAGE resource. The MESSAGE
+		# resource is less commonly supported.
 		#
-		# +quotaRoot+ - String
-		# +resource+ - String
-		# +quota+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param quotaRoot [String]
+		# @param resource [String]
+		# @param quota [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  quotaRoot [String]
-		# @param  resource [String]
-		# @param  quota [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetQuota(quotaRoot, resource, quota)
 			# ...
 		end
 
+
 		# Method: SetSslClientCert
 		#
-		# ==== Attributes
+		# Specifies a client-side certificate to be used for the SSL / TLS connection. In most cases, servers
+		# do not require client-side certificates for SSL/TLS. A client-side certificate is typically used in
+		# high-security situations where the certificate is an additional means to indentify the client to the
+		# server.
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCert(cert)
 			# ...
 		end
 
+
 		# Method: SetSslClientCertPem
 		#
-		# ==== Attributes
+		# (Same as SetSslClientCert, but allows a .pfx/.p12 file to be used directly) Specifies a client-side
+		# certificate to be used for the SSL / TLS connection. In most cases, servers do not require
+		# client-side certificates for SSL/TLS. A client-side certificate is typically used in high-security
+		# situations where the certificate is an additional means to indentify the client to the
+		# server.
+		# 
+		# The ARG1 may contain the actual PEM data, or it may contain the path of the PEM
+		# file. This method will automatically recognize whether it is a path or the PEM data itself.
 		#
-		# +pemDataOrFilename+ - String
-		# +pemPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param pemDataOrFilename [String]
+		# @param pemPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  pemDataOrFilename [String]
-		# @param  pemPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPem(pemDataOrFilename, pemPassword)
 			# ...
 		end
 
+
 		# Method: SetSslClientCertPfx
 		#
-		# ==== Attributes
+		# (Same as SetSslClientCert, but allows a .pfx/.p12 file to be used directly) Specifies a client-side
+		# certificate to be used for the SSL / TLS connection. In most cases, servers do not require
+		# client-side certificates for SSL/TLS. A client-side certificate is typically used in high-security
+		# situations where the certificate is an additional means to indentify the client to the server.
 		#
-		# +pfxFilename+ - String
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param pfxFilename [String]
+		# @param pfxPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  pfxFilename [String]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPfx(pfxFilename, pfxPassword)
 			# ...
 		end
 
+
 		# Method: SshAuthenticatePk
 		#
-		# ==== Attributes
+		# Authenticates with the SSH server using public-key authentication. The corresponding public key must
+		# have been installed on the SSH server for the ARG1. Authentication will succeed if the matching ARG2
+		# is provided.
+		# 
+		# Important: When reporting problems, please send the full contents of the
+		# LastErrorText property to support@chilkatsoft.com.
 		#
-		# +sshLogin+ - String
-		# +privateKey+ - CkSshKey
-		# returns TrueClass, FalseClass
+		# @param sshLogin [String]
+		# @param privateKey [CkSshKey]
 		#
-		# YARD =>
-		#
-		# @param  sshLogin [String]
-		# @param  privateKey [CkSshKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SshAuthenticatePk(sshLogin, privateKey)
 			# ...
 		end
 
+
 		# Method: SshAuthenticatePw
 		#
-		# ==== Attributes
+		# Authenticates with the SSH server using a ARG1 and ARG2.
+		# 
+		# An SSH tunneling (port
+		# forwarding) session always begins by first calling SshTunnel to connect to the SSH server, then
+		# calling either AuthenticatePw or AuthenticatePk to authenticate. Following this, your program should
+		# call Connect to connect with the IMAP server (via the SSH tunnel) and then Login to authenticate
+		# with the IMAP server.
+		# 
+		# Note: Once the SSH tunnel is setup by calling SshTunnel and
+		# SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the IMAP server use the
+		# SSH tunnel. No changes in programming are required other than making two initial calls to setup the
+		# tunnel.
+		# 
+		# Important: When reporting problems, please send the full contents of the
+		# LastErrorText property to support@chilkatsoft.com.
 		#
-		# +sshLogin+ - String
-		# +sshPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param sshLogin [String]
+		# @param sshPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  sshLogin [String]
-		# @param  sshPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SshAuthenticatePw(sshLogin, sshPassword)
 			# ...
 		end
 
+
 		# Method: SshCloseTunnel
 		#
-		# ==== Attributes
+		# Closes the SSH tunnel previously opened by SshOpenTunnel.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SshCloseTunnel()
 			# ...
 		end
 
+
 		# Method: SshOpenTunnel
 		#
-		# ==== Attributes
+		# Connects to an SSH server and creates a tunnel for IMAP. The ARG1 is the hostname (or IP address) of
+		# the SSH server. The ARG2 is typically 22, which is the standard SSH port number.
+		# 
+		# An SSH
+		# tunneling (port forwarding) session always begins by first calling SshOpenTunnel to connect to the
+		# SSH server, followed by calling either SshAuthenticatePw or SshAuthenticatePk to authenticate. Your
+		# program would then call Connect to connect with the IMAP server (via the SSH tunnel) and then Login
+		# to authenticate with the IMAP server.
+		# 
+		# Note: Once the SSH tunnel is setup by calling
+		# SshOpenTunnel and SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the
+		# IMAP server use the SSH tunnel. No changes in programming are required other than making two initial
+		# calls to setup the tunnel.
+		# 
+		# Important: When reporting problems, please send the full
+		# contents of the LastErrorText property to support@chilkatsoft.com.
 		#
-		# +sshHostname+ - String
-		# +sshPort+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param sshHostname [String]
+		# @param sshPort [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  sshHostname [String]
-		# @param  sshPort [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SshOpenTunnel(sshHostname, sshPort)
 			# ...
 		end
 
+
 		# Method: SshTunnel
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Connects to an SSH server and creates a tunnel for IMAP. The ARG1 is the hostname (or IP address) of
+		# the SSH server. The ARG2 is typically 22, which is the standard SSH port number.
+		# 
+		# An SSH
+		# tunneling (port forwarding) session always begins by first calling SshTunnel to connect to the SSH
+		# server, followed by calling either SshAuthenticatePw or SshAuthenticatePk to authenticate. Your
+		# program would then call Connect to connect with the IMAP server (via the SSH tunnel) and then Login
+		# to authenticate with the IMAP server.
+		# 
+		# Note: Once the SSH tunnel is setup by calling
+		# SshTunnel and SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the IMAP
+		# server use the SSH tunnel. No changes in programming are required other than making two initial
+		# calls to setup the tunnel.
+		# 
+		# Important: This method is deprecated. Programs should
+		# instead call SshOpenTunnel. (The only change is in the name of the method.)
 		#
-		# +sshServerHostname+ - String
-		# +sshPort+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param sshServerHostname [String]
+		# @param sshPort [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  sshServerHostname [String]
-		# @param  sshPort [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SshTunnel(sshServerHostname, sshPort)
 			# ...
 		end
 
+
 		# Method: StoreFlags
 		#
-		# ==== Attributes
+		# Sets one or more flags to a specific value for an email. The email is indicated by either a UID or
+		# sequence number, depending on whether ARG2 is _TRUE_ (UID) or _FALSE_ (sequence
+		# number).
+		# 
+		# ARG3 should be a space separated string of flag names. Both standard and
+		# customer flags may be set. Standard flag names typically begin with a backslash character. For
+		# example: "\Seen \Answered". Custom flag names may also be included. Custom flags often begin with a
+		# $ character, such as "$label1", or "$MailFlagBit0". Other customer flags may begin with any
+		# character, such as "NonJunk".
+		# 
+		# ARG4 should be 1 to turn the flags on, or 0 to turn the
+		# flags off.
 		#
-		# +msgId+ - Fixnum
-		# +bUid+ - TrueClass, FalseClass
-		# +flagNames+ - String
-		# +value+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param msgId [Fixnum]
+		# @param bUid [TrueClass, FalseClass]
+		# @param flagNames [String]
+		# @param value [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  msgId [Fixnum]
-		# @param  bUid [TrueClass, FalseClass]
-		# @param  flagNames [String]
-		# @param  value [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def StoreFlags(msgId, bUid, flagNames, value)
 			# ...
 		end
 
+
 		# Method: Subscribe
 		#
-		# ==== Attributes
+		# Subscribe to an IMAP mailbox.
 		#
-		# +mailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Subscribe(mailbox)
 			# ...
 		end
 
+
 		# Method: UnlockComponent
 		#
-		# ==== Attributes
+		# Unlocks the component. This must be called once at the beginning of your program to unlock the
+		# component. A purchased unlock code is provided when the IMAP component is licensed. Any string, such
+		# as "Hello World", may be passed to this method to automatically begin a fully-functional 30-day
+		# trial.
 		#
-		# +unlockCode+ - String
-		# returns TrueClass, FalseClass
+		# @param unlockCode [String]
 		#
-		# YARD =>
-		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
+
 		# Method: Unsubscribe
 		#
-		# ==== Attributes
+		# Unsubscribe from an IMAP mailbox.
 		#
-		# +mailbox+ - String
-		# returns TrueClass, FalseClass
+		# @param mailbox [String]
 		#
-		# YARD =>
-		#
-		# @param  mailbox [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Unsubscribe(mailbox)
 			# ...
 		end
 
+
 		# Method: UseCertVault
 		#
-		# ==== Attributes
+		# Adds an XML certificate vault to the object's internal list of sources to be searched for
+		# certificates and private keys when encrypting/decrypting or signing/verifying. Unlike the
+		# AddPfxSourceData and AddPfxSourceFile methods, only a single XML certificate vault can be used. If
+		# UseCertVault is called multiple times, only the last certificate vault will be used, as each call to
+		# UseCertVault will replace the certificate vault provided in previous calls.
 		#
-		# +vault+ - CkXmlCertVault
-		# returns TrueClass, FalseClass
+		# @param vault [CkXmlCertVault]
 		#
-		# YARD =>
-		#
-		# @param  vault [CkXmlCertVault]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
 
+
 		# Method: UseSsh
 		#
-		# ==== Attributes
+		# Uses an existing SSH tunnel for the connection to the IMAP server. This method is identical to the
+		# UseSshTunnel method, except the SSH connection is obtained from an SSH object instead of a Socket
+		# object.
+		# 
+		# This is useful for sharing an existing SSH tunnel connection wth other objects.
+		# (SSH is a protocol where the tunnel contains many logical channels. IMAP connections can exist
+		# simultaneously with other connection within a single SSH tunnel as SSH channels.)
 		#
-		# +ssh+ - CkSsh
-		# returns TrueClass, FalseClass
+		# @param ssh [CkSsh]
 		#
-		# YARD =>
-		#
-		# @param  ssh [CkSsh]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UseSsh(ssh)
 			# ...
 		end
 
+
 		# Method: UseSshTunnel
 		#
-		# ==== Attributes
+		# Uses an existing SSH tunnel. This is useful for sharing an existing SSH tunnel connection wth other
+		# objects. (SSH is a protocol where the tunnel contains many logical channels. IMAP connections can
+		# exist simultaneously with other connection within a single SSH tunnel as SSH channels.)
 		#
-		# +tunnel+ - CkSocket
-		# returns TrueClass, FalseClass
+		# @param tunnel [CkSocket]
 		#
-		# YARD =>
-		#
-		# @param  tunnel [CkSocket]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UseSshTunnel(tunnel)
 			# ...
 		end
+
 	end
 end

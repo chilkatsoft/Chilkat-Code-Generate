@@ -1,2690 +1,4872 @@
 module Chilkat
 	class CkCrypt2 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
 		#
-		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AbortCurrent(newval) end
 
-		# returns Bignum
+		# The BCrypt work factor to be used for the BCryptHash and BCryptVerify. This is the log2 of the
+		# number of rounds of hashing to apply. For example, if the work (cost) factor is 12, then 2^12 rounds
+		# of hashing are applied. The purpose of this cost factor is to make the BCrypt computation expensive
+		# enought to prevent brute-force attacks. (Any complaints about BCrypt "not being fast enough" will be
+		# ignored.)
+		# 
+		# This property must have a value ranging from 4 to 31 inclusive.
+		# # 
+		# The default value is 10.
+		#
 		# @return [Bignum]
 		def get_BCryptWorkFactor() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The BCrypt work factor to be used for the BCryptHash and BCryptVerify. This is the log2 of the
+		# number of rounds of hashing to apply. For example, if the work (cost) factor is 12, then 2^12 rounds
+		# of hashing are applied. The purpose of this cost factor is to make the BCrypt computation expensive
+		# enought to prevent brute-force attacks. (Any complaints about BCrypt "not being fast enough" will be
+		# ignored.)
+		# 
+		# This property must have a value ranging from 4 to 31 inclusive.
+		# # 
+		# The default value is 10.
 		#
 		# @param newval [Bignum]
-		def set_BCryptWorkFactor(newval) end
+		def put_BCryptWorkFactor(newval) end
 
-		# returns Bignum
+		# The block-size (in bytes) of the selected encryption algorithm. For example, if the CryptAlgorithm
+		# property is set to "aes", the BlockSize property is automatically set to 16. The block-size for the
+		# ARC4 streaming encryption algorithm is 1.
+		#
 		# @return [Bignum]
 		def get_BlockSize() end
 
-		# returns Bignum
-		# This method has been deprecated. Do not use it.
-		# @return [Bignum]
+		# Controls whether bytes are 4321 swapped on decryption. This helps in handling byte-ordering issues
+		# with cross-platform applications.
+		#
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_ByteSwapOnDecrypt() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
-		# This method has been deprecated. Do not use it.
+		# Controls whether bytes are 4321 swapped on decryption. This helps in handling byte-ordering issues
+		# with cross-platform applications.
 		#
-		# @param newval [Bignum]
+		# @param newval [TrueClass, FalseClass]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
-		def set_ByteSwapOnDecrypt(newval) end
+		def put_ByteSwapOnDecrypt(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Applies to all methods that create PKCS7 signatures. To create a CAdES-BES signature, set this
+		# property equal to _TRUE_. The default value of this property is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_CadesEnabled() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Applies to all methods that create PKCS7 signatures. To create a CAdES-BES signature, set this
+		# property equal to _TRUE_. The default value of this property is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_CadesEnabled(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_CadesEnabled(newval) end
 
-		# returns String
+		# Applies to all methods that create PKCS7 signatures. To create a CAdES-EPES signature, set the
+		# CadesEnabled property = _TRUE_, and also provide values for each of the following properties:
+		# CadesSigPolicyHash, CadesSigPolicyId, and CadesSigPolicyUri. For example (in pseudo-code):
+		# # 
+		# cryptObj.CadesSigPolicyId = "2.16.76.1.7.1.1.1"
+		# cryptObj.CadesSigPolicyUri =
+		# "http://politicas.icpbrasil.gov.br/PA_AD_RB.der"
+		# cryptObj.CadesSigPolicyHash =
+		# "rySugyKaMhiMR8Y/o5yuU2A2bF0="
+		# 
+		# Note: Do NOT use the values above. They are only
+		# provided as an example to show valid values. For example, the Policy ID is an OID. The Policy URI is
+		# a typically a URL to a DER encoded policy file, and the Policy Hash is a base64 encoded hash.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_CadesSigPolicyHash() end
+		def get_CadesSigPolicyHash(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Applies to all methods that create PKCS7 signatures. To create a CAdES-EPES signature, set the
+		# CadesEnabled property = _TRUE_, and also provide values for each of the following properties:
+		# CadesSigPolicyHash, CadesSigPolicyId, and CadesSigPolicyUri. For example (in pseudo-code):
+		# # 
+		# cryptObj.CadesSigPolicyId = "2.16.76.1.7.1.1.1"
+		# cryptObj.CadesSigPolicyUri =
+		# "http://politicas.icpbrasil.gov.br/PA_AD_RB.der"
+		# cryptObj.CadesSigPolicyHash =
+		# "rySugyKaMhiMR8Y/o5yuU2A2bF0="
+		# 
+		# Note: Do NOT use the values above. They are only
+		# provided as an example to show valid values. For example, the Policy ID is an OID. The Policy URI is
+		# a typically a URL to a DER encoded policy file, and the Policy Hash is a base64 encoded hash.
 		#
 		# @param newval [String]
-		def set_CadesSigPolicyHash(newval) end
+		def put_CadesSigPolicyHash(newval) end
 
-		# returns String
+		# Applies to all methods that create PKCS7 signatures. To create a CAdES-EPES signature, set the
+		# CadesEnabled property = _TRUE_, and also provide values for each of the following properties:
+		# CadesSigPolicyHash, CadesSigPolicyId, and CadesSigPolicyUri. For example (in pseudo-code):
+		# # 
+		# cryptObj.CadesSigPolicyId = "2.16.76.1.7.1.1.1"
+		# cryptObj.CadesSigPolicyUri =
+		# "http://politicas.icpbrasil.gov.br/PA_AD_RB.der"
+		# cryptObj.CadesSigPolicyHash =
+		# "rySugyKaMhiMR8Y/o5yuU2A2bF0="
+		# 
+		# Note: Do NOT use the values above. They are only
+		# provided as an example to show valid values. For example, the Policy ID is an OID. The Policy URI is
+		# a typically a URL to a DER encoded policy file, and the Policy Hash is a base64 encoded hash.
+		#
 		# @return [String]
 		def cadesSigPolicyHash() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Applies to all methods that create PKCS7 signatures. To create a CAdES-EPES signature, set the
+		# CadesEnabled property = _TRUE_, and also provide values for each of the following properties:
+		# CadesSigPolicyHash, CadesSigPolicyId, and CadesSigPolicyUri. For example (in pseudo-code):
+		# # 
+		# cryptObj.CadesSigPolicyId = "2.16.76.1.7.1.1.1"
+		# cryptObj.CadesSigPolicyUri =
+		# "http://politicas.icpbrasil.gov.br/PA_AD_RB.der"
+		# cryptObj.CadesSigPolicyHash =
+		# "rySugyKaMhiMR8Y/o5yuU2A2bF0="
+		# 
+		# Note: Do NOT use the values above. They are only
+		# provided as an example to show valid values. For example, the Policy ID is an OID. The Policy URI is
+		# a typically a URL to a DER encoded policy file, and the Policy Hash is a base64 encoded hash.
 		#
 		# @param newval [String]
-		def cadesSigPolicyHash(newval) end
+		def put_CadesSigPolicyHash(newval) end
 
-		# returns String
+		# See the description for the CadesSigPolicyHash property above.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_CadesSigPolicyId() end
+		def get_CadesSigPolicyId(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# See the description for the CadesSigPolicyHash property above.
 		#
 		# @param newval [String]
-		def set_CadesSigPolicyId(newval) end
+		def put_CadesSigPolicyId(newval) end
 
-		# returns String
+		# See the description for the CadesSigPolicyHash property above.
+		#
 		# @return [String]
 		def cadesSigPolicyId() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# See the description for the CadesSigPolicyHash property above.
 		#
 		# @param newval [String]
-		def cadesSigPolicyId(newval) end
+		def put_CadesSigPolicyId(newval) end
 
-		# returns String
+		# See the description for the CadesSigPolicyHash property above.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_CadesSigPolicyUri() end
+		def get_CadesSigPolicyUri(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# See the description for the CadesSigPolicyHash property above.
 		#
 		# @param newval [String]
-		def set_CadesSigPolicyUri(newval) end
+		def put_CadesSigPolicyUri(newval) end
 
-		# returns String
+		# See the description for the CadesSigPolicyHash property above.
+		#
 		# @return [String]
 		def cadesSigPolicyUri() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# See the description for the CadesSigPolicyHash property above.
 		#
 		# @param newval [String]
-		def cadesSigPolicyUri(newval) end
+		def put_CadesSigPolicyUri(newval) end
 
-		# returns String
+		# Controls the character encoding of the text encrypted, signed, hashed or compressed. This property
+		# is relevant wherever strings are used as inputs or outputs.
+		# When working with strings, it is
+		# important to know the exact bytes that are being encrypted/hashed/signed/compressed. This is
+		# critical when interoperating with other systems. If your application is sending an encrypted string
+		# to another system that will decrypt it, you will need to know the encoding of the string that is
+		# expected on the receiving end (after decryption). If you pass Unicode data (2 byte per character) to
+		# the encryptor, subsequent decryption will reproduce the original Unicode. However, it may be that
+		# your program works with Unicode strings, but the recipient of the encrypted data works with
+		# iso-8859-1 strings. In such a case, setting the Charset property to "iso-8859-1" causes the
+		# character data to be automatically converted to the Charset before being encrypted (or compressed,
+		# or hashed, or signed). The set of valid charsets is listed
+		# below:
+		# 
+		# hex
+		# base64
+		# * "hex" and "base64" are special values that allow for
+		# binary (non-text) encoded data to be passed to any method where the input data is a string.
+		#
+		# Rather than converting to an actual charset (such as utf-8, iso-8859-1), the binary data is decoded,
+		# and the decoded bytes are passed
+		# to the underlying encryptor, hashing, signing,
+		# etc.
+		# ANSI
+		# us-ascii
+		# unicode
+		# unicodefffe
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Charset() end
+		def get_Charset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the character encoding of the text encrypted, signed, hashed or compressed. This property
+		# is relevant wherever strings are used as inputs or outputs.
+		# When working with strings, it is
+		# important to know the exact bytes that are being encrypted/hashed/signed/compressed. This is
+		# critical when interoperating with other systems. If your application is sending an encrypted string
+		# to another system that will decrypt it, you will need to know the encoding of the string that is
+		# expected on the receiving end (after decryption). If you pass Unicode data (2 byte per character) to
+		# the encryptor, subsequent decryption will reproduce the original Unicode. However, it may be that
+		# your program works with Unicode strings, but the recipient of the encrypted data works with
+		# iso-8859-1 strings. In such a case, setting the Charset property to "iso-8859-1" causes the
+		# character data to be automatically converted to the Charset before being encrypted (or compressed,
+		# or hashed, or signed). The set of valid charsets is listed
+		# below:
+		# 
+		# hex
+		# base64
+		# * "hex" and "base64" are special values that allow for
+		# binary (non-text) encoded data to be passed to any method where the input data is a string.
+		#
+		# Rather than converting to an actual charset (such as utf-8, iso-8859-1), the binary data is decoded,
+		# and the decoded bytes are passed
+		# to the underlying encryptor, hashing, signing,
+		# etc.
+		# ANSI
+		# us-ascii
+		# unicode
+		# unicodefffe
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
+		#
 		#
 		# @param newval [String]
-		def set_Charset(newval) end
+		def put_Charset(newval) end
 
-		# returns String
+		# Controls the character encoding of the text encrypted, signed, hashed or compressed. This property
+		# is relevant wherever strings are used as inputs or outputs.
+		# When working with strings, it is
+		# important to know the exact bytes that are being encrypted/hashed/signed/compressed. This is
+		# critical when interoperating with other systems. If your application is sending an encrypted string
+		# to another system that will decrypt it, you will need to know the encoding of the string that is
+		# expected on the receiving end (after decryption). If you pass Unicode data (2 byte per character) to
+		# the encryptor, subsequent decryption will reproduce the original Unicode. However, it may be that
+		# your program works with Unicode strings, but the recipient of the encrypted data works with
+		# iso-8859-1 strings. In such a case, setting the Charset property to "iso-8859-1" causes the
+		# character data to be automatically converted to the Charset before being encrypted (or compressed,
+		# or hashed, or signed). The set of valid charsets is listed
+		# below:
+		# 
+		# hex
+		# base64
+		# * "hex" and "base64" are special values that allow for
+		# binary (non-text) encoded data to be passed to any method where the input data is a string.
+		#
+		# Rather than converting to an actual charset (such as utf-8, iso-8859-1), the binary data is decoded,
+		# and the decoded bytes are passed
+		# to the underlying encryptor, hashing, signing,
+		# etc.
+		# ANSI
+		# us-ascii
+		# unicode
+		# unicodefffe
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
+		#
+		#
 		# @return [String]
 		def charset() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the character encoding of the text encrypted, signed, hashed or compressed. This property
+		# is relevant wherever strings are used as inputs or outputs.
+		# When working with strings, it is
+		# important to know the exact bytes that are being encrypted/hashed/signed/compressed. This is
+		# critical when interoperating with other systems. If your application is sending an encrypted string
+		# to another system that will decrypt it, you will need to know the encoding of the string that is
+		# expected on the receiving end (after decryption). If you pass Unicode data (2 byte per character) to
+		# the encryptor, subsequent decryption will reproduce the original Unicode. However, it may be that
+		# your program works with Unicode strings, but the recipient of the encrypted data works with
+		# iso-8859-1 strings. In such a case, setting the Charset property to "iso-8859-1" causes the
+		# character data to be automatically converted to the Charset before being encrypted (or compressed,
+		# or hashed, or signed). The set of valid charsets is listed
+		# below:
+		# 
+		# hex
+		# base64
+		# * "hex" and "base64" are special values that allow for
+		# binary (non-text) encoded data to be passed to any method where the input data is a string.
+		#
+		# Rather than converting to an actual charset (such as utf-8, iso-8859-1), the binary data is decoded,
+		# and the decoded bytes are passed
+		# to the underlying encryptor, hashing, signing,
+		# etc.
+		# ANSI
+		# us-ascii
+		# unicode
+		# unicodefffe
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
+		#
 		#
 		# @param newval [String]
-		def charset(newval) end
+		def put_Charset(newval) end
 
-		# returns String
+		# Controls the cipher mode for block encryption algorithms (AES, Blowfish,TwoFish, DES, 3DES, RC2).
+		# Possible values are "CBC" (the default) , "ECB", "CTR", "OFB", "GCM", and "CFB". These acronyms have
+		# the following meanings: 
+		# 
+		# CBC: Cipher Block Chaining,
+		# ECB: Electronic
+		# CookBook
+		# CTR: Counter Mode
+		# CFB: Cipher Feedback
+		# OFB: Output Feedback
+		# GCM:
+		# Galois/Counter Mode
+		# 
+		# (see http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation
+		# )
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, the CFB mode is only implemented for AES, Blowfish,
+		# and DES/3DES, and the CTR mode is only implemented for AES.
+		# 
+		# Starting in v9.5.0.55 CFB
+		# and OFB modes are useable with all encryption algorithms, and GCM (Galois/Counter Mode) is available
+		# with any cipher having a 16-byte block size, such as AES and Twofish. CFB, OFB, CTR, and GCM modes
+		# convert block ciphers into stream ciphers. In these modes of operation, the PaddingScheme property
+		# is unused because no padding occurs.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_CipherMode() end
+		def get_CipherMode(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the cipher mode for block encryption algorithms (AES, Blowfish,TwoFish, DES, 3DES, RC2).
+		# Possible values are "CBC" (the default) , "ECB", "CTR", "OFB", "GCM", and "CFB". These acronyms have
+		# the following meanings: 
+		# 
+		# CBC: Cipher Block Chaining,
+		# ECB: Electronic
+		# CookBook
+		# CTR: Counter Mode
+		# CFB: Cipher Feedback
+		# OFB: Output Feedback
+		# GCM:
+		# Galois/Counter Mode
+		# 
+		# (see http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation
+		# )
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, the CFB mode is only implemented for AES, Blowfish,
+		# and DES/3DES, and the CTR mode is only implemented for AES.
+		# 
+		# Starting in v9.5.0.55 CFB
+		# and OFB modes are useable with all encryption algorithms, and GCM (Galois/Counter Mode) is available
+		# with any cipher having a 16-byte block size, such as AES and Twofish. CFB, OFB, CTR, and GCM modes
+		# convert block ciphers into stream ciphers. In these modes of operation, the PaddingScheme property
+		# is unused because no padding occurs.
 		#
 		# @param newval [String]
-		def set_CipherMode(newval) end
+		def put_CipherMode(newval) end
 
-		# returns String
+		# Controls the cipher mode for block encryption algorithms (AES, Blowfish,TwoFish, DES, 3DES, RC2).
+		# Possible values are "CBC" (the default) , "ECB", "CTR", "OFB", "GCM", and "CFB". These acronyms have
+		# the following meanings: 
+		# 
+		# CBC: Cipher Block Chaining,
+		# ECB: Electronic
+		# CookBook
+		# CTR: Counter Mode
+		# CFB: Cipher Feedback
+		# OFB: Output Feedback
+		# GCM:
+		# Galois/Counter Mode
+		# 
+		# (see http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation
+		# )
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, the CFB mode is only implemented for AES, Blowfish,
+		# and DES/3DES, and the CTR mode is only implemented for AES.
+		# 
+		# Starting in v9.5.0.55 CFB
+		# and OFB modes are useable with all encryption algorithms, and GCM (Galois/Counter Mode) is available
+		# with any cipher having a 16-byte block size, such as AES and Twofish. CFB, OFB, CTR, and GCM modes
+		# convert block ciphers into stream ciphers. In these modes of operation, the PaddingScheme property
+		# is unused because no padding occurs.
+		#
 		# @return [String]
 		def cipherMode() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the cipher mode for block encryption algorithms (AES, Blowfish,TwoFish, DES, 3DES, RC2).
+		# Possible values are "CBC" (the default) , "ECB", "CTR", "OFB", "GCM", and "CFB". These acronyms have
+		# the following meanings: 
+		# 
+		# CBC: Cipher Block Chaining,
+		# ECB: Electronic
+		# CookBook
+		# CTR: Counter Mode
+		# CFB: Cipher Feedback
+		# OFB: Output Feedback
+		# GCM:
+		# Galois/Counter Mode
+		# 
+		# (see http://en.wikipedia.org/wiki/Block_cipher_modes_of_operation
+		# )
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, the CFB mode is only implemented for AES, Blowfish,
+		# and DES/3DES, and the CTR mode is only implemented for AES.
+		# 
+		# Starting in v9.5.0.55 CFB
+		# and OFB modes are useable with all encryption algorithms, and GCM (Galois/Counter Mode) is available
+		# with any cipher having a 16-byte block size, such as AES and Twofish. CFB, OFB, CTR, and GCM modes
+		# convert block ciphers into stream ciphers. In these modes of operation, the PaddingScheme property
+		# is unused because no padding occurs.
 		#
 		# @param newval [String]
-		def cipherMode(newval) end
+		def put_CipherMode(newval) end
 
-		# returns String
+		# Selects the compression algorithm to be used for the various compress and inflate methods.
+		# Currently, the only valid setting is "BZIP2".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_CompressionAlgorithm() end
+		def get_CompressionAlgorithm(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the compression algorithm to be used for the various compress and inflate methods.
+		# Currently, the only valid setting is "BZIP2".
 		#
 		# @param newval [String]
-		def set_CompressionAlgorithm(newval) end
+		def put_CompressionAlgorithm(newval) end
 
-		# returns String
+		# Selects the compression algorithm to be used for the various compress and inflate methods.
+		# Currently, the only valid setting is "BZIP2".
+		#
 		# @return [String]
 		def compressionAlgorithm() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the compression algorithm to be used for the various compress and inflate methods.
+		# Currently, the only valid setting is "BZIP2".
 		#
 		# @param newval [String]
-		def compressionAlgorithm(newval) end
+		def put_CompressionAlgorithm(newval) end
 
-		# returns String
+		# Selects the encryption algorithm for encrypting and decrypting. Possible values are: "chacha20",
+		# "pki", "aes", "blowfish", "blowfish2", "des", "3des", "rc2", "arc4", "twofish", "pbes1" and "pbes2".
+		# The "pki" encryption algorithm isn't a specific algorithm, but instead tells the component to
+		# encrypt/decrypt using public-key encryption with digital certificates. The other choices are
+		# symmetric encryption algorithms that do not involve digital certificates and public/private keys.
+		# # 
+		# The original Chilkat implementation of Blowfish has a 4321 byte-swapping issue (the
+		# results are 4321 byte-swapped). The new implementation ("blowfish2") does not byte swap. This should
+		# be used for compatibility with other Blowfish software.
+		# 
+		# Password-based encryption (PBE)
+		# is selected by setting this property to "pbes1" or "pbes2". Password-based encryption is defined in
+		# the PKCS5 Password-Based Cryptography Standard at https://tools.ietf.org/html/rfc2898. If PBE is
+		# used, the underlying encryption algorithm is specified by the PbesAlgorithm property. The underlying
+		# encryption (PbesAlgorithm) for PBES1 is limited to 56-bit DES or 64-bit RC2.
+		# 
+		# Note:The
+		# chacha20 algorithm is introduced in Chilkat v9.5.0.55.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_CryptAlgorithm() end
+		def get_CryptAlgorithm(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the encryption algorithm for encrypting and decrypting. Possible values are: "chacha20",
+		# "pki", "aes", "blowfish", "blowfish2", "des", "3des", "rc2", "arc4", "twofish", "pbes1" and "pbes2".
+		# The "pki" encryption algorithm isn't a specific algorithm, but instead tells the component to
+		# encrypt/decrypt using public-key encryption with digital certificates. The other choices are
+		# symmetric encryption algorithms that do not involve digital certificates and public/private keys.
+		# # 
+		# The original Chilkat implementation of Blowfish has a 4321 byte-swapping issue (the
+		# results are 4321 byte-swapped). The new implementation ("blowfish2") does not byte swap. This should
+		# be used for compatibility with other Blowfish software.
+		# 
+		# Password-based encryption (PBE)
+		# is selected by setting this property to "pbes1" or "pbes2". Password-based encryption is defined in
+		# the PKCS5 Password-Based Cryptography Standard at https://tools.ietf.org/html/rfc2898. If PBE is
+		# used, the underlying encryption algorithm is specified by the PbesAlgorithm property. The underlying
+		# encryption (PbesAlgorithm) for PBES1 is limited to 56-bit DES or 64-bit RC2.
+		# 
+		# Note:The
+		# chacha20 algorithm is introduced in Chilkat v9.5.0.55.
 		#
 		# @param newval [String]
-		def set_CryptAlgorithm(newval) end
+		def put_CryptAlgorithm(newval) end
 
-		# returns String
+		# Selects the encryption algorithm for encrypting and decrypting. Possible values are: "chacha20",
+		# "pki", "aes", "blowfish", "blowfish2", "des", "3des", "rc2", "arc4", "twofish", "pbes1" and "pbes2".
+		# The "pki" encryption algorithm isn't a specific algorithm, but instead tells the component to
+		# encrypt/decrypt using public-key encryption with digital certificates. The other choices are
+		# symmetric encryption algorithms that do not involve digital certificates and public/private keys.
+		# # 
+		# The original Chilkat implementation of Blowfish has a 4321 byte-swapping issue (the
+		# results are 4321 byte-swapped). The new implementation ("blowfish2") does not byte swap. This should
+		# be used for compatibility with other Blowfish software.
+		# 
+		# Password-based encryption (PBE)
+		# is selected by setting this property to "pbes1" or "pbes2". Password-based encryption is defined in
+		# the PKCS5 Password-Based Cryptography Standard at https://tools.ietf.org/html/rfc2898. If PBE is
+		# used, the underlying encryption algorithm is specified by the PbesAlgorithm property. The underlying
+		# encryption (PbesAlgorithm) for PBES1 is limited to 56-bit DES or 64-bit RC2.
+		# 
+		# Note:The
+		# chacha20 algorithm is introduced in Chilkat v9.5.0.55.
+		#
 		# @return [String]
 		def cryptAlgorithm() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the encryption algorithm for encrypting and decrypting. Possible values are: "chacha20",
+		# "pki", "aes", "blowfish", "blowfish2", "des", "3des", "rc2", "arc4", "twofish", "pbes1" and "pbes2".
+		# The "pki" encryption algorithm isn't a specific algorithm, but instead tells the component to
+		# encrypt/decrypt using public-key encryption with digital certificates. The other choices are
+		# symmetric encryption algorithms that do not involve digital certificates and public/private keys.
+		# # 
+		# The original Chilkat implementation of Blowfish has a 4321 byte-swapping issue (the
+		# results are 4321 byte-swapped). The new implementation ("blowfish2") does not byte swap. This should
+		# be used for compatibility with other Blowfish software.
+		# 
+		# Password-based encryption (PBE)
+		# is selected by setting this property to "pbes1" or "pbes2". Password-based encryption is defined in
+		# the PKCS5 Password-Based Cryptography Standard at https://tools.ietf.org/html/rfc2898. If PBE is
+		# used, the underlying encryption algorithm is specified by the PbesAlgorithm property. The underlying
+		# encryption (PbesAlgorithm) for PBES1 is limited to 56-bit DES or 64-bit RC2.
+		# 
+		# Note:The
+		# chacha20 algorithm is introduced in Chilkat v9.5.0.55.
 		#
 		# @param newval [String]
-		def cryptAlgorithm(newval) end
+		def put_CryptAlgorithm(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# Controls the encoding of binary data to a printable string for many methods. The valid modes are
+		# "Base64", "modBase64", "base64url", "Base32", "Base58", "UU", "QP" (for quoted-printable), "URL"
+		# (for url-encoding), "Hex", "Q", "B", "url_oauth", "url_rfc1738", "url_rfc2396", "url_rfc3986",
+		# "fingerprint", or "decimal".
+		# 
+		# The "fingerprint" and"decimal" encodings are introduced in
+		# Chilkat v9.5.0.55. 
+		# The "fingerprint" encoding is a lowercase hex encoding where each hex
+		# digit is separated by a colon character. For example:
+		# 6a:de:e0:af:56:f8:0c:04:11:5b:ef:4d:49:ad:09:23
+		# The "decimal" encoding is for converting large
+		# decimal integers to/from a big-endian binary representation. For example, the decimal string
+		# "72623859790382856" converts to the bytes 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_EncodingMode() end
+		def get_EncodingMode(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the encoding of binary data to a printable string for many methods. The valid modes are
+		# "Base64", "modBase64", "base64url", "Base32", "Base58", "UU", "QP" (for quoted-printable), "URL"
+		# (for url-encoding), "Hex", "Q", "B", "url_oauth", "url_rfc1738", "url_rfc2396", "url_rfc3986",
+		# "fingerprint", or "decimal".
+		# 
+		# The "fingerprint" and"decimal" encodings are introduced in
+		# Chilkat v9.5.0.55. 
+		# The "fingerprint" encoding is a lowercase hex encoding where each hex
+		# digit is separated by a colon character. For example:
+		# 6a:de:e0:af:56:f8:0c:04:11:5b:ef:4d:49:ad:09:23
+		# The "decimal" encoding is for converting large
+		# decimal integers to/from a big-endian binary representation. For example, the decimal string
+		# "72623859790382856" converts to the bytes 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08.
 		#
 		# @param newval [String]
-		def set_EncodingMode(newval) end
+		def put_EncodingMode(newval) end
 
-		# returns String
+		# Controls the encoding of binary data to a printable string for many methods. The valid modes are
+		# "Base64", "modBase64", "base64url", "Base32", "Base58", "UU", "QP" (for quoted-printable), "URL"
+		# (for url-encoding), "Hex", "Q", "B", "url_oauth", "url_rfc1738", "url_rfc2396", "url_rfc3986",
+		# "fingerprint", or "decimal".
+		# 
+		# The "fingerprint" and"decimal" encodings are introduced in
+		# Chilkat v9.5.0.55. 
+		# The "fingerprint" encoding is a lowercase hex encoding where each hex
+		# digit is separated by a colon character. For example:
+		# 6a:de:e0:af:56:f8:0c:04:11:5b:ef:4d:49:ad:09:23
+		# The "decimal" encoding is for converting large
+		# decimal integers to/from a big-endian binary representation. For example, the decimal string
+		# "72623859790382856" converts to the bytes 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08.
+		#
 		# @return [String]
 		def encodingMode() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the encoding of binary data to a printable string for many methods. The valid modes are
+		# "Base64", "modBase64", "base64url", "Base32", "Base58", "UU", "QP" (for quoted-printable), "URL"
+		# (for url-encoding), "Hex", "Q", "B", "url_oauth", "url_rfc1738", "url_rfc2396", "url_rfc3986",
+		# "fingerprint", or "decimal".
+		# 
+		# The "fingerprint" and"decimal" encodings are introduced in
+		# Chilkat v9.5.0.55. 
+		# The "fingerprint" encoding is a lowercase hex encoding where each hex
+		# digit is separated by a colon character. For example:
+		# 6a:de:e0:af:56:f8:0c:04:11:5b:ef:4d:49:ad:09:23
+		# The "decimal" encoding is for converting large
+		# decimal integers to/from a big-endian binary representation. For example, the decimal string
+		# "72623859790382856" converts to the bytes 0x01 0x02 0x03 0x04 0x05 0x06 0x07 0x08.
 		#
 		# @param newval [String]
-		def encodingMode(newval) end
+		def put_EncodingMode(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Chilkat Crypt2 provides the ability to feed the encryption/decryption methods with chunks of data.
+		# This allows a large amount of data, or a data stream, to be fed piecemeal for encrypting or
+		# decrypting. It applies to all symmetric algorithms currently supported (AES, Blowfish, Twofish,
+		# 3DES, RC2, DES, ARC4), and all algorithms supported in the future.
+		# 
+		# 	The default value
+		# for both FirstChunk and LastChunk is _TRUE_. This means when an Encrypt* or Decrypt* method is
+		# called, it is both the first and last chunk (i.e. it's the entire amount of data to be encrypted or
+		# decrypted).
+		# 	If you wish to feed the data piecemeal, do this:
+		# 	
+		# 	Set FirstChunk  _TRUE_, LastChunk = _FALSE_ for the first chunk of data.
+		# 	For all "middle" chunks (i.e. all
+		# chunks except for the final chunk) set FirstChunk = _FALSE_ and LastChunk = _FALSE_. 
+		# 	For the
+		# final chunk, set FirstChunk = _FALSE_ and LastChunk = _TRUE_
+		# 
+		# 	
+		# 	There is no need
+		# to worry about feeding data according to the block size of the encryption algorithm. For example,
+		# AES has a block size of 16 bytes. Data may be fed in chunks of any size. The Chilkat Crypt2
+		# component will buffer the data. When the final chunk is passed, the output is padded to the
+		# algorithm's block size according to the PaddingScheme.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_FirstChunk() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Chilkat Crypt2 provides the ability to feed the encryption/decryption methods with chunks of data.
+		# This allows a large amount of data, or a data stream, to be fed piecemeal for encrypting or
+		# decrypting. It applies to all symmetric algorithms currently supported (AES, Blowfish, Twofish,
+		# 3DES, RC2, DES, ARC4), and all algorithms supported in the future.
+		# 
+		# 	The default value
+		# for both FirstChunk and LastChunk is _TRUE_. This means when an Encrypt* or Decrypt* method is
+		# called, it is both the first and last chunk (i.e. it's the entire amount of data to be encrypted or
+		# decrypted).
+		# 	If you wish to feed the data piecemeal, do this:
+		# 	
+		# 	Set FirstChunk  _TRUE_, LastChunk = _FALSE_ for the first chunk of data.
+		# 	For all "middle" chunks (i.e. all
+		# chunks except for the final chunk) set FirstChunk = _FALSE_ and LastChunk = _FALSE_. 
+		# 	For the
+		# final chunk, set FirstChunk = _FALSE_ and LastChunk = _TRUE_
+		# 
+		# 	
+		# 	There is no need
+		# to worry about feeding data according to the block size of the encryption algorithm. For example,
+		# AES has a block size of 16 bytes. Data may be fed in chunks of any size. The Chilkat Crypt2
+		# component will buffer the data. When the final chunk is passed, the output is padded to the
+		# algorithm's block size according to the PaddingScheme.
 		#
-		# @param newval [Bignum]
-		def set_FirstChunk(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_FirstChunk(newval) end
 
-		# returns String
+		# Selects the hash algorithm used by methods that create hashes. The valid choices are "sha1",
+		# "sha256", "sha384", "sha512", "md2", "md5", "haval", "ripemd128", "ripemd160","ripemd256", or
+		# "ripemd320".
+		# Note: SHA-2 designates a set of cryptographic hash functions that includes
+		# SHA-256, SHA-384, and SHA-512. Chilkat by definition supports "SHA-2" because it supports these
+		# algorithms.
+		# 
+		# Note: The HAVAL hash algorithm is affected by two other properties:
+		# HavalRounds and KeyLength.
+		# The HavalRounds may have values of 3, 4, or 5.
+		# The KeyLength
+		# may have values of 128, 160, 192, 224, or 256.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HashAlgorithm() end
+		def get_HashAlgorithm(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the hash algorithm used by methods that create hashes. The valid choices are "sha1",
+		# "sha256", "sha384", "sha512", "md2", "md5", "haval", "ripemd128", "ripemd160","ripemd256", or
+		# "ripemd320".
+		# Note: SHA-2 designates a set of cryptographic hash functions that includes
+		# SHA-256, SHA-384, and SHA-512. Chilkat by definition supports "SHA-2" because it supports these
+		# algorithms.
+		# 
+		# Note: The HAVAL hash algorithm is affected by two other properties:
+		# HavalRounds and KeyLength.
+		# The HavalRounds may have values of 3, 4, or 5.
+		# The KeyLength
+		# may have values of 128, 160, 192, 224, or 256.
 		#
 		# @param newval [String]
-		def set_HashAlgorithm(newval) end
+		def put_HashAlgorithm(newval) end
 
-		# returns String
+		# Selects the hash algorithm used by methods that create hashes. The valid choices are "sha1",
+		# "sha256", "sha384", "sha512", "md2", "md5", "haval", "ripemd128", "ripemd160","ripemd256", or
+		# "ripemd320".
+		# Note: SHA-2 designates a set of cryptographic hash functions that includes
+		# SHA-256, SHA-384, and SHA-512. Chilkat by definition supports "SHA-2" because it supports these
+		# algorithms.
+		# 
+		# Note: The HAVAL hash algorithm is affected by two other properties:
+		# HavalRounds and KeyLength.
+		# The HavalRounds may have values of 3, 4, or 5.
+		# The KeyLength
+		# may have values of 128, 160, 192, 224, or 256.
+		#
 		# @return [String]
 		def hashAlgorithm() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the hash algorithm used by methods that create hashes. The valid choices are "sha1",
+		# "sha256", "sha384", "sha512", "md2", "md5", "haval", "ripemd128", "ripemd160","ripemd256", or
+		# "ripemd320".
+		# Note: SHA-2 designates a set of cryptographic hash functions that includes
+		# SHA-256, SHA-384, and SHA-512. Chilkat by definition supports "SHA-2" because it supports these
+		# algorithms.
+		# 
+		# Note: The HAVAL hash algorithm is affected by two other properties:
+		# HavalRounds and KeyLength.
+		# The HavalRounds may have values of 3, 4, or 5.
+		# The KeyLength
+		# may have values of 128, 160, 192, 224, or 256.
 		#
 		# @param newval [String]
-		def hashAlgorithm(newval) end
+		def put_HashAlgorithm(newval) end
 
-		# returns Bignum
+		# Applies to the HAVAL hash algorithm only and must be set to the integer value 3, 4, or 5. The
+		# default value is 3.
+		#
 		# @return [Bignum]
 		def get_HavalRounds() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Applies to the HAVAL hash algorithm only and must be set to the integer value 3, 4, or 5. The
+		# default value is 3.
 		#
 		# @param newval [Bignum]
-		def set_HavalRounds(newval) end
+		def put_HavalRounds(newval) end
 
-		# returns Bignum
+		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
+		# application to abort some methods call prior to completion. If HeartbeatMs is 0 (the default), no
+		# AbortCheck event callbacks will fire.
+		# 
+		# The methods with event callbacks are:
+		# CkDecryptFile, CkEncryptFile, HashFile, and HashFileENC.
+		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
+		# application to abort some methods call prior to completion. If HeartbeatMs is 0 (the default), no
+		# AbortCheck event callbacks will fire.
+		# 
+		# The methods with event callbacks are:
+		# CkDecryptFile, CkEncryptFile, HashFile, and HashFileENC.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		#
+		# @!method
+		def put_HeartbeatMs(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Only applies when creating digital signatures. If _TRUE_ (the default), then additional certificates
+		# (if any) in the chain of authentication are included in the PKCS7 digital signature.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_IncludeCertChain() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Only applies when creating digital signatures. If _TRUE_ (the default), then additional certificates
+		# (if any) in the chain of authentication are included in the PKCS7 digital signature.
 		#
-		# @param newval [Bignum]
-		def set_IncludeCertChain(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_IncludeCertChain(newval) end
 
-		# returns Bignum
+		# The initial counter for the ChaCha20 encryption algorithm. The default value is 0.
+		#
 		# @return [Bignum]
 		def get_InitialCount() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The initial counter for the ChaCha20 encryption algorithm. The default value is 0.
 		#
 		# @param newval [Bignum]
-		def set_InitialCount(newval) end
+		def put_InitialCount(newval) end
 
-		# returns Bignum
+		# Iteration count to be used with password-based encryption (PBE). Password-based encryption is
+		# defined in the PKCS5 Password-Based Cryptography Standard at
+		# http://www.rsa.com/rsalabs/node.asp?id=2127
+		# 
+		# The purpose of the iteration count is to
+		# increase the computation required to encrypt and decrypt. A larger iteration count makes cracking
+		# via exhaustive search more difficult. The default value is 1024.
+		#
 		# @return [Bignum]
 		def get_IterationCount() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Iteration count to be used with password-based encryption (PBE). Password-based encryption is
+		# defined in the PKCS5 Password-Based Cryptography Standard at
+		# http://www.rsa.com/rsalabs/node.asp?id=2127
+		# 
+		# The purpose of the iteration count is to
+		# increase the computation required to encrypt and decrypt. A larger iteration count makes cracking
+		# via exhaustive search more difficult. The default value is 1024.
 		#
 		# @param newval [Bignum]
-		def set_IterationCount(newval) end
+		def put_IterationCount(newval) end
 
-		# returns Fixnum
+		# The initialization vector to be used with symmetric encryption algorithms (AES, Blowfish, Twofish,
+		# etc.). If left unset, no initialization vector is used.
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_IV() end
+		def get_IV(ckByteData) end
 
-		# ==== Attributes
-		# +newval+ - Fixnum
+		# The initialization vector to be used with symmetric encryption algorithms (AES, Blowfish, Twofish,
+		# etc.). If left unset, no initialization vector is used.
 		#
 		# @param newval [Fixnum]
-		def set_IV(newval) end
+		def put_IV(newval) end
 
-		# returns Bignum
+		# The key length in bits for symmetric encryption algorithms. The default value is 256.
+		#
 		# @return [Bignum]
 		def get_KeyLength() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The key length in bits for symmetric encryption algorithms. The default value is 256.
 		#
 		# @param newval [Bignum]
-		def set_KeyLength(newval) end
+		def put_KeyLength(newval) end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# (See the description for the FirstChunk property.)
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastChunk() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# (See the description for the FirstChunk property.)
 		#
-		# @param newval [Bignum]
-		def set_LastChunk(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastChunk(newval) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns String
+		# Selects the MAC algorithm to be used for any of the Mac methods, such as MacStringENC, MacBytes,
+		# etc. The default value is "hmac". Possible values are "hmac" and "poly1305".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_MacAlgorithm() end
+		def get_MacAlgorithm(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the MAC algorithm to be used for any of the Mac methods, such as MacStringENC, MacBytes,
+		# etc. The default value is "hmac". Possible values are "hmac" and "poly1305".
 		#
 		# @param newval [String]
-		def set_MacAlgorithm(newval) end
+		def put_MacAlgorithm(newval) end
 
-		# returns String
+		# Selects the MAC algorithm to be used for any of the Mac methods, such as MacStringENC, MacBytes,
+		# etc. The default value is "hmac". Possible values are "hmac" and "poly1305".
+		#
 		# @return [String]
 		def macAlgorithm() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the MAC algorithm to be used for any of the Mac methods, such as MacStringENC, MacBytes,
+		# etc. The default value is "hmac". Possible values are "hmac" and "poly1305".
 		#
 		# @param newval [String]
-		def macAlgorithm(newval) end
+		def put_MacAlgorithm(newval) end
 
-		# returns Bignum
+		# This property is set when a digital signature is verified. It contains the number of signer
+		# certificates. Each signing certificate can be retrieved by calling the GetSignerCert method, passing
+		# an index from 0 to NumSignerCerts-1.
+		#
 		# @return [Bignum]
 		def get_NumSignerCerts() end
 
-		# returns Bignum
+		# The padding scheme used by block encryption algorithms such as AES (Rijndael), Blowfish, Twofish,
+		# RC2, DES, 3DES, etc. Block encryption algorithms pad encrypted data to a multiple of algorithm's
+		# block size. The default value of this property is 0.
+		# Possible values are:
+		# 
+		# 0 = RFC
+		# 1423 padding scheme: Each padding byte is set to the number of padding bytes. If the data is already
+		# a multiple of algorithm's block size bytes, an extra block is appended each having a value equal to
+		# the block size. (for example, if the algorithm's block size is 16, then 16 bytes having the value
+		# 0x10 are added.). (This is also known as PKCS5 padding: PKCS #5 padding string consists of a
+		# sequence of bytes, each of which is equal to the total number of padding bytes added. )
+		# 1 =
+		# FIPS81 (Federal Information Processing Standards 81) where the last byte contains the number of
+		# padding bytes, including itself, and the other padding bytes are set to random values.
+		# 2 = Each
+		# padding byte is set to a random value. The decryptor must know how many bytes are in the original
+		# unencrypted data.
+		# 3 = Pad with NULLs. (If already a multiple of the algorithm's block size, no
+		# padding is added).
+		# 4 = Pad with SPACE chars(0x20). (If already a multiple of algorithm's block
+		# size, no padding is added).
+		#
 		# @return [Bignum]
 		def get_PaddingScheme() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The padding scheme used by block encryption algorithms such as AES (Rijndael), Blowfish, Twofish,
+		# RC2, DES, 3DES, etc. Block encryption algorithms pad encrypted data to a multiple of algorithm's
+		# block size. The default value of this property is 0.
+		# Possible values are:
+		# 
+		# 0 = RFC
+		# 1423 padding scheme: Each padding byte is set to the number of padding bytes. If the data is already
+		# a multiple of algorithm's block size bytes, an extra block is appended each having a value equal to
+		# the block size. (for example, if the algorithm's block size is 16, then 16 bytes having the value
+		# 0x10 are added.). (This is also known as PKCS5 padding: PKCS #5 padding string consists of a
+		# sequence of bytes, each of which is equal to the total number of padding bytes added. )
+		# 1 =
+		# FIPS81 (Federal Information Processing Standards 81) where the last byte contains the number of
+		# padding bytes, including itself, and the other padding bytes are set to random values.
+		# 2 = Each
+		# padding byte is set to a random value. The decryptor must know how many bytes are in the original
+		# unencrypted data.
+		# 3 = Pad with NULLs. (If already a multiple of the algorithm's block size, no
+		# padding is added).
+		# 4 = Pad with SPACE chars(0x20). (If already a multiple of algorithm's block
+		# size, no padding is added).
 		#
 		# @param newval [Bignum]
-		def set_PaddingScheme(newval) end
+		def put_PaddingScheme(newval) end
 
-		# returns String
+		# If the CryptAlgorithm property is set to "pbes1" or "pbes2", this property specifies the underlying
+		# encryption algorithm to be used with password-based encryption (PBE). Password-based encryption is
+		# defined in the PKCS5 Password-Based Cryptography Standard at
+		# http://www.rsa.com/rsalabs/node.asp?id=2127
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PbesAlgorithm() end
+		def get_PbesAlgorithm(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If the CryptAlgorithm property is set to "pbes1" or "pbes2", this property specifies the underlying
+		# encryption algorithm to be used with password-based encryption (PBE). Password-based encryption is
+		# defined in the PKCS5 Password-Based Cryptography Standard at
+		# http://www.rsa.com/rsalabs/node.asp?id=2127
 		#
 		# @param newval [String]
-		def set_PbesAlgorithm(newval) end
+		def put_PbesAlgorithm(newval) end
 
-		# returns String
+		# If the CryptAlgorithm property is set to "pbes1" or "pbes2", this property specifies the underlying
+		# encryption algorithm to be used with password-based encryption (PBE). Password-based encryption is
+		# defined in the PKCS5 Password-Based Cryptography Standard at
+		# http://www.rsa.com/rsalabs/node.asp?id=2127
+		#
 		# @return [String]
 		def pbesAlgorithm() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If the CryptAlgorithm property is set to "pbes1" or "pbes2", this property specifies the underlying
+		# encryption algorithm to be used with password-based encryption (PBE). Password-based encryption is
+		# defined in the PKCS5 Password-Based Cryptography Standard at
+		# http://www.rsa.com/rsalabs/node.asp?id=2127
 		#
 		# @param newval [String]
-		def pbesAlgorithm(newval) end
+		def put_PbesAlgorithm(newval) end
 
-		# returns String
+		# The password to be used with password-based encryption (PBE). Password-based encryption is defined
+		# in the PKCS5 Password-Based Cryptography Standard at http://www.rsa.com/rsalabs/node.asp?id=2127
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PbesPassword() end
+		def get_PbesPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The password to be used with password-based encryption (PBE). Password-based encryption is defined
+		# in the PKCS5 Password-Based Cryptography Standard at http://www.rsa.com/rsalabs/node.asp?id=2127
 		#
 		# @param newval [String]
-		def set_PbesPassword(newval) end
+		def put_PbesPassword(newval) end
 
-		# returns String
+		# The password to be used with password-based encryption (PBE). Password-based encryption is defined
+		# in the PKCS5 Password-Based Cryptography Standard at http://www.rsa.com/rsalabs/node.asp?id=2127
+		#
 		# @return [String]
 		def pbesPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The password to be used with password-based encryption (PBE). Password-based encryption is defined
+		# in the PKCS5 Password-Based Cryptography Standard at http://www.rsa.com/rsalabs/node.asp?id=2127
 		#
 		# @param newval [String]
-		def pbesPassword(newval) end
+		def put_PbesPassword(newval) end
 
-		# returns String
+		# When the CryptAlgorithm property is "PKI" to select PKCS7 public-key encryption, this selects the
+		# underlying symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2". The
+		# default value is "aes".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Pkcs7CryptAlg() end
+		def get_Pkcs7CryptAlg(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When the CryptAlgorithm property is "PKI" to select PKCS7 public-key encryption, this selects the
+		# underlying symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2". The
+		# default value is "aes".
 		#
 		# @param newval [String]
-		def set_Pkcs7CryptAlg(newval) end
+		def put_Pkcs7CryptAlg(newval) end
 
-		# returns String
+		# When the CryptAlgorithm property is "PKI" to select PKCS7 public-key encryption, this selects the
+		# underlying symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2". The
+		# default value is "aes".
+		#
 		# @return [String]
 		def pkcs7CryptAlg() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When the CryptAlgorithm property is "PKI" to select PKCS7 public-key encryption, this selects the
+		# underlying symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2". The
+		# default value is "aes".
 		#
 		# @param newval [String]
-		def pkcs7CryptAlg(newval) end
+		def put_Pkcs7CryptAlg(newval) end
 
-		# returns Bignum
+		# The effective key length (in bits) for the RC2 encryption algorithm. When RC2 is used, both the
+		# KeyLength and Rc2EffectiveKeyLength properties should be set. For RC2, both should be between 8 and
+		# 1024 (inclusive).
+		#
 		# @return [Bignum]
 		def get_Rc2EffectiveKeyLength() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The effective key length (in bits) for the RC2 encryption algorithm. When RC2 is used, both the
+		# KeyLength and Rc2EffectiveKeyLength properties should be set. For RC2, both should be between 8 and
+		# 1024 (inclusive).
 		#
 		# @param newval [Bignum]
-		def set_Rc2EffectiveKeyLength(newval) end
+		def put_Rc2EffectiveKeyLength(newval) end
 
-		# returns Fixnum
+		# The salt to be used with password-based encryption (PBE). Password-based encryption is defined in
+		# the PKCS5 Password-Based Cryptography Standard at
+		# http://www.rsa.com/rsalabs/node.asp?id=2127
+		# To clarify: This property is used in encryption
+		# when the CryptAlgorithm is set to "pbes1" or "pbes2". Also note that it is not used by the Pbkdf1 or
+		# Pbkdf2 methods, as the salt is passed in an argument to those methods.
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_Salt() end
+		def get_Salt(ckByteData) end
 
-		# ==== Attributes
-		# +newval+ - Fixnum
+		# The salt to be used with password-based encryption (PBE). Password-based encryption is defined in
+		# the PKCS5 Password-Based Cryptography Standard at
+		# http://www.rsa.com/rsalabs/node.asp?id=2127
+		# To clarify: This property is used in encryption
+		# when the CryptAlgorithm is set to "pbes1" or "pbes2". Also note that it is not used by the Pbkdf1 or
+		# Pbkdf2 methods, as the salt is passed in an argument to those methods.
 		#
 		# @param newval [Fixnum]
-		def set_Salt(newval) end
+		def put_Salt(newval) end
 
-		# returns Fixnum
+		# The binary secret key used for symmetric encryption (Aes, Blowfish, Twofish, ChaCha20, ARC4, 3DES,
+		# RC2, etc.). The secret key must be identical for decryption to succeed. The length in bytes of the
+		# SecretKey must equal the KeyLength/8.
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_SecretKey() end
+		def get_SecretKey(ckByteData) end
 
-		# ==== Attributes
-		# +newval+ - Fixnum
+		# The binary secret key used for symmetric encryption (Aes, Blowfish, Twofish, ChaCha20, ARC4, 3DES,
+		# RC2, etc.). The secret key must be identical for decryption to succeed. The length in bytes of the
+		# SecretKey must equal the KeyLength/8.
 		#
 		# @param newval [Fixnum]
-		def set_SecretKey(newval) end
+		def put_SecretKey(newval) end
 
-		# returns String
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# When UU encoding, this is the filename to be embedded in UU encoded output. The default is
+		# "file.dat". When UU decoding, this is the filename found in the UU encoded input.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_UuFilename() end
+		def get_UuFilename(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When UU encoding, this is the filename to be embedded in UU encoded output. The default is
+		# "file.dat". When UU decoding, this is the filename found in the UU encoded input.
 		#
 		# @param newval [String]
-		def set_UuFilename(newval) end
+		def put_UuFilename(newval) end
 
-		# returns String
+		# When UU encoding, this is the filename to be embedded in UU encoded output. The default is
+		# "file.dat". When UU decoding, this is the filename found in the UU encoded input.
+		#
 		# @return [String]
 		def uuFilename() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When UU encoding, this is the filename to be embedded in UU encoded output. The default is
+		# "file.dat". When UU decoding, this is the filename found in the UU encoded input.
 		#
 		# @param newval [String]
-		def uuFilename(newval) end
+		def put_UuFilename(newval) end
 
-		# returns String
+		# When UU encoding, this is the file permissions mode to be embedded in UU encoded output. The default
+		# is "644". When UU decoding, this property is set to the mode found in the UU encoded input.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_UuMode() end
+		def get_UuMode(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When UU encoding, this is the file permissions mode to be embedded in UU encoded output. The default
+		# is "644". When UU decoding, this property is set to the mode found in the UU encoded input.
 		#
 		# @param newval [String]
-		def set_UuMode(newval) end
+		def put_UuMode(newval) end
 
-		# returns String
+		# When UU encoding, this is the file permissions mode to be embedded in UU encoded output. The default
+		# is "644". When UU decoding, this property is set to the mode found in the UU encoded input.
+		#
 		# @return [String]
 		def uuMode() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When UU encoding, this is the file permissions mode to be embedded in UU encoded output. The default
+		# is "644". When UU decoding, this property is set to the mode found in the UU encoded input.
 		#
 		# @param newval [String]
-		def uuMode(newval) end
+		def put_UuMode(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AddEncryptCert
 		#
-		# ==== Attributes
+		# Adds a certificate to be used for public-key encryption. (To use public-key encryption with digital
+		# certificates, set the CryptAlgorithm property = "pki".) To encrypt with more than one certificate,
+		# call AddEncryptCert once per certificate.
 		#
-		# +cert+ - CkCert
-		# returns nil
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [nil]
+		# @return [nil]
 		def AddEncryptCert(cert)
 			# ...
 		end
 
+
 		# Method: AddPfxSourceData
 		#
-		# ==== Attributes
+		# Adds a PFX to the object's internal list of sources to be searched for certificates and private keys
+		# when decrypting. Multiple PFX sources can be added by calling this method once for each. (On the
+		# Windows operating system, the registry-based certificate stores are also automatically searched, so
+		# it is commonly not required to explicitly add PFX sources.)
+		# 
+		# The ARG1 contains the bytes
+		# of a PFX file (also known as PKCS12 or .p12).
 		#
-		# +pfxBytes+ - CkByteData
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param pfxBytes [CkByteData]
+		# @param pfxPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  pfxBytes [CkByteData]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceData(pfxBytes, pfxPassword)
 			# ...
 		end
 
+
 		# Method: AddPfxSourceFile
 		#
-		# ==== Attributes
+		# Adds a PFX file to the object's internal list of sources to be searched for certificates and private
+		# keys when decrypting. Multiple PFX files can be added by calling this method once for each. (On the
+		# Windows operating system, the registry-based certificate stores are also automatically searched, so
+		# it is commonly not required to explicitly add PFX sources.)
+		# 
+		# The ARG1 contains the bytes
+		# of a PFX file (also known as PKCS12 or .p12).
 		#
-		# +pfxFilePath+ - String
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param pfxFilePath [String]
+		# @param pfxPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  pfxFilePath [String]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceFile(pfxFilePath, pfxPassword)
 			# ...
 		end
 
+
 		# Method: AesKeyUnwrap
 		#
-		# ==== Attributes
+		# Implements the AES Key Wrap Algorithm (RFC 3394) for unwrapping. The ARG1 is the Key Encryption Key
+		# (the AES key used to unwrap the ARG2). The arguments and return value are binary encoded strings
+		# using the encoding specified by ARG3 (which can be "base64", "hex", "base64url", etc.) The full list
+		# of supported encodings is available at the link below.
+		# 
+		# The ARG1 should be an AES key of
+		# 16 bytes, 24 bytes, or 32 bytes (i.e. 128-bits, 192- bits, or 256-bits). For example, if passed as a
+		# hex string, then the ARG1 should be 32 chars in length, 48 chars, or 64 chars (because each byte is
+		# represented as 2 chars in hex).
+		# 
+		# The ARG2 contains the data to be unwrapped. The result,
+		# if decoded, is 8 bytes less than the wrapped key data. For example, if a 256-bit AES key (32 bytes)
+		# is wrapped, the size of the wrapped key data is 40 bytes. Unwrapping restores it to the original 32
+		# bytes.
 		#
-		# +kek+ - String
-		# +wrappedKeyData+ - String
-		# +encoding+ - String
-		# returns String
+		# @param kek [String]
+		# @param wrappedKeyData [String]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  kek [String]
-		# @param  wrappedKeyData [String]
-		# @param  encoding [String]
-		# @return  [String]
-		def AesKeyUnwrap(kek, wrappedKeyData, encoding)
+		# @return [TrueClass, FalseClass]
+		def AesKeyUnwrap(kek, wrappedKeyData, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: AesKeyUnwrap
+		#
+		# Implements the AES Key Wrap Algorithm (RFC 3394) for unwrapping. The ARG1 is the Key Encryption Key
+		# (the AES key used to unwrap the ARG2). The arguments and return value are binary encoded strings
+		# using the encoding specified by ARG3 (which can be "base64", "hex", "base64url", etc.) The full list
+		# of supported encodings is available at the link below.
+		# 
+		# The ARG1 should be an AES key of
+		# 16 bytes, 24 bytes, or 32 bytes (i.e. 128-bits, 192- bits, or 256-bits). For example, if passed as a
+		# hex string, then the ARG1 should be 32 chars in length, 48 chars, or 64 chars (because each byte is
+		# represented as 2 chars in hex).
+		# 
+		# The ARG2 contains the data to be unwrapped. The result,
+		# if decoded, is 8 bytes less than the wrapped key data. For example, if a 256-bit AES key (32 bytes)
+		# is wrapped, the size of the wrapped key data is 40 bytes. Unwrapping restores it to the original 32
+		# bytes.
+		#
+		# @param kek [String]
+		# @param wrappedKeyData [String]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def aesKeyUnwrap(kek, wrappedKeyData, encoding)
+			# ...
+		end
+
 
 		# Method: AesKeyWrap
 		#
-		# ==== Attributes
+		# Implements the AES Key Wrap Algorithm (RFC 3394). The ARG1 is the Key Encryption Key (the AES key
+		# used to encrypt the ARG2). The arguments and return value are binary encoded strings using the
+		# encoding specified by ARG3 (which can be "base64", "hex", "base64url", etc.) The full list of
+		# supported encodings is available at the link below.
+		# 
+		# The ARG1 should be an AES key of 16
+		# bytes, 24 bytes, or 32 bytes (i.e. 128-bits, 192- bits, or 256-bits). For example, if passed as a
+		# hex string, then the ARG1 should be 32 chars in length, 48 chars, or 64 chars (because each byte is
+		# represented as 2 chars in hex).
+		# 
+		# The ARG2 contains the data to be key wrapped. It must
+		# be a multiple of 64-bits in length. In other words, if the ARG2 is decoded to binary, it should be a
+		# number of bytes that is a multiple of 8. 
+		# 
+		# The return string, if decoded to binary
+		# bytes, is equal to the size of the key data + 8 additional bytes.
 		#
-		# +kek+ - String
-		# +keyData+ - String
-		# +encoding+ - String
-		# returns String
+		# @param kek [String]
+		# @param keyData [String]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  kek [String]
-		# @param  keyData [String]
-		# @param  encoding [String]
-		# @return  [String]
-		def AesKeyWrap(kek, keyData, encoding)
+		# @return [TrueClass, FalseClass]
+		def AesKeyWrap(kek, keyData, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: AesKeyWrap
+		#
+		# Implements the AES Key Wrap Algorithm (RFC 3394). The ARG1 is the Key Encryption Key (the AES key
+		# used to encrypt the ARG2). The arguments and return value are binary encoded strings using the
+		# encoding specified by ARG3 (which can be "base64", "hex", "base64url", etc.) The full list of
+		# supported encodings is available at the link below.
+		# 
+		# The ARG1 should be an AES key of 16
+		# bytes, 24 bytes, or 32 bytes (i.e. 128-bits, 192- bits, or 256-bits). For example, if passed as a
+		# hex string, then the ARG1 should be 32 chars in length, 48 chars, or 64 chars (because each byte is
+		# represented as 2 chars in hex).
+		# 
+		# The ARG2 contains the data to be key wrapped. It must
+		# be a multiple of 64-bits in length. In other words, if the ARG2 is decoded to binary, it should be a
+		# number of bytes that is a multiple of 8. 
+		# 
+		# The return string, if decoded to binary
+		# bytes, is equal to the size of the key data + 8 additional bytes.
+		#
+		# @param kek [String]
+		# @param keyData [String]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def aesKeyWrap(kek, keyData, encoding)
+			# ...
+		end
+
 
 		# Method: BCryptHash
 		#
-		# ==== Attributes
+		# Computes and returns a bcrypt hash of the ARG1. The number of rounds of hashing is determined by the
+		# BCryptWorkFactor property.
 		#
-		# +password+ - String
-		# returns String
+		# @param password [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @return  [String]
-		def BCryptHash(password)
+		# @return [TrueClass, FalseClass]
+		def BCryptHash(password, outStr)
 			# ...
 		end
 
+
+		# Method: BCryptHash
+		#
+		# Computes and returns a bcrypt hash of the ARG1. The number of rounds of hashing is determined by the
+		# BCryptWorkFactor property.
+		#
+		# @param password [String]
+		#
+		# @return [String]
+		def bCryptHash(password)
+			# ...
+		end
+
+
 		# Method: BCryptVerify
 		#
-		# ==== Attributes
+		# Verifies the ARG1 against a previously computed BCrypt hash. Returns _TRUE_ if the password matches
+		# the ARG2. Returns _FALSE_ if the password does not match.
 		#
-		# +password+ - String
-		# +bcryptHash+ - String
-		# returns TrueClass, FalseClass
+		# @param password [String]
+		# @param bcryptHash [String]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @param  bcryptHash [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def BCryptVerify(password, bcryptHash)
 			# ...
 		end
 
+
 		# Method: BytesToString
 		#
-		# ==== Attributes
+		# Utility method to convert bytes to a string -- interpreting the bytes according to the charset
+		# specified.
 		#
-		# +inData+ - CkByteData
-		# +charset+ - String
-		# returns String
+		# @param inData [CkByteData]
+		# @param charset [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inData [CkByteData]
-		# @param  charset [String]
-		# @return  [String]
-		def BytesToString(inData, charset)
+		# @return [TrueClass, FalseClass]
+		def BytesToString(inData, charset, outStr)
 			# ...
 		end
+
+
+		# Method: BytesToString
+		#
+		# Utility method to convert bytes to a string -- interpreting the bytes according to the charset
+		# specified.
+		#
+		# @param inData [CkByteData]
+		# @param charset [String]
+		#
+		# @return [String]
+		def bytesToString(inData, charset)
+			# ...
+		end
+
 
 		# Method: ByteSwap4321
 		#
-		# ==== Attributes
+		# Convenience method for byte swapping between little-endian byte ordering and big-endian byte
+		# ordering.
 		#
-		# +data+ - CkByteData
-		# returns CkByteData
+		# @param data [CkByteData]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
-		def ByteSwap4321(data)
+		# @return [TrueClass, FalseClass]
+		def ByteSwap4321(data, outBytes)
 			# ...
 		end
 
+
 		# Method: CkDecryptFile
 		#
-		# ==== Attributes
+		# File-to-file decryption. There is no limit to the size of the file that can be decrypted because the
+		# component will operate in streaming mode internally.
 		#
-		# +srcFile+ - String
-		# +destFile+ - String
-		# returns TrueClass, FalseClass
+		# @param srcFile [String]
+		# @param destFile [String]
 		#
-		# YARD =>
-		#
-		# @param  srcFile [String]
-		# @param  destFile [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CkDecryptFile(srcFile, destFile)
 			# ...
 		end
 
+
 		# Method: CkEncryptFile
 		#
-		# ==== Attributes
+		# File-to-file encryption. There is no limit to the size of the file that can be encrypted because the
+		# component will operate in streaming mode internally.
 		#
-		# +srcFile+ - String
-		# +destFile+ - String
-		# returns TrueClass, FalseClass
+		# @param srcFile [String]
+		# @param destFile [String]
 		#
-		# YARD =>
-		#
-		# @param  srcFile [String]
-		# @param  destFile [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CkEncryptFile(srcFile, destFile)
 			# ...
 		end
 
+
 		# Method: ClearEncryptCerts
 		#
-		# ==== Attributes
+		# Clears the internal list of digital certificates to be used for public-key encryption.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearEncryptCerts()
 			# ...
 		end
 
+
 		# Method: CompressBytes
 		#
-		# ==== Attributes
+		# Memory-to-memory compression. Compresses a byte array and returns a byte array of compressed data.
+		# The compression algorithm specified by the CompressionAlgorithm property is used. Currently, the
+		# only choice is "BZIP2".
 		#
-		# +data+ - CkByteData
-		# returns CkByteData
+		# @param data [CkByteData]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
-		def CompressBytes(data)
+		# @return [TrueClass, FalseClass]
+		def CompressBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: CompressBytesENC
 		#
-		# ==== Attributes
+		# Same as CompressBytes, except an encoded string is returned. The encoding is controlled by the
+		# EncodingMode property, which can be set to "Base64", "QP" (for quoted-printable), or "Hex".
 		#
-		# +data+ - CkByteData
-		# returns String
+		# @param data [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [String]
-		def CompressBytesENC(data)
+		# @return [TrueClass, FalseClass]
+		def CompressBytesENC(data, outStr)
 			# ...
 		end
+
+
+		# Method: CompressBytesENC
+		#
+		# Same as CompressBytes, except an encoded string is returned. The encoding is controlled by the
+		# EncodingMode property, which can be set to "Base64", "QP" (for quoted-printable), or "Hex".
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def compressBytesENC(data)
+			# ...
+		end
+
 
 		# Method: CompressString
 		#
-		# ==== Attributes
+		# Compresses a string and returns a byte array of the compressed data. For languages such as C#,
+		# VB.NET, Visual Basic 6, etc. the string input argument is Unicode. The Charset property controls the
+		# conversion of the Unicode string to a multibyte string before compression is applied. For example,
+		# if Charset is set to "iso-8859-1", then the input string argument is first converted from Unicode (2
+		# bytes per char) to iso-8859-1 (1 byte per char) before compressing according to the
+		# CompressionAlgorithm property ("BZIP2"). If the Charset property is set to "unicode", then no
+		# character encoding conversion will happen, and the full Unicode string is compressed.
 		#
-		# +str+ - String
-		# returns CkByteData
+		# @param str [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [CkByteData]
-		def CompressString(str)
+		# @return [TrueClass, FalseClass]
+		def CompressString(str, outData)
 			# ...
 		end
+
 
 		# Method: CompressStringENC
 		#
-		# ==== Attributes
+		# Compresses a string and returns an encoded string of the compressed data. For languages such as C#,
+		# VB.NET, Visual Basic 6, etc. the string input argument is Unicode. The Charset property controls the
+		# conversion of the Unicode string to a multibyte string before compression is applied. For example,
+		# if Charset is set to "iso-8859-1", then the input string argument is first converted from Unicode (2
+		# bytes per char) to iso-8859-1 (1 byte per char) before compressing according to the
+		# CompressionAlgorithm property ("BZIP2"). If the Charset property is set to "unicode", then no
+		# character encoding conversion will happen, and the full Unicode string is compressed.Compressed data
+		# is typically binary data which is not a printable string. This method encodes the output compressed
+		# data to a printable string according to the EncodingMode property, which can be set to "Base64",
+		# "QP" (for quoted-printable), or "Hex".
 		#
-		# +str+ - String
-		# returns String
+		# @param str [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [String]
-		def CompressStringENC(str)
+		# @return [TrueClass, FalseClass]
+		def CompressStringENC(str, outStr)
 			# ...
 		end
 
+
+		# Method: CompressStringENC
+		#
+		# Compresses a string and returns an encoded string of the compressed data. For languages such as C#,
+		# VB.NET, Visual Basic 6, etc. the string input argument is Unicode. The Charset property controls the
+		# conversion of the Unicode string to a multibyte string before compression is applied. For example,
+		# if Charset is set to "iso-8859-1", then the input string argument is first converted from Unicode (2
+		# bytes per char) to iso-8859-1 (1 byte per char) before compressing according to the
+		# CompressionAlgorithm property ("BZIP2"). If the Charset property is set to "unicode", then no
+		# character encoding conversion will happen, and the full Unicode string is compressed.Compressed data
+		# is typically binary data which is not a printable string. This method encodes the output compressed
+		# data to a printable string according to the EncodingMode property, which can be set to "Base64",
+		# "QP" (for quoted-printable), or "Hex".
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def compressStringENC(str)
+			# ...
+		end
+
+
 		# Method: CrcBytes
 		#
-		# ==== Attributes
+		# Calculates a CRC for in-memory byte data. To compute the CRC used in the Zip file format, pass
+		# "CRC-32" for the ARG1. (The ARG1 argument provides the flexibility to add additional CRC algorithms
+		# on an as-needed basis in the future.)
 		#
-		# +crcAlg+ - String
-		# +byteData+ - CkByteData
-		# returns Fixnum
+		# @param crcAlg [String]
+		# @param byteData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  crcAlg [String]
-		# @param  byteData [CkByteData]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def CrcBytes(crcAlg, byteData)
 			# ...
 		end
 
+
 		# Method: CrcFile
 		#
-		# ==== Attributes
+		# Calculates a CRC for the contents of a file. To compute the CRC used in the Zip file format, pass
+		# "CRC-32" for the ARG1. (The ARG1 argument provides the flexibility to add additional CRC algorithms
+		# on an as-needed basis in the future.) A value of 0 is returned if the file is unable to be read.
+		# Given that there is a 1 in 4 billion chance of having an actual CRC of 0, an application might
+		# choose to react to a 0 return value by testing to see if the file can be opened and read.
 		#
-		# +crcAlg+ - String
-		# +path+ - String
-		# returns Fixnum
+		# @param crcAlg [String]
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  crcAlg [String]
-		# @param  path [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def CrcFile(crcAlg, path)
 			# ...
 		end
 
+
 		# Method: CreateDetachedSignature
 		#
-		# ==== Attributes
+		# Digitally signs a file and writes the digital signature to a separate output file (a PKCS#7
+		# signature file). The input file (ARG1) is unmodified. 
+		# A certificate for signing must be
+		# specified by calling SetSigningCert or SetSigningCert2 prior to calling this
+		# method.
+		# 
+		# This method is equivalent to CreateP7S. The CreateP7S method was added to
+		# clarify the format of the signature file that is created.
 		#
-		# +inFilePath+ - String
-		# +sigFilePath+ - String
-		# returns TrueClass, FalseClass
+		# @param inFilePath [String]
+		# @param sigFilePath [String]
 		#
-		# YARD =>
-		#
-		# @param  inFilePath [String]
-		# @param  sigFilePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CreateDetachedSignature(inFilePath, sigFilePath)
 			# ...
 		end
 
+
 		# Method: CreateP7M
 		#
-		# ==== Attributes
+		# Digitally signs a file and creates a .p7m (PKCS #7 Message) file that contains both the signature
+		# and original file content. The input file (ARG1) is unmodified. 
+		# A certificate for signing
+		# must be specified by calling SetSigningCert or SetSigningCert2 prior to calling this
+		# method.
+		# To sign with a particular hash algorithm, set the HashAlgorithm property. Valid hash
+		# algorithms for signing are "sha256", "sha1", "sha384", "sha512", "md5", and "md2".
 		#
-		# +inFilename+ - String
-		# +p7mPath+ - String
-		# returns TrueClass, FalseClass
+		# @param inFilename [String]
+		# @param p7mPath [String]
 		#
-		# YARD =>
-		#
-		# @param  inFilename [String]
-		# @param  p7mPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CreateP7M(inFilename, p7mPath)
 			# ...
 		end
 
+
 		# Method: CreateP7S
 		#
-		# ==== Attributes
+		# Digitally signs a file and creates a .p7s (PKCS #7 Signature) signature file. The input file (ARG1)
+		# is unmodified. The output file (ARG2) contains only the signature and not the original data.
+		# # A certificate for signing must be specified by calling SetSigningCert or SetSigningCert2 prior to
+		# calling this method.
+		# To sign with a particular hash algorithm, set the HashAlgorithm property.
+		# Valid hash algorithms for signing are "sha256", "sha1", "sha384", "sha512", "md5", and "md2".
 		#
-		# +inFilename+ - String
-		# +p7sPath+ - String
-		# returns TrueClass, FalseClass
+		# @param inFilename [String]
+		# @param p7sPath [String]
 		#
-		# YARD =>
-		#
-		# @param  inFilename [String]
-		# @param  p7sPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CreateP7S(inFilename, p7sPath)
 			# ...
 		end
 
+
 		# Method: Decode
 		#
-		# ==== Attributes
+		# Decode binary data from an encoded string. The ARG2 can be set to any of the following strings:
+		# "base64", "hex", "quoted-printable", "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396",
+		# "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).
 		#
-		# +str+ - String
-		# +encoding+ - String
-		# returns CkByteData
+		# @param str [String]
+		# @param encoding [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @param  encoding [String]
-		# @return  [CkByteData]
-		def Decode(str, encoding)
+		# @return [TrueClass, FalseClass]
+		def Decode(str, encoding, outData)
 			# ...
 		end
+
 
 		# Method: DecodeString
 		#
-		# ==== Attributes
+		# Decodes from an encoding back to the original string. The ARG3 can be set to any of the following
+		# strings: "base64", "hex", "quoted-printable", "url", "base32", "Q", "B", "url_rc1738",
+		# "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).
 		#
-		# +inStr+ - String
-		# +charset+ - String
-		# +encoding+ - String
-		# returns String
+		# @param inStr [String]
+		# @param charset [String]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inStr [String]
-		# @param  charset [String]
-		# @param  encoding [String]
-		# @return  [String]
-		def DecodeString(inStr, charset, encoding)
+		# @return [TrueClass, FalseClass]
+		def DecodeString(inStr, charset, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: DecodeString
+		#
+		# Decodes from an encoding back to the original string. The ARG3 can be set to any of the following
+		# strings: "base64", "hex", "quoted-printable", "url", "base32", "Q", "B", "url_rc1738",
+		# "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).
+		#
+		# @param inStr [String]
+		# @param charset [String]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def decodeString(inStr, charset, encoding)
+			# ...
+		end
+
 
 		# Method: DecryptBytes
 		#
-		# ==== Attributes
+		# Decrypts a byte array and returns the unencrypted byte array. The property settings used when
+		# encrypting the data must match the settings when decrypting. Specifically, the CryptAlgorithm,
+		# CipherMode, PaddingScheme, KeyLength, IV, and SecretKey properties must match.
 		#
-		# +data+ - CkByteData
-		# returns CkByteData
+		# @param data [CkByteData]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
-		def DecryptBytes(data)
+		# @return [TrueClass, FalseClass]
+		def DecryptBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: DecryptBytesENC
 		#
-		# ==== Attributes
+		# Decrypts string-encoded encrypted data and returns the unencrypted byte array. Data encrypted with
+		# EncryptBytesENC can be decrypted with this method. The property settings used when encrypting the
+		# data must match the settings when decrypting. Specifically, the EncodingMode, CryptAlgorithm,
+		# CipherMode, PaddingScheme, KeyLength, IV, and SecretKey properties must match.
 		#
-		# +str+ - String
-		# returns CkByteData
+		# @param str [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [CkByteData]
-		def DecryptBytesENC(str)
+		# @return [TrueClass, FalseClass]
+		def DecryptBytesENC(str, outData)
 			# ...
 		end
+
 
 		# Method: DecryptEncoded
 		#
-		# ==== Attributes
+		# Encrypted data is passed to this method as an encoded string (base64, hex, etc.). This method first
+		# decodes the input data according to the EncodingMode property setting. It then decrypts and
+		# re-encodes using the EncodingMode setting, and returns the decrypted data in encoded string form.
 		#
-		# +encodedEncryptedData+ - String
-		# returns String
+		# @param encodedEncryptedData [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encodedEncryptedData [String]
-		# @return  [String]
-		def DecryptEncoded(encodedEncryptedData)
+		# @return [TrueClass, FalseClass]
+		def DecryptEncoded(encodedEncryptedData, outStr)
 			# ...
 		end
 
+
+		# Method: DecryptEncoded
+		#
+		# Encrypted data is passed to this method as an encoded string (base64, hex, etc.). This method first
+		# decodes the input data according to the EncodingMode property setting. It then decrypts and
+		# re-encodes using the EncodingMode setting, and returns the decrypted data in encoded string form.
+		#
+		# @param encodedEncryptedData [String]
+		#
+		# @return [String]
+		def decryptEncoded(encodedEncryptedData)
+			# ...
+		end
+
+
 		# Method: DecryptStream
 		#
-		# ==== Attributes
+		# Decrypts a stream. Internally, the ARG1's source is read, decrypted, and the decrypted data written
+		# to the ARG1's sink. It does this in streaming fashion. Extremely large or even infinite streams can
+		# be decrypted with stable ungrowing memory usage.
 		#
-		# +strm+ - CkStream
-		# returns TrueClass, FalseClass
+		# @param strm [CkStream]
 		#
-		# YARD =>
-		#
-		# @param  strm [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def DecryptStream(strm)
 			# ...
 		end
 
+
 		# Method: DecryptString
 		#
-		# ==== Attributes
+		# The reverse of EncryptString. Decrypts encrypted byte data and returns the original string. The
+		# property settings used when encrypting the string must match the settings when decrypting.
+		# Specifically, the Charset, CryptAlgorithm, CipherMode, PaddingScheme, KeyLength, IV, and SecretKey
+		# properties must match.
 		#
-		# +data+ - CkByteData
-		# returns String
+		# @param data [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [String]
-		def DecryptString(data)
+		# @return [TrueClass, FalseClass]
+		def DecryptString(data, outStr)
 			# ...
 		end
+
+
+		# Method: DecryptString
+		#
+		# The reverse of EncryptString. Decrypts encrypted byte data and returns the original string. The
+		# property settings used when encrypting the string must match the settings when decrypting.
+		# Specifically, the Charset, CryptAlgorithm, CipherMode, PaddingScheme, KeyLength, IV, and SecretKey
+		# properties must match.
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def decryptString(data)
+			# ...
+		end
+
 
 		# Method: DecryptStringENC
 		#
-		# ==== Attributes
+		# The reverse of EncryptStringENC. Decrypts string-encoded encrypted data and returns the original
+		# string. The property settings used when encrypting the string must match the settings when
+		# decrypting. Specifically, the Charset, EncodingMode, CryptAlgorithm, CipherMode, PaddingScheme,
+		# KeyLength, IV, and SecretKey properties must match.
 		#
-		# +str+ - String
-		# returns String
+		# @param str [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [String]
-		def DecryptStringENC(str)
+		# @return [TrueClass, FalseClass]
+		def DecryptStringENC(str, outStr)
 			# ...
 		end
+
+
+		# Method: DecryptStringENC
+		#
+		# The reverse of EncryptStringENC. Decrypts string-encoded encrypted data and returns the original
+		# string. The property settings used when encrypting the string must match the settings when
+		# decrypting. Specifically, the Charset, EncodingMode, CryptAlgorithm, CipherMode, PaddingScheme,
+		# KeyLength, IV, and SecretKey properties must match.
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def decryptStringENC(str)
+			# ...
+		end
+
 
 		# Method: Encode
 		#
-		# ==== Attributes
+		# Encode binary data to base64, hex, quoted-printable, or URL-encoding. The ARG2 can be set to any of
+		# the following strings: "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B",
+		# "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML
+		# entity encoding).
 		#
-		# +byteData+ - CkByteData
-		# +encoding+ - String
-		# returns String
+		# @param byteData [CkByteData]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  byteData [CkByteData]
-		# @param  encoding [String]
-		# @return  [String]
-		def Encode(byteData, encoding)
+		# @return [TrueClass, FalseClass]
+		def Encode(byteData, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: Encode
+		#
+		# Encode binary data to base64, hex, quoted-printable, or URL-encoding. The ARG2 can be set to any of
+		# the following strings: "base64", "hex", "quoted-printable" (or "qp"), "url", "base32", "Q", "B",
+		# "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML
+		# entity encoding).
+		#
+		# @param byteData [CkByteData]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def encode(byteData, encoding)
+			# ...
+		end
+
+
+		# Method: EncodeBytes
+		#
+		# Encode binary data to base64, hex, quoted-printable, or URL-encoding. The ARG3 can be set to any of
+		# the following strings: "base64", "hex", "quoted-printable", "url", "base32", "Q", "B", "url_rc1738",
+		# "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).
+		# # The ARG1 points to the bytes to be encoded. The ARG2 specifies the number of bytes to encode.
+		#
+		# @param pByteData [Object]
+		# @param szByteData [Fixnum]
+		# @param encoding [String]
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def EncodeBytes(pByteData, szByteData, encoding, outStr)
+			# ...
+		end
+
+
+		# Method: EncodeBytes
+		#
+		# Encode binary data to base64, hex, quoted-printable, or URL-encoding. The ARG3 can be set to any of
+		# the following strings: "base64", "hex", "quoted-printable", "url", "base32", "Q", "B", "url_rc1738",
+		# "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding).
+		# # The ARG1 points to the bytes to be encoded. The ARG2 specifies the number of bytes to encode.
+		#
+		# @param pByteData [Object]
+		# @param szByteData [Fixnum]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def encodeBytes(pByteData, szByteData, encoding)
+			# ...
+		end
+
 
 		# Method: EncodeString
 		#
-		# ==== Attributes
+		# Encodes a string. The ARG3 can be set to any of the following strings: "base64", "hex",
+		# "quoted-printable", "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396", "url_rfc3986",
+		# "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding). The ARG2 is important, and
+		# usually you'll want to specify "ansi". For example, if the string "ABC" is to be encoded to "hex"
+		# using ANSI, the result will be "414243". However, if "unicode" is used, the result is
+		# "410042004300".
 		#
-		# +strToEncode+ - String
-		# +charsetName+ - String
-		# +toEncodingName+ - String
-		# returns String
+		# @param strToEncode [String]
+		# @param charsetName [String]
+		# @param toEncodingName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  strToEncode [String]
-		# @param  charsetName [String]
-		# @param  toEncodingName [String]
-		# @return  [String]
-		def EncodeString(strToEncode, charsetName, toEncodingName)
+		# @return [TrueClass, FalseClass]
+		def EncodeString(strToEncode, charsetName, toEncodingName, outStr)
 			# ...
 		end
+
+
+		# Method: EncodeString
+		#
+		# Encodes a string. The ARG3 can be set to any of the following strings: "base64", "hex",
+		# "quoted-printable", "url", "base32", "Q", "B", "url_rc1738", "url_rfc2396", "url_rfc3986",
+		# "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding). The ARG2 is important, and
+		# usually you'll want to specify "ansi". For example, if the string "ABC" is to be encoded to "hex"
+		# using ANSI, the result will be "414243". However, if "unicode" is used, the result is
+		# "410042004300".
+		#
+		# @param strToEncode [String]
+		# @param charsetName [String]
+		# @param toEncodingName [String]
+		#
+		# @return [String]
+		def encodeString(strToEncode, charsetName, toEncodingName)
+			# ...
+		end
+
 
 		# Method: EncryptBytes
 		#
-		# ==== Attributes
+		# Encrypts a byte array. The minimal set of properties that should be set before encrypting are:
+		# CryptAlgorithm, SecretKey. Other properties that control encryption are: CipherMode, PaddingScheme,
+		# KeyLength, IV. When decrypting, all property settings must match otherwise garbled data is returned.
 		#
-		# +data+ - CkByteData
-		# returns CkByteData
+		# @param data [CkByteData]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
-		def EncryptBytes(data)
+		# @return [TrueClass, FalseClass]
+		def EncryptBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: EncryptBytesENC
 		#
-		# ==== Attributes
+		# Encrypts a byte array and returns the encrypted data as an encoded (printable) string. The minimal
+		# set of properties that should be set before encrypting are: CryptAlgorithm, SecretKey, EncodingMode.
+		# Other properties that control encryption are: CipherMode, PaddingScheme, KeyLength, IV. When
+		# decrypting, all property settings must match otherwise garbled data is returned. The encoding of the
+		# string that is returned is controlled by the EncodingMode property, which can be set to "Base64",
+		# "QP", or "Hex".
 		#
-		# +data+ - CkByteData
-		# returns String
+		# @param data [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [String]
-		def EncryptBytesENC(data)
+		# @return [TrueClass, FalseClass]
+		def EncryptBytesENC(data, outStr)
 			# ...
 		end
+
+
+		# Method: EncryptBytesENC
+		#
+		# Encrypts a byte array and returns the encrypted data as an encoded (printable) string. The minimal
+		# set of properties that should be set before encrypting are: CryptAlgorithm, SecretKey, EncodingMode.
+		# Other properties that control encryption are: CipherMode, PaddingScheme, KeyLength, IV. When
+		# decrypting, all property settings must match otherwise garbled data is returned. The encoding of the
+		# string that is returned is controlled by the EncodingMode property, which can be set to "Base64",
+		# "QP", or "Hex".
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def encryptBytesENC(data)
+			# ...
+		end
+
 
 		# Method: EncryptEncoded
 		#
-		# ==== Attributes
+		# The input string is first decoded according to the encoding algorithm specified by the EncodingMode
+		# property (such as base64, hex, etc.) It is then encrypted according to the encryption algorithm
+		# specified by CryptAlgorithm. The resulting encrypted data is encoded (using EncodingMode) and
+		# returned.
 		#
-		# +str+ - String
-		# returns String
+		# @param str [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [String]
-		def EncryptEncoded(str)
+		# @return [TrueClass, FalseClass]
+		def EncryptEncoded(str, outStr)
 			# ...
 		end
 
+
+		# Method: EncryptEncoded
+		#
+		# The input string is first decoded according to the encoding algorithm specified by the EncodingMode
+		# property (such as base64, hex, etc.) It is then encrypted according to the encryption algorithm
+		# specified by CryptAlgorithm. The resulting encrypted data is encoded (using EncodingMode) and
+		# returned.
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def encryptEncoded(str)
+			# ...
+		end
+
+
 		# Method: EncryptStream
 		#
-		# ==== Attributes
+		# Encrypts a stream. Internally, the ARG1's source is read, encrypted, and the encrypted data written
+		# to the ARG1's sink. It does this in streaming fashion. Extremely large or even infinite streams can
+		# be encrypted with stable ungrowing memory usage.
 		#
-		# +strm+ - CkStream
-		# returns TrueClass, FalseClass
+		# @param strm [CkStream]
 		#
-		# YARD =>
-		#
-		# @param  strm [CkStream]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def EncryptStream(strm)
 			# ...
 		end
 
+
 		# Method: EncryptString
 		#
-		# ==== Attributes
+		# Encrypts a string and returns the encrypted data as a byte array. The minimal set of properties that
+		# should be set before encrypting are: CryptAlgorithm, SecretKey, Charset. Other properties that
+		# control encryption are: CipherMode, PaddingScheme, KeyLength, IV. When decrypting, all property
+		# settings must match otherwise garbled data is returned. The Charset property controls the exact
+		# bytes that get encrypted. Languages such as VB.NET, C#, and Visual Basic work with Unicode strings,
+		# thus the input string is Unicode. If Unicode is to be encrypted (i.e. 2 bytes per character) then
+		# set the Charset property to "Unicode". To implicitly convert the string to another charset before
+		# the encryption is applied, set the Charset property to something else, such as "iso-8859-1",
+		# "Shift_JIS", "big5", "windows-1252", etc. The complete list of possible charsets is listed
+		# here:
+		# 
+		# us-ascii
+		# unicode
+		# unicodefffe
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
-		# +str+ - String
-		# returns CkByteData
 		#
-		# YARD =>
+		# @param str [String]
+		# @param outData [CkByteData]
 		#
-		# @param  str [String]
-		# @return  [CkByteData]
-		def EncryptString(str)
+		# @return [TrueClass, FalseClass]
+		def EncryptString(str, outData)
 			# ...
 		end
+
 
 		# Method: EncryptStringENC
 		#
-		# ==== Attributes
+		# Encrypts a string and returns the encrypted data as an encoded (printable) string. The minimal set
+		# of properties that should be set before encrypting are: CryptAlgorithm, SecretKey, Charset, and
+		# EncodingMode. Other properties that control encryption are: CipherMode, PaddingScheme, KeyLength,
+		# IV. When decrypting (with DecryptStringENC), all property settings must match otherwise garbled data
+		# is returned. The Charset property controls the exact bytes that get encrypted. Languages such as
+		# VB.NET, C#, and Visual Basic work with Unicode strings, thus the input string is Unicode. If Unicode
+		# is to be encrypted (i.e. 2 bytes per character) then set the Charset property to "Unicode". To
+		# implicitly convert the string to another charset before the encryption is applied, set the Charset
+		# property to something else, such as "iso-8859-1", "Shift_JIS", "big5", "windows-1252", etc. (Refer
+		# to EncryptString for the complete list of charsets.) The EncodingMode property controls the encoding
+		# of the string that is returned. It can be set to "Base64", "QP", or "Hex".
 		#
-		# +str+ - String
-		# returns String
+		# @param str [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [String]
-		def EncryptStringENC(str)
+		# @return [TrueClass, FalseClass]
+		def EncryptStringENC(str, outStr)
 			# ...
 		end
+
+
+		# Method: EncryptStringENC
+		#
+		# Encrypts a string and returns the encrypted data as an encoded (printable) string. The minimal set
+		# of properties that should be set before encrypting are: CryptAlgorithm, SecretKey, Charset, and
+		# EncodingMode. Other properties that control encryption are: CipherMode, PaddingScheme, KeyLength,
+		# IV. When decrypting (with DecryptStringENC), all property settings must match otherwise garbled data
+		# is returned. The Charset property controls the exact bytes that get encrypted. Languages such as
+		# VB.NET, C#, and Visual Basic work with Unicode strings, thus the input string is Unicode. If Unicode
+		# is to be encrypted (i.e. 2 bytes per character) then set the Charset property to "Unicode". To
+		# implicitly convert the string to another charset before the encryption is applied, set the Charset
+		# property to something else, such as "iso-8859-1", "Shift_JIS", "big5", "windows-1252", etc. (Refer
+		# to EncryptString for the complete list of charsets.) The EncodingMode property controls the encoding
+		# of the string that is returned. It can be set to "Base64", "QP", or "Hex".
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def encryptStringENC(str)
+			# ...
+		end
+
 
 		# Method: GenEncodedSecretKey
 		#
-		# ==== Attributes
+		# Important: In the v9.5.0.49 release, a bug involving this method was introduced: The ARG2 is ignored
+		# and instead the encoding used is the current value of the EncodingMode property. The workaround is
+		# to make sure the EncodingMode property is set to the value of the desired output encoding. This
+		# problem will be fixed in v9.5.0.50.
+		# 
+		# Identical to the GenerateSecretKey method, except
+		# it returns the binary secret key as a string encoded according to ARG2, which may be "base64",
+		# "hex", "url", etc. Please see the documentation for GenerateSecretKey for more information.
 		#
-		# +password+ - String
-		# +encoding+ - String
-		# returns String
+		# @param password [String]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @param  encoding [String]
-		# @return  [String]
-		def GenEncodedSecretKey(password, encoding)
+		# @return [TrueClass, FalseClass]
+		def GenEncodedSecretKey(password, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: GenEncodedSecretKey
+		#
+		# Important: In the v9.5.0.49 release, a bug involving this method was introduced: The ARG2 is ignored
+		# and instead the encoding used is the current value of the EncodingMode property. The workaround is
+		# to make sure the EncodingMode property is set to the value of the desired output encoding. This
+		# problem will be fixed in v9.5.0.50.
+		# 
+		# Identical to the GenerateSecretKey method, except
+		# it returns the binary secret key as a string encoded according to ARG2, which may be "base64",
+		# "hex", "url", etc. Please see the documentation for GenerateSecretKey for more information.
+		#
+		# @param password [String]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def genEncodedSecretKey(password, encoding)
+			# ...
+		end
+
 
 		# Method: GenerateSecretKey
 		#
-		# ==== Attributes
+		# Hashes a string to a byte array that has the same number of bits as the current value of the
+		# KeyLength property. For example, if KeyLength is equal to 128 bits, then a 16-byte array is
+		# returned. This can be used to set the SecretKey property. In order to decrypt, the SecretKey must
+		# match exactly. To use "password-based" encryption, the password is passed to this method to generate
+		# a binary secret key that can then be assigned to the SecretKey property.
+		# 
+		# IMPORTANT: If
+		# you are trying to decrypt something encrypted by another party such that the other party provided
+		# you with the secret key, DO NOT use this method. This method is for transforming an arbitrary-length
+		# password into a binary secret key of the proper length. Please see this Chilkat blog post: Getting
+		# Started with AES Decryption
 		#
-		# +password+ - String
-		# returns CkByteData
+		# @param password [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @return  [CkByteData]
-		def GenerateSecretKey(password)
+		# @return [TrueClass, FalseClass]
+		def GenerateSecretKey(password, outData)
 			# ...
 		end
+
 
 		# Method: GenerateUuid
 		#
-		# ==== Attributes
+		# Generates a random UUID string having standard UUID format, such as
+		# "de305d54-75b4-431b-adb2-eb6b9e546014".
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GenerateUuid()
+		# @return [TrueClass, FalseClass]
+		def GenerateUuid(outStr)
 			# ...
 		end
+
+
+		# Method: GenerateUuid
+		#
+		# Generates a random UUID string having standard UUID format, such as
+		# "de305d54-75b4-431b-adb2-eb6b9e546014".
+		#
+		#
+		# @return [String]
+		def generateUuid()
+			# ...
+		end
+
 
 		# Method: GenRandomBytesENC
 		#
-		# ==== Attributes
+		# Generates ARG1 random bytes and returns them as an encoded string. The encoding, such as base64,
+		# hex, etc. is controlled by the EncodingMode property.
 		#
-		# +numBytes+ - Fixnum
-		# returns String
+		# @param numBytes [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  numBytes [Fixnum]
-		# @return  [String]
-		def GenRandomBytesENC(numBytes)
+		# @return [TrueClass, FalseClass]
+		def GenRandomBytesENC(numBytes, outStr)
 			# ...
 		end
 
+
+		# Method: GenRandomBytesENC
+		#
+		# Generates ARG1 random bytes and returns them as an encoded string. The encoding, such as base64,
+		# hex, etc. is controlled by the EncodingMode property.
+		#
+		# @param numBytes [Fixnum]
+		#
+		# @return [String]
+		def genRandomBytesENC(numBytes)
+			# ...
+		end
+
+
 		# Method: GetDecryptCert
 		#
-		# ==== Attributes
+		# Returns the last certificate used for public-key decryption.
 		#
-		# returns CkCert
 		#
-		# YARD =>
-		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetDecryptCert()
 			# ...
 		end
 
+
 		# Method: GetEncodedAad
 		#
-		# ==== Attributes
+		# Returns the authenticated additional data as an encoded string. The encoding argument can be set to
+		# any of the following strings: "base64", "hex", "quoted-printable", or "url".
+		# The Aad is used
+		# when the CipherMode is "gcm" (Galois/Counter Mode), which is a mode valid for symmetric ciphers that
+		# have a block size of 16 bytes, such as AES or Twofish.
 		#
-		# +encoding+ - String
-		# returns String
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @return  [String]
-		def GetEncodedAad(encoding)
+		# @return [TrueClass, FalseClass]
+		def GetEncodedAad(encoding, outStr)
 			# ...
 		end
+
+
+		# Method: GetEncodedAad
+		#
+		# Returns the authenticated additional data as an encoded string. The encoding argument can be set to
+		# any of the following strings: "base64", "hex", "quoted-printable", or "url".
+		# The Aad is used
+		# when the CipherMode is "gcm" (Galois/Counter Mode), which is a mode valid for symmetric ciphers that
+		# have a block size of 16 bytes, such as AES or Twofish.
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getEncodedAad(encoding)
+			# ...
+		end
+
 
 		# Method: GetEncodedAuthTag
 		#
-		# ==== Attributes
+		# Returns the authentication tag as an encoded string. The ARG1 argument may be set to any of the
+		# following strings: "base64", "hex", "quoted-printable", or "url". The authentication tag is an
+		# output of authenticated encryption modes such as GCM when encrypting. When GCM mode decrypting, the
+		# authenticate tag is set by the application and is the expected result.
+		# The authenticated tag
+		# plays a role when the CipherMode is "gcm" (Galois/Counter Mode), which is a mode valid for symmetric
+		# block ciphers that have a block size of 16 bytes, such as AES or Twofish.
 		#
-		# +encoding+ - String
-		# returns String
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @return  [String]
-		def GetEncodedAuthTag(encoding)
+		# @return [TrueClass, FalseClass]
+		def GetEncodedAuthTag(encoding, outStr)
 			# ...
 		end
+
+
+		# Method: GetEncodedAuthTag
+		#
+		# Returns the authentication tag as an encoded string. The ARG1 argument may be set to any of the
+		# following strings: "base64", "hex", "quoted-printable", or "url". The authentication tag is an
+		# output of authenticated encryption modes such as GCM when encrypting. When GCM mode decrypting, the
+		# authenticate tag is set by the application and is the expected result.
+		# The authenticated tag
+		# plays a role when the CipherMode is "gcm" (Galois/Counter Mode), which is a mode valid for symmetric
+		# block ciphers that have a block size of 16 bytes, such as AES or Twofish.
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getEncodedAuthTag(encoding)
+			# ...
+		end
+
 
 		# Method: GetEncodedIV
 		#
-		# ==== Attributes
+		# Returns the initialization vector as an encoded string. The encoding argument can be set to any of
+		# the following strings: "base64", "hex", "quoted-printable", or "url".
 		#
-		# +encoding+ - String
-		# returns String
+		# @param encoding [String]
+		# @param outIV [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @return  [String]
-		def GetEncodedIV(encoding)
+		# @return [TrueClass, FalseClass]
+		def GetEncodedIV(encoding, outIV)
 			# ...
 		end
+
+
+		# Method: GetEncodedIV
+		#
+		# Returns the initialization vector as an encoded string. The encoding argument can be set to any of
+		# the following strings: "base64", "hex", "quoted-printable", or "url".
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getEncodedIV(encoding)
+			# ...
+		end
+
 
 		# Method: GetEncodedKey
 		#
-		# ==== Attributes
+		# Returns the secret key as an encoded string. The encoding argument can be set to any of the
+		# following strings: "base64", "hex", "quoted-printable", or "url".
 		#
-		# +encoding+ - String
-		# returns String
+		# @param encoding [String]
+		# @param outKey [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @return  [String]
-		def GetEncodedKey(encoding)
+		# @return [TrueClass, FalseClass]
+		def GetEncodedKey(encoding, outKey)
 			# ...
 		end
+
+
+		# Method: GetEncodedKey
+		#
+		# Returns the secret key as an encoded string. The encoding argument can be set to any of the
+		# following strings: "base64", "hex", "quoted-printable", or "url".
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getEncodedKey(encoding)
+			# ...
+		end
+
 
 		# Method: GetEncodedSalt
 		#
-		# ==== Attributes
+		# Returns the password-based encryption (PBE) salt bytes as an encoded string. The encoding argument
+		# can be set to any of the following strings: "base64", "hex", "quoted-printable", or "url".
 		#
-		# +encoding+ - String
-		# returns String
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @return  [String]
-		def GetEncodedSalt(encoding)
+		# @return [TrueClass, FalseClass]
+		def GetEncodedSalt(encoding, outStr)
 			# ...
 		end
 
+
+		# Method: GetEncodedSalt
+		#
+		# Returns the password-based encryption (PBE) salt bytes as an encoded string. The encoding argument
+		# can be set to any of the following strings: "base64", "hex", "quoted-printable", or "url".
+		#
+		# @param encoding [String]
+		#
+		# @return [String]
+		def getEncodedSalt(encoding)
+			# ...
+		end
+
+
 		# Method: GetLastCert
 		#
-		# ==== Attributes
+		# Returns the last certificate used when verifying a signature. This method is deprecated.
+		# Applications should instead call GetSignerCert with an index of 0.
 		#
-		# returns CkCert
 		#
-		# YARD =>
-		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetLastCert()
 			# ...
 		end
 
+
 		# Method: GetSignatureSigningTime
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# This method can be called after a digital signature is verified to retrieve the signing time of the
+		# Nth certificate used for signing. The 1st certificate/signing time is at ARG1 0. The NumSignerCerts
+		# property contains the total number of signing certificates. (Typically, a single certificate is used
+		# in creating a digital signature.)
+		# 
+		# Note: An application should first check to see if a
+		# signing date/time is available for the Nth certificate by calling the HasSignatureSigningTime
+		# method. The indices for which there is no signing time available should be skipped.
 		#
-		# +index+ - Fixnum
-		# returns Object
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [Object]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetSignatureSigningTime(index)
 			# ...
 		end
 
+
 		# Method: GetSignatureSigningTimeStr
 		#
-		# ==== Attributes
+		# The same as GetSignatureSigningTime, except the date/time is returned in RFC822 string format.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetSignatureSigningTimeStr(index)
+		# @return [TrueClass, FalseClass]
+		def GetSignatureSigningTimeStr(index, outStr)
 			# ...
 		end
 
+
+		# Method: GetSignatureSigningTimeStr
+		#
+		# The same as GetSignatureSigningTime, except the date/time is returned in RFC822 string format.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getSignatureSigningTimeStr(index)
+			# ...
+		end
+
+
 		# Method: GetSignerCert
 		#
-		# ==== Attributes
+		# Gets the Nth certificate used for signing. This method can be called after verifying a digital
+		# signature to get the signer certs. The 1st certificate is at index 0. The NumSignerCerts property
+		# contains the total number of signing certificates. (Typically, a single certificate is used in
+		# creating a digital signature.)
 		#
-		# +index+ - Fixnum
-		# returns CkCert
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetSignerCert(index)
 			# ...
 		end
 
+
 		# Method: GetSignerCertChain
 		#
-		# ==== Attributes
+		# Returns the full certificate chain for the Nth certificate used to sign the MIME message. Indexing
+		# begins at 0.
 		#
-		# +index+ - Fixnum
-		# returns CkCertChain
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkCertChain]
+		# @return [CkCertChain]
 		def GetSignerCertChain(index)
 			# ...
 		end
 
+
 		# Method: HashBdENC
 		#
-		# ==== Attributes
+		# Hashes the the bytes contained in ARG1 and returns the hash as an encoded string. 
+		# 
+		# The
+		# hash algorithm is specified by the HashAlgorithm property, The encoding is controlled by the
+		# EncodingMode property, which can be set to "base64", "hex", "base64url", or any of the encodings
+		# listed at the link below.
 		#
-		# +bd+ - CkBinData
-		# returns String
+		# @param bd [CkBinData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  bd [CkBinData]
-		# @return  [String]
-		def HashBdENC(bd)
+		# @return [TrueClass, FalseClass]
+		def HashBdENC(bd, outStr)
 			# ...
 		end
 
+
+		# Method: HashBdENC
+		#
+		# Hashes the the bytes contained in ARG1 and returns the hash as an encoded string. 
+		# 
+		# The
+		# hash algorithm is specified by the HashAlgorithm property, The encoding is controlled by the
+		# EncodingMode property, which can be set to "base64", "hex", "base64url", or any of the encodings
+		# listed at the link below.
+		#
+		# @param bd [CkBinData]
+		#
+		# @return [String]
+		def hashBdENC(bd)
+			# ...
+		end
+
+
 		# Method: HashBeginBytes
 		#
-		# ==== Attributes
+		# Begin hashing a byte stream. Call this method to hash the 1st chunk. Additional chunks are hashed by
+		# calling HashMoreBytes 0 or more times followed by a final call to HashFinal (or HashFinalENC) to
+		# retrieve the result. The hash algorithm is selected by the HashAlgorithm property setting.
 		#
-		# +data+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param data [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HashBeginBytes(data)
 			# ...
 		end
 
+
 		# Method: HashBeginString
 		#
-		# ==== Attributes
+		# Begin hashing a text stream. Call this method to hash the 1st chunk. Additional chunks are hashed by
+		# calling HashMoreString 0 or more times followed by a final call to HashFinal (or HashFinalENC) to
+		# retrieve the result. The hash algorithm is selected by the HashAlgorithm property setting.
 		#
-		# +strData+ - String
-		# returns TrueClass, FalseClass
+		# @param strData [String]
 		#
-		# YARD =>
-		#
-		# @param  strData [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HashBeginString(strData)
 			# ...
 		end
 
+
 		# Method: HashBytes
 		#
-		# ==== Attributes
+		# Hashes a byte array. 
+		# 
+		# The hash algorithm is specified by the HashAlgorithm property,
+		# The encoding is controlled by the EncodingMode property, which can be set to "base64", "hex",
+		# "base64url", or any of the encodings listed at the link below.
 		#
-		# +data+ - CkByteData
-		# returns CkByteData
+		# @param data [CkByteData]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
-		def HashBytes(data)
+		# @return [TrueClass, FalseClass]
+		def HashBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: HashBytesENC
 		#
-		# ==== Attributes
+		# Hashes a byte array and returns the hash as an encoded string.
+		# 
+		# The hash algorithm is
+		# specified by the HashAlgorithm property, The encoding is controlled by the EncodingMode property,
+		# which can be set to "base64", "hex", "base64url", or any of the encodings listed at the link below.
 		#
-		# +data+ - CkByteData
-		# returns String
+		# @param data [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [String]
-		def HashBytesENC(data)
+		# @return [TrueClass, FalseClass]
+		def HashBytesENC(data, outStr)
 			# ...
 		end
+
+
+		# Method: HashBytesENC
+		#
+		# Hashes a byte array and returns the hash as an encoded string.
+		# 
+		# The hash algorithm is
+		# specified by the HashAlgorithm property, The encoding is controlled by the EncodingMode property,
+		# which can be set to "base64", "hex", "base64url", or any of the encodings listed at the link below.
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def hashBytesENC(data)
+			# ...
+		end
+
 
 		# Method: HashFile
 		#
-		# ==== Attributes
+		# Hashes a file and returns the hash bytes.
+		# The hash algorithm is specified by the HashAlgorithm
+		# property, Any size file may be hashed because the file is hashed internally in streaming mode
+		# (keeping memory usage low and constant).
 		#
-		# +path+ - String
-		# returns CkByteData
+		# @param path [String]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [CkByteData]
-		def HashFile(path)
+		# @return [TrueClass, FalseClass]
+		def HashFile(path, outBytes)
 			# ...
 		end
+
 
 		# Method: HashFileENC
 		#
-		# ==== Attributes
+		# Hashes a file and returns the hash as an encoded string.
+		# The hash algorithm is specified by
+		# the HashAlgorithm property, The encoding is controlled by the EncodingMode property, which can be
+		# set to "base64", "hex", "base64url", or any of the encodings listed at the link below.
+		# Any size
+		# file is supported because the file is hashed internally in streaming mode (keeping memory usage low
+		# and constant).
 		#
-		# +path+ - String
-		# returns String
+		# @param path [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [String]
-		def HashFileENC(path)
+		# @return [TrueClass, FalseClass]
+		def HashFileENC(path, outStr)
 			# ...
 		end
+
+
+		# Method: HashFileENC
+		#
+		# Hashes a file and returns the hash as an encoded string.
+		# The hash algorithm is specified by
+		# the HashAlgorithm property, The encoding is controlled by the EncodingMode property, which can be
+		# set to "base64", "hex", "base64url", or any of the encodings listed at the link below.
+		# Any size
+		# file is supported because the file is hashed internally in streaming mode (keeping memory usage low
+		# and constant).
+		#
+		# @param path [String]
+		#
+		# @return [String]
+		def hashFileENC(path)
+			# ...
+		end
+
 
 		# Method: HashFinal
 		#
-		# ==== Attributes
+		# Finalizes a multi-step hash computation and returns the hash bytes.
 		#
-		# returns CkByteData
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @return  [CkByteData]
-		def HashFinal()
+		# @return [TrueClass, FalseClass]
+		def HashFinal(outBytes)
 			# ...
 		end
+
 
 		# Method: HashFinalENC
 		#
-		# ==== Attributes
+		# Finalizes a multi-step hash computation and returns the hash bytes encoded according to the
+		# EncodingMode property setting.
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def HashFinalENC()
+		# @return [TrueClass, FalseClass]
+		def HashFinalENC(outStr)
 			# ...
 		end
 
+
+		# Method: HashFinalENC
+		#
+		# Finalizes a multi-step hash computation and returns the hash bytes encoded according to the
+		# EncodingMode property setting.
+		#
+		#
+		# @return [String]
+		def hashFinalENC()
+			# ...
+		end
+
+
 		# Method: HashMoreBytes
 		#
-		# ==== Attributes
+		# Adds more bytes to the hash currently under computation. (See HashBeginBytes)
 		#
-		# +data+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param data [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HashMoreBytes(data)
 			# ...
 		end
 
+
 		# Method: HashMoreString
 		#
-		# ==== Attributes
+		# Adds more text to the hash currently under computation. (See HashBeginString)
 		#
-		# +strData+ - String
-		# returns TrueClass, FalseClass
+		# @param strData [String]
 		#
-		# YARD =>
-		#
-		# @param  strData [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HashMoreString(strData)
 			# ...
 		end
 
+
 		# Method: HashString
 		#
-		# ==== Attributes
+		# Hashes a string and returns a binary hash. The hash algorithm is specified by the HashAlgorithm
+		# property, 
+		# 
+		# The Charset property controls the character encoding of the string that is
+		# hashed. Languages such as VB.NET, C#, and Visual Basic work with Unicode strings. If it is desired
+		# to hash Unicode directly (2 bytes/char) then set the Charset property to "Unicode". To implicitly
+		# convert to another charset before hashing, set the Charset property to the desired charset. For
+		# example, if Charset is set to "iso-8859-1", the input string is first implicitly converted to
+		# iso-8859-1 (1 byte per character) before hashing. The full list fo supported charsets is listed in
+		# the EncryptString method description.
+		# IMPORTANT: Hash algorithms hash bytes. Changing the
+		# bytes passed to a hash algorithm changes the result.
+		# A character (i.e. a visible glyph) can
+		# have different byte representations. The byte representation is defined by the Charset. For example,
+		# 'A' in us-ascii is a single byte 0x41, whereas in utf-16 it is 2 bytes (0x41 0x00). The byte
+		# representation should be explicitly specified, otherwise unexpected results may occur.
 		#
-		# +str+ - String
-		# returns CkByteData
+		# @param str [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [CkByteData]
-		def HashString(str)
+		# @return [TrueClass, FalseClass]
+		def HashString(str, outData)
 			# ...
 		end
+
 
 		# Method: HashStringENC
 		#
-		# ==== Attributes
+		# Hashes a string and returns the hash bytes as an encoded string. 
+		# 
+		# The hash algorithm is
+		# specified by the HashAlgorithm property, The encoding is controlled by the EncodingMode property,
+		# which can be set to "base64", "hex", "base64url", or any of the encodings listed at the link
+		# below.
+		# The Charset property controls the character encoding of the string that is hashed.
+		# Languages such as VB.NET, C#, and Visual Basic work with Unicode strings. If it is desired to hash
+		# Unicode directly (2 bytes/char) then set the Charset property to "Unicode". To implicitly convert to
+		# another charset before hashing, set the Charset property to the desired charset. For example, if
+		# Charset is set to "iso-8859-1", the input string is first implicitly converted to iso-8859-1 (1 byte
+		# per character) before hashing. The full list of supported charsets is listed in the EncryptString
+		# method description.
 		#
-		# +str+ - String
-		# returns String
+		# @param str [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [String]
-		def HashStringENC(str)
+		# @return [TrueClass, FalseClass]
+		def HashStringENC(str, outStr)
 			# ...
 		end
 
+
+		# Method: HashStringENC
+		#
+		# Hashes a string and returns the hash bytes as an encoded string. 
+		# 
+		# The hash algorithm is
+		# specified by the HashAlgorithm property, The encoding is controlled by the EncodingMode property,
+		# which can be set to "base64", "hex", "base64url", or any of the encodings listed at the link
+		# below.
+		# The Charset property controls the character encoding of the string that is hashed.
+		# Languages such as VB.NET, C#, and Visual Basic work with Unicode strings. If it is desired to hash
+		# Unicode directly (2 bytes/char) then set the Charset property to "Unicode". To implicitly convert to
+		# another charset before hashing, set the Charset property to the desired charset. For example, if
+		# Charset is set to "iso-8859-1", the input string is first implicitly converted to iso-8859-1 (1 byte
+		# per character) before hashing. The full list of supported charsets is listed in the EncryptString
+		# method description.
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def hashStringENC(str)
+			# ...
+		end
+
+
 		# Method: HasSignatureSigningTime
 		#
-		# ==== Attributes
+		# This method can be called after a digital signature has been verified by one of the Verify* methods.
+		# Returns _TRUE_ if a signing time for the Nth certificate is available and can be retrieved by either
+		# the GetSignatureSigningTime or GetSignatureSigningTimeStr methods.
 		#
-		# +index+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HasSignatureSigningTime(index)
 			# ...
 		end
 
+
 		# Method: HmacBytes
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Computes a keyed-Hash Message Authentication Code (HMAC or KHMAC), which is a type of message
+		# authentication code (MAC) calculated using a specific algorithm involving a cryptographic hash
+		# function in combination with a secret key. As with any MAC, it may be used to simultaneously verify
+		# both the data integrity and the authenticity of a message. Any iterative cryptographic hash
+		# function, such as MD5, SHA-1, SHA256, or any of the hash algorithms listed in the HashAlgorithm
+		# property, may be used in the calculation of an HMAC; the resulting MAC algorithm is termed HMAC-MD5,
+		# HMAC-SHA-1, etc. accordingly. The cryptographic strength of the HMAC depends upon the cryptographic
+		# strength of the underlying hash function, on the size and quality of the key and the size of the
+		# hash output length in bits.
+		# 
+		# The secret key is set by calling one of the following
+		# methods prior to calling this method: SetHmacKeyBytes, SetHmacKeyEncoded, or
+		# SetHmacKeyString.
+		# 
+		# The hash algorithm is specified by the HashAlgorithm
+		# property.
+		# 
+		# Note: If using Chilkat v9.5.0.55 or later, update your programs to use
+		# MacBytes instead (with the MacAlgorithm property set to "hmac").
 		#
-		# +inBytes+ - CkByteData
-		# returns CkByteData
+		# @param inBytes [CkByteData]
+		# @param outHmac [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  inBytes [CkByteData]
-		# @return  [CkByteData]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
-		def HmacBytes(inBytes)
+		def HmacBytes(inBytes, outHmac)
 			# ...
 		end
+
 
 		# Method: HmacBytesENC
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Computes an HMAC using a secret key and hash algorithm. The result is encoded to a string using the
+		# encoding (base64, hex, etc.) specified by the EncodingMode property.
+		# 
+		# The secret key is
+		# set by calling one of the following methods prior to calling this method: SetHmacKeyBytes,
+		# SetHmacKeyEncoded, or SetHmacKeyString.
+		# 
+		# The hash algorithm is specified by the
+		# HashAlgorithm property.
+		# 
+		# Note: If using Chilkat v9.5.0.55 or later, update your programs
+		# to use MacBytesEnc instead (with the MacAlgorithm property set to "hmac").
 		#
-		# +inBytes+ - CkByteData
-		# returns String
+		# @param inBytes [CkByteData]
+		# @param outEncodedHmac [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inBytes [CkByteData]
-		# @return  [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
-		def HmacBytesENC(inBytes)
+		def HmacBytesENC(inBytes, outEncodedHmac)
 			# ...
 		end
+
+
+		# Method: HmacBytesENC
+		#
+		# Computes an HMAC using a secret key and hash algorithm. The result is encoded to a string using the
+		# encoding (base64, hex, etc.) specified by the EncodingMode property.
+		# 
+		# The secret key is
+		# set by calling one of the following methods prior to calling this method: SetHmacKeyBytes,
+		# SetHmacKeyEncoded, or SetHmacKeyString.
+		# 
+		# The hash algorithm is specified by the
+		# HashAlgorithm property.
+		# 
+		# Note: If using Chilkat v9.5.0.55 or later, update your programs
+		# to use MacBytesEnc instead (with the MacAlgorithm property set to "hmac").
+		#
+		# @param inBytes [CkByteData]
+		#
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def hmacBytesENC(inBytes)
+			# ...
+		end
+
 
 		# Method: HmacString
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Computes an HMAC using a secret key and hash algorithm. 
+		# 
+		# The secret key is set by
+		# calling one of the following methods prior to calling this method: SetHmacKeyBytes,
+		# SetHmacKeyEncoded, or SetHmacKeyString.
+		# 
+		# The hash algorithm is specified by the
+		# HashAlgorithm property.
+		# 
+		# Note: If using Chilkat v9.5.0.55 or later, update your programs
+		# to use MacString instead (with the MacAlgorithm property set to "hmac").
 		#
-		# +inText+ - String
-		# returns CkByteData
+		# @param inText [String]
+		# @param outHmac [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  inText [String]
-		# @return  [CkByteData]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
-		def HmacString(inText)
+		def HmacString(inText, outHmac)
 			# ...
 		end
+
 
 		# Method: HmacStringENC
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Computes an HMAC using a secret key and hash algorithm. The result is encoded to a string using the
+		# encoding (base64, hex, etc.) specified by the EncodingMode property.
+		# 
+		# The secret key is
+		# set by calling one of the following methods prior to calling this method: SetHmacKeyBytes,
+		# SetHmacKeyEncoded, or SetHmacKeyString.
+		# 
+		# The hash algorithm is specified by the
+		# HashAlgorithm property.
+		# 
+		# Note: If using Chilkat v9.5.0.55 or later, update your programs
+		# to use MacStringENC instead (with the MacAlgorithm property set to "hmac").
 		#
-		# +inText+ - String
-		# returns String
+		# @param inText [String]
+		# @param outEncodedHmac [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inText [String]
-		# @return  [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
-		def HmacStringENC(inText)
+		def HmacStringENC(inText, outEncodedHmac)
 			# ...
 		end
+
+
+		# Method: HmacStringENC
+		#
+		# Computes an HMAC using a secret key and hash algorithm. The result is encoded to a string using the
+		# encoding (base64, hex, etc.) specified by the EncodingMode property.
+		# 
+		# The secret key is
+		# set by calling one of the following methods prior to calling this method: SetHmacKeyBytes,
+		# SetHmacKeyEncoded, or SetHmacKeyString.
+		# 
+		# The hash algorithm is specified by the
+		# HashAlgorithm property.
+		# 
+		# Note: If using Chilkat v9.5.0.55 or later, update your programs
+		# to use MacStringENC instead (with the MacAlgorithm property set to "hmac").
+		#
+		# @param inText [String]
+		#
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def hmacStringENC(inText)
+			# ...
+		end
+
 
 		# Method: InflateBytes
 		#
-		# ==== Attributes
+		# The opposite of CompressBytes.
 		#
-		# +data+ - CkByteData
-		# returns CkByteData
+		# @param data [CkByteData]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
-		def InflateBytes(data)
+		# @return [TrueClass, FalseClass]
+		def InflateBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: InflateBytesENC
 		#
-		# ==== Attributes
+		# The opposite of CompressBytesENC. The EncodingMode and CompressionAlgorithm properties should match
+		# what was used when compressing.
 		#
-		# +str+ - String
-		# returns CkByteData
+		# @param str [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [CkByteData]
-		def InflateBytesENC(str)
+		# @return [TrueClass, FalseClass]
+		def InflateBytesENC(str, outData)
 			# ...
 		end
+
 
 		# Method: InflateString
 		#
-		# ==== Attributes
+		# The opposite of CompressString. The Charset and CompressionAlgorithm properties should match what
+		# was used when compressing.
 		#
-		# +data+ - CkByteData
-		# returns String
+		# @param data [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [String]
-		def InflateString(data)
+		# @return [TrueClass, FalseClass]
+		def InflateString(data, outStr)
 			# ...
 		end
+
+
+		# Method: InflateString
+		#
+		# The opposite of CompressString. The Charset and CompressionAlgorithm properties should match what
+		# was used when compressing.
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def ınflateString(data)
+			# ...
+		end
+
 
 		# Method: InflateStringENC
 		#
-		# ==== Attributes
+		# The opposite of CompressStringENC. The Charset, EncodingMode, and CompressionAlgorithm properties
+		# should match what was used when compressing.
 		#
-		# +str+ - String
-		# returns String
+		# @param str [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [String]
-		def InflateStringENC(str)
+		# @return [TrueClass, FalseClass]
+		def InflateStringENC(str, outStr)
 			# ...
 		end
 
+
+		# Method: InflateStringENC
+		#
+		# The opposite of CompressStringENC. The Charset, EncodingMode, and CompressionAlgorithm properties
+		# should match what was used when compressing.
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def ınflateStringENC(str)
+			# ...
+		end
+
+
 		# Method: IsUnlocked
 		#
-		# ==== Attributes
+		# Returns true if the component is unlocked.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
 
+
 		# Method: MacBdENC
 		#
-		# ==== Attributes
+		# Computes a Message Authentication Code on the bytes contained in ARG1, using the MAC algorithm
+		# specified in the MacAlgorithm property. The result is encoded to a string using the encoding
+		# (base64, hex, etc.) specified by the EncodingMode property.
 		#
-		# +bd+ - CkBinData
-		# returns String
+		# @param bd [CkBinData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  bd [CkBinData]
-		# @return  [String]
-		def MacBdENC(bd)
+		# @return [TrueClass, FalseClass]
+		def MacBdENC(bd, outStr)
 			# ...
 		end
+
+
+		# Method: MacBdENC
+		#
+		# Computes a Message Authentication Code on the bytes contained in ARG1, using the MAC algorithm
+		# specified in the MacAlgorithm property. The result is encoded to a string using the encoding
+		# (base64, hex, etc.) specified by the EncodingMode property.
+		#
+		# @param bd [CkBinData]
+		#
+		# @return [String]
+		def macBdENC(bd)
+			# ...
+		end
+
 
 		# Method: MacBytes
 		#
-		# ==== Attributes
+		# Computes a Message Authentication Code using the MAC algorithm specified in the MacAlgorithm
+		# property.
 		#
-		# +inBytes+ - CkByteData
-		# returns CkByteData
+		# @param inBytes [CkByteData]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  inBytes [CkByteData]
-		# @return  [CkByteData]
-		def MacBytes(inBytes)
+		# @return [TrueClass, FalseClass]
+		def MacBytes(inBytes, outBytes)
 			# ...
 		end
+
 
 		# Method: MacBytesENC
 		#
-		# ==== Attributes
+		# Computes a Message Authentication Code using the MAC algorithm specified in the MacAlgorithm
+		# property. The result is encoded to a string using the encoding (base64, hex, etc.) specified by the
+		# EncodingMode property.
 		#
-		# +inBytes+ - CkByteData
-		# returns String
+		# @param inBytes [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inBytes [CkByteData]
-		# @return  [String]
-		def MacBytesENC(inBytes)
+		# @return [TrueClass, FalseClass]
+		def MacBytesENC(inBytes, outStr)
 			# ...
 		end
+
+
+		# Method: MacBytesENC
+		#
+		# Computes a Message Authentication Code using the MAC algorithm specified in the MacAlgorithm
+		# property. The result is encoded to a string using the encoding (base64, hex, etc.) specified by the
+		# EncodingMode property.
+		#
+		# @param inBytes [CkByteData]
+		#
+		# @return [String]
+		def macBytesENC(inBytes)
+			# ...
+		end
+
 
 		# Method: MacString
 		#
-		# ==== Attributes
+		# Computes a Message Authentication Code using the MAC algorithm specified in the MacAlgorithm
+		# property.
 		#
-		# +inText+ - String
-		# returns CkByteData
+		# @param inText [String]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  inText [String]
-		# @return  [CkByteData]
-		def MacString(inText)
+		# @return [TrueClass, FalseClass]
+		def MacString(inText, outBytes)
 			# ...
 		end
+
 
 		# Method: MacStringENC
 		#
-		# ==== Attributes
+		# Computes a Message Authentication Code using the MAC algorithm specified in the MacAlgorithm
+		# property. The result is encoded to a string using the encoding (base64, hex, etc.) specified by the
+		# EncodingMode property.
 		#
-		# +inText+ - String
-		# returns String
+		# @param inText [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inText [String]
-		# @return  [String]
-		def MacStringENC(inText)
+		# @return [TrueClass, FalseClass]
+		def MacStringENC(inText, outStr)
 			# ...
 		end
+
+
+		# Method: MacStringENC
+		#
+		# Computes a Message Authentication Code using the MAC algorithm specified in the MacAlgorithm
+		# property. The result is encoded to a string using the encoding (base64, hex, etc.) specified by the
+		# EncodingMode property.
+		#
+		# @param inText [String]
+		#
+		# @return [String]
+		def macStringENC(inText)
+			# ...
+		end
+
 
 		# Method: MySqlAesDecrypt
 		#
-		# ==== Attributes
+		# Matches MySQL's AES_DECRYPT function. ARG1 is a hex-encoded string of the AES encrypted data. The
+		# return value is the original unencrypted string.
 		#
-		# +strEncryptedHex+ - String
-		# +strPassword+ - String
-		# returns String
+		# @param strEncryptedHex [String]
+		# @param strPassword [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  strEncryptedHex [String]
-		# @param  strPassword [String]
-		# @return  [String]
-		def MySqlAesDecrypt(strEncryptedHex, strPassword)
+		# @return [TrueClass, FalseClass]
+		def MySqlAesDecrypt(strEncryptedHex, strPassword, outStr)
 			# ...
 		end
+
+
+		# Method: MySqlAesDecrypt
+		#
+		# Matches MySQL's AES_DECRYPT function. ARG1 is a hex-encoded string of the AES encrypted data. The
+		# return value is the original unencrypted string.
+		#
+		# @param strEncryptedHex [String]
+		# @param strPassword [String]
+		#
+		# @return [String]
+		def mySqlAesDecrypt(strEncryptedHex, strPassword)
+			# ...
+		end
+
 
 		# Method: MySqlAesEncrypt
 		#
-		# ==== Attributes
+		# Matches MySQL's AES_ENCRYPT function. The return value is a hex-encoded string of the encrypted
+		# data. The equivalent call in MySQL would look like this: HEX(AES_ENCRYPT('The quick brown fox jumps
+		# over the lazy dog','password'))
 		#
-		# +strData+ - String
-		# +strPassword+ - String
-		# returns String
+		# @param strData [String]
+		# @param strPassword [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  strData [String]
-		# @param  strPassword [String]
-		# @return  [String]
-		def MySqlAesEncrypt(strData, strPassword)
+		# @return [TrueClass, FalseClass]
+		def MySqlAesEncrypt(strData, strPassword, outStr)
 			# ...
 		end
+
+
+		# Method: MySqlAesEncrypt
+		#
+		# Matches MySQL's AES_ENCRYPT function. The return value is a hex-encoded string of the encrypted
+		# data. The equivalent call in MySQL would look like this: HEX(AES_ENCRYPT('The quick brown fox jumps
+		# over the lazy dog','password'))
+		#
+		# @param strData [String]
+		# @param strPassword [String]
+		#
+		# @return [String]
+		def mySqlAesEncrypt(strData, strPassword)
+			# ...
+		end
+
 
 		# Method: OpaqueSignBytes
 		#
-		# ==== Attributes
+		# Digitally signs a byte array and returns a PKCS7/CMS format signature. This is a signature that
+		# contains both the original data as well as the signature. A certificate must be set by calling
+		# SetSigningCert prior to calling this method.
 		#
-		# +data+ - CkByteData
-		# returns CkByteData
+		# @param data [CkByteData]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
-		def OpaqueSignBytes(data)
+		# @return [TrueClass, FalseClass]
+		def OpaqueSignBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: OpaqueSignBytesENC
 		#
-		# ==== Attributes
+		# Digitally signs a byte array and returns a PKCS7/CMS format signature in encoded string format (such
+		# as Base64 or hex). This is a signature that contains both the original data as well as the
+		# signature. A certificate must be set by calling SetSigningCert prior to calling this method. The
+		# EncodingMode property controls the output encoding, which can be "Base64", "QP","Hex", etc. (See the
+		# EncodingMode property.)
 		#
-		# +data+ - CkByteData
-		# returns String
+		# @param data [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [String]
-		def OpaqueSignBytesENC(data)
+		# @return [TrueClass, FalseClass]
+		def OpaqueSignBytesENC(data, outStr)
 			# ...
 		end
+
+
+		# Method: OpaqueSignBytesENC
+		#
+		# Digitally signs a byte array and returns a PKCS7/CMS format signature in encoded string format (such
+		# as Base64 or hex). This is a signature that contains both the original data as well as the
+		# signature. A certificate must be set by calling SetSigningCert prior to calling this method. The
+		# EncodingMode property controls the output encoding, which can be "Base64", "QP","Hex", etc. (See the
+		# EncodingMode property.)
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def opaqueSignBytesENC(data)
+			# ...
+		end
+
 
 		# Method: OpaqueSignString
 		#
-		# ==== Attributes
+		# Digitally signs a string and returns a PKCS7/CMS format signature. This is a signature that contains
+		# both the original data as well as the signature. A certificate must be set by calling SetSigningCert
+		# prior to calling this method. The Charset property controls the character encoding of the string
+		# that is signed. (Languages such as VB.NET, C#, and Visual Basic work with Unicode strings.) To sign
+		# Unicode data (2 bytes per char), set the Charset property to "Unicode". To implicitly convert the
+		# string to a mutlibyte charset such as "iso-8859-1", "Shift_JIS", "utf-8", or something else, then
+		# set the Charset property to the name of the charset before signing. The complete list of charsets is
+		# listed in the EncryptString method description.
 		#
-		# +str+ - String
-		# returns CkByteData
+		# @param str [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [CkByteData]
-		def OpaqueSignString(str)
+		# @return [TrueClass, FalseClass]
+		def OpaqueSignString(str, outData)
 			# ...
 		end
+
 
 		# Method: OpaqueSignStringENC
 		#
-		# ==== Attributes
+		# Digitally signs a string and returns a PKCS7/CMS format signature in encoded string format (such as
+		# base64 or hex). This is a signature that contains both the original data as well as the signature. A
+		# certificate must be set by calling SetSigningCert prior to calling this method. The Charset property
+		# controls the character encoding of the string that is signed. (Languages such as VB.NET, C#, and
+		# Visual Basic work with Unicode strings.) To sign Unicode data (2 bytes per char), set the Charset
+		# property to "Unicode". To implicitly convert the string to a mutlibyte charset such as "iso-8859-1",
+		# "Shift_JIS", "utf-8", or something else, then set the Charset property to the name of the charset
+		# before signing. The complete list of charsets is listed in the EncryptString method description. The
+		# EncodingMode property controls the output encoding, which can be "Base64", "QP","Hex", etc. (See the
+		# EncodingMode property.)
 		#
-		# +str+ - String
-		# returns String
+		# @param str [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [String]
-		def OpaqueSignStringENC(str)
+		# @return [TrueClass, FalseClass]
+		def OpaqueSignStringENC(str, outStr)
 			# ...
 		end
+
+
+		# Method: OpaqueSignStringENC
+		#
+		# Digitally signs a string and returns a PKCS7/CMS format signature in encoded string format (such as
+		# base64 or hex). This is a signature that contains both the original data as well as the signature. A
+		# certificate must be set by calling SetSigningCert prior to calling this method. The Charset property
+		# controls the character encoding of the string that is signed. (Languages such as VB.NET, C#, and
+		# Visual Basic work with Unicode strings.) To sign Unicode data (2 bytes per char), set the Charset
+		# property to "Unicode". To implicitly convert the string to a mutlibyte charset such as "iso-8859-1",
+		# "Shift_JIS", "utf-8", or something else, then set the Charset property to the name of the charset
+		# before signing. The complete list of charsets is listed in the EncryptString method description. The
+		# EncodingMode property controls the output encoding, which can be "Base64", "QP","Hex", etc. (See the
+		# EncodingMode property.)
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def opaqueSignStringENC(str)
+			# ...
+		end
+
 
 		# Method: OpaqueVerifyBytes
 		#
-		# ==== Attributes
+		# Verifies an opaque signature and returns the original data. If the signature verification fails, the
+		# returned data will be 0 bytes in length.
 		#
-		# +p7s+ - CkByteData
-		# returns CkByteData
+		# @param p7s [CkByteData]
+		# @param outOriginal [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  p7s [CkByteData]
-		# @return  [CkByteData]
-		def OpaqueVerifyBytes(p7s)
+		# @return [TrueClass, FalseClass]
+		def OpaqueVerifyBytes(p7s, outOriginal)
 			# ...
 		end
+
 
 		# Method: OpaqueVerifyBytesENC
 		#
-		# ==== Attributes
+		# Verifies an opaque signature (encoded in string form) and returns the original data. If the
+		# signature verification fails, the returned data will be 0 bytes in length.
 		#
-		# +p7s+ - String
-		# returns CkByteData
+		# @param p7s [String]
+		# @param outOriginal [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  p7s [String]
-		# @return  [CkByteData]
-		def OpaqueVerifyBytesENC(p7s)
+		# @return [TrueClass, FalseClass]
+		def OpaqueVerifyBytesENC(p7s, outOriginal)
 			# ...
 		end
+
 
 		# Method: OpaqueVerifyString
 		#
-		# ==== Attributes
+		# Verifies an opaque signature and returns the original string. If the signature verification fails,
+		# the returned string will be 0 characters in length.
 		#
-		# +p7s+ - CkByteData
-		# returns String
+		# @param p7s [CkByteData]
+		# @param outOriginal [CkString]
 		#
-		# YARD =>
-		#
-		# @param  p7s [CkByteData]
-		# @return  [String]
-		def OpaqueVerifyString(p7s)
+		# @return [TrueClass, FalseClass]
+		def OpaqueVerifyString(p7s, outOriginal)
 			# ...
 		end
+
+
+		# Method: OpaqueVerifyString
+		#
+		# Verifies an opaque signature and returns the original string. If the signature verification fails,
+		# the returned string will be 0 characters in length.
+		#
+		# @param p7s [CkByteData]
+		#
+		# @return [String]
+		def opaqueVerifyString(p7s)
+			# ...
+		end
+
 
 		# Method: OpaqueVerifyStringENC
 		#
-		# ==== Attributes
+		# Verifies an opaque signature (encoded in string form) and returns the original data string. If the
+		# signature verification fails, the returned string will be 0 characters in length.
 		#
-		# +p7s+ - String
-		# returns String
+		# @param p7s [String]
+		# @param outOriginal [CkString]
 		#
-		# YARD =>
-		#
-		# @param  p7s [String]
-		# @return  [String]
-		def OpaqueVerifyStringENC(p7s)
+		# @return [TrueClass, FalseClass]
+		def OpaqueVerifyStringENC(p7s, outOriginal)
 			# ...
 		end
+
+
+		# Method: OpaqueVerifyStringENC
+		#
+		# Verifies an opaque signature (encoded in string form) and returns the original data string. If the
+		# signature verification fails, the returned string will be 0 characters in length.
+		#
+		# @param p7s [String]
+		#
+		# @return [String]
+		def opaqueVerifyStringENC(p7s)
+			# ...
+		end
+
 
 		# Method: Pbkdf1
 		#
-		# ==== Attributes
+		# Implements the PBKDF1 algorithm (Password Based Key Derivation Function #1). The ARG1 is converted
+		# to the character encoding represented by ARG2 before being passed (internally) to the key derivation
+		# function. The ARG3 may be "md5", "sha1", "md2", etc. The ARG4 should be random data at least 8 bytes
+		# (64 bits) in length. (The GenRandomBytesENC method is good for generating a random salt value.) The
+		# ARG5 should be no less than 1000. The length (in bits) of the derived key output by this method is
+		# controlled by ARG6. The ARG7 argument may be "base64", "hex", etc. It controls the encoding of the
+		# output, and the expected encoding of the ARG4. The derived key is returned.
+		# 
+		# Note:
+		# Starting in version 9.5.0.47, if the ARG2 is set to one of the keywords "hex" or "base64", then the
+		# password will be considered binary data that is hex or base64 encoded. The bytes will be decoded and
+		# used directly as a binary password.
 		#
-		# +password+ - String
-		# +charset+ - String
-		# +hashAlg+ - String
-		# +salt+ - String
-		# +iterationCount+ - Fixnum
-		# +outputKeyBitLen+ - Fixnum
-		# +encoding+ - String
-		# returns String
+		# @param password [String]
+		# @param charset [String]
+		# @param hashAlg [String]
+		# @param salt [String]
+		# @param iterationCount [Fixnum]
+		# @param outputKeyBitLen [Fixnum]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @param  charset [String]
-		# @param  hashAlg [String]
-		# @param  salt [String]
-		# @param  iterationCount [Fixnum]
-		# @param  outputKeyBitLen [Fixnum]
-		# @param  encoding [String]
-		# @return  [String]
-		def Pbkdf1(password, charset, hashAlg, salt, iterationCount, outputKeyBitLen, encoding)
+		# @return [TrueClass, FalseClass]
+		def Pbkdf1(password, charset, hashAlg, salt, iterationCount, outputKeyBitLen, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: Pbkdf1
+		#
+		# Implements the PBKDF1 algorithm (Password Based Key Derivation Function #1). The ARG1 is converted
+		# to the character encoding represented by ARG2 before being passed (internally) to the key derivation
+		# function. The ARG3 may be "md5", "sha1", "md2", etc. The ARG4 should be random data at least 8 bytes
+		# (64 bits) in length. (The GenRandomBytesENC method is good for generating a random salt value.) The
+		# ARG5 should be no less than 1000. The length (in bits) of the derived key output by this method is
+		# controlled by ARG6. The ARG7 argument may be "base64", "hex", etc. It controls the encoding of the
+		# output, and the expected encoding of the ARG4. The derived key is returned.
+		# 
+		# Note:
+		# Starting in version 9.5.0.47, if the ARG2 is set to one of the keywords "hex" or "base64", then the
+		# password will be considered binary data that is hex or base64 encoded. The bytes will be decoded and
+		# used directly as a binary password.
+		#
+		# @param password [String]
+		# @param charset [String]
+		# @param hashAlg [String]
+		# @param salt [String]
+		# @param iterationCount [Fixnum]
+		# @param outputKeyBitLen [Fixnum]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def pbkdf1(password, charset, hashAlg, salt, iterationCount, outputKeyBitLen, encoding)
+			# ...
+		end
+
 
 		# Method: Pbkdf2
 		#
-		# ==== Attributes
+		# Implements the PBKDF2 algorithm (Password Based Key Derivation Function #2). The ARG1 is converted
+		# to the character encoding represented by ARG2 before being passed (internally) to the key derivation
+		# function. The ARG3 may be "sha256", "sha384", "sha512", "md5", "sha1", "md2", or any hash algorithm
+		# listed in the HashAlgorithm property. The ARG4 should be random data at least 8 bytes (64 bits) in
+		# length. (The GenRandomBytesENC method is good for generating a random salt value.) The ARG5 should
+		# be no less than 1000. The length (in bits) of the derived key output by this method is controlled by
+		# ARG6. The ARG7 argument may be "base64", "hex", etc. It controls the encoding of the output, and the
+		# expected encoding of the ARG4. The derived key is returned.
+		# 
+		# Note: The PBKDF2 function
+		# (internally) utilizes a PRF that is a pseudorandom function that is a keyed HMAC. The hash algorithm
+		# specified by ARG3 determines this PRF. If ARG3 is "SHA256", then HMAC-SHA256 is used for the PRF.
+		# Likewise, if the hash function is "SHA1", then HMAC-SHA1 is used. HMAC can be used with any hash
+		# algorithm.
+		# 
+		# Note: Starting in version 9.5.0.47, if the ARG2 is set to one of the
+		# keywords "hex" or "base64", then the password will be considered binary data that is hex or base64
+		# encoded. The bytes will be decoded and used directly as a binary password.
 		#
-		# +password+ - String
-		# +charset+ - String
-		# +hashAlg+ - String
-		# +salt+ - String
-		# +iterationCount+ - Fixnum
-		# +outputKeyBitLen+ - Fixnum
-		# +encoding+ - String
-		# returns String
+		# @param password [String]
+		# @param charset [String]
+		# @param hashAlg [String]
+		# @param salt [String]
+		# @param iterationCount [Fixnum]
+		# @param outputKeyBitLen [Fixnum]
+		# @param encoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @param  charset [String]
-		# @param  hashAlg [String]
-		# @param  salt [String]
-		# @param  iterationCount [Fixnum]
-		# @param  outputKeyBitLen [Fixnum]
-		# @param  encoding [String]
-		# @return  [String]
-		def Pbkdf2(password, charset, hashAlg, salt, iterationCount, outputKeyBitLen, encoding)
+		# @return [TrueClass, FalseClass]
+		def Pbkdf2(password, charset, hashAlg, salt, iterationCount, outputKeyBitLen, encoding, outStr)
 			# ...
 		end
+
+
+		# Method: Pbkdf2
+		#
+		# Implements the PBKDF2 algorithm (Password Based Key Derivation Function #2). The ARG1 is converted
+		# to the character encoding represented by ARG2 before being passed (internally) to the key derivation
+		# function. The ARG3 may be "sha256", "sha384", "sha512", "md5", "sha1", "md2", or any hash algorithm
+		# listed in the HashAlgorithm property. The ARG4 should be random data at least 8 bytes (64 bits) in
+		# length. (The GenRandomBytesENC method is good for generating a random salt value.) The ARG5 should
+		# be no less than 1000. The length (in bits) of the derived key output by this method is controlled by
+		# ARG6. The ARG7 argument may be "base64", "hex", etc. It controls the encoding of the output, and the
+		# expected encoding of the ARG4. The derived key is returned.
+		# 
+		# Note: The PBKDF2 function
+		# (internally) utilizes a PRF that is a pseudorandom function that is a keyed HMAC. The hash algorithm
+		# specified by ARG3 determines this PRF. If ARG3 is "SHA256", then HMAC-SHA256 is used for the PRF.
+		# Likewise, if the hash function is "SHA1", then HMAC-SHA1 is used. HMAC can be used with any hash
+		# algorithm.
+		# 
+		# Note: Starting in version 9.5.0.47, if the ARG2 is set to one of the
+		# keywords "hex" or "base64", then the password will be considered binary data that is hex or base64
+		# encoded. The bytes will be decoded and used directly as a binary password.
+		#
+		# @param password [String]
+		# @param charset [String]
+		# @param hashAlg [String]
+		# @param salt [String]
+		# @param iterationCount [Fixnum]
+		# @param outputKeyBitLen [Fixnum]
+		# @param encoding [String]
+		#
+		# @return [String]
+		def pbkdf2(password, charset, hashAlg, salt, iterationCount, outputKeyBitLen, encoding)
+			# ...
+		end
+
 
 		# Method: Pkcs7ExtractDigest
 		#
-		# ==== Attributes
+		# Extracts the signature digest contained within a PKCS7 signature. The PKCS7 is passed in the
+		# encoding determined by the EncodingMode property (such as base64, hex, etc.) an the signature digest
+		# is returned in the same encoding.
 		#
-		# +signerIndex+ - Fixnum
-		# +pkcs7+ - String
-		# returns String
+		# @param signerIndex [Fixnum]
+		# @param pkcs7 [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  signerIndex [Fixnum]
-		# @param  pkcs7 [String]
-		# @return  [String]
-		def Pkcs7ExtractDigest(signerIndex, pkcs7)
+		# @return [TrueClass, FalseClass]
+		def Pkcs7ExtractDigest(signerIndex, pkcs7, outStr)
 			# ...
 		end
 
+
+		# Method: Pkcs7ExtractDigest
+		#
+		# Extracts the signature digest contained within a PKCS7 signature. The PKCS7 is passed in the
+		# encoding determined by the EncodingMode property (such as base64, hex, etc.) an the signature digest
+		# is returned in the same encoding.
+		#
+		# @param signerIndex [Fixnum]
+		# @param pkcs7 [String]
+		#
+		# @return [String]
+		def pkcs7ExtractDigest(signerIndex, pkcs7)
+			# ...
+		end
+
+
 		# Method: RandomizeIV
 		#
-		# ==== Attributes
+		# Sets the initialization vector to a random value.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def RandomizeIV()
 			# ...
 		end
 
+
 		# Method: RandomizeKey
 		#
-		# ==== Attributes
+		# Sets the secret key to a random value.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def RandomizeKey()
 			# ...
 		end
 
+
 		# Method: ReadFile
 		#
-		# ==== Attributes
+		# Convenience method to read an entire file and return as a byte array.
 		#
-		# +filename+ - String
-		# returns CkByteData
+		# @param filename [String]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  filename [String]
-		# @return  [CkByteData]
-		def ReadFile(filename)
+		# @return [TrueClass, FalseClass]
+		def ReadFile(filename, outBytes)
 			# ...
 		end
+
 
 		# Method: ReEncode
 		#
-		# ==== Attributes
+		# Provides a means for converting from one encoding to another (such as base64 to hex). This is
+		# helpful for programming environments where byte arrays are a real pain-in-the-***. The ARG2 and ARG3
+		# may be (case-insensitive) "Base64", "modBase64", "Base32", "Base58", "UU", "QP" (for
+		# quoted-printable), "URL" (for url-encoding), "Hex", "Q", "B", "url_oauth", "url_rfc1738",
+		# "url_rfc2396", and "url_rfc3986".
 		#
-		# +encodedData+ - String
-		# +fromEncoding+ - String
-		# +toEncoding+ - String
-		# returns String
+		# @param encodedData [String]
+		# @param fromEncoding [String]
+		# @param toEncoding [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encodedData [String]
-		# @param  fromEncoding [String]
-		# @param  toEncoding [String]
-		# @return  [String]
-		def ReEncode(encodedData, fromEncoding, toEncoding)
+		# @return [TrueClass, FalseClass]
+		def ReEncode(encodedData, fromEncoding, toEncoding, outStr)
 			# ...
 		end
 
+
+		# Method: ReEncode
+		#
+		# Provides a means for converting from one encoding to another (such as base64 to hex). This is
+		# helpful for programming environments where byte arrays are a real pain-in-the-***. The ARG2 and ARG3
+		# may be (case-insensitive) "Base64", "modBase64", "Base32", "Base58", "UU", "QP" (for
+		# quoted-printable), "URL" (for url-encoding), "Hex", "Q", "B", "url_oauth", "url_rfc1738",
+		# "url_rfc2396", and "url_rfc3986".
+		#
+		# @param encodedData [String]
+		# @param fromEncoding [String]
+		# @param toEncoding [String]
+		#
+		# @return [String]
+		def reEncode(encodedData, fromEncoding, toEncoding)
+			# ...
+		end
+
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: SetCSP
 		#
-		# ==== Attributes
+		# (Only applies to the Microsoft Windows OS) Sets the Cryptographic Service Provider (CSP) to be used
+		# for PKI public-key encryption / signing, or public-key decryption / signature
+		# verification.
+		# 
+		# This is not commonly used becaues the default Microsoft CSP is typically
+		# appropriate. 
+		# One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the
+		# GOST R 34.10-2001 and GOST R 34.10-94 providers.
 		#
-		# +csp+ - CkCsp
-		# returns TrueClass, FalseClass
+		# @param csp [CkCsp]
 		#
-		# YARD =>
-		#
-		# @param  csp [CkCsp]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetCSP(csp)
 			# ...
 		end
 
+
 		# Method: SetDecryptCert
 		#
-		# ==== Attributes
+		# Sets the digital certificate to be used for decryption when the CryptAlgorithm property is set to
+		# "PKI". A private key is required for decryption. Because this method only specifies the certificate,
+		# a prerequisite is that the certificate w/ private key must have been pre-installed on the computer.
+		# Private keys are stored in the Windows Protected Store (either a user account specific store, or the
+		# system-wide store). The Chilkat component will automatically locate and find the certificate's
+		# corresponding private key from the protected store when decrypting.
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetDecryptCert(cert)
 			# ...
 		end
 
+
 		# Method: SetDecryptCert2
 		#
-		# ==== Attributes
+		# Sets the digital certificate to be used for decryption when the CryptAlgorithm property is set to
+		# "PKI". The private key is supplied in the 2nd argument to this method, so there is no requirement
+		# that the certificate be pre-installed on a computer before decrypting (if this method is called).
 		#
-		# +cert+ - CkCert
-		# +key+ - CkPrivateKey
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
+		# @param key [CkPrivateKey]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @param  key [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetDecryptCert2(cert, key)
 			# ...
 		end
 
+
 		# Method: SetEncodedAad
 		#
-		# ==== Attributes
+		# Sets the authenticated additional data from an encoded string. The authenticated additional data
+		# (AAD), if any, is used in authenticated encryption modes such as GCM. The ARG1 argument can be set
+		# to any of the following strings: "base64", "hex", "quoted-printable", "ascii", or "url".
+		# The
+		# Aad is used when the CipherMode is "gcm" (Galois/Counter Mode), which is a mode valid for symmetric
+		# ciphers that have a block size of 16 bytes, such as AES or Twofish.
 		#
-		# +aadStr+ - String
-		# +encoding+ - String
-		# returns TrueClass, FalseClass
+		# @param aadStr [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  aadStr [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetEncodedAad(aadStr, encoding)
 			# ...
 		end
 
+
 		# Method: SetEncodedAuthTag
 		#
-		# ==== Attributes
+		# Sets the expected authenticated tag from an encoded string. The authenticated tag is used in
+		# authenticated encryption modes such as GCM. An application would set the expected authenticated tag
+		# prior to decrypting. The ARG1 argument can be set to any of the following strings: "base64", "hex",
+		# "quoted-printable", "ascii", or "url".
+		# The authenticated tag plays a role when the CipherMode
+		# is "gcm" (Galois/Counter Mode), which is a mode valid for symmetric block ciphers that have a block
+		# size of 16 bytes, such as AES or Twofish.
 		#
-		# +authTagStr+ - String
-		# +encoding+ - String
-		# returns TrueClass, FalseClass
+		# @param authTagStr [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  authTagStr [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetEncodedAuthTag(authTagStr, encoding)
 			# ...
 		end
 
+
 		# Method: SetEncodedIV
 		#
-		# ==== Attributes
+		# Sets the initialization vector from an encoded string. The encoding argument can be set to any of
+		# the following strings: "base64", "hex", "quoted-printable", "ascii", or "url".
 		#
-		# +ivStr+ - String
-		# +encoding+ - String
-		# returns nil
+		# @param ivStr [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  ivStr [String]
-		# @param  encoding [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetEncodedIV(ivStr, encoding)
 			# ...
 		end
 
+
 		# Method: SetEncodedKey
 		#
-		# ==== Attributes
+		# Sets the secret key from an encoded string. The encoding argument can be set to any of the following
+		# strings: "base64", "hex", "quoted-printable", "ascii", or "url".
 		#
-		# +keyStr+ - String
-		# +encoding+ - String
-		# returns nil
+		# @param keyStr [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  keyStr [String]
-		# @param  encoding [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetEncodedKey(keyStr, encoding)
 			# ...
 		end
 
+
 		# Method: SetEncodedSalt
 		#
-		# ==== Attributes
+		# Sets the password-based encryption (PBE) salt bytes from an encoded string. The encoding argument
+		# can be set to any of the following strings: "base64", "hex", "quoted-printable", "ascii", or "url".
 		#
-		# +saltStr+ - String
-		# +encoding+ - String
-		# returns nil
+		# @param saltStr [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  saltStr [String]
-		# @param  encoding [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetEncodedSalt(saltStr, encoding)
 			# ...
 		end
 
+
 		# Method: SetEncryptCert
 		#
-		# ==== Attributes
+		# Tells the encryption library to use a specific digital certificate for public-key encryption. To
+		# encrypt with multiple certificates, call AddEncryptCert once for each certificate. (Calling this
+		# method is the equivalent of calling ClearEncryptCerts followed by AddEncryptCert.)
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetEncryptCert(cert)
 			# ...
 		end
 
+
 		# Method: SetHmacKeyBytes
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Sets the HMAC key to be used for one of the HMAC methods.
+		# 
+		# Note: If using Chilkat
+		# v9.5.0.55 or later, update your programs to use SetMacKeyBytes instead.
 		#
-		# +keyBytes+ - CkByteData
-		# returns nil
+		# @param keyBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  keyBytes [CkByteData]
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetHmacKeyBytes(keyBytes)
 			# ...
 		end
 
+
 		# Method: SetHmacKeyEncoded
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Sets the secret key to be used for one of the HMAC methods. The ARG2 can be set to any of the
+		# following strings: "base64", "hex", "quoted-printable", or "url".
+		# 
+		# Note: If using
+		# Chilkat v9.5.0.55 or later, update your programs to use SetMacKeyEncoded instead.
 		#
-		# +key+ - String
-		# +encoding+ - String
-		# returns nil
+		# @param key [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  key [String]
-		# @param  encoding [String]
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetHmacKeyEncoded(key, encoding)
 			# ...
 		end
 
+
 		# Method: SetHmacKeyString
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Sets the MAC key to be used for one of the HMAC methods.
+		# 
+		# Note: If using Chilkat
+		# v9.5.0.55 or later, update your programs to use SetMacKeyString instead.
 		#
-		# +key+ - String
-		# returns nil
+		# @param key [String]
 		#
-		# YARD =>
-		#
-		# @param  key [String]
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetHmacKeyString(key)
 			# ...
 		end
 
+
+		# Method: SetIV
+		#
+		# Sets the initialization vector for a symmetric encryption algorithm (such as AES, BlowFish, TwoFish,
+		# DES, etc.). IV's are used in CBC mode (Cipher-Block-Chaining), but are not used in ECB mode
+		# (Electronic Cookbook). The length of the IV should equal the block size of the algorithm. (It is not
+		# equal to the key length). For AES and TwoFish, the block size (and thus IV size) is always 16 bytes.
+		# For Blowfish it's 8 bytes. For DES and 3DES it's 8 bytes.
+		#
+		# @param pByteData [Object]
+		# @param szByteData [Fixnum]
+		#
+		# @return [nil]
+		def SetIV(pByteData, szByteData)
+			# ...
+		end
+
+
 		# Method: SetMacKeyBytes
 		#
-		# ==== Attributes
+		# Sets the MAC key to be used for one of the Mac methods.
 		#
-		# +keyBytes+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param keyBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  keyBytes [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetMacKeyBytes(keyBytes)
 			# ...
 		end
 
+
 		# Method: SetMacKeyEncoded
 		#
-		# ==== Attributes
+		# Sets the MAC key to be used for one of the Mac methods. The ARG2 can be set to any of the following
+		# strings: "base64", "hex", "quoted-printable", or "url".
 		#
-		# +key+ - String
-		# +encoding+ - String
-		# returns TrueClass, FalseClass
+		# @param key [String]
+		# @param encoding [String]
 		#
-		# YARD =>
-		#
-		# @param  key [String]
-		# @param  encoding [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetMacKeyEncoded(key, encoding)
 			# ...
 		end
 
+
 		# Method: SetMacKeyString
 		#
-		# ==== Attributes
+		# Sets the MAC key to be used for one of the Mac methods.
 		#
-		# +key+ - String
-		# returns TrueClass, FalseClass
+		# @param key [String]
 		#
-		# YARD =>
-		#
-		# @param  key [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetMacKeyString(key)
 			# ...
 		end
 
+
+		# Method: SetSecretKey
+		#
+		# Sets the value of the SecretKey property.
+		#
+		# @param pByteData [Object]
+		# @param szByteData [Fixnum]
+		#
+		# @return [nil]
+		def SetSecretKey(pByteData, szByteData)
+			# ...
+		end
+
+
 		# Method: SetSecretKeyViaPassword
 		#
-		# ==== Attributes
+		# Accepts a password string and (internally) generates a binary secret key of the appropriate bit
+		# length and sets the SecretKey property. This method should only be used if you are using Chilkat for
+		# both encryption and decryption because the password-to-secret-key algorithm would need to be
+		# identical for the decryption to match the encryption.
+		# 
+		# There is no minimum or maximum
+		# password length. The password string is transformed to a binary secret key by computing the MD5
+		# digest (of the utf-8 password) to obtain 16 bytes. If the KeyLength is greater than 16 bytes, then
+		# the MD5 digest of the Base64 encoding of the utf-8 password is added. A max of 32 bytes of key
+		# material is generated, and this is truncated to the actual KeyLength required. The example below
+		# shows how to manually duplicate the computation.
 		#
-		# +password+ - String
-		# returns nil
+		# @param password [String]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetSecretKeyViaPassword(password)
 			# ...
 		end
 
+
 		# Method: SetSigningCert
 		#
-		# ==== Attributes
+		# Specifies a certificate to be used when creating PKCS7 digital signatures. Signing requires both a
+		# certificate and private key. In this case, the private key is implicitly specified if the
+		# certificate originated from a PFX that contains the corresponding private key, or if on a
+		# Windows-based computer where the certificate and corresponding private key are pre-installed. (If a
+		# PFX file is used, it is provided via the AddPfxSourceFile or AddPfxSourceData methods.)
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetSigningCert(cert)
 			# ...
 		end
 
+
 		# Method: SetSigningCert2
 		#
-		# ==== Attributes
+		# Specifies a digital certificate and private key to be used for creating PKCS7 digital signatures.
 		#
-		# +cert+ - CkCert
-		# +privateKey+ - CkPrivateKey
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
+		# @param privateKey [CkPrivateKey]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @param  privateKey [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetSigningCert2(cert, privateKey)
 			# ...
 		end
 
+
 		# Method: SetVerifyCert
 		#
-		# ==== Attributes
+		# Sets the digital certificate to be used in verifying a signature.
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetVerifyCert(cert)
 			# ...
 		end
 
+
 		# Method: Shorten
 		#
-		# ==== Attributes
+		# Chops N bytes from the end of a byte array. Accepts a Variant, which could be anything (internally)
+		# but always returns a Variant containing a byte array.
 		#
-		# +inData+ - CkByteData
-		# +numBytes+ - Fixnum
-		# returns CkByteData
+		# @param inData [CkByteData]
+		# @param numBytes [Fixnum]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  inData [CkByteData]
-		# @param  numBytes [Fixnum]
-		# @return  [CkByteData]
-		def Shorten(inData, numBytes)
+		# @return [TrueClass, FalseClass]
+		def Shorten(inData, numBytes, outBytes)
 			# ...
 		end
+
 
 		# Method: SignBytes
 		#
-		# ==== Attributes
+		# Digitally signs a byte array and returns the detached digital signature. A certificate must be set
+		# by calling SetSigningCert prior to calling this method.
 		#
-		# +data+ - CkByteData
-		# returns CkByteData
+		# @param data [CkByteData]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [CkByteData]
-		def SignBytes(data)
+		# @return [TrueClass, FalseClass]
+		def SignBytes(data, outData)
 			# ...
 		end
+
 
 		# Method: SignBytesENC
 		#
-		# ==== Attributes
+		# Digitally signs a byte array and returns the detached digital signature encoded as a printable
+		# string. A certificate must be set by calling SetSigningCert prior to calling this method. The
+		# EncodingMode property controls the output encoding, which can be "Base64", "QP", or "Hex".
 		#
-		# +data+ - CkByteData
-		# returns String
+		# @param data [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @return  [String]
-		def SignBytesENC(data)
+		# @return [TrueClass, FalseClass]
+		def SignBytesENC(data, outStr)
 			# ...
 		end
+
+
+		# Method: SignBytesENC
+		#
+		# Digitally signs a byte array and returns the detached digital signature encoded as a printable
+		# string. A certificate must be set by calling SetSigningCert prior to calling this method. The
+		# EncodingMode property controls the output encoding, which can be "Base64", "QP", or "Hex".
+		#
+		# @param data [CkByteData]
+		#
+		# @return [String]
+		def signBytesENC(data)
+			# ...
+		end
+
 
 		# Method: SignString
 		#
-		# ==== Attributes
+		# Digitally signs a string and returns the detached digital signature. A certificate must be set by
+		# calling SetSigningCert prior to calling this method. The Charset property controls the character
+		# encoding of the string that is signed. (Languages such as VB.NET, C#, and Visual Basic work with
+		# Unicode strings.) To sign Unicode data (2 bytes per char), set the Charset property to "Unicode". To
+		# implicitly convert the string to a mutlibyte charset such as "iso-8859-1", "Shift_JIS", "utf-8", or
+		# something else, then set the Charset property to the name of the charset before signing. The
+		# complete list of charsets is listed in the EncryptString method description.
 		#
-		# +str+ - String
-		# returns CkByteData
+		# @param str [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [CkByteData]
-		def SignString(str)
+		# @return [TrueClass, FalseClass]
+		def SignString(str, outData)
 			# ...
 		end
+
 
 		# Method: SignStringENC
 		#
-		# ==== Attributes
+		# Digitally signs a string and returns the PKCS7 detached digital signature as an encoded string. A
+		# certificate must be set by calling SetSigningCert prior to calling this method. The Charset property
+		# controls the character encoding of the string that is signed. (Languages such as VB.NET, C#, and
+		# Visual Basic work with Unicode strings.) To sign Unicode data (2 bytes per char), set the Charset
+		# property to "Unicode". To implicitly convert the string to a mutlibyte charset such as "iso-8859-1",
+		# "Shift_JIS", "utf-8", or something else, then set the Charset property to the name of the charset
+		# before signing. The complete list of charsets is listed in the EncryptString method description. The
+		# encoding of the output string is controlled by the EncodingMode property, which can be set to
+		# "Base64", "QP", or "Hex".
 		#
-		# +str+ - String
-		# returns String
+		# @param str [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [String]
-		def SignStringENC(str)
+		# @return [TrueClass, FalseClass]
+		def SignStringENC(str, outStr)
 			# ...
 		end
+
+
+		# Method: SignStringENC
+		#
+		# Digitally signs a string and returns the PKCS7 detached digital signature as an encoded string. A
+		# certificate must be set by calling SetSigningCert prior to calling this method. The Charset property
+		# controls the character encoding of the string that is signed. (Languages such as VB.NET, C#, and
+		# Visual Basic work with Unicode strings.) To sign Unicode data (2 bytes per char), set the Charset
+		# property to "Unicode". To implicitly convert the string to a mutlibyte charset such as "iso-8859-1",
+		# "Shift_JIS", "utf-8", or something else, then set the Charset property to the name of the charset
+		# before signing. The complete list of charsets is listed in the EncryptString method description. The
+		# encoding of the output string is controlled by the EncodingMode property, which can be set to
+		# "Base64", "QP", or "Hex".
+		#
+		# @param str [String]
+		#
+		# @return [String]
+		def signStringENC(str)
+			# ...
+		end
+
 
 		# Method: StringToBytes
 		#
-		# ==== Attributes
+		# Convert a string to a byte array where the characters are encoded according to the charset
+		# specified.
 		#
-		# +inStr+ - String
-		# +charset+ - String
-		# returns CkByteData
+		# @param inStr [String]
+		# @param charset [String]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  inStr [String]
-		# @param  charset [String]
-		# @return  [CkByteData]
-		def StringToBytes(inStr, charset)
+		# @return [TrueClass, FalseClass]
+		def StringToBytes(inStr, charset, outBytes)
 			# ...
 		end
+
 
 		# Method: TrimEndingWith
 		#
-		# ==== Attributes
+		# Trim a string ending with a specific substring until the string no longer ends with that substring.
 		#
-		# +inStr+ - String
-		# +ending+ - String
-		# returns String
+		# @param inStr [String]
+		# @param ending [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inStr [String]
-		# @param  ending [String]
-		# @return  [String]
-		def TrimEndingWith(inStr, ending)
+		# @return [TrueClass, FalseClass]
+		def TrimEndingWith(inStr, ending, outStr)
 			# ...
 		end
 
+
+		# Method: TrimEndingWith
+		#
+		# Trim a string ending with a specific substring until the string no longer ends with that substring.
+		#
+		# @param inStr [String]
+		# @param ending [String]
+		#
+		# @return [String]
+		def trimEndingWith(inStr, ending)
+			# ...
+		end
+
+
 		# Method: UnlockComponent
 		#
-		# ==== Attributes
+		# Unlocks the component. This must be called once prior to calling any other method.
 		#
-		# +unlockCode+ - String
-		# returns TrueClass, FalseClass
+		# @param unlockCode [String]
 		#
-		# YARD =>
-		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
+
 		# Method: UseCertVault
 		#
-		# ==== Attributes
+		# Adds an XML certificate vault to the object's internal list of sources to be searched for
+		# certificates and private keys when encrypting/decrypting or signing/verifying. Unlike the
+		# AddPfxSourceData and AddPfxSourceFile methods, only a single XML certificate vault can be used. If
+		# UseCertVault is called multiple times, only the last certificate vault will be used, as each call to
+		# UseCertVault will replace the certificate vault provided in previous calls.
 		#
-		# +vault+ - CkXmlCertVault
-		# returns TrueClass, FalseClass
+		# @param vault [CkXmlCertVault]
 		#
-		# YARD =>
-		#
-		# @param  vault [CkXmlCertVault]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
 
+
 		# Method: VerifyBytes
 		#
-		# ==== Attributes
+		# Verifies a byte array against a digital signature and returns true if the byte array is unaltered.
 		#
-		# +data+ - CkByteData
-		# +sig+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param data [CkByteData]
+		# @param sig [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @param  sig [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyBytes(data, sig)
 			# ...
 		end
 
+
 		# Method: VerifyBytesENC
 		#
-		# ==== Attributes
+		# Verifies a byte array against a string-encoded digital signature and returns true if the byte array
+		# is unaltered. This method can be used to verify a signature produced by SignBytesENC. The
+		# EncodingMode property must be set prior to calling to match the encoding of the digital signature
+		# string ("Base64", "QP", or "Hex").
 		#
-		# +data+ - CkByteData
-		# +encodedSig+ - String
-		# returns TrueClass, FalseClass
+		# @param data [CkByteData]
+		# @param encodedSig [String]
 		#
-		# YARD =>
-		#
-		# @param  data [CkByteData]
-		# @param  encodedSig [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyBytesENC(data, encodedSig)
 			# ...
 		end
 
+
 		# Method: VerifyDetachedSignature
 		#
-		# ==== Attributes
+		# Verifies a .p7s (PKCS #7 Signature) against the original file (or exact copy of it). If the ARG1 has
+		# not been modified, the return value is _TRUE_, otherwise it is _FALSE_. This method is equivalent to
+		# VerifyP7S.
 		#
-		# +inFilename+ - String
-		# +p7sFilename+ - String
-		# returns TrueClass, FalseClass
+		# @param inFilename [String]
+		# @param p7sFilename [String]
 		#
-		# YARD =>
-		#
-		# @param  inFilename [String]
-		# @param  p7sFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyDetachedSignature(inFilename, p7sFilename)
 			# ...
 		end
 
+
 		# Method: VerifyP7M
 		#
-		# ==== Attributes
+		# Verifies a .p7m file and extracts the original file from the .p7m. Returns _TRUE_ if the signature
+		# is valid and the contents are unchanged. Otherwise returns _FALSE_.
 		#
-		# +p7mPath+ - String
-		# +destPath+ - String
-		# returns TrueClass, FalseClass
+		# @param p7mPath [String]
+		# @param destPath [String]
 		#
-		# YARD =>
-		#
-		# @param  p7mPath [String]
-		# @param  destPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyP7M(p7mPath, destPath)
 			# ...
 		end
 
+
 		# Method: VerifyP7S
 		#
-		# ==== Attributes
+		# Verifies a .p7s (PKCS #7 Signature) against the original file (or exact copy of it). If the ARG1 has
+		# not been modified, the return value is _TRUE_, otherwise it is _FALSE_.
 		#
-		# +inFilename+ - String
-		# +p7sFilename+ - String
-		# returns TrueClass, FalseClass
+		# @param inFilename [String]
+		# @param p7sFilename [String]
 		#
-		# YARD =>
-		#
-		# @param  inFilename [String]
-		# @param  p7sFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyP7S(inFilename, p7sFilename)
 			# ...
 		end
 
+
 		# Method: VerifyString
 		#
-		# ==== Attributes
+		# Verifies a string against a binary digital signature and returns true if the string is unaltered.
+		# This method can be used to verify a signature produced by SignString. The Charset property must be
+		# set to the charset that was used when creating the signature.
 		#
-		# +str+ - String
-		# +sig+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param str [String]
+		# @param sig [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @param  sig [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyString(str, sig)
 			# ...
 		end
 
+
 		# Method: VerifyStringENC
 		#
-		# ==== Attributes
+		# Verifies a string against a string-encoded digital signature and returns true if the string is
+		# unaltered. This method can be used to verify a signature produced by SignStringENC. The Charset and
+		# EncodingMode properties must be set to the same values that were used when creating the signature.
 		#
-		# +str+ - String
-		# +encodedSig+ - String
-		# returns TrueClass, FalseClass
+		# @param str [String]
+		# @param encodedSig [String]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @param  encodedSig [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def VerifyStringENC(str, encodedSig)
 			# ...
 		end
 
+
 		# Method: WriteFile
 		#
-		# ==== Attributes
+		# Convenience method to write an entire byte array to a file.
 		#
-		# +filename+ - String
-		# +fileData+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param filename [String]
+		# @param fileData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  filename [String]
-		# @param  fileData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def WriteFile(filename, fileData)
 			# ...
 		end
+
 	end
 end

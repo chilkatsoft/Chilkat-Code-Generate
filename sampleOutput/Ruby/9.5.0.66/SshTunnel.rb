@@ -1,778 +1,1289 @@
 module Chilkat
 	class CkSshTunnel 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
 		#
-		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AbortCurrent(newval) end
 
-		# returns String
+		# Contains an in-memory log of the listen thread. This will only contain content if the KeepAcceptLog
+		# property is _TRUE_.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_AcceptLog() end
+		def get_AcceptLog(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Contains an in-memory log of the listen thread. This will only contain content if the KeepAcceptLog
+		# property is _TRUE_.
 		#
 		# @param newval [String]
-		def set_AcceptLog(newval) end
+		def put_AcceptLog(newval) end
 
-		# returns String
+		# Contains an in-memory log of the listen thread. This will only contain content if the KeepAcceptLog
+		# property is _TRUE_.
+		#
 		# @return [String]
 		def acceptLog() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Contains an in-memory log of the listen thread. This will only contain content if the KeepAcceptLog
+		# property is _TRUE_.
 		#
 		# @param newval [String]
-		def acceptLog(newval) end
+		def put_AcceptLog(newval) end
 
-		# returns String
+		# Specifies a log file to be kept for the activity in the listen thread.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_AcceptLogPath() end
+		def get_AcceptLogPath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Specifies a log file to be kept for the activity in the listen thread.
 		#
 		# @param newval [String]
-		def set_AcceptLogPath(newval) end
+		def put_AcceptLogPath(newval) end
 
-		# returns String
+		# Specifies a log file to be kept for the activity in the listen thread.
+		#
 		# @return [String]
 		def acceptLogPath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Specifies a log file to be kept for the activity in the listen thread.
 		#
 		# @param newval [String]
-		def acceptLogPath(newval) end
+		def put_AcceptLogPath(newval) end
 
-		# returns Bignum
+		# Maximum number of milliseconds to wait when connecting to an SSH server. The default value is 10000
+		# (i.e. 10 seconds). A value of 0 indicates no timeout (wait forever).
+		#
 		# @return [Bignum]
 		def get_ConnectTimeoutMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Maximum number of milliseconds to wait when connecting to an SSH server. The default value is 10000
+		# (i.e. 10 seconds). A value of 0 indicates no timeout (wait forever).
 		#
 		# @param newval [Bignum]
-		def set_ConnectTimeoutMs(newval) end
+		def put_ConnectTimeoutMs(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# The destination hostname or IP address (in dotted decimal notation) of the service (such as a
+		# database server). Data sent through the SSH tunnel is forwarded by the SSH server to this
+		# destination. Data received from the destination (by the SSH server) is forwarded back to the client
+		# through the SSH tunnel.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DestHostname() end
+		def get_DestHostname(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The destination hostname or IP address (in dotted decimal notation) of the service (such as a
+		# database server). Data sent through the SSH tunnel is forwarded by the SSH server to this
+		# destination. Data received from the destination (by the SSH server) is forwarded back to the client
+		# through the SSH tunnel.
 		#
 		# @param newval [String]
-		def set_DestHostname(newval) end
+		def put_DestHostname(newval) end
 
-		# returns String
+		# The destination hostname or IP address (in dotted decimal notation) of the service (such as a
+		# database server). Data sent through the SSH tunnel is forwarded by the SSH server to this
+		# destination. Data received from the destination (by the SSH server) is forwarded back to the client
+		# through the SSH tunnel.
+		#
 		# @return [String]
 		def destHostname() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The destination hostname or IP address (in dotted decimal notation) of the service (such as a
+		# database server). Data sent through the SSH tunnel is forwarded by the SSH server to this
+		# destination. Data received from the destination (by the SSH server) is forwarded back to the client
+		# through the SSH tunnel.
 		#
 		# @param newval [String]
-		def destHostname(newval) end
+		def put_DestHostname(newval) end
 
-		# returns Bignum
+		# The destination port of the service (such as a database server).
+		#
 		# @return [Bignum]
 		def get_DestPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The destination port of the service (such as a database server).
 		#
 		# @param newval [Bignum]
-		def set_DestPort(newval) end
+		def put_DestPort(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then this behaves as a SOCKS proxy server for inbound connections. When this property is
+		# _TRUE_, the DestHostname and DestPort properties are unused because the destination IP:port is
+		# dynamically provided by the SOCKS client. The default value of this property is _FALSE_.
+		# When
+		# dynamic port forwarding is used, the InboundSocksVersion property must be set to 4 or 5. If inbound
+		# SOCKS5 is used, then the InboundSocksUsername and InboundSocksPassword may be set to the required
+		# login/password for a client to gain access.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_DynamicPortForwarding() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then this behaves as a SOCKS proxy server for inbound connections. When this property is
+		# _TRUE_, the DestHostname and DestPort properties are unused because the destination IP:port is
+		# dynamically provided by the SOCKS client. The default value of this property is _FALSE_.
+		# When
+		# dynamic port forwarding is used, the InboundSocksVersion property must be set to 4 or 5. If inbound
+		# SOCKS5 is used, then the InboundSocksUsername and InboundSocksPassword may be set to the required
+		# login/password for a client to gain access.
 		#
-		# @param newval [Bignum]
-		def set_DynamicPortForwarding(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_DynamicPortForwarding(newval) end
 
-		# returns String
+		# Set after connecting to an SSH server. The format of the fingerprint looks like this: "ssh-rsa 1024
+		# 68:ff:d1:4e:6c:ff:d7:b0:d6:58:73:85:07:bc:2e:d5"
+		#
 		# @return [String]
 		def get_HostKeyFingerprint() end
 
-		# returns String
+		# Set after connecting to an SSH server. The format of the fingerprint looks like this: "ssh-rsa 1024
+		# 68:ff:d1:4e:6c:ff:d7:b0:d6:58:73:85:07:bc:2e:d5"
+		#
 		# @return [String]
 		def hostKeyFingerprint() end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# authentication method name. Valid choices are "Basic" or "NTLM".
+		# Note: This is for the
+		# outbound connection to the SSH server. It is used when the outbound connection to the SSH server
+		# must go through an HTTP proxy.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyAuthMethod() end
+		def get_HttpProxyAuthMethod(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# authentication method name. Valid choices are "Basic" or "NTLM".
+		# Note: This is for the
+		# outbound connection to the SSH server. It is used when the outbound connection to the SSH server
+		# must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def set_HttpProxyAuthMethod(newval) end
+		def put_HttpProxyAuthMethod(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# authentication method name. Valid choices are "Basic" or "NTLM".
+		# Note: This is for the
+		# outbound connection to the SSH server. It is used when the outbound connection to the SSH server
+		# must go through an HTTP proxy.
+		#
 		# @return [String]
 		def httpProxyAuthMethod() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# authentication method name. Valid choices are "Basic" or "NTLM".
+		# Note: This is for the
+		# outbound connection to the SSH server. It is used when the outbound connection to the SSH server
+		# must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def httpProxyAuthMethod(newval) end
+		def put_HttpProxyAuthMethod(newval) end
 
-		# returns String
+		# The NTLM authentication domain (optional) if NTLM authentication is used w/ the HTTP
+		# proxy.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyDomain() end
+		def get_HttpProxyDomain(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The NTLM authentication domain (optional) if NTLM authentication is used w/ the HTTP
+		# proxy.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def set_HttpProxyDomain(newval) end
+		def put_HttpProxyDomain(newval) end
 
-		# returns String
+		# The NTLM authentication domain (optional) if NTLM authentication is used w/ the HTTP
+		# proxy.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
+		#
 		# @return [String]
 		def httpProxyDomain() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The NTLM authentication domain (optional) if NTLM authentication is used w/ the HTTP
+		# proxy.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def httpProxyDomain(newval) end
+		def put_HttpProxyDomain(newval) end
 
-		# returns String
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
+		# dotted decimal notation).
+		# Note: This is for the outbound connection to the SSH server. It is
+		# used when the outbound connection to the SSH server must go through an HTTP proxy.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyHostname() end
+		def get_HttpProxyHostname(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
+		# dotted decimal notation).
+		# Note: This is for the outbound connection to the SSH server. It is
+		# used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def set_HttpProxyHostname(newval) end
+		def put_HttpProxyHostname(newval) end
 
-		# returns String
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
+		# dotted decimal notation).
+		# Note: This is for the outbound connection to the SSH server. It is
+		# used when the outbound connection to the SSH server must go through an HTTP proxy.
+		#
 		# @return [String]
 		def httpProxyHostname() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
+		# dotted decimal notation).
+		# Note: This is for the outbound connection to the SSH server. It is
+		# used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def httpProxyHostname(newval) end
+		def put_HttpProxyHostname(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# password.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyPassword() end
+		def get_HttpProxyPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# password.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def set_HttpProxyPassword(newval) end
+		def put_HttpProxyPassword(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# password.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
+		#
 		# @return [String]
 		def httpProxyPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
+		# password.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def httpProxyPassword(newval) end
+		def put_HttpProxyPassword(newval) end
 
-		# returns Bignum
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy port number. (Two commonly used
+		# HTTP proxy ports are 8080 and 3128.)
+		# Note: This is for the outbound connection to the SSH
+		# server. It is used when the outbound connection to the SSH server must go through an HTTP proxy.
+		#
 		# @return [Bignum]
 		def get_HttpProxyPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If an HTTP proxy is to be used, set this property to the HTTP proxy port number. (Two commonly used
+		# HTTP proxy ports are 8080 and 3128.)
+		# Note: This is for the outbound connection to the SSH
+		# server. It is used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [Bignum]
-		def set_HttpProxyPort(newval) end
+		def put_HttpProxyPort(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
+		# name.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpProxyUsername() end
+		def get_HttpProxyUsername(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
+		# name.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def set_HttpProxyUsername(newval) end
+		def put_HttpProxyUsername(newval) end
 
-		# returns String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
+		# name.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
+		#
 		# @return [String]
 		def httpProxyUsername() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
+		# name.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
-		def httpProxyUsername(newval) end
+		def put_HttpProxyUsername(newval) end
 
-		# returns Bignum
+		# A tunnel will fail when progress for sending or receiving data halts for more than this number of
+		# milliseconds. The default value is 10,000 (which is 10 seconds). A timeout of 0 indicates an
+		# infinite wait time (i.e. no timeout).
+		#
 		# @return [Bignum]
 		def get_IdleTimeoutMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# A tunnel will fail when progress for sending or receiving data halts for more than this number of
+		# milliseconds. The default value is 10,000 (which is 10 seconds). A timeout of 0 indicates an
+		# infinite wait time (i.e. no timeout).
 		#
 		# @param newval [Bignum]
-		def set_IdleTimeoutMs(newval) end
+		def put_IdleTimeoutMs(newval) end
 
-		# returns String
+		# If dynamic port forwarding is used, then this may be set to the password required for authenticating
+		# inbound connections.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_InboundSocksPassword() end
+		def get_InboundSocksPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If dynamic port forwarding is used, then this may be set to the password required for authenticating
+		# inbound connections.
 		#
 		# @param newval [String]
-		def set_InboundSocksPassword(newval) end
+		def put_InboundSocksPassword(newval) end
 
-		# returns String
+		# If dynamic port forwarding is used, then this may be set to the password required for authenticating
+		# inbound connections.
+		#
 		# @return [String]
 		def ınboundSocksPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If dynamic port forwarding is used, then this may be set to the password required for authenticating
+		# inbound connections.
 		#
 		# @param newval [String]
-		def ınboundSocksPassword(newval) end
+		def put_InboundSocksPassword(newval) end
 
-		# returns String
+		# If dynamic port forwarding is used, then this may be set to the username required for authenticating
+		# inbound connections. If no username is set, then the inbound connection needs no authentication.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_InboundSocksUsername() end
+		def get_InboundSocksUsername(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If dynamic port forwarding is used, then this may be set to the username required for authenticating
+		# inbound connections. If no username is set, then the inbound connection needs no authentication.
 		#
 		# @param newval [String]
-		def set_InboundSocksUsername(newval) end
+		def put_InboundSocksUsername(newval) end
 
-		# returns String
+		# If dynamic port forwarding is used, then this may be set to the username required for authenticating
+		# inbound connections. If no username is set, then the inbound connection needs no authentication.
+		#
 		# @return [String]
 		def ınboundSocksUsername() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If dynamic port forwarding is used, then this may be set to the username required for authenticating
+		# inbound connections. If no username is set, then the inbound connection needs no authentication.
 		#
 		# @param newval [String]
-		def ınboundSocksUsername(newval) end
+		def put_InboundSocksUsername(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# _TRUE_ if a background thread is running and accepting connections.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_IsAccepting() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then an in-memory log of the listen thread is kept. The default value is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_KeepAcceptLog() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then an in-memory log of the listen thread is kept. The default value is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_KeepAcceptLog(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_KeepAcceptLog(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then a log of the SSH tunnel thread activity is kept in memory. The default value is
+		# _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_KeepTunnelLog() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then a log of the SSH tunnel thread activity is kept in memory. The default value is
+		# _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_KeepTunnelLog(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_KeepTunnelLog(newval) end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns String
+		# In most cases, this property does not need to be set. It is provided for cases where it is required
+		# to bind the listen socket to a specific IP address (usually for computers with multiple network
+		# interfaces or IP addresses).
+		# For computers with a single network interface (i.e. most
+		# computers), this property should not be set. For multihoming computers, the default IP address is
+		# automatically used if this property is not set.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ListenBindIpAddress() end
+		def get_ListenBindIpAddress(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# In most cases, this property does not need to be set. It is provided for cases where it is required
+		# to bind the listen socket to a specific IP address (usually for computers with multiple network
+		# interfaces or IP addresses).
+		# For computers with a single network interface (i.e. most
+		# computers), this property should not be set. For multihoming computers, the default IP address is
+		# automatically used if this property is not set.
 		#
 		# @param newval [String]
-		def set_ListenBindIpAddress(newval) end
+		def put_ListenBindIpAddress(newval) end
 
-		# returns String
+		# In most cases, this property does not need to be set. It is provided for cases where it is required
+		# to bind the listen socket to a specific IP address (usually for computers with multiple network
+		# interfaces or IP addresses).
+		# For computers with a single network interface (i.e. most
+		# computers), this property should not be set. For multihoming computers, the default IP address is
+		# automatically used if this property is not set.
+		#
 		# @return [String]
 		def listenBindIpAddress() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# In most cases, this property does not need to be set. It is provided for cases where it is required
+		# to bind the listen socket to a specific IP address (usually for computers with multiple network
+		# interfaces or IP addresses).
+		# For computers with a single network interface (i.e. most
+		# computers), this property should not be set. For multihoming computers, the default IP address is
+		# automatically used if this property is not set.
 		#
 		# @param newval [String]
-		def listenBindIpAddress(newval) end
+		def put_ListenBindIpAddress(newval) end
 
-		# returns Bignum
+		# If a port number equal to 0 is passed to BeginAccepting, then this property will contain the actual
+		# allocated port number used. Otherwise it is equal to the port number passed to BeginAccepting, or 0
+		# if BeginAccepting was never called.
+		#
 		# @return [Bignum]
 		def get_ListenPort() end
 
-		# returns String
+		# In most cases, this property does not need to be set. It is provided for cases where it is required
+		# to bind the socket that is to connect to the SSH server (in the background thread) to a specific IP
+		# address (usually for computers with multiple network interfaces or IP addresses). 
+		# For
+		# computers with a single network interface (i.e. most computers), this property should not be set.
+		# For multihoming computers, the default IP address is automatically used if this property is not set.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_OutboundBindIpAddress() end
+		def get_OutboundBindIpAddress(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# In most cases, this property does not need to be set. It is provided for cases where it is required
+		# to bind the socket that is to connect to the SSH server (in the background thread) to a specific IP
+		# address (usually for computers with multiple network interfaces or IP addresses). 
+		# For
+		# computers with a single network interface (i.e. most computers), this property should not be set.
+		# For multihoming computers, the default IP address is automatically used if this property is not set.
 		#
 		# @param newval [String]
-		def set_OutboundBindIpAddress(newval) end
+		def put_OutboundBindIpAddress(newval) end
 
-		# returns String
+		# In most cases, this property does not need to be set. It is provided for cases where it is required
+		# to bind the socket that is to connect to the SSH server (in the background thread) to a specific IP
+		# address (usually for computers with multiple network interfaces or IP addresses). 
+		# For
+		# computers with a single network interface (i.e. most computers), this property should not be set.
+		# For multihoming computers, the default IP address is automatically used if this property is not set.
+		#
 		# @return [String]
 		def outboundBindIpAddress() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# In most cases, this property does not need to be set. It is provided for cases where it is required
+		# to bind the socket that is to connect to the SSH server (in the background thread) to a specific IP
+		# address (usually for computers with multiple network interfaces or IP addresses). 
+		# For
+		# computers with a single network interface (i.e. most computers), this property should not be set.
+		# For multihoming computers, the default IP address is automatically used if this property is not set.
 		#
 		# @param newval [String]
-		def outboundBindIpAddress(newval) end
+		def put_OutboundBindIpAddress(newval) end
 
-		# returns Bignum
+		# Unless there is a specific requirement for binding to a specific port, leave this unset (at the
+		# default value of 0). (99.9% of all users should never need to set this property.)
+		#
 		# @return [Bignum]
 		def get_OutboundBindPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Unless there is a specific requirement for binding to a specific port, leave this unset (at the
+		# default value of 0). (99.9% of all users should never need to set this property.)
 		#
 		# @param newval [Bignum]
-		def set_OutboundBindPort(newval) end
+		def put_OutboundBindPort(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
+		# Note: This is for the outbound connection to
+		# the SSH server. It is used when the outbound connection to the SSH server must go through a SOCKS4
+		# or SOCKS5 proxy.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksHostname() end
+		def get_SocksHostname(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
+		# Note: This is for the outbound connection to
+		# the SSH server. It is used when the outbound connection to the SSH server must go through a SOCKS4
+		# or SOCKS5 proxy.
 		#
 		# @param newval [String]
-		def set_SocksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
+		# Note: This is for the outbound connection to
+		# the SSH server. It is used when the outbound connection to the SSH server must go through a SOCKS4
+		# or SOCKS5 proxy.
+		#
 		# @return [String]
 		def socksHostname() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
+		# Note: This is for the outbound connection to
+		# the SSH server. It is used when the outbound connection to the SSH server must go through a SOCKS4
+		# or SOCKS5 proxy.
 		#
 		# @param newval [String]
-		def socksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# returns String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
+		# Note: This is for the outbound connection to the SSH server. It
+		# is used when the outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksPassword() end
+		def get_SocksPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
+		# Note: This is for the outbound connection to the SSH server. It
+		# is used when the outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [String]
-		def set_SocksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# returns String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
+		# Note: This is for the outbound connection to the SSH server. It
+		# is used when the outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
+		#
 		# @return [String]
 		def socksPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
+		# Note: This is for the outbound connection to the SSH server. It
+		# is used when the outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [String]
-		def socksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# returns Bignum
+		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
+		# This property only applies if a SOCKS
+		# proxy is used (if the SocksVersion property is set to 4 or 5).
+		# Note: This is for the outbound
+		# connection to the SSH server. It is used when the outbound connection to the SSH server must go
+		# through a SOCKS4 or SOCKS5 proxy.
+		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
+		# This property only applies if a SOCKS
+		# proxy is used (if the SocksVersion property is set to 4 or 5).
+		# Note: This is for the outbound
+		# connection to the SSH server. It is used when the outbound connection to the SSH server must go
+		# through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
-		def set_SocksPort(newval) end
+		def put_SocksPort(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksUsername() end
+		def get_SocksUsername(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [String]
-		def set_SocksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
+		#
 		# @return [String]
 		def socksUsername() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [String]
-		def socksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# returns Bignum
+		# SocksVersion
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
+		# proxy is used. This is the default.
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
+		# SOCKS5 proxy.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
+		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# SocksVersion
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
+		# proxy is used. This is the default.
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
+		# SOCKS5 proxy.
+		# Note: This is for the outbound connection to the SSH server. It is used when the
+		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
-		def set_SocksVersion(newval) end
+		def put_SocksVersion(newval) end
 
-		# returns Bignum
+		# Sets the receive buffer size socket option. Normally, this property should be left unchanged. The
+		# default value is 0, which indicates that the receive buffer size socket option should not be
+		# explicitly set (i.e. the system default value, which may vary from system to system, should be
+		# used). 
+		# 
+		# This property can be changed if download performance seems slow. It is
+		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
+		# examine the LastErrorText property after calling any method that establishes a connection. It should
+		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
+		# times the default value.
+		#
 		# @return [Bignum]
 		def get_SoRcvBuf() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Sets the receive buffer size socket option. Normally, this property should be left unchanged. The
+		# default value is 0, which indicates that the receive buffer size socket option should not be
+		# explicitly set (i.e. the system default value, which may vary from system to system, should be
+		# used). 
+		# 
+		# This property can be changed if download performance seems slow. It is
+		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
+		# examine the LastErrorText property after calling any method that establishes a connection. It should
+		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
+		# times the default value.
 		#
 		# @param newval [Bignum]
-		def set_SoRcvBuf(newval) end
+		def put_SoRcvBuf(newval) end
 
-		# returns Bignum
+		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
+		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
+		# set (i.e. the system default value, which may vary from system to system, should be used).
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
+		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
+		# property after calling any method that establishes a connection. It should be reported under the
+		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
+		# value.
+		#
 		# @return [Bignum]
 		def get_SoSndBuf() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
+		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
+		# set (i.e. the system default value, which may vary from system to system, should be used).
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
+		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
+		# property after calling any method that establishes a connection. It should be reported under the
+		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
+		# value.
 		#
 		# @param newval [Bignum]
-		def set_SoSndBuf(newval) end
+		def put_SoSndBuf(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Controls whether the TCP_NODELAY socket option is used for the underlying TCP/IP socket. The default
+		# value is _FALSE_. Setting this property equal to _TRUE_ disables the Nagle algorithm and allows for
+		# better performance when small amounts of data are sent.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_TcpNoDelay() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Controls whether the TCP_NODELAY socket option is used for the underlying TCP/IP socket. The default
+		# value is _FALSE_. Setting this property equal to _TRUE_ disables the Nagle algorithm and allows for
+		# better performance when small amounts of data are sent.
 		#
-		# @param newval [Bignum]
-		def set_TcpNoDelay(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_TcpNoDelay(newval) end
 
-		# returns String
+		# Contains an in-memory log of the SSH tunnel thread. This will only contain content if the
+		# KeepTunnelLog property is _TRUE_.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_TunnelLog() end
+		def get_TunnelLog(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Contains an in-memory log of the SSH tunnel thread. This will only contain content if the
+		# KeepTunnelLog property is _TRUE_.
 		#
 		# @param newval [String]
-		def set_TunnelLog(newval) end
+		def put_TunnelLog(newval) end
 
-		# returns String
+		# Contains an in-memory log of the SSH tunnel thread. This will only contain content if the
+		# KeepTunnelLog property is _TRUE_.
+		#
 		# @return [String]
 		def tunnelLog() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Contains an in-memory log of the SSH tunnel thread. This will only contain content if the
+		# KeepTunnelLog property is _TRUE_.
 		#
 		# @param newval [String]
-		def tunnelLog(newval) end
+		def put_TunnelLog(newval) end
 
-		# returns String
+		# Set to keep a log file of the SSH tunnel thread.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_TunnelLogPath() end
+		def get_TunnelLogPath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Set to keep a log file of the SSH tunnel thread.
 		#
 		# @param newval [String]
-		def set_TunnelLogPath(newval) end
+		def put_TunnelLogPath(newval) end
 
-		# returns String
+		# Set to keep a log file of the SSH tunnel thread.
+		#
 		# @return [String]
 		def tunnelLogPath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Set to keep a log file of the SSH tunnel thread.
 		#
 		# @param newval [String]
-		def tunnelLogPath(newval) end
+		def put_TunnelLogPath(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AuthenticatePk
 		#
-		# ==== Attributes
+		# Authenticates with the SSH server using public-key authentication. The corresponding public key must
+		# have been installed on the SSH server for the ARG1. Authentication will succeed if the matching ARG2
+		# is provided.
+		# 
+		# Important: When reporting problems, please send the full contents of the
+		# LastErrorText property to support@chilkatsoft.com.
 		#
-		# +username+ - String
-		# +privateKey+ - CkSshKey
-		# returns TrueClass, FalseClass
+		# @param username [String]
+		# @param privateKey [CkSshKey]
 		#
-		# YARD =>
-		#
-		# @param  username [String]
-		# @param  privateKey [CkSshKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
 
+
 		# Method: AuthenticatePw
 		#
-		# ==== Attributes
+		# Authenticates with the SSH server using a ARG1 and ARG2.
+		# 
+		# An SSH session always begins
+		# by first calling Connect to connect to the SSH server, and then calling either AuthenticatePw or
+		# AuthenticatePk to login.
+		# 
+		# Important: When reporting problems, please send the full
+		# contents of the LastErrorText property to support@chilkatsoft.com.
+		# 
+		# Note: To learn about
+		# how to handle password change requests, see the PasswordChangeRequested property (above).
 		#
-		# +login+ - String
-		# +password+ - String
-		# returns TrueClass, FalseClass
+		# @param login [String]
+		# @param password [String]
 		#
-		# YARD =>
-		#
-		# @param  login [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePw(login, password)
 			# ...
 		end
 
+
 		# Method: AuthenticatePwPk
 		#
-		# ==== Attributes
+		# Authentication for SSH servers that require both a password and private key. (Most SSH servers are
+		# configured to require one or the other, but not both.)
+		# 
+		# Important: When reporting
+		# problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.
 		#
-		# +username+ - String
-		# +password+ - String
-		# +privateKey+ - CkSshKey
-		# returns TrueClass, FalseClass
+		# @param username [String]
+		# @param password [String]
+		# @param privateKey [CkSshKey]
 		#
-		# YARD =>
-		#
-		# @param  username [String]
-		# @param  password [String]
-		# @param  privateKey [CkSshKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
 
+
 		# Method: BeginAccepting
 		#
-		# ==== Attributes
+		# Starts a background thread for listening on ARG1. A new SSH tunnel is created and managed for each
+		# accepted connection. SSH tunnels are managed in a 2nd background thread: the SSH tunnel pool
+		# thread.
+		# 
+		# BeginAccepting starts a background thread that creates a socket, binds to the
+		# port, and begins listening. If the bind fails (meaning something else may have already bound to the
+		# same port), then the background thread exits. You may check to see if BeginAccepting succeeds by
+		# waiting a short time (perhaps 50 millisec) and then examine the IsAccepting property. If it is
+		# _FALSE_, then BeginAccepting failed.
 		#
-		# +listenPort+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param listenPort [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  listenPort [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def BeginAccepting(listenPort)
 			# ...
 		end
 
+
 		# Method: CloseTunnel
 		#
-		# ==== Attributes
+		# Closes the SSH tunnel and disconnects all existing clients. If ARG1 is _TRUE_, the method will wait
+		# for the tunnel and client threads to exit before returning.
 		#
-		# +waitForThreads+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param waitForThreads [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  waitForThreads [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CloseTunnel(waitForThreads)
 			# ...
 		end
 
+
 		# Method: Connect
 		#
-		# ==== Attributes
+		# Connects to the SSH server to be used for SSH tunneling.
 		#
-		# +hostname+ - String
-		# +port+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param hostname [String]
+		# @param port [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  hostname [String]
-		# @param  port [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Connect(hostname, port)
 			# ...
 		end
 
+
 		# Method: ConnectThroughSsh
 		#
-		# ==== Attributes
+		# Connects to an SSH server through an existing SSH connection. The ARG1 is an existing connected and
+		# authenticated SSH object. The connection to ARG2:ARG3 is made through the existing SSH connection
+		# via port-forwarding. If successful, the connection is as follows: application => ServerSSH1 =>
+		# ServerSSH2. (where ServerSSH1 is the ARG1 and ServerSSH2 is the SSH server at ARG2:ARG3) Once
+		# connected in this way, all communications are routed through ServerSSH1 to ServerSSH2. This includes
+		# authentication -- which means the application must still call one of the Authenticate* methods to
+		# authenticate with ServerSSH2.
 		#
-		# +ssh+ - CkSsh
-		# +hostname+ - String
-		# +port+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param ssh [CkSsh]
+		# @param hostname [String]
+		# @param port [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  ssh [CkSsh]
-		# @param  hostname [String]
-		# @param  port [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ConnectThroughSsh(ssh, hostname, port)
 			# ...
 		end
 
+
 		# Method: DisconnectAllClients
 		#
-		# ==== Attributes
+		# Disconnects all clients, keeping the SSH tunnel open. If ARG1 is _TRUE_, the method will wait for
+		# the client threads to exit before returning.
 		#
-		# +waitForThreads+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param waitForThreads [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  waitForThreads [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def DisconnectAllClients(waitForThreads)
 			# ...
 		end
 
+
 		# Method: GetCurrentState
 		#
-		# ==== Attributes
+		# Returns the current state of existing tunnels in an XML string.
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GetCurrentState()
+		# @return [TrueClass, FalseClass]
+		def GetCurrentState(outStr)
 			# ...
 		end
 
+
+		# Method: GetCurrentState
+		#
+		# Returns the current state of existing tunnels in an XML string.
+		#
+		#
+		# @return [String]
+		def getCurrentState()
+			# ...
+		end
+
+
 		# Method: IsSshConnected
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if connected to the SSH server. Returns _FALSE_ if the connection has been lost (or
+		# was never established).
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsSshConnected()
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: StopAccepting
 		#
-		# ==== Attributes
+		# Stops the listen background thread. It is possible to continue accepting connections by re-calling
+		# BeginAccepting. If ARG1 is _TRUE_, the method will wait for the listen thread to exit before
+		# returning.
 		#
-		# +waitForThread+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param waitForThread [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  waitForThread [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def StopAccepting(waitForThread)
 			# ...
 		end
 
+
 		# Method: UnlockComponent
 		#
-		# ==== Attributes
+		# Unlocks the component. This must be called once prior to calling any other method. A
+		# fully-functional 30-day trial is automatically started when an arbitrary string is passed to this
+		# method. For example, passing "Hello", or "abc123" will unlock the component for the 1st thirty days
+		# after the initial install.
 		#
-		# +unlockCode+ - String
-		# returns TrueClass, FalseClass
+		# @param unlockCode [String]
 		#
-		# YARD =>
-		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
+
 	end
 end

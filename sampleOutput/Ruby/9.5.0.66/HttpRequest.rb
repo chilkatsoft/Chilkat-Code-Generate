@@ -1,832 +1,1216 @@
 module Chilkat
 	class CkHttpRequest 
-		# returns String
+		# Sets an explicit boundary string to be used in multipart/form-data requests. If no Boundary is set,
+		# then a boundary string is automaticaly generated as needed during the sending of a request.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Boundary() end
+		def get_Boundary(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Sets an explicit boundary string to be used in multipart/form-data requests. If no Boundary is set,
+		# then a boundary string is automaticaly generated as needed during the sending of a request.
 		#
 		# @param newval [String]
-		def set_Boundary(newval) end
+		def put_Boundary(newval) end
 
-		# returns String
+		# Sets an explicit boundary string to be used in multipart/form-data requests. If no Boundary is set,
+		# then a boundary string is automaticaly generated as needed during the sending of a request.
+		#
 		# @return [String]
 		def boundary() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Sets an explicit boundary string to be used in multipart/form-data requests. If no Boundary is set,
+		# then a boundary string is automaticaly generated as needed during the sending of a request.
 		#
 		# @param newval [String]
-		def boundary(newval) end
+		def put_Boundary(newval) end
 
-		# returns String
+		# Controls the character encoding used for HTTP request parameters for POST requests. The default
+		# value is the ANSI charset of the computer. The charset should match the charset expected by the form
+		# target.
+		# 
+		# The "charset" attribute is only included in the Content-Type header of the
+		# request if the SendCharset property is set to _TRUE_.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Charset() end
+		def get_Charset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the character encoding used for HTTP request parameters for POST requests. The default
+		# value is the ANSI charset of the computer. The charset should match the charset expected by the form
+		# target.
+		# 
+		# The "charset" attribute is only included in the Content-Type header of the
+		# request if the SendCharset property is set to _TRUE_.
 		#
 		# @param newval [String]
-		def set_Charset(newval) end
+		def put_Charset(newval) end
 
-		# returns String
+		# Controls the character encoding used for HTTP request parameters for POST requests. The default
+		# value is the ANSI charset of the computer. The charset should match the charset expected by the form
+		# target.
+		# 
+		# The "charset" attribute is only included in the Content-Type header of the
+		# request if the SendCharset property is set to _TRUE_.
+		#
 		# @return [String]
 		def charset() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the character encoding used for HTTP request parameters for POST requests. The default
+		# value is the ANSI charset of the computer. The charset should match the charset expected by the form
+		# target.
+		# 
+		# The "charset" attribute is only included in the Content-Type header of the
+		# request if the SendCharset property is set to _TRUE_.
 		#
 		# @param newval [String]
-		def charset(newval) end
+		def put_Charset(newval) end
 
-		# returns String
+		# The ContentType property sets the "Content-Type" header field, and identifies the content-type of
+		# the HTTP request body. Common values
+		# are:
+		# 
+		# 
+		# application/x-www-form-urlencoded
+		# multipart/form-data
+		# text/xml
+		# application/jsonrequest
+		# 
+		# 
+		# If
+		# ContentType is set equal to the empty string, then no Content-Type header is included in the HTTP
+		# request.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ContentType() end
+		def get_ContentType(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The ContentType property sets the "Content-Type" header field, and identifies the content-type of
+		# the HTTP request body. Common values
+		# are:
+		# 
+		# 
+		# application/x-www-form-urlencoded
+		# multipart/form-data
+		# text/xml
+		# application/jsonrequest
+		# 
+		# 
+		# If
+		# ContentType is set equal to the empty string, then no Content-Type header is included in the HTTP
+		# request.
 		#
 		# @param newval [String]
-		def set_ContentType(newval) end
+		def put_ContentType(newval) end
 
-		# returns String
+		# The ContentType property sets the "Content-Type" header field, and identifies the content-type of
+		# the HTTP request body. Common values
+		# are:
+		# 
+		# 
+		# application/x-www-form-urlencoded
+		# multipart/form-data
+		# text/xml
+		# application/jsonrequest
+		# 
+		# 
+		# If
+		# ContentType is set equal to the empty string, then no Content-Type header is included in the HTTP
+		# request.
+		#
 		# @return [String]
 		def contentType() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The ContentType property sets the "Content-Type" header field, and identifies the content-type of
+		# the HTTP request body. Common values
+		# are:
+		# 
+		# 
+		# application/x-www-form-urlencoded
+		# multipart/form-data
+		# text/xml
+		# application/jsonrequest
+		# 
+		# 
+		# If
+		# ContentType is set equal to the empty string, then no Content-Type header is included in the HTTP
+		# request.
 		#
 		# @param newval [String]
-		def contentType(newval) end
+		def put_ContentType(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# Composes and returns the entire MIME header of the HTTP request.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_EntireHeader() end
+		def get_EntireHeader(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Composes and returns the entire MIME header of the HTTP request.
 		#
 		# @param newval [String]
-		def set_EntireHeader(newval) end
+		def put_EntireHeader(newval) end
 
-		# returns String
+		# Composes and returns the entire MIME header of the HTTP request.
+		#
 		# @return [String]
 		def entireHeader() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Composes and returns the entire MIME header of the HTTP request.
 		#
 		# @param newval [String]
-		def entireHeader(newval) end
+		def put_EntireHeader(newval) end
 
-		# returns String
+		# The HttpVerb property should be set to the name of the HTTP method that appears on the "start line"
+		# of an HTTP request, such as GET, POST, PUT, DELETE, etc. It is also possible to use the various
+		# WebDav verbs such as PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, etc. In general, the
+		# HttpVerb may be set to anything, even custom verbs recognized by a custom server-side app.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpVerb() end
+		def get_HttpVerb(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The HttpVerb property should be set to the name of the HTTP method that appears on the "start line"
+		# of an HTTP request, such as GET, POST, PUT, DELETE, etc. It is also possible to use the various
+		# WebDav verbs such as PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, etc. In general, the
+		# HttpVerb may be set to anything, even custom verbs recognized by a custom server-side app.
 		#
 		# @param newval [String]
-		def set_HttpVerb(newval) end
+		def put_HttpVerb(newval) end
 
-		# returns String
+		# The HttpVerb property should be set to the name of the HTTP method that appears on the "start line"
+		# of an HTTP request, such as GET, POST, PUT, DELETE, etc. It is also possible to use the various
+		# WebDav verbs such as PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, etc. In general, the
+		# HttpVerb may be set to anything, even custom verbs recognized by a custom server-side app.
+		#
 		# @return [String]
 		def httpVerb() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The HttpVerb property should be set to the name of the HTTP method that appears on the "start line"
+		# of an HTTP request, such as GET, POST, PUT, DELETE, etc. It is also possible to use the various
+		# WebDav verbs such as PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, etc. In general, the
+		# HttpVerb may be set to anything, even custom verbs recognized by a custom server-side app.
 		#
 		# @param newval [String]
-		def httpVerb(newval) end
+		def put_HttpVerb(newval) end
 
-		# returns String
+		# The HTTP version in the request header. Defaults to "1.1".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_HttpVersion() end
+		def get_HttpVersion(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The HTTP version in the request header. Defaults to "1.1".
 		#
 		# @param newval [String]
-		def set_HttpVersion(newval) end
+		def put_HttpVersion(newval) end
 
-		# returns String
+		# The HTTP version in the request header. Defaults to "1.1".
+		#
 		# @return [String]
 		def httpVersion() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The HTTP version in the request header. Defaults to "1.1".
 		#
 		# @param newval [String]
-		def httpVersion(newval) end
+		def put_HttpVersion(newval) end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
+		# Returns the number of request header fields.
+		#
 		# @return [Bignum]
 		def get_NumHeaderFields() end
 
-		# returns Bignum
+		# Returns the number of query parameters.
+		#
 		# @return [Bignum]
 		def get_NumParams() end
 
-		# returns String
+		# The path of the resource requested. A path of "/" indicates the default document for a domain.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Path() end
+		def get_Path(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The path of the resource requested. A path of "/" indicates the default document for a domain.
 		#
 		# @param newval [String]
-		def set_Path(newval) end
+		def put_Path(newval) end
 
-		# returns String
+		# The path of the resource requested. A path of "/" indicates the default document for a domain.
+		#
 		# @return [String]
 		def path() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The path of the resource requested. A path of "/" indicates the default document for a domain.
 		#
 		# @param newval [String]
-		def path(newval) end
+		def put_Path(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Controls whether the charset is explicitly included in the content-type header field of the HTTP
+		# POST request. The default value of this property is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_SendCharset() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Controls whether the charset is explicitly included in the content-type header field of the HTTP
+		# POST request. The default value of this property is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_SendCharset(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_SendCharset(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AddBytesForUpload
 		#
-		# ==== Attributes
+		# Adds a file to an upload request where the contents of the file come from an in-memory byte array.
+		# To create a file upload request, call UseUpload and then call AddBytesForUpload, AddStringForUpload,
+		# or AddFileForUpload for each file to be uploaded.
+		# ARG1 is an arbitrary name. (In HTML, it is
+		# the form field name of the input tag.)
+		# 
+		# ARG2 is the name of the file to be created on
+		# the HTTP server.
+		# 
+		# ARG3 contains the contents (bytes) to be uploaded.
 		#
-		# +name+ - String
-		# +remoteFileName+ - String
-		# +byteData+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param name [String]
+		# @param remoteFileName [String]
+		# @param byteData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  remoteFileName [String]
-		# @param  byteData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddBytesForUpload(name, remoteFileName, byteData)
 			# ...
 		end
 
+
 		# Method: AddBytesForUpload2
 		#
-		# ==== Attributes
+		# Same as AddBytesForUpload, but allows the Content-Type header field to be directly specified.
+		# (Otherwise, the Content-Type header is automatically determined based on the ARG2's file extension.)
 		#
-		# +name+ - String
-		# +remoteFileName+ - String
-		# +byteData+ - CkByteData
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
+		# @param name [String]
+		# @param remoteFileName [String]
+		# @param byteData [CkByteData]
+		# @param contentType [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  remoteFileName [String]
-		# @param  byteData [CkByteData]
-		# @param  contentType [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddBytesForUpload2(name, remoteFileName, byteData, contentType)
 			# ...
 		end
 
+
 		# Method: AddFileForUpload
 		#
-		# ==== Attributes
+		# Adds a file to an upload request. To create a file upload request, call UseUpload and then call
+		# AddFileForUpload, AddBytesForUpload, or AddStringForUpload for each file to be uploaded. This method
+		# does not read the file into memory. When the upload occurs, the data is streamed directly from the
+		# file, thus allowing for very large files to be uploaded without consuming large amounts of
+		# memory.
+		# 
+		# ARG1 is an arbitrary name. (In HTML, it is the form field name of the input
+		# tag.)
+		# 
+		# ARG2 is the path to an existing file in the local filesystem.
 		#
-		# +name+ - String
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
+		# @param name [String]
+		# @param filePath [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  filePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddFileForUpload(name, filePath)
 			# ...
 		end
 
+
 		# Method: AddFileForUpload2
 		#
-		# ==== Attributes
+		# Same as AddFileForUpload, but allows the Content-Type header field to be directly specified.
+		# (Otherwise, the Content-Type header is automatically determined based on the file
+		# extension.)
+		# 
+		# ARG1 is an arbitrary name. (In HTML, it is the form field name of the input
+		# tag.)
+		# 
+		# ARG2 is the path to an existing file in the local filesystem.
 		#
-		# +name+ - String
-		# +filePath+ - String
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
+		# @param name [String]
+		# @param filePath [String]
+		# @param contentType [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  filePath [String]
-		# @param  contentType [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddFileForUpload2(name, filePath, contentType)
 			# ...
 		end
 
+
 		# Method: AddHeader
 		#
-		# ==== Attributes
+		# Adds a request header to the HTTP request. If a header having the same field name is already
+		# present, this method replaces it.
+		# 
+		# Note: Never explicitly set the Content-Length header
+		# field. Chilkat will automatically compute the correct length and add the Content-Length header to
+		# all POST, PUT, or any other request where the Content-Length needs to be specified. (GET requests
+		# always have a 0 length body, and therefore never need a Content-Length header field.)
 		#
-		# +name+ - String
-		# +value+ - String
-		# returns nil
+		# @param name [String]
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddHeader(name, value)
 			# ...
 		end
 
+
 		# Method: AddMwsSignature
 		#
-		# ==== Attributes
+		# Computes the Amazon MWS signature using the ARG2 and adds the "Signature" parameter to the request.
+		# This method should be called for all Amazon Marketplace Web Service (Amazon MWS) HTTP requests. It
+		# should be called after all request parameters have been added.
+		# 
+		# The ARG1 should be the
+		# domain of the request, such as one of the
+		# following:
+		# 
+		# mws.amazonservices.com
+		# mws-eu.amazonservices.com
+		# mws.amazonservices.in
+		# mws.amazonservices.com.cn
+		# mws.amazonservices.jp
+		# 
+		# Note:
+		# This method automatically adds or replaces the existing Timestamp parameter to the current system
+		# date/time.
 		#
-		# +domain+ - String
-		# +mwsSecretKey+ - String
-		# returns TrueClass, FalseClass
+		# @param domain [String]
+		# @param mwsSecretKey [String]
 		#
-		# YARD =>
-		#
-		# @param  domain [String]
-		# @param  mwsSecretKey [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddMwsSignature(domain, mwsSecretKey)
 			# ...
 		end
 
+
 		# Method: AddParam
 		#
-		# ==== Attributes
+		# Adds a request query parameter (name/value pair) to the HTTP request. The ARG1 and ARG2 strings
+		# passed to this method should not be URL encoded.
 		#
-		# +name+ - String
-		# +value+ - String
-		# returns nil
+		# @param name [String]
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddParam(name, value)
 			# ...
 		end
 
+
 		# Method: AddStringForUpload
 		#
-		# ==== Attributes
+		# Same as AddFileForUpload, but the upload data comes from an in-memory string instead of a file.
 		#
-		# +name+ - String
-		# +filename+ - String
-		# +strData+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param name [String]
+		# @param filename [String]
+		# @param strData [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  filename [String]
-		# @param  strData [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddStringForUpload(name, filename, strData, charset)
 			# ...
 		end
 
+
 		# Method: AddStringForUpload2
 		#
-		# ==== Attributes
+		# Same as AddStringForUpload, but allows the Content-Type header field to be directly specified.
+		# (Otherwise, the Content-Type header is automatically determined based on the ARG2's file extension.)
 		#
-		# +name+ - String
-		# +filename+ - String
-		# +strData+ - String
-		# +charset+ - String
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
+		# @param name [String]
+		# @param filename [String]
+		# @param strData [String]
+		# @param charset [String]
+		# @param contentType [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  filename [String]
-		# @param  strData [String]
-		# @param  charset [String]
-		# @param  contentType [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddStringForUpload2(name, filename, strData, charset, contentType)
 			# ...
 		end
 
+
 		# Method: AddSubHeader
 		#
-		# ==== Attributes
+		# Adds a request header to the Nth sub-header of the HTTP request. If a header having the same field
+		# name is already present, this method replaces it.
 		#
-		# +index+ - Fixnum
-		# +name+ - String
-		# +value+ - String
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
+		# @param name [String]
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddSubHeader(index, name, value)
 			# ...
 		end
 
+
 		# Method: GenerateRequestFile
 		#
-		# ==== Attributes
+		# The same as GenerateRequestText, except the generated request is written to the file specified by
+		# ARG1.
 		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GenerateRequestFile(path)
 			# ...
 		end
 
+
 		# Method: GenerateRequestText
 		#
-		# ==== Attributes
+		# Returns the request text that would be sent if Http.SynchronousRequest was called.
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GenerateRequestText()
+		# @return [TrueClass, FalseClass]
+		def GenerateRequestText(outStr)
 			# ...
 		end
+
+
+		# Method: GenerateRequestText
+		#
+		# Returns the request text that would be sent if Http.SynchronousRequest was called.
+		#
+		#
+		# @return [String]
+		def generateRequestText()
+			# ...
+		end
+
 
 		# Method: GetHeaderField
 		#
-		# ==== Attributes
+		# Returns the value of a request header field.
 		#
-		# +name+ - String
-		# returns String
+		# @param name [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @return  [String]
-		def GetHeaderField(name)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderField(name, outStr)
 			# ...
 		end
+
+
+		# Method: GetHeaderField
+		#
+		# Returns the value of a request header field.
+		#
+		# @param name [String]
+		#
+		# @return [String]
+		def getHeaderField(name)
+			# ...
+		end
+
 
 		# Method: GetHeaderName
 		#
-		# ==== Attributes
+		# Returns the Nth request header field name. Indexing begins at 0, and the number of request header
+		# fields is specified by the NumHeaderFields property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetHeaderName(index)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetHeaderName
+		#
+		# Returns the Nth request header field name. Indexing begins at 0, and the number of request header
+		# fields is specified by the NumHeaderFields property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getHeaderName(index)
+			# ...
+		end
+
 
 		# Method: GetHeaderValue
 		#
-		# ==== Attributes
+		# Returns the Nth request header field value. Indexing begins at 0, and the number of request header
+		# fields is specified by the NumHeaderFields property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetHeaderValue(index)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderValue(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetHeaderValue
+		#
+		# Returns the Nth request header field value. Indexing begins at 0, and the number of request header
+		# fields is specified by the NumHeaderFields property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getHeaderValue(index)
+			# ...
+		end
+
 
 		# Method: GetParam
 		#
-		# ==== Attributes
+		# Returns a request query parameter value by name.
 		#
-		# +name+ - String
-		# returns String
+		# @param name [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @return  [String]
-		def GetParam(name)
+		# @return [TrueClass, FalseClass]
+		def GetParam(name, outStr)
 			# ...
 		end
+
+
+		# Method: GetParam
+		#
+		# Returns a request query parameter value by name.
+		#
+		# @param name [String]
+		#
+		# @return [String]
+		def getParam(name)
+			# ...
+		end
+
 
 		# Method: GetParamName
 		#
-		# ==== Attributes
+		# Returns the Nth request query parameter field name. Indexing begins at 0, and the number of request
+		# query parameter fields is specified by the NumParams property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetParamName(index)
+		# @return [TrueClass, FalseClass]
+		def GetParamName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetParamName
+		#
+		# Returns the Nth request query parameter field name. Indexing begins at 0, and the number of request
+		# query parameter fields is specified by the NumParams property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getParamName(index)
+			# ...
+		end
+
 
 		# Method: GetParamValue
 		#
-		# ==== Attributes
+		# Returns the Nth request query parameter field value. Indexing begins at 0, and the number of request
+		# query parameter fields is specified by the NumParams property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetParamValue(index)
+		# @return [TrueClass, FalseClass]
+		def GetParamValue(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetParamValue
+		#
+		# Returns the Nth request query parameter field value. Indexing begins at 0, and the number of request
+		# query parameter fields is specified by the NumParams property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getParamValue(index)
+			# ...
+		end
+
 
 		# Method: GetUrlEncodedParams
 		#
-		# ==== Attributes
+		# Returns the request parameters in URL encoded form (i.e. in the exact form that would be sent if the
+		# ContentType property was application/x-www-form-urlencoded). For example, if a request has two
+		# params: param1="abc 123" and param2="abc-123", then GetUrlEncodedParams would return
+		# "abc+123&lt;param2=abc%2D123"
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GetUrlEncodedParams()
+		# @return [TrueClass, FalseClass]
+		def GetUrlEncodedParams(outStr)
 			# ...
 		end
 
+
+		# Method: GetUrlEncodedParams
+		#
+		# Returns the request parameters in URL encoded form (i.e. in the exact form that would be sent if the
+		# ContentType property was application/x-www-form-urlencoded). For example, if a request has two
+		# params: param1="abc 123" and param2="abc-123", then GetUrlEncodedParams would return
+		# "abc+123&lt;param2=abc%2D123"
+		#
+		#
+		# @return [String]
+		def getUrlEncodedParams()
+			# ...
+		end
+
+
 		# Method: LoadBodyFromBytes
 		#
-		# ==== Attributes
+		# The HTTP protocol is such that all HTTP requests are MIME. For non-multipart requests, this method
+		# may be called to set the MIME body of the HTTP request to the exact contents of the ARG1.
+		# # Note: A non-multipart HTTP request consists of (1) the HTTP start line, (2) MIME header fields,
+		# and (3) the MIME body. This method sets the MIME body.
 		#
-		# +byteData+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param byteData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  byteData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadBodyFromBytes(byteData)
 			# ...
 		end
 
+
 		# Method: LoadBodyFromFile
 		#
-		# ==== Attributes
+		# The HTTP protocol is such that all HTTP requests are MIME. For non-multipart requests, this method
+		# may be called to set the MIME body of the HTTP request to the exact contents of ARG1. 
+		# Note: A
+		# non-multipart HTTP request consists of (1) the HTTP start line, (2) MIME header fields, and (3) the
+		# MIME body. This method sets the MIME body.
 		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
+		# @param filePath [String]
 		#
-		# YARD =>
-		#
-		# @param  filePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadBodyFromFile(filePath)
 			# ...
 		end
 
+
 		# Method: LoadBodyFromString
 		#
-		# ==== Attributes
+		# The HTTP protocol is such that all HTTP requests are MIME. For non-multipart requests, this method
+		# may be called to set the MIME body of the HTTP request to the exact contents of ARG1. 
+		# Note: A
+		# non-multipart HTTP request consists of (1) the HTTP start line, (2) MIME header fields, and (3) the
+		# MIME body. This method sets the MIME body.
+		# 
+		# ARG2 indicates the charset, such as "utf-8"
+		# or "iso-8859-1", to be used. The HTTP body will contain the ARG1 converted to this character
+		# encoding.
 		#
-		# +bodyStr+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param bodyStr [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  bodyStr [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadBodyFromString(bodyStr, charset)
 			# ...
 		end
 
+
 		# Method: RemoveAllParams
 		#
-		# ==== Attributes
+		# Removes all request parameters.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def RemoveAllParams()
 			# ...
 		end
 
+
 		# Method: RemoveHeader
 		#
-		# ==== Attributes
+		# Removes all occurrences of a HTTP request header field. Always returns _TRUE_.
 		#
-		# +name+ - String
-		# returns TrueClass, FalseClass
+		# @param name [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RemoveHeader(name)
 			# ...
 		end
 
+
 		# Method: RemoveParam
 		#
-		# ==== Attributes
+		# Removes a single HTTP request parameter by name.
 		#
-		# +name+ - String
-		# returns nil
+		# @param name [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @return  [nil]
+		# @return [nil]
 		def RemoveParam(name)
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: SetFromUrl
 		#
-		# ==== Attributes
+		# Parses a URL and sets the Path and query parameters (NumParams, GetParam, GetParamName,
+		# GetParamValue).
 		#
-		# +url+ - String
-		# returns nil
+		# @param url [String]
 		#
-		# YARD =>
-		#
-		# @param  url [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetFromUrl(url)
 			# ...
 		end
 
+
 		# Method: StreamBodyFromFile
 		#
-		# ==== Attributes
+		# Useful for sending HTTP requests where the body is a very large file. For example, to send an XML
+		# HttpRequest containing a very large XML document, one would set the HttpVerb = "POST", the
+		# ContentType = "text/xml", and then call StreamBodyFromFile to indicate that the XML body of the
+		# request is to be streamed directly from a file. When the HTTP request is actually sent, the body is
+		# streamed directly from the file, and thus the file never needs to be loaded in its entirety in
+		# memory.
 		#
-		# +filePath+ - String
-		# returns TrueClass, FalseClass
+		# @param filePath [String]
 		#
-		# YARD =>
-		#
-		# @param  filePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def StreamBodyFromFile(filePath)
 			# ...
 		end
 
+
 		# Method: StreamChunkFromFile
 		#
-		# ==== Attributes
+		# This method is the same as StreamBodyFromFile, but allows for an offset and number of bytes to be
+		# specified. The ARG2 and ARG3 are integers passed as strings.
 		#
-		# +path+ - String
-		# +offset+ - String
-		# +numBytes+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
+		# @param offset [String]
+		# @param numBytes [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @param  offset [String]
-		# @param  numBytes [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def StreamChunkFromFile(path, offset, numBytes)
 			# ...
 		end
 
+
 		# Method: UseGet
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Makes the HttpRequest a GET request.
+		# 
+		# Important: This method is deprecated. An
+		# application should instead set the HttpVerb property equal to "GET", and the ContentType equal to an
+		# empty string (because GET requests have no request body).
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseGet()
 			# ...
 		end
 
+
 		# Method: UseHead
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Makes the HttpRequest a HEAD request.
+		# 
+		# Important: This method is deprecated. An
+		# application should instead set the HttpVerb property equal to "HEAD", and the ContentType equal to
+		# an empty string (because HEAD requests have no body).
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseHead()
 			# ...
 		end
 
+
 		# Method: UsePost
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Makes the HttpRequest a POST request that uses the "application/x-www-form-urlencoded" content
+		# type.
+		# 
+		# Important: This method is deprecated. An application should instead set the
+		# HttpVerb property equal to "POST", and the ContentType equal to "application/x-www-form-urlencoded".
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UsePost()
 			# ...
 		end
 
+
 		# Method: UsePostMultipartForm
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Makes the HttpRequest a POST request that uses the "multipart/form-data" content
+		# type.
+		# 
+		# Important: This method is deprecated. An application should instead set the
+		# HttpVerb property equal to "POST", and the ContentType equal to "multipart/form-data".
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UsePostMultipartForm()
 			# ...
 		end
 
+
 		# Method: UsePut
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Makes the HttpRequest a PUT request.
+		# 
+		# Important: This method is deprecated. An
+		# application should instead set the HttpVerb property equal to "PUT", and the ContentType equal to
+		# "application/x-www-form-urlencoded".
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UsePut()
 			# ...
 		end
 
+
 		# Method: UseUpload
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Makes the HttpRequest a POST request that uses the "multipart/form-data" content type. To create a
+		# file upload request, call UseUpload and then call AddFileForUpload for each file to be
+		# uploaded.
+		# 
+		# Important: This method is deprecated. An application should instead set the
+		# HttpVerb property equal to "POST", and the ContentType equal to "multipart/form-data".
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseUpload()
 			# ...
 		end
 
+
 		# Method: UseUploadPut
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Makes the HttpRequest a PUT request that uses the "multipart/form-data" content type. To create a
+		# file upload request (using the PUT verb), call UseUploadPut and then call AddFileForUpload for each
+		# file to be uploaded.
+		# 
+		# Important: This method is deprecated. An application should
+		# instead set the HttpVerb property equal to "PUT", and the ContentType equal to
+		# "multipart/form-data".
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseUploadPut()
 			# ...
 		end
 
+
 		# Method: UseXmlHttp
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Makes the HttpRequest a POST request using the "application/xml" content type. The request body is
+		# set to the XML string passed to this method.
+		# 
+		# Important: This method is deprecated. An
+		# application should instead set the HttpVerb property equal to "POST", the ContentType equal to
+		# "text/xml", and the request body should contain the XML document text.
 		#
-		# +xmlBody+ - String
-		# returns nil
+		# @param xmlBody [String]
 		#
-		# YARD =>
-		#
-		# @param  xmlBody [String]
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseXmlHttp(xmlBody)
 			# ...
 		end
+
 	end
 end

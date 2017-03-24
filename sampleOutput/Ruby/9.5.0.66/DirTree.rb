@@ -1,184 +1,392 @@
 module Chilkat
 	class CkDirTree 
-		# returns String
+		# Begin iterating from this directory.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_BaseDir() end
+		def get_BaseDir(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Begin iterating from this directory.
 		#
 		# @param newval [String]
-		def set_BaseDir(newval) end
+		def put_BaseDir(newval) end
 
-		# returns String
+		# Begin iterating from this directory.
+		#
 		# @return [String]
 		def baseDir() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Begin iterating from this directory.
 		#
 		# @param newval [String]
-		def baseDir(newval) end
+		def put_BaseDir(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Set to _TRUE_ when the last file or sub-directory has been iterated.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_DoneIterating() end
 
-		# returns Bignum
+		# The file size of the current file in the iteration. (0 if it is a directory.)
+		#
 		# @return [Bignum]
 		def get_FileSize32() end
 
-		# returns String
+		# The file size as a 64-bit integer of the current file in the iteration. (0 if it is a directory.)
+		#
+		# @return [Bignum]
+		def get_FileSize64() end
+
+		# The absolute directory path of the current file or sub-directory.
+		#
 		# @return [String]
 		def get_FullPath() end
 
-		# returns String
+		# The absolute directory path of the current file or sub-directory.
+		#
 		# @return [String]
 		def fullPath() end
 
-		# returns String
+		# The absolute UNC directory path of the current file or sub-directory.
+		#
 		# @return [String]
 		def get_FullUncPath() end
 
-		# returns String
+		# The absolute UNC directory path of the current file or sub-directory.
+		#
 		# @return [String]
 		def fullUncPath() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# _TRUE_ if the current position is a sub-directory, _FALSE_ if it is a file.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_IsDirectory() end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, the iteration will be recursive. If _FALSE_ the iteration is non-recursive. The default
+		# value is _TRUE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_Recurse() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, the iteration will be recursive. If _FALSE_ the iteration is non-recursive. The default
+		# value is _TRUE_.
 		#
-		# @param newval [Bignum]
-		def set_Recurse(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_Recurse(newval) end
 
-		# returns String
+		# The relative directory path of the current file or sub-directory. (Relative to the BaseDir)
+		#
 		# @return [String]
 		def get_RelativePath() end
 
-		# returns String
+		# The relative directory path of the current file or sub-directory. (Relative to the BaseDir)
+		#
 		# @return [String]
 		def relativePath() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AdvancePosition
 		#
-		# ==== Attributes
+		# Advances the current position in the directory tree traversal to the next file or
+		# sub-directory.
+		# 
+		# Important: If AdvancePosition returns _FALSE_, it can be an error, or it
+		# could be that there are no more files and directories. To distinguish between the two cases, examine
+		# the DoneIterating property. If DoneIterating is _TRUE_, then the _FALSE_ return value is not an
+		# error, but instead indicates that the end has been reached.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AdvancePosition()
 			# ...
 		end
 
+
 		# Method: BeginIterate
 		#
-		# ==== Attributes
+		# Begins a directory tree traversal. After calling this method, the various property values such as
+		# Fullpath, FileSize32, etc. can be retrieved for the 1st file / sub-directory in the
+		# traversal.
+		# 
+		# Important: If BeginIterate returns _FALSE_, it can be an error, or it could
+		# be that there are 0 files and directories. To distinguish between the two cases, examine the
+		# DoneIterating property. If DoneIterating is _TRUE_, then the _FALSE_ return value is not an error,
+		# but instead indicates 0 files/directories.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def BeginIterate()
 			# ...
 		end
+
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
 	end
 end

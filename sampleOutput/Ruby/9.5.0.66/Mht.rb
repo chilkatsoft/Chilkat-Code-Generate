@@ -1,944 +1,1361 @@
 module Chilkat
 	class CkMht 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
 		#
-		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AbortCurrent(newval) end
 
-		# returns String
+		# When processing an HTML file or string (not a website URL), this defines the base URL to be used
+		# when converting relative HREFs to absolute HREFs.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_BaseUrl() end
+		def get_BaseUrl(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When processing an HTML file or string (not a website URL), this defines the base URL to be used
+		# when converting relative HREFs to absolute HREFs.
 		#
 		# @param newval [String]
-		def set_BaseUrl(newval) end
+		def put_BaseUrl(newval) end
 
-		# returns String
+		# When processing an HTML file or string (not a website URL), this defines the base URL to be used
+		# when converting relative HREFs to absolute HREFs.
+		#
 		# @return [String]
 		def baseUrl() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When processing an HTML file or string (not a website URL), this defines the base URL to be used
+		# when converting relative HREFs to absolute HREFs.
 		#
 		# @param newval [String]
-		def baseUrl(newval) end
+		def put_BaseUrl(newval) end
 
-		# returns Bignum
+		# The amount of time in seconds to wait before timing out when connecting to an HTTP server. The
+		# default value is 10 seconds.
+		#
 		# @return [Bignum]
 		def get_ConnectTimeout() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The amount of time in seconds to wait before timing out when connecting to an HTTP server. The
+		# default value is 10 seconds.
 		#
 		# @param newval [Bignum]
-		def set_ConnectTimeout(newval) end
+		def put_ConnectTimeout(newval) end
 
-		# returns String
+		# A filename to save the result HTML when converting a URL, file, or HTML string. If problems are
+		# experienced, the before/after HTML can be analyzed to help determine the cause.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugHtmlAfter() end
+		def get_DebugHtmlAfter(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# A filename to save the result HTML when converting a URL, file, or HTML string. If problems are
+		# experienced, the before/after HTML can be analyzed to help determine the cause.
 		#
 		# @param newval [String]
-		def set_DebugHtmlAfter(newval) end
+		def put_DebugHtmlAfter(newval) end
 
-		# returns String
+		# A filename to save the result HTML when converting a URL, file, or HTML string. If problems are
+		# experienced, the before/after HTML can be analyzed to help determine the cause.
+		#
 		# @return [String]
 		def debugHtmlAfter() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# A filename to save the result HTML when converting a URL, file, or HTML string. If problems are
+		# experienced, the before/after HTML can be analyzed to help determine the cause.
 		#
 		# @param newval [String]
-		def debugHtmlAfter(newval) end
+		def put_DebugHtmlAfter(newval) end
 
-		# returns String
+		# A filename to save the input HTML when converting a URL, file, or HTML string. If problems are
+		# experienced, the before/after HTML can be analyzed to help determine the cause.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugHtmlBefore() end
+		def get_DebugHtmlBefore(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# A filename to save the input HTML when converting a URL, file, or HTML string. If problems are
+		# experienced, the before/after HTML can be analyzed to help determine the cause.
 		#
 		# @param newval [String]
-		def set_DebugHtmlBefore(newval) end
+		def put_DebugHtmlBefore(newval) end
 
-		# returns String
+		# A filename to save the input HTML when converting a URL, file, or HTML string. If problems are
+		# experienced, the before/after HTML can be analyzed to help determine the cause.
+		#
 		# @return [String]
 		def debugHtmlBefore() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# A filename to save the input HTML when converting a URL, file, or HTML string. If problems are
+		# experienced, the before/after HTML can be analyzed to help determine the cause.
 		#
 		# @param newval [String]
-		def debugHtmlBefore(newval) end
+		def put_DebugHtmlBefore(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When _TRUE_ causes the Mht class to be much more verbose in its logging. The default is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_DebugTagCleaning() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When _TRUE_ causes the Mht class to be much more verbose in its logging. The default is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_DebugTagCleaning(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_DebugTagCleaning(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Controls whether images are embedded in the MHT/EML, or whether the IMG SRC attributes are left as
+		# external URL references. If false, the IMG SRC tags are converted to absolute URLs (if necessary)
+		# and the images are not embedded within the MHT/EML.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_EmbedImages() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Controls whether images are embedded in the MHT/EML, or whether the IMG SRC attributes are left as
+		# external URL references. If false, the IMG SRC tags are converted to absolute URLs (if necessary)
+		# and the images are not embedded within the MHT/EML.
 		#
-		# @param newval [Bignum]
-		def set_EmbedImages(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_EmbedImages(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, only images found on the local filesystem (i.e. links to files) will be embedded within
+		# the MHT.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_EmbedLocalOnly() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, only images found on the local filesystem (i.e. links to files) will be embedded within
+		# the MHT.
 		#
-		# @param newval [Bignum]
-		def set_EmbedLocalOnly(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_EmbedLocalOnly(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, page parts such as images, style sheets, etc. will be fetched from the disk cache if
+		# possible. The disk cache root may be defined by calling AddCacheRoot. The default value is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_FetchFromCache() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, page parts such as images, style sheets, etc. will be fetched from the disk cache if
+		# possible. The disk cache root may be defined by calling AddCacheRoot. The default value is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_FetchFromCache(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_FetchFromCache(newval) end
 
-		# returns Bignum
+		# The time interval, in milliseconds, between AbortCheck event callbacks. The heartbeat/AbortCheck
+		# provides a means for an application to abort any MHT method before completion.
+		# The default
+		# value is 0, which means that no AbortCheck events will be fired.
+		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The time interval, in milliseconds, between AbortCheck event callbacks. The heartbeat/AbortCheck
+		# provides a means for an application to abort any MHT method before completion.
+		# The default
+		# value is 0, which means that no AbortCheck events will be fired.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		#
+		# @!method
+		def put_HeartbeatMs(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Some HTTP responses contain a "Cache-Control: must-revalidate" header. If this is present, the
+		# server is requesting that the client always issue a revalidate HTTP request instead of serving the
+		# page directly from cache. If IgnoreMustRevalidate is set to _TRUE_, then Chilkat MHT will serve the
+		# page directly from cache without revalidating until the page is no longer fresh. (assuming that
+		# FetchFromCache is set to _TRUE_)
+		# The default value of this property is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_IgnoreMustRevalidate() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Some HTTP responses contain a "Cache-Control: must-revalidate" header. If this is present, the
+		# server is requesting that the client always issue a revalidate HTTP request instead of serving the
+		# page directly from cache. If IgnoreMustRevalidate is set to _TRUE_, then Chilkat MHT will serve the
+		# page directly from cache without revalidating until the page is no longer fresh. (assuming that
+		# FetchFromCache is set to _TRUE_)
+		# The default value of this property is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_IgnoreMustRevalidate(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_IgnoreMustRevalidate(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Some HTTP responses contain headers of various types that indicate that the page should not be
+		# cached. Chilkat MHT will adhere to this unless this property is set to _TRUE_.
+		# The default
+		# value of this property is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_IgnoreNoCache() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Some HTTP responses contain headers of various types that indicate that the page should not be
+		# cached. Chilkat MHT will adhere to this unless this property is set to _TRUE_.
+		# The default
+		# value of this property is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_IgnoreNoCache(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_IgnoreNoCache(newval) end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Only applies when creating MHT files. Scripts are always removed when creating EML or emails from
+		# HTML. If set to _TRUE_, then all scripts are removed, if set to _FALSE_ (the default) then scripts
+		# are not removed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_NoScripts() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Only applies when creating MHT files. Scripts are always removed when creating EML or emails from
+		# HTML. If set to _TRUE_, then all scripts are removed, if set to _FALSE_ (the default) then scripts
+		# are not removed.
 		#
-		# @param newval [Bignum]
-		def set_NoScripts(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_NoScripts(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Setting this property to _TRUE_ causes the MHT component to use NTLM authentication (also known as
+		# IWA -- or Integrated Windows Authentication) when authentication with an HTTP server.
+		# The
+		# default value of this property is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_NtlmAuth() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Setting this property to _TRUE_ causes the MHT component to use NTLM authentication (also known as
+		# IWA -- or Integrated Windows Authentication) when authentication with an HTTP server.
+		# The
+		# default value of this property is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_NtlmAuth(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_NtlmAuth(newval) end
 
-		# returns Bignum
+		# The number of directory levels to be used under each cache root. The default is 0, meaning that each
+		# cached item is stored in a cache root directory. A value of 1 causes each cached page to be stored
+		# in one of 255 subdirectories named "0","1", "2", ..."255" under a cache root. A value of 2 causes
+		# two levels of subdirectories ("0..255/0..255") under each cache root. The MHT control automatically
+		# creates subdirectories as needed. The reason for mutliple levels is to alleviate problems that may
+		# arise when huge numbers of files are stored in a single directory. For example, Windows Explorer
+		# does not behave well when trying to display the contents of directories with thousands of files.
+		#
 		# @return [Bignum]
 		def get_NumCacheLevels() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The number of directory levels to be used under each cache root. The default is 0, meaning that each
+		# cached item is stored in a cache root directory. A value of 1 causes each cached page to be stored
+		# in one of 255 subdirectories named "0","1", "2", ..."255" under a cache root. A value of 2 causes
+		# two levels of subdirectories ("0..255/0..255") under each cache root. The MHT control automatically
+		# creates subdirectories as needed. The reason for mutliple levels is to alleviate problems that may
+		# arise when huge numbers of files are stored in a single directory. For example, Windows Explorer
+		# does not behave well when trying to display the contents of directories with thousands of files.
 		#
 		# @param newval [Bignum]
-		def set_NumCacheLevels(newval) end
+		def put_NumCacheLevels(newval) end
 
-		# returns Bignum
+		# The number of cache roots to be used for the disk cache. This allows the disk cache spread out over
+		# multiple disk drives. Each cache root is a string indicating the drive letter and directory path.
+		# For example, "E:\Cache". To create a cache with four roots, call AddCacheRoot once for each
+		# directory root.
+		#
 		# @return [Bignum]
 		def get_NumCacheRoots() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
+		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_PreferIpv6() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
+		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [Bignum]
-		def set_PreferIpv6(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_PreferIpv6(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# This property provides a means for the noscript option to be selected when possible. If
+		# PreferMHTScripts = _FALSE_, then scripts with noscript alternatives are removed and the noscript
+		# content is kept. If _TRUE_ (the default), then scripts are preserved and the noscript options are
+		# discarded.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_PreferMHTScripts() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# This property provides a means for the noscript option to be selected when possible. If
+		# PreferMHTScripts = _FALSE_, then scripts with noscript alternatives are removed and the noscript
+		# content is kept. If _TRUE_ (the default), then scripts are preserved and the noscript options are
+		# discarded.
 		#
-		# @param newval [Bignum]
-		def set_PreferMHTScripts(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_PreferMHTScripts(newval) end
 
-		# returns String
+		# (Optional) A proxy host:port if a proxy is necessary to access the Internet. The proxy string should
+		# be formatted as "hostname:port", such as "www.chilkatsoft.com:100".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Proxy() end
+		def get_Proxy(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# (Optional) A proxy host:port if a proxy is necessary to access the Internet. The proxy string should
+		# be formatted as "hostname:port", such as "www.chilkatsoft.com:100".
 		#
 		# @param newval [String]
-		def set_Proxy(newval) end
+		def put_Proxy(newval) end
 
-		# returns String
+		# (Optional) A proxy host:port if a proxy is necessary to access the Internet. The proxy string should
+		# be formatted as "hostname:port", such as "www.chilkatsoft.com:100".
+		#
 		# @return [String]
 		def proxy() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# (Optional) A proxy host:port if a proxy is necessary to access the Internet. The proxy string should
+		# be formatted as "hostname:port", such as "www.chilkatsoft.com:100".
 		#
 		# @param newval [String]
-		def proxy(newval) end
+		def put_Proxy(newval) end
 
-		# returns String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# login.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ProxyLogin() end
+		def get_ProxyLogin(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# login.
 		#
 		# @param newval [String]
-		def set_ProxyLogin(newval) end
+		def put_ProxyLogin(newval) end
 
-		# returns String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# login.
+		#
 		# @return [String]
 		def proxyLogin() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# login.
 		#
 		# @param newval [String]
-		def proxyLogin(newval) end
+		def put_ProxyLogin(newval) end
 
-		# returns String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# password.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ProxyPassword() end
+		def get_ProxyPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# password.
 		#
 		# @param newval [String]
-		def set_ProxyPassword(newval) end
+		def put_ProxyPassword(newval) end
 
-		# returns String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# password.
+		#
 		# @return [String]
 		def proxyPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# password.
 		#
 		# @param newval [String]
-		def proxyPassword(newval) end
+		def put_ProxyPassword(newval) end
 
-		# returns Bignum
+		# The amount of time in seconds to wait before timing out when reading from an HTTP server. The
+		# ReadTimeout is the amount of time that needs to elapse while no additional data is forthcoming.
+		# During a long data transfer, if the data stream halts for more than this amount, it will timeout.
+		# Otherwise, there is no limit on the length of time for the entire data transfer.
+		# 
+		# The
+		# default value is 20 seconds.
+		#
 		# @return [Bignum]
 		def get_ReadTimeout() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The amount of time in seconds to wait before timing out when reading from an HTTP server. The
+		# ReadTimeout is the amount of time that needs to elapse while no additional data is forthcoming.
+		# During a long data transfer, if the data stream halts for more than this amount, it will timeout.
+		# Otherwise, there is no limit on the length of time for the entire data transfer.
+		# 
+		# The
+		# default value is 20 seconds.
 		#
 		# @param newval [Bignum]
-		def set_ReadTimeout(newval) end
+		def put_ReadTimeout(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then the HTTP client will verify the server's SSL certificate. The certificate is
+		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
+		# this property is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_RequireSslCertVerify() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then the HTTP client will verify the server's SSL certificate. The certificate is
+		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
+		# this property is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_RequireSslCertVerify(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_RequireSslCertVerify(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksHostname() end
+		def get_SocksHostname(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [String]
-		def set_SocksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
+		#
 		# @return [String]
 		def socksHostname() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
+		# if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [String]
-		def socksHostname(newval) end
+		def put_SocksHostname(newval) end
 
-		# returns String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksPassword() end
+		def get_SocksPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
 		#
 		# @param newval [String]
-		def set_SocksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# returns String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
+		#
 		# @return [String]
 		def socksPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
+		# this does not apply to SOCKS4.
 		#
 		# @param newval [String]
-		def socksPassword(newval) end
+		def put_SocksPassword(newval) end
 
-		# returns Bignum
+		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
+		# This property only applies if a
+		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
+		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
+		# This property only applies if a
+		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [Bignum]
-		def set_SocksPort(newval) end
+		def put_SocksPort(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SocksUsername() end
+		def get_SocksUsername(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
 		#
 		# @param newval [String]
-		def set_SocksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# returns String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
+		#
 		# @return [String]
 		def socksUsername() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
+		# 4 or 5).
 		#
 		# @param newval [String]
-		def socksUsername(newval) end
+		def put_SocksUsername(newval) end
 
-		# returns Bignum
+		# SocksVersion
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
+		# proxy is used. This is the default.
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
+		# SOCKS5 proxy.
+		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# SocksVersion
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
+		# proxy is used. This is the default.
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
+		# SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
-		def set_SocksVersion(newval) end
+		def put_SocksVersion(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then the UnpackMHT and UnpackMHTString methods will unpack the MHT directly with no
+		# transformations. Normally, the related parts are unpacked to a "parts" sub-directory, and the
+		# unpacked HTML is edited to update references to point to the unpacked image and script files. When
+		# unpacking direct, the HTML is not edited, and the related parts are unpacked to sub-directories
+		# rooted in the directory where HTML file is created (i.e. the unpack directory). When unpacking
+		# direct, the "partsSubDir" argument of the UnpackMHT* methods is unused. 
+		# 
+		# Note: It is
+		# only possible to directly unpack MHT files where the Content-Location headers DO NOT contain URLs.
+		# The MHT must be such that the Content-Location headers of the related items contain relative paths.
+		# # 
+		# Note: The default value of this property is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UnpackDirect() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then the UnpackMHT and UnpackMHTString methods will unpack the MHT directly with no
+		# transformations. Normally, the related parts are unpacked to a "parts" sub-directory, and the
+		# unpacked HTML is edited to update references to point to the unpacked image and script files. When
+		# unpacking direct, the HTML is not edited, and the related parts are unpacked to sub-directories
+		# rooted in the directory where HTML file is created (i.e. the unpack directory). When unpacking
+		# direct, the "partsSubDir" argument of the UnpackMHT* methods is unused. 
+		# 
+		# Note: It is
+		# only possible to directly unpack MHT files where the Content-Location headers DO NOT contain URLs.
+		# The MHT must be such that the Content-Location headers of the related items contain relative paths.
+		# # 
+		# Note: The default value of this property is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_UnpackDirect(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UnpackDirect(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Controls whether absolute or relative paths are used when referencing images in the unpacked HTML.
+		# The default value is _TRUE_ indicating that relative paths will be used. To use absolute paths, set
+		# this property value equal to _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UnpackUseRelPaths() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Controls whether absolute or relative paths are used when referencing images in the unpacked HTML.
+		# The default value is _TRUE_ indicating that relative paths will be used. To use absolute paths, set
+		# this property value equal to _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_UnpackUseRelPaths(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UnpackUseRelPaths(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Controls whether the cache is automatically updated with the responses from HTTP GET requests. If
+		# _TRUE_, the disk cache is updated, if _FALSE_ (the default), the cache is not updated.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UpdateCache() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Controls whether the cache is automatically updated with the responses from HTTP GET requests. If
+		# _TRUE_, the disk cache is updated, if _FALSE_ (the default), the cache is not updated.
 		#
-		# @param newval [Bignum]
-		def set_UpdateCache(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UpdateCache(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Controls whether CID URLs are used for embedded references when generating MHT or EML documents. If
+		# UseCids is _FALSE_, then URLs are left unchanged and the embedded items will contain
+		# "content-location" headers that match the URLs in the HTML. If _TRUE_, CIDs are generated and the
+		# URLs within the HTML are replaced with "CID:" links.
+		# 
+		# The default value of this property
+		# is _TRUE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UseCids() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Controls whether CID URLs are used for embedded references when generating MHT or EML documents. If
+		# UseCids is _FALSE_, then URLs are left unchanged and the embedded items will contain
+		# "content-location" headers that match the URLs in the HTML. If _TRUE_, CIDs are generated and the
+		# URLs within the HTML are replaced with "CID:" links.
+		# 
+		# The default value of this property
+		# is _TRUE_.
 		#
-		# @param newval [Bignum]
-		def set_UseCids(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UseCids(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, a "filename" attribute is added to each Content-Disposition MIME header field for each
+		# embedded item (image, style sheet, etc.). If _FALSE_, then no filename attribute is added.
+		# The
+		# default value of this property is _TRUE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UseFilename() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, a "filename" attribute is added to each Content-Disposition MIME header field for each
+		# embedded item (image, style sheet, etc.). If _FALSE_, then no filename attribute is added.
+		# The
+		# default value of this property is _TRUE_.
 		#
-		# @param newval [Bignum]
-		def set_UseFilename(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UseFilename(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, the proxy host/port used by Internet Explorer will also be used by Chilkat MHT.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UseIEProxy() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, the proxy host/port used by Internet Explorer will also be used by Chilkat MHT.
 		#
-		# @param newval [Bignum]
-		def set_UseIEProxy(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UseIEProxy(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, an "inline" attribute is added to each Content-Disposition MIME header field for each
+		# embedded item (image, style sheet, etc.). If _FALSE_, then no inline attribute is added.
+		# The
+		# default value of this property is _TRUE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UseInline() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, an "inline" attribute is added to each Content-Disposition MIME header field for each
+		# embedded item (image, style sheet, etc.). If _FALSE_, then no inline attribute is added.
+		# The
+		# default value of this property is _TRUE_.
 		#
-		# @param newval [Bignum]
-		def set_UseInline(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UseInline(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
-		# returns String
+		# (Optional) Specifies the login if a a Web page is accessed that requires a login
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_WebSiteLogin() end
+		def get_WebSiteLogin(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# (Optional) Specifies the login if a a Web page is accessed that requires a login
 		#
 		# @param newval [String]
-		def set_WebSiteLogin(newval) end
+		def put_WebSiteLogin(newval) end
 
-		# returns String
+		# (Optional) Specifies the login if a a Web page is accessed that requires a login
+		#
 		# @return [String]
 		def webSiteLogin() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# (Optional) Specifies the login if a a Web page is accessed that requires a login
 		#
 		# @param newval [String]
-		def webSiteLogin(newval) end
+		def put_WebSiteLogin(newval) end
 
-		# returns String
+		# The optional domain name to be used with NTLM / Kerberos / Negotiate authentication.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_WebSiteLoginDomain() end
+		def get_WebSiteLoginDomain(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The optional domain name to be used with NTLM / Kerberos / Negotiate authentication.
 		#
 		# @param newval [String]
-		def set_WebSiteLoginDomain(newval) end
+		def put_WebSiteLoginDomain(newval) end
 
-		# returns String
+		# The optional domain name to be used with NTLM / Kerberos / Negotiate authentication.
+		#
 		# @return [String]
 		def webSiteLoginDomain() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The optional domain name to be used with NTLM / Kerberos / Negotiate authentication.
 		#
 		# @param newval [String]
-		def webSiteLoginDomain(newval) end
+		def put_WebSiteLoginDomain(newval) end
 
-		# returns String
+		# Optional) Specifies the password if a a Web page is accessed that requires a login and password
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_WebSitePassword() end
+		def get_WebSitePassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Optional) Specifies the password if a a Web page is accessed that requires a login and password
 		#
 		# @param newval [String]
-		def set_WebSitePassword(newval) end
+		def put_WebSitePassword(newval) end
 
-		# returns String
+		# Optional) Specifies the password if a a Web page is accessed that requires a login and password
+		#
 		# @return [String]
 		def webSitePassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Optional) Specifies the password if a a Web page is accessed that requires a login and password
 		#
 		# @param newval [String]
-		def webSitePassword(newval) end
+		def put_WebSitePassword(newval) end
 
 
 		# Method: AddCacheRoot
 		#
-		# ==== Attributes
+		# If disk caching is used, this must be called once for each cache root. For example, if the cache is
+		# spread across D:\cacheRoot, E:\cacheRoot, and F:\cacheRoot, an application would setup the cache
+		# object by calling AddRoot three times -- once with "D:\cacheRoot", once with "E:\cacheRoot", and
+		# once with "F:\cacheRoot".
 		#
-		# +dir+ - String
-		# returns nil
+		# @param dir [String]
 		#
-		# YARD =>
-		#
-		# @param  dir [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddCacheRoot(dir)
 			# ...
 		end
 
+
 		# Method: AddCustomHeader
 		#
-		# ==== Attributes
+		# Adds a custom HTTP header to all HTTP requests sent by the MHT component. To add multiple header
+		# fields, call this method once for each custom header.
 		#
-		# +name+ - String
-		# +value+ - String
-		# returns nil
+		# @param name [String]
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddCustomHeader(name, value)
 			# ...
 		end
 
+
 		# Method: AddExternalStyleSheet
 		#
-		# ==== Attributes
+		# (This method rarely needs to be called.) Includes an additional style sheet that would not normally
+		# be included with the HTML. This method is provided for cases when style sheet names are constructed
+		# and dynamically included in Javascript such that MHT .NET cannot know beforehand what stylesheet to
+		# embed. MHT .NET by default downloads and embeds all stylesheets externally referenced by the HTML
 		#
-		# +url+ - String
-		# returns nil
+		# @param url [String]
 		#
-		# YARD =>
-		#
-		# @param  url [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddExternalStyleSheet(url)
 			# ...
 		end
 
+
 		# Method: ClearCustomHeaders
 		#
-		# ==== Attributes
+		# Removes all custom headers that may have accumulated from previous calls to AddCustomHeader.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearCustomHeaders()
 			# ...
 		end
 
+
 		# Method: ExcludeImagesMatching
 		#
-		# ==== Attributes
+		# (This method rarely needs to be called.) Tells Chilkat MHT .NET to not embed any images whose URL
+		# matches a pattern. Sometimes images can be referenced within style sheets and not actually used when
+		# rendering the page. In cases like those, the image will appear as an attachment in the HTML email.
+		# This feature allows you to explicitly remove those images from the email so no attachments appear.
 		#
-		# +pattern+ - String
-		# returns nil
+		# @param pattern [String]
 		#
-		# YARD =>
-		#
-		# @param  pattern [String]
-		# @return  [nil]
+		# @return [nil]
 		def ExcludeImagesMatching(pattern)
 			# ...
 		end
 
+
 		# Method: GetAndSaveEML
 		#
-		# ==== Attributes
+		# Creates an EML file from a web page or HTML file. All external images and style sheets are
+		# downloaded and embedded in the EML file.
 		#
-		# +url_or_htmlFilepath+ - String
-		# +emlPath+ - String
-		# returns TrueClass, FalseClass
+		# @param url_or_htmlFilepath [String]
+		# @param emlPath [String]
 		#
-		# YARD =>
-		#
-		# @param  url_or_htmlFilepath [String]
-		# @param  emlPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetAndSaveEML(url_or_htmlFilepath, emlPath)
 			# ...
 		end
 
+
 		# Method: GetAndSaveMHT
 		#
-		# ==== Attributes
+		# Creates an MHT file from a web page or local HTML file. All external images, scripts, and style
+		# sheets are downloaded and embedded in the MHT file.
 		#
-		# +url_or_htmlFilepath+ - String
-		# +mhtPath+ - String
-		# returns TrueClass, FalseClass
+		# @param url_or_htmlFilepath [String]
+		# @param mhtPath [String]
 		#
-		# YARD =>
-		#
-		# @param  url_or_htmlFilepath [String]
-		# @param  mhtPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetAndSaveMHT(url_or_htmlFilepath, mhtPath)
 			# ...
 		end
 
+
 		# Method: GetAndZipEML
 		#
-		# ==== Attributes
+		# Creates an EML file from a web page or HTML file, compresses, and appends to a new or existing Zip
+		# file. All external images and style sheets are downloaded and embedded in the EML.
 		#
-		# +url_or_htmlFilepath+ - String
-		# +zipEntryFilename+ - String
-		# +zipFilename+ - String
-		# returns TrueClass, FalseClass
+		# @param url_or_htmlFilepath [String]
+		# @param zipEntryFilename [String]
+		# @param zipFilename [String]
 		#
-		# YARD =>
-		#
-		# @param  url_or_htmlFilepath [String]
-		# @param  zipEntryFilename [String]
-		# @param  zipFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetAndZipEML(url_or_htmlFilepath, zipEntryFilename, zipFilename)
 			# ...
 		end
 
+
 		# Method: GetAndZipMHT
 		#
-		# ==== Attributes
+		# Creates an MHT file from a web page or HTML file, compresses, and appends to a new or existing Zip
+		# file. All external images and style sheets are downloaded and embedded in the MHT.
 		#
-		# +url_or_htmlFilepath+ - String
-		# +zipEntryFilename+ - String
-		# +zipFilename+ - String
-		# returns TrueClass, FalseClass
+		# @param url_or_htmlFilepath [String]
+		# @param zipEntryFilename [String]
+		# @param zipFilename [String]
 		#
-		# YARD =>
-		#
-		# @param  url_or_htmlFilepath [String]
-		# @param  zipEntryFilename [String]
-		# @param  zipFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetAndZipMHT(url_or_htmlFilepath, zipEntryFilename, zipFilename)
 			# ...
 		end
 
+
 		# Method: GetCacheRoot
 		#
-		# ==== Attributes
+		# Returns the Nth cache root (indexing begins at 0). Cache roots are set by calling AddCacheRoot one
+		# or more times.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCacheRoot(index)
+		# @return [TrueClass, FalseClass]
+		def GetCacheRoot(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCacheRoot
+		#
+		# Returns the Nth cache root (indexing begins at 0). Cache roots are set by calling AddCacheRoot one
+		# or more times.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCacheRoot(index)
+			# ...
+		end
+
 
 		# Method: GetEML
 		#
-		# ==== Attributes
+		# Creates EML from a web page or HTML file, and returns the EML (MIME) message data as a string.
 		#
-		# +url_or_htmlFilepath+ - String
-		# returns String
+		# @param url_or_htmlFilepath [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  url_or_htmlFilepath [String]
-		# @return  [String]
-		def GetEML(url_or_htmlFilepath)
+		# @return [TrueClass, FalseClass]
+		def GetEML(url_or_htmlFilepath, outStr)
 			# ...
 		end
+
+
+		# Method: GetEML
+		#
+		# Creates EML from a web page or HTML file, and returns the EML (MIME) message data as a string.
+		#
+		# @param url_or_htmlFilepath [String]
+		#
+		# @return [String]
+		def getEML(url_or_htmlFilepath)
+			# ...
+		end
+
 
 		# Method: GetMHT
 		#
-		# ==== Attributes
+		# Creates MHT from a web page or local HTML file, and returns the MHT (MIME) message data as a string
 		#
-		# +url_or_htmlFilepath+ - String
-		# returns String
+		# @param url_or_htmlFilepath [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  url_or_htmlFilepath [String]
-		# @return  [String]
-		def GetMHT(url_or_htmlFilepath)
+		# @return [TrueClass, FalseClass]
+		def GetMHT(url_or_htmlFilepath, outStr)
 			# ...
 		end
+
+
+		# Method: GetMHT
+		#
+		# Creates MHT from a web page or local HTML file, and returns the MHT (MIME) message data as a string
+		#
+		# @param url_or_htmlFilepath [String]
+		#
+		# @return [String]
+		def getMHT(url_or_htmlFilepath)
+			# ...
+		end
+
 
 		# Method: HtmlToEML
 		#
-		# ==== Attributes
+		# Creates an in-memory EML string from an in-memory HTML string. All external images and style sheets
+		# are downloaded and embedded in the EML string that is returned.
 		#
-		# +htmlText+ - String
-		# returns String
+		# @param htmlText [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  htmlText [String]
-		# @return  [String]
-		def HtmlToEML(htmlText)
+		# @return [TrueClass, FalseClass]
+		def HtmlToEML(htmlText, outStr)
 			# ...
 		end
 
+
+		# Method: HtmlToEML
+		#
+		# Creates an in-memory EML string from an in-memory HTML string. All external images and style sheets
+		# are downloaded and embedded in the EML string that is returned.
+		#
+		# @param htmlText [String]
+		#
+		# @return [String]
+		def htmlToEML(htmlText)
+			# ...
+		end
+
+
 		# Method: HtmlToEMLFile
 		#
-		# ==== Attributes
+		# Creates an EML file from an in-memory HTML string. All external images and style sheets are
+		# downloaded and embedded in the EML file.
 		#
-		# +html+ - String
-		# +emlFilename+ - String
-		# returns TrueClass, FalseClass
+		# @param html [String]
+		# @param emlFilename [String]
 		#
-		# YARD =>
-		#
-		# @param  html [String]
-		# @param  emlFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HtmlToEMLFile(html, emlFilename)
 			# ...
 		end
 
+
 		# Method: HtmlToMHT
 		#
-		# ==== Attributes
+		# Creates an in-memory MHT web archive from an in-memory HTML string. All external images and style
+		# sheets are downloaded and embedded in the MHT string.
 		#
-		# +htmlText+ - String
-		# returns String
+		# @param htmlText [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  htmlText [String]
-		# @return  [String]
-		def HtmlToMHT(htmlText)
+		# @return [TrueClass, FalseClass]
+		def HtmlToMHT(htmlText, outStr)
 			# ...
 		end
 
+
+		# Method: HtmlToMHT
+		#
+		# Creates an in-memory MHT web archive from an in-memory HTML string. All external images and style
+		# sheets are downloaded and embedded in the MHT string.
+		#
+		# @param htmlText [String]
+		#
+		# @return [String]
+		def htmlToMHT(htmlText)
+			# ...
+		end
+
+
 		# Method: HtmlToMHTFile
 		#
-		# ==== Attributes
+		# Creates an MHT file from an in-memory HTML string. All external images and style sheets are
+		# downloaded and embedded in the MHT file.
 		#
-		# +html+ - String
-		# +mhtFilename+ - String
-		# returns TrueClass, FalseClass
+		# @param html [String]
+		# @param mhtFilename [String]
 		#
-		# YARD =>
-		#
-		# @param  html [String]
-		# @param  mhtFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HtmlToMHTFile(html, mhtFilename)
 			# ...
 		end
 
+
 		# Method: IsUnlocked
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the MHT component is unlocked.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
 
+
 		# Method: RemoveCustomHeader
 		#
-		# ==== Attributes
+		# Removes a custom header by header field name.
 		#
-		# +name+ - String
-		# returns nil
+		# @param name [String]
 		#
-		# YARD =>
-		#
-		# @param  name [String]
-		# @return  [nil]
+		# @return [nil]
 		def RemoveCustomHeader(name)
 			# ...
 		end
 
+
 		# Method: RestoreDefaults
 		#
-		# ==== Attributes
+		# Restores the default property settings.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def RestoreDefaults()
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: UnlockComponent
 		#
-		# ==== Attributes
+		# Unlocks the component allowing for the full functionality to be used. Returns _TRUE_ if the unlock
+		# code is valid.
 		#
-		# +unlockCode+ - String
-		# returns TrueClass, FalseClass
+		# @param unlockCode [String]
 		#
-		# YARD =>
-		#
-		# @param  unlockCode [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
 
+
 		# Method: UnpackMHT
 		#
-		# ==== Attributes
+		# Unpacks the contents of a MHT file. The destination directory is specified by ARG2. The name of the
+		# HTML file created is specified by ARG3, and supporting files (images, javascripts, etc.) are created
+		# in ARG4, which is automatically created if it does not already exist.
 		#
-		# +mhtFilename+ - String
-		# +unpackDir+ - String
-		# +htmlFilename+ - String
-		# +partsSubDir+ - String
-		# returns TrueClass, FalseClass
+		# @param mhtFilename [String]
+		# @param unpackDir [String]
+		# @param htmlFilename [String]
+		# @param partsSubDir [String]
 		#
-		# YARD =>
-		#
-		# @param  mhtFilename [String]
-		# @param  unpackDir [String]
-		# @param  htmlFilename [String]
-		# @param  partsSubDir [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnpackMHT(mhtFilename, unpackDir, htmlFilename, partsSubDir)
 			# ...
 		end
 
+
 		# Method: UnpackMHTString
 		#
-		# ==== Attributes
+		# Same as UnpackMHT, except the MHT is passed in as an in-memory string.
 		#
-		# +mhtString+ - String
-		# +unpackDir+ - String
-		# +htmlFilename+ - String
-		# +partsSubDir+ - String
-		# returns TrueClass, FalseClass
+		# @param mhtString [String]
+		# @param unpackDir [String]
+		# @param htmlFilename [String]
+		# @param partsSubDir [String]
 		#
-		# YARD =>
-		#
-		# @param  mhtString [String]
-		# @param  unpackDir [String]
-		# @param  htmlFilename [String]
-		# @param  partsSubDir [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnpackMHTString(mhtString, unpackDir, htmlFilename, partsSubDir)
 			# ...
 		end
+
 	end
 end

@@ -1,496 +1,936 @@
 module Chilkat
 	class CkPem 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, each of the Load* methods appends to the current contents of this PEM object.
+		# When set to _FALSE_, a Load* method replaces the contents of this PEM object. The default is
+		# _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AppendMode() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When set to _TRUE_, each of the Load* methods appends to the current contents of this PEM object.
+		# When set to _FALSE_, a Load* method replaces the contents of this PEM object. The default is
+		# _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_AppendMode(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AppendMode(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
+		# This is the number of milliseconds between each AbortCheck event callback. The AbortCheck callback
+		# allows an application to abort any event-enabled methods prior to completion. If HeartbeatMs is 0
+		# (the default), no AbortCheck event callbacks will fire.
+		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# This is the number of milliseconds between each AbortCheck event callback. The AbortCheck callback
+		# allows an application to abort any event-enabled methods prior to completion. If HeartbeatMs is 0
+		# (the default), no AbortCheck event callbacks will fire.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		#
+		# @!method
+		def put_HeartbeatMs(newval) end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
+		# The number of certificates in the loaded PEM. To get the 1st certificate, call GetCert(0).
+		#
 		# @return [Bignum]
 		def get_NumCerts() end
 
-		# returns Bignum
+		# The number of certificate signing requests (CSRs) in the loaded PEM.
+		#
 		# @return [Bignum]
 		def get_NumCsrs() end
 
-		# returns Bignum
+		# The number of private keys in the loaded PEM. To get the 1st private key, call GetPrivateKey(0).
+		#
 		# @return [Bignum]
 		def get_NumPrivateKeys() end
 
-		# returns Bignum
+		# The number of public keys in the loaded PEM. To get the 1st public key, call GetPublicKey(0).
+		#
 		# @return [Bignum]
 		def get_NumPublicKeys() end
 
-		# returns String
+		# Controls the format to be used for unencrypted private keys when writing a PEM. Possible values are
+		# "pkcs1" and "pkcs8". (OpenSSL typically uses the "pkcs8" format.) When writing encrypted private
+		# keys to PEM, the format is always PKCS8, and the PEM header is "BEGIN ENCRYPTED PRIVATE KEY". The
+		# default is "pkcs8".
+		# 
+		# The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
+		# KEY.
+		# The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PrivateKeyFormat() end
+		def get_PrivateKeyFormat(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the format to be used for unencrypted private keys when writing a PEM. Possible values are
+		# "pkcs1" and "pkcs8". (OpenSSL typically uses the "pkcs8" format.) When writing encrypted private
+		# keys to PEM, the format is always PKCS8, and the PEM header is "BEGIN ENCRYPTED PRIVATE KEY". The
+		# default is "pkcs8".
+		# 
+		# The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
+		# KEY.
+		# The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
 		#
 		# @param newval [String]
-		def set_PrivateKeyFormat(newval) end
+		def put_PrivateKeyFormat(newval) end
 
-		# returns String
+		# Controls the format to be used for unencrypted private keys when writing a PEM. Possible values are
+		# "pkcs1" and "pkcs8". (OpenSSL typically uses the "pkcs8" format.) When writing encrypted private
+		# keys to PEM, the format is always PKCS8, and the PEM header is "BEGIN ENCRYPTED PRIVATE KEY". The
+		# default is "pkcs8".
+		# 
+		# The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
+		# KEY.
+		# The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
+		#
 		# @return [String]
 		def privateKeyFormat() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the format to be used for unencrypted private keys when writing a PEM. Possible values are
+		# "pkcs1" and "pkcs8". (OpenSSL typically uses the "pkcs8" format.) When writing encrypted private
+		# keys to PEM, the format is always PKCS8, and the PEM header is "BEGIN ENCRYPTED PRIVATE KEY". The
+		# default is "pkcs8".
+		# 
+		# The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
+		# KEY.
+		# The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
 		#
 		# @param newval [String]
-		def privateKeyFormat(newval) end
+		def put_PrivateKeyFormat(newval) end
 
-		# returns String
+		# Controls the format to be used for public keys when writing a PEM. Possible values are "pkcs1" and
+		# "pkcs8". (OpenSSL typically uses the "pkcs8" format.) The default is "pkcs8".
+		# 
+		# The PKCS1
+		# format uses the PEM header: BEGIN RSA PUBLIC KEY.
+		# The PKCS8 format uses the PEM header: BEGIN
+		# PUBLIC KEY.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PublicKeyFormat() end
+		def get_PublicKeyFormat(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the format to be used for public keys when writing a PEM. Possible values are "pkcs1" and
+		# "pkcs8". (OpenSSL typically uses the "pkcs8" format.) The default is "pkcs8".
+		# 
+		# The PKCS1
+		# format uses the PEM header: BEGIN RSA PUBLIC KEY.
+		# The PKCS8 format uses the PEM header: BEGIN
+		# PUBLIC KEY.
 		#
 		# @param newval [String]
-		def set_PublicKeyFormat(newval) end
+		def put_PublicKeyFormat(newval) end
 
-		# returns String
+		# Controls the format to be used for public keys when writing a PEM. Possible values are "pkcs1" and
+		# "pkcs8". (OpenSSL typically uses the "pkcs8" format.) The default is "pkcs8".
+		# 
+		# The PKCS1
+		# format uses the PEM header: BEGIN RSA PUBLIC KEY.
+		# The PKCS8 format uses the PEM header: BEGIN
+		# PUBLIC KEY.
+		#
 		# @return [String]
 		def publicKeyFormat() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Controls the format to be used for public keys when writing a PEM. Possible values are "pkcs1" and
+		# "pkcs8". (OpenSSL typically uses the "pkcs8" format.) The default is "pkcs8".
+		# 
+		# The PKCS1
+		# format uses the PEM header: BEGIN RSA PUBLIC KEY.
+		# The PKCS8 format uses the PEM header: BEGIN
+		# PUBLIC KEY.
 		#
 		# @param newval [String]
-		def publicKeyFormat(newval) end
+		def put_PublicKeyFormat(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AddCert
 		#
-		# ==== Attributes
+		# Adds a certificate, and potentially the certs in its chain of authentication to the PEM. If ARG2 is
+		# _TRUE_, then certificates in the ARG1's chain of authentication up to and including the root are
+		# automatically added.
 		#
-		# +cert+ - CkCert
-		# +includeChain+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
+		# @param includeChain [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @param  includeChain [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddCert(cert, includeChain)
 			# ...
 		end
 
+
 		# Method: AddItem
 		#
-		# ==== Attributes
+		# Adds a certificate, private key, public key, or csr to the PEM. The possible values for ARG1 are
+		# "certificate" (or "cert"), "privateKey", "publicKey", or "csr". The ARG2 can be "Base64",
+		# "modBase64", "Base32", "QP" (for quoted-printable), "URL" (for url-encoding), "Hex", "url_oauth",
+		# "url_rfc1738", "url_rfc2396", and "url_rfc3986". The ARG3 contains the ASN.1 data in string format
+		# according to the encoding specified in ARG2.
 		#
-		# +itemType+ - String
-		# +encoding+ - String
-		# +itemData+ - String
-		# returns TrueClass, FalseClass
+		# @param itemType [String]
+		# @param encoding [String]
+		# @param itemData [String]
 		#
-		# YARD =>
-		#
-		# @param  itemType [String]
-		# @param  encoding [String]
-		# @param  itemData [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddItem(itemType, encoding, itemData)
 			# ...
 		end
 
+
 		# Method: AddPrivateKey
 		#
-		# ==== Attributes
+		# Adds a private key to the PEM object.
 		#
-		# +privateKey+ - CkPrivateKey
-		# returns TrueClass, FalseClass
+		# @param privateKey [CkPrivateKey]
 		#
-		# YARD =>
-		#
-		# @param  privateKey [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPrivateKey(privateKey)
 			# ...
 		end
 
+
 		# Method: AddPrivateKey2
 		#
-		# ==== Attributes
+		# Adds a private key and it's associated certificate chain to the PEM object.
 		#
-		# +privKey+ - CkPrivateKey
-		# +certChain+ - CkCertChain
-		# returns TrueClass, FalseClass
+		# @param privKey [CkPrivateKey]
+		# @param certChain [CkCertChain]
 		#
-		# YARD =>
-		#
-		# @param  privKey [CkPrivateKey]
-		# @param  certChain [CkCertChain]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPrivateKey2(privKey, certChain)
 			# ...
 		end
 
+
 		# Method: AddPublicKey
 		#
-		# ==== Attributes
+		# Adds a public key to the PEM object.
 		#
-		# +pubkey+ - CkPublicKey
-		# returns TrueClass, FalseClass
+		# @param pubkey [CkPublicKey]
 		#
-		# YARD =>
-		#
-		# @param  pubkey [CkPublicKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPublicKey(pubkey)
 			# ...
 		end
 
+
 		# Method: Clear
 		#
-		# ==== Attributes
+		# Removes all content from this PEM object.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Clear()
 			# ...
 		end
 
+
 		# Method: GetCert
 		#
-		# ==== Attributes
+		# Returns the Nth certificate from the PEM. The first certificate is at index 0.
 		#
-		# +index+ - Fixnum
-		# returns CkCert
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetCert(index)
 			# ...
 		end
 
+
 		# Method: GetEncodedItem
 		#
-		# ==== Attributes
+		# Returns the encoded contents of the Nth item of a particular type (0-based ARG4). The possible
+		# values for ARG1 are "certificate" (or "cert"), "privateKey", "publicKey", or "csr". Input string
+		# args are case-insensitive. If the ARG1 is "privateKey", the ARG2 may be "der" or "pkcs8". If the
+		# ARG1 is "publicKey", the ARG2 may be "der" or "pkcs1". The ARG2 is ignored for other values of ARG1.
+		# The valid ARG3 modes are "Base64", "modBase64", "Base32", "Base58", "QP" (for quoted-printable),
+		# "URL" (for url-encoding), "Hex", "url_oauth", "url_rfc1738", "url_rfc2396", and "url_rfc3986".
 		#
-		# +itemType+ - String
-		# +itemSubType+ - String
-		# +encoding+ - String
-		# +index+ - Fixnum
-		# returns String
+		# @param itemType [String]
+		# @param itemSubType [String]
+		# @param encoding [String]
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  itemType [String]
-		# @param  itemSubType [String]
-		# @param  encoding [String]
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetEncodedItem(itemType, itemSubType, encoding, index)
+		# @return [TrueClass, FalseClass]
+		def GetEncodedItem(itemType, itemSubType, encoding, index, outStr)
 			# ...
 		end
 
+
+		# Method: GetEncodedItem
+		#
+		# Returns the encoded contents of the Nth item of a particular type (0-based ARG4). The possible
+		# values for ARG1 are "certificate" (or "cert"), "privateKey", "publicKey", or "csr". Input string
+		# args are case-insensitive. If the ARG1 is "privateKey", the ARG2 may be "der" or "pkcs8". If the
+		# ARG1 is "publicKey", the ARG2 may be "der" or "pkcs1". The ARG2 is ignored for other values of ARG1.
+		# The valid ARG3 modes are "Base64", "modBase64", "Base32", "Base58", "QP" (for quoted-printable),
+		# "URL" (for url-encoding), "Hex", "url_oauth", "url_rfc1738", "url_rfc2396", and "url_rfc3986".
+		#
+		# @param itemType [String]
+		# @param itemSubType [String]
+		# @param encoding [String]
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getEncodedItem(itemType, itemSubType, encoding, index)
+			# ...
+		end
+
+
 		# Method: GetPrivateKey
 		#
-		# ==== Attributes
+		# Returns the Nth private key from the PEM. The first private key is at index 0.
 		#
-		# +index+ - Fixnum
-		# returns CkPrivateKey
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkPrivateKey]
+		# @return [CkPrivateKey]
 		def GetPrivateKey(index)
 			# ...
 		end
 
+
 		# Method: GetPublicKey
 		#
-		# ==== Attributes
+		# Returns the Nth public key from the PEM. The first public key is at index 0.
 		#
-		# +index+ - Fixnum
-		# returns CkPublicKey
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkPublicKey]
+		# @return [CkPublicKey]
 		def GetPublicKey(index)
 			# ...
 		end
 
+
 		# Method: LoadP7b
 		#
-		# ==== Attributes
+		# Loads the PEM from the contents of an in-memory PKCS7 container (.p7b).
 		#
-		# +p7bData+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param p7bData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  p7bData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadP7b(p7bData)
 			# ...
 		end
 
+
 		# Method: LoadP7bFile
 		#
-		# ==== Attributes
+		# Loads the contents of a PKCS7 container (.p7b file).
 		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadP7bFile(path)
 			# ...
 		end
 
+
 		# Method: LoadPem
 		#
-		# ==== Attributes
+		# Loads the PEM from a PEM string. If encrypted, then the ARG2 is required for decryption. Otherwise,
+		# an empty string (or any string) may be passed for the ARG2.
 		#
-		# +pemContent+ - String
-		# +password+ - String
-		# returns TrueClass, FalseClass
+		# @param pemContent [String]
+		# @param password [String]
 		#
-		# YARD =>
-		#
-		# @param  pemContent [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadPem(pemContent, password)
 			# ...
 		end
 
+
 		# Method: LoadPemFile
 		#
-		# ==== Attributes
+		# Loads the PEM from a PEM file. If encrypted, then the ARG2 is required for decryption. Otherwise, an
+		# empty string (or any string) may be passed for the ARG2.
 		#
-		# +path+ - String
-		# +password+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
+		# @param password [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadPemFile(path, password)
 			# ...
 		end
 
+
 		# Method: RemoveCert
 		#
-		# ==== Attributes
+		# Removes the Nth certificate from the PEM. The first certificate is at index 0.
 		#
-		# +index+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RemoveCert(index)
 			# ...
 		end
 
+
 		# Method: RemovePrivateKey
 		#
-		# ==== Attributes
+		# Removes the Nth private key from the PEM. The first private key is at index 0.
 		#
-		# +index+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RemovePrivateKey(index)
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: ToJks
 		#
-		# ==== Attributes
+		# Converts the PEM to JKS and returns the Java KeyStore object. If the ARG1 is non-empty, the 1st
+		# object (private key or certificate) will use the alias, and all others (if any) will receive
+		# auto-generated aliases. The JKS returned will be encrypted using the provided ARG2. If the PEM
+		# contains only certificates (no private keys), then the ARG2 is unused.
 		#
-		# +alias+ - String
-		# +password+ - String
-		# returns CkJavaKeyStore
+		# @param alias [String]
+		# @param password [String]
 		#
-		# YARD =>
-		#
-		# @param  alias [String]
-		# @param  password [String]
-		# @return  [CkJavaKeyStore]
+		# @return [CkJavaKeyStore]
 		def ToJks(alias, password)
 			# ...
 		end
 
+
 		# Method: ToPem
 		#
-		# ==== Attributes
+		# Write the PFX to a PEM formatted string. The resultant PEM will contain the private key, as well as
+		# the certs in the chain of authentication (or whatever certs are available in the PFX). For
+		# example:
+		# 
+		#  -----BEGIN RSA PRIVATE KEY-----
+		# ...
+		# ... the private key
+		# associated with the main certificate.
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# -----BEGIN
+		# CERTIFICATE-----
+		# ...
+		# ... the main certificate
+		# ...
+		# -----END
+		# CERTIFICATE-----
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... an intermediate CA
+		# certificate (if present)
+		# ...
+		# -----END CERTIFICATE-----
+		# -----BEGIN
+		# CERTIFICATE-----
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
+		# CERTIFICATE----- 
 		#
-		# returns String
 		#
-		# YARD =>
+		# @param outStr [CkString]
 		#
-		# @return  [String]
-		def ToPem()
+		# @return [TrueClass, FalseClass]
+		def ToPem(outStr)
 			# ...
 		end
+
+
+		# Method: ToPem
+		#
+		# Write the PFX to a PEM formatted string. The resultant PEM will contain the private key, as well as
+		# the certs in the chain of authentication (or whatever certs are available in the PFX). For
+		# example:
+		# 
+		#  -----BEGIN RSA PRIVATE KEY-----
+		# ...
+		# ... the private key
+		# associated with the main certificate.
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# -----BEGIN
+		# CERTIFICATE-----
+		# ...
+		# ... the main certificate
+		# ...
+		# -----END
+		# CERTIFICATE-----
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... an intermediate CA
+		# certificate (if present)
+		# ...
+		# -----END CERTIFICATE-----
+		# -----BEGIN
+		# CERTIFICATE-----
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
+		# CERTIFICATE----- 
+		#
+		#
+		#
+		# @return [String]
+		def toPem()
+			# ...
+		end
+
 
 		# Method: ToPemEx
 		#
-		# ==== Attributes
+		# Write the PFX to a PEM formatted string. If ARG1 is _TRUE_, then extended properties (Bag Attributes
+		# and Key Attributes) are output. If ARG2 is _TRUE_, then no private keys are output. If ARG3 is
+		# _TRUE_, then no certificates are output. If ARG4 is _TRUE_, then no CA certs or intermediate CA
+		# certs are output. If ARG5 is not empty, it indicates the encryption algorithm to be used for
+		# encrypting the private keys (otherwise the private keys are output unencrypted). The possible
+		# choices for the ARG5 are "des3", "aes128", "aes192", and "aes256". (All encryption algorithm choices
+		# use CBC mode.) If the private keys are to be encrypted, then ARG6 is the password to be used.
+		# Otherwise, ARG6 may be left empty.
+		# 
+		# For example:
+		# 
+		# Bag Attributes
 		#
-		# +extendedAttrs+ - TrueClass, FalseClass
-		# +noKeys+ - TrueClass, FalseClass
-		# +noCerts+ - TrueClass, FalseClass
-		# +noCaCerts+ - TrueClass, FalseClass
-		# +encryptAlg+ - String
-		# +password+ - String
-		# returns String
+		# Microsoft Local Key set: &lt;No Values>
+		# localKeyID: 01 00 00 00 
+		# friendlyName:
+		# le-2b09a3d2-9037-4a05-95cc-4d44518e8607
+		# Microsoft CSP Name: Microsoft RSA SChannel
+		# Cryptographic Provider
+		# Key Attributes
+		# X509v3 Key Usage: 10 
+		# -----BEGIN RSA PRIVATE
+		# KEY-----
+		# ...
+		# ... the private key associated with the main
+		# certificate.
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# Bag Attributes
+		# localKeyID: 01
+		# 00 00 00 
+		# 1.3.6.1.4.1.311.17.3.92: 00 08 00 00 
+		# 1.3.6.1.4.1.311.17.3.20: C2 53 54 F3
+		# ...
+		# 1.3.6.1.4.1.311.17.3.71: 49 00 43 00 ...
+		# 1.3.6.1.4.1.311.17.3.75: 31 00 42 00
+		# ...
+		# subject=/OU=Domain Control
+		# Validated/OU=PositiveSSL/CN=something.com
+		# issuer=/C=GB/ST=Greater
+		# Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server
+		# CA
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... the main
+		# certificate
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
+		# CERTIFICATE-----
+		# ...
+		# ... an intermediate CA certificate (if
+		# present)
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
+		# CERTIFICATE-----
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
+		# CERTIFICATE----- 
 		#
-		# YARD =>
 		#
-		# @param  extendedAttrs [TrueClass, FalseClass]
-		# @param  noKeys [TrueClass, FalseClass]
-		# @param  noCerts [TrueClass, FalseClass]
-		# @param  noCaCerts [TrueClass, FalseClass]
-		# @param  encryptAlg [String]
-		# @param  password [String]
-		# @return  [String]
-		def ToPemEx(extendedAttrs, noKeys, noCerts, noCaCerts, encryptAlg, password)
+		# @param extendedAttrs [TrueClass, FalseClass]
+		# @param noKeys [TrueClass, FalseClass]
+		# @param noCerts [TrueClass, FalseClass]
+		# @param noCaCerts [TrueClass, FalseClass]
+		# @param encryptAlg [String]
+		# @param password [String]
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def ToPemEx(extendedAttrs, noKeys, noCerts, noCaCerts, encryptAlg, password, outStr)
 			# ...
 		end
 
+
+		# Method: ToPemEx
+		#
+		# Write the PFX to a PEM formatted string. If ARG1 is _TRUE_, then extended properties (Bag Attributes
+		# and Key Attributes) are output. If ARG2 is _TRUE_, then no private keys are output. If ARG3 is
+		# _TRUE_, then no certificates are output. If ARG4 is _TRUE_, then no CA certs or intermediate CA
+		# certs are output. If ARG5 is not empty, it indicates the encryption algorithm to be used for
+		# encrypting the private keys (otherwise the private keys are output unencrypted). The possible
+		# choices for the ARG5 are "des3", "aes128", "aes192", and "aes256". (All encryption algorithm choices
+		# use CBC mode.) If the private keys are to be encrypted, then ARG6 is the password to be used.
+		# Otherwise, ARG6 may be left empty.
+		# 
+		# For example:
+		# 
+		# Bag Attributes
+		#
+		# Microsoft Local Key set: &lt;No Values>
+		# localKeyID: 01 00 00 00 
+		# friendlyName:
+		# le-2b09a3d2-9037-4a05-95cc-4d44518e8607
+		# Microsoft CSP Name: Microsoft RSA SChannel
+		# Cryptographic Provider
+		# Key Attributes
+		# X509v3 Key Usage: 10 
+		# -----BEGIN RSA PRIVATE
+		# KEY-----
+		# ...
+		# ... the private key associated with the main
+		# certificate.
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# Bag Attributes
+		# localKeyID: 01
+		# 00 00 00 
+		# 1.3.6.1.4.1.311.17.3.92: 00 08 00 00 
+		# 1.3.6.1.4.1.311.17.3.20: C2 53 54 F3
+		# ...
+		# 1.3.6.1.4.1.311.17.3.71: 49 00 43 00 ...
+		# 1.3.6.1.4.1.311.17.3.75: 31 00 42 00
+		# ...
+		# subject=/OU=Domain Control
+		# Validated/OU=PositiveSSL/CN=something.com
+		# issuer=/C=GB/ST=Greater
+		# Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server
+		# CA
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... the main
+		# certificate
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
+		# CERTIFICATE-----
+		# ...
+		# ... an intermediate CA certificate (if
+		# present)
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
+		# CERTIFICATE-----
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
+		# CERTIFICATE----- 
+		#
+		#
+		# @param extendedAttrs [TrueClass, FalseClass]
+		# @param noKeys [TrueClass, FalseClass]
+		# @param noCerts [TrueClass, FalseClass]
+		# @param noCaCerts [TrueClass, FalseClass]
+		# @param encryptAlg [String]
+		# @param password [String]
+		#
+		# @return [String]
+		def toPemEx(extendedAttrs, noKeys, noCerts, noCaCerts, encryptAlg, password)
+			# ...
+		end
+
+
 		# Method: ToPfx
 		#
-		# ==== Attributes
+		# Converts the PEM to PKCS12 and returns the PFX object. The PFX object has method for saving to a
+		# file, exporting to an encoded string, converting to a JKS (Java Keystore), or even converting back
+		# to PEM.
+		# 
+		# Note: The PEM must contain at least one private key to convert to PKCS12. The
+		# typical case is that a PKCS12 contains a single private key, along with the associated certificate
+		# and the certificates in the chain of authentication.
 		#
-		# returns CkPfx
 		#
-		# YARD =>
-		#
-		# @return  [CkPfx]
+		# @return [CkPfx]
 		def ToPfx()
 			# ...
 		end
+
 	end
 end

@@ -1,707 +1,1097 @@
 module Chilkat
 	class CkSpider 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
 		#
-		# @param newval [Bignum]
-		def set_AbortCurrent(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AbortCurrent(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If set the 1 (true) the spider will avoid all HTTPS URLs. The default is 0 (false).
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AvoidHttps() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set the 1 (true) the spider will avoid all HTTPS URLs. The default is 0 (false).
 		#
-		# @param newval [Bignum]
-		def set_AvoidHttps(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_AvoidHttps(newval) end
 
-		# returns String
+		# Specifies a cache directory to use for spidering. If either of the FetchFromCache or UpdateCache
+		# properties are true, this is the location of the cache to be used. Note: the Internet Explorer,
+		# Netscape, and FireFox caches are completely separate from the Chilkat Spider cache directory. You
+		# should specify a new and empty directory.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_CacheDir() end
+		def get_CacheDir(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Specifies a cache directory to use for spidering. If either of the FetchFromCache or UpdateCache
+		# properties are true, this is the location of the cache to be used. Note: the Internet Explorer,
+		# Netscape, and FireFox caches are completely separate from the Chilkat Spider cache directory. You
+		# should specify a new and empty directory.
 		#
 		# @param newval [String]
-		def set_CacheDir(newval) end
+		def put_CacheDir(newval) end
 
-		# returns String
+		# Specifies a cache directory to use for spidering. If either of the FetchFromCache or UpdateCache
+		# properties are true, this is the location of the cache to be used. Note: the Internet Explorer,
+		# Netscape, and FireFox caches are completely separate from the Chilkat Spider cache directory. You
+		# should specify a new and empty directory.
+		#
 		# @return [String]
 		def cacheDir() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Specifies a cache directory to use for spidering. If either of the FetchFromCache or UpdateCache
+		# properties are true, this is the location of the cache to be used. Note: the Internet Explorer,
+		# Netscape, and FireFox caches are completely separate from the Chilkat Spider cache directory. You
+		# should specify a new and empty directory.
 		#
 		# @param newval [String]
-		def cacheDir(newval) end
+		def put_CacheDir(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If equal to 1 (true), then the query portion of all URLs are automatically removed when adding to
+		# the unspidered list. The default value is 0 (false).
+		#
+		# @return [TrueClass, FalseClass]
 		def get_ChopAtQuery() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If equal to 1 (true), then the query portion of all URLs are automatically removed when adding to
+		# the unspidered list. The default value is 0 (false).
 		#
-		# @param newval [Bignum]
-		def set_ChopAtQuery(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_ChopAtQuery(newval) end
 
-		# returns Bignum
+		# The maximum number of seconds to wait while connecting to an HTTP server.
+		#
 		# @return [Bignum]
 		def get_ConnectTimeout() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The maximum number of seconds to wait while connecting to an HTTP server.
 		#
 		# @param newval [Bignum]
-		def set_ConnectTimeout(newval) end
+		def put_ConnectTimeout(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# The domain name that is being spidered. This is the domain previously set in the Initialize method.
+		#
 		# @return [String]
 		def get_Domain() end
 
-		# returns String
+		# The domain name that is being spidered. This is the domain previously set in the Initialize method.
+		#
 		# @return [String]
 		def domain() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If equal to 1 (true) then pages are fetched from cache when possible. If 0, the cache is ignored.
+		# The default value is 1. Regardless, if no CacheDir is set then the cache is not used.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_FetchFromCache() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If equal to 1 (true) then pages are fetched from cache when possible. If 0, the cache is ignored.
+		# The default value is 1. Regardless, if no CacheDir is set then the cache is not used.
 		#
-		# @param newval [Bignum]
-		def set_FetchFromCache(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_FetchFromCache(newval) end
 
-		# returns Bignum
+		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
+		# application to abort any method call prior to completion. If HeartbeatMs is 0 (the default), no
+		# AbortCheck event callbacks will fire.
+		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
+		# application to abort any method call prior to completion. If HeartbeatMs is 0 (the default), no
+		# AbortCheck event callbacks will fire.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		#
+		# @!method
+		def put_HeartbeatMs(newval) end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Equal to 1 if the last page spidered was fetched from the cache. Otherwise equal to 0.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastFromCache() end
 
-		# returns String
+		# The HTML text of the last paged fetched by the spider.
+		#
 		# @return [String]
 		def get_LastHtml() end
 
-		# returns String
+		# The HTML text of the last paged fetched by the spider.
+		#
 		# @return [String]
 		def lastHtml() end
 
-		# returns String
+		# The HTML META description from the last page fetched by the spider.
+		#
 		# @return [String]
 		def get_LastHtmlDescription() end
 
-		# returns String
+		# The HTML META description from the last page fetched by the spider.
+		#
 		# @return [String]
 		def lastHtmlDescription() end
 
-		# returns String
+		# The HTML META keywords from the last page fetched by the spider.
+		#
 		# @return [String]
 		def get_LastHtmlKeywords() end
 
-		# returns String
+		# The HTML META keywords from the last page fetched by the spider.
+		#
 		# @return [String]
 		def lastHtmlKeywords() end
 
-		# returns String
+		# The HTML title from the last page fetched by the spider.
+		#
 		# @return [String]
 		def get_LastHtmlTitle() end
 
-		# returns String
+		# The HTML title from the last page fetched by the spider.
+		#
 		# @return [String]
 		def lastHtmlTitle() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns Object
-		# This method has been deprecated. Do not use it.
+		# The last-modification date of the last URL spidered.
+		#
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_LastModDate() end
 
-		# returns String
+		# The last modification date/time from the last page fetched by the spider.
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastModDateStr() end
 
-		# returns String
+		# The last modification date/time from the last page fetched by the spider.
+		#
+		# @return [String]
+		def lastModDateStr() end
+
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
+		# @return [String]
+		def get_LastStringResult(ckStr) end
+
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns String
+		# The URL of the last page spidered.
+		#
 		# @return [String]
 		def get_LastUrl() end
 
-		# returns String
+		# The URL of the last page spidered.
+		#
 		# @return [String]
 		def lastUrl() end
 
-		# returns Bignum
+		# The maximum HTTP response size allowed. The spider will automatically fail any pages larger than
+		# this size. The default value is 250,000 bytes.
+		#
 		# @return [Bignum]
 		def get_MaxResponseSize() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The maximum HTTP response size allowed. The spider will automatically fail any pages larger than
+		# this size. The default value is 250,000 bytes.
 		#
 		# @param newval [Bignum]
-		def set_MaxResponseSize(newval) end
+		def put_MaxResponseSize(newval) end
 
-		# returns Bignum
+		# The maximum URL length allowed. URLs longer than this are not added to the unspidered list. The
+		# default value is 200.
+		#
 		# @return [Bignum]
 		def get_MaxUrlLen() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The maximum URL length allowed. URLs longer than this are not added to the unspidered list. The
+		# default value is 200.
 		#
 		# @param newval [Bignum]
-		def set_MaxUrlLen(newval) end
+		def put_MaxUrlLen(newval) end
 
-		# returns Bignum
+		# The number of avoid patterns previously set by calling AddAvoidPattern.
+		#
 		# @return [Bignum]
 		def get_NumAvoidPatterns() end
 
-		# returns Bignum
+		# The number of URLs in the component's failed URL list.
+		#
 		# @return [Bignum]
 		def get_NumFailed() end
 
-		# returns Bignum
+		# The number of URLs in the component's outbound links URL list.
+		#
 		# @return [Bignum]
 		def get_NumOutboundLinks() end
 
-		# returns Bignum
+		# The number of URLs in the component's already-spidered URL list.
+		#
 		# @return [Bignum]
 		def get_NumSpidered() end
 
-		# returns Bignum
+		# The number of URLs in the component's unspidered URL list.
+		#
 		# @return [Bignum]
 		def get_NumUnspidered() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
+		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_PreferIpv6() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
+		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [Bignum]
-		def set_PreferIpv6(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_PreferIpv6(newval) end
 
-		# returns String
+		# The domain name of a proxy host if an HTTP proxy is used.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ProxyDomain() end
+		def get_ProxyDomain(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The domain name of a proxy host if an HTTP proxy is used.
 		#
 		# @param newval [String]
-		def set_ProxyDomain(newval) end
+		def put_ProxyDomain(newval) end
 
-		# returns String
+		# The domain name of a proxy host if an HTTP proxy is used.
+		#
 		# @return [String]
 		def proxyDomain() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The domain name of a proxy host if an HTTP proxy is used.
 		#
 		# @param newval [String]
-		def proxyDomain(newval) end
+		def put_ProxyDomain(newval) end
 
-		# returns String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# login.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ProxyLogin() end
+		def get_ProxyLogin(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# login.
 		#
 		# @param newval [String]
-		def set_ProxyLogin(newval) end
+		def put_ProxyLogin(newval) end
 
-		# returns String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# login.
+		#
 		# @return [String]
 		def proxyLogin() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# login.
 		#
 		# @param newval [String]
-		def proxyLogin(newval) end
+		def put_ProxyLogin(newval) end
 
-		# returns String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# password.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ProxyPassword() end
+		def get_ProxyPassword(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# password.
 		#
 		# @param newval [String]
-		def set_ProxyPassword(newval) end
+		def put_ProxyPassword(newval) end
 
-		# returns String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# password.
+		#
 		# @return [String]
 		def proxyPassword() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy
+		# password.
 		#
 		# @param newval [String]
-		def proxyPassword(newval) end
+		def put_ProxyPassword(newval) end
 
-		# returns Bignum
+		# The port number of a proxy server if an HTTP proxy is used.
+		#
 		# @return [Bignum]
 		def get_ProxyPort() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The port number of a proxy server if an HTTP proxy is used.
 		#
 		# @param newval [Bignum]
-		def set_ProxyPort(newval) end
+		def put_ProxyPort(newval) end
 
-		# returns Bignum
+		# The maximum number of seconds to wait when reading from an HTTP server.
+		#
 		# @return [Bignum]
 		def get_ReadTimeout() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The maximum number of seconds to wait when reading from an HTTP server.
 		#
 		# @param newval [Bignum]
-		def set_ReadTimeout(newval) end
+		def put_ReadTimeout(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If equal to 1 (true) then pages saved to the cache. If 0, the cache is ignored. The default value is
+		# 1. Regardless, if no CacheDir is set then the cache is not used.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UpdateCache() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If equal to 1 (true) then pages saved to the cache. If 0, the cache is ignored. The default value is
+		# 1. Regardless, if no CacheDir is set then the cache is not used.
 		#
-		# @param newval [Bignum]
-		def set_UpdateCache(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UpdateCache(newval) end
 
-		# returns String
+		# The value of the HTTP user-agent header field to be sent with HTTP requests. The default value is
+		# "Chilkat/1.0.0 (+http://www.chilkatsoft.com/ChilkatHttpUA.asp)"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_UserAgent() end
+		def get_UserAgent(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The value of the HTTP user-agent header field to be sent with HTTP requests. The default value is
+		# "Chilkat/1.0.0 (+http://www.chilkatsoft.com/ChilkatHttpUA.asp)"
 		#
 		# @param newval [String]
-		def set_UserAgent(newval) end
+		def put_UserAgent(newval) end
 
-		# returns String
+		# The value of the HTTP user-agent header field to be sent with HTTP requests. The default value is
+		# "Chilkat/1.0.0 (+http://www.chilkatsoft.com/ChilkatHttpUA.asp)"
+		#
 		# @return [String]
 		def userAgent() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The value of the HTTP user-agent header field to be sent with HTTP requests. The default value is
+		# "Chilkat/1.0.0 (+http://www.chilkatsoft.com/ChilkatHttpUA.asp)"
 		#
 		# @param newval [String]
-		def userAgent(newval) end
+		def put_UserAgent(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
-		# returns Bignum
+		# The "wind-down" phase begins when this number of URLs has been spidered. When in the wind-down
+		# phase, no new URLs are added to the unspidered list. The default value is 0 which means that there
+		# is NO wind-down phase.
+		#
 		# @return [Bignum]
 		def get_WindDownCount() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The "wind-down" phase begins when this number of URLs has been spidered. When in the wind-down
+		# phase, no new URLs are added to the unspidered list. The default value is 0 which means that there
+		# is NO wind-down phase.
 		#
 		# @param newval [Bignum]
-		def set_WindDownCount(newval) end
+		def put_WindDownCount(newval) end
 
 
 		# Method: AddAvoidOutboundLinkPattern
 		#
-		# ==== Attributes
+		# Adds a wildcarded pattern to prevent collecting matching outbound link URLs. For example, if
+		# "*google*" is added, then any outbound links containing the word "google" will be ignored. The "*"
+		# character matches zero or more of any character.
 		#
-		# +pattern+ - String
-		# returns nil
+		# @param pattern [String]
 		#
-		# YARD =>
-		#
-		# @param  pattern [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddAvoidOutboundLinkPattern(pattern)
 			# ...
 		end
 
+
 		# Method: AddAvoidPattern
 		#
-		# ==== Attributes
+		# Adds a wildcarded pattern to prevent spidering matching URLs. For example, if "*register*" is added,
+		# then any url containing the word "register" is not spidered. The "*" character matches zero or more
+		# of any character.
 		#
-		# +pattern+ - String
-		# returns nil
+		# @param pattern [String]
 		#
-		# YARD =>
-		#
-		# @param  pattern [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddAvoidPattern(pattern)
 			# ...
 		end
 
+
 		# Method: AddMustMatchPattern
 		#
-		# ==== Attributes
+		# Adds a wildcarded pattern to limit spidering to only URLs that match the pattern. For example, if
+		# "*/products/*" is added, then only URLs containing "/products/" are spidered. This is helpful for
+		# only spidering a portion of a website. The "*" character matches zero or more of any character.
 		#
-		# +pattern+ - String
-		# returns nil
+		# @param pattern [String]
 		#
-		# YARD =>
-		#
-		# @param  pattern [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddMustMatchPattern(pattern)
 			# ...
 		end
 
+
 		# Method: AddUnspidered
 		#
-		# ==== Attributes
+		# To begin spidering you must call this method one or more times to provide starting points. It adds a
+		# single URL to the component's internal queue of URLs to be spidered.
 		#
-		# +url+ - String
-		# returns nil
+		# @param url [String]
 		#
-		# YARD =>
-		#
-		# @param  url [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddUnspidered(url)
 			# ...
 		end
 
+
 		# Method: CanonicalizeUrl
 		#
-		# ==== Attributes
+		# Canonicalizes a URL by doing the following:
+		# 
+		# Drops username/password if
+		# present.
+		# Drops fragment if present.
+		# Converts domain to lowercase.
+		# Removes port 80
+		# or 443
+		# Remove default.asp, index.html, index.htm, default.html, index.htm, default.htm,
 		#
-		# +url+ - String
-		# returns String
+		# index.php, index.asp, default.php, .cfm, .aspx, ,php3, .pl, .cgi, .txt, .shtml, .phtml
+		# Remove
+		# www. from the domain if present.
 		#
-		# YARD =>
 		#
-		# @param  url [String]
-		# @return  [String]
-		def CanonicalizeUrl(url)
+		# @param url [String]
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def CanonicalizeUrl(url, outStr)
 			# ...
 		end
 
+
+		# Method: CanonicalizeUrl
+		#
+		# Canonicalizes a URL by doing the following:
+		# 
+		# Drops username/password if
+		# present.
+		# Drops fragment if present.
+		# Converts domain to lowercase.
+		# Removes port 80
+		# or 443
+		# Remove default.asp, index.html, index.htm, default.html, index.htm, default.htm,
+		#
+		# index.php, index.asp, default.php, .cfm, .aspx, ,php3, .pl, .cgi, .txt, .shtml, .phtml
+		# Remove
+		# www. from the domain if present.
+		#
+		#
+		# @param url [String]
+		#
+		# @return [String]
+		def canonicalizeUrl(url)
+			# ...
+		end
+
+
 		# Method: ClearFailedUrls
 		#
-		# ==== Attributes
+		# Clears the component's internal list of URLs that could not be downloaded.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearFailedUrls()
 			# ...
 		end
 
+
 		# Method: ClearOutboundLinks
 		#
-		# ==== Attributes
+		# Clears the component's internal list of outbound URLs that will automatically accumulate while
+		# spidering.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearOutboundLinks()
 			# ...
 		end
 
+
 		# Method: ClearSpideredUrls
 		#
-		# ==== Attributes
+		# Clears the component's internal list of already-spidered URLs that will automatically accumulate
+		# while spidering.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearSpideredUrls()
 			# ...
 		end
 
+
 		# Method: CrawlNext
 		#
-		# ==== Attributes
+		# Crawls the next URL in the internal list of unspidered URLs. The URL is moved from the unspidered
+		# list to the spidered list. Any new links within the same domain and not yet spidered are added to
+		# the unspidered list. (providing that they do not match "avoid" patterns, etc.) Any new outbound
+		# links are added to the outbound URL list. 
+		# 
+		# If successful, the HTML of the downloaded
+		# page is available in the LastHtml property. If there are no more URLs left unspidered, the method
+		# returns _FALSE_. Information about the URL crawled is available in the properties LastUrl,
+		# LastFromCache, and LastModDate.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def CrawlNext()
 			# ...
 		end
 
+
 		# Method: FetchRobotsText
 		#
-		# ==== Attributes
+		# Returns the contents of the robots.txt file from the domain being crawled. This spider component
+		# will not crawl URLs excluded by robots.txt. If you believe the spider is not behaving correctly,
+		# please notify us at support@chilkatsoft.com and provide information detailing a case that allows us
+		# to reproduce the problem.
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def FetchRobotsText()
+		# @return [TrueClass, FalseClass]
+		def FetchRobotsText(outStr)
 			# ...
 		end
+
+
+		# Method: FetchRobotsText
+		#
+		# Returns the contents of the robots.txt file from the domain being crawled. This spider component
+		# will not crawl URLs excluded by robots.txt. If you believe the spider is not behaving correctly,
+		# please notify us at support@chilkatsoft.com and provide information detailing a case that allows us
+		# to reproduce the problem.
+		#
+		#
+		# @return [String]
+		def fetchRobotsText()
+			# ...
+		end
+
 
 		# Method: GetAvoidPattern
 		#
-		# ==== Attributes
+		# Returns the Nth avoid pattern previously added by calling AddAvoidPattern. Indexing begins at 0.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetAvoidPattern(index)
+		# @return [TrueClass, FalseClass]
+		def GetAvoidPattern(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetAvoidPattern
+		#
+		# Returns the Nth avoid pattern previously added by calling AddAvoidPattern. Indexing begins at 0.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAvoidPattern(index)
+			# ...
+		end
+
 
 		# Method: GetBaseDomain
 		#
-		# ==== Attributes
+		# To be documented soon.
 		#
-		# +domain+ - String
-		# returns String
+		# @param domain [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  domain [String]
-		# @return  [String]
-		def GetBaseDomain(domain)
+		# @return [TrueClass, FalseClass]
+		def GetBaseDomain(domain, outStr)
 			# ...
 		end
+
+
+		# Method: GetBaseDomain
+		#
+		# To be documented soon.
+		#
+		# @param domain [String]
+		#
+		# @return [String]
+		def getBaseDomain(domain)
+			# ...
+		end
+
 
 		# Method: GetFailedUrl
 		#
-		# ==== Attributes
+		# Returns the Nth URL in the failed URL list. Indexing begins at 0.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetFailedUrl(index)
+		# @return [TrueClass, FalseClass]
+		def GetFailedUrl(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetFailedUrl
+		#
+		# Returns the Nth URL in the failed URL list. Indexing begins at 0.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getFailedUrl(index)
+			# ...
+		end
+
 
 		# Method: GetOutboundLink
 		#
-		# ==== Attributes
+		# Returns the Nth URL in the outbound link URL list. Indexing begins at 0.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetOutboundLink(index)
+		# @return [TrueClass, FalseClass]
+		def GetOutboundLink(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetOutboundLink
+		#
+		# Returns the Nth URL in the outbound link URL list. Indexing begins at 0.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getOutboundLink(index)
+			# ...
+		end
+
 
 		# Method: GetSpideredUrl
 		#
-		# ==== Attributes
+		# Returns the Nth URL in the already-spidered URL list. Indexing begins at 0.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetSpideredUrl(index)
+		# @return [TrueClass, FalseClass]
+		def GetSpideredUrl(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetSpideredUrl
+		#
+		# Returns the Nth URL in the already-spidered URL list. Indexing begins at 0.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getSpideredUrl(index)
+			# ...
+		end
+
 
 		# Method: GetUnspideredUrl
 		#
-		# ==== Attributes
+		# Returns the Nth URL in the unspidered URL list. Indexing begins at 0.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetUnspideredUrl(index)
+		# @return [TrueClass, FalseClass]
+		def GetUnspideredUrl(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetUnspideredUrl
+		#
+		# Returns the Nth URL in the unspidered URL list. Indexing begins at 0.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getUnspideredUrl(index)
+			# ...
+		end
+
 
 		# Method: GetUrlDomain
 		#
-		# ==== Attributes
+		# Returns the domain name part of a URL. For example, if the URL is
+		# "http://www.chilkatsoft.com/test.asp", then "www.chilkatsoft.com" is returned.
 		#
-		# +url+ - String
-		# returns String
+		# @param url [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  url [String]
-		# @return  [String]
-		def GetUrlDomain(url)
+		# @return [TrueClass, FalseClass]
+		def GetUrlDomain(url, outStr)
 			# ...
 		end
 
+
+		# Method: GetUrlDomain
+		#
+		# Returns the domain name part of a URL. For example, if the URL is
+		# "http://www.chilkatsoft.com/test.asp", then "www.chilkatsoft.com" is returned.
+		#
+		# @param url [String]
+		#
+		# @return [String]
+		def getUrlDomain(url)
+			# ...
+		end
+
+
 		# Method: Initialize
 		#
-		# ==== Attributes
+		# Initializes the component to begin spidering a domain. Calling Initialize clears any patterns added
+		# via the AddAvoidOutboundLinkPattern, AddAvoidPattern, and AddMustMatchPattern methods. The domain
+		# name passed to this method is what is returned by the Domain property. The spider only crawls URLs
+		# within the same domain.
 		#
-		# +domain+ - String
-		# returns nil
+		# @param domain [String]
 		#
-		# YARD =>
-		#
-		# @param  domain [String]
-		# @return  [nil]
+		# @return [nil]
 		def Initialize(domain)
 			# ...
 		end
 
+
 		# Method: RecrawlLast
 		#
-		# ==== Attributes
+		# Re-crawls the last URL spidered. This helpful when cookies set in a previous page load cause the
+		# page to be loaded differently the next time.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RecrawlLast()
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: SkipUnspidered
 		#
-		# ==== Attributes
+		# Moves a URL from the unspidered list to the spidered list. This allows an application to skip a
+		# specific URL.
 		#
-		# +index+ - Fixnum
-		# returns nil
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [nil]
+		# @return [nil]
 		def SkipUnspidered(index)
 			# ...
 		end
 
+
 		# Method: SleepMs
 		#
-		# ==== Attributes
+		# Suspends the execution of the current thread until the time-out interval elapses.
 		#
-		# +numMilliseconds+ - Fixnum
-		# returns nil
+		# @param numMilliseconds [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  numMilliseconds [Fixnum]
-		# @return  [nil]
+		# @return [nil]
 		def SleepMs(numMilliseconds)
 			# ...
 		end
+
 	end
 end

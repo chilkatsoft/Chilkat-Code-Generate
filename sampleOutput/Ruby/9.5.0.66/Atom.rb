@@ -1,779 +1,926 @@
 module Chilkat
 	class CkAtom 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
+		# (i.e.have no length file operations or network communications) are not affected. If no method is
+		# running, then this property is automatically reset to _FALSE_ when the next method is called. When
+		# the abort occurs, this property is reset to _FALSE_. Both synchronous and asynchronous method calls
+		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
+		# thread.)
+		#
+		# @return [TrueClass, FalseClass]
 		def get_AbortCurrent() end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
+		# Number of entries in the Atom document.
+		#
 		# @return [Bignum]
 		def get_NumEntries() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AddElement
 		#
-		# ==== Attributes
+		# Adds a new element to the Atom document. The tag is a string such as "title", "subtitle", "summary",
+		# etc. Returns the index of the element added, or -1 for failure.
 		#
-		# +tag+ - String
-		# +value+ - String
-		# returns Fixnum
+		# @param tag [String]
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  value [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def AddElement(tag, value)
 			# ...
 		end
 
+
 		# Method: AddElementDate
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Adds a new date-formatted element to the Atom document. The ARG1 is a string such as "created",
+		# "modified", "issued", etc. Returns the index of the element added, or -1 for failure.
 		#
-		# +tag+ - String
-		# +dateTime+ - Object
-		# returns Fixnum
+		# @param tag [String]
+		# @param dateTime [Object]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  dateTime [Object]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AddElementDate(tag, dateTime)
 			# ...
 		end
 
+
 		# Method: AddElementDateStr
 		#
-		# ==== Attributes
+		# Adds a new date-formatted element to the Atom document. The ARG1 is a string such as "created",
+		# "modified", "issued", etc. The ARG2 should be an RFC822 formatted date/time string such as "Tue, 25
+		# Sep 2012 12:25:32 -0500". Returns the index of the element added, or -1 for failure.
 		#
-		# +tag+ - String
-		# +dateTimeStr+ - String
-		# returns Fixnum
+		# @param tag [String]
+		# @param dateTimeStr [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  dateTimeStr [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def AddElementDateStr(tag, dateTimeStr)
 			# ...
 		end
 
+
 		# Method: AddElementDt
 		#
-		# ==== Attributes
+		# Adds a new date-formatted element to the Atom document. The tag is a string such as "created",
+		# "modified", "issued", etc. Returns the index of the element added, or -1 for failure.
 		#
-		# +tag+ - String
-		# +dateTime+ - CkDateTime
-		# returns Fixnum
+		# @param tag [String]
+		# @param dateTime [CkDateTime]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  dateTime [CkDateTime]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def AddElementDt(tag, dateTime)
 			# ...
 		end
 
+
 		# Method: AddElementHtml
 		#
-		# ==== Attributes
+		# Adds a new HTML formatted element to the Atom document. Returns the index of the element added, or
+		# -1 for failure.
 		#
-		# +tag+ - String
-		# +htmlStr+ - String
-		# returns Fixnum
+		# @param tag [String]
+		# @param htmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  htmlStr [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def AddElementHtml(tag, htmlStr)
 			# ...
 		end
 
+
 		# Method: AddElementXHtml
 		#
-		# ==== Attributes
+		# Adds a new XHTML formatted element to the Atom document. Returns the index of the element added, or
+		# -1 for failure.
 		#
-		# +tag+ - String
-		# +xmlStr+ - String
-		# returns Fixnum
+		# @param tag [String]
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  xmlStr [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def AddElementXHtml(tag, xmlStr)
 			# ...
 		end
 
+
 		# Method: AddElementXml
 		#
-		# ==== Attributes
+		# Adds a new XML formatted element to the Atom document. Returns the index of the element added, or -1
+		# for failure.
 		#
-		# +tag+ - String
-		# +xmlStr+ - String
-		# returns Fixnum
+		# @param tag [String]
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  xmlStr [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def AddElementXml(tag, xmlStr)
 			# ...
 		end
 
+
 		# Method: AddEntry
 		#
-		# ==== Attributes
+		# Adds an "entry" Atom XML document to the caller's Atom document.
 		#
-		# +xmlStr+ - String
-		# returns nil
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  xmlStr [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddEntry(xmlStr)
 			# ...
 		end
 
+
 		# Method: AddLink
 		#
-		# ==== Attributes
+		# Adds a link to the Atom document.
 		#
-		# +rel+ - String
-		# +href+ - String
-		# +title+ - String
-		# +typ+ - String
-		# returns nil
+		# @param rel [String]
+		# @param href [String]
+		# @param title [String]
+		# @param typ [String]
 		#
-		# YARD =>
-		#
-		# @param  rel [String]
-		# @param  href [String]
-		# @param  title [String]
-		# @param  typ [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddLink(rel, href, title, typ)
 			# ...
 		end
 
+
 		# Method: AddPerson
 		#
-		# ==== Attributes
+		# Adds a person to the Atom document. The tag should be a string such as "author", "contributor", etc.
+		# If a piece of information is not known, an empty string or NULL value may be passed.
 		#
-		# +tag+ - String
-		# +name+ - String
-		# +uri+ - String
-		# +email+ - String
-		# returns nil
+		# @param tag [String]
+		# @param name [String]
+		# @param uri [String]
+		# @param email [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  name [String]
-		# @param  uri [String]
-		# @param  email [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddPerson(tag, name, uri, email)
 			# ...
 		end
 
+
 		# Method: DeleteElement
 		#
-		# ==== Attributes
+		# Removes the Nth occurrence of a given element from the Atom document. Indexing begins at 0. For
+		# example, to remove the 2nd category, set tag = "category" and index = 1.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [nil]
+		# @return [nil]
 		def DeleteElement(tag, index)
 			# ...
 		end
 
+
 		# Method: DeleteElementAttr
 		#
-		# ==== Attributes
+		# Remove an attribute from an element.The index should be 0 unless there are multiple elements having
+		# the same tag, in which case it selects the Nth occurrence based on the index ( 0 = first occurrence
+		# ).
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +attrName+ - String
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param attrName [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  attrName [String]
-		# @return  [nil]
+		# @return [nil]
 		def DeleteElementAttr(tag, index, attrName)
 			# ...
 		end
 
+
 		# Method: DeletePerson
 		#
-		# ==== Attributes
+		# Deletes a person from the Atom document. The tag is a string such as "author". The index should be 0
+		# unless there are multiple elements having the same tag, in which case it selects the Nth occurrence
+		# based on the index. For example, DeletePerson("author",2) deletes the 3rd author.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [nil]
+		# @return [nil]
 		def DeletePerson(tag, index)
 			# ...
 		end
 
+
 		# Method: DownloadAtom
 		#
-		# ==== Attributes
+		# Download an Atom feed from the Internet and load it into the Atom object.
 		#
-		# +url+ - String
-		# returns TrueClass, FalseClass
+		# @param url [String]
 		#
-		# YARD =>
-		#
-		# @param  url [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def DownloadAtom(url)
 			# ...
 		end
 
+
 		# Method: GetElement
 		#
-		# ==== Attributes
+		# Returns the content of the Nth element having a specified tag.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# returns String
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetElement(tag, index)
+		# @return [TrueClass, FalseClass]
+		def GetElement(tag, index, outStr)
 			# ...
 		end
+
+
+		# Method: GetElement
+		#
+		# Returns the content of the Nth element having a specified tag.
+		#
+		# @param tag [String]
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getElement(tag, index)
+			# ...
+		end
+
 
 		# Method: GetElementAttr
 		#
-		# ==== Attributes
+		# Returns the value of an element's attribute. The element is selected by the tag name and the index
+		# (the Nth element having a specific tag) and the attribute is selected by name.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +attrName+ - String
-		# returns String
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param attrName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  attrName [String]
-		# @return  [String]
-		def GetElementAttr(tag, index, attrName)
+		# @return [TrueClass, FalseClass]
+		def GetElementAttr(tag, index, attrName, outStr)
 			# ...
 		end
 
+
+		# Method: GetElementAttr
+		#
+		# Returns the value of an element's attribute. The element is selected by the tag name and the index
+		# (the Nth element having a specific tag) and the attribute is selected by name.
+		#
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getElementAttr(tag, index, attrName)
+			# ...
+		end
+
+
 		# Method: GetElementCount
 		#
-		# ==== Attributes
+		# The number of elements having a specific tag.
 		#
-		# +tag+ - String
-		# returns Fixnum
+		# @param tag [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetElementCount(tag)
 			# ...
 		end
 
+
 		# Method: GetElementDate
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Returns an element's value as a date/time.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# returns Object
+		# @param tag [String]
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [Object]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetElementDate(tag, index)
 			# ...
 		end
 
+
 		# Method: GetElementDateStr
 		#
-		# ==== Attributes
+		# Returns an element's value as a date/time in an RFC822 formatted string, such as such as "Tue, 25
+		# Sep 2012 12:25:32 -0500".
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# returns String
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetElementDateStr(tag, index)
+		# @return [TrueClass, FalseClass]
+		def GetElementDateStr(tag, index, outStr)
 			# ...
 		end
 
+
+		# Method: GetElementDateStr
+		#
+		# Returns an element's value as a date/time in an RFC822 formatted string, such as such as "Tue, 25
+		# Sep 2012 12:25:32 -0500".
+		#
+		# @param tag [String]
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getElementDateStr(tag, index)
+			# ...
+		end
+
+
 		# Method: GetElementDt
 		#
-		# ==== Attributes
+		# Returns an element's value as a date/time object.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# returns CkDateTime
+		# @param tag [String]
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @return  [CkDateTime]
+		# @return [CkDateTime]
 		def GetElementDt(tag, index)
 			# ...
 		end
 
+
 		# Method: GetEntry
 		#
-		# ==== Attributes
+		# Returns the Nth entry as an Atom object. (Indexing begins at 0)
 		#
-		# +index+ - Fixnum
-		# returns CkAtom
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkAtom]
+		# @return [CkAtom]
 		def GetEntry(index)
 			# ...
 		end
 
+
 		# Method: GetLinkHref
 		#
-		# ==== Attributes
+		# Returns the href attribute of the link having a specified "rel" attribute (such as "service.feed",
+		# "alternate", etc.).
 		#
-		# +relName+ - String
-		# returns String
+		# @param relName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  relName [String]
-		# @return  [String]
-		def GetLinkHref(relName)
+		# @return [TrueClass, FalseClass]
+		def GetLinkHref(relName, outStr)
 			# ...
 		end
+
+
+		# Method: GetLinkHref
+		#
+		# Returns the href attribute of the link having a specified "rel" attribute (such as "service.feed",
+		# "alternate", etc.).
+		#
+		# @param relName [String]
+		#
+		# @return [String]
+		def getLinkHref(relName)
+			# ...
+		end
+
 
 		# Method: GetPersonInfo
 		#
-		# ==== Attributes
+		# Returns a piece of information about a person. To get the 2nd author's name, call
+		# GetPersonInfo("author",1,"name").
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +tag2+ - String
-		# returns String
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param tag2 [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  tag2 [String]
-		# @return  [String]
-		def GetPersonInfo(tag, index, tag2)
+		# @return [TrueClass, FalseClass]
+		def GetPersonInfo(tag, index, tag2, outStr)
 			# ...
 		end
+
+
+		# Method: GetPersonInfo
+		#
+		# Returns a piece of information about a person. To get the 2nd author's name, call
+		# GetPersonInfo("author",1,"name").
+		#
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param tag2 [String]
+		#
+		# @return [String]
+		def getPersonInfo(tag, index, tag2)
+			# ...
+		end
+
 
 		# Method: GetTopAttr
 		#
-		# ==== Attributes
+		# Returns the value of an attribute on the top-level XML node. The tag of a top-level Atom XML node is
+		# typically "feed" or "entry", and it might have attributes such as "xmlns" and "xml:lang".
 		#
-		# +attrName+ - String
-		# returns String
+		# @param attrName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  attrName [String]
-		# @return  [String]
-		def GetTopAttr(attrName)
+		# @return [TrueClass, FalseClass]
+		def GetTopAttr(attrName, outStr)
 			# ...
 		end
 
+
+		# Method: GetTopAttr
+		#
+		# Returns the value of an attribute on the top-level XML node. The tag of a top-level Atom XML node is
+		# typically "feed" or "entry", and it might have attributes such as "xmlns" and "xml:lang".
+		#
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getTopAttr(attrName)
+			# ...
+		end
+
+
 		# Method: HasElement
 		#
-		# ==== Attributes
+		# True (1) if the element exists in the Atom document. Otherwise 0.
 		#
-		# +tag+ - String
-		# returns TrueClass, FalseClass
+		# @param tag [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HasElement(tag)
 			# ...
 		end
 
+
 		# Method: LoadXml
 		#
-		# ==== Attributes
+		# Loads the Atom document from an XML string.
 		#
-		# +xmlStr+ - String
-		# returns TrueClass, FalseClass
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  xmlStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xmlStr)
 			# ...
 		end
 
+
 		# Method: NewEntry
 		#
-		# ==== Attributes
+		# Initializes the Atom document to be a new "entry".
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def NewEntry()
 			# ...
 		end
 
+
 		# Method: NewFeed
 		#
-		# ==== Attributes
+		# Initializes the Atom document to be a new "feed".
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def NewFeed()
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: SetElementAttr
 		#
-		# ==== Attributes
+		# Adds or replaces an attribute on an element.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +attrName+ - String
-		# +attrValue+ - String
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param attrName [String]
+		# @param attrValue [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  attrName [String]
-		# @param  attrValue [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetElementAttr(tag, index, attrName, attrValue)
 			# ...
 		end
 
+
 		# Method: SetTopAttr
 		#
-		# ==== Attributes
+		# Adds or replaces an attribute on the top-level XML node of the Atom document.
 		#
-		# +attrName+ - String
-		# +value+ - String
-		# returns nil
+		# @param attrName [String]
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  attrName [String]
-		# @param  value [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetTopAttr(attrName, value)
 			# ...
 		end
 
+
 		# Method: ToXmlString
 		#
-		# ==== Attributes
+		# Serializes the Atom document to an XML string.
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def ToXmlString()
+		# @return [TrueClass, FalseClass]
+		def ToXmlString(outStr)
 			# ...
 		end
 
+
+		# Method: ToXmlString
+		#
+		# Serializes the Atom document to an XML string.
+		#
+		#
+		# @return [String]
+		def toXmlString()
+			# ...
+		end
+
+
 		# Method: UpdateElement
 		#
-		# ==== Attributes
+		# Replaces the content of an element.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +value+ - String
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param value [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  value [String]
-		# @return  [nil]
+		# @return [nil]
 		def UpdateElement(tag, index, value)
 			# ...
 		end
 
+
 		# Method: UpdateElementDate
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Replaces the content of a date-formatted element.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +dateTime+ - Object
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param dateTime [Object]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  dateTime [Object]
-		# @return  [nil]
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UpdateElementDate(tag, index, dateTime)
 			# ...
 		end
 
+
 		# Method: UpdateElementDateStr
 		#
-		# ==== Attributes
+		# Replaces the content of a date-formatted element. The ARG2 should be an RFC822 formatted date/time
+		# string.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +dateTimeStr+ - String
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param dateTimeStr [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  dateTimeStr [String]
-		# @return  [nil]
+		# @return [nil]
 		def UpdateElementDateStr(tag, index, dateTimeStr)
 			# ...
 		end
 
+
 		# Method: UpdateElementDt
 		#
-		# ==== Attributes
+		# Replaces the content of a date-formatted element.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +dateTime+ - CkDateTime
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param dateTime [CkDateTime]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  dateTime [CkDateTime]
-		# @return  [nil]
+		# @return [nil]
 		def UpdateElementDt(tag, index, dateTime)
 			# ...
 		end
 
+
 		# Method: UpdateElementHtml
 		#
-		# ==== Attributes
+		# Replaces the content of an HTML element.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +htmlStr+ - String
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param htmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  htmlStr [String]
-		# @return  [nil]
+		# @return [nil]
 		def UpdateElementHtml(tag, index, htmlStr)
 			# ...
 		end
 
+
 		# Method: UpdateElementXHtml
 		#
-		# ==== Attributes
+		# Replaces the content of an XHTML element.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +xmlStr+ - String
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  xmlStr [String]
-		# @return  [nil]
+		# @return [nil]
 		def UpdateElementXHtml(tag, index, xmlStr)
 			# ...
 		end
 
+
 		# Method: UpdateElementXml
 		#
-		# ==== Attributes
+		# Replaces the content of an XML element.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +xmlStr+ - String
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  xmlStr [String]
-		# @return  [nil]
+		# @return [nil]
 		def UpdateElementXml(tag, index, xmlStr)
 			# ...
 		end
 
+
 		# Method: UpdatePerson
 		#
-		# ==== Attributes
+		# Replaces the content of a person. To update the 3rd author, call UpdatePerson("author",2,"new
+		# name","new URL","new email"). If a piece of information is not known, pass an empty string or a
+		# NULL.
 		#
-		# +tag+ - String
-		# +index+ - Fixnum
-		# +name+ - String
-		# +uri+ - String
-		# +email+ - String
-		# returns nil
+		# @param tag [String]
+		# @param index [Fixnum]
+		# @param name [String]
+		# @param uri [String]
+		# @param email [String]
 		#
-		# YARD =>
-		#
-		# @param  tag [String]
-		# @param  index [Fixnum]
-		# @param  name [String]
-		# @param  uri [String]
-		# @param  email [String]
-		# @return  [nil]
+		# @return [nil]
 		def UpdatePerson(tag, index, name, uri, email)
 			# ...
 		end
+
 	end
 end

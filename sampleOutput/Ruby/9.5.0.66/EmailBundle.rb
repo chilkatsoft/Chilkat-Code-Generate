@@ -1,334 +1,495 @@
 module Chilkat
 	class CkEmailBundle 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
+		# The number of emails in this bundle.
+		#
 		# @return [Bignum]
 		def get_MessageCount() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AddEmail
 		#
-		# ==== Attributes
+		# Adds an email object to the bundle.
 		#
-		# +email+ - CkEmail
-		# returns TrueClass, FalseClass
+		# @param email [CkEmail]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddEmail(email)
 			# ...
 		end
 
+
 		# Method: AddMimeBytes
 		#
-		# ==== Attributes
+		# Adds an email to the bundle object. The ARG1 is the email in MIME format.
 		#
-		# +mimeBytesOrText+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param mimeBytesOrText [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  mimeBytesOrText [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddMimeBytes(mimeBytesOrText)
 			# ...
 		end
 
+
 		# Method: FindByHeader
 		#
-		# ==== Attributes
+		# Returns the first email having a header field matching the ARG1 and ARG2 exactly (case sensitive).
+		# If no matching email is found, returns _NULL_.
 		#
-		# +headerFieldName+ - String
-		# +headerFieldValue+ - String
-		# returns CkEmail
+		# @param headerFieldName [String]
+		# @param headerFieldValue [String]
 		#
-		# YARD =>
-		#
-		# @param  headerFieldName [String]
-		# @param  headerFieldValue [String]
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def FindByHeader(headerFieldName, headerFieldValue)
 			# ...
 		end
 
+
 		# Method: GetEmail
 		#
-		# ==== Attributes
+		# Returns the Nth Email in the bundle. The email returned is a copy of the email in the bundle.
+		# Updating the email object returned by GetEmail has no effect on the email within the bundle. To
+		# update/replace the email in the bundle, your program should call GetEmail to get a copy, make
+		# modifications, call RemoveEmailByIndex to remove the email (passing the same index used in the call
+		# to GetEmail), and then call AddEmail to insert the new/modified email into the
+		# bundle.
+		# 
+		# IMPORTANT: This method does NOT communicate with any mail server to download
+		# the email. It simply returns the Nth email object that exists within it's in-memory collection of
+		# email objects.
 		#
-		# +index+ - Fixnum
-		# returns CkEmail
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def GetEmail(index)
 			# ...
 		end
 
+
 		# Method: GetUidls
 		#
-		# ==== Attributes
+		# Returns a StringArray object containing UIDLs for all Email objects in the bundle. UIDLs are only
+		# valid for emails retrieved from POP3 servers. An email on a POP3 server has a "UIDL", an email on
+		# IMAP servers has a "UID". If the email was retrieved from an IMAP server, the UID will be accessible
+		# via the "ckx-imap-uid" header field.
 		#
-		# returns CkStringArray
 		#
-		# YARD =>
-		#
-		# @return  [CkStringArray]
+		# @return [CkStringArray]
 		def GetUidls()
 			# ...
 		end
 
+
 		# Method: GetXml
 		#
-		# ==== Attributes
+		# Converts the email bundle to an XML document in memory. Returns the XML document as a string.
 		#
-		# returns String
+		# @param outXml [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GetXml()
+		# @return [TrueClass, FalseClass]
+		def GetXml(outXml)
 			# ...
 		end
 
+
+		# Method: GetXml
+		#
+		# Converts the email bundle to an XML document in memory. Returns the XML document as a string.
+		#
+		#
+		# @return [String]
+		def getXml()
+			# ...
+		end
+
+
 		# Method: LoadTaskResult
 		#
-		# ==== Attributes
+		# Loads the email bundle from a completed asynchronous task.
 		#
-		# +task+ - CkTask
-		# returns TrueClass, FalseClass
+		# @param task [CkTask]
 		#
-		# YARD =>
-		#
-		# @param  task [CkTask]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
 
+
 		# Method: LoadXml
 		#
-		# ==== Attributes
+		# Loads an email bundle from an XML file.
 		#
-		# +filename+ - String
-		# returns TrueClass, FalseClass
+		# @param filename [String]
 		#
-		# YARD =>
-		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadXml(filename)
 			# ...
 		end
 
+
 		# Method: LoadXmlString
 		#
-		# ==== Attributes
+		# Loads an email bundle from an XML string.
 		#
-		# +xmlStr+ - String
-		# returns TrueClass, FalseClass
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  xmlStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadXmlString(xmlStr)
 			# ...
 		end
 
+
 		# Method: RemoveEmail
 		#
-		# ==== Attributes
+		# Removes an email from the bundle. This does not remove the email from the mail server.
 		#
-		# +email+ - CkEmail
-		# returns TrueClass, FalseClass
+		# @param email [CkEmail]
 		#
-		# YARD =>
-		#
-		# @param  email [CkEmail]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RemoveEmail(email)
 			# ...
 		end
 
+
 		# Method: RemoveEmailByIndex
 		#
-		# ==== Attributes
+		# Removes the Nth email in a bundle. (Indexing begins at 0.)
 		#
-		# +index+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def RemoveEmailByIndex(index)
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: SaveXml
 		#
-		# ==== Attributes
+		# Converts each email to XML and persists the bundle to an XML file. The email bundle can			later be
+		# re-instantiated by calling MailMan.LoadXmlFile
 		#
-		# +filename+ - String
-		# returns TrueClass, FalseClass
+		# @param filename [String]
 		#
-		# YARD =>
-		#
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SaveXml(filename)
 			# ...
 		end
 
+
 		# Method: SortByDate
 		#
-		# ==== Attributes
+		# Sorts emails in the bundle by date.
 		#
-		# +ascending+ - TrueClass, FalseClass
-		# returns nil
+		# @param ascending [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @return [nil]
 		def SortByDate(ascending)
 			# ...
 		end
 
+
 		# Method: SortByRecipient
 		#
-		# ==== Attributes
+		# Sorts emails in the bundle by recipient.
 		#
-		# +ascending+ - TrueClass, FalseClass
-		# returns nil
+		# @param ascending [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @return [nil]
 		def SortByRecipient(ascending)
 			# ...
 		end
 
+
 		# Method: SortBySender
 		#
-		# ==== Attributes
+		# Sorts emails in the bundle by sender.
 		#
-		# +ascending+ - TrueClass, FalseClass
-		# returns nil
+		# @param ascending [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @return [nil]
 		def SortBySender(ascending)
 			# ...
 		end
 
+
 		# Method: SortBySubject
 		#
-		# ==== Attributes
+		# Sorts emails in the bundle by subject.
 		#
-		# +ascending+ - TrueClass, FalseClass
-		# returns nil
+		# @param ascending [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  ascending [TrueClass, FalseClass]
-		# @return  [nil]
+		# @return [nil]
 		def SortBySubject(ascending)
 			# ...
 		end
+
 	end
 end

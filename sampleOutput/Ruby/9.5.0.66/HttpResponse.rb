@@ -1,446 +1,777 @@
 module Chilkat
 	class CkHttpResponse 
-		# returns Fixnum
+		# The response body returned as a byte array.
+		#
 		# @return [Fixnum]
 		def get_Body() end
 
-		# returns String
+		# The same as the Body property, but returned as a quoted-printable encoded string.
+		#
 		# @return [String]
 		def get_BodyQP() end
 
-		# returns String
+		# The same as the Body property, but returned as a quoted-printable encoded string.
+		#
 		# @return [String]
 		def bodyQP() end
 
-		# returns String
+		# The response body returned as a string.
+		#
 		# @return [String]
 		def get_BodyStr() end
 
-		# returns String
+		# The response body returned as a string.
+		#
 		# @return [String]
 		def bodyStr() end
 
-		# returns String
+		# The response charset, such as "iso-8859-1", if applicable. Obviously, responses for GIF and JPG
+		# files will not have a charset.
+		#
 		# @return [String]
 		def get_Charset() end
 
-		# returns String
+		# The response charset, such as "iso-8859-1", if applicable. Obviously, responses for GIF and JPG
+		# files will not have a charset.
+		#
 		# @return [String]
 		def charset() end
 
-		# returns Bignum
+		# The content length of the response, in bytes.
+		#
 		# @return [Bignum]
 		def get_ContentLength() end
 
-		# returns Object
-		# This method has been deprecated. Do not use it.
+		# The content length of the response, in number of bytes, returned as a 64-bit integer.
+		#
+		# @return [Bignum]
+		def get_ContentLength64() end
+
+		# The Date response header field, returned in a date/time data type.
+		#
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_Date() end
 
-		# returns String
+		# Returns the content of the Date response header field in RFC822 date/time string format.
+		#
 		# @return [String]
 		def get_DateStr() end
 
-		# returns String
+		# Returns the content of the Date response header field in RFC822 date/time string format.
+		#
 		# @return [String]
 		def dateStr() end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# The domain of the HTTP server that created this response.
+		#
 		# @return [String]
 		def get_Domain() end
 
-		# returns String
+		# The domain of the HTTP server that created this response.
+		#
 		# @return [String]
 		def domain() end
 
-		# returns String
+		# Returns the redirect URL for 301/302 responses.
+		#
 		# @return [String]
 		def get_FinalRedirectUrl() end
 
-		# returns String
+		# Returns the redirect URL for 301/302 responses.
+		#
 		# @return [String]
 		def finalRedirectUrl() end
 
-		# returns String
+		# Returns the full MIME (header + body) of the HTTP response.
+		#
 		# @return [String]
 		def get_FullMime() end
 
-		# returns String
+		# Returns the full MIME (header + body) of the HTTP response.
+		#
 		# @return [String]
 		def fullMime() end
 
-		# returns String
+		# The full text of the response header.
+		#
 		# @return [String]
 		def get_Header() end
 
-		# returns String
+		# The full text of the response header.
+		#
 		# @return [String]
 		def header() end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
+		# The number of cookies included in the response.
+		#
 		# @return [Bignum]
 		def get_NumCookies() end
 
-		# returns Bignum
+		# The number of response header fields.
+		#
 		# @return [Bignum]
 		def get_NumHeaderFields() end
 
-		# returns Bignum
+		# The status code (as an integer) from the first line of an HTTP response. If the StatusLine =
+		# "HTTP/1.0 200 OK", the response status code returned is 200.
+		#
 		# @return [Bignum]
 		def get_StatusCode() end
 
-		# returns String
+		# The first line of an HTTP response, such as "HTTP/1.0 200 OK".
+		#
 		# @return [String]
 		def get_StatusLine() end
 
-		# returns String
+		# The first line of an HTTP response, such as "HTTP/1.0 200 OK".
+		#
 		# @return [String]
 		def statusLine() end
 
-		# returns String
+		# The text that follows the status code in the 1st line of the HTTP response. For example, i the first
+		# line of an HTTP response is "HTTP/1.0 200 OK", then this property contains "OK".
+		#
 		# @return [String]
 		def get_StatusText() end
 
-		# returns String
+		# The text that follows the status code in the 1st line of the HTTP response. For example, i the first
+		# line of an HTTP response is "HTTP/1.0 200 OK", then this property contains "OK".
+		#
 		# @return [String]
 		def statusText() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: GetBodyBd
 		#
-		# ==== Attributes
+		# Copies the response body to a BinData object.
 		#
-		# +binData+ - CkBinData
-		# returns TrueClass, FalseClass
+		# @param binData [CkBinData]
 		#
-		# YARD =>
-		#
-		# @param  binData [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetBodyBd(binData)
 			# ...
 		end
 
+
 		# Method: GetBodySb
 		#
-		# ==== Attributes
+		# Copies the response body to a Chilkat StringBuilder object.
 		#
-		# +sb+ - CkStringBuilder
-		# returns TrueClass, FalseClass
+		# @param sb [CkStringBuilder]
 		#
-		# YARD =>
-		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetBodySb(sb)
 			# ...
 		end
 
+
 		# Method: GetCookieDomain
 		#
-		# ==== Attributes
+		# Returns the domain of the Nth cookie in the response. Indexing begins at 0. The number of response
+		# cookies is specified in the NumCookies property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCookieDomain(index)
+		# @return [TrueClass, FalseClass]
+		def GetCookieDomain(index, outStr)
 			# ...
 		end
 
+
+		# Method: GetCookieDomain
+		#
+		# Returns the domain of the Nth cookie in the response. Indexing begins at 0. The number of response
+		# cookies is specified in the NumCookies property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCookieDomain(index)
+			# ...
+		end
+
+
 		# Method: GetCookieExpires
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Returns the expiration date/time of the Nth cookie in the response. Indexing begins at 0. The number
+		# of response cookies is specified in the NumCookies property.
 		#
-		# +index+ - Fixnum
-		# returns Object
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [Object]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetCookieExpires(index)
 			# ...
 		end
 
+
 		# Method: GetCookieExpiresStr
 		#
-		# ==== Attributes
+		# Returns the expiration date/time of the Nth cookie in the response. Indexing begins at 0. The number
+		# of response cookies is specified in the NumCookies property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCookieExpiresStr(index)
+		# @return [TrueClass, FalseClass]
+		def GetCookieExpiresStr(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCookieExpiresStr
+		#
+		# Returns the expiration date/time of the Nth cookie in the response. Indexing begins at 0. The number
+		# of response cookies is specified in the NumCookies property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCookieExpiresStr(index)
+			# ...
+		end
+
 
 		# Method: GetCookieName
 		#
-		# ==== Attributes
+		# Returns the name of the Nth cookie returned in the response. Indexing begins at 0. The number of
+		# response cookies is specified in the NumCookies property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCookieName(index)
+		# @return [TrueClass, FalseClass]
+		def GetCookieName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCookieName
+		#
+		# Returns the name of the Nth cookie returned in the response. Indexing begins at 0. The number of
+		# response cookies is specified in the NumCookies property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCookieName(index)
+			# ...
+		end
+
 
 		# Method: GetCookiePath
 		#
-		# ==== Attributes
+		# Returns the path of the Nth cookie returned in the response. Indexing begins at 0. The number of
+		# response cookies is specified in the NumCookies property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCookiePath(index)
+		# @return [TrueClass, FalseClass]
+		def GetCookiePath(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCookiePath
+		#
+		# Returns the path of the Nth cookie returned in the response. Indexing begins at 0. The number of
+		# response cookies is specified in the NumCookies property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCookiePath(index)
+			# ...
+		end
+
 
 		# Method: GetCookieValue
 		#
-		# ==== Attributes
+		# Returns the value of the Nth cookie returned in the response. Indexing begins at 0. The number of
+		# response cookies is specified in the NumCookies property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCookieValue(index)
+		# @return [TrueClass, FalseClass]
+		def GetCookieValue(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCookieValue
+		#
+		# Returns the value of the Nth cookie returned in the response. Indexing begins at 0. The number of
+		# response cookies is specified in the NumCookies property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCookieValue(index)
+			# ...
+		end
+
 
 		# Method: GetHeaderField
 		#
-		# ==== Attributes
+		# Returns the value of a response header field accessed by field name.
 		#
-		# +fieldName+ - String
-		# returns String
+		# @param fieldName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  fieldName [String]
-		# @return  [String]
-		def GetHeaderField(fieldName)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderField(fieldName, outStr)
 			# ...
 		end
+
+
+		# Method: GetHeaderField
+		#
+		# Returns the value of a response header field accessed by field name.
+		#
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getHeaderField(fieldName)
+			# ...
+		end
+
 
 		# Method: GetHeaderFieldAttr
 		#
-		# ==== Attributes
+		# Returns a response header field attribute. As an example, the response charset is simply the
+		# GetHeaderFieldAttr("content-type","charset")
 		#
-		# +fieldName+ - String
-		# +attrName+ - String
-		# returns String
+		# @param fieldName [String]
+		# @param attrName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  fieldName [String]
-		# @param  attrName [String]
-		# @return  [String]
-		def GetHeaderFieldAttr(fieldName, attrName)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderFieldAttr(fieldName, attrName, outStr)
 			# ...
 		end
+
+
+		# Method: GetHeaderFieldAttr
+		#
+		# Returns a response header field attribute. As an example, the response charset is simply the
+		# GetHeaderFieldAttr("content-type","charset")
+		#
+		# @param fieldName [String]
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getHeaderFieldAttr(fieldName, attrName)
+			# ...
+		end
+
 
 		# Method: GetHeaderName
 		#
-		# ==== Attributes
+		# Gets the name of the Nth response header field. Indexing begins at 0. The number of response headers
+		# is specified by the NumHeaderFields property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetHeaderName(index)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetHeaderName
+		#
+		# Gets the name of the Nth response header field. Indexing begins at 0. The number of response headers
+		# is specified by the NumHeaderFields property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getHeaderName(index)
+			# ...
+		end
+
 
 		# Method: GetHeaderValue
 		#
-		# ==== Attributes
+		# Gets the value of the Nth response header field. Indexing begins at 0. The number of response
+		# headers is specified by the NumHeaderFields property.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetHeaderValue(index)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderValue(index, outStr)
 			# ...
 		end
 
+
+		# Method: GetHeaderValue
+		#
+		# Gets the value of the Nth response header field. Indexing begins at 0. The number of response
+		# headers is specified by the NumHeaderFields property.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getHeaderValue(index)
+			# ...
+		end
+
+
 		# Method: LoadTaskResult
 		#
-		# ==== Attributes
+		# Loads the HTTP response from a completed asynchronous task. A failed return value indicates that no
+		# HTTP response was received in the HTTP asynchronous method call (i.e. the asynchronous HTTP request
+		# failed in such a way that no response was received).
 		#
-		# +task+ - CkTask
-		# returns TrueClass, FalseClass
+		# @param task [CkTask]
 		#
-		# YARD =>
-		#
-		# @param  task [CkTask]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
 
+
 		# Method: SaveBodyBinary
 		#
-		# ==== Attributes
+		# Saves the body of the HTTP response to a file.
 		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SaveBodyBinary(path)
 			# ...
 		end
 
+
 		# Method: SaveBodyText
 		#
-		# ==== Attributes
+		# Saves the HTTP response body to a file. This method provides control over CRLF vs bare-LF
+		# line-endings. If ARG1 is _TRUE_, then line endings are automatically converted to CRLF if necessary.
+		# If ARG1 is _FALSE_, then line-endings are automatically converted to bare-LF's (Unix style) if
+		# necessary.
+		# 
+		# To save the HTTP response body exactly as-is (with no line-ending
+		# manipulation), then call SaveBodyBinary.
 		#
-		# +bCrlf+ - TrueClass, FalseClass
-		# +path+ - String
-		# returns TrueClass, FalseClass
+		# @param bCrlf [TrueClass, FalseClass]
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  bCrlf [TrueClass, FalseClass]
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SaveBodyText(bCrlf, path)
 			# ...
 		end
 
-		# Method: UrlEncParamValue
+
+		# Method: SaveLastError
 		#
-		# ==== Attributes
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
 		#
-		# +encodedParamString+ - String
-		# +paramName+ - String
-		# returns String
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  encodedParamString [String]
-		# @param  paramName [String]
-		# @return  [String]
-		def UrlEncParamValue(encodedParamString, paramName)
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
 			# ...
 		end
+
+
+		# Method: UrlEncParamValue
+		#
+		# Convenience method for parsing a param's value out of a URL-encoded param string. For example, if a
+		# caller passes the following string in
+		# ARG1:
+		# oauth_token=ABC&oauth_token_secret=123&oauth_callback_confirmed=true
+		# and
+		# "oauth_token_secret" in ARG2, then the return value would be "123".
+		#
+		# @param encodedParamString [String]
+		# @param paramName [String]
+		# @param outStr [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def UrlEncParamValue(encodedParamString, paramName, outStr)
+			# ...
+		end
+
+
+		# Method: UrlEncParamValue
+		#
+		# Convenience method for parsing a param's value out of a URL-encoded param string. For example, if a
+		# caller passes the following string in
+		# ARG1:
+		# oauth_token=ABC&oauth_token_secret=123&oauth_callback_confirmed=true
+		# and
+		# "oauth_token_secret" in ARG2, then the return value would be "123".
+		#
+		# @param encodedParamString [String]
+		# @param paramName [String]
+		#
+		# @return [String]
+		def urlEncParamValue(encodedParamString, paramName)
+			# ...
+		end
+
 	end
 end

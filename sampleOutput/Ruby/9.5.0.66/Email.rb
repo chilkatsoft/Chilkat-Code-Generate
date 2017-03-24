@@ -1,3303 +1,4793 @@
 module Chilkat
 	class CkEmail 
-		# returns String
+		# The body of the email. If the email has both HTML and plain-text bodies, this property returns the
+		# HTML body. The GetHtmlBody and GetPlainTextBody methods can be used to access a specific body. The
+		# HasHtmlBody and HasPlainTextBody methods can be used to determine the presence of a body.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Body() end
+		def get_Body(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The body of the email. If the email has both HTML and plain-text bodies, this property returns the
+		# HTML body. The GetHtmlBody and GetPlainTextBody methods can be used to access a specific body. The
+		# HasHtmlBody and HasPlainTextBody methods can be used to determine the presence of a body.
 		#
 		# @param newval [String]
-		def set_Body(newval) end
+		def put_Body(newval) end
 
-		# returns String
+		# The body of the email. If the email has both HTML and plain-text bodies, this property returns the
+		# HTML body. The GetHtmlBody and GetPlainTextBody methods can be used to access a specific body. The
+		# HasHtmlBody and HasPlainTextBody methods can be used to determine the presence of a body.
+		#
 		# @return [String]
 		def body() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The body of the email. If the email has both HTML and plain-text bodies, this property returns the
+		# HTML body. The GetHtmlBody and GetPlainTextBody methods can be used to access a specific body. The
+		# HasHtmlBody and HasPlainTextBody methods can be used to determine the presence of a body.
 		#
 		# @param newval [String]
-		def body(newval) end
+		def put_Body(newval) end
 
-		# returns String
+		# The "return-path" address of the email to be used when the email is sent. Bounces (i.e. delivery
+		# status notifications, or DSN's) will go to this address.
+		# 
+		# Note: This is not the content
+		# of the "return-path" header for emails that are downloaded from a POP3 or IMAP server. The
+		# BounceAddress is the email address to be used in the process of sending the email via SMTP. (See the
+		# "SMTP Protocol in a Nutshell" link below.) The BounceAddress is the email address passed in the
+		# "MAIL FROM" SMTP command which becomes the "return-path" header in the email when
+		# received.
+		# Note: The Sender and BounceAddress properties are identical and perform the same
+		# function. Setting the Sender property also sets the BounceAddress property, and vice-versa. The
+		# reason for the duplication is that BounceAddress existed first, and developers typically searched
+		# for a "Sender" property without realizing that the BounceAddress property served this function.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_BounceAddress() end
+		def get_BounceAddress(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The "return-path" address of the email to be used when the email is sent. Bounces (i.e. delivery
+		# status notifications, or DSN's) will go to this address.
+		# 
+		# Note: This is not the content
+		# of the "return-path" header for emails that are downloaded from a POP3 or IMAP server. The
+		# BounceAddress is the email address to be used in the process of sending the email via SMTP. (See the
+		# "SMTP Protocol in a Nutshell" link below.) The BounceAddress is the email address passed in the
+		# "MAIL FROM" SMTP command which becomes the "return-path" header in the email when
+		# received.
+		# Note: The Sender and BounceAddress properties are identical and perform the same
+		# function. Setting the Sender property also sets the BounceAddress property, and vice-versa. The
+		# reason for the duplication is that BounceAddress existed first, and developers typically searched
+		# for a "Sender" property without realizing that the BounceAddress property served this function.
 		#
 		# @param newval [String]
-		def set_BounceAddress(newval) end
+		def put_BounceAddress(newval) end
 
-		# returns String
+		# The "return-path" address of the email to be used when the email is sent. Bounces (i.e. delivery
+		# status notifications, or DSN's) will go to this address.
+		# 
+		# Note: This is not the content
+		# of the "return-path" header for emails that are downloaded from a POP3 or IMAP server. The
+		# BounceAddress is the email address to be used in the process of sending the email via SMTP. (See the
+		# "SMTP Protocol in a Nutshell" link below.) The BounceAddress is the email address passed in the
+		# "MAIL FROM" SMTP command which becomes the "return-path" header in the email when
+		# received.
+		# Note: The Sender and BounceAddress properties are identical and perform the same
+		# function. Setting the Sender property also sets the BounceAddress property, and vice-versa. The
+		# reason for the duplication is that BounceAddress existed first, and developers typically searched
+		# for a "Sender" property without realizing that the BounceAddress property served this function.
+		#
 		# @return [String]
 		def bounceAddress() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The "return-path" address of the email to be used when the email is sent. Bounces (i.e. delivery
+		# status notifications, or DSN's) will go to this address.
+		# 
+		# Note: This is not the content
+		# of the "return-path" header for emails that are downloaded from a POP3 or IMAP server. The
+		# BounceAddress is the email address to be used in the process of sending the email via SMTP. (See the
+		# "SMTP Protocol in a Nutshell" link below.) The BounceAddress is the email address passed in the
+		# "MAIL FROM" SMTP command which becomes the "return-path" header in the email when
+		# received.
+		# Note: The Sender and BounceAddress properties are identical and perform the same
+		# function. Setting the Sender property also sets the BounceAddress property, and vice-versa. The
+		# reason for the duplication is that BounceAddress existed first, and developers typically searched
+		# for a "Sender" property without realizing that the BounceAddress property served this function.
 		#
 		# @param newval [String]
-		def bounceAddress(newval) end
+		def put_BounceAddress(newval) end
 
-		# returns String
+		# Sets the charset for the entire email. The header fields and plain-text/HTML bodies will be
+		# converted and sent in this charset. (This includes parsing and updating the HTML with the
+		# appropriate META tag specifying the charset.) All formatting and encoding of the email MIME is
+		# handled automatically by the Chilkat Mail component. If your application wants to send a Shift_JIS
+		# email, you simply set the Charset property to "Shift_JIS". Note: If a charset property is not
+		# explicitly set, the Chilkat component automatically detects the charset and chooses the appropriate
+		# charset. If all characters are 7bit (i.e. us-ascii) the charset is left blank. If the email contain
+		# a mix of languages such that no one charset can be chosen, or if the language cannot be determined
+		# without ambiguity, then the "utf-8" charset will be chosen.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Charset() end
+		def get_Charset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Sets the charset for the entire email. The header fields and plain-text/HTML bodies will be
+		# converted and sent in this charset. (This includes parsing and updating the HTML with the
+		# appropriate META tag specifying the charset.) All formatting and encoding of the email MIME is
+		# handled automatically by the Chilkat Mail component. If your application wants to send a Shift_JIS
+		# email, you simply set the Charset property to "Shift_JIS". Note: If a charset property is not
+		# explicitly set, the Chilkat component automatically detects the charset and chooses the appropriate
+		# charset. If all characters are 7bit (i.e. us-ascii) the charset is left blank. If the email contain
+		# a mix of languages such that no one charset can be chosen, or if the language cannot be determined
+		# without ambiguity, then the "utf-8" charset will be chosen.
 		#
 		# @param newval [String]
-		def set_Charset(newval) end
+		def put_Charset(newval) end
 
-		# returns String
+		# Sets the charset for the entire email. The header fields and plain-text/HTML bodies will be
+		# converted and sent in this charset. (This includes parsing and updating the HTML with the
+		# appropriate META tag specifying the charset.) All formatting and encoding of the email MIME is
+		# handled automatically by the Chilkat Mail component. If your application wants to send a Shift_JIS
+		# email, you simply set the Charset property to "Shift_JIS". Note: If a charset property is not
+		# explicitly set, the Chilkat component automatically detects the charset and chooses the appropriate
+		# charset. If all characters are 7bit (i.e. us-ascii) the charset is left blank. If the email contain
+		# a mix of languages such that no one charset can be chosen, or if the language cannot be determined
+		# without ambiguity, then the "utf-8" charset will be chosen.
+		#
 		# @return [String]
 		def charset() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Sets the charset for the entire email. The header fields and plain-text/HTML bodies will be
+		# converted and sent in this charset. (This includes parsing and updating the HTML with the
+		# appropriate META tag specifying the charset.) All formatting and encoding of the email MIME is
+		# handled automatically by the Chilkat Mail component. If your application wants to send a Shift_JIS
+		# email, you simply set the Charset property to "Shift_JIS". Note: If a charset property is not
+		# explicitly set, the Chilkat component automatically detects the charset and chooses the appropriate
+		# charset. If all characters are 7bit (i.e. us-ascii) the charset is left blank. If the email contain
+		# a mix of languages such that no one charset can be chosen, or if the language cannot be determined
+		# without ambiguity, then the "utf-8" charset will be chosen.
 		#
 		# @param newval [String]
-		def charset(newval) end
+		def put_Charset(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# _TRUE_ if the email arrived encrypted and was successfully decrypted, otherwise _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_Decrypted() end
 
-		# returns Object
-		# This method has been deprecated. Do not use it.
+		# The date/time from the "Date" header in UTC/GMT standard time. Use the LocalDate property to get the
+		# local date and time. This property should no longer be used because it will be removed in a future
+		# version. Use the GetDt method instead.
+		#
+		# @param newval [Object]
+		#
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
-		def get_EmailDate() end
+		def get_EmailDate(newval) end
 
-		# ==== Attributes
-		# +newval+ - Object
-		# This method has been deprecated. Do not use it.
+		# The date/time from the "Date" header in UTC/GMT standard time. Use the LocalDate property to get the
+		# local date and time. This property should no longer be used because it will be removed in a future
+		# version. Use the GetDt method instead.
 		#
 		# @param newval [Object]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
-		def set_EmailDate(newval) end
+		def put_EmailDate(newval) end
 
-		# returns String
+		# The date/time from the "Date" header in the UTC/GMT timezone in RFC822 string form.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_EmailDateStr() end
+		def get_EmailDateStr(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The date/time from the "Date" header in the UTC/GMT timezone in RFC822 string form.
 		#
 		# @param newval [String]
-		def set_EmailDateStr(newval) end
+		def put_EmailDateStr(newval) end
 
-		# returns String
+		# The date/time from the "Date" header in the UTC/GMT timezone in RFC822 string form.
+		#
 		# @return [String]
 		def emailDateStr() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The date/time from the "Date" header in the UTC/GMT timezone in RFC822 string form.
 		#
 		# @param newval [String]
-		def emailDateStr(newval) end
+		def put_EmailDateStr(newval) end
 
-		# returns String
+		# If the email was received encrypted, this contains the details of the certificate used for
+		# encryption.
+		#
 		# @return [String]
 		def get_EncryptedBy() end
 
-		# returns String
+		# If the email was received encrypted, this contains the details of the certificate used for
+		# encryption.
+		#
 		# @return [String]
 		def encryptedBy() end
 
-		# returns String
+		# Set this property to send an email to a list of recipients stored in a plain text file. The file
+		# format is simple: one recipient per line, no comments allowed, blank lines are ignored.Setting this
+		# property is equivalent to adding a "CKX-FileDistList"header field to the email. Chilkat Mail treats
+		# header fields beginning with "CKX-"specially in that these fields are never transmitted with the
+		# email when sent. However, CKX fields are saved and restored when saving to XML or loading from XML
+		# (or MIME). When sending an email containing a "CKX-FileDistList"header field, Chilkat Mail will read
+		# the distribution list file and send the email to each recipient. Emails can be sent individually, or
+		# with BCC, 100 recipients at a time. (see the MailMan.SendIndividual property).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_FileDistList() end
+		def get_FileDistList(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Set this property to send an email to a list of recipients stored in a plain text file. The file
+		# format is simple: one recipient per line, no comments allowed, blank lines are ignored.Setting this
+		# property is equivalent to adding a "CKX-FileDistList"header field to the email. Chilkat Mail treats
+		# header fields beginning with "CKX-"specially in that these fields are never transmitted with the
+		# email when sent. However, CKX fields are saved and restored when saving to XML or loading from XML
+		# (or MIME). When sending an email containing a "CKX-FileDistList"header field, Chilkat Mail will read
+		# the distribution list file and send the email to each recipient. Emails can be sent individually, or
+		# with BCC, 100 recipients at a time. (see the MailMan.SendIndividual property).
 		#
 		# @param newval [String]
-		def set_FileDistList(newval) end
+		def put_FileDistList(newval) end
 
-		# returns String
+		# Set this property to send an email to a list of recipients stored in a plain text file. The file
+		# format is simple: one recipient per line, no comments allowed, blank lines are ignored.Setting this
+		# property is equivalent to adding a "CKX-FileDistList"header field to the email. Chilkat Mail treats
+		# header fields beginning with "CKX-"specially in that these fields are never transmitted with the
+		# email when sent. However, CKX fields are saved and restored when saving to XML or loading from XML
+		# (or MIME). When sending an email containing a "CKX-FileDistList"header field, Chilkat Mail will read
+		# the distribution list file and send the email to each recipient. Emails can be sent individually, or
+		# with BCC, 100 recipients at a time. (see the MailMan.SendIndividual property).
+		#
 		# @return [String]
 		def fileDistList() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Set this property to send an email to a list of recipients stored in a plain text file. The file
+		# format is simple: one recipient per line, no comments allowed, blank lines are ignored.Setting this
+		# property is equivalent to adding a "CKX-FileDistList"header field to the email. Chilkat Mail treats
+		# header fields beginning with "CKX-"specially in that these fields are never transmitted with the
+		# email when sent. However, CKX fields are saved and restored when saving to XML or loading from XML
+		# (or MIME). When sending an email containing a "CKX-FileDistList"header field, Chilkat Mail will read
+		# the distribution list file and send the email to each recipient. Emails can be sent individually, or
+		# with BCC, 100 recipients at a time. (see the MailMan.SendIndividual property).
 		#
 		# @param newval [String]
-		def fileDistList(newval) end
+		def put_FileDistList(newval) end
 
-		# returns String
+		# The combined name and email address of the sender, such as "John Smith" . This is the content that
+		# will be placed in the From: header field. If the actual sender is to be different, then set the
+		# Sender property to a different email address.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_From() end
+		def get_From(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The combined name and email address of the sender, such as "John Smith" . This is the content that
+		# will be placed in the From: header field. If the actual sender is to be different, then set the
+		# Sender property to a different email address.
 		#
 		# @param newval [String]
-		def set_From(newval) end
+		def put_From(newval) end
 
-		# returns String
+		# The combined name and email address of the sender, such as "John Smith" . This is the content that
+		# will be placed in the From: header field. If the actual sender is to be different, then set the
+		# Sender property to a different email address.
+		#
 		# @return [String]
 		def from() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The combined name and email address of the sender, such as "John Smith" . This is the content that
+		# will be placed in the From: header field. If the actual sender is to be different, then set the
+		# Sender property to a different email address.
 		#
 		# @param newval [String]
-		def from(newval) end
+		def put_From(newval) end
 
-		# returns String
+		# The email address of the sender.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_FromAddress() end
+		def get_FromAddress(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The email address of the sender.
 		#
 		# @param newval [String]
-		def set_FromAddress(newval) end
+		def put_FromAddress(newval) end
 
-		# returns String
+		# The email address of the sender.
+		#
 		# @return [String]
 		def fromAddress() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The email address of the sender.
 		#
 		# @param newval [String]
-		def fromAddress(newval) end
+		def put_FromAddress(newval) end
 
-		# returns String
+		# The name of the sender.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_FromName() end
+		def get_FromName(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The name of the sender.
 		#
 		# @param newval [String]
-		def set_FromName(newval) end
+		def put_FromName(newval) end
 
-		# returns String
+		# The name of the sender.
+		#
 		# @return [String]
 		def fromName() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The name of the sender.
 		#
 		# @param newval [String]
-		def fromName(newval) end
+		def put_FromName(newval) end
 
-		# returns String
+		# The complete MIME header of the email.
+		#
 		# @return [String]
 		def get_Header() end
 
-		# returns String
+		# The complete MIME header of the email.
+		#
 		# @return [String]
 		def header() end
 
-		# returns String
+		# A read-only property that identifies the primary language group for the email. Possible values
+		# are:
+		# 
+		# 
+		# "latin1" (for English and all Western European languages)
+		# "central"
+		# (for Central European languages such as Polish, Czech, Hungarian, etc.)
+		# "russian" (for
+		# Cyrillic
+		# languages)
+		# "greek"
+		# "turkish"
+		# "hebrew"
+		# "arabic"
+		# "thai"
+		# "vietnamese"
+		# "chinese"
+		# "japanese"
+		# "korean"
+		# "devanagari"
+		# "bengali"
+		# "gurmukhi"
+		# "gujarati"
+		# "oriya"
+		# "tamil"
+		# "telugu"
+		# "kannada"
+		# "malayalam"
+		# "sinhala"
+		# "lao"
+		# "tibetan"
+		# "myanmar"
+		# "georgian"
+		# "unknown"
+		# 
+		# 
+		# The
+		# language group determination is made soley on the subject and plain-text/HTML email bodies.
+		# Characters in the FROM, TO, CC, and other header fields are not considered.
+		# The primary
+		# determining factor is the characters found in the Subject header field. For example, if an email
+		# contains Japanese in the Subject, but the body contains Russian characters, it will be considered
+		# "japanese".
+		# The language is determined by where the Unicode chars fall in various blocks in
+		# the Unicode Basic Multilingual Plane. For more information, see the book "Unicode Demystified" by
+		# Richard Gillam.
+		#
 		# @return [String]
 		def get_Language() end
 
-		# returns String
+		# A read-only property that identifies the primary language group for the email. Possible values
+		# are:
+		# 
+		# 
+		# "latin1" (for English and all Western European languages)
+		# "central"
+		# (for Central European languages such as Polish, Czech, Hungarian, etc.)
+		# "russian" (for
+		# Cyrillic
+		# languages)
+		# "greek"
+		# "turkish"
+		# "hebrew"
+		# "arabic"
+		# "thai"
+		# "vietnamese"
+		# "chinese"
+		# "japanese"
+		# "korean"
+		# "devanagari"
+		# "bengali"
+		# "gurmukhi"
+		# "gujarati"
+		# "oriya"
+		# "tamil"
+		# "telugu"
+		# "kannada"
+		# "malayalam"
+		# "sinhala"
+		# "lao"
+		# "tibetan"
+		# "myanmar"
+		# "georgian"
+		# "unknown"
+		# 
+		# 
+		# The
+		# language group determination is made soley on the subject and plain-text/HTML email bodies.
+		# Characters in the FROM, TO, CC, and other header fields are not considered.
+		# The primary
+		# determining factor is the characters found in the Subject header field. For example, if an email
+		# contains Japanese in the Subject, but the body contains Russian characters, it will be considered
+		# "japanese".
+		# The language is determined by where the Unicode chars fall in various blocks in
+		# the Unicode Basic Multilingual Plane. For more information, see the book "Unicode Demystified" by
+		# Richard Gillam.
+		#
 		# @return [String]
 		def language() end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Object
-		# This method has been deprecated. Do not use it.
+		# The date/time found in the "Date" header field returned in the local timezone. This property should
+		# no longer be used because it will be removed in a future version. Use the GetDt method instead.
+		#
+		# @param newval [Object]
+		#
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
-		def get_LocalDate() end
+		def get_LocalDate(newval) end
 
-		# ==== Attributes
-		# +newval+ - Object
-		# This method has been deprecated. Do not use it.
+		# The date/time found in the "Date" header field returned in the local timezone. This property should
+		# no longer be used because it will be removed in a future version. Use the GetDt method instead.
 		#
 		# @param newval [Object]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
-		def set_LocalDate(newval) end
+		def put_LocalDate(newval) end
 
-		# returns String
+		# The date/time found in the "Date" header field returned in the local timezone in RFC822 string form.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LocalDateStr() end
+		def get_LocalDateStr(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The date/time found in the "Date" header field returned in the local timezone in RFC822 string form.
 		#
 		# @param newval [String]
-		def set_LocalDateStr(newval) end
+		def put_LocalDateStr(newval) end
 
-		# returns String
+		# The date/time found in the "Date" header field returned in the local timezone in RFC822 string form.
+		#
 		# @return [String]
 		def localDateStr() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The date/time found in the "Date" header field returned in the local timezone in RFC822 string form.
 		#
 		# @param newval [String]
-		def localDateStr(newval) end
+		def put_LocalDateStr(newval) end
 
-		# returns String
+		# Identifies the email software that sent the email.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Mailer() end
+		def get_Mailer(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Identifies the email software that sent the email.
 		#
 		# @param newval [String]
-		def set_Mailer(newval) end
+		def put_Mailer(newval) end
 
-		# returns String
+		# Identifies the email software that sent the email.
+		#
 		# @return [String]
 		def mailer() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Identifies the email software that sent the email.
 		#
 		# @param newval [String]
-		def mailer(newval) end
+		def put_Mailer(newval) end
 
-		# returns Bignum
+		# The number of alternative bodies present in the email. An email that is not
+		# "multipart/alternative"will return 0 alternatives. An email that is "multipart/alternative" will
+		# return a number greater than or equal to 1.
+		#
 		# @return [Bignum]
 		def get_NumAlternatives() end
 
-		# returns Bignum
+		# Returns the number of embedded emails. Some mail clients will embed an email that is to be forwarded
+		# into a new email as a "message/rfc822" subpart of the MIME message structure. This property tells
+		# how many emails have been embedded. The original email can be retrieved by calling
+		# GetAttachedMessage.
+		#
 		# @return [Bignum]
 		def get_NumAttachedMessages() end
 
-		# returns Bignum
+		# The number of attachments contained in the email.
+		# 
+		# Note: If an email is downloaded from
+		# an IMAP server without attachments, then the number of attachments should be obtained by calling the
+		# IMAP object's GetMailNumAttach method. This property indicates the actual number of attachments
+		# already present within the email object.
+		#
 		# @return [Bignum]
 		def get_NumAttachments() end
 
-		# returns Bignum
+		# The number of blind carbon-copy email recipients.
+		#
 		# @return [Bignum]
 		def get_NumBcc() end
 
-		# returns Bignum
+		# The number of carbon-copy email recipients.
+		#
 		# @return [Bignum]
 		def get_NumCC() end
 
-		# returns Bignum
+		# Returns the number of days old from the current system date/time. The email's date is obtained from
+		# the "Date" header field. If the Date header field is missing, or invalid, then -9999 is returned. A
+		# negative number may be returned if the Date header field contains a future date/time. (However,
+		# -9999 represents an error condition.)
+		#
 		# @return [Bignum]
 		def get_NumDaysOld() end
 
-		# returns Bignum
+		# Returns the number of message/rfc822 parts contained within the multipart/digest enclosure. If no
+		# multipart/digest enclosure exists, then this property has the value of 0. The GetDigest method is
+		# called to get the Nth digest as an email object.
+		#
 		# @return [Bignum]
 		def get_NumDigests() end
 
-		# returns Bignum
+		# The number of header fields. When accessing a header field by index, the 1st header field is at
+		# index 0, and the last is at NumHeaderFields-1. (Chilkat indexing is always 0-based.)
+		#
 		# @return [Bignum]
 		def get_NumHeaderFields() end
 
-		# returns Bignum
+		# The number of related items present in this email. Related items are typically image files (JPEGs or
+		# GIFs) or style sheets (CSS files) that are included with HTML formatted messages with internal
+		# "CID"hyperlinks.
+		#
 		# @return [Bignum]
 		def get_NumRelatedItems() end
 
-		# returns Bignum
+		# Returns the number of replacement patterns previously set by calling the SetReplacePattern method 1
+		# or more times. If replacement patterns are set, the email bodies and header fields are modified by
+		# applying the search/replacement strings during the message sending process.
+		#
 		# @return [Bignum]
 		def get_NumReplacePatterns() end
 
-		# returns Bignum
+		# (For multipart/report emails that have sub-parts with Content-Types such as
+		# message/feedback-report.) Any MIME sub-part within the email that has a Content-Type of "message/*",
+		# but is not a "message/rfc822", is considered to be a "report" and is included in this count. (A
+		# "message/rfc822" is considered an attached message and is handled by the NumAttachedMessages
+		# property and the GetAttachedMessage method.) 
+		# 
+		# Any MIME sub-part having a Content-Type
+		# equal to "text/rfc822-headers" is also considered to be a "report". 
+		# 
+		# The GetReport
+		# method may be called to get the body content of each "report" contained within a multipart/report
+		# email.
+		#
 		# @return [Bignum]
 		def get_NumReports() end
 
-		# returns Bignum
+		# The number of direct email recipients.
+		#
 		# @return [Bignum]
 		def get_NumTo() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When _TRUE_ (the default) the methods to save email attachments and related items will overwrite
+		# files if they already exist. If _FALSE_, then the methods that save email attachments and related
+		# items will append a string of 4 characters to create a unique filename if a file already exists. The
+		# filename of the attachment (or related item) within the email object is updated and can be retrieved
+		# by the program to determine the actual file(s) created.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_OverwriteExisting() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When _TRUE_ (the default) the methods to save email attachments and related items will overwrite
+		# files if they already exist. If _FALSE_, then the methods that save email attachments and related
+		# items will append a string of 4 characters to create a unique filename if a file already exists. The
+		# filename of the attachment (or related item) within the email object is updated and can be retrieved
+		# by the program to determine the actual file(s) created.
 		#
-		# @param newval [Bignum]
-		def set_OverwriteExisting(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_OverwriteExisting(newval) end
 
-		# returns String
+		# When an email is sent encrypted (using PKCS7 public-key encryption), this selects the underlying
+		# symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2". The default
+		# value is "aes".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Pkcs7CryptAlg() end
+		def get_Pkcs7CryptAlg(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When an email is sent encrypted (using PKCS7 public-key encryption), this selects the underlying
+		# symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2". The default
+		# value is "aes".
 		#
 		# @param newval [String]
-		def set_Pkcs7CryptAlg(newval) end
+		def put_Pkcs7CryptAlg(newval) end
 
-		# returns String
+		# When an email is sent encrypted (using PKCS7 public-key encryption), this selects the underlying
+		# symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2". The default
+		# value is "aes".
+		#
 		# @return [String]
 		def pkcs7CryptAlg() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# When an email is sent encrypted (using PKCS7 public-key encryption), this selects the underlying
+		# symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2". The default
+		# value is "aes".
 		#
 		# @param newval [String]
-		def pkcs7CryptAlg(newval) end
+		def put_Pkcs7CryptAlg(newval) end
 
-		# returns Bignum
+		# When the email is sent encrypted (using PKCS7 public-key encryption), this selects the key length of
+		# the underlying symmetric encryption algorithm. The possible values allowed depend on the
+		# Pkcs7CryptAlg property. For "aes", the key length may be 128, 192, or 256. For "3des" the key length
+		# must be 192. For "des" the key length must be 40. For "rc2" the key length can be 40, 56, 64, or
+		# 128.
+		#
 		# @return [Bignum]
 		def get_Pkcs7KeyLength() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# When the email is sent encrypted (using PKCS7 public-key encryption), this selects the key length of
+		# the underlying symmetric encryption algorithm. The possible values allowed depend on the
+		# Pkcs7CryptAlg property. For "aes", the key length may be 128, 192, or 256. For "3des" the key length
+		# must be 192. For "des" the key length must be 40. For "rc2" the key length can be 40, 56, 64, or
+		# 128.
 		#
 		# @param newval [Bignum]
-		def set_Pkcs7KeyLength(newval) end
+		def put_Pkcs7KeyLength(newval) end
 
-		# returns String
+		# Only applies when building an email with non-English characters where the charset is not explicitly
+		# set. The Chilkat email component will automatically choose a charset based on the languages found
+		# within an email (if the charset is not already specified within the MIME or explicitly specified by
+		# setting the Charset property). The default charset chosen for each language
+		# is:
+		# 
+		# Chinese: gb2312
+		# Japanese: shift_JIS
+		# Korean: ks_c_5601-1987
+		# Thai:
+		# windows-874
+		# All others: iso-8859-*
+		# 
+		# This allows for charsets such as iso-2022-jp
+		# to be chosen instead of the default. If the preferred charset does not apply to the situation, it is
+		# not used. For example, if the preferred charset is iso-2022-jp, but the email contains Greek
+		# characters, then the preferred charset is ignored.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_PreferredCharset() end
+		def get_PreferredCharset(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Only applies when building an email with non-English characters where the charset is not explicitly
+		# set. The Chilkat email component will automatically choose a charset based on the languages found
+		# within an email (if the charset is not already specified within the MIME or explicitly specified by
+		# setting the Charset property). The default charset chosen for each language
+		# is:
+		# 
+		# Chinese: gb2312
+		# Japanese: shift_JIS
+		# Korean: ks_c_5601-1987
+		# Thai:
+		# windows-874
+		# All others: iso-8859-*
+		# 
+		# This allows for charsets such as iso-2022-jp
+		# to be chosen instead of the default. If the preferred charset does not apply to the situation, it is
+		# not used. For example, if the preferred charset is iso-2022-jp, but the email contains Greek
+		# characters, then the preferred charset is ignored.
 		#
 		# @param newval [String]
-		def set_PreferredCharset(newval) end
+		def put_PreferredCharset(newval) end
 
-		# returns String
+		# Only applies when building an email with non-English characters where the charset is not explicitly
+		# set. The Chilkat email component will automatically choose a charset based on the languages found
+		# within an email (if the charset is not already specified within the MIME or explicitly specified by
+		# setting the Charset property). The default charset chosen for each language
+		# is:
+		# 
+		# Chinese: gb2312
+		# Japanese: shift_JIS
+		# Korean: ks_c_5601-1987
+		# Thai:
+		# windows-874
+		# All others: iso-8859-*
+		# 
+		# This allows for charsets such as iso-2022-jp
+		# to be chosen instead of the default. If the preferred charset does not apply to the situation, it is
+		# not used. For example, if the preferred charset is iso-2022-jp, but the email contains Greek
+		# characters, then the preferred charset is ignored.
+		#
 		# @return [String]
 		def preferredCharset() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Only applies when building an email with non-English characters where the charset is not explicitly
+		# set. The Chilkat email component will automatically choose a charset based on the languages found
+		# within an email (if the charset is not already specified within the MIME or explicitly specified by
+		# setting the Charset property). The default charset chosen for each language
+		# is:
+		# 
+		# Chinese: gb2312
+		# Japanese: shift_JIS
+		# Korean: ks_c_5601-1987
+		# Thai:
+		# windows-874
+		# All others: iso-8859-*
+		# 
+		# This allows for charsets such as iso-2022-jp
+		# to be chosen instead of the default. If the preferred charset does not apply to the situation, it is
+		# not used. For example, if the preferred charset is iso-2022-jp, but the email contains Greek
+		# characters, then the preferred charset is ignored.
 		#
 		# @param newval [String]
-		def preferredCharset(newval) end
+		def put_PreferredCharset(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# If _TRUE_, then header fields added via the AddHeaderField or AddHeaderField2 methods are prepended
+		# to the top of the header as opposed to appended to the bottom. The default value is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_PrependHeaders() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If _TRUE_, then header fields added via the AddHeaderField or AddHeaderField2 methods are prepended
+		# to the top of the header as opposed to appended to the bottom. The default value is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_PrependHeaders(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_PrependHeaders(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# _TRUE_ if this email was originally received with encryption, otherwise _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_ReceivedEncrypted() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# _TRUE_ if this email was originally received with a digital signature, otherwise _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_ReceivedSigned() end
 
-		# returns String
+		# Sets the "Reply-To" header field to the specified email address.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_ReplyTo() end
+		def get_ReplyTo(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Sets the "Reply-To" header field to the specified email address.
 		#
 		# @param newval [String]
-		def set_ReplyTo(newval) end
+		def put_ReplyTo(newval) end
 
-		# returns String
+		# Sets the "Reply-To" header field to the specified email address.
+		#
 		# @return [String]
 		def replyTo() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Sets the "Reply-To" header field to the specified email address.
 		#
 		# @param newval [String]
-		def replyTo(newval) end
+		def put_ReplyTo(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Set to _TRUE_ if you want the email to request a return-receipt when received by the recipient. The
+		# default value is _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_ReturnReceipt() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Set to _TRUE_ if you want the email to request a return-receipt when received by the recipient. The
+		# default value is _FALSE_.
 		#
-		# @param newval [Bignum]
-		def set_ReturnReceipt(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_ReturnReceipt(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Set to _TRUE_ if this email should be sent encrypted.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_SendEncrypted() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Set to _TRUE_ if this email should be sent encrypted.
 		#
-		# @param newval [Bignum]
-		def set_SendEncrypted(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_SendEncrypted(newval) end
 
-		# returns String
+		# The sender's address for this email message.
+		# 
+		# This is the address of the actual sender
+		# acting on behalf of the author listed in the From: field. 
+		# Note: The Sender and BounceAddress
+		# properties are identical and perform the same function. Setting the Sender property also sets the
+		# BounceAddress property, and vice-versa. The reason for the duplication is that BounceAddress existed
+		# first, and developers typically searched for a "Sender" property without realizing that the
+		# BounceAddress property served this function.
+		# Important Note: This property does not contain
+		# the value of the "Sender" header field, if one exists, for a received email. It is a property that
+		# is used when sending email. To get the value of the "Sender" header field (which may not always
+		# exist), call the GetHeaderField method instead.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Sender() end
+		def get_Sender(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The sender's address for this email message.
+		# 
+		# This is the address of the actual sender
+		# acting on behalf of the author listed in the From: field. 
+		# Note: The Sender and BounceAddress
+		# properties are identical and perform the same function. Setting the Sender property also sets the
+		# BounceAddress property, and vice-versa. The reason for the duplication is that BounceAddress existed
+		# first, and developers typically searched for a "Sender" property without realizing that the
+		# BounceAddress property served this function.
+		# Important Note: This property does not contain
+		# the value of the "Sender" header field, if one exists, for a received email. It is a property that
+		# is used when sending email. To get the value of the "Sender" header field (which may not always
+		# exist), call the GetHeaderField method instead.
 		#
 		# @param newval [String]
-		def set_Sender(newval) end
+		def put_Sender(newval) end
 
-		# returns String
+		# The sender's address for this email message.
+		# 
+		# This is the address of the actual sender
+		# acting on behalf of the author listed in the From: field. 
+		# Note: The Sender and BounceAddress
+		# properties are identical and perform the same function. Setting the Sender property also sets the
+		# BounceAddress property, and vice-versa. The reason for the duplication is that BounceAddress existed
+		# first, and developers typically searched for a "Sender" property without realizing that the
+		# BounceAddress property served this function.
+		# Important Note: This property does not contain
+		# the value of the "Sender" header field, if one exists, for a received email. It is a property that
+		# is used when sending email. To get the value of the "Sender" header field (which may not always
+		# exist), call the GetHeaderField method instead.
+		#
 		# @return [String]
 		def sender() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The sender's address for this email message.
+		# 
+		# This is the address of the actual sender
+		# acting on behalf of the author listed in the From: field. 
+		# Note: The Sender and BounceAddress
+		# properties are identical and perform the same function. Setting the Sender property also sets the
+		# BounceAddress property, and vice-versa. The reason for the duplication is that BounceAddress existed
+		# first, and developers typically searched for a "Sender" property without realizing that the
+		# BounceAddress property served this function.
+		# Important Note: This property does not contain
+		# the value of the "Sender" header field, if one exists, for a received email. It is a property that
+		# is used when sending email. To get the value of the "Sender" header field (which may not always
+		# exist), call the GetHeaderField method instead.
 		#
 		# @param newval [String]
-		def sender(newval) end
+		def put_Sender(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Set to _TRUE_ if this email should be sent with a digital signature.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_SendSigned() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Set to _TRUE_ if this email should be sent with a digital signature.
 		#
-		# @param newval [Bignum]
-		def set_SendSigned(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_SendSigned(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# _TRUE_ if the email was received with one or more digital signatures, and if all the signatures were
+		# validated indicating that the email was not altered. Otherwise this property is set to _FALSE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_SignaturesValid() end
 
-		# returns String
+		# If the email was received digitally signed, this property contains the fields of the cert's
+		# SubjectDN. 
+		# 
+		# For example: US, 60187, Illinois, Wheaton, 1719 E Forest Ave, "Chilkat
+		# Software, Inc.", "Chilkat Software, Inc."
+		# 
+		# It is like the DN (Distinguished Name), but
+		# without the "AttrName=" before each attribute.
+		#
 		# @return [String]
 		def get_SignedBy() end
 
-		# returns String
+		# If the email was received digitally signed, this property contains the fields of the cert's
+		# SubjectDN. 
+		# 
+		# For example: US, 60187, Illinois, Wheaton, 1719 E Forest Ave, "Chilkat
+		# Software, Inc.", "Chilkat Software, Inc."
+		# 
+		# It is like the DN (Distinguished Name), but
+		# without the "AttrName=" before each attribute.
+		#
 		# @return [String]
 		def signedBy() end
 
-		# returns String
+		# Selects the underlying hash algorithm used when sending signed (PKCS7) email. Possible values are
+		# "sha1", "sha256", "sha384", "sha512", "md5", and "md2".
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_SigningHashAlg() end
+		def get_SigningHashAlg(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the underlying hash algorithm used when sending signed (PKCS7) email. Possible values are
+		# "sha1", "sha256", "sha384", "sha512", "md5", and "md2".
 		#
 		# @param newval [String]
-		def set_SigningHashAlg(newval) end
+		def put_SigningHashAlg(newval) end
 
-		# returns String
+		# Selects the underlying hash algorithm used when sending signed (PKCS7) email. Possible values are
+		# "sha1", "sha256", "sha384", "sha512", "md5", and "md2".
+		#
 		# @return [String]
 		def signingHashAlg() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# Selects the underlying hash algorithm used when sending signed (PKCS7) email. Possible values are
+		# "sha1", "sha256", "sha384", "sha512", "md5", and "md2".
 		#
 		# @param newval [String]
-		def signingHashAlg(newval) end
+		def put_SigningHashAlg(newval) end
 
-		# returns Bignum
+		# The size in bytes of the email, including all parts and attachments.
+		#
 		# @return [Bignum]
 		def get_Size() end
 
-		# returns String
+		# The email subject.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Subject() end
+		def get_Subject(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The email subject.
 		#
 		# @param newval [String]
-		def set_Subject(newval) end
+		def put_Subject(newval) end
 
-		# returns String
+		# The email subject.
+		#
 		# @return [String]
 		def subject() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The email subject.
 		#
 		# @param newval [String]
-		def subject(newval) end
+		def put_Subject(newval) end
 
-		# returns String
+		# This is the unique ID assigned by the POP3 server. Emails can be retrieved or deleted from the POP3
+		# server via the UIDL. The header field for this property is "X-UIDL".
+		# 
+		# Important: Emails
+		# downloaded via the IMAP protocol do not have UIDL's. UIDL's are specific to the POP3 protocol. IMAP
+		# servers use UID's (notice the spelling difference -- "UIDL" vs. "UID"). An email downloaded via the
+		# Chilkat IMAP component will contain a "ckx-imap-uid" header field that contains the UID. This may be
+		# accessed via the GetHeaderField method.
+		#
 		# @return [String]
 		def get_Uidl() end
 
-		# returns String
+		# This is the unique ID assigned by the POP3 server. Emails can be retrieved or deleted from the POP3
+		# server via the UIDL. The header field for this property is "X-UIDL".
+		# 
+		# Important: Emails
+		# downloaded via the IMAP protocol do not have UIDL's. UIDL's are specific to the POP3 protocol. IMAP
+		# servers use UID's (notice the spelling difference -- "UIDL" vs. "UID"). An email downloaded via the
+		# Chilkat IMAP component will contain a "ckx-imap-uid" header field that contains the UID. This may be
+		# accessed via the GetHeaderField method.
+		#
 		# @return [String]
 		def uidl() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Applies to the UnpackHtml method. If _TRUE_, then relative paths are used within the HTML for the
+		# links to the related files (images and style sheets) that were unpacked to the filesystem. Otherwise
+		# absolute paths are used. The default value is _TRUE_.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_UnpackUseRelPaths() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Applies to the UnpackHtml method. If _TRUE_, then relative paths are used within the HTML for the
+		# links to the related files (images and style sheets) that were unpacked to the filesystem. Otherwise
+		# absolute paths are used. The default value is _TRUE_.
 		#
-		# @param newval [Bignum]
-		def set_UnpackUseRelPaths(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_UnpackUseRelPaths(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AddAttachmentBd
 		#
-		# ==== Attributes
+		# Adds an attachment using the contents of a BinData object. If ARG3 is empty, then the content-type
+		# will be inferred from the ARG1 extension.
 		#
-		# +filename+ - String
-		# +binData+ - CkBinData
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
+		# @param filename [String]
+		# @param binData [CkBinData]
+		# @param contentType [String]
 		#
-		# YARD =>
-		#
-		# @param  filename [String]
-		# @param  binData [CkBinData]
-		# @param  contentType [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddAttachmentBd(filename, binData, contentType)
 			# ...
 		end
 
+
 		# Method: AddAttachmentHeader
 		#
-		# ==== Attributes
+		# Adds or replaces a MIME header field in one of the email attachments. If the header field does not
+		# exist, it is added. Otherwise it is replaced.
 		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +fieldValue+ - String
-		# returns nil
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param fieldValue [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  fieldName [String]
-		# @param  fieldValue [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddAttachmentHeader(index, fieldName, fieldValue)
 			# ...
 		end
 
+
 		# Method: AddBcc
 		#
-		# ==== Attributes
+		# Adds a recipient to the blind carbon-copy list. address is required, but name may be empty.
 		#
-		# +friendlyName+ - String
-		# +emailAddress+ - String
-		# returns TrueClass, FalseClass
+		# @param friendlyName [String]
+		# @param emailAddress [String]
 		#
-		# YARD =>
-		#
-		# @param  friendlyName [String]
-		# @param  emailAddress [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddBcc(friendlyName, emailAddress)
 			# ...
 		end
 
+
 		# Method: AddCC
 		#
-		# ==== Attributes
+		# Adds a recipient to the carbon-copy list. address is required, but name may be empty.
 		#
-		# +friendlyName+ - String
-		# +emailAddress+ - String
-		# returns TrueClass, FalseClass
+		# @param friendlyName [String]
+		# @param emailAddress [String]
 		#
-		# YARD =>
-		#
-		# @param  friendlyName [String]
-		# @param  emailAddress [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddCC(friendlyName, emailAddress)
 			# ...
 		end
 
+
 		# Method: AddDataAttachment
 		#
-		# ==== Attributes
+		# Adds an attachment directly from data in memory to the email.
 		#
-		# +fileName+ - String
-		# +content+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param fileName [String]
+		# @param content [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  fileName [String]
-		# @param  content [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddDataAttachment(fileName, content)
 			# ...
 		end
 
+
 		# Method: AddDataAttachment2
 		#
-		# ==== Attributes
+		# Adds an attachment to an email from in-memory data. Same as AddDataAttachment but allows the
+		# content-type to be specified.
 		#
-		# +fileName+ - String
-		# +content+ - CkByteData
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
+		# @param fileName [String]
+		# @param content [CkByteData]
+		# @param contentType [String]
 		#
-		# YARD =>
-		#
-		# @param  fileName [String]
-		# @param  content [CkByteData]
-		# @param  contentType [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddDataAttachment2(fileName, content, contentType)
 			# ...
 		end
 
+
 		# Method: AddEncryptCert
 		#
-		# ==== Attributes
+		# Allows for certificates to be explicitly specified for sending encrypted email to one or more
+		# recipients. Call this method once per certificate to be used. The ClearEncryptCerts method may be
+		# called to clear the list of explicitly-specified certificates. 
+		# 
+		# Note: It is possible to
+		# send encrypted email without explicitly specifying the certificates. The Chilkat email component
+		# will automatically search the registry-based Current-User and Local-Machine certificate stores for
+		# certs matching each of the recipients (To, CC, and BCC recipients). 
+		# 
+		# Note: The
+		# SentEncryptCert method is equivalent to calling ClearEncryptCerts followed by AddEncryptCert.
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddEncryptCert(cert)
 			# ...
 		end
 
+
 		# Method: AddFileAttachment
 		#
-		# ==== Attributes
+		# Adds a file as an attachment to the email. Returns the MIME content-type of the attachment, which is
+		# inferred based on the filename extension.
 		#
-		# +path+ - String
-		# returns String
+		# @param path [String]
+		# @param outStrContentType [CkString]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [String]
-		def AddFileAttachment(path)
+		# @return [TrueClass, FalseClass]
+		def AddFileAttachment(path, outStrContentType)
 			# ...
 		end
 
+
+		# Method: AddFileAttachment
+		#
+		# Adds a file as an attachment to the email. Returns the MIME content-type of the attachment, which is
+		# inferred based on the filename extension.
+		#
+		# @param path [String]
+		#
+		# @return [String]
+		def addFileAttachment(path)
+			# ...
+		end
+
+
 		# Method: AddFileAttachment2
 		#
-		# ==== Attributes
+		# Same as AddFileAttachment, but the content type can be explicitly specified.
 		#
-		# +path+ - String
-		# +contentType+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
+		# @param contentType [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @param  contentType [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddFileAttachment2(path, contentType)
 			# ...
 		end
 
+
 		# Method: AddHeaderField
 		#
-		# ==== Attributes
+		# Any standard or non-standard (custom) header field can be added to the email with this method. One
+		# interesting feature is that all header fields whose name begins with "CKX-" will not be included in
+		# the header when an email is sent. These fields will be included when saved to or loaded from XML.
+		# This makes it easy to include persistent meta-data with an email which your programs can use in any
+		# way it chooses.
+		# 
+		# Important: This method will replace an already-existing header field.
+		# To allow for adding duplicate header fields, call AddHeaderField2 (see below).
 		#
-		# +fieldName+ - String
-		# +fieldValue+ - String
-		# returns nil
+		# @param fieldName [String]
+		# @param fieldValue [String]
 		#
-		# YARD =>
-		#
-		# @param  fieldName [String]
-		# @param  fieldValue [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddHeaderField(fieldName, fieldValue)
 			# ...
 		end
 
+
 		# Method: AddHeaderField2
 		#
-		# ==== Attributes
+		# This method is the same as AddHeaderField, except that if the header field already exists, it is not
+		# replaced. A duplicate header will be added.
 		#
-		# +fieldName+ - String
-		# +fieldValue+ - String
-		# returns nil
+		# @param fieldName [String]
+		# @param fieldValue [String]
 		#
-		# YARD =>
-		#
-		# @param  fieldName [String]
-		# @param  fieldValue [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddHeaderField2(fieldName, fieldValue)
 			# ...
 		end
 
+
 		# Method: AddHtmlAlternativeBody
 		#
-		# ==== Attributes
+		# Sets the HTML body of the email. Use this method if there will be multiple versions of the body, but
+		# in different formats, such as HTML and plain text. Otherwise, set the body by calling the
+		# SetHtmlBody method.
 		#
-		# +body+ - String
-		# returns TrueClass, FalseClass
+		# @param body [String]
 		#
-		# YARD =>
-		#
-		# @param  body [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddHtmlAlternativeBody(body)
 			# ...
 		end
 
+
 		# Method: AddiCalendarAlternativeBody
 		#
-		# ==== Attributes
+		# Adds an iCalendar (text/calendar) alternative body to the email. The ARG1 contains the content of
+		# the iCalendar data. A sample is shown
+		# here:
+		# 
+		# BEGIN:VCALENDAR
+		# VERSION:2.0
+		# PRODID:-//hacksw/handcal//NONSGML
+		# v1.0//EN
+		# BEGIN:VEVENT
+		# UID:uid1@example.com
+		# DTSTAMP:19970714T170000Z
+		# ORGANIZER;CN=John
+		# Doe:MAILTO:john.doe@example.com
+		# DTSTART:19970714T170000Z
+		# DTEND:19970715T035959Z
+		# SUMMARY:Bastille
+		# Day Party
+		# END:VEVENT
+		# END:VCALENDAR
+		# 
+		# The ARG2 is the "method" attribute used
+		# in the Content-Type header field in the alternative body. For example, if set to "REQUEST", then the
+		# alternative body's header would look like this:
+		# 
+		# Content-Type: text/calendar;
+		# method=REQUEST
+		# Content-Transfer-Encoding: base64
 		#
-		# +icalContent+ - String
-		# +methodName+ - String
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
+		# @param icalContent [String]
+		# @param methodName [String]
 		#
-		# @param  icalContent [String]
-		# @param  methodName [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddiCalendarAlternativeBody(icalContent, methodName)
 			# ...
 		end
 
+
 		# Method: AddMultipleBcc
 		#
-		# ==== Attributes
+		# Adds multiple recipients to the blind carbon-copy list. The parameter is a string containing a comma
+		# separated list of full email addresses. Returns True if successful.
 		#
-		# +commaSeparatedAddresses+ - String
-		# returns TrueClass, FalseClass
+		# @param commaSeparatedAddresses [String]
 		#
-		# YARD =>
-		#
-		# @param  commaSeparatedAddresses [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddMultipleBcc(commaSeparatedAddresses)
 			# ...
 		end
 
+
 		# Method: AddMultipleCC
 		#
-		# ==== Attributes
+		# Adds multiple recipients to the carbon-copy list. The parameter is a string containing a comma
+		# separated list of full email addresses. Returns True if successful.
 		#
-		# +commaSeparatedAddresses+ - String
-		# returns TrueClass, FalseClass
+		# @param commaSeparatedAddresses [String]
 		#
-		# YARD =>
-		#
-		# @param  commaSeparatedAddresses [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddMultipleCC(commaSeparatedAddresses)
 			# ...
 		end
 
+
 		# Method: AddMultipleTo
 		#
-		# ==== Attributes
+		# Adds multiple recipients to the "to" list. The parameter is a string containing a comma separated
+		# list of full email addresses. Returns True if successful.
 		#
-		# +commaSeparatedAddresses+ - String
-		# returns TrueClass, FalseClass
+		# @param commaSeparatedAddresses [String]
 		#
-		# YARD =>
-		#
-		# @param  commaSeparatedAddresses [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddMultipleTo(commaSeparatedAddresses)
 			# ...
 		end
 
+
 		# Method: AddPfxSourceData
 		#
-		# ==== Attributes
+		# Adds a PFX to the object's internal list of sources to be searched for certificates and private keys
+		# when decrypting. Multiple PFX sources can be added by calling this method once for each. (On the
+		# Windows operating system, the registry-based certificate stores are also automatically searched, so
+		# it is commonly not required to explicitly add PFX sources.)
+		# 
+		# The ARG1 contains the bytes
+		# of a PFX file (also known as PKCS12 or .p12).
 		#
-		# +pfxBytes+ - CkByteData
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param pfxBytes [CkByteData]
+		# @param pfxPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  pfxBytes [CkByteData]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceData(pfxBytes, pfxPassword)
 			# ...
 		end
 
+
 		# Method: AddPfxSourceFile
 		#
-		# ==== Attributes
+		# Adds a PFX file to the object's internal list of sources to be searched for certificates and private
+		# keys when decrypting. Multiple PFX files can be added by calling this method once for each. (On the
+		# Windows operating system, the registry-based certificate stores are also automatically searched, so
+		# it is commonly not required to explicitly add PFX sources.)
+		# 
+		# The ARG1 contains the bytes
+		# of a PFX file (also known as PKCS12 or .p12).
 		#
-		# +pfxFilePath+ - String
-		# +pfxPassword+ - String
-		# returns TrueClass, FalseClass
+		# @param pfxFilePath [String]
+		# @param pfxPassword [String]
 		#
-		# YARD =>
-		#
-		# @param  pfxFilePath [String]
-		# @param  pfxPassword [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceFile(pfxFilePath, pfxPassword)
 			# ...
 		end
 
+
 		# Method: AddPlainTextAlternativeBody
 		#
-		# ==== Attributes
+		# Sets the plain-text body of the email. Use this method if there will be multiple versions of the
+		# body, but in different formats, such as HTML and plain text. Otherwise, simply set the Body
+		# property.
 		#
-		# +body+ - String
-		# returns TrueClass, FalseClass
+		# @param body [String]
 		#
-		# YARD =>
-		#
-		# @param  body [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddPlainTextAlternativeBody(body)
 			# ...
 		end
 
+
 		# Method: AddRelatedBd
 		#
-		# ==== Attributes
+		# Adds a related item using the contents of a BinData object. Returns the Content-ID for the newly
+		# added relted item.
 		#
-		# +filename+ - String
-		# +binData+ - CkBinData
-		# returns String
+		# @param filename [String]
+		# @param binData [CkBinData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  filename [String]
-		# @param  binData [CkBinData]
-		# @return  [String]
-		def AddRelatedBd(filename, binData)
+		# @return [TrueClass, FalseClass]
+		def AddRelatedBd(filename, binData, outStr)
 			# ...
 		end
 
+
+		# Method: AddRelatedBd
+		#
+		# Adds a related item using the contents of a BinData object. Returns the Content-ID for the newly
+		# added relted item.
+		#
+		# @param filename [String]
+		# @param binData [CkBinData]
+		#
+		# @return [String]
+		def addRelatedBd(filename, binData)
+			# ...
+		end
+
+
 		# Method: AddRelatedBd2
 		#
-		# ==== Attributes
+		# Adds a related item using the contents of a BinData object. The ARG2 should be set to the
+		# filename/path/url used in the corresponding HTML IMG tag's "src" attribute.
 		#
-		# +binData+ - CkBinData
-		# +fileNameInHtml+ - String
-		# returns TrueClass, FalseClass
+		# @param binData [CkBinData]
+		# @param fileNameInHtml [String]
 		#
-		# YARD =>
-		#
-		# @param  binData [CkBinData]
-		# @param  fileNameInHtml [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddRelatedBd2(binData, fileNameInHtml)
 			# ...
 		end
 
+
 		# Method: AddRelatedData
 		#
-		# ==== Attributes
+		# Adds the memory data as a related item to the email and returns the Content-ID. Emails formatted in
+		# HTML can include images with this call and internally reference the image through a "cid"hyperlink.
+		# (Chilkat Email.NET fully supports the MHTML standard.)
 		#
-		# +fileName+ - String
-		# +inData+ - CkByteData
-		# returns String
+		# @param fileName [String]
+		# @param inData [CkByteData]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  fileName [String]
-		# @param  inData [CkByteData]
-		# @return  [String]
-		def AddRelatedData(fileName, inData)
+		# @return [TrueClass, FalseClass]
+		def AddRelatedData(fileName, inData, outStr)
 			# ...
 		end
 
+
+		# Method: AddRelatedData
+		#
+		# Adds the memory data as a related item to the email and returns the Content-ID. Emails formatted in
+		# HTML can include images with this call and internally reference the image through a "cid"hyperlink.
+		# (Chilkat Email.NET fully supports the MHTML standard.)
+		#
+		# @param fileName [String]
+		# @param inData [CkByteData]
+		#
+		# @return [String]
+		def addRelatedData(fileName, inData)
+			# ...
+		end
+
+
 		# Method: AddRelatedData2
 		#
-		# ==== Attributes
+		# Adds a related item to the email from in-memory byte data. Related items are things such as images
+		# and style sheets that are embedded within an HTML email. They are not considered attachments because
+		# their sole purpose is to participate in the display of the HTML. This method differs from
+		# AddRelatedData in that it does not use or return a Content-ID. The filename argument should be set
+		# to the filename used in the HTML img tag's src attribute (if it's an image), or the URL referenced
+		# in an HTML link tag for a stylesheet.
 		#
-		# +inData+ - CkByteData
-		# +fileNameInHtml+ - String
-		# returns nil
+		# @param inData [CkByteData]
+		# @param fileNameInHtml [String]
 		#
-		# YARD =>
-		#
-		# @param  inData [CkByteData]
-		# @param  fileNameInHtml [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddRelatedData2(inData, fileNameInHtml)
 			# ...
 		end
 
-		# Method: AddRelatedFile
+
+		# Method: AddRelatedData2P
 		#
-		# ==== Attributes
+		# The same as AddRelatedData2, except the data is passed in as a "const unsigned char *" with the byte
+		# count in ARG2.
 		#
-		# +path+ - String
-		# returns String
+		# @param pBytes [Object]
+		# @param szBytes [Fixnum]
+		# @param fileNameInHtml [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [String]
-		def AddRelatedFile(path)
+		# @return [nil]
+		def AddRelatedData2P(pBytes, szBytes, fileNameInHtml)
 			# ...
 		end
 
+
+		# Method: AddRelatedDataP
+		#
+		# The same as AddRelatedData, except the data is passed in as a "const unsigned char *" with the byte
+		# count in ARG3. The Content-ID assigned to the related item is returned (in ARG4 for the upper-case
+		# alternative for this method).
+		#
+		# @param nameInHtml [String]
+		# @param pBytes [Object]
+		# @param szBytes [Fixnum]
+		# @param outStrContentId [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def AddRelatedDataP(nameInHtml, pBytes, szBytes, outStrContentId)
+			# ...
+		end
+
+
+		# Method: AddRelatedDataP
+		#
+		# The same as AddRelatedData, except the data is passed in as a "const unsigned char *" with the byte
+		# count in ARG3. The Content-ID assigned to the related item is returned (in ARG4 for the upper-case
+		# alternative for this method).
+		#
+		# @param nameInHtml [String]
+		# @param pBytes [Object]
+		# @param szBytes [Fixnum]
+		#
+		# @return [String]
+		def addRelatedDataP(nameInHtml, pBytes, szBytes)
+			# ...
+		end
+
+
+		# Method: AddRelatedFile
+		#
+		# Adds the contents of a file to the email and returns the Content-ID. Emails formatted in HTML can
+		# include images with this call and internally reference the image through a "cid" hyperlink. (Chilkat
+		# Email.NET fully supports the MHTML standard.)
+		#
+		# @param path [String]
+		# @param outStrContentID [CkString]
+		#
+		# @return [TrueClass, FalseClass]
+		def AddRelatedFile(path, outStrContentID)
+			# ...
+		end
+
+
+		# Method: AddRelatedFile
+		#
+		# Adds the contents of a file to the email and returns the Content-ID. Emails formatted in HTML can
+		# include images with this call and internally reference the image through a "cid" hyperlink. (Chilkat
+		# Email.NET fully supports the MHTML standard.)
+		#
+		# @param path [String]
+		#
+		# @return [String]
+		def addRelatedFile(path)
+			# ...
+		end
+
+
 		# Method: AddRelatedFile2
 		#
-		# ==== Attributes
+		# Adds a related item to the email from a file. Related items are things such as images and style
+		# sheets that are embedded within an HTML email. They are not considered attachments because their
+		# sole purpose is to participate in the display of the HTML. This method differs from AddRelatedFile
+		# in that it does not use or return a Content-ID. The ARG2 argument should be set to the filename used
+		# in the HTML img tag's src attribute (if it's an image), or the URL referenced in an HTML link tag
+		# for a stylesheet. The ARG1 is the path in the local filesystem of the file to be
+		# added.
+		# 
+		# Note: Outlook.com will not properly display embedded HTMl images when the ARG2
+		# includes a path part. Apparently, Outlook.com is only capable of correctly displaying images when
+		# the ARG2 is a only a filename. Other email clients, such as Mozilla Thunderbird, have no trouble
+		# when the ARG2 includes a path part.
 		#
-		# +filenameOnDisk+ - String
-		# +filenameInHtml+ - String
-		# returns TrueClass, FalseClass
+		# @param filenameOnDisk [String]
+		# @param filenameInHtml [String]
 		#
-		# YARD =>
-		#
-		# @param  filenameOnDisk [String]
-		# @param  filenameInHtml [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddRelatedFile2(filenameOnDisk, filenameInHtml)
 			# ...
 		end
 
+
 		# Method: AddRelatedHeader
 		#
-		# ==== Attributes
+		# Adds or replaces a MIME header field in one of the email's related items. If the header field does
+		# not exist, it is added. Otherwise it is replaced.
 		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +fieldValue+ - String
-		# returns nil
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param fieldValue [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  fieldName [String]
-		# @param  fieldValue [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddRelatedHeader(index, fieldName, fieldValue)
 			# ...
 		end
 
+
 		# Method: AddRelatedString
 		#
-		# ==== Attributes
+		# Adds a related item to the email. A related item is typically an image or style sheet referenced by
+		# an HTML tag within the HTML email body. The contents of the related item are passed ARG2. ARG1
+		# specifies the filename that should be used within the HTML, and not an actual filename on the local
+		# filesystem. ARG3 specifies the charset that should be used for the text content of the related item.
+		# Returns the content-ID generated for the added item.
 		#
-		# +nameInHtml+ - String
-		# +str+ - String
-		# +charset+ - String
-		# returns String
+		# @param nameInHtml [String]
+		# @param str [String]
+		# @param charset [String]
+		# @param outCid [CkString]
 		#
-		# YARD =>
-		#
-		# @param  nameInHtml [String]
-		# @param  str [String]
-		# @param  charset [String]
-		# @return  [String]
-		def AddRelatedString(nameInHtml, str, charset)
+		# @return [TrueClass, FalseClass]
+		def AddRelatedString(nameInHtml, str, charset, outCid)
 			# ...
 		end
 
+
+		# Method: AddRelatedString
+		#
+		# Adds a related item to the email. A related item is typically an image or style sheet referenced by
+		# an HTML tag within the HTML email body. The contents of the related item are passed ARG2. ARG1
+		# specifies the filename that should be used within the HTML, and not an actual filename on the local
+		# filesystem. ARG3 specifies the charset that should be used for the text content of the related item.
+		# Returns the content-ID generated for the added item.
+		#
+		# @param nameInHtml [String]
+		# @param str [String]
+		# @param charset [String]
+		#
+		# @return [String]
+		def addRelatedString(nameInHtml, str, charset)
+			# ...
+		end
+
+
 		# Method: AddRelatedString2
 		#
-		# ==== Attributes
+		# Adds a related item to the email from an in-memory string. Related items are things such as images
+		# and style sheets that are embedded within an HTML email. They are not considered attachments because
+		# their sole purpose is to participate in the display of the HTML. The filenameInHtml argument should
+		# be set to the filename used in the HTML img tag's src attribute (if it's an image), or the URL
+		# referenced in an HTML link tag for a stylesheet. The charset argument indicates that the content
+		# should first be converted to the specified charset prior to adding to the email. It should hava a
+		# value such as "iso-8859-1", "utf-8", "Shift_JIS", etc.
 		#
-		# +fileNameInHtml+ - String
-		# +content+ - String
-		# +charset+ - String
-		# returns nil
+		# @param fileNameInHtml [String]
+		# @param content [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  fileNameInHtml [String]
-		# @param  content [String]
-		# @param  charset [String]
-		# @return  [nil]
+		# @return [nil]
 		def AddRelatedString2(fileNameInHtml, content, charset)
 			# ...
 		end
 
+
 		# Method: AddStringAttachment
 		#
-		# ==== Attributes
+		# Adds an attachment directly from a string in memory to the email.
 		#
-		# +path+ - String
-		# +content+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
+		# @param content [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @param  content [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddStringAttachment(path, content)
 			# ...
 		end
 
+
 		# Method: AddStringAttachment2
 		#
-		# ==== Attributes
+		# Adds an attachment to an email. The ARG1 specifies the filename to be used for the attachment and is
+		# not an actual filename existing on the local filesystem. The ARG2 contains the text data for the
+		# attachment. The string will be converted to the charset specified in ARG3 before being added to the
+		# email. 
+		# 
+		# Note: Beginning in v9.5.0.48, the ARG3 may be prepended with "bom-" or
+		# "no-bom-" to include or exclude the BOM (preamble) for charsets such as utf-16 or utf-8. For
+		# example: "no-bom-utf-8" or "bom-utf-8".
 		#
-		# +path+ - String
-		# +content+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
+		# @param content [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @param  content [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddStringAttachment2(path, content, charset)
 			# ...
 		end
 
+
 		# Method: AddTo
 		#
-		# ==== Attributes
+		# Adds a recipient to the "to" list. address is required, but name may be empty. Emails that have no
+		# "To" recipients will be sent to _LT_undisclosed-recipients_GT_.
 		#
-		# +friendlyName+ - String
-		# +emailAddress+ - String
-		# returns TrueClass, FalseClass
+		# @param friendlyName [String]
+		# @param emailAddress [String]
 		#
-		# YARD =>
-		#
-		# @param  friendlyName [String]
-		# @param  emailAddress [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AddTo(friendlyName, emailAddress)
 			# ...
 		end
 
+
 		# Method: AesDecrypt
 		#
-		# ==== Attributes
+		# Decrypts and restores an email message that was previously encrypted using AesEncrypt. The password
+		# must match the password used for encryption.
 		#
-		# +password+ - String
-		# returns TrueClass, FalseClass
+		# @param password [String]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AesDecrypt(password)
 			# ...
 		end
 
+
 		# Method: AesEncrypt
 		#
-		# ==== Attributes
+		# Encrypts the email body, all alternative bodies, all message sub-parts and attachments using 128-bit
+		# AES CBC encryption. Decrypting is achieved by calling AesDecrypt with the same password. The
+		# AesEncrypt/Decrypt methods use symmetric password-based AES encryption and greatly simplify sending
+		# and receiving encrypted emails because certificates and private keys are not used. However, the
+		# sending and receiving applications must both use Chilkat, and the password must be pre-known on both
+		# ends.
 		#
-		# +password+ - String
-		# returns TrueClass, FalseClass
+		# @param password [String]
 		#
-		# YARD =>
-		#
-		# @param  password [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AesEncrypt(password)
 			# ...
 		end
 
+
 		# Method: AppendToBody
 		#
-		# ==== Attributes
+		# Appends a string to the plain-text body.
 		#
-		# +str+ - String
-		# returns nil
+		# @param str [String]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @return  [nil]
+		# @return [nil]
 		def AppendToBody(str)
 			# ...
 		end
 
+
 		# Method: AspUnpack
 		#
-		# ==== Attributes
+		# Please see the examples at the following pages for detailed information:
 		#
-		# +prefix+ - String
-		# +saveDir+ - String
-		# +urlPath+ - String
-		# +cleanFiles+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param prefix [String]
+		# @param saveDir [String]
+		# @param urlPath [String]
+		# @param cleanFiles [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  prefix [String]
-		# @param  saveDir [String]
-		# @param  urlPath [String]
-		# @param  cleanFiles [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AspUnpack(prefix, saveDir, urlPath, cleanFiles)
 			# ...
 		end
 
+
 		# Method: AspUnpack2
 		#
-		# ==== Attributes
+		# Please see the examples at the following pages for detailed information:
 		#
-		# +prefix+ - String
-		# +saveDir+ - String
-		# +urlPath+ - String
-		# +cleanFiles+ - TrueClass, FalseClass
-		# returns CkByteData
+		# @param prefix [String]
+		# @param saveDir [String]
+		# @param urlPath [String]
+		# @param cleanFiles [TrueClass, FalseClass]
+		# @param outHtml [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  prefix [String]
-		# @param  saveDir [String]
-		# @param  urlPath [String]
-		# @param  cleanFiles [TrueClass, FalseClass]
-		# @return  [CkByteData]
-		def AspUnpack2(prefix, saveDir, urlPath, cleanFiles)
+		# @return [TrueClass, FalseClass]
+		def AspUnpack2(prefix, saveDir, urlPath, cleanFiles, outHtml)
 			# ...
 		end
 
+
 		# Method: AttachMessage
 		#
-		# ==== Attributes
+		# Attaches a MIME message to the email object. The attached MIME will be encapsulated in an
+		# message/rfc822 sub-part. To attach one email object to another, pass the output of GetMimeBinary to
+		# the input of this method.
 		#
-		# +mimeBytes+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param mimeBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  mimeBytes [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AttachMessage(mimeBytes)
 			# ...
 		end
 
+
 		# Method: BEncodeBytes
 		#
-		# ==== Attributes
+		# Takes a byte array of multibyte (non-Unicode) data and returns a Unicode B-Encoded string.
 		#
-		# +inData+ - CkByteData
-		# +charset+ - String
-		# returns String
+		# @param inData [CkByteData]
+		# @param charset [String]
+		# @param outEncodedStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inData [CkByteData]
-		# @param  charset [String]
-		# @return  [String]
-		def BEncodeBytes(inData, charset)
+		# @return [TrueClass, FalseClass]
+		def BEncodeBytes(inData, charset, outEncodedStr)
 			# ...
 		end
+
+
+		# Method: BEncodeBytes
+		#
+		# Takes a byte array of multibyte (non-Unicode) data and returns a Unicode B-Encoded string.
+		#
+		# @param inData [CkByteData]
+		# @param charset [String]
+		#
+		# @return [String]
+		def bEncodeBytes(inData, charset)
+			# ...
+		end
+
 
 		# Method: BEncodeString
 		#
-		# ==== Attributes
+		# Takes a Unicode string, converts it to the charset specified in the 2nd parameter, B-Encodes the
+		# converted multibyte data, and returns the encoded Unicode string.
 		#
-		# +str+ - String
-		# +charset+ - String
-		# returns String
+		# @param str [String]
+		# @param charset [String]
+		# @param outEncodedStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @param  charset [String]
-		# @return  [String]
-		def BEncodeString(str, charset)
+		# @return [TrueClass, FalseClass]
+		def BEncodeString(str, charset, outEncodedStr)
 			# ...
 		end
 
+
+		# Method: BEncodeString
+		#
+		# Takes a Unicode string, converts it to the charset specified in the 2nd parameter, B-Encodes the
+		# converted multibyte data, and returns the encoded Unicode string.
+		#
+		# @param str [String]
+		# @param charset [String]
+		#
+		# @return [String]
+		def bEncodeString(str, charset)
+			# ...
+		end
+
+
 		# Method: ClearBcc
 		#
-		# ==== Attributes
+		# Clears the list of blind carbon-copy recipients.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearBcc()
 			# ...
 		end
 
+
 		# Method: ClearCC
 		#
-		# ==== Attributes
+		# Clears the list of carbon-copy recipients.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearCC()
 			# ...
 		end
 
+
 		# Method: ClearEncryptCerts
 		#
-		# ==== Attributes
+		# Clears the internal list of explicitly specified certificates to be used for this encrypted email.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearEncryptCerts()
 			# ...
 		end
 
+
 		# Method: ClearTo
 		#
-		# ==== Attributes
+		# Clears the list of "to" recipients.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def ClearTo()
 			# ...
 		end
 
+
 		# Method: Clone
 		#
-		# ==== Attributes
+		# Creates and returns an identical copy of the Email object.
 		#
-		# returns CkEmail
 		#
-		# YARD =>
-		#
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def Clone()
 			# ...
 		end
 
+
 		# Method: ComputeGlobalKey
 		#
-		# This method has been deprecated. Do not use it.
-		# ==== Attributes
+		# Important: New programs should ComputeGlobalKey2 instead. This method did not adequately
+		# canonicalize the string passed to the digest-MD5 hash and therefore different versions of Chilkat
+		# may produce different results with this method.
+		# 
+		# Computes a global unique key for the
+		# email. The key is created by a digest-MD5 hash of the concatenation of the following header fields:
+		# Message-ID, Subject, From, Date, To. (The header fields are Q/B decoded if necessary, converted to
+		# the utf-8 encoding, concatenated, and hashed using MD5.) The 16-byte MD5 hash is returned as an
+		# encoded string. The ARG1 determines the encoding: base64, hex, url, etc. If ARG2 is _TRUE_, then the
+		# 16-byte MD5 hash is folded to 8 bytes with an XOR to produce a shorter key.
 		#
-		# +encoding+ - String
-		# +bFold+ - TrueClass, FalseClass
-		# returns String
+		# @param encoding [String]
+		# @param bFold [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @param  bFold [TrueClass, FalseClass]
-		# @return  [String]
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
-		def ComputeGlobalKey(encoding, bFold)
+		def ComputeGlobalKey(encoding, bFold, outStr)
 			# ...
 		end
+
+
+		# Method: ComputeGlobalKey
+		#
+		# Important: New programs should ComputeGlobalKey2 instead. This method did not adequately
+		# canonicalize the string passed to the digest-MD5 hash and therefore different versions of Chilkat
+		# may produce different results with this method.
+		# 
+		# Computes a global unique key for the
+		# email. The key is created by a digest-MD5 hash of the concatenation of the following header fields:
+		# Message-ID, Subject, From, Date, To. (The header fields are Q/B decoded if necessary, converted to
+		# the utf-8 encoding, concatenated, and hashed using MD5.) The 16-byte MD5 hash is returned as an
+		# encoded string. The ARG1 determines the encoding: base64, hex, url, etc. If ARG2 is _TRUE_, then the
+		# 16-byte MD5 hash is folded to 8 bytes with an XOR to produce a shorter key.
+		#
+		# @param encoding [String]
+		# @param bFold [TrueClass, FalseClass]
+		#
+		# @return [String]
+		# @deprecated This method has been deprecated. Do not use it.
+		def computeGlobalKey(encoding, bFold)
+			# ...
+		end
+
 
 		# Method: ComputeGlobalKey2
 		#
-		# ==== Attributes
+		# Computes a global unique key for the email. The key is created by a digest-MD5 hash of the
+		# concatenation of the following: 
+		# 
+		# messageID + CRLF + subject + CRLF + from + CRLF + date
+		# + CRLF + recipientAddrs
+		# 
+		# messageID contains the contents of the Message-ID header
+		# field.
+		# subject contains the contents of the Subject header field, trimmed of whitespace from
+		# both ends, 
+		# where TAB chars are converted to SPACE chars, and internal whitespace is trimmed so
+		# that 
+		# no more than one SPACE char in a row exists.
+		# from contains the lowercase FROM
+		# header email address.
+		# date contains the contents of the DATE header field.
+		# toAddrs
+		# contains lowercase TO and CC recipient email addresses, comma separated, with duplicates removed,
+		# and sorted 
+		# in ascending order. The BCC addresses are NOT included.
+		# 
+		# (After calling
+		# this method, the LastErrorText property can be examined to see the string that was
+		# hashed.)
+		# 
+		# The 16-byte MD5 hash is returned as an encoded string. The ARG1 determines the
+		# encoding: base64, hex, url, etc. If ARG2 is _TRUE_, then the 16-byte MD5 hash is folded to 8 bytes
+		# with an XOR to produce a shorter key.
 		#
-		# +encoding+ - String
-		# +bFold+ - TrueClass, FalseClass
-		# returns String
+		# @param encoding [String]
+		# @param bFold [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  encoding [String]
-		# @param  bFold [TrueClass, FalseClass]
-		# @return  [String]
-		def ComputeGlobalKey2(encoding, bFold)
+		# @return [TrueClass, FalseClass]
+		def ComputeGlobalKey2(encoding, bFold, outStr)
 			# ...
 		end
 
+
+		# Method: ComputeGlobalKey2
+		#
+		# Computes a global unique key for the email. The key is created by a digest-MD5 hash of the
+		# concatenation of the following: 
+		# 
+		# messageID + CRLF + subject + CRLF + from + CRLF + date
+		# + CRLF + recipientAddrs
+		# 
+		# messageID contains the contents of the Message-ID header
+		# field.
+		# subject contains the contents of the Subject header field, trimmed of whitespace from
+		# both ends, 
+		# where TAB chars are converted to SPACE chars, and internal whitespace is trimmed so
+		# that 
+		# no more than one SPACE char in a row exists.
+		# from contains the lowercase FROM
+		# header email address.
+		# date contains the contents of the DATE header field.
+		# toAddrs
+		# contains lowercase TO and CC recipient email addresses, comma separated, with duplicates removed,
+		# and sorted 
+		# in ascending order. The BCC addresses are NOT included.
+		# 
+		# (After calling
+		# this method, the LastErrorText property can be examined to see the string that was
+		# hashed.)
+		# 
+		# The 16-byte MD5 hash is returned as an encoded string. The ARG1 determines the
+		# encoding: base64, hex, url, etc. If ARG2 is _TRUE_, then the 16-byte MD5 hash is folded to 8 bytes
+		# with an XOR to produce a shorter key.
+		#
+		# @param encoding [String]
+		# @param bFold [TrueClass, FalseClass]
+		#
+		# @return [String]
+		def computeGlobalKey2(encoding, bFold)
+			# ...
+		end
+
+
 		# Method: CreateDsn
 		#
-		# ==== Attributes
+		# Creates a new DSN (Delivery Status Notification) email having the format as specified in RFC 3464.
+		# See the example (below) for more detailed information.
 		#
-		# +humanReadableMessage+ - String
-		# +xmlStatusFields+ - String
-		# +bHeaderOnly+ - TrueClass, FalseClass
-		# returns CkEmail
+		# @param humanReadableMessage [String]
+		# @param xmlStatusFields [String]
+		# @param bHeaderOnly [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  humanReadableMessage [String]
-		# @param  xmlStatusFields [String]
-		# @param  bHeaderOnly [TrueClass, FalseClass]
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def CreateDsn(humanReadableMessage, xmlStatusFields, bHeaderOnly)
 			# ...
 		end
 
+
 		# Method: CreateForward
 		#
-		# ==== Attributes
+		# Returns a copy of the Email object with the body and header fields changed so that the newly created
+		# email can be forwarded. After calling CreateForward, simply add new recipients to the created email,
+		# and call MailMan.SendEmail.
 		#
-		# returns CkEmail
 		#
-		# YARD =>
-		#
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def CreateForward()
 			# ...
 		end
 
+
 		# Method: CreateMdn
 		#
-		# ==== Attributes
+		# Creates a new MDN (Message Disposition Notification) email having the format as specified in RFC
+		# 3798. See the example (below) for more detailed information.
 		#
-		# +humanReadableMessage+ - String
-		# +xmlStatusFields+ - String
-		# +bHeaderOnly+ - TrueClass, FalseClass
-		# returns CkEmail
+		# @param humanReadableMessage [String]
+		# @param xmlStatusFields [String]
+		# @param bHeaderOnly [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  humanReadableMessage [String]
-		# @param  xmlStatusFields [String]
-		# @param  bHeaderOnly [TrueClass, FalseClass]
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def CreateMdn(humanReadableMessage, xmlStatusFields, bHeaderOnly)
 			# ...
 		end
 
+
 		# Method: CreateReply
 		#
-		# ==== Attributes
+		# Returns a copy of the Email object with the body and header fields changed so that the newly created
+		# email can be sent as a reply. After calling CreateReply, simply prepend additional information to
+		# the body, and call MailMan.SendEmail.
 		#
-		# returns CkEmail
 		#
-		# YARD =>
-		#
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def CreateReply()
 			# ...
 		end
 
+
 		# Method: CreateTempMht
 		#
-		# ==== Attributes
+		# Saves the email to a temporary MHT file so that a WebBrowser control can navigate to it and display
+		# it. If fileName is empty, a temporary filename is generated and returned. If fileName is non-empty,
+		# then it will be created or overwritten, and the input filename is simply returned.The MHT file that
+		# is created will not contain any of the email's attachments, if any existed. Also, if the email was
+		# plain-text, the MHT file will be saved such that the plain-text is converted to HTML using
+		# pre-formatted text ("pre" HTML tags) allowing it to be displayed correctly in a WebBrowser.
 		#
-		# +inFilename+ - String
-		# returns String
+		# @param inFilename [String]
+		# @param outPath [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inFilename [String]
-		# @return  [String]
-		def CreateTempMht(inFilename)
+		# @return [TrueClass, FalseClass]
+		def CreateTempMht(inFilename, outPath)
 			# ...
 		end
 
+
+		# Method: CreateTempMht
+		#
+		# Saves the email to a temporary MHT file so that a WebBrowser control can navigate to it and display
+		# it. If fileName is empty, a temporary filename is generated and returned. If fileName is non-empty,
+		# then it will be created or overwritten, and the input filename is simply returned.The MHT file that
+		# is created will not contain any of the email's attachments, if any existed. Also, if the email was
+		# plain-text, the MHT file will be saved such that the plain-text is converted to HTML using
+		# pre-formatted text ("pre" HTML tags) allowing it to be displayed correctly in a WebBrowser.
+		#
+		# @param inFilename [String]
+		#
+		# @return [String]
+		def createTempMht(inFilename)
+			# ...
+		end
+
+
 		# Method: DropAttachments
 		#
-		# ==== Attributes
+		# Removes all attachments from the email.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def DropAttachments()
 			# ...
 		end
 
+
 		# Method: DropRelatedItem
 		#
-		# ==== Attributes
+		# A related item is typically an embedded image referenced from the HTML in the email via a "CID"
+		# hyperlink. This method removes the Nth embedded image from the email. Note: If the HTML tries to
+		# reference the removed image, it will be displayed as a broken image link.
 		#
-		# +index+ - Fixnum
-		# returns nil
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [nil]
+		# @return [nil]
 		def DropRelatedItem(index)
 			# ...
 		end
 
+
 		# Method: DropRelatedItems
 		#
-		# ==== Attributes
+		# A related item is typically an embedded image referenced from the HTML in the email via a "CID"
+		# hyperlink. This method removes all the embedded images from the email.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def DropRelatedItems()
 			# ...
 		end
 
+
 		# Method: DropSingleAttachment
 		#
-		# ==== Attributes
+		# Drops a single attachment from the email. Returns True if successful.
 		#
-		# +index+ - Fixnum
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def DropSingleAttachment(index)
 			# ...
 		end
 
+
 		# Method: FindIssuer
 		#
-		# ==== Attributes
+		# Digitally signed and/or encrypted emails are automatically "unwrapped" when received from a POP3 or
+		# IMAP server, or when loaded from any source such as a MIME string, in-memory byte data, or a .eml
+		# file. The results of the signature verification / decryption are stored in the properties such as
+		# ReceivedSigned, ReceivedEncrypted, SignaturesValid, etc. The signing certificate can be obtained via
+		# the GetSigningCert function. If the signature contained more certificates in the chain of
+		# authentication, this method provides a means to access them.
+		# 
+		# During signature
+		# verification, the email object collects the certs found in the signature and holds onto them
+		# internally. To get the issuing certificate of the signing certificate, call this method passing the
+		# cert returned by GetSigningCert. If the issuing cert is available, it is returned. Otherwise _NULL_
+		# is returned. If the cert passed in is the root (i.e. a self-signed certificate), then the cert
+		# object returned is a copy of the cert passed in. 
+		# 
+		# To traverse the chain to the root,
+		# one would write a loop that on first iteration passes the cert returned by GetSignedByCert (not
+		# GetSignerCert), and then on each subsequent iteration passes the cert from the previous iteration.
+		# The loop would exit when a cert is returned that has the same SubjectDN and SerialNumber as what was
+		# passed in (or when FindIssuer returns _NULL_).
 		#
-		# +cert+ - CkCert
-		# returns CkCert
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [CkCert]
+		# @return [CkCert]
 		def FindIssuer(cert)
 			# ...
 		end
 
+
 		# Method: GenerateFilename
 		#
-		# ==== Attributes
+		# Generates a unique filename for this email. The filename will be different each time the method is
+		# called.
 		#
-		# returns String
+		# @param outStrFilename [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GenerateFilename()
+		# @return [TrueClass, FalseClass]
+		def GenerateFilename(outStrFilename)
 			# ...
 		end
+
+
+		# Method: GenerateFilename
+		#
+		# Generates a unique filename for this email. The filename will be different each time the method is
+		# called.
+		#
+		#
+		# @return [String]
+		def generateFilename()
+			# ...
+		end
+
 
 		# Method: GetAlternativeBody
 		#
-		# ==== Attributes
+		# Returns the Nth alternative body. The NumAlternatives property tells the number of alternative
+		# bodies present. Use the GetHtmlBody and GetPlainTextBody methods to easily get the HTML or plain
+		# text alternative bodies.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrBody [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetAlternativeBody(index)
+		# @return [TrueClass, FalseClass]
+		def GetAlternativeBody(index, outStrBody)
 			# ...
 		end
+
+
+		# Method: GetAlternativeBody
+		#
+		# Returns the Nth alternative body. The NumAlternatives property tells the number of alternative
+		# bodies present. Use the GetHtmlBody and GetPlainTextBody methods to easily get the HTML or plain
+		# text alternative bodies.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAlternativeBody(index)
+			# ...
+		end
+
 
 		# Method: GetAlternativeBodyByContentType
 		#
-		# ==== Attributes
+		# Returns the alternative body by content-type, such as "text/plain", "text/html", "text/xml", etc.
 		#
-		# +contentType+ - String
-		# returns String
+		# @param contentType [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  contentType [String]
-		# @return  [String]
-		def GetAlternativeBodyByContentType(contentType)
+		# @return [TrueClass, FalseClass]
+		def GetAlternativeBodyByContentType(contentType, outStr)
 			# ...
 		end
+
+
+		# Method: GetAlternativeBodyByContentType
+		#
+		# Returns the alternative body by content-type, such as "text/plain", "text/html", "text/xml", etc.
+		#
+		# @param contentType [String]
+		#
+		# @return [String]
+		def getAlternativeBodyByContentType(contentType)
+			# ...
+		end
+
 
 		# Method: GetAlternativeContentType
 		#
-		# ==== Attributes
+		# Returns the content type of the Nth alternative body. The NumAlternatives property tells the number
+		# of alternative bodies present.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrContentType [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetAlternativeContentType(index)
+		# @return [TrueClass, FalseClass]
+		def GetAlternativeContentType(index, outStrContentType)
 			# ...
 		end
+
+
+		# Method: GetAlternativeContentType
+		#
+		# Returns the content type of the Nth alternative body. The NumAlternatives property tells the number
+		# of alternative bodies present.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAlternativeContentType(index)
+			# ...
+		end
+
 
 		# Method: GetAltHeaderField
 		#
-		# ==== Attributes
+		# Returns the value of a header field within the Nth alternative body's MIME sub-part.
 		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# returns String
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  fieldName [String]
-		# @return  [String]
-		def GetAltHeaderField(index, fieldName)
+		# @return [TrueClass, FalseClass]
+		def GetAltHeaderField(index, fieldName, outStr)
 			# ...
 		end
 
+
+		# Method: GetAltHeaderField
+		#
+		# Returns the value of a header field within the Nth alternative body's MIME sub-part.
+		#
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getAltHeaderField(index, fieldName)
+			# ...
+		end
+
+
 		# Method: GetAttachedMessage
 		#
-		# ==== Attributes
+		# Returns an embedded "message/rfc822" subpart as an email object. (Emails are embedded as
+		# "message/rfc822" subparts by some mail clients when forwarding an email.) This method allows the
+		# original email to be accessed.
 		#
-		# +index+ - Fixnum
-		# returns CkEmail
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def GetAttachedMessage(index)
 			# ...
 		end
 
+
 		# Method: GetAttachedMessageAttr
 		#
-		# ==== Attributes
+		# Returns a header field attribute value for the Nth attached (embedded) email. For example, to get
+		# the value of the "name" attribute in the Content-Type header for the 1st attached
+		# message:
+		# 
+		# Content-Type: message/rfc822; name="md75000024149.eml"
+		# 
+		# then the
+		# method arguments should contain the values 0, "Content-Type", "name".
 		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +attrName+ - String
-		# returns String
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  fieldName [String]
-		# @param  attrName [String]
-		# @return  [String]
-		def GetAttachedMessageAttr(index, fieldName, attrName)
+		# @return [TrueClass, FalseClass]
+		def GetAttachedMessageAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
+
+
+		# Method: GetAttachedMessageAttr
+		#
+		# Returns a header field attribute value for the Nth attached (embedded) email. For example, to get
+		# the value of the "name" attribute in the Content-Type header for the 1st attached
+		# message:
+		# 
+		# Content-Type: message/rfc822; name="md75000024149.eml"
+		# 
+		# then the
+		# method arguments should contain the values 0, "Content-Type", "name".
+		#
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getAttachedMessageAttr(index, fieldName, attrName)
+			# ...
+		end
+
 
 		# Method: GetAttachedMessageFilename
 		#
-		# ==== Attributes
+		# Returns the filename of the Nth attached (embedded) email. The filename is the "filename" attribute
+		# of the content-disposition header field found within the Nth message/rfc822 sub-part of the calling
+		# email object.
+		# 
+		# Important: The attached message filename is only present if the
+		# Content-Disposition header exists AND contains a "filename" attribute. If questions arise, one could
+		# open the email in a text editor to examine the MIME sub-header for the attached message (where the
+		# Content-Type = "message/rfc822"). For example, here is a sub-header that has a
+		# filename:
+		# 
+		# Content-Type: message/rfc822;
+		# name="GetAttachedMessageAttr.eml"
+		# Content-Transfer-Encoding: 7bit
+		# Content-Disposition:
+		# attachment; filename="GetAttachedMessageAttr.eml"
+		# 
+		# Here is an attached message
+		# sub-header that does NOT have a filename:
+		# 
+		# Content-Type:
+		# message/rfc822
+		# Content-Transfer-Encoding: 7bit
+		# Content-Disposition: attachment
 		#
-		# +index+ - Fixnum
-		# returns String
 		#
-		# YARD =>
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetAttachedMessageFilename(index)
+		# @return [TrueClass, FalseClass]
+		def GetAttachedMessageFilename(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetAttachedMessageFilename
+		#
+		# Returns the filename of the Nth attached (embedded) email. The filename is the "filename" attribute
+		# of the content-disposition header field found within the Nth message/rfc822 sub-part of the calling
+		# email object.
+		# 
+		# Important: The attached message filename is only present if the
+		# Content-Disposition header exists AND contains a "filename" attribute. If questions arise, one could
+		# open the email in a text editor to examine the MIME sub-header for the attached message (where the
+		# Content-Type = "message/rfc822"). For example, here is a sub-header that has a
+		# filename:
+		# 
+		# Content-Type: message/rfc822;
+		# name="GetAttachedMessageAttr.eml"
+		# Content-Transfer-Encoding: 7bit
+		# Content-Disposition:
+		# attachment; filename="GetAttachedMessageAttr.eml"
+		# 
+		# Here is an attached message
+		# sub-header that does NOT have a filename:
+		# 
+		# Content-Type:
+		# message/rfc822
+		# Content-Transfer-Encoding: 7bit
+		# Content-Disposition: attachment
+		#
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAttachedMessageFilename(index)
+			# ...
+		end
+
 
 		# Method: GetAttachmentAttr
 		#
-		# ==== Attributes
+		# Returns a header field attribute value from the header field of the Nth attachment.
 		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +attrName+ - String
-		# returns String
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  fieldName [String]
-		# @param  attrName [String]
-		# @return  [String]
-		def GetAttachmentAttr(index, fieldName, attrName)
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
+
+
+		# Method: GetAttachmentAttr
+		#
+		# Returns a header field attribute value from the header field of the Nth attachment.
+		#
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getAttachmentAttr(index, fieldName, attrName)
+			# ...
+		end
+
 
 		# Method: GetAttachmentContentID
 		#
-		# ==== Attributes
+		# Returns the ContentID header field for the Nth attachment. The first attachment is at index 0.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrContentID [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetAttachmentContentID(index)
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentContentID(index, outStrContentID)
 			# ...
 		end
+
+
+		# Method: GetAttachmentContentID
+		#
+		# Returns the ContentID header field for the Nth attachment. The first attachment is at index 0.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAttachmentContentID(index)
+			# ...
+		end
+
 
 		# Method: GetAttachmentContentType
 		#
-		# ==== Attributes
+		# Returns the Content-Type header field for the Nth attachment. Indexing of attachments begins at 0.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrContentType [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetAttachmentContentType(index)
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentContentType(index, outStrContentType)
 			# ...
 		end
+
+
+		# Method: GetAttachmentContentType
+		#
+		# Returns the Content-Type header field for the Nth attachment. Indexing of attachments begins at 0.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAttachmentContentType(index)
+			# ...
+		end
+
 
 		# Method: GetAttachmentData
 		#
-		# ==== Attributes
+		# Retrieves an attachment's binary data for in-memory access.
 		#
-		# +index+ - Fixnum
-		# returns CkByteData
+		# @param index [Fixnum]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkByteData]
-		def GetAttachmentData(index)
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentData(index, outData)
 			# ...
 		end
+
 
 		# Method: GetAttachmentFilename
 		#
-		# ==== Attributes
+		# Retrieves an attachment's filename.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrFilename [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetAttachmentFilename(index)
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentFilename(index, outStrFilename)
 			# ...
 		end
+
+
+		# Method: GetAttachmentFilename
+		#
+		# Retrieves an attachment's filename.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getAttachmentFilename(index)
+			# ...
+		end
+
 
 		# Method: GetAttachmentHeader
 		#
-		# ==== Attributes
+		# Returns the value of a header field (by name) of an attachment.
 		#
-		# +attachIndex+ - Fixnum
-		# +fieldName+ - String
-		# returns String
+		# @param attachIndex [Fixnum]
+		# @param fieldName [String]
+		# @param outFieldValue [CkString]
 		#
-		# YARD =>
-		#
-		# @param  attachIndex [Fixnum]
-		# @param  fieldName [String]
-		# @return  [String]
-		def GetAttachmentHeader(attachIndex, fieldName)
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentHeader(attachIndex, fieldName, outFieldValue)
 			# ...
 		end
 
+
+		# Method: GetAttachmentHeader
+		#
+		# Returns the value of a header field (by name) of an attachment.
+		#
+		# @param attachIndex [Fixnum]
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getAttachmentHeader(attachIndex, fieldName)
+			# ...
+		end
+
+
 		# Method: GetAttachmentSize
 		#
-		# ==== Attributes
+		# Returns the size (in bytes) of the Nth attachment. The 1st attachment is at index 0. Returns -1 if
+		# there is no attachment at the specified index.
 		#
-		# +index+ - Fixnum
-		# returns Fixnum
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetAttachmentSize(index)
 			# ...
 		end
 
+
 		# Method: GetAttachmentString
 		#
-		# ==== Attributes
+		# Retrieves an attachment's data as a String. All CRLF sequences will be translated to single newline
+		# characters.
 		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns String
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
-		def GetAttachmentString(index, charset)
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentString(index, charset, outStr)
 			# ...
 		end
+
+
+		# Method: GetAttachmentString
+		#
+		# Retrieves an attachment's data as a String. All CRLF sequences will be translated to single newline
+		# characters.
+		#
+		# @param index [Fixnum]
+		# @param charset [String]
+		#
+		# @return [String]
+		def getAttachmentString(index, charset)
+			# ...
+		end
+
 
 		# Method: GetAttachmentStringCrLf
 		#
-		# ==== Attributes
+		# Retrieves an attachment's data as a String. All end-of-lines will be translated to CRLF sequences.
 		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns String
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @param outStrData [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
-		def GetAttachmentStringCrLf(index, charset)
+		# @return [TrueClass, FalseClass]
+		def GetAttachmentStringCrLf(index, charset, outStrData)
 			# ...
 		end
+
+
+		# Method: GetAttachmentStringCrLf
+		#
+		# Retrieves an attachment's data as a String. All end-of-lines will be translated to CRLF sequences.
+		#
+		# @param index [Fixnum]
+		# @param charset [String]
+		#
+		# @return [String]
+		def getAttachmentStringCrLf(index, charset)
+			# ...
+		end
+
 
 		# Method: GetBcc
 		#
-		# ==== Attributes
+		# Returns a blind carbon-copy recipient's full email address.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetBcc(index)
+		# @return [TrueClass, FalseClass]
+		def GetBcc(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetBcc
+		#
+		# Returns a blind carbon-copy recipient's full email address.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getBcc(index)
+			# ...
+		end
+
 
 		# Method: GetBccAddr
 		#
-		# ==== Attributes
+		# Returns the Nth BCC address (only the address part, not the friendly-name part).
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetBccAddr(index)
+		# @return [TrueClass, FalseClass]
+		def GetBccAddr(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetBccAddr
+		#
+		# Returns the Nth BCC address (only the address part, not the friendly-name part).
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getBccAddr(index)
+			# ...
+		end
+
 
 		# Method: GetBccName
 		#
-		# ==== Attributes
+		# Returns the Nth BCC name (only the friendly-name part, not the address part).
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetBccName(index)
+		# @return [TrueClass, FalseClass]
+		def GetBccName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetBccName
+		#
+		# Returns the Nth BCC name (only the friendly-name part, not the address part).
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getBccName(index)
+			# ...
+		end
+
 
 		# Method: GetCC
 		#
-		# ==== Attributes
+		# Returns a carbon-copy recipient's full email address.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCC(index)
+		# @return [TrueClass, FalseClass]
+		def GetCC(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCC
+		#
+		# Returns a carbon-copy recipient's full email address.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCC(index)
+			# ...
+		end
+
 
 		# Method: GetCcAddr
 		#
-		# ==== Attributes
+		# Returns the Nth CC address (only the address part, not the friendly-name part).
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCcAddr(index)
+		# @return [TrueClass, FalseClass]
+		def GetCcAddr(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCcAddr
+		#
+		# Returns the Nth CC address (only the address part, not the friendly-name part).
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCcAddr(index)
+			# ...
+		end
+
 
 		# Method: GetCcName
 		#
-		# ==== Attributes
+		# Returns the Nth CC name (only the friendly-name part, not the address part).
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetCcName(index)
+		# @return [TrueClass, FalseClass]
+		def GetCcName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetCcName
+		#
+		# Returns the Nth CC name (only the friendly-name part, not the address part).
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getCcName(index)
+			# ...
+		end
+
 
 		# Method: GetDeliveryStatusInfo
 		#
-		# ==== Attributes
+		# If the email is a multipart/report, then it is a delivery status notification. This method can be
+		# used to get individual pieces of information from the message/delivery-status part of the email.
+		# This method should only be called if the IsMultipartReport method returns _TRUE_.
+		# 
+		# The
+		# ARG1 should be set a string such as "Final-Recipient", "Status", "Action", "Reporting-MTA",
+		# etc.
+		# 
+		# 
+		# Reporting-MTA: dns; XYZ.abc.nl
+		# 
+		# Final-recipient: RFC822;
+		# someEmailAddr@doesnotexist123.nl
+		# Action: failed
+		# Status:
+		# 5.4.4
+		# X-Supplementary-Info: < #5.4.4 smtp;554 5.4.4
+		# SMTPSEND.DNS.NonExistentDomain;
+		# nonexistent domain>
 		#
-		# +fieldName+ - String
-		# returns String
 		#
-		# YARD =>
+		# @param fieldName [String]
+		# @param outFieldValue [CkString]
 		#
-		# @param  fieldName [String]
-		# @return  [String]
-		def GetDeliveryStatusInfo(fieldName)
+		# @return [TrueClass, FalseClass]
+		def GetDeliveryStatusInfo(fieldName, outFieldValue)
 			# ...
 		end
 
+
+		# Method: GetDeliveryStatusInfo
+		#
+		# If the email is a multipart/report, then it is a delivery status notification. This method can be
+		# used to get individual pieces of information from the message/delivery-status part of the email.
+		# This method should only be called if the IsMultipartReport method returns _TRUE_.
+		# 
+		# The
+		# ARG1 should be set a string such as "Final-Recipient", "Status", "Action", "Reporting-MTA",
+		# etc.
+		# 
+		# 
+		# Reporting-MTA: dns; XYZ.abc.nl
+		# 
+		# Final-recipient: RFC822;
+		# someEmailAddr@doesnotexist123.nl
+		# Action: failed
+		# Status:
+		# 5.4.4
+		# X-Supplementary-Info: < #5.4.4 smtp;554 5.4.4
+		# SMTPSEND.DNS.NonExistentDomain;
+		# nonexistent domain>
+		#
+		#
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getDeliveryStatusInfo(fieldName)
+			# ...
+		end
+
+
 		# Method: GetDigest
 		#
-		# ==== Attributes
+		# Returns an digest contained within a multipart/digest as an email object. The 1st digest is at index
+		# 0. Use the NumDigests property to get the number of digests available.
+		# 
+		# Note: This
+		# example requires Chilkat v9.5.0.66 or greater.
 		#
-		# +index+ - Fixnum
-		# returns CkEmail
+		# @param index [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkEmail]
+		# @return [CkEmail]
 		def GetDigest(index)
 			# ...
 		end
 
+
 		# Method: GetDsnFinalRecipients
 		#
-		# ==== Attributes
+		# If the email is a multipart/report, then it is a delivery status notification. This method can be
+		# used to get Final-Recipient values from the message/delivery-status part of the email. This method
+		# should only be called if the IsMultipartReport method returns _TRUE_.
 		#
-		# returns CkStringArray
 		#
-		# YARD =>
-		#
-		# @return  [CkStringArray]
+		# @return [CkStringArray]
 		def GetDsnFinalRecipients()
 			# ...
 		end
 
+
 		# Method: GetDt
 		#
-		# ==== Attributes
+		# Returns the date/time found in the "Date" header field as a date/time object.
 		#
-		# returns CkDateTime
 		#
-		# YARD =>
-		#
-		# @return  [CkDateTime]
+		# @return [CkDateTime]
 		def GetDt()
 			# ...
 		end
 
+
 		# Method: GetEncryptCert
 		#
-		# ==== Attributes
+		# Returns the certificate that was previously set by SetEncryptCert.
 		#
-		# returns CkCert
 		#
-		# YARD =>
-		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetEncryptCert()
 			# ...
 		end
 
+
 		# Method: GetEncryptedByCert
 		#
-		# ==== Attributes
+		# Returns the certificate associated with a received encrypted email.
 		#
-		# returns CkCert
 		#
-		# YARD =>
-		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetEncryptedByCert()
 			# ...
 		end
 
+
 		# Method: GetFileContent
 		#
-		# ==== Attributes
+		# Reads a file and returns the contents as a String. This is here purely for convenience.
 		#
-		# +path+ - String
-		# returns CkByteData
+		# @param path [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [CkByteData]
-		def GetFileContent(path)
+		# @return [TrueClass, FalseClass]
+		def GetFileContent(path, outData)
 			# ...
 		end
+
 
 		# Method: GetHeaderField
 		#
-		# ==== Attributes
+		# Returns the value of a header field.
 		#
-		# +fieldName+ - String
-		# returns String
+		# @param fieldName [String]
+		# @param outStrFieldData [CkString]
 		#
-		# YARD =>
-		#
-		# @param  fieldName [String]
-		# @return  [String]
-		def GetHeaderField(fieldName)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderField(fieldName, outStrFieldData)
 			# ...
 		end
+
+
+		# Method: GetHeaderField
+		#
+		# Returns the value of a header field.
+		#
+		# @param fieldName [String]
+		#
+		# @return [String]
+		def getHeaderField(fieldName)
+			# ...
+		end
+
 
 		# Method: GetHeaderFieldName
 		#
-		# ==== Attributes
+		# Return the name of the Nth header field. The NumHeaderFields() method can be used to get the number
+		# of header fields. The GetHeaderField() method can be used to get the value of the field given the
+		# field name. 
+		# 
+		# The 1st header field is at index 0. (All Chilkat indexing is 0-based.)
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrFieldName [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetHeaderFieldName(index)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderFieldName(index, outStrFieldName)
 			# ...
 		end
+
+
+		# Method: GetHeaderFieldName
+		#
+		# Return the name of the Nth header field. The NumHeaderFields() method can be used to get the number
+		# of header fields. The GetHeaderField() method can be used to get the value of the field given the
+		# field name. 
+		# 
+		# The 1st header field is at index 0. (All Chilkat indexing is 0-based.)
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getHeaderFieldName(index)
+			# ...
+		end
+
 
 		# Method: GetHeaderFieldValue
 		#
-		# ==== Attributes
+		# Returns the value of the Nth header field. (Indexing begins at 0) The number of header fields can be
+		# obtained from the NumHeaderFields property.
+		# 
+		# The 1st header field is at index 0, the
+		# last header field is at index NumHeaderFields-1. (All Chilkat indexing is 0-based.)
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrFieldValue [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetHeaderFieldValue(index)
+		# @return [TrueClass, FalseClass]
+		def GetHeaderFieldValue(index, outStrFieldValue)
 			# ...
 		end
+
+
+		# Method: GetHeaderFieldValue
+		#
+		# Returns the value of the Nth header field. (Indexing begins at 0) The number of header fields can be
+		# obtained from the NumHeaderFields property.
+		# 
+		# The 1st header field is at index 0, the
+		# last header field is at index NumHeaderFields-1. (All Chilkat indexing is 0-based.)
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getHeaderFieldValue(index)
+			# ...
+		end
+
 
 		# Method: GetHtmlBody
 		#
-		# ==== Attributes
+		# Returns the body having the "text/html" content type.
 		#
-		# returns String
+		# @param outStrBody [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GetHtmlBody()
+		# @return [TrueClass, FalseClass]
+		def GetHtmlBody(outStrBody)
 			# ...
 		end
 
+
+		# Method: GetHtmlBody
+		#
+		# Returns the body having the "text/html" content type.
+		#
+		#
+		# @return [String]
+		def getHtmlBody()
+			# ...
+		end
+
+
 		# Method: GetImapUid
 		#
-		# ==== Attributes
+		# When email headers are downloaded from an IMAP server (using Chilkat IMAP), a "ckx-imap-uid" header
+		# field is added. The content of this header is the UID or sequence number of the email on the IMAP
+		# server. In addition, a "ckx-imap-isUid" header field is added, and this will have the value YES or
+		# NO. If the value is YES, then ckx-imap-uid contains a UID, if the value is NO, then ckx-imap-uid
+		# contains the sequence number.
+		# This method returns the UID if ckx-imap-uid exists and contains
+		# a UID, otherwise it returns -1.
+		# 
+		# An application that wishes to download the full email
+		# would use this UID and then call the Chilkat IMAP object's FetchSingle or FetchSingleAsMime
+		# methods.
+		# 
+		# Note:If an email was downloaded from the IMAP server in a way such that the
+		# UID is not received, then there will be no "ckx-imap-uid" header field and this method would return
+		# -1. For example, if emails are downloaded by sequence numbers via the Imap.FetchSequence method,
+		# then UIDs are not used and therefore the email object will not contain this information.
 		#
-		# returns Fixnum
 		#
-		# YARD =>
-		#
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetImapUid()
 			# ...
 		end
 
+
 		# Method: GetLinkedDomains
 		#
-		# ==== Attributes
+		# Parses an HTML email and returns the set of domain names that occur in hyperlinks within the HTML
+		# body.
 		#
-		# returns CkStringArray
 		#
-		# YARD =>
-		#
-		# @return  [CkStringArray]
+		# @return [CkStringArray]
 		def GetLinkedDomains()
 			# ...
 		end
 
+
 		# Method: GetMbHeaderField
 		#
-		# ==== Attributes
+		# Returns a header field's data in a byte array. If the field was Q or B encoded, this is
+		# automatically decoded, and the raw bytes of the field are returned. Call GetHeaderField to retrieve
+		# the header field as a Unicode string.
+		# 
+		# The 1st header field is at index 0. (All Chilkat
+		# indexing is 0-based.)
 		#
-		# +fieldName+ - String
-		# +charset+ - String
-		# returns CkByteData
+		# @param fieldName [String]
+		# @param charset [String]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  fieldName [String]
-		# @param  charset [String]
-		# @return  [CkByteData]
-		def GetMbHeaderField(fieldName, charset)
+		# @return [TrueClass, FalseClass]
+		def GetMbHeaderField(fieldName, charset, outBytes)
 			# ...
 		end
+
 
 		# Method: GetMbHtmlBody
 		#
-		# ==== Attributes
+		# Returns the HTML body converted to a specified charset. If no HTML body exists, the returned byte
+		# array is empty. The returned data will be such that not only is the character data converted (if
+		# necessary) to the convertToCharset, but the HTML is edited to add or modify the META tag that
+		# specifies the charset within the HTML.
 		#
-		# +charset+ - String
-		# returns CkByteData
+		# @param charset [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  charset [String]
-		# @return  [CkByteData]
-		def GetMbHtmlBody(charset)
+		# @return [TrueClass, FalseClass]
+		def GetMbHtmlBody(charset, outData)
 			# ...
 		end
+
 
 		# Method: GetMbPlainTextBody
 		#
-		# ==== Attributes
+		# Returns the plain-text body converted to a specified charset. The return value is a byte array
+		# containing multibyte character data.
 		#
-		# +charset+ - String
-		# returns CkByteData
+		# @param charset [String]
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  charset [String]
-		# @return  [CkByteData]
-		def GetMbPlainTextBody(charset)
+		# @return [TrueClass, FalseClass]
+		def GetMbPlainTextBody(charset, outData)
 			# ...
 		end
+
 
 		# Method: GetMime
 		#
-		# ==== Attributes
+		# Return the email as MIME text containing the email header, body (or bodies), related items (if any),
+		# and all attachments
 		#
-		# returns String
+		# @param outStrMime [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GetMime()
+		# @return [TrueClass, FalseClass]
+		def GetMime(outStrMime)
 			# ...
 		end
 
+
+		# Method: GetMime
+		#
+		# Return the email as MIME text containing the email header, body (or bodies), related items (if any),
+		# and all attachments
+		#
+		#
+		# @return [String]
+		def getMime()
+			# ...
+		end
+
+
 		# Method: GetMimeBd
 		#
-		# ==== Attributes
+		# Return the email as binary MIME containing the email header, body (or bodies), related items (if
+		# any), and all attachments. The MIME is appended to the existing contents (if any) of ARG1.
 		#
-		# +bindat+ - CkBinData
-		# returns TrueClass, FalseClass
+		# @param bindat [CkBinData]
 		#
-		# YARD =>
-		#
-		# @param  bindat [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetMimeBd(bindat)
 			# ...
 		end
 
+
 		# Method: GetMimeBinary
 		#
-		# ==== Attributes
+		# Returns the full MIME of an email.
 		#
-		# returns CkByteData
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @return  [CkByteData]
-		def GetMimeBinary()
+		# @return [TrueClass, FalseClass]
+		def GetMimeBinary(outBytes)
 			# ...
 		end
 
+
 		# Method: GetMimeSb
 		#
-		# ==== Attributes
+		# Return the email as MIME text containing the email header, body (or bodies), related items (if any),
+		# and all attachments. The MIME is appended to the existing contents (if any) of ARG1.
 		#
-		# +sb+ - CkStringBuilder
-		# returns TrueClass, FalseClass
+		# @param sb [CkStringBuilder]
 		#
-		# YARD =>
-		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def GetMimeSb(sb)
 			# ...
 		end
 
+
 		# Method: GetNthBinaryPartOfType
 		#
-		# ==== Attributes
+		# Returns the binary bytes of the Nth MIME sub-part having a specified content type (such as
+		# "application/pdf". Indexing begins at 0. Call GetNumPartsOfType to find out how many MIME sub-parts
+		# exist for any given content type. If ARG3 is _TRUE_, then only MIME sub-parts having a
+		# content-disposition of "inline" are included. If ARG4 is _TRUE_, then MIME sub-parts having a
+		# content-disposition of "attachment" are excluded.
+		# 
+		# Note: If the email was downloaded as
+		# header-only, it will not contain all the parts of the full email. Also, if downloaded from IMAP
+		# excluding attachments, those parts that are the attachments will (of course) be missing.
 		#
-		# +index+ - Fixnum
-		# +contentType+ - String
-		# +inlineOnly+ - TrueClass, FalseClass
-		# +excludeAttachments+ - TrueClass, FalseClass
-		# returns CkByteData
+		# @param index [Fixnum]
+		# @param contentType [String]
+		# @param inlineOnly [TrueClass, FalseClass]
+		# @param excludeAttachments [TrueClass, FalseClass]
+		# @param outBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  contentType [String]
-		# @param  inlineOnly [TrueClass, FalseClass]
-		# @param  excludeAttachments [TrueClass, FalseClass]
-		# @return  [CkByteData]
-		def GetNthBinaryPartOfType(index, contentType, inlineOnly, excludeAttachments)
+		# @return [TrueClass, FalseClass]
+		def GetNthBinaryPartOfType(index, contentType, inlineOnly, excludeAttachments, outBytes)
 			# ...
 		end
+
 
 		# Method: GetNthTextPartOfType
 		#
-		# ==== Attributes
+		# Returns the text of the Nth MIME sub-part having a specified content type (such as "text/plain".
+		# Indexing begins at 0. Call GetNumPartsOfType to find out how many MIME sub-parts exist for any given
+		# content type. If ARG3 is _TRUE_, then only MIME sub-parts having a content-disposition of "inline"
+		# are included. If ARG4 is _TRUE_, then MIME sub-parts having a content-disposition of "attachment"
+		# are excluded.
+		# 
+		# Note: If the email was downloaded as header-only, it will not contain all
+		# the parts of the full email. Also, if downloaded from IMAP excluding attachments, those parts that
+		# are the attachments will (of course) be missing.
 		#
-		# +index+ - Fixnum
-		# +contentType+ - String
-		# +inlineOnly+ - TrueClass, FalseClass
-		# +excludeAttachments+ - TrueClass, FalseClass
-		# returns String
+		# @param index [Fixnum]
+		# @param contentType [String]
+		# @param inlineOnly [TrueClass, FalseClass]
+		# @param excludeAttachments [TrueClass, FalseClass]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  contentType [String]
-		# @param  inlineOnly [TrueClass, FalseClass]
-		# @param  excludeAttachments [TrueClass, FalseClass]
-		# @return  [String]
-		def GetNthTextPartOfType(index, contentType, inlineOnly, excludeAttachments)
+		# @return [TrueClass, FalseClass]
+		def GetNthTextPartOfType(index, contentType, inlineOnly, excludeAttachments, outStr)
 			# ...
 		end
 
+
+		# Method: GetNthTextPartOfType
+		#
+		# Returns the text of the Nth MIME sub-part having a specified content type (such as "text/plain".
+		# Indexing begins at 0. Call GetNumPartsOfType to find out how many MIME sub-parts exist for any given
+		# content type. If ARG3 is _TRUE_, then only MIME sub-parts having a content-disposition of "inline"
+		# are included. If ARG4 is _TRUE_, then MIME sub-parts having a content-disposition of "attachment"
+		# are excluded.
+		# 
+		# Note: If the email was downloaded as header-only, it will not contain all
+		# the parts of the full email. Also, if downloaded from IMAP excluding attachments, those parts that
+		# are the attachments will (of course) be missing.
+		#
+		# @param index [Fixnum]
+		# @param contentType [String]
+		# @param inlineOnly [TrueClass, FalseClass]
+		# @param excludeAttachments [TrueClass, FalseClass]
+		#
+		# @return [String]
+		def getNthTextPartOfType(index, contentType, inlineOnly, excludeAttachments)
+			# ...
+		end
+
+
 		# Method: GetNumPartsOfType
 		#
-		# ==== Attributes
+		# Returns the number of MIME sub-parts within the email having a specified content type (such as
+		# "text/plain"). If ARG2 is _TRUE_, then only MIME sub-parts having a content-disposition of "inline"
+		# are included. If ARG3 is _TRUE_, then MIME sub-parts having a content-disposition of "attachment"
+		# are excluded.
+		# 
+		# Note: If the email was downloaded as header-only, it will not contain all
+		# the parts of the full email. Also, if downloaded from IMAP excluding attachments, those parts that
+		# are the attachments will (of course) be missing.
 		#
-		# +contentType+ - String
-		# +inlineOnly+ - TrueClass, FalseClass
-		# +excludeAttachments+ - TrueClass, FalseClass
-		# returns Fixnum
+		# @param contentType [String]
+		# @param inlineOnly [TrueClass, FalseClass]
+		# @param excludeAttachments [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  contentType [String]
-		# @param  inlineOnly [TrueClass, FalseClass]
-		# @param  excludeAttachments [TrueClass, FalseClass]
-		# @return  [Fixnum]
+		# @return [Fixnum]
 		def GetNumPartsOfType(contentType, inlineOnly, excludeAttachments)
 			# ...
 		end
 
+
 		# Method: GetPlainTextBody
 		#
-		# ==== Attributes
+		# Returns the email body having the "text/plain" content type.
 		#
-		# returns String
+		# @param outStrBody [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GetPlainTextBody()
+		# @return [TrueClass, FalseClass]
+		def GetPlainTextBody(outStrBody)
 			# ...
 		end
+
+
+		# Method: GetPlainTextBody
+		#
+		# Returns the email body having the "text/plain" content type.
+		#
+		#
+		# @return [String]
+		def getPlainTextBody()
+			# ...
+		end
+
 
 		# Method: GetRelatedAttr
 		#
-		# ==== Attributes
+		# Returns a header field attribute value from the header field of the Nth related item.
 		#
-		# +index+ - Fixnum
-		# +fieldName+ - String
-		# +attrName+ - String
-		# returns String
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  fieldName [String]
-		# @param  attrName [String]
-		# @return  [String]
-		def GetRelatedAttr(index, fieldName, attrName)
+		# @return [TrueClass, FalseClass]
+		def GetRelatedAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
+
+
+		# Method: GetRelatedAttr
+		#
+		# Returns a header field attribute value from the header field of the Nth related item.
+		#
+		# @param index [Fixnum]
+		# @param fieldName [String]
+		# @param attrName [String]
+		#
+		# @return [String]
+		def getRelatedAttr(index, fieldName, attrName)
+			# ...
+		end
+
 
 		# Method: GetRelatedContentID
 		#
-		# ==== Attributes
+		# Returns the content ID of a related item contained with the email. Related items are typically
+		# images and style-sheets embedded within HTML emails.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrContentID [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetRelatedContentID(index)
+		# @return [TrueClass, FalseClass]
+		def GetRelatedContentID(index, outStrContentID)
 			# ...
 		end
+
+
+		# Method: GetRelatedContentID
+		#
+		# Returns the content ID of a related item contained with the email. Related items are typically
+		# images and style-sheets embedded within HTML emails.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getRelatedContentID(index)
+			# ...
+		end
+
 
 		# Method: GetRelatedContentLocation
 		#
-		# ==== Attributes
+		# Returns the Content-Location of a related item contained with the email. Related items are typically
+		# images and style-sheets embedded within HTML emails.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetRelatedContentLocation(index)
+		# @return [TrueClass, FalseClass]
+		def GetRelatedContentLocation(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetRelatedContentLocation
+		#
+		# Returns the Content-Location of a related item contained with the email. Related items are typically
+		# images and style-sheets embedded within HTML emails.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getRelatedContentLocation(index)
+			# ...
+		end
+
 
 		# Method: GetRelatedContentType
 		#
-		# ==== Attributes
+		# Returns the content-type of the Nth related content item in an email message.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrContentType [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetRelatedContentType(index)
+		# @return [TrueClass, FalseClass]
+		def GetRelatedContentType(index, outStrContentType)
 			# ...
 		end
+
+
+		# Method: GetRelatedContentType
+		#
+		# Returns the content-type of the Nth related content item in an email message.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getRelatedContentType(index)
+			# ...
+		end
+
 
 		# Method: GetRelatedData
 		#
-		# ==== Attributes
+		# Returns the content of a related item contained with the email. Related items are typically images
+		# and style-sheets embedded within HTML emails.
 		#
-		# +index+ - Fixnum
-		# returns CkByteData
+		# @param index [Fixnum]
+		# @param outBuffer [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [CkByteData]
-		def GetRelatedData(index)
+		# @return [TrueClass, FalseClass]
+		def GetRelatedData(index, outBuffer)
 			# ...
 		end
+
 
 		# Method: GetRelatedFilename
 		#
-		# ==== Attributes
+		# Returns the filename of a related item contained with the email. Related items are typically images
+		# and style-sheets embedded within HTML emails.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrFilename [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetRelatedFilename(index)
+		# @return [TrueClass, FalseClass]
+		def GetRelatedFilename(index, outStrFilename)
 			# ...
 		end
+
+
+		# Method: GetRelatedFilename
+		#
+		# Returns the filename of a related item contained with the email. Related items are typically images
+		# and style-sheets embedded within HTML emails.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getRelatedFilename(index)
+			# ...
+		end
+
 
 		# Method: GetRelatedString
 		#
-		# ==== Attributes
+		# Returns the text with CR line-endings of a related item contained with the email. Related items are
+		# typically images and style-sheets embedded within HTML emails.
 		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns String
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @param outStrData [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
-		def GetRelatedString(index, charset)
+		# @return [TrueClass, FalseClass]
+		def GetRelatedString(index, charset, outStrData)
 			# ...
 		end
+
+
+		# Method: GetRelatedString
+		#
+		# Returns the text with CR line-endings of a related item contained with the email. Related items are
+		# typically images and style-sheets embedded within HTML emails.
+		#
+		# @param index [Fixnum]
+		# @param charset [String]
+		#
+		# @return [String]
+		def getRelatedString(index, charset)
+			# ...
+		end
+
 
 		# Method: GetRelatedStringCrLf
 		#
-		# ==== Attributes
+		# Returns the text with CRLF line-endings of a related item contained with the email. Related items
+		# are typically images and style-sheets embedded within HTML emails.
 		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns String
+		# @param index [Fixnum]
+		# @param charset [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  charset [String]
-		# @return  [String]
-		def GetRelatedStringCrLf(index, charset)
+		# @return [TrueClass, FalseClass]
+		def GetRelatedStringCrLf(index, charset, outStr)
 			# ...
 		end
+
+
+		# Method: GetRelatedStringCrLf
+		#
+		# Returns the text with CRLF line-endings of a related item contained with the email. Related items
+		# are typically images and style-sheets embedded within HTML emails.
+		#
+		# @param index [Fixnum]
+		# @param charset [String]
+		#
+		# @return [String]
+		def getRelatedStringCrLf(index, charset)
+			# ...
+		end
+
 
 		# Method: GetReplacePattern
 		#
-		# ==== Attributes
+		# Returns a replacement pattern previously defined for mail-merge operations.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStrPattern [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetReplacePattern(index)
+		# @return [TrueClass, FalseClass]
+		def GetReplacePattern(index, outStrPattern)
 			# ...
 		end
+
+
+		# Method: GetReplacePattern
+		#
+		# Returns a replacement pattern previously defined for mail-merge operations.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getReplacePattern(index)
+			# ...
+		end
+
 
 		# Method: GetReplaceString
 		#
-		# ==== Attributes
+		# Returns a replacement string for a previously defined pattern/replacement string pair. (This is a
+		# mail-merge feature.)
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetReplaceString(index)
+		# @return [TrueClass, FalseClass]
+		def GetReplaceString(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetReplaceString
+		#
+		# Returns a replacement string for a previously defined pattern/replacement string pair. (This is a
+		# mail-merge feature.)
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getReplaceString(index)
+			# ...
+		end
+
 
 		# Method: GetReplaceString2
 		#
-		# ==== Attributes
+		# Returns a replacement string for a previously defined pattern/replacement string pair. (This is a
+		# mail-merge feature.)
 		#
-		# +pattern+ - String
-		# returns String
+		# @param pattern [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  pattern [String]
-		# @return  [String]
-		def GetReplaceString2(pattern)
+		# @return [TrueClass, FalseClass]
+		def GetReplaceString2(pattern, outStr)
 			# ...
 		end
+
+
+		# Method: GetReplaceString2
+		#
+		# Returns a replacement string for a previously defined pattern/replacement string pair. (This is a
+		# mail-merge feature.)
+		#
+		# @param pattern [String]
+		#
+		# @return [String]
+		def getReplaceString2(pattern)
+			# ...
+		end
+
 
 		# Method: GetReport
 		#
-		# ==== Attributes
+		# (See the NumReports property.) Returns the body content of the Nth report within a multipart/report
+		# email. 
+		# 
+		# Multipart/report is a message type that contains data formatted for a mail
+		# server to read. It is split between a text/plain (or some other content/type easily readable) and a
+		# message/delivery-status, which contains the data formatted for the mail server to
+		# read.
+		# 
+		# It is defined in RFC 3462
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetReport(index)
+		# @return [TrueClass, FalseClass]
+		def GetReport(index, outStr)
 			# ...
 		end
 
+
+		# Method: GetReport
+		#
+		# (See the NumReports property.) Returns the body content of the Nth report within a multipart/report
+		# email. 
+		# 
+		# Multipart/report is a message type that contains data formatted for a mail
+		# server to read. It is split between a text/plain (or some other content/type easily readable) and a
+		# message/delivery-status, which contains the data formatted for the mail server to
+		# read.
+		# 
+		# It is defined in RFC 3462
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getReport(index)
+			# ...
+		end
+
+
 		# Method: GetSignedByCert
 		#
-		# ==== Attributes
+		# Return the certificate used to digitally sign this email.
 		#
-		# returns CkCert
 		#
-		# YARD =>
-		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetSignedByCert()
 			# ...
 		end
 
+
 		# Method: GetSignedByCertChain
 		#
-		# ==== Attributes
+		# Return the full certificate chain of the certificate used to digitally sign this email.
 		#
-		# returns CkCertChain
 		#
-		# YARD =>
-		#
-		# @return  [CkCertChain]
+		# @return [CkCertChain]
 		def GetSignedByCertChain()
 			# ...
 		end
 
+
 		# Method: GetSigningCert
 		#
-		# ==== Attributes
+		# Return the certificate that will be used to digitally sign this email. This is the cerficate that
+		# was previously set by calling the SetSigningCert method.
 		#
-		# returns CkCert
 		#
-		# YARD =>
-		#
-		# @return  [CkCert]
+		# @return [CkCert]
 		def GetSigningCert()
 			# ...
 		end
 
+
 		# Method: GetTo
 		#
-		# ==== Attributes
+		# Returns a "to" recipient's full email address.
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetTo(index)
+		# @return [TrueClass, FalseClass]
+		def GetTo(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetTo
+		#
+		# Returns a "to" recipient's full email address.
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getTo(index)
+			# ...
+		end
+
 
 		# Method: GetToAddr
 		#
-		# ==== Attributes
+		# Returns the Nth To address (only the address part, not the friendly-name part).
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetToAddr(index)
+		# @return [TrueClass, FalseClass]
+		def GetToAddr(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetToAddr
+		#
+		# Returns the Nth To address (only the address part, not the friendly-name part).
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getToAddr(index)
+			# ...
+		end
+
 
 		# Method: GetToName
 		#
-		# ==== Attributes
+		# Returns the Nth To name (only the friendly-name part, not the address part).
 		#
-		# +index+ - Fixnum
-		# returns String
+		# @param index [Fixnum]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @return  [String]
-		def GetToName(index)
+		# @return [TrueClass, FalseClass]
+		def GetToName(index, outStr)
 			# ...
 		end
+
+
+		# Method: GetToName
+		#
+		# Returns the Nth To name (only the friendly-name part, not the address part).
+		#
+		# @param index [Fixnum]
+		#
+		# @return [String]
+		def getToName(index)
+			# ...
+		end
+
 
 		# Method: GetXml
 		#
-		# ==== Attributes
+		# Convert the email object to an XML document in memory
 		#
-		# returns String
+		# @param outStrXml [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def GetXml()
+		# @return [TrueClass, FalseClass]
+		def GetXml(outStrXml)
 			# ...
 		end
 
+
+		# Method: GetXml
+		#
+		# Convert the email object to an XML document in memory
+		#
+		#
+		# @return [String]
+		def getXml()
+			# ...
+		end
+
+
 		# Method: HasHeaderMatching
 		#
-		# ==== Attributes
+		# Returns _TRUE_ if the email has a header field with the specified ARG1 with a value matching ARG2.
+		# Case sensitivity is controlled by ARG3. The ARG2 may include 0 or more asterisk (wildcard)
+		# characters which match 0 or more of any character.
 		#
-		# +fieldName+ - String
-		# +valuePattern+ - String
-		# +caseSensitive+ - TrueClass, FalseClass
-		# returns TrueClass, FalseClass
+		# @param fieldName [String]
+		# @param valuePattern [String]
+		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# YARD =>
-		#
-		# @param  fieldName [String]
-		# @param  valuePattern [String]
-		# @param  caseSensitive [TrueClass, FalseClass]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HasHeaderMatching(fieldName, valuePattern, caseSensitive)
 			# ...
 		end
 
+
 		# Method: HasHtmlBody
 		#
-		# ==== Attributes
+		# Returns true if the email has an HTML body.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HasHtmlBody()
 			# ...
 		end
 
+
 		# Method: HasPlainTextBody
 		#
-		# ==== Attributes
+		# Returns true if the email has a plain-text body.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def HasPlainTextBody()
 			# ...
 		end
 
+
 		# Method: IsMultipartReport
 		#
-		# ==== Attributes
+		# Returns true if the email is a multipart/report email.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def IsMultipartReport()
 			# ...
 		end
 
+
 		# Method: LoadBodyFromFile
 		#
-		# ==== Attributes
+		# Sets the plain-text or HTML body from the contents of a file. For an HTML file, the ARG2 argument
+		# should be _TRUE_ (otherwise _FALSE_). The character encoding of the file, ,such as utf-8, ansi, etc.
+		# is specified by ARG3.
 		#
-		# +filePath+ - String
-		# +isHtml+ - TrueClass, FalseClass
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param filePath [String]
+		# @param isHtml [TrueClass, FalseClass]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  filePath [String]
-		# @param  isHtml [TrueClass, FalseClass]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadBodyFromFile(filePath, isHtml, charset)
 			# ...
 		end
 
+
 		# Method: LoadEml
 		#
-		# ==== Attributes
+		# Loads a complete email from a .EML file. (EML files are simply RFC822 MIME text files.)
 		#
-		# +mimePath+ - String
-		# returns TrueClass, FalseClass
+		# @param mimePath [String]
 		#
-		# YARD =>
-		#
-		# @param  mimePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadEml(mimePath)
 			# ...
 		end
 
+
 		# Method: LoadTaskResult
 		#
-		# ==== Attributes
+		# Loads the email object from a completed asynchronous task.
 		#
-		# +task+ - CkTask
-		# returns TrueClass, FalseClass
+		# @param task [CkTask]
 		#
-		# YARD =>
-		#
-		# @param  task [CkTask]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
 
+
 		# Method: LoadXml
 		#
-		# ==== Attributes
+		# Loads an email with the contents of an XML email file.
 		#
-		# +xmlPath+ - String
-		# returns TrueClass, FalseClass
+		# @param xmlPath [String]
 		#
-		# YARD =>
-		#
-		# @param  xmlPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xmlPath)
 			# ...
 		end
 
+
 		# Method: LoadXmlString
 		#
-		# ==== Attributes
+		# Loads an email from an XML string (previously obtained by calling the GetXml method). The contents
+		# of the calling email object are erased and replaced with the email contained within the XML string.
 		#
-		# +xmlStr+ - String
-		# returns TrueClass, FalseClass
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  xmlStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def LoadXmlString(xmlStr)
 			# ...
 		end
 
+
 		# Method: QEncodeBytes
 		#
-		# ==== Attributes
+		# Takes a byte array of multibyte (non-Unicode) data and returns a Unicode Q-Encoded string.
 		#
-		# +inData+ - CkByteData
-		# +charset+ - String
-		# returns String
+		# @param inData [CkByteData]
+		# @param charset [String]
+		# @param outEncodedStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  inData [CkByteData]
-		# @param  charset [String]
-		# @return  [String]
-		def QEncodeBytes(inData, charset)
+		# @return [TrueClass, FalseClass]
+		def QEncodeBytes(inData, charset, outEncodedStr)
 			# ...
 		end
+
+
+		# Method: QEncodeBytes
+		#
+		# Takes a byte array of multibyte (non-Unicode) data and returns a Unicode Q-Encoded string.
+		#
+		# @param inData [CkByteData]
+		# @param charset [String]
+		#
+		# @return [String]
+		def qEncodeBytes(inData, charset)
+			# ...
+		end
+
 
 		# Method: QEncodeString
 		#
-		# ==== Attributes
+		# Takes a Unicode string, converts it to the charset specified in the 2nd parameter, Q-Encodes the
+		# converted multibyte data, and returns the encoded Unicode string.
 		#
-		# +str+ - String
-		# +charset+ - String
-		# returns String
+		# @param str [String]
+		# @param charset [String]
+		# @param outEncodedStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  str [String]
-		# @param  charset [String]
-		# @return  [String]
-		def QEncodeString(str, charset)
+		# @return [TrueClass, FalseClass]
+		def QEncodeString(str, charset, outEncodedStr)
 			# ...
 		end
 
+
+		# Method: QEncodeString
+		#
+		# Takes a Unicode string, converts it to the charset specified in the 2nd parameter, Q-Encodes the
+		# converted multibyte data, and returns the encoded Unicode string.
+		#
+		# @param str [String]
+		# @param charset [String]
+		#
+		# @return [String]
+		def qEncodeString(str, charset)
+			# ...
+		end
+
+
 		# Method: RemoveAttachedMessage
 		#
-		# ==== Attributes
+		# Removes the Nth message/rfc822 sub-part of the email. Indexing begins at 0.
 		#
-		# +idx+ - Fixnum
-		# returns nil
+		# @param idx [Fixnum]
 		#
-		# YARD =>
-		#
-		# @param  idx [Fixnum]
-		# @return  [nil]
+		# @return [nil]
 		def RemoveAttachedMessage(idx)
 			# ...
 		end
 
+
 		# Method: RemoveAttachedMessages
 		#
-		# ==== Attributes
+		# Removes all message/rfc822 sub-parts of the email object.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def RemoveAttachedMessages()
 			# ...
 		end
 
+
 		# Method: RemoveAttachmentPaths
 		#
-		# ==== Attributes
+		# Removes path information from all attachment filenames.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def RemoveAttachmentPaths()
 			# ...
 		end
 
+
 		# Method: RemoveHeaderField
 		#
-		# ==== Attributes
+		# Removes by name all occurrences of a header field.
 		#
-		# +fieldName+ - String
-		# returns nil
+		# @param fieldName [String]
 		#
-		# YARD =>
-		#
-		# @param  fieldName [String]
-		# @return  [nil]
+		# @return [nil]
 		def RemoveHeaderField(fieldName)
 			# ...
 		end
 
+
 		# Method: RemoveHtmlAlternative
 		#
-		# ==== Attributes
+		# Removes the HTML body from the email (if an HTML body exists).
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def RemoveHtmlAlternative()
 			# ...
 		end
 
+
 		# Method: RemovePlainTextAlternative
 		#
-		# ==== Attributes
+		# Removes the plain-text body from the email (if a plain-text body exists).
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def RemovePlainTextAlternative()
 			# ...
 		end
 
+
 		# Method: SaveAllAttachments
 		#
-		# ==== Attributes
+		# Save all the attachments of an email to files in a directory specified by ARG1. The
+		# OverwriteExisting property controls whether existing files are allowed to be
+		# overwritten.
+		# 
+		# Note: Email attachment filenames can be renamed or modified prior to
+		# saving. The number of attachments is available in the NumAttachments property. An application can
+		# loop over the attachments to get the filename for each by calling GetAttachmentFilename(index). Each
+		# attachment's filename can be set by calling SetAttachmentFilename(index, newFilename).
 		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
+		# @param dirPath [String]
 		#
-		# YARD =>
-		#
-		# @param  dirPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SaveAllAttachments(dirPath)
 			# ...
 		end
 
+
 		# Method: SaveAttachedFile
 		#
-		# ==== Attributes
+		# Saves the Nth email attachment to the directory specified by ARG2. The 1st attachment is at index 0.
+		# The OverwriteExisting property controls whether existing files are allowed to be overwritten.
 		#
-		# +index+ - Fixnum
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
+		# @param dirPath [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  dirPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SaveAttachedFile(index, dirPath)
 			# ...
 		end
 
+
 		# Method: SaveEml
 		#
-		# ==== Attributes
+		# Convert this email object to EML and save it to a file.
 		#
-		# +emlFilePath+ - String
-		# returns TrueClass, FalseClass
+		# @param emlFilePath [String]
 		#
-		# YARD =>
-		#
-		# @param  emlFilePath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SaveEml(emlFilePath)
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: SaveRelatedItem
 		#
-		# ==== Attributes
+		# Saves the Nth related item to the directory specified by ARG2. (The 1st related item is at index 0)
+		# Related content items are typically image or style-sheets embedded within an HTML email. The
+		# OverwriteExisting property controls whether existing files are allowed to be overwritten.
 		#
-		# +index+ - Fixnum
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
+		# @param dirPath [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  dirPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SaveRelatedItem(index, dirPath)
 			# ...
 		end
 
+
 		# Method: SaveXml
 		#
-		# ==== Attributes
+		# Convert this email object to XML and save it to a file.
 		#
-		# +path+ - String
-		# returns TrueClass, FalseClass
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SaveXml(path)
 			# ...
 		end
 
+
 		# Method: SetAttachmentCharset
 		#
-		# ==== Attributes
+		# Sets the charset attribute of the content-type header field for a specified attachment. This can be
+		# used if the attachment is a text file that contains text in a non us-ascii charset such as
+		# Shift_JIS, iso-8859-2, big5, iso-8859-5, etc.
 		#
-		# +index+ - Fixnum
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetAttachmentCharset(index, charset)
 			# ...
 		end
 
+
 		# Method: SetAttachmentDisposition
 		#
-		# ==== Attributes
+		# Set's an attachment's disposition. The default disposition of an attachment is "attachment". This
+		# method is typically called to change the disposition to "inline". The 1st attachment is at ARG1 0.
 		#
-		# +index+ - Fixnum
-		# +disposition+ - String
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
+		# @param disposition [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  disposition [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetAttachmentDisposition(index, disposition)
 			# ...
 		end
 
+
 		# Method: SetAttachmentFilename
 		#
-		# ==== Attributes
+		# Renames a email attachment's filename. The 1st attachment is at ARG1 0.
 		#
-		# +index+ - Fixnum
-		# +filename+ - String
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
+		# @param filename [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetAttachmentFilename(index, filename)
 			# ...
 		end
 
+
 		# Method: SetBinaryBody
 		#
-		# ==== Attributes
+		# Sets the main body of the email to binary content of any type. The disposition can be an empty
+		# string, "inline", or "attachment". If a filename is specified, the disposition must be non-empty
+		# because the filename is an attribute of the content-disposition header field.
 		#
-		# +byteData+ - CkByteData
-		# +contentType+ - String
-		# +disposition+ - String
-		# +filename+ - String
-		# returns TrueClass, FalseClass
+		# @param byteData [CkByteData]
+		# @param contentType [String]
+		# @param disposition [String]
+		# @param filename [String]
 		#
-		# YARD =>
-		#
-		# @param  byteData [CkByteData]
-		# @param  contentType [String]
-		# @param  disposition [String]
-		# @param  filename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetBinaryBody(byteData, contentType, disposition, filename)
 			# ...
 		end
 
+
 		# Method: SetCSP
 		#
-		# ==== Attributes
+		# (Only applies to the Microsoft Windows OS) Sets the Cryptographic Service Provider (CSP) to be used
+		# for encryption or digital signing.
+		# 
+		# This is not commonly used becaues the default
+		# Microsoft CSP is typically appropriate. 
+		# One instance where SetCSP is necessary is when using
+		# the Crypto-Pro CSP for the GOST R 34.10-2001 and GOST R 34.10-94 providers.
 		#
-		# +csp+ - CkCsp
-		# returns TrueClass, FalseClass
+		# @param csp [CkCsp]
 		#
-		# YARD =>
-		#
-		# @param  csp [CkCsp]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetCSP(csp)
 			# ...
 		end
 
+
+		# Method: SetDecryptCert
+		#
+		# Allows for a certificate to be explicity provided for decryption. When an email object is loaded via
+		# any method, such as LoadEml, SetFromMimeText, SetFromMimeBytes, etc., security layers (signatures
+		# and encryption) are automatically unwrapped. This method could be called prior to calling a method
+		# that loads the email.
+		#
+		# @param cert [CkCert]
+		#
+		# @return [TrueClass, FalseClass]
+		def SetDecryptCert(cert)
+			# ...
+		end
+
+
+		# Method: SetDecryptCert2
+		#
+		# Allows for a certificate and private key to be explicity specified for decryptoin. When an email
+		# object is loaded via any method, such as LoadEml, SetFromMimeText, SetFromMimeBytes, etc., security
+		# layers (signatures and encryption) are automatically unwrapped. Decryption requires a private key.
+		# On Windows-based systems, the private key is often pre-installed and nothing need be done to provide
+		# it because Chilkat will automatically find it and use it. However, if not on a Windows system, or if
+		# the private key was not pre-installed, then it can be provided by this method, or via the
+		# AddPfxSourceFile / AddPfxSourceData methods.
+		#
+		# @param cert [CkCert]
+		# @param key [CkPrivateKey]
+		#
+		# @return [TrueClass, FalseClass]
+		def SetDecryptCert2(cert, key)
+			# ...
+		end
+
+
 		# Method: SetDt
 		#
-		# ==== Attributes
+		# Sets the "Date" header field of the email to have the value of the date/time object provided.
 		#
-		# +dt+ - CkDateTime
-		# returns TrueClass, FalseClass
+		# @param dt [CkDateTime]
 		#
-		# YARD =>
-		#
-		# @param  dt [CkDateTime]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetDt(dt)
 			# ...
 		end
 
+
 		# Method: SetEdifactBody
 		#
-		# ==== Attributes
+		# Creates a typical email used to send EDIFACT messages. Does the following:
+		# 
+		# Sets the
+		# email body to the EDIFACT message passed in ARG1.
+		# Sets the Content-Transfer-Encoding to
+		# Base64.
+		# Set the Content-Type equal to "application/EDIFACT".
+		# Sets the Content-Type
+		# header's name attribute to ARG2.
+		# Sets the Content-Disposition equal to
+		# "attachment".
+		# Sets the Content-Disposition's "filename" attribute equal to ARG3.
+		# The
+		# EDIFACT message is converted to the charset indicated by ARG4, and encoded using Base64 in the email
+		# body.
+		# 
+		# The email's subject, recipients, FROM address, and other headers are left
+		# unmodified.
 		#
-		# +message+ - String
-		# +name+ - String
-		# +filename+ - String
-		# +charset+ - String
-		# returns nil
+		# @param message [String]
+		# @param name [String]
+		# @param filename [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  message [String]
-		# @param  name [String]
-		# @param  filename [String]
-		# @param  charset [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetEdifactBody(message, name, filename, charset)
 			# ...
 		end
 
+
 		# Method: SetEncryptCert
 		#
-		# ==== Attributes
+		# Set the encryption certificate to be used in encryption. Use the CreateCS, CertStore, and Cert
+		# classes to create a Cert object by either locating a certificate in a certificate store or loading
+		# one from a file.
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetEncryptCert(cert)
 			# ...
 		end
 
+
 		# Method: SetFromMimeBd
 		#
-		# ==== Attributes
+		# Loads an email with the MIME stored in a BinData object. The contents of the email object are
+		# completely replaced.
 		#
-		# +bindat+ - CkBinData
-		# returns TrueClass, FalseClass
+		# @param bindat [CkBinData]
 		#
-		# YARD =>
-		#
-		# @param  bindat [CkBinData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetFromMimeBd(bindat)
 			# ...
 		end
 
+
 		# Method: SetFromMimeBytes
 		#
-		# ==== Attributes
+		# Loads the email object with the ARG1. If the email object already contained an email, it is entirely
+		# replaced. The character encoding (such as "utf-8", "iso-8859-1", etc.) of the bytes is automatically
+		# inferred from the content. If for some reason it is not possible to determine the character
+		# encoding, the SetFromMimeBytes2 method may be called to explicitly specify the charset.
 		#
-		# +mimeBytes+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param mimeBytes [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  mimeBytes [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetFromMimeBytes(mimeBytes)
 			# ...
 		end
 
+
 		# Method: SetFromMimeBytes2
 		#
-		# ==== Attributes
+		# Loads the email object with the ARG1. If the email object already contained an email, it is entirely
+		# replaced.
+		# 
+		# The ARG2 specifies the character encoding of the MIME bytes (such as "utf-8",
+		# "iso-8859-1", etc.).
 		#
-		# +mimeBytes+ - CkByteData
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param mimeBytes [CkByteData]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  mimeBytes [CkByteData]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetFromMimeBytes2(mimeBytes, charset)
 			# ...
 		end
 
+
 		# Method: SetFromMimeSb
 		#
-		# ==== Attributes
+		# Loads an email with the MIME stored in a StringBuilder object. The contents of the email object are
+		# completely replaced.
 		#
-		# +sb+ - CkStringBuilder
-		# returns TrueClass, FalseClass
+		# @param sb [CkStringBuilder]
 		#
-		# YARD =>
-		#
-		# @param  sb [CkStringBuilder]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetFromMimeSb(sb)
 			# ...
 		end
 
+
 		# Method: SetFromMimeText
 		#
-		# ==== Attributes
+		# Loads an email with the contents of a .eml (i.e. MIME) contained in a string. The contents of the
+		# email object are completely replaced.
 		#
-		# +mimeText+ - String
-		# returns TrueClass, FalseClass
+		# @param mimeText [String]
 		#
-		# YARD =>
-		#
-		# @param  mimeText [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetFromMimeText(mimeText)
 			# ...
 		end
 
+
 		# Method: SetFromXmlText
 		#
-		# ==== Attributes
+		# Loads an email from an XML string.
 		#
-		# +xmlStr+ - String
-		# returns TrueClass, FalseClass
+		# @param xmlStr [String]
 		#
-		# YARD =>
-		#
-		# @param  xmlStr [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetFromXmlText(xmlStr)
 			# ...
 		end
 
+
 		# Method: SetHtmlBody
 		#
-		# ==== Attributes
+		# Sets the HTML body of an email.
 		#
-		# +html+ - String
-		# returns nil
+		# @param html [String]
 		#
-		# YARD =>
-		#
-		# @param  html [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetHtmlBody(html)
 			# ...
 		end
 
+
 		# Method: SetMbHtmlBody
 		#
-		# ==== Attributes
+		# Sets the HTML email body from a byte array containing character data in the specified character set.
+		# This method also updates the email "content-type"header to properly reflect the content type of the
+		# body.
 		#
-		# +charset+ - String
-		# +inData+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param charset [String]
+		# @param inData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  charset [String]
-		# @param  inData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetMbHtmlBody(charset, inData)
 			# ...
 		end
 
+
 		# Method: SetMbPlainTextBody
 		#
-		# ==== Attributes
+		# Sets the plain-text email body from a byte array containing character data in the specified
+		# character set. This method also updates the email "content-type"header to properly reflect the
+		# content type of the body.
 		#
-		# +charset+ - String
-		# +inData+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param charset [String]
+		# @param inData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  charset [String]
-		# @param  inData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetMbPlainTextBody(charset, inData)
 			# ...
 		end
 
+
 		# Method: SetRelatedFilename
 		#
-		# ==== Attributes
+		# Sets the filename for a related item within the email.
 		#
-		# +index+ - Fixnum
-		# +path+ - String
-		# returns TrueClass, FalseClass
+		# @param index [Fixnum]
+		# @param path [String]
 		#
-		# YARD =>
-		#
-		# @param  index [Fixnum]
-		# @param  path [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetRelatedFilename(index, path)
 			# ...
 		end
 
+
 		# Method: SetReplacePattern
 		#
-		# ==== Attributes
+		# Create a pattern/replacement-text pair for mail-merge. When the email is sent via the MailMan's
+		# SendEmail method, or any other mail-sending method, the patterns are replaced with the replacement
+		# strings during the sending process. Do define multiple replacement patterns, simply call
+		# SetReplacePattern once per pattern/replacement string. (Note: The MailMan's RenderToMime method will
+		# also do pattern replacements. Methods such as SaveEml or GetMime do not replace
+		# patterns.)
+		# 
+		# Note: Replacement patterns may be placed in any header field, and in both
+		# HTML and plain-text email bodies.
 		#
-		# +pattern+ - String
-		# +replaceString+ - String
-		# returns TrueClass, FalseClass
+		# @param pattern [String]
+		# @param replaceString [String]
 		#
-		# YARD =>
-		#
-		# @param  pattern [String]
-		# @param  replaceString [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetReplacePattern(pattern, replaceString)
 			# ...
 		end
 
+
 		# Method: SetSigningCert
 		#
-		# ==== Attributes
+		# Set the certificate to be used in creating a digital signature. Use the CreateCS, CertStore, and
+		# Cert classes to create a Cert object by either locating a certificate in a certificate store or
+		# loading one from a file.
 		#
-		# +cert+ - CkCert
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetSigningCert(cert)
 			# ...
 		end
 
+
 		# Method: SetSigningCert2
 		#
-		# ==== Attributes
+		# Explicitly sets the certificate and private key to be used for sending digitally signed email. If
+		# the certificate's private key is already installed on the computer, then one may simply call
+		# SetSigningCert because the Chilkat component will automatically locate and use the corresponding
+		# private key (stored in the Windows Protected Store). In most cases, if the digital certificate is
+		# already installed w/ private key on the computer, it is not necessary to explicitly set the signing
+		# certificate at all. The Chilkat component will automatically locate and use the certificate
+		# containing the FROM email address (from the registry-based certificate store where it was
+		# installed).
 		#
-		# +cert+ - CkCert
-		# +key+ - CkPrivateKey
-		# returns TrueClass, FalseClass
+		# @param cert [CkCert]
+		# @param key [CkPrivateKey]
 		#
-		# YARD =>
-		#
-		# @param  cert [CkCert]
-		# @param  key [CkPrivateKey]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def SetSigningCert2(cert, key)
 			# ...
 		end
 
+
 		# Method: SetTextBody
 		#
-		# ==== Attributes
+		# Sets the body of the email and also sets the Content-Type header field of the ARG2. If the email is
+		# already multipart/alternative, an additional alternative with the indicated Content-Type will be
+		# added. If an alternative with the same Content-Type already exists, it is replaced.
 		#
-		# +bodyText+ - String
-		# +contentType+ - String
-		# returns nil
+		# @param bodyText [String]
+		# @param contentType [String]
 		#
-		# YARD =>
-		#
-		# @param  bodyText [String]
-		# @param  contentType [String]
-		# @return  [nil]
+		# @return [nil]
 		def SetTextBody(bodyText, contentType)
 			# ...
 		end
 
+
+		# Method: UidlEquals
+		#
+		# True if the caller email has a UIDL that equals the email passed in the argument.
+		#
+		# @param e [CkEmail]
+		#
+		# @return [TrueClass, FalseClass]
+		def UidlEquals(e)
+			# ...
+		end
+
+
 		# Method: UnpackHtml
 		#
-		# ==== Attributes
+		# Unpacks an HTML email into an HTML file and related files (images and style sheets). The links
+		# within the HTML are updated to point to the files unpacked and saved to disk.
 		#
-		# +unpackDir+ - String
-		# +htmlFilename+ - String
-		# +partsSubdir+ - String
-		# returns TrueClass, FalseClass
+		# @param unpackDir [String]
+		# @param htmlFilename [String]
+		# @param partsSubdir [String]
 		#
-		# YARD =>
-		#
-		# @param  unpackDir [String]
-		# @param  htmlFilename [String]
-		# @param  partsSubdir [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnpackHtml(unpackDir, htmlFilename, partsSubdir)
 			# ...
 		end
 
+
 		# Method: UnSpamify
 		#
-		# ==== Attributes
+		# Unobfuscates emails by undoing what spammers do to obfuscate email. It removes comments from HTML
+		# bodies and unobfuscates hyperlinked URLs.
 		#
-		# returns nil
 		#
-		# YARD =>
-		#
-		# @return  [nil]
+		# @return [nil]
 		def UnSpamify()
 			# ...
 		end
 
+
 		# Method: UnzipAttachments
 		#
-		# ==== Attributes
+		# Unzips and replaces any Zip file attachments with the expanded contents. As an example, if an email
+		# contained a single Zip file containing 3 GIF image files as an attachment, then after calling this
+		# method the email would contain 3 GIF file attachments, and the Zip attachment would be gone.If an
+		# email contains multiple Zip file attachments, each Zip is expanded and replaced with the contents.
 		#
-		# returns TrueClass, FalseClass
 		#
-		# YARD =>
-		#
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UnzipAttachments()
 			# ...
 		end
 
+
 		# Method: UseCertVault
 		#
-		# ==== Attributes
+		# Adds an XML certificate vault to the object's internal list of sources to be searched for
+		# certificates and private keys when encrypting/decrypting or signing/verifying. Unlike the
+		# AddPfxSourceData and AddPfxSourceFile methods, only a single XML certificate vault can be used. If
+		# UseCertVault is called multiple times, only the last certificate vault will be used, as each call to
+		# UseCertVault will replace the certificate vault provided in previous calls.
 		#
-		# +vault+ - CkXmlCertVault
-		# returns TrueClass, FalseClass
+		# @param vault [CkXmlCertVault]
 		#
-		# YARD =>
-		#
-		# @param  vault [CkXmlCertVault]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
 
+
 		# Method: ZipAttachments
 		#
-		# ==== Attributes
+		# Replaces all the attachments of an email with a single Zip file attachment having the filename
+		# specified.
 		#
-		# +zipFilename+ - String
-		# returns TrueClass, FalseClass
+		# @param zipFilename [String]
 		#
-		# YARD =>
-		#
-		# @param  zipFilename [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ZipAttachments(zipFilename)
 			# ...
 		end
+
 	end
 end

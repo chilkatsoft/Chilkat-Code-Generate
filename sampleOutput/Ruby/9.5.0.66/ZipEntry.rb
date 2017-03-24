@@ -1,478 +1,764 @@
 module Chilkat
 	class CkZipEntry 
-		# returns String
+		# The comment stored within the Zip for this entry.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Comment() end
+		def get_Comment(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The comment stored within the Zip for this entry.
 		#
 		# @param newval [String]
-		def set_Comment(newval) end
+		def put_Comment(newval) end
 
-		# returns String
+		# The comment stored within the Zip for this entry.
+		#
 		# @return [String]
 		def comment() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The comment stored within the Zip for this entry.
 		#
 		# @param newval [String]
-		def comment(newval) end
+		def put_Comment(newval) end
 
-		# returns Bignum
+		# The size in bytes of this entry's file data when compression is applied
+		#
 		# @return [Bignum]
 		def get_CompressedLength() end
 
-		# returns String
+		# The size in bytes of this entry's file data when compression is applied
+		#
+		# @return [Bignum]
+		def get_CompressedLength64() end
+
+		# The size in decimal string format of this file when Zip compression is applied.
+		#
 		# @return [String]
 		def get_CompressedLengthStr() end
 
-		# returns String
+		# The size in decimal string format of this file when Zip compression is applied.
+		#
 		# @return [String]
 		def compressedLengthStr() end
 
-		# returns Bignum
+		# The compression level. 0 = no compression, while 9 = maximum compression. The default is 6.
+		#
 		# @return [Bignum]
 		def get_CompressionLevel() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The compression level. 0 = no compression, while 9 = maximum compression. The default is 6.
 		#
 		# @param newval [Bignum]
-		def set_CompressionLevel(newval) end
+		def put_CompressionLevel(newval) end
 
-		# returns Bignum
+		# Set to 0 for no compression, or 8 for the Deflate algorithm. The Deflate algorithm is the default
+		# algorithm of the most popular Zip utility programs, such as WinZip
+		#
 		# @return [Bignum]
 		def get_CompressionMethod() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Set to 0 for no compression, or 8 for the Deflate algorithm. The Deflate algorithm is the default
+		# algorithm of the most popular Zip utility programs, such as WinZip
 		#
 		# @param newval [Bignum]
-		def set_CompressionMethod(newval) end
+		def put_CompressionMethod(newval) end
 
-		# returns Bignum
+		# The CRC for the zip entry. For AES encrypted entries, the CRC value will be 0. (See
+		# http://www.winzip.com/aes_info.htm#CRC )
+		#
 		# @return [Bignum]
 		def get_Crc() end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_DebugLogFilePath() end
+		def get_DebugLogFilePath(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def set_DebugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
+		#
 		# @return [String]
 		def debugLogFilePath() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# If set to a file path, causes each Chilkat method or property call to automatically append it's
+		# LastErrorText to the specified log file. The information is appended such that if a hang or crash
+		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
+		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
+		# detailed information.
+		# 
+		# This property is typically used for debugging the rare cases
+		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
+		# crashes). 
+		# A hang or crash should generally never happen. The typical causes of a hang
+		# are:
+		# 
+		# a timeout related property was set to 0 to explicitly indicate that an infinite
+		# timeout is desired, 
+		# the hang is actually a hang within an event callback (i.e. it is a hang
+		# within the application code), or 
+		# there is an internal problem (bug) in the Chilkat code that
+		# causes the hang.
+		#
 		#
 		# @param newval [String]
-		def debugLogFilePath(newval) end
+		def put_DebugLogFilePath(newval) end
 
-		# returns Bignum
+		# The unique ID assigned by Zip.NET while the object is instantiated in memory.
+		#
 		# @return [Bignum]
 		def get_EntryID() end
 
-		# returns Bignum
+		# Indicates the origin of the entry. There are three possible values:
+		# 
+		# Mapped Entry: An
+		# entry in an existing Zip file.
+		# File Entry: A file not yet in memory, but referenced. These
+		# entries are added by calling AppendFiles, AppendFilesEx, AppendOneFileOrDir, etc.
+		# Data Entry:
+		# An entry containing uncompressed data from memory. These entries are added by calling AppendData,
+		# AppendString, etc.
+		# Null Entry: An entry that no longer exists in the .zip.
+		# New Directory
+		# Entry: A directory entry added by calling AppendNewDir.
+		# 
+		# When the zip is written by
+		# calling WriteZip or WriteToMemory, all of the zip entries are transformed into mapped entries. They
+		# become entries that contain the compressed data within the .zip that was just created. (The WriteZip
+		# method call effectively writes the zip and then opens it, replacing all of the existing entries with
+		# mapped entries.)
+		#
 		# @return [Bignum]
 		def get_EntryType() end
 
-		# returns Object
-		# This method has been deprecated. Do not use it.
+		# The local last-modified date/time.
+		#
+		# @param newval [Object]
+		#
 		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
-		def get_FileDateTime() end
+		def get_FileDateTime(newval) end
 
-		# ==== Attributes
-		# +newval+ - Object
-		# This method has been deprecated. Do not use it.
+		# The local last-modified date/time.
 		#
 		# @param newval [Object]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
-		def set_FileDateTime(newval) end
+		def put_FileDateTime(newval) end
 
-		# returns String
+		# The local last-modified date/time in RFC822 string format.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_FileDateTimeStr() end
+		def get_FileDateTimeStr(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The local last-modified date/time in RFC822 string format.
 		#
 		# @param newval [String]
-		def set_FileDateTimeStr(newval) end
+		def put_FileDateTimeStr(newval) end
 
-		# returns String
+		# The local last-modified date/time in RFC822 string format.
+		#
 		# @return [String]
 		def fileDateTimeStr() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The local last-modified date/time in RFC822 string format.
 		#
 		# @param newval [String]
-		def fileDateTimeStr(newval) end
+		def put_FileDateTimeStr(newval) end
 
-		# returns String
+		# The file name of the Zip entry.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_FileName() end
+		def get_FileName(ckStr) end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The file name of the Zip entry.
 		#
 		# @param newval [String]
-		def set_FileName(newval) end
+		def put_FileName(newval) end
 
-		# returns String
+		# The file name of the Zip entry.
+		#
 		# @return [String]
 		def fileName() end
 
-		# ==== Attributes
-		# +newval+ - String
+		# The file name of the Zip entry.
 		#
 		# @param newval [String]
-		def fileName(newval) end
+		def put_FileName(newval) end
 
-		# returns String
+		# A string containing the hex encoded raw filename bytes found in the Zip entry.
+		#
 		# @return [String]
 		def get_FileNameHex() end
 
-		# returns String
+		# A string containing the hex encoded raw filename bytes found in the Zip entry.
+		#
 		# @return [String]
 		def fileNameHex() end
 
-		# returns Bignum
+		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
+		# application to abort inflate/extract/unzip calls prior to completion. If HeartbeatMs is 0 (the
+		# default), no AbortCheck event callbacks will fire.
+		#
 		# @return [Bignum]
 		#
 		# @event
 		def get_HeartbeatMs() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
+		# application to abort inflate/extract/unzip calls prior to completion. If HeartbeatMs is 0 (the
+		# default), no AbortCheck event callbacks will fire.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
-		def set_HeartbeatMs(newval) end
+		#
+		# @!method
+		def put_HeartbeatMs(newval) end
 
-		# returns Bignum
-		# @return [Bignum]
+		# True if the Zip entry is a directory, false if it is a file.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_IsDirectory() end
 
-		# returns Fixnum
+		# The binary data returned by the last (binary data returning) method called. Only available if
+		# Chilkat.Global.KeepBinaryResult is set to _TRUE_. This provides a means for obtaining large
+		# varbinary results in the SQL Server environment (where limitations exist in getting large amounts of
+		# data returned by method calls, but where temp tables can be used for binary properties).
+		#
+		# @param ckByteData [CkByteData]
+		#
 		# @return [Fixnum]
-		def get_LastBinaryResult() end
+		def get_LastBinaryResult(ckByteData) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorHtml() end
+		def get_LastErrorHtml(ckStr) end
 
-		# returns String
+		# Provides information in HTML format about the last method/property called. If a method call returns
+		# a value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorHtml() end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorText() end
+		def get_LastErrorText(ckStr) end
 
-		# returns String
+		# Provides information in plain-text format about the last method/property called. If a method call
+		# returns a value indicating failure, or behaves unexpectedly, examine this property to get more
+		# information.
+		#
 		# @return [String]
 		def lastErrorText() end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastErrorXml() end
+		def get_LastErrorXml(ckStr) end
 
-		# returns String
+		# Provides information in XML format about the last method/property called. If a method call returns a
+		# value indicating failure, or behaves unexpectedly, examine this property to get more information.
+		#
 		# @return [String]
 		def lastErrorXml() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_LastMethodSuccess() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
+		# value of _FALSE_ indicates failure. This property is automatically set for method calls. It is not
+		# modified by property accesses. The property is automatically set to indicate success for the
+		# following types of method calls:
+		# 
+		# Any method that returns a string.
+		# Any method
+		# returning a Chilkat object, binary bytes, or a date/time.
+		# Any method returning a standard
+		# boolean status value where success = _TRUE_ and failure = _FALSE_.
+		# Any method returning an
+		# integer where failure is defined by a return value less than zero.
+		# 
+		# Note: Methods that do
+		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
+		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [Bignum]
-		def set_LastMethodSuccess(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_LastMethodSuccess(newval) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_LastStringResult() end
+		def get_LastStringResult(ckStr) end
 
-		# returns String
+		# The string return value of the last (string returning) method called. Only available if
+		# Chilkat.Global.KeepStringResult is set to _TRUE_. This provides a means for obtaining large string
+		# results in the SQL Server environment (where limitations exist in getting long strings returned by
+		# method calls, but where temp tables can be used for string properties).
+		#
 		# @return [String]
 		def lastStringResult() end
 
-		# returns Bignum
+		# The length, in characters, of the string contained in the LastStringResult property.
+		#
 		# @return [Bignum]
 		def get_LastStringResultLen() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# Controls whether the "text flag" of the internal file attributes for this entry within the zip is
+		# set. This is a bit flag that indicates whether the file contents are text or binary. It is for
+		# informational use and it is not imperative that this bit flag is accurately set. The ability to set
+		# this bit flag is only provided to satisfy certain cases where another application might be sensitive
+		# to the flag.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_TextFlag() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# Controls whether the "text flag" of the internal file attributes for this entry within the zip is
+		# set. This is a bit flag that indicates whether the file contents are text or binary. It is for
+		# informational use and it is not imperative that this bit flag is accurately set. The ability to set
+		# this bit flag is only provided to satisfy certain cases where another application might be sensitive
+		# to the flag.
 		#
-		# @param newval [Bignum]
-		def set_TextFlag(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_TextFlag(newval) end
 
-		# returns Bignum
+		# The size in bytes of this entry's file data when uncompressed.
+		#
 		# @return [Bignum]
 		def get_UncompressedLength() end
 
-		# returns String
+		# The size in bytes of this entry's file data when uncompressed.
+		#
+		# @return [Bignum]
+		def get_UncompressedLength64() end
+
+		# The size in bytes (in decimal string format) of this zip entry's data when uncompressed.
+		#
 		# @return [String]
 		def get_UncompressedLengthStr() end
 
-		# returns String
+		# The size in bytes (in decimal string format) of this zip entry's data when uncompressed.
+		#
 		# @return [String]
 		def uncompressedLengthStr() end
 
-		# returns Bignum
-		# @return [Bignum]
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @return [TrueClass, FalseClass]
+		def get_Utf8() end
+
+		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
+		# (the default), then "const char *" arguments are interpreted as ANSI strings.
+		# 
+		# Also,
+		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
+		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
+		#
+		# @param newval [TrueClass, FalseClass]
+		def put_Utf8(newval) end
+
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
+		#
+		# @return [TrueClass, FalseClass]
 		def get_VerboseLogging() end
 
-		# ==== Attributes
-		# +newval+ - Bignum
+		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
+		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
+		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [Bignum]
-		def set_VerboseLogging(newval) end
+		# @param newval [TrueClass, FalseClass]
+		def put_VerboseLogging(newval) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
+		# @param ckStr [CkString]
+		#
 		# @return [String]
-		def get_Version() end
+		def get_Version(ckStr) end
 
-		# returns String
+		# Version of the component/library, such as "9.5.0.63"
+		#
 		# @return [String]
 		def version() end
 
 
 		# Method: AppendData
 		#
-		# ==== Attributes
+		# Appends binary data to the zip entry's file contents.
 		#
-		# +inData+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param inData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  inData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendData(inData)
 			# ...
 		end
 
+
 		# Method: AppendString
 		#
-		# ==== Attributes
+		# Appends text data to the zip entry's file contents. The text is appended using the character
+		# encoding specified by the ARG2, which can be "utf-8", "ansi", etc.
 		#
-		# +strContent+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param strContent [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  strContent [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def AppendString(strContent, charset)
 			# ...
 		end
 
+
 		# Method: Copy
 		#
-		# ==== Attributes
+		# Returns the compressed data as a byte array.
+		# Note: The Copy method can only be called if the
+		# zip entry already contains compressed data (i.e. it is a "mapped entry"). This is the case when an
+		# existing .zip is opened (from memory or from a file), or after the .zip has been written (by calling
+		# WriteZip or WriteToMemory). If a zip entry is created via AppendData, AppendFiles, etc., then it
+		# does not yet contain compressed data. When the zip is written, each entry becomes a "mapped entry"
+		# (The value of the EntryType property becomes 0.)
 		#
-		# returns CkByteData
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @return  [CkByteData]
-		def Copy()
+		# @return [TrueClass, FalseClass]
+		def Copy(outData)
 			# ...
 		end
+
 
 		# Method: CopyToBase64
 		#
-		# ==== Attributes
+		# Returns the compressed data as a Base64-encoded string. It is only possible to retrieve the
+		# compressed data from a pre-existing .zip that has been opened or after writing the .zip but not
+		# closing it.
+		# Note: The CopyToBase64 method can only be called if the zip entry already contains
+		# compressed data (i.e. it is a "mapped entry").
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def CopyToBase64()
+		# @return [TrueClass, FalseClass]
+		def CopyToBase64(outStr)
 			# ...
 		end
+
+
+		# Method: CopyToBase64
+		#
+		# Returns the compressed data as a Base64-encoded string. It is only possible to retrieve the
+		# compressed data from a pre-existing .zip that has been opened or after writing the .zip but not
+		# closing it.
+		# Note: The CopyToBase64 method can only be called if the zip entry already contains
+		# compressed data (i.e. it is a "mapped entry").
+		#
+		#
+		# @return [String]
+		def copyToBase64()
+			# ...
+		end
+
 
 		# Method: CopyToHex
 		#
-		# ==== Attributes
+		# Returns the compressed data as a hexidecimal encoded string. It is only possible to retrieve the
+		# compressed data from a pre-existing .zip that has been opened or after writing the .zip but not
+		# closing it.
+		# Note: The CopyToBase64 method can only be called if the zip entry already contains
+		# compressed data (i.e. it is a "mapped entry").
 		#
-		# returns String
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @return  [String]
-		def CopyToHex()
+		# @return [TrueClass, FalseClass]
+		def CopyToHex(outStr)
 			# ...
 		end
 
+
+		# Method: CopyToHex
+		#
+		# Returns the compressed data as a hexidecimal encoded string. It is only possible to retrieve the
+		# compressed data from a pre-existing .zip that has been opened or after writing the .zip but not
+		# closing it.
+		# Note: The CopyToBase64 method can only be called if the zip entry already contains
+		# compressed data (i.e. it is a "mapped entry").
+		#
+		#
+		# @return [String]
+		def copyToHex()
+			# ...
+		end
+
+
 		# Method: Extract
 		#
-		# ==== Attributes
+		# Unzips this entry into the specified base directory. The file is unzipped to the subdirectory
+		# according to the relative path stored with the entry in the Zip.			Use ExtractInto to unzip into a
+		# specific directory regardless of the path information stored in the Zip.
 		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
+		# @param dirPath [String]
 		#
-		# YARD =>
-		#
-		# @param  dirPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def Extract(dirPath)
 			# ...
 		end
 
+
 		# Method: ExtractInto
 		#
-		# ==== Attributes
+		# Unzip a file into a specific directory
 		#
-		# +dirPath+ - String
-		# returns TrueClass, FalseClass
+		# @param dirPath [String]
 		#
-		# YARD =>
-		#
-		# @param  dirPath [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ExtractInto(dirPath)
 			# ...
 		end
 
+
 		# Method: GetDt
 		#
-		# ==== Attributes
+		# Returns the last-modified date/time of this zip entry.
 		#
-		# returns CkDateTime
 		#
-		# YARD =>
-		#
-		# @return  [CkDateTime]
+		# @return [CkDateTime]
 		def GetDt()
 			# ...
 		end
 
+
 		# Method: Inflate
 		#
-		# ==== Attributes
+		# Inflate a file within a Zip directly into memory.
 		#
-		# returns CkByteData
+		# @param outData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @return  [CkByteData]
-		def Inflate()
+		# @return [TrueClass, FalseClass]
+		def Inflate(outData)
 			# ...
 		end
 
+
 		# Method: NextEntry
 		#
-		# ==== Attributes
+		# Return the next entry (file or directory) within the Zip
 		#
-		# returns CkZipEntry
 		#
-		# YARD =>
-		#
-		# @return  [CkZipEntry]
+		# @return [CkZipEntry]
 		def NextEntry()
 			# ...
 		end
 
+
 		# Method: NextMatchingEntry
 		#
-		# ==== Attributes
+		# Returns the next entry having a filename matching the ARG1. The "*" characters matches 0 or more of
+		# any character. The full filename, including path, is used when matching against the pattern.
 		#
-		# +matchStr+ - String
-		# returns CkZipEntry
+		# @param matchStr [String]
 		#
-		# YARD =>
-		#
-		# @param  matchStr [String]
-		# @return  [CkZipEntry]
+		# @return [CkZipEntry]
 		def NextMatchingEntry(matchStr)
 			# ...
 		end
 
+
 		# Method: ReplaceData
 		#
-		# ==== Attributes
+		# Replaces the zip entry's existing contents with new data.
 		#
-		# +inData+ - CkByteData
-		# returns TrueClass, FalseClass
+		# @param inData [CkByteData]
 		#
-		# YARD =>
-		#
-		# @param  inData [CkByteData]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ReplaceData(inData)
 			# ...
 		end
 
+
 		# Method: ReplaceString
 		#
-		# ==== Attributes
+		# Replaces the zip entry's existing contents with new text data. The text will be stored using the
+		# character encoding as specified by ARG2, which can be "utf-8", "ansi", etc.
 		#
-		# +strContent+ - String
-		# +charset+ - String
-		# returns TrueClass, FalseClass
+		# @param strContent [String]
+		# @param charset [String]
 		#
-		# YARD =>
-		#
-		# @param  strContent [String]
-		# @param  charset [String]
-		# @return  [TrueClass, FalseClass]
+		# @return [TrueClass, FalseClass]
 		def ReplaceString(strContent, charset)
 			# ...
 		end
 
+
+		# Method: SaveLastError
+		#
+		# Saves the last-error information (the contents of LastErrorXml) to an XML formatted file.
+		#
+		# @param path [String]
+		#
+		# @return [TrueClass, FalseClass]
+		def SaveLastError(path)
+			# ...
+		end
+
+
 		# Method: SetDt
 		#
-		# ==== Attributes
+		# Sets the last-modified date/time for this zip entry.
 		#
-		# +dt+ - CkDateTime
-		# returns nil
+		# @param dt [CkDateTime]
 		#
-		# YARD =>
-		#
-		# @param  dt [CkDateTime]
-		# @return  [nil]
+		# @return [nil]
 		def SetDt(dt)
 			# ...
 		end
 
+
 		# Method: UnzipToString
 		#
-		# ==== Attributes
+		# Inflate and return the uncompressed data as a string The ARG1 is as follows:
+		# 
+		# 0 = leave
+		# unchanged.
+		# 1 = convert all to bare LF's
+		# 2 = convert all to CRLF's
+		# 
+		# The ARG2
+		# tells the component how to interpret the bytes of the uncompressed file -- i.e. as utf-8, utf-16,
+		# windows-1252, etc.
 		#
-		# +lineEndingBehavior+ - Fixnum
-		# +srcCharset+ - String
-		# returns String
+		# @param lineEndingBehavior [Fixnum]
+		# @param srcCharset [String]
+		# @param outStr [CkString]
 		#
-		# YARD =>
-		#
-		# @param  lineEndingBehavior [Fixnum]
-		# @param  srcCharset [String]
-		# @return  [String]
-		def UnzipToString(lineEndingBehavior, srcCharset)
+		# @return [TrueClass, FalseClass]
+		def UnzipToString(lineEndingBehavior, srcCharset, outStr)
 			# ...
 		end
+
+
+		# Method: UnzipToString
+		#
+		# Inflate and return the uncompressed data as a string The ARG1 is as follows:
+		# 
+		# 0 = leave
+		# unchanged.
+		# 1 = convert all to bare LF's
+		# 2 = convert all to CRLF's
+		# 
+		# The ARG2
+		# tells the component how to interpret the bytes of the uncompressed file -- i.e. as utf-8, utf-16,
+		# windows-1252, etc.
+		#
+		# @param lineEndingBehavior [Fixnum]
+		# @param srcCharset [String]
+		#
+		# @return [String]
+		def unzipToString(lineEndingBehavior, srcCharset)
+			# ...
+		end
+
 	end
 end
