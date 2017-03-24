@@ -49,13 +49,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -74,13 +74,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -97,13 +97,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -120,13 +120,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -246,6 +246,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -381,8 +383,8 @@ module Chilkat
 		# TAR archives. If a file does not match, it will not be included when creating a TAR, or it will not
 		# be extracted when extracting from a TAR. This property also applies to methods that create or
 		# extract from compressed TAR archives.
-		#		
-		#		The must-match pattern may include 0 or more
+		# 
+		# The must-match pattern may include 0 or more
 		# asterisk characters, each of which represents 0 or more of any character. For example, the pattern
 		# "*.txt" causes only .txt files to be included or extracted. The default value is an empty string,
 		# indicating that all files are implicitly matched.
@@ -396,8 +398,8 @@ module Chilkat
 		# TAR archives. If a file does not match, it will not be included when creating a TAR, or it will not
 		# be extracted when extracting from a TAR. This property also applies to methods that create or
 		# extract from compressed TAR archives.
-		#		
-		#		The must-match pattern may include 0 or more
+		# 
+		# The must-match pattern may include 0 or more
 		# asterisk characters, each of which represents 0 or more of any character. For example, the pattern
 		# "*.txt" causes only .txt files to be included or extracted. The default value is an empty string,
 		# indicating that all files are implicitly matched.
@@ -409,8 +411,8 @@ module Chilkat
 		# TAR archives. If a file does not match, it will not be included when creating a TAR, or it will not
 		# be extracted when extracting from a TAR. This property also applies to methods that create or
 		# extract from compressed TAR archives.
-		#		
-		#		The must-match pattern may include 0 or more
+		# 
+		# The must-match pattern may include 0 or more
 		# asterisk characters, each of which represents 0 or more of any character. For example, the pattern
 		# "*.txt" causes only .txt files to be included or extracted. The default value is an empty string,
 		# indicating that all files are implicitly matched.
@@ -422,8 +424,8 @@ module Chilkat
 		# TAR archives. If a file does not match, it will not be included when creating a TAR, or it will not
 		# be extracted when extracting from a TAR. This property also applies to methods that create or
 		# extract from compressed TAR archives.
-		#		
-		#		The must-match pattern may include 0 or more
+		# 
+		# The must-match pattern may include 0 or more
 		# asterisk characters, each of which represents 0 or more of any character. For example, the pattern
 		# "*.txt" causes only .txt files to be included or extracted. The default value is an empty string,
 		# indicating that all files are implicitly matched.
@@ -435,8 +437,8 @@ module Chilkat
 		# from TAR archives. If a file path matches, it will not be included when creating a TAR, or it will
 		# not be extracted when extracting from a TAR. This property also applies to methods that create or
 		# extract from compressed TAR archives.
-		#		
-		#		The must-not-match pattern may include 0 or more
+		# 
+		# The must-not-match pattern may include 0 or more
 		# asterisk characters, each of which represents 0 or more of any character. For example, the pattern
 		# "*.obj" causes all .obj files to be skipped. The default value is an empty string, indicating that
 		# no files are skipped.
@@ -450,8 +452,8 @@ module Chilkat
 		# from TAR archives. If a file path matches, it will not be included when creating a TAR, or it will
 		# not be extracted when extracting from a TAR. This property also applies to methods that create or
 		# extract from compressed TAR archives.
-		#		
-		#		The must-not-match pattern may include 0 or more
+		# 
+		# The must-not-match pattern may include 0 or more
 		# asterisk characters, each of which represents 0 or more of any character. For example, the pattern
 		# "*.obj" causes all .obj files to be skipped. The default value is an empty string, indicating that
 		# no files are skipped.
@@ -463,8 +465,8 @@ module Chilkat
 		# from TAR archives. If a file path matches, it will not be included when creating a TAR, or it will
 		# not be extracted when extracting from a TAR. This property also applies to methods that create or
 		# extract from compressed TAR archives.
-		#		
-		#		The must-not-match pattern may include 0 or more
+		# 
+		# The must-not-match pattern may include 0 or more
 		# asterisk characters, each of which represents 0 or more of any character. For example, the pattern
 		# "*.obj" causes all .obj files to be skipped. The default value is an empty string, indicating that
 		# no files are skipped.
@@ -476,8 +478,8 @@ module Chilkat
 		# from TAR archives. If a file path matches, it will not be included when creating a TAR, or it will
 		# not be extracted when extracting from a TAR. This property also applies to methods that create or
 		# extract from compressed TAR archives.
-		#		
-		#		The must-not-match pattern may include 0 or more
+		# 
+		# The must-not-match pattern may include 0 or more
 		# asterisk characters, each of which represents 0 or more of any character. For example, the pattern
 		# "*.obj" causes all .obj files to be skipped. The default value is an empty string, indicating that
 		# no files are skipped.
@@ -509,8 +511,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -525,8 +527,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -537,6 +539,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_PercentDoneScale(newval) end
 
 		# The file permissions to used in WriteTar* methods for shell script files (.sh, .csh, .bash, .bsh).
@@ -723,8 +727,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -733,8 +737,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -828,7 +832,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddDirRoot(dirPath)
 			# ...
 		end
@@ -839,8 +843,8 @@ module Chilkat
 		# Adds a directory tree to be included in the next call to one of the WriteTar* methods. To include
 		# multiple directory trees in a .tar, call AddDirRoot2 (and/or AddDirRoot) multiple times followed by
 		# a single call to WriteTar.
-		#		
-		#		The ARG1 adds a prefix to the path in the TAR for all files
+		# 
+		# The ARG1 adds a prefix to the path in the TAR for all files
 		# added under this root. The ARG1 should not end with a forward-slash char. For example: This is good:
 		# "abc/123", but this is not good: "abc/123/". If the DirPrefix property is also set, its prefix will
 		# added first.
@@ -848,7 +852,7 @@ module Chilkat
 		# @param rootPrefix [String]
 		# @param rootPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddDirRoot2(rootPrefix, rootPath)
 			# ...
 		end
@@ -862,7 +866,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddFile(path)
 			# ...
 		end
@@ -878,7 +882,7 @@ module Chilkat
 		# @param dataPath [String]
 		# @param debPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateDeb(controlPath, dataPath, debPath)
 			# ...
 		end
@@ -894,7 +898,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetDirRoot(index, outStr)
 			# ...
 		end
@@ -909,7 +913,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getDirRoot(index)
 			# ...
 		end
@@ -922,7 +926,7 @@ module Chilkat
 		# @param tarPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ListXml(tarPath, outStr)
 			# ...
 		end
@@ -934,7 +938,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def listXml(tarPath)
 			# ...
 		end
@@ -946,7 +950,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -960,7 +964,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -974,7 +978,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def Untar(tarPath)
 			# ...
 		end
@@ -988,7 +992,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UntarBz2(tarPath)
 			# ...
 		end
@@ -1003,7 +1007,7 @@ module Chilkat
 		# @param matchPattern [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UntarFirstMatchingToMemory(tarFileBytes, matchPattern, outBytes)
 			# ...
 		end
@@ -1017,7 +1021,7 @@ module Chilkat
 		#
 		# @param tarFileBytes [CkByteData]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def UntarFromMemory(tarFileBytes)
 			# ...
 		end
@@ -1031,7 +1035,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UntarGz(tarPath)
 			# ...
 		end
@@ -1044,7 +1048,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UntarZ(tarPath)
 			# ...
 		end
@@ -1057,7 +1061,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyTar(tarPath)
 			# ...
 		end
@@ -1070,7 +1074,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteTar(tarPath)
 			# ...
 		end
@@ -1083,7 +1087,7 @@ module Chilkat
 		#
 		# @param bz2Path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteTarBz2(bz2Path)
 			# ...
 		end
@@ -1096,7 +1100,7 @@ module Chilkat
 		#
 		# @param gzPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteTarGz(gzPath)
 			# ...
 		end

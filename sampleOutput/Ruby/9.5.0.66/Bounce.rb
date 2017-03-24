@@ -31,9 +31,9 @@ module Chilkat
 		# Virus email notification. 11. Suspected Bounce, but no other information is available 12.
 		# Challenge/Response - Auto-reply message sent by SPAM software where only verified email addresses
 		# are accepted. 13. Address Change Notification Messages. 
-		#		14. Success DSN indicating that the
+		# 14. Success DSN indicating that the
 		# message was successfully relayed.
-		#		15. Abuse/fraud feedback report.
+		# 15. Abuse/fraud feedback report.
 		#
 		# @return [Bignum]
 		def get_BounceType() end
@@ -43,13 +43,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -68,13 +68,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -91,13 +91,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -114,13 +114,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -251,8 +251,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -261,8 +261,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -304,7 +304,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExamineEmail(email)
 			# ...
 		end
@@ -317,7 +317,7 @@ module Chilkat
 		#
 		# @param emlFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExamineEml(emlFilename)
 			# ...
 		end
@@ -331,7 +331,7 @@ module Chilkat
 		#
 		# @param mimeText [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExamineMime(mimeText)
 			# ...
 		end
@@ -343,7 +343,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -353,13 +353,13 @@ module Chilkat
 		#
 		# Unlocks the component. This must be called once at the beginning of your program to unlock the
 		# component. A purchased unlock code is provided when the Bounce component is licensed.
-		# #		
-		#		A purchased unlock code for the bounce component/library will included the substring
+		# # 
+		# A purchased unlock code for the bounce component/library will included the substring
 		# "BOUNCE", or can be a Bundle unlock code.
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

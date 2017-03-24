@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -250,8 +250,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -260,8 +260,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -300,28 +300,28 @@ module Chilkat
 		# Decrypts a JWE and returns the original (decrypted) string content. The byte representation of the
 		# decrypted bytes is indicated by ARG2 (such as "utf-8"). (The ARG2 tells Chilkat how to intepret the
 		# decrypted bytes as characters.)
-		#		
-		#		The ARG1 specifies which recipient key is used for
+		# 
+		# The ARG1 specifies which recipient key is used for
 		# decryption. (Most JWEs have only a single recipent, and thus the ARG1 is typically
 		# 0.)
-		#		
-		#		Supported Algorithms:
-		#		
-		#		RSAES OAEP 256 (using SHA-256 and MGF1 with
+		# 
+		# Supported Algorithms:
+		# 
+		# RSAES OAEP 256 (using SHA-256 and MGF1 with
 		# SHA-256) encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM,
 		# A256GCM
-		#		RSAES OAEP (using SHA-1 and MGF1 with SHA-1) encryption with A128CBC-HS256,
+		# RSAES OAEP (using SHA-1 and MGF1 with SHA-1) encryption with A128CBC-HS256,
 		# A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		RSAES-PKCS1-V1_5 encryption with
+		# RSAES-PKCS1-V1_5 encryption with
 		# A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		Direct symmetric key
+		# Direct symmetric key
 		# encryption with pre-shared key A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM and
 		# A256GCM
-		#		A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512,
+		# A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512,
 		# A128GCM, A192GCM, A256GCM
-		#		A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256,
+		# A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256,
 		# A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		PBES2-HS256+A128KW,
+		# PBES2-HS256+A128KW,
 		# PBES2-HS384+A192KW, PBES2-HS512+A256KW with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM,
 		# A192GCM, A256GCM
 		#
@@ -330,7 +330,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Decrypt(index, charset, outStr)
 			# ...
 		end
@@ -341,28 +341,28 @@ module Chilkat
 		# Decrypts a JWE and returns the original (decrypted) string content. The byte representation of the
 		# decrypted bytes is indicated by ARG2 (such as "utf-8"). (The ARG2 tells Chilkat how to intepret the
 		# decrypted bytes as characters.)
-		#		
-		#		The ARG1 specifies which recipient key is used for
+		# 
+		# The ARG1 specifies which recipient key is used for
 		# decryption. (Most JWEs have only a single recipent, and thus the ARG1 is typically
 		# 0.)
-		#		
-		#		Supported Algorithms:
-		#		
-		#		RSAES OAEP 256 (using SHA-256 and MGF1 with
+		# 
+		# Supported Algorithms:
+		# 
+		# RSAES OAEP 256 (using SHA-256 and MGF1 with
 		# SHA-256) encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM,
 		# A256GCM
-		#		RSAES OAEP (using SHA-1 and MGF1 with SHA-1) encryption with A128CBC-HS256,
+		# RSAES OAEP (using SHA-1 and MGF1 with SHA-1) encryption with A128CBC-HS256,
 		# A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		RSAES-PKCS1-V1_5 encryption with
+		# RSAES-PKCS1-V1_5 encryption with
 		# A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		Direct symmetric key
+		# Direct symmetric key
 		# encryption with pre-shared key A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM and
 		# A256GCM
-		#		A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512,
+		# A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512,
 		# A128GCM, A192GCM, A256GCM
-		#		A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256,
+		# A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256,
 		# A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		PBES2-HS256+A128KW,
+		# PBES2-HS256+A128KW,
 		# PBES2-HS384+A192KW, PBES2-HS512+A256KW with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM,
 		# A192GCM, A256GCM
 		#
@@ -370,7 +370,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def decrypt(index, charset)
 			# ...
 		end
@@ -385,7 +385,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param bd [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecryptBd(index, bd)
 			# ...
 		end
@@ -396,15 +396,15 @@ module Chilkat
 		# Decrypts the loaded JWE and appends the decrypted content to ARG3. The byte representation of the
 		# decrypted bytes is indicated by ARG2 (such as "utf-8"). (This tells Chilkat how to interpret the
 		# bytes as characters.)
-		#		
-		#		The ARG1 specifies which recipient key is used for decryption.
+		# 
+		# The ARG1 specifies which recipient key is used for decryption.
 		# (Most JWEs have only a single recipent, and thus the ARG1 is typically 0.)
 		#
 		# @param index [Fixnum]
 		# @param charset [String]
 		# @param contentSb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecryptSb(index, charset, contentSb)
 			# ...
 		end
@@ -414,24 +414,24 @@ module Chilkat
 		#
 		# Encrypts string content to produce a JWE. The byte representation of the ARG1 is indicated by ARG2
 		# (such as "utf-8").
-		#		
-		#		Supported Algorithms:
-		#		
-		#		RSAES OAEP 256 (using SHA-256 and
+		# 
+		# Supported Algorithms:
+		# 
+		# RSAES OAEP 256 (using SHA-256 and
 		# MGF1 with SHA-256) encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM,
 		# A256GCM
-		#		RSAES OAEP (using SHA-1 and MGF1 with SHA-1) encryption with A128CBC-HS256,
+		# RSAES OAEP (using SHA-1 and MGF1 with SHA-1) encryption with A128CBC-HS256,
 		# A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		RSAES-PKCS1-V1_5 encryption with
+		# RSAES-PKCS1-V1_5 encryption with
 		# A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		Direct symmetric key
+		# Direct symmetric key
 		# encryption with pre-shared key A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM and
 		# A256GCM
-		#		A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512,
+		# A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512,
 		# A128GCM, A192GCM, A256GCM
-		#		A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256,
+		# A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256,
 		# A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		PBES2-HS256+A128KW,
+		# PBES2-HS256+A128KW,
 		# PBES2-HS384+A192KW, PBES2-HS512+A256KW with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM,
 		# A192GCM, A256GCM
 		#
@@ -440,7 +440,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Encrypt(content, charset, outStr)
 			# ...
 		end
@@ -450,24 +450,24 @@ module Chilkat
 		#
 		# Encrypts string content to produce a JWE. The byte representation of the ARG1 is indicated by ARG2
 		# (such as "utf-8").
-		#		
-		#		Supported Algorithms:
-		#		
-		#		RSAES OAEP 256 (using SHA-256 and
+		# 
+		# Supported Algorithms:
+		# 
+		# RSAES OAEP 256 (using SHA-256 and
 		# MGF1 with SHA-256) encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM,
 		# A256GCM
-		#		RSAES OAEP (using SHA-1 and MGF1 with SHA-1) encryption with A128CBC-HS256,
+		# RSAES OAEP (using SHA-1 and MGF1 with SHA-1) encryption with A128CBC-HS256,
 		# A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		RSAES-PKCS1-V1_5 encryption with
+		# RSAES-PKCS1-V1_5 encryption with
 		# A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		Direct symmetric key
+		# Direct symmetric key
 		# encryption with pre-shared key A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM and
 		# A256GCM
-		#		A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512,
+		# A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512,
 		# A128GCM, A192GCM, A256GCM
-		#		A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256,
+		# A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256,
 		# A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-		#		PBES2-HS256+A128KW,
+		# PBES2-HS256+A128KW,
 		# PBES2-HS384+A192KW, PBES2-HS512+A256KW with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM,
 		# A192GCM, A256GCM
 		#
@@ -475,7 +475,7 @@ module Chilkat
 		# @param content [String]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def encrypt(content, charset)
 			# ...
 		end
@@ -489,7 +489,7 @@ module Chilkat
 		# @param contentBd [CkBinData]
 		# @param jweSb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EncryptBd(contentBd, jweSb)
 			# ...
 		end
@@ -504,7 +504,7 @@ module Chilkat
 		# @param charset [String]
 		# @param jweSb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EncryptSb(contentSb, charset, jweSb)
 			# ...
 		end
@@ -516,18 +516,18 @@ module Chilkat
 		# Returns -1 if no recipient contains a header with the given name/value. If ARG3 is _TRUE_, then the
 		# header param name/value comparisons are case sensitive. Otherwise it is case
 		# insensitive.
-		#		
-		#		The procedure for decrypting a JWE with multiple recipients is the
+		# 
+		# The procedure for decrypting a JWE with multiple recipients is the
 		# following:
-		#		
-		#		Load the JWE via one of the Load* methods.
-		#		Find the recipient index by
+		# 
+		# Load the JWE via one of the Load* methods.
+		# Find the recipient index by
 		# some identifying header paramter. The typical case is via the "kid" header parameter. ("kid" is an
 		# arbitrary key ID applications can assign to identify keys.)
-		#		Set the key for decryption at the
+		# Set the key for decryption at the
 		# found index by calling SetPrivateKey, SetWrappingKey, or SetPassword, depending on the type of key
 		# wrapping that is employed.
-		#		Call Decrypt, DecryptSb, or DecryptBd to decrypt for the recipient
+		# Call Decrypt, DecryptSb, or DecryptBd to decrypt for the recipient
 		# (and key) at the given index.
 		#
 		#
@@ -535,7 +535,7 @@ module Chilkat
 		# @param paramValue [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def FindRecipient(paramName, paramValue, caseSensitive)
 			# ...
 		end
@@ -547,7 +547,7 @@ module Chilkat
 		#
 		# @param jwe [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadJwe(jwe)
 			# ...
 		end
@@ -559,7 +559,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadJweSb(sb)
 			# ...
 		end
@@ -571,7 +571,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -586,7 +586,7 @@ module Chilkat
 		# @param aad [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAad(aad, charset)
 			# ...
 		end
@@ -599,7 +599,7 @@ module Chilkat
 		#
 		# @param aad [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAadBd(aad)
 			# ...
 		end
@@ -611,19 +611,19 @@ module Chilkat
 		# encryption key (CEK) is encrypted using PBES2. An PBES2 password should be used in the cases where
 		# the "alg" header parameter value is equal to one of the
 		# following:
-		#		
-		#		PBES2-HS256+A128KW
-		#		PBES2-HS384+A192KW
-		#		PBES2-HS512+A256KW
-		#		
-		#		The
+		# 
+		# PBES2-HS256+A128KW
+		# PBES2-HS384+A192KW
+		# PBES2-HS512+A256KW
+		# 
+		# The
 		# ARG1 is the index of the recipient, where the 1st recipient is at index 0. (The typical use case for
 		# JWEs is for a single recipient.)
 		#
 		# @param index [Fixnum]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPassword(index, password)
 			# ...
 		end
@@ -635,19 +635,19 @@ module Chilkat
 		# encryption key (CEK) is encrypted using RSA. An RSA private key should be used for decrypting in the
 		# cases where the "alg" header parameter value is equal to one of the
 		# following:
-		#		
-		#		RSA1_5
-		#		RSA-OAEP
-		#		RSA-OAEP-256
-		#		
-		#		The ARG1 is the index
+		# 
+		# RSA1_5
+		# RSA-OAEP
+		# RSA-OAEP-256
+		# 
+		# The ARG1 is the index
 		# of the recipient, where the 1st recipient is at index 0. (The typical use case for JWEs is for a
 		# single recipient.)
 		#
 		# @param index [Fixnum]
 		# @param privKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPrivateKey(index, privKey)
 			# ...
 		end
@@ -659,7 +659,7 @@ module Chilkat
 		#
 		# @param json [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetProtectedHeader(json)
 			# ...
 		end
@@ -671,19 +671,19 @@ module Chilkat
 		# key (CEK) is encrypted using RSA. An RSA public key should be used when encrypting for the cases
 		# where the "alg" header parameter value is equal to one of the
 		# following:
-		#		
-		#		RSA1_5
-		#		RSA-OAEP
-		#		RSA-OAEP-256
-		#		
-		#		The ARG1 is the index
+		# 
+		# RSA1_5
+		# RSA-OAEP
+		# RSA-OAEP-256
+		# 
+		# The ARG1 is the index
 		# of the recipient, where the 1st recipient is at index 0. (The typical use case for JWEs is for a
 		# single recipient.)
 		#
 		# @param index [Fixnum]
 		# @param pubKey [CkPublicKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPublicKey(index, pubKey)
 			# ...
 		end
@@ -697,7 +697,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param json [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetRecipientHeader(index, json)
 			# ...
 		end
@@ -709,7 +709,7 @@ module Chilkat
 		#
 		# @param json [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetUnprotectedHeader(json)
 			# ...
 		end
@@ -721,29 +721,29 @@ module Chilkat
 		# encryption key (CEK) is encrypted using AES Key Wrap or AES GCM. An AES key should be used in the
 		# cases where the "alg" header parameter value is equal to one of the
 		# following:
-		#		
-		#		A128KW
-		#		A192KW
-		#		A256KW
-		#		A128GCMKW
-		#		A192GCMKW
-		#		A256GCMKW
-		#		dir
-		#		
-		#		The
+		# 
+		# A128KW
+		# A192KW
+		# A256KW
+		# A128GCMKW
+		# A192GCMKW
+		# A256GCMKW
+		# dir
+		# 
+		# The
 		# ARG1 is the index of the recipient, where the 1st recipient is at index 0. (The typical use case for
 		# JWEs is for a single recipient.)
-		#		Note: This method also sets the shared direct symmetric key
+		# Note: This method also sets the shared direct symmetric key
 		# for the case when the "alg" is equal to "dir". In this case, the key specified is not actualy a key
 		# encryption key, but is the direct content encryption key.
-		#		The ARG3 indicates the
+		# The ARG3 indicates the
 		# representation, such as "base64", "hex", "base64url", etc. of the ARG2.
 		#
 		# @param index [Fixnum]
 		# @param encodedKey [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetWrappingKey(index, encodedKey, encoding)
 			# ...
 		end

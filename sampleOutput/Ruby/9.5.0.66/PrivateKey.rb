@@ -10,13 +10,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -35,13 +35,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -58,13 +58,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -81,13 +81,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -258,8 +258,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -268,8 +268,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -306,10 +306,10 @@ module Chilkat
 		# Method: GetJwk
 		#
 		# Gets the private key in JWK (JSON Web Key) format. 
-		#		
-		#		RSA keys have this JWK
+		# 
+		# RSA keys have this JWK
 		# format:
-		#		
+		# 
 		# {"kty":"RSA",
 		# "n":"0vx7agoebGcQ ... JzKnqDKgw",
 		# "e":"AQAB",
@@ -322,9 +322,9 @@ module Chilkat
 		# "dq":"s9lAH9fggBso ...
 		# w494Q_cgk",
 		# "qi":"GyM_p6JrXySi ... zTKhAVRU"}
-		#		
-		#		ECC keys have this JWK format.
-		# #		
+		# 
+		# ECC keys have this JWK format.
+		# # 
 		# {"kty":"EC",
 		# "crv":"P-256",
 		#
@@ -337,7 +337,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetJwk(outStr)
 			# ...
 		end
@@ -346,10 +346,10 @@ module Chilkat
 		# Method: GetJwk
 		#
 		# Gets the private key in JWK (JSON Web Key) format. 
-		#		
-		#		RSA keys have this JWK
+		# 
+		# RSA keys have this JWK
 		# format:
-		#		
+		# 
 		# {"kty":"RSA",
 		# "n":"0vx7agoebGcQ ... JzKnqDKgw",
 		# "e":"AQAB",
@@ -362,9 +362,9 @@ module Chilkat
 		# "dq":"s9lAH9fggBso ...
 		# w494Q_cgk",
 		# "qi":"GyM_p6JrXySi ... zTKhAVRU"}
-		#		
-		#		ECC keys have this JWK format.
-		# #		
+		# 
+		# ECC keys have this JWK format.
+		# # 
 		# {"kty":"EC",
 		# "crv":"P-256",
 		#
@@ -376,7 +376,7 @@ module Chilkat
 		#
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getJwk()
 			# ...
 		end
@@ -390,7 +390,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetJwkThumbprint(hashAlg, outStr)
 			# ...
 		end
@@ -403,7 +403,7 @@ module Chilkat
 		#
 		# @param hashAlg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getJwkThumbprint(hashAlg)
 			# ...
 		end
@@ -413,10 +413,10 @@ module Chilkat
 		#
 		# Gets the private key in unencrypted binary DER format, preferring PKCS1 if
 		# possible.
-		#		
-		#		RSA keys are returned in PKCS1 ASN.1 DER format:
-		#		
-		#		RSAPrivateKey
+		# 
+		# RSA keys are returned in PKCS1 ASN.1 DER format:
+		# 
+		# RSAPrivateKey
 		# ::= SEQUENCE {
 		# version Version,
 		# modulus INTEGER, -- n
@@ -432,13 +432,13 @@ module Chilkat
 		# -- (inverse of q) mod p
 		# otherPrimeInfos OtherPrimeInfos
 		# OPTIONAL
-		#		}
-		#		
-		#		
-		#		DSA keys are returned in this ASN.1 DER
+		# }
+		# 
+		# 
+		# DSA keys are returned in this ASN.1 DER
 		# format:
-		#		
-		#		SEQUENCE(6 elem)
+		# 
+		# SEQUENCE(6 elem)
 		# INTEGER 0
 		# INTEGER(2048 bit) (p) 
 		# INTEGER(160
@@ -447,13 +447,13 @@ module Chilkat
 		# INTEGER(2040 bit) (y - public key) 
 		# INTEGER(156 bit)
 		# (x - private key) 
-		#		
-		#		
-		#		ECC keys are returned in this ASN.1 DER
+		# 
+		# 
+		# ECC keys are returned in this ASN.1 DER
 		# format:
-		#		
-		#		(from RFC 5915)
-		#		ECPrivateKey ::= SEQUENCE {
+		# 
+		# (from RFC 5915)
+		# ECPrivateKey ::= SEQUENCE {
 		# version INTEGER {
 		# ecPrivkeyVer1(1) } (ecPrivkeyVer1),
 		# privateKey OCTET STRING,
@@ -465,7 +465,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs1(outBytes)
 			# ...
 		end
@@ -475,11 +475,11 @@ module Chilkat
 		#
 		# Gets the private key in unencrypted binary DER format, preferring PKCS1 if possible, and returns in
 		# an encoded string, as specified by the ARG1 argument. 
-		#		
-		#		RSA keys are returned in PKCS1
+		# 
+		# RSA keys are returned in PKCS1
 		# ASN.1 DER format:
-		#		
-		#		RSAPrivateKey ::= SEQUENCE {
+		# 
+		# RSAPrivateKey ::= SEQUENCE {
 		# version Version,
 		# modulus
 		# INTEGER, -- n
@@ -494,13 +494,13 @@ module Chilkat
 		# coefficient INTEGER, -- (inverse of q) mod p
 		# otherPrimeInfos
 		# OtherPrimeInfos OPTIONAL
-		#		}
-		#		
-		#		
-		#		DSA keys are returned in this ASN.1 DER
+		# }
+		# 
+		# 
+		# DSA keys are returned in this ASN.1 DER
 		# format:
-		#		
-		#		SEQUENCE(6 elem)
+		# 
+		# SEQUENCE(6 elem)
 		# INTEGER 0
 		# INTEGER(2048 bit) (p) 
 		# INTEGER(160
@@ -509,13 +509,13 @@ module Chilkat
 		# INTEGER(2040 bit) (y - public key) 
 		# INTEGER(156 bit)
 		# (x - private key) 
-		#		
-		#		
-		#		ECC keys are returned in this ASN.1 DER
+		# 
+		# 
+		# ECC keys are returned in this ASN.1 DER
 		# format:
-		#		
-		#		(from RFC 5915)
-		#		ECPrivateKey ::= SEQUENCE {
+		# 
+		# (from RFC 5915)
+		# ECPrivateKey ::= SEQUENCE {
 		# version INTEGER {
 		# ecPrivkeyVer1(1) } (ecPrivkeyVer1),
 		# privateKey OCTET STRING,
@@ -528,7 +528,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs1ENC(encoding, outStr)
 			# ...
 		end
@@ -538,11 +538,11 @@ module Chilkat
 		#
 		# Gets the private key in unencrypted binary DER format, preferring PKCS1 if possible, and returns in
 		# an encoded string, as specified by the ARG1 argument. 
-		#		
-		#		RSA keys are returned in PKCS1
+		# 
+		# RSA keys are returned in PKCS1
 		# ASN.1 DER format:
-		#		
-		#		RSAPrivateKey ::= SEQUENCE {
+		# 
+		# RSAPrivateKey ::= SEQUENCE {
 		# version Version,
 		# modulus
 		# INTEGER, -- n
@@ -557,13 +557,13 @@ module Chilkat
 		# coefficient INTEGER, -- (inverse of q) mod p
 		# otherPrimeInfos
 		# OtherPrimeInfos OPTIONAL
-		#		}
-		#		
-		#		
-		#		DSA keys are returned in this ASN.1 DER
+		# }
+		# 
+		# 
+		# DSA keys are returned in this ASN.1 DER
 		# format:
-		#		
-		#		SEQUENCE(6 elem)
+		# 
+		# SEQUENCE(6 elem)
 		# INTEGER 0
 		# INTEGER(2048 bit) (p) 
 		# INTEGER(160
@@ -572,13 +572,13 @@ module Chilkat
 		# INTEGER(2040 bit) (y - public key) 
 		# INTEGER(156 bit)
 		# (x - private key) 
-		#		
-		#		
-		#		ECC keys are returned in this ASN.1 DER
+		# 
+		# 
+		# ECC keys are returned in this ASN.1 DER
 		# format:
-		#		
-		#		(from RFC 5915)
-		#		ECPrivateKey ::= SEQUENCE {
+		# 
+		# (from RFC 5915)
+		# ECPrivateKey ::= SEQUENCE {
 		# version INTEGER {
 		# ecPrivkeyVer1(1) } (ecPrivkeyVer1),
 		# privateKey OCTET STRING,
@@ -590,7 +590,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPkcs1ENC(encoding)
 			# ...
 		end
@@ -603,7 +603,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs1Pem(outStr)
 			# ...
 		end
@@ -615,7 +615,7 @@ module Chilkat
 		# key type.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getPkcs1Pem()
 			# ...
 		end
@@ -624,17 +624,17 @@ module Chilkat
 		# Method: GetPkcs8
 		#
 		# Gets the private key in unencrypted PKCS8 format. 
-		#		RSA keys are returned in PKCS8 ASN.1 DER
+		# RSA keys are returned in PKCS8 ASN.1 DER
 		# format:
-		#		
-		#		SEQUENCE // PrivateKeyInfo
-		#		+- INTEGER // Version - 0 (v1998)
-		#		+-
+		# 
+		# SEQUENCE // PrivateKeyInfo
+		# +- INTEGER // Version - 0 (v1998)
+		# +-
 		# SEQUENCE // AlgorithmIdentifier
 		# +- OID // 1.2.840.113549.1.1.1
 		# +- NULL // Optional
 		# Parameters
-		#		+- OCTETSTRING // PrivateKey
+		# +- OCTETSTRING // PrivateKey
 		# +- SEQUENCE // RSAPrivateKey
 		# +- INTEGER(0)
 		# // Version - v1998(0)
@@ -648,31 +648,31 @@ module Chilkat
 		# +- INTEGER(DQ) // d
 		# mod q-1
 		# +- INTEGER(Inv Q) // INV(q) mod p
-		#		
-		#		
-		#		DSA keys are returned in this
+		# 
+		# 
+		# DSA keys are returned in this
 		# ASN.1 DER format:
-		#		
-		#		SEQUENCE // PrivateKeyInfo
-		#		+- INTEGER // Version
-		#		+-
+		# 
+		# SEQUENCE // PrivateKeyInfo
+		# +- INTEGER // Version
+		# +-
 		# SEQUENCE // AlgorithmIdentifier
 		# +- OID // 1.2.840.10040.4.1
 		# +- SEQUENCE // DSS-Params
 		# (Optional Parameters)
-		#			+- INTEGER(P) // P
-		#			+- INTEGER(Q) // Q
-		#			+- INTEGER(G) //
+		# 	+- INTEGER(P) // P
+		# 	+- INTEGER(Q) // Q
+		# 	+- INTEGER(G) //
 		# G
 		# +- OCTETSTRING // PrivateKey
-		#			+- INTEGER(X) // DSAPrivateKey X
-		#		
-		#		
-		#		ECC
+		# 	+- INTEGER(X) // DSAPrivateKey X
+		# 
+		# 
+		# ECC
 		# keys are returned in this ASN.1 DER format:
-		#		
-		#		(from RFC 5915)
-		#		ECPrivateKey ::=
+		# 
+		# (from RFC 5915)
+		# ECPrivateKey ::=
 		# SEQUENCE {
 		# version INTEGER { ecPrivkeyVer1(1) } (ecPrivkeyVer1),
 		# privateKey OCTET
@@ -684,7 +684,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs8(outData)
 			# ...
 		end
@@ -698,7 +698,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs8ENC(encoding, outStr)
 			# ...
 		end
@@ -711,7 +711,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPkcs8ENC(encoding)
 			# ...
 		end
@@ -725,7 +725,7 @@ module Chilkat
 		# @param password [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs8Encrypted(password, outBytes)
 			# ...
 		end
@@ -741,7 +741,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs8EncryptedENC(encoding, password, outStr)
 			# ...
 		end
@@ -756,7 +756,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param password [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPkcs8EncryptedENC(encoding, password)
 			# ...
 		end
@@ -770,7 +770,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs8EncryptedPem(password, outStr)
 			# ...
 		end
@@ -783,7 +783,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPkcs8EncryptedPem(password)
 			# ...
 		end
@@ -795,7 +795,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPkcs8Pem(outStr)
 			# ...
 		end
@@ -806,7 +806,7 @@ module Chilkat
 		# Gets the private key in PKCS8 PEM format.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getPkcs8Pem()
 			# ...
 		end
@@ -817,7 +817,7 @@ module Chilkat
 		# Returns the public key portion of the private key as a public key object.
 		#
 		#
-		# @return [CkPublicKey] 
+		# @return [CkPublicKey]
 		def GetPublicKey()
 			# ...
 		end
@@ -830,7 +830,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetRsaDer(outData)
 			# ...
@@ -844,7 +844,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetRsaPem(outStr)
 			# ...
@@ -857,7 +857,7 @@ module Chilkat
 		# method (given that this object may contain a non-RSA key).
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def getRsaPem()
 			# ...
@@ -868,44 +868,44 @@ module Chilkat
 		#
 		# Returns the private key in XML format. The private key is returned unencrypted and the parts are
 		# base64 encoded. 
-		#		
-		#		RSA keys have this XML
+		# 
+		# RSA keys have this XML
 		# format:
-		#		
-		#		&lt;RSAKeyValue&gt;
-		#		&nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
-		#		&nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
-		#		&nbsp;&nbsp;&lt;P&gt;...&lt;/P&gt;
-		#		&nbsp;&nbsp;&lt;Q&gt;...&lt;/Q&gt;
-		#		&nbsp;&nbsp;&lt;DP&gt;...&lt;/DP&gt;
-		#		&nbsp;&nbsp;&lt;DQ&gt;...&lt;/DQ&gt;
-		#		&nbsp;&nbsp;&lt;InverseQ&gt;...&lt;/InverseQ&gt;
-		#		&nbsp;&nbsp;&lt;D&gt;...&lt;/D&gt;
-		#		&lt;/RSAKeyValue&gt;
-		#		
-		#		DSA
+		# 
+		# &lt;RSAKeyValue&gt;
+		# &nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
+		# &nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
+		# &nbsp;&nbsp;&lt;P&gt;...&lt;/P&gt;
+		# &nbsp;&nbsp;&lt;Q&gt;...&lt;/Q&gt;
+		# &nbsp;&nbsp;&lt;DP&gt;...&lt;/DP&gt;
+		# &nbsp;&nbsp;&lt;DQ&gt;...&lt;/DQ&gt;
+		# &nbsp;&nbsp;&lt;InverseQ&gt;...&lt;/InverseQ&gt;
+		# &nbsp;&nbsp;&lt;D&gt;...&lt;/D&gt;
+		# &lt;/RSAKeyValue&gt;
+		# 
+		# DSA
 		# keys have this XML
 		# format:
-		#		
-		#		&lt;DSAKeyValue&gt;
-		#			&lt;P&gt;...&lt;/P&gt;
-		#			&lt;Q&gt;...&lt;/Q&gt;
-		#			&lt;G&gt;...&lt;/G&gt;
-		#			&lt;Y&gt;...&lt;/Y&gt;
-		#			&lt;X&gt;...&lt;/X&gt;
-		#		&lt;/DSAKeyValue&gt;
-		#		
-		#		ECC
+		# 
+		# &lt;DSAKeyValue&gt;
+		# 	&lt;P&gt;...&lt;/P&gt;
+		# 	&lt;Q&gt;...&lt;/Q&gt;
+		# 	&lt;G&gt;...&lt;/G&gt;
+		# 	&lt;Y&gt;...&lt;/Y&gt;
+		# 	&lt;X&gt;...&lt;/X&gt;
+		# &lt;/DSAKeyValue&gt;
+		# 
+		# ECC
 		# keys have this XML format. The CURVE_NAME could be one of secp256r1, secp384r1, secp521r1, secp256k1
 		# (or others as new curves are supported.)
-		#		
-		#		&lt;ECCKeyValue
+		# 
+		# &lt;ECCKeyValue
 		# curve="CURVE_NAME"&gt;...&lt;/ECCKeyValue&gt;
 		#
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetXml(outStr)
 			# ...
 		end
@@ -915,43 +915,43 @@ module Chilkat
 		#
 		# Returns the private key in XML format. The private key is returned unencrypted and the parts are
 		# base64 encoded. 
-		#		
-		#		RSA keys have this XML
+		# 
+		# RSA keys have this XML
 		# format:
-		#		
-		#		&lt;RSAKeyValue&gt;
-		#		&nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
-		#		&nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
-		#		&nbsp;&nbsp;&lt;P&gt;...&lt;/P&gt;
-		#		&nbsp;&nbsp;&lt;Q&gt;...&lt;/Q&gt;
-		#		&nbsp;&nbsp;&lt;DP&gt;...&lt;/DP&gt;
-		#		&nbsp;&nbsp;&lt;DQ&gt;...&lt;/DQ&gt;
-		#		&nbsp;&nbsp;&lt;InverseQ&gt;...&lt;/InverseQ&gt;
-		#		&nbsp;&nbsp;&lt;D&gt;...&lt;/D&gt;
-		#		&lt;/RSAKeyValue&gt;
-		#		
-		#		DSA
+		# 
+		# &lt;RSAKeyValue&gt;
+		# &nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
+		# &nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
+		# &nbsp;&nbsp;&lt;P&gt;...&lt;/P&gt;
+		# &nbsp;&nbsp;&lt;Q&gt;...&lt;/Q&gt;
+		# &nbsp;&nbsp;&lt;DP&gt;...&lt;/DP&gt;
+		# &nbsp;&nbsp;&lt;DQ&gt;...&lt;/DQ&gt;
+		# &nbsp;&nbsp;&lt;InverseQ&gt;...&lt;/InverseQ&gt;
+		# &nbsp;&nbsp;&lt;D&gt;...&lt;/D&gt;
+		# &lt;/RSAKeyValue&gt;
+		# 
+		# DSA
 		# keys have this XML
 		# format:
-		#		
-		#		&lt;DSAKeyValue&gt;
-		#			&lt;P&gt;...&lt;/P&gt;
-		#			&lt;Q&gt;...&lt;/Q&gt;
-		#			&lt;G&gt;...&lt;/G&gt;
-		#			&lt;Y&gt;...&lt;/Y&gt;
-		#			&lt;X&gt;...&lt;/X&gt;
-		#		&lt;/DSAKeyValue&gt;
-		#		
-		#		ECC
+		# 
+		# &lt;DSAKeyValue&gt;
+		# 	&lt;P&gt;...&lt;/P&gt;
+		# 	&lt;Q&gt;...&lt;/Q&gt;
+		# 	&lt;G&gt;...&lt;/G&gt;
+		# 	&lt;Y&gt;...&lt;/Y&gt;
+		# 	&lt;X&gt;...&lt;/X&gt;
+		# &lt;/DSAKeyValue&gt;
+		# 
+		# ECC
 		# keys have this XML format. The CURVE_NAME could be one of secp256r1, secp384r1, secp521r1, secp256k1
 		# (or others as new curves are supported.)
-		#		
-		#		&lt;ECCKeyValue
+		# 
+		# &lt;ECCKeyValue
 		# curve="CURVE_NAME"&gt;...&lt;/ECCKeyValue&gt;
 		#
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getXml()
 			# ...
 		end
@@ -962,35 +962,35 @@ module Chilkat
 		# Loads the private key from an in-memory encrypted PEM string. An encrypted PEM contains the private
 		# key in encrypted PKCS#8 format, where the data begins and ends with the following
 		# tags:
-		#		
-		#		-----BEGIN ENCRYPTED PRIVATE KEY-----
-		#		BASE64 ENCODED DATA
-		#		-----END
+		# 
+		# -----BEGIN ENCRYPTED PRIVATE KEY-----
+		# BASE64 ENCODED DATA
+		# -----END
 		# ENCRYPTED PRIVATE KEY-----
-		#		
-		#		For those requiring a deeper understanding: The base64 data
+		# 
+		# For those requiring a deeper understanding: The base64 data
 		# contains ASN.1 DER with the following structure:
-		#		
-		#		EncryptedPrivateKeyInfo ::= SEQUENCE
+		# 
+		# EncryptedPrivateKeyInfo ::= SEQUENCE
 		# {
 		# encryptionAlgorithm EncryptionAlgorithmIdentifier,
 		# encryptedData
 		# EncryptedData
-		#		}
-		#		
-		#		EncryptionAlgorithmIdentifier ::=
+		# }
+		# 
+		# EncryptionAlgorithmIdentifier ::=
 		# AlgorithmIdentifier
-		#		
-		#		EncryptedData ::= OCTET STRING
-		#		
-		#		Note: Each of the
+		# 
+		# EncryptedData ::= OCTET STRING
+		# 
+		# Note: Each of the
 		# private key Load* methods willl auto-recognize the content and will parse appropriately. The private
 		# key should be successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param pemStr [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadEncryptedPem(pemStr, password)
 			# ...
 		end
@@ -999,14 +999,14 @@ module Chilkat
 		# Method: LoadEncryptedPemFile
 		#
 		# Loads a private key from an encrypted PEM file.
-		#		Note: Each of the private key Load* methods
+		# Note: Each of the private key Load* methods
 		# willl auto-recognize the content and will parse appropriately. The private key should be
 		# successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadEncryptedPemFile(path, password)
 			# ...
 		end
@@ -1015,10 +1015,10 @@ module Chilkat
 		# Method: LoadJwk
 		#
 		# Loads a private key from an JWK (JSON Web Key) string. 
-		#		
-		#		RSA keys have this JWK
+		# 
+		# RSA keys have this JWK
 		# format:
-		#		
+		# 
 		# {"kty":"RSA",
 		# "n":"0vx7agoebGcQ ... JzKnqDKgw",
 		# "e":"AQAB",
@@ -1031,9 +1031,9 @@ module Chilkat
 		# "dq":"s9lAH9fggBso ...
 		# w494Q_cgk",
 		# "qi":"GyM_p6JrXySi ... zTKhAVRU"}
-		#		
-		#		ECC keys have this JWK format.
-		# #		
+		# 
+		# ECC keys have this JWK format.
+		# # 
 		# {"kty":"EC",
 		# "crv":"P-256",
 		#
@@ -1042,14 +1042,14 @@ module Chilkat
 		# "y":"4Etl6SRW2YiLUrN5vfvVHuhp7x8PxltmWWlbbM4IFyM",
 		#
 		# "d":"870MB6gfuTJ4HtUnUvYMyJpr5eUZNP4Bk43bVdj3eAE"}
-		#		
-		#		Note: Each of the private key Load*
+		# 
+		# Note: Each of the private key Load*
 		# methods willl auto-recognize the content and will parse appropriately. The private key should be
 		# successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param jsonStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadJwk(jsonStr)
 			# ...
 		end
@@ -1060,19 +1060,19 @@ module Chilkat
 		# Loads the private key from an in-memory PEM string. If the PEM contains an encrypted private key,
 		# then the LoadEncryptedPem method should instead be called. This method is for loading an unencrypted
 		# private key stored in PEM using PKCS#1 or PKCS#8.
-		#		A private key stored in PKCS#1 format begins
+		# A private key stored in PKCS#1 format begins
 		# and ends with the tags:
-		#		
-		#		-----BEGIN RSA PRIVATE KEY-----
-		#		BASE64 ENCODED
+		# 
+		# -----BEGIN RSA PRIVATE KEY-----
+		# BASE64 ENCODED
 		# DATA
-		#		-----END RSA PRIVATE KEY-----
-		#		
-		#		For those requiring a deeper understanding,
+		# -----END RSA PRIVATE KEY-----
+		# 
+		# For those requiring a deeper understanding,
 		# the PKCS1 base64 contains ASN.1 in DER encoding with the following
 		# structure:
-		#		
-		#		RSAPrivateKey ::= SEQUENCE {
+		# 
+		# RSAPrivateKey ::= SEQUENCE {
 		# version Version,
 		# modulus INTEGER, --
 		# n
@@ -1087,40 +1087,40 @@ module Chilkat
 		# coefficient INTEGER, -- (inverse of q) mod p
 		# otherPrimeInfos OtherPrimeInfos
 		# OPTIONAL
-		#		}
-		#		
-		#		A private key stored in PKCS#8 format begins and ends with the
+		# }
+		# 
+		# A private key stored in PKCS#8 format begins and ends with the
 		# tags:
-		#		
-		#		-----BEGIN PRIVATE KEY-----
-		#		BASE64 ENCODED DATA
-		#		-----END PRIVATE
+		# 
+		# -----BEGIN PRIVATE KEY-----
+		# BASE64 ENCODED DATA
+		# -----END PRIVATE
 		# KEY-----
-		#		
-		#		For those requiring a deeper understanding, the PKCS8 base64 contains ASN.1 in
+		# 
+		# For those requiring a deeper understanding, the PKCS8 base64 contains ASN.1 in
 		# DER encoding with the following structure:
-		#		
-		#		PrivateKeyInfo ::= SEQUENCE {
+		# 
+		# PrivateKeyInfo ::= SEQUENCE {
 		# version
 		# Version,
 		# algorithm AlgorithmIdentifier,
 		# PrivateKey BIT
 		# STRING
-		#		}
-		#		
-		#		AlgorithmIdentifier ::= SEQUENCE {
+		# }
+		# 
+		# AlgorithmIdentifier ::= SEQUENCE {
 		# algorithm OBJECT
 		# IDENTIFIER,
 		# parameters ANY DEFINED BY algorithm OPTIONAL
-		#		}
-		#		
-		#		Note: Each of the
+		# }
+		# 
+		# Note: Each of the
 		# private key Load* methods willl auto-recognize the content and will parse appropriately. The private
 		# key should be successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPem(str)
 			# ...
 		end
@@ -1132,7 +1132,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPemFile(path)
 			# ...
 		end
@@ -1141,13 +1141,13 @@ module Chilkat
 		# Method: LoadPkcs1
 		#
 		# Loads an RSA, ECC, or DSA private key from binary DER. 
-		#		Note: Each of the private key Load*
+		# Note: Each of the private key Load*
 		# methods willl auto-recognize the content and will parse appropriately. The private key should be
 		# successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs1(data)
 			# ...
 		end
@@ -1156,13 +1156,13 @@ module Chilkat
 		# Method: LoadPkcs1File
 		#
 		# Loads a private key from a PKCS1 file.
-		#		Note: Each of the private key Load* methods willl
+		# Note: Each of the private key Load* methods willl
 		# auto-recognize the content and will parse appropriately. The private key should be successfully
 		# loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs1File(path)
 			# ...
 		end
@@ -1171,31 +1171,31 @@ module Chilkat
 		# Method: LoadPkcs8
 		#
 		# Loads a private key from in-memory PKCS8 byte data.
-		#		For those requiring a deeper
+		# For those requiring a deeper
 		# understanding, the PKCS8 contains ASN.1 in DER encoding with the following
 		# structure:
-		#		
-		#		PrivateKeyInfo ::= SEQUENCE {
+		# 
+		# PrivateKeyInfo ::= SEQUENCE {
 		# version Version,
 		# algorithm
 		# AlgorithmIdentifier,
 		# PrivateKey BIT STRING
-		#		}
-		#		
-		#		AlgorithmIdentifier ::=
+		# }
+		# 
+		# AlgorithmIdentifier ::=
 		# SEQUENCE {
 		# algorithm OBJECT IDENTIFIER,
 		# parameters ANY DEFINED BY algorithm
 		# OPTIONAL
-		#		}
-		#		
-		#		Note: Each of the private key Load* methods willl auto-recognize the
+		# }
+		# 
+		# Note: Each of the private key Load* methods willl auto-recognize the
 		# content and will parse appropriately. The private key should be successfully loaded even when the
 		# wrong format data is passed to the wrong method.
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs8(data)
 			# ...
 		end
@@ -1204,30 +1204,30 @@ module Chilkat
 		# Method: LoadPkcs8Encrypted
 		#
 		# Loads a private key from in-memory password-protected PKCS8 byte data.
-		#		For those requiring a
+		# For those requiring a
 		# deeper understanding, the encrypted PKCS8 contains ASN.1 in DER encoding with the following
 		# structure:
-		#		
-		#		EncryptedPrivateKeyInfo ::= SEQUENCE {
+		# 
+		# EncryptedPrivateKeyInfo ::= SEQUENCE {
 		# encryptionAlgorithm
 		# EncryptionAlgorithmIdentifier,
 		# encryptedData
 		# EncryptedData
-		#		}
-		#		
-		#		EncryptionAlgorithmIdentifier ::=
+		# }
+		# 
+		# EncryptionAlgorithmIdentifier ::=
 		# AlgorithmIdentifier
-		#		
-		#		EncryptedData ::= OCTET STRING
-		#		
-		#		Note: Each of the
+		# 
+		# EncryptedData ::= OCTET STRING
+		# 
+		# Note: Each of the
 		# private key Load* methods willl auto-recognize the content and will parse appropriately. The private
 		# key should be successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param data [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs8Encrypted(data, password)
 			# ...
 		end
@@ -1236,14 +1236,14 @@ module Chilkat
 		# Method: LoadPkcs8EncryptedFile
 		#
 		# Loads a private key from an encrypted PKCS8 file.
-		#		Note: Each of the private key Load* methods
+		# Note: Each of the private key Load* methods
 		# willl auto-recognize the content and will parse appropriately. The private key should be
 		# successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs8EncryptedFile(path, password)
 			# ...
 		end
@@ -1252,13 +1252,13 @@ module Chilkat
 		# Method: LoadPkcs8File
 		#
 		# Loads a private key from a PKCS8 file.
-		#		Note: Each of the private key Load* methods willl
+		# Note: Each of the private key Load* methods willl
 		# auto-recognize the content and will parse appropriately. The private key should be successfully
 		# loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPkcs8File(path)
 			# ...
 		end
@@ -1267,14 +1267,14 @@ module Chilkat
 		# Method: LoadPvk
 		#
 		# Loads a private key from in-memory PVK byte data.
-		#		Note: Each of the private key Load* methods
+		# Note: Each of the private key Load* methods
 		# willl auto-recognize the content and will parse appropriately. The private key should be
 		# successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param data [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPvk(data, password)
 			# ...
 		end
@@ -1283,14 +1283,14 @@ module Chilkat
 		# Method: LoadPvkFile
 		#
 		# Loads a private key from a PVK format file.
-		#		Note: Each of the private key Load* methods willl
+		# Note: Each of the private key Load* methods willl
 		# auto-recognize the content and will parse appropriately. The private key should be successfully
 		# loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPvkFile(path, password)
 			# ...
 		end
@@ -1300,13 +1300,13 @@ module Chilkat
 		#
 		# This method is deprecated. Deprecated methods will be removed at some point in the future.
 		# Applications should instead call LoadPkcs1.
-		#		
-		#		Loads a private key from in-memory RSA
+		# 
+		# Loads a private key from in-memory RSA
 		# PKCS#1 DER byte data.
-		#		For those requiring a deeper understanding, the PKCS1 contains ASN.1 in
+		# For those requiring a deeper understanding, the PKCS1 contains ASN.1 in
 		# DER encoding with the following structure:
-		#		
-		#		RSAPrivateKey ::= SEQUENCE {
+		# 
+		# RSAPrivateKey ::= SEQUENCE {
 		# version
 		# Version,
 		# modulus INTEGER, -- n
@@ -1321,15 +1321,15 @@ module Chilkat
 		# coefficient INTEGER, -- (inverse of q) mod
 		# p
 		# otherPrimeInfos OtherPrimeInfos OPTIONAL
-		#		}
-		#		
-		#		Note: Each of the private key
+		# }
+		# 
+		# Note: Each of the private key
 		# Load* methods willl auto-recognize the content and will parse appropriately. The private key should
 		# be successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDer(data)
 			# ...
@@ -1340,16 +1340,16 @@ module Chilkat
 		#
 		# This method is deprecated. Deprecated methods will be removed at some point in the future.
 		# Applications should instead call LoadPkcs1File.
-		#		
-		#		Loads a private key from an RSA DER
+		# 
+		# Loads a private key from an RSA DER
 		# format file.
-		#		Note: Each of the private key Load* methods willl auto-recognize the content and
+		# Note: Each of the private key Load* methods willl auto-recognize the content and
 		# will parse appropriately. The private key should be successfully loaded even when the wrong format
 		# data is passed to the wrong method.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDerFile(path)
 			# ...
@@ -1359,47 +1359,47 @@ module Chilkat
 		# Method: LoadXml
 		#
 		# Loads a private key from an XML string. 
-		#		
-		#		RSA keys have this XML
+		# 
+		# RSA keys have this XML
 		# format:
-		#		
-		#		&lt;RSAKeyValue&gt;
-		#		&nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
-		#		&nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
-		#		&nbsp;&nbsp;&lt;P&gt;...&lt;/P&gt;
-		#		&nbsp;&nbsp;&lt;Q&gt;...&lt;/Q&gt;
-		#		&nbsp;&nbsp;&lt;DP&gt;...&lt;/DP&gt;
-		#		&nbsp;&nbsp;&lt;DQ&gt;...&lt;/DQ&gt;
-		#		&nbsp;&nbsp;&lt;InverseQ&gt;...&lt;/InverseQ&gt;
-		#		&nbsp;&nbsp;&lt;D&gt;...&lt;/D&gt;
-		#		&lt;/RSAKeyValue&gt;
-		#		
-		#		DSA
+		# 
+		# &lt;RSAKeyValue&gt;
+		# &nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
+		# &nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
+		# &nbsp;&nbsp;&lt;P&gt;...&lt;/P&gt;
+		# &nbsp;&nbsp;&lt;Q&gt;...&lt;/Q&gt;
+		# &nbsp;&nbsp;&lt;DP&gt;...&lt;/DP&gt;
+		# &nbsp;&nbsp;&lt;DQ&gt;...&lt;/DQ&gt;
+		# &nbsp;&nbsp;&lt;InverseQ&gt;...&lt;/InverseQ&gt;
+		# &nbsp;&nbsp;&lt;D&gt;...&lt;/D&gt;
+		# &lt;/RSAKeyValue&gt;
+		# 
+		# DSA
 		# keys have this XML
 		# format:
-		#		
-		#		&lt;DSAKeyValue&gt;
-		#			&lt;P&gt;...&lt;/P&gt;
-		#			&lt;Q&gt;...&lt;/Q&gt;
-		#			&lt;G&gt;...&lt;/G&gt;
-		#			&lt;Y&gt;...&lt;/Y&gt;
-		#			&lt;X&gt;...&lt;/X&gt;
-		#		&lt;/DSAKeyValue&gt;
-		#		
-		#		ECC
+		# 
+		# &lt;DSAKeyValue&gt;
+		# 	&lt;P&gt;...&lt;/P&gt;
+		# 	&lt;Q&gt;...&lt;/Q&gt;
+		# 	&lt;G&gt;...&lt;/G&gt;
+		# 	&lt;Y&gt;...&lt;/Y&gt;
+		# 	&lt;X&gt;...&lt;/X&gt;
+		# &lt;/DSAKeyValue&gt;
+		# 
+		# ECC
 		# keys have this XML format. The CURVE_NAME could be one of secp256r1, secp384r1, secp521r1, secp256k1
 		# (or others as new curves are supported.)
-		#		
-		#		&lt;ECCKeyValue
+		# 
+		# &lt;ECCKeyValue
 		# curve="CURVE_NAME"&gt;...&lt;/ECCKeyValue&gt;
-		#		
-		#		Note: Each of the private key Load*
+		# 
+		# Note: Each of the private key Load*
 		# methods willl auto-recognize the content and will parse appropriately. The private key should be
 		# successfully loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param xml [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xml)
 			# ...
 		end
@@ -1408,13 +1408,13 @@ module Chilkat
 		# Method: LoadXmlFile
 		#
 		# Loads a private key from an XML file.
-		#		Note: Each of the private key Load* methods willl
+		# Note: Each of the private key Load* methods willl
 		# auto-recognize the content and will parse appropriately. The private key should be successfully
 		# loaded even when the wrong format data is passed to the wrong method.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXmlFile(path)
 			# ...
 		end
@@ -1426,7 +1426,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1438,7 +1438,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SavePemFile(path)
 			# ...
 		end
@@ -1450,7 +1450,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SavePkcs1File(path)
 			# ...
 		end
@@ -1464,7 +1464,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SavePkcs8EncryptedFile(password, path)
 			# ...
 		end
@@ -1478,7 +1478,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SavePkcs8EncryptedPemFile(password, path)
 			# ...
 		end
@@ -1490,7 +1490,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SavePkcs8File(path)
 			# ...
 		end
@@ -1502,7 +1502,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SavePkcs8PemFile(path)
 			# ...
 		end
@@ -1511,13 +1511,13 @@ module Chilkat
 		# Method: SaveRsaDerFile
 		#
 		# This method is deprecated and applications should instead call SavePkcs1File.
-		#		
-		#		Saves the
+		# 
+		# Saves the
 		# private key to a binary PKCS1 DER format file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaDerFile(path)
 			# ...
@@ -1527,13 +1527,13 @@ module Chilkat
 		# Method: SaveRsaPemFile
 		#
 		# This method is deprecated. Applications should instead call SavePemFile.
-		#		
-		#		Saves the
+		# 
+		# Saves the
 		# private key to a PKCS1 PEM format file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaPemFile(path)
 			# ...
@@ -1546,7 +1546,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveXmlFile(path)
 			# ...
 		end

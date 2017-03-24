@@ -3,12 +3,12 @@ module Chilkat
 		# This property only applies when encrypting, decrypting, signing, or verifying signatures for
 		# strings. When encrypting strings, the input string is first converted to this charset before
 		# encrypting. 
-		#		When decrypting, the decrypted data is interpreted as a string with this charset
+		# When decrypting, the decrypted data is interpreted as a string with this charset
 		# encoding and converted to the appropriate return. For example, ActiveX's returning strings always
 		# return Unicode (2 bytes/char). Java strings are utf-8. Chilkat C++ strings are ANSI or utf-8. .NET
 		# strings are Unicode.
-		#		
-		#		When signing string data, the input string is first converted to
+		# 
+		# When signing string data, the input string is first converted to
 		# this charset before being hashed and signed. When verifying the signature for string data, the input
 		# string is first converted to this charset before the verification process begins.
 		#
@@ -20,12 +20,12 @@ module Chilkat
 		# This property only applies when encrypting, decrypting, signing, or verifying signatures for
 		# strings. When encrypting strings, the input string is first converted to this charset before
 		# encrypting. 
-		#		When decrypting, the decrypted data is interpreted as a string with this charset
+		# When decrypting, the decrypted data is interpreted as a string with this charset
 		# encoding and converted to the appropriate return. For example, ActiveX's returning strings always
 		# return Unicode (2 bytes/char). Java strings are utf-8. Chilkat C++ strings are ANSI or utf-8. .NET
 		# strings are Unicode.
-		#		
-		#		When signing string data, the input string is first converted to
+		# 
+		# When signing string data, the input string is first converted to
 		# this charset before being hashed and signed. When verifying the signature for string data, the input
 		# string is first converted to this charset before the verification process begins.
 		#
@@ -35,12 +35,12 @@ module Chilkat
 		# This property only applies when encrypting, decrypting, signing, or verifying signatures for
 		# strings. When encrypting strings, the input string is first converted to this charset before
 		# encrypting. 
-		#		When decrypting, the decrypted data is interpreted as a string with this charset
+		# When decrypting, the decrypted data is interpreted as a string with this charset
 		# encoding and converted to the appropriate return. For example, ActiveX's returning strings always
 		# return Unicode (2 bytes/char). Java strings are utf-8. Chilkat C++ strings are ANSI or utf-8. .NET
 		# strings are Unicode.
-		#		
-		#		When signing string data, the input string is first converted to
+		# 
+		# When signing string data, the input string is first converted to
 		# this charset before being hashed and signed. When verifying the signature for string data, the input
 		# string is first converted to this charset before the verification process begins.
 		#
@@ -50,12 +50,12 @@ module Chilkat
 		# This property only applies when encrypting, decrypting, signing, or verifying signatures for
 		# strings. When encrypting strings, the input string is first converted to this charset before
 		# encrypting. 
-		#		When decrypting, the decrypted data is interpreted as a string with this charset
+		# When decrypting, the decrypted data is interpreted as a string with this charset
 		# encoding and converted to the appropriate return. For example, ActiveX's returning strings always
 		# return Unicode (2 bytes/char). Java strings are utf-8. Chilkat C++ strings are ANSI or utf-8. .NET
 		# strings are Unicode.
-		#		
-		#		When signing string data, the input string is first converted to
+		# 
+		# When signing string data, the input string is first converted to
 		# this charset before being hashed and signed. When verifying the signature for string data, the input
 		# string is first converted to this charset before the verification process begins.
 		#
@@ -67,13 +67,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -92,13 +92,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -115,13 +115,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -138,13 +138,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -161,8 +161,8 @@ module Chilkat
 		# return encrypted data as a string encoded according to this property's value. Decryption methods
 		# ending in "ENC" accept an encoded string as specified by this property. The string is first decoded
 		# and then decrypted. The default value is "base64".
-		#		
-		#		This property also applies to the
+		# 
+		# This property also applies to the
 		# "ENC" methods for creating and verifying digital signatures.
 		#
 		# @param ckStr [CkString]
@@ -175,8 +175,8 @@ module Chilkat
 		# return encrypted data as a string encoded according to this property's value. Decryption methods
 		# ending in "ENC" accept an encoded string as specified by this property. The string is first decoded
 		# and then decrypted. The default value is "base64".
-		#		
-		#		This property also applies to the
+		# 
+		# This property also applies to the
 		# "ENC" methods for creating and verifying digital signatures.
 		#
 		# @param newval [String]
@@ -187,8 +187,8 @@ module Chilkat
 		# return encrypted data as a string encoded according to this property's value. Decryption methods
 		# ending in "ENC" accept an encoded string as specified by this property. The string is first decoded
 		# and then decrypted. The default value is "base64".
-		#		
-		#		This property also applies to the
+		# 
+		# This property also applies to the
 		# "ENC" methods for creating and verifying digital signatures.
 		#
 		# @return [String]
@@ -199,8 +199,8 @@ module Chilkat
 		# return encrypted data as a string encoded according to this property's value. Decryption methods
 		# ending in "ENC" accept an encoded string as specified by this property. The string is first decoded
 		# and then decrypted. The default value is "base64".
-		#		
-		#		This property also applies to the
+		# 
+		# This property also applies to the
 		# "ENC" methods for creating and verifying digital signatures.
 		#
 		# @param newval [String]
@@ -326,15 +326,15 @@ module Chilkat
 		# The default value is _FALSE_, which means that signatures and encrypted output will be created using
 		# the big endian byte ordering. A value of _TRUE_ will produce little-endian output, which is what
 		# Microsoft's Crypto API produces.
-		#		
-		#		Important: Prior to v9.5.0.49, this property behaved
+		# 
+		# Important: Prior to v9.5.0.49, this property behaved
 		# the opposite as it should for encryption. When updating from an older version of Chilkat to
 		# v9.5.0.49 or greater, the following change is required:
-		#		
-		#		If the application did NOT
+		# 
+		# If the application did NOT
 		# explicity set the LittleEndian property, then no change is required for encryption/decryption. If
 		# signatures were being created or verified, then explicitly set this property to _TRUE_.
-		#		If the
+		# If the
 		# application explicitly set this property, then reverse the setting ONLY if doing
 		# encryption/decryption. No changes are required if doing signature creation/verification.
 		#
@@ -345,15 +345,15 @@ module Chilkat
 		# The default value is _FALSE_, which means that signatures and encrypted output will be created using
 		# the big endian byte ordering. A value of _TRUE_ will produce little-endian output, which is what
 		# Microsoft's Crypto API produces.
-		#		
-		#		Important: Prior to v9.5.0.49, this property behaved
+		# 
+		# Important: Prior to v9.5.0.49, this property behaved
 		# the opposite as it should for encryption. When updating from an older version of Chilkat to
 		# v9.5.0.49 or greater, the following change is required:
-		#		
-		#		If the application did NOT
+		# 
+		# If the application did NOT
 		# explicity set the LittleEndian property, then no change is required for encryption/decryption. If
 		# signatures were being created or verified, then explicitly set this property to _TRUE_.
-		#		If the
+		# If the
 		# application explicitly set this property, then reverse the setting ONLY if doing
 		# encryption/decryption. No changes are required if doing signature creation/verification.
 		#
@@ -414,13 +414,13 @@ module Chilkat
 		# Controls whether Optimal Asymmetric Encryption Padding (OAEP) is used for the padding scheme (for
 		# encrypting/decrypting). If set to _FALSE_, PKCS1 v1.5 padding is used. If set to _TRUE_, PKCS1 v2.0
 		# (OAEP) padding is used.
-		#		
-		#		Important: The OAEP padding algorithm uses randomly generated
+		# 
+		# Important: The OAEP padding algorithm uses randomly generated
 		# bytes. Therefore, the RSA result will be different each time, even if all of the other inputs are
 		# identical. For example, if you RSA encrypt or sign the same data using the same key 100 times, the
 		# output will appear different each time, but they are all valid.
-		#		
-		#		When creating digital
+		# 
+		# When creating digital
 		# signatures, this property controls whether RSA-PSS or PKCS1 v1.5 is used. If _TRUE_, then the
 		# RSA-PSS signature scheme is used. The default value of this property is _FALSE_.
 		#
@@ -430,13 +430,13 @@ module Chilkat
 		# Controls whether Optimal Asymmetric Encryption Padding (OAEP) is used for the padding scheme (for
 		# encrypting/decrypting). If set to _FALSE_, PKCS1 v1.5 padding is used. If set to _TRUE_, PKCS1 v2.0
 		# (OAEP) padding is used.
-		#		
-		#		Important: The OAEP padding algorithm uses randomly generated
+		# 
+		# Important: The OAEP padding algorithm uses randomly generated
 		# bytes. Therefore, the RSA result will be different each time, even if all of the other inputs are
 		# identical. For example, if you RSA encrypt or sign the same data using the same key 100 times, the
 		# output will appear different each time, but they are all valid.
-		#		
-		#		When creating digital
+		# 
+		# When creating digital
 		# signatures, this property controls whether RSA-PSS or PKCS1 v1.5 is used. If _TRUE_, then the
 		# RSA-PSS signature scheme is used. The default value of this property is _FALSE_.
 		#
@@ -445,8 +445,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -455,8 +455,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -495,15 +495,15 @@ module Chilkat
 		# Decrypts byte data using the RSA encryption algorithm. ARG2 should be set to _TRUE_ if the private
 		# key is to be used for decrypting. Otherwise it should be set to _FALSE_ if the public key is to be
 		# used for decrypting.
-		#		
-		#		Important: If trying to match OpenSSL results, set the
+		# 
+		# Important: If trying to match OpenSSL results, set the
 		# LittleEndian property = _FALSE_.
 		#
 		# @param inData [CkByteData]
 		# @param usePrivateKey [TrueClass, FalseClass]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecryptBytes(inData, usePrivateKey, outData)
 			# ...
 		end
@@ -514,15 +514,14 @@ module Chilkat
 		# Same as DecryptBytes, except the input is an encoded string. The encoding is specified by the
 		# EncodingMode property, which can have values such as "base64", "hex", "quoted-printable", "url",
 		# etc.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property =
-		# _FALSE_.
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param str [String]
 		# @param bUsePrivateKey [TrueClass, FalseClass]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecryptBytesENC(str, bUsePrivateKey, outData)
 			# ...
 		end
@@ -537,15 +536,15 @@ module Chilkat
 		# ANSI. Internal to DecryptString, the decrypted string is automatically converted from the charset
 		# specified by the Charset property to the encoding required by the calling programming
 		# language.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property
 		# = _FALSE_.
 		#
 		# @param binarySig [CkByteData]
 		# @param usePrivateKey [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecryptString(binarySig, usePrivateKey, outStr)
 			# ...
 		end
@@ -560,14 +559,14 @@ module Chilkat
 		# ANSI. Internal to DecryptString, the decrypted string is automatically converted from the charset
 		# specified by the Charset property to the encoding required by the calling programming
 		# language.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property
 		# = _FALSE_.
 		#
 		# @param binarySig [CkByteData]
 		# @param usePrivateKey [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def decryptString(binarySig, usePrivateKey)
 			# ...
 		end
@@ -578,15 +577,14 @@ module Chilkat
 		# Same as DecryptString, except the input is an encoded string. The encoding is specified by the
 		# EncodingMode property, which can have values such as "base64", "hex", "quoted-printable", "url",
 		# etc.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property =
-		# _FALSE_.
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param encodedSig [String]
 		# @param usePrivateKey [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecryptStringENC(encodedSig, usePrivateKey, outStr)
 			# ...
 		end
@@ -597,14 +595,13 @@ module Chilkat
 		# Same as DecryptString, except the input is an encoded string. The encoding is specified by the
 		# EncodingMode property, which can have values such as "base64", "hex", "quoted-printable", "url",
 		# etc.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property =
-		# _FALSE_.
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param encodedSig [String]
 		# @param usePrivateKey [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def decryptStringENC(encodedSig, usePrivateKey)
 			# ...
 		end
@@ -615,15 +612,15 @@ module Chilkat
 		# Encrypts byte data using the RSA encryption algorithm. ARG2 should be set to _TRUE_ if the private
 		# key is to be used for encrypting. Otherwise it should be set to _FALSE_ if the public key is to be
 		# used for encrypting.
-		#		
-		#		Important: If trying to match OpenSSL results, set the
+		# 
+		# Important: If trying to match OpenSSL results, set the
 		# LittleEndian property = _FALSE_.
 		#
 		# @param binaryData [CkByteData]
 		# @param usePrivateKey [TrueClass, FalseClass]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EncryptBytes(binaryData, usePrivateKey, outData)
 			# ...
 		end
@@ -634,15 +631,14 @@ module Chilkat
 		# Same as EncryptBytes, except the output is an encoded string. The encoding is specified by the
 		# EncodingMode property, which can have values such as "base64", "hex", "quoted-printable", "url",
 		# etc.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property =
-		# _FALSE_.
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param data [CkByteData]
 		# @param bUsePrivateKey [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EncryptBytesENC(data, bUsePrivateKey, outStr)
 			# ...
 		end
@@ -653,14 +649,13 @@ module Chilkat
 		# Same as EncryptBytes, except the output is an encoded string. The encoding is specified by the
 		# EncodingMode property, which can have values such as "base64", "hex", "quoted-printable", "url",
 		# etc.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property =
-		# _FALSE_.
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param data [CkByteData]
 		# @param bUsePrivateKey [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def encryptBytesENC(data, bUsePrivateKey)
 			# ...
 		end
@@ -673,15 +668,15 @@ module Chilkat
 		# used for encrypting. The string is first converted (if necessary) to the character encoding
 		# specified by the Charset property before encrypting. The encrypted bytes are
 		# returned.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property
 		# = _FALSE_.
 		#
 		# @param stringToEncrypt [String]
 		# @param usePrivateKey [TrueClass, FalseClass]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EncryptString(stringToEncrypt, usePrivateKey, outData)
 			# ...
 		end
@@ -692,15 +687,14 @@ module Chilkat
 		# Same as EncryptString, except the output is an encoded string. The encoding is specified by the
 		# EncodingMode property, which can have values such as "base64", "hex", "quoted-printable", "url",
 		# etc.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property =
-		# _FALSE_.
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param str [String]
 		# @param bUsePrivateKey [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EncryptStringENC(str, bUsePrivateKey, outStr)
 			# ...
 		end
@@ -711,14 +705,13 @@ module Chilkat
 		# Same as EncryptString, except the output is an encoded string. The encoding is specified by the
 		# EncodingMode property, which can have values such as "base64", "hex", "quoted-printable", "url",
 		# etc.
-		#		
-		#		Important: If trying to match OpenSSL results, set the LittleEndian property =
-		# _FALSE_.
+		# 
+		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param str [String]
 		# @param bUsePrivateKey [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def encryptStringENC(str, bUsePrivateKey)
 			# ...
 		end
@@ -731,7 +724,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportPrivateKey(outStr)
 			# ...
 		end
@@ -743,7 +736,7 @@ module Chilkat
 		# a new RSA key via the GenerateKey method.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def exportPrivateKey()
 			# ...
 		end
@@ -756,7 +749,7 @@ module Chilkat
 		# variety of different formats.
 		#
 		#
-		# @return [CkPrivateKey] 
+		# @return [CkPrivateKey]
 		def ExportPrivateKeyObj()
 			# ...
 		end
@@ -769,7 +762,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportPublicKey(outStr)
 			# ...
 		end
@@ -781,7 +774,7 @@ module Chilkat
 		# new RSA key via the GenerateKey method.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def exportPublicKey()
 			# ...
 		end
@@ -793,7 +786,7 @@ module Chilkat
 		# saved in a variety of different formats.
 		#
 		#
-		# @return [CkPublicKey] 
+		# @return [CkPublicKey]
 		def ExportPublicKeyObj()
 			# ...
 		end
@@ -805,15 +798,15 @@ module Chilkat
 		# key lengths are 1024, 2048, or 4096 bits. After successful generation, the public/private parts of
 		# the key can be exported to XML via the ExportPrivateKey and ExportPublicKey
 		# methods.
-		#		
-		#		Note: Prior to version 9.5.0.49, the max key size was 4096 bits. Generating an
+		# 
+		# Note: Prior to version 9.5.0.49, the max key size was 4096 bits. Generating an
 		# 8192-bit RSA key takes a considerable amount of time and CPU processing power. There are no event
 		# callbacks or progress monitoring for RSA key generation. Calling this will block the thread until it
 		# returns.
 		#
 		# @param numBits [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenerateKey(numBits)
 			# ...
 		end
@@ -826,8 +819,8 @@ module Chilkat
 		# because the public key consist of modulus and exponent. The private key consists of modulus,
 		# exponent, P, Q, DP, DQ, InverseQ, and D using base64
 		# representation:
-		#		
-		#		_LT_RSAKeyValue>
+		# 
+		# _LT_RSAKeyValue>
 		# _LT_Modulus>..._LT_/Modulus>
 		#
 		# _LT_Exponent>..._LT_/Exponent>
@@ -839,15 +832,15 @@ module Chilkat
 		# _LT_InverseQ>..._LT_/InverseQ>
 		#
 		# _LT_D>..._LT_/D>
-		#		_LT_/RSAKeyValue>
-		#		
-		#		Important: The Rsa object can contain either a
+		# _LT_/RSAKeyValue>
+		# 
+		# Important: The Rsa object can contain either a
 		# private key or a public key, but not both. Importing a private key overwrites the existing key
 		# regardless of whether the type of key is public or private.
 		#
 		# @param xmlKey [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ImportPrivateKey(xmlKey)
 			# ...
 		end
@@ -860,7 +853,7 @@ module Chilkat
 		#
 		# @param key [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ImportPrivateKeyObj(key)
 			# ...
 		end
@@ -870,27 +863,27 @@ module Chilkat
 		#
 		# Imports a public key from XML format. After successful import, the public key can be used to encrypt
 		# or decrypt. 
-		#		
-		#		Note: Importing a public key overwrites the key that is currently
+		# 
+		# Note: Importing a public key overwrites the key that is currently
 		# contained in this object - even if it's a private key.
-		#		
-		#		A public key consists of modulus
+		# 
+		# A public key consists of modulus
 		# and exponent using base64 representation:
-		#		
-		#		_LT_RSAKeyValue>
+		# 
+		# _LT_RSAKeyValue>
 		#
 		# _LT_Modulus>..._LT_/Modulus>
 		#
 		# _LT_Exponent>..._LT_/Exponent>
-		#		_LT_/RSAKeyValue>
-		#		
-		#		Important: The Rsa object can
+		# _LT_/RSAKeyValue>
+		# 
+		# Important: The Rsa object can
 		# contain either a private key or a public key, but not both. Importing a private key overwrites the
 		# existing key regardless of whether the type of key is public or private.
 		#
 		# @param xmlKey [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ImportPublicKey(xmlKey)
 			# ...
 		end
@@ -903,7 +896,7 @@ module Chilkat
 		#
 		# @param key [CkPublicKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ImportPublicKeyObj(key)
 			# ...
 		end
@@ -917,7 +910,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenSslSignBytes(data, outBytes)
 			# ...
 		end
@@ -932,7 +925,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenSslSignBytesENC(data, outStr)
 			# ...
 		end
@@ -946,7 +939,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def openSslSignBytesENC(data)
 			# ...
 		end
@@ -960,7 +953,7 @@ module Chilkat
 		# @param str [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenSslSignString(str, outBytes)
 			# ...
 		end
@@ -974,7 +967,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenSslSignStringENC(str, outStr)
 			# ...
 		end
@@ -987,7 +980,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def openSslSignStringENC(str)
 			# ...
 		end
@@ -1001,7 +994,7 @@ module Chilkat
 		# @param signature [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenSslVerifyBytes(signature, outBytes)
 			# ...
 		end
@@ -1016,7 +1009,7 @@ module Chilkat
 		# @param str [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenSslVerifyBytesENC(str, outBytes)
 			# ...
 		end
@@ -1030,7 +1023,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenSslVerifyString(data, outStr)
 			# ...
 		end
@@ -1043,7 +1036,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def openSslVerifyString(data)
 			# ...
 		end
@@ -1058,7 +1051,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenSslVerifyStringENC(str, outStr)
 			# ...
 		end
@@ -1072,7 +1065,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def openSslVerifyStringENC(str)
 			# ...
 		end
@@ -1084,7 +1077,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1095,21 +1088,21 @@ module Chilkat
 		# Creates an RSA digital signature by hashing ARG1 and then signing the hash. The hash algorithm is
 		# specified by ARG2, which may be "SHA-1", "MD5", "MD2", "SHA-256", "SHA-384", or "SHA-512". The
 		# recommended hash algorithm is "SHA-1".
-		#		
-		#		Important: If trying to match OpenSSL results,
+		# 
+		# Important: If trying to match OpenSSL results,
 		# set the LittleEndian property = _FALSE_. (The LittleEndian property should also be set to _FALSE_ to
 		# match Amazon web services, such as CloudFront.)
-		#		
-		#		A private key is required to create a
+		# 
+		# A private key is required to create a
 		# digital signature.
-		#		
-		#		An error is indicated when a byte array of 0 length is returned.
+		# 
+		# An error is indicated when a byte array of 0 length is returned.
 		#
 		# @param binaryData [CkByteData]
 		# @param hashAlgorithm [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SignBytes(binaryData, hashAlgorithm, outData)
 			# ...
 		end
@@ -1121,22 +1114,22 @@ module Chilkat
 		# specified by ARG2, which may be "SHA-1", "MD5", "MD2", "SHA-256", "SHA-384", or "SHA-512". The
 		# recommended hash algorithm is "SHA-1". The digital signature is returned as an encoded string, where
 		# the encoding is specified by the EncodingMode property.
-		#		
-		#		Important: If trying to match
+		# 
+		# Important: If trying to match
 		# OpenSSL results, set the LittleEndian property = _FALSE_. (The LittleEndian property should also be
 		# set to _FALSE_ to match Amazon web services, such as CloudFront.)
-		#		
-		#		A private key is
+		# 
+		# A private key is
 		# required to create a digital signature.
-		#		
-		#		An error is indicated when null reference is
+		# 
+		# An error is indicated when null reference is
 		# returned.
 		#
 		# @param binaryData [CkByteData]
 		# @param hashAlgorithm [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SignBytesENC(binaryData, hashAlgorithm, outStr)
 			# ...
 		end
@@ -1148,21 +1141,21 @@ module Chilkat
 		# specified by ARG2, which may be "SHA-1", "MD5", "MD2", "SHA-256", "SHA-384", or "SHA-512". The
 		# recommended hash algorithm is "SHA-1". The digital signature is returned as an encoded string, where
 		# the encoding is specified by the EncodingMode property.
-		#		
-		#		Important: If trying to match
+		# 
+		# Important: If trying to match
 		# OpenSSL results, set the LittleEndian property = _FALSE_. (The LittleEndian property should also be
 		# set to _FALSE_ to match Amazon web services, such as CloudFront.)
-		#		
-		#		A private key is
+		# 
+		# A private key is
 		# required to create a digital signature.
-		#		
-		#		An error is indicated when null reference is
+		# 
+		# An error is indicated when null reference is
 		# returned.
 		#
 		# @param binaryData [CkByteData]
 		# @param hashAlgorithm [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def signBytesENC(binaryData, hashAlgorithm)
 			# ...
 		end
@@ -1176,7 +1169,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SignHash(hashBytes, hashAlg, outBytes)
 			# ...
 		end
@@ -1190,7 +1183,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SignHashENC(encodedHash, hashAlg, outStr)
 			# ...
 		end
@@ -1203,7 +1196,7 @@ module Chilkat
 		# @param encodedHash [String]
 		# @param hashAlg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def signHashENC(encodedHash, hashAlg)
 			# ...
 		end
@@ -1214,21 +1207,21 @@ module Chilkat
 		# Creates an RSA digital signature by hashing ARG1 and then signing the hash. The hash algorithm is
 		# specified by ARG2, which may be "SHA-1", "MD5", "MD2", "SHA-256", "SHA-384", or "SHA-512". The
 		# recommended hash algorithm is "SHA-1". 
-		#		
-		#		Important: If trying to match OpenSSL results,
+		# 
+		# Important: If trying to match OpenSSL results,
 		# set the LittleEndian property = _FALSE_. (The LittleEndian property should also be set to _FALSE_ to
 		# match Amazon web services, such as CloudFront.)
-		#		
-		#		A private key is required to create a
+		# 
+		# A private key is required to create a
 		# digital signature.
-		#		
-		#		An error is indicated when a byte array of 0 length is returned.
+		# 
+		# An error is indicated when a byte array of 0 length is returned.
 		#
 		# @param strToBeHashed [String]
 		# @param hashAlgorithm [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SignString(strToBeHashed, hashAlgorithm, outData)
 			# ...
 		end
@@ -1240,22 +1233,22 @@ module Chilkat
 		# specified by ARG2, which may be "SHA-1", "MD5", "MD2", "SHA-256", "SHA-384", or "SHA-512". The
 		# recommended hash algorithm is "SHA-1". The digital signature is returned as an encoded string, where
 		# the encoding is specified by the EncodingMode property.
-		#		
-		#		Important: If trying to match
+		# 
+		# Important: If trying to match
 		# OpenSSL results, set the LittleEndian property = _FALSE_. (The LittleEndian property should also be
 		# set to _FALSE_ to match Amazon web services, such as CloudFront.)
-		#		
-		#		A private key is
+		# 
+		# A private key is
 		# required to create a digital signature.
-		#		
-		#		An error is indicated when null reference is
+		# 
+		# An error is indicated when null reference is
 		# returned.
 		#
 		# @param strToBeHashed [String]
 		# @param hashAlgorithm [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SignStringENC(strToBeHashed, hashAlgorithm, outStr)
 			# ...
 		end
@@ -1267,21 +1260,21 @@ module Chilkat
 		# specified by ARG2, which may be "SHA-1", "MD5", "MD2", "SHA-256", "SHA-384", or "SHA-512". The
 		# recommended hash algorithm is "SHA-1". The digital signature is returned as an encoded string, where
 		# the encoding is specified by the EncodingMode property.
-		#		
-		#		Important: If trying to match
+		# 
+		# Important: If trying to match
 		# OpenSSL results, set the LittleEndian property = _FALSE_. (The LittleEndian property should also be
 		# set to _FALSE_ to match Amazon web services, such as CloudFront.)
-		#		
-		#		A private key is
+		# 
+		# A private key is
 		# required to create a digital signature.
-		#		
-		#		An error is indicated when null reference is
+		# 
+		# An error is indicated when null reference is
 		# returned.
 		#
 		# @param strToBeHashed [String]
 		# @param hashAlgorithm [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def signStringENC(strToBeHashed, hashAlgorithm)
 			# ...
 		end
@@ -1294,7 +1287,7 @@ module Chilkat
 		# @param filename [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SnkToXml(filename, outStr)
 			# ...
 		end
@@ -1306,7 +1299,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def snkToXml(filename)
 			# ...
 		end
@@ -1318,7 +1311,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -1334,7 +1327,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param signatureBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyBytes(originalData, hashAlgorithm, signatureBytes)
 			# ...
 		end
@@ -1345,15 +1338,15 @@ module Chilkat
 		# Verifies an RSA digital signature. Returns _TRUE_ if the signature is valid for the ARG1. The ARG2
 		# may be "SHA-1", "MD5", "MD2", "SHA-256", "SHA-384", or "SHA-512". The recommended hash algorithm is
 		# "SHA-1".
-		#		
-		#		The ARG3 is a digital signature encoded according to the EncodingMode property
+		# 
+		# The ARG3 is a digital signature encoded according to the EncodingMode property
 		# (i.e. base64, hex, etc.).
 		#
 		# @param originalData [CkByteData]
 		# @param hashAlgorithm [String]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyBytesENC(originalData, hashAlgorithm, encodedSig)
 			# ...
 		end
@@ -1367,7 +1360,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param sigBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyHash(hashBytes, hashAlg, sigBytes)
 			# ...
 		end
@@ -1381,7 +1374,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyHashENC(encodedHash, hashAlg, encodedSig)
 			# ...
 		end
@@ -1393,7 +1386,7 @@ module Chilkat
 		#
 		# @param xml [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyPrivateKey(xml)
 			# ...
 		end
@@ -1409,7 +1402,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param binarySig [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyString(originalString, hashAlgorithm, binarySig)
 			# ...
 		end
@@ -1420,15 +1413,15 @@ module Chilkat
 		# Verifies an RSA digital signature. Returns _TRUE_ if the signature is valid for the ARG1. The ARG2
 		# may be "SHA-1", "MD5", "MD2", "SHA-256", "SHA-384", or "SHA-512". The recommended hash algorithm is
 		# "SHA-1".
-		#		
-		#		The ARG3 is a digital signature encoded according to the EncodingMode property
+		# 
+		# The ARG3 is a digital signature encoded according to the EncodingMode property
 		# (i.e. base64, hex, etc.).
 		#
 		# @param originalString [String]
 		# @param hashAlgorithm [String]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyStringENC(originalString, hashAlgorithm, encodedSig)
 			# ...
 		end

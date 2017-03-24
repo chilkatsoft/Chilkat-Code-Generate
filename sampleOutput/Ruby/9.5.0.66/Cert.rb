@@ -61,13 +61,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -86,13 +86,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -109,13 +109,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -132,13 +132,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -191,19 +191,19 @@ module Chilkat
 		def get_HasKeyContainer() end
 
 		# Bitflags indicating the intended usages of the certificate.
-		#		The flags
+		# The flags
 		# are:
-		#		
-		#		Digital Signature: 0x80
-		#		Non-Repudiation: 0x40
-		#		Key Encipherment:
+		# 
+		# Digital Signature: 0x80
+		# Non-Repudiation: 0x40
+		# Key Encipherment:
 		# 0x20
-		#		Data Encipherment: 0x10
-		#		Key Agreement: 0x08
-		#		Certificate Signing:
+		# Data Encipherment: 0x10
+		# Key Agreement: 0x08
+		# Certificate Signing:
 		# 0x04
-		#		CRL Signing: 0x02
-		#		Encipher-Only: 0x01
+		# CRL Signing: 0x02
+		# Encipher-Only: 0x01
 		#
 		# @return [Bignum]
 		def get_IntendedKeyUsage() end
@@ -298,8 +298,8 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) If the HasKeyContainer
 		# property is _TRUE_, then the certificate is linked to a key container and this property contains the
 		# name of the key container. 
-		#		
-		#		When a certificate is linked to a key container , the
+		# 
+		# When a certificate is linked to a key container , the
 		# following properties will provide information about the key container and private key: CspName,
 		# KeyContainerName, MachineKeyset, and Silent.
 		#
@@ -309,8 +309,8 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) If the HasKeyContainer
 		# property is _TRUE_, then the certificate is linked to a key container and this property contains the
 		# name of the key container. 
-		#		
-		#		When a certificate is linked to a key container , the
+		# 
+		# When a certificate is linked to a key container , the
 		# following properties will provide information about the key container and private key: CspName,
 		# KeyContainerName, MachineKeyset, and Silent.
 		#
@@ -439,8 +439,8 @@ module Chilkat
 		# whether the key container is in the machine's keyset or in the keyset specific to the logged on
 		# user's account. If _TRUE_, the key container is within the machine keyset. If _FALSE_, it's in the
 		# user's keyset. 
-		#		
-		#		When a certificate is linked to a key container , the following
+		# 
+		# When a certificate is linked to a key container , the following
 		# properties will provide information about the key container and private key: CspName,
 		# KeyContainerName, MachineKeyset, and Silent.
 		#
@@ -469,7 +469,7 @@ module Chilkat
 
 		# _TRUE_ if the certificate or any certificate in the chain of authority has been revoked. This
 		# information is not available when running on Windows 95/98 computers.
-		#		Note: If this property
+		# Note: If this property
 		# is _FALSE_, it could mean that it was not able to check the revocation status. Because of this
 		# uncertainty, a CheckRevoked method has been added. It returns an integer indicating one of three
 		# possible states: 1 (revoked) , 0 (not revoked), -1 (unable to check revocation status).
@@ -478,8 +478,8 @@ module Chilkat
 		def get_Revoked() end
 
 		# The RFC-822 name of the certificate. (Also known as the Subject Alternative Name.)
-		#		
-		#		If
+		# 
+		# If
 		# the certificate contains a list of Subject Alternative Names, such as a list of host names to be
 		# protected by a single SSL certificate, then this property will contain the comma separated list of
 		# names.
@@ -488,8 +488,8 @@ module Chilkat
 		def get_Rfc822Name() end
 
 		# The RFC-822 name of the certificate. (Also known as the Subject Alternative Name.)
-		#		
-		#		If
+		# 
+		# If
 		# the certificate contains a list of Subject Alternative Names, such as a list of host names to be
 		# protected by a single SSL certificate, then this property will contain the comma separated list of
 		# names.
@@ -533,8 +533,8 @@ module Chilkat
 		# whether accessing the private key will cause the operating system to launch an interactive warning
 		# dialog. If _FALSE_ a warning dialog will be displayed. If _TRUE_ then private key accesses are
 		# silent.
-		#		
-		#		When a certificate is linked to a key container , the following properties will
+		# 
+		# When a certificate is linked to a key container , the following properties will
 		# provide information about the key container and private key: CspName, KeyContainerName,
 		# MachineKeyset, and Silent.
 		#
@@ -636,16 +636,16 @@ module Chilkat
 		def subjectS() end
 
 		# Returns _TRUE_ if the certificate has a trusted root authority, otherwise returns _FALSE_.
-		# #		
-		#		Note: As of version 9.5.0.41, the notion of what your application deems as trusted becomes
+		# # 
+		# Note: As of version 9.5.0.41, the notion of what your application deems as trusted becomes
 		# more specific. The TrustedRoots class/object was added in v9.5.0.0. Prior to this, a certificate was
 		# considered to be anchored by a trusted root if the certificate chain could be established to a root
 		# (self-signed) certificate, AND if the root certificate was located somewhere in the Windows
 		# registry-based certificate stores. There are two problems with this: (1) it's a Windows-only
 		# solution. This property would always return _FALSE_ on non-Windows systems, and (2) it might be
 		# considered not a strong enough set of conditions for trusting a root certificate.
-		#		
-		#		As of
+		# 
+		# As of
 		# version 9.5.0.41, this property pays attention to the new TrustedRoots class/object, which allows
 		# for an application to specificallly indicate which root certificates are to be trusted. Certificates
 		# may be added to the TrustedRoots object via the LoadCaCertsPem or AddCert methods, and then
@@ -661,8 +661,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -671,8 +671,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -748,7 +748,7 @@ module Chilkat
 		# revocation status.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def CheckRevoked()
 			# ...
 		end
@@ -760,7 +760,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportCertDer(outData)
 			# ...
 		end
@@ -772,7 +772,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportCertDerFile(path)
 			# ...
 		end
@@ -784,7 +784,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportCertPem(outStr)
 			# ...
 		end
@@ -795,7 +795,7 @@ module Chilkat
 		# Exports the digital certificate to an unencrypted PEM formatted string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def exportCertPem()
 			# ...
 		end
@@ -807,7 +807,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportCertPemFile(path)
 			# ...
 		end
@@ -821,7 +821,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportCertXml(outStr)
 			# ...
 		end
@@ -834,7 +834,7 @@ module Chilkat
 		# "bits" ASN.1 tag is hex encoded, whereas for all other ASN.1 tags, such as "octets", it is base64.)
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def exportCertXml()
 			# ...
 		end
@@ -845,7 +845,7 @@ module Chilkat
 		# Exports the certificate's private key.
 		#
 		#
-		# @return [CkPrivateKey] 
+		# @return [CkPrivateKey]
 		def ExportPrivateKey()
 			# ...
 		end
@@ -856,7 +856,7 @@ module Chilkat
 		# Exports the certificate's public key.
 		#
 		#
-		# @return [CkPublicKey] 
+		# @return [CkPublicKey]
 		def ExportPublicKey()
 			# ...
 		end
@@ -872,7 +872,7 @@ module Chilkat
 		# @param includeCertChain [TrueClass, FalseClass]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportToPfxData(password, includeCertChain, outBytes)
 			# ...
 		end
@@ -888,7 +888,7 @@ module Chilkat
 		# @param pfxPassword [String]
 		# @param bIncludeCertChain [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportToPfxFile(pfxFilename, pfxPassword, bIncludeCertChain)
 			# ...
 		end
@@ -901,7 +901,7 @@ module Chilkat
 		# if the certificate is a root (or self-issued) certificate.)
 		#
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindIssuer()
 			# ...
 		end
@@ -915,18 +915,18 @@ module Chilkat
 		# certificate chain. The UseCertVault method can be called to provide additional certificates that
 		# might be required to build the cert chain. Finally, the TrustedRoots object can be used to provide a
 		# way of making trusted root certificates available.
-		#		
-		#		Note: Prior to v9.5.0.50, this
+		# 
+		# Note: Prior to v9.5.0.50, this
 		# method would fail if the certificate chain could not be completed to the root. Starting in
 		# v9.5.0.50, the incomplete certificate chain will be returned. The certificate chain's ReachesRoot
 		# property can be examined to see if the chain was completed to the root.
-		#		
-		#		On Windows
+		# 
+		# On Windows
 		# systems, the registry-based certificate stores are automatically consulted if needed to locate
 		# intermediate or root certificates in the chain.
 		#
 		#
-		# @return [CkCertChain] 
+		# @return [CkCertChain]
 		def GetCertChain()
 			# ...
 		end
@@ -939,7 +939,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncoded(outStr)
 			# ...
 		end
@@ -951,7 +951,7 @@ module Chilkat
 		# passed to SetFromEncoded to recreate the certificate object.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncoded()
 			# ...
 		end
@@ -961,15 +961,15 @@ module Chilkat
 		#
 		# Returns the certificate extension data in XML format (converted from ASN.1). The ARG1 is an OID,
 		# such as the ones listed here: http://www.alvestrand.no/objectid/2.5.29.html
-		#		
-		#		Note: In
+		# 
+		# Note: In
 		# many cases, the data within the XML is returned base64 encoded. An application may need to take one
 		# further step to base64 decode the information contained within the XML.
 		#
 		# @param oid [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetExtensionAsXml(oid, outStr)
 			# ...
 		end
@@ -979,14 +979,14 @@ module Chilkat
 		#
 		# Returns the certificate extension data in XML format (converted from ASN.1). The ARG1 is an OID,
 		# such as the ones listed here: http://www.alvestrand.no/objectid/2.5.29.html
-		#		
-		#		Note: In
+		# 
+		# Note: In
 		# many cases, the data within the XML is returned base64 encoded. An application may need to take one
 		# further step to base64 decode the information contained within the XML.
 		#
 		# @param oid [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getExtensionAsXml(oid)
 			# ...
 		end
@@ -998,7 +998,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPrivateKeyPem(outStr)
 			# ...
 		end
@@ -1009,7 +1009,7 @@ module Chilkat
 		# Exports the certificate's private key to a PEM string (if the private key is available).
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getPrivateKeyPem()
 			# ...
 		end
@@ -1028,7 +1028,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetSpkiFingerprint(hashAlg, encoding, outStr)
 			# ...
 		end
@@ -1046,7 +1046,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getSpkiFingerprint(hashAlg, encoding)
 			# ...
 		end
@@ -1057,7 +1057,7 @@ module Chilkat
 		# Returns the date/time this certificate becomes (or became) valid.
 		#
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetValidFromDt()
 			# ...
 		end
@@ -1068,7 +1068,7 @@ module Chilkat
 		# Returns the date/time this certificate becomes (or became) invalid.
 		#
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetValidToDt()
 			# ...
 		end
@@ -1079,7 +1079,7 @@ module Chilkat
 		# Returns true if the private key is installed on the local system for the certificate.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasPrivateKey()
 			# ...
 		end
@@ -1100,7 +1100,7 @@ module Chilkat
 		# @param bMachineKeyset [TrueClass, FalseClass]
 		# @param bForSigning [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LinkPrivateKey(keyContainerName, bMachineKeyset, bForSigning)
 			# ...
 		end
@@ -1114,7 +1114,7 @@ module Chilkat
 		#
 		# @param cn [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadByCommonName(cn)
 			# ...
 		end
@@ -1128,7 +1128,7 @@ module Chilkat
 		#
 		# @param emailAddress [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadByEmailAddress(emailAddress)
 			# ...
 		end
@@ -1143,7 +1143,7 @@ module Chilkat
 		# @param issuerCN [String]
 		# @param serialNumber [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadByIssuerAndSerialNumber(issuerCN, serialNumber)
 			# ...
 		end
@@ -1155,7 +1155,7 @@ module Chilkat
 		#
 		# @param encodedCert [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromBase64(encodedCert)
 			# ...
 		end
@@ -1167,7 +1167,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromBinary(data)
 			# ...
 		end
@@ -1181,7 +1181,7 @@ module Chilkat
 		# @param pByteData [Object]
 		# @param szByteData [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromBinary2(pByteData, szByteData)
 			# ...
 		end
@@ -1198,7 +1198,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromFile(path)
 			# ...
 		end
@@ -1210,7 +1210,7 @@ module Chilkat
 		#
 		# @param strPem [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPem(strPem)
 			# ...
 		end
@@ -1224,7 +1224,7 @@ module Chilkat
 		# @param pfxData [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxData(pfxData, password)
 			# ...
 		end
@@ -1239,7 +1239,7 @@ module Chilkat
 		# @param szByteData [Fixnum]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxData2(pByteData, szByteData, password)
 			# ...
 		end
@@ -1253,7 +1253,7 @@ module Chilkat
 		# @param pfxPath [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxFile(pfxPath, password)
 			# ...
 		end
@@ -1265,7 +1265,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -1278,7 +1278,7 @@ module Chilkat
 		# @param fromPath [String]
 		# @param toPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def PemFileToDerFile(fromPath, toPath)
 			# ...
 		end
@@ -1290,7 +1290,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1302,7 +1302,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToFile(path)
 			# ...
 		end
@@ -1315,7 +1315,7 @@ module Chilkat
 		#
 		# @param encodedCert [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetFromEncoded(encodedCert)
 			# ...
 		end
@@ -1328,7 +1328,7 @@ module Chilkat
 		#
 		# @param privKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPrivateKey(privKey)
 			# ...
 		end
@@ -1341,7 +1341,7 @@ module Chilkat
 		#
 		# @param privKeyPem [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPrivateKeyPem(privKeyPem)
 			# ...
 		end
@@ -1355,7 +1355,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -1368,7 +1368,7 @@ module Chilkat
 		# root. Otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifySignature()
 			# ...
 		end

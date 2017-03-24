@@ -23,13 +23,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -48,13 +48,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -71,13 +71,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -94,13 +94,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -235,7 +235,7 @@ module Chilkat
 		def get_NumCertificates() end
 
 		# (This property only available on Microsoft Windows operating systems.)
-		#		The number of
+		# The number of
 		# certificates that can be used for sending secure email within this store.
 		#
 		# @return [Bignum]
@@ -243,8 +243,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -253,8 +253,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -291,12 +291,12 @@ module Chilkat
 		# Method: AddCertificate
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Adds a certificate to the
+		# Adds a certificate to the
 		# store. If the certificate is already in the store, it is updated with the new information.
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddCertificate(cert)
 			# ...
 		end
@@ -305,12 +305,12 @@ module Chilkat
 		# Method: CreateFileStore
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Creates a new file-based
+		# Creates a new file-based
 		# certificate store. Certificates may be saved to this store by calling AddCertificate.
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateFileStore(filename)
 			# ...
 		end
@@ -319,11 +319,11 @@ module Chilkat
 		# Method: CreateMemoryStore
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Creates an in-memory
+		# Creates an in-memory
 		# certificate store. Certificates may be added by calling AddCertificate.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateMemoryStore()
 			# ...
 		end
@@ -332,14 +332,14 @@ module Chilkat
 		# Method: CreateRegistryStore
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Creates a registry-based
+		# Creates a registry-based
 		# certificate store. ARG1 must be "CurrentUser" or "LocalMachine". ARG2 is a registry path such as
 		# "Software/MyApplication/Certificates".
 		#
 		# @param regRoot [String]
 		# @param regPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateRegistryStore(regRoot, regPath)
 			# ...
 		end
@@ -348,11 +348,11 @@ module Chilkat
 		# Method: FindCertByRfc822Name
 		#
 		# Locates a certificate by its RFC 822 name and returns it if found.
-		#		Returns _NULL_ on failure.
+		# Returns _NULL_ on failure.
 		#
 		# @param name [String]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindCertByRfc822Name(name)
 			# ...
 		end
@@ -361,12 +361,12 @@ module Chilkat
 		# Method: FindCertBySerial
 		#
 		# Finds and returns the certificate that has the matching serial number.
-		#		Returns _NULL_ on
+		# Returns _NULL_ on
 		# failure.
 		#
 		# @param str [String]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindCertBySerial(str)
 			# ...
 		end
@@ -375,12 +375,12 @@ module Chilkat
 		# Method: FindCertBySha1Thumbprint
 		#
 		# Finds a certificate by it's SHA-1 thumbprint. The thumbprint is a hexidecimal string.
-		#		Returns
+		# Returns
 		# _NULL_ on failure.
 		#
 		# @param str [String]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindCertBySha1Thumbprint(str)
 			# ...
 		end
@@ -393,11 +393,11 @@ module Chilkat
 		# match in SubjectCN will be tried first, followed by SubjectE, and SubjectO. After that, the first
 		# match found in SubjectOU, SubjectL, SubjectST, or SubjectC, but in no guaranteed order, is returned.
 		# All matches are case insensitive.
-		#		Returns _NULL_ on failure.
+		# Returns _NULL_ on failure.
 		#
 		# @param str [String]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindCertBySubject(str)
 			# ...
 		end
@@ -407,11 +407,11 @@ module Chilkat
 		#
 		# Finds a certificate where the SubjectCN property (common name) matches exactly (but case
 		# insensitive) with the passed string
-		#		Returns _NULL_ on failure.
+		# Returns _NULL_ on failure.
 		#
 		# @param str [String]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindCertBySubjectCN(str)
 			# ...
 		end
@@ -422,11 +422,11 @@ module Chilkat
 		# Finds a certificate where the SubjectE property (email address) matches exactly (but case
 		# insensitive) with the passed string. This function differs from FindCertForEmail in that the
 		# certificate does not need to match the ForSecureEmail property.
-		#		Returns _NULL_ on failure.
+		# Returns _NULL_ on failure.
 		#
 		# @param str [String]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindCertBySubjectE(str)
 			# ...
 		end
@@ -436,11 +436,11 @@ module Chilkat
 		#
 		# Finds a certificate where the SubjectO property (organization) matches exactly (but case
 		# insensitive) with the passed string.
-		#		Returns _NULL_ on failure.
+		# Returns _NULL_ on failure.
 		#
 		# @param str [String]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindCertBySubjectO(str)
 			# ...
 		end
@@ -449,15 +449,15 @@ module Chilkat
 		# Method: FindCertForEmail
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Finds a certificate that
+		# Finds a certificate that
 		# can be used to send secure email to the passed email address. A certificate matches only if the
 		# ForSecureEmail property is TRUE, and the email address matches exactly (but case insensitive) with
 		# the SubjectE property. Returns NULL if no matches are found.
-		#		Returns _NULL_ on failure.
+		# Returns _NULL_ on failure.
 		#
 		# @param emailAddress [String]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindCertForEmail(emailAddress)
 			# ...
 		end
@@ -466,12 +466,12 @@ module Chilkat
 		# Method: GetCertificate
 		#
 		# Returns the Nth certificate in the store. The first certificate is at index 0.
-		#		Returns _NULL_
+		# Returns _NULL_
 		# on failure.
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetCertificate(index)
 			# ...
 		end
@@ -480,14 +480,14 @@ module Chilkat
 		# Method: GetEmailCert
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Returns the Nth email
+		# Returns the Nth email
 		# certificate in the store. The first certificate is at index 0. Use the NumEmailCertificates property
 		# to get the number of email certificates.
-		#		Returns _NULL_ on failure.
+		# Returns _NULL_ on failure.
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetEmailCert(index)
 			# ...
 		end
@@ -499,7 +499,7 @@ module Chilkat
 		#
 		# @param pemPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPemFile(pemPath)
 			# ...
 		end
@@ -511,7 +511,7 @@ module Chilkat
 		#
 		# @param pemString [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPemStr(pemString)
 			# ...
 		end
@@ -526,7 +526,7 @@ module Chilkat
 		# @param pfxData [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxData(pfxData, password)
 			# ...
 		end
@@ -542,7 +542,7 @@ module Chilkat
 		# @param szByteData [Fixnum]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxData2(pByteData, szByteData, password)
 			# ...
 		end
@@ -557,7 +557,7 @@ module Chilkat
 		# @param pfxFilename [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxFile(pfxFilename, password)
 			# ...
 		end
@@ -566,7 +566,7 @@ module Chilkat
 		# Method: OpenChilkatStore
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Opens the registry-based
+		# Opens the registry-based
 		# local machine certificate store having the path "Software/Chilkat/SystemCertificates". If the
 		# certificate store does not exist, it is automatically created. Setting ARG1 = _TRUE_ causes the
 		# certificate store to be opened read-only, and will prevent "permission denied" errors caused by the
@@ -576,7 +576,7 @@ module Chilkat
 		#
 		# @param readOnly [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenChilkatStore(readOnly)
 			# ...
 		end
@@ -585,7 +585,7 @@ module Chilkat
 		# Method: OpenCurrentUserStore
 		#
 		# (This method is only available on Microsoft Windows operating systems.)
-		#		Opens the
+		# Opens the
 		# registry-based Current-User\Personal certificate store. Set ARG1 = _TRUE_ if only fetching
 		# certificates and not updating the certificate store (i.e. certificates will not be added or
 		# removed). Setting ARG1 = _TRUE_ causes the certificate store to be opened read-only, and will
@@ -595,7 +595,7 @@ module Chilkat
 		#
 		# @param readOnly [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenCurrentUserStore(readOnly)
 			# ...
 		end
@@ -604,7 +604,7 @@ module Chilkat
 		# Method: OpenFileStore
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Opens a file-based
+		# Opens a file-based
 		# certificate store. Once loaded, the certificates within the store may be searched via the Find*
 		# methods. An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to
 		# access each certificate by index.
@@ -612,7 +612,7 @@ module Chilkat
 		# @param filename [String]
 		# @param readOnly [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenFileStore(filename, readOnly)
 			# ...
 		end
@@ -621,7 +621,7 @@ module Chilkat
 		# Method: OpenLocalSystemStore
 		#
 		# (This method is only available on Microsoft Windows operating systems.)
-		#		Opens the
+		# Opens the
 		# registry-based Local-Computer\Personal certificate store. Set ARG1 = _TRUE_ if only fetching
 		# certificates and not updating the certificate store (i.e. certificates will not be added or
 		# removed). Setting ARG1 = _TRUE_ causes the certificate store to be opened read-only, and will
@@ -631,7 +631,7 @@ module Chilkat
 		#
 		# @param readOnly [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenLocalSystemStore(readOnly)
 			# ...
 		end
@@ -640,7 +640,7 @@ module Chilkat
 		# Method: OpenOutlookStore
 		#
 		# (This method is only available on Microsoft Windows operating systems.)
-		#		Opens the
+		# Opens the
 		# registry-based Current-User\Other People certificate store. This is the certificate store use by
 		# Microsot Outlook. Set ARG1 = _TRUE_ if only fetching certificates and not updating the certificate
 		# store (i.e. certificates will not be added or removed). Setting ARG1 = _TRUE_ causes the certificate
@@ -651,7 +651,7 @@ module Chilkat
 		#
 		# @param readOnly [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenOutlookStore(readOnly)
 			# ...
 		end
@@ -660,7 +660,7 @@ module Chilkat
 		# Method: OpenRegistryStore
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Opens an arbitrary
+		# Opens an arbitrary
 		# registry-based certificate store. ARG1 must be "CurrentUser" or "LocalMachine". ARG2 is a registry
 		# path such as "Software/MyApplication/Certificates".Setting ARG3 = _TRUE_ causes the certificate
 		# store to be opened read-only, and will prevent "permission denied" errors caused by the need for
@@ -672,7 +672,7 @@ module Chilkat
 		# @param regPath [String]
 		# @param readOnly [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenRegistryStore(regRoot, regPath, readOnly)
 			# ...
 		end
@@ -681,35 +681,35 @@ module Chilkat
 		# Method: OpenWindowsStore
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Opens a Microsoft Windows
+		# Opens a Microsoft Windows
 		# certificate store. ARG1 must be "CurrentUser" or "LocalMachine". ARG2 is the name of the certificate
 		# store to open. It may be any of the following:
-		#		
-		#		
-		#		AddressBook: Certificate store
+		# 
+		# 
+		# AddressBook: Certificate store
 		# for other users.
-		#		
-		#		AuthRoot: Certificate store for third-party certification authorities
+		# 
+		# AuthRoot: Certificate store for third-party certification authorities
 		# (CAs).
-		#		
-		#		CertificationAuthority: Certificate store for intermediate certification
+		# 
+		# CertificationAuthority: Certificate store for intermediate certification
 		# authorities (CAs).
-		#		
-		#		Disallowed: Certificate store for revoked
+		# 
+		# Disallowed: Certificate store for revoked
 		# certificates.
-		#		
-		#		My: Certificate store for personal certificates.
-		#		
-		#		Root:
+		# 
+		# My: Certificate store for personal certificates.
+		# 
+		# Root:
 		# Certificate store for trusted root certification authorities (CAs).
-		#		
-		#		TrustedPeople:
+		# 
+		# TrustedPeople:
 		# Certificate store for directly trusted people and resources.
-		#		
-		#		TrustedPublisher:
+		# 
+		# TrustedPublisher:
 		# Certificate store for directly trusted publishers.
-		#		
-		#		Setting ARG3 = _TRUE_ causes the
+		# 
+		# Setting ARG3 = _TRUE_ causes the
 		# certificate store to be opened read-only, and will prevent "permission denied" errors caused by the
 		# need for read-write permission. Once loaded, the certificates within the store may be searched via
 		# the Find* methods. An application may also iterate from 0 to NumCertficates-1 and call
@@ -719,7 +719,7 @@ module Chilkat
 		# @param storeName [String]
 		# @param readOnly [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenWindowsStore(storeLocation, storeName, readOnly)
 			# ...
 		end
@@ -728,13 +728,13 @@ module Chilkat
 		# Method: RemoveCertificate
 		#
 		# (This method only available on Microsoft Windows operating systems.)
-		#		Removes the passed
+		# Removes the passed
 		# certificate from the store. The certificate object passed as the argument can no longer be used once
 		# removed.
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveCertificate(cert)
 			# ...
 		end
@@ -746,7 +746,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end

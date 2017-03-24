@@ -42,10 +42,10 @@ module Chilkat
 		# method. NTLM is the most secure, and is a synonym for "Windows Integrated Authentication". The
 		# default is "LOGIN" (or the empty string) which is simple plain-text username/password
 		# authentication. Not all IMAP servers support all authentication methods.
-		#		The XOAUTH2 method
+		# The XOAUTH2 method
 		# was added in version 9.5.0.44.
-		#		
-		#		Note: If SPA (i.e. NTLM) authentication does not
+		# 
+		# Note: If SPA (i.e. NTLM) authentication does not
 		# succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @param ckStr [CkString]
@@ -57,10 +57,10 @@ module Chilkat
 		# method. NTLM is the most secure, and is a synonym for "Windows Integrated Authentication". The
 		# default is "LOGIN" (or the empty string) which is simple plain-text username/password
 		# authentication. Not all IMAP servers support all authentication methods.
-		#		The XOAUTH2 method
+		# The XOAUTH2 method
 		# was added in version 9.5.0.44.
-		#		
-		#		Note: If SPA (i.e. NTLM) authentication does not
+		# 
+		# Note: If SPA (i.e. NTLM) authentication does not
 		# succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @param newval [String]
@@ -70,10 +70,10 @@ module Chilkat
 		# method. NTLM is the most secure, and is a synonym for "Windows Integrated Authentication". The
 		# default is "LOGIN" (or the empty string) which is simple plain-text username/password
 		# authentication. Not all IMAP servers support all authentication methods.
-		#		The XOAUTH2 method
+		# The XOAUTH2 method
 		# was added in version 9.5.0.44.
-		#		
-		#		Note: If SPA (i.e. NTLM) authentication does not
+		# 
+		# Note: If SPA (i.e. NTLM) authentication does not
 		# succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @return [String]
@@ -83,10 +83,10 @@ module Chilkat
 		# method. NTLM is the most secure, and is a synonym for "Windows Integrated Authentication". The
 		# default is "LOGIN" (or the empty string) which is simple plain-text username/password
 		# authentication. Not all IMAP servers support all authentication methods.
-		#		The XOAUTH2 method
+		# The XOAUTH2 method
 		# was added in version 9.5.0.44.
-		#		
-		#		Note: If SPA (i.e. NTLM) authentication does not
+		# 
+		# Note: If SPA (i.e. NTLM) authentication does not
 		# succeed, set the Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @param newval [String]
@@ -121,8 +121,8 @@ module Chilkat
 		# If set to _TRUE_, then all Fetch* methods will also automatically download attachments. If set to
 		# _FALSE_, then the Fetch* methods download the email without attachments. The default value is
 		# _TRUE_.
-		#		
-		#		Note: Methods that download headers-only, such as FetchSingleHeader, ignore
+		# 
+		# Note: Methods that download headers-only, such as FetchSingleHeader, ignore
 		# this property and never download attachments. Also, signed and/or encrypted emails will always be
 		# downloaded in full (with attachments) regardless of this property setting.
 		#
@@ -132,8 +132,8 @@ module Chilkat
 		# If set to _TRUE_, then all Fetch* methods will also automatically download attachments. If set to
 		# _FALSE_, then the Fetch* methods download the email without attachments. The default value is
 		# _TRUE_.
-		#		
-		#		Note: Methods that download headers-only, such as FetchSingleHeader, ignore
+		# 
+		# Note: Methods that download headers-only, such as FetchSingleHeader, ignore
 		# this property and never download attachments. Also, signed and/or encrypted emails will always be
 		# downloaded in full (with attachments) regardless of this property setting.
 		#
@@ -141,31 +141,31 @@ module Chilkat
 		def put_AutoDownloadAttachments(newval) end
 
 		# If _TRUE_, then the following will occur when a connection is made to an IMAP server:
-		#		1) If
+		# 1) If
 		# the Port property = 993, then sets StartTls = _FALSE_ and Ssl = _TRUE_
-		#		2) If the Port property
+		# 2) If the Port property
 		# = 143, sets Ssl = _FALSE_
-		#		The default value of this property is _TRUE_.
+		# The default value of this property is _TRUE_.
 		#
 		# @return [TrueClass, FalseClass]
 		def get_AutoFix() end
 
 		# If _TRUE_, then the following will occur when a connection is made to an IMAP server:
-		#		1) If
+		# 1) If
 		# the Port property = 993, then sets StartTls = _FALSE_ and Ssl = _TRUE_
-		#		2) If the Port property
+		# 2) If the Port property
 		# = 143, sets Ssl = _FALSE_
-		#		The default value of this property is _TRUE_.
+		# The default value of this property is _TRUE_.
 		#
 		# @param newval [TrueClass, FalseClass]
 		def put_AutoFix(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param ckStr [CkString]
@@ -174,33 +174,33 @@ module Chilkat
 		def get_ClientIpAddress(ckStr) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
 		def put_ClientIpAddress(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @return [String]
 		def clientIpAddress() end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
@@ -235,13 +235,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -260,13 +260,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -283,13 +283,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -306,13 +306,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -366,6 +366,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
@@ -508,8 +510,8 @@ module Chilkat
 
 		# Turns the in-memory session logging on or off. If on, the session log can be obtained via the
 		# SessionLog property. The default value is _FALSE_. 
-		#		
-		#		The SessionLog contains the raw
+		# 
+		# The SessionLog contains the raw
 		# commands sent to the IMAP server, and the raw responses received from the IMAP server.
 		#
 		# @return [TrueClass, FalseClass]
@@ -517,8 +519,8 @@ module Chilkat
 
 		# Turns the in-memory session logging on or off. If on, the session log can be obtained via the
 		# SessionLog property. The default value is _FALSE_. 
-		#		
-		#		The SessionLog contains the raw
+		# 
+		# The SessionLog contains the raw
 		# commands sent to the IMAP server, and the raw responses received from the IMAP server.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -669,7 +671,7 @@ module Chilkat
 		def lastResponse() end
 
 		# The response code part of the last command response, if it exists.
-		#		IMAP status responses MAY
+		# IMAP status responses MAY
 		# include an OPTIONAL "response code". A response
 		# code consists of data inside square brackets in
 		# the form of an atom,
@@ -688,7 +690,7 @@ module Chilkat
 		def get_LastResponseCode() end
 
 		# The response code part of the last command response, if it exists.
-		#		IMAP status responses MAY
+		# IMAP status responses MAY
 		# include an OPTIONAL "response code". A response
 		# code consists of data inside square brackets in
 		# the form of an atom,
@@ -740,7 +742,7 @@ module Chilkat
 		def loggedInUser() end
 
 		# After selecting a mailbox (by calling SelectMailbox), this property will
-		#		be updated to reflect
+		# be updated to reflect
 		# the total number of emails in the mailbox.
 		#
 		# @return [Bignum]
@@ -760,8 +762,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -776,8 +778,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -788,6 +790,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_PercentDoneScale(newval) end
 
 		# The IMAP port number. If using SSL, be sure to set this to the IMAP SSL port number, which is
@@ -819,8 +823,8 @@ module Chilkat
 		# additional response bytes are forthcoming. For the case of long responses, if the data stream halts
 		# for more than this amount, it will timeout. This property is not a maximum for the total response
 		# time, but only a maximum for the amount of time while no response arrives. 
-		#		
-		#		The default
+		# 
+		# The default
 		# value is 30 seconds.
 		#
 		# @return [Bignum]
@@ -831,8 +835,8 @@ module Chilkat
 		# additional response bytes are forthcoming. For the case of long responses, if the data stream halts
 		# for more than this amount, it will timeout. This property is not a maximum for the total response
 		# time, but only a maximum for the amount of time while no response arrives. 
-		#		
-		#		The default
+		# 
+		# The default
 		# value is 30 seconds.
 		#
 		# @param newval [Bignum]
@@ -857,8 +861,8 @@ module Chilkat
 		# needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the
 		# pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an
 		# appropriate multibyte charset. 
-		#		
-		#		In summary, it is unlikely that this property needs to
+		# 
+		# In summary, it is unlikely that this property needs to
 		# be changed. It should only be modified if trouble arises with some IMAP servers when non-English
 		# chars are used in the search criteria.
 		#
@@ -872,8 +876,8 @@ module Chilkat
 		# needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the
 		# pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an
 		# appropriate multibyte charset. 
-		#		
-		#		In summary, it is unlikely that this property needs to
+		# 
+		# In summary, it is unlikely that this property needs to
 		# be changed. It should only be modified if trouble arises with some IMAP servers when non-English
 		# chars are used in the search criteria.
 		#
@@ -885,8 +889,8 @@ module Chilkat
 		# needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the
 		# pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an
 		# appropriate multibyte charset. 
-		#		
-		#		In summary, it is unlikely that this property needs to
+		# 
+		# In summary, it is unlikely that this property needs to
 		# be changed. It should only be modified if trouble arises with some IMAP servers when non-English
 		# chars are used in the search criteria.
 		#
@@ -898,8 +902,8 @@ module Chilkat
 		# needed and this property doesn't apply.) The SearchCharset property can be set to "AUTO" to get the
 		# pre-v9.4.0 behavior, which is to examine the 8bit chars found in the search criteria and select an
 		# appropriate multibyte charset. 
-		#		
-		#		In summary, it is unlikely that this property needs to
+		# 
+		# In summary, it is unlikely that this property needs to
 		# be changed. It should only be modified if trouble arises with some IMAP servers when non-English
 		# chars are used in the search criteria.
 		#
@@ -932,8 +936,8 @@ module Chilkat
 		# ".", but may vary depending on the IMAP server. The ListMailboxes method has the side-effect of
 		# setting this property to the correct value because the IMAP server's response when listing mailboxes
 		# includes information about the separator char.
-		#		
-		#		Note: Starting in version 9.5.0.47, this
+		# 
+		# Note: Starting in version 9.5.0.47, this
 		# property changed from a "char" type to a "string" type. The separator char property will always be a
 		# string of length 1 character.
 		#
@@ -946,8 +950,8 @@ module Chilkat
 		# ".", but may vary depending on the IMAP server. The ListMailboxes method has the side-effect of
 		# setting this property to the correct value because the IMAP server's response when listing mailboxes
 		# includes information about the separator char.
-		#		
-		#		Note: Starting in version 9.5.0.47, this
+		# 
+		# Note: Starting in version 9.5.0.47, this
 		# property changed from a "char" type to a "string" type. The separator char property will always be a
 		# string of length 1 character.
 		#
@@ -958,8 +962,8 @@ module Chilkat
 		# ".", but may vary depending on the IMAP server. The ListMailboxes method has the side-effect of
 		# setting this property to the correct value because the IMAP server's response when listing mailboxes
 		# includes information about the separator char.
-		#		
-		#		Note: Starting in version 9.5.0.47, this
+		# 
+		# Note: Starting in version 9.5.0.47, this
 		# property changed from a "char" type to a "string" type. The separator char property will always be a
 		# string of length 1 character.
 		#
@@ -970,8 +974,8 @@ module Chilkat
 		# ".", but may vary depending on the IMAP server. The ListMailboxes method has the side-effect of
 		# setting this property to the correct value because the IMAP server's response when listing mailboxes
 		# includes information about the separator char.
-		#		
-		#		Note: Starting in version 9.5.0.47, this
+		# 
+		# Note: Starting in version 9.5.0.47, this
 		# property changed from a "char" type to a "string" type. The separator char property will always be a
 		# string of length 1 character.
 		#
@@ -1045,14 +1049,14 @@ module Chilkat
 		def put_SocksPassword(newval) end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [Bignum]
@@ -1085,24 +1089,24 @@ module Chilkat
 		def put_SocksUsername(newval) end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
@@ -1112,8 +1116,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -1126,8 +1130,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -1139,8 +1143,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1152,8 +1156,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1163,7 +1167,7 @@ module Chilkat
 		def put_SoSndBuf(newval) end
 
 		# _TRUE_ if the IMAP connection should be TLS/SSL. 
-		#		Note: The typical IMAP TLS/SSL port number
+		# Note: The typical IMAP TLS/SSL port number
 		# is 993. If you set this property = _TRUE_, it is likely that you should also set the Port property =
 		# 993.
 		#
@@ -1171,7 +1175,7 @@ module Chilkat
 		def get_Ssl() end
 
 		# _TRUE_ if the IMAP connection should be TLS/SSL. 
-		#		Note: The typical IMAP TLS/SSL port number
+		# Note: The typical IMAP TLS/SSL port number
 		# is 993. If you set this property = _TRUE_, it is likely that you should also set the Port property =
 		# 993.
 		#
@@ -1182,73 +1186,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -1262,73 +1266,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -1340,73 +1344,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -1418,73 +1422,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -1494,18 +1498,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -1518,18 +1522,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -1540,18 +1544,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -1562,18 +1566,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -1624,27 +1628,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param ckStr [CkString]
@@ -1656,27 +1660,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param newval [String]
@@ -1686,27 +1690,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @return [String]
@@ -1716,27 +1720,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param newval [String]
@@ -1764,8 +1768,8 @@ module Chilkat
 
 		# An integer value containing the UIDVALIDITY of the currently selected mailbox, or 0 if no mailbox is
 		# selected.
-		#		
-		#		A client can save the UidValidity value for a mailbox and then compare it
+		# 
+		# A client can save the UidValidity value for a mailbox and then compare it
 		# with the UidValidity on a subsequent session. If the new value is larger, the IMAP server is not
 		# keeping UID's unchanged between sessions. Most IMAP servers maintain UID's between sessions.
 		#
@@ -1774,8 +1778,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1784,8 +1788,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1826,7 +1830,7 @@ module Chilkat
 		# @param pfxBytes [CkByteData]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceData(pfxBytes, pfxPassword)
 			# ...
 		end
@@ -1838,14 +1842,14 @@ module Chilkat
 		# keys when decrypting. Multiple PFX files can be added by calling this method once for each. (On the
 		# Windows operating system, the registry-based certificate stores are also automatically searched, so
 		# it is commonly not required to explicitly add PFX sources.)
-		#		
-		#		The ARG1 contains the bytes
+		# 
+		# The ARG1 contains the bytes
 		# of a PFX file (also known as PKCS12 or .p12).
 		#
 		# @param pfxFilePath [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddPfxSourceFile(pfxFilePath, pfxPassword)
 			# ...
 		end
@@ -1858,7 +1862,7 @@ module Chilkat
 		# @param mailbox [String]
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendMail(mailbox, email)
 			# ...
 		end
@@ -1871,7 +1875,7 @@ module Chilkat
 		# @param mailbox [String]
 		# @param mimeText [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendMime(mailbox, mimeText)
 			# ...
 		end
@@ -1886,7 +1890,7 @@ module Chilkat
 		# @param mimeText [String]
 		# @param internalDate [Object]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AppendMimeWithDate(mailbox, mimeText, internalDate)
 			# ...
@@ -1901,7 +1905,7 @@ module Chilkat
 		# @param mimeText [String]
 		# @param internalDateStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendMimeWithDateStr(mailbox, mimeText, internalDateStr)
 			# ...
 		end
@@ -1919,7 +1923,7 @@ module Chilkat
 		# @param answered [TrueClass, FalseClass]
 		# @param draft [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendMimeWithFlags(mailbox, mimeText, seen, flagged, answered, draft)
 			# ...
 		end
@@ -1937,7 +1941,7 @@ module Chilkat
 		# @param answered [TrueClass, FalseClass]
 		# @param draft [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendMimeWithFlagsSb(mailbox, sbMime, seen, flagged, answered, draft)
 			# ...
 		end
@@ -1949,7 +1953,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Capability(outStr)
 			# ...
 		end
@@ -1960,7 +1964,7 @@ module Chilkat
 		# Sends a CAPABILITY command to the IMAP server and returns the raw response.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def capability()
 			# ...
 		end
@@ -1971,7 +1975,7 @@ module Chilkat
 		# Returns _TRUE_ if the underlying TCP socket is connected to the IMAP server.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CheckConnection()
 			# ...
 		end
@@ -1987,7 +1991,7 @@ module Chilkat
 		# methods such as FetchBundle to download the new emails.
 		#
 		#
-		# @return [CkMessageSet] 
+		# @return [CkMessageSet]
 		def CheckForNewEmail()
 			# ...
 		end
@@ -1998,7 +2002,7 @@ module Chilkat
 		# Clears the contents of the SessionLog property.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearSessionLog()
 			# ...
 		end
@@ -2010,7 +2014,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CloseMailbox(mailbox)
 			# ...
 		end
@@ -2020,8 +2024,8 @@ module Chilkat
 		#
 		# Connects to an IMAP server, but does not login. The ARG1 is the domain name of the IMAP server. (May
 		# also use the IPv4 or IPv6 address in string format.)
-		#		
-		#		Important: All TCP-based Internet
+		# 
+		# Important: All TCP-based Internet
 		# communications, regardless of the protocol (such as HTTP, FTP, SSH, IMAP, POP3, SMTP, etc.), and
 		# regardless of SSL/TLS, begin with establishing a TCP connection to a remote host:port. External
 		# security-related infrastructure such as software firewalls (Windows Firewall), hardware firewalls,
@@ -2030,7 +2034,7 @@ module Chilkat
 		#
 		# @param domainName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Connect(domainName)
 			# ...
 		end
@@ -2039,14 +2043,14 @@ module Chilkat
 		# Method: Copy
 		#
 		# Copies a message from the selected mailbox to ARG3. 
-		#		If ARG2 is _TRUE_, then ARG1 represents a
+		# If ARG2 is _TRUE_, then ARG1 represents a
 		# UID. If ARG2 is _FALSE_, then ARG1 represents a sequence number.
 		#
 		# @param msgId [Fixnum]
 		# @param bUid [TrueClass, FalseClass]
 		# @param copyToMailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Copy(msgId, bUid, copyToMailbox)
 			# ...
 		end
@@ -2060,7 +2064,7 @@ module Chilkat
 		# @param messageSet [CkMessageSet]
 		# @param copyToMailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CopyMultiple(messageSet, copyToMailbox)
 			# ...
 		end
@@ -2075,7 +2079,7 @@ module Chilkat
 		# @param count [Fixnum]
 		# @param copyToMailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CopySequence(startSeqNum, count, copyToMailbox)
 			# ...
 		end
@@ -2087,7 +2091,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateMailbox(mailbox)
 			# ...
 		end
@@ -2099,7 +2103,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DeleteMailbox(mailbox)
 			# ...
 		end
@@ -2111,7 +2115,7 @@ module Chilkat
 		# the disconnect was not clean -- and this can typically be ignored.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Disconnect()
 			# ...
 		end
@@ -2124,7 +2128,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExamineMailbox(mailbox)
 			# ...
 		end
@@ -2135,7 +2139,7 @@ module Chilkat
 		# Permanently removes from the currently selected mailbox all messages that have the Deleted flag set.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Expunge()
 			# ...
 		end
@@ -2147,7 +2151,7 @@ module Chilkat
 		# and closes the mailbox.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExpungeAndClose()
 			# ...
 		end
@@ -2160,35 +2164,35 @@ module Chilkat
 		# because the attachment data is already contained within the ARG1. In this case, the attachment is
 		# simply extracted and saved to ARG3. (As with all Chilkat methods, indexing begins at 0. The 1st
 		# attachment is at ARG2 0.)
-		#		
-		#		Additional Notes:
-		#		
-		#		If the AutoDownloadAttachments
+		# 
+		# Additional Notes:
+		# 
+		# If the AutoDownloadAttachments
 		# property is set to _FALSE_, then emails downloaded via any of the Fetch* methods will not include
 		# attachments. 
-		#		
-		#		Note: "related" items are not considered attachments and are downloaded.
+		# 
+		# Note: "related" items are not considered attachments and are downloaded.
 		# These are images, style sheets, etc. that are embedded within the HTML body of an
 		# email.
-		#		
-		#		Also: All signed and/or encrypted emails must be downloaded in
+		# 
+		# Also: All signed and/or encrypted emails must be downloaded in
 		# full.
-		#		
-		#		When an email is downloaded without attachments, the attachment information is
+		# 
+		# When an email is downloaded without attachments, the attachment information is
 		# included in header fields. The header fields have names beginning with "ckx-imap-". The attachment
 		# information can be obtained via the following
 		# methods:
-		#		
-		#		imap.GetMailNumAttach
-		#		imap.GetMailAttachFilename
-		#		imap.GetMailAttachSize
+		# 
+		# imap.GetMailNumAttach
+		# imap.GetMailAttachFilename
+		# imap.GetMailAttachSize
 		#
 		#
 		# @param emailObject [CkEmail]
 		# @param attachmentIndex [Fixnum]
 		# @param saveToPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchAttachment(emailObject, attachmentIndex, saveToPath)
 			# ...
 		end
@@ -2203,7 +2207,7 @@ module Chilkat
 		# @param attachmentIndex [Fixnum]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchAttachmentBd(email, attachmentIndex, binData)
 			# ...
 		end
@@ -2219,7 +2223,7 @@ module Chilkat
 		# @param attachIndex [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchAttachmentBytes(email, attachIndex, outBytes)
 			# ...
 		end
@@ -2237,7 +2241,7 @@ module Chilkat
 		# @param charset [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchAttachmentSb(email, attachmentIndex, charset, sb)
 			# ...
 		end
@@ -2255,7 +2259,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchAttachmentString(emailObject, attachmentIndex, charset, outStr)
 			# ...
 		end
@@ -2272,7 +2276,7 @@ module Chilkat
 		# @param attachmentIndex [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def fetchAttachmentString(emailObject, attachmentIndex, charset)
 			# ...
 		end
@@ -2285,7 +2289,7 @@ module Chilkat
 		#
 		# @param messageSet [CkMessageSet]
 		#
-		# @return [CkEmailBundle] 
+		# @return [CkEmailBundle]
 		def FetchBundle(messageSet)
 			# ...
 		end
@@ -2300,7 +2304,7 @@ module Chilkat
 		#
 		# @param messageSet [CkMessageSet]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def FetchBundleAsMime(messageSet)
 			# ...
 		end
@@ -2317,7 +2321,7 @@ module Chilkat
 		# @param failedSet [CkMessageSet]
 		# @param fetchedSet [CkMessageSet]
 		#
-		# @return [CkEmailBundle] 
+		# @return [CkEmailBundle]
 		def FetchChunk(startSeqNum, count, failedSet, fetchedSet)
 			# ...
 		end
@@ -2328,28 +2332,28 @@ module Chilkat
 		# Fetches the flags for an email. The bUid argument determines whether the ARG1 is a UID or sequence
 		# number. Returns the SPACE separated list of flags set for the email, such as "\Flagged \Seen
 		# $label1".
-		#		
-		#		If an empty string is returned, then it could be that the email referenced by
+		# 
+		# If an empty string is returned, then it could be that the email referenced by
 		# ARG1 does not exist in the currently selected mailbox, or it simply has no flags that are set. To
 		# determine the difference, examine the contents of the LastResponse property. For the case where the
 		# message does not exist, the LastResponse will contain a "NO" and will look something like
 		# this:
-		#		
-		#		aaah NO The specified message set is invalid.
-		#		
-		#		For the case where the
+		# 
+		# aaah NO The specified message set is invalid.
+		# 
+		# For the case where the
 		# message exists, but no flags are set, the LastResponse will contain an "OK" in the last response
 		# line. For example:
-		#		
-		#		...
-		#		aaah OK FETCH completed.
+		# 
+		# ...
+		# aaah OK FETCH completed.
 		#
 		#
 		# @param msgId [Fixnum]
 		# @param bUid [TrueClass, FalseClass]
 		# @param outStrFlags [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchFlags(msgId, bUid, outStrFlags)
 			# ...
 		end
@@ -2360,27 +2364,27 @@ module Chilkat
 		# Fetches the flags for an email. The bUid argument determines whether the ARG1 is a UID or sequence
 		# number. Returns the SPACE separated list of flags set for the email, such as "\Flagged \Seen
 		# $label1".
-		#		
-		#		If an empty string is returned, then it could be that the email referenced by
+		# 
+		# If an empty string is returned, then it could be that the email referenced by
 		# ARG1 does not exist in the currently selected mailbox, or it simply has no flags that are set. To
 		# determine the difference, examine the contents of the LastResponse property. For the case where the
 		# message does not exist, the LastResponse will contain a "NO" and will look something like
 		# this:
-		#		
-		#		aaah NO The specified message set is invalid.
-		#		
-		#		For the case where the
+		# 
+		# aaah NO The specified message set is invalid.
+		# 
+		# For the case where the
 		# message exists, but no flags are set, the LastResponse will contain an "OK" in the last response
 		# line. For example:
-		#		
-		#		...
-		#		aaah OK FETCH completed.
+		# 
+		# ...
+		# aaah OK FETCH completed.
 		#
 		#
 		# @param msgId [Fixnum]
 		# @param bUid [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def fetchFlags(msgId, bUid)
 			# ...
 		end
@@ -2395,7 +2399,7 @@ module Chilkat
 		#
 		# @param messageSet [CkMessageSet]
 		#
-		# @return [CkEmailBundle] 
+		# @return [CkEmailBundle]
 		def FetchHeaders(messageSet)
 			# ...
 		end
@@ -2411,7 +2415,7 @@ module Chilkat
 		# @param startSeqNum [Fixnum]
 		# @param numMessages [Fixnum]
 		#
-		# @return [CkEmailBundle] 
+		# @return [CkEmailBundle]
 		def FetchSequence(startSeqNum, numMessages)
 			# ...
 		end
@@ -2425,7 +2429,7 @@ module Chilkat
 		# @param startSeqNum [Fixnum]
 		# @param numMessages [Fixnum]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def FetchSequenceAsMime(startSeqNum, numMessages)
 			# ...
 		end
@@ -2435,19 +2439,19 @@ module Chilkat
 		#
 		# Same as FetchSequence, but only the email headers are returned. The email objects within the bundle
 		# will be lacking bodies and attachments.
-		#		
-		#		Note: For any method call using sequence
+		# 
+		# Note: For any method call using sequence
 		# numbers, an application must make sure the sequence numbers
-		#		are within the valid range. When a
+		# are within the valid range. When a
 		# mailbox is selected, the NumMessages property will have been set,
-		#		and the valid range of
+		# and the valid range of
 		# sequence numbers is from 1 to NumMessages. An attempt to fetch sequence numbers outside this range
 		# will result in an error.
 		#
 		# @param startSeqNum [Fixnum]
 		# @param numMessages [Fixnum]
 		#
-		# @return [CkEmailBundle] 
+		# @return [CkEmailBundle]
 		def FetchSequenceHeaders(startSeqNum, numMessages)
 			# ...
 		end
@@ -2457,13 +2461,13 @@ module Chilkat
 		#
 		# Retrieves a single message from the IMAP server. If the method fails, it may return a NULL
 		# reference.
-		#		If bUid is true, then msgID represents a UID. If bUid is false, then msgID
+		# If bUid is true, then msgID represents a UID. If bUid is false, then msgID
 		# represents a sequence number.
 		#
 		# @param msgId [Fixnum]
 		# @param bUid [TrueClass, FalseClass]
 		#
-		# @return [CkEmail] 
+		# @return [CkEmail]
 		def FetchSingle(msgId, bUid)
 			# ...
 		end
@@ -2479,7 +2483,7 @@ module Chilkat
 		# @param bUid [TrueClass, FalseClass]
 		# @param outStrMime [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchSingleAsMime(msgId, bUid, outStrMime)
 			# ...
 		end
@@ -2494,7 +2498,7 @@ module Chilkat
 		# @param msgId [Fixnum]
 		# @param bUid [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def fetchSingleAsMime(msgId, bUid)
 			# ...
 		end
@@ -2510,7 +2514,7 @@ module Chilkat
 		# @param bUid [TrueClass, FalseClass]
 		# @param sbMime [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchSingleAsMimeSb(msgId, bUid, sbMime)
 			# ...
 		end
@@ -2522,14 +2526,14 @@ module Chilkat
 		# reference. The following methods are useful for retrieving information about attachments and flags
 		# after an email header is retrieved: GetMailNumAttach, GetMailAttachSize, GetMailAttachFilename,
 		# GetMailFlag.
-		#		
-		#		If bUid is true, then msgID represents a UID. If bUid is false, then msgID
+		# 
+		# If bUid is true, then msgID represents a UID. If bUid is false, then msgID
 		# represents a sequence number.
 		#
 		# @param msgId [Fixnum]
 		# @param bUid [TrueClass, FalseClass]
 		#
-		# @return [CkEmail] 
+		# @return [CkEmail]
 		def FetchSingleHeader(msgId, bUid)
 			# ...
 		end
@@ -2543,7 +2547,7 @@ module Chilkat
 		# @param bUID [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchSingleHeaderAsMime(msgId, bUID, outStr)
 			# ...
 		end
@@ -2556,7 +2560,7 @@ module Chilkat
 		# @param msgId [Fixnum]
 		# @param bUID [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def fetchSingleHeaderAsMime(msgId, bUID)
 			# ...
 		end
@@ -2568,7 +2572,7 @@ module Chilkat
 		# object reference is returned on failure.
 		#
 		#
-		# @return [CkMessageSet] 
+		# @return [CkMessageSet]
 		def GetAllUids()
 			# ...
 		end
@@ -2582,7 +2586,7 @@ module Chilkat
 		# @param attachIndex [Fixnum]
 		# @param outStrFilename [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetMailAttachFilename(email, attachIndex, outStrFilename)
 			# ...
 		end
@@ -2595,7 +2599,7 @@ module Chilkat
 		# @param email [CkEmail]
 		# @param attachIndex [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getMailAttachFilename(email, attachIndex)
 			# ...
 		end
@@ -2608,7 +2612,7 @@ module Chilkat
 		# @param email [CkEmail]
 		# @param attachIndex [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetMailAttachSize(email, attachIndex)
 			# ...
 		end
@@ -2618,24 +2622,24 @@ module Chilkat
 		#
 		# Sends a "Status" command to get the status of a ARG1. Returns an XML string containing the status
 		# values as named attributes. Possible status values are:
-		#		messages: The number of messages in
+		# messages: The number of messages in
 		# the mailbox.
-		#		recent: The number of messages with the \Recent flag set.
-		#		uidnext: The next
+		# recent: The number of messages with the \Recent flag set.
+		# uidnext: The next
 		# unique identifier value of the mailbox.
-		#		uidvalidity: The unique identifier validity value of
+		# uidvalidity: The unique identifier validity value of
 		# the mailbox.
-		#		unseen: The number of messages which do not have the \Seen flag
+		# unseen: The number of messages which do not have the \Seen flag
 		# set.
-		#		
-		#		
-		#		An example of the string returned by this method is: _LT_status
+		# 
+		# 
+		# An example of the string returned by this method is: _LT_status
 		# messages="240" recent="0" uidnext="3674" uidvalidity="3" unseen="213" /_GT_
 		#
 		# @param mailbox [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetMailboxStatus(mailbox, outStr)
 			# ...
 		end
@@ -2645,23 +2649,23 @@ module Chilkat
 		#
 		# Sends a "Status" command to get the status of a ARG1. Returns an XML string containing the status
 		# values as named attributes. Possible status values are:
-		#		messages: The number of messages in
+		# messages: The number of messages in
 		# the mailbox.
-		#		recent: The number of messages with the \Recent flag set.
-		#		uidnext: The next
+		# recent: The number of messages with the \Recent flag set.
+		# uidnext: The next
 		# unique identifier value of the mailbox.
-		#		uidvalidity: The unique identifier validity value of
+		# uidvalidity: The unique identifier validity value of
 		# the mailbox.
-		#		unseen: The number of messages which do not have the \Seen flag
+		# unseen: The number of messages which do not have the \Seen flag
 		# set.
-		#		
-		#		
-		#		An example of the string returned by this method is: _LT_status
+		# 
+		# 
+		# An example of the string returned by this method is: _LT_status
 		# messages="240" recent="0" uidnext="3674" uidvalidity="3" unseen="213" /_GT_
 		#
 		# @param mailbox [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getMailboxStatus(mailbox)
 			# ...
 		end
@@ -2670,16 +2674,16 @@ module Chilkat
 		# Method: GetMailFlag
 		#
 		# Returns the value of a flag (1 = yes, 0 = no) for an email. 
-		#		Both standard system flags as
+		# Both standard system flags as
 		# well as custom flags may be set. 
-		#		Standard system flags typically begin with a backslash
+		# Standard system flags typically begin with a backslash
 		# character, such as "\Seen", "\Answered", "\Flagged", "\Draft", "\Deleted", and "\Answered". Custom
 		# flags can be anything, such as "NonJunk", "$label1", "$MailFlagBit1", etc. .
 		#
 		# @param email [CkEmail]
 		# @param flagName [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetMailFlag(email, flagName)
 			# ...
 		end
@@ -2691,7 +2695,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetMailNumAttach(email)
 			# ...
 		end
@@ -2703,7 +2707,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetMailSize(email)
 			# ...
 		end
@@ -2717,7 +2721,7 @@ module Chilkat
 		# @param quotaRoot [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetQuota(quotaRoot, outStr)
 			# ...
 		end
@@ -2730,7 +2734,7 @@ module Chilkat
 		#
 		# @param quotaRoot [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getQuota(quotaRoot)
 			# ...
 		end
@@ -2744,7 +2748,7 @@ module Chilkat
 		# @param mailboxName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetQuotaRoot(mailboxName, outStr)
 			# ...
 		end
@@ -2757,7 +2761,7 @@ module Chilkat
 		#
 		# @param mailboxName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getQuotaRoot(mailboxName)
 			# ...
 		end
@@ -2768,7 +2772,7 @@ module Chilkat
 		# Returns the IMAP server's digital certificate (for SSL / TLS connections).
 		#
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetSslServerCert()
 			# ...
 		end
@@ -2781,7 +2785,7 @@ module Chilkat
 		# @param name [String]
 		# @param capabilityResponse [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasCapability(name, capabilityResponse)
 			# ...
 		end
@@ -2793,25 +2797,25 @@ module Chilkat
 		# wait for incoming updates. This method does not send a command to the IMAP server, it simply checks
 		# the connection for already-arrived messages that the IMAP server sent. This method would only be
 		# called after IDLE has already been started via the IdleStart method.
-		#		If updates are available,
+		# If updates are available,
 		# they are returned in an XML string having the format as shown below. There is one child node for
 		# each notification. The possible notifcations are:
-		#		
-		#		flags -- lists flags that have been
+		# 
+		# flags -- lists flags that have been
 		# set or unset for an email.
-		#		expunge -- provides the sequence number for an email that has been
+		# expunge -- provides the sequence number for an email that has been
 		# deleted.
-		#		exists -- reports the new number of messages in the currently selected
+		# exists -- reports the new number of messages in the currently selected
 		# mailbox.
-		#		recent -- reports the new number of messages with the /RECENT flag set.
-		#		raw --
+		# recent -- reports the new number of messages with the /RECENT flag set.
+		# raw --
 		# reports an unanticipated response line that was not parsed by Chilkat. This should be reported to
 		# support@chilkatoft.com
-		#		
-		#		A sample showing all possible notifications (except for "raw")
+		# 
+		# A sample showing all possible notifications (except for "raw")
 		# is shown below.
-		#		
-		#		_LT_idle_GT_
+		# 
+		# _LT_idle_GT_
 		# _LT_flags seqnum="59" uid="11876"_GT_
 		#
 		# _LT_flag_GT_\Deleted_LT_/flag_GT_
@@ -2829,16 +2833,16 @@ module Chilkat
 		# _LT_exists_GT_115_LT_/exists_GT_
 		#
 		# _LT_recent_GT_0_LT_/recent_GT_
-		#		_LT_/idle_GT_
-		#		
-		#		
-		#		If no updates have been
+		# _LT_/idle_GT_
+		# 
+		# 
+		# If no updates have been
 		# received, the returned XML string has the following format, as shown below. The
-		# #		
-		#		_LT_idle_GT__LT_/idle_GT_
-		#		
-		#		
-		#		NOTE:Once IdleStart has been called, this
+		# # 
+		# _LT_idle_GT__LT_/idle_GT_
+		# 
+		# 
+		# NOTE:Once IdleStart has been called, this
 		# method can and should be called frequently to see if any updates have arrived. This is NOT the same
 		# as polling the IMAP server because it does not send any requests to the IMAP server. It simply
 		# checks to see if any messages (i.e. updates) from the IMAP server are available and waiting to be
@@ -2847,7 +2851,7 @@ module Chilkat
 		# @param timeoutMs [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IdleCheck(timeoutMs, outStr)
 			# ...
 		end
@@ -2859,25 +2863,25 @@ module Chilkat
 		# wait for incoming updates. This method does not send a command to the IMAP server, it simply checks
 		# the connection for already-arrived messages that the IMAP server sent. This method would only be
 		# called after IDLE has already been started via the IdleStart method.
-		#		If updates are available,
+		# If updates are available,
 		# they are returned in an XML string having the format as shown below. There is one child node for
 		# each notification. The possible notifcations are:
-		#		
-		#		flags -- lists flags that have been
+		# 
+		# flags -- lists flags that have been
 		# set or unset for an email.
-		#		expunge -- provides the sequence number for an email that has been
+		# expunge -- provides the sequence number for an email that has been
 		# deleted.
-		#		exists -- reports the new number of messages in the currently selected
+		# exists -- reports the new number of messages in the currently selected
 		# mailbox.
-		#		recent -- reports the new number of messages with the /RECENT flag set.
-		#		raw --
+		# recent -- reports the new number of messages with the /RECENT flag set.
+		# raw --
 		# reports an unanticipated response line that was not parsed by Chilkat. This should be reported to
 		# support@chilkatoft.com
-		#		
-		#		A sample showing all possible notifications (except for "raw")
+		# 
+		# A sample showing all possible notifications (except for "raw")
 		# is shown below.
-		#		
-		#		_LT_idle_GT_
+		# 
+		# _LT_idle_GT_
 		# _LT_flags seqnum="59" uid="11876"_GT_
 		#
 		# _LT_flag_GT_\Deleted_LT_/flag_GT_
@@ -2895,16 +2899,16 @@ module Chilkat
 		# _LT_exists_GT_115_LT_/exists_GT_
 		#
 		# _LT_recent_GT_0_LT_/recent_GT_
-		#		_LT_/idle_GT_
-		#		
-		#		
-		#		If no updates have been
+		# _LT_/idle_GT_
+		# 
+		# 
+		# If no updates have been
 		# received, the returned XML string has the following format, as shown below. The
-		# #		
-		#		_LT_idle_GT__LT_/idle_GT_
-		#		
-		#		
-		#		NOTE:Once IdleStart has been called, this
+		# # 
+		# _LT_idle_GT__LT_/idle_GT_
+		# 
+		# 
+		# NOTE:Once IdleStart has been called, this
 		# method can and should be called frequently to see if any updates have arrived. This is NOT the same
 		# as polling the IMAP server because it does not send any requests to the IMAP server. It simply
 		# checks to see if any messages (i.e. updates) from the IMAP server are available and waiting to be
@@ -2912,7 +2916,7 @@ module Chilkat
 		#
 		# @param timeoutMs [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def ıdleCheck(timeoutMs)
 			# ...
 		end
@@ -2923,7 +2927,7 @@ module Chilkat
 		# Sends a command to the IMAP server to stop receiving real-time updates.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IdleDone()
 			# ...
 		end
@@ -2934,7 +2938,7 @@ module Chilkat
 		# Sends an IDLE command to the IMAP server to begin receiving real-time updates.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IdleStart()
 			# ...
 		end
@@ -2945,13 +2949,13 @@ module Chilkat
 		# Returns the last known "connected" state with the IMAP server. IsConnected does not send a message
 		# to the IMAP server to determine if it is still connected. The Noop method may be called to
 		# specifically send a no-operation message to determine actual connectivity.
-		#		
-		#		The
+		# 
+		# The
 		# IsConnected method is useful for checking to see if the component is already in a known disconnected
 		# state.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsConnected()
 			# ...
 		end
@@ -2962,7 +2966,7 @@ module Chilkat
 		# Returns _TRUE_ if already logged into an IMAP server, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsLoggedIn()
 			# ...
 		end
@@ -2973,7 +2977,7 @@ module Chilkat
 		# Returns _TRUE_ if the component is unlocked, _FALSE_ if not.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -2984,12 +2988,12 @@ module Chilkat
 		# Returns a subset of the complete list of mailboxes available on the IMAP server. This method has the
 		# side-effect of setting the SeparatorChar property to the correct character used by the IMAP server,
 		# which is typically "/" or ".". 
-		#		
-		#		The reference and wildcardedMailbox parameters are
+		# 
+		# The reference and wildcardedMailbox parameters are
 		# passed unaltered to the IMAP LIST command:
-		#		
-		#		FROM RFC 3501 (IMAP Protocol)
-		#		
+		# 
+		# FROM RFC 3501 (IMAP Protocol)
+		# 
 		#
 		# The LIST command returns a subset of names from the complete set
 		# of all names available to the
@@ -2999,7 +3003,7 @@ module Chilkat
 		# delimiter, and name; see the description of the LIST reply for
 		# more
 		# detail.
-		#		
+		# 
 		# An empty ("" string) reference name argument indicates that the
 		# mailbox
 		# name is interpreted as by SELECT. The returned mailbox
@@ -3010,7 +3014,7 @@ module Chilkat
 		# mailbox hierarchy, and indicates the context in which the mailbox
 		# name is
 		# interpreted.
-		#		
+		# 
 		# An empty ("" string) mailbox name argument is a special request to
 		#
 		# return the hierarchy delimiter and the root name of the name given
@@ -3024,7 +3028,7 @@ module Chilkat
 		# (or find out that the mailbox names are
 		# flat) even when no
 		# mailboxes by that name currently exist.
-		#		
+		# 
 		# The reference and
 		# mailbox name arguments are interpreted into a
 		# canonical form that represents an unambiguous
@@ -3032,7 +3036,7 @@ module Chilkat
 		# hierarchy. The returned mailbox names will be in the interpreted
 		#
 		# form.
-		#		
+		# 
 		# Note: The interpretation of the reference argument is
 		# implementation-defined.
 		# It depends upon whether the
@@ -3041,7 +3045,7 @@ module Chilkat
 		# directory" and leading "break out characters",
 		# which override the current working
 		# directory.
-		#		
+		# 
 		# For example, on a server which exports a UNIX or NT
 		# filesystem, the
 		# reference argument contains the current
@@ -3049,7 +3053,7 @@ module Chilkat
 		# would
 		# contain the name as interpreted in the current working
 		# directory.
-		#		
+		# 
 		# If a
 		# server implementation has no concept of break out
 		# characters, the canonical form is normally
@@ -3060,7 +3064,7 @@ module Chilkat
 		# 5.1.2), "#" is a break out character and must be treated
 		# as
 		# such.
-		#		
+		# 
 		# If the reference argument is not a level of mailbox
 		# hierarchy (that is, it is
 		# a \NoInferiors name), and/or
@@ -3081,7 +3085,7 @@ module Chilkat
 		# a level
 		# of mailbox hierarchy AND ends with the hierarchy
 		# delimiter.
-		#		
+		# 
 		# Any part of the
 		# reference argument that is included in the
 		# interpreted form SHOULD prefix the interpreted form.
@@ -3097,13 +3101,13 @@ module Chilkat
 		# naming semantics including what
 		# characters are "breakouts" that
 		# override a naming context.
-		#		
+		# 
 		# For example, here are
 		# some examples of how references
 		# and mailbox names might be interpreted on a UNIX-based
 		#
 		# server:
-		#		
+		# 
 		# Reference Mailbox Name Interpretation
 		# ------------ ------------
 		# --------------
@@ -3114,7 +3118,7 @@ module Chilkat
 		# ~smith/Mail/ /usr/doc/foo /usr/doc/foo
 		# archive/ ~fred/Mail/*
 		# ~fred/Mail/*
-		#		
+		# 
 		# The first three examples demonstrate interpretations in
 		# the context of
 		# the reference argument. Note that
@@ -3124,7 +3128,7 @@ module Chilkat
 		# for the client to determine that the
 		# interpretation was
 		# in the context of the reference.
-		#		
+		# 
 		# The character "*" is a
 		# wildcard, and matches zero or more
 		# characters at this position. The character "%" is similar to
@@ -3139,7 +3143,7 @@ module Chilkat
 		# \Noselect mailbox name attribute (see the description of the LIST
 		# response for more
 		# details).
-		#		
+		# 
 		# Server implementations are permitted to "hide" otherwise
 		# accessible
 		# mailboxes from the wildcard characters, by preventing
@@ -3149,7 +3153,7 @@ module Chilkat
 		#
 		# interpretation of "*" so that an initial "/" character does not
 		# match.
-		#		
+		# 
 		# The special
 		# name INBOX is included in the output from LIST, if
 		# INBOX is supported by this server for this
@@ -3162,13 +3166,13 @@ module Chilkat
 		# failure; it is not relevant whether the user's real INBOX
 		# resides
 		# on this or some other server.
-		#		
+		# 
 		#
 		#
 		# @param reference [String]
 		# @param wildcardedMailbox [String]
 		#
-		# @return [CkMailboxes] 
+		# @return [CkMailboxes]
 		def ListMailboxes(reference, wildcardedMailbox)
 			# ...
 		end
@@ -3182,7 +3186,7 @@ module Chilkat
 		# @param reference [String]
 		# @param wildcardedMailbox [String]
 		#
-		# @return [CkMailboxes] 
+		# @return [CkMailboxes]
 		def ListSubscribed(reference, wildcardedMailbox)
 			# ...
 		end
@@ -3194,14 +3198,14 @@ module Chilkat
 		# Connect. If XOAUTH2 authentication is required, pass the XOAUTH2 access token in place of the
 		# password. (For GMail, the Chilkat HTTP class/object's G_SvcOauthAccessToken method can be called to
 		# obtain an XOAUTH2 access token.)
-		#		To authenticate using XOAUTH2, make sure the AuthMethod
+		# To authenticate using XOAUTH2, make sure the AuthMethod
 		# property is set to "XOAUTH2". The XOAUTH2 authentication functionality was added in version
 		# 9.5.0.44.
 		#
 		# @param loginName [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Login(loginName, password)
 			# ...
 		end
@@ -3212,7 +3216,7 @@ module Chilkat
 		# Logs out of the IMAP server.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Logout()
 			# ...
 		end
@@ -3227,7 +3231,7 @@ module Chilkat
 		# @param messageSet [CkMessageSet]
 		# @param destFolder [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoveMessages(messageSet, destFolder)
 			# ...
 		end
@@ -3240,7 +3244,7 @@ module Chilkat
 		# connection to the IMAP server is up and active.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Noop()
 			# ...
 		end
@@ -3254,7 +3258,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RefetchMailFlags(email)
 			# ...
 		end
@@ -3267,7 +3271,7 @@ module Chilkat
 		# @param fromMailbox [String]
 		# @param toMailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RenameMailbox(fromMailbox, toMailbox)
 			# ...
 		end
@@ -3279,7 +3283,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -3290,14 +3294,14 @@ module Chilkat
 		# Searches the selected mailbox for messages that meet a given criteria and returns a message set of
 		# all matching messages. If bUid is true, then UIDs are returned in the message set, otherwise
 		# sequence numbers are returned.
-		#		
-		#		The criteria is passed through to the low-level IMAP
+		# 
+		# The criteria is passed through to the low-level IMAP
 		# protocol unmodified, so the rules for the IMAP SEARCH command (RFC 3501) apply and are reproduced
 		# here:
-		#		
-		#		
-		#		FROM RFC 3501 (IMAP Protocol)
-		#		
+		# 
+		# 
+		# FROM RFC 3501 (IMAP Protocol)
+		# 
 		# The SEARCH command searches the
 		# mailbox for messages that match
 		# the given searching criteria. Searching criteria consist of
@@ -3307,7 +3311,7 @@ module Chilkat
 		# of message sequence numbers corresponding to
 		# those messages that match the searching
 		# criteria.
-		#		
+		# 
 		# When multiple keys are specified, the result is the intersection
 		# (AND
 		# function) of all the messages that match those keys. For
@@ -3319,13 +3323,13 @@ module Chilkat
 		# list of one or
 		# more search keys (e.g., for use with the OR and NOT
 		# keys).
-		#		
+		# 
 		# Server implementations
 		# MAY exclude [MIME-IMB] body parts with
 		# terminal content media types other than TEXT and MESSAGE
 		# from
 		# consideration in SEARCH matching.
-		#		
+		# 
 		# The OPTIONAL [CHARSET] specification
 		# consists of the word
 		# "CHARSET" followed by a registered [CHARSET]. It indicates the
@@ -3338,76 +3342,76 @@ module Chilkat
 		# text in a [CHARSET] other than US-ASCII. US-ASCII MUST be
 		# supported; other
 		# [CHARSET]s MAY be supported.
-		#		
+		# 
 		# If the server does not support the specified [CHARSET], it
 		# MUST
 		# return a tagged NO response (not a BAD). This response SHOULD
 		# contain the BADCHARSET
 		# response code, which MAY list the
 		# [CHARSET]s supported by the server.
-		#		
+		# 
 		# In all search
 		# keys that use strings, a message matches the key if
 		# the string is a substring of the field. The
 		# matching is
 		# case-insensitive.
-		#		
+		# 
 		# The defined search keys are as follows. Refer to the
 		# Formal
 		# Syntax section for the precise syntactic definitions of the
 		#
 		# arguments.
-		#		
+		# 
 		# 
 		# Messages with message sequence numbers corresponding to the
 		#
 		# specified message sequence number set.
-		#		
+		# 
 		# ALL
 		# All messages in the mailbox; the default
 		# initial key for
 		# ANDing.
-		#		
+		# 
 		# ANSWERED
 		# Messages with the \Answered flag
 		# set.
-		#		
+		# 
 		# BCC 
 		# Messages that contain the specified string in the envelope
 		#
 		# structure's BCC field.
-		#		
+		# 
 		# BEFORE 
 		# Messages whose internal date (disregarding time and
 		# timezone)
 		# is earlier than the specified date.
-		#		
+		# 
 		# BODY 
 		# Messages that contain the
 		# specified string in the body of the
 		# message.
-		#		
+		# 
 		# CC 
 		# Messages that contain the
 		# specified string in the envelope
 		# structure's CC field.
-		#		
+		# 
 		# DELETED
 		# Messages with
 		# the \Deleted flag set.
-		#		
+		# 
 		# DRAFT
 		# Messages with the \Draft flag set.
-		#		
+		# 
 		#
 		# FLAGGED
 		# Messages with the \Flagged flag set.
-		#		
+		# 
 		# FROM 
 		# Messages that contain the
 		# specified string in the envelope
 		# structure's FROM field.
-		#		
+		# 
 		# HEADER 
 		# Messages that
 		# have a header with the specified field-name (as
@@ -3419,124 +3423,124 @@ module Chilkat
 		# have a header line with the specified
 		# field-name regardless of
 		# the contents.
-		#		
+		# 
 		# KEYWORD 
 		# Messages with the specified
 		# keyword flag set.
-		#		
+		# 
 		# LARGER 
 		# Messages with an [RFC-2822] size larger than the
 		# specified
 		# number of octets.
-		#		
+		# 
 		# NEW
 		# Messages that have the \Recent flag set but
 		# not the \Seen flag.
 		# This is functionally equivalent to "(RECENT UNSEEN)".
-		#		
+		# 
 		# NOT
 		# # Messages that do not match the specified search key.
-		#		
+		# 
 		# OLD
 		# Messages that do not
 		# have the \Recent flag set. This is
 		# functionally equivalent to "NOT RECENT" (as opposed to
 		# "NOT
 		# NEW").
-		#		
+		# 
 		# ON 
 		# Messages whose internal date (disregarding time and
 		# timezone)
 		# is within the specified date.
-		#		
+		# 
 		# OR 
 		# Messages that match either search
 		# key.
-		#		
+		# 
 		# RECENT
 		# Messages that have the \Recent flag set.
-		#		
+		# 
 		# SEEN
 		# Messages
 		# that have the \Seen flag set.
-		#		
+		# 
 		# SENTBEFORE 
 		# Messages whose [RFC-2822] Date: header
 		# (disregarding time and
 		# timezone) is earlier than the specified date.
-		#		
+		# 
 		# SENTON 
 		#
 		# Messages whose [RFC-2822] Date: header (disregarding time and
 		# timezone) is within the specified
 		# date.
-		#		
+		# 
 		# SENTSINCE 
 		# Messages whose [RFC-2822] Date: header (disregarding time
 		# and
 		# timezone) is within or later than the specified date.
-		#		
+		# 
 		# SINCE 
 		# Messages
 		# whose internal date (disregarding time and timezone)
 		# is within or later than the specified
 		# date.
-		#		
+		# 
 		# SMALLER 
 		# Messages with an [RFC-2822] size smaller than the specified
 		#
 		# number of octets.
-		#		
+		# 
 		# SUBJECT 
 		# Messages that contain the specified string in the
 		# envelope
 		# structure's SUBJECT field.
-		#		
+		# 
 		# TEXT 
 		# Messages that contain the specified
 		# string in the header or
 		# body of the message.
-		#		
+		# 
 		# TO 
 		# Messages that contain the
 		# specified string in the envelope
 		# structure's TO field.
-		#		
+		# 
 		# UID 
 		# Messages with
 		# unique identifiers corresponding to the specified
 		# unique identifier set. Sequence set ranges
 		# are permitted.
-		#		
+		# 
 		# UNANSWERED
 		# Messages that do not have the \Answered flag
 		# set.
-		#		
+		# 
 		# UNDELETED
 		# Messages that do not have the \Deleted flag set.
-		#		
+		# 
 		#
 		# UNDRAFT
 		# Messages that do not have the \Draft flag set.
-		#		
+		# 
 		# UNFLAGGED
 		# Messages that
 		# do not have the \Flagged flag set.
-		#		
+		# 
 		# UNKEYWORD 
 		# Messages that do not have the
 		# specified keyword flag set.
-		#		
+		# 
 		# UNSEEN
 		# Messages that do not have the \Seen flag
 		# set.
-		#		
+		# 
 		#
 		#
 		# @param criteria [String]
 		# @param bUid [TrueClass, FalseClass]
 		#
-		# @return [CkMessageSet] 
+		# @return [CkMessageSet]
 		def Search(criteria, bUid)
 			# ...
 		end
@@ -3547,12 +3551,12 @@ module Chilkat
 		# Selects a mailbox. A mailbox must be selected before some methods, such as Search or FetchSingle,
 		# can be called. If the logged-on user does not have write-access to the mailbox, call ExamineMailbox
 		# instead.
-		#		
-		#		Calling this method updates the NumMessages property.
+		# 
+		# Calling this method updates the NumMessages property.
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SelectMailbox(mailbox)
 			# ...
 		end
@@ -3565,7 +3569,7 @@ module Chilkat
 		# @param cmd [String]
 		# @param outRawResponse [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendRawCommand(cmd, outRawResponse)
 			# ...
 		end
@@ -3577,7 +3581,7 @@ module Chilkat
 		#
 		# @param cmd [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def sendRawCommand(cmd)
 			# ...
 		end
@@ -3591,7 +3595,7 @@ module Chilkat
 		# @param cmd [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendRawCommandB(cmd, outBytes)
 			# ...
 		end
@@ -3605,7 +3609,7 @@ module Chilkat
 		# @param cmd [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendRawCommandC(cmd, outBytes)
 			# ...
 		end
@@ -3615,16 +3619,16 @@ module Chilkat
 		#
 		# (Only applies to the Microsoft Windows OS) Sets the Cryptographic Service Provider (CSP) to be used
 		# for encryption or digital signing, or decryption / signature verification.
-		#		
-		#		This is not
+		# 
+		# This is not
 		# commonly used becaues the default Microsoft CSP is typically appropriate. 
-		#		One instance where
+		# One instance where
 		# SetCSP is necessary is when using the Crypto-Pro CSP for the GOST R 34.10-2001 and GOST R 34.10-94
 		# providers.
 		#
 		# @param csp [CkCsp]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetCSP(csp)
 			# ...
 		end
@@ -3636,7 +3640,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetDecryptCert(cert)
 			# ...
 		end
@@ -3650,7 +3654,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param key [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetDecryptCert2(cert, key)
 			# ...
 		end
@@ -3662,7 +3666,7 @@ module Chilkat
 		# 0, the flag is turned off. Standard system flags such as "\Deleted", "\Seen", "\Answered",
 		# "\Flagged", "\Draft", and "\Answered" may be set. Custom flags such as "NonJunk", "$label1",
 		# "$MailFlagBit1", etc. may also be set.
-		#		If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2
+		# If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2
 		# is _FALSE_, then ARG1 represents a sequence number.
 		#
 		# @param msgId [Fixnum]
@@ -3670,7 +3674,7 @@ module Chilkat
 		# @param flagName [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetFlag(msgId, bUid, flagName, value)
 			# ...
 		end
@@ -3687,7 +3691,7 @@ module Chilkat
 		# @param flagName [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetFlags(messageSet, flagName, value)
 			# ...
 		end
@@ -3698,26 +3702,26 @@ module Chilkat
 		# Sets a flag for a single message on the IMAP server. The UID of the email object is used to find the
 		# message on the IMAP server that is to be affected. If ARG3 = 1, the flag is turned on, if ARG3 = 0,
 		# the flag is turned off.Both standard system flags as well as custom flags may be set.
-		# #		Standard system flags typically begin with a backslash character, such as "\Deleted", "\Seen",
+		# # Standard system flags typically begin with a backslash character, such as "\Deleted", "\Seen",
 		# "\Answered", "\Flagged", "\Draft", and "\Answered". Custom flags can be anything, such as "NonJunk",
 		# "$label1", "$MailFlagBit1", etc. .
-		#		Note: When the Chilkat IMAP component downloads an email
+		# Note: When the Chilkat IMAP component downloads an email
 		# from an IMAP server, it inserts a "ckx-imap-uid" header field in the email object. This is
 		# subsequently used by this method to get the UID associated with the email. The "ckx-imap-uid" header
 		# must be present for this method to be successful.
-		#		
-		#		Note: Calling this method is
+		# 
+		# Note: Calling this method is
 		# identical to calling the SetFlag method, except the UID is automatically obtained from the email
 		# object.
-		#		
-		#		Important: Setting the "Deleted" flag does not remove the email from the
+		# 
+		# Important: Setting the "Deleted" flag does not remove the email from the
 		# mailbox. Emails marked "Deleted" are removed when the Expunge method is called.
 		#
 		# @param email [CkEmail]
 		# @param flagName [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetMailFlag(email, flagName, value)
 			# ...
 		end
@@ -3728,10 +3732,10 @@ module Chilkat
 		# Sets the quota for a ARG1. The ARG2 should be one of two keywords:"STORAGE" or "MESSAGE". Use
 		# "STORAGE" to set the maximum capacity of the combined messages in ARG1. Use "MESSAGE" to set the
 		# maximum number of messages allowed.
-		#		
-		#		If setting a STORAGE quota, the ARG3 is in units of
+		# 
+		# If setting a STORAGE quota, the ARG3 is in units of
 		# 1024 octets. For example, to specify a limit of 500,000,000 bytes, set ARG3 equal to 500,000.
-		# #		This feature is only possible with IMAP servers that support the QUOTA extension/capability. If
+		# # This feature is only possible with IMAP servers that support the QUOTA extension/capability. If
 		# an IMAP server supports the QUOTA extension, it likely supports the STORAGE resource. The MESSAGE
 		# resource is less commonly supported.
 		#
@@ -3739,7 +3743,7 @@ module Chilkat
 		# @param resource [String]
 		# @param quota [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetQuota(quotaRoot, resource, quota)
 			# ...
 		end
@@ -3754,7 +3758,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -3767,14 +3771,14 @@ module Chilkat
 		# client-side certificates for SSL/TLS. A client-side certificate is typically used in high-security
 		# situations where the certificate is an additional means to indentify the client to the
 		# server.
-		#		
-		#		The ARG1 may contain the actual PEM data, or it may contain the path of the PEM
+		# 
+		# The ARG1 may contain the actual PEM data, or it may contain the path of the PEM
 		# file. This method will automatically recognize whether it is a path or the PEM data itself.
 		#
 		# @param pemDataOrFilename [String]
 		# @param pemPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPem(pemDataOrFilename, pemPassword)
 			# ...
 		end
@@ -3790,7 +3794,7 @@ module Chilkat
 		# @param pfxFilename [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPfx(pfxFilename, pfxPassword)
 			# ...
 		end
@@ -3801,14 +3805,14 @@ module Chilkat
 		# Authenticates with the SSH server using public-key authentication. The corresponding public key must
 		# have been installed on the SSH server for the ARG1. Authentication will succeed if the matching ARG2
 		# is provided.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param sshLogin [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SshAuthenticatePk(sshLogin, privateKey)
 			# ...
 		end
@@ -3817,25 +3821,25 @@ module Chilkat
 		# Method: SshAuthenticatePw
 		#
 		# Authenticates with the SSH server using a ARG1 and ARG2.
-		#		
-		#		An SSH tunneling (port
+		# 
+		# An SSH tunneling (port
 		# forwarding) session always begins by first calling SshTunnel to connect to the SSH server, then
 		# calling either AuthenticatePw or AuthenticatePk to authenticate. Following this, your program should
 		# call Connect to connect with the IMAP server (via the SSH tunnel) and then Login to authenticate
 		# with the IMAP server.
-		#		
-		#		Note: Once the SSH tunnel is setup by calling SshTunnel and
+		# 
+		# Note: Once the SSH tunnel is setup by calling SshTunnel and
 		# SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the IMAP server use the
 		# SSH tunnel. No changes in programming are required other than making two initial calls to setup the
 		# tunnel.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param sshLogin [String]
 		# @param sshPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SshAuthenticatePw(sshLogin, sshPassword)
 			# ...
 		end
@@ -3846,7 +3850,7 @@ module Chilkat
 		# Closes the SSH tunnel previously opened by SshOpenTunnel.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SshCloseTunnel()
 			# ...
 		end
@@ -3856,25 +3860,25 @@ module Chilkat
 		#
 		# Connects to an SSH server and creates a tunnel for IMAP. The ARG1 is the hostname (or IP address) of
 		# the SSH server. The ARG2 is typically 22, which is the standard SSH port number.
-		#		
-		#		An SSH
+		# 
+		# An SSH
 		# tunneling (port forwarding) session always begins by first calling SshOpenTunnel to connect to the
 		# SSH server, followed by calling either SshAuthenticatePw or SshAuthenticatePk to authenticate. Your
 		# program would then call Connect to connect with the IMAP server (via the SSH tunnel) and then Login
 		# to authenticate with the IMAP server.
-		#		
-		#		Note: Once the SSH tunnel is setup by calling
+		# 
+		# Note: Once the SSH tunnel is setup by calling
 		# SshOpenTunnel and SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the
 		# IMAP server use the SSH tunnel. No changes in programming are required other than making two initial
 		# calls to setup the tunnel.
-		#		
-		#		Important: When reporting problems, please send the full
+		# 
+		# Important: When reporting problems, please send the full
 		# contents of the LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param sshHostname [String]
 		# @param sshPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SshOpenTunnel(sshHostname, sshPort)
 			# ...
 		end
@@ -3884,25 +3888,25 @@ module Chilkat
 		#
 		# Connects to an SSH server and creates a tunnel for IMAP. The ARG1 is the hostname (or IP address) of
 		# the SSH server. The ARG2 is typically 22, which is the standard SSH port number.
-		#		
-		#		An SSH
+		# 
+		# An SSH
 		# tunneling (port forwarding) session always begins by first calling SshTunnel to connect to the SSH
 		# server, followed by calling either SshAuthenticatePw or SshAuthenticatePk to authenticate. Your
 		# program would then call Connect to connect with the IMAP server (via the SSH tunnel) and then Login
 		# to authenticate with the IMAP server.
-		#		
-		#		Note: Once the SSH tunnel is setup by calling
+		# 
+		# Note: Once the SSH tunnel is setup by calling
 		# SshTunnel and SshAuthenticatePw (or SshAuthenticatePk), all underlying communcations with the IMAP
 		# server use the SSH tunnel. No changes in programming are required other than making two initial
 		# calls to setup the tunnel.
-		#		
-		#		Important: This method is deprecated. Programs should
+		# 
+		# Important: This method is deprecated. Programs should
 		# instead call SshOpenTunnel. (The only change is in the name of the method.)
 		#
 		# @param sshServerHostname [String]
 		# @param sshPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SshTunnel(sshServerHostname, sshPort)
 			# ...
@@ -3914,14 +3918,14 @@ module Chilkat
 		# Sets one or more flags to a specific value for an email. The email is indicated by either a UID or
 		# sequence number, depending on whether ARG2 is _TRUE_ (UID) or _FALSE_ (sequence
 		# number).
-		#		
-		#		ARG3 should be a space separated string of flag names. Both standard and
+		# 
+		# ARG3 should be a space separated string of flag names. Both standard and
 		# customer flags may be set. Standard flag names typically begin with a backslash character. For
 		# example: "\Seen \Answered". Custom flag names may also be included. Custom flags often begin with a
 		# $ character, such as "$label1", or "$MailFlagBit0". Other customer flags may begin with any
 		# character, such as "NonJunk".
-		#		
-		#		ARG4 should be 1 to turn the flags on, or 0 to turn the
+		# 
+		# ARG4 should be 1 to turn the flags on, or 0 to turn the
 		# flags off.
 		#
 		# @param msgId [Fixnum]
@@ -3929,7 +3933,7 @@ module Chilkat
 		# @param flagNames [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def StoreFlags(msgId, bUid, flagNames, value)
 			# ...
 		end
@@ -3941,7 +3945,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Subscribe(mailbox)
 			# ...
 		end
@@ -3956,7 +3960,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -3968,7 +3972,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Unsubscribe(mailbox)
 			# ...
 		end
@@ -3984,7 +3988,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -3995,14 +3999,14 @@ module Chilkat
 		# Uses an existing SSH tunnel for the connection to the IMAP server. This method is identical to the
 		# UseSshTunnel method, except the SSH connection is obtained from an SSH object instead of a Socket
 		# object.
-		#		
-		#		This is useful for sharing an existing SSH tunnel connection wth other objects.
+		# 
+		# This is useful for sharing an existing SSH tunnel connection wth other objects.
 		# (SSH is a protocol where the tunnel contains many logical channels. IMAP connections can exist
 		# simultaneously with other connection within a single SSH tunnel as SSH channels.)
 		#
 		# @param ssh [CkSsh]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseSsh(ssh)
 			# ...
 		end
@@ -4016,7 +4020,7 @@ module Chilkat
 		#
 		# @param tunnel [CkSocket]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseSshTunnel(tunnel)
 			# ...
 		end

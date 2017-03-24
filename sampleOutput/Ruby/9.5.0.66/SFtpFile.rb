@@ -28,7 +28,7 @@ module Chilkat
 		def filename() end
 
 		# One of the following values:
-		#		
+		# 
 		# regular
 		# directory
 		# symLink
@@ -45,7 +45,7 @@ module Chilkat
 		def get_FileType() end
 
 		# One of the following values:
-		#		
+		# 
 		# regular
 		# directory
 		# symLink
@@ -129,15 +129,15 @@ module Chilkat
 		# The file cannot be deleted or renamed, no hard link can be created
 		# to this file, and no data
 		# can be written to the file.
-		#		
+		# 
 		# This bit implies a stronger level of protection than
 		#
 		# ReadOnly, the file permission mask or
 		# ACLs. Typically even the superuser cannot write to
 		# immutable
 		# files, and only the superuser can set or remove the bit. 
-		#		
-		#		This property
+		# 
+		# This property
 		# is only supported by servers running SFTP v6 or later.
 		#
 		# @return [TrueClass, FalseClass]
@@ -162,7 +162,7 @@ module Chilkat
 		# file, the blocks between the previous EOF marker and the 10 M
 		# offset would not consume
 		# physical disk space.
-		#		
+		# 
 		# Some servers may store all files as sparse files, in which
 		# case
 		# this bit will be unconditionally set. Other servers may not have
@@ -170,7 +170,7 @@ module Chilkat
 		# determining if the file is sparse, and so the file
 		# MAY be stored sparse even if this flag is
 		# not set.
-		#		
+		# 
 		# This property is only supported by servers running SFTP v6 or later.
 		#
 		# @return [TrueClass, FalseClass]
@@ -281,11 +281,11 @@ module Chilkat
 		# correspond to the st_mode field of
 		# the stat structure defined by POSIX
 		# [IEEE.1003-1.1996].
-		#		
+		# 
 		# This protocol uses the following values for the symbols declared
 		# in
 		# the POSIX standard.
-		#		
+		# 
 		# S_IRUSR 0000400 (octal)
 		# S_IWUSR 0000200
 		# S_IXUSR
@@ -334,8 +334,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -344,8 +344,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -359,7 +359,7 @@ module Chilkat
 		# running SFTP v4 or later.
 		#
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetCreateDt()
 			# ...
 		end
@@ -370,7 +370,7 @@ module Chilkat
 		# Returns the last-access date and time (GMT / UTC).
 		#
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetLastAccessDt()
 			# ...
 		end
@@ -381,7 +381,7 @@ module Chilkat
 		# Returns the last-modified date and time (GMT / UTC).
 		#
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetLastModifiedDt()
 			# ...
 		end

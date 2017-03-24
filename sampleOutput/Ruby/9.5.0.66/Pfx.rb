@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -223,8 +223,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -233,8 +233,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -281,7 +281,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param includeChain [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddCert(cert, includeChain)
 			# ...
 		end
@@ -297,7 +297,7 @@ module Chilkat
 		# @param privKey [CkPrivateKey]
 		# @param certChain [CkCertChain]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddPrivateKey(privKey, certChain)
 			# ...
 		end
@@ -309,7 +309,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetCert(index)
 			# ...
 		end
@@ -321,7 +321,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkPrivateKey] 
+		# @return [CkPrivateKey]
 		def GetPrivateKey(index)
 			# ...
 		end
@@ -331,40 +331,40 @@ module Chilkat
 		#
 		# Loads a PFX from a PEM formatted string. The PEM can contain the private key, the certificate, and
 		# certificates in the chain of authentication up to the CA root. For example:
-		#		
+		# 
 		# -----BEGIN
 		# RSA PRIVATE KEY-----
-		#		...
-		#		... the private key associated with the main
+		# ...
+		# ... the private key associated with the main
 		# certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		-----BEGIN
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the main certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the main certificate
+		# ...
+		# -----END
 		# CERTIFICATE-----
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... an intermediate CA
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... an intermediate CA
 		# certificate (if present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
 		# @param pemStr [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPem(pemStr, password)
 			# ...
 		end
@@ -377,7 +377,7 @@ module Chilkat
 		# @param pfxData [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxBytes(pfxData, password)
 			# ...
 		end
@@ -393,7 +393,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxEncoded(encodedData, encoding, password)
 			# ...
 		end
@@ -406,7 +406,7 @@ module Chilkat
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPfxFile(path, password)
 			# ...
 		end
@@ -418,7 +418,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -431,7 +431,7 @@ module Chilkat
 		# @param password [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToBinary(password, outBytes)
 			# ...
 		end
@@ -445,7 +445,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToEncodedString(password, encoding, outStr)
 			# ...
 		end
@@ -458,7 +458,7 @@ module Chilkat
 		# @param password [String]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def toEncodedString(password, encoding)
 			# ...
 		end
@@ -472,7 +472,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToFile(password, path)
 			# ...
 		end
@@ -484,25 +484,25 @@ module Chilkat
 		# PKCS12 is added. The certs found within the PCKS12 are used to build the certificate chains for each
 		# private key. (A typical PFX file contains a single private key along with its associated
 		# certificate, and the certificates in the chain of authentication to the root CA cert.) 
-		#		The
+		# The
 		# specified alias is applied to the 1st private key found. If the alias is empty, then the alias is
 		# obtained from the cert/PFX in the following order of preference:
-		#		
-		#		Certificate's subject
+		# 
+		# Certificate's subject
 		# common name
-		#		Certificate's subject email address
-		#		Certificate's friendly name found in the
+		# Certificate's subject email address
+		# Certificate's friendly name found in the
 		# PKCS9 attributes of the PKCS12
-		#		Certificate's serial number
-		#		
-		#		If multiple private
+		# Certificate's serial number
+		# 
+		# If multiple private
 		# keys are found in the PKCS12, then all but the first will automaticallly be assigned aliases using
 		# the preference just described.
 		#
 		# @param alias [String]
 		# @param password [String]
 		#
-		# @return [CkJavaKeyStore] 
+		# @return [CkJavaKeyStore]
 		def ToJavaKeyStore(alias, password)
 			# ...
 		end
@@ -513,38 +513,38 @@ module Chilkat
 		# Write the PFX to a PEM formatted string. The resultant PEM will contain the private key, as well as
 		# the certs in the chain of authentication (or whatever certs are available in the PFX). For
 		# example:
-		#		
-		#		 -----BEGIN RSA PRIVATE KEY-----
-		#		...
-		#		... the private key
+		# 
+		#  -----BEGIN RSA PRIVATE KEY-----
+		# ...
+		# ... the private key
 		# associated with the main certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		-----BEGIN
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the main certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the main certificate
+		# ...
+		# -----END
 		# CERTIFICATE-----
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... an intermediate CA
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... an intermediate CA
 		# certificate (if present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToPem(outStr)
 			# ...
 		end
@@ -555,37 +555,37 @@ module Chilkat
 		# Write the PFX to a PEM formatted string. The resultant PEM will contain the private key, as well as
 		# the certs in the chain of authentication (or whatever certs are available in the PFX). For
 		# example:
-		#		
-		#		 -----BEGIN RSA PRIVATE KEY-----
-		#		...
-		#		... the private key
+		# 
+		#  -----BEGIN RSA PRIVATE KEY-----
+		# ...
+		# ... the private key
 		# associated with the main certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		-----BEGIN
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the main certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the main certificate
+		# ...
+		# -----END
 		# CERTIFICATE-----
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... an intermediate CA
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... an intermediate CA
 		# certificate (if present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toPem()
 			# ...
 		end
@@ -601,10 +601,10 @@ module Chilkat
 		# choices for the ARG5 are "des3", "aes128", "aes192", and "aes256". (All encryption algorithm choices
 		# use CBC mode.) If the private keys are to be encrypted, then ARG6 is the password to be used.
 		# Otherwise, ARG6 may be left empty.
-		#		
-		#		For example:
-		#		
-		#		Bag Attributes
+		# 
+		# For example:
+		# 
+		# Bag Attributes
 		#
 		# Microsoft Local Key set: &lt;No Values>
 		# localKeyID: 01 00 00 00 
@@ -612,16 +612,16 @@ module Chilkat
 		# le-2b09a3d2-9037-4a05-95cc-4d44518e8607
 		# Microsoft CSP Name: Microsoft RSA SChannel
 		# Cryptographic Provider
-		#		Key Attributes
+		# Key Attributes
 		# X509v3 Key Usage: 10 
 		# -----BEGIN RSA PRIVATE
 		# KEY-----
-		#		...
-		#		... the private key associated with the main
+		# ...
+		# ... the private key associated with the main
 		# certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		Bag Attributes
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# Bag Attributes
 		# localKeyID: 01
 		# 00 00 00 
 		# 1.3.6.1.4.1.311.17.3.92: 00 08 00 00 
@@ -630,32 +630,32 @@ module Chilkat
 		# 1.3.6.1.4.1.311.17.3.71: 49 00 43 00 ...
 		# 1.3.6.1.4.1.311.17.3.75: 31 00 42 00
 		# ...
-		#		subject=/OU=Domain Control
+		# subject=/OU=Domain Control
 		# Validated/OU=PositiveSSL/CN=something.com
-		#		issuer=/C=GB/ST=Greater
+		# issuer=/C=GB/ST=Greater
 		# Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server
 		# CA
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... the main
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... the main
 		# certificate
-		#		...
-		#		-----END CERTIFICATE-----
-		#		...
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... an intermediate CA certificate (if
+		# ...
+		# ... an intermediate CA certificate (if
 		# present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		...
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
@@ -667,7 +667,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToPemEx(extendedAttrs, noKeys, noCerts, noCaCerts, encryptAlg, password, outStr)
 			# ...
 		end
@@ -683,10 +683,10 @@ module Chilkat
 		# choices for the ARG5 are "des3", "aes128", "aes192", and "aes256". (All encryption algorithm choices
 		# use CBC mode.) If the private keys are to be encrypted, then ARG6 is the password to be used.
 		# Otherwise, ARG6 may be left empty.
-		#		
-		#		For example:
-		#		
-		#		Bag Attributes
+		# 
+		# For example:
+		# 
+		# Bag Attributes
 		#
 		# Microsoft Local Key set: &lt;No Values>
 		# localKeyID: 01 00 00 00 
@@ -694,16 +694,16 @@ module Chilkat
 		# le-2b09a3d2-9037-4a05-95cc-4d44518e8607
 		# Microsoft CSP Name: Microsoft RSA SChannel
 		# Cryptographic Provider
-		#		Key Attributes
+		# Key Attributes
 		# X509v3 Key Usage: 10 
 		# -----BEGIN RSA PRIVATE
 		# KEY-----
-		#		...
-		#		... the private key associated with the main
+		# ...
+		# ... the private key associated with the main
 		# certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		Bag Attributes
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# Bag Attributes
 		# localKeyID: 01
 		# 00 00 00 
 		# 1.3.6.1.4.1.311.17.3.92: 00 08 00 00 
@@ -712,32 +712,32 @@ module Chilkat
 		# 1.3.6.1.4.1.311.17.3.71: 49 00 43 00 ...
 		# 1.3.6.1.4.1.311.17.3.75: 31 00 42 00
 		# ...
-		#		subject=/OU=Domain Control
+		# subject=/OU=Domain Control
 		# Validated/OU=PositiveSSL/CN=something.com
-		#		issuer=/C=GB/ST=Greater
+		# issuer=/C=GB/ST=Greater
 		# Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server
 		# CA
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... the main
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... the main
 		# certificate
-		#		...
-		#		-----END CERTIFICATE-----
-		#		...
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... an intermediate CA certificate (if
+		# ...
+		# ... an intermediate CA certificate (if
 		# present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		...
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
@@ -748,7 +748,7 @@ module Chilkat
 		# @param encryptAlg [String]
 		# @param password [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def toPemEx(extendedAttrs, noKeys, noCerts, noCaCerts, encryptAlg, password)
 			# ...
 		end
@@ -761,7 +761,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end

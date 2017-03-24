@@ -91,13 +91,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -116,13 +116,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -139,13 +139,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -162,13 +162,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -218,6 +218,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -603,8 +605,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -613,8 +615,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -670,7 +672,7 @@ module Chilkat
 		#
 		# @param pattern [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddAvoidOutboundLinkPattern(pattern)
 			# ...
 		end
@@ -684,7 +686,7 @@ module Chilkat
 		#
 		# @param pattern [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddAvoidPattern(pattern)
 			# ...
 		end
@@ -698,7 +700,7 @@ module Chilkat
 		#
 		# @param pattern [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddMustMatchPattern(pattern)
 			# ...
 		end
@@ -711,7 +713,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddUnspidered(url)
 			# ...
 		end
@@ -720,14 +722,14 @@ module Chilkat
 		# Method: CanonicalizeUrl
 		#
 		# Canonicalizes a URL by doing the following:
-		#		
+		# 
 		# Drops username/password if
 		# present.
-		#		Drops fragment if present.
-		#		Converts domain to lowercase.
-		#		Removes port 80
+		# Drops fragment if present.
+		# Converts domain to lowercase.
+		# Removes port 80
 		# or 443
-		#		Remove default.asp, index.html, index.htm, default.html, index.htm, default.htm,
+		# Remove default.asp, index.html, index.htm, default.html, index.htm, default.htm,
 		#
 		# index.php, index.asp, default.php, .cfm, .aspx, ,php3, .pl, .cgi, .txt, .shtml, .phtml
 		# Remove
@@ -737,7 +739,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CanonicalizeUrl(url, outStr)
 			# ...
 		end
@@ -746,14 +748,14 @@ module Chilkat
 		# Method: CanonicalizeUrl
 		#
 		# Canonicalizes a URL by doing the following:
-		#		
+		# 
 		# Drops username/password if
 		# present.
-		#		Drops fragment if present.
-		#		Converts domain to lowercase.
-		#		Removes port 80
+		# Drops fragment if present.
+		# Converts domain to lowercase.
+		# Removes port 80
 		# or 443
-		#		Remove default.asp, index.html, index.htm, default.html, index.htm, default.htm,
+		# Remove default.asp, index.html, index.htm, default.html, index.htm, default.htm,
 		#
 		# index.php, index.asp, default.php, .cfm, .aspx, ,php3, .pl, .cgi, .txt, .shtml, .phtml
 		# Remove
@@ -762,7 +764,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def canonicalizeUrl(url)
 			# ...
 		end
@@ -773,7 +775,7 @@ module Chilkat
 		# Clears the component's internal list of URLs that could not be downloaded.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearFailedUrls()
 			# ...
 		end
@@ -785,7 +787,7 @@ module Chilkat
 		# spidering.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearOutboundLinks()
 			# ...
 		end
@@ -797,7 +799,7 @@ module Chilkat
 		# while spidering.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearSpideredUrls()
 			# ...
 		end
@@ -809,14 +811,14 @@ module Chilkat
 		# list to the spidered list. Any new links within the same domain and not yet spidered are added to
 		# the unspidered list. (providing that they do not match "avoid" patterns, etc.) Any new outbound
 		# links are added to the outbound URL list. 
-		#		
-		#		If successful, the HTML of the downloaded
+		# 
+		# If successful, the HTML of the downloaded
 		# page is available in the LastHtml property. If there are no more URLs left unspidered, the method
 		# returns _FALSE_. Information about the URL crawled is available in the properties LastUrl,
 		# LastFromCache, and LastModDate.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CrawlNext()
 			# ...
 		end
@@ -831,7 +833,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchRobotsText(outStr)
 			# ...
 		end
@@ -845,7 +847,7 @@ module Chilkat
 		# to reproduce the problem.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def fetchRobotsText()
 			# ...
 		end
@@ -858,7 +860,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAvoidPattern(index, outStr)
 			# ...
 		end
@@ -870,7 +872,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getAvoidPattern(index)
 			# ...
 		end
@@ -883,7 +885,7 @@ module Chilkat
 		# @param domain [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetBaseDomain(domain, outStr)
 			# ...
 		end
@@ -895,7 +897,7 @@ module Chilkat
 		#
 		# @param domain [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getBaseDomain(domain)
 			# ...
 		end
@@ -908,7 +910,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFailedUrl(index, outStr)
 			# ...
 		end
@@ -920,7 +922,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFailedUrl(index)
 			# ...
 		end
@@ -933,7 +935,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetOutboundLink(index, outStr)
 			# ...
 		end
@@ -945,7 +947,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getOutboundLink(index)
 			# ...
 		end
@@ -958,7 +960,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetSpideredUrl(index, outStr)
 			# ...
 		end
@@ -970,7 +972,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getSpideredUrl(index)
 			# ...
 		end
@@ -983,7 +985,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetUnspideredUrl(index, outStr)
 			# ...
 		end
@@ -995,7 +997,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getUnspideredUrl(index)
 			# ...
 		end
@@ -1009,7 +1011,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetUrlDomain(url, outStr)
 			# ...
 		end
@@ -1022,7 +1024,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getUrlDomain(url)
 			# ...
 		end
@@ -1037,7 +1039,7 @@ module Chilkat
 		#
 		# @param domain [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Initialize(domain)
 			# ...
 		end
@@ -1049,7 +1051,7 @@ module Chilkat
 		# page to be loaded differently the next time.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RecrawlLast()
 			# ...
 		end
@@ -1061,7 +1063,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1074,7 +1076,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SkipUnspidered(index)
 			# ...
 		end
@@ -1086,7 +1088,7 @@ module Chilkat
 		#
 		# @param numMilliseconds [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SleepMs(numMilliseconds)
 			# ...
 		end

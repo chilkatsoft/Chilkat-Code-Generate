@@ -4,8 +4,8 @@ module Chilkat
 		# happens to be running. For example, the ANSI code page for an application running on a Japanese
 		# computer is likely to be Shift_JIS (code page 932), whereas on a US-English computer it would be
 		# iso-8859-1 (or Windows-1252 which is essentially a superset of iso-8859-1).
-		#		
-		#		If there is
+		# 
+		# If there is
 		# a desire for the Chilkat library to use a specific ANSI code page regardless of locale, then this
 		# property should be set to the desired code page. The default value of this property is the ANSI code
 		# page of the local computer.
@@ -17,8 +17,8 @@ module Chilkat
 		# happens to be running. For example, the ANSI code page for an application running on a Japanese
 		# computer is likely to be Shift_JIS (code page 932), whereas on a US-English computer it would be
 		# iso-8859-1 (or Windows-1252 which is essentially a superset of iso-8859-1).
-		#		
-		#		If there is
+		# 
+		# If there is
 		# a desire for the Chilkat library to use a specific ANSI code page regardless of locale, then this
 		# property should be set to the desired code page. The default value of this property is the ANSI code
 		# page of the local computer.
@@ -31,13 +31,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -56,13 +56,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -79,13 +79,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -102,13 +102,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -138,14 +138,14 @@ module Chilkat
 		# Objective-C, or Python 3.* as all strings in these languages are utf-8. This property has no effect
 		# in programming languages or APIs that return Unicode or strings as objects (such as
 		# .NET).
-		#		
-		#		A Chilkat class's Utf8 property controls whether strings are returned as utf-8
+		# 
+		# A Chilkat class's Utf8 property controls whether strings are returned as utf-8
 		# or ANSI. It also controls how Chilkat is to interpret the bytes of passed-in arguments. It must be
 		# set to _FALSE_ if the application is passing ANSI strings (i.e. the byte representation is ANSI),
 		# and must be set to _TRUE_ if the application is passing string arguments using the utf-8
 		# representation.
-		#		
-		#		This global Utf8 property controls the default setting of the Utf8
+		# 
+		# This global Utf8 property controls the default setting of the Utf8
 		# property for all Chilkat objects. Thus it allows for an application to be entirely in "utf-8 mode"
 		# or "ANSI mode" without needing to explicity set the Utf8 property of every Chilkat object instance.
 		#
@@ -158,14 +158,14 @@ module Chilkat
 		# Objective-C, or Python 3.* as all strings in these languages are utf-8. This property has no effect
 		# in programming languages or APIs that return Unicode or strings as objects (such as
 		# .NET).
-		#		
-		#		A Chilkat class's Utf8 property controls whether strings are returned as utf-8
+		# 
+		# A Chilkat class's Utf8 property controls whether strings are returned as utf-8
 		# or ANSI. It also controls how Chilkat is to interpret the bytes of passed-in arguments. It must be
 		# set to _FALSE_ if the application is passing ANSI strings (i.e. the byte representation is ANSI),
 		# and must be set to _TRUE_ if the application is passing string arguments using the utf-8
 		# representation.
-		#		
-		#		This global Utf8 property controls the default setting of the Utf8
+		# 
+		# This global Utf8 property controls the default setting of the Utf8
 		# property for all Chilkat objects. Thus it allows for an application to be entirely in "utf-8 mode"
 		# or "ANSI mode" without needing to explicity set the Utf8 property of every Chilkat object instance.
 		#
@@ -387,18 +387,18 @@ module Chilkat
 
 		# Indicates the unlocked status for the last call to UnlockBundle, or any UnlockComponent call. The
 		# possible values are:
-		#		
-		#		Not unlocked. (Still in locked state.)
-		#		Unlocked with in
+		# 
+		# Not unlocked. (Still in locked state.)
+		# Unlocked with in
 		# fully-functional trial mode.
-		#		Unlocked using a valid purchased unlock code.
-		#		
-		#		Note:
+		# Unlocked using a valid purchased unlock code.
+		# 
+		# Note:
 		# If UnlockComponent or UnlockBundle is called with a purchased unlock code, the UnlockStatus is
 		# correctly set to the value 2. This value is intentionally sticky. If a subsequent and redundant call
 		# to UnlockComponent (or UnlockBundle) happens, it is effectively a "No-Op" because the library is
 		# already unlocked. The UnlockStatus will not change.
-		#		If however, if the 1st call resulted in
+		# If however, if the 1st call resulted in
 		# UnlockStatus = 1, and THEN the unlock method is called again with a purchased unlock code, the
 		# UnlockStatus should change from 1 to 2.
 		#
@@ -407,8 +407,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -417,8 +417,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -457,7 +457,7 @@ module Chilkat
 		# Clears the global DNS cache.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DnsClearCache()
 			# ...
 		end
@@ -467,21 +467,21 @@ module Chilkat
 		#
 		# Called to stop and finalize all threads in the thread pool, and causes the thread pool thread to
 		# exit.
-		#		
-		#		The following behaviors exist in v9.5.0.64 and later:
-		#		
-		#		All remaining
+		# 
+		# The following behaviors exist in v9.5.0.64 and later:
+		# 
+		# All remaining
 		# asynchronous tasks are automatically canceled.
-		#		Restores the thread pool to it's pristine state
+		# Restores the thread pool to it's pristine state
 		# where no background threads are running.
-		#		
-		#		
-		#		It is a good idea to call this method
+		# 
+		# 
+		# It is a good idea to call this method
 		# at the very end of a program, just before it exits. This is especially true for programs written in
 		# VBScript and VB6.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FinalizeThreadPool()
 			# ...
 		end
@@ -493,7 +493,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -505,20 +505,20 @@ module Chilkat
 		# program. Once unlocked, objects of any Chilkat class may be instantiated and used. To unlock in
 		# fully-functional 30-day trial mode, pass any string, such as "Hello", in ARG1. If a license is
 		# purchased, then replace the "Hello" with the purchased unlock code. 
-		#		
-		#		After calling
+		# 
+		# After calling
 		# UnlockComponent once, the instance of the CLASS_NAME object may be discarded/deleted (assuming the
 		# programming language requires explicit deletes). Multiple calls to UnlockComponent are harmless. If
 		# the Chilkat API is already unlocked, the duplicate calls to UnlockComponent are
 		# no-ops.
-		#		
-		#		Note: The CLASS_NAME's UnlockComponent method should only be called with a
+		# 
+		# Note: The CLASS_NAME's UnlockComponent method should only be called with a
 		# Bundle unlock code. If an individual product license was purchased, the UnlockComponent method in
 		# the specifically licensed class should be called instead.
 		#
 		# @param bundleUnlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockBundle(bundleUnlockCode)
 			# ...
 		end

@@ -17,13 +17,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -42,13 +42,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -65,13 +65,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -88,13 +88,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -225,8 +225,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -235,8 +235,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -275,13 +275,13 @@ module Chilkat
 		# Creates a JWT. The ARG1 is the JOSE JSON header. It can be the full JOSE JSON, or it can be a
 		# shorthand string such as "HS256", "HS384", or "HS512", in which case the standard JOSE header for
 		# the given algorithm will be used. 
-		#		
-		#		The ARG2 is the JSON payload that contains the
+		# 
+		# The ARG2 is the JSON payload that contains the
 		# claims. The ARG3 is the secret. Given that the secret is a shared passwod string, this method should
 		# only be called for creating JWT's where the JOSE header's "alg" is HS256, HS384, or HS512. For
 		# RS256, RS384, RS512, ES256, ES384, and ES512, call CreateJwtPk instead.
-		#		
-		#		When
+		# 
+		# When
 		# successful, this method returns a JWT with the format xxxxx.yyyyy.zzzzz, where xxxxx is the
 		# base64url encoded JOSE header, yyyyy is the base64url encoded payload, and zzzzz is the base64url
 		# signature.
@@ -291,7 +291,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateJwt(header, payload, password, outStr)
 			# ...
 		end
@@ -302,13 +302,13 @@ module Chilkat
 		# Creates a JWT. The ARG1 is the JOSE JSON header. It can be the full JOSE JSON, or it can be a
 		# shorthand string such as "HS256", "HS384", or "HS512", in which case the standard JOSE header for
 		# the given algorithm will be used. 
-		#		
-		#		The ARG2 is the JSON payload that contains the
+		# 
+		# The ARG2 is the JSON payload that contains the
 		# claims. The ARG3 is the secret. Given that the secret is a shared passwod string, this method should
 		# only be called for creating JWT's where the JOSE header's "alg" is HS256, HS384, or HS512. For
 		# RS256, RS384, RS512, ES256, ES384, and ES512, call CreateJwtPk instead.
-		#		
-		#		When
+		# 
+		# When
 		# successful, this method returns a JWT with the format xxxxx.yyyyy.zzzzz, where xxxxx is the
 		# base64url encoded JOSE header, yyyyy is the base64url encoded payload, and zzzzz is the base64url
 		# signature.
@@ -317,7 +317,7 @@ module Chilkat
 		# @param payload [String]
 		# @param password [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def createJwt(header, payload, password)
 			# ...
 		end
@@ -328,13 +328,13 @@ module Chilkat
 		# Creates a JWT using an RSA or ECC private key. The ARG1 is the JOSE JSON header. It can be the full
 		# JOSE JSON, or it can be a shorthand string such as "RS256", "RS384", "RS512", "ES256", "ES384", or
 		# "ES512", in which case the standard JOSE header for the given algorithm will be used.
-		# #		
-		#		The ARG2 is the JSON payload that contains the claims. The ARG3 is the private key. This
+		# # 
+		# The ARG2 is the JSON payload that contains the claims. The ARG3 is the private key. This
 		# method should only be called for creating JWT's where the JOSE header's "alg" is RS256, RS384,
 		# RS512, ES256, ES384, and ES512. If the secret is a shared password string, then call CreateJwt
 		# instead.
-		#		
-		#		When successful, this method returns a JWT with the format xxxxx.yyyyy.zzzzz,
+		# 
+		# When successful, this method returns a JWT with the format xxxxx.yyyyy.zzzzz,
 		# where xxxxx is the base64url encoded JOSE header, yyyyy is the base64url encoded payload, and zzzzz
 		# is the base64url signature.
 		#
@@ -343,7 +343,7 @@ module Chilkat
 		# @param key [CkPrivateKey]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateJwtPk(header, payload, key, outStr)
 			# ...
 		end
@@ -354,13 +354,13 @@ module Chilkat
 		# Creates a JWT using an RSA or ECC private key. The ARG1 is the JOSE JSON header. It can be the full
 		# JOSE JSON, or it can be a shorthand string such as "RS256", "RS384", "RS512", "ES256", "ES384", or
 		# "ES512", in which case the standard JOSE header for the given algorithm will be used.
-		# #		
-		#		The ARG2 is the JSON payload that contains the claims. The ARG3 is the private key. This
+		# # 
+		# The ARG2 is the JSON payload that contains the claims. The ARG3 is the private key. This
 		# method should only be called for creating JWT's where the JOSE header's "alg" is RS256, RS384,
 		# RS512, ES256, ES384, and ES512. If the secret is a shared password string, then call CreateJwt
 		# instead.
-		#		
-		#		When successful, this method returns a JWT with the format xxxxx.yyyyy.zzzzz,
+		# 
+		# When successful, this method returns a JWT with the format xxxxx.yyyyy.zzzzz,
 		# where xxxxx is the base64url encoded JOSE header, yyyyy is the base64url encoded payload, and zzzzz
 		# is the base64url signature.
 		#
@@ -368,7 +368,7 @@ module Chilkat
 		# @param payload [String]
 		# @param key [CkPrivateKey]
 		#
-		# @return [String] 
+		# @return [String]
 		def createJwtPk(header, payload, key)
 			# ...
 		end
@@ -382,7 +382,7 @@ module Chilkat
 		#
 		# @param numSecOffset [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GenNumericDate(numSecOffset)
 			# ...
 		end
@@ -396,7 +396,7 @@ module Chilkat
 		# @param token [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHeader(token, outStr)
 			# ...
 		end
@@ -409,7 +409,7 @@ module Chilkat
 		#
 		# @param token [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHeader(token)
 			# ...
 		end
@@ -423,7 +423,7 @@ module Chilkat
 		# @param token [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPayload(token, outStr)
 			# ...
 		end
@@ -436,7 +436,7 @@ module Chilkat
 		#
 		# @param token [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPayload(token)
 			# ...
 		end
@@ -452,7 +452,7 @@ module Chilkat
 		# @param jwt [String]
 		# @param leeway [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsTimeValid(jwt, leeway)
 			# ...
 		end
@@ -464,7 +464,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -476,14 +476,14 @@ module Chilkat
 		# with the format xxxxx.yyyyy.zzzzz. This method should only be called for JWT's using the HS256,
 		# HS384, or HS512 algorithms. The VerifyJwtPk method should be called for verifying JWT's requiring an
 		# RSA or ECC key.
-		#		
-		#		Returns _TRUE_ if the signature was verified. Returns _FALSE_ if the
+		# 
+		# Returns _TRUE_ if the signature was verified. Returns _FALSE_ if the
 		# signature was not successfully verified.
 		#
 		# @param token [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyJwt(token, password)
 			# ...
 		end
@@ -494,14 +494,14 @@ module Chilkat
 		# Verifies a JWT that requires an RSA or ECC public key for verification. The ARG1 should be a JWT
 		# with the format xxxxx.yyyyy.zzzzz. This method should only be called for JWT's using the RS256,
 		# RS384, RS512, ES256, ES384, or ES512 algorithms. 
-		#		
-		#		Returns _TRUE_ if the signature was
+		# 
+		# Returns _TRUE_ if the signature was
 		# verified. Returns _FALSE_ if the signature was not successfully verified.
 		#
 		# @param token [String]
 		# @param key [CkPublicKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyJwtPk(token, key)
 			# ...
 		end

@@ -22,45 +22,45 @@ module Chilkat
 
 		# If a AcceptNextConnection method fails, this property can be checked to determine the reason for
 		# failure.
-		#		
-		#		Possible values are:
-		#		
-		#		0 = Success
-		#		1 = An async operation is
+		# 
+		# Possible values are:
+		# 
+		# 0 = Success
+		# 1 = An async operation is
 		# in progress.
-		#		3 = An unspecified internal failure, perhaps out-of-memory, caused the
+		# 3 = An unspecified internal failure, perhaps out-of-memory, caused the
 		# failure.
-		#		5 = Timeout. No connections were accepted in the amount of time alotted.
-		#		6 =
+		# 5 = Timeout. No connections were accepted in the amount of time alotted.
+		# 6 =
 		# The receive was aborted by the application in an event callback.
-		#		9 = An unspecified fatal
+		# 9 = An unspecified fatal
 		# socket error occurred (less common).
-		#		20 = Must first bind and listen on a port.
-		#		99 = The
+		# 20 = Must first bind and listen on a port.
+		# 99 = The
 		# component is not unlocked.
-		#		
-		#		Errors Relating to the SSL/TLS Handshake:
-		#		100 = TLS
+		# 
+		# Errors Relating to the SSL/TLS Handshake:
+		# 100 = TLS
 		# internal error.
-		#		102 = Unexpected handshake message.
-		#		109 = Failed to read handshake
+		# 102 = Unexpected handshake message.
+		# 109 = Failed to read handshake
 		# messages.
-		#		114 = Failed to send change cipher spec handshake message.
-		#		115 = Failed to
+		# 114 = Failed to send change cipher spec handshake message.
+		# 115 = Failed to
 		# send finished handshake message.
-		#		116 = Client's Finished message is invalid.
-		#		117 =
+		# 116 = Client's Finished message is invalid.
+		# 117 =
 		# Unable to agree on TLS protocol version.
-		#		118 = Unable to agree on a cipher spec.
-		#		119 =
+		# 118 = Unable to agree on a cipher spec.
+		# 119 =
 		# Failed to read the client's hello message.
-		#		120 = Failed to send handshake messages.
-		#		121
+		# 120 = Failed to send handshake messages.
+		# 121
 		# = Failed to process client cert message.
-		#		122 = Failed to process client cert URL
+		# 122 = Failed to process client cert URL
 		# message.
-		#		123 = Failed to process client key exchange message.
-		#		124 = Failed to process
+		# 123 = Failed to process client key exchange message.
+		# 124 = Failed to process
 		# certificate verify message.
 		#
 		#
@@ -70,8 +70,8 @@ module Chilkat
 		# Set to _TRUE_ when an asynchronous accept operation completes. Once the asynchronous accept has
 		# finished, the success/failure is available in the AsyncAcceptSuccess boolean
 		# property.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
@@ -80,8 +80,8 @@ module Chilkat
 		def get_AsyncAcceptFinished() end
 
 		# Contains the last-error information for an asynchronous accept operation.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -91,8 +91,8 @@ module Chilkat
 		def get_AsyncAcceptLog() end
 
 		# Contains the last-error information for an asynchronous accept operation.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -102,8 +102,8 @@ module Chilkat
 		def asyncAcceptLog() end
 
 		# Set to _TRUE_ when an asynchronous accept operation completes and is successful.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -116,8 +116,8 @@ module Chilkat
 		# Once the asynchronous connect
 		# has finished, the success/failure is available in the AsyncConnectSuccess boolean
 		# property.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
@@ -126,8 +126,8 @@ module Chilkat
 		def get_AsyncConnectFinished() end
 
 		# Contains the last-error information for an asynchronous connect operation.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -137,8 +137,8 @@ module Chilkat
 		def get_AsyncConnectLog() end
 
 		# Contains the last-error information for an asynchronous connect operation.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -148,8 +148,8 @@ module Chilkat
 		def asyncConnectLog() end
 
 		# Set to _TRUE_ when an asynchronous connect operation completes and is successful.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -160,8 +160,8 @@ module Chilkat
 
 		# Set to _TRUE_ when an asynchronous DNS query completes. The success status is available in the
 		# AsyncDnsSuccess property.
-		#		
-		#		This functionality is replaced by the new model for
+		# 
+		# This functionality is replaced by the new model for
 		# asynchronous programming introduced in Chilkat v9.5.0.52. Applications should use the new model,
 		# which is identified by methods having names ending with "Async" and return a task object.
 		#
@@ -170,8 +170,8 @@ module Chilkat
 		def get_AsyncDnsFinished() end
 
 		# Contains the last-error information for an asynchronous DNS query.
-		#		
-		#		This functionality
+		# 
+		# This functionality
 		# is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.
 		# Applications should use the new model, which is identified by methods having names ending with
 		# "Async" and return a task object.
@@ -181,8 +181,8 @@ module Chilkat
 		def get_AsyncDnsLog() end
 
 		# Contains the last-error information for an asynchronous DNS query.
-		#		
-		#		This functionality
+		# 
+		# This functionality
 		# is replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52.
 		# Applications should use the new model, which is identified by methods having names ending with
 		# "Async" and return a task object.
@@ -193,8 +193,8 @@ module Chilkat
 
 		# The IP address of the last asynchronous DNS query completed. The IP address is in nnn.nnn.nnn.nnn
 		# string form.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -204,8 +204,8 @@ module Chilkat
 
 		# The IP address of the last asynchronous DNS query completed. The IP address is in nnn.nnn.nnn.nnn
 		# string form.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -214,8 +214,8 @@ module Chilkat
 		def asyncDnsResult() end
 
 		# Set to _TRUE_ when an asynchronous DNS query completes and is successful.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -226,8 +226,8 @@ module Chilkat
 
 		# Contains the data received in an asynchronous receive operation (when receiving bytes
 		# asynchronously).
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -237,8 +237,8 @@ module Chilkat
 
 		# Contains the string received in an asynchronous receive operation (when receiving a string
 		# asynchronously).
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -248,8 +248,8 @@ module Chilkat
 
 		# Contains the string received in an asynchronous receive operation (when receiving a string
 		# asynchronously).
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -260,8 +260,8 @@ module Chilkat
 		# Set to _TRUE_ when an asynchronous receive operation completes. Once the asynchronous receive has
 		# finished, the success/failure is available in the AsyncReceiveSuccess boolean
 		# property.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
@@ -270,8 +270,8 @@ module Chilkat
 		def get_AsyncReceiveFinished() end
 
 		# Contains the last-error information for an asynchronous receive operation.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -281,8 +281,8 @@ module Chilkat
 		def get_AsyncReceiveLog() end
 
 		# Contains the last-error information for an asynchronous receive operation.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -292,8 +292,8 @@ module Chilkat
 		def asyncReceiveLog() end
 
 		# Set to _TRUE_ when an asynchronous receive operation completes and is successful.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -305,8 +305,8 @@ module Chilkat
 		# Set to _TRUE_ when an asynchronous send operation completes. Once the asynchronous send has
 		# finished, the success/failure is available in the AsyncSendSuccess boolean
 		# property.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
@@ -315,8 +315,8 @@ module Chilkat
 		def get_AsyncSendFinished() end
 
 		# Contains the last-error information for an asynchronous send operation.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -326,8 +326,8 @@ module Chilkat
 		def get_AsyncSendLog() end
 
 		# Contains the last-error information for an asynchronous send operation.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -337,8 +337,8 @@ module Chilkat
 		def asyncSendLog() end
 
 		# Set to _TRUE_ when an asynchronous send operation completes and is successful.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -384,11 +384,11 @@ module Chilkat
 		def put_BigEndian(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param ckStr [CkString]
@@ -397,33 +397,33 @@ module Chilkat
 		def get_ClientIpAddress(ckStr) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
 		def put_ClientIpAddress(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @return [String]
 		def clientIpAddress() end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
@@ -431,15 +431,15 @@ module Chilkat
 
 		# Normally left at the default value of 0, in which case a unique port is assigned with a value
 		# between 
-		#		1024 and 5000. This property would only be changed if it is specifically required.
+		# 1024 and 5000. This property would only be changed if it is specifically required.
 		# For example, one 
-		#		customer's requirements are as follows:
-		#		
-		#		"I have to connect to a
+		# customer's requirements are as follows:
+		# 
+		# "I have to connect to a
 		# Siemens PLC IP server on a technical network.
-		#		This machine expects that I connect to its
+		# This machine expects that I connect to its
 		# server from a specific IP address using a specific port
-		#		otherwise the build in security
+		# otherwise the build in security
 		# disconnect the IP connection."
 		#
 		#
@@ -448,15 +448,15 @@ module Chilkat
 
 		# Normally left at the default value of 0, in which case a unique port is assigned with a value
 		# between 
-		#		1024 and 5000. This property would only be changed if it is specifically required.
+		# 1024 and 5000. This property would only be changed if it is specifically required.
 		# For example, one 
-		#		customer's requirements are as follows:
-		#		
-		#		"I have to connect to a
+		# customer's requirements are as follows:
+		# 
+		# "I have to connect to a
 		# Siemens PLC IP server on a technical network.
-		#		This machine expects that I connect to its
+		# This machine expects that I connect to its
 		# server from a specific IP address using a specific port
-		#		otherwise the build in security
+		# otherwise the build in security
 		# disconnect the IP connection."
 		#
 		#
@@ -465,49 +465,49 @@ module Chilkat
 
 		# If the Connect method fails, this property can be checked to determine the reason for
 		# failure.
-		#		
-		#		Possible values are:
-		#		
-		#		0 = success
-		#		
-		#		Normal (non-SSL)
+		# 
+		# Possible values are:
+		# 
+		# 0 = success
+		# 
+		# Normal (non-SSL)
 		# sockets:
-		#		1 = empty hostname
-		#		2 = DNS lookup failed
-		#		3 = DNS timeout
-		#		4 =
+		# 1 = empty hostname
+		# 2 = DNS lookup failed
+		# 3 = DNS timeout
+		# 4 =
 		# Aborted by application.
-		#		5 = Internal failure.
-		#		6 = Connect Timed Out
-		#		7 = Connect
+		# 5 = Internal failure.
+		# 6 = Connect Timed Out
+		# 7 = Connect
 		# Rejected (or failed for some other reason)
-		#		
-		#		SSL/TLS:
-		#		100 = TLS internal
+		# 
+		# SSL/TLS:
+		# 100 = TLS internal
 		# error.
-		#		101 = Failed to send client hello.
-		#		102 = Unexpected handshake message.
-		#		103
+		# 101 = Failed to send client hello.
+		# 102 = Unexpected handshake message.
+		# 103
 		# = Failed to read server hello.
-		#		104 = No server certificate.
-		#		105 = Unexpected TLS
+		# 104 = No server certificate.
+		# 105 = Unexpected TLS
 		# protocol version.
-		#		106 = Server certificate verify failed (the server certificate is expired or
+		# 106 = Server certificate verify failed (the server certificate is expired or
 		# the cert's signature verification failed).
-		#		107 = Unacceptable TLS protocol version.
-		#		109
+		# 107 = Unacceptable TLS protocol version.
+		# 109
 		# = Failed to read handshake messages.
-		#		110 = Failed to send client certificate handshake
+		# 110 = Failed to send client certificate handshake
 		# message.
-		#		111 = Failed to send client key exchange handshake message.
-		#		112 = Client
+		# 111 = Failed to send client key exchange handshake message.
+		# 112 = Client
 		# certificate's private key not accessible.
-		#		113 = Failed to send client cert verify handshake
+		# 113 = Failed to send client cert verify handshake
 		# message.
-		#		114 = Failed to send change cipher spec handshake message.
-		#		115 = Failed to send
+		# 114 = Failed to send change cipher spec handshake message.
+		# 115 = Failed to send
 		# finished handshake message.
-		#		116 = Server's Finished message is invalid.
+		# 116 = Server's Finished message is invalid.
 		#
 		#
 		# @return [Bignum]
@@ -546,13 +546,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -571,13 +571,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -594,13 +594,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -617,13 +617,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -657,6 +657,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
@@ -1012,12 +1014,12 @@ module Chilkat
 
 		# The local IP address of the local computer. For multi-homed computers (i.e. computers with multiple
 		# IP adapters) this property returns the default IP address. 
-		#		
-		#		Note: This will be the
+		# 
+		# Note: This will be the
 		# internal IP address, not an external IP address. (For example, if your computer is on a LAN, it is
 		# likely to be an IP address beginning with "192.168.".
-		#		
-		#		Important: Use LocalIpAddress and
+		# 
+		# Important: Use LocalIpAddress and
 		# LocalIpPort to get the local IP/port for a bound or connected socket.
 		#
 		# @return [String]
@@ -1025,12 +1027,12 @@ module Chilkat
 
 		# The local IP address of the local computer. For multi-homed computers (i.e. computers with multiple
 		# IP adapters) this property returns the default IP address. 
-		#		
-		#		Note: This will be the
+		# 
+		# Note: This will be the
 		# internal IP address, not an external IP address. (For example, if your computer is on a LAN, it is
 		# likely to be an IP address beginning with "192.168.".
-		#		
-		#		Important: Use LocalIpAddress and
+		# 
+		# Important: Use LocalIpAddress and
 		# LocalIpPort to get the local IP/port for a bound or connected socket.
 		#
 		# @return [String]
@@ -1040,8 +1042,8 @@ module Chilkat
 		# client-side certificates received during the SSL/TLS handshake (i.e. connection process). Each
 		# client-side cert may be retrieved by calling the GetReceivedClientCert method and passing an integer
 		# index value from 0 to N-1, where N is the number of client certs received.
-		#		
-		#		Note: A
+		# 
+		# Note: A
 		# client only sends a certificate if 2-way SSL/TLS is required. In other words, if the server demands
 		# a certificate from the client.
 		#
@@ -1075,8 +1077,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -1091,8 +1093,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -1103,6 +1105,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_PercentDoneScale(newval) end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
@@ -1121,8 +1125,8 @@ module Chilkat
 		# received. The application may reset this property to 0 at any point. It is provided as a way to keep
 		# count of the total number of bytes received on a socket connection, regardless of which method calls
 		# are used to receive the data.
-		#		
-		#		Note: The ReceivedCount may be larger than the number of
+		# 
+		# Note: The ReceivedCount may be larger than the number of
 		# bytes returned by some methods. For methods such as ReceiveUntilMatch, the excess received on the
 		# socket (beyond the match), is buffered by Chilkat for subsequent method calls. The ReceivedCount is
 		# updated based on the actual number of bytes received on the underlying socket in real-time. (The
@@ -1135,8 +1139,8 @@ module Chilkat
 		# received. The application may reset this property to 0 at any point. It is provided as a way to keep
 		# count of the total number of bytes received on a socket connection, regardless of which method calls
 		# are used to receive the data.
-		#		
-		#		Note: The ReceivedCount may be larger than the number of
+		# 
+		# Note: The ReceivedCount may be larger than the number of
 		# bytes returned by some methods. For methods such as ReceiveUntilMatch, the excess received on the
 		# socket (beyond the match), is buffered by Chilkat for subsequent method calls. The ReceivedCount is
 		# updated based on the actual number of bytes received on the underlying socket in real-time. (The
@@ -1157,29 +1161,29 @@ module Chilkat
 
 		# If a Receive method fails, this property can be checked to determine the reason for
 		# failure.
-		#		
-		#		Possible values are:
-		#		
-		#		0 = Success
-		#		1 = An async receive
+		# 
+		# Possible values are:
+		# 
+		# 0 = Success
+		# 1 = An async receive
 		# operation is already in progress.
-		#		2 = The socket is not connected, such as if it was never
+		# 2 = The socket is not connected, such as if it was never
 		# connected, or if the connection was previously lost.
-		#		3 = An unspecified internal failure,
+		# 3 = An unspecified internal failure,
 		# perhaps out-of-memory, caused the failure.
-		#		4 = Invalid parameters were passed to the receive
+		# 4 = Invalid parameters were passed to the receive
 		# method call.
-		#		5 = Timeout. Data stopped arriving for more than the amount of time specified by
+		# 5 = Timeout. Data stopped arriving for more than the amount of time specified by
 		# the MaxReadIdleMs property.
-		#		6 = The receive was aborted by the application in an event
+		# 6 = The receive was aborted by the application in an event
 		# callback.
-		#		7 = The connection was lost -- the remote peer reset the connection. (The connection
+		# 7 = The connection was lost -- the remote peer reset the connection. (The connection
 		# was forcibly closed by the peer.)
-		#		8 = An established connection was aborted by the software in
+		# 8 = An established connection was aborted by the software in
 		# your host machine. (See https://www.chilkatsoft.com/p/p_299.asp )
-		#		9 = An unspecified fatal
+		# 9 = An unspecified fatal
 		# socket error occurred (less common).
-		#		10 = The connection was closed by the peer.
+		# 10 = The connection was closed by the peer.
 		#
 		#
 		# @return [Bignum]
@@ -1272,30 +1276,30 @@ module Chilkat
 
 		# If a Send method fails, this property can be checked to determine the reason for
 		# failure.
-		#		
-		#		Possible values are:
-		#		
-		#		0 = Success
-		#		1 = An async receive
+		# 
+		# Possible values are:
+		# 
+		# 0 = Success
+		# 1 = An async receive
 		# operation is already in progress.
-		#		2 = The socket is not connected, such as if it was never
+		# 2 = The socket is not connected, such as if it was never
 		# connected, or if the connection was previously lost.
-		#		3 = An unspecified internal failure,
+		# 3 = An unspecified internal failure,
 		# perhaps out-of-memory, caused the failure.
-		#		4 = Invalid parameters were passed to the receive
+		# 4 = Invalid parameters were passed to the receive
 		# method call.
-		#		5 = Timeout. Data stopped arriving for more than the amount of time specified by
+		# 5 = Timeout. Data stopped arriving for more than the amount of time specified by
 		# the MaxReadIdleMs property.
-		#		6 = The receive was aborted by the application in an event
+		# 6 = The receive was aborted by the application in an event
 		# callback.
-		#		7 = The connection was lost -- the remote peer reset the connection. (The connection
+		# 7 = The connection was lost -- the remote peer reset the connection. (The connection
 		# was forcibly closed by the peer.)
-		#		8 = An established connection was aborted by the software in
+		# 8 = An established connection was aborted by the software in
 		# your host machine. (See https://www.chilkatsoft.com/p/p_299.asp )
-		#		9 = An unspecified fatal
+		# 9 = An unspecified fatal
 		# socket error occurred (less common).
-		#		10 = The connection was closed by the peer.
-		#		11 =
+		# 10 = The connection was closed by the peer.
+		# 11 =
 		# Decoding error (possible in SendString when coverting to the StringCharset, or in
 		# SendBytesENC).
 		#
@@ -1333,10 +1337,10 @@ module Chilkat
 
 		# Controls how the data is encoded in the SessionLog. Possible values are "esc" and "hex". The default
 		# value is "esc".
-		#		
-		#		When set to "hex", the bytes are encoded as a hexidecimalized
+		# 
+		# When set to "hex", the bytes are encoded as a hexidecimalized
 		# string.
-		#		The "esc" encoding is a C-string like encoding, and is more compact than hex if most
+		# The "esc" encoding is a C-string like encoding, and is more compact than hex if most
 		# of the data to be logged is text. Printable us-ascii chars are unmodified. Common "C" control chars
 		# are represented as "\r", "\n", "\t", etc. Non-printable and byte values greater than 0x80 are
 		# escaped using a backslash and hex encoding: \xHH. Certain printable chars are backslashed: SPACE,
@@ -1349,10 +1353,10 @@ module Chilkat
 
 		# Controls how the data is encoded in the SessionLog. Possible values are "esc" and "hex". The default
 		# value is "esc".
-		#		
-		#		When set to "hex", the bytes are encoded as a hexidecimalized
+		# 
+		# When set to "hex", the bytes are encoded as a hexidecimalized
 		# string.
-		#		The "esc" encoding is a C-string like encoding, and is more compact than hex if most
+		# The "esc" encoding is a C-string like encoding, and is more compact than hex if most
 		# of the data to be logged is text. Printable us-ascii chars are unmodified. Common "C" control chars
 		# are represented as "\r", "\n", "\t", etc. Non-printable and byte values greater than 0x80 are
 		# escaped using a backslash and hex encoding: \xHH. Certain printable chars are backslashed: SPACE,
@@ -1363,10 +1367,10 @@ module Chilkat
 
 		# Controls how the data is encoded in the SessionLog. Possible values are "esc" and "hex". The default
 		# value is "esc".
-		#		
-		#		When set to "hex", the bytes are encoded as a hexidecimalized
+		# 
+		# When set to "hex", the bytes are encoded as a hexidecimalized
 		# string.
-		#		The "esc" encoding is a C-string like encoding, and is more compact than hex if most
+		# The "esc" encoding is a C-string like encoding, and is more compact than hex if most
 		# of the data to be logged is text. Printable us-ascii chars are unmodified. Common "C" control chars
 		# are represented as "\r", "\n", "\t", etc. Non-printable and byte values greater than 0x80 are
 		# escaped using a backslash and hex encoding: \xHH. Certain printable chars are backslashed: SPACE,
@@ -1377,10 +1381,10 @@ module Chilkat
 
 		# Controls how the data is encoded in the SessionLog. Possible values are "esc" and "hex". The default
 		# value is "esc".
-		#		
-		#		When set to "hex", the bytes are encoded as a hexidecimalized
+		# 
+		# When set to "hex", the bytes are encoded as a hexidecimalized
 		# string.
-		#		The "esc" encoding is a C-string like encoding, and is more compact than hex if most
+		# The "esc" encoding is a C-string like encoding, and is more compact than hex if most
 		# of the data to be logged is text. Printable us-ascii chars are unmodified. Common "C" control chars
 		# are represented as "\r", "\n", "\t", etc. Non-printable and byte values greater than 0x80 are
 		# escaped using a backslash and hex encoding: \xHH. Certain printable chars are backslashed: SPACE,
@@ -1442,14 +1446,14 @@ module Chilkat
 		def put_SocksPassword(newval) end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [Bignum]
@@ -1482,24 +1486,24 @@ module Chilkat
 		def put_SocksUsername(newval) end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
@@ -1509,8 +1513,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -1523,8 +1527,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -1552,8 +1556,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1565,8 +1569,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1589,73 +1593,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -1669,73 +1673,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -1747,73 +1751,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -1825,73 +1829,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -1901,18 +1905,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -1925,18 +1929,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -1947,18 +1951,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -1969,18 +1973,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -2059,27 +2063,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param ckStr [CkString]
@@ -2091,27 +2095,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param newval [String]
@@ -2121,27 +2125,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @return [String]
@@ -2151,27 +2155,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param newval [String]
@@ -2223,8 +2227,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -2233,8 +2237,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -2273,8 +2277,8 @@ module Chilkat
 		# Blocking call to accept the next incoming connection on the socket. ARG1 specifies the maximum time
 		# to wait (in milliseconds). Set this to 0 to wait indefinitely. If successful, a new socket object is
 		# returned.
-		#		
-		#		Important: If accepting an SSL/TLS connection, the SSL handshake is part of
+		# 
+		# Important: If accepting an SSL/TLS connection, the SSL handshake is part of
 		# the connection establishment process. This involves a few back-and-forth messages between the client
 		# and server to establish algorithms and a shared key to create the secure channel. The sending and
 		# receiving of these messages are governed by the MaxReadIdleMs and MaxSendIdleMs properties. If these
@@ -2284,7 +2288,7 @@ module Chilkat
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [CkSocket] 
+		# @return [CkSocket]
 		def AcceptNextConnection(maxWaitMs)
 			# ...
 		end
@@ -2295,16 +2299,16 @@ module Chilkat
 		# If this object is a server-side socket accepting SSL/TLS connections, and wishes to require a
 		# client-side certificate for authentication, then it should make one or more calls to this method to
 		# identify the CA's it will accept for client-side certificates.
-		#		
-		#		If no CA DN's are added
+		# 
+		# If no CA DN's are added
 		# by this method, then client certificates from any root CA are accepted.
-		#		
-		#		Important: If
+		# 
+		# Important: If
 		# calling this method, it must be called before calling InitSslServer.
 		#
 		# @param certAuthDN [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddSslAcceptableClientCaDn(certAuthDN)
 			# ...
 		end
@@ -2314,14 +2318,14 @@ module Chilkat
 		#
 		# Call this to abort an asynchronous socket connect that is running in a background thread.
 		# Asynchronous connects are initiated by calling AsyncAcceptStart.
-		#		
-		#		This functionality is
+		# 
+		# This functionality is
 		# replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52. Applications
 		# should use the new model, which is identified by methods having names ending with "Async" and return
 		# a task object.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncAcceptAbort()
 			# ...
@@ -2334,13 +2338,13 @@ module Chilkat
 		# AsyncAcceptStart). The connected socket can only be retrieved once. A subsequent call to
 		# AsyncAcceptSocket will return a NULL reference until another connection is accepted
 		# asynchronously.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [CkSocket] 
+		# @return [CkSocket]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncAcceptSocket()
 			# ...
@@ -2356,14 +2360,14 @@ module Chilkat
 		# property will become _TRUE_. If the accept was successful, the AsyncAcceptSuccess property is set to
 		# _TRUE_ and the connected socket can be retrieved via the AsyncAcceptSocket method. A debug log is
 		# available in the AsyncAcceptLog property.
-		#		
-		#		This functionality is replaced by the new
+		# 
+		# This functionality is replaced by the new
 		# model for asynchronous programming introduced in Chilkat v9.5.0.52. Applications should use the new
 		# model, which is identified by methods having names ending with "Async" and return a task object.
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncAcceptStart(maxWaitMs)
 			# ...
@@ -2374,13 +2378,13 @@ module Chilkat
 		#
 		# Aborts an asynchronous connect operation running in a background thread (started by calling
 		# AsyncConnectStart).
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncConnectAbort()
 			# ...
@@ -2396,8 +2400,8 @@ module Chilkat
 		# the async connect operation completes, the AsyncConnectFinished property will become _TRUE_. If the
 		# connect was successful, the AsyncConnectSuccess property is set to _TRUE_. A debug log is available
 		# in the AsyncConnectLog property.
-		#		
-		#		This functionality is replaced by the new model for
+		# 
+		# This functionality is replaced by the new model for
 		# asynchronous programming introduced in Chilkat v9.5.0.52. Applications should use the new model,
 		# which is identified by methods having names ending with "Async" and return a task object.
 		#
@@ -2406,7 +2410,7 @@ module Chilkat
 		# @param ssl [TrueClass, FalseClass]
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncConnectStart(hostname, port, ssl, maxWaitMs)
 			# ...
@@ -2417,13 +2421,13 @@ module Chilkat
 		#
 		# Aborts an asynchronous DNS lookup running in a background thread (started via the AsyncDnsStart
 		# method).
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncDnsAbort()
 			# ...
@@ -2440,15 +2444,15 @@ module Chilkat
 		# property is set to _TRUE_. A debug log is available in the AsyncDnsLog property. Finally, the DNS
 		# query result (i.e. IP address) is available in nnn.nnn.nnn.nnn string form in the AsyncDnsResult
 		# property.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		# @param hostname [String]
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncDnsStart(hostname, maxWaitMs)
 			# ...
@@ -2459,13 +2463,13 @@ module Chilkat
 		#
 		# Aborts an asynchronous receive running in a background thread (started via one of the AsyncReceive*
 		# methods).
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveAbort()
 			# ...
@@ -2476,13 +2480,13 @@ module Chilkat
 		#
 		# Initiates a background thread to receive bytes on an already-connected socket (ssl or
 		# non-ssl).
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveBytes()
 			# ...
@@ -2493,14 +2497,14 @@ module Chilkat
 		#
 		# Initiates a background thread to receive exactly ARG1 bytes on an already-connected socket (ssl or
 		# non-ssl).
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveBytesN(numBytes)
 			# ...
@@ -2512,13 +2516,13 @@ module Chilkat
 		# Initiates a background thread to receive text on an already-connected socket (ssl or non-ssl). The
 		# component interprets the received bytes according to the charset specified in the StringCharset
 		# property.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveString()
 			# ...
@@ -2530,14 +2534,14 @@ module Chilkat
 		# Initiates a background thread to receive text on an already-connected socket (ssl or non-ssl). The
 		# asynchronous receive does not complete until a CRLF is received. The component interprets the
 		# received bytes according to the charset specified in the StringCharset property.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveToCRLF()
 			# ...
@@ -2550,14 +2554,14 @@ module Chilkat
 		# asynchronous receive does not complete until the exact string specified by ARG1 is received. The
 		# component interprets the received bytes according to the charset specified in the StringCharset
 		# property.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		# @param matchStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveUntilMatch(matchStr)
 			# ...
@@ -2568,13 +2572,13 @@ module Chilkat
 		#
 		# Aborts an asynchronous send running in a background thread (started via one of the AsyncSend*
 		# methods).
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncSendAbort()
 			# ...
@@ -2585,15 +2589,15 @@ module Chilkat
 		#
 		# Initiates a background thread to send bytes on an already-connected socket (SSL/TLS or unencrypted).
 		# This method is redundant and identical to SendBytes.
-		#		
-		#		This functionality is replaced by
+		# 
+		# This functionality is replaced by
 		# the new model for asynchronous programming introduced in Chilkat v9.5.0.52. Applications should use
 		# the new model, which is identified by methods having names ending with "Async" and return a task
 		# object.
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncSendByteData(data)
 			# ...
@@ -2604,14 +2608,14 @@ module Chilkat
 		#
 		# Initiates a background thread to send bytes on an already-connected socket (ssl or
 		# non-ssl).
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncSendBytes(byteData)
 			# ...
@@ -2623,14 +2627,14 @@ module Chilkat
 		# Initiates a background thread to send text on an already-connected socket (ssl or non-ssl). Before
 		# sending, the ARG1 is first converted (if necessary) to the charset specified by the StringCharset
 		# property.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		# @param stringToSend [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncSendString(stringToSend)
 			# ...
@@ -2644,15 +2648,15 @@ module Chilkat
 		# or close enough in time such that they cannot be serviced immediately. (A typical value to use for
 		# ARG2 is 5.) This method should be called once prior to receiving incoming connection requests via
 		# the AcceptNextConnection or AsyncAcceptStart methods.
-		#		
-		#		Note:This method will find a
+		# 
+		# Note:This method will find a
 		# random unused port to listen on if you bind to port 0. The chosen port is available via the
 		# read-only ListenPort property after this method returns successful.
-		#		
-		#		To bind and listen
+		# 
+		# To bind and listen
 		# using IPv6, set the ListenIpv6 property = _TRUE_ prior to calling this method.
-		#		
-		#		What is
+		# 
+		# What is
 		# a reasonable value for ARG2? The answer depends on how many simultaneous incoming connections could
 		# be expected, and how quickly your application can process an incoming connection and then return to
 		# accept the next connection.
@@ -2660,7 +2664,7 @@ module Chilkat
 		# @param port [Fixnum]
 		# @param backLog [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BindAndListen(port, backLog)
 			# ...
 		end
@@ -2673,7 +2677,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BuildHttpGetRequest(url, outStr)
 			# ...
 		end
@@ -2685,7 +2689,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def buildHttpGetRequest(url)
 			# ...
 		end
@@ -2694,18 +2698,18 @@ module Chilkat
 		# Method: CheckWriteable
 		#
 		# Determines if the socket is writeable. Returns one of the following integer values:
-		#		
-		#		1:
+		# 
+		# 1:
 		# If the socket is connected and ready for writing.
-		#		0: If a timeout occurred or if the
+		# 0: If a timeout occurred or if the
 		# application aborted the method during an event callback.
-		#		-1: The socket is not
+		# -1: The socket is not
 		# connected.
-		#		A ARG1 value of 0 indicates a poll.
+		# A ARG1 value of 0 indicates a poll.
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def CheckWriteable(maxWaitMs)
 			# ...
 		end
@@ -2716,7 +2720,7 @@ module Chilkat
 		# Clears the contents of the SessionLog property.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearSessionLog()
 			# ...
 		end
@@ -2731,7 +2735,7 @@ module Chilkat
 		# other should use a clone.
 		#
 		#
-		# @return [CkSocket] 
+		# @return [CkSocket]
 		def CloneSocket()
 			# ...
 		end
@@ -2744,7 +2748,7 @@ module Chilkat
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Close(maxWaitMs)
 			# ...
 		end
@@ -2755,17 +2759,17 @@ module Chilkat
 		# Establishes a secure SSL/TLS or a plain non-secure TCP connection with a remote host:port. This is a
 		# blocking call. The maximum wait time (in milliseconds) is passed in ARG4. This is the amount of time
 		# the app is willing to wait for the TCP connection to be accepted.
-		#		
-		#		To establish an
+		# 
+		# To establish an
 		# SSL/TLS connection, set ARG3 = _TRUE_, otherwise set ARG3 = _FALSE_ for a normal TCP connection.
 		# Note: The timeouts that apply to the internal SSL/TLS handshaking messages are the MaxReadIdleMs and
 		# MaxSendIdleMs properties.
-		#		
-		#		Note: Connections do not automatically close because of
+		# 
+		# Note: Connections do not automatically close because of
 		# inactivity. A connection will remain open indefinitely even if there is no
 		# activity.
-		#		
-		#		Important: All TCP-based Internet communications, regardless of the protocol
+		# 
+		# Important: All TCP-based Internet communications, regardless of the protocol
 		# (such as HTTP, FTP, SSH, IMAP, POP3, SMTP, etc.), and regardless of SSL/TLS, begin with establishing
 		# a TCP connection to a remote host:port. External security-related infrastructure such as software
 		# firewalls (Windows Firewall), hardware firewalls, anti-virus, at either source or destination (or
@@ -2777,7 +2781,7 @@ module Chilkat
 		# @param ssl [TrueClass, FalseClass]
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Connect(hostname, port, ssl, maxWaitMs)
 			# ...
 		end
@@ -2789,7 +2793,7 @@ module Chilkat
 		# received is unencrypted.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertFromSsl()
 			# ...
 		end
@@ -2800,7 +2804,7 @@ module Chilkat
 		# Converts a non-SSL/TLS connected socket to a secure channel using TLS/SSL.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertToSsl()
 			# ...
 		end
@@ -2811,7 +2815,7 @@ module Chilkat
 		# 
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Dispose()
 			# ...
 		end
@@ -2826,7 +2830,7 @@ module Chilkat
 		# clearing the cache affects all Chilkat objects.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def DnsCacheClear()
 			# ...
 		end
@@ -2842,7 +2846,7 @@ module Chilkat
 		# @param maxWaitMs [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DnsLookup(hostname, maxWaitMs, outStr)
 			# ...
 		end
@@ -2857,7 +2861,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def dnsLookup(hostname, maxWaitMs)
 			# ...
 		end
@@ -2869,7 +2873,7 @@ module Chilkat
 		# an SSL server application. The SSL certificate is initially specified by calling InitSslServer.
 		#
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetMyCert()
 			# ...
 		end
@@ -2881,8 +2885,8 @@ module Chilkat
 		# the server-side of an SSL/TLS connection. The 1st client certificate is at index 0. The
 		# NumReceivedClientCerts property indicates the number of client certificates received during the
 		# SSL/TLS connection establishment. 
-		#		
-		#		Client certificates are customarily only sent when
+		# 
+		# Client certificates are customarily only sent when
 		# the server demands client-side authentication, as in 2-way SSL/TLS. This method provides the ability
 		# for the server to access and examine the client-side certs immediately after a connection is
 		# established. (Of course, if the client-side certs are inadequate for authentication, then the
@@ -2890,7 +2894,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetReceivedClientCert(index)
 			# ...
 		end
@@ -2907,7 +2911,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetSslAcceptableClientCaDn(index, outStr)
 			# ...
 		end
@@ -2923,7 +2927,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getSslAcceptableClientCaDn(index)
 			# ...
 		end
@@ -2937,7 +2941,7 @@ module Chilkat
 		# returned.
 		#
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetSslServerCert()
 			# ...
 		end
@@ -2951,7 +2955,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def InitSslServer(cert)
 			# ...
 		end
@@ -2962,7 +2966,7 @@ module Chilkat
 		# Returns _TRUE_ if the component is unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -2974,7 +2978,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -2986,7 +2990,7 @@ module Chilkat
 		# _FALSE_ if no data is waiting to be read.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def PollDataAvailable()
 			# ...
 		end
@@ -3000,7 +3004,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveBd(binData)
 			# ...
 		end
@@ -3014,7 +3018,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveBdN(numBytes, binData)
 			# ...
 		end
@@ -3028,7 +3032,7 @@ module Chilkat
 		#
 		# @param bUnsigned [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveByte(bUnsigned)
 			# ...
 		end
@@ -3041,7 +3045,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveBytes(outData)
 			# ...
 		end
@@ -3056,7 +3060,7 @@ module Chilkat
 		# @param encodingAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveBytesENC(encodingAlg, outStr)
 			# ...
 		end
@@ -3070,7 +3074,7 @@ module Chilkat
 		#
 		# @param encodingAlg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def receiveBytesENC(encodingAlg)
 			# ...
 		end
@@ -3085,7 +3089,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveBytesN(numBytes, outData)
 			# ...
 		end
@@ -3095,12 +3099,12 @@ module Chilkat
 		#
 		# Receives as much data as is immediately available on a connected TCP socket. If no data is
 		# immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive.
-		# #		
-		#		The received data is appended to the file specified by ARG1.
+		# # 
+		# The received data is appended to the file specified by ARG1.
 		#
 		# @param appendFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveBytesToFile(appendFilename)
 			# ...
 		end
@@ -3111,7 +3115,7 @@ module Chilkat
 		# Receives a 4-byte signed integer and returns the value received. Returns -1 on error.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def ReceiveCount()
 			# ...
 		end
@@ -3128,7 +3132,7 @@ module Chilkat
 		# @param bigEndian [TrueClass, FalseClass]
 		# @param bUnsigned [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveInt16(bigEndian, bUnsigned)
 			# ...
 		end
@@ -3142,7 +3146,7 @@ module Chilkat
 		#
 		# @param bigEndian [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveInt32(bigEndian)
 			# ...
 		end
@@ -3159,7 +3163,7 @@ module Chilkat
 		# @param encodingAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveNBytesENC(numBytes, encodingAlg, outStr)
 			# ...
 		end
@@ -3175,7 +3179,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param encodingAlg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def receiveNBytesENC(numBytes, encodingAlg)
 			# ...
 		end
@@ -3189,7 +3193,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveSb(sb)
 			# ...
 		end
@@ -3203,7 +3207,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveString(outStr)
 			# ...
 		end
@@ -3216,7 +3220,7 @@ module Chilkat
 		# bytes are interpreted according to the StringCharset property and returned as a string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def receiveString()
 			# ...
 		end
@@ -3226,14 +3230,14 @@ module Chilkat
 		#
 		# Same as ReceiveString, but limits the amount of data returned to a maximum of ARG1
 		# bytes.
-		#		(Receives as much data as is immediately available on the TCP/IP or SSL socket. If no
+		# (Receives as much data as is immediately available on the TCP/IP or SSL socket. If no
 		# data is immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive. The
 		# incoming bytes are interpreted according to the StringCharset property and returned as a string.)
 		#
 		# @param maxByteCount [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveStringMaxN(maxByteCount, outStr)
 			# ...
 		end
@@ -3243,13 +3247,13 @@ module Chilkat
 		#
 		# Same as ReceiveString, but limits the amount of data returned to a maximum of ARG1
 		# bytes.
-		#		(Receives as much data as is immediately available on the TCP/IP or SSL socket. If no
+		# (Receives as much data as is immediately available on the TCP/IP or SSL socket. If no
 		# data is immediately available, it waits up to MaxReadIdleMs milliseconds for data to arrive. The
 		# incoming bytes are interpreted according to the StringCharset property and returned as a string.)
 		#
 		# @param maxByteCount [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def receiveStringMaxN(maxByteCount)
 			# ...
 		end
@@ -3263,7 +3267,7 @@ module Chilkat
 		# @param lookForByte [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveStringUntilByte(lookForByte, outStr)
 			# ...
 		end
@@ -3276,7 +3280,7 @@ module Chilkat
 		#
 		# @param lookForByte [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def receiveStringUntilByte(lookForByte)
 			# ...
 		end
@@ -3290,7 +3294,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveToCRLF(outStr)
 			# ...
 		end
@@ -3303,7 +3307,7 @@ module Chilkat
 		# StringCharset property.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def receiveToCRLF()
 			# ...
 		end
@@ -3317,7 +3321,7 @@ module Chilkat
 		# @param lookForByte [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveUntilByte(lookForByte, outBytes)
 			# ...
 		end
@@ -3333,7 +3337,7 @@ module Chilkat
 		# @param matchStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReceiveUntilMatch(matchStr, outStr)
 			# ...
 		end
@@ -3348,7 +3352,7 @@ module Chilkat
 		#
 		# @param matchStr [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def receiveUntilMatch(matchStr)
 			# ...
 		end
@@ -3360,7 +3364,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -3370,29 +3374,29 @@ module Chilkat
 		#
 		# Wait for data to arrive on this socket, or any of the contained sockets if the caller is a "socket
 		# set". 
-		#		(see the example at the link below for more detailed information)
-		#		Waits a maximum
-		# #		of ARG1 milliseconds. If maxWaitMs = 0, then it is effectively a poll. 
-		#		Returns the number
+		# (see the example at the link below for more detailed information)
+		# Waits a maximum
+		# # of ARG1 milliseconds. If maxWaitMs = 0, then it is effectively a poll. 
+		# Returns the number
 		# of sockets with data available for reading.
-		#		If no sockets have data available for reading,
+		# If no sockets have data available for reading,
 		# then a value of 0 is 
-		#		returned. A value of -1 indicates an error condition. 
-		#		Note: when
+		# returned. A value of -1 indicates an error condition. 
+		# Note: when
 		# the remote peer (in this case the web server) disconnects, 
-		#		the socket will appear as if it
+		# the socket will appear as if it
 		# has data available. A "ready" socket 
-		#		is one where either data is available for reading or the
+		# is one where either data is available for reading or the
 		# socket has 
-		#		become disconnected. 
-		#		
-		#		If the peer closed the connection, it will not
+		# become disconnected. 
+		# 
+		# If the peer closed the connection, it will not
 		# be discovered until an attempt is made to read the socket. If the read fails, then the IsConnected
 		# property may be checked to see if the connection was closed.
 		#
 		# @param timeoutMs [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def SelectForReading(timeoutMs)
 			# ...
 		end
@@ -3402,27 +3406,27 @@ module Chilkat
 		#
 		# Waits until it is known that data can be written to one or more sockets without it
 		# blocking.
-		#		
-		#		Socket writes are typically buffered by the operating system. When an
+		# 
+		# Socket writes are typically buffered by the operating system. When an
 		# application writes
-		#		data to a socket, the operating system appends it to the socket's outgoing
+		# data to a socket, the operating system appends it to the socket's outgoing
 		# send buffers
-		#		and returns immediately. However, if the OS send buffers become filled up
+		# and returns immediately. However, if the OS send buffers become filled up
 		# (because
-		#		the sender is sending data faster than the remote receiver can read it), then a
+		# the sender is sending data faster than the remote receiver can read it), then a
 		# socket write
-		#		can block (until outgoing send buffer space becomes available).
-		# #		
-		#		Waits a maximum 
-		#		of ARG1 milliseconds. If maxWaitMs = 0, then it is effectively a
+		# can block (until outgoing send buffer space becomes available).
+		# # 
+		# Waits a maximum 
+		# of ARG1 milliseconds. If maxWaitMs = 0, then it is effectively a
 		# poll. 
-		#		Returns the number of sockets such that data can be written without blocking.
-		#		A
+		# Returns the number of sockets such that data can be written without blocking.
+		# A
 		# value of -1 indicates an error condition.
 		#
 		# @param timeoutMs [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def SelectForWriting(timeoutMs)
 			# ...
 		end
@@ -3433,8 +3437,8 @@ module Chilkat
 		# Sends bytes from ARG1 over a connected SSL or non-SSL socket. If transmission halts for more than
 		# MaxSendIdleMs milliseconds, the send is aborted. This is a blocking (synchronous) method. It returns
 		# only after the bytes have been sent. 
-		#		
-		#		Set ARG2 and/or ARG3 to non-zero values to send a
+		# 
+		# Set ARG2 and/or ARG3 to non-zero values to send a
 		# portion of the ARG1. If ARG2 and ARG3 are both 0, then the entire ARG1 is sent. If ARG2 is non-zero
 		# and ARG3 is zero, then the bytes starting at ARG2 until the end are sent.
 		#
@@ -3442,7 +3446,7 @@ module Chilkat
 		# @param offset [Fixnum]
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendBd(binData, offset, numBytes)
 			# ...
 		end
@@ -3454,7 +3458,7 @@ module Chilkat
 		#
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendByte(value)
 			# ...
 		end
@@ -3468,7 +3472,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendBytes(data)
 			# ...
 		end
@@ -3477,14 +3481,14 @@ module Chilkat
 		# Method: SendBytesENC
 		#
 		# The same as SendBytes, except the bytes are provided in encoded string form as specified by ARG2.
-		# #		The ARG2 can be "Base64", "modBase64", "Base32", "Base58", "UU", "QP" (for quoted-printable),
+		# # The ARG2 can be "Base64", "modBase64", "Base32", "Base58", "UU", "QP" (for quoted-printable),
 		# "URL" (for url-encoding), "Hex", "Q", "B", "url_oauth", "url_rfc1738", "url_rfc2396", and
 		# "url_rfc3986".
 		#
 		# @param encodedBytes [String]
 		# @param encodingAlg [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendBytesENC(encodedBytes, encodingAlg)
 			# ...
 		end
@@ -3499,7 +3503,7 @@ module Chilkat
 		#
 		# @param byteCount [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendCount(byteCount)
 			# ...
 		end
@@ -3514,7 +3518,7 @@ module Chilkat
 		# @param value [Fixnum]
 		# @param bigEndian [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendInt16(value, bigEndian)
 			# ...
 		end
@@ -3529,7 +3533,7 @@ module Chilkat
 		# @param value [Fixnum]
 		# @param bigEndian [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendInt32(value, bigEndian)
 			# ...
 		end
@@ -3540,13 +3544,13 @@ module Chilkat
 		# Sends the contents of ARG1 over the connection. If transmission halts for more than MaxSendIdleMs
 		# milliseconds, the send is aborted. The string is sent in the charset encoding specified by the
 		# StringCharset property.
-		#		
-		#		This is a blocking (synchronous) method. It returns after the
+		# 
+		# This is a blocking (synchronous) method. It returns after the
 		# string has been sent.
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendSb(sb)
 			# ...
 		end
@@ -3557,13 +3561,13 @@ module Chilkat
 		# Sends a string over a connected SSL or non-SSL (TCP/IP) socket. If transmission halts for more than
 		# MaxSendIdleMs milliseconds, the send is aborted. The string is sent in the charset encoding
 		# specified by the StringCharset property.
-		#		
-		#		This is a blocking (synchronous) method. It
+		# 
+		# This is a blocking (synchronous) method. It
 		# returns after the string has been sent.
 		#
 		# @param stringToSend [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendString(stringToSend)
 			# ...
 		end
@@ -3576,7 +3580,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -3590,7 +3594,7 @@ module Chilkat
 		# @param pemDataOrFilename [String]
 		# @param pemPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPem(pemDataOrFilename, pemPassword)
 			# ...
 		end
@@ -3604,7 +3608,7 @@ module Chilkat
 		# @param pfxFilename [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPfx(pfxFilename, pfxPassword)
 			# ...
 		end
@@ -3616,7 +3620,7 @@ module Chilkat
 		#
 		# @param millisec [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SleepMs(millisec)
 			# ...
 		end
@@ -3627,14 +3631,14 @@ module Chilkat
 		# Authenticates with the SSH server using public-key authentication. The corresponding public key must
 		# have been installed on the SSH server for the ARG1. Authentication will succeed if the matching ARG2
 		# is provided.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param sshLogin [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SshAuthenticatePk(sshLogin, privateKey)
 			# ...
 		end
@@ -3649,7 +3653,7 @@ module Chilkat
 		# @param sshLogin [String]
 		# @param sshPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SshAuthenticatePw(sshLogin, sshPassword)
 			# ...
 		end
@@ -3660,7 +3664,7 @@ module Chilkat
 		# Closes the SSH tunnel previously opened by SshOpenTunnel.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SshCloseTunnel()
 			# ...
 		end
@@ -3679,7 +3683,7 @@ module Chilkat
 		# @param ssl [TrueClass, FalseClass]
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [CkSocket] 
+		# @return [CkSocket]
 		def SshOpenChannel(hostname, port, ssl, maxWaitMs)
 			# ...
 		end
@@ -3690,8 +3694,8 @@ module Chilkat
 		# Connects to an SSH server and creates a tunnel for port forwarding. The ARG1 is the hostname (or IP
 		# address) of the SSH server. The ARG2 is typically 22, which is the standard SSH port
 		# number.
-		#		
-		#		An SSH tunneling (port forwarding) session always begins by first calling
+		# 
+		# An SSH tunneling (port forwarding) session always begins by first calling
 		# SshOpenTunnel to connect to the SSH server, followed by calling either SshAuthenticatePw or
 		# SshAuthenticatePk to authenticate. A program would then call SshOpenChannel to connect to the
 		# destination server (via the SSH tunnel). Any number of channels can be opened over the same SSH
@@ -3700,7 +3704,7 @@ module Chilkat
 		# @param sshHostname [String]
 		# @param sshPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SshOpenTunnel(sshHostname, sshPort)
 			# ...
 		end
@@ -3713,7 +3717,7 @@ module Chilkat
 		# convenience.)
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def StartTiming()
 			# ...
 		end
@@ -3722,23 +3726,23 @@ module Chilkat
 		# Method: TakeSocket
 		#
 		# Takes ownership of the ARG1. ARG1 is added to the internal set of connected sockets.
-		#		The
+		# The
 		# caller object is now effectively a "socket set", i.e. a collection of connected
 		# sockets.
-		#		Method calls are routed to the internal sockets based on the value of the
+		# Method calls are routed to the internal sockets based on the value of the
 		# SelectorIndex property.
-		#		For example, if SelectorIndex equals 2, then a call to SendBytes is
+		# For example, if SelectorIndex equals 2, then a call to SendBytes is
 		# actually a call to SendBytes
-		#		on the 3rd socket in the set. (Indexing begins at 0.) Likewise,
+		# on the 3rd socket in the set. (Indexing begins at 0.) Likewise,
 		# getting and setting properties
-		#		are also routed to the contained socket based on SelectorIndex.
+		# are also routed to the contained socket based on SelectorIndex.
 		# It is possible to wait on a 
-		#		set of sockets for data to arrive on any of them by calling
+		# set of sockets for data to arrive on any of them by calling
 		# SelectForReading. See the example link below.
 		#
 		# @param sock [CkSocket]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def TakeSocket(sock)
 			# ...
 		end
@@ -3750,7 +3754,7 @@ module Chilkat
 		# handshake to establish new TLS security params.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def TlsRenegotiate()
 			# ...
 		end
@@ -3763,7 +3767,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -3774,62 +3778,62 @@ module Chilkat
 		# Uses an existing SSH tunnel for the connection. This is an alternative way of establishing a socket
 		# connection through an SSH tunnel. There are four ways of running a TCP or SSL/TLS connection through
 		# an SSH tunnel:
-		#		UseSsh
-		#		Establish the SSH connection and authenticate using the Chilkat
+		# UseSsh
+		# Establish the SSH connection and authenticate using the Chilkat
 		# SSH object. 
-		#		Call UseSsh to indicate that the connections should be made through the SSH
+		# Call UseSsh to indicate that the connections should be made through the SSH
 		# tunnel.
-		#		Call the Connect method to establish the TCP or SSL/TLS connection with a destination
+		# Call the Connect method to establish the TCP or SSL/TLS connection with a destination
 		# host:port. The connection is not direct, but will instead be routed through the SSH tunnel and then
 		# port-forwarded (from the SSH server) to the destination host:port. (Had UseSsh not been called, the
 		# connection would be direct.)
-		#		
-		#		
-		#		SshOpenTunnel
-		#		Call the Socket object's
+		# 
+		# 
+		# SshOpenTunnel
+		# Call the Socket object's
 		# SshOpenTunnel method to connect to an SSH server.
-		#		Call SshAuthenticatePw to authenticate with
+		# Call SshAuthenticatePw to authenticate with
 		# the SSH server.
-		#		Instead of calling Connect to connect with the destination host:port, the
+		# Instead of calling Connect to connect with the destination host:port, the
 		# SshOpenChannel method is called to connect via port-forwarding through the SSH
 		# tunnel.
-		#		
-		#		
-		#		SshTunnel object with dynamic port forwarding
-		#		
-		#		The Chilkat
+		# 
+		# 
+		# SshTunnel object with dynamic port forwarding
+		# 
+		# The Chilkat
 		# SSH Tunnel object is utilized to run in a background thread. It connects and authenticates with an
 		# SSH server, and then listens at a port chosen by the application, and behaves as a SOCKS5 proxy
 		# server.
-		#		The Socket object sets the SOCKS5 proxy host:port to localhost:_LT_port_GT_,
-		# #		The Socket's Connect method is called to connect via the SSH Tunnel. The connection is routed
+		# The Socket object sets the SOCKS5 proxy host:port to localhost:_LT_port_GT_,
+		# # The Socket's Connect method is called to connect via the SSH Tunnel. The connection is routed
 		# through the SSH tunnel via dynamic port forwarding.
-		#		Once the background SSH Tunnel thread is
+		# Once the background SSH Tunnel thread is
 		# running, it can handle any number of incoming connections from the foreground thread, other threads,
 		# or even other programs that are local or remote. Each incoming connection is routed via dynamic port
 		# forwarding to it's chosen destnation host:port on it's own logical SSH
 		# channel.
-		#		
-		#		
-		#		SshTunnel object with hard-coded port forwarding
-		#		
-		#		The
+		# 
+		# 
+		# SshTunnel object with hard-coded port forwarding
+		# 
+		# The
 		# Chilkat SSH Tunnel object is utilized to run in a background thread. It connects and authenticates
 		# with an SSH server, and then listens at a port chosen by the application. It does not behave as a
 		# SOCKS5 proxy server, but instead has a hard-coded destination host:port.
-		#		The Socket's Connect
+		# The Socket's Connect
 		# method is called to connect to localhost:_LT_port_GT_. The connection is automatically
 		# port-forwarded through the SSH tunnel to the hard-coded destination
 		# host:port.
-		#		
-		#		
-		#		
-		#		In all cases, the SSH tunnels can hold both unencrypted TCP
+		# 
+		# 
+		# 
+		# In all cases, the SSH tunnels can hold both unencrypted TCP
 		# connections and SSL/TLS connections.
 		#
 		# @param ssh [CkSsh]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseSsh(ssh)
 			# ...
 		end

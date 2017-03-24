@@ -2,8 +2,8 @@ module Chilkat
 	class CkCompression 
 		# The compression algorithm to be used. Should be set to either "ppmd", "deflate", "zlib", "bzip2", or
 		# "lzw".
-		#		
-		#		Note: The PPMD compression algorithm is only available for 32-bit builds. It is
+		# 
+		# Note: The PPMD compression algorithm is only available for 32-bit builds. It is
 		# not available for 64-bit implementations. Also, this PPMD implementation is the "J" variant.
 		#
 		# @param ckStr [CkString]
@@ -13,8 +13,8 @@ module Chilkat
 
 		# The compression algorithm to be used. Should be set to either "ppmd", "deflate", "zlib", "bzip2", or
 		# "lzw".
-		#		
-		#		Note: The PPMD compression algorithm is only available for 32-bit builds. It is
+		# 
+		# Note: The PPMD compression algorithm is only available for 32-bit builds. It is
 		# not available for 64-bit implementations. Also, this PPMD implementation is the "J" variant.
 		#
 		# @param newval [String]
@@ -22,8 +22,8 @@ module Chilkat
 
 		# The compression algorithm to be used. Should be set to either "ppmd", "deflate", "zlib", "bzip2", or
 		# "lzw".
-		#		
-		#		Note: The PPMD compression algorithm is only available for 32-bit builds. It is
+		# 
+		# Note: The PPMD compression algorithm is only available for 32-bit builds. It is
 		# not available for 64-bit implementations. Also, this PPMD implementation is the "J" variant.
 		#
 		# @return [String]
@@ -31,8 +31,8 @@ module Chilkat
 
 		# The compression algorithm to be used. Should be set to either "ppmd", "deflate", "zlib", "bzip2", or
 		# "lzw".
-		#		
-		#		Note: The PPMD compression algorithm is only available for 32-bit builds. It is
+		# 
+		# Note: The PPMD compression algorithm is only available for 32-bit builds. It is
 		# not available for 64-bit implementations. Also, this PPMD implementation is the "J" variant.
 		#
 		# @param newval [String]
@@ -77,13 +77,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -102,13 +102,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -125,13 +125,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -148,13 +148,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -216,6 +216,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -337,8 +339,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -347,8 +349,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -392,7 +394,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginCompressBytes(data, outData)
 			# ...
 		end
@@ -409,7 +411,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginCompressBytesENC(data, outStr)
 			# ...
 		end
@@ -425,7 +427,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def beginCompressBytesENC(data)
 			# ...
 		end
@@ -441,7 +443,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginCompressString(str, outData)
 			# ...
 		end
@@ -458,7 +460,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginCompressStringENC(str, outStr)
 			# ...
 		end
@@ -474,7 +476,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def beginCompressStringENC(str)
 			# ...
 		end
@@ -489,7 +491,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginDecompressBytes(data, outData)
 			# ...
 		end
@@ -500,8 +502,8 @@ module Chilkat
 		# The input to this method is an encoded string containing compressed data. The EncodingMode property
 		# should be set prior to calling this method. The input string is decoded according to the
 		# EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		A compressed data stream may be
+		# 
+		# A compressed data stream may be
 		# decompressed in chunks by first calling BeginDecompressBytesENC, followed by 0 or more calls to
 		# MoreDecompressedBytesENC, and ending with a final call to EndDecompressBytesENC. Each call returns 0
 		# or more bytes of decompressed data.
@@ -509,7 +511,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginDecompressBytesENC(str, outData)
 			# ...
 		end
@@ -524,7 +526,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginDecompressString(data, outStr)
 			# ...
 		end
@@ -538,7 +540,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def beginDecompressString(data)
 			# ...
 		end
@@ -549,8 +551,8 @@ module Chilkat
 		# The input to this method is an encoded string containing compressed data. The EncodingMode property
 		# should be set prior to calling this method. The input string is decoded according to the
 		# EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		A compressed data stream may be
+		# 
+		# A compressed data stream may be
 		# decompressed in chunks by first calling BeginDecompressStringENC, followed by 0 or more calls to
 		# MoreDecompressedStringENC, and ending with a final call to EndDecompressStringENC. Each call returns
 		# 0 or more characters of decompressed text.
@@ -558,7 +560,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginDecompressStringENC(str, outStr)
 			# ...
 		end
@@ -569,15 +571,15 @@ module Chilkat
 		# The input to this method is an encoded string containing compressed data. The EncodingMode property
 		# should be set prior to calling this method. The input string is decoded according to the
 		# EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		A compressed data stream may be
+		# 
+		# A compressed data stream may be
 		# decompressed in chunks by first calling BeginDecompressStringENC, followed by 0 or more calls to
 		# MoreDecompressedStringENC, and ending with a final call to EndDecompressStringENC. Each call returns
 		# 0 or more characters of decompressed text.
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def beginDecompressStringENC(str)
 			# ...
 		end
@@ -589,7 +591,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressBd(binData)
 			# ...
 		end
@@ -602,7 +604,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressBytes(data, outData)
 			# ...
 		end
@@ -616,7 +618,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressBytesENC(data, outStr)
 			# ...
 		end
@@ -629,7 +631,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def compressBytesENC(data)
 			# ...
 		end
@@ -643,7 +645,7 @@ module Chilkat
 		# @param srcPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressFile(srcPath, destPath)
 			# ...
 		end
@@ -657,7 +659,7 @@ module Chilkat
 		#
 		# @param strm [CkStream]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressStream(strm)
 			# ...
 		end
@@ -670,7 +672,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressString(str, outData)
 			# ...
 		end
@@ -684,7 +686,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressStringENC(str, outStr)
 			# ...
 		end
@@ -697,7 +699,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def compressStringENC(str)
 			# ...
 		end
@@ -709,7 +711,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecompressBd(binData)
 			# ...
 		end
@@ -722,7 +724,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecompressBytes(data, outData)
 			# ...
 		end
@@ -736,7 +738,7 @@ module Chilkat
 		# @param encodedCompressedData [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecompressBytesENC(encodedCompressedData, outData)
 			# ...
 		end
@@ -750,7 +752,7 @@ module Chilkat
 		# @param srcPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecompressFile(srcPath, destPath)
 			# ...
 		end
@@ -764,7 +766,7 @@ module Chilkat
 		#
 		# @param strm [CkStream]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecompressStream(strm)
 			# ...
 		end
@@ -777,7 +779,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecompressString(data, outStr)
 			# ...
 		end
@@ -789,7 +791,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def decompressString(data)
 			# ...
 		end
@@ -803,7 +805,7 @@ module Chilkat
 		# @param encodedCompressedData [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecompressStringENC(encodedCompressedData, outStr)
 			# ...
 		end
@@ -816,7 +818,7 @@ module Chilkat
 		#
 		# @param encodedCompressedData [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def decompressStringENC(encodedCompressedData)
 			# ...
 		end
@@ -826,12 +828,12 @@ module Chilkat
 		#
 		# Must be callled to finalize a compression stream. Returns any remaining (buffered) compressed
 		# data.
-		#		
-		#		(See BeginCompressBytes)
+		# 
+		# (See BeginCompressBytes)
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndCompressBytes(outData)
 			# ...
 		end
@@ -841,12 +843,12 @@ module Chilkat
 		#
 		# Must be callled to finalize a compression stream. Returns any remaining (buffered) compressed
 		# data.
-		#		
-		#		(See BeginCompressBytesENC)
+		# 
+		# (See BeginCompressBytesENC)
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndCompressBytesENC(outStr)
 			# ...
 		end
@@ -856,11 +858,11 @@ module Chilkat
 		#
 		# Must be callled to finalize a compression stream. Returns any remaining (buffered) compressed
 		# data.
-		#		
-		#		(See BeginCompressBytesENC)
+		# 
+		# (See BeginCompressBytesENC)
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def endCompressBytesENC()
 			# ...
 		end
@@ -870,12 +872,12 @@ module Chilkat
 		#
 		# Must be callled to finalize a compression stream. Returns any remaining (buffered) compressed
 		# data.
-		#		
-		#		(See BeginCompressString)
+		# 
+		# (See BeginCompressString)
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndCompressString(outData)
 			# ...
 		end
@@ -885,12 +887,12 @@ module Chilkat
 		#
 		# Must be callled to finalize a compression stream. Returns any remaining (buffered) compressed
 		# data.
-		#		
-		#		(See BeginCompressStringENC)
+		# 
+		# (See BeginCompressStringENC)
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndCompressStringENC(outStr)
 			# ...
 		end
@@ -900,11 +902,11 @@ module Chilkat
 		#
 		# Must be callled to finalize a compression stream. Returns any remaining (buffered) compressed
 		# data.
-		#		
-		#		(See BeginCompressStringENC)
+		# 
+		# (See BeginCompressStringENC)
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def endCompressStringENC()
 			# ...
 		end
@@ -914,12 +916,12 @@ module Chilkat
 		#
 		# Called to finalize the decompression stream and return any remaining (buffered) decompressed
 		# data.
-		#		
-		#		(See BeginDecompressBytes)
+		# 
+		# (See BeginDecompressBytes)
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndDecompressBytes(outData)
 			# ...
 		end
@@ -929,17 +931,17 @@ module Chilkat
 		#
 		# Called to finalize the decompression stream and return any remaining (buffered) decompressed
 		# data.
-		#		
-		#		The input to this method is an encoded string containing compressed data. The
+		# 
+		# The input to this method is an encoded string containing compressed data. The
 		# EncodingMode property should be set prior to calling this method. The input string is decoded
 		# according to the EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		(See
+		# 
+		# (See
 		# BeginDecompressBytesENC)
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndDecompressBytesENC(outData)
 			# ...
 		end
@@ -949,12 +951,12 @@ module Chilkat
 		#
 		# Called to finalize the decompression stream and return any remaining (buffered) decompressed
 		# data.
-		#		
-		#		(See BeginDecompressString)
+		# 
+		# (See BeginDecompressString)
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndDecompressString(outStr)
 			# ...
 		end
@@ -964,11 +966,11 @@ module Chilkat
 		#
 		# Called to finalize the decompression stream and return any remaining (buffered) decompressed
 		# data.
-		#		
-		#		(See BeginDecompressString)
+		# 
+		# (See BeginDecompressString)
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def endDecompressString()
 			# ...
 		end
@@ -978,17 +980,17 @@ module Chilkat
 		#
 		# Called to finalize the decompression stream and return any remaining (buffered) decompressed
 		# data.
-		#		
-		#		The input to this method is an encoded string containing compressed data. The
+		# 
+		# The input to this method is an encoded string containing compressed data. The
 		# EncodingMode property should be set prior to calling this method. The input string is decoded
 		# according to the EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		(See
+		# 
+		# (See
 		# BeginDecompressStringENC)
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndDecompressStringENC(outStr)
 			# ...
 		end
@@ -998,16 +1000,16 @@ module Chilkat
 		#
 		# Called to finalize the decompression stream and return any remaining (buffered) decompressed
 		# data.
-		#		
-		#		The input to this method is an encoded string containing compressed data. The
+		# 
+		# The input to this method is an encoded string containing compressed data. The
 		# EncodingMode property should be set prior to calling this method. The input string is decoded
 		# according to the EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		(See
+		# 
+		# (See
 		# BeginDecompressStringENC)
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def endDecompressStringENC()
 			# ...
 		end
@@ -1020,7 +1022,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoreCompressBytes(data, outData)
 			# ...
 		end
@@ -1033,7 +1035,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoreCompressBytesENC(data, outStr)
 			# ...
 		end
@@ -1045,7 +1047,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def moreCompressBytesENC(data)
 			# ...
 		end
@@ -1058,7 +1060,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoreCompressString(str, outData)
 			# ...
 		end
@@ -1071,7 +1073,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoreCompressStringENC(str, outStr)
 			# ...
 		end
@@ -1083,7 +1085,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def moreCompressStringENC(str)
 			# ...
 		end
@@ -1096,7 +1098,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoreDecompressBytes(data, outData)
 			# ...
 		end
@@ -1107,13 +1109,13 @@ module Chilkat
 		# The input to this method is an encoded string containing compressed data. The EncodingMode property
 		# should be set prior to calling this method. The input string is decoded according to the
 		# EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		(See BeginDecompressBytesENC)
+		# 
+		# (See BeginDecompressBytesENC)
 		#
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoreDecompressBytesENC(str, outData)
 			# ...
 		end
@@ -1126,7 +1128,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoreDecompressString(data, outStr)
 			# ...
 		end
@@ -1138,7 +1140,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def moreDecompressString(data)
 			# ...
 		end
@@ -1149,13 +1151,13 @@ module Chilkat
 		# The input to this method is an encoded string containing compressed data. The EncodingMode property
 		# should be set prior to calling this method. The input string is decoded according to the
 		# EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		(See BeginDecompressStringENC)
+		# 
+		# (See BeginDecompressStringENC)
 		#
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MoreDecompressStringENC(str, outStr)
 			# ...
 		end
@@ -1166,12 +1168,12 @@ module Chilkat
 		# The input to this method is an encoded string containing compressed data. The EncodingMode property
 		# should be set prior to calling this method. The input string is decoded according to the
 		# EncodingMode (hex, base64, etc.) and then decompressed.
-		#		
-		#		(See BeginDecompressStringENC)
+		# 
+		# (See BeginDecompressStringENC)
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def moreDecompressStringENC(str)
 			# ...
 		end
@@ -1183,7 +1185,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1199,7 +1201,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

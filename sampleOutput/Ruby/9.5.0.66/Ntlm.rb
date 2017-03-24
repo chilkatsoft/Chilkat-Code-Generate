@@ -5,8 +5,8 @@ module Chilkat
 		# hex or base64) based on the value of the EncodingMode property. For example, if the EncodingMode
 		# property = "hex", then a hex representation of 8 bytes should be used to set the
 		# ClientChallenge.
-		#		
-		#		Note: Setting the ClientChallenge is optional. If the ClientChallenge
+		# 
+		# Note: Setting the ClientChallenge is optional. If the ClientChallenge
 		# remains unset, it will be automatically set to 8 random bytes when the GenType3 method is called.
 		#
 		# @param ckStr [CkString]
@@ -19,8 +19,8 @@ module Chilkat
 		# hex or base64) based on the value of the EncodingMode property. For example, if the EncodingMode
 		# property = "hex", then a hex representation of 8 bytes should be used to set the
 		# ClientChallenge.
-		#		
-		#		Note: Setting the ClientChallenge is optional. If the ClientChallenge
+		# 
+		# Note: Setting the ClientChallenge is optional. If the ClientChallenge
 		# remains unset, it will be automatically set to 8 random bytes when the GenType3 method is called.
 		#
 		# @param newval [String]
@@ -31,8 +31,8 @@ module Chilkat
 		# hex or base64) based on the value of the EncodingMode property. For example, if the EncodingMode
 		# property = "hex", then a hex representation of 8 bytes should be used to set the
 		# ClientChallenge.
-		#		
-		#		Note: Setting the ClientChallenge is optional. If the ClientChallenge
+		# 
+		# Note: Setting the ClientChallenge is optional. If the ClientChallenge
 		# remains unset, it will be automatically set to 8 random bytes when the GenType3 method is called.
 		#
 		# @return [String]
@@ -43,8 +43,8 @@ module Chilkat
 		# hex or base64) based on the value of the EncodingMode property. For example, if the EncodingMode
 		# property = "hex", then a hex representation of 8 bytes should be used to set the
 		# ClientChallenge.
-		#		
-		#		Note: Setting the ClientChallenge is optional. If the ClientChallenge
+		# 
+		# Note: Setting the ClientChallenge is optional. If the ClientChallenge
 		# remains unset, it will be automatically set to 8 random bytes when the GenType3 method is called.
 		#
 		# @param newval [String]
@@ -55,13 +55,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -80,13 +80,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -103,13 +103,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -126,13 +126,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -264,80 +264,80 @@ module Chilkat
 		# server. These flags have a default value and should ONLY be set by a programmer that is an expert in
 		# the NTLM protocol and knows what they mean. In general, this property should be left at it's default
 		# value.
-		#		
-		#		The flags are represented as a string of letters, where each letter represents a
+		# 
+		# The flags are represented as a string of letters, where each letter represents a
 		# bit. The full set of possible flags (bit values) are shown below:
-		#		
-		#		NegotiateUnicode
+		# 
+		# NegotiateUnicode
 		# 0x00000001
-		#		NegotiateOEM 0x00000002
-		#		RequestTarget 0x00000004
-		#		NegotiateSign
+		# NegotiateOEM 0x00000002
+		# RequestTarget 0x00000004
+		# NegotiateSign
 		# 0x00000010
-		#		NegotiateSeal 0x00000020
-		#		NegotiateDatagramStyle
+		# NegotiateSeal 0x00000020
+		# NegotiateDatagramStyle
 		# 0x00000040
-		#		NegotiateLanManagerKey 0x00000080
-		#		NegotiateNetware
+		# NegotiateLanManagerKey 0x00000080
+		# NegotiateNetware
 		# 0x00000100
-		#		NegotiateNTLMKey 0x00000200
-		#		NegotiateDomainSupplied
+		# NegotiateNTLMKey 0x00000200
+		# NegotiateDomainSupplied
 		# 0x00001000
-		#		NegotiateWorkstationSupplied 0x00002000
-		#		NegotiateLocalCall
+		# NegotiateWorkstationSupplied 0x00002000
+		# NegotiateLocalCall
 		# 0x00004000
-		#		NegotiateAlwaysSign 0x00008000
-		#		TargetTypeDomain
+		# NegotiateAlwaysSign 0x00008000
+		# TargetTypeDomain
 		# 0x00010000
-		#		TargetTypeServer 0x00020000
-		#		TargetTypeShare
+		# TargetTypeServer 0x00020000
+		# TargetTypeShare
 		# 0x00040000
-		#		NegotiateNTLM2Key 0x00080000
-		#		RequestInitResponse
+		# NegotiateNTLM2Key 0x00080000
+		# RequestInitResponse
 		# 0x00100000
-		#		RequestAcceptResponse 0x00200000
-		#		RequestNonNTSessionKey
+		# RequestAcceptResponse 0x00200000
+		# RequestNonNTSessionKey
 		# 0x00400000
-		#		NegotiateTargetInfo 0x00800000
-		#		Negotiate128
+		# NegotiateTargetInfo 0x00800000
+		# Negotiate128
 		# 0x20000000
-		#		NegotiateKeyExchange 0x40000000
-		#		Negotiate56 0x80000000
-		#		
-		#		The
+		# NegotiateKeyExchange 0x40000000
+		# Negotiate56 0x80000000
+		# 
+		# The
 		# mapping of letters to bit values are as follows:
-		#		
-		#		0x01 - "A"
-		#		0x02 - "B"
-		#		0x04
+		# 
+		# 0x01 - "A"
+		# 0x02 - "B"
+		# 0x04
 		# - "C"
-		#		0x10 - "D"
-		#		0x20 - "E"
-		#		0x40 - "F"
-		#		0x80 - "G"
-		#		0x200 -
+		# 0x10 - "D"
+		# 0x20 - "E"
+		# 0x40 - "F"
+		# 0x80 - "G"
+		# 0x200 -
 		# "H"
-		#		0x400 - "I"
-		#		0x800 - "J"
-		#		0x1000 - "K"
-		#		0x2000 - "L"
-		#		0x8000 -
+		# 0x400 - "I"
+		# 0x800 - "J"
+		# 0x1000 - "K"
+		# 0x2000 - "L"
+		# 0x8000 -
 		# "M"
-		#		0x10000 - "N"
-		#		0x20000 - "O"
-		#		0x40000 - "P"
-		#		0x80000 - "Q"
-		#		0x100000 -
+		# 0x10000 - "N"
+		# 0x20000 - "O"
+		# 0x40000 - "P"
+		# 0x80000 - "Q"
+		# 0x100000 -
 		# "R"
-		#		0x400000 - "S"
-		#		0x800000 - "T"
-		#		0x2000000 - "U"
-		#		0x20000000 -
+		# 0x400000 - "S"
+		# 0x800000 - "T"
+		# 0x2000000 - "U"
+		# 0x20000000 -
 		# "V"
-		#		0x40000000 - "W"
-		#		0x80000000 - "X"
-		#		
-		#		The default Flags value has the
+		# 0x40000000 - "W"
+		# 0x80000000 - "X"
+		# 
+		# The default Flags value has the
 		# following flags set: NegotiateUnicode, NegotiateOEM, RequestTarget, NegotiateNTLMKey,
 		# NegotiateAlwaysSign, NegotiateNTLM2Key. The corresponds to the string "ABCHMQ".
 		#
@@ -350,80 +350,80 @@ module Chilkat
 		# server. These flags have a default value and should ONLY be set by a programmer that is an expert in
 		# the NTLM protocol and knows what they mean. In general, this property should be left at it's default
 		# value.
-		#		
-		#		The flags are represented as a string of letters, where each letter represents a
+		# 
+		# The flags are represented as a string of letters, where each letter represents a
 		# bit. The full set of possible flags (bit values) are shown below:
-		#		
-		#		NegotiateUnicode
+		# 
+		# NegotiateUnicode
 		# 0x00000001
-		#		NegotiateOEM 0x00000002
-		#		RequestTarget 0x00000004
-		#		NegotiateSign
+		# NegotiateOEM 0x00000002
+		# RequestTarget 0x00000004
+		# NegotiateSign
 		# 0x00000010
-		#		NegotiateSeal 0x00000020
-		#		NegotiateDatagramStyle
+		# NegotiateSeal 0x00000020
+		# NegotiateDatagramStyle
 		# 0x00000040
-		#		NegotiateLanManagerKey 0x00000080
-		#		NegotiateNetware
+		# NegotiateLanManagerKey 0x00000080
+		# NegotiateNetware
 		# 0x00000100
-		#		NegotiateNTLMKey 0x00000200
-		#		NegotiateDomainSupplied
+		# NegotiateNTLMKey 0x00000200
+		# NegotiateDomainSupplied
 		# 0x00001000
-		#		NegotiateWorkstationSupplied 0x00002000
-		#		NegotiateLocalCall
+		# NegotiateWorkstationSupplied 0x00002000
+		# NegotiateLocalCall
 		# 0x00004000
-		#		NegotiateAlwaysSign 0x00008000
-		#		TargetTypeDomain
+		# NegotiateAlwaysSign 0x00008000
+		# TargetTypeDomain
 		# 0x00010000
-		#		TargetTypeServer 0x00020000
-		#		TargetTypeShare
+		# TargetTypeServer 0x00020000
+		# TargetTypeShare
 		# 0x00040000
-		#		NegotiateNTLM2Key 0x00080000
-		#		RequestInitResponse
+		# NegotiateNTLM2Key 0x00080000
+		# RequestInitResponse
 		# 0x00100000
-		#		RequestAcceptResponse 0x00200000
-		#		RequestNonNTSessionKey
+		# RequestAcceptResponse 0x00200000
+		# RequestNonNTSessionKey
 		# 0x00400000
-		#		NegotiateTargetInfo 0x00800000
-		#		Negotiate128
+		# NegotiateTargetInfo 0x00800000
+		# Negotiate128
 		# 0x20000000
-		#		NegotiateKeyExchange 0x40000000
-		#		Negotiate56 0x80000000
-		#		
-		#		The
+		# NegotiateKeyExchange 0x40000000
+		# Negotiate56 0x80000000
+		# 
+		# The
 		# mapping of letters to bit values are as follows:
-		#		
-		#		0x01 - "A"
-		#		0x02 - "B"
-		#		0x04
+		# 
+		# 0x01 - "A"
+		# 0x02 - "B"
+		# 0x04
 		# - "C"
-		#		0x10 - "D"
-		#		0x20 - "E"
-		#		0x40 - "F"
-		#		0x80 - "G"
-		#		0x200 -
+		# 0x10 - "D"
+		# 0x20 - "E"
+		# 0x40 - "F"
+		# 0x80 - "G"
+		# 0x200 -
 		# "H"
-		#		0x400 - "I"
-		#		0x800 - "J"
-		#		0x1000 - "K"
-		#		0x2000 - "L"
-		#		0x8000 -
+		# 0x400 - "I"
+		# 0x800 - "J"
+		# 0x1000 - "K"
+		# 0x2000 - "L"
+		# 0x8000 -
 		# "M"
-		#		0x10000 - "N"
-		#		0x20000 - "O"
-		#		0x40000 - "P"
-		#		0x80000 - "Q"
-		#		0x100000 -
+		# 0x10000 - "N"
+		# 0x20000 - "O"
+		# 0x40000 - "P"
+		# 0x80000 - "Q"
+		# 0x100000 -
 		# "R"
-		#		0x400000 - "S"
-		#		0x800000 - "T"
-		#		0x2000000 - "U"
-		#		0x20000000 -
+		# 0x400000 - "S"
+		# 0x800000 - "T"
+		# 0x2000000 - "U"
+		# 0x20000000 -
 		# "V"
-		#		0x40000000 - "W"
-		#		0x80000000 - "X"
-		#		
-		#		The default Flags value has the
+		# 0x40000000 - "W"
+		# 0x80000000 - "X"
+		# 
+		# The default Flags value has the
 		# following flags set: NegotiateUnicode, NegotiateOEM, RequestTarget, NegotiateNTLMKey,
 		# NegotiateAlwaysSign, NegotiateNTLM2Key. The corresponds to the string "ABCHMQ".
 		#
@@ -434,80 +434,80 @@ module Chilkat
 		# server. These flags have a default value and should ONLY be set by a programmer that is an expert in
 		# the NTLM protocol and knows what they mean. In general, this property should be left at it's default
 		# value.
-		#		
-		#		The flags are represented as a string of letters, where each letter represents a
+		# 
+		# The flags are represented as a string of letters, where each letter represents a
 		# bit. The full set of possible flags (bit values) are shown below:
-		#		
-		#		NegotiateUnicode
+		# 
+		# NegotiateUnicode
 		# 0x00000001
-		#		NegotiateOEM 0x00000002
-		#		RequestTarget 0x00000004
-		#		NegotiateSign
+		# NegotiateOEM 0x00000002
+		# RequestTarget 0x00000004
+		# NegotiateSign
 		# 0x00000010
-		#		NegotiateSeal 0x00000020
-		#		NegotiateDatagramStyle
+		# NegotiateSeal 0x00000020
+		# NegotiateDatagramStyle
 		# 0x00000040
-		#		NegotiateLanManagerKey 0x00000080
-		#		NegotiateNetware
+		# NegotiateLanManagerKey 0x00000080
+		# NegotiateNetware
 		# 0x00000100
-		#		NegotiateNTLMKey 0x00000200
-		#		NegotiateDomainSupplied
+		# NegotiateNTLMKey 0x00000200
+		# NegotiateDomainSupplied
 		# 0x00001000
-		#		NegotiateWorkstationSupplied 0x00002000
-		#		NegotiateLocalCall
+		# NegotiateWorkstationSupplied 0x00002000
+		# NegotiateLocalCall
 		# 0x00004000
-		#		NegotiateAlwaysSign 0x00008000
-		#		TargetTypeDomain
+		# NegotiateAlwaysSign 0x00008000
+		# TargetTypeDomain
 		# 0x00010000
-		#		TargetTypeServer 0x00020000
-		#		TargetTypeShare
+		# TargetTypeServer 0x00020000
+		# TargetTypeShare
 		# 0x00040000
-		#		NegotiateNTLM2Key 0x00080000
-		#		RequestInitResponse
+		# NegotiateNTLM2Key 0x00080000
+		# RequestInitResponse
 		# 0x00100000
-		#		RequestAcceptResponse 0x00200000
-		#		RequestNonNTSessionKey
+		# RequestAcceptResponse 0x00200000
+		# RequestNonNTSessionKey
 		# 0x00400000
-		#		NegotiateTargetInfo 0x00800000
-		#		Negotiate128
+		# NegotiateTargetInfo 0x00800000
+		# Negotiate128
 		# 0x20000000
-		#		NegotiateKeyExchange 0x40000000
-		#		Negotiate56 0x80000000
-		#		
-		#		The
+		# NegotiateKeyExchange 0x40000000
+		# Negotiate56 0x80000000
+		# 
+		# The
 		# mapping of letters to bit values are as follows:
-		#		
-		#		0x01 - "A"
-		#		0x02 - "B"
-		#		0x04
+		# 
+		# 0x01 - "A"
+		# 0x02 - "B"
+		# 0x04
 		# - "C"
-		#		0x10 - "D"
-		#		0x20 - "E"
-		#		0x40 - "F"
-		#		0x80 - "G"
-		#		0x200 -
+		# 0x10 - "D"
+		# 0x20 - "E"
+		# 0x40 - "F"
+		# 0x80 - "G"
+		# 0x200 -
 		# "H"
-		#		0x400 - "I"
-		#		0x800 - "J"
-		#		0x1000 - "K"
-		#		0x2000 - "L"
-		#		0x8000 -
+		# 0x400 - "I"
+		# 0x800 - "J"
+		# 0x1000 - "K"
+		# 0x2000 - "L"
+		# 0x8000 -
 		# "M"
-		#		0x10000 - "N"
-		#		0x20000 - "O"
-		#		0x40000 - "P"
-		#		0x80000 - "Q"
-		#		0x100000 -
+		# 0x10000 - "N"
+		# 0x20000 - "O"
+		# 0x40000 - "P"
+		# 0x80000 - "Q"
+		# 0x100000 -
 		# "R"
-		#		0x400000 - "S"
-		#		0x800000 - "T"
-		#		0x2000000 - "U"
-		#		0x20000000 -
+		# 0x400000 - "S"
+		# 0x800000 - "T"
+		# 0x2000000 - "U"
+		# 0x20000000 -
 		# "V"
-		#		0x40000000 - "W"
-		#		0x80000000 - "X"
-		#		
-		#		The default Flags value has the
+		# 0x40000000 - "W"
+		# 0x80000000 - "X"
+		# 
+		# The default Flags value has the
 		# following flags set: NegotiateUnicode, NegotiateOEM, RequestTarget, NegotiateNTLMKey,
 		# NegotiateAlwaysSign, NegotiateNTLM2Key. The corresponds to the string "ABCHMQ".
 		#
@@ -518,80 +518,80 @@ module Chilkat
 		# server. These flags have a default value and should ONLY be set by a programmer that is an expert in
 		# the NTLM protocol and knows what they mean. In general, this property should be left at it's default
 		# value.
-		#		
-		#		The flags are represented as a string of letters, where each letter represents a
+		# 
+		# The flags are represented as a string of letters, where each letter represents a
 		# bit. The full set of possible flags (bit values) are shown below:
-		#		
-		#		NegotiateUnicode
+		# 
+		# NegotiateUnicode
 		# 0x00000001
-		#		NegotiateOEM 0x00000002
-		#		RequestTarget 0x00000004
-		#		NegotiateSign
+		# NegotiateOEM 0x00000002
+		# RequestTarget 0x00000004
+		# NegotiateSign
 		# 0x00000010
-		#		NegotiateSeal 0x00000020
-		#		NegotiateDatagramStyle
+		# NegotiateSeal 0x00000020
+		# NegotiateDatagramStyle
 		# 0x00000040
-		#		NegotiateLanManagerKey 0x00000080
-		#		NegotiateNetware
+		# NegotiateLanManagerKey 0x00000080
+		# NegotiateNetware
 		# 0x00000100
-		#		NegotiateNTLMKey 0x00000200
-		#		NegotiateDomainSupplied
+		# NegotiateNTLMKey 0x00000200
+		# NegotiateDomainSupplied
 		# 0x00001000
-		#		NegotiateWorkstationSupplied 0x00002000
-		#		NegotiateLocalCall
+		# NegotiateWorkstationSupplied 0x00002000
+		# NegotiateLocalCall
 		# 0x00004000
-		#		NegotiateAlwaysSign 0x00008000
-		#		TargetTypeDomain
+		# NegotiateAlwaysSign 0x00008000
+		# TargetTypeDomain
 		# 0x00010000
-		#		TargetTypeServer 0x00020000
-		#		TargetTypeShare
+		# TargetTypeServer 0x00020000
+		# TargetTypeShare
 		# 0x00040000
-		#		NegotiateNTLM2Key 0x00080000
-		#		RequestInitResponse
+		# NegotiateNTLM2Key 0x00080000
+		# RequestInitResponse
 		# 0x00100000
-		#		RequestAcceptResponse 0x00200000
-		#		RequestNonNTSessionKey
+		# RequestAcceptResponse 0x00200000
+		# RequestNonNTSessionKey
 		# 0x00400000
-		#		NegotiateTargetInfo 0x00800000
-		#		Negotiate128
+		# NegotiateTargetInfo 0x00800000
+		# Negotiate128
 		# 0x20000000
-		#		NegotiateKeyExchange 0x40000000
-		#		Negotiate56 0x80000000
-		#		
-		#		The
+		# NegotiateKeyExchange 0x40000000
+		# Negotiate56 0x80000000
+		# 
+		# The
 		# mapping of letters to bit values are as follows:
-		#		
-		#		0x01 - "A"
-		#		0x02 - "B"
-		#		0x04
+		# 
+		# 0x01 - "A"
+		# 0x02 - "B"
+		# 0x04
 		# - "C"
-		#		0x10 - "D"
-		#		0x20 - "E"
-		#		0x40 - "F"
-		#		0x80 - "G"
-		#		0x200 -
+		# 0x10 - "D"
+		# 0x20 - "E"
+		# 0x40 - "F"
+		# 0x80 - "G"
+		# 0x200 -
 		# "H"
-		#		0x400 - "I"
-		#		0x800 - "J"
-		#		0x1000 - "K"
-		#		0x2000 - "L"
-		#		0x8000 -
+		# 0x400 - "I"
+		# 0x800 - "J"
+		# 0x1000 - "K"
+		# 0x2000 - "L"
+		# 0x8000 -
 		# "M"
-		#		0x10000 - "N"
-		#		0x20000 - "O"
-		#		0x40000 - "P"
-		#		0x80000 - "Q"
-		#		0x100000 -
+		# 0x10000 - "N"
+		# 0x20000 - "O"
+		# 0x40000 - "P"
+		# 0x80000 - "Q"
+		# 0x100000 -
 		# "R"
-		#		0x400000 - "S"
-		#		0x800000 - "T"
-		#		0x2000000 - "U"
-		#		0x20000000 -
+		# 0x400000 - "S"
+		# 0x800000 - "T"
+		# 0x2000000 - "U"
+		# 0x20000000 -
 		# "V"
-		#		0x40000000 - "W"
-		#		0x80000000 - "X"
-		#		
-		#		The default Flags value has the
+		# 0x40000000 - "W"
+		# 0x80000000 - "X"
+		# 
+		# The default Flags value has the
 		# following flags set: NegotiateUnicode, NegotiateOEM, RequestTarget, NegotiateNTLMKey,
 		# NegotiateAlwaysSign, NegotiateNTLM2Key. The corresponds to the string "ABCHMQ".
 		#
@@ -832,13 +832,13 @@ module Chilkat
 		def put_Password(newval) end
 
 		# This is similar to the ClientChallenge in that it must contain 8 bytes. 
-		#		The ServerChallenge
+		# The ServerChallenge
 		# is passed in the Type 2 message from the server to the client. Because this is a string property,
 		# the bytes are get/set in encoded form (such as hex or base64) based on the value of the EncodingMode
 		# property. For example, if the EncodingMode property = "hex", then a hex representation of 8 bytes
 		# should be used to set the ServerChallenge.
-		#		
-		#		Note: Setting the ServerChallenge is
+		# 
+		# Note: Setting the ServerChallenge is
 		# optional. If the ServerChallenge remains unset, it will be automatically set to 8 random bytes when
 		# the GenType2 method is called.
 		#
@@ -848,13 +848,13 @@ module Chilkat
 		def get_ServerChallenge(ckStr) end
 
 		# This is similar to the ClientChallenge in that it must contain 8 bytes. 
-		#		The ServerChallenge
+		# The ServerChallenge
 		# is passed in the Type 2 message from the server to the client. Because this is a string property,
 		# the bytes are get/set in encoded form (such as hex or base64) based on the value of the EncodingMode
 		# property. For example, if the EncodingMode property = "hex", then a hex representation of 8 bytes
 		# should be used to set the ServerChallenge.
-		#		
-		#		Note: Setting the ServerChallenge is
+		# 
+		# Note: Setting the ServerChallenge is
 		# optional. If the ServerChallenge remains unset, it will be automatically set to 8 random bytes when
 		# the GenType2 method is called.
 		#
@@ -862,13 +862,13 @@ module Chilkat
 		def put_ServerChallenge(newval) end
 
 		# This is similar to the ClientChallenge in that it must contain 8 bytes. 
-		#		The ServerChallenge
+		# The ServerChallenge
 		# is passed in the Type 2 message from the server to the client. Because this is a string property,
 		# the bytes are get/set in encoded form (such as hex or base64) based on the value of the EncodingMode
 		# property. For example, if the EncodingMode property = "hex", then a hex representation of 8 bytes
 		# should be used to set the ServerChallenge.
-		#		
-		#		Note: Setting the ServerChallenge is
+		# 
+		# Note: Setting the ServerChallenge is
 		# optional. If the ServerChallenge remains unset, it will be automatically set to 8 random bytes when
 		# the GenType2 method is called.
 		#
@@ -876,13 +876,13 @@ module Chilkat
 		def serverChallenge() end
 
 		# This is similar to the ClientChallenge in that it must contain 8 bytes. 
-		#		The ServerChallenge
+		# The ServerChallenge
 		# is passed in the Type 2 message from the server to the client. Because this is a string property,
 		# the bytes are get/set in encoded form (such as hex or base64) based on the value of the EncodingMode
 		# property. For example, if the EncodingMode property = "hex", then a hex representation of 8 bytes
 		# should be used to set the ServerChallenge.
-		#		
-		#		Note: Setting the ServerChallenge is
+		# 
+		# Note: Setting the ServerChallenge is
 		# optional. If the ServerChallenge remains unset, it will be automatically set to 8 random bytes when
 		# the GenType2 method is called.
 		#
@@ -947,8 +947,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -957,8 +957,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1024,7 +1024,7 @@ module Chilkat
 		# @param msg1 [String]
 		# @param msg2 [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompareType3(msg1, msg2)
 			# ...
 		end
@@ -1037,7 +1037,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenType1(outStr)
 			# ...
 		end
@@ -1049,7 +1049,7 @@ module Chilkat
 		# NTLM authentication exchange.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def genType1()
 			# ...
 		end
@@ -1064,7 +1064,7 @@ module Chilkat
 		# @param type1Msg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenType2(type1Msg, outStr)
 			# ...
 		end
@@ -1078,7 +1078,7 @@ module Chilkat
 		#
 		# @param type1Msg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def genType2(type1Msg)
 			# ...
 		end
@@ -1096,7 +1096,7 @@ module Chilkat
 		# @param type2Msg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenType3(type2Msg, outStr)
 			# ...
 		end
@@ -1113,7 +1113,7 @@ module Chilkat
 		#
 		# @param type2Msg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def genType3(type2Msg)
 			# ...
 		end
@@ -1124,8 +1124,8 @@ module Chilkat
 		# The server-side should call this method with the Type 3 message received from the client. The
 		# LoadType3 method sets the following properties: Username, Domain, Workstation, and ClientChallenge,
 		# all of which are embedded within the Type 3 message.
-		#		
-		#		The server-side code may then use
+		# 
+		# The server-side code may then use
 		# the Username to lookup the associated password and then it will itself call the GenType3 method to
 		# do the same computation as done by the client. The server then compares it's computed Type 3 message
 		# with the Type 3 message received from the client. If the Type 3 messages are exactly the same, then
@@ -1134,7 +1134,7 @@ module Chilkat
 		#
 		# @param type3Msg [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadType3(type3Msg)
 			# ...
 		end
@@ -1148,7 +1148,7 @@ module Chilkat
 		# @param type1Msg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ParseType1(type1Msg, outStr)
 			# ...
 		end
@@ -1161,7 +1161,7 @@ module Chilkat
 		#
 		# @param type1Msg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def parseType1(type1Msg)
 			# ...
 		end
@@ -1175,7 +1175,7 @@ module Chilkat
 		# @param type2Msg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ParseType2(type2Msg, outStr)
 			# ...
 		end
@@ -1188,7 +1188,7 @@ module Chilkat
 		#
 		# @param type2Msg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def parseType2(type2Msg)
 			# ...
 		end
@@ -1202,7 +1202,7 @@ module Chilkat
 		# @param type3Msg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ParseType3(type3Msg, outStr)
 			# ...
 		end
@@ -1215,7 +1215,7 @@ module Chilkat
 		#
 		# @param type3Msg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def parseType3(type3Msg)
 			# ...
 		end
@@ -1227,7 +1227,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1242,7 +1242,7 @@ module Chilkat
 		# @param flagLetter [String]
 		# @param onOrOff [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetFlag(flagLetter, onOrOff)
 			# ...
 		end
@@ -1254,7 +1254,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

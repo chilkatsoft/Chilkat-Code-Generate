@@ -57,8 +57,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -67,8 +67,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -82,7 +82,7 @@ module Chilkat
 		#
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Append(value)
 			# ...
 		end
@@ -100,7 +100,7 @@ module Chilkat
 		# @param offset [Fixnum]
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendBd(binData, charset, offset, numBytes)
 			# ...
 		end
@@ -113,7 +113,7 @@ module Chilkat
 		# @param binaryData [CkByteData]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendEncoded(binaryData, encoding)
 			# ...
 		end
@@ -125,7 +125,7 @@ module Chilkat
 		#
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendInt(value)
 			# ...
 		end
@@ -137,7 +137,7 @@ module Chilkat
 		#
 		# @param value [Bignum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendInt64(value)
 			# ...
 		end
@@ -151,7 +151,7 @@ module Chilkat
 		# @param value [String]
 		# @param crlf [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendLine(value, crlf)
 			# ...
 		end
@@ -163,7 +163,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendSb(sb)
 			# ...
 		end
@@ -174,7 +174,7 @@ module Chilkat
 		# Removes all characters from the current StringBuilder instance.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -188,7 +188,7 @@ module Chilkat
 		# @param str [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Contains(str, caseSensitive)
 			# ...
 		end
@@ -202,7 +202,7 @@ module Chilkat
 		# @param str [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ContentsEqual(str, caseSensitive)
 			# ...
 		end
@@ -216,7 +216,7 @@ module Chilkat
 		# @param sb [CkStringBuilder]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ContentsEqualSb(sb, caseSensitive)
 			# ...
 		end
@@ -229,15 +229,15 @@ module Chilkat
 		# "url_rc1738", "url_rfc2396", "url_rfc3986", "url_oauth", "uu", "modBase64", or "html" (for HTML
 		# entity encoding). The full up-to-date list of supported binary encodings is available at the link
 		# entitled "Supported Binary Encodings" below.
-		#		
-		#		Note: This method can only be called if
+		# 
+		# Note: This method can only be called if
 		# the encoded content decodes to a string. The ARG2 indicates the charset to be used in intepreting
 		# the decoded bytes. For example, the ARG2 can be "utf-8", "utf-16", "iso-8859-1", "shift_JIS", etc.
 		#
 		# @param encoding [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Decode(encoding, charset)
 			# ...
 		end
@@ -254,7 +254,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Encode(encoding, charset)
 			# ...
 		end
@@ -268,7 +268,7 @@ module Chilkat
 		# @param substr [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndsWith(substr, caseSensitive)
 			# ...
 		end
@@ -279,7 +279,7 @@ module Chilkat
 		# Decodes HTML entities. See HTML entities for more information about HTML entities.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EntityDecode()
 			# ...
 		end
@@ -295,7 +295,7 @@ module Chilkat
 		# @param endMark [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAfterBetween(searchAfter, beginMark, endMark, outStr)
 			# ...
 		end
@@ -310,7 +310,7 @@ module Chilkat
 		# @param beginMark [String]
 		# @param endMark [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getAfterBetween(searchAfter, beginMark, endMark)
 			# ...
 		end
@@ -322,7 +322,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAsString(outStr)
 			# ...
 		end
@@ -333,7 +333,7 @@ module Chilkat
 		# Returns the contents as a string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getAsString()
 			# ...
 		end
@@ -347,7 +347,7 @@ module Chilkat
 		# @param endMark [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetBetween(beginMark, endMark, outStr)
 			# ...
 		end
@@ -360,7 +360,7 @@ module Chilkat
 		# @param beginMark [String]
 		# @param endMark [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getBetween(beginMark, endMark)
 			# ...
 		end
@@ -377,7 +377,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetDecoded(encoding, outBytes)
 			# ...
 		end
@@ -391,15 +391,15 @@ module Chilkat
 		# "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding). The full up-to-date list of
 		# supported binary encodings is available at the link entitled "Supported Binary Encodings"
 		# below.
-		#		
-		#		Note: The Encode method modifies the content of this object. The GetEncoded
+		# 
+		# Note: The Encode method modifies the content of this object. The GetEncoded
 		# method leaves this object's content unmodified.
 		#
 		# @param encoding [String]
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncoded(encoding, charset, outStr)
 			# ...
 		end
@@ -413,14 +413,14 @@ module Chilkat
 		# "url_oauth", "uu", "modBase64", or "html" (for HTML entity encoding). The full up-to-date list of
 		# supported binary encodings is available at the link entitled "Supported Binary Encodings"
 		# below.
-		#		
-		#		Note: The Encode method modifies the content of this object. The GetEncoded
+		# 
+		# Note: The Encode method modifies the content of this object. The GetEncoded
 		# method leaves this object's content unmodified.
 		#
 		# @param encoding [String]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncoded(encoding, charset)
 			# ...
 		end
@@ -439,7 +439,7 @@ module Chilkat
 		# @param exceptEscaped [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetNth(index, delimiterChar, exceptDoubleQuoted, exceptEscaped, outStr)
 			# ...
 		end
@@ -457,7 +457,7 @@ module Chilkat
 		# @param exceptDoubleQuoted [TrueClass, FalseClass]
 		# @param exceptEscaped [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def getNth(index, delimiterChar, exceptDoubleQuoted, exceptEscaped)
 			# ...
 		end
@@ -473,7 +473,7 @@ module Chilkat
 		# @param bCrlf [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LastNLines(numLines, bCrlf, outStr)
 			# ...
 		end
@@ -488,7 +488,7 @@ module Chilkat
 		# @param numLines [Fixnum]
 		# @param bCrlf [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def lastNLines(numLines, bCrlf)
 			# ...
 		end
@@ -501,7 +501,7 @@ module Chilkat
 		# @param path [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFile(path, charset)
 			# ...
 		end
@@ -513,7 +513,7 @@ module Chilkat
 		#
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Prepend(value)
 			# ...
 		end
@@ -527,7 +527,7 @@ module Chilkat
 		# @param value [String]
 		# @param replacement [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def Replace(value, replacement)
 			# ...
 		end
@@ -543,7 +543,7 @@ module Chilkat
 		# @param replacement [String]
 		# @param replaceMarks [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReplaceAllBetween(beginMark, endMark, replacement, replaceMarks)
 			# ...
 		end
@@ -559,7 +559,7 @@ module Chilkat
 		# @param value [String]
 		# @param replacement [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def ReplaceBetween(beginMark, endMark, value, replacement)
 			# ...
 		end
@@ -573,7 +573,7 @@ module Chilkat
 		# @param value [String]
 		# @param replacement [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def ReplaceWord(value, replacement)
 			# ...
 		end
@@ -591,7 +591,7 @@ module Chilkat
 		# @param exceptDoubleQuoted [TrueClass, FalseClass]
 		# @param exceptEscaped [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetNth(index, value, delimiterChar, exceptDoubleQuoted, exceptEscaped)
 			# ...
 		end
@@ -603,7 +603,7 @@ module Chilkat
 		#
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetString(value)
 			# ...
 		end
@@ -617,7 +617,7 @@ module Chilkat
 		# @param substr [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def StartsWith(substr, caseSensitive)
 			# ...
 		end
@@ -628,7 +628,7 @@ module Chilkat
 		# Converts line endings to CRLF (Windows) format.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToCRLF()
 			# ...
 		end
@@ -639,7 +639,7 @@ module Chilkat
 		# Converts line endings to LF-only (UNIX) format.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToLF()
 			# ...
 		end
@@ -650,7 +650,7 @@ module Chilkat
 		# Converts the contents to lowercase.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToLowercase()
 			# ...
 		end
@@ -661,7 +661,7 @@ module Chilkat
 		# Converts the contents to uppercase.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToUppercase()
 			# ...
 		end
@@ -672,7 +672,7 @@ module Chilkat
 		# Trims whitespace from both ends of the string.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Trim()
 			# ...
 		end
@@ -684,7 +684,7 @@ module Chilkat
 		# occurances of more than one SPACE char in a row.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def TrimInsideSpaces()
 			# ...
 		end
@@ -699,7 +699,7 @@ module Chilkat
 		# @param charset [String]
 		# @param emitBom [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path, charset, emitBom)
 			# ...
 		end

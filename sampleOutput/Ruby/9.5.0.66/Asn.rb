@@ -48,13 +48,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -73,13 +73,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -96,13 +96,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -119,13 +119,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -273,23 +273,23 @@ module Chilkat
 
 		# The ASN.1 item's tag as a descriptive string. Possible values
 		# are:
-		#		
-		#		boolean
-		#		integer
-		#		bitString
-		#		octets
-		#		null
-		#		oid
-		#		utf8String
-		#		relativeOid
-		#		sequence
-		#		set
-		#		numericString
-		#		printableString
-		#		t61String
-		#		ia5String
-		#		utcTime
-		#		bmpString
+		# 
+		# boolean
+		# integer
+		# bitString
+		# octets
+		# null
+		# oid
+		# utf8String
+		# relativeOid
+		# sequence
+		# set
+		# numericString
+		# printableString
+		# t61String
+		# ia5String
+		# utcTime
+		# bmpString
 		#
 		#
 		# @return [String]
@@ -297,23 +297,23 @@ module Chilkat
 
 		# The ASN.1 item's tag as a descriptive string. Possible values
 		# are:
-		#		
-		#		boolean
-		#		integer
-		#		bitString
-		#		octets
-		#		null
-		#		oid
-		#		utf8String
-		#		relativeOid
-		#		sequence
-		#		set
-		#		numericString
-		#		printableString
-		#		t61String
-		#		ia5String
-		#		utcTime
-		#		bmpString
+		# 
+		# boolean
+		# integer
+		# bitString
+		# octets
+		# null
+		# oid
+		# utf8String
+		# relativeOid
+		# sequence
+		# set
+		# numericString
+		# printableString
+		# t61String
+		# ia5String
+		# utcTime
+		# bmpString
 		#
 		#
 		# @return [String]
@@ -321,26 +321,26 @@ module Chilkat
 
 		# The ASN.1 item's tag as a integer value. The integer values for possible tags are as
 		# follows:
-		#		
-		#		boolean (1)
-		#		integer (2)
-		#		bitString (3)
-		#		octets (4)
-		#		null
+		# 
+		# boolean (1)
+		# integer (2)
+		# bitString (3)
+		# octets (4)
+		# null
 		# (5)
-		#		oid (6)
-		#		utf8String (12)
-		#		relativeOid (13)
-		#		sequence (16)
-		#		set
+		# oid (6)
+		# utf8String (12)
+		# relativeOid (13)
+		# sequence (16)
+		# set
 		# (17)
-		#		numericString (18)
-		#		printableString (19)
-		#		t61String (20)
-		#		ia5String
+		# numericString (18)
+		# printableString (19)
+		# t61String (20)
+		# ia5String
 		# (22)
-		#		utcTime (23)
-		#		bmpString (30)
+		# utcTime (23)
+		# bmpString (30)
 		#
 		#
 		# @return [Bignum]
@@ -348,8 +348,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -358,8 +358,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -405,7 +405,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendBigInt(encodedBytes, encoding)
 			# ...
 		end
@@ -423,7 +423,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendBits(encodedBytes, encoding)
 			# ...
 		end
@@ -436,7 +436,7 @@ module Chilkat
 		#
 		# @param value [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendBool(value)
 			# ...
 		end
@@ -448,7 +448,7 @@ module Chilkat
 		#
 		# @param tag [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendContextConstructed(tag)
 			# ...
 		end
@@ -466,7 +466,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendContextPrimitive(tag, encodedBytes, encoding)
 			# ...
 		end
@@ -479,7 +479,7 @@ module Chilkat
 		#
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendInt(value)
 			# ...
 		end
@@ -491,7 +491,7 @@ module Chilkat
 		# types such as Sequence and Set.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendNull()
 			# ...
 		end
@@ -508,7 +508,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendOctets(encodedBytes, encoding)
 			# ...
 		end
@@ -521,7 +521,7 @@ module Chilkat
 		#
 		# @param oid [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendOid(oid)
 			# ...
 		end
@@ -532,7 +532,7 @@ module Chilkat
 		# Appends an ASN.1 sequence item to the caller's sub-items.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendSequence()
 			# ...
 		end
@@ -544,7 +544,7 @@ module Chilkat
 		# point to the newly appended sequence item.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendSequence2()
 			# ...
 		end
@@ -556,7 +556,7 @@ module Chilkat
 		# item.
 		#
 		#
-		# @return [CkAsn] 
+		# @return [CkAsn]
 		def AppendSequenceR()
 			# ...
 		end
@@ -567,7 +567,7 @@ module Chilkat
 		# Appends an ASN.1 set item to the caller's sub-items.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendSet()
 			# ...
 		end
@@ -579,7 +579,7 @@ module Chilkat
 		# the newly appended set item.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendSet2()
 			# ...
 		end
@@ -590,7 +590,7 @@ module Chilkat
 		# Appends an ASN.1 set item to the caller's sub-items, and returns the newly appended set item.
 		#
 		#
-		# @return [CkAsn] 
+		# @return [CkAsn]
 		def AppendSetR()
 			# ...
 		end
@@ -607,7 +607,7 @@ module Chilkat
 		# @param strType [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendString(strType, value)
 			# ...
 		end
@@ -624,7 +624,7 @@ module Chilkat
 		# @param timeFormat [String]
 		# @param dateTimeStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendTime(timeFormat, dateTimeStr)
 			# ...
 		end
@@ -636,7 +636,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AsnToXml(outStr)
 			# ...
 		end
@@ -647,7 +647,7 @@ module Chilkat
 		# Converts ASN.1 to XML and returns the XML string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def asnToXml()
 			# ...
 		end
@@ -659,7 +659,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DeleteSubItem(index)
 			# ...
 		end
@@ -671,7 +671,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetBinaryDer(outBytes)
 			# ...
 		end
@@ -687,7 +687,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncodedContent(encoding, outStr)
 			# ...
 		end
@@ -702,7 +702,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncodedContent(encoding)
 			# ...
 		end
@@ -716,7 +716,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncodedDer(encoding, outStr)
 			# ...
 		end
@@ -729,7 +729,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncodedDer(encoding)
 			# ...
 		end
@@ -741,7 +741,7 @@ module Chilkat
 		# access the appended item.
 		#
 		#
-		# @return [CkAsn] 
+		# @return [CkAsn]
 		def GetLastSubItem()
 			# ...
 		end
@@ -753,7 +753,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkAsn] 
+		# @return [CkAsn]
 		def GetSubItem(index)
 			# ...
 		end
@@ -765,7 +765,7 @@ module Chilkat
 		#
 		# @param xmlStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadAsnXml(xmlStr)
 			# ...
 		end
@@ -777,7 +777,7 @@ module Chilkat
 		#
 		# @param derBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadBinary(derBytes)
 			# ...
 		end
@@ -789,7 +789,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadBinaryFile(path)
 			# ...
 		end
@@ -803,7 +803,7 @@ module Chilkat
 		# @param asnContent [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadEncoded(asnContent, encoding)
 			# ...
 		end
@@ -815,7 +815,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -831,7 +831,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetEncodedContent(encodedBytes, encoding)
 			# ...
 		end
@@ -843,7 +843,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteBinaryDer(path)
 			# ...
 		end

@@ -115,13 +115,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -140,13 +140,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -163,13 +163,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -186,13 +186,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -254,7 +254,7 @@ module Chilkat
 
 		# The time interval, in milliseconds, between AbortCheck event callbacks. The heartbeat/AbortCheck
 		# provides a means for an application to abort any MHT method before completion.
-		#		The default
+		# The default
 		# value is 0, which means that no AbortCheck events will be fired.
 		#
 		# @return [Bignum]
@@ -264,12 +264,14 @@ module Chilkat
 
 		# The time interval, in milliseconds, between AbortCheck event callbacks. The heartbeat/AbortCheck
 		# provides a means for an application to abort any MHT method before completion.
-		#		The default
+		# The default
 		# value is 0, which means that no AbortCheck events will be fired.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# Some HTTP responses contain a "Cache-Control: must-revalidate" header. If this is present, the
@@ -277,7 +279,7 @@ module Chilkat
 		# page directly from cache. If IgnoreMustRevalidate is set to _TRUE_, then Chilkat MHT will serve the
 		# page directly from cache without revalidating until the page is no longer fresh. (assuming that
 		# FetchFromCache is set to _TRUE_)
-		#		The default value of this property is _FALSE_.
+		# The default value of this property is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
 		def get_IgnoreMustRevalidate() end
@@ -287,14 +289,14 @@ module Chilkat
 		# page directly from cache. If IgnoreMustRevalidate is set to _TRUE_, then Chilkat MHT will serve the
 		# page directly from cache without revalidating until the page is no longer fresh. (assuming that
 		# FetchFromCache is set to _TRUE_)
-		#		The default value of this property is _FALSE_.
+		# The default value of this property is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
 		def put_IgnoreMustRevalidate(newval) end
 
 		# Some HTTP responses contain headers of various types that indicate that the page should not be
 		# cached. Chilkat MHT will adhere to this unless this property is set to _TRUE_.
-		#		The default
+		# The default
 		# value of this property is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -302,7 +304,7 @@ module Chilkat
 
 		# Some HTTP responses contain headers of various types that indicate that the page should not be
 		# cached. Chilkat MHT will adhere to this unless this property is set to _TRUE_.
-		#		The default
+		# The default
 		# value of this property is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -441,7 +443,7 @@ module Chilkat
 
 		# Setting this property to _TRUE_ causes the MHT component to use NTLM authentication (also known as
 		# IWA -- or Integrated Windows Authentication) when authentication with an HTTP server.
-		#		The
+		# The
 		# default value of this property is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -449,7 +451,7 @@ module Chilkat
 
 		# Setting this property to _TRUE_ causes the MHT component to use NTLM authentication (also known as
 		# IWA -- or Integrated Windows Authentication) when authentication with an HTTP server.
-		#		The
+		# The
 		# default value of this property is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -595,8 +597,8 @@ module Chilkat
 		# ReadTimeout is the amount of time that needs to elapse while no additional data is forthcoming.
 		# During a long data transfer, if the data stream halts for more than this amount, it will timeout.
 		# Otherwise, there is no limit on the length of time for the entire data transfer.
-		#		
-		#		The
+		# 
+		# The
 		# default value is 20 seconds.
 		#
 		# @return [Bignum]
@@ -606,8 +608,8 @@ module Chilkat
 		# ReadTimeout is the amount of time that needs to elapse while no additional data is forthcoming.
 		# During a long data transfer, if the data stream halts for more than this amount, it will timeout.
 		# Otherwise, there is no limit on the length of time for the entire data transfer.
-		#		
-		#		The
+		# 
+		# The
 		# default value is 20 seconds.
 		#
 		# @param newval [Bignum]
@@ -680,14 +682,14 @@ module Chilkat
 		def put_SocksPassword(newval) end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [Bignum]
@@ -720,24 +722,24 @@ module Chilkat
 		def put_SocksUsername(newval) end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
@@ -749,12 +751,12 @@ module Chilkat
 		# unpacking direct, the HTML is not edited, and the related parts are unpacked to sub-directories
 		# rooted in the directory where HTML file is created (i.e. the unpack directory). When unpacking
 		# direct, the "partsSubDir" argument of the UnpackMHT* methods is unused. 
-		#		
-		#		Note: It is
+		# 
+		# Note: It is
 		# only possible to directly unpack MHT files where the Content-Location headers DO NOT contain URLs.
 		# The MHT must be such that the Content-Location headers of the related items contain relative paths.
-		# #		
-		#		Note: The default value of this property is _FALSE_.
+		# # 
+		# Note: The default value of this property is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
 		def get_UnpackDirect() end
@@ -765,12 +767,12 @@ module Chilkat
 		# unpacking direct, the HTML is not edited, and the related parts are unpacked to sub-directories
 		# rooted in the directory where HTML file is created (i.e. the unpack directory). When unpacking
 		# direct, the "partsSubDir" argument of the UnpackMHT* methods is unused. 
-		#		
-		#		Note: It is
+		# 
+		# Note: It is
 		# only possible to directly unpack MHT files where the Content-Location headers DO NOT contain URLs.
 		# The MHT must be such that the Content-Location headers of the related items contain relative paths.
-		# #		
-		#		Note: The default value of this property is _FALSE_.
+		# # 
+		# Note: The default value of this property is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
 		def put_UnpackDirect(newval) end
@@ -805,8 +807,8 @@ module Chilkat
 		# UseCids is _FALSE_, then URLs are left unchanged and the embedded items will contain
 		# "content-location" headers that match the URLs in the HTML. If _TRUE_, CIDs are generated and the
 		# URLs within the HTML are replaced with "CID:" links.
-		#		
-		#		The default value of this property
+		# 
+		# The default value of this property
 		# is _TRUE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -816,8 +818,8 @@ module Chilkat
 		# UseCids is _FALSE_, then URLs are left unchanged and the embedded items will contain
 		# "content-location" headers that match the URLs in the HTML. If _TRUE_, CIDs are generated and the
 		# URLs within the HTML are replaced with "CID:" links.
-		#		
-		#		The default value of this property
+		# 
+		# The default value of this property
 		# is _TRUE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -825,7 +827,7 @@ module Chilkat
 
 		# If _TRUE_, a "filename" attribute is added to each Content-Disposition MIME header field for each
 		# embedded item (image, style sheet, etc.). If _FALSE_, then no filename attribute is added.
-		#		The
+		# The
 		# default value of this property is _TRUE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -833,7 +835,7 @@ module Chilkat
 
 		# If _TRUE_, a "filename" attribute is added to each Content-Disposition MIME header field for each
 		# embedded item (image, style sheet, etc.). If _FALSE_, then no filename attribute is added.
-		#		The
+		# The
 		# default value of this property is _TRUE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -851,7 +853,7 @@ module Chilkat
 
 		# If _TRUE_, an "inline" attribute is added to each Content-Disposition MIME header field for each
 		# embedded item (image, style sheet, etc.). If _FALSE_, then no inline attribute is added.
-		#		The
+		# The
 		# default value of this property is _TRUE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -859,7 +861,7 @@ module Chilkat
 
 		# If _TRUE_, an "inline" attribute is added to each Content-Disposition MIME header field for each
 		# embedded item (image, style sheet, etc.). If _FALSE_, then no inline attribute is added.
-		#		The
+		# The
 		# default value of this property is _TRUE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -867,8 +869,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -877,8 +879,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -987,7 +989,7 @@ module Chilkat
 		#
 		# @param dir [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddCacheRoot(dir)
 			# ...
 		end
@@ -1001,7 +1003,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddCustomHeader(name, value)
 			# ...
 		end
@@ -1016,7 +1018,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddExternalStyleSheet(url)
 			# ...
 		end
@@ -1027,7 +1029,7 @@ module Chilkat
 		# Removes all custom headers that may have accumulated from previous calls to AddCustomHeader.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearCustomHeaders()
 			# ...
 		end
@@ -1042,7 +1044,7 @@ module Chilkat
 		#
 		# @param pattern [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ExcludeImagesMatching(pattern)
 			# ...
 		end
@@ -1056,7 +1058,7 @@ module Chilkat
 		# @param url_or_htmlFilepath [String]
 		# @param emlPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAndSaveEML(url_or_htmlFilepath, emlPath)
 			# ...
 		end
@@ -1070,7 +1072,7 @@ module Chilkat
 		# @param url_or_htmlFilepath [String]
 		# @param mhtPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAndSaveMHT(url_or_htmlFilepath, mhtPath)
 			# ...
 		end
@@ -1085,7 +1087,7 @@ module Chilkat
 		# @param zipEntryFilename [String]
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAndZipEML(url_or_htmlFilepath, zipEntryFilename, zipFilename)
 			# ...
 		end
@@ -1100,7 +1102,7 @@ module Chilkat
 		# @param zipEntryFilename [String]
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAndZipMHT(url_or_htmlFilepath, zipEntryFilename, zipFilename)
 			# ...
 		end
@@ -1114,7 +1116,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCacheRoot(index, outStr)
 			# ...
 		end
@@ -1127,7 +1129,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getCacheRoot(index)
 			# ...
 		end
@@ -1140,7 +1142,7 @@ module Chilkat
 		# @param url_or_htmlFilepath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEML(url_or_htmlFilepath, outStr)
 			# ...
 		end
@@ -1152,7 +1154,7 @@ module Chilkat
 		#
 		# @param url_or_htmlFilepath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEML(url_or_htmlFilepath)
 			# ...
 		end
@@ -1165,7 +1167,7 @@ module Chilkat
 		# @param url_or_htmlFilepath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetMHT(url_or_htmlFilepath, outStr)
 			# ...
 		end
@@ -1177,7 +1179,7 @@ module Chilkat
 		#
 		# @param url_or_htmlFilepath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getMHT(url_or_htmlFilepath)
 			# ...
 		end
@@ -1191,7 +1193,7 @@ module Chilkat
 		# @param htmlText [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HtmlToEML(htmlText, outStr)
 			# ...
 		end
@@ -1204,7 +1206,7 @@ module Chilkat
 		#
 		# @param htmlText [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def htmlToEML(htmlText)
 			# ...
 		end
@@ -1218,7 +1220,7 @@ module Chilkat
 		# @param html [String]
 		# @param emlFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HtmlToEMLFile(html, emlFilename)
 			# ...
 		end
@@ -1232,7 +1234,7 @@ module Chilkat
 		# @param htmlText [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HtmlToMHT(htmlText, outStr)
 			# ...
 		end
@@ -1245,7 +1247,7 @@ module Chilkat
 		#
 		# @param htmlText [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def htmlToMHT(htmlText)
 			# ...
 		end
@@ -1259,7 +1261,7 @@ module Chilkat
 		# @param html [String]
 		# @param mhtFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HtmlToMHTFile(html, mhtFilename)
 			# ...
 		end
@@ -1270,7 +1272,7 @@ module Chilkat
 		# Returns _TRUE_ if the MHT component is unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -1282,7 +1284,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveCustomHeader(name)
 			# ...
 		end
@@ -1293,7 +1295,7 @@ module Chilkat
 		# Restores the default property settings.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RestoreDefaults()
 			# ...
 		end
@@ -1305,7 +1307,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1318,7 +1320,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -1335,7 +1337,7 @@ module Chilkat
 		# @param htmlFilename [String]
 		# @param partsSubDir [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnpackMHT(mhtFilename, unpackDir, htmlFilename, partsSubDir)
 			# ...
 		end
@@ -1350,7 +1352,7 @@ module Chilkat
 		# @param htmlFilename [String]
 		# @param partsSubDir [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnpackMHTString(mhtString, unpackDir, htmlFilename, partsSubDir)
 			# ...
 		end

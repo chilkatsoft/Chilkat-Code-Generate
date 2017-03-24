@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -212,8 +212,8 @@ module Chilkat
 		def get_LastStringResultLen() end
 
 		# The number of certificates contained within this object. 
-		#		
-		#		This is the number of
+		# 
+		# This is the number of
 		# certificates explicitly added by the methods AddCert, AddJavaKeyStore, and LoadCaCertsPem.
 		#
 		# @return [Bignum]
@@ -221,8 +221,8 @@ module Chilkat
 
 		# Indicates whether the operating system's CA root certificates are automatically
 		# trusted.
-		#		
-		#		On a Windows operating system, this would be the registry-based CA certificate
+		# 
+		# On a Windows operating system, this would be the registry-based CA certificate
 		# stores. On a Linux system, this could be /etc/ssl/certs/ca-certificates.crt, if it exists. The
 		# default value is _TRUE_. Set this property equal to _FALSE_ to prevent Chilkat from automatically
 		# trusting system-provided root CA certificates.
@@ -232,8 +232,8 @@ module Chilkat
 
 		# Indicates whether the operating system's CA root certificates are automatically
 		# trusted.
-		#		
-		#		On a Windows operating system, this would be the registry-based CA certificate
+		# 
+		# On a Windows operating system, this would be the registry-based CA certificate
 		# stores. On a Linux system, this could be /etc/ssl/certs/ca-certificates.crt, if it exists. The
 		# default value is _TRUE_. Set this property equal to _FALSE_ to prevent Chilkat from automatically
 		# trusting system-provided root CA certificates.
@@ -243,8 +243,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -253,8 +253,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -295,7 +295,7 @@ module Chilkat
 		# validation.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Activate()
 			# ...
 		end
@@ -307,7 +307,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddCert(cert)
 			# ...
 		end
@@ -319,7 +319,7 @@ module Chilkat
 		#
 		# @param keystore [CkJavaKeyStore]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddJavaKeyStore(keystore)
 			# ...
 		end
@@ -331,7 +331,7 @@ module Chilkat
 		# are implicitly trusted.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Deactivate()
 			# ...
 		end
@@ -343,7 +343,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetCert(index)
 			# ...
 		end
@@ -354,13 +354,13 @@ module Chilkat
 		# Loads a CA bundle in PEM format. This is a file containing CA root certificates that are to be
 		# trusted. An example of one such file is the CA certs from mozilla.org exported to a cacert.pem file
 		# by the mk-ca-bundle tool located here: http://curl.haxx.se/docs/caextract.html.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# This can also be called to load the /etc/ssl/certs/ca-certificates.crt file on Linux systems.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadCaCertsPem(path)
 			# ...
 		end
@@ -372,7 +372,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end

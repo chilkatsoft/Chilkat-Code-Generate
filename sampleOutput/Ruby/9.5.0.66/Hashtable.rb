@@ -42,8 +42,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -52,8 +52,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -67,7 +67,7 @@ module Chilkat
 		#
 		# @param sbXml [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddFromXmlSb(sbXml)
 			# ...
 		end
@@ -81,7 +81,7 @@ module Chilkat
 		# @param key [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddInt(key, value)
 			# ...
 		end
@@ -95,7 +95,7 @@ module Chilkat
 		#
 		# @param queryParams [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddQueryParams(queryParams)
 			# ...
 		end
@@ -109,7 +109,7 @@ module Chilkat
 		# @param key [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddStr(key, value)
 			# ...
 		end
@@ -120,7 +120,7 @@ module Chilkat
 		# Removes all elements from the Hashtable.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -129,21 +129,21 @@ module Chilkat
 		# Method: ClearWithNewCapacity
 		#
 		# Removes all elements from the Hashtable and re-sizes with the specified ARG1. 
-		#		
-		#		The
+		# 
+		# The
 		# capacity is the number of buckets in the hash table. In the case of a "hash collision", a single
 		# bucket stores multiple entries, which must be searched sequentially. 
-		#		One rule of thumb is to
+		# One rule of thumb is to
 		# set the capacity to twice the number of expected items to be hashed. It's also preferable to set the
 		# capacity to a prime number. (The 1st 10,000 prime numbers are listed here:
 		# https://primes.utm.edu/lists/small/10000.txt )
-		#		
-		#		The initial default capacity of the hash
+		# 
+		# The initial default capacity of the hash
 		# table is 521.
 		#
 		# @param capacity [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ClearWithNewCapacity(capacity)
 			# ...
 		end
@@ -156,7 +156,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Contains(key)
 			# ...
 		end
@@ -169,7 +169,7 @@ module Chilkat
 		#
 		# @param key [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ContainsIntKey(key)
 			# ...
 		end
@@ -181,7 +181,7 @@ module Chilkat
 		#
 		# @param strTable [CkStringTable]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetKeys(strTable)
 			# ...
 		end
@@ -194,7 +194,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def LookupInt(key)
 			# ...
 		end
@@ -207,7 +207,7 @@ module Chilkat
 		# @param key [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LookupStr(key, outStr)
 			# ...
 		end
@@ -219,7 +219,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def lookupStr(key)
 			# ...
 		end
@@ -232,7 +232,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Remove(key)
 			# ...
 		end
@@ -244,7 +244,7 @@ module Chilkat
 		#
 		# @param sbXml [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToXmlSb(sbXml)
 			# ...
 		end

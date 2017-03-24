@@ -29,8 +29,8 @@ module Chilkat
 		# Controls the character encoding used for HTTP request parameters for POST requests. The default
 		# value is the ANSI charset of the computer. The charset should match the charset expected by the form
 		# target.
-		#		
-		#		The "charset" attribute is only included in the Content-Type header of the
+		# 
+		# The "charset" attribute is only included in the Content-Type header of the
 		# request if the SendCharset property is set to _TRUE_.
 		#
 		# @param ckStr [CkString]
@@ -41,8 +41,8 @@ module Chilkat
 		# Controls the character encoding used for HTTP request parameters for POST requests. The default
 		# value is the ANSI charset of the computer. The charset should match the charset expected by the form
 		# target.
-		#		
-		#		The "charset" attribute is only included in the Content-Type header of the
+		# 
+		# The "charset" attribute is only included in the Content-Type header of the
 		# request if the SendCharset property is set to _TRUE_.
 		#
 		# @param newval [String]
@@ -51,8 +51,8 @@ module Chilkat
 		# Controls the character encoding used for HTTP request parameters for POST requests. The default
 		# value is the ANSI charset of the computer. The charset should match the charset expected by the form
 		# target.
-		#		
-		#		The "charset" attribute is only included in the Content-Type header of the
+		# 
+		# The "charset" attribute is only included in the Content-Type header of the
 		# request if the SendCharset property is set to _TRUE_.
 		#
 		# @return [String]
@@ -61,8 +61,8 @@ module Chilkat
 		# Controls the character encoding used for HTTP request parameters for POST requests. The default
 		# value is the ANSI charset of the computer. The charset should match the charset expected by the form
 		# target.
-		#		
-		#		The "charset" attribute is only included in the Content-Type header of the
+		# 
+		# The "charset" attribute is only included in the Content-Type header of the
 		# request if the SendCharset property is set to _TRUE_.
 		#
 		# @param newval [String]
@@ -71,15 +71,15 @@ module Chilkat
 		# The ContentType property sets the "Content-Type" header field, and identifies the content-type of
 		# the HTTP request body. Common values
 		# are:
-		#		
-		#		
-		#		application/x-www-form-urlencoded
-		#		multipart/form-data
-		#		text/xml
-		#		application/jsonrequest
-		#		
-		#		
-		#		If
+		# 
+		# 
+		# application/x-www-form-urlencoded
+		# multipart/form-data
+		# text/xml
+		# application/jsonrequest
+		# 
+		# 
+		# If
 		# ContentType is set equal to the empty string, then no Content-Type header is included in the HTTP
 		# request.
 		#
@@ -91,15 +91,15 @@ module Chilkat
 		# The ContentType property sets the "Content-Type" header field, and identifies the content-type of
 		# the HTTP request body. Common values
 		# are:
-		#		
-		#		
-		#		application/x-www-form-urlencoded
-		#		multipart/form-data
-		#		text/xml
-		#		application/jsonrequest
-		#		
-		#		
-		#		If
+		# 
+		# 
+		# application/x-www-form-urlencoded
+		# multipart/form-data
+		# text/xml
+		# application/jsonrequest
+		# 
+		# 
+		# If
 		# ContentType is set equal to the empty string, then no Content-Type header is included in the HTTP
 		# request.
 		#
@@ -109,15 +109,15 @@ module Chilkat
 		# The ContentType property sets the "Content-Type" header field, and identifies the content-type of
 		# the HTTP request body. Common values
 		# are:
-		#		
-		#		
-		#		application/x-www-form-urlencoded
-		#		multipart/form-data
-		#		text/xml
-		#		application/jsonrequest
-		#		
-		#		
-		#		If
+		# 
+		# 
+		# application/x-www-form-urlencoded
+		# multipart/form-data
+		# text/xml
+		# application/jsonrequest
+		# 
+		# 
+		# If
 		# ContentType is set equal to the empty string, then no Content-Type header is included in the HTTP
 		# request.
 		#
@@ -127,15 +127,15 @@ module Chilkat
 		# The ContentType property sets the "Content-Type" header field, and identifies the content-type of
 		# the HTTP request body. Common values
 		# are:
-		#		
-		#		
-		#		application/x-www-form-urlencoded
-		#		multipart/form-data
-		#		text/xml
-		#		application/jsonrequest
-		#		
-		#		
-		#		If
+		# 
+		# 
+		# application/x-www-form-urlencoded
+		# multipart/form-data
+		# text/xml
+		# application/jsonrequest
+		# 
+		# 
+		# If
 		# ContentType is set equal to the empty string, then no Content-Type header is included in the HTTP
 		# request.
 		#
@@ -147,13 +147,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -172,13 +172,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -195,13 +195,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -218,13 +218,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -477,8 +477,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -487,8 +487,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -527,19 +527,19 @@ module Chilkat
 		# Adds a file to an upload request where the contents of the file come from an in-memory byte array.
 		# To create a file upload request, call UseUpload and then call AddBytesForUpload, AddStringForUpload,
 		# or AddFileForUpload for each file to be uploaded.
-		#		ARG1 is an arbitrary name. (In HTML, it is
+		# ARG1 is an arbitrary name. (In HTML, it is
 		# the form field name of the input tag.)
-		#		
-		#		ARG2 is the name of the file to be created on
+		# 
+		# ARG2 is the name of the file to be created on
 		# the HTTP server.
-		#		
-		#		ARG3 contains the contents (bytes) to be uploaded.
+		# 
+		# ARG3 contains the contents (bytes) to be uploaded.
 		#
 		# @param name [String]
 		# @param remoteFileName [String]
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddBytesForUpload(name, remoteFileName, byteData)
 			# ...
 		end
@@ -555,7 +555,7 @@ module Chilkat
 		# @param byteData [CkByteData]
 		# @param contentType [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddBytesForUpload2(name, remoteFileName, byteData, contentType)
 			# ...
 		end
@@ -568,16 +568,16 @@ module Chilkat
 		# does not read the file into memory. When the upload occurs, the data is streamed directly from the
 		# file, thus allowing for very large files to be uploaded without consuming large amounts of
 		# memory.
-		#		
-		#		ARG1 is an arbitrary name. (In HTML, it is the form field name of the input
+		# 
+		# ARG1 is an arbitrary name. (In HTML, it is the form field name of the input
 		# tag.)
-		#		
-		#		ARG2 is the path to an existing file in the local filesystem.
+		# 
+		# ARG2 is the path to an existing file in the local filesystem.
 		#
 		# @param name [String]
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddFileForUpload(name, filePath)
 			# ...
 		end
@@ -588,17 +588,17 @@ module Chilkat
 		# Same as AddFileForUpload, but allows the Content-Type header field to be directly specified.
 		# (Otherwise, the Content-Type header is automatically determined based on the file
 		# extension.)
-		#		
-		#		ARG1 is an arbitrary name. (In HTML, it is the form field name of the input
+		# 
+		# ARG1 is an arbitrary name. (In HTML, it is the form field name of the input
 		# tag.)
-		#		
-		#		ARG2 is the path to an existing file in the local filesystem.
+		# 
+		# ARG2 is the path to an existing file in the local filesystem.
 		#
 		# @param name [String]
 		# @param filePath [String]
 		# @param contentType [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddFileForUpload2(name, filePath, contentType)
 			# ...
 		end
@@ -608,8 +608,8 @@ module Chilkat
 		#
 		# Adds a request header to the HTTP request. If a header having the same field name is already
 		# present, this method replaces it.
-		#		
-		#		Note: Never explicitly set the Content-Length header
+		# 
+		# Note: Never explicitly set the Content-Length header
 		# field. Chilkat will automatically compute the correct length and add the Content-Length header to
 		# all POST, PUT, or any other request where the Content-Length needs to be specified. (GET requests
 		# always have a 0 length body, and therefore never need a Content-Length header field.)
@@ -617,7 +617,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddHeader(name, value)
 			# ...
 		end
@@ -628,25 +628,25 @@ module Chilkat
 		# Computes the Amazon MWS signature using the ARG2 and adds the "Signature" parameter to the request.
 		# This method should be called for all Amazon Marketplace Web Service (Amazon MWS) HTTP requests. It
 		# should be called after all request parameters have been added.
-		#		
-		#		The ARG1 should be the
+		# 
+		# The ARG1 should be the
 		# domain of the request, such as one of the
 		# following:
-		#		
-		#		mws.amazonservices.com
-		#		mws-eu.amazonservices.com
-		#		mws.amazonservices.in
-		#		mws.amazonservices.com.cn
-		#		mws.amazonservices.jp
-		#		
-		#		Note:
+		# 
+		# mws.amazonservices.com
+		# mws-eu.amazonservices.com
+		# mws.amazonservices.in
+		# mws.amazonservices.com.cn
+		# mws.amazonservices.jp
+		# 
+		# Note:
 		# This method automatically adds or replaces the existing Timestamp parameter to the current system
 		# date/time.
 		#
 		# @param domain [String]
 		# @param mwsSecretKey [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddMwsSignature(domain, mwsSecretKey)
 			# ...
 		end
@@ -660,7 +660,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddParam(name, value)
 			# ...
 		end
@@ -675,7 +675,7 @@ module Chilkat
 		# @param strData [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddStringForUpload(name, filename, strData, charset)
 			# ...
 		end
@@ -692,7 +692,7 @@ module Chilkat
 		# @param charset [String]
 		# @param contentType [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddStringForUpload2(name, filename, strData, charset, contentType)
 			# ...
 		end
@@ -707,7 +707,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddSubHeader(index, name, value)
 			# ...
 		end
@@ -720,7 +720,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenerateRequestFile(path)
 			# ...
 		end
@@ -732,7 +732,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenerateRequestText(outStr)
 			# ...
 		end
@@ -743,7 +743,7 @@ module Chilkat
 		# Returns the request text that would be sent if Http.SynchronousRequest was called.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def generateRequestText()
 			# ...
 		end
@@ -756,7 +756,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHeaderField(name, outStr)
 			# ...
 		end
@@ -768,7 +768,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHeaderField(name)
 			# ...
 		end
@@ -782,7 +782,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHeaderName(index, outStr)
 			# ...
 		end
@@ -795,7 +795,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHeaderName(index)
 			# ...
 		end
@@ -809,7 +809,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHeaderValue(index, outStr)
 			# ...
 		end
@@ -822,7 +822,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHeaderValue(index)
 			# ...
 		end
@@ -835,7 +835,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetParam(name, outStr)
 			# ...
 		end
@@ -847,7 +847,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getParam(name)
 			# ...
 		end
@@ -861,7 +861,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetParamName(index, outStr)
 			# ...
 		end
@@ -874,7 +874,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getParamName(index)
 			# ...
 		end
@@ -888,7 +888,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetParamValue(index, outStr)
 			# ...
 		end
@@ -901,7 +901,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getParamValue(index)
 			# ...
 		end
@@ -916,7 +916,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetUrlEncodedParams(outStr)
 			# ...
 		end
@@ -930,7 +930,7 @@ module Chilkat
 		# "abc+123&lt;param2=abc%2D123"
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getUrlEncodedParams()
 			# ...
 		end
@@ -940,12 +940,12 @@ module Chilkat
 		#
 		# The HTTP protocol is such that all HTTP requests are MIME. For non-multipart requests, this method
 		# may be called to set the MIME body of the HTTP request to the exact contents of the ARG1.
-		# #		Note: A non-multipart HTTP request consists of (1) the HTTP start line, (2) MIME header fields,
+		# # Note: A non-multipart HTTP request consists of (1) the HTTP start line, (2) MIME header fields,
 		# and (3) the MIME body. This method sets the MIME body.
 		#
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadBodyFromBytes(byteData)
 			# ...
 		end
@@ -955,13 +955,13 @@ module Chilkat
 		#
 		# The HTTP protocol is such that all HTTP requests are MIME. For non-multipart requests, this method
 		# may be called to set the MIME body of the HTTP request to the exact contents of ARG1. 
-		#		Note: A
+		# Note: A
 		# non-multipart HTTP request consists of (1) the HTTP start line, (2) MIME header fields, and (3) the
 		# MIME body. This method sets the MIME body.
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadBodyFromFile(filePath)
 			# ...
 		end
@@ -971,18 +971,18 @@ module Chilkat
 		#
 		# The HTTP protocol is such that all HTTP requests are MIME. For non-multipart requests, this method
 		# may be called to set the MIME body of the HTTP request to the exact contents of ARG1. 
-		#		Note: A
+		# Note: A
 		# non-multipart HTTP request consists of (1) the HTTP start line, (2) MIME header fields, and (3) the
 		# MIME body. This method sets the MIME body.
-		#		
-		#		ARG2 indicates the charset, such as "utf-8"
+		# 
+		# ARG2 indicates the charset, such as "utf-8"
 		# or "iso-8859-1", to be used. The HTTP body will contain the ARG1 converted to this character
 		# encoding.
 		#
 		# @param bodyStr [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadBodyFromString(bodyStr, charset)
 			# ...
 		end
@@ -993,7 +993,7 @@ module Chilkat
 		# Removes all request parameters.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveAllParams()
 			# ...
 		end
@@ -1005,7 +1005,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveHeader(name)
 			# ...
 		end
@@ -1017,7 +1017,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveParam(name)
 			# ...
 		end
@@ -1029,7 +1029,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1042,7 +1042,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetFromUrl(url)
 			# ...
 		end
@@ -1059,7 +1059,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def StreamBodyFromFile(filePath)
 			# ...
 		end
@@ -1074,7 +1074,7 @@ module Chilkat
 		# @param offset [String]
 		# @param numBytes [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def StreamChunkFromFile(path, offset, numBytes)
 			# ...
 		end
@@ -1083,13 +1083,13 @@ module Chilkat
 		# Method: UseGet
 		#
 		# Makes the HttpRequest a GET request.
-		#		
-		#		Important: This method is deprecated. An
+		# 
+		# Important: This method is deprecated. An
 		# application should instead set the HttpVerb property equal to "GET", and the ContentType equal to an
 		# empty string (because GET requests have no request body).
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseGet()
 			# ...
@@ -1099,13 +1099,13 @@ module Chilkat
 		# Method: UseHead
 		#
 		# Makes the HttpRequest a HEAD request.
-		#		
-		#		Important: This method is deprecated. An
+		# 
+		# Important: This method is deprecated. An
 		# application should instead set the HttpVerb property equal to "HEAD", and the ContentType equal to
 		# an empty string (because HEAD requests have no body).
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseHead()
 			# ...
@@ -1116,12 +1116,12 @@ module Chilkat
 		#
 		# Makes the HttpRequest a POST request that uses the "application/x-www-form-urlencoded" content
 		# type.
-		#		
-		#		Important: This method is deprecated. An application should instead set the
+		# 
+		# Important: This method is deprecated. An application should instead set the
 		# HttpVerb property equal to "POST", and the ContentType equal to "application/x-www-form-urlencoded".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UsePost()
 			# ...
@@ -1132,12 +1132,12 @@ module Chilkat
 		#
 		# Makes the HttpRequest a POST request that uses the "multipart/form-data" content
 		# type.
-		#		
-		#		Important: This method is deprecated. An application should instead set the
+		# 
+		# Important: This method is deprecated. An application should instead set the
 		# HttpVerb property equal to "POST", and the ContentType equal to "multipart/form-data".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UsePostMultipartForm()
 			# ...
@@ -1147,13 +1147,13 @@ module Chilkat
 		# Method: UsePut
 		#
 		# Makes the HttpRequest a PUT request.
-		#		
-		#		Important: This method is deprecated. An
+		# 
+		# Important: This method is deprecated. An
 		# application should instead set the HttpVerb property equal to "PUT", and the ContentType equal to
 		# "application/x-www-form-urlencoded".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UsePut()
 			# ...
@@ -1165,12 +1165,12 @@ module Chilkat
 		# Makes the HttpRequest a POST request that uses the "multipart/form-data" content type. To create a
 		# file upload request, call UseUpload and then call AddFileForUpload for each file to be
 		# uploaded.
-		#		
-		#		Important: This method is deprecated. An application should instead set the
+		# 
+		# Important: This method is deprecated. An application should instead set the
 		# HttpVerb property equal to "POST", and the ContentType equal to "multipart/form-data".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseUpload()
 			# ...
@@ -1182,13 +1182,13 @@ module Chilkat
 		# Makes the HttpRequest a PUT request that uses the "multipart/form-data" content type. To create a
 		# file upload request (using the PUT verb), call UseUploadPut and then call AddFileForUpload for each
 		# file to be uploaded.
-		#		
-		#		Important: This method is deprecated. An application should
+		# 
+		# Important: This method is deprecated. An application should
 		# instead set the HttpVerb property equal to "PUT", and the ContentType equal to
 		# "multipart/form-data".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseUploadPut()
 			# ...
@@ -1199,14 +1199,14 @@ module Chilkat
 		#
 		# Makes the HttpRequest a POST request using the "application/xml" content type. The request body is
 		# set to the XML string passed to this method.
-		#		
-		#		Important: This method is deprecated. An
+		# 
+		# Important: This method is deprecated. An
 		# application should instead set the HttpVerb property equal to "POST", the ContentType equal to
 		# "text/xml", and the request body should contain the XML document text.
 		#
 		# @param xmlBody [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UseXmlHttp(xmlBody)
 			# ...

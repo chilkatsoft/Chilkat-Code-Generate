@@ -25,13 +25,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -50,13 +50,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -73,13 +73,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -96,13 +96,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -410,6 +410,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -531,8 +533,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -541,8 +543,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -585,7 +587,7 @@ module Chilkat
 		# @param mimeIn [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddDkimSignature(mimeIn, outBytes)
 			# ...
 		end
@@ -600,7 +602,7 @@ module Chilkat
 		# @param mimeIn [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddDomainKeySignature(mimeIn, outBytes)
 			# ...
 		end
@@ -616,7 +618,7 @@ module Chilkat
 		# @param privateKey [String]
 		# @param optionalPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadDkimPk(privateKey, optionalPassword)
 			# ...
 		end
@@ -631,7 +633,7 @@ module Chilkat
 		# @param privateKeyDer [CkByteData]
 		# @param optionalPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadDkimPkBytes(privateKeyDer, optionalPassword)
 			# ...
 		end
@@ -647,7 +649,7 @@ module Chilkat
 		# @param privateKeyFilePath [String]
 		# @param optionalPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadDkimPkFile(privateKeyFilePath, optionalPassword)
 			# ...
 		end
@@ -663,7 +665,7 @@ module Chilkat
 		# @param privateKey [String]
 		# @param optionalPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadDomainKeyPk(privateKey, optionalPassword)
 			# ...
 		end
@@ -678,7 +680,7 @@ module Chilkat
 		# @param privateKeyDer [CkByteData]
 		# @param optionalPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadDomainKeyPkBytes(privateKeyDer, optionalPassword)
 			# ...
 		end
@@ -694,7 +696,7 @@ module Chilkat
 		# @param privateKeyFilePath [String]
 		# @param optionalPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadDomainKeyPkFile(privateKeyFilePath, optionalPassword)
 			# ...
 		end
@@ -712,7 +714,7 @@ module Chilkat
 		# @param domain [String]
 		# @param publicKey [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPublicKey(selector, domain, publicKey)
 			# ...
 		end
@@ -729,7 +731,7 @@ module Chilkat
 		# @param domain [String]
 		# @param publicKeyFilepath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPublicKeyFile(selector, domain, publicKeyFilepath)
 			# ...
 		end
@@ -741,7 +743,7 @@ module Chilkat
 		#
 		# @param mimeData [CkByteData]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def NumDkimSignatures(mimeData)
 			# ...
 		end
@@ -753,7 +755,7 @@ module Chilkat
 		#
 		# @param mimeData [CkByteData]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def NumDomainKeySignatures(mimeData)
 			# ...
 		end
@@ -764,15 +766,15 @@ module Chilkat
 		# Useful if your application is going to verify many emails from a single domain (or a few domains).
 		# This eliminates the need to do a DNS lookup to fetch the public key each time an email's DKIM or
 		# DomainKey signature is verified.
-		#		
-		#		This method may be called multiple times -- once for
+		# 
+		# This method may be called multiple times -- once for
 		# each selector/domain to be pre-fetched. The verify methods (VerifyDkimSignature and
 		# VerifyDomainKeySignature) will use a pre-fetched key if the selector and domain match.
 		#
 		# @param selector [String]
 		# @param domain [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def PrefetchPublicKey(selector, domain)
 			# ...
 		end
@@ -784,7 +786,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -798,7 +800,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -808,15 +810,15 @@ module Chilkat
 		#
 		# Verifies the Nth DKIM-Signature header in the ARG2. (In most cases, there is only one signature.)
 		# The 1st signature is at ARG1 0.
-		#		
-		#		Important: Many anti-virus programs, such as AVG, will
+		# 
+		# Important: Many anti-virus programs, such as AVG, will
 		# modify the MIME of an email as it is received. This will cause DKIM signature verification to fail
 		# because the body of the MIME is modified.
 		#
 		# @param sigIndex [Fixnum]
 		# @param mimeData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyDkimSignature(sigIndex, mimeData)
 			# ...
 		end
@@ -826,15 +828,15 @@ module Chilkat
 		#
 		# Verifies the Nth DomainKey-Signature header in the ARG2. (In most cases, there is only one
 		# signature.) The 1st signature is at ARG1 0.
-		#		
-		#		Important: Many anti-virus programs, such
+		# 
+		# Important: Many anti-virus programs, such
 		# as AVG, will modify the MIME of an email as it is received. This will cause DomainKey signature
 		# verification to fail because the body of the MIME is modified.
 		#
 		# @param sigIndex [Fixnum]
 		# @param mimeData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyDomainKeySignature(sigIndex, mimeData)
 			# ...
 		end

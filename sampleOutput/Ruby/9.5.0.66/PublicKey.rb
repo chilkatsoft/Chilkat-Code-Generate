@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -223,8 +223,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -233,8 +233,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -276,7 +276,7 @@ module Chilkat
 		# @param preferPkcs1 [TrueClass, FalseClass]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetDer(preferPkcs1, outBytes)
 			# ...
 		end
@@ -292,7 +292,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncoded(preferPkcs1, encoding, outStr)
 			# ...
 		end
@@ -307,7 +307,7 @@ module Chilkat
 		# @param preferPkcs1 [TrueClass, FalseClass]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncoded(preferPkcs1, encoding)
 			# ...
 		end
@@ -316,18 +316,18 @@ module Chilkat
 		# Method: GetJwk
 		#
 		# Gets the public key in JWK (JSON Web Key) format. 
-		#		
-		#		RSA public keys have this JWK
+		# 
+		# RSA public keys have this JWK
 		# format:
-		#		
+		# 
 		# {"kty":"RSA",
 		# "n": "0vx7agoebGcQSuuPiLJXZptN9 ... U8awapJzKnqDKgw",
 		#
 		# "e":"AQAB"}
-		#		
-		#		
-		#		ECC public keys have this JWK format:
-		#		
+		# 
+		# 
+		# ECC public keys have this JWK format:
+		# 
 		#
 		# {"kty":"EC",
 		# "crv":"P-256",
@@ -338,7 +338,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetJwk(outStr)
 			# ...
 		end
@@ -347,18 +347,18 @@ module Chilkat
 		# Method: GetJwk
 		#
 		# Gets the public key in JWK (JSON Web Key) format. 
-		#		
-		#		RSA public keys have this JWK
+		# 
+		# RSA public keys have this JWK
 		# format:
-		#		
+		# 
 		# {"kty":"RSA",
 		# "n": "0vx7agoebGcQSuuPiLJXZptN9 ... U8awapJzKnqDKgw",
 		#
 		# "e":"AQAB"}
-		#		
-		#		
-		#		ECC public keys have this JWK format:
-		#		
+		# 
+		# 
+		# ECC public keys have this JWK format:
+		# 
 		#
 		# {"kty":"EC",
 		# "crv":"P-256",
@@ -368,7 +368,7 @@ module Chilkat
 		#
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getJwk()
 			# ...
 		end
@@ -382,7 +382,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetJwkThumbprint(hashAlg, outStr)
 			# ...
 		end
@@ -395,7 +395,7 @@ module Chilkat
 		#
 		# @param hashAlg [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getJwkThumbprint(hashAlg)
 			# ...
 		end
@@ -405,12 +405,12 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call GetDer with preference for PKCS8
 		# instead.
-		#		
-		#		Gets the public key in PKCS8 DER format.
+		# 
+		# Gets the public key in PKCS8 DER format.
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetOpenSslDer(outData)
 			# ...
@@ -421,12 +421,12 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call GetPem with preference for PKCS8
 		# instead.
-		#		
-		#		Gets the public key in PKCS8 PEM format.
+		# 
+		# Gets the public key in PKCS8 PEM format.
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetOpenSslPem(outStr)
 			# ...
@@ -437,11 +437,11 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call GetPem with preference for PKCS8
 		# instead.
-		#		
-		#		Gets the public key in PKCS8 PEM format.
+		# 
+		# Gets the public key in PKCS8 PEM format.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def getOpenSslPem()
 			# ...
@@ -456,7 +456,7 @@ module Chilkat
 		# @param preferPkcs1 [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPem(preferPkcs1, outStr)
 			# ...
 		end
@@ -469,7 +469,7 @@ module Chilkat
 		#
 		# @param preferPkcs1 [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPem(preferPkcs1)
 			# ...
 		end
@@ -479,14 +479,14 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call GetEncoded with preference for PKCS1
 		# instead.
-		#		
-		#		Gets the public key in PKCS1 format and returns in an encoded string, as
+		# 
+		# Gets the public key in PKCS1 format and returns in an encoded string, as
 		# specified by the ARG1 argument.
 		#
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetPkcs1ENC(encoding, outStr)
 			# ...
@@ -497,13 +497,13 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call GetEncoded with preference for PKCS1
 		# instead.
-		#		
-		#		Gets the public key in PKCS1 format and returns in an encoded string, as
+		# 
+		# Gets the public key in PKCS1 format and returns in an encoded string, as
 		# specified by the ARG1 argument.
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def getPkcs1ENC(encoding)
 			# ...
@@ -514,14 +514,14 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call GetEncoded with preference for PKCS8
 		# instead.
-		#		
-		#		Gets the public key in PKCS8 format and returns in an encoded string, as
+		# 
+		# Gets the public key in PKCS8 format and returns in an encoded string, as
 		# specified by the ARG1 argument.
 		#
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetPkcs8ENC(encoding, outStr)
 			# ...
@@ -532,13 +532,13 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call GetEncoded with preference for PKCS8
 		# instead.
-		#		
-		#		Gets the public key in PKCS8 format and returns in an encoded string, as
+		# 
+		# Gets the public key in PKCS8 format and returns in an encoded string, as
 		# specified by the ARG1 argument.
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def getPkcs8ENC(encoding)
 			# ...
@@ -549,12 +549,12 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call GetDer with preference for PKCS1
 		# instead.
-		#		
-		#		Gets the public key in PKCS1 DER format.
+		# 
+		# Gets the public key in PKCS1 DER format.
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetRsaDer(outData)
 			# ...
@@ -565,39 +565,39 @@ module Chilkat
 		#
 		# Gets the public key in XML format. The format depends on the key type. The key parts indicated by
 		# "..." are base64 encoded.
-		#		
-		#		RSA public keys have this XML
+		# 
+		# RSA public keys have this XML
 		# format:
-		#		
-		#		&lt;RSAKeyValue&gt;
-		#		&nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
-		#		&nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
-		#		&lt;/RSAKeyValue&gt;
-		#		
-		#		
-		#		DSA
+		# 
+		# &lt;RSAKeyValue&gt;
+		# &nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
+		# &nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
+		# &lt;/RSAKeyValue&gt;
+		# 
+		# 
+		# DSA
 		# public keys have this XML format:
-		#		
-		#		&lt;DSAPublicKey&gt;
+		# 
+		# &lt;DSAPublicKey&gt;
 		#
 		# &lt;P&gt;...&lt;/P&gt;
 		# &lt;Q&gt;...&lt;/Q&gt;
 		# &lt;G&gt;...&lt;/G&gt;
 		#
 		# &lt;Y&gt;...&lt;/Y&gt;
-		#		&lt;/DSAPublicKey&gt;
-		#		
-		#		
-		#		ECC public keys have this XML
+		# &lt;/DSAPublicKey&gt;
+		# 
+		# 
+		# ECC public keys have this XML
 		# format:
-		#		
-		#		&lt;ECCPublicKey curve="CURVE_NAME" x="HEX_DATA"
+		# 
+		# &lt;ECCPublicKey curve="CURVE_NAME" x="HEX_DATA"
 		# y="HEX_DATA"&gt;...&lt;/ECCPublicKey&gt;
 		#
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetXml(outStr)
 			# ...
 		end
@@ -607,38 +607,38 @@ module Chilkat
 		#
 		# Gets the public key in XML format. The format depends on the key type. The key parts indicated by
 		# "..." are base64 encoded.
-		#		
-		#		RSA public keys have this XML
+		# 
+		# RSA public keys have this XML
 		# format:
-		#		
-		#		&lt;RSAKeyValue&gt;
-		#		&nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
-		#		&nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
-		#		&lt;/RSAKeyValue&gt;
-		#		
-		#		
-		#		DSA
+		# 
+		# &lt;RSAKeyValue&gt;
+		# &nbsp;&nbsp;&lt;Modulus&gt;...&lt;/Modulus&gt;
+		# &nbsp;&nbsp;&lt;Exponent&gt;...&lt;/Exponent&gt;
+		# &lt;/RSAKeyValue&gt;
+		# 
+		# 
+		# DSA
 		# public keys have this XML format:
-		#		
-		#		&lt;DSAPublicKey&gt;
+		# 
+		# &lt;DSAPublicKey&gt;
 		#
 		# &lt;P&gt;...&lt;/P&gt;
 		# &lt;Q&gt;...&lt;/Q&gt;
 		# &lt;G&gt;...&lt;/G&gt;
 		#
 		# &lt;Y&gt;...&lt;/Y&gt;
-		#		&lt;/DSAPublicKey&gt;
-		#		
-		#		
-		#		ECC public keys have this XML
+		# &lt;/DSAPublicKey&gt;
+		# 
+		# 
+		# ECC public keys have this XML
 		# format:
-		#		
-		#		&lt;ECCPublicKey curve="CURVE_NAME" x="HEX_DATA"
+		# 
+		# &lt;ECCPublicKey curve="CURVE_NAME" x="HEX_DATA"
 		# y="HEX_DATA"&gt;...&lt;/ECCPublicKey&gt;
 		#
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getXml()
 			# ...
 		end
@@ -650,7 +650,7 @@ module Chilkat
 		#
 		# @param keyStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadBase64(keyStr)
 			# ...
 		end
@@ -662,7 +662,7 @@ module Chilkat
 		#
 		# @param keyBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromBinary(keyBytes)
 			# ...
 		end
@@ -673,13 +673,13 @@ module Chilkat
 		# Loads a public key from a file. The file can be in any string or binary format such as binary DER
 		# (PKCS1 or PKCS8), PEM, XML, or encoded binary DER (such as base64 encoded binary DER). The format of
 		# the contents of the file is auto-recognized.
-		#		
-		#		Starting in version 9.5.0.66, this method
+		# 
+		# Starting in version 9.5.0.66, this method
 		# also supports loading the JWK (JSON Web Key) format.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromFile(path)
 			# ...
 		end
@@ -689,13 +689,13 @@ module Chilkat
 		#
 		# Loads a public key from any string format, such as PEM, XML, or encoded binary DER (such as base64
 		# encoded binary DER). The format of the ARG1 is auto-recognized.
-		#		
-		#		Starting in version
+		# 
+		# Starting in version
 		# 9.5.0.66, this method also supports loading the JWK (JSON Web Key) format.
 		#
 		# @param keyString [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromString(keyString)
 			# ...
 		end
@@ -704,13 +704,13 @@ module Chilkat
 		# Method: LoadOpenSslDer
 		#
 		# This method is deprecated. Applications should call LoadFromBinary instead.
-		#		
-		#		Loads a
+		# 
+		# Loads a
 		# public key from in-memory PKCS8 DER formatted byte data.
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadOpenSslDer(data)
 			# ...
@@ -720,13 +720,13 @@ module Chilkat
 		# Method: LoadOpenSslDerFile
 		#
 		# This method is deprecated. Applications should call LoadFromFile instead.
-		#		
-		#		Loads a
+		# 
+		# Loads a
 		# public key from an PKCS8 DER format file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadOpenSslDerFile(path)
 			# ...
@@ -736,13 +736,13 @@ module Chilkat
 		# Method: LoadOpenSslPem
 		#
 		# This method is deprecated. Applications should call LoadFromString instead.
-		#		
-		#		Loads a
+		# 
+		# Loads a
 		# public key from an PKCS8 PEM string.
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadOpenSslPem(str)
 			# ...
@@ -752,13 +752,13 @@ module Chilkat
 		# Method: LoadOpenSslPemFile
 		#
 		# This method is deprecated. Applications should call LoadFromFile instead.
-		#		
-		#		Loads a
+		# 
+		# Loads a
 		# public key from an PKCS8 PEM file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadOpenSslPemFile(path)
 			# ...
@@ -768,13 +768,13 @@ module Chilkat
 		# Method: LoadPkcs1Pem
 		#
 		# This method is deprecated. Applications should call LoadFromString instead.
-		#		
-		#		Loads an
+		# 
+		# Loads an
 		# RSA public key from PKCS#1 PEM format.
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadPkcs1Pem(str)
 			# ...
@@ -784,13 +784,13 @@ module Chilkat
 		# Method: LoadRsaDer
 		#
 		# This method is deprecated. Applications should call LoadFromBinary instead.
-		#		
-		#		Loads a
+		# 
+		# Loads a
 		# public key from in-memory PKCS1 DER formatted byte data.
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDer(data)
 			# ...
@@ -800,13 +800,13 @@ module Chilkat
 		# Method: LoadRsaDerFile
 		#
 		# This method is deprecated. Applications should call LoadFromFile instead.
-		#		
-		#		Loads a
+		# 
+		# Loads a
 		# public key from an PKCS1 DER formatted file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDerFile(path)
 			# ...
@@ -816,13 +816,13 @@ module Chilkat
 		# Method: LoadXml
 		#
 		# This method is deprecated. Applications should call LoadFromString instead.
-		#		
-		#		Loads a
+		# 
+		# Loads a
 		# public key from an XML string.
 		#
 		# @param xml [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadXml(xml)
 			# ...
@@ -832,13 +832,13 @@ module Chilkat
 		# Method: LoadXmlFile
 		#
 		# This method is deprecated. Applications should call LoadFromFile instead.
-		#		
-		#		Loads a
+		# 
+		# Loads a
 		# public key from an XML file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadXmlFile(path)
 			# ...
@@ -853,7 +853,7 @@ module Chilkat
 		# @param preferPkcs1 [TrueClass, FalseClass]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveDerFile(preferPkcs1, path)
 			# ...
 		end
@@ -865,7 +865,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -875,12 +875,12 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call SaveDerFile with preference for PKCS8
 		# instead.
-		#		
-		#		Saves the public key to an PKCS8 DER format file.
+		# 
+		# Saves the public key to an PKCS8 DER format file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveOpenSslDerFile(path)
 			# ...
@@ -891,12 +891,12 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call SavePemFile with preference for PKCS8
 		# instead.
-		#		
-		#		Saves the public key to an PKCS8 PEM format file.
+		# 
+		# Saves the public key to an PKCS8 PEM format file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveOpenSslPemFile(path)
 			# ...
@@ -911,7 +911,7 @@ module Chilkat
 		# @param preferPkcs1 [TrueClass, FalseClass]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SavePemFile(preferPkcs1, path)
 			# ...
 		end
@@ -921,12 +921,12 @@ module Chilkat
 		#
 		# This method is deprecated. Applications should call SaveDerFile with preference for PKCS1
 		# instead.
-		#		
-		#		Saves the public key to an PKCS1 DER format file.
+		# 
+		# Saves the public key to an PKCS1 DER format file.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaDerFile(path)
 			# ...
@@ -939,7 +939,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveXmlFile(path)
 			# ...
 		end

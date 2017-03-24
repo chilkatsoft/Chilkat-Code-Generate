@@ -57,13 +57,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -82,13 +82,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -105,13 +105,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -128,13 +128,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -267,8 +267,8 @@ module Chilkat
 		# be the base64 encoding of the 16 bytes of the MD5 hash. The most common need for this is if doing an
 		# S3 upload from a stream. (If the pre-computed MD5 is not provided, then Chilkat is forced to stream
 		# the entire file into memory so that it can calculate the MD5 for authentication.)
-		#		
-		#		Note:
+		# 
+		# Note:
 		# AWS Signature Version 2 uses the MD5, whereas Signature Version 4 uses SHA256.
 		#
 		# @param ckStr [CkString]
@@ -280,8 +280,8 @@ module Chilkat
 		# be the base64 encoding of the 16 bytes of the MD5 hash. The most common need for this is if doing an
 		# S3 upload from a stream. (If the pre-computed MD5 is not provided, then Chilkat is forced to stream
 		# the entire file into memory so that it can calculate the MD5 for authentication.)
-		#		
-		#		Note:
+		# 
+		# Note:
 		# AWS Signature Version 2 uses the MD5, whereas Signature Version 4 uses SHA256.
 		#
 		# @param newval [String]
@@ -291,8 +291,8 @@ module Chilkat
 		# be the base64 encoding of the 16 bytes of the MD5 hash. The most common need for this is if doing an
 		# S3 upload from a stream. (If the pre-computed MD5 is not provided, then Chilkat is forced to stream
 		# the entire file into memory so that it can calculate the MD5 for authentication.)
-		#		
-		#		Note:
+		# 
+		# Note:
 		# AWS Signature Version 2 uses the MD5, whereas Signature Version 4 uses SHA256.
 		#
 		# @return [String]
@@ -302,8 +302,8 @@ module Chilkat
 		# be the base64 encoding of the 16 bytes of the MD5 hash. The most common need for this is if doing an
 		# S3 upload from a stream. (If the pre-computed MD5 is not provided, then Chilkat is forced to stream
 		# the entire file into memory so that it can calculate the MD5 for authentication.)
-		#		
-		#		Note:
+		# 
+		# Note:
 		# AWS Signature Version 2 uses the MD5, whereas Signature Version 4 uses SHA256.
 		#
 		# @param newval [String]
@@ -314,8 +314,8 @@ module Chilkat
 		# if doing an S3 upload from a stream. (If the pre-computed SHA-256 is not provided, then Chilkat is
 		# forced to stream the entire file into memory so that it can calculate the SHA-256 for
 		# authentication.)
-		#		
-		#		Note: AWS Signature Version 4 uses the SHA256 hash. (AWS Signature
+		# 
+		# Note: AWS Signature Version 4 uses the SHA256 hash. (AWS Signature
 		# Version 2 uses MD5)
 		#
 		# @param ckStr [CkString]
@@ -328,8 +328,8 @@ module Chilkat
 		# if doing an S3 upload from a stream. (If the pre-computed SHA-256 is not provided, then Chilkat is
 		# forced to stream the entire file into memory so that it can calculate the SHA-256 for
 		# authentication.)
-		#		
-		#		Note: AWS Signature Version 4 uses the SHA256 hash. (AWS Signature
+		# 
+		# Note: AWS Signature Version 4 uses the SHA256 hash. (AWS Signature
 		# Version 2 uses MD5)
 		#
 		# @param newval [String]
@@ -340,8 +340,8 @@ module Chilkat
 		# if doing an S3 upload from a stream. (If the pre-computed SHA-256 is not provided, then Chilkat is
 		# forced to stream the entire file into memory so that it can calculate the SHA-256 for
 		# authentication.)
-		#		
-		#		Note: AWS Signature Version 4 uses the SHA256 hash. (AWS Signature
+		# 
+		# Note: AWS Signature Version 4 uses the SHA256 hash. (AWS Signature
 		# Version 2 uses MD5)
 		#
 		# @return [String]
@@ -352,8 +352,8 @@ module Chilkat
 		# if doing an S3 upload from a stream. (If the pre-computed SHA-256 is not provided, then Chilkat is
 		# forced to stream the entire file into memory so that it can calculate the SHA-256 for
 		# authentication.)
-		#		
-		#		Note: AWS Signature Version 4 uses the SHA256 hash. (AWS Signature
+		# 
+		# Note: AWS Signature Version 4 uses the SHA256 hash. (AWS Signature
 		# Version 2 uses MD5)
 		#
 		# @param newval [String]
@@ -413,7 +413,7 @@ module Chilkat
 
 		# The AWS service namespace, such as "s3", "ses", etc. See
 		# http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#genref-aws-service-namespaces
-		#		This
+		# This
 		# property is unused when the SignatureVersion property is set to 2.
 		#
 		# @param ckStr [CkString]
@@ -423,7 +423,7 @@ module Chilkat
 
 		# The AWS service namespace, such as "s3", "ses", etc. See
 		# http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#genref-aws-service-namespaces
-		#		This
+		# This
 		# property is unused when the SignatureVersion property is set to 2.
 		#
 		# @param newval [String]
@@ -431,7 +431,7 @@ module Chilkat
 
 		# The AWS service namespace, such as "s3", "ses", etc. See
 		# http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#genref-aws-service-namespaces
-		#		This
+		# This
 		# property is unused when the SignatureVersion property is set to 2.
 		#
 		# @return [String]
@@ -439,7 +439,7 @@ module Chilkat
 
 		# The AWS service namespace, such as "s3", "ses", etc. See
 		# http://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html#genref-aws-service-namespaces
-		#		This
+		# This
 		# property is unused when the SignatureVersion property is set to 2.
 		#
 		# @param newval [String]
@@ -459,8 +459,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -469,8 +469,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -510,7 +510,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end

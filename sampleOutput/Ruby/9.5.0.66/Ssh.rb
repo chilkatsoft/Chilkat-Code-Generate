@@ -22,20 +22,20 @@ module Chilkat
 
 		# Set to one of the following values if a call to AuthenticatePw, AuthenticatePk, or AuthenticatePwPk
 		# returns a failed status.
-		#		
-		#		1: Transport failure. This is a failure to communicate with
+		# 
+		# 1: Transport failure. This is a failure to communicate with
 		# the server (i.e. the connection was lost, or a read or write failed or timed out).
-		#		2: Invalid
+		# 2: Invalid
 		# key for public key authentication. The key was not a valid format, not a valid key, not a private
 		# key, or not the right type of key.
-		#		3: No matching authentication methods were
+		# 3: No matching authentication methods were
 		# available.
-		#		4: SSH authentication protocol error - an unexpected or invalid message was
+		# 4: SSH authentication protocol error - an unexpected or invalid message was
 		# received.
-		#		5: The incorrect password or private key was provided.
-		#		6: Already
+		# 5: The incorrect password or private key was provided.
+		# 6: Already
 		# authenticated. The SSH session is already authenticated.
-		#		7: Password change request: The
+		# 7: Password change request: The
 		# server requires the password to be changed.
 		#
 		#
@@ -46,53 +46,53 @@ module Chilkat
 		# default value of this property is _FALSE_. If set to _TRUE_, then the following sequences are
 		# interpreted as control characters in any string passed to SendReqExec or
 		# ChannelSendString.
-		#		
-		#		^@ 	00 	00 	NUL 	Null
-		#		^A 	01 	01 	SOH 	Start of
+		# 
+		# ^@ 	00 	00 	NUL 	Null
+		# ^A 	01 	01 	SOH 	Start of
 		# Heading
-		#		^B 	02 	02 	STX 	Start of Text
-		#		^C 	03 	03 	ETX 	End of Text
-		#		^D 	04 	04
+		# ^B 	02 	02 	STX 	Start of Text
+		# ^C 	03 	03 	ETX 	End of Text
+		# ^D 	04 	04
 		# EOT 	End of Transmission
-		#		^E 	05 	05 	ENQ 	Enquiry
-		#		^F 	06 	06 	ACK 	Acknowledge
-		#		^G
+		# ^E 	05 	05 	ENQ 	Enquiry
+		# ^F 	06 	06 	ACK 	Acknowledge
+		# ^G
 		# 07 	07 	BEL 	Bell
-		#		^H 	08 	08 	BS 	Backspace
-		#		^I 	09 	09 	HT 	Character Tabulation,
+		# ^H 	08 	08 	BS 	Backspace
+		# ^I 	09 	09 	HT 	Character Tabulation,
 		# Horizontal Tabulation
-		#		^J 	10 	0A 	LF 	Line Feed
-		#		^K 	11 	0B 	VT 	Line Tabulation,
+		# ^J 	10 	0A 	LF 	Line Feed
+		# ^K 	11 	0B 	VT 	Line Tabulation,
 		# Vertical Tabulation
-		#		^L 	12 	0C 	FF 	Form Feed
-		#		^M 	13 	0D 	CR 	Carriage Return
-		#		^N
+		# ^L 	12 	0C 	FF 	Form Feed
+		# ^M 	13 	0D 	CR 	Carriage Return
+		# ^N
 		# 14 	0E 	SO 	Shift Out
-		#		^O 	15 	0F 	SI 	Shift In
-		#		^P 	16 	10 	DLE 	Data Link
+		# ^O 	15 	0F 	SI 	Shift In
+		# ^P 	16 	10 	DLE 	Data Link
 		# Escape
-		#		^Q 	17 	11 	DC1 	Device Control One (XON)
-		#		^R 	18 	12 	DC2 	Device Control
+		# ^Q 	17 	11 	DC1 	Device Control One (XON)
+		# ^R 	18 	12 	DC2 	Device Control
 		# Two
-		#		^S 	19 	13 	DC3 	Device Control Three (XOFF)
-		#		^T 	20 	14 	DC4 	Device Control
+		# ^S 	19 	13 	DC3 	Device Control Three (XOFF)
+		# ^T 	20 	14 	DC4 	Device Control
 		# Four
-		#		^U 	21 	15 	NAK 	Negative Acknowledge
-		#		^V 	22 	16 	SYN 	Synchronous Idle
-		#		^W
+		# ^U 	21 	15 	NAK 	Negative Acknowledge
+		# ^V 	22 	16 	SYN 	Synchronous Idle
+		# ^W
 		# 23 	17 	ETB 	End of Transmission Block
-		#		^X 	24 	18 	CAN 	Cancel
-		#		^Y 	25 	19 	EM 	End of
+		# ^X 	24 	18 	CAN 	Cancel
+		# ^Y 	25 	19 	EM 	End of
 		# medium
-		#		^Z 	26 	1A 	SUB 	Substitute
-		#		^[ 	27 	1B 	ESC 	Escape
-		#		^\ 	28 	1C 	FS 	File
+		# ^Z 	26 	1A 	SUB 	Substitute
+		# ^[ 	27 	1B 	ESC 	Escape
+		# ^\ 	28 	1C 	FS 	File
 		# Separator
-		#		^] 	29 	1D 	GS 	Group Separator
-		#		^^ 	30 	1E 	RS 	Record Separator
-		#		^_ 	31
+		# ^] 	29 	1D 	GS 	Group Separator
+		# ^^ 	30 	1E 	RS 	Record Separator
+		# ^_ 	31
 		# 1F 	US 	Unit Separator
-		#		^? 	127 	7F 	DEL 	Delete
+		# ^? 	127 	7F 	DEL 	Delete
 		#
 		#
 		# @return [TrueClass, FalseClass]
@@ -102,53 +102,53 @@ module Chilkat
 		# default value of this property is _FALSE_. If set to _TRUE_, then the following sequences are
 		# interpreted as control characters in any string passed to SendReqExec or
 		# ChannelSendString.
-		#		
-		#		^@ 	00 	00 	NUL 	Null
-		#		^A 	01 	01 	SOH 	Start of
+		# 
+		# ^@ 	00 	00 	NUL 	Null
+		# ^A 	01 	01 	SOH 	Start of
 		# Heading
-		#		^B 	02 	02 	STX 	Start of Text
-		#		^C 	03 	03 	ETX 	End of Text
-		#		^D 	04 	04
+		# ^B 	02 	02 	STX 	Start of Text
+		# ^C 	03 	03 	ETX 	End of Text
+		# ^D 	04 	04
 		# EOT 	End of Transmission
-		#		^E 	05 	05 	ENQ 	Enquiry
-		#		^F 	06 	06 	ACK 	Acknowledge
-		#		^G
+		# ^E 	05 	05 	ENQ 	Enquiry
+		# ^F 	06 	06 	ACK 	Acknowledge
+		# ^G
 		# 07 	07 	BEL 	Bell
-		#		^H 	08 	08 	BS 	Backspace
-		#		^I 	09 	09 	HT 	Character Tabulation,
+		# ^H 	08 	08 	BS 	Backspace
+		# ^I 	09 	09 	HT 	Character Tabulation,
 		# Horizontal Tabulation
-		#		^J 	10 	0A 	LF 	Line Feed
-		#		^K 	11 	0B 	VT 	Line Tabulation,
+		# ^J 	10 	0A 	LF 	Line Feed
+		# ^K 	11 	0B 	VT 	Line Tabulation,
 		# Vertical Tabulation
-		#		^L 	12 	0C 	FF 	Form Feed
-		#		^M 	13 	0D 	CR 	Carriage Return
-		#		^N
+		# ^L 	12 	0C 	FF 	Form Feed
+		# ^M 	13 	0D 	CR 	Carriage Return
+		# ^N
 		# 14 	0E 	SO 	Shift Out
-		#		^O 	15 	0F 	SI 	Shift In
-		#		^P 	16 	10 	DLE 	Data Link
+		# ^O 	15 	0F 	SI 	Shift In
+		# ^P 	16 	10 	DLE 	Data Link
 		# Escape
-		#		^Q 	17 	11 	DC1 	Device Control One (XON)
-		#		^R 	18 	12 	DC2 	Device Control
+		# ^Q 	17 	11 	DC1 	Device Control One (XON)
+		# ^R 	18 	12 	DC2 	Device Control
 		# Two
-		#		^S 	19 	13 	DC3 	Device Control Three (XOFF)
-		#		^T 	20 	14 	DC4 	Device Control
+		# ^S 	19 	13 	DC3 	Device Control Three (XOFF)
+		# ^T 	20 	14 	DC4 	Device Control
 		# Four
-		#		^U 	21 	15 	NAK 	Negative Acknowledge
-		#		^V 	22 	16 	SYN 	Synchronous Idle
-		#		^W
+		# ^U 	21 	15 	NAK 	Negative Acknowledge
+		# ^V 	22 	16 	SYN 	Synchronous Idle
+		# ^W
 		# 23 	17 	ETB 	End of Transmission Block
-		#		^X 	24 	18 	CAN 	Cancel
-		#		^Y 	25 	19 	EM 	End of
+		# ^X 	24 	18 	CAN 	Cancel
+		# ^Y 	25 	19 	EM 	End of
 		# medium
-		#		^Z 	26 	1A 	SUB 	Substitute
-		#		^[ 	27 	1B 	ESC 	Escape
-		#		^\ 	28 	1C 	FS 	File
+		# ^Z 	26 	1A 	SUB 	Substitute
+		# ^[ 	27 	1B 	ESC 	Escape
+		# ^\ 	28 	1C 	FS 	File
 		# Separator
-		#		^] 	29 	1D 	GS 	Group Separator
-		#		^^ 	30 	1E 	RS 	Record Separator
-		#		^_ 	31
+		# ^] 	29 	1D 	GS 	Group Separator
+		# ^^ 	30 	1E 	RS 	Record Separator
+		# ^_ 	31
 		# 1F 	US 	Unit Separator
-		#		^? 	127 	7F 	DEL 	Delete
+		# ^? 	127 	7F 	DEL 	Delete
 		#
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -156,7 +156,7 @@ module Chilkat
 
 		# If a request to open a channel fails, this property contains a code that identifies the reason for
 		# failure. The reason codes are defined in RFC 4254 and are reproduced here:
-		#		
+		# 
 		# Symbolic name
 		# reason code
 		# ------------- -----------
@@ -212,11 +212,11 @@ module Chilkat
 		def put_ClientIdentifier(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param ckStr [CkString]
@@ -225,33 +225,33 @@ module Chilkat
 		def get_ClientIpAddress(ckStr) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
 		def put_ClientIpAddress(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @return [String]
 		def clientIpAddress() end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
@@ -272,13 +272,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -297,13 +297,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -320,13 +320,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -343,13 +343,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -363,7 +363,7 @@ module Chilkat
 
 		# If the SSH server sent a DISCONNECT message when closing the connection, this property contains the
 		# "reason code" as specified in RFC 4253:
-		#		
+		# 
 		# Symbolic name reason code
 		# -------------
 		# -----------
@@ -408,8 +408,8 @@ module Chilkat
 
 		# Enables or disables the use of compression w/ the SSH connection. The default value is _TRUE_,
 		# meaning that compression is used if the server supports it.
-		#		
-		#		Some older SSH servers have
+		# 
+		# Some older SSH servers have
 		# been found that claim to support compression, but actually fail when compression is used. PuTTY does
 		# not enable compression by default. If trouble is encountered where the SSH server disconnects
 		# immediately after the connection is seemingly established (i.e. during authentication), then check
@@ -420,8 +420,8 @@ module Chilkat
 
 		# Enables or disables the use of compression w/ the SSH connection. The default value is _TRUE_,
 		# meaning that compression is used if the server supports it.
-		#		
-		#		Some older SSH servers have
+		# 
+		# Some older SSH servers have
 		# been found that claim to support compression, but actually fail when compression is used. PuTTY does
 		# not enable compression by default. If trouble is encountered where the SSH server disconnects
 		# immediately after the connection is seemingly established (i.e. during authentication), then check
@@ -435,8 +435,8 @@ module Chilkat
 		# here: "aes256-ctr", "aes128-ctr", "aes256-cbc", "aes128-cbc", "twofish256-cbc", "twofish128-cbc",
 		# "blowfish-cbc", "3des-cbc", "arcfour128", "arcfour256". (If blowfish is chosen, the encryption
 		# strength is 128 bits.) 
-		#		
-		#		Important: If this is property is set and the server does NOT
+		# 
+		# Important: If this is property is set and the server does NOT
 		# support then encryption algorithm, then the Connect will fail.
 		#
 		# @param ckStr [CkString]
@@ -449,8 +449,8 @@ module Chilkat
 		# here: "aes256-ctr", "aes128-ctr", "aes256-cbc", "aes128-cbc", "twofish256-cbc", "twofish128-cbc",
 		# "blowfish-cbc", "3des-cbc", "arcfour128", "arcfour256". (If blowfish is chosen, the encryption
 		# strength is 128 bits.) 
-		#		
-		#		Important: If this is property is set and the server does NOT
+		# 
+		# Important: If this is property is set and the server does NOT
 		# support then encryption algorithm, then the Connect will fail.
 		#
 		# @param newval [String]
@@ -461,8 +461,8 @@ module Chilkat
 		# here: "aes256-ctr", "aes128-ctr", "aes256-cbc", "aes128-cbc", "twofish256-cbc", "twofish128-cbc",
 		# "blowfish-cbc", "3des-cbc", "arcfour128", "arcfour256". (If blowfish is chosen, the encryption
 		# strength is 128 bits.) 
-		#		
-		#		Important: If this is property is set and the server does NOT
+		# 
+		# Important: If this is property is set and the server does NOT
 		# support then encryption algorithm, then the Connect will fail.
 		#
 		# @return [String]
@@ -473,8 +473,8 @@ module Chilkat
 		# here: "aes256-ctr", "aes128-ctr", "aes256-cbc", "aes128-cbc", "twofish256-cbc", "twofish128-cbc",
 		# "blowfish-cbc", "3des-cbc", "arcfour128", "arcfour256". (If blowfish is chosen, the encryption
 		# strength is 128 bits.) 
-		#		
-		#		Important: If this is property is set and the server does NOT
+		# 
+		# Important: If this is property is set and the server does NOT
 		# support then encryption algorithm, then the Connect will fail.
 		#
 		# @param newval [String]
@@ -496,6 +496,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# Indicates the preferred host key algorithm to be used in establishing the SSH secure connection. The
@@ -693,8 +695,8 @@ module Chilkat
 		def put_IdleTimeoutMs(newval) end
 
 		# Returns _TRUE_ if the component is connected to an SSH server. 
-		#		
-		#		Note: The IsConnected
+		# 
+		# Note: The IsConnected
 		# property is set to _TRUE_ after successfully completing the Connect method call. The IsConnected
 		# property will only be set to _FALSE_ by calling Disconnect, or by the failure of another method call
 		# such that the disconnection is detected.
@@ -836,8 +838,8 @@ module Chilkat
 		def get_LastStringResultLen() end
 
 		# The maximum packet length to be used in the SSH transport protocol. The default value is 8192.
-		# #		
-		#		Note: If a large amount of data is to be flowing to/from the SSH server, then setting the
+		# # 
+		# Note: If a large amount of data is to be flowing to/from the SSH server, then setting the
 		# MaxPacketSize equal to 32768 may improve performance. For those familiar with the inner workings of
 		# the SSH protocol, this is the "maximum packet size" value that is sent in the SSH_MSG_CHANNEL_OPEN
 		# message as defined in RFC 4254.
@@ -846,8 +848,8 @@ module Chilkat
 		def get_MaxPacketSize() end
 
 		# The maximum packet length to be used in the SSH transport protocol. The default value is 8192.
-		# #		
-		#		Note: If a large amount of data is to be flowing to/from the SSH server, then setting the
+		# # 
+		# Note: If a large amount of data is to be flowing to/from the SSH server, then setting the
 		# MaxPacketSize equal to 32768 may improve performance. For those familiar with the inner workings of
 		# the SSH protocol, this is the "maximum packet size" value that is sent in the SSH_MSG_CHANNEL_OPEN
 		# message as defined in RFC 4254.
@@ -864,7 +866,7 @@ module Chilkat
 		# status, and this property is set to _TRUE_, then it indicates the server requested a password
 		# change. In this case, re-call the authenticate method, but provide both the old and new passwords in
 		# the following format, where vertical bar characters encapsulate the old and new passwords:
-		# #		|oldPassword|newPassword|
+		# # |oldPassword|newPassword|
 		#
 		# @return [TrueClass, FalseClass]
 		def get_PasswordChangeRequested() end
@@ -990,14 +992,14 @@ module Chilkat
 		def put_SocksPassword(newval) end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [Bignum]
@@ -1030,24 +1032,24 @@ module Chilkat
 		def put_SocksUsername(newval) end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
@@ -1057,8 +1059,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -1071,8 +1073,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -1084,8 +1086,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1097,8 +1099,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1111,11 +1113,11 @@ module Chilkat
 		# stderr is combined and retrievable via the following methods: GetReceivedData, GetReceivedDataN,
 		# GetReceivedText, GetReceivedTextS. If this property is _FALSE_, then stderr is available separately
 		# via the GetReceivedStderr method.
-		#		
-		#		The default value of this property is
+		# 
+		# The default value of this property is
 		# _TRUE_.
-		#		
-		#		Note: Most SSH servers do not send stderr output as "extended data" packets as
+		# 
+		# Note: Most SSH servers do not send stderr output as "extended data" packets as
 		# specified in RFC 4254. The SessionLog may be examined to see if any CHANNEL_EXTENDED_DATA messages
 		# exist. If not, then all of the output (stdout + stderr) was sent via CHANNEL_DATA messages, and
 		# therefore it is not possible to differentiate stderr output from stdout. In summary: This feature
@@ -1128,11 +1130,11 @@ module Chilkat
 		# stderr is combined and retrievable via the following methods: GetReceivedData, GetReceivedDataN,
 		# GetReceivedText, GetReceivedTextS. If this property is _FALSE_, then stderr is available separately
 		# via the GetReceivedStderr method.
-		#		
-		#		The default value of this property is
+		# 
+		# The default value of this property is
 		# _TRUE_.
-		#		
-		#		Note: Most SSH servers do not send stderr output as "extended data" packets as
+		# 
+		# Note: Most SSH servers do not send stderr output as "extended data" packets as
 		# specified in RFC 4254. The SessionLog may be examined to see if any CHANNEL_EXTENDED_DATA messages
 		# exist. If not, then all of the output (stdout + stderr) was sent via CHANNEL_DATA messages, and
 		# therefore it is not possible to differentiate stderr output from stdout. In summary: This feature
@@ -1191,8 +1193,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1201,8 +1203,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1241,14 +1243,14 @@ module Chilkat
 		# Authenticates with the SSH server using public-key authentication. The corresponding public key must
 		# have been installed on the SSH server for the ARG1. Authentication will succeed if the matching ARG2
 		# is provided.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param username [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
@@ -1257,21 +1259,21 @@ module Chilkat
 		# Method: AuthenticatePw
 		#
 		# Authenticates with the SSH server using a ARG1 and ARG2.
-		#		
-		#		An SSH session always begins
+		# 
+		# An SSH session always begins
 		# by first calling Connect to connect to the SSH server, and then calling either AuthenticatePw or
 		# AuthenticatePk to login.
-		#		
-		#		Important: When reporting problems, please send the full
+		# 
+		# Important: When reporting problems, please send the full
 		# contents of the LastErrorText property to support@chilkatsoft.com.
-		#		
-		#		Note: To learn about
+		# 
+		# Note: To learn about
 		# how to handle password change requests, see the PasswordChangeRequested property (above).
 		#
 		# @param login [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePw(login, password)
 			# ...
 		end
@@ -1281,15 +1283,15 @@ module Chilkat
 		#
 		# Authentication for SSH servers that require both a password and private key. (Most SSH servers are
 		# configured to require one or the other, but not both.)
-		#		
-		#		Important: When reporting
+		# 
+		# Important: When reporting
 		# problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param username [String]
 		# @param password [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
@@ -1301,7 +1303,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelIsOpen(channelNum)
 			# ...
 		end
@@ -1311,32 +1313,32 @@ module Chilkat
 		#
 		# Polls for incoming data on an open channel. This method will read a channel, waiting at most ARG2
 		# milliseconds for data to arrive. Return values are as follows:
-		#		
-		#		-1 -- Error. Check the
+		# 
+		# -1 -- Error. Check the
 		# IsConnected property to see if the connection to the SSH server is still valid. 
 		# Also, call
 		# ChannelIsOpen to see if the channel remains open. The LastErrorText property will contain 
 		# more
 		# detailed information regarding the error.
-		#		
-		#		-2 -- No additional data was received prior
+		# 
+		# -2 -- No additional data was received prior
 		# to the poll timeout.
-		#		
-		#		>0 -- Additional data was received and the return value indicates
+		# 
+		# >0 -- Additional data was received and the return value indicates
 		# how many bytes are available to be "picked up". Methods that read data on a channel do not return
 		# the received data directly. Instead, they return an integer
-		#		to indicate how many bytes are
+		# to indicate how many bytes are
 		# available to be "picked up". An application picks up the available data by
 		# calling
-		#		GetReceivedData or GetReceivedText.
-		#		
-		#		=0 -- A zero can be returned if the
+		# GetReceivedData or GetReceivedText.
+		# 
+		# =0 -- A zero can be returned if the
 		# channel EOF has already been received, or if the channel had already been closed.
 		#
 		# @param channelNum [Fixnum]
 		# @param pollTimeoutMs [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def ChannelPoll(channelNum, pollTimeoutMs)
 			# ...
 		end
@@ -1346,30 +1348,30 @@ module Chilkat
 		#
 		# Reads incoming data on an open channel. This method will read a channel, waiting at most
 		# IdleTimeoutMs milliseconds for data to arrive. Return values are as follows:
-		#		
-		#		-1 --
+		# 
+		# -1 --
 		# Error. Check the IsConnected property to see if the connection to the SSH server is still valid.
 		# # Also, call ChannelIsOpen to see if the channel remains open. The LastErrorText property will
 		# contain 
 		# more detailed information regarding the error.
-		#		
-		#		-2 -- No additional data
+		# 
+		# -2 -- No additional data
 		# was received prior to the IdleTimeoutMs timeout.
-		#		
-		#		>0 -- Additional data was received and
+		# 
+		# >0 -- Additional data was received and
 		# the return value indicates how many bytes are available to be "picked up". Methods that read data on
 		# a channel do not return the received data directly. Instead, they return an integer
-		#		to
+		# to
 		# indicate how many bytes are available to be "picked up". An application picks up the available data
 		# by calling
-		#		GetReceivedData or GetReceivedText.
-		#		
-		#		=0 -- A zero can be returned if
+		# GetReceivedData or GetReceivedText.
+		# 
+		# =0 -- A zero can be returned if
 		# the channel EOF has already been received, or if the channel had already been closed.
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def ChannelRead(channelNum)
 			# ...
 		end
@@ -1380,8 +1382,8 @@ module Chilkat
 		# Reads incoming data on an open channel and continues reading until no data arrives for ARG2
 		# milliseconds. The first read will wait a max of IdleTimeoutMs milliseconds before timing out.
 		# Subsequent reads wait a max of ARG2 milliseconds before timing out. 
-		#		
-		#		The idea behind
+		# 
+		# The idea behind
 		# ChannelReadAndPoll is to capture the output of a shell command. One might imagine the typical
 		# sequence of events when executing a shell command to be like this: (1) client sends command to
 		# server, (2) server executes the command (i.e. it's computing...), potentially taking some amount of
@@ -1390,33 +1392,33 @@ module Chilkat
 		# shortened. This is exactly what ChannelReadAndPoll does -- the first timeout is controlled by the
 		# IdleTimeoutMs property, while the subsequent reads (once output starts flowing) is controlled by
 		# ARG2.
-		#		
-		#		Return values are as follows:
-		#		-1 -- Error. Check the IsConnected property
+		# 
+		# Return values are as follows:
+		# -1 -- Error. Check the IsConnected property
 		# to see if the connection to the SSH server is still valid. 
 		# Also, call ChannelIsOpen to see if
 		# the channel remains open. The LastErrorText property will contain 
 		# more detailed information
 		# regarding the error.
-		#		
-		#		-2 -- No additional data was received prior to the IdleTimeoutMs
+		# 
+		# -2 -- No additional data was received prior to the IdleTimeoutMs
 		# timeout.
-		#		
-		#		>0 -- Additional data was received and the return value indicates how many
+		# 
+		# >0 -- Additional data was received and the return value indicates how many
 		# bytes are available to be "picked up". Methods that read data on a channel do not return the
 		# received data directly. Instead, they return an integer
-		#		to indicate how many bytes are
+		# to indicate how many bytes are
 		# available to be "picked up". An application picks up the available data by
 		# calling
-		#		GetReceivedData or GetReceivedText.
-		#		
-		#		=0 -- A zero can be returned if the
+		# GetReceivedData or GetReceivedText.
+		# 
+		# =0 -- A zero can be returned if the
 		# channel EOF has already been received, or if the channel had already been closed.
 		#
 		# @param channelNum [Fixnum]
 		# @param pollTimeoutMs [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def ChannelReadAndPoll(channelNum, pollTimeoutMs)
 			# ...
 		end
@@ -1431,7 +1433,7 @@ module Chilkat
 		# @param pollTimeoutMs [Fixnum]
 		# @param maxNumBytes [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def ChannelReadAndPoll2(channelNum, pollTimeoutMs, maxNumBytes)
 			# ...
 		end
@@ -1445,7 +1447,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelReceivedClose(channelNum)
 			# ...
 		end
@@ -1459,7 +1461,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelReceivedEof(channelNum)
 			# ...
 		end
@@ -1471,7 +1473,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelReceivedExitStatus(channelNum)
 			# ...
 		end
@@ -1485,7 +1487,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelReceiveToClose(channelNum)
 			# ...
 		end
@@ -1497,8 +1499,8 @@ module Chilkat
 		# to receive data until the string "Hello World" arrives, set ARG2 equal to "*Hello World*". ARG3
 		# indicates the character encoding of the text being received ("iso-8859-1" for example). ARG4 may be
 		# set to _TRUE_ for case sensitive matching, or _FALSE_ for case insensitive matching.
-		# #		
-		#		Returns _TRUE_ if text data matching ARG2 was received and is available to be picked up by
+		# # 
+		# Returns _TRUE_ if text data matching ARG2 was received and is available to be picked up by
 		# calling GetReceivedText (or GetReceivedTextS). IMPORTANT: This method may read beyond the matching
 		# text. Call GetReceivedTextS to extract only the data up-to and including the matching text.
 		#
@@ -1507,7 +1509,7 @@ module Chilkat
 		# @param charset [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelReceiveUntilMatch(channelNum, matchPattern, charset, caseSensitive)
 			# ...
 		end
@@ -1523,7 +1525,7 @@ module Chilkat
 		# @param charset [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelReceiveUntilMatchN(channelNum, matchPatterns, charset, caseSensitive)
 			# ...
 		end
@@ -1540,7 +1542,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ChannelRelease(channelNum)
 			# ...
 		end
@@ -1553,7 +1555,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelSendClose(channelNum)
 			# ...
 		end
@@ -1566,7 +1568,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelSendData(channelNum, byteData)
 			# ...
 		end
@@ -1580,7 +1582,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelSendEof(channelNum)
 			# ...
 		end
@@ -1596,7 +1598,7 @@ module Chilkat
 		# @param textData [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChannelSendString(channelNum, textData, charset)
 			# ...
 		end
@@ -1607,7 +1609,7 @@ module Chilkat
 		# Returns _TRUE_ if the underlying TCP socket is connected to the SSH server.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CheckConnection()
 			# ...
 		end
@@ -1618,7 +1620,7 @@ module Chilkat
 		# Clears the collection of TTY modes that are sent with the SendReqPty method.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearTtyModes()
 			# ...
 		end
@@ -1627,11 +1629,11 @@ module Chilkat
 		# Method: Connect
 		#
 		# Connects to the SSH server at ARG1:ARG2
-		#		
-		#		The ARG1 may be a domain name or an IPv4 or
+		# 
+		# The ARG1 may be a domain name or an IPv4 or
 		# IPv6 address in string format.
-		#		
-		#		Important: All TCP-based Internet communications,
+		# 
+		# Important: All TCP-based Internet communications,
 		# regardless of the protocol (such as HTTP, FTP, SSH, IMAP, POP3, SMTP, etc.), and regardless of
 		# SSL/TLS, begin with establishing a TCP connection to a remote host:port. External security-related
 		# infrastructure such as software firewalls (Windows Firewall), hardware firewalls, anti-virus, at
@@ -1641,7 +1643,7 @@ module Chilkat
 		# @param domainName [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Connect(domainName, port)
 			# ...
 		end
@@ -1661,7 +1663,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConnectThroughSsh(ssh, hostname, port)
 			# ...
 		end
@@ -1673,8 +1675,8 @@ module Chilkat
 		# password. If multiple responses are required (because there were multiple prompts in the infoRequest
 		# XML returned by StartKeyboardAuth), then the ARG1 should be formatted as XML (as shown below)
 		# otherwise the ARG1 simply contains the single response string.
-		#		
-		#		_LT_response_GT_
+		# 
+		# _LT_response_GT_
 		#
 		# _LT_response1_GT_response to first prompt_LT_/response1_GT_
 		# _LT_response2_GT_response to second
@@ -1682,25 +1684,25 @@ module Chilkat
 		# ...
 		# _LT_responseN_GT_response to Nth
 		# prompt_LT_/responseN_GT_
-		#		_LT_/response_GT_
-		#		
-		#		
-		#		If the interactive
+		# _LT_/response_GT_
+		# 
+		# 
+		# If the interactive
 		# authentication completed with success or failure, the XML response will
 		# be:
-		#		
-		#		_LT_success_GT_success_message_LT_/success_GT_
-		#		
-		#		or
-		#		
-		#		_LT_error_GT_error_message_LT_/error_GT_
-		#		
-		#		If
+		# 
+		# _LT_success_GT_success_message_LT_/success_GT_
+		# 
+		# or
+		# 
+		# _LT_error_GT_error_message_LT_/error_GT_
+		# 
+		# If
 		# additional steps are required to complete the interactive authentication, then an XML string that
 		# provides the name, instruction, and prompts is returned. The XML has the following
 		# format:
-		#		
-		#		 	_LT_infoRequest numPrompts="N"_GT_
+		# 
+		#  	_LT_infoRequest numPrompts="N"_GT_
 		#
 		# _LT_name_GT_name_string_LT_/name_GT_
 		#
@@ -1710,13 +1712,13 @@ module Chilkat
 		# ...
 		# _LT_promptN
 		# echo="1_or_0"_GT_prompt_string_LT_/promptN_GT_
-		#			_LT_/infoRequest_GT_
+		# 	_LT_/infoRequest_GT_
 		#
 		#
 		# @param response [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ContinueKeyboardAuth(response, outStr)
 			# ...
 		end
@@ -1728,8 +1730,8 @@ module Chilkat
 		# password. If multiple responses are required (because there were multiple prompts in the infoRequest
 		# XML returned by StartKeyboardAuth), then the ARG1 should be formatted as XML (as shown below)
 		# otherwise the ARG1 simply contains the single response string.
-		#		
-		#		_LT_response_GT_
+		# 
+		# _LT_response_GT_
 		#
 		# _LT_response1_GT_response to first prompt_LT_/response1_GT_
 		# _LT_response2_GT_response to second
@@ -1737,25 +1739,25 @@ module Chilkat
 		# ...
 		# _LT_responseN_GT_response to Nth
 		# prompt_LT_/responseN_GT_
-		#		_LT_/response_GT_
-		#		
-		#		
-		#		If the interactive
+		# _LT_/response_GT_
+		# 
+		# 
+		# If the interactive
 		# authentication completed with success or failure, the XML response will
 		# be:
-		#		
-		#		_LT_success_GT_success_message_LT_/success_GT_
-		#		
-		#		or
-		#		
-		#		_LT_error_GT_error_message_LT_/error_GT_
-		#		
-		#		If
+		# 
+		# _LT_success_GT_success_message_LT_/success_GT_
+		# 
+		# or
+		# 
+		# _LT_error_GT_error_message_LT_/error_GT_
+		# 
+		# If
 		# additional steps are required to complete the interactive authentication, then an XML string that
 		# provides the name, instruction, and prompts is returned. The XML has the following
 		# format:
-		#		
-		#		 	_LT_infoRequest numPrompts="N"_GT_
+		# 
+		#  	_LT_infoRequest numPrompts="N"_GT_
 		#
 		# _LT_name_GT_name_string_LT_/name_GT_
 		#
@@ -1765,12 +1767,12 @@ module Chilkat
 		# ...
 		# _LT_promptN
 		# echo="1_or_0"_GT_prompt_string_LT_/promptN_GT_
-		#			_LT_/infoRequest_GT_
+		# 	_LT_/infoRequest_GT_
 		#
 		#
 		# @param response [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def continueKeyboardAuth(response)
 			# ...
 		end
@@ -1781,7 +1783,7 @@ module Chilkat
 		# Disconnects from the SSH server.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Disconnect()
 			# ...
 		end
@@ -1795,7 +1797,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetChannelExitStatus(channelNum)
 			# ...
 		end
@@ -1809,7 +1811,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetChannelNumber(index)
 			# ...
 		end
@@ -1823,7 +1825,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetChannelType(index, outStr)
 			# ...
 		end
@@ -1836,7 +1838,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getChannelType(index)
 			# ...
 		end
@@ -1850,7 +1852,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetReceivedData(channelNum, outBytes)
 			# ...
 		end
@@ -1864,7 +1866,7 @@ module Chilkat
 		# @param maxNumBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetReceivedDataN(channelNum, maxNumBytes, outBytes)
 			# ...
 		end
@@ -1877,7 +1879,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetReceivedNumBytes(channelNum)
 			# ...
 		end
@@ -1887,8 +1889,8 @@ module Chilkat
 		#
 		# Returns the accumulated stderr bytes received on the channel indicated by ARG1 and clears the
 		# channel's internal stderr receive buffer. 
-		#		
-		#		Note: If the StderrToStdout property is set
+		# 
+		# Note: If the StderrToStdout property is set
 		# to _TRUE_, then stderr is automatically redirected to stdout. This is the default behavior. The
 		# following methods can be called to retrieve the channel's stdout: GetReceivedData, GetReceivedDataN,
 		# GetReceivedText, and GetReceivedTextS.
@@ -1896,7 +1898,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetReceivedStderr(channelNum, outBytes)
 			# ...
 		end
@@ -1913,7 +1915,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetReceivedStderrText(channelNum, charset, outStr)
 			# ...
 		end
@@ -1929,7 +1931,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getReceivedStderrText(channelNum, charset)
 			# ...
 		end
@@ -1945,7 +1947,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetReceivedText(channelNum, charset, outStr)
 			# ...
 		end
@@ -1960,7 +1962,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getReceivedText(channelNum, charset)
 			# ...
 		end
@@ -1977,7 +1979,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetReceivedTextS(channelNum, substr, charset, outStr)
 			# ...
 		end
@@ -1993,7 +1995,7 @@ module Chilkat
 		# @param substr [String]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getReceivedTextS(channelNum, substr, charset)
 			# ...
 		end
@@ -2003,13 +2005,13 @@ module Chilkat
 		#
 		# Opens a custom channel with a custom server that uses the SSH protocol. The ARG1 is
 		# application-defined.
-		#		
-		#		If successful, the channel number is returned. This is the number
+		# 
+		# If successful, the channel number is returned. This is the number
 		# that should be passed to any method requiring a channel number. A -1 is returned upon failure.
 		#
 		# @param channelType [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def OpenCustomChannel(channelType)
 			# ...
 		end
@@ -2021,15 +2023,15 @@ module Chilkat
 		# is sent to the SSH server and then forwarded to ARG1:ARG2. The SSH server automatically forwards
 		# data received from ARG1:ARG2 to the SSH client. Therefore, calling ChannelRead* and ChannelReceive*
 		# methods is equivalent to reading directly from ARG1:ARG2. 
-		#		
-		#		If successful, the channel
+		# 
+		# If successful, the channel
 		# number is returned. This is the number that should be passed to any method requiring a channel
 		# number. A -1 is returned upon failure.
 		#
 		# @param targetHostname [String]
 		# @param targetPort [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def OpenDirectTcpIpChannel(targetHostname, targetPort)
 			# ...
 		end
@@ -2041,13 +2043,13 @@ module Chilkat
 		# involve opening a session channel. The normal sequence of operation is typically this: 1) Connect to
 		# the SSH server. 2) Authenticate. 3) Open a session channel. 4) do something on the channel such as
 		# opening a shell, execute a command, etc.
-		#		
-		#		If successful, the channel number is returned.
+		# 
+		# If successful, the channel number is returned.
 		# This is the number that should be passed to any method requiring a channel number. A -1 is returned
 		# upon failure.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def OpenSessionChannel()
 			# ...
 		end
@@ -2061,7 +2063,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def PeekReceivedText(channelNum, charset, outStr)
 			# ...
 		end
@@ -2074,7 +2076,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def peekReceivedText(channelNum, charset)
 			# ...
 		end
@@ -2085,14 +2087,14 @@ module Chilkat
 		# Returns a channel number for a completed command that was previously sent via QuickCmdSend. Returns
 		# -1 if no commands have yet completed. The ARG1 indicates how long to wait (in milliseconds) for any
 		# command in progress (on any channel) to complete before returning -1. 
-		#		
-		#		Returns -2 if an
+		# 
+		# Returns -2 if an
 		# error occurred (for example, if the connection to the SSH server was lost while checking for
 		# responses).
 		#
 		# @param pollTimeoutMs [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def QuickCmdCheck(pollTimeoutMs)
 			# ...
 		end
@@ -2103,16 +2105,16 @@ module Chilkat
 		# Sends a command and returns the channel number for the command that has started. This is the
 		# equivalent of calling OpenSessionChannel, followed by SendReqExec. A value of -1 is returned on
 		# failure.
-		#		
-		#		The ReqExecCharset property controls the charset used for the command that is
+		# 
+		# The ReqExecCharset property controls the charset used for the command that is
 		# sent.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param command [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def QuickCmdSend(command)
 			# ...
 		end
@@ -2123,22 +2125,22 @@ module Chilkat
 		# Simplified method for executing a remote command and getting the complete output. This is the
 		# equivalent of calling OpenSessionChannel, followed by SendReqExec, then ChannelReceiveToClose, and
 		# finally GetReceivedText.
-		#		
+		# 
 		# The ARG2 indicates the charset of the command's output (such as
 		# "utf-8" or "ansi"). A list of supported charset values may be found on this page: Supported
 		# Charsets.
-		#		
-		#		The ReqExecCharset property controls the charset used for the command that is
+		# 
+		# The ReqExecCharset property controls the charset used for the command that is
 		# sent.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param command [String]
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QuickCommand(command, charset, outStr)
 			# ...
 		end
@@ -2149,21 +2151,21 @@ module Chilkat
 		# Simplified method for executing a remote command and getting the complete output. This is the
 		# equivalent of calling OpenSessionChannel, followed by SendReqExec, then ChannelReceiveToClose, and
 		# finally GetReceivedText.
-		#		
+		# 
 		# The ARG2 indicates the charset of the command's output (such as
 		# "utf-8" or "ansi"). A list of supported charset values may be found on this page: Supported
 		# Charsets.
-		#		
-		#		The ReqExecCharset property controls the charset used for the command that is
+		# 
+		# The ReqExecCharset property controls the charset used for the command that is
 		# sent.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param command [String]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def quickCommand(command, charset)
 			# ...
 		end
@@ -2173,15 +2175,15 @@ module Chilkat
 		#
 		# Simplified method for starting a remote shell session. It is the equivalent of calling
 		# OpenSessionChannel, followed by SendReqPty, and finally SendReqShell. 
-		#		
-		#		Returns the SSH
+		# 
+		# Returns the SSH
 		# channel number for the session, or -1 if not successful.
-		#		
-		#		Important: When reporting
+		# 
+		# Important: When reporting
 		# problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def QuickShell()
 			# ...
 		end
@@ -2191,21 +2193,21 @@ module Chilkat
 		#
 		# Initiates a re-key with the SSH server. The ReKey method does not return until the key re-exchange
 		# is complete. 
-		#		
-		#		RFC 4253 (the SSH Transport Layer Protocol) recommends that keys be
+		# 
+		# RFC 4253 (the SSH Transport Layer Protocol) recommends that keys be
 		# changed after each gigabyte of transmitted data or after each hour of connection time, whichever
 		# comes sooner. Key re-exchange is a public-key operation and requires a fair amount of processing
 		# power and should not be performed too often. Either side (client or server) may initiate a key
 		# re-exchange at any time.
-		#		
-		#		In most cases, a server will automatically initiate key
+		# 
+		# In most cases, a server will automatically initiate key
 		# re-exchange whenever it deems necessary, and the Chilkat SSH component handles these transparently.
 		# For example, if the Chilkat SSH component receives a re-key message from the server while in the
 		# process of receiving data on a channel, it will automatically handle the key re-exchange and the
 		# application will not even realize that an underlying key re-exchange occurred.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReKey()
 			# ...
 		end
@@ -2217,7 +2219,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -2231,7 +2233,7 @@ module Chilkat
 		# first open a channel prior to sending an IGNORE message).
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendIgnore()
 			# ...
 		end
@@ -2242,23 +2244,23 @@ module Chilkat
 		# Initiates execution of a command on the channel specified by ARG1. The ARG2 contains the full
 		# command line including any command-line parameters (just as you would type the command at a shell
 		# prompt). 
-		#		
-		#		The user's default shell (typically defined in /etc/password in UNIX systems)
+		# 
+		# The user's default shell (typically defined in /etc/password in UNIX systems)
 		# is started on the SSH server to execute the command.
-		#		
-		#		Important: A channel only exists
+		# 
+		# Important: A channel only exists
 		# for a single request. You may not call SendReqExec multiple times on the same open channel. The
 		# reason is that the SSH server automatically closes the channel at the end of the exec. The solution
 		# is to call OpenSessionChannel to get a new channel, and then call SendReqExec using the new channel.
 		# It is OK to have more than one channel open simultaneously.
-		#		Charset: The ReqExecCharset
+		# Charset: The ReqExecCharset
 		# property has been added in version 9.5.0.47. This can be set to control the character encoding of
 		# the command sent to the server. The default is ANSI. A likely alternative value is "utf-8".
 		#
 		# @param channelNum [Fixnum]
 		# @param commandLine [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqExec(channelNum, commandLine)
 			# ...
 		end
@@ -2270,21 +2272,21 @@ module Chilkat
 		# ("vt100" for example), then ARG3 and ARG4 would be set to non-zero values, while ARG5 and ARG6 may
 		# be set to 0. If ARG2 is pixel-oriented, such as "xterm", the reverse is true (i.e. set ARG5 and
 		# ARG6, but set ARG3 and ARG4 equal to 0).
-		#		In most cases, you probably don't even want terminal
+		# In most cases, you probably don't even want terminal
 		# emulation. In that case, try setting ARG2 = "dumb". Terminal emulation causes terminal escape
 		# sequences to be included with shell command output. A "dumb" terminal should have no escape
 		# sequences.
-		#		
-		#		Some SSH servers allow a shell to be started (via the SendReqShell method)
+		# 
+		# Some SSH servers allow a shell to be started (via the SendReqShell method)
 		# without the need to first request a pseudo-terminal. The normal sequence for starting a remote shell
 		# is as follows:
-		#		
-		#		1) Connect
-		#		2) Authenticate
-		#		3) OpenSessionChannel
-		#		4)
+		# 
+		# 1) Connect
+		# 2) Authenticate
+		# 3) OpenSessionChannel
+		# 4)
 		# Request a PTY via this method if necessary.
-		#		5) Start a shell by calling SendReqShell
+		# 5) Start a shell by calling SendReqShell
 		#
 		#
 		# @param channelNum [Fixnum]
@@ -2294,7 +2296,7 @@ module Chilkat
 		# @param widthInPixels [Fixnum]
 		# @param heightInPixels [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqPty(channelNum, termType, widthInChars, heightInChars, widthInPixels, heightInPixels)
 			# ...
 		end
@@ -2308,7 +2310,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqSetEnv(channelNum, name, value)
 			# ...
 		end
@@ -2323,7 +2325,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqShell(channelNum)
 			# ...
 		end
@@ -2338,7 +2340,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param signalName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqSignal(channelNum, signalName)
 			# ...
 		end
@@ -2352,7 +2354,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param subsystemName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqSubsystem(channelNum, subsystemName)
 			# ...
 		end
@@ -2369,7 +2371,7 @@ module Chilkat
 		# @param pixWidth [Fixnum]
 		# @param pixHeight [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqWindowChange(channelNum, widthInChars, heightInRows, pixWidth, pixHeight)
 			# ...
 		end
@@ -2387,7 +2389,7 @@ module Chilkat
 		# @param authCookie [String]
 		# @param screenNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqX11Forwarding(channelNum, singleConnection, authProt, authCookie, screenNum)
 			# ...
 		end
@@ -2400,7 +2402,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param clientCanDo [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqXonXoff(channelNum, clientCanDo)
 			# ...
 		end
@@ -2412,71 +2414,71 @@ module Chilkat
 		# to call this method at all. Chilkat has no recommendations or expertise as to why or when a
 		# particular mode might be useful. This capability is provided because it is defined in the SSH
 		# connection protocol specification. 
-		#		This method can be called multiple times to set many
+		# This method can be called multiple times to set many
 		# terminal mode flags (one per call). 
-		#		
-		#		The ARG2 is an integer, typically 0 or 1. Valid
+		# 
+		# The ARG2 is an integer, typically 0 or 1. Valid
 		# ARG1 flag names include:
 		# VINTR,
-		#		VQUIT,
-		#		VERASE,
-		#		VKILL,
-		#		VEOF,
-		#		VEOL,
-		#		VEOL2,
-		#		VSTART,
-		#		VSTOP,
-		#		VSUSP,
-		#		VDSUSP,
-		#		VREPRINT,
-		#		VWERASE,
-		#		VLNEXT,
-		#		VFLUSH,
-		#		VSWTCH,
-		#		VSTATUS,
-		#		VDISCARD,
-		#		IGNPAR,
-		#		PARMRK,
-		#		INPCK,
-		#		ISTRIP,
-		#		INLCR,
-		#		IGNCR,
-		#		ICRNL,
-		#		IUCLC,
-		#		IXON,
-		#		IXANY,
-		#		IXOFF,
-		#		IMAXBEL,
-		#		ISIG,
-		#		ICANON,
-		#		XCASE,
-		#		ECHO,
-		#		ECHOE,
-		#		ECHOK,
-		#		ECHONL,
-		#		NOFLSH,
-		#		TOSTOP,
-		#		IEXTEN,
-		#		ECHOCTL,
-		#		ECHOKE,
-		#		PENDIN,
-		#		OPOST,
-		#		OLCUC,
-		#		ONLCR,
-		#		OCRNL,
-		#		ONOCR,
-		#		ONLRET,
-		#		CS7,
-		#		CS8,
-		#		PARENB,
-		#		PARODD,
-		#		TTY_OP_ISPEED,
-		#		TTY_OP_OSPEED
+		# VQUIT,
+		# VERASE,
+		# VKILL,
+		# VEOF,
+		# VEOL,
+		# VEOL2,
+		# VSTART,
+		# VSTOP,
+		# VSUSP,
+		# VDSUSP,
+		# VREPRINT,
+		# VWERASE,
+		# VLNEXT,
+		# VFLUSH,
+		# VSWTCH,
+		# VSTATUS,
+		# VDISCARD,
+		# IGNPAR,
+		# PARMRK,
+		# INPCK,
+		# ISTRIP,
+		# INLCR,
+		# IGNCR,
+		# ICRNL,
+		# IUCLC,
+		# IXON,
+		# IXANY,
+		# IXOFF,
+		# IMAXBEL,
+		# ISIG,
+		# ICANON,
+		# XCASE,
+		# ECHO,
+		# ECHOE,
+		# ECHOK,
+		# ECHONL,
+		# NOFLSH,
+		# TOSTOP,
+		# IEXTEN,
+		# ECHOCTL,
+		# ECHOKE,
+		# PENDIN,
+		# OPOST,
+		# OLCUC,
+		# ONLCR,
+		# OCRNL,
+		# ONOCR,
+		# ONLRET,
+		# CS7,
+		# CS8,
+		# PARENB,
+		# PARODD,
+		# TTY_OP_ISPEED,
+		# TTY_OP_OSPEED
 		#
 		# @param ttyName [String]
 		# @param ttyValue [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetTtyMode(ttyName, ttyValue)
 			# ...
 		end
@@ -2486,7 +2488,7 @@ module Chilkat
 		#
 		# Begins keyboard-interactive authentication with the SSH server. Returns an XML string providing the
 		# name, instruction, and prompts. The XML has the following format:
-		#		
+		# 
 		# 	_LT_infoRequest
 		# numPrompts="N"_GT_
 		# _LT_name_GT_name_string_LT_/name_GT_
@@ -2497,24 +2499,24 @@ module Chilkat
 		# ...
 		# _LT_promptN
 		# echo="1_or_0"_GT_prompt_string_LT_/promptN_GT_
-		#			_LT_/infoRequest_GT_
-		#		
-		#		If the
+		# 	_LT_/infoRequest_GT_
+		# 
+		# If the
 		# authentication immediately succeeds because no password is required, or immediately fails, the XML
 		# response can
 		# be:
-		#		
-		#		_LT_success_GT_success_message_LT_/success_GT_
-		#		
-		#		or
-		#		
-		#		_LT_error_GT_error_message_LT_/error_GT_
+		# 
+		# _LT_success_GT_success_message_LT_/success_GT_
+		# 
+		# or
+		# 
+		# _LT_error_GT_error_message_LT_/error_GT_
 		#
 		#
 		# @param login [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def StartKeyboardAuth(login, outStr)
 			# ...
 		end
@@ -2524,7 +2526,7 @@ module Chilkat
 		#
 		# Begins keyboard-interactive authentication with the SSH server. Returns an XML string providing the
 		# name, instruction, and prompts. The XML has the following format:
-		#		
+		# 
 		# 	_LT_infoRequest
 		# numPrompts="N"_GT_
 		# _LT_name_GT_name_string_LT_/name_GT_
@@ -2535,23 +2537,23 @@ module Chilkat
 		# ...
 		# _LT_promptN
 		# echo="1_or_0"_GT_prompt_string_LT_/promptN_GT_
-		#			_LT_/infoRequest_GT_
-		#		
-		#		If the
+		# 	_LT_/infoRequest_GT_
+		# 
+		# If the
 		# authentication immediately succeeds because no password is required, or immediately fails, the XML
 		# response can
 		# be:
-		#		
-		#		_LT_success_GT_success_message_LT_/success_GT_
-		#		
-		#		or
-		#		
-		#		_LT_error_GT_error_message_LT_/error_GT_
+		# 
+		# _LT_success_GT_success_message_LT_/success_GT_
+		# 
+		# or
+		# 
+		# _LT_error_GT_error_message_LT_/error_GT_
 		#
 		#
 		# @param login [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def startKeyboardAuth(login)
 			# ...
 		end
@@ -2566,7 +2568,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -2578,14 +2580,14 @@ module Chilkat
 		# incoming message on any channel. This includes data, EOF, CLOSE, etc. If a message arrives in the
 		# alotted time, the channel number is returned. A value of -1 is returned for a timeout, and -2 for
 		# any other errors such as if the connection is lost.
-		#		Note: If a channel number is returned, the
+		# Note: If a channel number is returned, the
 		# message must still be read by calling a method such as ChannelRead, ChannelReceiveUntilMatch, etc.
 		# Once the message is actually received, it may be collected by calling GetReceivedText,
 		# GetReceivedData, etc.
 		#
 		# @param pollTimeoutMs [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def WaitForChannelMessage(pollTimeoutMs)
 			# ...
 		end

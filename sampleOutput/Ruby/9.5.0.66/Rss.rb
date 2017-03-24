@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -223,8 +223,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -233,8 +233,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -274,7 +274,7 @@ module Chilkat
 		# then be edited.
 		#
 		#
-		# @return [CkRss] 
+		# @return [CkRss]
 		def AddNewChannel()
 			# ...
 		end
@@ -286,7 +286,7 @@ module Chilkat
 		# be edited.
 		#
 		#
-		# @return [CkRss] 
+		# @return [CkRss]
 		def AddNewImage()
 			# ...
 		end
@@ -298,7 +298,7 @@ module Chilkat
 		# edited.
 		#
 		#
-		# @return [CkRss] 
+		# @return [CkRss]
 		def AddNewItem()
 			# ...
 		end
@@ -310,7 +310,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadRss(url)
 			# ...
 		end
@@ -325,7 +325,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAttr(tag, attrName, outStr)
 			# ...
 		end
@@ -339,7 +339,7 @@ module Chilkat
 		# @param tag [String]
 		# @param attrName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getAttr(tag, attrName)
 			# ...
 		end
@@ -352,7 +352,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkRss] 
+		# @return [CkRss]
 		def GetChannel(index)
 			# ...
 		end
@@ -364,7 +364,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetCount(tag)
 			# ...
 		end
@@ -376,7 +376,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetDate(tag)
 			# ...
@@ -390,7 +390,7 @@ module Chilkat
 		# @param tag [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetDateStr(tag, outStr)
 			# ...
 		end
@@ -402,7 +402,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getDateStr(tag)
 			# ...
 		end
@@ -413,7 +413,7 @@ module Chilkat
 		# Return the image associated with the channel.
 		#
 		#
-		# @return [CkRss] 
+		# @return [CkRss]
 		def GetImage()
 			# ...
 		end
@@ -425,7 +425,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetInt(tag)
 			# ...
 		end
@@ -437,7 +437,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkRss] 
+		# @return [CkRss]
 		def GetItem(index)
 			# ...
 		end
@@ -450,7 +450,7 @@ module Chilkat
 		# @param tag [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetString(tag, outStr)
 			# ...
 		end
@@ -462,7 +462,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getString(tag)
 			# ...
 		end
@@ -474,7 +474,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadRssFile(filePath)
 			# ...
 		end
@@ -486,7 +486,7 @@ module Chilkat
 		#
 		# @param rssString [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadRssString(rssString)
 			# ...
 		end
@@ -503,7 +503,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MGetAttr(tag, index, attrName, outStr)
 			# ...
 		end
@@ -519,7 +519,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param attrName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def mGetAttr(tag, index, attrName)
 			# ...
 		end
@@ -533,7 +533,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MGetString(tag, index, outStr)
 			# ...
 		end
@@ -546,7 +546,7 @@ module Chilkat
 		# @param tag [String]
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def mGetString(tag, index)
 			# ...
 		end
@@ -561,7 +561,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MSetAttr(tag, idx, attrName, value)
 			# ...
 		end
@@ -575,7 +575,7 @@ module Chilkat
 		# @param idx [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def MSetString(tag, idx, value)
 			# ...
 		end
@@ -586,7 +586,7 @@ module Chilkat
 		# Clears the RSS document.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def NewRss()
 			# ...
 		end
@@ -598,7 +598,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Remove(tag)
 			# ...
 		end
@@ -610,7 +610,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -624,7 +624,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetAttr(tag, attrName, value)
 			# ...
 		end
@@ -637,7 +637,7 @@ module Chilkat
 		# @param tag [String]
 		# @param dateTime [Object]
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetDate(tag, dateTime)
 			# ...
@@ -650,7 +650,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetDateNow(tag)
 			# ...
 		end
@@ -663,7 +663,7 @@ module Chilkat
 		# @param tag [String]
 		# @param dateTimeStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetDateStr(tag, dateTimeStr)
 			# ...
 		end
@@ -676,7 +676,7 @@ module Chilkat
 		# @param tag [String]
 		# @param value [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetInt(tag, value)
 			# ...
 		end
@@ -689,7 +689,7 @@ module Chilkat
 		# @param tag [String]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetString(tag, value)
 			# ...
 		end
@@ -701,7 +701,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToXmlString(outStr)
 			# ...
 		end
@@ -712,7 +712,7 @@ module Chilkat
 		# Returns the RSS document as an XML string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toXmlString()
 			# ...
 		end

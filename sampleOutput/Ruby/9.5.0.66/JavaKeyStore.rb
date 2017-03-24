@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -247,8 +247,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -257,8 +257,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -315,22 +315,22 @@ module Chilkat
 		# certificate chains for each private key. (A typical PFX file contains a single private key along
 		# with its associated certificate, and the certificates in the chain of authentication to the root CA
 		# cert.) 
-		#		This method does not add trusted certificate entries to the JKS.
-		#		The specified
+		# This method does not add trusted certificate entries to the JKS.
+		# The specified
 		# alias is applied to the 1st private key found. If the alias is empty, then the alias is obtained
 		# from the cert/PFX in the following order of preference:
-		#		
-		#		Certificate's subject common
+		# 
+		# Certificate's subject common
 		# name
-		#		Certificate's subject email address
-		#		Certificate's friendly name found in the PKCS9
+		# Certificate's subject email address
+		# Certificate's friendly name found in the PKCS9
 		# attributes of the PKCS12
-		#		Certificate's serial number
-		#		
-		#		If multiple private keys are
+		# Certificate's serial number
+		# 
+		# If multiple private keys are
 		# found in the PKCS12, then all but the first will automaticallly be assigned aliases using the
 		# preference just described.
-		#		The UseCertVault method may be called to provide additional
+		# The UseCertVault method may be called to provide additional
 		# certificates for the automatic construction of the certificate chains. If the RequireCompleteChain
 		# property is set to _TRUE_, then this method will fail if any certificate chain is not completed to
 		# the root. The TrustedRoots class may be used to provide a source for obtaining trusted CA roots if
@@ -340,7 +340,7 @@ module Chilkat
 		# @param alias [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddPfx(pfx, alias, password)
 			# ...
 		end
@@ -350,16 +350,16 @@ module Chilkat
 		#
 		# Adds a private key entry to the JKS. Both the private key and certificate chain are obtained from
 		# the certificate object that is passed in the 1st argument. 
-		#		If the alias is empty, then the
+		# If the alias is empty, then the
 		# alias is automatically chosen based on the certificate's information, in the following order of
 		# preference:
-		#		
-		#		Certificate's subject common name
-		#		Certificate's subject email
+		# 
+		# Certificate's subject common name
+		# Certificate's subject email
 		# address
-		#		Certificate's serial number
-		#		
-		#		The UseCertVault method may be called to
+		# Certificate's serial number
+		# 
+		# The UseCertVault method may be called to
 		# provide additional certificates for the automatic construction of the certificate chains. If the
 		# RequireCompleteChain property is set to _TRUE_, then this method will fail if the certificate chain
 		# is not completed to the root. The TrustedRoots class may be used to provide a source for obtaining
@@ -369,7 +369,7 @@ module Chilkat
 		# @param alias [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddPrivateKey(cert, alias, password)
 			# ...
 		end
@@ -382,8 +382,8 @@ module Chilkat
 		# symmetric key, in an encoded string form. The ARG2 indicates the encoding of ARG1 (such as "base64",
 		# "hex", "base64url", etc.) The ARG3 describes the symmetric algorithm, such as "AES". The ARG4 is the
 		# password used to seal (encrypt) the key bytes. 
-		#		
-		#		Note: The ARG3 describes the usage of
+		# 
+		# Note: The ARG3 describes the usage of
 		# the ARG1. For example, if ARG1 contains the 16 bytes of a 128-bit AES key, then ARG3 should be set
 		# to "AES". The actual encryption algorithm used to seal the key within the JCEKS is
 		# PBEWithMD5AndTripleDES, which is part of the JCEKS specification.
@@ -394,7 +394,7 @@ module Chilkat
 		# @param alias [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddSecretKey(encodedKeyBytes, encoding, algorithm, alias, password)
 			# ...
 		end
@@ -407,7 +407,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param alias [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddTrustedCert(cert, alias)
 			# ...
 		end
@@ -421,7 +421,7 @@ module Chilkat
 		# @param oldPassword [String]
 		# @param newPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChangePassword(index, oldPassword, newPassword)
 			# ...
 		end
@@ -434,7 +434,7 @@ module Chilkat
 		# @param alias [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [CkCertChain] 
+		# @return [CkCertChain]
 		def FindCertChain(alias, caseSensitive)
 			# ...
 		end
@@ -448,7 +448,7 @@ module Chilkat
 		# @param alias [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [CkPrivateKey] 
+		# @return [CkPrivateKey]
 		def FindPrivateKey(password, alias, caseSensitive)
 			# ...
 		end
@@ -461,7 +461,7 @@ module Chilkat
 		# @param alias [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def FindTrustedCert(alias, caseSensitive)
 			# ...
 		end
@@ -474,7 +474,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkCertChain] 
+		# @return [CkCertChain]
 		def GetCertChain(index)
 			# ...
 		end
@@ -487,7 +487,7 @@ module Chilkat
 		# @param password [String]
 		# @param index [Fixnum]
 		#
-		# @return [CkPrivateKey] 
+		# @return [CkPrivateKey]
 		def GetPrivateKey(password, index)
 			# ...
 		end
@@ -500,7 +500,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPrivateKeyAlias(index, outStr)
 			# ...
 		end
@@ -512,7 +512,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPrivateKeyAlias(index)
 			# ...
 		end
@@ -528,7 +528,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetSecretKey(password, index, encoding, outStr)
 			# ...
 		end
@@ -543,7 +543,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getSecretKey(password, index, encoding)
 			# ...
 		end
@@ -556,7 +556,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetSecretKeyAlias(index, outStr)
 			# ...
 		end
@@ -568,7 +568,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getSecretKeyAlias(index)
 			# ...
 		end
@@ -581,7 +581,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetTrustedCert(index)
 			# ...
 		end
@@ -595,7 +595,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetTrustedCertAlias(index, outStr)
 			# ...
 		end
@@ -608,7 +608,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getTrustedCertAlias(index)
 			# ...
 		end
@@ -621,7 +621,7 @@ module Chilkat
 		# @param password [String]
 		# @param jksData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadBinary(password, jksData)
 			# ...
 		end
@@ -635,7 +635,7 @@ module Chilkat
 		# @param jksEncData [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadEncoded(password, jksEncData, encoding)
 			# ...
 		end
@@ -648,7 +648,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFile(password, path)
 			# ...
 		end
@@ -661,7 +661,7 @@ module Chilkat
 		# @param password [String]
 		# @param jwkSet [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadJwkSet(password, jwkSet)
 			# ...
 		end
@@ -676,7 +676,7 @@ module Chilkat
 		# @param entryType [Fixnum]
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveEntry(entryType, index)
 			# ...
 		end
@@ -688,7 +688,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -704,7 +704,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param alias [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAlias(entryType, index, alias)
 			# ...
 		end
@@ -719,7 +719,7 @@ module Chilkat
 		# @param password [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToBinary(password, outBytes)
 			# ...
 		end
@@ -736,7 +736,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToEncodedString(password, encoding, outStr)
 			# ...
 		end
@@ -752,7 +752,7 @@ module Chilkat
 		# @param password [String]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def toEncodedString(password, encoding)
 			# ...
 		end
@@ -767,7 +767,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToFile(password, path)
 			# ...
 		end
@@ -781,7 +781,7 @@ module Chilkat
 		# @param password [String]
 		# @param sbJwkSet [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToJwkSet(password, sbJwkSet)
 			# ...
 		end
@@ -793,7 +793,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [CkPem] 
+		# @return [CkPem]
 		def ToPem(password)
 			# ...
 		end
@@ -805,7 +805,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [CkPfx] 
+		# @return [CkPfx]
 		def ToPfx(password)
 			# ...
 		end
@@ -819,7 +819,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -832,7 +832,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseCertVault(vault)
 			# ...
 		end

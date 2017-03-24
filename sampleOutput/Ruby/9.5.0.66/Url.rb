@@ -27,12 +27,12 @@ module Chilkat
 		def host() end
 
 		# The type of the host name specified in the URL. Possible values are:
-		#		
-		#		"dns": The host
+		# 
+		# "dns": The host
 		# name is a domain name system (DNS) style host name.
-		#		"ipv4": The host name is an Internet
+		# "ipv4": The host name is an Internet
 		# Protocol (IP) version 4 host address.
-		#		"ipv6": The host name is an Internet Protocol (IP)
+		# "ipv6": The host name is an Internet Protocol (IP)
 		# version 6 host address.
 		#
 		#
@@ -40,12 +40,12 @@ module Chilkat
 		def get_HostType() end
 
 		# The type of the host name specified in the URL. Possible values are:
-		#		
-		#		"dns": The host
+		# 
+		# "dns": The host
 		# name is a domain name system (DNS) style host name.
-		#		"ipv4": The host name is an Internet
+		# "ipv4": The host name is an Internet
 		# Protocol (IP) version 4 host address.
-		#		"ipv6": The host name is an Internet Protocol (IP)
+		# "ipv6": The host name is an Internet Protocol (IP)
 		# version 6 host address.
 		#
 		#
@@ -118,7 +118,7 @@ module Chilkat
 
 		# The path (and params) part of the URL, excluding the query and fragment. If the URL is:
 		# "http://www.amazon.com/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1",
-		#		then
+		# then
 		# the path is "/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3".
 		#
 		# @return [String]
@@ -126,7 +126,7 @@ module Chilkat
 
 		# The path (and params) part of the URL, excluding the query and fragment. If the URL is:
 		# "http://www.amazon.com/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1",
-		#		then
+		# then
 		# the path is "/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3".
 		#
 		# @return [String]
@@ -135,7 +135,7 @@ module Chilkat
 		# The path (and params) part of the URL, including the query params, but excluding the fragment. If
 		# the URL is:
 		# "http://www.amazon.com/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1",
-		#		then
+		# then
 		# then this property returns
 		# "/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1".
 		#
@@ -145,7 +145,7 @@ module Chilkat
 		# The path (and params) part of the URL, including the query params, but excluding the fragment. If
 		# the URL is:
 		# "http://www.amazon.com/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1",
-		#		then
+		# then
 		# then this property returns
 		# "/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1".
 		#
@@ -153,12 +153,12 @@ module Chilkat
 		def pathWithQueryParams() end
 
 		# The port number of the URL. 
-		#		
-		#		For example, if the URL is "http://www.contoso.com:8080/",
+		# 
+		# For example, if the URL is "http://www.contoso.com:8080/",
 		# the port number is 8080.
-		#		If the URL is "https://192.168.1.124/test.html", the port number is
+		# If the URL is "https://192.168.1.124/test.html", the port number is
 		# the default 80.
-		#		If the URL is "https://www.amazon.com/", the port number is the default
+		# If the URL is "https://www.amazon.com/", the port number is the default
 		# SSL/TLS port 443.
 		#
 		# @return [Bignum]
@@ -166,7 +166,7 @@ module Chilkat
 
 		# The query part of the URL, excluding the fragment. If the URL is:
 		# "http://www.amazon.com/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1#frag",
-		#		then
+		# then
 		# the query is "pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1".
 		#
 		# @return [String]
@@ -174,7 +174,7 @@ module Chilkat
 
 		# The query part of the URL, excluding the fragment. If the URL is:
 		# "http://www.amazon.com/gp/product/1476752842/ref=s9_psimh_gw_p14_d0_i3?pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1#frag",
-		#		then
+		# then
 		# the query is "pf_rd_m=ATVPDKIKX0DER&pf_rd_s=desktop-1".
 		#
 		# @return [String]
@@ -188,8 +188,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -198,8 +198,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -213,7 +213,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ParseUrl(url)
 			# ...
 		end

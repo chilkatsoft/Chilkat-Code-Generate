@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -213,8 +213,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -223,8 +223,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -264,7 +264,7 @@ module Chilkat
 		#
 		# @param initialTag [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Clear(initialTag)
 			# ...
 		end
@@ -277,7 +277,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def EnterContext(tag)
 			# ...
 		end
@@ -290,7 +290,7 @@ module Chilkat
 		# automaticallly removed from the log upon leaving the context.)
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LeaveContext()
 			# ...
 		end
@@ -303,7 +303,7 @@ module Chilkat
 		# @param tag [String]
 		# @param message [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogData(tag, message)
 			# ...
 		end
@@ -316,7 +316,7 @@ module Chilkat
 		# @param tag [String]
 		# @param data [CkByteData]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogDataBase64(tag, data)
 			# ...
 		end
@@ -329,7 +329,7 @@ module Chilkat
 		# @param tag [String]
 		# @param data [CkByteData]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogDataHex(tag, data)
 			# ...
 		end
@@ -343,7 +343,7 @@ module Chilkat
 		# @param message [String]
 		# @param maxNumChars [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogDataMax(tag, message, maxNumChars)
 			# ...
 		end
@@ -357,7 +357,7 @@ module Chilkat
 		# @param tag [String]
 		# @param gmt [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogDateTime(tag, gmt)
 			# ...
 		end
@@ -369,7 +369,7 @@ module Chilkat
 		#
 		# @param message [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogError(message)
 			# ...
 		end
@@ -381,7 +381,7 @@ module Chilkat
 		#
 		# @param message [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogInfo(message)
 			# ...
 		end
@@ -394,7 +394,7 @@ module Chilkat
 		# @param tag [String]
 		# @param value [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogInt(tag, value)
 			# ...
 		end
@@ -407,7 +407,7 @@ module Chilkat
 		# @param tag [String]
 		# @param value [Bignum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogInt64(tag, value)
 			# ...
 		end
@@ -419,7 +419,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LogTimestamp(tag)
 			# ...
 		end
@@ -431,7 +431,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end

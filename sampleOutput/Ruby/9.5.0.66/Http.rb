@@ -263,14 +263,14 @@ module Chilkat
 		def put_AwsSignatureVersion(newval) end
 
 		# The AWS sub-resources to be used with the Amazon S3 methods listed below.
-		#		
-		#		If the S3
+		# 
+		# If the S3
 		# request needs to address a sub-resource, like ?versioning, ?policy, ?location, ?acl, or ?torrent, or
 		# ?versionid append the sub-resource and its value if it has one. Note that in case of multiple
 		# sub-resources, sub-resources must be lexicographically sorted by sub-resource name and separated by
 		# '&'. e.g. "acl&versionId=value"
-		#		
-		#		The list of sub-resources that can be included are:
+		# 
+		# The list of sub-resources that can be included are:
 		# acl, location, logging, notification, partNumber, policy, requestPayment, torrent, uploadId,
 		# uploads, versionId, versioning, versions and website.
 		#
@@ -280,14 +280,14 @@ module Chilkat
 		def get_AwsSubResources(ckStr) end
 
 		# The AWS sub-resources to be used with the Amazon S3 methods listed below.
-		#		
-		#		If the S3
+		# 
+		# If the S3
 		# request needs to address a sub-resource, like ?versioning, ?policy, ?location, ?acl, or ?torrent, or
 		# ?versionid append the sub-resource and its value if it has one. Note that in case of multiple
 		# sub-resources, sub-resources must be lexicographically sorted by sub-resource name and separated by
 		# '&'. e.g. "acl&versionId=value"
-		#		
-		#		The list of sub-resources that can be included are:
+		# 
+		# The list of sub-resources that can be included are:
 		# acl, location, logging, notification, partNumber, policy, requestPayment, torrent, uploadId,
 		# uploads, versionId, versioning, versions and website.
 		#
@@ -295,14 +295,14 @@ module Chilkat
 		def put_AwsSubResources(newval) end
 
 		# The AWS sub-resources to be used with the Amazon S3 methods listed below.
-		#		
-		#		If the S3
+		# 
+		# If the S3
 		# request needs to address a sub-resource, like ?versioning, ?policy, ?location, ?acl, or ?torrent, or
 		# ?versionid append the sub-resource and its value if it has one. Note that in case of multiple
 		# sub-resources, sub-resources must be lexicographically sorted by sub-resource name and separated by
 		# '&'. e.g. "acl&versionId=value"
-		#		
-		#		The list of sub-resources that can be included are:
+		# 
+		# The list of sub-resources that can be included are:
 		# acl, location, logging, notification, partNumber, policy, requestPayment, torrent, uploadId,
 		# uploads, versionId, versioning, versions and website.
 		#
@@ -310,14 +310,14 @@ module Chilkat
 		def awsSubResources() end
 
 		# The AWS sub-resources to be used with the Amazon S3 methods listed below.
-		#		
-		#		If the S3
+		# 
+		# If the S3
 		# request needs to address a sub-resource, like ?versioning, ?policy, ?location, ?acl, or ?torrent, or
 		# ?versionid append the sub-resource and its value if it has one. Note that in case of multiple
 		# sub-resources, sub-resources must be lexicographically sorted by sub-resource name and separated by
 		# '&'. e.g. "acl&versionId=value"
-		#		
-		#		The list of sub-resources that can be included are:
+		# 
+		# The list of sub-resources that can be included are:
 		# acl, location, logging, notification, partNumber, policy, requestPayment, torrent, uploadId,
 		# uploads, versionId, versioning, versions and website.
 		#
@@ -357,7 +357,7 @@ module Chilkat
 		# connection is SSL/TLS, then this might be considered OK. Chilkat takes the safe approach and will
 		# not allow Basic authentication unless this property has been explicitly set to _TRUE_. The default
 		# value of this property is _FALSE_.
-		#		Note: It is not required to know the authentication methods
+		# Note: It is not required to know the authentication methods
 		# accepted by the server beforehand (except for the case of Basic authentication). When authentication
 		# is required, Chilkat will first send the request without the Authorization header, receive back the
 		# 401 Authorization Required response along with information about what authentication methods are
@@ -377,7 +377,7 @@ module Chilkat
 		# connection is SSL/TLS, then this might be considered OK. Chilkat takes the safe approach and will
 		# not allow Basic authentication unless this property has been explicitly set to _TRUE_. The default
 		# value of this property is _FALSE_.
-		#		Note: It is not required to know the authentication methods
+		# Note: It is not required to know the authentication methods
 		# accepted by the server beforehand (except for the case of Basic authentication). When authentication
 		# is required, Chilkat will first send the request without the Authorization header, receive back the
 		# 401 Authorization Required response along with information about what authentication methods are
@@ -392,8 +392,8 @@ module Chilkat
 		# information is saved here and not in the LastErrorText property. If the background method fails,
 		# this will contain information about what transpired. (This property also contains information when
 		# the background method succeeds.)
-		#		
-		#		This functionality is replaced by the new model for
+		# 
+		# This functionality is replaced by the new model for
 		# asynchronous programming introduced in Chilkat v9.5.0.52. Applications should use the new model,
 		# which is identified by methods having names ending with "Async" and return a task object.
 		#
@@ -405,8 +405,8 @@ module Chilkat
 		# information is saved here and not in the LastErrorText property. If the background method fails,
 		# this will contain information about what transpired. (This property also contains information when
 		# the background method succeeds.)
-		#		
-		#		This functionality is replaced by the new model for
+		# 
+		# This functionality is replaced by the new model for
 		# asynchronous programming introduced in Chilkat v9.5.0.52. Applications should use the new model,
 		# which is identified by methods having names ending with "Async" and return a task object.
 		#
@@ -419,8 +419,8 @@ module Chilkat
 		# BgPercentDone only applies in cases where it is possible to track completion by a percentage. If an
 		# HTTP response is chunked, then there is no way of knowing how much response data is forthcoming, and
 		# therefore it is not possible to track the percentage completed.
-		#		
-		#		This functionality is
+		# 
+		# This functionality is
 		# replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52. Applications
 		# should use the new model, which is identified by methods having names ending with "Async" and return
 		# a task object.
@@ -430,8 +430,8 @@ module Chilkat
 		def get_BgPercentDone() end
 
 		# If a backgrounded method returns a byte array, the returned data is found here.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -441,8 +441,8 @@ module Chilkat
 		def get_BgResultData() end
 
 		# If a backgrounded method returns an integer, the return value is found here.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -452,8 +452,8 @@ module Chilkat
 		def get_BgResultInt() end
 
 		# If a backgrounded method returns a string, the return value is found here.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -463,8 +463,8 @@ module Chilkat
 		def get_BgResultString() end
 
 		# If a backgrounded method returns a string, the return value is found here.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -475,8 +475,8 @@ module Chilkat
 
 		# Becomes _TRUE_ when the background method completes. Your application would periodically check for
 		# this condition.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -487,11 +487,11 @@ module Chilkat
 		# If _TRUE_ then the object instance already has a backgrounded method running. Another backgrounded
 		# method cannot be started until the 1st completes. (Multiple simultaneous background methods may run
 		# by using multiple object instances.)
-		#		
-		#		If _FALSE_, then no method is currently running in
+		# 
+		# If _FALSE_, then no method is currently running in
 		# a background thread.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -501,8 +501,8 @@ module Chilkat
 
 		# This property's value is only meaningful (_TRUE_ or _FALSE_) after a backgrounded method
 		# completes.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
@@ -511,11 +511,11 @@ module Chilkat
 		def get_BgTaskSuccess() end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param ckStr [CkString]
@@ -524,33 +524,33 @@ module Chilkat
 		def get_ClientIpAddress(ckStr) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
 		def put_ClientIpAddress(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @return [String]
 		def clientIpAddress() end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
@@ -558,54 +558,54 @@ module Chilkat
 
 		# This property will be set to the status of the last HTTP connection made (or failed to be made) by
 		# any HTTP method.
-		#		
-		#		Possible values are:
-		#		
-		#		0 = success
-		#		
-		#		Normal
+		# 
+		# Possible values are:
+		# 
+		# 0 = success
+		# 
+		# Normal
 		# (non-TLS) sockets:
-		#		1 = empty hostname
-		#		2 = DNS lookup failed
-		#		3 = DNS
+		# 1 = empty hostname
+		# 2 = DNS lookup failed
+		# 3 = DNS
 		# timeout
-		#		4 = Aborted by application.
-		#		5 = Internal failure.
-		#		6 = Connect Timed
+		# 4 = Aborted by application.
+		# 5 = Internal failure.
+		# 6 = Connect Timed
 		# Out
-		#		7 = Connect Rejected (or failed for some other reason)
-		#		50 = HTTP proxy
+		# 7 = Connect Rejected (or failed for some other reason)
+		# 50 = HTTP proxy
 		# authentication failure.
-		#		98 = Async operation in progress.
-		#		99 = Product is not
+		# 98 = Async operation in progress.
+		# 99 = Product is not
 		# unlocked.
-		#		
-		#		SSL/TLS:
-		#		100 = TLS internal error.
-		#		101 = Failed to send client
+		# 
+		# SSL/TLS:
+		# 100 = TLS internal error.
+		# 101 = Failed to send client
 		# hello.
-		#		102 = Unexpected handshake message.
-		#		103 = Failed to read server hello.
-		#		104
+		# 102 = Unexpected handshake message.
+		# 103 = Failed to read server hello.
+		# 104
 		# = No server certificate.
-		#		105 = Unexpected TLS protocol version.
-		#		106 = Server certificate
+		# 105 = Unexpected TLS protocol version.
+		# 106 = Server certificate
 		# verify failed (the server certificate is expired or the cert's signature verification
 		# failed).
-		#		107 = Unacceptable TLS protocol version.
-		#		109 = Failed to read handshake
+		# 107 = Unacceptable TLS protocol version.
+		# 109 = Failed to read handshake
 		# messages.
-		#		110 = Failed to send client certificate handshake message.
-		#		111 = Failed to
+		# 110 = Failed to send client certificate handshake message.
+		# 111 = Failed to
 		# send client key exchange handshake message.
-		#		112 = Client certificate's private key not
+		# 112 = Client certificate's private key not
 		# accessible.
-		#		113 = Failed to send client cert verify handshake message.
-		#		114 = Failed to
+		# 113 = Failed to send client cert verify handshake message.
+		# 114 = Failed to
 		# send change cipher spec handshake message.
-		#		115 = Failed to send finished handshake
+		# 115 = Failed to send finished handshake
 		# message.
-		#		116 = Server's Finished message is invalid.
+		# 116 = Server's Finished message is invalid.
 		#
 		#
 		# @return [Bignum]
@@ -686,13 +686,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -711,13 +711,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -734,13 +734,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -757,13 +757,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -803,8 +803,8 @@ module Chilkat
 		# that have accumulated in the in-memory event log. The events are indexed from 0 to EventLogCount-1.
 		# The ClearEventLog method may be called to clear the event log. The name and value of each event can
 		# be retrieved via the EventLogName and EventLogValue methods.
-		#		
-		#		This functionality is
+		# 
+		# This functionality is
 		# replaced by the new model for asynchronous programming introduced in Chilkat v9.5.0.52. Applications
 		# should use the new model, which is identified by methods having names ending with "Async" and return
 		# a task object.
@@ -833,7 +833,7 @@ module Chilkat
 
 		# If an HTTP GET was redirected (as indicated by the WasRedirected property), this property will
 		# contain the final redirect URL, assuming the FollowRedirects property is _TRUE_.
-		#		Note:
+		# Note:
 		# Starting in v9.5.0.49, this property will contain the redirect URL for 301/302 responses even if
 		# FollowRedirects is not set to _TRUE_.
 		#
@@ -842,7 +842,7 @@ module Chilkat
 
 		# If an HTTP GET was redirected (as indicated by the WasRedirected property), this property will
 		# contain the final redirect URL, assuming the FollowRedirects property is _TRUE_.
-		#		Note:
+		# Note:
 		# Starting in v9.5.0.49, this property will contain the redirect URL for 301/302 responses even if
 		# FollowRedirects is not set to _TRUE_.
 		#
@@ -885,7 +885,7 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		Specifies the time interval in milliseconds between AbortCheck events. A value of 0
+		# Specifies the time interval in milliseconds between AbortCheck events. A value of 0
 		# (the default) indicate that no AbortCheck events will fire. Any HTTP operation can be aborted via
 		# the AbortCheck event.
 		#
@@ -896,20 +896,22 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		Specifies the time interval in milliseconds between AbortCheck events. A value of 0
+		# Specifies the time interval in milliseconds between AbortCheck events. A value of 0
 		# (the default) indicate that no AbortCheck events will fire. Any HTTP operation can be aborted via
 		# the AbortCheck event.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# Some HTTP responses contain a "Cache-Control: must-revalidate" header. If this is present, the
 		# server is requesting that the client always issue a revalidate HTTP request instead of serving the
 		# page directly from cache. If IgnoreMustRevalidate is set to _TRUE_, then Chilkat HTTP will serve the
 		# page directly from cache without revalidating until the page is no longer fresh.
-		#		The default
+		# The default
 		# value of this property is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -919,7 +921,7 @@ module Chilkat
 		# server is requesting that the client always issue a revalidate HTTP request instead of serving the
 		# page directly from cache. If IgnoreMustRevalidate is set to _TRUE_, then Chilkat HTTP will serve the
 		# page directly from cache without revalidating until the page is no longer fresh.
-		#		The default
+		# The default
 		# value of this property is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -927,7 +929,7 @@ module Chilkat
 
 		# Some HTTP responses contain headers of various types that indicate that the page should not be
 		# cached. Chilkat HTTP will adhere to this unless this property is set to _TRUE_.
-		#		The default
+		# The default
 		# value of this property is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -935,7 +937,7 @@ module Chilkat
 
 		# Some HTTP responses contain headers of various types that indicate that the page should not be
 		# cached. Chilkat HTTP will adhere to this unless this property is set to _TRUE_.
-		#		The default
+		# The default
 		# value of this property is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -946,56 +948,56 @@ module Chilkat
 		# asynchronously, the event log can be checked while the HTTP operation is in in progress. This is
 		# done by examining the EventLogCount property and then fetching each event's name and value via the
 		# EventLogName and EventLogValue methods. See this example: Asynchronous HTTP.
-		#		The
+		# The
 		# ClearBgEventLog method may be called to clear the in-memory event log.
-		#		
-		#		Important: If
+		# 
+		# Important: If
 		# event logging is enabled, make sure to clear the event log after each HTTP method call. Otherwise
 		# the log will continue to grow without bounds. 
-		#		
-		#		The default value of this property is
+		# 
+		# The default value of this property is
 		# _FALSE_.
-		#		
-		#		The following items may be found in the event
+		# 
+		# The following items may be found in the event
 		# log:
-		#		
-		#		NameValue
-		#		SocketConnecthostname:port, called when initiating a
+		# 
+		# NameValue
+		# SocketConnecthostname:port, called when initiating a
 		# connection.
-		#		SocketConnectedhostname:port, called after successfully
+		# SocketConnectedhostname:port, called after successfully
 		# connected.
-		#		HttpProxyConnecthostname:port
-		#		SslHandshake
+		# HttpProxyConnecthostname:port
+		# SslHandshake
 		# "Starting"/"Finished"
-		#		HttpGetBeginURL
-		#		HttpCacheHit"Returning page from
+		# HttpGetBeginURL
+		# HttpCacheHit"Returning page from
 		# cache."
-		#		HttpInfovarious conditions...
-		#			"Begin reading response" -- called when beginning
+		# HttpInfovarious conditions...
+		# 	"Begin reading response" -- called when beginning
 		# to read the response.
-		#			"Finished reading response"
-		#			"Existing connection with HTTP
+		# 	"Finished reading response"
+		# 	"Existing connection with HTTP
 		# server no longer open, restarting GET with new connection."
-		#			"Reading chunked
+		# 	"Reading chunked
 		# response."
-		#			"UnGzipping response data"
-		#			"Connection:close header is
+		# 	"UnGzipping response data"
+		# 	"Connection:close header is
 		# present"
-		#		GetRequestthe full HTTP GET request to be sent to the server.
-		#		ResponseHeaderthe
+		# GetRequestthe full HTTP GET request to be sent to the server.
+		# ResponseHeaderthe
 		# header of the HTTP response.
-		#		HttpStatusCodeHTTP response status code
+		# HttpStatusCodeHTTP response status code
 		# (integer)
-		#		ChunkSizeSize (in bytes) of next chunk in
+		# ChunkSizeSize (in bytes) of next chunk in
 		# response.
-		#		ResponseContentLengthNon-chunked response size in bytes.
-		#		UnGzippedLengthIf the
+		# ResponseContentLengthNon-chunked response size in bytes.
+		# UnGzippedLengthIf the
 		# response was gzip compressed, this is the uncompressed size.
-		#		HostnameResolvehostname, Called
+		# HostnameResolvehostname, Called
 		# when starting to resolve a hostname (to an IP address)
-		#		ResolvedToIpdotted IP address, called
+		# ResolvedToIpdotted IP address, called
 		# after hostname is resolved.
-		#		HttpAuthone of the following strings:
+		# HttpAuthone of the following strings:
 		# "Starting Negotiate
 		# Authentication"
 		# "Starting NTLM Authentication"
@@ -1005,29 +1007,29 @@ module Chilkat
 		# "Starting Proxy NTLM Authentication"
 		#
 		# "Starting Digest Authentication"
-		#		CookieToSendValue of a Set-Cookie header field to be added to
+		# CookieToSendValue of a Set-Cookie header field to be added to
 		# the outgoing request.
-		#		SavingCookie XML of cookie being persisted.
-		#		HttpRedirectRedirect
+		# SavingCookie XML of cookie being persisted.
+		# HttpRedirectRedirect
 		# URL
-		#		Socks4Connectdomain:port
-		#		Socks5Connectdomain:port
-		#		
-		#		HttpRequestBeginVerb
+		# Socks4Connectdomain:port
+		# Socks5Connectdomain:port
+		# 
+		# HttpRequestBeginVerb
 		# (such as POST, GET, PUT), domain:port/path
-		#		RequestHeaderThe full HTTP request header to be
+		# RequestHeaderThe full HTTP request header to be
 		# sent.
-		#		StartSendingRequestSize of entire request, including header, in number of bytes. (Not
+		# StartSendingRequestSize of entire request, including header, in number of bytes. (Not
 		# called for QuickGet)
-		#			For uploads, this is the size of the entire upload (headers and all
+		# 	For uploads, this is the size of the entire upload (headers and all
 		# files combined)
-		#		SubPartHeaderThe header for one of the parts within a multipart
+		# SubPartHeaderThe header for one of the parts within a multipart
 		# request.
-		#		UploadFilenameThe file about to be uploaded (streamed from file to
+		# UploadFilenameThe file about to be uploaded (streamed from file to
 		# socket..)
-		#		
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -1040,56 +1042,56 @@ module Chilkat
 		# asynchronously, the event log can be checked while the HTTP operation is in in progress. This is
 		# done by examining the EventLogCount property and then fetching each event's name and value via the
 		# EventLogName and EventLogValue methods. See this example: Asynchronous HTTP.
-		#		The
+		# The
 		# ClearBgEventLog method may be called to clear the in-memory event log.
-		#		
-		#		Important: If
+		# 
+		# Important: If
 		# event logging is enabled, make sure to clear the event log after each HTTP method call. Otherwise
 		# the log will continue to grow without bounds. 
-		#		
-		#		The default value of this property is
+		# 
+		# The default value of this property is
 		# _FALSE_.
-		#		
-		#		The following items may be found in the event
+		# 
+		# The following items may be found in the event
 		# log:
-		#		
-		#		NameValue
-		#		SocketConnecthostname:port, called when initiating a
+		# 
+		# NameValue
+		# SocketConnecthostname:port, called when initiating a
 		# connection.
-		#		SocketConnectedhostname:port, called after successfully
+		# SocketConnectedhostname:port, called after successfully
 		# connected.
-		#		HttpProxyConnecthostname:port
-		#		SslHandshake
+		# HttpProxyConnecthostname:port
+		# SslHandshake
 		# "Starting"/"Finished"
-		#		HttpGetBeginURL
-		#		HttpCacheHit"Returning page from
+		# HttpGetBeginURL
+		# HttpCacheHit"Returning page from
 		# cache."
-		#		HttpInfovarious conditions...
-		#			"Begin reading response" -- called when beginning
+		# HttpInfovarious conditions...
+		# 	"Begin reading response" -- called when beginning
 		# to read the response.
-		#			"Finished reading response"
-		#			"Existing connection with HTTP
+		# 	"Finished reading response"
+		# 	"Existing connection with HTTP
 		# server no longer open, restarting GET with new connection."
-		#			"Reading chunked
+		# 	"Reading chunked
 		# response."
-		#			"UnGzipping response data"
-		#			"Connection:close header is
+		# 	"UnGzipping response data"
+		# 	"Connection:close header is
 		# present"
-		#		GetRequestthe full HTTP GET request to be sent to the server.
-		#		ResponseHeaderthe
+		# GetRequestthe full HTTP GET request to be sent to the server.
+		# ResponseHeaderthe
 		# header of the HTTP response.
-		#		HttpStatusCodeHTTP response status code
+		# HttpStatusCodeHTTP response status code
 		# (integer)
-		#		ChunkSizeSize (in bytes) of next chunk in
+		# ChunkSizeSize (in bytes) of next chunk in
 		# response.
-		#		ResponseContentLengthNon-chunked response size in bytes.
-		#		UnGzippedLengthIf the
+		# ResponseContentLengthNon-chunked response size in bytes.
+		# UnGzippedLengthIf the
 		# response was gzip compressed, this is the uncompressed size.
-		#		HostnameResolvehostname, Called
+		# HostnameResolvehostname, Called
 		# when starting to resolve a hostname (to an IP address)
-		#		ResolvedToIpdotted IP address, called
+		# ResolvedToIpdotted IP address, called
 		# after hostname is resolved.
-		#		HttpAuthone of the following strings:
+		# HttpAuthone of the following strings:
 		# "Starting Negotiate
 		# Authentication"
 		# "Starting NTLM Authentication"
@@ -1099,29 +1101,29 @@ module Chilkat
 		# "Starting Proxy NTLM Authentication"
 		#
 		# "Starting Digest Authentication"
-		#		CookieToSendValue of a Set-Cookie header field to be added to
+		# CookieToSendValue of a Set-Cookie header field to be added to
 		# the outgoing request.
-		#		SavingCookie XML of cookie being persisted.
-		#		HttpRedirectRedirect
+		# SavingCookie XML of cookie being persisted.
+		# HttpRedirectRedirect
 		# URL
-		#		Socks4Connectdomain:port
-		#		Socks5Connectdomain:port
-		#		
-		#		HttpRequestBeginVerb
+		# Socks4Connectdomain:port
+		# Socks5Connectdomain:port
+		# 
+		# HttpRequestBeginVerb
 		# (such as POST, GET, PUT), domain:port/path
-		#		RequestHeaderThe full HTTP request header to be
+		# RequestHeaderThe full HTTP request header to be
 		# sent.
-		#		StartSendingRequestSize of entire request, including header, in number of bytes. (Not
+		# StartSendingRequestSize of entire request, including header, in number of bytes. (Not
 		# called for QuickGet)
-		#			For uploads, this is the size of the entire upload (headers and all
+		# 	For uploads, this is the size of the entire upload (headers and all
 		# files combined)
-		#		SubPartHeaderThe header for one of the parts within a multipart
+		# SubPartHeaderThe header for one of the parts within a multipart
 		# request.
-		#		UploadFilenameThe file about to be uploaded (streamed from file to
+		# UploadFilenameThe file about to be uploaded (streamed from file to
 		# socket..)
-		#		
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
@@ -1489,8 +1491,8 @@ module Chilkat
 		# Set this property equal to _TRUE_ for Negotiate authentication. Negotiate authentication will
 		# dynamically select Kerberos or NTLM authentication depending on what the server
 		# requires.
-		#		
-		#		Note: The NegotiateAuth property is only available for the Microsoft Windows
+		# 
+		# Note: The NegotiateAuth property is only available for the Microsoft Windows
 		# operating system.
 		#
 		# @return [TrueClass, FalseClass]
@@ -1499,8 +1501,8 @@ module Chilkat
 		# Set this property equal to _TRUE_ for Negotiate authentication. Negotiate authentication will
 		# dynamically select Kerberos or NTLM authentication depending on what the server
 		# requires.
-		#		
-		#		Note: The NegotiateAuth property is only available for the Microsoft Windows
+		# 
+		# Note: The NegotiateAuth property is only available for the Microsoft Windows
 		# operating system.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -1554,8 +1556,8 @@ module Chilkat
 
 		# If _TRUE_ then causes an OAuth Authorization header to be added to any request sent by the HTTP
 		# object. For example:
-		#		
-		#		Authorization: OAuth realm="http://sp.example.com/",
+		# 
+		# Authorization: OAuth realm="http://sp.example.com/",
 		#
 		# oauth_consumer_key="0685bd9184jfhq22",
 		# oauth_token="ad180jjd733klru7",
@@ -1567,8 +1569,8 @@ module Chilkat
 		# oauth_nonce="4572616e48616d6d65724c61686176",
 		#
 		# oauth_version="1.0"
-		#		
-		#		The information used to compute the OAuth Authorization header is
+		# 
+		# The information used to compute the OAuth Authorization header is
 		# obtained from the other OAuth* properties, such as OAuthConsumerKey, OAuthConsumerSecret,
 		# OAuthRealm, etc.
 		#
@@ -1577,8 +1579,8 @@ module Chilkat
 
 		# If _TRUE_ then causes an OAuth Authorization header to be added to any request sent by the HTTP
 		# object. For example:
-		#		
-		#		Authorization: OAuth realm="http://sp.example.com/",
+		# 
+		# Authorization: OAuth realm="http://sp.example.com/",
 		#
 		# oauth_consumer_key="0685bd9184jfhq22",
 		# oauth_token="ad180jjd733klru7",
@@ -1590,8 +1592,8 @@ module Chilkat
 		# oauth_nonce="4572616e48616d6d65724c61686176",
 		#
 		# oauth_version="1.0"
-		#		
-		#		The information used to compute the OAuth Authorization header is
+		# 
+		# The information used to compute the OAuth Authorization header is
 		# obtained from the other OAuth* properties, such as OAuthConsumerKey, OAuthConsumerSecret,
 		# OAuthRealm, etc.
 		#
@@ -1690,8 +1692,8 @@ module Chilkat
 		# is "HMAC-SHA1". It is also possible to choose "HMAC-SHA256", "RSA-SHA1" or "RSA-SHA2". For RSA
 		# algorithms, an RSA private key would need to be provided via the SetOAuthRsaKey
 		# method.
-		#		
-		#		Note: RSA-SHA2 is supported starting in Chilkat v9.5.0.56
+		# 
+		# Note: RSA-SHA2 is supported starting in Chilkat v9.5.0.56
 		#
 		# @param ckStr [CkString]
 		#
@@ -1702,8 +1704,8 @@ module Chilkat
 		# is "HMAC-SHA1". It is also possible to choose "HMAC-SHA256", "RSA-SHA1" or "RSA-SHA2". For RSA
 		# algorithms, an RSA private key would need to be provided via the SetOAuthRsaKey
 		# method.
-		#		
-		#		Note: RSA-SHA2 is supported starting in Chilkat v9.5.0.56
+		# 
+		# Note: RSA-SHA2 is supported starting in Chilkat v9.5.0.56
 		#
 		# @param newval [String]
 		def put_OAuthSigMethod(newval) end
@@ -1712,8 +1714,8 @@ module Chilkat
 		# is "HMAC-SHA1". It is also possible to choose "HMAC-SHA256", "RSA-SHA1" or "RSA-SHA2". For RSA
 		# algorithms, an RSA private key would need to be provided via the SetOAuthRsaKey
 		# method.
-		#		
-		#		Note: RSA-SHA2 is supported starting in Chilkat v9.5.0.56
+		# 
+		# Note: RSA-SHA2 is supported starting in Chilkat v9.5.0.56
 		#
 		# @return [String]
 		def oAuthSigMethod() end
@@ -1722,8 +1724,8 @@ module Chilkat
 		# is "HMAC-SHA1". It is also possible to choose "HMAC-SHA256", "RSA-SHA1" or "RSA-SHA2". For RSA
 		# algorithms, an RSA private key would need to be provided via the SetOAuthRsaKey
 		# method.
-		#		
-		#		Note: RSA-SHA2 is supported starting in Chilkat v9.5.0.56
+		# 
+		# Note: RSA-SHA2 is supported starting in Chilkat v9.5.0.56
 		#
 		# @param newval [String]
 		def put_OAuthSigMethod(newval) end
@@ -1834,8 +1836,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -1850,8 +1852,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -1862,6 +1864,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_PercentDoneScale(newval) end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
@@ -1882,8 +1886,8 @@ module Chilkat
 		# methods: NTLM, Digest, or Basic. Setting this property equal to "basic" prevents the 407 response
 		# which is automatically handled internal to Chilkat and never seen by your
 		# application.
-		#		
-		#		Note: If NTLM authentication does not succeed, set the
+		# 
+		# Note: If NTLM authentication does not succeed, set the
 		# Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @param ckStr [CkString]
@@ -1897,8 +1901,8 @@ module Chilkat
 		# methods: NTLM, Digest, or Basic. Setting this property equal to "basic" prevents the 407 response
 		# which is automatically handled internal to Chilkat and never seen by your
 		# application.
-		#		
-		#		Note: If NTLM authentication does not succeed, set the
+		# 
+		# Note: If NTLM authentication does not succeed, set the
 		# Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @param newval [String]
@@ -1910,8 +1914,8 @@ module Chilkat
 		# methods: NTLM, Digest, or Basic. Setting this property equal to "basic" prevents the 407 response
 		# which is automatically handled internal to Chilkat and never seen by your
 		# application.
-		#		
-		#		Note: If NTLM authentication does not succeed, set the
+		# 
+		# Note: If NTLM authentication does not succeed, set the
 		# Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @return [String]
@@ -1923,8 +1927,8 @@ module Chilkat
 		# methods: NTLM, Digest, or Basic. Setting this property equal to "basic" prevents the 407 response
 		# which is automatically handled internal to Chilkat and never seen by your
 		# application.
-		#		
-		#		Note: If NTLM authentication does not succeed, set the
+		# 
+		# Note: If NTLM authentication does not succeed, set the
 		# Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
 		# @param newval [String]
@@ -2056,8 +2060,8 @@ module Chilkat
 		# FollowRedirects property is set to _TRUE_. The default value of this property is "GET". This will
 		# produce the same behavior as a web browser (such as FireFox). If this property is set to the empty
 		# string, then it will cause the same verb as the original HTTP request to be used.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# Prior to version 9.5.0.44, the default value of this property was the empty string.
 		#
 		# @param ckStr [CkString]
@@ -2069,8 +2073,8 @@ module Chilkat
 		# FollowRedirects property is set to _TRUE_. The default value of this property is "GET". This will
 		# produce the same behavior as a web browser (such as FireFox). If this property is set to the empty
 		# string, then it will cause the same verb as the original HTTP request to be used.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# Prior to version 9.5.0.44, the default value of this property was the empty string.
 		#
 		# @param newval [String]
@@ -2080,8 +2084,8 @@ module Chilkat
 		# FollowRedirects property is set to _TRUE_. The default value of this property is "GET". This will
 		# produce the same behavior as a web browser (such as FireFox). If this property is set to the empty
 		# string, then it will cause the same verb as the original HTTP request to be used.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# Prior to version 9.5.0.44, the default value of this property was the empty string.
 		#
 		# @return [String]
@@ -2091,8 +2095,8 @@ module Chilkat
 		# FollowRedirects property is set to _TRUE_. The default value of this property is "GET". This will
 		# produce the same behavior as a web browser (such as FireFox). If this property is set to the empty
 		# string, then it will cause the same verb as the original HTTP request to be used.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# Prior to version 9.5.0.44, the default value of this property was the empty string.
 		#
 		# @param newval [String]
@@ -2132,11 +2136,11 @@ module Chilkat
 		# content-type in the response header does not match this setting. If the content-type does not match,
 		# only the header of the HTTP response is read, the connection to the HTTP server is closed, and the
 		# remainder of the response is never read.
-		#		
-		#		This property is empty (zero-length string) by
+		# 
+		# This property is empty (zero-length string) by
 		# default.
-		#		
-		#		Some typical content-types are "text/html", "text/xml", "image/gif",
+		# 
+		# Some typical content-types are "text/html", "text/xml", "image/gif",
 		# "image/jpeg", "application/zip", "application/msword", "application/pdf", etc.
 		#
 		# @param ckStr [CkString]
@@ -2148,11 +2152,11 @@ module Chilkat
 		# content-type in the response header does not match this setting. If the content-type does not match,
 		# only the header of the HTTP response is read, the connection to the HTTP server is closed, and the
 		# remainder of the response is never read.
-		#		
-		#		This property is empty (zero-length string) by
+		# 
+		# This property is empty (zero-length string) by
 		# default.
-		#		
-		#		Some typical content-types are "text/html", "text/xml", "image/gif",
+		# 
+		# Some typical content-types are "text/html", "text/xml", "image/gif",
 		# "image/jpeg", "application/zip", "application/msword", "application/pdf", etc.
 		#
 		# @param newval [String]
@@ -2162,11 +2166,11 @@ module Chilkat
 		# content-type in the response header does not match this setting. If the content-type does not match,
 		# only the header of the HTTP response is read, the connection to the HTTP server is closed, and the
 		# remainder of the response is never read.
-		#		
-		#		This property is empty (zero-length string) by
+		# 
+		# This property is empty (zero-length string) by
 		# default.
-		#		
-		#		Some typical content-types are "text/html", "text/xml", "image/gif",
+		# 
+		# Some typical content-types are "text/html", "text/xml", "image/gif",
 		# "image/jpeg", "application/zip", "application/msword", "application/pdf", etc.
 		#
 		# @return [String]
@@ -2176,11 +2180,11 @@ module Chilkat
 		# content-type in the response header does not match this setting. If the content-type does not match,
 		# only the header of the HTTP response is read, the connection to the HTTP server is closed, and the
 		# remainder of the response is never read.
-		#		
-		#		This property is empty (zero-length string) by
+		# 
+		# This property is empty (zero-length string) by
 		# default.
-		#		
-		#		Some typical content-types are "text/html", "text/xml", "image/gif",
+		# 
+		# Some typical content-types are "text/html", "text/xml", "image/gif",
 		# "image/jpeg", "application/zip", "application/msword", "application/pdf", etc.
 		#
 		# @param newval [String]
@@ -2333,14 +2337,14 @@ module Chilkat
 		def put_SocksPassword(newval) end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [Bignum]
@@ -2373,24 +2377,24 @@ module Chilkat
 		def put_SocksUsername(newval) end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
@@ -2400,8 +2404,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -2414,8 +2418,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -2427,8 +2431,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -2440,8 +2444,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -2454,73 +2458,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -2534,73 +2538,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -2612,73 +2616,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -2690,73 +2694,73 @@ module Chilkat
 		# (empty string) indicates that all implemented ciphers are possible. The TLS ciphers supported in
 		# Chilkat v9.5.0.55 and later
 		# are:
-		#		
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_DHE_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_RSA_WITH_AES_256_CBC_SHA256
-		#		TLS_RSA_WITH_AES_256_GCM_SHA384
-		#		TLS_RSA_WITH_AES_256_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_DHE_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_RSA_WITH_AES_128_CBC_SHA256
-		#		TLS_RSA_WITH_AES_128_GCM_SHA256
-		#		TLS_RSA_WITH_AES_128_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_RSA_WITH_3DES_EDE_CBC_SHA
-		#		TLS_ECDHE_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_SHA
-		#		TLS_RSA_WITH_RC4_128_MD5
-		#		TLS_DHE_RSA_WITH_DES_CBC_SHA
-		#		TLS_RSA_WITH_DES_CBC_SHA
-		#		
-		#		To
+		# 
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_DHE_RSA_WITH_AES_256_CBC_SHA
+		# TLS_RSA_WITH_AES_256_CBC_SHA256
+		# TLS_RSA_WITH_AES_256_GCM_SHA384
+		# TLS_RSA_WITH_AES_256_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_DHE_RSA_WITH_AES_128_CBC_SHA
+		# TLS_RSA_WITH_AES_128_CBC_SHA256
+		# TLS_RSA_WITH_AES_128_GCM_SHA256
+		# TLS_RSA_WITH_AES_128_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_DHE_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_RSA_WITH_3DES_EDE_CBC_SHA
+		# TLS_ECDHE_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_SHA
+		# TLS_RSA_WITH_RC4_128_MD5
+		# TLS_DHE_RSA_WITH_DES_CBC_SHA
+		# TLS_RSA_WITH_DES_CBC_SHA
+		# 
+		# To
 		# restrict SSL/TLS connections to one or more specific ciphers, set this property to a comma-separated
 		# list of ciphers such as "TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384,
 		# TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384". The order should be in terms of preference, with the
 		# preferred algorithms listed first. (Note that the client cannot specifically choose the algorithm is
 		# picked because it is the server that chooses. The client simply provides the server with a list from
 		# which to choose.)
-		#		
-		#		The property can also disallow connections with servers having
+		# 
+		# The property can also disallow connections with servers having
 		# certificates with RSA keys less than a certain size. By default, server certificates having RSA keys
 		# of 512 bits or greater are allowed. Add the keyword "rsa1024" to disallow connections with servers
 		# having keys smaller than 1024 bits. Add the keyword "rsa2048" to disallow connections with servers
 		# having keys smaller than 2048 bits.
-		#		
-		#		Note: Prior to Chilkat v9.5.0.55, it was not
+		# 
+		# Note: Prior to Chilkat v9.5.0.55, it was not
 		# possible to explicitly list allowed cipher suites. The deprecated means for indicating allowed
 		# ciphers was both incomplete and unprecise. For example, the following keywords could be listed to
 		# allow matching ciphers: "aes256-cbc", "aes128-cbc", "3des-cbc", and "rc4". These keywords will still
 		# be recognized, but programs should be updated to explicitly list the allowed
 		# ciphers.
-		#		
-		#		secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
+		# 
+		# secure-renegotiation: Starting in Chilkat v9.5.0.55, the keyword
 		# "secure-renegotiation" may be added to require that all renegotions be done securely (as per RFC
 		# 5746).
-		#		
-		#		best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
+		# 
+		# best-practices: Starting in Chilkat v9.5.0.55, this property may be set to the
 		# single keyword "best-practices". This will allow ciphers based on the current best practices. As new
 		# versions of Chilkat are released, the best practices may change. Changes will be noted here. The
 		# current best practices are:
-		#		
-		#		
-		#		If the server uses an RSA key, it must be 1024 bits
+		# 
+		# 
+		# If the server uses an RSA key, it must be 1024 bits
 		# or greater.
-		#		All renegotations must be secure renegotiations.
-		#		All ciphers using RC4, DES,
+		# All renegotations must be secure renegotiations.
+		# All ciphers using RC4, DES,
 		# or 3DES are disallowed.
-		#		
-		#		
-		#		Example: The following string would restrict to 2
+		# 
+		# 
+		# Example: The following string would restrict to 2
 		# specific cipher suites, require RSA keys to be 1024 bits or greater, and require secure
 		# renegotiations: "TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, rsa1024,
 		# secure-renegotiation"
@@ -2766,18 +2770,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -2790,18 +2794,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -2812,18 +2816,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -2834,18 +2838,18 @@ module Chilkat
 
 		# Selects the secure protocol to be used for secure (SSL/TLS) connections. Possible values
 		# are:
-		#		
-		#		default
-		#		TLS 1.2
-		#		TLS 1.1
-		#		TLS 1.0
-		#		SSL 3.0
-		#		TLS 1.2 or
+		# 
+		# default
+		# TLS 1.2
+		# TLS 1.1
+		# TLS 1.0
+		# SSL 3.0
+		# TLS 1.2 or
 		# higher
-		#		TLS 1.1 or higher
-		#		TLS 1.0 or higher
-		#		
-		#		The default value is "default"
+		# TLS 1.1 or higher
+		# TLS 1.0 or higher
+		# 
+		# The default value is "default"
 		# which will choose the, which allows for the protocol to be selected dynamically at runtime based on
 		# the requirements of the server. Choosing an exact protocol will cause the connection to fail unless
 		# that exact protocol is negotiated. It is better to choose "X or higher" than an exact protocol. The
@@ -2906,27 +2910,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param ckStr [CkString]
@@ -2938,27 +2942,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param newval [String]
@@ -2968,27 +2972,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @return [String]
@@ -2998,27 +3002,27 @@ module Chilkat
 		# SPKI fingerprints for the server certificates. If the server's certificate (sent during the TLS
 		# handshake) does not match any of the SPKI fingerprints, then the TLS handshake is aborted and the
 		# connection fails. The format of this string property is as follows:
-		#		
-		#		hash_algorithm,
+		# 
+		# hash_algorithm,
 		# encoding, SPKI_fingerprint_1, SPKI_fingerprint_2, ...
-		#		
-		#		For example, the following string
+		# 
+		# For example, the following string
 		# specifies a single sha256 base64-encoded SPKI fingerprint:
-		#		
-		#		"sha256, base64,
+		# 
+		# "sha256, base64,
 		# lKg1SIqyhPSK19tlPbjl8s02yChsVTDklQpkMCHvsTE="
-		#		
-		#		This example specifies two SPKI
+		# 
+		# This example specifies two SPKI
 		# fingerprints:
-		#		
-		#		"sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
+		# 
+		# "sha256, base64, 4t37LpnGmrMEAG8HEz9yIrnvJV2euVRwCLb9EH5WZyI=,
 		# 68b0G5iqMvWVWvUCjMuhLEyekM5729PadtnU5tdXZKs="
-		#		
-		#		Any of the following hash algorithms are
+		# 
+		# Any of the following hash algorithms are
 		# allowed:.sha1, sha256, sha384, sha512, md2, md5, haval, ripemd128, ripemd160,ripemd256, or
 		# ripemd320.
-		#		
-		#		The following encodings are allowed: base64, hex, and any of the encodings
+		# 
+		# The following encodings are allowed: base64, hex, and any of the encodings
 		# indicated in the link below.
 		#
 		# @param newval [String]
@@ -3052,30 +3056,30 @@ module Chilkat
 		# return after its work is completed. However, when UseBgThread is true, the method will return
 		# immediately and a background thread is started to carry out the method's
 		# task.
-		#		
-		#		Background-enabled HTTP methods
+		# 
+		# Background-enabled HTTP methods
 		# are:
-		#		
-		#		Download
-		#		DownloadAppend
-		#		GetHead
-		#		PostBinary
-		#		PostMime
-		#		PostUrlEncoded
-		#		PostXml
-		#		PutText
-		#		QuickDeleteStr
-		#		QuickGet
-		#		QuickGetObj
-		#		QuickGetStr
-		#		QuickPutStr
-		#		ResumeDownload
-		#		SynchronousRequest
-		#		XmlRpc
-		#		XmlRpcPut
-		#		
-		#		
-		#		This
+		# 
+		# Download
+		# DownloadAppend
+		# GetHead
+		# PostBinary
+		# PostMime
+		# PostUrlEncoded
+		# PostXml
+		# PutText
+		# QuickDeleteStr
+		# QuickGet
+		# QuickGetObj
+		# QuickGetStr
+		# QuickPutStr
+		# ResumeDownload
+		# SynchronousRequest
+		# XmlRpc
+		# XmlRpcPut
+		# 
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -3088,30 +3092,30 @@ module Chilkat
 		# return after its work is completed. However, when UseBgThread is true, the method will return
 		# immediately and a background thread is started to carry out the method's
 		# task.
-		#		
-		#		Background-enabled HTTP methods
+		# 
+		# Background-enabled HTTP methods
 		# are:
-		#		
-		#		Download
-		#		DownloadAppend
-		#		GetHead
-		#		PostBinary
-		#		PostMime
-		#		PostUrlEncoded
-		#		PostXml
-		#		PutText
-		#		QuickDeleteStr
-		#		QuickGet
-		#		QuickGetObj
-		#		QuickGetStr
-		#		QuickPutStr
-		#		ResumeDownload
-		#		SynchronousRequest
-		#		XmlRpc
-		#		XmlRpcPut
-		#		
-		#		
-		#		This
+		# 
+		# Download
+		# DownloadAppend
+		# GetHead
+		# PostBinary
+		# PostMime
+		# PostUrlEncoded
+		# PostXml
+		# PutText
+		# QuickDeleteStr
+		# QuickGet
+		# QuickGetObj
+		# QuickGetStr
+		# QuickPutStr
+		# ResumeDownload
+		# SynchronousRequest
+		# XmlRpc
+		# XmlRpcPut
+		# 
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
@@ -3175,8 +3179,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -3185,8 +3189,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -3234,7 +3238,7 @@ module Chilkat
 		#
 		# @param dir [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddCacheRoot(dir)
 			# ...
 		end
@@ -3246,21 +3250,21 @@ module Chilkat
 		# object. These methods include Download, DownloadAppend, GetHead, PostBinary, PostMime, PostXml,
 		# PutBinary, PutText, QuickDeleteStr, QuickGet, QuickGetObj, QuickGetStr, QuickPutStr, XmlRpc, and
 		# XmlRpcPut. 
-		#		
-		#		Cookies may be explictly added by calling this method passing "Cookie" for
+		# 
+		# Cookies may be explictly added by calling this method passing "Cookie" for
 		# the ARG1. 
-		#		
-		#		The RemoveQuickHeader method can be called to remove a custom
+		# 
+		# The RemoveQuickHeader method can be called to remove a custom
 		# header.
-		#		
-		#		* Note: This method is deprecated. It is identical to the SetRequestHeader
+		# 
+		# * Note: This method is deprecated. It is identical to the SetRequestHeader
 		# method. The SetRequestHeader method should be called instead because AddQuickHeader will be removed
 		# in a future version.
 		#
 		# @param headerFieldName [String]
 		# @param headerFieldValue [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AddQuickHeader(headerFieldName, headerFieldValue)
 			# ...
@@ -3271,13 +3275,13 @@ module Chilkat
 		#
 		# If a backgrounded method returns an Http response object, it may be retrieved by calling this
 		# method.
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		# @deprecated This method has been deprecated. Do not use it.
 		def BgResponseObject()
 			# ...
@@ -3287,14 +3291,14 @@ module Chilkat
 		# Method: BgTaskAbort
 		#
 		# Call this to force the currently running backgrounded method to abort.
-		#		
-		#		This
+		# 
+		# This
 		# functionality is replaced by the new model for asynchronous programming introduced in Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def BgTaskAbort()
 			# ...
@@ -3303,15 +3307,14 @@ module Chilkat
 
 		# Method: ClearBgEventLog
 		#
-		# Clears the in-memory event log (which is enabled by setting the KeepEventLog property =
-		# _TRUE_).
-		#		
-		#		This functionality is replaced by the new model for asynchronous programming
+		# Clears the in-memory event log (which is enabled by setting the KeepEventLog property  _TRUE_).
+		# 
+		# This functionality is replaced by the new model for asynchronous programming
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def ClearBgEventLog()
 			# ...
@@ -3324,7 +3327,7 @@ module Chilkat
 		# to the string "memory".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearInMemoryCookies()
 			# ...
 		end
@@ -3333,16 +3336,16 @@ module Chilkat
 		# Method: CloseAllConnections
 		#
 		# Closes all connections still open from previous HTTP requests. 
-		#		An HTTP object instance will
+		# An HTTP object instance will
 		# maintain up to 10 connections. If the HTTP server's response does not include a "Connection: Close"
 		# header, the connection will remain open and will be re-used if possible for the next HTTP request to
 		# the same hostname:port. (It uses the IP address (in string form) or the domain name, whichever is
 		# used in the URL provided by the application.)
-		#		If 10 connections are already open and another
+		# If 10 connections are already open and another
 		# is needed, the object will close the least recently used connection.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CloseAllConnections()
 			# ...
 		end
@@ -3357,7 +3360,7 @@ module Chilkat
 		# clearing the cache affects all Chilkat objects.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def DnsCacheClear()
 			# ...
 		end
@@ -3372,7 +3375,7 @@ module Chilkat
 		# @param url [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Download(url, localFilePath)
 			# ...
 		end
@@ -3385,7 +3388,7 @@ module Chilkat
 		# @param url [String]
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadAppend(url, filename)
 			# ...
 		end
@@ -3398,7 +3401,7 @@ module Chilkat
 		# @param url [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadBd(url, binData)
 			# ...
 		end
@@ -3417,7 +3420,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadHash(url, hashAlgorithm, encoding, outStr)
 			# ...
 		end
@@ -3435,7 +3438,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def downloadHash(url, hashAlgorithm, encoding)
 			# ...
 		end
@@ -3450,7 +3453,7 @@ module Chilkat
 		# @param charset [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadSb(url, charset, sb)
 			# ...
 		end
@@ -3461,15 +3464,15 @@ module Chilkat
 		# Returns the name of the Nth event in the in-memory event log. Refer to the documentation for the
 		# KeepEventLog property for the full list of event names. Indexing is from 0 to
 		# EventLogCount-1.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def EventLogName(index, outStr)
 			# ...
@@ -3481,14 +3484,14 @@ module Chilkat
 		# Returns the name of the Nth event in the in-memory event log. Refer to the documentation for the
 		# KeepEventLog property for the full list of event names. Indexing is from 0 to
 		# EventLogCount-1.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def eventLogName(index)
 			# ...
@@ -3499,15 +3502,15 @@ module Chilkat
 		#
 		# Returns the value of the Nth event in the in-memory event log. Indexing is from 0 to
 		# EventLogCount-1.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def EventLogValue(index, outStr)
 			# ...
@@ -3518,14 +3521,14 @@ module Chilkat
 		#
 		# Returns the value of the Nth event in the in-memory event log. Indexing is from 0 to
 		# EventLogCount-1.
-		#		
-		#		This functionality is replaced by the new model for asynchronous
+		# 
+		# This functionality is replaced by the new model for asynchronous
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def eventLogValue(index)
 			# ...
@@ -3536,17 +3539,17 @@ module Chilkat
 		#
 		# Convenience method for extracting the META refresh URL from HTML. For example, if the ARG1 contains
 		# a META refresh tag, such as:
-		#		
-		#		&lt;meta http-equiv="refresh"
+		# 
+		# &lt;meta http-equiv="refresh"
 		# content="5;URL='http://example.com/'">
-		#		
-		#		Then the return value of this method would be
+		# 
+		# Then the return value of this method would be
 		# "http://example.com/".
 		#
 		# @param htmlContent [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExtractMetaRefreshUrl(htmlContent, outStr)
 			# ...
 		end
@@ -3556,16 +3559,16 @@ module Chilkat
 		#
 		# Convenience method for extracting the META refresh URL from HTML. For example, if the ARG1 contains
 		# a META refresh tag, such as:
-		#		
-		#		&lt;meta http-equiv="refresh"
+		# 
+		# &lt;meta http-equiv="refresh"
 		# content="5;URL='http://example.com/'">
-		#		
-		#		Then the return value of this method would be
+		# 
+		# Then the return value of this method would be
 		# "http://example.com/".
 		#
 		# @param htmlContent [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def extractMetaRefreshUrl(htmlContent)
 			# ...
 		end
@@ -3574,14 +3577,14 @@ module Chilkat
 		# Method: G_SvcOauthAccessToken
 		#
 		# Makes an access token request to obtain a Google API OAuth2 access token for a service account.
-		# #		Access tokens issued by the Google OAuth 2.0 Authorization Server expire one hour after they are
+		# # Access tokens issued by the Google OAuth 2.0 Authorization Server expire one hour after they are
 		# issued. When an access token expires, then the application should generate another JWT, sign it, and
 		# request another access token. The ARG1 is the service account email address of the application
 		# making the access token request. The ARG2 is a space-delimited list of the permissions that the
 		# application requests. (See https://developers.google.com/accounts/docs/OAuth2ServiceAccount
 		# )
-		#		
-		#		 The ARG3 is the email address of the user for which the application is requesting
+		# 
+		#  The ARG3 is the email address of the user for which the application is requesting
 		# delegated access. The ARG3 may be left empty if there is no such email address.
 		#
 		# @param iss [String]
@@ -3591,7 +3594,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def G_SvcOauthAccessToken(iss, scope, subEmail, numSec, cert, outStr)
 			# ...
 		end
@@ -3600,14 +3603,14 @@ module Chilkat
 		# Method: G_SvcOauthAccessToken
 		#
 		# Makes an access token request to obtain a Google API OAuth2 access token for a service account.
-		# #		Access tokens issued by the Google OAuth 2.0 Authorization Server expire one hour after they are
+		# # Access tokens issued by the Google OAuth 2.0 Authorization Server expire one hour after they are
 		# issued. When an access token expires, then the application should generate another JWT, sign it, and
 		# request another access token. The ARG1 is the service account email address of the application
 		# making the access token request. The ARG2 is a space-delimited list of the permissions that the
 		# application requests. (See https://developers.google.com/accounts/docs/OAuth2ServiceAccount
 		# )
-		#		
-		#		 The ARG3 is the email address of the user for which the application is requesting
+		# 
+		#  The ARG3 is the email address of the user for which the application is requesting
 		# delegated access. The ARG3 may be left empty if there is no such email address.
 		#
 		# @param iss [String]
@@ -3616,7 +3619,7 @@ module Chilkat
 		# @param numSec [Fixnum]
 		# @param cert [CkCert]
 		#
-		# @return [String] 
+		# @return [String]
 		def g_SvcOauthAccessToken(iss, scope, subEmail, numSec, cert)
 			# ...
 		end
@@ -3633,7 +3636,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def G_SvcOauthAccessToken2(claimParams, numSec, cert, outStr)
 			# ...
 		end
@@ -3649,7 +3652,7 @@ module Chilkat
 		# @param numSec [Fixnum]
 		# @param cert [CkCert]
 		#
-		# @return [String] 
+		# @return [String]
 		def g_SvcOauthAccessToken2(claimParams, numSec, cert)
 			# ...
 		end
@@ -3662,7 +3665,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenTimeStamp(outStr)
 			# ...
 		end
@@ -3674,7 +3677,7 @@ module Chilkat
 		# format.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def genTimeStamp()
 			# ...
 		end
@@ -3688,7 +3691,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCacheRoot(index, outStr)
 			# ...
 		end
@@ -3701,7 +3704,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getCacheRoot(index)
 			# ...
 		end
@@ -3716,7 +3719,7 @@ module Chilkat
 		# @param domain [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCookieXml(domain, outStr)
 			# ...
 		end
@@ -3730,7 +3733,7 @@ module Chilkat
 		#
 		# @param domain [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getCookieXml(domain)
 			# ...
 		end
@@ -3745,7 +3748,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetDomain(url, outStr)
 			# ...
 		end
@@ -3759,7 +3762,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getDomain(url)
 			# ...
 		end
@@ -3772,7 +3775,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def GetHead(url)
 			# ...
 		end
@@ -3787,7 +3790,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetRequestHeader(name, outStr)
 			# ...
 		end
@@ -3801,7 +3804,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getRequestHeader(name)
 			# ...
 		end
@@ -3816,7 +3819,7 @@ module Chilkat
 		# @param domain [String]
 		# @param port [Fixnum]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetServerSslCert(domain, port)
 			# ...
 		end
@@ -3831,7 +3834,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetUrlPath(url, outStr)
 			# ...
 		end
@@ -3845,7 +3848,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getUrlPath(url)
 			# ...
 		end
@@ -3858,7 +3861,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasRequestHeader(name)
 			# ...
 		end
@@ -3871,7 +3874,7 @@ module Chilkat
 		# a 30-day trial period.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -3895,7 +3898,7 @@ module Chilkat
 		# @param md5 [TrueClass, FalseClass]
 		# @param gzip [TrueClass, FalseClass]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def PBinary(verb, url, byteData, contentType, md5, gzip)
 			# ...
 		end
@@ -3910,11 +3913,11 @@ module Chilkat
 		# corrupted. If ARG5 is _TRUE_, the ARG2 is compressed using the gzip algorithm. The HTTP request body
 		# will contain the GZIP compressed data, and a "Content-Encoding: gzip" header is automatically added
 		# to indicate that the request data needs to be ungzipped when received (at the server).
-		#		Returns
+		# Returns
 		# the text body of the HTTP response if the HTTP response has a success status code. Otherwise the
 		# method is considered to have failed. If more details of the HTTP response are required, call PBinary
 		# instead (which returns the HTTP response object).
-		#		Note: The HTTP response code is available in
+		# Note: The HTTP response code is available in
 		# the LastStatus property. Other properties having information include LastResponseHeader,
 		# LastResponseBody, LastModDate, LastContentType, etc.
 		#
@@ -3925,7 +3928,7 @@ module Chilkat
 		# @param gzip [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def PostBinary(url, byteData, contentType, md5, gzip, outStr)
 			# ...
 		end
@@ -3940,11 +3943,11 @@ module Chilkat
 		# corrupted. If ARG5 is _TRUE_, the ARG2 is compressed using the gzip algorithm. The HTTP request body
 		# will contain the GZIP compressed data, and a "Content-Encoding: gzip" header is automatically added
 		# to indicate that the request data needs to be ungzipped when received (at the server).
-		#		Returns
+		# Returns
 		# the text body of the HTTP response if the HTTP response has a success status code. Otherwise the
 		# method is considered to have failed. If more details of the HTTP response are required, call PBinary
 		# instead (which returns the HTTP response object).
-		#		Note: The HTTP response code is available in
+		# Note: The HTTP response code is available in
 		# the LastStatus property. Other properties having information include LastResponseHeader,
 		# LastResponseBody, LastModDate, LastContentType, etc.
 		#
@@ -3954,7 +3957,7 @@ module Chilkat
 		# @param md5 [TrueClass, FalseClass]
 		# @param gzip [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def postBinary(url, byteData, contentType, md5, gzip)
 			# ...
 		end
@@ -3970,7 +3973,7 @@ module Chilkat
 		# @param url [String]
 		# @param jsonText [String]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def PostJson(url, jsonText)
 			# ...
 		end
@@ -3986,7 +3989,7 @@ module Chilkat
 		# @param contentType [String]
 		# @param jsonText [String]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def PostJson2(url, contentType, jsonText)
 			# ...
 		end
@@ -4000,7 +4003,7 @@ module Chilkat
 		# @param url [String]
 		# @param req [CkHttpRequest]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def PostUrlEncoded(url, req)
 			# ...
 		end
@@ -4011,21 +4014,21 @@ module Chilkat
 		# A simplified way of posting XML content to a web server. This method is good for making SOAP calls
 		# using HTTP POST. The ARG3 should match the character encoding used in the ARG2, which is typically
 		# "utf-8". The HTTP response is returned in an HTTP response object.
-		#		
-		#		Important: This
+		# 
+		# Important: This
 		# method sends the POST with a "Content-Type" header value of "text/xml". Sometimes a server might
 		# require the Content-Type header to be "application/xml". To use "application/xml" instead of the
 		# default "text/xml", call SetHeaderField("Content-Type","application/xml") prior to calling this
 		# method.
-		#		
-		#		To use HTTPS simply pass an ARG1 beginning with "https://" instead of
+		# 
+		# To use HTTPS simply pass an ARG1 beginning with "https://" instead of
 		# "http://". This applies to any Chilkat method where a URL is passed as an argument.
 		#
 		# @param endpointUrl [String]
 		# @param xmlContent [String]
 		# @param xmlCharset [String]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def PostXml(endpointUrl, xmlContent, xmlCharset)
 			# ...
 		end
@@ -4050,7 +4053,7 @@ module Chilkat
 		# @param md5 [TrueClass, FalseClass]
 		# @param gzip [TrueClass, FalseClass]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def PText(verb, url, textData, charset, contentType, md5, gzip)
 			# ...
 		end
@@ -4065,7 +4068,7 @@ module Chilkat
 		# is compressed using the gzip algorithm. The HTTP request body will contain the GZIP compressed data,
 		# and a "Content-Encoding: gzip" header is automatically added to indicate that the request data needs
 		# to be ungzipped when received (at the server).
-		#		Returns the text body of the HTTP response if
+		# Returns the text body of the HTTP response if
 		# the HTTP response has a success status code. Otherwise the method is considered to have failed. If
 		# more details of the HTTP response are required, call PBinary instead (which returns the HTTP
 		# response object).
@@ -4077,7 +4080,7 @@ module Chilkat
 		# @param gzip [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def PutBinary(url, byteData, contentType, md5, gzip, outStr)
 			# ...
 		end
@@ -4092,7 +4095,7 @@ module Chilkat
 		# is compressed using the gzip algorithm. The HTTP request body will contain the GZIP compressed data,
 		# and a "Content-Encoding: gzip" header is automatically added to indicate that the request data needs
 		# to be ungzipped when received (at the server).
-		#		Returns the text body of the HTTP response if
+		# Returns the text body of the HTTP response if
 		# the HTTP response has a success status code. Otherwise the method is considered to have failed. If
 		# more details of the HTTP response are required, call PBinary instead (which returns the HTTP
 		# response object).
@@ -4103,7 +4106,7 @@ module Chilkat
 		# @param md5 [TrueClass, FalseClass]
 		# @param gzip [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def putBinary(url, byteData, contentType, md5, gzip)
 			# ...
 		end
@@ -4120,7 +4123,7 @@ module Chilkat
 		# HTTP request body will contain the GZIP compressed data, and a "Content-Encoding: gzip" header is
 		# automatically added to indicate that the request data needs to be ungzipped when received (at the
 		# server).
-		#		Returns the text body of the HTTP response if the HTTP response has a success status
+		# Returns the text body of the HTTP response if the HTTP response has a success status
 		# code. Otherwise the method is considered to have failed. If more details of the HTTP response are
 		# required, call PText instead (which returns the HTTP response object).
 		#
@@ -4132,7 +4135,7 @@ module Chilkat
 		# @param gzip [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def PutText(url, textData, charset, contentType, md5, gzip, outStr)
 			# ...
 		end
@@ -4149,7 +4152,7 @@ module Chilkat
 		# HTTP request body will contain the GZIP compressed data, and a "Content-Encoding: gzip" header is
 		# automatically added to indicate that the request data needs to be ungzipped when received (at the
 		# server).
-		#		Returns the text body of the HTTP response if the HTTP response has a success status
+		# Returns the text body of the HTTP response if the HTTP response has a success status
 		# code. Otherwise the method is considered to have failed. If more details of the HTTP response are
 		# required, call PText instead (which returns the HTTP response object).
 		#
@@ -4160,7 +4163,7 @@ module Chilkat
 		# @param md5 [TrueClass, FalseClass]
 		# @param gzip [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def putText(url, textData, charset, contentType, md5, gzip)
 			# ...
 		end
@@ -4169,14 +4172,14 @@ module Chilkat
 		# Method: QuickDeleteStr
 		#
 		# Same as QuickGetStr, but uses the HTTP DELETE method instead of the GET method.
-		#		Note: The HTTP
+		# Note: The HTTP
 		# response code is available in the LastStatus property. Other properties having information include
 		# LastResponseHeader, LastResponseBody, LastModDate, LastContentType, etc.
 		#
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QuickDeleteStr(url, outStr)
 			# ...
 		end
@@ -4185,13 +4188,13 @@ module Chilkat
 		# Method: QuickDeleteStr
 		#
 		# Same as QuickGetStr, but uses the HTTP DELETE method instead of the GET method.
-		#		Note: The HTTP
+		# Note: The HTTP
 		# response code is available in the LastStatus property. Other properties having information include
 		# LastResponseHeader, LastResponseBody, LastModDate, LastContentType, etc.
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def quickDeleteStr(url)
 			# ...
 		end
@@ -4207,14 +4210,14 @@ module Chilkat
 		# such as with an HTML page, you may call QuickGetStr instead. If the HTTP request fails, a
 		# zero-length byte array is returned and error information can be found in the LastErrorText,
 		# LastErrorXml, or LastErrorHtml properties.
-		#		Note: The HTTP response code is available in the
+		# Note: The HTTP response code is available in the
 		# LastStatus property. Other properties having information include LastResponseHeader,
 		# LastResponseBody, LastModDate, LastContentType, etc.
 		#
 		# @param url [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QuickGet(url, outData)
 			# ...
 		end
@@ -4228,7 +4231,7 @@ module Chilkat
 		# @param url [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QuickGetBd(url, binData)
 			# ...
 		end
@@ -4242,7 +4245,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def QuickGetObj(url)
 			# ...
 		end
@@ -4256,7 +4259,7 @@ module Chilkat
 		# @param url [String]
 		# @param sbContent [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QuickGetSb(url, sbContent)
 			# ...
 		end
@@ -4270,14 +4273,14 @@ module Chilkat
 		# the page could be fetched directly from cache. If the HTTP request fails, a _NULL_ value is returned
 		# and error information can be found in the LastErrorText, LastErrorXml, or LastErrorHtml
 		# properties.
-		#		Note: The HTTP response code is available in the LastStatus property. Other
+		# Note: The HTTP response code is available in the LastStatus property. Other
 		# properties having information include LastResponseHeader, LastResponseBody, LastModDate,
 		# LastContentType, etc.
 		#
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QuickGetStr(url, outStr)
 			# ...
 		end
@@ -4291,13 +4294,13 @@ module Chilkat
 		# the page could be fetched directly from cache. If the HTTP request fails, a _NULL_ value is returned
 		# and error information can be found in the LastErrorText, LastErrorXml, or LastErrorHtml
 		# properties.
-		#		Note: The HTTP response code is available in the LastStatus property. Other
+		# Note: The HTTP response code is available in the LastStatus property. Other
 		# properties having information include LastResponseHeader, LastResponseBody, LastModDate,
 		# LastContentType, etc.
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def quickGetStr(url)
 			# ...
 		end
@@ -4306,14 +4309,14 @@ module Chilkat
 		# Method: QuickPutStr
 		#
 		# Same as QuickGetStr, but uses the HTTP PUT method instead of the GET method.
-		#		Note: The HTTP
+		# Note: The HTTP
 		# response code is available in the LastStatus property. Other properties having information include
 		# LastResponseHeader, LastResponseBody, LastModDate, LastContentType, etc.
 		#
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QuickPutStr(url, outStr)
 			# ...
 		end
@@ -4322,13 +4325,13 @@ module Chilkat
 		# Method: QuickPutStr
 		#
 		# Same as QuickGetStr, but uses the HTTP PUT method instead of the GET method.
-		#		Note: The HTTP
+		# Note: The HTTP
 		# response code is available in the LastStatus property. Other properties having information include
 		# LastResponseHeader, LastResponseBody, LastModDate, LastContentType, etc.
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def quickPutStr(url)
 			# ...
 		end
@@ -4339,14 +4342,14 @@ module Chilkat
 		# Removes a header from the internal list of custom header field name/value pairs to be automatically
 		# added when HTTP requests are sent via methods that do not use the HTTP request object. (The
 		# AddQuickHeader method is called to add custom header fields.)
-		#		
-		#		* Note: This method is
+		# 
+		# * Note: This method is
 		# deprecated. It is identical to the RemoveRequestHeader method. The RemoveRequestHeader method should
 		# be called instead because this method will be removed in a future version.
 		#
 		# @param headerFieldName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveQuickHeader(headerFieldName)
 			# ...
 		end
@@ -4360,7 +4363,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveRequestHeader(name)
 			# ...
 		end
@@ -4369,13 +4372,13 @@ module Chilkat
 		# Method: RenderGet
 		#
 		# Same as QuickGet, but does not send the HTTP GET. Instead, it builds
-		#		the HTTP request that
+		# the HTTP request that
 		# would've been sent and returns it.
 		#
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RenderGet(url, outStr)
 			# ...
 		end
@@ -4384,12 +4387,12 @@ module Chilkat
 		# Method: RenderGet
 		#
 		# Same as QuickGet, but does not send the HTTP GET. Instead, it builds
-		#		the HTTP request that
+		# the HTTP request that
 		# would've been sent and returns it.
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def renderGet(url)
 			# ...
 		end
@@ -4404,7 +4407,7 @@ module Chilkat
 		# @param url [String]
 		# @param targetFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ResumeDownload(url, targetFilename)
 			# ...
 		end
@@ -4413,13 +4416,13 @@ module Chilkat
 		# Method: S3_CreateBucket
 		#
 		# Creates a new Amazon S3 bucket.
-		#		Note: x-amz-* headers, including metadata, can be added to any
+		# Note: x-amz-* headers, including metadata, can be added to any
 		# S3 request by adding each header with a call to SetRequestHeader. This applies to all S3 methods,
 		# even if not explicitly stated.
 		#
 		# @param bucketPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_CreateBucket(bucketPath)
 			# ...
 		end
@@ -4431,7 +4434,7 @@ module Chilkat
 		#
 		# @param bucketPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_DeleteBucket(bucketPath)
 			# ...
 		end
@@ -4447,7 +4450,7 @@ module Chilkat
 		# @param bucketName [String]
 		# @param objectNames [CkStringArray]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def S3_DeleteMultipleObjects(bucketName, objectNames)
 			# ...
 		end
@@ -4460,7 +4463,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_DeleteObject(bucketPath, objectName)
 			# ...
 		end
@@ -4475,7 +4478,7 @@ module Chilkat
 		# @param objectName [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_DownloadBytes(bucketPath, objectName, outBytes)
 			# ...
 		end
@@ -4489,7 +4492,7 @@ module Chilkat
 		# @param objectName [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_DownloadFile(bucketPath, objectName, localFilePath)
 			# ...
 		end
@@ -4505,7 +4508,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_DownloadString(bucketPath, objectName, charset, outStr)
 			# ...
 		end
@@ -4520,7 +4523,7 @@ module Chilkat
 		# @param objectName [String]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def s3_DownloadString(bucketPath, objectName, charset)
 			# ...
 		end
@@ -4535,7 +4538,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def S3_FileExists(bucketPath, objectName)
 			# ...
 		end
@@ -4552,7 +4555,7 @@ module Chilkat
 		# @param expire [CkDateTime]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_GenerateUrl(bucket, path, expire, outStr)
 			# ...
 		end
@@ -4568,7 +4571,7 @@ module Chilkat
 		# @param path [String]
 		# @param expire [CkDateTime]
 		#
-		# @return [String] 
+		# @return [String]
 		def s3_GenerateUrl(bucket, path, expire)
 			# ...
 		end
@@ -4580,19 +4583,19 @@ module Chilkat
 		# generate AWS Signature V2 pre-signed URLs.) Requires that the AwsSecretKey, AwsAccessKey, and
 		# AwsRegion properties be set to valid values prior to calling this method. Also requires the
 		# AwsEndpoint property to be set if the endpoint is different than "s3.amazonaws.com".
-		# #		
-		#		The URL that is generated has this
+		# # 
+		# The URL that is generated has this
 		# format:
-		#		
-		#		https:////
-		#		?X-Amz-Algorithm=AWS4-HMAC-SHA256
-		#		&X-Amz-Credential=////aws4_request
-		#		&X-Amz-Date=
-		#		&X-Amz-Expires=
-		#		&X-Amz-SignedHeaders=host
-		#		&X-Amz-Signature=
-		# #		
-		#		The ARG4 is a string naming the AWS service, such as "s3". If ARG1 is _TRUE_, then the URL
+		# 
+		# https:////
+		# ?X-Amz-Algorithm=AWS4-HMAC-SHA256
+		# &X-Amz-Credential=////aws4_request
+		# &X-Amz-Date=
+		# &X-Amz-Expires=
+		# &X-Amz-SignedHeaders=host
+		# &X-Amz-Signature=
+		# # 
+		# The ARG4 is a string naming the AWS service, such as "s3". If ARG1 is _TRUE_, then the URL
 		# begins with "https://", otherwise it begins with "http://".
 		#
 		# @param useHttps [TrueClass, FalseClass]
@@ -4602,7 +4605,7 @@ module Chilkat
 		# @param awsService [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_GenerateUrlV4(useHttps, bucketName, path, numSecondsValid, awsService, outStr)
 			# ...
 		end
@@ -4614,19 +4617,19 @@ module Chilkat
 		# generate AWS Signature V2 pre-signed URLs.) Requires that the AwsSecretKey, AwsAccessKey, and
 		# AwsRegion properties be set to valid values prior to calling this method. Also requires the
 		# AwsEndpoint property to be set if the endpoint is different than "s3.amazonaws.com".
-		# #		
-		#		The URL that is generated has this
+		# # 
+		# The URL that is generated has this
 		# format:
-		#		
-		#		https:////
-		#		?X-Amz-Algorithm=AWS4-HMAC-SHA256
-		#		&X-Amz-Credential=////aws4_request
-		#		&X-Amz-Date=
-		#		&X-Amz-Expires=
-		#		&X-Amz-SignedHeaders=host
-		#		&X-Amz-Signature=
-		# #		
-		#		The ARG4 is a string naming the AWS service, such as "s3". If ARG1 is _TRUE_, then the URL
+		# 
+		# https:////
+		# ?X-Amz-Algorithm=AWS4-HMAC-SHA256
+		# &X-Amz-Credential=////aws4_request
+		# &X-Amz-Date=
+		# &X-Amz-Expires=
+		# &X-Amz-SignedHeaders=host
+		# &X-Amz-Signature=
+		# # 
+		# The ARG4 is a string naming the AWS service, such as "s3". If ARG1 is _TRUE_, then the URL
 		# begins with "https://", otherwise it begins with "http://".
 		#
 		# @param useHttps [TrueClass, FalseClass]
@@ -4635,7 +4638,7 @@ module Chilkat
 		# @param numSecondsValid [Fixnum]
 		# @param awsService [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def s3_GenerateUrlV4(useHttps, bucketName, path, numSecondsValid, awsService)
 			# ...
 		end
@@ -4645,21 +4648,21 @@ module Chilkat
 		#
 		# Retrieves the XML listing of the objects contained within an Amazon S3 bucket. (This is like a
 		# directory listing, but in XML format.)
-		#		
-		#		The ARG1 name may be qualified with URL-encoded
+		# 
+		# The ARG1 name may be qualified with URL-encoded
 		# params. For example, to list
-		#		the objects in a bucket named "ChilkatABC" with max-keys = 2000
+		# the objects in a bucket named "ChilkatABC" with max-keys = 2000
 		# and marker = "xyz", call S3_ListBucketObject passing the following string for ARG1:
 		# "ChilkatABC?max-keys=2000&marker=xyz"
-		#		
-		#		The S3_ListBucketObjects method recognized all
+		# 
+		# The S3_ListBucketObjects method recognized all
 		# params listed in the AWS documentation for listing objects in a bucket: delimiter, marker, max-keys,
 		# and prefix. See Amazon's AWS online documentation for more information.
 		#
 		# @param bucketPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_ListBucketObjects(bucketPath, outStr)
 			# ...
 		end
@@ -4669,20 +4672,20 @@ module Chilkat
 		#
 		# Retrieves the XML listing of the objects contained within an Amazon S3 bucket. (This is like a
 		# directory listing, but in XML format.)
-		#		
-		#		The ARG1 name may be qualified with URL-encoded
+		# 
+		# The ARG1 name may be qualified with URL-encoded
 		# params. For example, to list
-		#		the objects in a bucket named "ChilkatABC" with max-keys = 2000
+		# the objects in a bucket named "ChilkatABC" with max-keys = 2000
 		# and marker = "xyz", call S3_ListBucketObject passing the following string for ARG1:
 		# "ChilkatABC?max-keys=2000&marker=xyz"
-		#		
-		#		The S3_ListBucketObjects method recognized all
+		# 
+		# The S3_ListBucketObjects method recognized all
 		# params listed in the AWS documentation for listing objects in a bucket: delimiter, marker, max-keys,
 		# and prefix. See Amazon's AWS online documentation for more information.
 		#
 		# @param bucketPath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def s3_ListBucketObjects(bucketPath)
 			# ...
 		end
@@ -4694,7 +4697,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_ListBuckets(outStr)
 			# ...
 		end
@@ -4705,7 +4708,7 @@ module Chilkat
 		# Retrieves the XML listing of the buckets for an Amazon S3 account.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def s3_ListBuckets()
 			# ...
 		end
@@ -4715,7 +4718,7 @@ module Chilkat
 		#
 		# The same as S3_UploadFile, except the contents of the file come from ARG1 instead of a local
 		# file.
-		#		Note: x-amz-* headers, including metadata, can be added to any S3 request by adding each
+		# Note: x-amz-* headers, including metadata, can be added to any S3 request by adding each
 		# header with a call to SetRequestHeader. This applies to all S3 methods, even if not explicitly
 		# stated.
 		#
@@ -4724,7 +4727,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_UploadBytes(contentBytes, contentType, bucketPath, objectName)
 			# ...
 		end
@@ -4733,7 +4736,7 @@ module Chilkat
 		# Method: S3_UploadFile
 		#
 		# Uploads a file to the Amazon S3 service.
-		#		Note: x-amz-* headers, including metadata, can be
+		# Note: x-amz-* headers, including metadata, can be
 		# added to any S3 request by adding each header with a call to SetRequestHeader. This applies to all
 		# S3 methods, even if not explicitly stated.
 		#
@@ -4742,7 +4745,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_UploadFile(localFilePath, contentType, bucketPath, objectName)
 			# ...
 		end
@@ -4753,7 +4756,7 @@ module Chilkat
 		# Uploads an in-memory string to the Amazon S3 service. This is the same as UploadFile, except that
 		# the file contents are from an in-memory string instead of a local file. Internal to this method, the
 		# ARG1 is converted to the character encoding specified by ARG2 prior to uploading.
-		#		Note:
+		# Note:
 		# x-amz-* headers, including metadata, can be added to any S3 request by adding each header with a
 		# call to SetRequestHeader. This applies to all S3 methods, even if not explicitly stated.
 		#
@@ -4763,7 +4766,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def S3_UploadString(objectContent, charset, contentType, bucketPath, objectName)
 			# ...
 		end
@@ -4775,7 +4778,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -4790,7 +4793,7 @@ module Chilkat
 		# @param domain [String]
 		# @param cookieXml [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetCookieXml(domain, cookieXml)
 			# ...
 		end
@@ -4803,7 +4806,7 @@ module Chilkat
 		#
 		# @param privKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetOAuthRsaKey(privKey)
 			# ...
 		end
@@ -4815,14 +4818,14 @@ module Chilkat
 		# object. These methods include Download, DownloadAppend, GetHead, PostBinary, PostMime, PostXml,
 		# PutBinary, PutText, QuickDeleteStr, QuickGet, QuickGetObj, QuickGetStr, QuickPutStr, XmlRpc, and
 		# XmlRpcPut. 
-		#		
-		#		Cookies may be explictly added by calling this method passing "Cookie" for
+		# 
+		# Cookies may be explictly added by calling this method passing "Cookie" for
 		# the ARG1. 
-		#		
-		#		The RemoveRequestHeader method can be called to remove a custom
+		# 
+		# The RemoveRequestHeader method can be called to remove a custom
 		# header.
-		#		
-		#		Note: Never explicitly set the Content-Length header field. Chilkat will
+		# 
+		# Note: Never explicitly set the Content-Length header field. Chilkat will
 		# automatically compute the correct length and add the Content-Length header to all POST, PUT, or any
 		# other request where the Content-Length needs to be specified. (GET requests always have a 0 length
 		# body, and therefore never need a Content-Length header field.)
@@ -4830,7 +4833,7 @@ module Chilkat
 		# @param headerFieldName [String]
 		# @param headerFieldValue [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetRequestHeader(headerFieldName, headerFieldValue)
 			# ...
 		end
@@ -4842,7 +4845,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -4856,7 +4859,7 @@ module Chilkat
 		# @param pemDataOrPath [String]
 		# @param pemPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPem(pemDataOrPath, pemPassword)
 			# ...
 		end
@@ -4870,7 +4873,7 @@ module Chilkat
 		# @param pfxPath [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSslClientCertPfx(pfxPath, pfxPassword)
 			# ...
 		end
@@ -4882,7 +4885,7 @@ module Chilkat
 		#
 		# @param millisec [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SleepMs(millisec)
 			# ...
 		end
@@ -4900,7 +4903,7 @@ module Chilkat
 		# @param ssl [TrueClass, FalseClass]
 		# @param req [CkHttpRequest]
 		#
-		# @return [CkHttpResponse] 
+		# @return [CkHttpResponse]
 		def SynchronousRequest(domain, port, ssl, req)
 			# ...
 		end
@@ -4914,7 +4917,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -4927,7 +4930,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UrlDecode(str, outStr)
 			# ...
 		end
@@ -4939,7 +4942,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def urlDecode(str)
 			# ...
 		end
@@ -4952,7 +4955,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UrlEncode(str, outStr)
 			# ...
 		end
@@ -4964,7 +4967,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def urlEncode(str)
 			# ...
 		end
@@ -4979,7 +4982,7 @@ module Chilkat
 		# @param xmlIn [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def XmlRpc(urlEndpoint, xmlIn, outStr)
 			# ...
 		end
@@ -4993,7 +4996,7 @@ module Chilkat
 		# @param urlEndpoint [String]
 		# @param xmlIn [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def xmlRpc(urlEndpoint, xmlIn)
 			# ...
 		end
@@ -5007,7 +5010,7 @@ module Chilkat
 		# @param xmlIn [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def XmlRpcPut(urlEndpoint, xmlIn, outStr)
 			# ...
 		end
@@ -5020,7 +5023,7 @@ module Chilkat
 		# @param urlEndpoint [String]
 		# @param xmlIn [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def xmlRpcPut(urlEndpoint, xmlIn)
 			# ...
 		end

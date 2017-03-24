@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -230,8 +230,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -240,8 +240,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -286,7 +286,7 @@ module Chilkat
 		# @param propName [String]
 		# @param values [CkStringArray]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddArray(xml, arrType, propName, values)
 			# ...
 		end
@@ -303,7 +303,7 @@ module Chilkat
 		# @param ns [String]
 		# @param uri [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddNsMapping(ns, uri)
 			# ...
 		end
@@ -319,7 +319,7 @@ module Chilkat
 		# @param propName [String]
 		# @param propVal [Object]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AddSimpleDate(iXml, propName, propVal)
 			# ...
@@ -336,7 +336,7 @@ module Chilkat
 		# @param propName [String]
 		# @param propVal [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddSimpleInt(iXml, propName, propVal)
 			# ...
 		end
@@ -352,7 +352,7 @@ module Chilkat
 		# @param propName [String]
 		# @param propVal [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddSimpleStr(iXml, propName, propVal)
 			# ...
 		end
@@ -370,7 +370,7 @@ module Chilkat
 		# @param propName [String]
 		# @param propValue [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddStructProp(iChilkatXml, structName, propName, propValue)
 			# ...
 		end
@@ -385,7 +385,7 @@ module Chilkat
 		#
 		# @param iXml [CkXml]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Append(iXml)
 			# ...
 		end
@@ -399,7 +399,7 @@ module Chilkat
 		# @param d [Object]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def DateToString(d, outStr)
 			# ...
@@ -413,7 +413,7 @@ module Chilkat
 		#
 		# @param d [Object]
 		#
-		# @return [String] 
+		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
 		def dateToString(d)
 			# ...
@@ -428,7 +428,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def GetArray(iXml, propName)
 			# ...
 		end
@@ -440,7 +440,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetEmbedded(index)
 			# ...
 		end
@@ -453,7 +453,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetProperty(iXml, propName)
 			# ...
 		end
@@ -467,7 +467,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetSimpleDate(iXml, propName)
 			# ...
@@ -482,7 +482,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetSimpleInt(iXml, propName)
 			# ...
 		end
@@ -497,7 +497,7 @@ module Chilkat
 		# @param propName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetSimpleStr(iXml, propName, outStr)
 			# ...
 		end
@@ -511,7 +511,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getSimpleStr(iXml, propName)
 			# ...
 		end
@@ -526,7 +526,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param structName [String]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def GetStructPropNames(iXml, structName)
 			# ...
 		end
@@ -542,7 +542,7 @@ module Chilkat
 		# @param propName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetStructValue(iXml, structName, propName, outStr)
 			# ...
 		end
@@ -557,7 +557,7 @@ module Chilkat
 		# @param structName [String]
 		# @param propName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getStructValue(iXml, structName, propName)
 			# ...
 		end
@@ -569,7 +569,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadAppFile(filename)
 			# ...
 		end
@@ -582,7 +582,7 @@ module Chilkat
 		# @param fileData [CkByteData]
 		# @param ext [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromBuffer(fileData, ext)
 			# ...
 		end
@@ -593,7 +593,7 @@ module Chilkat
 		# Creates and returns a new/empty XMP metadata document as a Chilkat XML object.
 		#
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def NewXmp()
 			# ...
 		end
@@ -605,7 +605,7 @@ module Chilkat
 		# to rewrite the JPG or TIFF file with the XMP metadata removed.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveAllEmbedded()
 			# ...
 		end
@@ -618,7 +618,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveArray(iXml, propName)
 			# ...
 		end
@@ -631,7 +631,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveEmbedded(index)
 			# ...
 		end
@@ -643,7 +643,7 @@ module Chilkat
 		#
 		# @param ns [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveNsMapping(ns)
 			# ...
 		end
@@ -656,7 +656,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveSimple(iXml, propName)
 			# ...
 		end
@@ -669,7 +669,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param structName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveStruct(iXml, structName)
 			# ...
 		end
@@ -683,7 +683,7 @@ module Chilkat
 		# @param structName [String]
 		# @param propName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveStructProp(iXml, structName, propName)
 			# ...
 		end
@@ -696,7 +696,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveAppFile(filename)
 			# ...
 		end
@@ -708,7 +708,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -720,7 +720,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToBuffer(outBytes)
 			# ...
 		end
@@ -733,7 +733,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def StringToDate(str)
 			# ...
@@ -748,7 +748,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

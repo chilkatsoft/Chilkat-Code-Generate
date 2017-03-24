@@ -85,13 +85,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -110,13 +110,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -133,13 +133,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -156,13 +156,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -221,7 +221,7 @@ module Chilkat
 		# If _TRUE_, then this behaves as a SOCKS proxy server for inbound connections. When this property is
 		# _TRUE_, the DestHostname and DestPort properties are unused because the destination IP:port is
 		# dynamically provided by the SOCKS client. The default value of this property is _FALSE_.
-		#		When
+		# When
 		# dynamic port forwarding is used, the InboundSocksVersion property must be set to 4 or 5. If inbound
 		# SOCKS5 is used, then the InboundSocksUsername and InboundSocksPassword may be set to the required
 		# login/password for a client to gain access.
@@ -232,7 +232,7 @@ module Chilkat
 		# If _TRUE_, then this behaves as a SOCKS proxy server for inbound connections. When this property is
 		# _TRUE_, the DestHostname and DestPort properties are unused because the destination IP:port is
 		# dynamically provided by the SOCKS client. The default value of this property is _FALSE_.
-		#		When
+		# When
 		# dynamic port forwarding is used, the InboundSocksVersion property must be set to 4 or 5. If inbound
 		# SOCKS5 is used, then the InboundSocksUsername and InboundSocksPassword may be set to the required
 		# login/password for a client to gain access.
@@ -254,7 +254,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
 		# authentication method name. Valid choices are "Basic" or "NTLM".
-		#		Note: This is for the
+		# Note: This is for the
 		# outbound connection to the SSH server. It is used when the outbound connection to the SSH server
 		# must go through an HTTP proxy.
 		#
@@ -265,7 +265,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
 		# authentication method name. Valid choices are "Basic" or "NTLM".
-		#		Note: This is for the
+		# Note: This is for the
 		# outbound connection to the SSH server. It is used when the outbound connection to the SSH server
 		# must go through an HTTP proxy.
 		#
@@ -274,7 +274,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
 		# authentication method name. Valid choices are "Basic" or "NTLM".
-		#		Note: This is for the
+		# Note: This is for the
 		# outbound connection to the SSH server. It is used when the outbound connection to the SSH server
 		# must go through an HTTP proxy.
 		#
@@ -283,7 +283,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
 		# authentication method name. Valid choices are "Basic" or "NTLM".
-		#		Note: This is for the
+		# Note: This is for the
 		# outbound connection to the SSH server. It is used when the outbound connection to the SSH server
 		# must go through an HTTP proxy.
 		#
@@ -292,7 +292,7 @@ module Chilkat
 
 		# The NTLM authentication domain (optional) if NTLM authentication is used w/ the HTTP
 		# proxy.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param ckStr [CkString]
@@ -302,7 +302,7 @@ module Chilkat
 
 		# The NTLM authentication domain (optional) if NTLM authentication is used w/ the HTTP
 		# proxy.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
@@ -310,7 +310,7 @@ module Chilkat
 
 		# The NTLM authentication domain (optional) if NTLM authentication is used w/ the HTTP
 		# proxy.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @return [String]
@@ -318,7 +318,7 @@ module Chilkat
 
 		# The NTLM authentication domain (optional) if NTLM authentication is used w/ the HTTP
 		# proxy.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
@@ -326,7 +326,7 @@ module Chilkat
 
 		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
 		# dotted decimal notation).
-		#		Note: This is for the outbound connection to the SSH server. It is
+		# Note: This is for the outbound connection to the SSH server. It is
 		# used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param ckStr [CkString]
@@ -336,7 +336,7 @@ module Chilkat
 
 		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
 		# dotted decimal notation).
-		#		Note: This is for the outbound connection to the SSH server. It is
+		# Note: This is for the outbound connection to the SSH server. It is
 		# used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
@@ -344,7 +344,7 @@ module Chilkat
 
 		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
 		# dotted decimal notation).
-		#		Note: This is for the outbound connection to the SSH server. It is
+		# Note: This is for the outbound connection to the SSH server. It is
 		# used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @return [String]
@@ -352,7 +352,7 @@ module Chilkat
 
 		# If an HTTP proxy is to be used, set this property to the HTTP proxy hostname or IPv4 address (in
 		# dotted decimal notation).
-		#		Note: This is for the outbound connection to the SSH server. It is
+		# Note: This is for the outbound connection to the SSH server. It is
 		# used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
@@ -360,7 +360,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
 		# password.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param ckStr [CkString]
@@ -370,7 +370,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
 		# password.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
@@ -378,7 +378,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
 		# password.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @return [String]
@@ -386,7 +386,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy
 		# password.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
@@ -394,7 +394,7 @@ module Chilkat
 
 		# If an HTTP proxy is to be used, set this property to the HTTP proxy port number. (Two commonly used
 		# HTTP proxy ports are 8080 and 3128.)
-		#		Note: This is for the outbound connection to the SSH
+		# Note: This is for the outbound connection to the SSH
 		# server. It is used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @return [Bignum]
@@ -402,7 +402,7 @@ module Chilkat
 
 		# If an HTTP proxy is to be used, set this property to the HTTP proxy port number. (Two commonly used
 		# HTTP proxy ports are 8080 and 3128.)
-		#		Note: This is for the outbound connection to the SSH
+		# Note: This is for the outbound connection to the SSH
 		# server. It is used when the outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [Bignum]
@@ -410,7 +410,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
 		# name.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param ckStr [CkString]
@@ -420,7 +420,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
 		# name.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
@@ -428,7 +428,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
 		# name.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @return [String]
@@ -436,7 +436,7 @@ module Chilkat
 
 		# If an HTTP proxy requiring authentication is to be used, set this property to the HTTP proxy login
 		# name.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through an HTTP proxy.
 		#
 		# @param newval [String]
@@ -655,7 +655,7 @@ module Chilkat
 		# In most cases, this property does not need to be set. It is provided for cases where it is required
 		# to bind the listen socket to a specific IP address (usually for computers with multiple network
 		# interfaces or IP addresses).
-		#		For computers with a single network interface (i.e. most
+		# For computers with a single network interface (i.e. most
 		# computers), this property should not be set. For multihoming computers, the default IP address is
 		# automatically used if this property is not set.
 		#
@@ -667,7 +667,7 @@ module Chilkat
 		# In most cases, this property does not need to be set. It is provided for cases where it is required
 		# to bind the listen socket to a specific IP address (usually for computers with multiple network
 		# interfaces or IP addresses).
-		#		For computers with a single network interface (i.e. most
+		# For computers with a single network interface (i.e. most
 		# computers), this property should not be set. For multihoming computers, the default IP address is
 		# automatically used if this property is not set.
 		#
@@ -677,7 +677,7 @@ module Chilkat
 		# In most cases, this property does not need to be set. It is provided for cases where it is required
 		# to bind the listen socket to a specific IP address (usually for computers with multiple network
 		# interfaces or IP addresses).
-		#		For computers with a single network interface (i.e. most
+		# For computers with a single network interface (i.e. most
 		# computers), this property should not be set. For multihoming computers, the default IP address is
 		# automatically used if this property is not set.
 		#
@@ -687,7 +687,7 @@ module Chilkat
 		# In most cases, this property does not need to be set. It is provided for cases where it is required
 		# to bind the listen socket to a specific IP address (usually for computers with multiple network
 		# interfaces or IP addresses).
-		#		For computers with a single network interface (i.e. most
+		# For computers with a single network interface (i.e. most
 		# computers), this property should not be set. For multihoming computers, the default IP address is
 		# automatically used if this property is not set.
 		#
@@ -704,7 +704,7 @@ module Chilkat
 		# In most cases, this property does not need to be set. It is provided for cases where it is required
 		# to bind the socket that is to connect to the SSH server (in the background thread) to a specific IP
 		# address (usually for computers with multiple network interfaces or IP addresses). 
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not set.
 		#
@@ -716,7 +716,7 @@ module Chilkat
 		# In most cases, this property does not need to be set. It is provided for cases where it is required
 		# to bind the socket that is to connect to the SSH server (in the background thread) to a specific IP
 		# address (usually for computers with multiple network interfaces or IP addresses). 
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not set.
 		#
@@ -726,7 +726,7 @@ module Chilkat
 		# In most cases, this property does not need to be set. It is provided for cases where it is required
 		# to bind the socket that is to connect to the SSH server (in the background thread) to a specific IP
 		# address (usually for computers with multiple network interfaces or IP addresses). 
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not set.
 		#
@@ -736,7 +736,7 @@ module Chilkat
 		# In most cases, this property does not need to be set. It is provided for cases where it is required
 		# to bind the socket that is to connect to the SSH server (in the background thread) to a specific IP
 		# address (usually for computers with multiple network interfaces or IP addresses). 
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not set.
 		#
@@ -757,7 +757,7 @@ module Chilkat
 
 		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
 		# if the SocksVersion property is set to 4 or 5).
-		#		Note: This is for the outbound connection to
+		# Note: This is for the outbound connection to
 		# the SSH server. It is used when the outbound connection to the SSH server must go through a SOCKS4
 		# or SOCKS5 proxy.
 		#
@@ -768,7 +768,7 @@ module Chilkat
 
 		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
 		# if the SocksVersion property is set to 4 or 5).
-		#		Note: This is for the outbound connection to
+		# Note: This is for the outbound connection to
 		# the SSH server. It is used when the outbound connection to the SSH server must go through a SOCKS4
 		# or SOCKS5 proxy.
 		#
@@ -777,7 +777,7 @@ module Chilkat
 
 		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
 		# if the SocksVersion property is set to 4 or 5).
-		#		Note: This is for the outbound connection to
+		# Note: This is for the outbound connection to
 		# the SSH server. It is used when the outbound connection to the SSH server must go through a SOCKS4
 		# or SOCKS5 proxy.
 		#
@@ -786,7 +786,7 @@ module Chilkat
 
 		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
 		# if the SocksVersion property is set to 4 or 5).
-		#		Note: This is for the outbound connection to
+		# Note: This is for the outbound connection to
 		# the SSH server. It is used when the outbound connection to the SSH server must go through a SOCKS4
 		# or SOCKS5 proxy.
 		#
@@ -795,7 +795,7 @@ module Chilkat
 
 		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
 		# this does not apply to SOCKS4.
-		#		Note: This is for the outbound connection to the SSH server. It
+		# Note: This is for the outbound connection to the SSH server. It
 		# is used when the outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param ckStr [CkString]
@@ -805,7 +805,7 @@ module Chilkat
 
 		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
 		# this does not apply to SOCKS4.
-		#		Note: This is for the outbound connection to the SSH server. It
+		# Note: This is for the outbound connection to the SSH server. It
 		# is used when the outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [String]
@@ -813,7 +813,7 @@ module Chilkat
 
 		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
 		# this does not apply to SOCKS4.
-		#		Note: This is for the outbound connection to the SSH server. It
+		# Note: This is for the outbound connection to the SSH server. It
 		# is used when the outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @return [String]
@@ -821,7 +821,7 @@ module Chilkat
 
 		# The SOCKS5 password (if required). The SOCKS4 protocol does not include the use of a password, so
 		# this does not apply to SOCKS4.
-		#		Note: This is for the outbound connection to the SSH server. It
+		# Note: This is for the outbound connection to the SSH server. It
 		# is used when the outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [String]
@@ -830,7 +830,7 @@ module Chilkat
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
 		# This property only applies if a SOCKS
 		# proxy is used (if the SocksVersion property is set to 4 or 5).
-		#		Note: This is for the outbound
+		# Note: This is for the outbound
 		# connection to the SSH server. It is used when the outbound connection to the SSH server must go
 		# through a SOCKS4 or SOCKS5 proxy.
 		#
@@ -840,7 +840,7 @@ module Chilkat
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
 		# This property only applies if a SOCKS
 		# proxy is used (if the SocksVersion property is set to 4 or 5).
-		#		Note: This is for the outbound
+		# Note: This is for the outbound
 		# connection to the SSH server. It is used when the outbound connection to the SSH server must go
 		# through a SOCKS4 or SOCKS5 proxy.
 		#
@@ -849,7 +849,7 @@ module Chilkat
 
 		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
 		# 4 or 5).
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param ckStr [CkString]
@@ -859,7 +859,7 @@ module Chilkat
 
 		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
 		# 4 or 5).
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [String]
@@ -867,7 +867,7 @@ module Chilkat
 
 		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
 		# 4 or 5).
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @return [String]
@@ -875,35 +875,35 @@ module Chilkat
 
 		# The SOCKS4/SOCKS5 proxy username. This property is only used if the SocksVersion property is set to
 		# 4 or 5).
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [String]
 		def put_SocksUsername(newval) end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
-		#		Note: This is for the outbound connection to the SSH server. It is used when the
+		# Note: This is for the outbound connection to the SSH server. It is used when the
 		# outbound connection to the SSH server must go through a SOCKS4 or SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
@@ -913,8 +913,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -927,8 +927,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -940,8 +940,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -953,8 +953,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1027,8 +1027,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1037,8 +1037,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1077,14 +1077,14 @@ module Chilkat
 		# Authenticates with the SSH server using public-key authentication. The corresponding public key must
 		# have been installed on the SSH server for the ARG1. Authentication will succeed if the matching ARG2
 		# is provided.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param username [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
@@ -1093,21 +1093,21 @@ module Chilkat
 		# Method: AuthenticatePw
 		#
 		# Authenticates with the SSH server using a ARG1 and ARG2.
-		#		
-		#		An SSH session always begins
+		# 
+		# An SSH session always begins
 		# by first calling Connect to connect to the SSH server, and then calling either AuthenticatePw or
 		# AuthenticatePk to login.
-		#		
-		#		Important: When reporting problems, please send the full
+		# 
+		# Important: When reporting problems, please send the full
 		# contents of the LastErrorText property to support@chilkatsoft.com.
-		#		
-		#		Note: To learn about
+		# 
+		# Note: To learn about
 		# how to handle password change requests, see the PasswordChangeRequested property (above).
 		#
 		# @param login [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePw(login, password)
 			# ...
 		end
@@ -1117,15 +1117,15 @@ module Chilkat
 		#
 		# Authentication for SSH servers that require both a password and private key. (Most SSH servers are
 		# configured to require one or the other, but not both.)
-		#		
-		#		Important: When reporting
+		# 
+		# Important: When reporting
 		# problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param username [String]
 		# @param password [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
@@ -1136,8 +1136,8 @@ module Chilkat
 		# Starts a background thread for listening on ARG1. A new SSH tunnel is created and managed for each
 		# accepted connection. SSH tunnels are managed in a 2nd background thread: the SSH tunnel pool
 		# thread.
-		#		
-		#		BeginAccepting starts a background thread that creates a socket, binds to the
+		# 
+		# BeginAccepting starts a background thread that creates a socket, binds to the
 		# port, and begins listening. If the bind fails (meaning something else may have already bound to the
 		# same port), then the background thread exits. You may check to see if BeginAccepting succeeds by
 		# waiting a short time (perhaps 50 millisec) and then examine the IsAccepting property. If it is
@@ -1145,7 +1145,7 @@ module Chilkat
 		#
 		# @param listenPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginAccepting(listenPort)
 			# ...
 		end
@@ -1158,7 +1158,7 @@ module Chilkat
 		#
 		# @param waitForThreads [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CloseTunnel(waitForThreads)
 			# ...
 		end
@@ -1171,7 +1171,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Connect(hostname, port)
 			# ...
 		end
@@ -1191,7 +1191,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConnectThroughSsh(ssh, hostname, port)
 			# ...
 		end
@@ -1204,7 +1204,7 @@ module Chilkat
 		#
 		# @param waitForThreads [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DisconnectAllClients(waitForThreads)
 			# ...
 		end
@@ -1216,7 +1216,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCurrentState(outStr)
 			# ...
 		end
@@ -1227,7 +1227,7 @@ module Chilkat
 		# Returns the current state of existing tunnels in an XML string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getCurrentState()
 			# ...
 		end
@@ -1239,7 +1239,7 @@ module Chilkat
 		# was never established).
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsSshConnected()
 			# ...
 		end
@@ -1251,7 +1251,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1265,7 +1265,7 @@ module Chilkat
 		#
 		# @param waitForThread [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def StopAccepting(waitForThread)
 			# ...
 		end
@@ -1280,7 +1280,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

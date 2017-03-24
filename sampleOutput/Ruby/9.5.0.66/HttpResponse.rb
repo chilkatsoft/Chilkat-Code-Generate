@@ -68,13 +68,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -93,13 +93,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -116,13 +116,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -139,13 +139,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -354,8 +354,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -364,8 +364,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -405,7 +405,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetBodyBd(binData)
 			# ...
 		end
@@ -417,7 +417,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetBodySb(sb)
 			# ...
 		end
@@ -431,7 +431,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCookieDomain(index, outStr)
 			# ...
 		end
@@ -444,7 +444,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getCookieDomain(index)
 			# ...
 		end
@@ -457,7 +457,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetCookieExpires(index)
 			# ...
@@ -472,7 +472,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCookieExpiresStr(index, outStr)
 			# ...
 		end
@@ -485,7 +485,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getCookieExpiresStr(index)
 			# ...
 		end
@@ -499,7 +499,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCookieName(index, outStr)
 			# ...
 		end
@@ -512,7 +512,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getCookieName(index)
 			# ...
 		end
@@ -526,7 +526,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCookiePath(index, outStr)
 			# ...
 		end
@@ -539,7 +539,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getCookiePath(index)
 			# ...
 		end
@@ -553,7 +553,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetCookieValue(index, outStr)
 			# ...
 		end
@@ -566,7 +566,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getCookieValue(index)
 			# ...
 		end
@@ -579,7 +579,7 @@ module Chilkat
 		# @param fieldName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHeaderField(fieldName, outStr)
 			# ...
 		end
@@ -591,7 +591,7 @@ module Chilkat
 		#
 		# @param fieldName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHeaderField(fieldName)
 			# ...
 		end
@@ -606,7 +606,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHeaderFieldAttr(fieldName, attrName, outStr)
 			# ...
 		end
@@ -620,7 +620,7 @@ module Chilkat
 		# @param fieldName [String]
 		# @param attrName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHeaderFieldAttr(fieldName, attrName)
 			# ...
 		end
@@ -634,7 +634,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHeaderName(index, outStr)
 			# ...
 		end
@@ -647,7 +647,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHeaderName(index)
 			# ...
 		end
@@ -661,7 +661,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHeaderValue(index, outStr)
 			# ...
 		end
@@ -674,7 +674,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHeaderValue(index)
 			# ...
 		end
@@ -688,7 +688,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -700,7 +700,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveBodyBinary(path)
 			# ...
 		end
@@ -712,14 +712,14 @@ module Chilkat
 		# line-endings. If ARG1 is _TRUE_, then line endings are automatically converted to CRLF if necessary.
 		# If ARG1 is _FALSE_, then line-endings are automatically converted to bare-LF's (Unix style) if
 		# necessary.
-		#		
-		#		To save the HTTP response body exactly as-is (with no line-ending
+		# 
+		# To save the HTTP response body exactly as-is (with no line-ending
 		# manipulation), then call SaveBodyBinary.
 		#
 		# @param bCrlf [TrueClass, FalseClass]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveBodyText(bCrlf, path)
 			# ...
 		end
@@ -731,7 +731,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -742,15 +742,15 @@ module Chilkat
 		# Convenience method for parsing a param's value out of a URL-encoded param string. For example, if a
 		# caller passes the following string in
 		# ARG1:
-		#		oauth_token=ABC&oauth_token_secret=123&oauth_callback_confirmed=true
-		#		and
+		# oauth_token=ABC&oauth_token_secret=123&oauth_callback_confirmed=true
+		# and
 		# "oauth_token_secret" in ARG2, then the return value would be "123".
 		#
 		# @param encodedParamString [String]
 		# @param paramName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UrlEncParamValue(encodedParamString, paramName, outStr)
 			# ...
 		end
@@ -761,14 +761,14 @@ module Chilkat
 		# Convenience method for parsing a param's value out of a URL-encoded param string. For example, if a
 		# caller passes the following string in
 		# ARG1:
-		#		oauth_token=ABC&oauth_token_secret=123&oauth_callback_confirmed=true
-		#		and
+		# oauth_token=ABC&oauth_token_secret=123&oauth_callback_confirmed=true
+		# and
 		# "oauth_token_secret" in ARG2, then the return value would be "123".
 		#
 		# @param encodedParamString [String]
 		# @param paramName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def urlEncParamValue(encodedParamString, paramName)
 			# ...
 		end

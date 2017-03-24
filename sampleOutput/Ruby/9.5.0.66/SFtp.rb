@@ -28,20 +28,20 @@ module Chilkat
 
 		# Set to one of the following values if a call to AuthenticatePw, AuthenticatePk, or AuthenticatePwPk
 		# returns a failed status.
-		#		
-		#		1: Transport failure. This is a failure to communicate with
+		# 
+		# 1: Transport failure. This is a failure to communicate with
 		# the server (i.e. the connection was lost, or a read or write failed or timed out).
-		#		2: Invalid
+		# 2: Invalid
 		# key for public key authentication. The key was not a valid format, not a valid key, not a private
 		# key, or not the right type of key.
-		#		3: No matching authentication methods were
+		# 3: No matching authentication methods were
 		# available.
-		#		4: SSH authentication protocol error - an unexpected or invalid message was
+		# 4: SSH authentication protocol error - an unexpected or invalid message was
 		# received.
-		#		5: The incorrect password or private key was provided.
-		#		6: Already
+		# 5: The incorrect password or private key was provided.
+		# 6: Already
 		# authenticated. The SSH session is already authenticated.
-		#		7: Password change request: The
+		# 7: Password change request: The
 		# server requires the password to be changed.
 		#
 		#
@@ -103,11 +103,11 @@ module Chilkat
 		def put_ClientIdentifier(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param ckStr [CkString]
@@ -116,33 +116,33 @@ module Chilkat
 		def get_ClientIpAddress(ckStr) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
 		def put_ClientIpAddress(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @return [String]
 		def clientIpAddress() end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
-		#		For
+		# For
 		# computers with a single network interface (i.e. most computers), this property should not be set.
 		# For multihoming computers, the default IP address is automatically used if this property is not
 		# set.
-		#		The IP address is a string such as in dotted notation using numbers, not domain names,
+		# The IP address is a string such as in dotted notation using numbers, not domain names,
 		# such as "165.164.55.124".
 		#
 		# @param newval [String]
@@ -163,13 +163,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -188,13 +188,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -211,13 +211,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -234,13 +234,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -254,7 +254,7 @@ module Chilkat
 
 		# If the SSH/SFTP server sent a DISCONNECT message when closing the connection, this property contains
 		# the "reason code" as specified in RFC 4253:
-		#		
+		# 
 		# Symbolic name reason code
 		# -------------
 		# -----------
@@ -301,14 +301,14 @@ module Chilkat
 		# following methods: GetFileSize32, GetFileSize64, GetFileSizeStr, GetFileCreateTime,
 		# GetFileLastAccess, GetFileLastModified, GetFileOwner, GetFileGroup, and
 		# GetFilePermissions.
-		#		
-		#		The file attribute cache exists to minimize communications with the
+		# 
+		# The file attribute cache exists to minimize communications with the
 		# SFTP server. If the cache is enabled, then a request for any single attribute will cause all of the
 		# attributes to be cached. A subsequent request for a different attribute of the same file will be
 		# fulfilled from cache, eliminating the need for a message to be sent to the SFTP
 		# server.
-		#		
-		#		Note: Caching only occurs when filenames are used, not handles.
+		# 
+		# Note: Caching only occurs when filenames are used, not handles.
 		#
 		# @return [TrueClass, FalseClass]
 		def get_EnableCache() end
@@ -317,22 +317,22 @@ module Chilkat
 		# following methods: GetFileSize32, GetFileSize64, GetFileSizeStr, GetFileCreateTime,
 		# GetFileLastAccess, GetFileLastModified, GetFileOwner, GetFileGroup, and
 		# GetFilePermissions.
-		#		
-		#		The file attribute cache exists to minimize communications with the
+		# 
+		# The file attribute cache exists to minimize communications with the
 		# SFTP server. If the cache is enabled, then a request for any single attribute will cause all of the
 		# attributes to be cached. A subsequent request for a different attribute of the same file will be
 		# fulfilled from cache, eliminating the need for a message to be sent to the SFTP
 		# server.
-		#		
-		#		Note: Caching only occurs when filenames are used, not handles.
+		# 
+		# Note: Caching only occurs when filenames are used, not handles.
 		#
 		# @param newval [TrueClass, FalseClass]
 		def put_EnableCache(newval) end
 
 		# Enables or disables the use of compression w/ the SSH connection. The default value is _TRUE_,
 		# meaning that compression is used if the server supports it.
-		#		
-		#		Some older SSH servers have
+		# 
+		# Some older SSH servers have
 		# been found that claim to support compression, but actually fail when compression is used. PuTTY does
 		# not enable compression by default. If trouble is encountered where the SSH server disconnects
 		# immediately after the connection is seemingly established (i.e. during authentication), then check
@@ -343,8 +343,8 @@ module Chilkat
 
 		# Enables or disables the use of compression w/ the SSH connection. The default value is _TRUE_,
 		# meaning that compression is used if the server supports it.
-		#		
-		#		Some older SSH servers have
+		# 
+		# Some older SSH servers have
 		# been found that claim to support compression, but actually fail when compression is used. PuTTY does
 		# not enable compression by default. If trouble is encountered where the SSH server disconnects
 		# immediately after the connection is seemingly established (i.e. during authentication), then check
@@ -396,8 +396,8 @@ module Chilkat
 		# here: "aes256-ctr", "aes128-ctr", "aes256-cbc", "aes128-cbc", "twofish256-cbc", "twofish128-cbc",
 		# "blowfish-cbc", "3des-cbc", "arcfour128", "arcfour256". (If blowfish is chosen, the encryption
 		# strength is 128 bits.) 
-		#		
-		#		Important: If this is property is set and the server does NOT
+		# 
+		# Important: If this is property is set and the server does NOT
 		# support then encryption algorithm, then the Connect will fail.
 		#
 		# @param ckStr [CkString]
@@ -410,8 +410,8 @@ module Chilkat
 		# here: "aes256-ctr", "aes128-ctr", "aes256-cbc", "aes128-cbc", "twofish256-cbc", "twofish128-cbc",
 		# "blowfish-cbc", "3des-cbc", "arcfour128", "arcfour256". (If blowfish is chosen, the encryption
 		# strength is 128 bits.) 
-		#		
-		#		Important: If this is property is set and the server does NOT
+		# 
+		# Important: If this is property is set and the server does NOT
 		# support then encryption algorithm, then the Connect will fail.
 		#
 		# @param newval [String]
@@ -422,8 +422,8 @@ module Chilkat
 		# here: "aes256-ctr", "aes128-ctr", "aes256-cbc", "aes128-cbc", "twofish256-cbc", "twofish128-cbc",
 		# "blowfish-cbc", "3des-cbc", "arcfour128", "arcfour256". (If blowfish is chosen, the encryption
 		# strength is 128 bits.) 
-		#		
-		#		Important: If this is property is set and the server does NOT
+		# 
+		# Important: If this is property is set and the server does NOT
 		# support then encryption algorithm, then the Connect will fail.
 		#
 		# @return [String]
@@ -434,8 +434,8 @@ module Chilkat
 		# here: "aes256-ctr", "aes128-ctr", "aes256-cbc", "aes128-cbc", "twofish256-cbc", "twofish128-cbc",
 		# "blowfish-cbc", "3des-cbc", "arcfour128", "arcfour256". (If blowfish is chosen, the encryption
 		# strength is 128 bits.) 
-		#		
-		#		Important: If this is property is set and the server does NOT
+		# 
+		# Important: If this is property is set and the server does NOT
 		# support then encryption algorithm, then the Connect will fail.
 		#
 		# @param newval [String]
@@ -469,6 +469,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# Indicates the preferred host key algorithm to be used in establishing the SSH secure connection. The
@@ -680,7 +682,7 @@ module Chilkat
 		# The InitializeSftp method call opens a channel for the SFTP session. If the request to open a
 		# channel fails, this property contains a code that identifies the reason for failure. The reason
 		# codes are defined in RFC 4254 and are reproduced here:
-		#		
+		# 
 		# Symbolic name reason code
 		#
 		# ------------- -----------
@@ -864,15 +866,15 @@ module Chilkat
 		# status, and this property is set to _TRUE_, then it indicates the server requested a password
 		# change. In this case, re-call the authenticate method, but provide both the old and new passwords in
 		# the following format, where vertical bar characters encapsulate the old and new passwords:
-		# #		|oldPassword|newPassword|
+		# # |oldPassword|newPassword|
 		#
 		# @return [TrueClass, FalseClass]
 		def get_PasswordChangeRequested() end
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -887,8 +889,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -899,6 +901,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_PercentDoneScale(newval) end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
@@ -915,14 +919,14 @@ module Chilkat
 
 		# If _TRUE_, then the file last-modified and create date/time will be preserved for downloaded and
 		# uploaded files. The default value is _FALSE_.
-		#		
-		#		Note: Prior to version 9.5.0.40, this
+		# 
+		# Note: Prior to version 9.5.0.40, this
 		# property only applied to downloads. Starting in v9.5.0.40, it also applies to the UploadFileByName
 		# method. 
-		#		
-		#		It does not apply to uploads or downloads where the remote file is opened to
+		# 
+		# It does not apply to uploads or downloads where the remote file is opened to
 		# obtain a handle, the data is uploaded/downloaded, and then the handle is closed.
-		#		The last-mod
+		# The last-mod
 		# date/times are always preserved ini the SyncTreeDownload and SyncTreeUpload methods.
 		#
 		#
@@ -931,14 +935,14 @@ module Chilkat
 
 		# If _TRUE_, then the file last-modified and create date/time will be preserved for downloaded and
 		# uploaded files. The default value is _FALSE_.
-		#		
-		#		Note: Prior to version 9.5.0.40, this
+		# 
+		# Note: Prior to version 9.5.0.40, this
 		# property only applied to downloads. Starting in v9.5.0.40, it also applies to the UploadFileByName
 		# method. 
-		#		
-		#		It does not apply to uploads or downloads where the remote file is opened to
+		# 
+		# It does not apply to uploads or downloads where the remote file is opened to
 		# obtain a handle, the data is uploaded/downloaded, and then the handle is closed.
-		#		The last-mod
+		# The last-mod
 		# date/times are always preserved ini the SyncTreeDownload and SyncTreeUpload methods.
 		#
 		#
@@ -1075,14 +1079,14 @@ module Chilkat
 		def put_SocksPassword(newval) end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @return [Bignum]
 		def get_SocksPort() end
 
 		# The SOCKS4/SOCKS5 proxy port. The default value is 1080. 
-		#		This property only applies if a
+		# This property only applies if a
 		# SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).
 		#
 		# @param newval [Bignum]
@@ -1115,24 +1119,24 @@ module Chilkat
 		def put_SocksUsername(newval) end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @return [Bignum]
 		def get_SocksVersion() end
 
 		# SocksVersion
-		#		May be set to one of the following integer values:
-		#		
-		#		0 - No SOCKS
+		# May be set to one of the following integer values:
+		# 
+		# 0 - No SOCKS
 		# proxy is used. This is the default.
-		#		4 - Connect via a SOCKS4 proxy.
-		#		5 - Connect via a
+		# 4 - Connect via a SOCKS4 proxy.
+		# 5 - Connect via a
 		# SOCKS5 proxy.
 		#
 		# @param newval [Bignum]
@@ -1142,8 +1146,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -1156,8 +1160,8 @@ module Chilkat
 		# default value is 0, which indicates that the receive buffer size socket option should not be
 		# explicitly set (i.e. the system default value, which may vary from system to system, should be
 		# used). 
-		#		
-		#		This property can be changed if download performance seems slow. It is
+		# 
+		# This property can be changed if download performance seems slow. It is
 		# recommended to be a multiple of 4096. To see the current system's default receive buffer size,
 		# examine the LastErrorText property after calling any method that establishes a connection. It should
 		# be reported under the heading "SO_RCVBUF". To boost performance, try setting it equal to 2, 3, or 4
@@ -1169,8 +1173,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1182,8 +1186,8 @@ module Chilkat
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
 		# default value is 0, which indicates that the send buffer size socket option should not be explicitly
 		# set (i.e. the system default value, which may vary from system to system, should be used).
-		# #		
-		#		This property can be changed if upload performance seems slow. It is recommended to be a
+		# # 
+		# This property can be changed if upload performance seems slow. It is recommended to be a
 		# multiple of 4096. To see the current system's default send buffer size, examine the LastErrorText
 		# property after calling any method that establishes a connection. It should be reported under the
 		# heading "SO_SNDBUF". To boost performance, try setting it equal to 2, 3, or 4 times the default
@@ -1195,8 +1199,8 @@ module Chilkat
 		# A property that can contain a list of comma-separated keywords to control certain aspects of an
 		# upload or download synchronization (for the SyncTreeUpload and SyncTreeDownload methods). At this
 		# time there is only one possible directive, but others may be added in the future.
-		#		
-		#		Set
+		# 
+		# Set
 		# this property to "UploadIgnoreLocalOpenFailures" to skip local files that cannot be opened. A common
 		# reason for this would be if another process on the system has the file open for exclusive access.
 		#
@@ -1208,8 +1212,8 @@ module Chilkat
 		# A property that can contain a list of comma-separated keywords to control certain aspects of an
 		# upload or download synchronization (for the SyncTreeUpload and SyncTreeDownload methods). At this
 		# time there is only one possible directive, but others may be added in the future.
-		#		
-		#		Set
+		# 
+		# Set
 		# this property to "UploadIgnoreLocalOpenFailures" to skip local files that cannot be opened. A common
 		# reason for this would be if another process on the system has the file open for exclusive access.
 		#
@@ -1219,8 +1223,8 @@ module Chilkat
 		# A property that can contain a list of comma-separated keywords to control certain aspects of an
 		# upload or download synchronization (for the SyncTreeUpload and SyncTreeDownload methods). At this
 		# time there is only one possible directive, but others may be added in the future.
-		#		
-		#		Set
+		# 
+		# Set
 		# this property to "UploadIgnoreLocalOpenFailures" to skip local files that cannot be opened. A common
 		# reason for this would be if another process on the system has the file open for exclusive access.
 		#
@@ -1230,8 +1234,8 @@ module Chilkat
 		# A property that can contain a list of comma-separated keywords to control certain aspects of an
 		# upload or download synchronization (for the SyncTreeUpload and SyncTreeDownload methods). At this
 		# time there is only one possible directive, but others may be added in the future.
-		#		
-		#		Set
+		# 
+		# Set
 		# this property to "UploadIgnoreLocalOpenFailures" to skip local files that cannot be opened. A common
 		# reason for this would be if another process on the system has the file open for exclusive access.
 		#
@@ -1380,8 +1384,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1390,8 +1394,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1431,14 +1435,14 @@ module Chilkat
 		# handle returned by the OpenFile method. The ARG2 is the maximum number of bytes to read. If the
 		# end-of-file is reached prior to reading the number of requested bytes, then fewer bytes may be
 		# returned.
-		#		
-		#		Returns the number of bytes downloaded and appended to AccumulateBuffer.
+		# 
+		# Returns the number of bytes downloaded and appended to AccumulateBuffer.
 		# Returns -1 on error.
 		#
 		# @param handle [String]
 		# @param maxBytes [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def AccumulateBytes(handle, maxBytes)
 			# ...
 		end
@@ -1453,7 +1457,7 @@ module Chilkat
 		# @param n2 [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Add64(n1, n2, outStr)
 			# ...
 		end
@@ -1467,7 +1471,7 @@ module Chilkat
 		# @param n1 [String]
 		# @param n2 [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def add64(n1, n2)
 			# ...
 		end
@@ -1478,14 +1482,14 @@ module Chilkat
 		# Authenticates with the SSH server using public-key authentication. The corresponding public key must
 		# have been installed on the SSH server for the ARG1. Authentication will succeed if the matching ARG2
 		# is provided.
-		#		
-		#		Important: When reporting problems, please send the full contents of the
+		# 
+		# Important: When reporting problems, please send the full contents of the
 		# LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param username [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
@@ -1494,22 +1498,22 @@ module Chilkat
 		# Method: AuthenticatePw
 		#
 		# Authenticates with the SSH server using a ARG1 and ARG2.
-		#		
-		#		An SFTP session always begins
+		# 
+		# An SFTP session always begins
 		# by first calling Connect to connect to the SSH server, then calling either AuthenticatePw or
 		# AuthenticatePk to login, and finally calling InitializeSftp.
-		#		
-		#		Important: When reporting
+		# 
+		# Important: When reporting
 		# problems, please send the full contents of the LastErrorText property to
 		# support@chilkatsoft.com.
-		#		
-		#		Note: To learn about how to handle password change requests,
+		# 
+		# Note: To learn about how to handle password change requests,
 		# see the PasswordChangeRequested property (above).
 		#
 		# @param login [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePw(login, password)
 			# ...
 		end
@@ -1519,15 +1523,15 @@ module Chilkat
 		#
 		# Authentication for SSH servers that require both a password and private key. (Most SSH servers are
 		# configured to require one or the other, but not both.)
-		#		
-		#		Important: When reporting
+		# 
+		# Important: When reporting
 		# problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.
 		#
 		# @param username [String]
 		# @param password [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
@@ -1538,7 +1542,7 @@ module Chilkat
 		# Clears the contents of the AccumulateBuffer property.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearAccumulateBuffer()
 			# ...
 		end
@@ -1550,7 +1554,7 @@ module Chilkat
 		# information about the file attribute cache.)
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearCache()
 			# ...
 		end
@@ -1561,7 +1565,7 @@ module Chilkat
 		# Clears the contents of the SessionLog property.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearSessionLog()
 			# ...
 		end
@@ -1574,7 +1578,7 @@ module Chilkat
 		#
 		# @param handle [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CloseHandle(handle)
 			# ...
 		end
@@ -1585,15 +1589,15 @@ module Chilkat
 		# Connects to an SSH/SFTP server. The ARG1 may be a domain name or an IP address (example:
 		# 192.168.1.10). Both IPv4 and IPv6 addresses are supported. The ARG2 is typically 22, which is the
 		# standard port for SSH servers. 
-		#		
-		#		An SFTP session always begins by first calling Connect
+		# 
+		# An SFTP session always begins by first calling Connect
 		# to connect to the SSH server, then calling either AuthenticatePw or AuthenticatePk to login, and
 		# finally calling InitializeSftp.
-		#		
-		#		Important: When reporting problems, please send the
+		# 
+		# Important: When reporting problems, please send the
 		# full contents of the LastErrorText property to support@chilkatsoft.com.
-		#		
-		#		Important: All
+		# 
+		# Important: All
 		# TCP-based Internet communications, regardless of the protocol (such as HTTP, FTP, SSH, IMAP, POP3,
 		# SMTP, etc.), and regardless of SSL/TLS, begin with establishing a TCP connection to a remote
 		# host:port. External security-related infrastructure such as software firewalls (Windows Firewall),
@@ -1603,7 +1607,7 @@ module Chilkat
 		# @param domainName [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Connect(domainName, port)
 			# ...
 		end
@@ -1623,7 +1627,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConnectThroughSsh(sshConn, hostname, port)
 			# ...
 		end
@@ -1633,21 +1637,21 @@ module Chilkat
 		#
 		# Sets the date/time and other attributes of a remote file to be equal to that of a local
 		# file.
-		#		
-		#		The attributes copied depend on the SFTP version of the server:
-		#		
-		#		SFTP
+		# 
+		# The attributes copied depend on the SFTP version of the server:
+		# 
+		# SFTP
 		# v3 (and below)
 		# Last-Modified Date/Time
 		# Last-Access Date/Time
-		#		
-		#		SFTP v4,
+		# 
+		# SFTP v4,
 		# v5
 		# Last-Modified Date/Time
 		# Last-Access Date/Time
 		# Create Date/Time
-		#		
-		#		SFTP
+		# 
+		# SFTP
 		# v6 (and above)
 		# Last-Modified Date/Time
 		# Last-Access Date/Time
@@ -1659,24 +1663,24 @@ module Chilkat
 		# Compressed Flag
 		# Encrypted
 		# Flag
-		#		
-		#		
-		#		Notes:
-		#		(1) The Last-Access date/time may or may not be set. Chilkat
+		# 
+		# 
+		# Notes:
+		# (1) The Last-Access date/time may or may not be set. Chilkat
 		# has found that the Last-Access time is set to the current date/time, which is probably a result of
 		# the operating system setting it based on when the SFTP server is touching the file.
-		#		(2) At the
+		# (2) At the
 		# time of this writing, it is unknown whether the compressed/encryption settings for a local file are
 		# transferred to the remote file. For example, does the remote file become compressed and/or encrypted
 		# just by setting the flags? It may depend on the SFTP server and/or the remote filesystem.
-		#		(3)
+		# (3)
 		# Dates/times are sent in GMT. SFTP servers should convert GMT times to local time zones.
 		#
 		# @param localFilename [String]
 		# @param remoteFilename [String]
 		# @param isHandle [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CopyFileAttr(localFilename, remoteFilename, isHandle)
 			# ...
 		end
@@ -1688,7 +1692,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateDir(path)
 			# ...
 		end
@@ -1699,7 +1703,7 @@ module Chilkat
 		# Disconnects from the SSH server.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Disconnect()
 			# ...
 		end
@@ -1712,7 +1716,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadBd(remoteFilePath, binData)
 			# ...
 		end
@@ -1727,7 +1731,7 @@ module Chilkat
 		# @param handle [String]
 		# @param toFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadFile(handle, toFilename)
 			# ...
 		end
@@ -1736,14 +1740,14 @@ module Chilkat
 		# Method: DownloadFileByName
 		#
 		# Simplified method for downloading files.
-		#		
-		#		The last-modified date/time is only preserved
+		# 
+		# The last-modified date/time is only preserved
 		# when the PreserveDate property is set to _TRUE_. (The default value of PreserveDate is _FALSE_.)
 		#
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -1757,7 +1761,7 @@ module Chilkat
 		# @param charset [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadSb(remoteFilePath, charset, sb)
 			# ...
 		end
@@ -1767,11 +1771,11 @@ module Chilkat
 		#
 		# Returns _TRUE_ if the last read operation for a handle reached the end of file. Otherwise returns
 		# _FALSE_.
-		#		If an invalid handle is passed, a value of _TRUE_ is returned.
+		# If an invalid handle is passed, a value of _TRUE_ is returned.
 		#
 		# @param handle [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Eof(handle)
 			# ...
 		end
@@ -1782,8 +1786,8 @@ module Chilkat
 		# Returns the create date/time for a file. ARG1 may be a remote filepath or an open handle string as
 		# returned by OpenFile. If ARG1 is a handle, then ARG3 must be set to _TRUE_, otherwise it should be
 		# _FALSE_. If ARG2 is _TRUE_, then symbolic links will be followed on the server.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# Servers running the SFTP v3 protocol or lower do not have the ability to return a file's creation
 		# date/time.
 		#
@@ -1791,7 +1795,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetFileCreateDt(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1802,8 +1806,8 @@ module Chilkat
 		# Returns the create date/time for a file. ARG1 may be a remote filepath or an open handle string as
 		# returned by OpenFile. If ARG1 is a handle, then ARG3 must be set to _TRUE_, otherwise it should be
 		# _FALSE_. If ARG2 is _TRUE_, then symbolic links will be followed on the server.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# Servers running the SFTP v3 protocol or lower do not have the ability to return a file's creation
 		# date/time.
 		#
@@ -1811,7 +1815,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileCreateTime(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1827,7 +1831,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFileCreateTimeStr(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -1841,7 +1845,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFileCreateTimeStr(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1852,8 +1856,8 @@ module Chilkat
 		# Returns the group of a file. ARG1 may be a remote filepath or an open handle string as returned by
 		# OpenFile. If ARG1 is a handle, then ARG3 must be set to _TRUE_, otherwise it should be _FALSE_. If
 		# ARG2 is _TRUE_, then symbolic links will be followed on the server.
-		#		
-		#		Note: Servers
+		# 
+		# Note: Servers
 		# running the SFTP v3 protocol or lower do not have the ability to return a file's group name.
 		# Instead, the decimal GID of the file is returned.
 		#
@@ -1862,7 +1866,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFileGroup(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -1873,8 +1877,8 @@ module Chilkat
 		# Returns the group of a file. ARG1 may be a remote filepath or an open handle string as returned by
 		# OpenFile. If ARG1 is a handle, then ARG3 must be set to _TRUE_, otherwise it should be _FALSE_. If
 		# ARG2 is _TRUE_, then symbolic links will be followed on the server.
-		#		
-		#		Note: Servers
+		# 
+		# Note: Servers
 		# running the SFTP v3 protocol or lower do not have the ability to return a file's group name.
 		# Instead, the decimal GID of the file is returned.
 		#
@@ -1882,7 +1886,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFileGroup(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1898,7 +1902,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileLastAccess(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1915,7 +1919,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetFileLastAccessDt(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1930,7 +1934,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFileLastAccessStr(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -1944,7 +1948,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFileLastAccessStr(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1960,7 +1964,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileLastModified(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1977,7 +1981,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetFileLastModifiedDt(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -1992,7 +1996,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFileLastModifiedStr(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -2006,7 +2010,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFileLastModifiedStr(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -2017,8 +2021,8 @@ module Chilkat
 		# Returns the owner of a file. ARG1 may be a remote filepath or an open handle string as returned by
 		# OpenFile. If ARG1 is a handle, then ARG3 must be set to _TRUE_, otherwise it should be _FALSE_. If
 		# ARG2 is _TRUE_, then symbolic links will be followed on the server.
-		#		
-		#		Note: Servers
+		# 
+		# Note: Servers
 		# running the SFTP v3 protocol or lower do not have the ability to return a file's owner name.
 		# Instead, the decimal UID of the file is returned.
 		#
@@ -2027,7 +2031,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFileOwner(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -2038,8 +2042,8 @@ module Chilkat
 		# Returns the owner of a file. ARG1 may be a remote filepath or an open handle string as returned by
 		# OpenFile. If ARG1 is a handle, then ARG3 must be set to _TRUE_, otherwise it should be _FALSE_. If
 		# ARG2 is _TRUE_, then symbolic links will be followed on the server.
-		#		
-		#		Note: Servers
+		# 
+		# Note: Servers
 		# running the SFTP v3 protocol or lower do not have the ability to return a file's owner name.
 		# Instead, the decimal UID of the file is returned.
 		#
@@ -2047,7 +2051,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFileOwner(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -2063,7 +2067,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetFilePermissions(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -2080,7 +2084,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetFileSize32(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -2097,7 +2101,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [Bignum] 
+		# @return [Bignum]
 		def GetFileSize64(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -2109,8 +2113,8 @@ module Chilkat
 		# filepath or an open handle string as returned by OpenFile. If ARG1 is a handle, then ARG3 must be
 		# set to _TRUE_, otherwise it should be _FALSE_. If ARG2 is _TRUE_, then symbolic links will be
 		# followed on the server. 
-		#		
-		#		Note: This method exists for environments that do not have
+		# 
+		# Note: This method exists for environments that do not have
 		# 64-bit integer support. The Add64 method is provided for 64-bit addition, and other methods such as
 		# ReadFileBytes64s allow for 64-bit values to be passed as strings.
 		#
@@ -2119,7 +2123,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFileSizeStr(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -2131,8 +2135,8 @@ module Chilkat
 		# filepath or an open handle string as returned by OpenFile. If ARG1 is a handle, then ARG3 must be
 		# set to _TRUE_, otherwise it should be _FALSE_. If ARG2 is _TRUE_, then symbolic links will be
 		# followed on the server. 
-		#		
-		#		Note: This method exists for environments that do not have
+		# 
+		# Note: This method exists for environments that do not have
 		# 64-bit integer support. The Add64 method is provided for 64-bit addition, and other methods such as
 		# ReadFileBytes64s allow for 64-bit values to be passed as strings.
 		#
@@ -2140,7 +2144,7 @@ module Chilkat
 		# @param bFollowLinks [TrueClass, FalseClass]
 		# @param bIsHandle [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFileSizeStr(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
 		end
@@ -2152,16 +2156,16 @@ module Chilkat
 		# session always begins by first calling Connect to connect to the SSH server, then calling either
 		# AuthenticatePw or AuthenticatePk to login, and finally calling
 		# InitializeSftp.
-		#		
-		#		Important: When reporting problems, please send the full contents of
+		# 
+		# Important: When reporting problems, please send the full contents of
 		# the LastErrorText property to support@chilkatsoft.com.
-		#		
-		#		If this method fails, the reason
+		# 
+		# If this method fails, the reason
 		# may be present in the InitializeFailCode and InitializeFailReason properties (assuming the failure
 		# occurred when trying to open the SFTP session channel).
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def InitializeSftp()
 			# ...
 		end
@@ -2173,7 +2177,7 @@ module Chilkat
 		#
 		# @param handle [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LastReadFailed(handle)
 			# ...
 		end
@@ -2185,7 +2189,7 @@ module Chilkat
 		#
 		# @param handle [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def LastReadNumBytes(handle)
 			# ...
 		end
@@ -2196,11 +2200,11 @@ module Chilkat
 		# Opens a directory for reading. To get a directory listing, first open the directory by calling this
 		# method, then call ReadDir to read the directory, and finally call CloseHandle to close the
 		# directory.
-		#		
+		# 
 		# The SFTP protocol represents file names as strings. File names are
 		#
 		# assumed to use the slash ('/') character as a directory separator.
-		#		
+		# 
 		# File names starting
 		# with a slash are "absolute", and are relative to
 		# the root of the file system. Names starting
@@ -2210,21 +2214,21 @@ module Chilkat
 		# that identifying the user is assumed to take place outside of this
 		#
 		# protocol.
-		#		
+		# 
 		# Servers SHOULD interpret a path name component ".." as
 		# referring to the
 		# parent directory, and "." as referring to the
 		# current directory.
-		#		
+		# 
 		# An empty path name
 		# is valid, and it refers to the user's default
 		# directory (usually the user's home
 		# directory).
-		#		
-		#		Please note: This method does NOT "change" the remote working directory. It
+		# 
+		# Please note: This method does NOT "change" the remote working directory. It
 		# is only a method for opening a directory for the purpose of reading the directory
 		# listing.
-		#		SFTP is Secure File Transfer over SSH. It is not the FTP protocol. There is no
+		# SFTP is Secure File Transfer over SSH. It is not the FTP protocol. There is no
 		# similarity or relationship between FTP and SFTP. Therefore, concepts such as "current remote
 		# directory" that exist in FTP do not exist with SFTP. With the SFTP protocol, the current directory
 		# will always be the home directory of the user account used during SSH/SFTP authentication. You may
@@ -2234,7 +2238,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenDir(path, outStr)
 			# ...
 		end
@@ -2245,11 +2249,11 @@ module Chilkat
 		# Opens a directory for reading. To get a directory listing, first open the directory by calling this
 		# method, then call ReadDir to read the directory, and finally call CloseHandle to close the
 		# directory.
-		#		
+		# 
 		# The SFTP protocol represents file names as strings. File names are
 		#
 		# assumed to use the slash ('/') character as a directory separator.
-		#		
+		# 
 		# File names starting
 		# with a slash are "absolute", and are relative to
 		# the root of the file system. Names starting
@@ -2259,21 +2263,21 @@ module Chilkat
 		# that identifying the user is assumed to take place outside of this
 		#
 		# protocol.
-		#		
+		# 
 		# Servers SHOULD interpret a path name component ".." as
 		# referring to the
 		# parent directory, and "." as referring to the
 		# current directory.
-		#		
+		# 
 		# An empty path name
 		# is valid, and it refers to the user's default
 		# directory (usually the user's home
 		# directory).
-		#		
-		#		Please note: This method does NOT "change" the remote working directory. It
+		# 
+		# Please note: This method does NOT "change" the remote working directory. It
 		# is only a method for opening a directory for the purpose of reading the directory
 		# listing.
-		#		SFTP is Secure File Transfer over SSH. It is not the FTP protocol. There is no
+		# SFTP is Secure File Transfer over SSH. It is not the FTP protocol. There is no
 		# similarity or relationship between FTP and SFTP. Therefore, concepts such as "current remote
 		# directory" that exist in FTP do not exist with SFTP. With the SFTP protocol, the current directory
 		# will always be the home directory of the user account used during SSH/SFTP authentication. You may
@@ -2282,7 +2286,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def openDir(path)
 			# ...
 		end
@@ -2294,67 +2298,67 @@ module Chilkat
 		# reading and/or writing the file. The ARG1 is the remote file path (the path to the file on the
 		# server). When the application is finished with the handle, it should call
 		# CloseHandle(ARG1).
-		#		ARG2 should be one of the following strings: "readOnly", "writeOnly", or
+		# ARG2 should be one of the following strings: "readOnly", "writeOnly", or
 		# "readWrite". ARG3 is a comma-separated list of keywords to provide more control over how the file is
 		# opened or created. One of the following keywords must be present: "createNew", "createTruncate",
 		# "openExisting", "openOrCreate", or "truncateExisting". All other keywords are optional. The list of
 		# keywords and their meanings are shown here:
-		#		
-		#		createNew
-		#		A new file is created; if
+		# 
+		# createNew
+		# A new file is created; if
 		# the file already exists the method fails.
-		#		
-		#		createTruncate
-		#		A new file is created;
+		# 
+		# createTruncate
+		# A new file is created;
 		# if the file already exists, it is opened and truncated.
-		#		
-		#		openExisting
-		#		An existing
+		# 
+		# openExisting
+		# An existing
 		# file is opened. If the file does not exist the method fails.
-		#		
-		#		openOrCreate
-		#		If the
+		# 
+		# openOrCreate
+		# If the
 		# file exists, it is opened. If the file does not exist,
 		# it is
 		# created.
-		#		
-		#		truncateExisting
-		#		An existing file is opened and truncated. If the file
+		# 
+		# truncateExisting
+		# An existing file is opened and truncated. If the file
 		# does not
 		# exist the method fails.
-		#		
-		#		
-		#		
-		#		appendData
-		#		Data is always
+		# 
+		# 
+		# 
+		# appendData
+		# Data is always
 		# written at the end of the file. 
 		# Data is not required to be appended atomically. This means
 		# that
 		# if multiple writers attempt to append data simultaneously, data
 		# from the first may be
 		# lost. 
-		#		
-		#		appendDataAtomic
-		#		Data is always written at the end of the file.
+		# 
+		# appendDataAtomic
+		# Data is always written at the end of the file.
 		# Data
 		# MUST be written atomically so that there is no chance that
 		# multiple appenders can collide and
 		# result in data being lost.
-		#		
-		#		textMode
-		#		Indicates that the server should treat the
+		# 
+		# textMode
+		# Indicates that the server should treat the
 		# file as text and
 		# convert it to the canonical newline convention in use.
-		#		
+		# 
 		# When a file
 		# is opened with this flag, data is always appended to the end of the file.
-		#		
+		# 
 		# Servers MUST
 		# process multiple, parallel reads and writes correctly
 		# in this mode.
-		# #		
-		#		blockRead
-		#		The server MUST guarantee that no other handle has been opened
+		# # 
+		# blockRead
+		# The server MUST guarantee that no other handle has been opened
 		# with
 		# read access, and that no other handle will be
 		# opened with read access until the client closes
@@ -2362,12 +2366,12 @@ module Chilkat
 		# handle. (This MUST apply both to other clients and to other
 		# processes on the server.)
 		# In a nutshell, this opens the file 
-		#		in non-sharing
+		# in non-sharing
 		# mode.
-		#		
-		#		
-		#		blockWrite
-		#		The server MUST guarantee that no other handle has been
+		# 
+		# 
+		# blockWrite
+		# The server MUST guarantee that no other handle has been
 		# opened
 		# with write access, and that no other
 		# handle will be opened with write
@@ -2375,20 +2379,20 @@ module Chilkat
 		# until the client closes the handle. (This MUST apply both
 		# to other clients and to other
 		# processes on the server.)
-		#		In a nutshell, this opens the file 
-		#		in non-sharing
+		# In a nutshell, this opens the file 
+		# in non-sharing
 		# mode.
-		#		
-		#		blockDelete
-		#		The server MUST guarantee that the
+		# 
+		# blockDelete
+		# The server MUST guarantee that the
 		# file itself is not
 		# deleted in any other way until the client
 		# closes the handle. No other client or process is
 		# allowed to open the file with delete access.
-		#		
-		#		
-		#		blockAdvisory
-		#		If set, the
+		# 
+		# 
+		# blockAdvisory
+		# If set, the
 		# above "block" modes are advisory. In
 		# advisory mode, only other accesses that specify a "block"
 		# mode need
@@ -2396,52 +2400,52 @@ module Chilkat
 		# and the
 		# server need not prevent I/O operations that violate the
 		# block mode.
-		#		
+		# 
 		# The server MAY
 		# perform mandatory locking even if the
 		# blockAdvisory flag is
 		# set.
-		#		
-		#		
-		#		noFollow
-		#		If the final component of the path is a symlink, then the
+		# 
+		# 
+		# noFollow
+		# If the final component of the path is a symlink, then the
 		# open
 		# MUST fail.
-		#		
-		#		deleteOnClose
-		#		The file should be deleted when the last
+		# 
+		# deleteOnClose
+		# The file should be deleted when the last
 		# handle to it is closed.
 		# (The last handle may not be an sftp-handle.) This MAY be
 		# emulated
 		# by a server if the OS doesn't support it by deleting the file when
 		# this handle is
 		# closed.
-		#		
-		#		accessAuditAlarmInfo
-		#		The client wishes the server to enable any
+		# 
+		# accessAuditAlarmInfo
+		# The client wishes the server to enable any
 		# privileges or extra
 		# capabilities that the user may have in to allow the reading and
 		#
 		# writing of AUDIT or ALARM access control entries.
-		#		
-		#		accessBackup
-		#		The client wishes
+		# 
+		# accessBackup
+		# The client wishes
 		# the server to enable any privileges or extra
 		# capabilities that the user may have in order to
 		# bypass normal
 		# access checks for the purpose of backing up or restoring
 		# files.
-		#		
-		#		
-		#		backupStream
-		#		This flag indicates that the client wishes to read or
+		# 
+		# 
+		# backupStream
+		# This flag indicates that the client wishes to read or
 		# write a
 		# backup stream. A backup stream is a system dependent structured
 		# data stream that
 		# encodes all the information that must be
 		# preserved in order to restore the file from backup
 		# medium.
-		#		
+		# 
 		# The only well defined use for backup stream data read in this
 		# fashion is to
 		# write it to the same server to a file also opened
@@ -2450,9 +2454,9 @@ module Chilkat
 		# defined backup stream format, there may be other uses for this
 		# data
 		# outside the scope of this protocol.
-		#		
-		#		
-		#		IMPORANT: If ARG1 is a filename with no
+		# 
+		# 
+		# IMPORANT: If ARG1 is a filename with no
 		# path, such as "test.txt", and the server responds with a "Folder not found" error, then try
 		# prepending "./" to the ARG1. For example, instead of passing "test.txt", try "./test.txt".
 		#
@@ -2461,7 +2465,7 @@ module Chilkat
 		# @param createDisposition [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenFile(remotePath, access, createDisposition, outStr)
 			# ...
 		end
@@ -2473,67 +2477,67 @@ module Chilkat
 		# reading and/or writing the file. The ARG1 is the remote file path (the path to the file on the
 		# server). When the application is finished with the handle, it should call
 		# CloseHandle(ARG1).
-		#		ARG2 should be one of the following strings: "readOnly", "writeOnly", or
+		# ARG2 should be one of the following strings: "readOnly", "writeOnly", or
 		# "readWrite". ARG3 is a comma-separated list of keywords to provide more control over how the file is
 		# opened or created. One of the following keywords must be present: "createNew", "createTruncate",
 		# "openExisting", "openOrCreate", or "truncateExisting". All other keywords are optional. The list of
 		# keywords and their meanings are shown here:
-		#		
-		#		createNew
-		#		A new file is created; if
+		# 
+		# createNew
+		# A new file is created; if
 		# the file already exists the method fails.
-		#		
-		#		createTruncate
-		#		A new file is created;
+		# 
+		# createTruncate
+		# A new file is created;
 		# if the file already exists, it is opened and truncated.
-		#		
-		#		openExisting
-		#		An existing
+		# 
+		# openExisting
+		# An existing
 		# file is opened. If the file does not exist the method fails.
-		#		
-		#		openOrCreate
-		#		If the
+		# 
+		# openOrCreate
+		# If the
 		# file exists, it is opened. If the file does not exist,
 		# it is
 		# created.
-		#		
-		#		truncateExisting
-		#		An existing file is opened and truncated. If the file
+		# 
+		# truncateExisting
+		# An existing file is opened and truncated. If the file
 		# does not
 		# exist the method fails.
-		#		
-		#		
-		#		
-		#		appendData
-		#		Data is always
+		# 
+		# 
+		# 
+		# appendData
+		# Data is always
 		# written at the end of the file. 
 		# Data is not required to be appended atomically. This means
 		# that
 		# if multiple writers attempt to append data simultaneously, data
 		# from the first may be
 		# lost. 
-		#		
-		#		appendDataAtomic
-		#		Data is always written at the end of the file.
+		# 
+		# appendDataAtomic
+		# Data is always written at the end of the file.
 		# Data
 		# MUST be written atomically so that there is no chance that
 		# multiple appenders can collide and
 		# result in data being lost.
-		#		
-		#		textMode
-		#		Indicates that the server should treat the
+		# 
+		# textMode
+		# Indicates that the server should treat the
 		# file as text and
 		# convert it to the canonical newline convention in use.
-		#		
+		# 
 		# When a file
 		# is opened with this flag, data is always appended to the end of the file.
-		#		
+		# 
 		# Servers MUST
 		# process multiple, parallel reads and writes correctly
 		# in this mode.
-		# #		
-		#		blockRead
-		#		The server MUST guarantee that no other handle has been opened
+		# # 
+		# blockRead
+		# The server MUST guarantee that no other handle has been opened
 		# with
 		# read access, and that no other handle will be
 		# opened with read access until the client closes
@@ -2541,12 +2545,12 @@ module Chilkat
 		# handle. (This MUST apply both to other clients and to other
 		# processes on the server.)
 		# In a nutshell, this opens the file 
-		#		in non-sharing
+		# in non-sharing
 		# mode.
-		#		
-		#		
-		#		blockWrite
-		#		The server MUST guarantee that no other handle has been
+		# 
+		# 
+		# blockWrite
+		# The server MUST guarantee that no other handle has been
 		# opened
 		# with write access, and that no other
 		# handle will be opened with write
@@ -2554,20 +2558,20 @@ module Chilkat
 		# until the client closes the handle. (This MUST apply both
 		# to other clients and to other
 		# processes on the server.)
-		#		In a nutshell, this opens the file 
-		#		in non-sharing
+		# In a nutshell, this opens the file 
+		# in non-sharing
 		# mode.
-		#		
-		#		blockDelete
-		#		The server MUST guarantee that the
+		# 
+		# blockDelete
+		# The server MUST guarantee that the
 		# file itself is not
 		# deleted in any other way until the client
 		# closes the handle. No other client or process is
 		# allowed to open the file with delete access.
-		#		
-		#		
-		#		blockAdvisory
-		#		If set, the
+		# 
+		# 
+		# blockAdvisory
+		# If set, the
 		# above "block" modes are advisory. In
 		# advisory mode, only other accesses that specify a "block"
 		# mode need
@@ -2575,52 +2579,52 @@ module Chilkat
 		# and the
 		# server need not prevent I/O operations that violate the
 		# block mode.
-		#		
+		# 
 		# The server MAY
 		# perform mandatory locking even if the
 		# blockAdvisory flag is
 		# set.
-		#		
-		#		
-		#		noFollow
-		#		If the final component of the path is a symlink, then the
+		# 
+		# 
+		# noFollow
+		# If the final component of the path is a symlink, then the
 		# open
 		# MUST fail.
-		#		
-		#		deleteOnClose
-		#		The file should be deleted when the last
+		# 
+		# deleteOnClose
+		# The file should be deleted when the last
 		# handle to it is closed.
 		# (The last handle may not be an sftp-handle.) This MAY be
 		# emulated
 		# by a server if the OS doesn't support it by deleting the file when
 		# this handle is
 		# closed.
-		#		
-		#		accessAuditAlarmInfo
-		#		The client wishes the server to enable any
+		# 
+		# accessAuditAlarmInfo
+		# The client wishes the server to enable any
 		# privileges or extra
 		# capabilities that the user may have in to allow the reading and
 		#
 		# writing of AUDIT or ALARM access control entries.
-		#		
-		#		accessBackup
-		#		The client wishes
+		# 
+		# accessBackup
+		# The client wishes
 		# the server to enable any privileges or extra
 		# capabilities that the user may have in order to
 		# bypass normal
 		# access checks for the purpose of backing up or restoring
 		# files.
-		#		
-		#		
-		#		backupStream
-		#		This flag indicates that the client wishes to read or
+		# 
+		# 
+		# backupStream
+		# This flag indicates that the client wishes to read or
 		# write a
 		# backup stream. A backup stream is a system dependent structured
 		# data stream that
 		# encodes all the information that must be
 		# preserved in order to restore the file from backup
 		# medium.
-		#		
+		# 
 		# The only well defined use for backup stream data read in this
 		# fashion is to
 		# write it to the same server to a file also opened
@@ -2629,9 +2633,9 @@ module Chilkat
 		# defined backup stream format, there may be other uses for this
 		# data
 		# outside the scope of this protocol.
-		#		
-		#		
-		#		IMPORANT: If ARG1 is a filename with no
+		# 
+		# 
+		# IMPORANT: If ARG1 is a filename with no
 		# path, such as "test.txt", and the server responds with a "Folder not found" error, then try
 		# prepending "./" to the ARG1. For example, instead of passing "test.txt", try "./test.txt".
 		#
@@ -2639,7 +2643,7 @@ module Chilkat
 		# @param access [String]
 		# @param createDisposition [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def openFile(remotePath, access, createDisposition)
 			# ...
 		end
@@ -2652,7 +2656,7 @@ module Chilkat
 		#
 		# @param handle [String]
 		#
-		# @return [CkSFtpDir] 
+		# @return [CkSFtpDir]
 		def ReadDir(handle)
 			# ...
 		end
@@ -2663,15 +2667,15 @@ module Chilkat
 		# Reads file data from a remote file on the SSH server. The ARG1 is a file handle returned by the
 		# OpenFile method. The ARG2 is the maximum number of bytes to read. If the end-of-file is reached
 		# prior to reading the number of requested bytes, then fewer bytes may be returned.
-		#		
-		#		To
+		# 
+		# To
 		# read an entire file, one may call ReadFileBytes repeatedly until Eof(handle) returns _TRUE_.
 		#
 		# @param handle [String]
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileBytes(handle, numBytes, outBytes)
 			# ...
 		end
@@ -2691,7 +2695,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileBytes32(handle, offset, numBytes, outBytes)
 			# ...
 		end
@@ -2710,7 +2714,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileBytes64(handle, offset, numBytes, outBytes)
 			# ...
 		end
@@ -2720,8 +2724,8 @@ module Chilkat
 		#
 		# (This method exists for systems that do not support 64-bit integers. The 64-bit integer offset is
 		# passed as a decimal string instead.)
-		#		
-		#		Reads file data from a remote file on the SSH
+		# 
+		# Reads file data from a remote file on the SSH
 		# server. The ARG1 is a file handle returned by the OpenFile method. The ARG2 is a 64-bit integer
 		# represented as a decimal string. It represents an offset in bytes from the beginning of the file.
 		# The ARG2 is ignored if the "textMode" flag was specified during the OpenFile. The ARG3 is the
@@ -2733,7 +2737,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileBytes64s(handle, offset, numBytes, outBytes)
 			# ...
 		end
@@ -2744,15 +2748,15 @@ module Chilkat
 		# This method is identical to ReadFileBytes except for one thing: The bytes are interpreted according
 		# to the specified ARG3 (i.e. the character encoding) and returned as a string. A list of supported
 		# charset values may be found on this page: Supported Charsets.
-		#		
-		#		Note: If the ARG3 is an
+		# 
+		# Note: If the ARG3 is an
 		# encoding where a single character might be represented in multiple bytes (such as utf-8, Shift_JIS,
 		# etc.) then there is a risk that the very last character may be partially read. This is because the
 		# method specifies the number of bytes to read, not the number of characters. This is never a problem
 		# with character encodings that use a single byte per character, such as all of the iso-8859-*
 		# encodings, or the Windows-* encodings.
-		#		
-		#		To read an entire file, one may call
+		# 
+		# To read an entire file, one may call
 		# ReadFileText repeatedly until Eof(handle) returns _TRUE_.
 		#
 		# @param handle [String]
@@ -2760,7 +2764,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileText(handle, numBytes, charset, outStr)
 			# ...
 		end
@@ -2771,22 +2775,22 @@ module Chilkat
 		# This method is identical to ReadFileBytes except for one thing: The bytes are interpreted according
 		# to the specified ARG3 (i.e. the character encoding) and returned as a string. A list of supported
 		# charset values may be found on this page: Supported Charsets.
-		#		
-		#		Note: If the ARG3 is an
+		# 
+		# Note: If the ARG3 is an
 		# encoding where a single character might be represented in multiple bytes (such as utf-8, Shift_JIS,
 		# etc.) then there is a risk that the very last character may be partially read. This is because the
 		# method specifies the number of bytes to read, not the number of characters. This is never a problem
 		# with character encodings that use a single byte per character, such as all of the iso-8859-*
 		# encodings, or the Windows-* encodings.
-		#		
-		#		To read an entire file, one may call
+		# 
+		# To read an entire file, one may call
 		# ReadFileText repeatedly until Eof(handle) returns _TRUE_.
 		#
 		# @param handle [String]
 		# @param numBytes [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readFileText(handle, numBytes, charset)
 			# ...
 		end
@@ -2797,8 +2801,8 @@ module Chilkat
 		# This method is identical to ReadFileBytes32 except for one thing: The bytes are interpreted
 		# according to the specified ARG4 (i.e. the character encoding) and returned as a string. A list of
 		# supported charset values may be found on this page: Supported Charsets.
-		#		
-		#		Note: If the
+		# 
+		# Note: If the
 		# ARG4 is an encoding where a single character might be represented in multiple bytes (such as utf-8,
 		# Shift_JIS, etc.) then there is a risk that the very last character may be partially read. This is
 		# because the method specifies the number of bytes to read, not the number of characters. This is
@@ -2811,7 +2815,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileText32(handle, offset, numBytes, charset, outStr)
 			# ...
 		end
@@ -2822,8 +2826,8 @@ module Chilkat
 		# This method is identical to ReadFileBytes32 except for one thing: The bytes are interpreted
 		# according to the specified ARG4 (i.e. the character encoding) and returned as a string. A list of
 		# supported charset values may be found on this page: Supported Charsets.
-		#		
-		#		Note: If the
+		# 
+		# Note: If the
 		# ARG4 is an encoding where a single character might be represented in multiple bytes (such as utf-8,
 		# Shift_JIS, etc.) then there is a risk that the very last character may be partially read. This is
 		# because the method specifies the number of bytes to read, not the number of characters. This is
@@ -2835,7 +2839,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readFileText32(handle, offset, numBytes, charset)
 			# ...
 		end
@@ -2846,8 +2850,8 @@ module Chilkat
 		# This method is identical to ReadFileBytes64 except for one thing: The bytes are interpreted
 		# according to the specified ARG4 (i.e. the character encoding) and returned as a string. A list of
 		# supported charset values may be found on this page: Supported Charsets.
-		#		
-		#		Note: If the
+		# 
+		# Note: If the
 		# ARG4 is an encoding where a single character might be represented in multiple bytes (such as utf-8,
 		# Shift_JIS, etc.) then there is a risk that the very last character may be partially read. This is
 		# because the method specifies the number of bytes to read, not the number of characters. This is
@@ -2860,7 +2864,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileText64(handle, offset, numBytes, charset, outStr)
 			# ...
 		end
@@ -2871,8 +2875,8 @@ module Chilkat
 		# This method is identical to ReadFileBytes64 except for one thing: The bytes are interpreted
 		# according to the specified ARG4 (i.e. the character encoding) and returned as a string. A list of
 		# supported charset values may be found on this page: Supported Charsets.
-		#		
-		#		Note: If the
+		# 
+		# Note: If the
 		# ARG4 is an encoding where a single character might be represented in multiple bytes (such as utf-8,
 		# Shift_JIS, etc.) then there is a risk that the very last character may be partially read. This is
 		# because the method specifies the number of bytes to read, not the number of characters. This is
@@ -2884,7 +2888,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readFileText64(handle, offset, numBytes, charset)
 			# ...
 		end
@@ -2895,8 +2899,8 @@ module Chilkat
 		# This method is identical to ReadFileBytes64s except for one thing: The bytes are interpreted
 		# according to the specified ARG4 (i.e. the character encoding) and returned as a string. A list of
 		# supported charset values may be found on this page: Supported Charsets.
-		#		
-		#		Note: If the
+		# 
+		# Note: If the
 		# ARG4 is an encoding where a single character might be represented in multiple bytes (such as utf-8,
 		# Shift_JIS, etc.) then there is a risk that the very last character may be partially read. This is
 		# because the method specifies the number of bytes to read, not the number of characters. This is
@@ -2909,7 +2913,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileText64s(handle, offset, numBytes, charset, outStr)
 			# ...
 		end
@@ -2920,8 +2924,8 @@ module Chilkat
 		# This method is identical to ReadFileBytes64s except for one thing: The bytes are interpreted
 		# according to the specified ARG4 (i.e. the character encoding) and returned as a string. A list of
 		# supported charset values may be found on this page: Supported Charsets.
-		#		
-		#		Note: If the
+		# 
+		# Note: If the
 		# ARG4 is an encoding where a single character might be represented in multiple bytes (such as utf-8,
 		# Shift_JIS, etc.) then there is a risk that the very last character may be partially read. This is
 		# because the method specifies the number of bytes to read, not the number of characters. This is
@@ -2933,7 +2937,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readFileText64s(handle, offset, numBytes, charset)
 			# ...
 		end
@@ -2948,30 +2952,30 @@ module Chilkat
 		#
 		# pathnames without a leading slash into absolute paths. The absolute path is returned by this
 		# method.
-		#		
-		#		ARG1 is the first component of the path which the client wishes resolved
+		# 
+		# ARG1 is the first component of the path which the client wishes resolved
 		#
 		# into a absolute canonical path. This may be the entire path.
-		#		
-		#		The ARG2 is a path which
+		# 
+		# The ARG2 is a path which
 		# the client wishes the server to compose with the
 		# original path to form the new path. This field
 		# is optional and may be set to a zero-length string.
-		#		
+		# 
 		# The server will take the ARG1 and
 		# apply the ARG2
 		# as a modification to it. ARG2 may be relative to ARG1 or may be an absolute
 		# path, in which case ARG1 will
 		# be discarded. The ARG2 may be zero length.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# Servers running SFTP v4 and below do not support ARG2.
 		#
 		# @param originalPath [String]
 		# @param composePath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RealPath(originalPath, composePath, outStr)
 			# ...
 		end
@@ -2986,29 +2990,29 @@ module Chilkat
 		#
 		# pathnames without a leading slash into absolute paths. The absolute path is returned by this
 		# method.
-		#		
-		#		ARG1 is the first component of the path which the client wishes resolved
+		# 
+		# ARG1 is the first component of the path which the client wishes resolved
 		#
 		# into a absolute canonical path. This may be the entire path.
-		#		
-		#		The ARG2 is a path which
+		# 
+		# The ARG2 is a path which
 		# the client wishes the server to compose with the
 		# original path to form the new path. This field
 		# is optional and may be set to a zero-length string.
-		#		
+		# 
 		# The server will take the ARG1 and
 		# apply the ARG2
 		# as a modification to it. ARG2 may be relative to ARG1 or may be an absolute
 		# path, in which case ARG1 will
 		# be discarded. The ARG2 may be zero length.
-		#		
-		#		Note:
+		# 
+		# Note:
 		# Servers running SFTP v4 and below do not support ARG2.
 		#
 		# @param originalPath [String]
 		# @param composePath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def realPath(originalPath, composePath)
 			# ...
 		end
@@ -3021,7 +3025,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveDir(path)
 			# ...
 		end
@@ -3033,7 +3037,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveFile(filename)
 			# ...
 		end
@@ -3046,7 +3050,7 @@ module Chilkat
 		# @param oldPath [String]
 		# @param newPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RenameFileOrDir(oldPath, newPath)
 			# ...
 		end
@@ -3062,7 +3066,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ResumeDownloadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -3078,7 +3082,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ResumeUploadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -3090,7 +3094,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -3104,7 +3108,7 @@ module Chilkat
 		# channel prior to sending an IGNORE message).
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendIgnore()
 			# ...
 		end
@@ -3115,15 +3119,15 @@ module Chilkat
 		# Sets the create date/time for a file on the server. The ARG1 may be a filepath or the handle of a
 		# currently open file. ARG2 should be set to _TRUE_ if the ARG1 is a handle, otherwise set ARG2 to
 		# _FALSE_.
-		#		
-		#		Note: Servers running version 3 or lower of the SFTP protocol do not support
+		# 
+		# Note: Servers running version 3 or lower of the SFTP protocol do not support
 		# setting the create date/time.
 		#
 		# @param pathOrHandle [String]
 		# @param isHandle [TrueClass, FalseClass]
 		# @param createDateTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetCreateDt(pathOrHandle, isHandle, createDateTime)
 			# ...
 		end
@@ -3134,15 +3138,15 @@ module Chilkat
 		# Sets the create date/time for a file on the server. The ARG1 may be a filepath or the handle of a
 		# currently open file. ARG2 should be set to _TRUE_ if the ARG1 is a handle, otherwise set ARG2 to
 		# _FALSE_.
-		#		
-		#		Note: Servers running version 3 or lower of the SFTP protocol do not support
+		# 
+		# Note: Servers running version 3 or lower of the SFTP protocol do not support
 		# setting the create date/time.
 		#
 		# @param pathOrHandle [String]
 		# @param isHandle [TrueClass, FalseClass]
 		# @param createDateTime [Object]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetCreateTime(pathOrHandle, isHandle, createDateTime)
 			# ...
@@ -3157,7 +3161,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param dateTimeStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetCreateTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -3173,7 +3177,7 @@ module Chilkat
 		# @param isHandle [TrueClass, FalseClass]
 		# @param accessDateTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetLastAccessDt(pathOrHandle, isHandle, accessDateTime)
 			# ...
 		end
@@ -3189,7 +3193,7 @@ module Chilkat
 		# @param isHandle [TrueClass, FalseClass]
 		# @param accessDateTime [Object]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetLastAccessTime(pathOrHandle, isHandle, accessDateTime)
 			# ...
@@ -3204,7 +3208,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param dateTimeStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetLastAccessTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -3220,7 +3224,7 @@ module Chilkat
 		# @param isHandle [TrueClass, FalseClass]
 		# @param modifiedDateTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetLastModifiedDt(pathOrHandle, isHandle, modifiedDateTime)
 			# ...
 		end
@@ -3236,7 +3240,7 @@ module Chilkat
 		# @param isHandle [TrueClass, FalseClass]
 		# @param modifiedDateTime [Object]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetLastModifiedTime(pathOrHandle, isHandle, modifiedDateTime)
 			# ...
@@ -3251,7 +3255,7 @@ module Chilkat
 		# @param bIsHandle [TrueClass, FalseClass]
 		# @param dateTimeStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetLastModifiedTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -3262,8 +3266,8 @@ module Chilkat
 		# Sets the owner and group for a file on the server. The ARG1 may be a filepath or the handle of a
 		# currently open file. ARG2 should be set to _TRUE_ if the ARG1 is a handle, otherwise set ARG2 to
 		# _FALSE_.
-		#		
-		#		Note: Servers running version 3 or lower of the SFTP protocol do not support
+		# 
+		# Note: Servers running version 3 or lower of the SFTP protocol do not support
 		# setting the owner and group.
 		#
 		# @param pathOrHandle [String]
@@ -3271,7 +3275,7 @@ module Chilkat
 		# @param owner [String]
 		# @param group [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetOwnerAndGroup(pathOrHandle, isHandle, owner, group)
 			# ...
 		end
@@ -3287,7 +3291,7 @@ module Chilkat
 		# @param isHandle [TrueClass, FalseClass]
 		# @param permissions [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPermissions(pathOrHandle, isHandle, permissions)
 			# ...
 		end
@@ -3297,21 +3301,21 @@ module Chilkat
 		#
 		# Downloads files from the SFTP server to a local directory tree. Synchronization modes
 		# include:
-		#		mode=0: Download all files
-		#		mode=1: Download all files that do not exist on the
+		# mode=0: Download all files
+		# mode=1: Download all files that do not exist on the
 		# local filesystem.
-		#		mode=2: Download newer or non-existant files.
-		#		mode=3: Download only
+		# mode=2: Download newer or non-existant files.
+		# mode=3: Download only
 		# newer files. If a file does not already exist on the local filesystem, it is not downloaded from the
 		# server.
-		#		mode=5: Download only missing files or files with size differences.
-		#		mode=6: Same
+		# mode=5: Download only missing files or files with size differences.
+		# mode=6: Same
 		# as mode 5, but also download newer files.
-		#		mode=99: Do not download files, but instead delete
+		# mode=99: Do not download files, but instead delete
 		# remote files that do not exist locally.
-		#		
-		#		
-		#		If ARG4 is _FALSE_, then the remotel
+		# 
+		# 
+		# If ARG4 is _FALSE_, then the remotel
 		# directory tree is not recursively descended.
 		#
 		# @param remoteRoot [String]
@@ -3319,7 +3323,7 @@ module Chilkat
 		# @param mode [Fixnum]
 		# @param recurse [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SyncTreeDownload(remoteRoot, localRoot, mode, recurse)
 			# ...
 		end
@@ -3329,19 +3333,19 @@ module Chilkat
 		#
 		# Uploads a directory tree from the local filesystem to the SFTP server. Synchronization modes
 		# include:
-		#		mode=0: Upload all files
-		#		mode=1: Upload all files that do not exist on the
+		# mode=0: Upload all files
+		# mode=1: Upload all files that do not exist on the
 		# server.
-		#		mode=2: Upload newer or non-existant files.
-		#		mode=3: Upload only newer files. If
+		# mode=2: Upload newer or non-existant files.
+		# mode=3: Upload only newer files. If
 		# a file does not already exist on the server, it is not uploaded.
-		#		mode=4: transfer missing
+		# mode=4: transfer missing
 		# files or files with size differences.
-		#		mode=5: same as mode 4, but also newer
+		# mode=5: same as mode 4, but also newer
 		# files.
-		#		
-		#		
-		#		If ARG4 is _FALSE_, then the local directory tree is not recursively
+		# 
+		# 
+		# If ARG4 is _FALSE_, then the local directory tree is not recursively
 		# descended.
 		#
 		# @param localBaseDir [String]
@@ -3349,7 +3353,7 @@ module Chilkat
 		# @param mode [Fixnum]
 		# @param bRecurse [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SyncTreeUpload(localBaseDir, remoteBaseDir, mode, bRecurse)
 			# ...
 		end
@@ -3361,15 +3365,15 @@ module Chilkat
 		# fully-functional 30-day trial is automatically started when an arbitrary string is passed to this
 		# method. For example, passing "Hello", or "abc123" will unlock the component for the 1st thirty days
 		# after the initial install.
-		#		
-		#		A purchased unlock code for SFTP should contain the
+		# 
+		# A purchased unlock code for SFTP should contain the
 		# substring "SSH" (or it can be a Bundle unlock code) because SFTP is the Secure File Transfer
 		# protocol over SSH. It is a sub-system of the SSH protocol. It is not the FTP protocol. If the
 		# Chilkat FTP2 component/library should be used for the FTP protocol.
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -3382,7 +3386,7 @@ module Chilkat
 		# @param binData [CkBinData]
 		# @param remoteFilePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UploadBd(binData, remoteFilePath)
 			# ...
 		end
@@ -3397,7 +3401,7 @@ module Chilkat
 		# @param handle [String]
 		# @param fromFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UploadFile(handle, fromFilename)
 			# ...
 		end
@@ -3406,15 +3410,15 @@ module Chilkat
 		# Method: UploadFileByName
 		#
 		# Simplified method for uploading a file to the SFTP/SSH server.
-		#		
-		#		The last-modified
+		# 
+		# The last-modified
 		# date/time is only preserved if the PreserveDate property is set to _TRUE_. This behavior of
 		# maintaining the last-mod date/time was introduced in v9.5.0.40.
 		#
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UploadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -3429,7 +3433,7 @@ module Chilkat
 		# @param charset [String]
 		# @param includeBom [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UploadSb(sb, remoteFilePath, charset, includeBom)
 			# ...
 		end
@@ -3442,7 +3446,7 @@ module Chilkat
 		# @param handle [String]
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFileBytes(handle, byteData)
 			# ...
 		end
@@ -3457,7 +3461,7 @@ module Chilkat
 		# @param offset [Fixnum]
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFileBytes32(handle, offset, data)
 			# ...
 		end
@@ -3472,7 +3476,7 @@ module Chilkat
 		# @param offset64 [Bignum]
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFileBytes64(handle, offset64, data)
 			# ...
 		end
@@ -3488,7 +3492,7 @@ module Chilkat
 		# @param offset64 [String]
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFileBytes64s(handle, offset64, data)
 			# ...
 		end
@@ -3499,10 +3503,10 @@ module Chilkat
 		# Appends character data to an open file. The ARG1 is a file handle returned by the OpenFile method.
 		# ARG2 is a character encoding and is typically set to values such as "ansi", "utf-8", "windows-1252",
 		# etc. 
-		#		A list of supported character encodings is found on this page: Supported
+		# A list of supported character encodings is found on this page: Supported
 		# Charsets.
-		#		
-		#		Note: It is necessary to specify the character encoding because in many
+		# 
+		# Note: It is necessary to specify the character encoding because in many
 		# programming languages, strings are represented as Unicode (2 bytes/char) and in most cases one does
 		# not wish to write Unicode chars to a text file (although it is possible by setting ARG2 =
 		# "Unicode").
@@ -3511,7 +3515,7 @@ module Chilkat
 		# @param charset [String]
 		# @param textData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFileText(handle, charset, textData)
 			# ...
 		end
@@ -3522,7 +3526,7 @@ module Chilkat
 		# Writes character data to an open file at a specific offset from the beginning of the file. The ARG1
 		# is a file handle returned by the OpenFile method. ARG3 is a character encoding and is typically set
 		# to values such as "ansi", "utf-8", "windows-1252", etc. 
-		#		A list of supported character
+		# A list of supported character
 		# encodings is found on this page: Supported Charsets.
 		#
 		# @param handle [String]
@@ -3530,7 +3534,7 @@ module Chilkat
 		# @param charset [String]
 		# @param textData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFileText32(handle, offset32, charset, textData)
 			# ...
 		end
@@ -3541,7 +3545,7 @@ module Chilkat
 		# Writes character data to an open file at a specific offset from the beginning of the file. The ARG1
 		# is a file handle returned by the OpenFile method. ARG3 is a character encoding and is typically set
 		# to values such as "ansi", "utf-8", "windows-1252", etc. 
-		#		A list of supported character
+		# A list of supported character
 		# encodings is found on this page: Supported Charsets.
 		#
 		# @param handle [String]
@@ -3549,7 +3553,7 @@ module Chilkat
 		# @param charset [String]
 		# @param textData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFileText64(handle, offset64, charset, textData)
 			# ...
 		end
@@ -3561,7 +3565,7 @@ module Chilkat
 		# is a file handle returned by the OpenFile method. The ARG2 is an offset (in decimal string format)
 		# from the beginning of the file. ARG3 is a character encoding and is typically set to values such as
 		# "ansi", "utf-8", "windows-1252", etc. 
-		#		A list of supported character encodings is found on
+		# A list of supported character encodings is found on
 		# this page: Supported Charsets.
 		#
 		# @param handle [String]
@@ -3569,7 +3573,7 @@ module Chilkat
 		# @param charset [String]
 		# @param textData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFileText64s(handle, offset64, charset, textData)
 			# ...
 		end

@@ -146,9 +146,10 @@ namespace GenSample
 
             foreach (var chunk in chunked)
             {
-                sbOut.Append("\t\t# " + chunk.Trim() + "\r\n");
+                sbOut.Append("\t\t# " + chunk.Trim().Replace("#\t\t", "# ") + "\r\n");
             }
             sbOut.Append("\t\t#\r\n");
+            sbOut.Replace("=\r\n\t\t# _", " _");
 
             // All properties have getters..
             // Types can be emitted using an existing conversion, or you could write your own..
@@ -230,14 +231,17 @@ namespace GenSample
 
                 foreach (var chunk in chunked)
                 {
-                    sbOut.Append("\t\t# " + chunk.Trim() + "\r\n");
+                    sbOut.Append("\t\t# " + chunk.Trim().Replace("#\t\t", "# ") + "\r\n");
                 }
                 sbOut.Append("\t\t#\r\n");
-
+                sbOut.Replace("=\r\n\t\t# _", " _");
                 sbOut.Append("\t\t# @param newval [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
 
                 if (xprop.IsEventRelated())
+                {
                     sbOut.Append("\t\t#\r\n\t\t# @event\r\n");
+                    sbOut.Append("\t\t#\r\n\t\t# @!method\r\n");
+                }
                 if (xprop.Deprecated)
                     sbOut.Append("\t\t#\r\n\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
                 if (lowerCaseAlt && xprop.ReadOnly)
@@ -266,9 +270,10 @@ namespace GenSample
 
             foreach (var chunk in chunked)
             {
-                sbOut.Append("\t\t# " + chunk.Trim() + "\r\n");
+                sbOut.Append("\t\t# " + chunk.Trim().Replace("#\t\t", "# ") + "\r\n");
             }
             sbOut.Append("\t\t#\r\n");
+            sbOut.Replace("=\r\n\t\t# _", " _");
 
             //if (xmethod.Deprecated)
             //    sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");

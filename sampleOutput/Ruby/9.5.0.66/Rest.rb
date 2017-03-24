@@ -16,12 +16,12 @@ module Chilkat
 
 		# Controls whether non us-ascii HTTP request headers are automatically Q/B encoded. The default value
 		# is _TRUE_. 
-		#		
-		#		Q/B encoded headers explicitly indicate the charset and byte
+		# 
+		# Q/B encoded headers explicitly indicate the charset and byte
 		# representation, and appear as such: =?utf-8?Q?...?= or =?utf-8?B?...?=, where the charset may be
 		# "utf-8" or any other possible charset.
-		#		
-		#		If this property is set to _FALSE_, then no Q/B
+		# 
+		# If this property is set to _FALSE_, then no Q/B
 		# encoding is applied to any request header.
 		#
 		# @return [TrueClass, FalseClass]
@@ -29,12 +29,12 @@ module Chilkat
 
 		# Controls whether non us-ascii HTTP request headers are automatically Q/B encoded. The default value
 		# is _TRUE_. 
-		#		
-		#		Q/B encoded headers explicitly indicate the charset and byte
+		# 
+		# Q/B encoded headers explicitly indicate the charset and byte
 		# representation, and appear as such: =?utf-8?Q?...?= or =?utf-8?B?...?=, where the charset may be
 		# "utf-8" or any other possible charset.
-		#		
-		#		If this property is set to _FALSE_, then no Q/B
+		# 
+		# If this property is set to _FALSE_, then no Q/B
 		# encoding is applied to any request header.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -64,49 +64,49 @@ module Chilkat
 
 		# If the Connect method fails, this property can be checked to determine the reason for
 		# failure.
-		#		
-		#		Possible values are:
-		#		
-		#		0 = success
-		#		
-		#		Normal (non-SSL)
+		# 
+		# Possible values are:
+		# 
+		# 0 = success
+		# 
+		# Normal (non-SSL)
 		# sockets:
-		#		1 = empty hostname
-		#		2 = DNS lookup failed
-		#		3 = DNS timeout
-		#		4 =
+		# 1 = empty hostname
+		# 2 = DNS lookup failed
+		# 3 = DNS timeout
+		# 4 =
 		# Aborted by application.
-		#		5 = Internal failure.
-		#		6 = Connect Timed Out
-		#		7 = Connect
+		# 5 = Internal failure.
+		# 6 = Connect Timed Out
+		# 7 = Connect
 		# Rejected (or failed for some other reason)
-		#		
-		#		SSL/TLS:
-		#		100 = TLS internal
+		# 
+		# SSL/TLS:
+		# 100 = TLS internal
 		# error.
-		#		101 = Failed to send client hello.
-		#		102 = Unexpected handshake message.
-		#		103
+		# 101 = Failed to send client hello.
+		# 102 = Unexpected handshake message.
+		# 103
 		# = Failed to read server hello.
-		#		104 = No server certificate.
-		#		105 = Unexpected TLS
+		# 104 = No server certificate.
+		# 105 = Unexpected TLS
 		# protocol version.
-		#		106 = Server certificate verify failed (the server certificate is expired or
+		# 106 = Server certificate verify failed (the server certificate is expired or
 		# the cert's signature verification failed).
-		#		107 = Unacceptable TLS protocol version.
-		#		109
+		# 107 = Unacceptable TLS protocol version.
+		# 109
 		# = Failed to read handshake messages.
-		#		110 = Failed to send client certificate handshake
+		# 110 = Failed to send client certificate handshake
 		# message.
-		#		111 = Failed to send client key exchange handshake message.
-		#		112 = Client
+		# 111 = Failed to send client key exchange handshake message.
+		# 112 = Client
 		# certificate's private key not accessible.
-		#		113 = Failed to send client cert verify handshake
+		# 113 = Failed to send client cert verify handshake
 		# message.
-		#		114 = Failed to send change cipher spec handshake message.
-		#		115 = Failed to send
+		# 114 = Failed to send change cipher spec handshake message.
+		# 115 = Failed to send
 		# finished handshake message.
-		#		116 = Server's Finished message is invalid.
+		# 116 = Server's Finished message is invalid.
 		#
 		#
 		# @return [Bignum]
@@ -117,13 +117,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -142,13 +142,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -165,13 +165,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -188,13 +188,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -208,7 +208,7 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		Specifies the time interval in milliseconds between AbortCheck events. A value of 0
+		# Specifies the time interval in milliseconds between AbortCheck events. A value of 0
 		# (the default) indicate that no AbortCheck events will fire. Any REST method can be aborted via the
 		# AbortCheck event.
 		#
@@ -219,13 +219,15 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		Specifies the time interval in milliseconds between AbortCheck events. A value of 0
+		# Specifies the time interval in milliseconds between AbortCheck events. A value of 0
 		# (the default) indicate that no AbortCheck events will fire. Any REST method can be aborted via the
 		# AbortCheck event.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# The value of the Host HTTP request header.
@@ -414,8 +416,8 @@ module Chilkat
 		# SetMultipartBodyBinary, SetMultipartBodyString, SetMultipartBodyStream, etc. The default is an empty
 		# string and indicates the top-level header. A string value of "1" would indicate the 1st sub-part in
 		# a multipart request. A string value of "1.2" would indicate the 2nd sub-part under the 1st sub-part.
-		# #		
-		#		It is unlikely you'll ever encounter the need for nested multipart requests (i.e. part
+		# # 
+		# It is unlikely you'll ever encounter the need for nested multipart requests (i.e. part
 		# selectors such as "1.2") Also, most REST requests are NOT multipart, and therefore this feature is
 		# rarely used. An example of a multipart REST request would be for a Google Drive upload, where the
 		# top-level Content-Type is multipart/related, the1st sub-part contains the JSON meta-data, and the
@@ -430,8 +432,8 @@ module Chilkat
 		# SetMultipartBodyBinary, SetMultipartBodyString, SetMultipartBodyStream, etc. The default is an empty
 		# string and indicates the top-level header. A string value of "1" would indicate the 1st sub-part in
 		# a multipart request. A string value of "1.2" would indicate the 2nd sub-part under the 1st sub-part.
-		# #		
-		#		It is unlikely you'll ever encounter the need for nested multipart requests (i.e. part
+		# # 
+		# It is unlikely you'll ever encounter the need for nested multipart requests (i.e. part
 		# selectors such as "1.2") Also, most REST requests are NOT multipart, and therefore this feature is
 		# rarely used. An example of a multipart REST request would be for a Google Drive upload, where the
 		# top-level Content-Type is multipart/related, the1st sub-part contains the JSON meta-data, and the
@@ -444,8 +446,8 @@ module Chilkat
 		# SetMultipartBodyBinary, SetMultipartBodyString, SetMultipartBodyStream, etc. The default is an empty
 		# string and indicates the top-level header. A string value of "1" would indicate the 1st sub-part in
 		# a multipart request. A string value of "1.2" would indicate the 2nd sub-part under the 1st sub-part.
-		# #		
-		#		It is unlikely you'll ever encounter the need for nested multipart requests (i.e. part
+		# # 
+		# It is unlikely you'll ever encounter the need for nested multipart requests (i.e. part
 		# selectors such as "1.2") Also, most REST requests are NOT multipart, and therefore this feature is
 		# rarely used. An example of a multipart REST request would be for a Google Drive upload, where the
 		# top-level Content-Type is multipart/related, the1st sub-part contains the JSON meta-data, and the
@@ -458,8 +460,8 @@ module Chilkat
 		# SetMultipartBodyBinary, SetMultipartBodyString, SetMultipartBodyStream, etc. The default is an empty
 		# string and indicates the top-level header. A string value of "1" would indicate the 1st sub-part in
 		# a multipart request. A string value of "1.2" would indicate the 2nd sub-part under the 1st sub-part.
-		# #		
-		#		It is unlikely you'll ever encounter the need for nested multipart requests (i.e. part
+		# # 
+		# It is unlikely you'll ever encounter the need for nested multipart requests (i.e. part
 		# selectors such as "1.2") Also, most REST requests are NOT multipart, and therefore this feature is
 		# rarely used. An example of a multipart REST request would be for a Google Drive upload, where the
 		# top-level Content-Type is multipart/related, the1st sub-part contains the JSON meta-data, and the
@@ -473,8 +475,8 @@ module Chilkat
 		# callbacks.) It determines whether percentage completion is tracked for the sending of the HTTP
 		# request, or for the downloading the HTTP response. The default value is _FALSE_, which is to measure
 		# the percent completion when receiving the response.
-		#		
-		#		For example: If the REST request is
+		# 
+		# For example: If the REST request is
 		# to download a file, then this property should remain at the default value of _FALSE_. If the REST
 		# request is to upload a file (using a Full* method), then set this property to _TRUE_. Also note if a
 		# server sends an HTTP response in the chunked encoding, it is not possible to measure percent
@@ -488,8 +490,8 @@ module Chilkat
 		# callbacks.) It determines whether percentage completion is tracked for the sending of the HTTP
 		# request, or for the downloading the HTTP response. The default value is _FALSE_, which is to measure
 		# the percent completion when receiving the response.
-		#		
-		#		For example: If the REST request is
+		# 
+		# For example: If the REST request is
 		# to download a file, then this property should remain at the default value of _FALSE_. If the REST
 		# request is to upload a file (using a Full* method), then set this property to _TRUE_. Also note if a
 		# server sends an HTTP response in the chunked encoding, it is not possible to measure percent
@@ -545,8 +547,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -555,8 +557,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -597,7 +599,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddHeader(name, value)
 			# ...
 		end
@@ -608,22 +610,22 @@ module Chilkat
 		# Computes the Amazon MWS signature using the ARG4 and adds the "Signature" parameter to the request.
 		# This method should be called for all Amazon Marketplace Web Service (Amazon MWS) HTTP requests. It
 		# should be called after all request parameters have been added.
-		#		
-		#		The ARG3 should be the
+		# 
+		# The ARG3 should be the
 		# domain of the request, such as one of the
 		# following:
-		#		
-		#		mws.amazonservices.com
-		#		mws-eu.amazonservices.com
-		#		mws.amazonservices.in
-		#		mws.amazonservices.com.cn
-		#		mws.amazonservices.jp
-		#		
-		#		The
+		# 
+		# mws.amazonservices.com
+		# mws-eu.amazonservices.com
+		# mws.amazonservices.in
+		# mws.amazonservices.com.cn
+		# mws.amazonservices.jp
+		# 
+		# The
 		# ARG1 should be the HTTP verb, such as "GET", "POST", etc. The ARG2 is the URI path, such as
 		# "/Feeds/2009-01-01". In general, the ARG1 and ARG2 should be identical to the 1st two args passed to
 		# methods such as FullRequestFormUrlEncoded.
-		#		Note: This method also automatically adds or
+		# Note: This method also automatically adds or
 		# replaces the existing Timestamp parameter to the current system date/time.
 		#
 		# @param httpVerb [String]
@@ -631,7 +633,7 @@ module Chilkat
 		# @param domain [String]
 		# @param mwsSecretKey [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddMwsSignature(httpVerb, uriPath, domain, mwsSecretKey)
 			# ...
 		end
@@ -644,7 +646,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddQueryParam(name, value)
 			# ...
 		end
@@ -657,7 +659,7 @@ module Chilkat
 		#
 		# @param queryString [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddQueryParams(queryString)
 			# ...
 		end
@@ -671,7 +673,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddQueryParamSb(name, value)
 			# ...
 		end
@@ -682,7 +684,7 @@ module Chilkat
 		# Removes all HTTP request headers.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ClearAllHeaders()
 			# ...
 		end
@@ -694,7 +696,7 @@ module Chilkat
 		# request after a multipart request has just been sent.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ClearAllParts()
 			# ...
 		end
@@ -705,7 +707,7 @@ module Chilkat
 		# Clears all query parameters.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ClearAllQueryParams()
 			# ...
 		end
@@ -716,7 +718,7 @@ module Chilkat
 		# Clears the response body stream set by calling SetResponseBodyStream.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ClearResponseBodyStream()
 			# ...
 		end
@@ -728,7 +730,7 @@ module Chilkat
 		# Both IPv4 and IPv6 addresses are supported. The ARG2 is the port, which is typically 80 or 443. If
 		# SSL/TLS is required, then ARG3 should be set to _TRUE_. The ARG4 indicates whether connection should
 		# automatically be established as needed for subsequent REST requests.
-		#		Note: This method is for
+		# Note: This method is for
 		# simple connections that do not require any proxies (HTTP or SOCKS), or SSH tunneling. If a proxy,
 		# SSH tunnel, or any other advanced socket feature is required, the Chilkat Socket API can be used to
 		# establish the connection. The UseConnection method can then be called to use the pre-established
@@ -739,7 +741,7 @@ module Chilkat
 		# @param tls [TrueClass, FalseClass]
 		# @param autoReconnect [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Connect(hostname, port, tls, autoReconnect)
 			# ...
 		end
@@ -754,7 +756,7 @@ module Chilkat
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Disconnect(maxWaitMs)
 			# ...
 		end
@@ -771,7 +773,7 @@ module Chilkat
 		# @param binData [CkBinData]
 		# @param responseBody [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestBd(httpVerb, uriPath, binData, responseBody)
 			# ...
 		end
@@ -782,7 +784,7 @@ module Chilkat
 		# Sends a complete REST request (header + body) and receives the full response. It is assumed that the
 		# request body is binary, and the response body is a string (such as JSON or XML). The response body
 		# is returned. 
-		#		This method is the equivalent of making the following calls in sequence:
+		# This method is the equivalent of making the following calls in sequence:
 		# SendReqBinaryBody, ReadResponseHeader, ReadRespBodyString.
 		#
 		# @param httpVerb [String]
@@ -790,7 +792,7 @@ module Chilkat
 		# @param bodyBytes [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestBinary(httpVerb, uriPath, bodyBytes, outStr)
 			# ...
 		end
@@ -801,14 +803,14 @@ module Chilkat
 		# Sends a complete REST request (header + body) and receives the full response. It is assumed that the
 		# request body is binary, and the response body is a string (such as JSON or XML). The response body
 		# is returned. 
-		#		This method is the equivalent of making the following calls in sequence:
+		# This method is the equivalent of making the following calls in sequence:
 		# SendReqBinaryBody, ReadResponseHeader, ReadRespBodyString.
 		#
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		# @param bodyBytes [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def fullRequestBinary(httpVerb, uriPath, bodyBytes)
 			# ...
 		end
@@ -819,7 +821,7 @@ module Chilkat
 		# Sends a complete application/x-www-form-urlencoded HTTP request and receives the full response. The
 		# request body is composed of the URL encoded query params. It is assumed that the response body is a
 		# string (such as JSON or XML). The response body is returned. 
-		#		This method is the equivalent of
+		# This method is the equivalent of
 		# making the following calls in sequence: SendReqFormUrlEncoded, ReadResponseHeader,
 		# ReadRespBodyString.
 		#
@@ -827,7 +829,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestFormUrlEncoded(httpVerb, uriPath, outStr)
 			# ...
 		end
@@ -838,14 +840,14 @@ module Chilkat
 		# Sends a complete application/x-www-form-urlencoded HTTP request and receives the full response. The
 		# request body is composed of the URL encoded query params. It is assumed that the response body is a
 		# string (such as JSON or XML). The response body is returned. 
-		#		This method is the equivalent of
+		# This method is the equivalent of
 		# making the following calls in sequence: SendReqFormUrlEncoded, ReadResponseHeader,
 		# ReadRespBodyString.
 		#
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def fullRequestFormUrlEncoded(httpVerb, uriPath)
 			# ...
 		end
@@ -855,14 +857,14 @@ module Chilkat
 		#
 		# Sends a complete multipart REST request (header + multipart body) and receives the full response. It
 		# is assumed that the response body is a string (such as JSON or XML). The response body is returned.
-		# #		This method is the equivalent of making the following calls in sequence: SendReqMultipart,
+		# # This method is the equivalent of making the following calls in sequence: SendReqMultipart,
 		# ReadResponseHeader, ReadRespBodyString.
 		#
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestMultipart(httpVerb, uriPath, outStr)
 			# ...
 		end
@@ -872,13 +874,13 @@ module Chilkat
 		#
 		# Sends a complete multipart REST request (header + multipart body) and receives the full response. It
 		# is assumed that the response body is a string (such as JSON or XML). The response body is returned.
-		# #		This method is the equivalent of making the following calls in sequence: SendReqMultipart,
+		# # This method is the equivalent of making the following calls in sequence: SendReqMultipart,
 		# ReadResponseHeader, ReadRespBodyString.
 		#
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def fullRequestMultipart(httpVerb, uriPath)
 			# ...
 		end
@@ -888,7 +890,7 @@ module Chilkat
 		#
 		# Sends a complete REST request and receives the full response. It is assumed that the response body
 		# is a string (such as JSON or XML). The response body is returned. 
-		#		This method is the
+		# This method is the
 		# equivalent of making the following calls in sequence: SendReqNoBody, ReadResponseHeader,
 		# ReadRespBodyString.
 		#
@@ -896,7 +898,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestNoBody(httpVerb, uriPath, outStr)
 			# ...
 		end
@@ -906,14 +908,14 @@ module Chilkat
 		#
 		# Sends a complete REST request and receives the full response. It is assumed that the response body
 		# is a string (such as JSON or XML). The response body is returned. 
-		#		This method is the
+		# This method is the
 		# equivalent of making the following calls in sequence: SendReqNoBody, ReadResponseHeader,
 		# ReadRespBodyString.
 		#
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def fullRequestNoBody(httpVerb, uriPath)
 			# ...
 		end
@@ -928,7 +930,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestNoBodyBd(httpVerb, uriPath, binData)
 			# ...
 		end
@@ -942,7 +944,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestNoBodySb(httpVerb, uriPath, sb)
 			# ...
 		end
@@ -959,7 +961,7 @@ module Chilkat
 		# @param requestBody [CkStringBuilder]
 		# @param responseBody [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestSb(httpVerb, uriPath, requestBody, responseBody)
 			# ...
 		end
@@ -969,7 +971,7 @@ module Chilkat
 		#
 		# Sends a complete REST request and receives the full response. It is assumed that the response body
 		# is a string (such as JSON or XML). The response body is returned. 
-		#		This method is the
+		# This method is the
 		# equivalent of making the following calls in sequence: SendReqStream, ReadResponseHeader,
 		# ReadRespBodyString.
 		#
@@ -978,7 +980,7 @@ module Chilkat
 		# @param stream [CkStream]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestStream(httpVerb, uriPath, stream, outStr)
 			# ...
 		end
@@ -988,7 +990,7 @@ module Chilkat
 		#
 		# Sends a complete REST request and receives the full response. It is assumed that the response body
 		# is a string (such as JSON or XML). The response body is returned. 
-		#		This method is the
+		# This method is the
 		# equivalent of making the following calls in sequence: SendReqStream, ReadResponseHeader,
 		# ReadRespBodyString.
 		#
@@ -996,7 +998,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param stream [CkStream]
 		#
-		# @return [String] 
+		# @return [String]
 		def fullRequestStream(httpVerb, uriPath, stream)
 			# ...
 		end
@@ -1007,7 +1009,7 @@ module Chilkat
 		# Sends a complete REST request (header + body string) and receives the full response. It is assumed
 		# that both the request and response bodies are strings (such as JSON or XML). The response body is
 		# returned. 
-		#		This method is the equivalent of making the following calls in sequence:
+		# This method is the equivalent of making the following calls in sequence:
 		# SendReqStringBody, ReadResponseHeader, ReadRespBodyString.
 		#
 		# @param httpVerb [String]
@@ -1015,7 +1017,7 @@ module Chilkat
 		# @param bodyText [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FullRequestString(httpVerb, uriPath, bodyText, outStr)
 			# ...
 		end
@@ -1026,14 +1028,14 @@ module Chilkat
 		# Sends a complete REST request (header + body string) and receives the full response. It is assumed
 		# that both the request and response bodies are strings (such as JSON or XML). The response body is
 		# returned. 
-		#		This method is the equivalent of making the following calls in sequence:
+		# This method is the equivalent of making the following calls in sequence:
 		# SendReqStringBody, ReadResponseHeader, ReadRespBodyString.
 		#
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		# @param bodyText [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def fullRequestString(httpVerb, uriPath, bodyText)
 			# ...
 		end
@@ -1048,7 +1050,7 @@ module Chilkat
 		#
 		# @param responseBody [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadRespBd(responseBody)
 			# ...
 		end
@@ -1062,7 +1064,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadRespBodyBinary(outBytes)
 			# ...
 		end
@@ -1077,7 +1079,7 @@ module Chilkat
 		# @param stream [CkStream]
 		# @param autoSetStreamCharset [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadRespBodyStream(stream, autoSetStreamCharset)
 			# ...
 		end
@@ -1091,7 +1093,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadRespBodyString(outStr)
 			# ...
 		end
@@ -1104,7 +1106,7 @@ module Chilkat
 		# etc.)
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def readRespBodyString()
 			# ...
 		end
@@ -1116,13 +1118,13 @@ module Chilkat
 		# the desired method to read the response body. Otherwise, the HTTP request / response is finished
 		# after reading the response header (such as for a GET request). The contents of the response header
 		# are available in various properties and methods.
-		#		
-		#		The HTTP response status code is
+		# 
+		# The HTTP response status code is
 		# returned (such as 200 for a typical success response). If an error occurred such that no response
 		# was received, then a value of -1 is returned.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def ReadResponseHeader()
 			# ...
 		end
@@ -1137,7 +1139,7 @@ module Chilkat
 		#
 		# @param responseBody [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadRespSb(responseBody)
 			# ...
 		end
@@ -1149,7 +1151,7 @@ module Chilkat
 		# redirect URL.
 		#
 		#
-		# @return [CkUrl] 
+		# @return [CkUrl]
 		def RedirectUrl()
 			# ...
 		end
@@ -1161,7 +1163,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveHeader(name)
 			# ...
 		end
@@ -1173,7 +1175,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveQueryParam(name)
 			# ...
 		end
@@ -1186,7 +1188,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ResponseHdrByName(name, outStr)
 			# ...
 		end
@@ -1198,7 +1200,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def responseHdrByName(name)
 			# ...
 		end
@@ -1212,7 +1214,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ResponseHdrName(index, outStr)
 			# ...
 		end
@@ -1225,7 +1227,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def responseHdrName(index)
 			# ...
 		end
@@ -1239,7 +1241,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ResponseHdrValue(index, outStr)
 			# ...
 		end
@@ -1252,7 +1254,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def responseHdrValue(index)
 			# ...
 		end
@@ -1264,7 +1266,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1280,7 +1282,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param body [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqBd(httpVerb, uriPath, body)
 			# ...
 		end
@@ -1296,7 +1298,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param body [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqBinaryBody(httpVerb, uriPath, body)
 			# ...
 		end
@@ -1312,7 +1314,7 @@ module Chilkat
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqFormUrlEncoded(httpVerb, uriPath)
 			# ...
 		end
@@ -1326,7 +1328,7 @@ module Chilkat
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqMultipart(httpVerb, uriPath)
 			# ...
 		end
@@ -1340,7 +1342,7 @@ module Chilkat
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqNoBody(httpVerb, uriPath)
 			# ...
 		end
@@ -1356,7 +1358,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param bodySb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqSb(httpVerb, uriPath, bodySb)
 			# ...
 		end
@@ -1372,7 +1374,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param stream [CkStream]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqStreamBody(httpVerb, uriPath, stream)
 			# ...
 		end
@@ -1388,7 +1390,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param bodyText [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SendReqStringBody(httpVerb, uriPath, bodyText)
 			# ...
 		end
@@ -1402,7 +1404,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthAws]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAuthAws(authProvider)
 			# ...
 		end
@@ -1414,7 +1416,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthAzureAD]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAuthAzureAD(authProvider)
 			# ...
 		end
@@ -1428,7 +1430,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthAzureSAS]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAuthAzureSas(authProvider)
 			# ...
 		end
@@ -1440,7 +1442,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthAzureStorage]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAuthAzureStorage(authProvider)
 			# ...
 		end
@@ -1457,7 +1459,7 @@ module Chilkat
 		# @param username [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAuthBasic(username, password)
 			# ...
 		end
@@ -1469,7 +1471,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthGoogle]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAuthGoogle(authProvider)
 			# ...
 		end
@@ -1484,7 +1486,7 @@ module Chilkat
 		# @param authProvider [CkOAuth1]
 		# @param useQueryParams [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAuthOAuth1(authProvider, useQueryParams)
 			# ...
 		end
@@ -1499,7 +1501,7 @@ module Chilkat
 		#
 		# @param authProvider [CkOAuth2]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetAuthOAuth2(authProvider)
 			# ...
 		end
@@ -1512,7 +1514,7 @@ module Chilkat
 		#
 		# @param bodyData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodyBd(bodyData)
 			# ...
 		end
@@ -1525,7 +1527,7 @@ module Chilkat
 		#
 		# @param bodyData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodyBinary(bodyData)
 			# ...
 		end
@@ -1538,7 +1540,7 @@ module Chilkat
 		#
 		# @param bodySb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodySb(bodySb)
 			# ...
 		end
@@ -1551,7 +1553,7 @@ module Chilkat
 		#
 		# @param stream [CkStream]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodyStream(stream)
 			# ...
 		end
@@ -1564,7 +1566,7 @@ module Chilkat
 		#
 		# @param bodyText [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetMultipartBodyString(bodyText)
 			# ...
 		end
@@ -1575,13 +1577,13 @@ module Chilkat
 		# Only applies to the Full* methods, such as FullRequestNoBody, FullRequestBinary, FullRequestStream,
 		# etc. When set, the response body is streamed directly to ARG3, if (and only if) the HTTP response
 		# status code equals ARG1. 
-		#		
-		#		If the response body was streamed to ARG3, then the string
+		# 
+		# If the response body was streamed to ARG3, then the string
 		# return value of the Full* method instead becomes "OK" for success. If an attempt was made to stream
 		# the response body but it failed, then "FAIL" is returned. If the response body was not streamed
 		# because the response status code was not equal to ARG1, then the returned string contains the
 		# server's error response.
-		#		
+		# 
 		# If ARG2 is _TRUE_, then the ARG1's StringCharset property will
 		# automatically get set based on the charset, if any, indicated in the response header. If the
 		# response is binary, then ARG2 is ignored.
@@ -1590,7 +1592,7 @@ module Chilkat
 		# @param autoSetStreamCharset [TrueClass, FalseClass]
 		# @param responseStream [CkStream]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetResponseBodyStream(expectedStatus, autoSetStreamCharset, responseStream)
 			# ...
 		end
@@ -1602,11 +1604,11 @@ module Chilkat
 		# socket. It may be a TLS connection, an unencrypted connection, through an HTTP proxy, a SOCKS proxy,
 		# or even through SSH tunnels. All of the connection related functionality is handled by the Chilkat
 		# Socket API.
-		#		
-		#		The ARG2 indicates whether connection should automatically be established
+		# 
+		# The ARG2 indicates whether connection should automatically be established
 		# as needed for subsequent REST requests.
-		#		
-		#		Important: The UseConnection method is provided
+		# 
+		# Important: The UseConnection method is provided
 		# as a means for handling more complicated connections -- such as connections through proxies,
 		# tunnels, etc. If your application is connecting directly to the HTTP server, then simply call this
 		# class's Connect method.
@@ -1614,7 +1616,7 @@ module Chilkat
 		# @param connection [CkSocket]
 		# @param autoReconnect [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseConnection(connection, autoReconnect)
 			# ...
 		end

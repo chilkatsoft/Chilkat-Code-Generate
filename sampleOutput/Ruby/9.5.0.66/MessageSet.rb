@@ -57,8 +57,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -67,8 +67,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -82,7 +82,7 @@ module Chilkat
 		#
 		# @param msgId [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ContainsId(msgId)
 			# ...
 		end
@@ -91,20 +91,20 @@ module Chilkat
 		# Method: FromCompactString
 		#
 		# Loads the message set from a compact-string representation.
-		#		Here are some
+		# Here are some
 		# examples:
-		#		
-		#		
-		#		Non-Compact StringCompact
+		# 
+		# 
+		# Non-Compact StringCompact
 		# String
-		#		1,2,3,4,51:5
-		#		1,2,3,4,5,8,9,101:5,8:10
-		#		1,3,4,5,8,9,101,3:5,8:10
+		# 1,2,3,4,51:5
+		# 1,2,3,4,5,8,9,101:5,8:10
+		# 1,3,4,5,8,9,101,3:5,8:10
 		#
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromCompactString(str)
 			# ...
 		end
@@ -117,7 +117,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetId(index)
 			# ...
 		end
@@ -129,7 +129,7 @@ module Chilkat
 		#
 		# @param id [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def InsertId(id)
 			# ...
 		end
@@ -141,7 +141,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -153,7 +153,7 @@ module Chilkat
 		#
 		# @param id [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveId(id)
 			# ...
 		end
@@ -165,7 +165,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToCommaSeparatedStr(outStr)
 			# ...
 		end
@@ -176,7 +176,7 @@ module Chilkat
 		# Returns a string of comma-separated message IDs. (This is the non-compact string format.)
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toCommaSeparatedStr()
 			# ...
 		end
@@ -185,20 +185,20 @@ module Chilkat
 		# Method: ToCompactString
 		#
 		# Returns the set of message IDs represented as a compact string.
-		#		Here are some
+		# Here are some
 		# examples:
-		#		
-		#		
-		#		Non-Compact StringCompact
+		# 
+		# 
+		# Non-Compact StringCompact
 		# String
-		#		1,2,3,4,51:5
-		#		1,2,3,4,5,8,9,101:5,8:10
-		#		1,3,4,5,8,9,101,3:5,8:10
+		# 1,2,3,4,51:5
+		# 1,2,3,4,5,8,9,101:5,8:10
+		# 1,3,4,5,8,9,101,3:5,8:10
 		#
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToCompactString(outStr)
 			# ...
 		end
@@ -207,19 +207,19 @@ module Chilkat
 		# Method: ToCompactString
 		#
 		# Returns the set of message IDs represented as a compact string.
-		#		Here are some
+		# Here are some
 		# examples:
-		#		
-		#		
-		#		Non-Compact StringCompact
+		# 
+		# 
+		# Non-Compact StringCompact
 		# String
-		#		1,2,3,4,51:5
-		#		1,2,3,4,5,8,9,101:5,8:10
-		#		1,3,4,5,8,9,101,3:5,8:10
+		# 1,2,3,4,51:5
+		# 1,2,3,4,5,8,9,101:5,8:10
+		# 1,3,4,5,8,9,101,3:5,8:10
 		#
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toCompactString()
 			# ...
 		end

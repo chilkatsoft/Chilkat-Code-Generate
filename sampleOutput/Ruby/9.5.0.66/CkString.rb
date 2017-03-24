@@ -106,7 +106,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def AnsiCharAt(index)
 			# ...
 		end
@@ -118,7 +118,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Append(str)
 			# ...
 		end
@@ -130,7 +130,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def append(str)
 			# ...
 		end
@@ -143,7 +143,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendAnsi(str)
 			# ...
 		end
@@ -155,7 +155,7 @@ module Chilkat
 		#
 		# @param c [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendChar(c)
 			# ...
 		end
@@ -168,7 +168,7 @@ module Chilkat
 		# example: "Fri, 27 Jul 2012 17:41:41 -0500"
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendCurrentDateRfc822()
 			# ...
 		end
@@ -180,7 +180,7 @@ module Chilkat
 		#
 		# @param dt [Object]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AppendDateRfc3339(dt)
 			# ...
 		end
@@ -192,7 +192,7 @@ module Chilkat
 		#
 		# @param dateTime [Object]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AppendDateRfc822(dateTime)
 			# ...
 		end
@@ -204,7 +204,7 @@ module Chilkat
 		#
 		# @param dateTime [Object]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendDateRfc822(dateTime)
 			# ...
 		end
@@ -216,7 +216,7 @@ module Chilkat
 		#
 		# @param dateTime [Object]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendDateRfc822Gmt(dateTime)
 			# ...
 		end
@@ -231,7 +231,7 @@ module Chilkat
 		# @param str [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendEnc(str, charsetEncoding)
 			# ...
 		end
@@ -242,15 +242,15 @@ module Chilkat
 		# Appends characters from an encoded string. The encoding may be "base64", "hex", "url", or
 		# "quoted-printable". For example, to append "ABC 123" from a URL-encoded string,
 		# call:
-		#		
-		#		strObj.AppendEncoded("ABC+123","url","iso-8859-1")
+		# 
+		# strObj.AppendEncoded("ABC+123","url","iso-8859-1")
 		#
 		#
 		# @param str [String]
 		# @param encoding [String]
 		# @param charset [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AppendEncoded(str, encoding, charset)
 			# ...
 		end
@@ -264,7 +264,7 @@ module Chilkat
 		# @param byteData [Object]
 		# @param numBytes [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendHexData(byteData, numBytes)
 			# ...
 		end
@@ -276,7 +276,7 @@ module Chilkat
 		#
 		# @param n [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendInt(n)
 			# ...
 		end
@@ -287,12 +287,12 @@ module Chilkat
 		# For many Win32 Platform SDK functions, such as CreateFile, error information must be retrieved by
 		# using the Win32 functions GetLastError and FormatMessage. This method calls these Win32 functions to
 		# format the error and appends it to the string.
-		#		
-		#		This method would only be used by Win32
+		# 
+		# This method would only be used by Win32
 		# applications that call Platform SDK functions.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendLastWindowsError()
 			# ...
 		end
@@ -306,7 +306,7 @@ module Chilkat
 		# @param mbtext [CkByteData]
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AppendMultibyte(mbtext, charsetEncoding)
 			# ...
 		end
@@ -323,7 +323,7 @@ module Chilkat
 		# @param str [String]
 		# @param numBytes [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendN(str, numBytes)
 			# ...
 		end
@@ -338,7 +338,7 @@ module Chilkat
 		# @param wideStr [String]
 		# @param numChars [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendNU(wideStr, numChars)
 			# ...
 		end
@@ -347,17 +347,17 @@ module Chilkat
 		# Method: appendObfuscated
 		#
 		# Unobfuscates and appends ARG1 to the end of this instance. 
-		#		
-		#		The Chilkat string
+		# 
+		# The Chilkat string
 		# obfuscation algorithm works by taking the utf-8 bytes of the string, base64 encoding it,
-		#		and
+		# and
 		# then scrambling the letters of the base64 encoded string. It is deterministic in that the same
 		# string will always obfuscate to the same result. It is not a secure way of encrypting a string. It
 		# is only meant to be a simple means of transforming a string into something unintelligible.
 		#
 		# @param obfuscatedStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendObfuscated(obfuscatedStr)
 			# ...
 		end
@@ -373,7 +373,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param encoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendRandom(numBytes, encoding)
 			# ...
 		end
@@ -385,7 +385,7 @@ module Chilkat
 		#
 		# @param strObj [CkString]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendStr(strObj)
 			# ...
 		end
@@ -399,7 +399,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendToFile(path, charsetEncoding)
 			# ...
 		end
@@ -411,7 +411,7 @@ module Chilkat
 		#
 		# @param unicode [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendU(unicode)
 			# ...
 		end
@@ -424,7 +424,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendUtf8(str)
 			# ...
 		end
@@ -438,7 +438,7 @@ module Chilkat
 		# are not modified.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def autoLinkUrls()
 			# ...
 		end
@@ -451,7 +451,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def base64Decode(charsetEncoding)
 			# ...
 		end
@@ -463,7 +463,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def base64DecodeW(charsetEncoding)
 			# ...
 		end
@@ -477,7 +477,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def base64Encode(charsetEncoding)
 			# ...
 		end
@@ -489,7 +489,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def base64EncodeW(charsetEncoding)
 			# ...
 		end
@@ -502,7 +502,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BeginsWith(str)
 			# ...
 		end
@@ -514,7 +514,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def beginsWith(substr)
 			# ...
 		end
@@ -527,7 +527,7 @@ module Chilkat
 		#
 		# @param strObj [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def beginsWithStr(strObj)
 			# ...
 		end
@@ -539,7 +539,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def beginsWithW(str)
 			# ...
 		end
@@ -551,7 +551,7 @@ module Chilkat
 		#
 		# @param idx [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def charAt(idx)
 			# ...
 		end
@@ -563,7 +563,7 @@ module Chilkat
 		#
 		# @param idx [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def charAtU(idx)
 			# ...
 		end
@@ -575,7 +575,7 @@ module Chilkat
 		#
 		# @param findStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ChopAfter(findStr)
 			# ...
 		end
@@ -587,7 +587,7 @@ module Chilkat
 		#
 		# @param ch [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def chopAtFirstChar(ch)
 			# ...
 		end
@@ -600,7 +600,7 @@ module Chilkat
 		#
 		# @param subStrObj [CkString]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def chopAtStr(subStrObj)
 			# ...
 		end
@@ -613,7 +613,7 @@ module Chilkat
 		#
 		# @param findStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ChopBefore(findStr)
 			# ...
 		end
@@ -624,7 +624,7 @@ module Chilkat
 		# Clears the string. The string contains 0 characters after calling this method.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def clear()
 			# ...
 		end
@@ -635,7 +635,7 @@ module Chilkat
 		# Clears the string. After calling this method, the string contains 0 characters.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -647,7 +647,7 @@ module Chilkat
 		# Chilkat method, the returned CkString object must be deleted by the calling application.
 		#
 		#
-		# @return [CkString] 
+		# @return [CkString]
 		def clone()
 			# ...
 		end
@@ -661,7 +661,7 @@ module Chilkat
 		#
 		# @param str [CkString]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def compareStr(str)
 			# ...
 		end
@@ -673,7 +673,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Contains(substr)
 			# ...
 		end
@@ -686,7 +686,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def containsSubstring(substr)
 			# ...
 		end
@@ -698,7 +698,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def containsSubstringNoCase(substr)
 			# ...
 		end
@@ -710,7 +710,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def containsSubstringNoCaseW(substr)
 			# ...
 		end
@@ -722,7 +722,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def containsSubstringW(substr)
 			# ...
 		end
@@ -734,7 +734,7 @@ module Chilkat
 		#
 		# @param ch [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def countCharOccurances(ch)
 			# ...
 		end
@@ -745,7 +745,7 @@ module Chilkat
 		# Decodes XML special characters. For example, &amp;lt; is converted to '<'
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def decodeXMLSpecial()
 			# ...
 		end
@@ -756,7 +756,7 @@ module Chilkat
 		# Converts the string to a double and returns the value.
 		#
 		#
-		# @return [Float] 
+		# @return [Float]
 		def doubleValue()
 			# ...
 		end
@@ -769,7 +769,7 @@ module Chilkat
 		# @param ansiChar [String]
 		# @param startIndex [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def eliminateChar(ansiChar, startIndex)
 			# ...
 		end
@@ -782,7 +782,7 @@ module Chilkat
 		# @param charsetEncoding [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EmitMultibyte(charsetEncoding, outBytes)
 			# ...
 		end
@@ -793,7 +793,7 @@ module Chilkat
 		# Encodes XML special characters. For example, '<' is converted to &amp;lt;
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def encodeXMLSpecial()
 			# ...
 		end
@@ -805,7 +805,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def endsWith(substr)
 			# ...
 		end
@@ -817,7 +817,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EndsWith(substr)
 			# ...
 		end
@@ -829,7 +829,7 @@ module Chilkat
 		#
 		# @param substrObj [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def endsWithStr(substrObj)
 			# ...
 		end
@@ -841,7 +841,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def endsWithW(s)
 			# ...
 		end
@@ -852,7 +852,7 @@ module Chilkat
 		# Decodes any HTML entities found within the string, replacing them with the characters represented.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def entityDecode()
 			# ...
 		end
@@ -863,7 +863,7 @@ module Chilkat
 		# HTML encodes any characters that are special to HTML or cannot be represented by 7-bit us-ascii.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def entityEncode()
 			# ...
 		end
@@ -875,7 +875,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def equals(str)
 			# ...
 		end
@@ -887,7 +887,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def equalsIgnoreCase(str)
 			# ...
 		end
@@ -899,7 +899,7 @@ module Chilkat
 		#
 		# @param strObj [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def equalsIgnoreCaseStr(strObj)
 			# ...
 		end
@@ -911,7 +911,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def equalsIgnoreCaseW(s)
 			# ...
 		end
@@ -923,7 +923,7 @@ module Chilkat
 		#
 		# @param strObj [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def equalsStr(strObj)
 			# ...
 		end
@@ -935,7 +935,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def equalsW(s)
 			# ...
 		end
@@ -949,7 +949,7 @@ module Chilkat
 		#
 		# @param idx [Fixnum]
 		#
-		# @return [CkString] 
+		# @return [CkString]
 		def getChar(idx)
 			# ...
 		end
@@ -962,7 +962,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEnc(encoding)
 			# ...
 		end
@@ -972,31 +972,31 @@ module Chilkat
 		#
 		# Returns the character string in an encoding use the ARG2 specified. The ARG1 may be "base64", "hex",
 		# "url", or "quoted-printable". For example:
-		#		
-		#		(Visual Basic 6.0)
-		#		
-		#		Dim s As New
+		# 
+		# (Visual Basic 6.0)
+		# 
+		# Dim s As New
 		# CkString
-		#		
-		#		s.Str = "Ã¨Ã¨Ã¨"
-		#		Text1.Text = s.GetEncoded("hex", "iso-8859-1") &
+		# 
+		# s.Str = "Ã¨Ã¨Ã¨"
+		# Text1.Text = s.GetEncoded("hex", "iso-8859-1") &
 		# vbCrLf
-		#		Text1.Text = Text.Text & s.GetEncoded("hex", "utf-8") & vbCrLf
-		#		Text1.Text =
+		# Text1.Text = Text.Text & s.GetEncoded("hex", "utf-8") & vbCrLf
+		# Text1.Text =
 		# Text1.Text & s.GetEncoded("hex",
 		# "unicode")
-		#		
-		#		'Output:
-		#		'E8E8E8
-		#		'C3A8C3A8C3A8
-		#		'E800E800E800
+		# 
+		# 'Output:
+		# 'E8E8E8
+		# 'C3A8C3A8C3A8
+		# 'E800E800E800
 		#
 		#
 		# @param binaryEncoding [String]
 		# @param charsetEncoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncoded(binaryEncoding, charsetEncoding, outStr)
 			# ...
 		end
@@ -1006,30 +1006,30 @@ module Chilkat
 		#
 		# Returns the character string in an encoding use the ARG2 specified. The ARG1 may be "base64", "hex",
 		# "url", or "quoted-printable". For example:
-		#		
-		#		(Visual Basic 6.0)
-		#		
-		#		Dim s As New
+		# 
+		# (Visual Basic 6.0)
+		# 
+		# Dim s As New
 		# CkString
-		#		
-		#		s.Str = "Ã¨Ã¨Ã¨"
-		#		Text1.Text = s.GetEncoded("hex", "iso-8859-1") &
+		# 
+		# s.Str = "Ã¨Ã¨Ã¨"
+		# Text1.Text = s.GetEncoded("hex", "iso-8859-1") &
 		# vbCrLf
-		#		Text1.Text = Text.Text & s.GetEncoded("hex", "utf-8") & vbCrLf
-		#		Text1.Text =
+		# Text1.Text = Text.Text & s.GetEncoded("hex", "utf-8") & vbCrLf
+		# Text1.Text =
 		# Text1.Text & s.GetEncoded("hex",
 		# "unicode")
-		#		
-		#		'Output:
-		#		'E8E8E8
-		#		'C3A8C3A8C3A8
-		#		'E800E800E800
+		# 
+		# 'Output:
+		# 'E8E8E8
+		# 'C3A8C3A8C3A8
+		# 'E800E800E800
 		#
 		#
 		# @param binaryEncoding [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncoded(binaryEncoding, charsetEncoding)
 			# ...
 		end
@@ -1040,7 +1040,7 @@ module Chilkat
 		# Returns the number of characters in the string.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getNumChars()
 			# ...
 		end
@@ -1051,7 +1051,7 @@ module Chilkat
 		# Returns the size, in bytes, of the ANSI encoding of the string.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getSizeAnsi()
 			# ...
 		end
@@ -1062,7 +1062,7 @@ module Chilkat
 		# Returns the size, in bytes, of the Unicode encoding of the string.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getSizeUnicode()
 			# ...
 		end
@@ -1073,7 +1073,7 @@ module Chilkat
 		# Returns the size, in bytes, of the utf-8 encoding of the string.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getSizeUtf8()
 			# ...
 		end
@@ -1084,7 +1084,7 @@ module Chilkat
 		# Returns the contents of this instance.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getString()
 			# ...
 		end
@@ -1095,7 +1095,7 @@ module Chilkat
 		# Returns the string as null-terminated ANSI.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getStringAnsi()
 			# ...
 		end
@@ -1106,7 +1106,7 @@ module Chilkat
 		# Returns the string as null-terminated utf-8.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getStringUtf8()
 			# ...
 		end
@@ -1117,7 +1117,7 @@ module Chilkat
 		# Return a pointer to memory containing the string in Unicode.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getUnicode()
 			# ...
 		end
@@ -1129,7 +1129,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def hexDecode(charsetEncoding)
 			# ...
 		end
@@ -1141,7 +1141,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def hexDecodeW(charsetEncoding)
 			# ...
 		end
@@ -1154,7 +1154,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def hexEncode(charsetEncoding)
 			# ...
 		end
@@ -1166,7 +1166,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def hexEncodeW(charsetEncoding)
 			# ...
 		end
@@ -1177,7 +1177,7 @@ module Chilkat
 		# Decodes any HTML entities found in the string.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def HtmlEntityDecode()
 			# ...
 		end
@@ -1189,7 +1189,7 @@ module Chilkat
 		# encoding.)
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def HtmlEntityEncode()
 			# ...
 		end
@@ -1201,7 +1201,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def indexOf(substr)
 			# ...
 		end
@@ -1213,7 +1213,7 @@ module Chilkat
 		#
 		# @param substrObj [CkString]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def indexOfStr(substrObj)
 			# ...
 		end
@@ -1225,7 +1225,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def indexOfW(s)
 			# ...
 		end
@@ -1236,7 +1236,7 @@ module Chilkat
 		# Converts the string to an integer and returns the integer value.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def intValue()
 			# ...
 		end
@@ -1247,7 +1247,7 @@ module Chilkat
 		# Returns _TRUE_ if the string object is empty, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def isEmpty()
 			# ...
 		end
@@ -1258,7 +1258,7 @@ module Chilkat
 		# Returns the ASCII value of the last character in the string.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def LastAnsiChar()
 			# ...
 		end
@@ -1269,7 +1269,7 @@ module Chilkat
 		# Returns the last ANSI character in the string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def lastChar()
 			# ...
 		end
@@ -1282,7 +1282,7 @@ module Chilkat
 		# @param numChars [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Left(numChars, outStr)
 			# ...
 		end
@@ -1294,7 +1294,7 @@ module Chilkat
 		#
 		# @param numChars [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def left(numChars)
 			# ...
 		end
@@ -1305,7 +1305,7 @@ module Chilkat
 		# Returns the length, in characters, of the string.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def Length()
 			# ...
 		end
@@ -1320,7 +1320,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def loadFile(path, charsetEncoding)
 			# ...
 		end
@@ -1335,7 +1335,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFile(path, charsetEncoding)
 			# ...
 		end
@@ -1348,7 +1348,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def loadFileW(path, charsetEncoding)
 			# ...
 		end
@@ -1365,7 +1365,7 @@ module Chilkat
 		#
 		# @param xmlDocumentBytes [CkByteData]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LoadXmlDoc(xmlDocumentBytes)
 			# ...
 		end
@@ -1381,7 +1381,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def loadXmlFile(path)
 			# ...
 		end
@@ -1395,7 +1395,7 @@ module Chilkat
 		# @param strPattern [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Matches(strPattern, caseSensitive)
 			# ...
 		end
@@ -1408,7 +1408,7 @@ module Chilkat
 		#
 		# @param strPattern [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def matches(strPattern)
 			# ...
 		end
@@ -1421,7 +1421,7 @@ module Chilkat
 		#
 		# @param strPattern [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def matchesNoCase(strPattern)
 			# ...
 		end
@@ -1433,7 +1433,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def matchesNoCaseW(s)
 			# ...
 		end
@@ -1447,7 +1447,7 @@ module Chilkat
 		#
 		# @param strPatternObj [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def matchesStr(strPatternObj)
 			# ...
 		end
@@ -1459,7 +1459,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def matchesW(s)
 			# ...
 		end
@@ -1474,7 +1474,7 @@ module Chilkat
 		# @param numChars [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Mid(index, numChars, outStr)
 			# ...
 		end
@@ -1488,7 +1488,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param numChars [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def mid(index, numChars)
 			# ...
 		end
@@ -1504,7 +1504,7 @@ module Chilkat
 		# contents of the string, copy the string to the new internal buffer, and deallocate the old buffer.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def minimizeMemory()
 			# ...
 		end
@@ -1514,16 +1514,16 @@ module Chilkat
 		#
 		# Obfuscates the string. (The unobfuscate method can be called to reverse the obfuscation to restore
 		# the original string.)
-		#		
-		#		The Chilkat string obfuscation algorithm works by taking the
+		# 
+		# The Chilkat string obfuscation algorithm works by taking the
 		# utf-8 bytes of the string, base64 encoding it,
-		#		and then scrambling the letters of the base64
+		# and then scrambling the letters of the base64
 		# encoded string. It is deterministic in that the same string will always obfuscate to the same
 		# result. It is not a secure way of encrypting a string. It is only meant to be a simple means of
 		# transforming a string into something unintelligible.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def obfuscate()
 			# ...
 		end
@@ -1534,7 +1534,7 @@ module Chilkat
 		# Converts the date string (in RFC 3339 format) to a Date type.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ParseDateRfc3339()
 			# ...
 		end
@@ -1545,7 +1545,7 @@ module Chilkat
 		# Converts the date string (in RFC 822 format) to a Date type.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ParseDateRfc822()
 			# ...
 		end
@@ -1556,7 +1556,7 @@ module Chilkat
 		# Pluralizes an English word.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Pluralize()
 			# ...
 		end
@@ -1568,7 +1568,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def prepend(str)
 			# ...
 		end
@@ -1580,7 +1580,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Prepend(str)
 			# ...
 		end
@@ -1592,7 +1592,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def prependW(s)
 			# ...
 		end
@@ -1603,7 +1603,7 @@ module Chilkat
 		# In-place decodes the string from punycode.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def punyDecode()
 			# ...
 		end
@@ -1614,7 +1614,7 @@ module Chilkat
 		# In-place decodes the string from punycode.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def PunyDecode()
 			# ...
 		end
@@ -1625,7 +1625,7 @@ module Chilkat
 		# In-place encodes the string to punycode.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def PunyEncode()
 			# ...
 		end
@@ -1636,7 +1636,7 @@ module Chilkat
 		# In-place encodes the string to punycode.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def punyEncode()
 			# ...
 		end
@@ -1649,7 +1649,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def qpDecode(charsetEncoding)
 			# ...
 		end
@@ -1661,7 +1661,7 @@ module Chilkat
 		#
 		# @param charset [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def qpDecodeW(charset)
 			# ...
 		end
@@ -1674,7 +1674,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def qpEncode(charsetEncoding)
 			# ...
 		end
@@ -1686,7 +1686,7 @@ module Chilkat
 		#
 		# @param charset [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def qpEncodeW(charset)
 			# ...
 		end
@@ -1698,7 +1698,7 @@ module Chilkat
 		#
 		# @param substr [CkString]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def removeAll(substr)
 			# ...
 		end
@@ -1710,7 +1710,7 @@ module Chilkat
 		#
 		# @param ch [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveAnsiChar(ch)
 			# ...
 		end
@@ -1722,7 +1722,7 @@ module Chilkat
 		#
 		# @param ch [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def removeCharOccurances(ch)
 			# ...
 		end
@@ -1735,7 +1735,7 @@ module Chilkat
 		# @param charStartPos [Fixnum]
 		# @param numChars [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def removeChunk(charStartPos, numChars)
 			# ...
 		end
@@ -1749,7 +1749,7 @@ module Chilkat
 		# @param endDelim [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def removeDelimited(beginDelim, endDelim, caseSensitive)
 			# ...
 		end
@@ -1761,7 +1761,7 @@ module Chilkat
 		#
 		# @param substr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def removeFirst(substr)
 			# ...
 		end
@@ -1775,7 +1775,7 @@ module Chilkat
 		# @param findStrObj [CkString]
 		# @param replaceStrObj [CkString]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def replaceAll(findStrObj, replaceStrObj)
 			# ...
 		end
@@ -1788,7 +1788,7 @@ module Chilkat
 		# @param findStr [String]
 		# @param replaceStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ReplaceAll(findStr, replaceStr)
 			# ...
 		end
@@ -1802,7 +1802,7 @@ module Chilkat
 		# @param findStr [String]
 		# @param replaceStr [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def replaceAllOccurances(findStr, replaceStr)
 			# ...
 		end
@@ -1815,7 +1815,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param replacement [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def replaceAllOccurancesW(pattern, replacement)
 			# ...
 		end
@@ -1828,7 +1828,7 @@ module Chilkat
 		# @param findCh [Fixnum]
 		# @param replaceCh [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ReplaceAnsiChar(findCh, replaceCh)
 			# ...
 		end
@@ -1841,7 +1841,7 @@ module Chilkat
 		# @param findCh [String]
 		# @param replaceCh [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def replaceChar(findCh, replaceCh)
 			# ...
 		end
@@ -1855,7 +1855,7 @@ module Chilkat
 		# @param findStrObj [CkString]
 		# @param replaceStrObj [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def replaceFirst(findStrObj, replaceStrObj)
 			# ...
 		end
@@ -1868,7 +1868,7 @@ module Chilkat
 		# @param findStr [String]
 		# @param replaceStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ReplaceFirst(findStr, replaceStr)
 			# ...
 		end
@@ -1883,7 +1883,7 @@ module Chilkat
 		# @param findStr [String]
 		# @param replaceStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def replaceFirstOccurance(findStr, replaceStr)
 			# ...
 		end
@@ -1897,7 +1897,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param replacement [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def replaceFirstOccuranceW(pattern, replacement)
 			# ...
 		end
@@ -1910,7 +1910,7 @@ module Chilkat
 		# @param numChars [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Right(numChars, outStr)
 			# ...
 		end
@@ -1922,7 +1922,7 @@ module Chilkat
 		#
 		# @param numChars [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def right(numChars)
 			# ...
 		end
@@ -1937,7 +1937,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToFile(path, charsetEncoding)
 			# ...
 		end
@@ -1953,7 +1953,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def saveToFile(path, charsetEncoding)
 			# ...
 		end
@@ -1966,7 +1966,7 @@ module Chilkat
 		# @param path [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def saveToFileW(path, charset)
 			# ...
 		end
@@ -1978,7 +1978,7 @@ module Chilkat
 		#
 		# @param s [CkString]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def setStr(s)
 			# ...
 		end
@@ -1990,7 +1990,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def setString(str)
 			# ...
 		end
@@ -2002,7 +2002,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def setStringAnsi(s)
 			# ...
 		end
@@ -2014,7 +2014,7 @@ module Chilkat
 		#
 		# @param unicode [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def setStringU(unicode)
 			# ...
 		end
@@ -2026,7 +2026,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def setStringUtf8(s)
 			# ...
 		end
@@ -2038,7 +2038,7 @@ module Chilkat
 		#
 		# @param n [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def shorten(n)
 			# ...
 		end
@@ -2050,7 +2050,7 @@ module Chilkat
 		#
 		# @param numChars [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Shorten(numChars)
 			# ...
 		end
@@ -2068,7 +2068,7 @@ module Chilkat
 		# @param exceptEscaped [TrueClass, FalseClass]
 		# @param keepEmpty [TrueClass, FalseClass]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def split(delimiterChar, exceptDoubleQuoted, exceptEscaped, keepEmpty)
 			# ...
 		end
@@ -2083,7 +2083,7 @@ module Chilkat
 		# @param exceptEscaped [TrueClass, FalseClass]
 		# @param keepEmpty [TrueClass, FalseClass]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def split2(delimiterChars, exceptDoubleQuoted, exceptEscaped, keepEmpty)
 			# ...
 		end
@@ -2098,7 +2098,7 @@ module Chilkat
 		# @param exceptEscaped [TrueClass, FalseClass]
 		# @param keepEmpty [TrueClass, FalseClass]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def split2W(splitCharSet, exceptDoubleQuoted, exceptEscaped, keepEmpty)
 			# ...
 		end
@@ -2109,7 +2109,7 @@ module Chilkat
 		# Equivalent to split2(" \t\r\n",true,true,false)
 		#
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def splitAtWS()
 			# ...
 		end
@@ -2118,14 +2118,14 @@ module Chilkat
 		# Method: StrComp
 		#
 		# Lexicographically compares two strings. Returns 0 if both strings are equal.
-		#		A value greater
+		# A value greater
 		# than zero indicates that the first character that does not match has a greater value in the caller's
 		# string than in ARG1; And a value less than zero indicates the opposite.
 		#
 		# @param str [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def StrComp(str, caseSensitive)
 			# ...
 		end
@@ -2136,7 +2136,7 @@ module Chilkat
 		# Strips HTML tags from a string.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def StripHtml()
 			# ...
 		end
@@ -2150,7 +2150,7 @@ module Chilkat
 		# @param startCharIndex [Fixnum]
 		# @param numChars [Fixnum]
 		#
-		# @return [CkString] 
+		# @return [CkString]
 		def substring(startCharIndex, numChars)
 			# ...
 		end
@@ -2161,7 +2161,7 @@ module Chilkat
 		# Converts all line endings to CRLF.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ToCRLF()
 			# ...
 		end
@@ -2172,7 +2172,7 @@ module Chilkat
 		# Converts all line endings to CRLF.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def toCRLF()
 			# ...
 		end
@@ -2187,7 +2187,7 @@ module Chilkat
 		#
 		# @param punctuation [String]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def tokenize(punctuation)
 			# ...
 		end
@@ -2199,7 +2199,7 @@ module Chilkat
 		#
 		# @param punctuation [String]
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def tokenizeW(punctuation)
 			# ...
 		end
@@ -2210,7 +2210,7 @@ module Chilkat
 		# Converts all line endings to bare-LF (Unix/Linux style).
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ToLF()
 			# ...
 		end
@@ -2221,7 +2221,7 @@ module Chilkat
 		# Converts all line endings to bare-LF (Unix/Linux style line endings).
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def toLF()
 			# ...
 		end
@@ -2232,7 +2232,7 @@ module Chilkat
 		# Converts the string to lowercase.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def toLowerCase()
 			# ...
 		end
@@ -2243,7 +2243,7 @@ module Chilkat
 		# Converts the string to uppercase.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def toUpperCase()
 			# ...
 		end
@@ -2254,7 +2254,7 @@ module Chilkat
 		# Trim SPACE and Tab characters from both ends of the string.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def trim()
 			# ...
 		end
@@ -2265,7 +2265,7 @@ module Chilkat
 		# Trim SPACE and Tab characters from both ends of the string.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Trim()
 			# ...
 		end
@@ -2276,7 +2276,7 @@ module Chilkat
 		# Trim SPACE, Tab, CR, and LF characters from both ends of the string.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Trim2()
 			# ...
 		end
@@ -2287,7 +2287,7 @@ module Chilkat
 		# Trim SPACE, Tab, CR, and LF characters from both ends of the string.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def trim2()
 			# ...
 		end
@@ -2299,7 +2299,7 @@ module Chilkat
 		# occurrences of more than one SPACE char in a row.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def TrimInside()
 			# ...
 		end
@@ -2311,7 +2311,7 @@ module Chilkat
 		# occurrences of more than one SPACE char in a row.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def trimInsideSpaces()
 			# ...
 		end
@@ -2320,16 +2320,16 @@ module Chilkat
 		# Method: unobfuscate
 		#
 		# Unobfuscates the string.
-		#		
-		#		The Chilkat string obfuscation algorithm works by taking the
+		# 
+		# The Chilkat string obfuscation algorithm works by taking the
 		# utf-8 bytes of the string, base64 encoding it,
-		#		and then scrambling the letters of the base64
+		# and then scrambling the letters of the base64
 		# encoded string. It is deterministic in that the same string will always obfuscate to the same
 		# result. It is not a secure way of encrypting a string. It is only meant to be a simple means of
 		# transforming a string into something unintelligible.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def unobfuscate()
 			# ...
 		end
@@ -2340,7 +2340,7 @@ module Chilkat
 		# Unpluralizes an English word.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Unpluralize()
 			# ...
 		end
@@ -2352,7 +2352,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def urlDecode(charsetEncoding)
 			# ...
 		end
@@ -2364,7 +2364,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def urlDecodeW(charsetEncoding)
 			# ...
 		end
@@ -2377,7 +2377,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def urlEncode(charsetEncoding)
 			# ...
 		end
@@ -2389,7 +2389,7 @@ module Chilkat
 		#
 		# @param charsetEncoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def urlEncodeW(charsetEncoding)
 			# ...
 		end

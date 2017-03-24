@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -250,8 +250,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -260,8 +260,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -302,7 +302,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateJws(outStr)
 			# ...
 		end
@@ -314,7 +314,7 @@ module Chilkat
 		# payload, headers, and keys.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def createJws()
 			# ...
 		end
@@ -326,7 +326,7 @@ module Chilkat
 		#
 		# @param sbJws [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateJwsSb(sbJws)
 			# ...
 		end
@@ -340,7 +340,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPayload(charset, outStr)
 			# ...
 		end
@@ -353,7 +353,7 @@ module Chilkat
 		#
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPayload(charset)
 			# ...
 		end
@@ -365,7 +365,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPayloadBd(binData)
 			# ...
 		end
@@ -380,7 +380,7 @@ module Chilkat
 		# @param charset [String]
 		# @param sbPayload [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPayloadSb(charset, sbPayload)
 			# ...
 		end
@@ -393,7 +393,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkJsonObject] 
+		# @return [CkJsonObject]
 		def GetProtectedHeader(index)
 			# ...
 		end
@@ -407,7 +407,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkJsonObject] 
+		# @return [CkJsonObject]
 		def GetUnprotectedHeader(index)
 			# ...
 		end
@@ -419,7 +419,7 @@ module Chilkat
 		#
 		# @param jwsStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadJws(jwsStr)
 			# ...
 		end
@@ -431,7 +431,7 @@ module Chilkat
 		#
 		# @param sbJws [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadJwsSb(sbJws)
 			# ...
 		end
@@ -443,7 +443,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -460,7 +460,7 @@ module Chilkat
 		# @param key [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetMacKey(index, key, encoding)
 			# ...
 		end
@@ -475,7 +475,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param key [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetMacKeyBd(index, key)
 			# ...
 		end
@@ -492,7 +492,7 @@ module Chilkat
 		# @param charset [String]
 		# @param includeBom [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPayload(payload, charset, includeBom)
 			# ...
 		end
@@ -504,7 +504,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPayloadBd(binData)
 			# ...
 		end
@@ -521,7 +521,7 @@ module Chilkat
 		# @param charset [String]
 		# @param includeBom [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPayloadSb(sbPayload, charset, includeBom)
 			# ...
 		end
@@ -531,20 +531,20 @@ module Chilkat
 		#
 		# Sets the private key (ECC or RSA) to be used in creating a signature for the following
 		# algorithms:
-		#		
-		#		RS256
-		#		RS384
-		#		RS512
-		#		ES256
-		#		ES384
-		#		ES512
-		#		PS256
-		#		PS384
-		#		PS512
-		#		
-		#		The
+		# 
+		# RS256
+		# RS384
+		# RS512
+		# ES256
+		# ES384
+		# ES512
+		# PS256
+		# PS384
+		# PS512
+		# 
+		# The
 		# JWS algorithms are described in RFC 7518, section 3.1. Here is a summary:
-		#		
+		# 
 		#
 		# +--------------+-------------------------------+--------------------+
 		# | "alg" Param | Digital
@@ -588,7 +588,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param privKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPrivateKey(index, privKey)
 			# ...
 		end
@@ -602,7 +602,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param json [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetProtectedHeader(index, json)
 			# ...
 		end
@@ -612,22 +612,22 @@ module Chilkat
 		#
 		# Sets the public key (ECC or RSA) to be used in validating a signature for the following
 		# algorithms:
-		#		
-		#		RS256
-		#		RS384
-		#		RS512
-		#		ES256
-		#		ES384
-		#		ES512
-		#		PS256
-		#		PS384
-		#		PS512
+		# 
+		# RS256
+		# RS384
+		# RS512
+		# ES256
+		# ES384
+		# ES512
+		# PS256
+		# PS384
+		# PS512
 		#
 		#
 		# @param index [Fixnum]
 		# @param pubKey [CkPublicKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPublicKey(index, pubKey)
 			# ...
 		end
@@ -641,7 +641,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param json [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetUnprotectedHeader(index, json)
 			# ...
 		end
@@ -650,21 +650,21 @@ module Chilkat
 		# Method: Validate
 		#
 		# Validates the Nth signature or MAC using the Nth public key or MAC key. 
-		#		
-		#		Returns 1 if
+		# 
+		# Returns 1 if
 		# the signature was validated, thus verifying that the signer used the same MAC key or the matching
 		# private key. 
-		#		Returns 0 if the incorrect public key or MAC key was provided. 
-		#		Returns -1
+		# Returns 0 if the incorrect public key or MAC key was provided. 
+		# Returns -1
 		# for any other error, such as if no public key or MAC key was previously set for the given
 		# ARG1.
-		#		
-		#		Prior to calling this method, a program should provide the public key or MAC key
+		# 
+		# Prior to calling this method, a program should provide the public key or MAC key
 		# via the SetPublicKey, SetMacKey, or SetMacKeyBd methods.
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def Validate(index)
 			# ...
 		end

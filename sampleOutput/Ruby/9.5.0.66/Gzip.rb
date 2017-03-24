@@ -69,13 +69,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -94,13 +94,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -117,13 +117,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -140,13 +140,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -212,6 +212,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -384,8 +386,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -394,8 +396,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -436,7 +438,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressFile(inFilename, destPath)
 			# ...
 		end
@@ -452,7 +454,7 @@ module Chilkat
 		# @param embeddedFilename [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressFile2(inFilename, embeddedFilename, destPath)
 			# ...
 		end
@@ -465,7 +467,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressFileToMem(inFilename, outData)
 			# ...
 		end
@@ -478,7 +480,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressMemory(inData, outData)
 			# ...
 		end
@@ -491,7 +493,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressMemToFile(inData, destPath)
 			# ...
 		end
@@ -506,7 +508,7 @@ module Chilkat
 		# @param destCharset [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressString(inStr, destCharset, outBytes)
 			# ...
 		end
@@ -524,7 +526,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressStringENC(inStr, charset, encoding, outStr)
 			# ...
 		end
@@ -541,7 +543,7 @@ module Chilkat
 		# @param charset [String]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def compressStringENC(inStr, charset, encoding)
 			# ...
 		end
@@ -557,7 +559,7 @@ module Chilkat
 		# @param destCharset [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CompressStringToFile(inStr, destCharset, destPath)
 			# ...
 		end
@@ -572,7 +574,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Decode(encodedStr, encoding, outBytes)
 			# ...
 		end
@@ -585,8 +587,8 @@ module Chilkat
 		# compressed using the deflate compression algorithm. The binary output is then encoded according to
 		# ARG3. Possible values for ARG3 are "hex", "base64", "url", and
 		# "quoted-printable".
-		#		
-		#		Note: The output of this method is compressed data with no Gzip
+		# 
+		# Note: The output of this method is compressed data with no Gzip
 		# file format. Use the Compress* methods to produce Gzip file format output.
 		#
 		# @param inString [String]
@@ -594,7 +596,7 @@ module Chilkat
 		# @param outputEncoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DeflateStringENC(inString, charsetName, outputEncoding, outStr)
 			# ...
 		end
@@ -607,15 +609,15 @@ module Chilkat
 		# compressed using the deflate compression algorithm. The binary output is then encoded according to
 		# ARG3. Possible values for ARG3 are "hex", "base64", "url", and
 		# "quoted-printable".
-		#		
-		#		Note: The output of this method is compressed data with no Gzip
+		# 
+		# Note: The output of this method is compressed data with no Gzip
 		# file format. Use the Compress* methods to produce Gzip file format output.
 		#
 		# @param inString [String]
 		# @param charsetName [String]
 		# @param outputEncoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def deflateStringENC(inString, charsetName, outputEncoding)
 			# ...
 		end
@@ -630,7 +632,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Encode(byteData, encoding, outStr)
 			# ...
 		end
@@ -644,7 +646,7 @@ module Chilkat
 		# @param byteData [CkByteData]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def encode(byteData, encoding)
 			# ...
 		end
@@ -657,7 +659,7 @@ module Chilkat
 		#
 		# @param inGzFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExamineFile(inGzFilename)
 			# ...
 		end
@@ -670,7 +672,7 @@ module Chilkat
 		#
 		# @param inGzData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExamineMemory(inGzData)
 			# ...
 		end
@@ -681,7 +683,7 @@ module Chilkat
 		# Gets the last-modification date/time to be embedded within the .gz.
 		#
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetDt()
 			# ...
 		end
@@ -690,7 +692,7 @@ module Chilkat
 		# Method: InflateStringENC
 		#
 		# This the reverse of DeflateStringENC.
-		#		The input string is first decoded according to ARG3.
+		# The input string is first decoded according to ARG3.
 		# (Possible values for ARG3 are "hex", "base64", "url", and "quoted-printable".) The compressed data
 		# is then inflated, and the result is then converted from ARG2 (if necessary) to return a string.
 		#
@@ -699,7 +701,7 @@ module Chilkat
 		# @param inputEncoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def InflateStringENC(inString, convertFromCharset, inputEncoding, outStr)
 			# ...
 		end
@@ -708,7 +710,7 @@ module Chilkat
 		# Method: InflateStringENC
 		#
 		# This the reverse of DeflateStringENC.
-		#		The input string is first decoded according to ARG3.
+		# The input string is first decoded according to ARG3.
 		# (Possible values for ARG3 are "hex", "base64", "url", and "quoted-printable".) The compressed data
 		# is then inflated, and the result is then converted from ARG2 (if necessary) to return a string.
 		#
@@ -716,7 +718,7 @@ module Chilkat
 		# @param convertFromCharset [String]
 		# @param inputEncoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def ınflateStringENC(inString, convertFromCharset, inputEncoding)
 			# ...
 		end
@@ -727,7 +729,7 @@ module Chilkat
 		# Returns _TRUE_ if the component has been unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -741,7 +743,7 @@ module Chilkat
 		# @param path [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFile(path, outBytes)
 			# ...
 		end
@@ -753,7 +755,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -766,7 +768,7 @@ module Chilkat
 		#
 		# @param dt [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetDt(dt)
 			# ...
 		end
@@ -780,7 +782,7 @@ module Chilkat
 		# @param srcPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UncompressFile(srcPath, destPath)
 			# ...
 		end
@@ -793,7 +795,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UncompressFileToMem(inFilename, outData)
 			# ...
 		end
@@ -809,7 +811,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UncompressFileToString(gzFilename, charset, outStr)
 			# ...
 		end
@@ -824,7 +826,7 @@ module Chilkat
 		# @param gzFilename [String]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def uncompressFileToString(gzFilename, charset)
 			# ...
 		end
@@ -837,7 +839,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UncompressMemory(inData, outData)
 			# ...
 		end
@@ -850,7 +852,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UncompressMemToFile(inData, destPath)
 			# ...
 		end
@@ -859,14 +861,14 @@ module Chilkat
 		# Method: UncompressString
 		#
 		# The reverse of CompressString.
-		#		The bytes in ARG1 are uncompressed, then converted from ARG2
+		# The bytes in ARG1 are uncompressed, then converted from ARG2
 		# (if necessary) to return a string.
 		#
 		# @param inData [CkByteData]
 		# @param inCharset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UncompressString(inData, inCharset, outStr)
 			# ...
 		end
@@ -875,13 +877,13 @@ module Chilkat
 		# Method: UncompressString
 		#
 		# The reverse of CompressString.
-		#		The bytes in ARG1 are uncompressed, then converted from ARG2
+		# The bytes in ARG1 are uncompressed, then converted from ARG2
 		# (if necessary) to return a string.
 		#
 		# @param inData [CkByteData]
 		# @param inCharset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def uncompressString(inData, inCharset)
 			# ...
 		end
@@ -891,7 +893,7 @@ module Chilkat
 		#
 		# The same as UncompressString, except the compressed data is provided in encoded string form based on
 		# the value of ARG3.
-		#		The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for
+		# The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for
 		# quoted-printable), "URL" (for url-encoding), "Hex", "Q", "B", "url_oath", "url_rfc1738",
 		# "url_rfc2396", and "url_rfc3986".
 		#
@@ -900,7 +902,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UncompressStringENC(inStr, charset, encoding, outStr)
 			# ...
 		end
@@ -910,7 +912,7 @@ module Chilkat
 		#
 		# The same as UncompressString, except the compressed data is provided in encoded string form based on
 		# the value of ARG3.
-		#		The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for
+		# The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for
 		# quoted-printable), "URL" (for url-encoding), "Hex", "Q", "B", "url_oath", "url_rfc1738",
 		# "url_rfc2396", and "url_rfc3986".
 		#
@@ -918,7 +920,7 @@ module Chilkat
 		# @param charset [String]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def uncompressStringENC(inStr, charset, encoding)
 			# ...
 		end
@@ -930,7 +932,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -947,7 +949,7 @@ module Chilkat
 		# @param destDir [String]
 		# @param bNoAbsolute [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnTarGz(tgzFilename, destDir, bNoAbsolute)
 			# ...
 		end
@@ -960,7 +962,7 @@ module Chilkat
 		# @param path [String]
 		# @param binaryData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path, binaryData)
 			# ...
 		end
@@ -974,7 +976,7 @@ module Chilkat
 		# @param xfldData [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def XfdlToXml(xfldData, outStr)
 			# ...
 		end
@@ -987,7 +989,7 @@ module Chilkat
 		#
 		# @param xfldData [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def xfdlToXml(xfldData)
 			# ...
 		end

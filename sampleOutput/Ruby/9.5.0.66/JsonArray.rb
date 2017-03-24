@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -97,8 +97,8 @@ module Chilkat
 		# If _TRUE_ then the Emit method outputs in the most compact form possible (a single-line with no
 		# extra whitespace). If _FALSE_, then emits with whitespace and indentation to make the JSON
 		# human-readable.
-		#		
-		#		The default value is _TRUE_.
+		# 
+		# The default value is _TRUE_.
 		#
 		# @return [TrueClass, FalseClass]
 		def get_EmitCompact() end
@@ -106,8 +106,8 @@ module Chilkat
 		# If _TRUE_ then the Emit method outputs in the most compact form possible (a single-line with no
 		# extra whitespace). If _FALSE_, then emits with whitespace and indentation to make the JSON
 		# human-readable.
-		#		
-		#		The default value is _TRUE_.
+		# 
+		# The default value is _TRUE_.
 		#
 		# @param newval [TrueClass, FalseClass]
 		def put_EmitCompact(newval) end
@@ -116,8 +116,8 @@ module Chilkat
 		# format. If _FALSE_, then bare-LF's are emitted. (The compact format emits to a single line with no
 		# end-of-line characters.) Windows systems traditionally use CRLF line-endings, whereas Linux, Mac OS
 		# X, and other systems traditionally use bare-LF line-endings.
-		#		
-		#		The default value is
+		# 
+		# The default value is
 		# _TRUE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -127,8 +127,8 @@ module Chilkat
 		# format. If _FALSE_, then bare-LF's are emitted. (The compact format emits to a single line with no
 		# end-of-line characters.) Windows systems traditionally use CRLF line-endings, whereas Linux, Mac OS
 		# X, and other systems traditionally use bare-LF line-endings.
-		#		
-		#		The default value is
+		# 
+		# The default value is
 		# _TRUE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -258,8 +258,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -268,8 +268,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -310,7 +310,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddArrayAt(index)
 			# ...
 		end
@@ -324,7 +324,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddBoolAt(index, value)
 			# ...
 		end
@@ -338,7 +338,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddIntAt(index, value)
 			# ...
 		end
@@ -351,7 +351,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddNullAt(index)
 			# ...
 		end
@@ -366,7 +366,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param numericStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddNumberAt(index, numericStr)
 			# ...
 		end
@@ -379,7 +379,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddObjectAt(index)
 			# ...
 		end
@@ -393,7 +393,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddStringAt(index, value)
 			# ...
 		end
@@ -406,7 +406,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkJsonArray] 
+		# @return [CkJsonArray]
 		def ArrayAt(index)
 			# ...
 		end
@@ -419,7 +419,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BoolAt(index)
 			# ...
 		end
@@ -431,7 +431,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DeleteAt(index)
 			# ...
 		end
@@ -440,14 +440,14 @@ module Chilkat
 		# Method: Emit
 		#
 		# Writes the JSON array (rooted at the caller) and returns as a string.
-		#		
-		#		Note: To control
+		# 
+		# Note: To control
 		# the compact/non-compact format, and to control the LF/CRLF line-endings, set the EmitCompact and
 		# EmitCrlf properties.
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Emit(outStr)
 			# ...
 		end
@@ -456,13 +456,13 @@ module Chilkat
 		# Method: Emit
 		#
 		# Writes the JSON array (rooted at the caller) and returns as a string.
-		#		
-		#		Note: To control
+		# 
+		# Note: To control
 		# the compact/non-compact format, and to control the LF/CRLF line-endings, set the EmitCompact and
 		# EmitCrlf properties.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def emit()
 			# ...
 		end
@@ -471,13 +471,13 @@ module Chilkat
 		# Method: EmitSb
 		#
 		# Writes the JSON array to the ARG1.
-		#		
-		#		Note: To control the compact/non-compact format, and
+		# 
+		# Note: To control the compact/non-compact format, and
 		# to control the LF/CRLF line-endings, set the EmitCompact and EmitCrlf properties.
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EmitSb(sb)
 			# ...
 		end
@@ -490,7 +490,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def IntAt(index)
 			# ...
 		end
@@ -503,7 +503,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsNullAt(index)
 			# ...
 		end
@@ -513,13 +513,13 @@ module Chilkat
 		#
 		# Loads a JSON array from a string. A JSON array must begin with a "[" and end with a
 		# "]".
-		#		
-		#		Note: The Load method causes the JsonArray to detach and become it's own JSON
+		# 
+		# Note: The Load method causes the JsonArray to detach and become it's own JSON
 		# document. It should only be called on new instances of the JsonArray. See the example below.
 		#
 		# @param jsonArray [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Load(jsonArray)
 			# ...
 		end
@@ -529,13 +529,13 @@ module Chilkat
 		#
 		# Loads a JSON array from a StringBuilder. A JSON array must begin with a "[" and end with a
 		# "]".
-		#		
-		#		Note: The Load method causes the JsonArray to detach and become it's own JSON
+		# 
+		# Note: The Load method causes the JsonArray to detach and become it's own JSON
 		# document. It should only be called on new instances of the JsonArray. See the example below.
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadSb(sb)
 			# ...
 		end
@@ -548,7 +548,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkJsonObject] 
+		# @return [CkJsonObject]
 		def ObjectAt(index)
 			# ...
 		end
@@ -560,7 +560,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -573,7 +573,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetBoolAt(index, value)
 			# ...
 		end
@@ -586,7 +586,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetIntAt(index, value)
 			# ...
 		end
@@ -598,7 +598,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetNullAt(index)
 			# ...
 		end
@@ -613,7 +613,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetNumberAt(index, value)
 			# ...
 		end
@@ -626,7 +626,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetStringAt(index, value)
 			# ...
 		end
@@ -640,7 +640,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def StringAt(index, outStr)
 			# ...
 		end
@@ -653,7 +653,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def stringAt(index)
 			# ...
 		end
@@ -663,20 +663,20 @@ module Chilkat
 		#
 		# Returns the type of data at the given ARG1. Possible return values
 		# are:
-		#		
-		#		string
-		#		number
-		#		object
-		#		array
-		#		boolean
-		#		null
-		#		
-		#		Returns
+		# 
+		# string
+		# number
+		# object
+		# array
+		# boolean
+		# null
+		# 
+		# Returns
 		# -1 if no member exists at the given ARG1.
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def TypeAt(index)
 			# ...
 		end

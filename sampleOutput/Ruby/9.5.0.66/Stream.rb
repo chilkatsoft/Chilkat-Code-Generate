@@ -21,8 +21,8 @@ module Chilkat
 		def put_AbortCurrent(newval) end
 
 		# _TRUE_ if the stream supports reading. Otherwise _FALSE_. 
-		#		
-		#		Note: A stream that supports
+		# 
+		# Note: A stream that supports
 		# reading, which has already reached the end-of-stream, will still have a CanRead value of _TRUE_.
 		# This property indicates the stream's inherent ability, and not whether or not the stream can be read
 		# at a particular moment in time.
@@ -32,8 +32,8 @@ module Chilkat
 		def get_CanRead() end
 
 		# _TRUE_ if the stream supports writing. Otherwise _FALSE_.
-		#		
-		#		Note: A stream that supports
+		# 
+		# Note: A stream that supports
 		# writing, which has already been closed for write, will still have a CanWrite value of _TRUE_. This
 		# property indicates the stream's inherent ability, and not whether or not the stream can be written
 		# at a particular moment in time.
@@ -54,13 +54,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -79,13 +79,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -102,13 +102,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -125,13 +125,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -302,8 +302,8 @@ module Chilkat
 		# The length (in bytes) of the stream's source. If unknown, then this property will have a value of
 		# -1. This property may be set by the application if it knows in advance the length of the
 		# stream.
-		#		
-		#		Setting this property also sets the Length property (which is a 64-bit
+		# 
+		# Setting this property also sets the Length property (which is a 64-bit
 		# integer).
 		#
 		# @return [Bignum]
@@ -312,8 +312,8 @@ module Chilkat
 		# The length (in bytes) of the stream's source. If unknown, then this property will have a value of
 		# -1. This property may be set by the application if it knows in advance the length of the
 		# stream.
-		#		
-		#		Setting this property also sets the Length property (which is a 64-bit
+		# 
+		# Setting this property also sets the Length property (which is a 64-bit
 		# integer).
 		#
 		# @param newval [Bignum]
@@ -331,15 +331,15 @@ module Chilkat
 
 		# This property is automatically set when a Read* method is called. It indicates the reason for
 		# failure. Possible values are:
-		#		
-		#		No failure (success)
-		#		Timeout, or no data is
+		# 
+		# No failure (success)
+		# Timeout, or no data is
 		# immediately available for a polling read.
-		#		Aborted by an application callback.
-		#		Already at
+		# Aborted by an application callback.
+		# Already at
 		# end-of-stream.
-		#		Fatal stream error.
-		#		Out-of-memory error (this is very unlikely).
+		# Fatal stream error.
+		# Out-of-memory error (this is very unlikely).
 		#
 		#
 		# @return [Bignum]
@@ -348,12 +348,12 @@ module Chilkat
 		# The maximum number of seconds to wait while reading. The default value is 30 seconds (i.e. 30000ms).
 		# A value of 0 indicates a poll. (A polling read is to return with a timeout if no data is immediately
 		# available.) 
-		#		
-		#		Important: For most Chilkat timeout related properties, a value of 0
+		# 
+		# Important: For most Chilkat timeout related properties, a value of 0
 		# indicates an infinite timeout. For this property, a value of 0 indicates a poll. If setting a
 		# timeout related property (or method argument) to zero, be sure to understand if 0 means "wait
 		# forever" or "poll".
-		#		The timeout value is not a total timeout. It is the maximum time to wait
+		# The timeout value is not a total timeout. It is the maximum time to wait
 		# while no additional data is forthcoming.
 		#
 		# @return [Bignum]
@@ -362,12 +362,12 @@ module Chilkat
 		# The maximum number of seconds to wait while reading. The default value is 30 seconds (i.e. 30000ms).
 		# A value of 0 indicates a poll. (A polling read is to return with a timeout if no data is immediately
 		# available.) 
-		#		
-		#		Important: For most Chilkat timeout related properties, a value of 0
+		# 
+		# Important: For most Chilkat timeout related properties, a value of 0
 		# indicates an infinite timeout. For this property, a value of 0 indicates a poll. If setting a
 		# timeout related property (or method argument) to zero, be sure to understand if 0 means "wait
 		# forever" or "poll".
-		#		The timeout value is not a total timeout. It is the maximum time to wait
+		# The timeout value is not a total timeout. It is the maximum time to wait
 		# while no additional data is forthcoming.
 		#
 		# @param newval [Bignum]
@@ -376,7 +376,7 @@ module Chilkat
 		# Sets the sink to the path of a file. The file does not need to exist at the time of setting this
 		# property. The sink file will be automatically opened on demand, when the stream is first
 		# written.
-		#		Note: This property takes priority over other potential sinks. Make sure this
+		# Note: This property takes priority over other potential sinks. Make sure this
 		# property is set to an empty string if the stream's sink is to be something else.
 		#
 		# @param ckStr [CkString]
@@ -387,7 +387,7 @@ module Chilkat
 		# Sets the sink to the path of a file. The file does not need to exist at the time of setting this
 		# property. The sink file will be automatically opened on demand, when the stream is first
 		# written.
-		#		Note: This property takes priority over other potential sinks. Make sure this
+		# Note: This property takes priority over other potential sinks. Make sure this
 		# property is set to an empty string if the stream's sink is to be something else.
 		#
 		# @param newval [String]
@@ -396,7 +396,7 @@ module Chilkat
 		# Sets the sink to the path of a file. The file does not need to exist at the time of setting this
 		# property. The sink file will be automatically opened on demand, when the stream is first
 		# written.
-		#		Note: This property takes priority over other potential sinks. Make sure this
+		# Note: This property takes priority over other potential sinks. Make sure this
 		# property is set to an empty string if the stream's sink is to be something else.
 		#
 		# @return [String]
@@ -405,7 +405,7 @@ module Chilkat
 		# Sets the sink to the path of a file. The file does not need to exist at the time of setting this
 		# property. The sink file will be automatically opened on demand, when the stream is first
 		# written.
-		#		Note: This property takes priority over other potential sinks. Make sure this
+		# Note: This property takes priority over other potential sinks. Make sure this
 		# property is set to an empty string if the stream's sink is to be something else.
 		#
 		# @param newval [String]
@@ -414,7 +414,7 @@ module Chilkat
 		# Sets the source to the path of a file. The file does not need to exist at the time of setting this
 		# property. The source file will be automatically opened on demand, when the stream is first
 		# read.
-		#		Note: This property takes priority over other potential sources. Make sure this property
+		# Note: This property takes priority over other potential sources. Make sure this property
 		# is set to an empty string if the stream's source is to be something else.
 		#
 		# @param ckStr [CkString]
@@ -425,7 +425,7 @@ module Chilkat
 		# Sets the source to the path of a file. The file does not need to exist at the time of setting this
 		# property. The source file will be automatically opened on demand, when the stream is first
 		# read.
-		#		Note: This property takes priority over other potential sources. Make sure this property
+		# Note: This property takes priority over other potential sources. Make sure this property
 		# is set to an empty string if the stream's source is to be something else.
 		#
 		# @param newval [String]
@@ -434,7 +434,7 @@ module Chilkat
 		# Sets the source to the path of a file. The file does not need to exist at the time of setting this
 		# property. The source file will be automatically opened on demand, when the stream is first
 		# read.
-		#		Note: This property takes priority over other potential sources. Make sure this property
+		# Note: This property takes priority over other potential sources. Make sure this property
 		# is set to an empty string if the stream's source is to be something else.
 		#
 		# @return [String]
@@ -443,29 +443,29 @@ module Chilkat
 		# Sets the source to the path of a file. The file does not need to exist at the time of setting this
 		# property. The source file will be automatically opened on demand, when the stream is first
 		# read.
-		#		Note: This property takes priority over other potential sources. Make sure this property
+		# Note: This property takes priority over other potential sources. Make sure this property
 		# is set to an empty string if the stream's source is to be something else.
 		#
 		# @param newval [String]
 		def put_SourceFile(newval) end
 
 		# If the source is a file, then this property can be used to stream one part of the file. 
-		#		The
+		# The
 		# SourceFilePartSize property defines the size (in bytes) of each part. The SourceFilePart and
 		# SourceFilePartSize have default values of 0, which means the entire SourceFile is streamed.
-		# #		
-		#		This property is a 0-based index. For example, if the SourceFilePartSize is 1000, then
+		# # 
+		# This property is a 0-based index. For example, if the SourceFilePartSize is 1000, then
 		# part 0 is for bytes 0 to 999, part 1 is for bytes 1000 to 1999, etc.
 		#
 		# @return [Bignum]
 		def get_SourceFilePart() end
 
 		# If the source is a file, then this property can be used to stream one part of the file. 
-		#		The
+		# The
 		# SourceFilePartSize property defines the size (in bytes) of each part. The SourceFilePart and
 		# SourceFilePartSize have default values of 0, which means the entire SourceFile is streamed.
-		# #		
-		#		This property is a 0-based index. For example, if the SourceFilePartSize is 1000, then
+		# # 
+		# This property is a 0-based index. For example, if the SourceFilePartSize is 1000, then
 		# part 0 is for bytes 0 to 999, part 1 is for bytes 1000 to 1999, etc.
 		#
 		# @param newval [Bignum]
@@ -473,7 +473,7 @@ module Chilkat
 
 		# If the source is a file, then this property, in conjunction with the SourceFilePart property, can be
 		# used to stream a single part of the file. 
-		#		This property defines the size (in bytes) of each
+		# This property defines the size (in bytes) of each
 		# part. The SourceFilePart and SourceFilePartSize have default values of 0, which means that by
 		# default, the entire SourceFile is streamed.
 		#
@@ -482,7 +482,7 @@ module Chilkat
 
 		# If the source is a file, then this property, in conjunction with the SourceFilePart property, can be
 		# used to stream a single part of the file. 
-		#		This property defines the size (in bytes) of each
+		# This property defines the size (in bytes) of each
 		# part. The SourceFilePart and SourceFilePartSize have default values of 0, which means that by
 		# default, the entire SourceFile is streamed.
 		#
@@ -509,7 +509,7 @@ module Chilkat
 		# that read text such as: ReadString, ReadToCRLF, ReadUntilMatch. Also controls the character encoding
 		# when writing strings with the WriteString method. The supported charsets are indicated at the link
 		# below.
-		#		The default value is "utf-8".
+		# The default value is "utf-8".
 		#
 		# @param ckStr [CkString]
 		#
@@ -520,7 +520,7 @@ module Chilkat
 		# that read text such as: ReadString, ReadToCRLF, ReadUntilMatch. Also controls the character encoding
 		# when writing strings with the WriteString method. The supported charsets are indicated at the link
 		# below.
-		#		The default value is "utf-8".
+		# The default value is "utf-8".
 		#
 		# @param newval [String]
 		def put_StringCharset(newval) end
@@ -529,7 +529,7 @@ module Chilkat
 		# that read text such as: ReadString, ReadToCRLF, ReadUntilMatch. Also controls the character encoding
 		# when writing strings with the WriteString method. The supported charsets are indicated at the link
 		# below.
-		#		The default value is "utf-8".
+		# The default value is "utf-8".
 		#
 		# @return [String]
 		def stringCharset() end
@@ -538,15 +538,15 @@ module Chilkat
 		# that read text such as: ReadString, ReadToCRLF, ReadUntilMatch. Also controls the character encoding
 		# when writing strings with the WriteString method. The supported charsets are indicated at the link
 		# below.
-		#		The default value is "utf-8".
+		# The default value is "utf-8".
 		#
 		# @param newval [String]
 		def put_StringCharset(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -555,8 +555,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -591,15 +591,15 @@ module Chilkat
 
 		# This property is automatically set when a Write* method is called. It indicates the reason for
 		# failure. Possible values are:
-		#		
-		#		No failure (success)
-		#		Timeout, or unable to
+		# 
+		# No failure (success)
+		# Timeout, or unable to
 		# immediately write when the WriteTimeoutMs is 0.
-		#		Aborted by an application callback.
-		#		The
+		# Aborted by an application callback.
+		# The
 		# stream has already ended.
-		#		Fatal stream error.
-		#		Out-of-memory error (this is very
+		# Fatal stream error.
+		# Out-of-memory error (this is very
 		# unlikely).
 		#
 		#
@@ -626,7 +626,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadBytes(outBytes)
 			# ...
 		end
@@ -641,7 +641,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadBytesENC(encoding, outStr)
 			# ...
 		end
@@ -655,7 +655,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readBytesENC(encoding)
 			# ...
 		end
@@ -669,7 +669,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadNBytes(numBytes, outBytes)
 			# ...
 		end
@@ -685,7 +685,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadNBytesENC(numBytes, encoding, outStr)
 			# ...
 		end
@@ -700,7 +700,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readNBytesENC(numBytes, encoding)
 			# ...
 		end
@@ -715,7 +715,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadString(outStr)
 			# ...
 		end
@@ -729,7 +729,7 @@ module Chilkat
 		# are expected, then StringCharset should be set to "utf-8" prior to calling ReadString.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def readString()
 			# ...
 		end
@@ -741,15 +741,15 @@ module Chilkat
 		# ReadTimeoutMs milliseconds for data to arrive. The data is returned as a string. The incoming bytes
 		# are interpreted according to the StringCharset property. For example, if utf-8 bytes are expected,
 		# then StringCharset should be set to "utf-8" prior to calling ReadString.
-		#		
-		#		Note: If the
+		# 
+		# Note: If the
 		# end-of-stream is reached prior to receiving the CRLF, then the remaining data is returned, and the
 		# ReadFailReason property will be set to 3 (to indicate end-of-file). This is the only case where as
 		# string would be returned that does not end with CRLF.
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadToCRLF(outStr)
 			# ...
 		end
@@ -761,14 +761,14 @@ module Chilkat
 		# ReadTimeoutMs milliseconds for data to arrive. The data is returned as a string. The incoming bytes
 		# are interpreted according to the StringCharset property. For example, if utf-8 bytes are expected,
 		# then StringCharset should be set to "utf-8" prior to calling ReadString.
-		#		
-		#		Note: If the
+		# 
+		# Note: If the
 		# end-of-stream is reached prior to receiving the CRLF, then the remaining data is returned, and the
 		# ReadFailReason property will be set to 3 (to indicate end-of-file). This is the only case where as
 		# string would be returned that does not end with CRLF.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def readToCRLF()
 			# ...
 		end
@@ -781,8 +781,8 @@ module Chilkat
 		# string. The incoming bytes are interpreted according to the StringCharset property. For example, if
 		# utf-8 bytes are expected, then StringCharset should be set to "utf-8" prior to calling
 		# ReadString.
-		#		
-		#		Note: If the end-of-stream is reached prior to receiving the match string,
+		# 
+		# Note: If the end-of-stream is reached prior to receiving the match string,
 		# then the remaining data is returned, and the ReadFailReason property will be set to 3 (to indicate
 		# end-of-file). This is the only case where as string would be returned that does not end with the
 		# desired match string.
@@ -790,7 +790,7 @@ module Chilkat
 		# @param matchStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadUntilMatch(matchStr, outStr)
 			# ...
 		end
@@ -803,15 +803,15 @@ module Chilkat
 		# string. The incoming bytes are interpreted according to the StringCharset property. For example, if
 		# utf-8 bytes are expected, then StringCharset should be set to "utf-8" prior to calling
 		# ReadString.
-		#		
-		#		Note: If the end-of-stream is reached prior to receiving the match string,
+		# 
+		# Note: If the end-of-stream is reached prior to receiving the match string,
 		# then the remaining data is returned, and the ReadFailReason property will be set to 3 (to indicate
 		# end-of-file). This is the only case where as string would be returned that does not end with the
 		# desired match string.
 		#
 		# @param matchStr [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readUntilMatch(matchStr)
 			# ...
 		end
@@ -823,7 +823,7 @@ module Chilkat
 		# and IsWriteClose are reset to default values.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Reset()
 			# ...
 		end
@@ -834,13 +834,13 @@ module Chilkat
 		# Runs the stream to completion. This method should only be called when the source of the string has
 		# been set by any of the following methods: SetSourceBytes, SetSourceString, or SetSourceStream, or
 		# when the SourceFile property has been set (giving the stream a file source). 
-		#		
-		#		This
+		# 
+		# This
 		# method will read the stream source and forward to the sink until the end-of-stream is reached, and
 		# all data has been written to the sink.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RunStream()
 			# ...
 		end
@@ -852,7 +852,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -865,7 +865,7 @@ module Chilkat
 		#
 		# @param strm [CkStream]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSinkStream(strm)
 			# ...
 		end
@@ -877,7 +877,7 @@ module Chilkat
 		#
 		# @param sourceData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSourceBytes(sourceData)
 			# ...
 		end
@@ -890,7 +890,7 @@ module Chilkat
 		#
 		# @param strm [CkStream]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSourceStream(strm)
 			# ...
 		end
@@ -904,7 +904,7 @@ module Chilkat
 		# @param srcStr [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSourceString(srcStr, charset)
 			# ...
 		end
@@ -919,7 +919,7 @@ module Chilkat
 		# @param propertyName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToDecimalStr(propertyName, outStr)
 			# ...
 		end
@@ -933,7 +933,7 @@ module Chilkat
 		#
 		# @param propertyName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def toDecimalStr(propertyName)
 			# ...
 		end
@@ -945,7 +945,7 @@ module Chilkat
 		#
 		# @param byteVal [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteByte(byteVal)
 			# ...
 		end
@@ -957,7 +957,7 @@ module Chilkat
 		#
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteBytes(byteData)
 			# ...
 		end
@@ -971,7 +971,7 @@ module Chilkat
 		# @param byteData [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteBytesENC(byteData, encoding)
 			# ...
 		end
@@ -982,7 +982,7 @@ module Chilkat
 		# Indicates that no more data will be written to the stream.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteClose()
 			# ...
 		end
@@ -996,7 +996,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteString(str)
 			# ...
 		end

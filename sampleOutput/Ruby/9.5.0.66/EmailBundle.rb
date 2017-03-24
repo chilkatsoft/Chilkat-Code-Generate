@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -218,8 +218,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -228,8 +228,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -269,7 +269,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddEmail(email)
 			# ...
 		end
@@ -281,7 +281,7 @@ module Chilkat
 		#
 		# @param mimeBytesOrText [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddMimeBytes(mimeBytesOrText)
 			# ...
 		end
@@ -295,7 +295,7 @@ module Chilkat
 		# @param headerFieldName [String]
 		# @param headerFieldValue [String]
 		#
-		# @return [CkEmail] 
+		# @return [CkEmail]
 		def FindByHeader(headerFieldName, headerFieldValue)
 			# ...
 		end
@@ -309,14 +309,14 @@ module Chilkat
 		# modifications, call RemoveEmailByIndex to remove the email (passing the same index used in the call
 		# to GetEmail), and then call AddEmail to insert the new/modified email into the
 		# bundle.
-		#		
-		#		IMPORTANT: This method does NOT communicate with any mail server to download
+		# 
+		# IMPORTANT: This method does NOT communicate with any mail server to download
 		# the email. It simply returns the Nth email object that exists within it's in-memory collection of
 		# email objects.
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkEmail] 
+		# @return [CkEmail]
 		def GetEmail(index)
 			# ...
 		end
@@ -330,7 +330,7 @@ module Chilkat
 		# via the "ckx-imap-uid" header field.
 		#
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def GetUidls()
 			# ...
 		end
@@ -342,7 +342,7 @@ module Chilkat
 		#
 		# @param outXml [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetXml(outXml)
 			# ...
 		end
@@ -353,7 +353,7 @@ module Chilkat
 		# Converts the email bundle to an XML document in memory. Returns the XML document as a string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getXml()
 			# ...
 		end
@@ -365,7 +365,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -377,7 +377,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXml(filename)
 			# ...
 		end
@@ -389,7 +389,7 @@ module Chilkat
 		#
 		# @param xmlStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXmlString(xmlStr)
 			# ...
 		end
@@ -401,7 +401,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveEmail(email)
 			# ...
 		end
@@ -413,7 +413,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveEmailByIndex(index)
 			# ...
 		end
@@ -425,7 +425,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -438,7 +438,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveXml(filename)
 			# ...
 		end
@@ -450,7 +450,7 @@ module Chilkat
 		#
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortByDate(ascending)
 			# ...
 		end
@@ -462,7 +462,7 @@ module Chilkat
 		#
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortByRecipient(ascending)
 			# ...
 		end
@@ -474,7 +474,7 @@ module Chilkat
 		#
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortBySender(ascending)
 			# ...
 		end
@@ -486,7 +486,7 @@ module Chilkat
 		#
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortBySubject(ascending)
 			# ...
 		end

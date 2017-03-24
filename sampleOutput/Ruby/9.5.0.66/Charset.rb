@@ -39,13 +39,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -64,13 +64,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -87,13 +87,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -110,13 +110,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -150,96 +150,96 @@ module Chilkat
 
 		# Tells the charset converter the charset of the input data for a conversion. Possible values
 		# are:
-		#		
-		#		us-ascii
-		#		unicode (also known as UTF16LE or simply UTF16)
-		#		unicodefffe
+		# 
+		# us-ascii
+		# unicode (also known as UTF16LE or simply UTF16)
+		# unicodefffe
 		# (also known as
 		# UTF16BE)
-		#		ebcdic
-		#		iso-8859-1
-		#		iso-8859-2
-		#		iso-8859-3
-		#		iso-8859-4
-		#		iso-8859-5
-		#		iso-8859-6
-		#		iso-8859-7
-		#		iso-8859-8
-		#		iso-8859-9
-		#		iso-8859-13
-		#		iso-8859-15
-		#		windows-874
-		#		windows-1250
-		#		windows-1251
-		#		windows-1252
-		#		windows-1253
-		#		windows-1254
-		#		windows-1255
-		#		windows-1256
-		#		windows-1257
-		#		windows-1258
-		#		utf-7
-		#		utf-8
-		#		utf-32
-		#		utf-32be
-		#		shift_jis
-		#		gb2312
-		#		ks_c_5601-1987
-		#		big5
-		#		iso-2022-jp
-		#		iso-2022-kr
-		#		euc-jp
-		#		euc-kr
-		#		macintosh
-		#		x-mac-japanese
-		#		x-mac-chinesetrad
-		#		x-mac-korean
-		#		x-mac-arabic
-		#		x-mac-hebrew
-		#		x-mac-greek
-		#		x-mac-cyrillic
-		#		x-mac-chinesesimp
-		#		x-mac-romanian
-		#		x-mac-ukrainian
-		#		x-mac-thai
-		#		x-mac-ce
-		#		x-mac-icelandic
-		#		x-mac-turkish
-		#		x-mac-croatian
-		#		asmo-708
-		#		dos-720
-		#		dos-862
-		#		ibm01140
-		#		ibm01141
-		#		ibm01142
-		#		ibm01143
-		#		ibm01144
-		#		ibm01145
-		#		ibm01146
-		#		ibm01147
-		#		ibm01148
-		#		ibm01149
-		#		ibm037
-		#		ibm437
-		#		ibm500
-		#		ibm737
-		#		ibm775
-		#		ibm850
-		#		ibm852
-		#		ibm855
-		#		ibm857
-		#		ibm00858
-		#		ibm860
-		#		ibm861
-		#		ibm863
-		#		ibm864
-		#		ibm865
-		#		cp866
-		#		ibm869
-		#		ibm870
-		#		cp875
-		#		koi8-r
-		#		koi8-u
+		# ebcdic
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm01140
+		# ibm01141
+		# ibm01142
+		# ibm01143
+		# ibm01144
+		# ibm01145
+		# ibm01146
+		# ibm01147
+		# ibm01148
+		# ibm01149
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
 		#
 		# @param ckStr [CkString]
@@ -249,96 +249,96 @@ module Chilkat
 
 		# Tells the charset converter the charset of the input data for a conversion. Possible values
 		# are:
-		#		
-		#		us-ascii
-		#		unicode (also known as UTF16LE or simply UTF16)
-		#		unicodefffe
+		# 
+		# us-ascii
+		# unicode (also known as UTF16LE or simply UTF16)
+		# unicodefffe
 		# (also known as
 		# UTF16BE)
-		#		ebcdic
-		#		iso-8859-1
-		#		iso-8859-2
-		#		iso-8859-3
-		#		iso-8859-4
-		#		iso-8859-5
-		#		iso-8859-6
-		#		iso-8859-7
-		#		iso-8859-8
-		#		iso-8859-9
-		#		iso-8859-13
-		#		iso-8859-15
-		#		windows-874
-		#		windows-1250
-		#		windows-1251
-		#		windows-1252
-		#		windows-1253
-		#		windows-1254
-		#		windows-1255
-		#		windows-1256
-		#		windows-1257
-		#		windows-1258
-		#		utf-7
-		#		utf-8
-		#		utf-32
-		#		utf-32be
-		#		shift_jis
-		#		gb2312
-		#		ks_c_5601-1987
-		#		big5
-		#		iso-2022-jp
-		#		iso-2022-kr
-		#		euc-jp
-		#		euc-kr
-		#		macintosh
-		#		x-mac-japanese
-		#		x-mac-chinesetrad
-		#		x-mac-korean
-		#		x-mac-arabic
-		#		x-mac-hebrew
-		#		x-mac-greek
-		#		x-mac-cyrillic
-		#		x-mac-chinesesimp
-		#		x-mac-romanian
-		#		x-mac-ukrainian
-		#		x-mac-thai
-		#		x-mac-ce
-		#		x-mac-icelandic
-		#		x-mac-turkish
-		#		x-mac-croatian
-		#		asmo-708
-		#		dos-720
-		#		dos-862
-		#		ibm01140
-		#		ibm01141
-		#		ibm01142
-		#		ibm01143
-		#		ibm01144
-		#		ibm01145
-		#		ibm01146
-		#		ibm01147
-		#		ibm01148
-		#		ibm01149
-		#		ibm037
-		#		ibm437
-		#		ibm500
-		#		ibm737
-		#		ibm775
-		#		ibm850
-		#		ibm852
-		#		ibm855
-		#		ibm857
-		#		ibm00858
-		#		ibm860
-		#		ibm861
-		#		ibm863
-		#		ibm864
-		#		ibm865
-		#		cp866
-		#		ibm869
-		#		ibm870
-		#		cp875
-		#		koi8-r
-		#		koi8-u
+		# ebcdic
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm01140
+		# ibm01141
+		# ibm01142
+		# ibm01143
+		# ibm01144
+		# ibm01145
+		# ibm01146
+		# ibm01147
+		# ibm01148
+		# ibm01149
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
 		#
 		# @param newval [String]
@@ -346,96 +346,96 @@ module Chilkat
 
 		# Tells the charset converter the charset of the input data for a conversion. Possible values
 		# are:
-		#		
-		#		us-ascii
-		#		unicode (also known as UTF16LE or simply UTF16)
-		#		unicodefffe
+		# 
+		# us-ascii
+		# unicode (also known as UTF16LE or simply UTF16)
+		# unicodefffe
 		# (also known as
 		# UTF16BE)
-		#		ebcdic
-		#		iso-8859-1
-		#		iso-8859-2
-		#		iso-8859-3
-		#		iso-8859-4
-		#		iso-8859-5
-		#		iso-8859-6
-		#		iso-8859-7
-		#		iso-8859-8
-		#		iso-8859-9
-		#		iso-8859-13
-		#		iso-8859-15
-		#		windows-874
-		#		windows-1250
-		#		windows-1251
-		#		windows-1252
-		#		windows-1253
-		#		windows-1254
-		#		windows-1255
-		#		windows-1256
-		#		windows-1257
-		#		windows-1258
-		#		utf-7
-		#		utf-8
-		#		utf-32
-		#		utf-32be
-		#		shift_jis
-		#		gb2312
-		#		ks_c_5601-1987
-		#		big5
-		#		iso-2022-jp
-		#		iso-2022-kr
-		#		euc-jp
-		#		euc-kr
-		#		macintosh
-		#		x-mac-japanese
-		#		x-mac-chinesetrad
-		#		x-mac-korean
-		#		x-mac-arabic
-		#		x-mac-hebrew
-		#		x-mac-greek
-		#		x-mac-cyrillic
-		#		x-mac-chinesesimp
-		#		x-mac-romanian
-		#		x-mac-ukrainian
-		#		x-mac-thai
-		#		x-mac-ce
-		#		x-mac-icelandic
-		#		x-mac-turkish
-		#		x-mac-croatian
-		#		asmo-708
-		#		dos-720
-		#		dos-862
-		#		ibm01140
-		#		ibm01141
-		#		ibm01142
-		#		ibm01143
-		#		ibm01144
-		#		ibm01145
-		#		ibm01146
-		#		ibm01147
-		#		ibm01148
-		#		ibm01149
-		#		ibm037
-		#		ibm437
-		#		ibm500
-		#		ibm737
-		#		ibm775
-		#		ibm850
-		#		ibm852
-		#		ibm855
-		#		ibm857
-		#		ibm00858
-		#		ibm860
-		#		ibm861
-		#		ibm863
-		#		ibm864
-		#		ibm865
-		#		cp866
-		#		ibm869
-		#		ibm870
-		#		cp875
-		#		koi8-r
-		#		koi8-u
+		# ebcdic
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm01140
+		# ibm01141
+		# ibm01142
+		# ibm01143
+		# ibm01144
+		# ibm01145
+		# ibm01146
+		# ibm01147
+		# ibm01148
+		# ibm01149
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
 		#
 		# @return [String]
@@ -443,96 +443,96 @@ module Chilkat
 
 		# Tells the charset converter the charset of the input data for a conversion. Possible values
 		# are:
-		#		
-		#		us-ascii
-		#		unicode (also known as UTF16LE or simply UTF16)
-		#		unicodefffe
+		# 
+		# us-ascii
+		# unicode (also known as UTF16LE or simply UTF16)
+		# unicodefffe
 		# (also known as
 		# UTF16BE)
-		#		ebcdic
-		#		iso-8859-1
-		#		iso-8859-2
-		#		iso-8859-3
-		#		iso-8859-4
-		#		iso-8859-5
-		#		iso-8859-6
-		#		iso-8859-7
-		#		iso-8859-8
-		#		iso-8859-9
-		#		iso-8859-13
-		#		iso-8859-15
-		#		windows-874
-		#		windows-1250
-		#		windows-1251
-		#		windows-1252
-		#		windows-1253
-		#		windows-1254
-		#		windows-1255
-		#		windows-1256
-		#		windows-1257
-		#		windows-1258
-		#		utf-7
-		#		utf-8
-		#		utf-32
-		#		utf-32be
-		#		shift_jis
-		#		gb2312
-		#		ks_c_5601-1987
-		#		big5
-		#		iso-2022-jp
-		#		iso-2022-kr
-		#		euc-jp
-		#		euc-kr
-		#		macintosh
-		#		x-mac-japanese
-		#		x-mac-chinesetrad
-		#		x-mac-korean
-		#		x-mac-arabic
-		#		x-mac-hebrew
-		#		x-mac-greek
-		#		x-mac-cyrillic
-		#		x-mac-chinesesimp
-		#		x-mac-romanian
-		#		x-mac-ukrainian
-		#		x-mac-thai
-		#		x-mac-ce
-		#		x-mac-icelandic
-		#		x-mac-turkish
-		#		x-mac-croatian
-		#		asmo-708
-		#		dos-720
-		#		dos-862
-		#		ibm01140
-		#		ibm01141
-		#		ibm01142
-		#		ibm01143
-		#		ibm01144
-		#		ibm01145
-		#		ibm01146
-		#		ibm01147
-		#		ibm01148
-		#		ibm01149
-		#		ibm037
-		#		ibm437
-		#		ibm500
-		#		ibm737
-		#		ibm775
-		#		ibm850
-		#		ibm852
-		#		ibm855
-		#		ibm857
-		#		ibm00858
-		#		ibm860
-		#		ibm861
-		#		ibm863
-		#		ibm864
-		#		ibm865
-		#		cp866
-		#		ibm869
-		#		ibm870
-		#		cp875
-		#		koi8-r
-		#		koi8-u
+		# ebcdic
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm01140
+		# ibm01141
+		# ibm01142
+		# ibm01143
+		# ibm01144
+		# ibm01145
+		# ibm01146
+		# ibm01147
+		# ibm01148
+		# ibm01149
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
 		#
 		# @param newval [String]
@@ -727,96 +727,96 @@ module Chilkat
 
 		# Tells the charset converter the target charset for a conversion. Possible values
 		# are:
-		#		
-		#		us-ascii
-		#		unicode (also known as UTF16LE or simply UTF16)
-		#		unicodefffe
+		# 
+		# us-ascii
+		# unicode (also known as UTF16LE or simply UTF16)
+		# unicodefffe
 		# (also known as
 		# UTF16BE)
-		#		ebcdic
-		#		iso-8859-1
-		#		iso-8859-2
-		#		iso-8859-3
-		#		iso-8859-4
-		#		iso-8859-5
-		#		iso-8859-6
-		#		iso-8859-7
-		#		iso-8859-8
-		#		iso-8859-9
-		#		iso-8859-13
-		#		iso-8859-15
-		#		windows-874
-		#		windows-1250
-		#		windows-1251
-		#		windows-1252
-		#		windows-1253
-		#		windows-1254
-		#		windows-1255
-		#		windows-1256
-		#		windows-1257
-		#		windows-1258
-		#		utf-7
-		#		utf-8
-		#		utf-32
-		#		utf-32be
-		#		shift_jis
-		#		gb2312
-		#		ks_c_5601-1987
-		#		big5
-		#		iso-2022-jp
-		#		iso-2022-kr
-		#		euc-jp
-		#		euc-kr
-		#		macintosh
-		#		x-mac-japanese
-		#		x-mac-chinesetrad
-		#		x-mac-korean
-		#		x-mac-arabic
-		#		x-mac-hebrew
-		#		x-mac-greek
-		#		x-mac-cyrillic
-		#		x-mac-chinesesimp
-		#		x-mac-romanian
-		#		x-mac-ukrainian
-		#		x-mac-thai
-		#		x-mac-ce
-		#		x-mac-icelandic
-		#		x-mac-turkish
-		#		x-mac-croatian
-		#		asmo-708
-		#		dos-720
-		#		dos-862
-		#		ibm01140
-		#		ibm01141
-		#		ibm01142
-		#		ibm01143
-		#		ibm01144
-		#		ibm01145
-		#		ibm01146
-		#		ibm01147
-		#		ibm01148
-		#		ibm01149
-		#		ibm037
-		#		ibm437
-		#		ibm500
-		#		ibm737
-		#		ibm775
-		#		ibm850
-		#		ibm852
-		#		ibm855
-		#		ibm857
-		#		ibm00858
-		#		ibm860
-		#		ibm861
-		#		ibm863
-		#		ibm864
-		#		ibm865
-		#		cp866
-		#		ibm869
-		#		ibm870
-		#		cp875
-		#		koi8-r
-		#		koi8-u
+		# ebcdic
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm01140
+		# ibm01141
+		# ibm01142
+		# ibm01143
+		# ibm01144
+		# ibm01145
+		# ibm01146
+		# ibm01147
+		# ibm01148
+		# ibm01149
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
 		#
 		# @param ckStr [CkString]
@@ -826,96 +826,96 @@ module Chilkat
 
 		# Tells the charset converter the target charset for a conversion. Possible values
 		# are:
-		#		
-		#		us-ascii
-		#		unicode (also known as UTF16LE or simply UTF16)
-		#		unicodefffe
+		# 
+		# us-ascii
+		# unicode (also known as UTF16LE or simply UTF16)
+		# unicodefffe
 		# (also known as
 		# UTF16BE)
-		#		ebcdic
-		#		iso-8859-1
-		#		iso-8859-2
-		#		iso-8859-3
-		#		iso-8859-4
-		#		iso-8859-5
-		#		iso-8859-6
-		#		iso-8859-7
-		#		iso-8859-8
-		#		iso-8859-9
-		#		iso-8859-13
-		#		iso-8859-15
-		#		windows-874
-		#		windows-1250
-		#		windows-1251
-		#		windows-1252
-		#		windows-1253
-		#		windows-1254
-		#		windows-1255
-		#		windows-1256
-		#		windows-1257
-		#		windows-1258
-		#		utf-7
-		#		utf-8
-		#		utf-32
-		#		utf-32be
-		#		shift_jis
-		#		gb2312
-		#		ks_c_5601-1987
-		#		big5
-		#		iso-2022-jp
-		#		iso-2022-kr
-		#		euc-jp
-		#		euc-kr
-		#		macintosh
-		#		x-mac-japanese
-		#		x-mac-chinesetrad
-		#		x-mac-korean
-		#		x-mac-arabic
-		#		x-mac-hebrew
-		#		x-mac-greek
-		#		x-mac-cyrillic
-		#		x-mac-chinesesimp
-		#		x-mac-romanian
-		#		x-mac-ukrainian
-		#		x-mac-thai
-		#		x-mac-ce
-		#		x-mac-icelandic
-		#		x-mac-turkish
-		#		x-mac-croatian
-		#		asmo-708
-		#		dos-720
-		#		dos-862
-		#		ibm01140
-		#		ibm01141
-		#		ibm01142
-		#		ibm01143
-		#		ibm01144
-		#		ibm01145
-		#		ibm01146
-		#		ibm01147
-		#		ibm01148
-		#		ibm01149
-		#		ibm037
-		#		ibm437
-		#		ibm500
-		#		ibm737
-		#		ibm775
-		#		ibm850
-		#		ibm852
-		#		ibm855
-		#		ibm857
-		#		ibm00858
-		#		ibm860
-		#		ibm861
-		#		ibm863
-		#		ibm864
-		#		ibm865
-		#		cp866
-		#		ibm869
-		#		ibm870
-		#		cp875
-		#		koi8-r
-		#		koi8-u
+		# ebcdic
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm01140
+		# ibm01141
+		# ibm01142
+		# ibm01143
+		# ibm01144
+		# ibm01145
+		# ibm01146
+		# ibm01147
+		# ibm01148
+		# ibm01149
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
 		#
 		# @param newval [String]
@@ -923,96 +923,96 @@ module Chilkat
 
 		# Tells the charset converter the target charset for a conversion. Possible values
 		# are:
-		#		
-		#		us-ascii
-		#		unicode (also known as UTF16LE or simply UTF16)
-		#		unicodefffe
+		# 
+		# us-ascii
+		# unicode (also known as UTF16LE or simply UTF16)
+		# unicodefffe
 		# (also known as
 		# UTF16BE)
-		#		ebcdic
-		#		iso-8859-1
-		#		iso-8859-2
-		#		iso-8859-3
-		#		iso-8859-4
-		#		iso-8859-5
-		#		iso-8859-6
-		#		iso-8859-7
-		#		iso-8859-8
-		#		iso-8859-9
-		#		iso-8859-13
-		#		iso-8859-15
-		#		windows-874
-		#		windows-1250
-		#		windows-1251
-		#		windows-1252
-		#		windows-1253
-		#		windows-1254
-		#		windows-1255
-		#		windows-1256
-		#		windows-1257
-		#		windows-1258
-		#		utf-7
-		#		utf-8
-		#		utf-32
-		#		utf-32be
-		#		shift_jis
-		#		gb2312
-		#		ks_c_5601-1987
-		#		big5
-		#		iso-2022-jp
-		#		iso-2022-kr
-		#		euc-jp
-		#		euc-kr
-		#		macintosh
-		#		x-mac-japanese
-		#		x-mac-chinesetrad
-		#		x-mac-korean
-		#		x-mac-arabic
-		#		x-mac-hebrew
-		#		x-mac-greek
-		#		x-mac-cyrillic
-		#		x-mac-chinesesimp
-		#		x-mac-romanian
-		#		x-mac-ukrainian
-		#		x-mac-thai
-		#		x-mac-ce
-		#		x-mac-icelandic
-		#		x-mac-turkish
-		#		x-mac-croatian
-		#		asmo-708
-		#		dos-720
-		#		dos-862
-		#		ibm01140
-		#		ibm01141
-		#		ibm01142
-		#		ibm01143
-		#		ibm01144
-		#		ibm01145
-		#		ibm01146
-		#		ibm01147
-		#		ibm01148
-		#		ibm01149
-		#		ibm037
-		#		ibm437
-		#		ibm500
-		#		ibm737
-		#		ibm775
-		#		ibm850
-		#		ibm852
-		#		ibm855
-		#		ibm857
-		#		ibm00858
-		#		ibm860
-		#		ibm861
-		#		ibm863
-		#		ibm864
-		#		ibm865
-		#		cp866
-		#		ibm869
-		#		ibm870
-		#		cp875
-		#		koi8-r
-		#		koi8-u
+		# ebcdic
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm01140
+		# ibm01141
+		# ibm01142
+		# ibm01143
+		# ibm01144
+		# ibm01145
+		# ibm01146
+		# ibm01147
+		# ibm01148
+		# ibm01149
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
 		#
 		# @return [String]
@@ -1020,96 +1020,96 @@ module Chilkat
 
 		# Tells the charset converter the target charset for a conversion. Possible values
 		# are:
-		#		
-		#		us-ascii
-		#		unicode (also known as UTF16LE or simply UTF16)
-		#		unicodefffe
+		# 
+		# us-ascii
+		# unicode (also known as UTF16LE or simply UTF16)
+		# unicodefffe
 		# (also known as
 		# UTF16BE)
-		#		ebcdic
-		#		iso-8859-1
-		#		iso-8859-2
-		#		iso-8859-3
-		#		iso-8859-4
-		#		iso-8859-5
-		#		iso-8859-6
-		#		iso-8859-7
-		#		iso-8859-8
-		#		iso-8859-9
-		#		iso-8859-13
-		#		iso-8859-15
-		#		windows-874
-		#		windows-1250
-		#		windows-1251
-		#		windows-1252
-		#		windows-1253
-		#		windows-1254
-		#		windows-1255
-		#		windows-1256
-		#		windows-1257
-		#		windows-1258
-		#		utf-7
-		#		utf-8
-		#		utf-32
-		#		utf-32be
-		#		shift_jis
-		#		gb2312
-		#		ks_c_5601-1987
-		#		big5
-		#		iso-2022-jp
-		#		iso-2022-kr
-		#		euc-jp
-		#		euc-kr
-		#		macintosh
-		#		x-mac-japanese
-		#		x-mac-chinesetrad
-		#		x-mac-korean
-		#		x-mac-arabic
-		#		x-mac-hebrew
-		#		x-mac-greek
-		#		x-mac-cyrillic
-		#		x-mac-chinesesimp
-		#		x-mac-romanian
-		#		x-mac-ukrainian
-		#		x-mac-thai
-		#		x-mac-ce
-		#		x-mac-icelandic
-		#		x-mac-turkish
-		#		x-mac-croatian
-		#		asmo-708
-		#		dos-720
-		#		dos-862
-		#		ibm01140
-		#		ibm01141
-		#		ibm01142
-		#		ibm01143
-		#		ibm01144
-		#		ibm01145
-		#		ibm01146
-		#		ibm01147
-		#		ibm01148
-		#		ibm01149
-		#		ibm037
-		#		ibm437
-		#		ibm500
-		#		ibm737
-		#		ibm775
-		#		ibm850
-		#		ibm852
-		#		ibm855
-		#		ibm857
-		#		ibm00858
-		#		ibm860
-		#		ibm861
-		#		ibm863
-		#		ibm864
-		#		ibm865
-		#		cp866
-		#		ibm869
-		#		ibm870
-		#		cp875
-		#		koi8-r
-		#		koi8-u
+		# ebcdic
+		# iso-8859-1
+		# iso-8859-2
+		# iso-8859-3
+		# iso-8859-4
+		# iso-8859-5
+		# iso-8859-6
+		# iso-8859-7
+		# iso-8859-8
+		# iso-8859-9
+		# iso-8859-13
+		# iso-8859-15
+		# windows-874
+		# windows-1250
+		# windows-1251
+		# windows-1252
+		# windows-1253
+		# windows-1254
+		# windows-1255
+		# windows-1256
+		# windows-1257
+		# windows-1258
+		# utf-7
+		# utf-8
+		# utf-32
+		# utf-32be
+		# shift_jis
+		# gb2312
+		# ks_c_5601-1987
+		# big5
+		# iso-2022-jp
+		# iso-2022-kr
+		# euc-jp
+		# euc-kr
+		# macintosh
+		# x-mac-japanese
+		# x-mac-chinesetrad
+		# x-mac-korean
+		# x-mac-arabic
+		# x-mac-hebrew
+		# x-mac-greek
+		# x-mac-cyrillic
+		# x-mac-chinesesimp
+		# x-mac-romanian
+		# x-mac-ukrainian
+		# x-mac-thai
+		# x-mac-ce
+		# x-mac-icelandic
+		# x-mac-turkish
+		# x-mac-croatian
+		# asmo-708
+		# dos-720
+		# dos-862
+		# ibm01140
+		# ibm01141
+		# ibm01142
+		# ibm01143
+		# ibm01144
+		# ibm01145
+		# ibm01146
+		# ibm01147
+		# ibm01148
+		# ibm01149
+		# ibm037
+		# ibm437
+		# ibm500
+		# ibm737
+		# ibm775
+		# ibm850
+		# ibm852
+		# ibm855
+		# ibm857
+		# ibm00858
+		# ibm860
+		# ibm861
+		# ibm863
+		# ibm864
+		# ibm865
+		# cp866
+		# ibm869
+		# ibm870
+		# cp875
+		# koi8-r
+		# koi8-u
 		#
 		#
 		# @param newval [String]
@@ -1117,8 +1117,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1127,8 +1127,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1169,7 +1169,7 @@ module Chilkat
 		#
 		# @param charsetName [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def CharsetToCodePage(charsetName)
 			# ...
 		end
@@ -1182,7 +1182,7 @@ module Chilkat
 		# @param codePage [Fixnum]
 		# @param outCharset [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CodePageToCharset(codePage, outCharset)
 			# ...
 		end
@@ -1194,7 +1194,7 @@ module Chilkat
 		#
 		# @param codePage [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def codePageToCharset(codePage)
 			# ...
 		end
@@ -1209,7 +1209,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertData(inData, outData)
 			# ...
 		end
@@ -1225,7 +1225,7 @@ module Chilkat
 		# @param inPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertFile(inPath, destPath)
 			# ...
 		end
@@ -1240,7 +1240,7 @@ module Chilkat
 		# @param inPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertFileNoPreamble(inPath, destPath)
 			# ...
 		end
@@ -1253,7 +1253,7 @@ module Chilkat
 		# @param inData [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertFromUnicode(inData, outBytes)
 			# ...
 		end
@@ -1266,7 +1266,7 @@ module Chilkat
 		# @param uniData [CkByteData]
 		# @param outMbData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertFromUtf16(uniData, outMbData)
 			# ...
 		end
@@ -1281,7 +1281,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outHtml [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertHtml(inData, outHtml)
 			# ...
 		end
@@ -1297,7 +1297,7 @@ module Chilkat
 		# @param inPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertHtmlFile(inPath, destPath)
 			# ...
 		end
@@ -1311,7 +1311,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertToUnicode(inData, outStr)
 			# ...
 		end
@@ -1324,7 +1324,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def convertToUnicode(inData)
 			# ...
 		end
@@ -1337,7 +1337,7 @@ module Chilkat
 		# @param mbData [CkByteData]
 		# @param outUniData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertToUtf16(mbData, outUniData)
 			# ...
 		end
@@ -1350,7 +1350,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EntityEncodeDec(str, outStr)
 			# ...
 		end
@@ -1362,7 +1362,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def entityEncodeDec(str)
 			# ...
 		end
@@ -1375,7 +1375,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EntityEncodeHex(str, outStr)
 			# ...
 		end
@@ -1387,7 +1387,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def entityEncodeHex(str)
 			# ...
 		end
@@ -1400,7 +1400,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outCharset [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHtmlCharset(inData, outCharset)
 			# ...
 		end
@@ -1412,7 +1412,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHtmlCharset(inData)
 			# ...
 		end
@@ -1425,7 +1425,7 @@ module Chilkat
 		# @param htmlFilePath [String]
 		# @param outCharset [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetHtmlFileCharset(htmlFilePath, outCharset)
 			# ...
 		end
@@ -1437,7 +1437,7 @@ module Chilkat
 		#
 		# @param htmlFilePath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getHtmlFileCharset(htmlFilePath)
 			# ...
 		end
@@ -1450,7 +1450,7 @@ module Chilkat
 		# @param inStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HtmlDecodeToStr(inStr, outStr)
 			# ...
 		end
@@ -1462,7 +1462,7 @@ module Chilkat
 		#
 		# @param inStr [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def htmlDecodeToStr(inStr)
 			# ...
 		end
@@ -1477,7 +1477,7 @@ module Chilkat
 		# @param inHtml [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HtmlEntityDecode(inHtml, outData)
 			# ...
 		end
@@ -1492,7 +1492,7 @@ module Chilkat
 		# @param inPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HtmlEntityDecodeFile(inPath, destPath)
 			# ...
 		end
@@ -1503,7 +1503,7 @@ module Chilkat
 		# Returns true if the component is unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -1516,7 +1516,7 @@ module Chilkat
 		# @param inStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LowerCase(inStr, outStr)
 			# ...
 		end
@@ -1528,7 +1528,7 @@ module Chilkat
 		#
 		# @param inStr [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def lowerCase(inStr)
 			# ...
 		end
@@ -1541,7 +1541,7 @@ module Chilkat
 		# @param path [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFile(path, outData)
 			# ...
 		end
@@ -1556,7 +1556,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileToString(path, charset, outStr)
 			# ...
 		end
@@ -1570,7 +1570,7 @@ module Chilkat
 		# @param path [String]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readFileToString(path, charset)
 			# ...
 		end
@@ -1582,7 +1582,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1595,7 +1595,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetErrorBytes(data)
 			# ...
 		end
@@ -1609,7 +1609,7 @@ module Chilkat
 		# @param str [String]
 		# @param charset [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetErrorString(str, charset)
 			# ...
 		end
@@ -1622,7 +1622,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -1635,7 +1635,7 @@ module Chilkat
 		# @param inStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UpperCase(inStr, outStr)
 			# ...
 		end
@@ -1647,7 +1647,7 @@ module Chilkat
 		#
 		# @param inStr [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def upperCase(inStr)
 			# ...
 		end
@@ -1660,7 +1660,7 @@ module Chilkat
 		# @param inStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UrlDecodeStr(inStr, outStr)
 			# ...
 		end
@@ -1672,7 +1672,7 @@ module Chilkat
 		#
 		# @param inStr [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def urlDecodeStr(inStr)
 			# ...
 		end
@@ -1685,7 +1685,7 @@ module Chilkat
 		# @param charset [String]
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyData(charset, inData)
 			# ...
 		end
@@ -1699,7 +1699,7 @@ module Chilkat
 		# @param charset [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyFile(charset, path)
 			# ...
 		end
@@ -1712,7 +1712,7 @@ module Chilkat
 		# @param path [String]
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path, byteData)
 			# ...
 		end
@@ -1727,7 +1727,7 @@ module Chilkat
 		# @param path [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteStringToFile(textData, path, charset)
 			# ...
 		end

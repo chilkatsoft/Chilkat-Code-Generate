@@ -31,13 +31,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -56,13 +56,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -79,13 +79,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -102,13 +102,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -238,30 +238,30 @@ module Chilkat
 		def get_LastStringResultLen() end
 
 		# Defines the format of the string to sign.
-		#		The format is specified as a comma-separated list of
+		# The format is specified as a comma-separated list of
 		# names. For
 		# example:
-		#		
-		#		signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
-		#		
-		#		This
+		# 
+		# signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
+		# 
+		# This
 		# will result in an actual string-to-sign that is composed of the values for each name separated by
 		# newline (LF) chars. For example:
-		#		
-		#		signedpermissions + "\n" + 
-		#		signedstart + "\n" +
-		# #		signedexpiry + "\n" + 
-		#		canonicalizedresource + "\n" + 
-		#		signedidentifier + "\n" +
-		# #		signedIP + "\n" + 
-		#		signedProtocol + "\n" + 
-		#		signedversion + "\n" + 
-		#		rscc + "\n"
+		# 
+		# signedpermissions + "\n" + 
+		# signedstart + "\n" +
+		# # signedexpiry + "\n" + 
+		# canonicalizedresource + "\n" + 
+		# signedidentifier + "\n" +
+		# # signedIP + "\n" + 
+		# signedProtocol + "\n" + 
+		# signedversion + "\n" + 
+		# rscc + "\n"
 		# + 
-		#		rscd + "\n" + 
-		#		rsce + "\n" + 
-		#		rscl + "\n" + 
-		#		rsct
+		# rscd + "\n" + 
+		# rsce + "\n" + 
+		# rscl + "\n" + 
+		# rsct
 		#
 		#
 		# @param ckStr [CkString]
@@ -270,90 +270,90 @@ module Chilkat
 		def get_StringToSign(ckStr) end
 
 		# Defines the format of the string to sign.
-		#		The format is specified as a comma-separated list of
+		# The format is specified as a comma-separated list of
 		# names. For
 		# example:
-		#		
-		#		signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
-		#		
-		#		This
+		# 
+		# signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
+		# 
+		# This
 		# will result in an actual string-to-sign that is composed of the values for each name separated by
 		# newline (LF) chars. For example:
-		#		
-		#		signedpermissions + "\n" + 
-		#		signedstart + "\n" +
-		# #		signedexpiry + "\n" + 
-		#		canonicalizedresource + "\n" + 
-		#		signedidentifier + "\n" +
-		# #		signedIP + "\n" + 
-		#		signedProtocol + "\n" + 
-		#		signedversion + "\n" + 
-		#		rscc + "\n"
+		# 
+		# signedpermissions + "\n" + 
+		# signedstart + "\n" +
+		# # signedexpiry + "\n" + 
+		# canonicalizedresource + "\n" + 
+		# signedidentifier + "\n" +
+		# # signedIP + "\n" + 
+		# signedProtocol + "\n" + 
+		# signedversion + "\n" + 
+		# rscc + "\n"
 		# + 
-		#		rscd + "\n" + 
-		#		rsce + "\n" + 
-		#		rscl + "\n" + 
-		#		rsct
+		# rscd + "\n" + 
+		# rsce + "\n" + 
+		# rscl + "\n" + 
+		# rsct
 		#
 		#
 		# @param newval [String]
 		def put_StringToSign(newval) end
 
 		# Defines the format of the string to sign.
-		#		The format is specified as a comma-separated list of
+		# The format is specified as a comma-separated list of
 		# names. For
 		# example:
-		#		
-		#		signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
-		#		
-		#		This
+		# 
+		# signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
+		# 
+		# This
 		# will result in an actual string-to-sign that is composed of the values for each name separated by
 		# newline (LF) chars. For example:
-		#		
-		#		signedpermissions + "\n" + 
-		#		signedstart + "\n" +
-		# #		signedexpiry + "\n" + 
-		#		canonicalizedresource + "\n" + 
-		#		signedidentifier + "\n" +
-		# #		signedIP + "\n" + 
-		#		signedProtocol + "\n" + 
-		#		signedversion + "\n" + 
-		#		rscc + "\n"
+		# 
+		# signedpermissions + "\n" + 
+		# signedstart + "\n" +
+		# # signedexpiry + "\n" + 
+		# canonicalizedresource + "\n" + 
+		# signedidentifier + "\n" +
+		# # signedIP + "\n" + 
+		# signedProtocol + "\n" + 
+		# signedversion + "\n" + 
+		# rscc + "\n"
 		# + 
-		#		rscd + "\n" + 
-		#		rsce + "\n" + 
-		#		rscl + "\n" + 
-		#		rsct
+		# rscd + "\n" + 
+		# rsce + "\n" + 
+		# rscl + "\n" + 
+		# rsct
 		#
 		#
 		# @return [String]
 		def stringToSign() end
 
 		# Defines the format of the string to sign.
-		#		The format is specified as a comma-separated list of
+		# The format is specified as a comma-separated list of
 		# names. For
 		# example:
-		#		
-		#		signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
-		#		
-		#		This
+		# 
+		# signedpermissions,signedstart,signedexpiry,canonicalizedresource,signedidentifier,signedIP,signedProtocol,signedversion,rscc,rscd,rsce,rscl,rsct
+		# 
+		# This
 		# will result in an actual string-to-sign that is composed of the values for each name separated by
 		# newline (LF) chars. For example:
-		#		
-		#		signedpermissions + "\n" + 
-		#		signedstart + "\n" +
-		# #		signedexpiry + "\n" + 
-		#		canonicalizedresource + "\n" + 
-		#		signedidentifier + "\n" +
-		# #		signedIP + "\n" + 
-		#		signedProtocol + "\n" + 
-		#		signedversion + "\n" + 
-		#		rscc + "\n"
+		# 
+		# signedpermissions + "\n" + 
+		# signedstart + "\n" +
+		# # signedexpiry + "\n" + 
+		# canonicalizedresource + "\n" + 
+		# signedidentifier + "\n" +
+		# # signedIP + "\n" + 
+		# signedProtocol + "\n" + 
+		# signedversion + "\n" + 
+		# rscc + "\n"
 		# + 
-		#		rscd + "\n" + 
-		#		rsce + "\n" + 
-		#		rscl + "\n" + 
-		#		rsct
+		# rscd + "\n" + 
+		# rsce + "\n" + 
+		# rscl + "\n" + 
+		# rsct
 		#
 		#
 		# @param newval [String]
@@ -361,8 +361,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -371,8 +371,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -411,7 +411,7 @@ module Chilkat
 		# Clears all params set by the methods SetNonTokenParam and SetTokenParam.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -423,7 +423,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenerateToken(outStr)
 			# ...
 		end
@@ -434,7 +434,7 @@ module Chilkat
 		# Generates and returns the SAS token based on the defined StringToSign and params.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def generateToken()
 			# ...
 		end
@@ -446,7 +446,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -460,7 +460,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetNonTokenParam(name, value)
 			# ...
 		end
@@ -475,7 +475,7 @@ module Chilkat
 		# @param authParamName [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetTokenParam(name, authParamName, value)
 			# ...
 		end

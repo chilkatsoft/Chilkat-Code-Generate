@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -315,8 +315,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -325,8 +325,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -366,7 +366,7 @@ module Chilkat
 		#
 		# @param derData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromDer(derData)
 			# ...
 		end
@@ -378,7 +378,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromDerFile(path)
 			# ...
 		end
@@ -392,7 +392,7 @@ module Chilkat
 		# @param password [String]
 		# @param pemData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromEncryptedPem(password, pemData)
 			# ...
 		end
@@ -404,7 +404,7 @@ module Chilkat
 		#
 		# @param pemData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromPem(pemData)
 			# ...
 		end
@@ -416,7 +416,7 @@ module Chilkat
 		#
 		# @param derData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromPublicDer(derData)
 			# ...
 		end
@@ -428,7 +428,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromPublicDerFile(path)
 			# ...
 		end
@@ -440,7 +440,7 @@ module Chilkat
 		#
 		# @param pemData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromPublicPem(pemData)
 			# ...
 		end
@@ -452,7 +452,7 @@ module Chilkat
 		#
 		# @param xmlKey [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FromXml(xmlKey)
 			# ...
 		end
@@ -466,7 +466,7 @@ module Chilkat
 		#
 		# @param numBits [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenKey(numBits)
 			# ...
 		end
@@ -479,7 +479,7 @@ module Chilkat
 		#
 		# @param derBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenKeyFromParamsDer(derBytes)
 			# ...
 		end
@@ -488,18 +488,18 @@ module Chilkat
 		# Method: GenKeyFromParamsDerFile
 		#
 		# Generates a new DSA key from a DER-format parameters file created by OpenSSL.
-		#		An example of
+		# An example of
 		# using OpenSSL to generate DSA parameters in DER format is:
-		#		
-		#		openssl dsaparam -outform
+		# 
+		# openssl dsaparam -outform
 		# DER 1024 dsaparam.der
-		#		
-		#		The newly generated key may be exported by calling one of the To*
+		# 
+		# The newly generated key may be exported by calling one of the To*
 		# methods.
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenKeyFromParamsDerFile(path)
 			# ...
 		end
@@ -512,7 +512,7 @@ module Chilkat
 		#
 		# @param pem [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenKeyFromParamsPem(pem)
 			# ...
 		end
@@ -522,32 +522,32 @@ module Chilkat
 		#
 		# Generates a new DSA key from a PEM parameters file created by OpenSSL. The newly generated key may
 		# be exported by calling one of the To* methods.
-		#		
-		#		OpenSSL provides the ability to generate
+		# 
+		# OpenSSL provides the ability to generate
 		# DSA key parameters. For example:
-		#		
-		#		openssl dsaparam 1024
+		# 
+		# openssl dsaparam 1024
 		# dsaparam.pem
-		#		
-		#		
-		#		Here is a sample DSA parameters PEM:
-		#		
-		#		-----BEGIN DSA
+		# 
+		# 
+		# Here is a sample DSA parameters PEM:
+		# 
+		# -----BEGIN DSA
 		# PARAMETERS-----
-		#		MIIBHgKBgQCXIAx4XzLVZ5ZqOFzdsYWVyH/6E/mVPw4TgMZS6Wxajnbdn1/CUBzE
-		#		RWTUp8SguTSDpjC1Q/nyno0G6Q96VoW+PUXv8qUph8vbSaEdsjYO/8jSfzkGfvsa
-		#		cucr1ythfNyk63aZAKzxeutOmsVe77l6pZI96ROjWF5iizuUB4WgmwIVANxM70wH
-		#		8iPPYVzPZqtXCB66I2SnAoGAIbW2VYRjRdoA7trJgmnfWakghKwV1WyaYrotqeDE
-		#		07/dipp0cNuY0IAJgSmqLHlAkNa2ZNI/c1mNxcwhYzZrnn8CXIqrYmtI33w0PYCx
-		#		KHPqj7puhddFwYS/rFiyWAN0jtCMHlfCVzFGbSzach5QQraPV9YApJXy+ORJ8VPU
-		#		/zo=
-		#		-----END
+		# MIIBHgKBgQCXIAx4XzLVZ5ZqOFzdsYWVyH/6E/mVPw4TgMZS6Wxajnbdn1/CUBzE
+		# RWTUp8SguTSDpjC1Q/nyno0G6Q96VoW+PUXv8qUph8vbSaEdsjYO/8jSfzkGfvsa
+		# cucr1ythfNyk63aZAKzxeutOmsVe77l6pZI96ROjWF5iizuUB4WgmwIVANxM70wH
+		# 8iPPYVzPZqtXCB66I2SnAoGAIbW2VYRjRdoA7trJgmnfWakghKwV1WyaYrotqeDE
+		# 07/dipp0cNuY0IAJgSmqLHlAkNa2ZNI/c1mNxcwhYzZrnn8CXIqrYmtI33w0PYCx
+		# KHPqj7puhddFwYS/rFiyWAN0jtCMHlfCVzFGbSzach5QQraPV9YApJXy+ORJ8VPU
+		# /zo=
+		# -----END
 		# DSA PARAMETERS-----
 		#
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenKeyFromParamsPemFile(path)
 			# ...
 		end
@@ -561,7 +561,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncodedHash(encoding, outStr)
 			# ...
 		end
@@ -574,7 +574,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncodedHash(encoding)
 			# ...
 		end
@@ -588,7 +588,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncodedSignature(encoding, outStr)
 			# ...
 		end
@@ -601,7 +601,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncodedSignature(encoding)
 			# ...
 		end
@@ -615,7 +615,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadText(path, outStr)
 			# ...
 		end
@@ -628,7 +628,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def loadText(path)
 			# ...
 		end
@@ -640,7 +640,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -654,7 +654,7 @@ module Chilkat
 		# @param strToSave [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveText(strToSave, path)
 			# ...
 		end
@@ -669,7 +669,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param encodedHash [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetEncodedHash(encoding, encodedHash)
 			# ...
 		end
@@ -684,7 +684,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetEncodedSignature(encoding, encodedSig)
 			# ...
 		end
@@ -700,7 +700,7 @@ module Chilkat
 		# @param encodedR [String]
 		# @param encodedS [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetEncodedSignatureRS(encoding, encodedR, encodedS)
 			# ...
 		end
@@ -719,7 +719,7 @@ module Chilkat
 		# @param gHex [String]
 		# @param xHex [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetKeyExplicit(groupSizeInBytes, pHex, qHex, gHex, xHex)
 			# ...
 		end
@@ -738,7 +738,7 @@ module Chilkat
 		# @param gHex [String]
 		# @param yHex [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPubKeyExplicit(groupSizeInBytes, pHex, qHex, gHex, yHex)
 			# ...
 		end
@@ -752,7 +752,7 @@ module Chilkat
 		# property.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SignHash()
 			# ...
 		end
@@ -764,7 +764,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToDer(outBytes)
 			# ...
 		end
@@ -776,7 +776,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToDerFile(path)
 			# ...
 		end
@@ -789,7 +789,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToEncryptedPem(password, outStr)
 			# ...
 		end
@@ -801,7 +801,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def toEncryptedPem(password)
 			# ...
 		end
@@ -813,7 +813,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToPem(outStr)
 			# ...
 		end
@@ -824,7 +824,7 @@ module Chilkat
 		# Writes the DSA private key to an in-memory PEM string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toPem()
 			# ...
 		end
@@ -836,7 +836,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToPublicDer(outBytes)
 			# ...
 		end
@@ -848,7 +848,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToPublicDerFile(path)
 			# ...
 		end
@@ -860,7 +860,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToPublicPem(outStr)
 			# ...
 		end
@@ -871,7 +871,7 @@ module Chilkat
 		# Writes the DSA public key to an in-memory PEM string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toPublicPem()
 			# ...
 		end
@@ -885,7 +885,7 @@ module Chilkat
 		# @param bPublicOnly [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToXml(bPublicOnly, outStr)
 			# ...
 		end
@@ -898,7 +898,7 @@ module Chilkat
 		#
 		# @param bPublicOnly [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def toXml(bPublicOnly)
 			# ...
 		end
@@ -910,7 +910,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -922,7 +922,7 @@ module Chilkat
 		# method. (These properties may also be set via the SetEncodedHash and SetEncodedSignature methods.)
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Verify()
 			# ...
 		end
@@ -934,7 +934,7 @@ module Chilkat
 		# if valid, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyKey()
 			# ...
 		end

@@ -15,13 +15,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -40,13 +40,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -63,13 +63,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -86,13 +86,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -228,8 +228,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -238,8 +238,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -281,7 +281,7 @@ module Chilkat
 		# @param tag [String]
 		# @param value [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def AddElement(tag, value)
 			# ...
 		end
@@ -295,7 +295,7 @@ module Chilkat
 		# @param tag [String]
 		# @param dateTime [Object]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AddElementDate(tag, dateTime)
 			# ...
@@ -311,7 +311,7 @@ module Chilkat
 		# @param tag [String]
 		# @param dateTimeStr [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def AddElementDateStr(tag, dateTimeStr)
 			# ...
 		end
@@ -325,7 +325,7 @@ module Chilkat
 		# @param tag [String]
 		# @param dateTime [CkDateTime]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def AddElementDt(tag, dateTime)
 			# ...
 		end
@@ -339,7 +339,7 @@ module Chilkat
 		# @param tag [String]
 		# @param htmlStr [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def AddElementHtml(tag, htmlStr)
 			# ...
 		end
@@ -353,7 +353,7 @@ module Chilkat
 		# @param tag [String]
 		# @param xmlStr [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def AddElementXHtml(tag, xmlStr)
 			# ...
 		end
@@ -367,7 +367,7 @@ module Chilkat
 		# @param tag [String]
 		# @param xmlStr [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def AddElementXml(tag, xmlStr)
 			# ...
 		end
@@ -379,7 +379,7 @@ module Chilkat
 		#
 		# @param xmlStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddEntry(xmlStr)
 			# ...
 		end
@@ -394,7 +394,7 @@ module Chilkat
 		# @param title [String]
 		# @param typ [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddLink(rel, href, title, typ)
 			# ...
 		end
@@ -410,7 +410,7 @@ module Chilkat
 		# @param uri [String]
 		# @param email [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddPerson(tag, name, uri, email)
 			# ...
 		end
@@ -424,7 +424,7 @@ module Chilkat
 		# @param tag [String]
 		# @param index [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def DeleteElement(tag, index)
 			# ...
 		end
@@ -440,7 +440,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param attrName [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def DeleteElementAttr(tag, index, attrName)
 			# ...
 		end
@@ -455,7 +455,7 @@ module Chilkat
 		# @param tag [String]
 		# @param index [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def DeletePerson(tag, index)
 			# ...
 		end
@@ -467,7 +467,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadAtom(url)
 			# ...
 		end
@@ -481,7 +481,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetElement(tag, index, outStr)
 			# ...
 		end
@@ -494,7 +494,7 @@ module Chilkat
 		# @param tag [String]
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getElement(tag, index)
 			# ...
 		end
@@ -510,7 +510,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetElementAttr(tag, index, attrName, outStr)
 			# ...
 		end
@@ -525,7 +525,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param attrName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getElementAttr(tag, index, attrName)
 			# ...
 		end
@@ -537,7 +537,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetElementCount(tag)
 			# ...
 		end
@@ -550,7 +550,7 @@ module Chilkat
 		# @param tag [String]
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetElementDate(tag, index)
 			# ...
@@ -566,7 +566,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetElementDateStr(tag, index, outStr)
 			# ...
 		end
@@ -580,7 +580,7 @@ module Chilkat
 		# @param tag [String]
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getElementDateStr(tag, index)
 			# ...
 		end
@@ -593,7 +593,7 @@ module Chilkat
 		# @param tag [String]
 		# @param index [Fixnum]
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetElementDt(tag, index)
 			# ...
 		end
@@ -605,7 +605,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkAtom] 
+		# @return [CkAtom]
 		def GetEntry(index)
 			# ...
 		end
@@ -619,7 +619,7 @@ module Chilkat
 		# @param relName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetLinkHref(relName, outStr)
 			# ...
 		end
@@ -632,7 +632,7 @@ module Chilkat
 		#
 		# @param relName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getLinkHref(relName)
 			# ...
 		end
@@ -648,7 +648,7 @@ module Chilkat
 		# @param tag2 [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetPersonInfo(tag, index, tag2, outStr)
 			# ...
 		end
@@ -663,7 +663,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param tag2 [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getPersonInfo(tag, index, tag2)
 			# ...
 		end
@@ -677,7 +677,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetTopAttr(attrName, outStr)
 			# ...
 		end
@@ -690,7 +690,7 @@ module Chilkat
 		#
 		# @param attrName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getTopAttr(attrName)
 			# ...
 		end
@@ -702,7 +702,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasElement(tag)
 			# ...
 		end
@@ -714,7 +714,7 @@ module Chilkat
 		#
 		# @param xmlStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xmlStr)
 			# ...
 		end
@@ -725,7 +725,7 @@ module Chilkat
 		# Initializes the Atom document to be a new "entry".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def NewEntry()
 			# ...
 		end
@@ -736,7 +736,7 @@ module Chilkat
 		# Initializes the Atom document to be a new "feed".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def NewFeed()
 			# ...
 		end
@@ -748,7 +748,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -763,7 +763,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param attrValue [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetElementAttr(tag, index, attrName, attrValue)
 			# ...
 		end
@@ -776,7 +776,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetTopAttr(attrName, value)
 			# ...
 		end
@@ -788,7 +788,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToXmlString(outStr)
 			# ...
 		end
@@ -799,7 +799,7 @@ module Chilkat
 		# Serializes the Atom document to an XML string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toXmlString()
 			# ...
 		end
@@ -813,7 +813,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdateElement(tag, index, value)
 			# ...
 		end
@@ -827,7 +827,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param dateTime [Object]
 		#
-		# @return [nil] 
+		# @return [nil]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UpdateElementDate(tag, index, dateTime)
 			# ...
@@ -843,7 +843,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param dateTimeStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdateElementDateStr(tag, index, dateTimeStr)
 			# ...
 		end
@@ -857,7 +857,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param dateTime [CkDateTime]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdateElementDt(tag, index, dateTime)
 			# ...
 		end
@@ -871,7 +871,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param htmlStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdateElementHtml(tag, index, htmlStr)
 			# ...
 		end
@@ -885,7 +885,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param xmlStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdateElementXHtml(tag, index, xmlStr)
 			# ...
 		end
@@ -899,7 +899,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param xmlStr [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdateElementXml(tag, index, xmlStr)
 			# ...
 		end
@@ -917,7 +917,7 @@ module Chilkat
 		# @param uri [String]
 		# @param email [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdatePerson(tag, index, name, uri, email)
 			# ...
 		end

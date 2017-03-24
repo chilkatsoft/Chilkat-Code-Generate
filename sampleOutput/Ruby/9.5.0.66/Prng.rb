@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -213,7 +213,7 @@ module Chilkat
 
 		# The name of the PRNG selected. Currently, the default and only possible value is "fortuna". See the
 		# links below for information about the Fortuna PRNG.
-		#		Note: Because "fortuna" is the only valid
+		# Note: Because "fortuna" is the only valid
 		# choice, assigning this property to a different value will always be ignored (until alternative PRNG
 		# algorithms are added in the future).
 		#
@@ -224,7 +224,7 @@ module Chilkat
 
 		# The name of the PRNG selected. Currently, the default and only possible value is "fortuna". See the
 		# links below for information about the Fortuna PRNG.
-		#		Note: Because "fortuna" is the only valid
+		# Note: Because "fortuna" is the only valid
 		# choice, assigning this property to a different value will always be ignored (until alternative PRNG
 		# algorithms are added in the future).
 		#
@@ -233,7 +233,7 @@ module Chilkat
 
 		# The name of the PRNG selected. Currently, the default and only possible value is "fortuna". See the
 		# links below for information about the Fortuna PRNG.
-		#		Note: Because "fortuna" is the only valid
+		# Note: Because "fortuna" is the only valid
 		# choice, assigning this property to a different value will always be ignored (until alternative PRNG
 		# algorithms are added in the future).
 		#
@@ -242,7 +242,7 @@ module Chilkat
 
 		# The name of the PRNG selected. Currently, the default and only possible value is "fortuna". See the
 		# links below for information about the Fortuna PRNG.
-		#		Note: Because "fortuna" is the only valid
+		# Note: Because "fortuna" is the only valid
 		# choice, assigning this property to a different value will always be ignored (until alternative PRNG
 		# algorithms are added in the future).
 		#
@@ -251,8 +251,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -261,8 +261,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -303,17 +303,17 @@ module Chilkat
 		# application may continue to add entropy at desired intervals. How the entropy is used depends on the
 		# PRNG algorithm. For Fortuna, the entropy is added to the internal entropy pools and used when
 		# internal automatic reseeding occurs.
-		#		An application may add non-random entropy for testing
+		# An application may add non-random entropy for testing
 		# purposes. This allows for the reproduction of the same pseudo-random number sequence for testing and
 		# debugging purposes.
-		#		The entropy bytes are passed in ARG1 using the binary encoding specified
+		# The entropy bytes are passed in ARG1 using the binary encoding specified
 		# in ARG2. Binary encodings can be "hex", "base64", etc. See the link below for supported binary
 		# encodings.
 		#
 		# @param entropy [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddEntropy(entropy, encoding)
 			# ...
 		end
@@ -326,13 +326,13 @@ module Chilkat
 		# application may continue to add entropy at desired intervals. How the entropy is used depends on the
 		# PRNG algorithm. For Fortuna, the entropy is added to the internal entropy pools and used when
 		# internal automatic reseeding occurs.
-		#		An application may add non-random entropy for testing
+		# An application may add non-random entropy for testing
 		# purposes. This allows for the reproduction of the same pseudo-random number sequence for testing and
 		# debugging purposes.
 		#
 		# @param entropy [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddEntropyBytes(entropy)
 			# ...
 		end
@@ -345,14 +345,14 @@ module Chilkat
 		# entropy was obtained.) When a system restarts it can import what was previously exported by calling
 		# ImportEntropy. This ensures an adequate amount of entropy is immediately available when first
 		# generating random bytes.
-		#		For example, an application could persist the exported entropy to a
+		# For example, an application could persist the exported entropy to a
 		# database or file. When the application starts again, it could import the persisted entropy, add some
 		# entropy from a system source (via the GetEntropy/AddEntropy methods), and then begin generating
 		# random data.
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExportEntropy(outStr)
 			# ...
 		end
@@ -365,13 +365,13 @@ module Chilkat
 		# entropy was obtained.) When a system restarts it can import what was previously exported by calling
 		# ImportEntropy. This ensures an adequate amount of entropy is immediately available when first
 		# generating random bytes.
-		#		For example, an application could persist the exported entropy to a
+		# For example, an application could persist the exported entropy to a
 		# database or file. When the application starts again, it could import the persisted entropy, add some
 		# entropy from a system source (via the GetEntropy/AddEntropy methods), and then begin generating
 		# random data.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def exportEntropy()
 			# ...
 		end
@@ -383,7 +383,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FirebasePushId(outStr)
 			# ...
 		end
@@ -394,7 +394,7 @@ module Chilkat
 		# Generates a random Firebase Push ID. See Firebase Unique Identifiers.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def firebasePushId()
 			# ...
 		end
@@ -404,7 +404,7 @@ module Chilkat
 		#
 		# Generates and returns ARG1 random bytes in encoded string form. The binary encoding is specified by
 		# ARG2, and can be "hex", "base64", etc. (See the link below for supported binary encodings.)
-		# #		Important: If no entropy was explicitly added prior to first call to generate random bytes, then
+		# # Important: If no entropy was explicitly added prior to first call to generate random bytes, then
 		# 32 bytes of entropy (from the system source, such as /dev/random) are automatically added to seed
 		# the PRNG.
 		#
@@ -412,7 +412,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenRandom(numBytes, encoding, outStr)
 			# ...
 		end
@@ -422,14 +422,14 @@ module Chilkat
 		#
 		# Generates and returns ARG1 random bytes in encoded string form. The binary encoding is specified by
 		# ARG2, and can be "hex", "base64", etc. (See the link below for supported binary encodings.)
-		# #		Important: If no entropy was explicitly added prior to first call to generate random bytes, then
+		# # Important: If no entropy was explicitly added prior to first call to generate random bytes, then
 		# 32 bytes of entropy (from the system source, such as /dev/random) are automatically added to seed
 		# the PRNG.
 		#
 		# @param numBytes [Fixnum]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def genRandom(numBytes, encoding)
 			# ...
 		end
@@ -438,14 +438,14 @@ module Chilkat
 		# Method: GenRandomBd
 		#
 		# Appends ARG1 random bytes to ARG2.
-		#		Important: If no entropy was explicitly added prior to
+		# Important: If no entropy was explicitly added prior to
 		# first call to generate random bytes, then 32 bytes of entropy (from the system source, such as
 		# /dev/random) are automatically added to seed the PRNG.
 		#
 		# @param numBytes [Fixnum]
 		# @param bd [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenRandomBd(numBytes, bd)
 			# ...
 		end
@@ -454,14 +454,14 @@ module Chilkat
 		# Method: GenRandomBytes
 		#
 		# Generates and returns ARG1 random bytes. 
-		#		Important: If no entropy was explicitly added prior
+		# Important: If no entropy was explicitly added prior
 		# to first call to generate random bytes, then 32 bytes of entropy (from the system source, such as
 		# /dev/random) are automatically added to seed the PRNG.
 		#
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenRandomBytes(numBytes, outBytes)
 			# ...
 		end
@@ -472,17 +472,17 @@ module Chilkat
 		# Reads real entropy bytes from a system entropy source and returns as an encoded string. On
 		# Linux/Unix based systems, including MAC OS X, this is accomplished by reading /dev/random. On
 		# Windows systems, it uses the Microsoft Cryptographic Service Provider's CryptGenRandom method.
-		# #		It is recommended that no more than 32 bytes of entropy should be retrieved to initially seed a
+		# # It is recommended that no more than 32 bytes of entropy should be retrieved to initially seed a
 		# PRNG. Larger amounts of entropy are fairly useless. However, an app is free to periodically add bits
 		# of entropy to a long-running PRNG as it sees fit.
-		#		The ARG2 specifies the encoding to be used.
+		# The ARG2 specifies the encoding to be used.
 		# It can be "hex", "base64", or many other possibilities. See the link below.
 		#
 		# @param numBytes [Fixnum]
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEntropy(numBytes, encoding, outStr)
 			# ...
 		end
@@ -493,16 +493,16 @@ module Chilkat
 		# Reads real entropy bytes from a system entropy source and returns as an encoded string. On
 		# Linux/Unix based systems, including MAC OS X, this is accomplished by reading /dev/random. On
 		# Windows systems, it uses the Microsoft Cryptographic Service Provider's CryptGenRandom method.
-		# #		It is recommended that no more than 32 bytes of entropy should be retrieved to initially seed a
+		# # It is recommended that no more than 32 bytes of entropy should be retrieved to initially seed a
 		# PRNG. Larger amounts of entropy are fairly useless. However, an app is free to periodically add bits
 		# of entropy to a long-running PRNG as it sees fit.
-		#		The ARG2 specifies the encoding to be used.
+		# The ARG2 specifies the encoding to be used.
 		# It can be "hex", "base64", or many other possibilities. See the link below.
 		#
 		# @param numBytes [Fixnum]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEntropy(numBytes, encoding)
 			# ...
 		end
@@ -513,7 +513,7 @@ module Chilkat
 		# Reads and returns real entropy bytes from a system entropy source. On Linux/Unix based systems,
 		# including MAC OS X, this is accomplished by reading /dev/random. On Windows systems, it uses the
 		# Microsoft Cryptographic Service Provider's CryptGenRandom method. 
-		#		It is recommended that no
+		# It is recommended that no
 		# more than 32 bytes of entropy should be retrieved to initially seed a PRNG. Larger amounts of
 		# entropy are fairly useless. However, an app is free to periodically add bits of entropy to a
 		# long-running PRNG as it sees fit.
@@ -521,7 +521,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEntropyBytes(numBytes, outBytes)
 			# ...
 		end
@@ -533,7 +533,7 @@ module Chilkat
 		#
 		# @param entropy [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ImportEntropy(entropy)
 			# ...
 		end
@@ -547,7 +547,7 @@ module Chilkat
 		# @param low [Fixnum]
 		# @param high [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def RandomInt(low, high)
 			# ...
 		end
@@ -570,7 +570,7 @@ module Chilkat
 		# @param excludeChars [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RandomPassword(length, mustIncludeDigit, upperAndLowercase, mustHaveOneOf, excludeChars, outStr)
 			# ...
 		end
@@ -592,7 +592,7 @@ module Chilkat
 		# @param mustHaveOneOf [String]
 		# @param excludeChars [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def randomPassword(length, mustIncludeDigit, upperAndLowercase, mustHaveOneOf, excludeChars)
 			# ...
 		end
@@ -611,7 +611,7 @@ module Chilkat
 		# @param bUpper [TrueClass, FalseClass]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RandomString(length, bDigits, bLower, bUpper, outStr)
 			# ...
 		end
@@ -629,7 +629,7 @@ module Chilkat
 		# @param bLower [TrueClass, FalseClass]
 		# @param bUpper [TrueClass, FalseClass]
 		#
-		# @return [String] 
+		# @return [String]
 		def randomString(length, bDigits, bLower, bUpper)
 			# ...
 		end
@@ -641,7 +641,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end

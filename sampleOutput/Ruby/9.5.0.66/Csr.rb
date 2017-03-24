@@ -2,12 +2,12 @@ module Chilkat
 	class CkCsr 
 		# The common name of the certificate to be generated. For SSL/TLS certificates, this would be the
 		# domain name. For email certificates this would be the email address.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "CN" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.3")
-		#		
-		#		This property is required for a CSR.
+		# 
+		# This property is required for a CSR.
 		#
 		# @param ckStr [CkString]
 		#
@@ -16,47 +16,47 @@ module Chilkat
 
 		# The common name of the certificate to be generated. For SSL/TLS certificates, this would be the
 		# domain name. For email certificates this would be the email address.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "CN" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.3")
-		#		
-		#		This property is required for a CSR.
+		# 
+		# This property is required for a CSR.
 		#
 		# @param newval [String]
 		def put_CommonName(newval) end
 
 		# The common name of the certificate to be generated. For SSL/TLS certificates, this would be the
 		# domain name. For email certificates this would be the email address.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "CN" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.3")
-		#		
-		#		This property is required for a CSR.
+		# 
+		# This property is required for a CSR.
 		#
 		# @return [String]
 		def commonName() end
 
 		# The common name of the certificate to be generated. For SSL/TLS certificates, this would be the
 		# domain name. For email certificates this would be the email address.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "CN" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.3")
-		#		
-		#		This property is required for a CSR.
+		# 
+		# This property is required for a CSR.
 		#
 		# @param newval [String]
 		def put_CommonName(newval) end
 
 		# The company or organization name for the certificate to be generated.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "O" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.10")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param ckStr [CkString]
 		#
@@ -64,45 +64,45 @@ module Chilkat
 		def get_Company(ckStr) end
 
 		# The company or organization name for the certificate to be generated.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "O" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.10")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param newval [String]
 		def put_Company(newval) end
 
 		# The company or organization name for the certificate to be generated.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "O" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.10")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @return [String]
 		def company() end
 
 		# The company or organization name for the certificate to be generated.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "O" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.10")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param newval [String]
 		def put_Company(newval) end
 
 		# The company division or organizational unit name for the certificate to be
 		# generated.
-		#		
-		#		It is the value for "OU" in the certificate's Subject's distinguished name
+		# 
+		# It is the value for "OU" in the certificate's Subject's distinguished name
 		# (DN). (This is the value for OID "2.5.4.11")
-		#		
-		#		This property is optional. It may left
+		# 
+		# This property is optional. It may left
 		# empty.
 		#
 		# @param ckStr [CkString]
@@ -112,11 +112,11 @@ module Chilkat
 
 		# The company division or organizational unit name for the certificate to be
 		# generated.
-		#		
-		#		It is the value for "OU" in the certificate's Subject's distinguished name
+		# 
+		# It is the value for "OU" in the certificate's Subject's distinguished name
 		# (DN). (This is the value for OID "2.5.4.11")
-		#		
-		#		This property is optional. It may left
+		# 
+		# This property is optional. It may left
 		# empty.
 		#
 		# @param newval [String]
@@ -124,11 +124,11 @@ module Chilkat
 
 		# The company division or organizational unit name for the certificate to be
 		# generated.
-		#		
-		#		It is the value for "OU" in the certificate's Subject's distinguished name
+		# 
+		# It is the value for "OU" in the certificate's Subject's distinguished name
 		# (DN). (This is the value for OID "2.5.4.11")
-		#		
-		#		This property is optional. It may left
+		# 
+		# This property is optional. It may left
 		# empty.
 		#
 		# @return [String]
@@ -136,11 +136,11 @@ module Chilkat
 
 		# The company division or organizational unit name for the certificate to be
 		# generated.
-		#		
-		#		It is the value for "OU" in the certificate's Subject's distinguished name
+		# 
+		# It is the value for "OU" in the certificate's Subject's distinguished name
 		# (DN). (This is the value for OID "2.5.4.11")
-		#		
-		#		This property is optional. It may left
+		# 
+		# This property is optional. It may left
 		# empty.
 		#
 		# @param newval [String]
@@ -148,11 +148,11 @@ module Chilkat
 
 		# The two-letter uppercase country abbreviation, such as "US", for the certificate to be
 		# generated.
-		#		
-		#		It is the value for "C" in the certificate's Subject's distinguished name
+		# 
+		# It is the value for "C" in the certificate's Subject's distinguished name
 		# (DN). (This is the value for OID "2.5.4.6")
-		#		
-		#		This property is optional. It may left
+		# 
+		# This property is optional. It may left
 		# empty.
 		#
 		# @param ckStr [CkString]
@@ -162,11 +162,11 @@ module Chilkat
 
 		# The two-letter uppercase country abbreviation, such as "US", for the certificate to be
 		# generated.
-		#		
-		#		It is the value for "C" in the certificate's Subject's distinguished name
+		# 
+		# It is the value for "C" in the certificate's Subject's distinguished name
 		# (DN). (This is the value for OID "2.5.4.6")
-		#		
-		#		This property is optional. It may left
+		# 
+		# This property is optional. It may left
 		# empty.
 		#
 		# @param newval [String]
@@ -174,11 +174,11 @@ module Chilkat
 
 		# The two-letter uppercase country abbreviation, such as "US", for the certificate to be
 		# generated.
-		#		
-		#		It is the value for "C" in the certificate's Subject's distinguished name
+		# 
+		# It is the value for "C" in the certificate's Subject's distinguished name
 		# (DN). (This is the value for OID "2.5.4.6")
-		#		
-		#		This property is optional. It may left
+		# 
+		# This property is optional. It may left
 		# empty.
 		#
 		# @return [String]
@@ -186,11 +186,11 @@ module Chilkat
 
 		# The two-letter uppercase country abbreviation, such as "US", for the certificate to be
 		# generated.
-		#		
-		#		It is the value for "C" in the certificate's Subject's distinguished name
+		# 
+		# It is the value for "C" in the certificate's Subject's distinguished name
 		# (DN). (This is the value for OID "2.5.4.6")
-		#		
-		#		This property is optional. It may left
+		# 
+		# This property is optional. It may left
 		# empty.
 		#
 		# @param newval [String]
@@ -201,13 +201,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -226,13 +226,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -249,13 +249,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -272,13 +272,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -291,12 +291,12 @@ module Chilkat
 		def put_DebugLogFilePath(newval) end
 
 		# The email address for the certificate to be generated.
-		#		
-		#		It is the value for "E" in the
+		# 
+		# It is the value for "E" in the
 		# certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "1.2.840.113549.1.9.1")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param ckStr [CkString]
 		#
@@ -304,34 +304,34 @@ module Chilkat
 		def get_EmailAddress(ckStr) end
 
 		# The email address for the certificate to be generated.
-		#		
-		#		It is the value for "E" in the
+		# 
+		# It is the value for "E" in the
 		# certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "1.2.840.113549.1.9.1")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param newval [String]
 		def put_EmailAddress(newval) end
 
 		# The email address for the certificate to be generated.
-		#		
-		#		It is the value for "E" in the
+		# 
+		# It is the value for "E" in the
 		# certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "1.2.840.113549.1.9.1")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @return [String]
 		def emailAddress() end
 
 		# The email address for the certificate to be generated.
-		#		
-		#		It is the value for "E" in the
+		# 
+		# It is the value for "E" in the
 		# certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "1.2.840.113549.1.9.1")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param newval [String]
 		def put_EmailAddress(newval) end
@@ -454,12 +454,12 @@ module Chilkat
 		def get_LastStringResultLen() end
 
 		# The locality (city or town) name for the certificate to be generated.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "L" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.7")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param ckStr [CkString]
 		#
@@ -467,45 +467,45 @@ module Chilkat
 		def get_Locality(ckStr) end
 
 		# The locality (city or town) name for the certificate to be generated.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "L" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.7")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param newval [String]
 		def put_Locality(newval) end
 
 		# The locality (city or town) name for the certificate to be generated.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "L" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.7")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @return [String]
 		def locality() end
 
 		# The locality (city or town) name for the certificate to be generated.
-		#		
-		#		It is the value
+		# 
+		# It is the value
 		# for "L" in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.7")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param newval [String]
 		def put_Locality(newval) end
 
 		# The state or province for the certificate to be generated.
-		#		
-		#		It is the value for "S" (or
+		# 
+		# It is the value for "S" (or
 		# "ST") in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.8")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param ckStr [CkString]
 		#
@@ -513,42 +513,42 @@ module Chilkat
 		def get_State(ckStr) end
 
 		# The state or province for the certificate to be generated.
-		#		
-		#		It is the value for "S" (or
+		# 
+		# It is the value for "S" (or
 		# "ST") in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.8")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param newval [String]
 		def put_State(newval) end
 
 		# The state or province for the certificate to be generated.
-		#		
-		#		It is the value for "S" (or
+		# 
+		# It is the value for "S" (or
 		# "ST") in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.8")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @return [String]
 		def state() end
 
 		# The state or province for the certificate to be generated.
-		#		
-		#		It is the value for "S" (or
+		# 
+		# It is the value for "S" (or
 		# "ST") in the certificate's Subject's distinguished name (DN). (This is the value for OID
 		# "2.5.4.8")
-		#		
-		#		This property is optional. It may left empty.
+		# 
+		# This property is optional. It may left empty.
 		#
 		# @param newval [String]
 		def put_State(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -557,8 +557,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -599,7 +599,7 @@ module Chilkat
 		# @param privKey [CkPrivateKey]
 		# @param csrData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenCsrBd(privKey, csrData)
 			# ...
 		end
@@ -612,7 +612,7 @@ module Chilkat
 		# @param privKey [CkPrivateKey]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenCsrPem(privKey, outStr)
 			# ...
 		end
@@ -624,7 +624,7 @@ module Chilkat
 		#
 		# @param privKey [CkPrivateKey]
 		#
-		# @return [String] 
+		# @return [String]
 		def genCsrPem(privKey)
 			# ...
 		end
@@ -638,7 +638,7 @@ module Chilkat
 		# @param oid [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetSubjectField(oid, outStr)
 			# ...
 		end
@@ -651,7 +651,7 @@ module Chilkat
 		#
 		# @param oid [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getSubjectField(oid)
 			# ...
 		end
@@ -663,7 +663,7 @@ module Chilkat
 		#
 		# @param csrPemStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadCsrPem(csrPemStr)
 			# ...
 		end
@@ -675,7 +675,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -685,15 +685,15 @@ module Chilkat
 		#
 		# Sets a subject field by OID, such as "2.5.4.9". See http://www.alvestrand.no/objectid/2.5.4.html for
 		# OID values and meanings.
-		#		
-		#		The ARG3 can be "UTF8String", "IA5String", or
+		# 
+		# The ARG3 can be "UTF8String", "IA5String", or
 		# "PrintableString". If you have no specific requirement, or don't know, choose "UTF8String".
 		#
 		# @param oid [String]
 		# @param value [String]
 		# @param asnType [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetSubjectField(oid, value, asnType)
 			# ...
 		end

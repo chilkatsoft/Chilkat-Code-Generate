@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -265,8 +265,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -275,8 +275,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -348,7 +348,7 @@ module Chilkat
 		# @param inHtmlPath [String]
 		# @param destXmlPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ConvertFile(inHtmlPath, destXmlPath)
 			# ...
 		end
@@ -361,7 +361,7 @@ module Chilkat
 		#
 		# @param tagName [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def DropTagType(tagName)
 			# ...
 		end
@@ -373,7 +373,7 @@ module Chilkat
 		# u, br, center, em, strong, big, tt, s, small, strike, sub, and sup.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def DropTextFormattingTags()
 			# ...
 		end
@@ -384,7 +384,7 @@ module Chilkat
 		# Returns _TRUE_ if the component is already unlocked. Otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -397,7 +397,7 @@ module Chilkat
 		# @param path [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFile(path, outBytes)
 			# ...
 		end
@@ -412,7 +412,7 @@ module Chilkat
 		# @param srcCharset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileToString(filename, srcCharset, outStr)
 			# ...
 		end
@@ -426,7 +426,7 @@ module Chilkat
 		# @param filename [String]
 		# @param srcCharset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readFileToString(filename, srcCharset)
 			# ...
 		end
@@ -438,7 +438,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -450,7 +450,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetHtmlBytes(inData)
 			# ...
 		end
@@ -462,7 +462,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetHtmlFromFile(filename)
 			# ...
 		end
@@ -474,7 +474,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToXml(outStr)
 			# ...
 		end
@@ -485,7 +485,7 @@ module Chilkat
 		# Converts the HTML in the "Html" property to XML and returns the XML string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toXml()
 			# ...
 		end
@@ -497,7 +497,7 @@ module Chilkat
 		#
 		# @param tagName [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UndropTagType(tagName)
 			# ...
 		end
@@ -507,12 +507,12 @@ module Chilkat
 		#
 		# Causes text formatting tags to NOT be dropped from the XML output. Text formatting tags are: b,
 		# font, i, u, br, center, em, strong, big, tt, s, small, strike, sub, and sup.
-		# #		
-		#		Important: Text formatting tags are dropped by default. Call this method to prevent text
+		# # 
+		# Important: Text formatting tags are dropped by default. Call this method to prevent text
 		# formatting tags from being dropped.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UndropTextFormattingTags()
 			# ...
 		end
@@ -524,7 +524,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -537,7 +537,7 @@ module Chilkat
 		# @param path [String]
 		# @param fileData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteFile(path, fileData)
 			# ...
 		end
@@ -553,7 +553,7 @@ module Chilkat
 		# @param filename [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteStringToFile(stringToWrite, filename, charset)
 			# ...
 		end
@@ -566,7 +566,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Xml(outStr)
 			# ...
 		end
@@ -578,7 +578,7 @@ module Chilkat
 		# returns the XML string.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def xml()
 			# ...
 		end

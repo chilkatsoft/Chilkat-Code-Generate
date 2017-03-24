@@ -75,13 +75,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -100,13 +100,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -123,13 +123,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -146,13 +146,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -170,7 +170,7 @@ module Chilkat
 		def get_EntryID() end
 
 		# Indicates the origin of the entry. There are three possible values:
-		#		
+		# 
 		# Mapped Entry: An
 		# entry in an existing Zip file.
 		# File Entry: A file not yet in memory, but referenced. These
@@ -181,8 +181,8 @@ module Chilkat
 		# Null Entry: An entry that no longer exists in the .zip.
 		# New Directory
 		# Entry: A directory entry added by calling AppendNewDir.
-		#		
-		#		When the zip is written by
+		# 
+		# When the zip is written by
 		# calling WriteZip or WriteToMemory, all of the zip entries are transformed into mapped entries. They
 		# become entries that contain the compressed data within the .zip that was just created. (The WriteZip
 		# method call effectively writes the zip and then opens it, replacing all of the existing entries with
@@ -276,6 +276,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# True if the Zip entry is a directory, false if it is a file.
@@ -440,8 +442,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -450,8 +452,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -491,7 +493,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendData(inData)
 			# ...
 		end
@@ -505,7 +507,7 @@ module Chilkat
 		# @param strContent [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendString(strContent, charset)
 			# ...
 		end
@@ -514,7 +516,7 @@ module Chilkat
 		# Method: Copy
 		#
 		# Returns the compressed data as a byte array.
-		#		Note: The Copy method can only be called if the
+		# Note: The Copy method can only be called if the
 		# zip entry already contains compressed data (i.e. it is a "mapped entry"). This is the case when an
 		# existing .zip is opened (from memory or from a file), or after the .zip has been written (by calling
 		# WriteZip or WriteToMemory). If a zip entry is created via AppendData, AppendFiles, etc., then it
@@ -523,7 +525,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Copy(outData)
 			# ...
 		end
@@ -534,12 +536,12 @@ module Chilkat
 		# Returns the compressed data as a Base64-encoded string. It is only possible to retrieve the
 		# compressed data from a pre-existing .zip that has been opened or after writing the .zip but not
 		# closing it.
-		#		Note: The CopyToBase64 method can only be called if the zip entry already contains
+		# Note: The CopyToBase64 method can only be called if the zip entry already contains
 		# compressed data (i.e. it is a "mapped entry").
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CopyToBase64(outStr)
 			# ...
 		end
@@ -550,11 +552,11 @@ module Chilkat
 		# Returns the compressed data as a Base64-encoded string. It is only possible to retrieve the
 		# compressed data from a pre-existing .zip that has been opened or after writing the .zip but not
 		# closing it.
-		#		Note: The CopyToBase64 method can only be called if the zip entry already contains
+		# Note: The CopyToBase64 method can only be called if the zip entry already contains
 		# compressed data (i.e. it is a "mapped entry").
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def copyToBase64()
 			# ...
 		end
@@ -565,12 +567,12 @@ module Chilkat
 		# Returns the compressed data as a hexidecimal encoded string. It is only possible to retrieve the
 		# compressed data from a pre-existing .zip that has been opened or after writing the .zip but not
 		# closing it.
-		#		Note: The CopyToBase64 method can only be called if the zip entry already contains
+		# Note: The CopyToBase64 method can only be called if the zip entry already contains
 		# compressed data (i.e. it is a "mapped entry").
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CopyToHex(outStr)
 			# ...
 		end
@@ -581,11 +583,11 @@ module Chilkat
 		# Returns the compressed data as a hexidecimal encoded string. It is only possible to retrieve the
 		# compressed data from a pre-existing .zip that has been opened or after writing the .zip but not
 		# closing it.
-		#		Note: The CopyToBase64 method can only be called if the zip entry already contains
+		# Note: The CopyToBase64 method can only be called if the zip entry already contains
 		# compressed data (i.e. it is a "mapped entry").
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def copyToHex()
 			# ...
 		end
@@ -599,7 +601,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Extract(dirPath)
 			# ...
 		end
@@ -611,7 +613,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExtractInto(dirPath)
 			# ...
 		end
@@ -622,7 +624,7 @@ module Chilkat
 		# Returns the last-modified date/time of this zip entry.
 		#
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetDt()
 			# ...
 		end
@@ -634,7 +636,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Inflate(outData)
 			# ...
 		end
@@ -645,7 +647,7 @@ module Chilkat
 		# Return the next entry (file or directory) within the Zip
 		#
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def NextEntry()
 			# ...
 		end
@@ -658,7 +660,7 @@ module Chilkat
 		#
 		# @param matchStr [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def NextMatchingEntry(matchStr)
 			# ...
 		end
@@ -670,7 +672,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReplaceData(inData)
 			# ...
 		end
@@ -684,7 +686,7 @@ module Chilkat
 		# @param strContent [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReplaceString(strContent, charset)
 			# ...
 		end
@@ -696,7 +698,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -708,7 +710,7 @@ module Chilkat
 		#
 		# @param dt [CkDateTime]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetDt(dt)
 			# ...
 		end
@@ -717,13 +719,13 @@ module Chilkat
 		# Method: UnzipToString
 		#
 		# Inflate and return the uncompressed data as a string The ARG1 is as follows:
-		#		
-		#		0 = leave
+		# 
+		# 0 = leave
 		# unchanged.
-		#		1 = convert all to bare LF's
-		#		2 = convert all to CRLF's
-		#		
-		#		The ARG2
+		# 1 = convert all to bare LF's
+		# 2 = convert all to CRLF's
+		# 
+		# The ARG2
 		# tells the component how to interpret the bytes of the uncompressed file -- i.e. as utf-8, utf-16,
 		# windows-1252, etc.
 		#
@@ -731,7 +733,7 @@ module Chilkat
 		# @param srcCharset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnzipToString(lineEndingBehavior, srcCharset, outStr)
 			# ...
 		end
@@ -740,20 +742,20 @@ module Chilkat
 		# Method: UnzipToString
 		#
 		# Inflate and return the uncompressed data as a string The ARG1 is as follows:
-		#		
-		#		0 = leave
+		# 
+		# 0 = leave
 		# unchanged.
-		#		1 = convert all to bare LF's
-		#		2 = convert all to CRLF's
-		#		
-		#		The ARG2
+		# 1 = convert all to bare LF's
+		# 2 = convert all to CRLF's
+		# 
+		# The ARG2
 		# tells the component how to interpret the bytes of the uncompressed file -- i.e. as utf-8, utf-16,
 		# windows-1252, etc.
 		#
 		# @param lineEndingBehavior [Fixnum]
 		# @param srcCharset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def unzipToString(lineEndingBehavior, srcCharset)
 			# ...
 		end

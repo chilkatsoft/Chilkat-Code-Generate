@@ -19,13 +19,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -44,13 +44,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -67,13 +67,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -90,13 +90,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -124,6 +124,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -267,10 +269,10 @@ module Chilkat
 		# "pkcs1" and "pkcs8". (OpenSSL typically uses the "pkcs8" format.) When writing encrypted private
 		# keys to PEM, the format is always PKCS8, and the PEM header is "BEGIN ENCRYPTED PRIVATE KEY". The
 		# default is "pkcs8".
-		#		
-		#		The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
+		# 
+		# The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
 		# KEY.
-		#		The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
+		# The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
 		#
 		# @param ckStr [CkString]
 		#
@@ -281,10 +283,10 @@ module Chilkat
 		# "pkcs1" and "pkcs8". (OpenSSL typically uses the "pkcs8" format.) When writing encrypted private
 		# keys to PEM, the format is always PKCS8, and the PEM header is "BEGIN ENCRYPTED PRIVATE KEY". The
 		# default is "pkcs8".
-		#		
-		#		The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
+		# 
+		# The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
 		# KEY.
-		#		The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
+		# The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
 		#
 		# @param newval [String]
 		def put_PrivateKeyFormat(newval) end
@@ -293,10 +295,10 @@ module Chilkat
 		# "pkcs1" and "pkcs8". (OpenSSL typically uses the "pkcs8" format.) When writing encrypted private
 		# keys to PEM, the format is always PKCS8, and the PEM header is "BEGIN ENCRYPTED PRIVATE KEY". The
 		# default is "pkcs8".
-		#		
-		#		The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
+		# 
+		# The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
 		# KEY.
-		#		The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
+		# The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
 		#
 		# @return [String]
 		def privateKeyFormat() end
@@ -305,20 +307,20 @@ module Chilkat
 		# "pkcs1" and "pkcs8". (OpenSSL typically uses the "pkcs8" format.) When writing encrypted private
 		# keys to PEM, the format is always PKCS8, and the PEM header is "BEGIN ENCRYPTED PRIVATE KEY". The
 		# default is "pkcs8".
-		#		
-		#		The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
+		# 
+		# The PKCS1 format uses the PEM header: BEGIN RSA PRIVATE
 		# KEY.
-		#		The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
+		# The PKCS8 format uses the PEM header: BEGIN PRIVATE KEY.
 		#
 		# @param newval [String]
 		def put_PrivateKeyFormat(newval) end
 
 		# Controls the format to be used for public keys when writing a PEM. Possible values are "pkcs1" and
 		# "pkcs8". (OpenSSL typically uses the "pkcs8" format.) The default is "pkcs8".
-		#		
-		#		The PKCS1
+		# 
+		# The PKCS1
 		# format uses the PEM header: BEGIN RSA PUBLIC KEY.
-		#		The PKCS8 format uses the PEM header: BEGIN
+		# The PKCS8 format uses the PEM header: BEGIN
 		# PUBLIC KEY.
 		#
 		# @param ckStr [CkString]
@@ -328,10 +330,10 @@ module Chilkat
 
 		# Controls the format to be used for public keys when writing a PEM. Possible values are "pkcs1" and
 		# "pkcs8". (OpenSSL typically uses the "pkcs8" format.) The default is "pkcs8".
-		#		
-		#		The PKCS1
+		# 
+		# The PKCS1
 		# format uses the PEM header: BEGIN RSA PUBLIC KEY.
-		#		The PKCS8 format uses the PEM header: BEGIN
+		# The PKCS8 format uses the PEM header: BEGIN
 		# PUBLIC KEY.
 		#
 		# @param newval [String]
@@ -339,10 +341,10 @@ module Chilkat
 
 		# Controls the format to be used for public keys when writing a PEM. Possible values are "pkcs1" and
 		# "pkcs8". (OpenSSL typically uses the "pkcs8" format.) The default is "pkcs8".
-		#		
-		#		The PKCS1
+		# 
+		# The PKCS1
 		# format uses the PEM header: BEGIN RSA PUBLIC KEY.
-		#		The PKCS8 format uses the PEM header: BEGIN
+		# The PKCS8 format uses the PEM header: BEGIN
 		# PUBLIC KEY.
 		#
 		# @return [String]
@@ -350,10 +352,10 @@ module Chilkat
 
 		# Controls the format to be used for public keys when writing a PEM. Possible values are "pkcs1" and
 		# "pkcs8". (OpenSSL typically uses the "pkcs8" format.) The default is "pkcs8".
-		#		
-		#		The PKCS1
+		# 
+		# The PKCS1
 		# format uses the PEM header: BEGIN RSA PUBLIC KEY.
-		#		The PKCS8 format uses the PEM header: BEGIN
+		# The PKCS8 format uses the PEM header: BEGIN
 		# PUBLIC KEY.
 		#
 		# @param newval [String]
@@ -361,8 +363,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -371,8 +373,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -415,7 +417,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param includeChain [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddCert(cert, includeChain)
 			# ...
 		end
@@ -433,7 +435,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param itemData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddItem(itemType, encoding, itemData)
 			# ...
 		end
@@ -445,7 +447,7 @@ module Chilkat
 		#
 		# @param privateKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddPrivateKey(privateKey)
 			# ...
 		end
@@ -458,7 +460,7 @@ module Chilkat
 		# @param privKey [CkPrivateKey]
 		# @param certChain [CkCertChain]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddPrivateKey2(privKey, certChain)
 			# ...
 		end
@@ -470,7 +472,7 @@ module Chilkat
 		#
 		# @param pubkey [CkPublicKey]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddPublicKey(pubkey)
 			# ...
 		end
@@ -481,7 +483,7 @@ module Chilkat
 		# Removes all content from this PEM object.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Clear()
 			# ...
 		end
@@ -493,7 +495,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkCert] 
+		# @return [CkCert]
 		def GetCert(index)
 			# ...
 		end
@@ -514,7 +516,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEncodedItem(itemType, itemSubType, encoding, index, outStr)
 			# ...
 		end
@@ -534,7 +536,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncodedItem(itemType, itemSubType, encoding, index)
 			# ...
 		end
@@ -546,7 +548,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkPrivateKey] 
+		# @return [CkPrivateKey]
 		def GetPrivateKey(index)
 			# ...
 		end
@@ -558,7 +560,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkPublicKey] 
+		# @return [CkPublicKey]
 		def GetPublicKey(index)
 			# ...
 		end
@@ -570,7 +572,7 @@ module Chilkat
 		#
 		# @param p7bData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadP7b(p7bData)
 			# ...
 		end
@@ -582,7 +584,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadP7bFile(path)
 			# ...
 		end
@@ -596,7 +598,7 @@ module Chilkat
 		# @param pemContent [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPem(pemContent, password)
 			# ...
 		end
@@ -610,7 +612,7 @@ module Chilkat
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadPemFile(path, password)
 			# ...
 		end
@@ -622,7 +624,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveCert(index)
 			# ...
 		end
@@ -634,7 +636,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemovePrivateKey(index)
 			# ...
 		end
@@ -646,7 +648,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -662,7 +664,7 @@ module Chilkat
 		# @param alias [String]
 		# @param password [String]
 		#
-		# @return [CkJavaKeyStore] 
+		# @return [CkJavaKeyStore]
 		def ToJks(alias, password)
 			# ...
 		end
@@ -673,38 +675,38 @@ module Chilkat
 		# Write the PFX to a PEM formatted string. The resultant PEM will contain the private key, as well as
 		# the certs in the chain of authentication (or whatever certs are available in the PFX). For
 		# example:
-		#		
-		#		 -----BEGIN RSA PRIVATE KEY-----
-		#		...
-		#		... the private key
+		# 
+		#  -----BEGIN RSA PRIVATE KEY-----
+		# ...
+		# ... the private key
 		# associated with the main certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		-----BEGIN
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the main certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the main certificate
+		# ...
+		# -----END
 		# CERTIFICATE-----
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... an intermediate CA
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... an intermediate CA
 		# certificate (if present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToPem(outStr)
 			# ...
 		end
@@ -715,37 +717,37 @@ module Chilkat
 		# Write the PFX to a PEM formatted string. The resultant PEM will contain the private key, as well as
 		# the certs in the chain of authentication (or whatever certs are available in the PFX). For
 		# example:
-		#		
-		#		 -----BEGIN RSA PRIVATE KEY-----
-		#		...
-		#		... the private key
+		# 
+		#  -----BEGIN RSA PRIVATE KEY-----
+		# ...
+		# ... the private key
 		# associated with the main certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		-----BEGIN
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the main certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the main certificate
+		# ...
+		# -----END
 		# CERTIFICATE-----
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... an intermediate CA
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... an intermediate CA
 		# certificate (if present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def toPem()
 			# ...
 		end
@@ -761,10 +763,10 @@ module Chilkat
 		# choices for the ARG5 are "des3", "aes128", "aes192", and "aes256". (All encryption algorithm choices
 		# use CBC mode.) If the private keys are to be encrypted, then ARG6 is the password to be used.
 		# Otherwise, ARG6 may be left empty.
-		#		
-		#		For example:
-		#		
-		#		Bag Attributes
+		# 
+		# For example:
+		# 
+		# Bag Attributes
 		#
 		# Microsoft Local Key set: &lt;No Values>
 		# localKeyID: 01 00 00 00 
@@ -772,16 +774,16 @@ module Chilkat
 		# le-2b09a3d2-9037-4a05-95cc-4d44518e8607
 		# Microsoft CSP Name: Microsoft RSA SChannel
 		# Cryptographic Provider
-		#		Key Attributes
+		# Key Attributes
 		# X509v3 Key Usage: 10 
 		# -----BEGIN RSA PRIVATE
 		# KEY-----
-		#		...
-		#		... the private key associated with the main
+		# ...
+		# ... the private key associated with the main
 		# certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		Bag Attributes
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# Bag Attributes
 		# localKeyID: 01
 		# 00 00 00 
 		# 1.3.6.1.4.1.311.17.3.92: 00 08 00 00 
@@ -790,32 +792,32 @@ module Chilkat
 		# 1.3.6.1.4.1.311.17.3.71: 49 00 43 00 ...
 		# 1.3.6.1.4.1.311.17.3.75: 31 00 42 00
 		# ...
-		#		subject=/OU=Domain Control
+		# subject=/OU=Domain Control
 		# Validated/OU=PositiveSSL/CN=something.com
-		#		issuer=/C=GB/ST=Greater
+		# issuer=/C=GB/ST=Greater
 		# Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server
 		# CA
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... the main
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... the main
 		# certificate
-		#		...
-		#		-----END CERTIFICATE-----
-		#		...
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... an intermediate CA certificate (if
+		# ...
+		# ... an intermediate CA certificate (if
 		# present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		...
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
@@ -827,7 +829,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToPemEx(extendedAttrs, noKeys, noCerts, noCaCerts, encryptAlg, password, outStr)
 			# ...
 		end
@@ -843,10 +845,10 @@ module Chilkat
 		# choices for the ARG5 are "des3", "aes128", "aes192", and "aes256". (All encryption algorithm choices
 		# use CBC mode.) If the private keys are to be encrypted, then ARG6 is the password to be used.
 		# Otherwise, ARG6 may be left empty.
-		#		
-		#		For example:
-		#		
-		#		Bag Attributes
+		# 
+		# For example:
+		# 
+		# Bag Attributes
 		#
 		# Microsoft Local Key set: &lt;No Values>
 		# localKeyID: 01 00 00 00 
@@ -854,16 +856,16 @@ module Chilkat
 		# le-2b09a3d2-9037-4a05-95cc-4d44518e8607
 		# Microsoft CSP Name: Microsoft RSA SChannel
 		# Cryptographic Provider
-		#		Key Attributes
+		# Key Attributes
 		# X509v3 Key Usage: 10 
 		# -----BEGIN RSA PRIVATE
 		# KEY-----
-		#		...
-		#		... the private key associated with the main
+		# ...
+		# ... the private key associated with the main
 		# certificate.
-		#		...
-		#		-----END RSA PRIVATE KEY-----
-		#		Bag Attributes
+		# ...
+		# -----END RSA PRIVATE KEY-----
+		# Bag Attributes
 		# localKeyID: 01
 		# 00 00 00 
 		# 1.3.6.1.4.1.311.17.3.92: 00 08 00 00 
@@ -872,32 +874,32 @@ module Chilkat
 		# 1.3.6.1.4.1.311.17.3.71: 49 00 43 00 ...
 		# 1.3.6.1.4.1.311.17.3.75: 31 00 42 00
 		# ...
-		#		subject=/OU=Domain Control
+		# subject=/OU=Domain Control
 		# Validated/OU=PositiveSSL/CN=something.com
-		#		issuer=/C=GB/ST=Greater
+		# issuer=/C=GB/ST=Greater
 		# Manchester/L=Salford/O=COMODO CA Limited/CN=COMODO RSA Domain Validation Secure Server
 		# CA
-		#		-----BEGIN CERTIFICATE-----
-		#		...
-		#		... the main
+		# -----BEGIN CERTIFICATE-----
+		# ...
+		# ... the main
 		# certificate
-		#		...
-		#		-----END CERTIFICATE-----
-		#		...
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... an intermediate CA certificate (if
+		# ...
+		# ... an intermediate CA certificate (if
 		# present)
-		#		...
-		#		-----END CERTIFICATE-----
-		#		...
-		#		-----BEGIN
+		# ...
+		# -----END CERTIFICATE-----
+		# ...
+		# -----BEGIN
 		# CERTIFICATE-----
-		#		...
-		#		... the root CA certificate
-		#		...
-		#		-----END
+		# ...
+		# ... the root CA certificate
+		# ...
+		# -----END
 		# CERTIFICATE----- 
 		#
 		#
@@ -908,7 +910,7 @@ module Chilkat
 		# @param encryptAlg [String]
 		# @param password [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def toPemEx(extendedAttrs, noKeys, noCerts, noCaCerts, encryptAlg, password)
 			# ...
 		end
@@ -919,13 +921,13 @@ module Chilkat
 		# Converts the PEM to PKCS12 and returns the PFX object. The PFX object has method for saving to a
 		# file, exporting to an encoded string, converting to a JKS (Java Keystore), or even converting back
 		# to PEM.
-		#		
-		#		Note: The PEM must contain at least one private key to convert to PKCS12. The
+		# 
+		# Note: The PEM must contain at least one private key to convert to PKCS12. The
 		# typical case is that a PKCS12 contains a single private key, along with the associated certificate
 		# and the certificates in the chain of authentication.
 		#
 		#
-		# @return [CkPfx] 
+		# @return [CkPfx]
 		def ToPfx()
 			# ...
 		end

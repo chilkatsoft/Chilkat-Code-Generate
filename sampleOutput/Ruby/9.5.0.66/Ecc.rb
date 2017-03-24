@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -213,8 +213,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -223,8 +223,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -262,21 +262,21 @@ module Chilkat
 		#
 		# Generates an ECC private key. The ARG1 specifies the curve name which determines the key size. The
 		# ARG2 provides a source for generating the random private key.
-		#		The following curve names are
+		# The following curve names are
 		# accepted:
-		#		
-		#		secp256r1 (also known as P-256 and prime256v1)
-		#		secp384r1 (also known as
+		# 
+		# secp256r1 (also known as P-256 and prime256v1)
+		# secp384r1 (also known as
 		# P-384)
-		#		secp521r1 (also known as P-521)
-		#		secp256k1 (This is the curve used for
+		# secp521r1 (also known as P-521)
+		# secp256k1 (This is the curve used for
 		# Bitcoin)
 		#
 		#
 		# @param curveName [String]
 		# @param prng [CkPrng]
 		#
-		# @return [CkPrivateKey] 
+		# @return [CkPrivateKey]
 		def GenEccKey(curveName, prng)
 			# ...
 		end
@@ -287,19 +287,19 @@ module Chilkat
 		# Generates an ECC private key using a specified value for K. The ARG1 specifies the curve name which
 		# determines the key size. The ARG2 is the encoded value of the private key. The ARG3 is the encoding
 		# used for ARG2, which can be "hex", "base64", "decimal", etc. 
-		#		
-		#		Note: This method is
+		# 
+		# Note: This method is
 		# typically used for testing -- such as when the same private key is desired to produce results
 		# identical from run to run.
-		#		
-		#		The following curve names are
+		# 
+		# The following curve names are
 		# accepted:
-		#		
-		#		secp256r1 (also known as P-256 and prime256v1)
-		#		secp384r1 (also known as
+		# 
+		# secp256r1 (also known as P-256 and prime256v1)
+		# secp384r1 (also known as
 		# P-384)
-		#		secp521r1 (also known as P-521)
-		#		secp256k1 (This is the curve used for
+		# secp521r1 (also known as P-521)
+		# secp256k1 (This is the curve used for
 		# Bitcoin)
 		#
 		#
@@ -307,7 +307,7 @@ module Chilkat
 		# @param encodedK [String]
 		# @param encoding [String]
 		#
-		# @return [CkPrivateKey] 
+		# @return [CkPrivateKey]
 		def GenEccKey2(curveName, encodedK, encoding)
 			# ...
 		end
@@ -319,7 +319,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -333,7 +333,7 @@ module Chilkat
 		# Alice calls SharedSecretENC with her private key and Bob's public key. Both calls to SharedSecretENC
 		# will produce the same result. The resulting bytes are returned in encoded string form (hex, base64,
 		# etc) as specified by ARG3.
-		#		Note: The private and public keys must both be keys on the same ECC
+		# Note: The private and public keys must both be keys on the same ECC
 		# curve.
 		#
 		# @param privKey [CkPrivateKey]
@@ -341,7 +341,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SharedSecretENC(privKey, pubKey, encoding, outStr)
 			# ...
 		end
@@ -355,14 +355,14 @@ module Chilkat
 		# Alice calls SharedSecretENC with her private key and Bob's public key. Both calls to SharedSecretENC
 		# will produce the same result. The resulting bytes are returned in encoded string form (hex, base64,
 		# etc) as specified by ARG3.
-		#		Note: The private and public keys must both be keys on the same ECC
+		# Note: The private and public keys must both be keys on the same ECC
 		# curve.
 		#
 		# @param privKey [CkPrivateKey]
 		# @param pubKey [CkPublicKey]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def sharedSecretENC(privKey, pubKey, encoding)
 			# ...
 		end
@@ -383,7 +383,7 @@ module Chilkat
 		# @param prng [CkPrng]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SignHashENC(encodedHash, encoding, privkey, prng, outStr)
 			# ...
 		end
@@ -403,7 +403,7 @@ module Chilkat
 		# @param privkey [CkPrivateKey]
 		# @param prng [CkPrng]
 		#
-		# @return [String] 
+		# @return [String]
 		def signHashENC(encodedHash, encoding, privkey, prng)
 			# ...
 		end
@@ -415,8 +415,8 @@ module Chilkat
 		# SHA1, SHA256, etc.). The hash of the data is passed in ARG1. The encoded signature is passed in
 		# ARG2. The encoding of both the hash and signature, such as "base64", "hex", etc. is passed in ARG3.
 		# The ECC public key is passed in the last argument (ARG4).
-		#		
-		#		The method returns 1 for a
+		# 
+		# The method returns 1 for a
 		# valid signature, 0 for an invalid signature, and -1 for any other failure.
 		#
 		# @param encodedHash [String]
@@ -424,7 +424,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param pubkey [CkPublicKey]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def VerifyHashENC(encodedHash, encodedSig, encoding, pubkey)
 			# ...
 		end

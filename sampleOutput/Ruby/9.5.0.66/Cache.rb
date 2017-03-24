@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -255,12 +255,12 @@ module Chilkat
 		def get_LastStringResultLen() end
 
 		# The number of directory levels in the cache. Possible values are:
-		#		
-		#		0: All cache files
+		# 
+		# 0: All cache files
 		# are in a single directory (the cache root).
-		#		1: Cache files are located in 256 sub-directories
+		# 1: Cache files are located in 256 sub-directories
 		# numbered 0 .. 255 directly under the cache root.
-		#		2: There are two levels of sub-directories
+		# 2: There are two levels of sub-directories
 		# under the cache root. The 1st level has 256 sub-directories numbered 0 .. 255 directly under the
 		# cache root. The 2nd level allows for up to 256 sub-directories (0..255) under each level-1
 		# directory. Cache files are stored in the leaf directories.
@@ -270,12 +270,12 @@ module Chilkat
 		def get_Level() end
 
 		# The number of directory levels in the cache. Possible values are:
-		#		
-		#		0: All cache files
+		# 
+		# 0: All cache files
 		# are in a single directory (the cache root).
-		#		1: Cache files are located in 256 sub-directories
+		# 1: Cache files are located in 256 sub-directories
 		# numbered 0 .. 255 directly under the cache root.
-		#		2: There are two levels of sub-directories
+		# 2: There are two levels of sub-directories
 		# under the cache root. The 1st level has 256 sub-directories numbered 0 .. 255 directly under the
 		# cache root. The 2nd level allows for up to 256 sub-directories (0..255) under each level-1
 		# directory. Cache files are stored in the leaf directories.
@@ -292,8 +292,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -302,8 +302,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -345,7 +345,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddRoot(path)
 			# ...
 		end
@@ -356,11 +356,11 @@ module Chilkat
 		# Deletes all items in the cache. This method completely clears the cache. All files in the cache are
 		# deleted. (If the cache is multi-level, existing sub-directories are not
 		# deleted.)
-		#		
-		#		Returns the number of items (i.e. cache files) deleted.
+		# 
+		# Returns the number of items (i.e. cache files) deleted.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def DeleteAll()
 			# ...
 		end
@@ -369,12 +369,12 @@ module Chilkat
 		# Method: DeleteAllExpired
 		#
 		# Deletes all expired items from the cache.
-		#		
-		#		Returns the number of items (i.e. cache
+		# 
+		# Returns the number of items (i.e. cache
 		# files) deleted.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def DeleteAllExpired()
 			# ...
 		end
@@ -387,7 +387,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DeleteFromCache(key)
 			# ...
 		end
@@ -396,13 +396,13 @@ module Chilkat
 		# Method: DeleteOlder
 		#
 		# Deletes all items older than a specified date/time.
-		#		
-		#		Returns the number of items (i.e.
+		# 
+		# Returns the number of items (i.e.
 		# cache files) deleted. Returns -1 on error.
 		#
 		# @param dateTime [Object]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		# @deprecated This method has been deprecated. Do not use it.
 		def DeleteOlder(dateTime)
 			# ...
@@ -415,7 +415,7 @@ module Chilkat
 		#
 		# @param dateTime [CkDateTime]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def DeleteOlderDt(dateTime)
 			# ...
 		end
@@ -427,7 +427,7 @@ module Chilkat
 		#
 		# @param dateTimeStr [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def DeleteOlderStr(dateTimeStr)
 			# ...
 		end
@@ -436,14 +436,14 @@ module Chilkat
 		# Method: FetchFromCache
 		#
 		# Fetches an item from cache.
-		#		
-		#		The ARG1 may be any length and may include any characters.
+		# 
+		# The ARG1 may be any length and may include any characters.
 		# It should uniquely identify the cached item. (No two items in the cache should have the same ARG1.)
 		#
 		# @param key [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchFromCache(key, outBytes)
 			# ...
 		end
@@ -452,15 +452,15 @@ module Chilkat
 		# Method: FetchText
 		#
 		# Fetches a text item from the cache and returns it's text content.
-		#		
-		#		The ARG1 may be any
+		# 
+		# The ARG1 may be any
 		# length and may include any characters. It should uniquely identify the cached item. (No two items in
 		# the cache should have the same ARG1.)
 		#
 		# @param key [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FetchText(key, outStr)
 			# ...
 		end
@@ -469,14 +469,14 @@ module Chilkat
 		# Method: FetchText
 		#
 		# Fetches a text item from the cache and returns it's text content.
-		#		
-		#		The ARG1 may be any
+		# 
+		# The ARG1 may be any
 		# length and may include any characters. It should uniquely identify the cached item. (No two items in
 		# the cache should have the same ARG1.)
 		#
 		# @param key [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def fetchText(key)
 			# ...
 		end
@@ -489,7 +489,7 @@ module Chilkat
 		# @param key [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetEtag(key, outStr)
 			# ...
 		end
@@ -501,7 +501,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEtag(key)
 			# ...
 		end
@@ -513,7 +513,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetExpiration(key)
 			# ...
@@ -526,7 +526,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [CkDateTime] 
+		# @return [CkDateTime]
 		def GetExpirationDt(key)
 			# ...
 		end
@@ -539,7 +539,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetExpirationStr(url, outStr)
 			# ...
 		end
@@ -551,7 +551,7 @@ module Chilkat
 		#
 		# @param url [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getExpirationStr(url)
 			# ...
 		end
@@ -564,7 +564,7 @@ module Chilkat
 		# @param key [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFilename(key, outStr)
 			# ...
 		end
@@ -576,7 +576,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFilename(key)
 			# ...
 		end
@@ -589,7 +589,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetRoot(index, outStr)
 			# ...
 		end
@@ -601,7 +601,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getRoot(index)
 			# ...
 		end
@@ -613,7 +613,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsCached(key)
 			# ...
 		end
@@ -625,7 +625,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -643,7 +643,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemTextData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveText(key, expireDateTime, eTag, itemTextData)
 			# ...
@@ -659,7 +659,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemTextData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveTextDt(key, expireDateTime, eTag, itemTextData)
 			# ...
 		end
@@ -675,7 +675,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemTextData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveTextNoExpire(key, eTag, itemTextData)
 			# ...
 		end
@@ -690,7 +690,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemTextData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveTextStr(key, expireDateTime, eTag, itemTextData)
 			# ...
 		end
@@ -702,8 +702,8 @@ module Chilkat
 		# string. Applications may use it as a place to save additional information about the cached item.
 		# (The Chilkat HTTP component, when caching a page, writes the eTag (entity-tag) from the HTTP
 		# response header to this field.) 
-		#		
-		#		The ARG1 may be any length and may include any
+		# 
+		# The ARG1 may be any length and may include any
 		# characters. It should uniquely identify the cached item. (No two items in the cache should have the
 		# same ARG1.)
 		#
@@ -712,7 +712,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveToCache(key, expireDateTime, eTag, itemData)
 			# ...
@@ -728,7 +728,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToCacheDt(key, expireDateTime, eTag, itemData)
 			# ...
 		end
@@ -744,7 +744,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToCacheNoExpire(key, eTag, itemData)
 			# ...
 		end
@@ -759,7 +759,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToCacheStr(key, expireDateTime, eTag, itemData)
 			# ...
 		end
@@ -772,7 +772,7 @@ module Chilkat
 		# @param key [String]
 		# @param expireDateTime [Object]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UpdateExpiration(key, expireDateTime)
 			# ...
@@ -786,7 +786,7 @@ module Chilkat
 		# @param key [String]
 		# @param expireDateTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UpdateExpirationDt(key, expireDateTime)
 			# ...
 		end
@@ -799,7 +799,7 @@ module Chilkat
 		# @param key [String]
 		# @param expireDateTime [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UpdateExpirationStr(key, expireDateTime)
 			# ...
 		end

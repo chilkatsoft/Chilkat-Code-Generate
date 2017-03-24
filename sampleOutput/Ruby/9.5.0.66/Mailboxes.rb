@@ -1,8 +1,8 @@
 module Chilkat
 	class CkMailboxes 
 		# The number of mailboxes in the collection.
-		#		
-		#		Note: The Mailboxes class is for use with
+		# 
+		# Note: The Mailboxes class is for use with
 		# the Chilkat IMAP component.
 		#
 		# @return [Bignum]
@@ -50,8 +50,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -60,8 +60,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -77,7 +77,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetFlags(index, outStr)
 			# ...
 		end
@@ -90,7 +90,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getFlags(index)
 			# ...
 		end
@@ -102,7 +102,7 @@ module Chilkat
 		#
 		# @param mbxName [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetMailboxIndex(mbxName)
 			# ...
 		end
@@ -115,7 +115,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrName [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetName(index, outStrName)
 			# ...
 		end
@@ -127,7 +127,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getName(index)
 			# ...
 		end
@@ -142,7 +142,7 @@ module Chilkat
 		# @param flagIndex [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetNthFlag(index, flagIndex, outStr)
 			# ...
 		end
@@ -156,7 +156,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param flagIndex [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getNthFlag(index, flagIndex)
 			# ...
 		end
@@ -168,7 +168,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetNumFlags(index)
 			# ...
 		end
@@ -183,7 +183,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param flagName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasFlag(index, flagName)
 			# ...
 		end
@@ -193,14 +193,14 @@ module Chilkat
 		#
 		# Returns _TRUE_ if the Nth mailbox has inferiors (i.e. sub-mailboxes), or if it is possible to create
 		# child mailboxes in the future.
-		#		
-		#		Note: the HasNoChildren attribute/flag should not be
+		# 
+		# Note: the HasNoChildren attribute/flag should not be
 		# confused with the IMAP4 [RFC-2060] defined attribute Noinferiors which indicates that no child
 		# mailboxes exist now AND none can be created in the future.
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasInferiors(index)
 			# ...
 		end
@@ -212,7 +212,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsMarked(index)
 			# ...
 		end
@@ -224,7 +224,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsSelectable(index)
 			# ...
 		end
@@ -236,7 +236,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end

@@ -7,7 +7,7 @@ module Chilkat
 		#
 		# @param db [CkByteData]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def append(db)
 			# ...
 		end
@@ -20,7 +20,7 @@ module Chilkat
 		# @param pByteData [Object]
 		# @param szByteData [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def append2(pByteData, szByteData)
 			# ...
 		end
@@ -32,7 +32,7 @@ module Chilkat
 		#
 		# @param ch [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendChar(ch)
 			# ...
 		end
@@ -45,7 +45,7 @@ module Chilkat
 		# @param ch [String]
 		# @param numTimes [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendCharN(ch, numTimes)
 			# ...
 		end
@@ -60,7 +60,7 @@ module Chilkat
 		# @param str [String]
 		# @param encoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendEncoded(str, encoding)
 			# ...
 		end
@@ -73,7 +73,7 @@ module Chilkat
 		# @param str [String]
 		# @param encoding [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendEncodedW(str, encoding)
 			# ...
 		end
@@ -85,7 +85,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def appendFile(path)
 			# ...
 		end
@@ -97,7 +97,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def appendFileW(path)
 			# ...
 		end
@@ -111,7 +111,7 @@ module Chilkat
 		# @param intValue [Fixnum]
 		# @param littleEndian [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendInt(intValue, littleEndian)
 			# ...
 		end
@@ -123,7 +123,7 @@ module Chilkat
 		#
 		# @param numBytes [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendRandom(numBytes)
 			# ...
 		end
@@ -138,7 +138,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param numBytes [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendRange(byteData, index, numBytes)
 			# ...
 		end
@@ -152,7 +152,7 @@ module Chilkat
 		# @param shortValue [Fixnum]
 		# @param littleEndian [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendShort(shortValue, littleEndian)
 			# ...
 		end
@@ -164,7 +164,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendStr(str)
 			# ...
 		end
@@ -177,7 +177,7 @@ module Chilkat
 		# @param str [String]
 		# @param charset [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def appendStrW(str, charset)
 			# ...
 		end
@@ -189,7 +189,7 @@ module Chilkat
 		#
 		# @param byteDataObj [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def beginsWith(byteDataObj)
 			# ...
 		end
@@ -202,7 +202,7 @@ module Chilkat
 		# @param pByteData [Object]
 		# @param szByteData [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def beginsWith2(pByteData, szByteData)
 			# ...
 		end
@@ -213,14 +213,14 @@ module Chilkat
 		# Sets the CkByteData's data pointer and size to memory outside the object. This is useful in cases
 		# where a CkByteData object is needed, but copying data into the CkByteData is not
 		# desired.
-		#		Note: The borrowData method can only be used for data that is being passed into a
+		# Note: The borrowData method can only be used for data that is being passed into a
 		# Chilkat method call. It is not for use as a buffer for Chilkat to deposit data. This is not the
 		# intent of the method.
 		#
 		# @param pByteData [Object]
 		# @param szByteData [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def borrowData(pByteData, szByteData)
 			# ...
 		end
@@ -231,7 +231,7 @@ module Chilkat
 		# 4321 byte swaps the data contained within the object.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def byteSwap4321()
 			# ...
 		end
@@ -242,7 +242,7 @@ module Chilkat
 		# Clears the CkByteData object of all data.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def clear()
 			# ...
 		end
@@ -257,7 +257,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param str [CkString]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def encode(encoding, str)
 			# ...
 		end
@@ -270,7 +270,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param str [CkString]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def encodeW(encoding, str)
 			# ...
 		end
@@ -284,7 +284,7 @@ module Chilkat
 		#
 		# @param expectedNumBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ensureBuffer(expectedNumBytes)
 			# ...
 		end
@@ -296,7 +296,7 @@ module Chilkat
 		#
 		# @param compareBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def equals(compareBytes)
 			# ...
 		end
@@ -310,7 +310,7 @@ module Chilkat
 		# @param pCompareBytes [Object]
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def equals2(pCompareBytes, numBytes)
 			# ...
 		end
@@ -323,7 +323,7 @@ module Chilkat
 		#
 		# @param byteDataObj [CkByteData]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def findBytes(byteDataObj)
 			# ...
 		end
@@ -337,7 +337,7 @@ module Chilkat
 		# @param findBytes [Object]
 		# @param findBytesLen [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def findBytes2(findBytes, findBytesLen)
 			# ...
 		end
@@ -349,7 +349,7 @@ module Chilkat
 		#
 		# @param byteIndex [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getByte(byteIndex)
 			# ...
 		end
@@ -360,11 +360,11 @@ module Chilkat
 		# Returns a pointer to the bytes contained within the object. Be very careful with the pointer that is
 		# returned. If more data is appended to the object, an internal reallocation may occur such that the
 		# previously returned pointer is no longer valid.
-		#		This method is identical to the getData
+		# This method is identical to the getData
 		# method. Use getData instead.
 		#
 		#
-		# @return [Object] 
+		# @return [Object]
 		# @deprecated This method has been deprecated. Do not use it.
 		def getBytes()
 			# ...
@@ -377,7 +377,7 @@ module Chilkat
 		#
 		# @param byteIndex [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getChar(byteIndex)
 			# ...
 		end
@@ -389,7 +389,7 @@ module Chilkat
 		# appended, the data within the object may be relocated and the pointer may cease to be valid.
 		#
 		#
-		# @return [Object] 
+		# @return [Object]
 		def getData()
 			# ...
 		end
@@ -401,7 +401,7 @@ module Chilkat
 		#
 		# @param byteIndex [Fixnum]
 		#
-		# @return [Object] 
+		# @return [Object]
 		def getDataAt(byteIndex)
 			# ...
 		end
@@ -415,7 +415,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncoded(encoding)
 			# ...
 		end
@@ -427,7 +427,7 @@ module Chilkat
 		#
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getEncodedW(encoding)
 			# ...
 		end
@@ -439,7 +439,7 @@ module Chilkat
 		#
 		# @param byteIndex [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getInt(byteIndex)
 			# ...
 		end
@@ -454,7 +454,7 @@ module Chilkat
 		# @param byteIndex [Fixnum]
 		# @param numBytes [Fixnum]
 		#
-		# @return [Object] 
+		# @return [Object]
 		def getRange(byteIndex, numBytes)
 			# ...
 		end
@@ -466,7 +466,7 @@ module Chilkat
 		#
 		# @param byteIndex [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getShort(byteIndex)
 			# ...
 		end
@@ -477,7 +477,7 @@ module Chilkat
 		# Returns the number of bytes in the data buffer.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getSize()
 			# ...
 		end
@@ -489,7 +489,7 @@ module Chilkat
 		#
 		# @param byteIndex [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getUInt(byteIndex)
 			# ...
 		end
@@ -501,7 +501,7 @@ module Chilkat
 		#
 		# @param byteIndex [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def getUShort(byteIndex)
 			# ...
 		end
@@ -512,7 +512,7 @@ module Chilkat
 		# Returns _TRUE_ if all the bytes are in the range 0x00 to 0x7F.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def is7bit()
 			# ...
 		end
@@ -524,7 +524,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def loadFile(path)
 			# ...
 		end
@@ -536,7 +536,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def loadFileW(path)
 			# ...
 		end
@@ -551,7 +551,7 @@ module Chilkat
 		# @param blockSize [Fixnum]
 		# @param paddingScheme [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def pad(blockSize, paddingScheme)
 			# ...
 		end
@@ -562,12 +562,12 @@ module Chilkat
 		# This method can be called to help optimize internal memory re-allocation. If, for example, many
 		# calls will be made to append data, and the total size is approximately known, then this method can
 		# be called to pre-allocate the internal buffer to the expected total size.
-		#		This method is
+		# This method is
 		# identical to the ensureBuffer method. Use ensureBuffer instead.
 		#
 		# @param expectedNumBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def preAllocate(expectedNumBytes)
 			# ...
@@ -581,7 +581,7 @@ module Chilkat
 		# @param startIndex [Fixnum]
 		# @param numBytes [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def removeChunk(startIndex, numBytes)
 			# ...
 		end
@@ -594,7 +594,7 @@ module Chilkat
 		# something with the data....	delete [] data;
 		#
 		#
-		# @return [Object] 
+		# @return [Object]
 		def removeData()
 			# ...
 		end
@@ -607,7 +607,7 @@ module Chilkat
 		# @param existingByteValue [Fixnum]
 		# @param replacementByteValue [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def replaceChar(existingByteValue, replacementByteValue)
 			# ...
 		end
@@ -619,7 +619,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def saveFile(path)
 			# ...
 		end
@@ -631,7 +631,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def saveFileW(path)
 			# ...
 		end
@@ -643,7 +643,7 @@ module Chilkat
 		#
 		# @param numBytes [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def shorten(numBytes)
 			# ...
 		end
@@ -655,7 +655,7 @@ module Chilkat
 		#
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def to_ws(charset)
 			# ...
 		end
@@ -670,7 +670,7 @@ module Chilkat
 		# @param blockSize [Fixnum]
 		# @param paddingScheme [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def unpad(blockSize, paddingScheme)
 			# ...
 		end

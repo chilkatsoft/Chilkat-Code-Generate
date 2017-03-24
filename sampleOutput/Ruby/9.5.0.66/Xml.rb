@@ -12,14 +12,14 @@ module Chilkat
 
 		# The content of the XML node. It is the text between the open and close tags, not including child
 		# nodes. For example:
-		#		
-		#		_LT_tag1_GT_This is the
+		# 
+		# _LT_tag1_GT_This is the
 		# content_LT_/tag1_GT_
-		#		
-		#		_LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This
+		# 
+		# _LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This
 		# is the content_LT_/tag2_GT_
-		#		
-		#		Because the child nodes are not included, the content of
+		# 
+		# Because the child nodes are not included, the content of
 		# "tag1" and "tag2" are both equal to "This is the content".
 		#
 		# @param ckStr [CkString]
@@ -29,14 +29,14 @@ module Chilkat
 
 		# The content of the XML node. It is the text between the open and close tags, not including child
 		# nodes. For example:
-		#		
-		#		_LT_tag1_GT_This is the
+		# 
+		# _LT_tag1_GT_This is the
 		# content_LT_/tag1_GT_
-		#		
-		#		_LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This
+		# 
+		# _LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This
 		# is the content_LT_/tag2_GT_
-		#		
-		#		Because the child nodes are not included, the content of
+		# 
+		# Because the child nodes are not included, the content of
 		# "tag1" and "tag2" are both equal to "This is the content".
 		#
 		# @param newval [String]
@@ -44,14 +44,14 @@ module Chilkat
 
 		# The content of the XML node. It is the text between the open and close tags, not including child
 		# nodes. For example:
-		#		
-		#		_LT_tag1_GT_This is the
+		# 
+		# _LT_tag1_GT_This is the
 		# content_LT_/tag1_GT_
-		#		
-		#		_LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This
+		# 
+		# _LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This
 		# is the content_LT_/tag2_GT_
-		#		
-		#		Because the child nodes are not included, the content of
+		# 
+		# Because the child nodes are not included, the content of
 		# "tag1" and "tag2" are both equal to "This is the content".
 		#
 		# @return [String]
@@ -59,14 +59,14 @@ module Chilkat
 
 		# The content of the XML node. It is the text between the open and close tags, not including child
 		# nodes. For example:
-		#		
-		#		_LT_tag1_GT_This is the
+		# 
+		# _LT_tag1_GT_This is the
 		# content_LT_/tag1_GT_
-		#		
-		#		_LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This
+		# 
+		# _LT_tag2_GT__LT_child1_GT_abc_LT_/child1_GT__LT_child2_GT_abc_LT_/child2_GT_This
 		# is the content_LT_/tag2_GT_
-		#		
-		#		Because the child nodes are not included, the content of
+		# 
+		# Because the child nodes are not included, the content of
 		# "tag1" and "tag2" are both equal to "This is the content".
 		#
 		# @param newval [String]
@@ -87,13 +87,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -112,13 +112,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -135,13 +135,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -158,13 +158,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -246,8 +246,8 @@ module Chilkat
 		# is "utf-8". This property can be set from any node in the XML document and when set, causes the
 		# encoding property to be added to the XML declaration. Setting this property does not cause the
 		# document to be converted to a different encoding.
-		#		
-		#		Calling any of the LoadXml* methods
+		# 
+		# Calling any of the LoadXml* methods
 		# causes this property to be set to the charset found within the XML, if any. If no charset is
 		# specified within the loaded XML, then the LoadXml method resets this property to its default value
 		# of "utf-8".
@@ -261,8 +261,8 @@ module Chilkat
 		# is "utf-8". This property can be set from any node in the XML document and when set, causes the
 		# encoding property to be added to the XML declaration. Setting this property does not cause the
 		# document to be converted to a different encoding.
-		#		
-		#		Calling any of the LoadXml* methods
+		# 
+		# Calling any of the LoadXml* methods
 		# causes this property to be set to the charset found within the XML, if any. If no charset is
 		# specified within the loaded XML, then the LoadXml method resets this property to its default value
 		# of "utf-8".
@@ -274,8 +274,8 @@ module Chilkat
 		# is "utf-8". This property can be set from any node in the XML document and when set, causes the
 		# encoding property to be added to the XML declaration. Setting this property does not cause the
 		# document to be converted to a different encoding.
-		#		
-		#		Calling any of the LoadXml* methods
+		# 
+		# Calling any of the LoadXml* methods
 		# causes this property to be set to the charset found within the XML, if any. If no charset is
 		# specified within the loaded XML, then the LoadXml method resets this property to its default value
 		# of "utf-8".
@@ -287,8 +287,8 @@ module Chilkat
 		# is "utf-8". This property can be set from any node in the XML document and when set, causes the
 		# encoding property to be added to the XML declaration. Setting this property does not cause the
 		# document to be converted to a different encoding.
-		#		
-		#		Calling any of the LoadXml* methods
+		# 
+		# Calling any of the LoadXml* methods
 		# causes this property to be set to the charset found within the XML, if any. If no charset is
 		# specified within the loaded XML, then the LoadXml method resets this property to its default value
 		# of "utf-8".
@@ -450,8 +450,8 @@ module Chilkat
 		def get_LastStringResultLen() end
 
 		# The number of attributes. For example, the following node has 2 attributes:
-		#		
-		#		_LT_tag
+		# 
+		# _LT_tag
 		# attr1="value1" attr2="value2"&gt; This is the content_LT_/tag&gt;
 		#
 		#
@@ -475,8 +475,8 @@ module Chilkat
 
 		# This is the standalone attribute in the XML declaration. This property can be set from any node in
 		# the XML document. A value of _TRUE_ adds a standalone="yes" to the XML declaration:
-		# #		
-		#		_LT_?xml ... standalone="yes">
+		# # 
+		# _LT_?xml ... standalone="yes">
 		#
 		#
 		# @return [TrueClass, FalseClass]
@@ -484,8 +484,8 @@ module Chilkat
 
 		# This is the standalone attribute in the XML declaration. This property can be set from any node in
 		# the XML document. A value of _TRUE_ adds a standalone="yes" to the XML declaration:
-		# #		
-		#		_LT_?xml ... standalone="yes">
+		# # 
+		# _LT_?xml ... standalone="yes">
 		#
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -521,8 +521,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -531,8 +531,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -577,7 +577,7 @@ module Chilkat
 		# @param skipTags [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AccumulateTagContent(tag, skipTags, outStr)
 			# ...
 		end
@@ -593,7 +593,7 @@ module Chilkat
 		# @param tag [String]
 		# @param skipTags [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def accumulateTagContent(tag, skipTags)
 			# ...
 		end
@@ -607,7 +607,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddAttribute(name, value)
 			# ...
 		end
@@ -620,7 +620,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddAttributeInt(name, value)
 			# ...
 		end
@@ -633,7 +633,7 @@ module Chilkat
 		#
 		# @param tree [CkXml]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddChildTree(tree)
 			# ...
 		end
@@ -647,7 +647,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddOrUpdateAttribute(name, value)
 			# ...
 		end
@@ -661,7 +661,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddOrUpdateAttributeI(name, value)
 			# ...
 		end
@@ -671,13 +671,13 @@ module Chilkat
 		#
 		# Adds a style sheet declaration to the XML document. The ARG1 should be a string such
 		# as:
-		#		
-		#		_LT_?xml-stylesheet href="mystyle.css" title="Compact" type="text/css"?>
+		# 
+		# _LT_?xml-stylesheet href="mystyle.css" title="Compact" type="text/css"?>
 		#
 		#
 		# @param styleSheet [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddStyleSheet(styleSheet)
 			# ...
 		end
@@ -691,7 +691,7 @@ module Chilkat
 		# @param name [String]
 		# @param amount [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddToAttribute(name, amount)
 			# ...
 		end
@@ -704,7 +704,7 @@ module Chilkat
 		# @param tag [String]
 		# @param amount [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddToChildContent(tag, amount)
 			# ...
 		end
@@ -716,7 +716,7 @@ module Chilkat
 		#
 		# @param amount [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddToContent(amount)
 			# ...
 		end
@@ -728,7 +728,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendToContent(str)
 			# ...
 		end
@@ -746,7 +746,7 @@ module Chilkat
 		# @param charset [String]
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def BEncodeContent(charset, inData)
 			# ...
 		end
@@ -756,15 +756,15 @@ module Chilkat
 		#
 		# Return _TRUE_ if a child at the specified ARG1 contains content that matches a wildcarded ARG2.
 		# Otherwise returns _FALSE_.
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A
 		# tag path is a series of tags separated by vertical bar characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		# @param pattern [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChildContentMatches(tagPath, pattern, caseSensitive)
 			# ...
 		end
@@ -774,52 +774,52 @@ module Chilkat
 		#
 		# Follows a series of commands to navigate through an XML document to return a piece of data or update
 		# the caller's reference to a new XML document node. 
-		#		
-		#		Note: This method not related to
+		# 
+		# Note: This method not related to
 		# the XPath (XML Path) standard in any way.
-		#		
-		#		The ARG1 is formatted as a series of commands
+		# 
+		# The ARG1 is formatted as a series of commands
 		# separated by vertical bar characters, and terminated with a return-command:
-		#		
+		# 
 		#
 		# command|command|command|...|returnCommand
-		#		
-		#		
-		#		A command can be any of the
+		# 
+		# 
+		# A command can be any of the
 		# following:
-		#		
-		#		TagName -- Navigate to the 1st direct child with the given
+		# 
+		# TagName -- Navigate to the 1st direct child with the given
 		# tag.
-		#		TagName[n] -- Navigate to the Nth direct child with the given tag.
-		#		.. -- Navigate
+		# TagName[n] -- Navigate to the Nth direct child with the given tag.
+		# .. -- Navigate
 		# up to the parent
-		#		TagName{Content} -- Navigate to the 1st direct child with the given tag
+		# TagName{Content} -- Navigate to the 1st direct child with the given tag
 		# having the exact content.
-		#		/T/TagName -- Traverse the XML DOM tree (rooted at the caller) and
+		# /T/TagName -- Traverse the XML DOM tree (rooted at the caller) and
 		# navigate to the 1st node having the given tag.
-		#		/C/TagName,ContentPattern -- Traverse the XML
+		# /C/TagName,ContentPattern -- Traverse the XML
 		# DOM tree (rooted at the caller) and navigate to the 1st node having the given tag with content that
 		# matches the ContentPattern. ContentPattern may use one or more asterisk ('*") characters to
 		# represent 0 or more of any character.
-		#		/C/ContentPattern -- Traverse the XML DOM tree (rooted
+		# /C/ContentPattern -- Traverse the XML DOM tree (rooted
 		# at the caller) and navigate to the 1st node having any tag with content that matches the
 		# ContentPattern. ContentPattern may use one or more asterisk ('*") characters to represent 0 or more
 		# of any character.
-		#		/A/TagName,AttrName,AttrValuePattern -- Traverse the XML DOM tree
-		# #			(rooted at the caller) and navigate to the 1st node having the 
-		#			given tag, and attribute,
+		# /A/TagName,AttrName,AttrValuePattern -- Traverse the XML DOM tree
+		# # 	(rooted at the caller) and navigate to the 1st node having the 
+		# 	given tag, and attribute,
 		# with the attribute value that matches 
-		#			the AttrValuePattern. AttrValuePattern may use one or
+		# 	the AttrValuePattern. AttrValuePattern may use one or
 		# more 
-		#			asterisk ('*") characters to represent 0 or more of any
-		# #			character.
-		#		
-		#		The returnCommand can be any of the following:
-		#		
-		#		* -- Return
+		# 	asterisk ('*") characters to represent 0 or more of any
+		# # 	character.
+		# 
+		# The returnCommand can be any of the following:
+		# 
+		# * -- Return
 		# the Content of the node.
-		#		(AttrName) -- Return the value of the given attribute.
-		#		$ --
+		# (AttrName) -- Return the value of the given attribute.
+		# $ --
 		# Update the caller's internal reference to be the node (arrived at by following the series of
 		# commands). Returns an empty string.
 		#
@@ -827,7 +827,7 @@ module Chilkat
 		# @param pathCmd [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ChilkatPath(pathCmd, outStr)
 			# ...
 		end
@@ -837,59 +837,59 @@ module Chilkat
 		#
 		# Follows a series of commands to navigate through an XML document to return a piece of data or update
 		# the caller's reference to a new XML document node. 
-		#		
-		#		Note: This method not related to
+		# 
+		# Note: This method not related to
 		# the XPath (XML Path) standard in any way.
-		#		
-		#		The ARG1 is formatted as a series of commands
+		# 
+		# The ARG1 is formatted as a series of commands
 		# separated by vertical bar characters, and terminated with a return-command:
-		#		
+		# 
 		#
 		# command|command|command|...|returnCommand
-		#		
-		#		
-		#		A command can be any of the
+		# 
+		# 
+		# A command can be any of the
 		# following:
-		#		
-		#		TagName -- Navigate to the 1st direct child with the given
+		# 
+		# TagName -- Navigate to the 1st direct child with the given
 		# tag.
-		#		TagName[n] -- Navigate to the Nth direct child with the given tag.
-		#		.. -- Navigate
+		# TagName[n] -- Navigate to the Nth direct child with the given tag.
+		# .. -- Navigate
 		# up to the parent
-		#		TagName{Content} -- Navigate to the 1st direct child with the given tag
+		# TagName{Content} -- Navigate to the 1st direct child with the given tag
 		# having the exact content.
-		#		/T/TagName -- Traverse the XML DOM tree (rooted at the caller) and
+		# /T/TagName -- Traverse the XML DOM tree (rooted at the caller) and
 		# navigate to the 1st node having the given tag.
-		#		/C/TagName,ContentPattern -- Traverse the XML
+		# /C/TagName,ContentPattern -- Traverse the XML
 		# DOM tree (rooted at the caller) and navigate to the 1st node having the given tag with content that
 		# matches the ContentPattern. ContentPattern may use one or more asterisk ('*") characters to
 		# represent 0 or more of any character.
-		#		/C/ContentPattern -- Traverse the XML DOM tree (rooted
+		# /C/ContentPattern -- Traverse the XML DOM tree (rooted
 		# at the caller) and navigate to the 1st node having any tag with content that matches the
 		# ContentPattern. ContentPattern may use one or more asterisk ('*") characters to represent 0 or more
 		# of any character.
-		#		/A/TagName,AttrName,AttrValuePattern -- Traverse the XML DOM tree
-		# #			(rooted at the caller) and navigate to the 1st node having the 
-		#			given tag, and attribute,
+		# /A/TagName,AttrName,AttrValuePattern -- Traverse the XML DOM tree
+		# # 	(rooted at the caller) and navigate to the 1st node having the 
+		# 	given tag, and attribute,
 		# with the attribute value that matches 
-		#			the AttrValuePattern. AttrValuePattern may use one or
+		# 	the AttrValuePattern. AttrValuePattern may use one or
 		# more 
-		#			asterisk ('*") characters to represent 0 or more of any
-		# #			character.
-		#		
-		#		The returnCommand can be any of the following:
-		#		
-		#		* -- Return
+		# 	asterisk ('*") characters to represent 0 or more of any
+		# # 	character.
+		# 
+		# The returnCommand can be any of the following:
+		# 
+		# * -- Return
 		# the Content of the node.
-		#		(AttrName) -- Return the value of the given attribute.
-		#		$ --
+		# (AttrName) -- Return the value of the given attribute.
+		# $ --
 		# Update the caller's internal reference to be the node (arrived at by following the series of
 		# commands). Returns an empty string.
 		#
 		#
 		# @param pathCmd [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def chilkatPath(pathCmd)
 			# ...
 		end
@@ -900,7 +900,7 @@ module Chilkat
 		# Removes all children, attributes, and content from the XML node. Resets the tag name to "unnamed".
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -913,7 +913,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param caseSensitive [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ContentMatches(pattern, caseSensitive)
 			# ...
 		end
@@ -925,7 +925,7 @@ module Chilkat
 		#
 		# @param node [CkXml]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Copy(node)
 			# ...
 		end
@@ -938,7 +938,7 @@ module Chilkat
 		#
 		# @param copyFromNode [CkXml]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def CopyRef(copyFromNode)
 			# ...
 		end
@@ -950,7 +950,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecodeContent(outData)
 			# ...
 		end
@@ -964,7 +964,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecodeEntities(str, outStr)
 			# ...
 		end
@@ -977,7 +977,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def decodeEntities(str)
 			# ...
 		end
@@ -990,7 +990,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DecryptContent(password)
 			# ...
 		end
@@ -1003,7 +1003,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def EncryptContent(password)
 			# ...
 		end
@@ -1015,7 +1015,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def ExtractChildByIndex(index)
 			# ...
 		end
@@ -1028,8 +1028,8 @@ module Chilkat
 		# then the first child having a tag equal to ARG1, and an attribute with ARG2 is returned. If ARG3 is
 		# also specified, then only a child having a tag equal to ARG1, and an attribute named ARG2, with a
 		# value equal to ARG3 is returned.
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag
 		# path. A tag path is a series of tags separated by vertical bar characters. For example:
 		# "tagA|tagB|tagC".
 		#
@@ -1037,7 +1037,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param attrValue [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def ExtractChildByName(tagPath, attrName, attrValue)
 			# ...
 		end
@@ -1046,14 +1046,14 @@ module Chilkat
 		# Method: FindChild
 		#
 		# Returns the child with the given tag or at the specified tag path.
-		#		
-		#		Beginning in version
+		# 
+		# Beginning in version
 		# 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags separated by vertical bar
 		# characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def FindChild(tagPath)
 			# ...
 		end
@@ -1063,13 +1063,13 @@ module Chilkat
 		#
 		# Updates the Xml object's internal reference to point to a child at the specified tag or
 		# tagPath.
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
 		# series of tags separated by vertical bar characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FindChild2(tagPath)
 			# ...
 		end
@@ -1079,15 +1079,15 @@ module Chilkat
 		#
 		# Returns the next record node where the child with a specific tag matches a wildcarded pattern. This
 		# method makes it easy to iterate over high-level records.
-		#		
-		#		Beginning in version 9.5.0.64,
+		# 
+		# Beginning in version 9.5.0.64,
 		# the ARG1 can be a tag path. A tag path is a series of tags separated by vertical bar characters. For
 		# example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		# @param contentPattern [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def FindNextRecord(tagPath, contentPattern)
 			# ...
 		end
@@ -1097,13 +1097,13 @@ module Chilkat
 		#
 		# First checks for a child at ARG1, and if found, returns it. Otherwise creates a new child with empty
 		# content.
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
 		# series of tags separated by vertical bar characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def FindOrAddNewChild(tagPath)
 			# ...
 		end
@@ -1115,7 +1115,7 @@ module Chilkat
 		# NextSibling repeatedly.
 		#
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def FirstChild()
 			# ...
 		end
@@ -1126,7 +1126,7 @@ module Chilkat
 		# Updates the internal reference of the caller to point to its first child.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FirstChild2()
 			# ...
 		end
@@ -1139,7 +1139,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAttributeName(index, outStr)
 			# ...
 		end
@@ -1151,7 +1151,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getAttributeName(index)
 			# ...
 		end
@@ -1164,7 +1164,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAttributeValue(index, outStr)
 			# ...
 		end
@@ -1176,7 +1176,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getAttributeValue(index)
 			# ...
 		end
@@ -1188,7 +1188,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetAttributeValueInt(index)
 			# ...
 		end
@@ -1201,7 +1201,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetAttrValue(name, outStr)
 			# ...
 		end
@@ -1213,7 +1213,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getAttrValue(name)
 			# ...
 		end
@@ -1225,7 +1225,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetAttrValueInt(name)
 			# ...
 		end
@@ -1241,7 +1241,7 @@ module Chilkat
 		# @param password [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetBinaryContent(unzipFlag, decryptFlag, password, outData)
 			# ...
 		end
@@ -1253,7 +1253,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetChild(index)
 			# ...
 		end
@@ -1265,7 +1265,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetChild2(index)
 			# ...
 		end
@@ -1275,14 +1275,14 @@ module Chilkat
 		#
 		# Returns _FALSE_ if the node's content is "0", otherwise returns _TRUE_ if the node contains a
 		# non-zero integer. The ARG1 can be a tag or a tag path. 
-		#		
-		#		Beginning in version 9.5.0.64,
+		# 
+		# Beginning in version 9.5.0.64,
 		# the ARG1 can be a tag path. A tag path is a series of tags separated by vertical bar characters. For
 		# example: "colors|primary|red".
 		#
 		# @param tagPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetChildBoolValue(tagPath)
 			# ...
 		end
@@ -1291,14 +1291,14 @@ module Chilkat
 		# Method: GetChildContent
 		#
 		# Returns the content of a child having a specified tag. The ARG1 can be a tag or a tag path.
-		# #		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags
+		# # 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags
 		# separated by vertical bar characters. For example: "colors|primary|red".
 		#
 		# @param tagPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetChildContent(tagPath, outStr)
 			# ...
 		end
@@ -1307,13 +1307,13 @@ module Chilkat
 		# Method: GetChildContent
 		#
 		# Returns the content of a child having a specified tag. The ARG1 can be a tag or a tag path.
-		# #		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags
+		# # 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags
 		# separated by vertical bar characters. For example: "colors|primary|red".
 		#
 		# @param tagPath [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getChildContent(tagPath)
 			# ...
 		end
@@ -1326,7 +1326,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetChildContentByIndex(index, outStr)
 			# ...
 		end
@@ -1338,7 +1338,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getChildContentByIndex(index)
 			# ...
 		end
@@ -1351,7 +1351,7 @@ module Chilkat
 		# @param tag [String]
 		# @param content [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetChildExact(tag, content)
 			# ...
 		end
@@ -1360,13 +1360,13 @@ module Chilkat
 		# Method: GetChildIntValue
 		#
 		# Returns the child integer content for a given tag. The ARG1 can be a tag or a tag path.
-		# #		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags
+		# # 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags
 		# separated by vertical bar characters. For example: "colors|primary|red".
 		#
 		# @param tagPath [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetChildIntValue(tagPath)
 			# ...
 		end
@@ -1379,7 +1379,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetChildTag(index, outStr)
 			# ...
 		end
@@ -1391,7 +1391,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getChildTag(index)
 			# ...
 		end
@@ -1404,7 +1404,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetChildTagByIndex(index, outStr)
 			# ...
 		end
@@ -1416,7 +1416,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getChildTagByIndex(index)
 			# ...
 		end
@@ -1426,15 +1426,15 @@ module Chilkat
 		#
 		# Finds and returns the XML child node having both a given tag and an attribute with a given name and
 		# value.
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
 		# series of tags separated by vertical bar characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		# @param attrName [String]
 		# @param attrValue [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetChildWithAttr(tagPath, attrName, attrValue)
 			# ...
 		end
@@ -1446,7 +1446,7 @@ module Chilkat
 		#
 		# @param content [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetChildWithContent(content)
 			# ...
 		end
@@ -1455,14 +1455,14 @@ module Chilkat
 		# Method: GetChildWithTag
 		#
 		# Returns the child at the specified tag or tag path.
-		#		
-		#		Beginning in version 9.5.0.64, the
+		# 
+		# Beginning in version 9.5.0.64, the
 		# ARG1 can be a tag path. A tag path is a series of tags separated by vertical bar characters. For
 		# example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetChildWithTag(tagPath)
 			# ...
 		end
@@ -1476,7 +1476,7 @@ module Chilkat
 		# @param tag [String]
 		# @param n [Fixnum]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetNthChildWithTag(tag, n)
 			# ...
 		end
@@ -1489,7 +1489,7 @@ module Chilkat
 		# @param tag [String]
 		# @param n [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetNthChildWithTag2(tag, n)
 			# ...
 		end
@@ -1500,7 +1500,7 @@ module Chilkat
 		# Returns the parent of this XML node, or NULL if the node is the root of the tree.
 		#
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetParent()
 			# ...
 		end
@@ -1511,7 +1511,7 @@ module Chilkat
 		# Updates the internal reference of the caller to its parent.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetParent2()
 			# ...
 		end
@@ -1522,7 +1522,7 @@ module Chilkat
 		# Returns the root node of the XML document
 		#
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetRoot()
 			# ...
 		end
@@ -1533,7 +1533,7 @@ module Chilkat
 		# Updates the internal reference of the caller to the document root.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def GetRoot2()
 			# ...
 		end
@@ -1544,7 +1544,7 @@ module Chilkat
 		# Returns a new XML object instance that references the same XML node.
 		#
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def GetSelf()
 			# ...
 		end
@@ -1558,7 +1558,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetXml(outStr)
 			# ...
 		end
@@ -1571,7 +1571,7 @@ module Chilkat
 		# at the beginning of the XML. Otherwise, it is not included.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getXml()
 			# ...
 		end
@@ -1583,7 +1583,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetXmlSb(sb)
 			# ...
 		end
@@ -1595,7 +1595,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasAttribute(name)
 			# ...
 		end
@@ -1608,7 +1608,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasAttrWithValue(name, value)
 			# ...
 		end
@@ -1620,7 +1620,7 @@ module Chilkat
 		#
 		# @param content [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasChildWithContent(content)
 			# ...
 		end
@@ -1630,13 +1630,13 @@ module Chilkat
 		#
 		# Returns _TRUE_ if the node has a child with the given tag (or tag path). Otherwise returns
 		# _FALSE_.
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
 		# series of tags separated by vertical bar characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasChildWithTag(tagPath)
 			# ...
 		end
@@ -1646,14 +1646,14 @@ module Chilkat
 		#
 		# Returns _TRUE_ if the node contains child with the given tag (or tag path) and content
 		# specified.
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
 		# series of tags separated by vertical bar characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		# @param content [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def HasChildWithTagAndContent(tagPath, content)
 			# ...
 		end
@@ -1668,7 +1668,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param tree [CkXml]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def InsertChildTreeAfter(index, tree)
 			# ...
 		end
@@ -1683,7 +1683,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param tree [CkXml]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def InsertChildTreeBefore(index, tree)
 			# ...
 		end
@@ -1695,7 +1695,7 @@ module Chilkat
 		# repeatedly calling PreviousSibling, until a NULL is returned.
 		#
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def LastChild()
 			# ...
 		end
@@ -1706,7 +1706,7 @@ module Chilkat
 		# Updates the internal reference of the caller to its last child.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LastChild2()
 			# ...
 		end
@@ -1719,7 +1719,7 @@ module Chilkat
 		# @param sb [CkStringBuilder]
 		# @param autoTrim [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadSb(sb, autoTrim)
 			# ...
 		end
@@ -1732,7 +1732,7 @@ module Chilkat
 		#
 		# @param xmlData [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXml(xmlData)
 			# ...
 		end
@@ -1746,7 +1746,7 @@ module Chilkat
 		# @param xmlData [String]
 		# @param autoTrim [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXml2(xmlData, autoTrim)
 			# ...
 		end
@@ -1759,7 +1759,7 @@ module Chilkat
 		#
 		# @param fileName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXmlFile(fileName)
 			# ...
 		end
@@ -1773,7 +1773,7 @@ module Chilkat
 		# @param fileName [String]
 		# @param autoTrim [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadXmlFile2(fileName, autoTrim)
 			# ...
 		end
@@ -1784,15 +1784,15 @@ module Chilkat
 		# Creates a new child having tag and content. The new child is created even if a child with a tag
 		# equal to ARG1 already exists. (Use FindOrAddNewChild to prevent creating children having the same
 		# tags.)
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
 		# series of tags separated by vertical bar characters. For example: "colors|primary|red". See the
 		# example below for details.
 		#
 		# @param tagPath [String]
 		# @param content [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def NewChild(tagPath, content)
 			# ...
 		end
@@ -1802,15 +1802,15 @@ module Chilkat
 		#
 		# Creates a new child node, but does not return the node that is created. The ARG1 can be a tag or a
 		# tag path. 
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a
 		# series of tags separated by vertical bar characters. For example: "colors|primary|red". See the
 		# example below for details.
 		#
 		# @param tagPath [String]
 		# @param content [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def NewChild2(tagPath, content)
 			# ...
 		end
@@ -1824,7 +1824,7 @@ module Chilkat
 		# @param tag [String]
 		# @param content [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def NewChildAfter(index, tag, content)
 			# ...
 		end
@@ -1838,7 +1838,7 @@ module Chilkat
 		# @param tag [String]
 		# @param content [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def NewChildBefore(index, tag, content)
 			# ...
 		end
@@ -1847,15 +1847,15 @@ module Chilkat
 		# Method: NewChildInt2
 		#
 		# Inserts a new child having an integer for content. The ARG1 can be a tag or a tag path.
-		# #		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags
+		# # 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags
 		# separated by vertical bar characters. For example: "colors|primary|red". See the example below for
 		# details.
 		#
 		# @param tagPath [String]
 		# @param value [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def NewChildInt2(tagPath, value)
 			# ...
 		end
@@ -1866,7 +1866,7 @@ module Chilkat
 		# Returns the nodes next sibling, or NULL if there are no more.
 		#
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def NextSibling()
 			# ...
 		end
@@ -1877,7 +1877,7 @@ module Chilkat
 		# Updates the internal reference of the caller to its next sibling.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def NextSibling2()
 			# ...
 		end
@@ -1890,7 +1890,7 @@ module Chilkat
 		#
 		# @param tagPath [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def NumChildrenAt(tagPath)
 			# ...
 		end
@@ -1902,7 +1902,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def NumChildrenHavingTag(tag)
 			# ...
 		end
@@ -1913,7 +1913,7 @@ module Chilkat
 		# Returns the Xml object that is the node's previous sibling, or NULL if there are no more.
 		#
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def PreviousSibling()
 			# ...
 		end
@@ -1924,7 +1924,7 @@ module Chilkat
 		# Updates the internal reference of the caller to its previous sibling.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def PreviousSibling2()
 			# ...
 		end
@@ -1942,7 +1942,7 @@ module Chilkat
 		# @param charset [String]
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QEncodeContent(charset, inData)
 			# ...
 		end
@@ -1953,7 +1953,7 @@ module Chilkat
 		# Removes all attributes from an XML node. Should always return True.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveAllAttributes()
 			# ...
 		end
@@ -1964,7 +1964,7 @@ module Chilkat
 		# Removes all children from the calling node.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveAllChildren()
 			# ...
 		end
@@ -1976,7 +1976,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveAttribute(name)
 			# ...
 		end
@@ -1985,14 +1985,14 @@ module Chilkat
 		# Method: RemoveChild
 		#
 		# Removes all children with a given tag or tag path.
-		#		
-		#		Beginning in version 9.5.0.64, the
+		# 
+		# Beginning in version 9.5.0.64, the
 		# ARG1 can be a tag path. A tag path is a series of tags separated by vertical bar characters. For
 		# example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveChild(tagPath)
 			# ...
 		end
@@ -2004,7 +2004,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveChildByIndex(index)
 			# ...
 		end
@@ -2016,7 +2016,7 @@ module Chilkat
 		#
 		# @param content [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveChildWithContent(content)
 			# ...
 		end
@@ -2028,7 +2028,7 @@ module Chilkat
 		# tree.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveFromTree()
 			# ...
 		end
@@ -2043,7 +2043,7 @@ module Chilkat
 		# @param decryptFlag [TrueClass, FalseClass]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveBinaryContent(filename, unzipFlag, decryptFlag, password)
 			# ...
 		end
@@ -2055,7 +2055,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -2067,7 +2067,7 @@ module Chilkat
 		#
 		# @param fileName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveXml(fileName)
 			# ...
 		end
@@ -2081,14 +2081,14 @@ module Chilkat
 		# has traversed past the node indicated by ARG1. To find the 1st occurrence, set ARG1 equal to _NULL_.
 		# (For the ActiveX implementation, the ARG1 should never be _NULL_. A reference to the caller's node
 		# should be passed instead.)
-		#		
-		#		To iterate over matching nodes, the returned node can be
+		# 
+		# To iterate over matching nodes, the returned node can be
 		# passed in ARG1 for the next call to SearchAllForContent, until the method returns _NULL_.
 		#
 		# @param afterPtr [CkXml]
 		# @param contentPattern [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def SearchAllForContent(afterPtr, contentPattern)
 			# ...
 		end
@@ -2102,7 +2102,7 @@ module Chilkat
 		# @param afterPtr [CkXml]
 		# @param contentPattern [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SearchAllForContent2(afterPtr, contentPattern)
 			# ...
 		end
@@ -2116,8 +2116,8 @@ module Chilkat
 		# caller. A match is returned only after the search has traversed past the node indicated by ARG1. To
 		# find the 1st occurrence, set ARG1 equal to _NULL_. (For the ActiveX implementation, the ARG1 should
 		# never be _NULL_. A reference to the caller's node should be passed instead.)
-		#		
-		#		To iterate
+		# 
+		# To iterate
 		# over matching nodes, the returned node can be passed in ARG1 for the next call to
 		# SearchForAttribute, until the method returns _NULL_.
 		#
@@ -2126,7 +2126,7 @@ module Chilkat
 		# @param attr [String]
 		# @param valuePattern [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def SearchForAttribute(afterPtr, tag, attr, valuePattern)
 			# ...
 		end
@@ -2142,7 +2142,7 @@ module Chilkat
 		# @param attr [String]
 		# @param valuePattern [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SearchForAttribute2(afterPtr, tag, attr, valuePattern)
 			# ...
 		end
@@ -2156,8 +2156,8 @@ module Chilkat
 		# returned only after the search has traversed past the node indicated by ARG1. To find the 1st
 		# occurrence, set ARG1 equal to _NULL_. (For the ActiveX implementation, the ARG1 should never be
 		# _NULL_. A reference to the caller's node should be passed instead.)
-		#		
-		#		To iterate over
+		# 
+		# To iterate over
 		# matching nodes, the returned node can be passed in ARG1 for the next call to SearchForContent, until
 		# the method returns _NULL_.
 		#
@@ -2165,7 +2165,7 @@ module Chilkat
 		# @param tag [String]
 		# @param contentPattern [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def SearchForContent(afterPtr, tag, contentPattern)
 			# ...
 		end
@@ -2180,7 +2180,7 @@ module Chilkat
 		# @param tag [String]
 		# @param contentPattern [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SearchForContent2(afterPtr, tag, contentPattern)
 			# ...
 		end
@@ -2193,14 +2193,14 @@ module Chilkat
 		# indicated by ARG1. To find the 1st occurrence, set ARG1 equal to _NULL_. (For the ActiveX
 		# implementation, the ARG1 should never be _NULL_. A reference to the caller's node should be passed
 		# instead.)
-		#		
-		#		To iterate over matching nodes, the returned node can be passed in ARG1 for
+		# 
+		# To iterate over matching nodes, the returned node can be passed in ARG1 for
 		# the next call to SearchForTag, until the method returns _NULL_.
 		#
 		# @param afterPtr [CkXml]
 		# @param tag [String]
 		#
-		# @return [CkXml] 
+		# @return [CkXml]
 		def SearchForTag(afterPtr, tag)
 			# ...
 		end
@@ -2214,7 +2214,7 @@ module Chilkat
 		# @param afterPtr [CkXml]
 		# @param tag [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SearchForTag2(afterPtr, tag)
 			# ...
 		end
@@ -2232,7 +2232,7 @@ module Chilkat
 		# @param encryptFlag [TrueClass, FalseClass]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetBinaryContent(inData, zipFlag, encryptFlag, password)
 			# ...
 		end
@@ -2248,7 +2248,7 @@ module Chilkat
 		# @param encryptFlag [TrueClass, FalseClass]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetBinaryContent2(pByteData, szByteData, zipFlag, encryptFlag, password)
 			# ...
 		end
@@ -2264,7 +2264,7 @@ module Chilkat
 		# @param encryptFlag [TrueClass, FalseClass]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetBinaryContentFromFile(filename, zipFlag, encryptFlag, password)
 			# ...
 		end
@@ -2277,7 +2277,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortByAttribute(attrName, ascending)
 			# ...
 		end
@@ -2291,7 +2291,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortByAttributeInt(attrName, ascending)
 			# ...
 		end
@@ -2303,7 +2303,7 @@ module Chilkat
 		#
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortByContent(ascending)
 			# ...
 		end
@@ -2315,7 +2315,7 @@ module Chilkat
 		#
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortByTag(ascending)
 			# ...
 		end
@@ -2329,7 +2329,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortRecordsByAttribute(sortTag, attrName, ascending)
 			# ...
 		end
@@ -2342,7 +2342,7 @@ module Chilkat
 		# @param sortTag [String]
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortRecordsByContent(sortTag, ascending)
 			# ...
 		end
@@ -2356,7 +2356,7 @@ module Chilkat
 		# @param sortTag [String]
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SortRecordsByContentInt(sortTag, ascending)
 			# ...
 		end
@@ -2368,7 +2368,7 @@ module Chilkat
 		#
 		# @param node [CkXml]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SwapNode(node)
 			# ...
 		end
@@ -2380,7 +2380,7 @@ module Chilkat
 		#
 		# @param tree [CkXml]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SwapTree(tree)
 			# ...
 		end
@@ -2394,7 +2394,7 @@ module Chilkat
 		# @param tagName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def TagContent(tagName, outStr)
 			# ...
 		end
@@ -2407,7 +2407,7 @@ module Chilkat
 		#
 		# @param tagName [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def tagContent(tagName)
 			# ...
 		end
@@ -2419,7 +2419,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def TagEquals(tag)
 			# ...
 		end
@@ -2430,7 +2430,7 @@ module Chilkat
 		# Unzip the content of the XML node replacing it's content with the decompressed data.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnzipContent()
 			# ...
 		end
@@ -2442,7 +2442,7 @@ module Chilkat
 		# zip compressed.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnzipTree()
 			# ...
 		end
@@ -2457,7 +2457,7 @@ module Chilkat
 		# @param autoCreate [TrueClass, FalseClass]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UpdateAt(tagPath, autoCreate, value)
 			# ...
 		end
@@ -2473,7 +2473,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param attrValue [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UpdateAttrAt(tagPath, autoCreate, attrName, attrValue)
 			# ...
 		end
@@ -2487,7 +2487,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param attrValue [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UpdateAttribute(attrName, attrValue)
 			# ...
 		end
@@ -2500,7 +2500,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UpdateAttributeInt(attrName, value)
 			# ...
 		end
@@ -2509,15 +2509,15 @@ module Chilkat
 		# Method: UpdateChildContent
 		#
 		# Replaces the content of a child node. The ARG1 can be a tag or tag path.
-		#		
-		#		Beginning in
+		# 
+		# Beginning in
 		# version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series of tags separated by vertical
 		# bar characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		# @param value [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdateChildContent(tagPath, value)
 			# ...
 		end
@@ -2527,14 +2527,14 @@ module Chilkat
 		#
 		# Replaces the content of a child node where the content is an integer. The ARG1 can be a tag or tag
 		# path.
-		#		
-		#		Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series
+		# 
+		# Beginning in version 9.5.0.64, the ARG1 can be a tag path. A tag path is a series
 		# of tags separated by vertical bar characters. For example: "tagA|tagB|tagC".
 		#
 		# @param tagPath [String]
 		# @param value [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UpdateChildContentInt(tagPath, value)
 			# ...
 		end
@@ -2546,7 +2546,7 @@ module Chilkat
 		# compressed data.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ZipContent()
 			# ...
 		end
@@ -2559,7 +2559,7 @@ module Chilkat
 		# calling UnzipTree. Note that the node name and attributes are unaffected.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ZipTree()
 			# ...
 		end

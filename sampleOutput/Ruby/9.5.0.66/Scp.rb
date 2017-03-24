@@ -25,13 +25,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -50,13 +50,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -73,13 +73,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -96,13 +96,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -130,6 +130,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -251,8 +253,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -267,8 +269,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -279,6 +281,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_PercentDoneScale(newval) end
 
 		# The paths of the files uploaded or downloaded in the last call to SyncUploadTree or
@@ -433,8 +437,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -443,8 +447,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -485,7 +489,7 @@ module Chilkat
 		# @param remotePath [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadBinary(remotePath, outBytes)
 			# ...
 		end
@@ -500,7 +504,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadBinaryEncoded(remotePath, encoding, outStr)
 			# ...
 		end
@@ -514,7 +518,7 @@ module Chilkat
 		# @param remotePath [String]
 		# @param encoding [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def downloadBinaryEncoded(remotePath, encoding)
 			# ...
 		end
@@ -527,7 +531,7 @@ module Chilkat
 		# @param remotePath [String]
 		# @param localPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadFile(remotePath, localPath)
 			# ...
 		end
@@ -541,7 +545,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DownloadString(remotePath, charset, outStr)
 			# ...
 		end
@@ -554,7 +558,7 @@ module Chilkat
 		# @param remotePath [String]
 		# @param charset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def downloadString(remotePath, charset)
 			# ...
 		end
@@ -566,7 +570,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -576,17 +580,17 @@ module Chilkat
 		#
 		# Downloads files from the SSH server to a local directory tree. Synchronization modes
 		# include:
-		#		mode=0: Download all files
-		#		mode=1: Download all files that do not exist on the
+		# mode=0: Download all files
+		# mode=1: Download all files that do not exist on the
 		# local filesystem.
-		#		mode=2: Download newer or non-existant files.
-		#		mode=3: Download only
+		# mode=2: Download newer or non-existant files.
+		# mode=3: Download only
 		# newer files. If a file does not already exist on the local filesystem, it is not downloaded from the
 		# server.
-		#		mode=5: Download only missing files or files with size differences.
-		#		mode=6: Same
+		# mode=5: Download only missing files or files with size differences.
+		# mode=6: Same
 		# as mode 5, but also download newer files.
-		#		
+		# 
 		#
 		#
 		# @param remoteRoot [String]
@@ -594,7 +598,7 @@ module Chilkat
 		# @param mode [Fixnum]
 		# @param bRecurse [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SyncTreeDownload(remoteRoot, localRoot, mode, bRecurse)
 			# ...
 		end
@@ -604,15 +608,15 @@ module Chilkat
 		#
 		# Uploads a directory tree from the local filesystem to the SSH server. Synchronization modes
 		# include:
-		#		mode=0: Upload all files
-		#		mode=1: Upload all files that do not exist on the FTP
+		# mode=0: Upload all files
+		# mode=1: Upload all files that do not exist on the FTP
 		# server.
-		#		mode=2: Upload newer or non-existant files.
-		#		mode=3: Upload only newer files. If
+		# mode=2: Upload newer or non-existant files.
+		# mode=3: Upload only newer files. If
 		# a file does not already exist on the FTP server, it is not uploaded.
-		#		mode=4: transfer missing
+		# mode=4: transfer missing
 		# files or files with size differences.
-		#		mode=5: same as mode 4, but also newer files.
+		# mode=5: same as mode 4, but also newer files.
 		#
 		#
 		# @param localBaseDir [String]
@@ -620,7 +624,7 @@ module Chilkat
 		# @param mode [Fixnum]
 		# @param bRecurse [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SyncTreeUpload(localBaseDir, remoteBaseDir, mode, bRecurse)
 			# ...
 		end
@@ -633,7 +637,7 @@ module Chilkat
 		# @param remotePath [String]
 		# @param binData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UploadBinary(remotePath, binData)
 			# ...
 		end
@@ -648,7 +652,7 @@ module Chilkat
 		# @param encodedData [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UploadBinaryEncoded(remotePath, encodedData, encoding)
 			# ...
 		end
@@ -661,7 +665,7 @@ module Chilkat
 		# @param localPath [String]
 		# @param remotePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UploadFile(localPath, remotePath)
 			# ...
 		end
@@ -675,7 +679,7 @@ module Chilkat
 		# @param textData [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UploadString(remotePath, textData, charset)
 			# ...
 		end
@@ -687,13 +691,13 @@ module Chilkat
 		# properties, proxy properites, timeout properties, session log, etc. set on the SSH object apply to
 		# the SCP methods (because internally it is the SSH object that is used to do the work of the file
 		# transfers).
-		#		Note: There is no UnlockComponent method in the SCP class because it is the SSH
+		# Note: There is no UnlockComponent method in the SCP class because it is the SSH
 		# object that must be unlocked. When the SSH object is not unlocked, this method will return _FALSE_
 		# to indicate failure.
 		#
 		# @param sshConnection [CkSsh]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UseSsh(sshConnection)
 			# ...
 		end

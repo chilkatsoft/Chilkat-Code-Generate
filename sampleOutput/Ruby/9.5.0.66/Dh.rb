@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -228,8 +228,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -238,8 +238,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -283,7 +283,7 @@ module Chilkat
 		# @param numBits [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def CreateE(numBits, outStr)
 			# ...
 		end
@@ -298,7 +298,7 @@ module Chilkat
 		#
 		# @param numBits [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def createE(numBits)
 			# ...
 		end
@@ -312,7 +312,7 @@ module Chilkat
 		# @param E [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def FindK(E, outStr)
 			# ...
 		end
@@ -325,7 +325,7 @@ module Chilkat
 		#
 		# @param E [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def findK(E)
 			# ...
 		end
@@ -339,7 +339,7 @@ module Chilkat
 		# @param numBits [Fixnum]
 		# @param G [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GenPG(numBits, G)
 			# ...
 		end
@@ -351,7 +351,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -365,7 +365,7 @@ module Chilkat
 		# @param p [String]
 		# @param g [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SetPG(p, g)
 			# ...
 		end
@@ -380,7 +380,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -389,39 +389,39 @@ module Chilkat
 		# Method: UseKnownPrime
 		#
 		# Sets P and G to a known safe prime. The ARG1 may have the following values:
-		#		
-		#		1: First
+		# 
+		# 1: First
 		# Oakley Default Group from RFC2409, section 6.1. Generator is 2. The prime is: 2^768 - 2 ^704 - 1 +
 		# 2^64 * { [2^638 pi] + 149686 }
-		#		
-		#		2: Prime for 2nd Oakley Group (RFC 2409) -- 1024-bit
+		# 
+		# 2: Prime for 2nd Oakley Group (RFC 2409) -- 1024-bit
 		# MODP Group. Generator is 2. The prime is: 2^1024 - 2^960 - 1 + 2^64 * { [2^894 pi] + 129093
 		# }.
-		#		
-		#		3: 1536-bit MODP Group from RFC3526, Section 2. Generator is 2. The prime is: 2^1536
+		# 
+		# 3: 1536-bit MODP Group from RFC3526, Section 2. Generator is 2. The prime is: 2^1536
 		# - 2^1472 - 1 + 2^64 * { [2^1406 pi] + 741804 }
-		#		
-		#		4: Prime for 14th Oakley Group (RFC
+		# 
+		# 4: Prime for 14th Oakley Group (RFC
 		# 3526) -- 2048-bit MODP Group. Generator is 2. The prime is: 2^2048 - 2^1984 - 1 + 2^64 * { [2^1918
 		# pi] + 124476 }
-		#		
-		#		5: 3072-bit MODP Group from RFC3526, Section 4. Generator is 2. The
+		# 
+		# 5: 3072-bit MODP Group from RFC3526, Section 4. Generator is 2. The
 		# prime is: 2^3072 - 2^3008 - 1 + 2^64 * { [2^2942 pi] + 1690314 }
-		#		
-		#		6: 4096-bit MODP Group
+		# 
+		# 6: 4096-bit MODP Group
 		# from RFC3526, Section 5. Generator is 2. The prime is: 2^4096 - 2^4032 - 1 + 2^64 * { [2^3966 pi] +
 		# 240904 }
-		#		
-		#		7: 6144-bit MODP Group from RFC3526, Section 6. Generator is 2. The prime is:
+		# 
+		# 7: 6144-bit MODP Group from RFC3526, Section 6. Generator is 2. The prime is:
 		# 2^6144 - 2^6080 - 1 + 2^64 * { [2^6014 pi] + 929484 }
-		#		
-		#		8: 8192-bit MODP Group from
+		# 
+		# 8: 8192-bit MODP Group from
 		# RFC3526, Section 7. Generator is 2. The prime is: 2^8192 - 2^8128 - 1 + 2^64 * { [2^8062 pi] +
 		# 4743158 }
 		#
 		# @param index [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def UseKnownPrime(index)
 			# ...
 		end

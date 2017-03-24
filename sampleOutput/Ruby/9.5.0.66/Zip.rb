@@ -123,17 +123,16 @@ module Chilkat
 		# select and create a temporary directory for unzipping. This property is often used in conjunction
 		# with the AutoRun property to create a self-extracting EXE that automatically unzips to a temp
 		# directory and runs a setup.exe without interaction with the user.
-		#		
-		#		Note: To create a
+		# 
+		# Note: To create a
 		# self-extracting EXE with no user-interaction, set the following properties to these
 		# values:
-		#		
-		#		ExeSilentProgress = _FALSE_
-		#		ExeNoInterface =
-		# _TRUE_
-		#		ExeFinishNotifier = _FALSE_
-		#		
-		#		The default AutoTemp value is _FALSE_.
+		# 
+		# ExeSilentProgress = _FALSE_
+		# ExeNoInterface  _TRUE_
+		# ExeFinishNotifier = _FALSE_
+		# 
+		# The default AutoTemp value is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
 		def get_AutoTemp() end
@@ -143,17 +142,16 @@ module Chilkat
 		# select and create a temporary directory for unzipping. This property is often used in conjunction
 		# with the AutoRun property to create a self-extracting EXE that automatically unzips to a temp
 		# directory and runs a setup.exe without interaction with the user.
-		#		
-		#		Note: To create a
+		# 
+		# Note: To create a
 		# self-extracting EXE with no user-interaction, set the following properties to these
 		# values:
-		#		
-		#		ExeSilentProgress = _FALSE_
-		#		ExeNoInterface =
-		# _TRUE_
-		#		ExeFinishNotifier = _FALSE_
-		#		
-		#		The default AutoTemp value is _FALSE_.
+		# 
+		# ExeSilentProgress = _FALSE_
+		# ExeNoInterface  _TRUE_
+		# ExeFinishNotifier = _FALSE_
+		# 
+		# The default AutoTemp value is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
 		def put_AutoTemp(newval) end
@@ -161,7 +159,7 @@ module Chilkat
 		# If _TRUE_ then all methods that get or search for zip entries by name will use case-sensitive
 		# filename matching. If _FALSE_ then filename matching will be case insensitive. Methods affected by
 		# this property include GetEntryByName, UnzipMatching, FirstMatchingEntry, etc.
-		#		The default
+		# The default
 		# value is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -170,7 +168,7 @@ module Chilkat
 		# If _TRUE_ then all methods that get or search for zip entries by name will use case-sensitive
 		# filename matching. If _FALSE_ then filename matching will be case insensitive. Methods affected by
 		# this property include GetEntryByName, UnzipMatching, FirstMatchingEntry, etc.
-		#		The default
+		# The default
 		# value is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -178,16 +176,16 @@ module Chilkat
 
 		# Set this to _TRUE_ to clear the FILE_ATTRIBUTE_ARCHIVE file attribute of each file during a zipping
 		# operation.
-		#		
-		#		The default value is _FALSE_.
+		# 
+		# The default value is _FALSE_.
 		#
 		# @return [TrueClass, FalseClass]
 		def get_ClearArchiveAttribute() end
 
 		# Set this to _TRUE_ to clear the FILE_ATTRIBUTE_ARCHIVE file attribute of each file during a zipping
 		# operation.
-		#		
-		#		The default value is _FALSE_.
+		# 
+		# The default value is _FALSE_.
 		#
 		# @param newval [TrueClass, FalseClass]
 		def put_ClearArchiveAttribute(newval) end
@@ -231,13 +229,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -256,13 +254,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -279,13 +277,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -302,13 +300,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -323,8 +321,8 @@ module Chilkat
 		# When opening a password-protected or AES encrypted Zip, this is the password to be used for
 		# decryption. Encrypted Zips may be opened without setting a password, but the contents cannot be
 		# unzipped without setting this password.
-		#		
-		#		Note:The SetPassword method has the effect of
+		# 
+		# Note:The SetPassword method has the effect of
 		# setting both this property as well as the EncryptPassword property. The SetPassword method should no
 		# longer be used. It has been replaced by the DecryptPassword and EncryptPassword properties to make
 		# it possible to open an encrypted zip and re-write it with a new password.
@@ -337,8 +335,8 @@ module Chilkat
 		# When opening a password-protected or AES encrypted Zip, this is the password to be used for
 		# decryption. Encrypted Zips may be opened without setting a password, but the contents cannot be
 		# unzipped without setting this password.
-		#		
-		#		Note:The SetPassword method has the effect of
+		# 
+		# Note:The SetPassword method has the effect of
 		# setting both this property as well as the EncryptPassword property. The SetPassword method should no
 		# longer be used. It has been replaced by the DecryptPassword and EncryptPassword properties to make
 		# it possible to open an encrypted zip and re-write it with a new password.
@@ -349,8 +347,8 @@ module Chilkat
 		# When opening a password-protected or AES encrypted Zip, this is the password to be used for
 		# decryption. Encrypted Zips may be opened without setting a password, but the contents cannot be
 		# unzipped without setting this password.
-		#		
-		#		Note:The SetPassword method has the effect of
+		# 
+		# Note:The SetPassword method has the effect of
 		# setting both this property as well as the EncryptPassword property. The SetPassword method should no
 		# longer be used. It has been replaced by the DecryptPassword and EncryptPassword properties to make
 		# it possible to open an encrypted zip and re-write it with a new password.
@@ -361,8 +359,8 @@ module Chilkat
 		# When opening a password-protected or AES encrypted Zip, this is the password to be used for
 		# decryption. Encrypted Zips may be opened without setting a password, but the contents cannot be
 		# unzipped without setting this password.
-		#		
-		#		Note:The SetPassword method has the effect of
+		# 
+		# Note:The SetPassword method has the effect of
 		# setting both this property as well as the EncryptPassword property. The SetPassword method should no
 		# longer be used. It has been replaced by the DecryptPassword and EncryptPassword properties to make
 		# it possible to open an encrypted zip and re-write it with a new password.
@@ -383,8 +381,8 @@ module Chilkat
 		# Indicate whether the Zip is to be strong encrypted or not. Valid values are 0 (not encrypted) or 4
 		# (AES encrypted). When this property is set to the value 4, WinZip AES compatible encrypted zip
 		# archives are produced.
-		#		
-		#		Note: Prior to Chilkat v9.4.1, other possible values for this
+		# 
+		# Note: Prior to Chilkat v9.4.1, other possible values for this
 		# property were: 1 (blowfish), 2 (twofish), and 3 (rijndael). These settings originally provided a way
 		# to produce strong encrypted zips prior to when the AES encrypted Zip standard existed. Using these
 		# legacy values (1, 2, or 3) produced encrypted zips that only applications using Chilkat could read.
@@ -392,7 +390,7 @@ module Chilkat
 		# with one of these deprecated encryption modes, make sure to decrypt using the old Chilkat version
 		# and re-encrypt using mode 4 (WinZip compatible AES encryption) prior to updating to the new Chilkat
 		# version.
-		#		Important:The Encryption and PasswordProtect properties are mutually exclusive.
+		# Important:The Encryption and PasswordProtect properties are mutually exclusive.
 		# PasswordProtect corresponds to the older Zip 2.0 encryption, commonly referred to as a
 		# "password-protected" zip. If the PasswordProtect is set to _TRUE_, the Encryption property should be
 		# set to 0. If the Encryption property is set to a non-zero value, then PasswordProtect should be set
@@ -404,8 +402,8 @@ module Chilkat
 		# Indicate whether the Zip is to be strong encrypted or not. Valid values are 0 (not encrypted) or 4
 		# (AES encrypted). When this property is set to the value 4, WinZip AES compatible encrypted zip
 		# archives are produced.
-		#		
-		#		Note: Prior to Chilkat v9.4.1, other possible values for this
+		# 
+		# Note: Prior to Chilkat v9.4.1, other possible values for this
 		# property were: 1 (blowfish), 2 (twofish), and 3 (rijndael). These settings originally provided a way
 		# to produce strong encrypted zips prior to when the AES encrypted Zip standard existed. Using these
 		# legacy values (1, 2, or 3) produced encrypted zips that only applications using Chilkat could read.
@@ -413,7 +411,7 @@ module Chilkat
 		# with one of these deprecated encryption modes, make sure to decrypt using the old Chilkat version
 		# and re-encrypt using mode 4 (WinZip compatible AES encryption) prior to updating to the new Chilkat
 		# version.
-		#		Important:The Encryption and PasswordProtect properties are mutually exclusive.
+		# Important:The Encryption and PasswordProtect properties are mutually exclusive.
 		# PasswordProtect corresponds to the older Zip 2.0 encryption, commonly referred to as a
 		# "password-protected" zip. If the PasswordProtect is set to _TRUE_, the Encryption property should be
 		# set to 0. If the Encryption property is set to a non-zero value, then PasswordProtect should be set
@@ -435,8 +433,8 @@ module Chilkat
 		def put_EncryptKeyLength(newval) end
 
 		# The password used when writing a password-protected or strong-encrytped Zip.
-		#		
-		#		Note:The
+		# 
+		# Note:The
 		# SetPassword method has the effect of setting both this property as well as the DecryptPassword
 		# property. The SetPassword method should no longer be used. It has been replaced by the
 		# DecryptPassword and EncryptPassword properties to make it possible to open an encrypted zip and
@@ -448,8 +446,8 @@ module Chilkat
 		def get_EncryptPassword(ckStr) end
 
 		# The password used when writing a password-protected or strong-encrytped Zip.
-		#		
-		#		Note:The
+		# 
+		# Note:The
 		# SetPassword method has the effect of setting both this property as well as the DecryptPassword
 		# property. The SetPassword method should no longer be used. It has been replaced by the
 		# DecryptPassword and EncryptPassword properties to make it possible to open an encrypted zip and
@@ -459,8 +457,8 @@ module Chilkat
 		def put_EncryptPassword(newval) end
 
 		# The password used when writing a password-protected or strong-encrytped Zip.
-		#		
-		#		Note:The
+		# 
+		# Note:The
 		# SetPassword method has the effect of setting both this property as well as the DecryptPassword
 		# property. The SetPassword method should no longer be used. It has been replaced by the
 		# DecryptPassword and EncryptPassword properties to make it possible to open an encrypted zip and
@@ -470,8 +468,8 @@ module Chilkat
 		def encryptPassword() end
 
 		# The password used when writing a password-protected or strong-encrytped Zip.
-		#		
-		#		Note:The
+		# 
+		# Note:The
 		# SetPassword method has the effect of setting both this property as well as the DecryptPassword
 		# property. The SetPassword method should no longer be used. It has been replaced by the
 		# DecryptPassword and EncryptPassword properties to make it possible to open an encrypted zip and
@@ -529,8 +527,8 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
 		# self-extracting EXEs. This property can be set to a pre-existing icon filename (.ico) that will be
 		# embedded within the to-be-created EXE and set as its default icon.
-		#		
-		#		Note: This property
+		# 
+		# Note: This property
 		# is only possible for 32-bit applications. (Meaning that the application that is creating the
 		# self-extracting EXE must be a 32-bit application if an ExeIconFile is to be used.)
 		#
@@ -542,8 +540,8 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
 		# self-extracting EXEs. This property can be set to a pre-existing icon filename (.ico) that will be
 		# embedded within the to-be-created EXE and set as its default icon.
-		#		
-		#		Note: This property
+		# 
+		# Note: This property
 		# is only possible for 32-bit applications. (Meaning that the application that is creating the
 		# self-extracting EXE must be a 32-bit application if an ExeIconFile is to be used.)
 		#
@@ -553,8 +551,8 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
 		# self-extracting EXEs. This property can be set to a pre-existing icon filename (.ico) that will be
 		# embedded within the to-be-created EXE and set as its default icon.
-		#		
-		#		Note: This property
+		# 
+		# Note: This property
 		# is only possible for 32-bit applications. (Meaning that the application that is creating the
 		# self-extracting EXE must be a 32-bit application if an ExeIconFile is to be used.)
 		#
@@ -564,8 +562,8 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
 		# self-extracting EXEs. This property can be set to a pre-existing icon filename (.ico) that will be
 		# embedded within the to-be-created EXE and set as its default icon.
-		#		
-		#		Note: This property
+		# 
+		# Note: This property
 		# is only possible for 32-bit applications. (Meaning that the application that is creating the
 		# self-extracting EXE must be a 32-bit application if an ExeIconFile is to be used.)
 		#
@@ -575,17 +573,17 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
 		# Windows-based self-extracting EXEs. When set to _TRUE_, the to-be-created EXE will run without a
 		# user-interface. The default value is _FALSE_.
-		#		
-		#		Note: The ExeSilentProgress property
+		# 
+		# Note: The ExeSilentProgress property
 		# needs to be set to _TRUE_ for the extract to be truly silent. 
-		#		
-		#		Important: If the
+		# 
+		# Important: If the
 		# AutoTemp property = _TRUE_ and there is no AutoRun EXE, and there is no ExeUnzipDir set, then the
 		# self-extracting EXE will always display a dialog to get the unzip directory. The reason is that it
 		# makes no sense to silently unzip to an auto-selected (and unknown) temp directory without anything
 		# happening afterwards. 
-		#		
-		#		Important: If the self-extracting EXE is encrypted, a password
+		# 
+		# Important: If the self-extracting EXE is encrypted, a password
 		# dialog will be displayed. The password dialog may be suppressed if the password is provided on the
 		# command line via the -pwd command-line option.
 		#
@@ -595,17 +593,17 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
 		# Windows-based self-extracting EXEs. When set to _TRUE_, the to-be-created EXE will run without a
 		# user-interface. The default value is _FALSE_.
-		#		
-		#		Note: The ExeSilentProgress property
+		# 
+		# Note: The ExeSilentProgress property
 		# needs to be set to _TRUE_ for the extract to be truly silent. 
-		#		
-		#		Important: If the
+		# 
+		# Important: If the
 		# AutoTemp property = _TRUE_ and there is no AutoRun EXE, and there is no ExeUnzipDir set, then the
 		# self-extracting EXE will always display a dialog to get the unzip directory. The reason is that it
 		# makes no sense to silently unzip to an auto-selected (and unknown) temp directory without anything
 		# happening afterwards. 
-		#		
-		#		Important: If the self-extracting EXE is encrypted, a password
+		# 
+		# Important: If the self-extracting EXE is encrypted, a password
 		# dialog will be displayed. The password dialog may be suppressed if the password is provided on the
 		# command line via the -pwd command-line option.
 		#
@@ -695,19 +693,18 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating MS Windows
 		# self-extracting EXEs. Stores a pre-defined unzip directory within the self-extracting EXE so that it
 		# automatically unzips to this directory without user-intervention. 
-		#		
-		#		Environment
+		# 
+		# Environment
 		# variables may be included if surrounded by percent characters. For example: %TEMP%. Environment
 		# variables are expanded (i.e. resolved) when the self-extracting EXE runs.
-		#		
-		#		Note: To
+		# 
+		# Note: To
 		# create a self-extracting EXE with no user-interaction, set the following properties to these
 		# values:
-		#		
-		#		ExeSilentProgress = _FALSE_
-		#		ExeNoInterface =
-		# _TRUE_
-		#		ExeFinishNotifier = _FALSE_
+		# 
+		# ExeSilentProgress = _FALSE_
+		# ExeNoInterface  _TRUE_
+		# ExeFinishNotifier = _FALSE_
 		#
 		#
 		# @param ckStr [CkString]
@@ -718,19 +715,18 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating MS Windows
 		# self-extracting EXEs. Stores a pre-defined unzip directory within the self-extracting EXE so that it
 		# automatically unzips to this directory without user-intervention. 
-		#		
-		#		Environment
+		# 
+		# Environment
 		# variables may be included if surrounded by percent characters. For example: %TEMP%. Environment
 		# variables are expanded (i.e. resolved) when the self-extracting EXE runs.
-		#		
-		#		Note: To
+		# 
+		# Note: To
 		# create a self-extracting EXE with no user-interaction, set the following properties to these
 		# values:
-		#		
-		#		ExeSilentProgress = _FALSE_
-		#		ExeNoInterface =
-		# _TRUE_
-		#		ExeFinishNotifier = _FALSE_
+		# 
+		# ExeSilentProgress = _FALSE_
+		# ExeNoInterface  _TRUE_
+		# ExeFinishNotifier = _FALSE_
 		#
 		#
 		# @param newval [String]
@@ -739,19 +735,18 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating MS Windows
 		# self-extracting EXEs. Stores a pre-defined unzip directory within the self-extracting EXE so that it
 		# automatically unzips to this directory without user-intervention. 
-		#		
-		#		Environment
+		# 
+		# Environment
 		# variables may be included if surrounded by percent characters. For example: %TEMP%. Environment
 		# variables are expanded (i.e. resolved) when the self-extracting EXE runs.
-		#		
-		#		Note: To
+		# 
+		# Note: To
 		# create a self-extracting EXE with no user-interaction, set the following properties to these
 		# values:
-		#		
-		#		ExeSilentProgress = _FALSE_
-		#		ExeNoInterface =
-		# _TRUE_
-		#		ExeFinishNotifier = _FALSE_
+		# 
+		# ExeSilentProgress = _FALSE_
+		# ExeNoInterface  _TRUE_
+		# ExeFinishNotifier = _FALSE_
 		#
 		#
 		# @return [String]
@@ -760,19 +755,18 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating MS Windows
 		# self-extracting EXEs. Stores a pre-defined unzip directory within the self-extracting EXE so that it
 		# automatically unzips to this directory without user-intervention. 
-		#		
-		#		Environment
+		# 
+		# Environment
 		# variables may be included if surrounded by percent characters. For example: %TEMP%. Environment
 		# variables are expanded (i.e. resolved) when the self-extracting EXE runs.
-		#		
-		#		Note: To
+		# 
+		# Note: To
 		# create a self-extracting EXE with no user-interaction, set the following properties to these
 		# values:
-		#		
-		#		ExeSilentProgress = _FALSE_
-		#		ExeNoInterface =
-		# _TRUE_
-		#		ExeFinishNotifier = _FALSE_
+		# 
+		# ExeSilentProgress = _FALSE_
+		# ExeNoInterface  _TRUE_
+		# ExeFinishNotifier = _FALSE_
 		#
 		#
 		# @param newval [String]
@@ -797,81 +791,81 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Allows for an XML config
 		# document to be used to specify all possible options for self-extracting EXEs. This property is a
 		# string containing the XML config document.
-		#		
-		#		The XML should have this
+		# 
+		# The XML should have this
 		# format:
-		#		
-		#		_LT_SfxConfig_GT_
-		#			_LT_ErrPwdTitle_GT_Title for incorrect password
+		# 
+		# _LT_SfxConfig_GT_
+		# 	_LT_ErrPwdTitle_GT_Title for incorrect password
 		# dialog_LT_/ErrPwdTitle_GT_
-		#			_LT_ErrPwdCaption_GT_Caption for incorrect password
+		# 	_LT_ErrPwdCaption_GT_Caption for incorrect password
 		# dialog_LT_/ErrPwdCaption_GT_
-		#			_LT_FinOkBtn_GT_Text on finish notifier
+		# 	_LT_FinOkBtn_GT_Text on finish notifier
 		# button_LT_/FinOkBtn_GT_
-		#			_LT_PwdOkBtn_GT_Text on password challenge dialog's _QUOTE_OK_QUOTE_
+		# 	_LT_PwdOkBtn_GT_Text on password challenge dialog's _QUOTE_OK_QUOTE_
 		# button._LT_/PwdOkBtn_GT_
-		#			_LT_PwdCancelBtn_GT_Text on password challenge dialog's Cancel
+		# 	_LT_PwdCancelBtn_GT_Text on password challenge dialog's Cancel
 		# button._LT_/PwdCancelBtn_GT_
-		#			_LT_ErrInvalidPassword_GT_Incorrect password error
+		# 	_LT_ErrInvalidPassword_GT_Incorrect password error
 		# message._LT_/ErrInvalidPassword_GT_
-		#			_LT_MainUnzipBtn_GT_Text on main dialog's unzip
+		# 	_LT_MainUnzipBtn_GT_Text on main dialog's unzip
 		# button_LT_/MainUnzipBtn_GT_
-		#			_LT_MainCloseBtn_GT_Text on main dialog's quit/exit
+		# 	_LT_MainCloseBtn_GT_Text on main dialog's quit/exit
 		# button_LT_/MainCloseBtn_GT_
-		#			_LT_MainBrowseBtn_GT_Text on main dialog's browse-for-directory
+		# 	_LT_MainBrowseBtn_GT_Text on main dialog's browse-for-directory
 		# button._LT_/MainBrowseBtn_GT_
-		#			_LT_MainUnzipLabel_GT_Caption displayed in main
+		# 	_LT_MainUnzipLabel_GT_Caption displayed in main
 		# dialog._LT_/MainUnzipLabel_GT_
-		#			_LT_AutoTemp_GT__QUOTE_1|0 (Maps to the AutoTemp
+		# 	_LT_AutoTemp_GT__QUOTE_1|0 (Maps to the AutoTemp
 		# property)_QUOTE__LT_/AutoTemp_GT_
-		#			_LT_Cleanup_GT__QUOTE_1|0 (Deletes extracted files after
+		# 	_LT_Cleanup_GT__QUOTE_1|0 (Deletes extracted files after
 		# the SetupExe is run.)_QUOTE__LT_/Cleanup_GT_
-		#			_LT_Debug_GT__QUOTE_1|0 (If 1, the EXE will not
+		# 	_LT_Debug_GT__QUOTE_1|0 (If 1, the EXE will not
 		# extract any files.)_QUOTE__LT_/Debug_GT_
-		#			_LT_Verbose_GT__QUOTE_1|0 (If 1, then verbose
+		# 	_LT_Verbose_GT__QUOTE_1|0 (If 1, then verbose
 		# information is sent to the log.)_QUOTE__LT_/Verbose_GT_
-		#			_LT_ShowFin_GT__QUOTE_1|0_QUOTE_ Maps
+		# 	_LT_ShowFin_GT__QUOTE_1|0_QUOTE_ Maps
 		# to ExeFinishNotifier property._LT_/ShowFin_GT_
-		#			_LT_ShowMain_GT__QUOTE_1|0_QUOTE_ Maps to
+		# 	_LT_ShowMain_GT__QUOTE_1|0_QUOTE_ Maps to
 		# ExeNoInterface property._LT_/ShowMain_GT_
-		#			_LT_ShowProgress_GT__QUOTE_1|0_QUOTE_ Maps to
+		# 	_LT_ShowProgress_GT__QUOTE_1|0_QUOTE_ Maps to
 		# ExeSilentProgress property._LT_/ShowProgress_GT_
-		#			_LT_WaitForSetup_GT__QUOTE_1|0_QUOTE_ Maps
+		# 	_LT_WaitForSetup_GT__QUOTE_1|0_QUOTE_ Maps
 		# to ExeWaitForSetup property._LT_/WaitForSetup_GT_
-		#			_LT_Encryption_GT__QUOTE_1|0_QUOTE_ 1=Yes,
+		# 	_LT_Encryption_GT__QUOTE_1|0_QUOTE_ 1=Yes,
 		# 0=No_LT_/Encryption_GT_
-		#			_LT_KeyLength_GT_128|192|256_LT_/KeyLength_GT_
-		#			_LT_SetupExe_GT_EXE
+		# 	_LT_KeyLength_GT_128|192|256_LT_/KeyLength_GT_
+		# 	_LT_SetupExe_GT_EXE
 		# to run after extracting. (Maps to AutoRun
 		# property)_LT_/SetupExe_GT_
-		#			_LT_UnzipDir_GT_Pre-defined unzip directory. (Maps to ExeUnzipDir
+		# 	_LT_UnzipDir_GT_Pre-defined unzip directory. (Maps to ExeUnzipDir
 		# property)_GT_
-		#			_LT_DefaultDir_GT_Default unzip directory to appear in the main dialog. 
+		# 	_LT_DefaultDir_GT_Default unzip directory to appear in the main dialog. 
 		#
 		# (Maps to ExeDefaultDir property)_LT_/DefaultDir_GT_
-		#			_LT_IconFile_GT_Icon file to be used
+		# 	_LT_IconFile_GT_Icon file to be used
 		# (Maps to ExeIconFile property)_LT_/IconFile_GT_
-		#			_LT_Url_GT_Maps to ExeSourceUrl
+		# 	_LT_Url_GT_Maps to ExeSourceUrl
 		# property._LT_/Url_GT_
-		#			_LT_MainTitle_GT_Maps to ExeTitle
+		# 	_LT_MainTitle_GT_Maps to ExeTitle
 		# property._LT_/MainTitle_GT_
-		#			_LT_MainCaption_GT_Maps to ExeUnzipCaption
+		# 	_LT_MainCaption_GT_Maps to ExeUnzipCaption
 		# property._LT_/MainCaption_GT_
-		#			_LT_FinTitle_GT_Title for the finish notifier
+		# 	_LT_FinTitle_GT_Title for the finish notifier
 		# dialog._LT_/FinTitle_GT_
-		#			_LT_FinCaption_GT_Caption for the finish notifier
+		# 	_LT_FinCaption_GT_Caption for the finish notifier
 		# dialog._LT_/FinTitle_GT_
-		#			_LT_ProgressTitle_GT_Title for the progress
+		# 	_LT_ProgressTitle_GT_Title for the progress
 		# dialog._LT_/ProgressTitle_GT_
-		#			_LT_ProgressCaption_GT_Caption for the progress
+		# 	_LT_ProgressCaption_GT_Caption for the progress
 		# dialog._LT_/ProgressCaption_GT_
-		#			_LT_PwTitle_GT_Title for the password challenge
+		# 	_LT_PwTitle_GT_Title for the password challenge
 		# dialog._LT_/PwTitle_GT_
-		#			_LT_PwCaption_GT_Caption for the password challenge
+		# 	_LT_PwCaption_GT_Caption for the password challenge
 		# dialog._LT_/PwCaption_GT_
-		#		_LT_/SfxConfig_GT_
-		#		
-		#		A self-extracting EXE can be run
+		# _LT_/SfxConfig_GT_
+		# 
+		# A self-extracting EXE can be run
 		# from the command line with the "-log {logFilePath}" option to create a log with information for
 		# debugging.
 		#
@@ -883,81 +877,81 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Allows for an XML config
 		# document to be used to specify all possible options for self-extracting EXEs. This property is a
 		# string containing the XML config document.
-		#		
-		#		The XML should have this
+		# 
+		# The XML should have this
 		# format:
-		#		
-		#		_LT_SfxConfig_GT_
-		#			_LT_ErrPwdTitle_GT_Title for incorrect password
+		# 
+		# _LT_SfxConfig_GT_
+		# 	_LT_ErrPwdTitle_GT_Title for incorrect password
 		# dialog_LT_/ErrPwdTitle_GT_
-		#			_LT_ErrPwdCaption_GT_Caption for incorrect password
+		# 	_LT_ErrPwdCaption_GT_Caption for incorrect password
 		# dialog_LT_/ErrPwdCaption_GT_
-		#			_LT_FinOkBtn_GT_Text on finish notifier
+		# 	_LT_FinOkBtn_GT_Text on finish notifier
 		# button_LT_/FinOkBtn_GT_
-		#			_LT_PwdOkBtn_GT_Text on password challenge dialog's _QUOTE_OK_QUOTE_
+		# 	_LT_PwdOkBtn_GT_Text on password challenge dialog's _QUOTE_OK_QUOTE_
 		# button._LT_/PwdOkBtn_GT_
-		#			_LT_PwdCancelBtn_GT_Text on password challenge dialog's Cancel
+		# 	_LT_PwdCancelBtn_GT_Text on password challenge dialog's Cancel
 		# button._LT_/PwdCancelBtn_GT_
-		#			_LT_ErrInvalidPassword_GT_Incorrect password error
+		# 	_LT_ErrInvalidPassword_GT_Incorrect password error
 		# message._LT_/ErrInvalidPassword_GT_
-		#			_LT_MainUnzipBtn_GT_Text on main dialog's unzip
+		# 	_LT_MainUnzipBtn_GT_Text on main dialog's unzip
 		# button_LT_/MainUnzipBtn_GT_
-		#			_LT_MainCloseBtn_GT_Text on main dialog's quit/exit
+		# 	_LT_MainCloseBtn_GT_Text on main dialog's quit/exit
 		# button_LT_/MainCloseBtn_GT_
-		#			_LT_MainBrowseBtn_GT_Text on main dialog's browse-for-directory
+		# 	_LT_MainBrowseBtn_GT_Text on main dialog's browse-for-directory
 		# button._LT_/MainBrowseBtn_GT_
-		#			_LT_MainUnzipLabel_GT_Caption displayed in main
+		# 	_LT_MainUnzipLabel_GT_Caption displayed in main
 		# dialog._LT_/MainUnzipLabel_GT_
-		#			_LT_AutoTemp_GT__QUOTE_1|0 (Maps to the AutoTemp
+		# 	_LT_AutoTemp_GT__QUOTE_1|0 (Maps to the AutoTemp
 		# property)_QUOTE__LT_/AutoTemp_GT_
-		#			_LT_Cleanup_GT__QUOTE_1|0 (Deletes extracted files after
+		# 	_LT_Cleanup_GT__QUOTE_1|0 (Deletes extracted files after
 		# the SetupExe is run.)_QUOTE__LT_/Cleanup_GT_
-		#			_LT_Debug_GT__QUOTE_1|0 (If 1, the EXE will not
+		# 	_LT_Debug_GT__QUOTE_1|0 (If 1, the EXE will not
 		# extract any files.)_QUOTE__LT_/Debug_GT_
-		#			_LT_Verbose_GT__QUOTE_1|0 (If 1, then verbose
+		# 	_LT_Verbose_GT__QUOTE_1|0 (If 1, then verbose
 		# information is sent to the log.)_QUOTE__LT_/Verbose_GT_
-		#			_LT_ShowFin_GT__QUOTE_1|0_QUOTE_ Maps
+		# 	_LT_ShowFin_GT__QUOTE_1|0_QUOTE_ Maps
 		# to ExeFinishNotifier property._LT_/ShowFin_GT_
-		#			_LT_ShowMain_GT__QUOTE_1|0_QUOTE_ Maps to
+		# 	_LT_ShowMain_GT__QUOTE_1|0_QUOTE_ Maps to
 		# ExeNoInterface property._LT_/ShowMain_GT_
-		#			_LT_ShowProgress_GT__QUOTE_1|0_QUOTE_ Maps to
+		# 	_LT_ShowProgress_GT__QUOTE_1|0_QUOTE_ Maps to
 		# ExeSilentProgress property._LT_/ShowProgress_GT_
-		#			_LT_WaitForSetup_GT__QUOTE_1|0_QUOTE_ Maps
+		# 	_LT_WaitForSetup_GT__QUOTE_1|0_QUOTE_ Maps
 		# to ExeWaitForSetup property._LT_/WaitForSetup_GT_
-		#			_LT_Encryption_GT__QUOTE_1|0_QUOTE_ 1=Yes,
+		# 	_LT_Encryption_GT__QUOTE_1|0_QUOTE_ 1=Yes,
 		# 0=No_LT_/Encryption_GT_
-		#			_LT_KeyLength_GT_128|192|256_LT_/KeyLength_GT_
-		#			_LT_SetupExe_GT_EXE
+		# 	_LT_KeyLength_GT_128|192|256_LT_/KeyLength_GT_
+		# 	_LT_SetupExe_GT_EXE
 		# to run after extracting. (Maps to AutoRun
 		# property)_LT_/SetupExe_GT_
-		#			_LT_UnzipDir_GT_Pre-defined unzip directory. (Maps to ExeUnzipDir
+		# 	_LT_UnzipDir_GT_Pre-defined unzip directory. (Maps to ExeUnzipDir
 		# property)_GT_
-		#			_LT_DefaultDir_GT_Default unzip directory to appear in the main dialog. 
+		# 	_LT_DefaultDir_GT_Default unzip directory to appear in the main dialog. 
 		#
 		# (Maps to ExeDefaultDir property)_LT_/DefaultDir_GT_
-		#			_LT_IconFile_GT_Icon file to be used
+		# 	_LT_IconFile_GT_Icon file to be used
 		# (Maps to ExeIconFile property)_LT_/IconFile_GT_
-		#			_LT_Url_GT_Maps to ExeSourceUrl
+		# 	_LT_Url_GT_Maps to ExeSourceUrl
 		# property._LT_/Url_GT_
-		#			_LT_MainTitle_GT_Maps to ExeTitle
+		# 	_LT_MainTitle_GT_Maps to ExeTitle
 		# property._LT_/MainTitle_GT_
-		#			_LT_MainCaption_GT_Maps to ExeUnzipCaption
+		# 	_LT_MainCaption_GT_Maps to ExeUnzipCaption
 		# property._LT_/MainCaption_GT_
-		#			_LT_FinTitle_GT_Title for the finish notifier
+		# 	_LT_FinTitle_GT_Title for the finish notifier
 		# dialog._LT_/FinTitle_GT_
-		#			_LT_FinCaption_GT_Caption for the finish notifier
+		# 	_LT_FinCaption_GT_Caption for the finish notifier
 		# dialog._LT_/FinTitle_GT_
-		#			_LT_ProgressTitle_GT_Title for the progress
+		# 	_LT_ProgressTitle_GT_Title for the progress
 		# dialog._LT_/ProgressTitle_GT_
-		#			_LT_ProgressCaption_GT_Caption for the progress
+		# 	_LT_ProgressCaption_GT_Caption for the progress
 		# dialog._LT_/ProgressCaption_GT_
-		#			_LT_PwTitle_GT_Title for the password challenge
+		# 	_LT_PwTitle_GT_Title for the password challenge
 		# dialog._LT_/PwTitle_GT_
-		#			_LT_PwCaption_GT_Caption for the password challenge
+		# 	_LT_PwCaption_GT_Caption for the password challenge
 		# dialog._LT_/PwCaption_GT_
-		#		_LT_/SfxConfig_GT_
-		#		
-		#		A self-extracting EXE can be run
+		# _LT_/SfxConfig_GT_
+		# 
+		# A self-extracting EXE can be run
 		# from the command line with the "-log {logFilePath}" option to create a log with information for
 		# debugging.
 		#
@@ -967,81 +961,81 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Allows for an XML config
 		# document to be used to specify all possible options for self-extracting EXEs. This property is a
 		# string containing the XML config document.
-		#		
-		#		The XML should have this
+		# 
+		# The XML should have this
 		# format:
-		#		
-		#		_LT_SfxConfig_GT_
-		#			_LT_ErrPwdTitle_GT_Title for incorrect password
+		# 
+		# _LT_SfxConfig_GT_
+		# 	_LT_ErrPwdTitle_GT_Title for incorrect password
 		# dialog_LT_/ErrPwdTitle_GT_
-		#			_LT_ErrPwdCaption_GT_Caption for incorrect password
+		# 	_LT_ErrPwdCaption_GT_Caption for incorrect password
 		# dialog_LT_/ErrPwdCaption_GT_
-		#			_LT_FinOkBtn_GT_Text on finish notifier
+		# 	_LT_FinOkBtn_GT_Text on finish notifier
 		# button_LT_/FinOkBtn_GT_
-		#			_LT_PwdOkBtn_GT_Text on password challenge dialog's _QUOTE_OK_QUOTE_
+		# 	_LT_PwdOkBtn_GT_Text on password challenge dialog's _QUOTE_OK_QUOTE_
 		# button._LT_/PwdOkBtn_GT_
-		#			_LT_PwdCancelBtn_GT_Text on password challenge dialog's Cancel
+		# 	_LT_PwdCancelBtn_GT_Text on password challenge dialog's Cancel
 		# button._LT_/PwdCancelBtn_GT_
-		#			_LT_ErrInvalidPassword_GT_Incorrect password error
+		# 	_LT_ErrInvalidPassword_GT_Incorrect password error
 		# message._LT_/ErrInvalidPassword_GT_
-		#			_LT_MainUnzipBtn_GT_Text on main dialog's unzip
+		# 	_LT_MainUnzipBtn_GT_Text on main dialog's unzip
 		# button_LT_/MainUnzipBtn_GT_
-		#			_LT_MainCloseBtn_GT_Text on main dialog's quit/exit
+		# 	_LT_MainCloseBtn_GT_Text on main dialog's quit/exit
 		# button_LT_/MainCloseBtn_GT_
-		#			_LT_MainBrowseBtn_GT_Text on main dialog's browse-for-directory
+		# 	_LT_MainBrowseBtn_GT_Text on main dialog's browse-for-directory
 		# button._LT_/MainBrowseBtn_GT_
-		#			_LT_MainUnzipLabel_GT_Caption displayed in main
+		# 	_LT_MainUnzipLabel_GT_Caption displayed in main
 		# dialog._LT_/MainUnzipLabel_GT_
-		#			_LT_AutoTemp_GT__QUOTE_1|0 (Maps to the AutoTemp
+		# 	_LT_AutoTemp_GT__QUOTE_1|0 (Maps to the AutoTemp
 		# property)_QUOTE__LT_/AutoTemp_GT_
-		#			_LT_Cleanup_GT__QUOTE_1|0 (Deletes extracted files after
+		# 	_LT_Cleanup_GT__QUOTE_1|0 (Deletes extracted files after
 		# the SetupExe is run.)_QUOTE__LT_/Cleanup_GT_
-		#			_LT_Debug_GT__QUOTE_1|0 (If 1, the EXE will not
+		# 	_LT_Debug_GT__QUOTE_1|0 (If 1, the EXE will not
 		# extract any files.)_QUOTE__LT_/Debug_GT_
-		#			_LT_Verbose_GT__QUOTE_1|0 (If 1, then verbose
+		# 	_LT_Verbose_GT__QUOTE_1|0 (If 1, then verbose
 		# information is sent to the log.)_QUOTE__LT_/Verbose_GT_
-		#			_LT_ShowFin_GT__QUOTE_1|0_QUOTE_ Maps
+		# 	_LT_ShowFin_GT__QUOTE_1|0_QUOTE_ Maps
 		# to ExeFinishNotifier property._LT_/ShowFin_GT_
-		#			_LT_ShowMain_GT__QUOTE_1|0_QUOTE_ Maps to
+		# 	_LT_ShowMain_GT__QUOTE_1|0_QUOTE_ Maps to
 		# ExeNoInterface property._LT_/ShowMain_GT_
-		#			_LT_ShowProgress_GT__QUOTE_1|0_QUOTE_ Maps to
+		# 	_LT_ShowProgress_GT__QUOTE_1|0_QUOTE_ Maps to
 		# ExeSilentProgress property._LT_/ShowProgress_GT_
-		#			_LT_WaitForSetup_GT__QUOTE_1|0_QUOTE_ Maps
+		# 	_LT_WaitForSetup_GT__QUOTE_1|0_QUOTE_ Maps
 		# to ExeWaitForSetup property._LT_/WaitForSetup_GT_
-		#			_LT_Encryption_GT__QUOTE_1|0_QUOTE_ 1=Yes,
+		# 	_LT_Encryption_GT__QUOTE_1|0_QUOTE_ 1=Yes,
 		# 0=No_LT_/Encryption_GT_
-		#			_LT_KeyLength_GT_128|192|256_LT_/KeyLength_GT_
-		#			_LT_SetupExe_GT_EXE
+		# 	_LT_KeyLength_GT_128|192|256_LT_/KeyLength_GT_
+		# 	_LT_SetupExe_GT_EXE
 		# to run after extracting. (Maps to AutoRun
 		# property)_LT_/SetupExe_GT_
-		#			_LT_UnzipDir_GT_Pre-defined unzip directory. (Maps to ExeUnzipDir
+		# 	_LT_UnzipDir_GT_Pre-defined unzip directory. (Maps to ExeUnzipDir
 		# property)_GT_
-		#			_LT_DefaultDir_GT_Default unzip directory to appear in the main dialog. 
+		# 	_LT_DefaultDir_GT_Default unzip directory to appear in the main dialog. 
 		#
 		# (Maps to ExeDefaultDir property)_LT_/DefaultDir_GT_
-		#			_LT_IconFile_GT_Icon file to be used
+		# 	_LT_IconFile_GT_Icon file to be used
 		# (Maps to ExeIconFile property)_LT_/IconFile_GT_
-		#			_LT_Url_GT_Maps to ExeSourceUrl
+		# 	_LT_Url_GT_Maps to ExeSourceUrl
 		# property._LT_/Url_GT_
-		#			_LT_MainTitle_GT_Maps to ExeTitle
+		# 	_LT_MainTitle_GT_Maps to ExeTitle
 		# property._LT_/MainTitle_GT_
-		#			_LT_MainCaption_GT_Maps to ExeUnzipCaption
+		# 	_LT_MainCaption_GT_Maps to ExeUnzipCaption
 		# property._LT_/MainCaption_GT_
-		#			_LT_FinTitle_GT_Title for the finish notifier
+		# 	_LT_FinTitle_GT_Title for the finish notifier
 		# dialog._LT_/FinTitle_GT_
-		#			_LT_FinCaption_GT_Caption for the finish notifier
+		# 	_LT_FinCaption_GT_Caption for the finish notifier
 		# dialog._LT_/FinTitle_GT_
-		#			_LT_ProgressTitle_GT_Title for the progress
+		# 	_LT_ProgressTitle_GT_Title for the progress
 		# dialog._LT_/ProgressTitle_GT_
-		#			_LT_ProgressCaption_GT_Caption for the progress
+		# 	_LT_ProgressCaption_GT_Caption for the progress
 		# dialog._LT_/ProgressCaption_GT_
-		#			_LT_PwTitle_GT_Title for the password challenge
+		# 	_LT_PwTitle_GT_Title for the password challenge
 		# dialog._LT_/PwTitle_GT_
-		#			_LT_PwCaption_GT_Caption for the password challenge
+		# 	_LT_PwCaption_GT_Caption for the password challenge
 		# dialog._LT_/PwCaption_GT_
-		#		_LT_/SfxConfig_GT_
-		#		
-		#		A self-extracting EXE can be run
+		# _LT_/SfxConfig_GT_
+		# 
+		# A self-extracting EXE can be run
 		# from the command line with the "-log {logFilePath}" option to create a log with information for
 		# debugging.
 		#
@@ -1051,81 +1045,81 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Allows for an XML config
 		# document to be used to specify all possible options for self-extracting EXEs. This property is a
 		# string containing the XML config document.
-		#		
-		#		The XML should have this
+		# 
+		# The XML should have this
 		# format:
-		#		
-		#		_LT_SfxConfig_GT_
-		#			_LT_ErrPwdTitle_GT_Title for incorrect password
+		# 
+		# _LT_SfxConfig_GT_
+		# 	_LT_ErrPwdTitle_GT_Title for incorrect password
 		# dialog_LT_/ErrPwdTitle_GT_
-		#			_LT_ErrPwdCaption_GT_Caption for incorrect password
+		# 	_LT_ErrPwdCaption_GT_Caption for incorrect password
 		# dialog_LT_/ErrPwdCaption_GT_
-		#			_LT_FinOkBtn_GT_Text on finish notifier
+		# 	_LT_FinOkBtn_GT_Text on finish notifier
 		# button_LT_/FinOkBtn_GT_
-		#			_LT_PwdOkBtn_GT_Text on password challenge dialog's _QUOTE_OK_QUOTE_
+		# 	_LT_PwdOkBtn_GT_Text on password challenge dialog's _QUOTE_OK_QUOTE_
 		# button._LT_/PwdOkBtn_GT_
-		#			_LT_PwdCancelBtn_GT_Text on password challenge dialog's Cancel
+		# 	_LT_PwdCancelBtn_GT_Text on password challenge dialog's Cancel
 		# button._LT_/PwdCancelBtn_GT_
-		#			_LT_ErrInvalidPassword_GT_Incorrect password error
+		# 	_LT_ErrInvalidPassword_GT_Incorrect password error
 		# message._LT_/ErrInvalidPassword_GT_
-		#			_LT_MainUnzipBtn_GT_Text on main dialog's unzip
+		# 	_LT_MainUnzipBtn_GT_Text on main dialog's unzip
 		# button_LT_/MainUnzipBtn_GT_
-		#			_LT_MainCloseBtn_GT_Text on main dialog's quit/exit
+		# 	_LT_MainCloseBtn_GT_Text on main dialog's quit/exit
 		# button_LT_/MainCloseBtn_GT_
-		#			_LT_MainBrowseBtn_GT_Text on main dialog's browse-for-directory
+		# 	_LT_MainBrowseBtn_GT_Text on main dialog's browse-for-directory
 		# button._LT_/MainBrowseBtn_GT_
-		#			_LT_MainUnzipLabel_GT_Caption displayed in main
+		# 	_LT_MainUnzipLabel_GT_Caption displayed in main
 		# dialog._LT_/MainUnzipLabel_GT_
-		#			_LT_AutoTemp_GT__QUOTE_1|0 (Maps to the AutoTemp
+		# 	_LT_AutoTemp_GT__QUOTE_1|0 (Maps to the AutoTemp
 		# property)_QUOTE__LT_/AutoTemp_GT_
-		#			_LT_Cleanup_GT__QUOTE_1|0 (Deletes extracted files after
+		# 	_LT_Cleanup_GT__QUOTE_1|0 (Deletes extracted files after
 		# the SetupExe is run.)_QUOTE__LT_/Cleanup_GT_
-		#			_LT_Debug_GT__QUOTE_1|0 (If 1, the EXE will not
+		# 	_LT_Debug_GT__QUOTE_1|0 (If 1, the EXE will not
 		# extract any files.)_QUOTE__LT_/Debug_GT_
-		#			_LT_Verbose_GT__QUOTE_1|0 (If 1, then verbose
+		# 	_LT_Verbose_GT__QUOTE_1|0 (If 1, then verbose
 		# information is sent to the log.)_QUOTE__LT_/Verbose_GT_
-		#			_LT_ShowFin_GT__QUOTE_1|0_QUOTE_ Maps
+		# 	_LT_ShowFin_GT__QUOTE_1|0_QUOTE_ Maps
 		# to ExeFinishNotifier property._LT_/ShowFin_GT_
-		#			_LT_ShowMain_GT__QUOTE_1|0_QUOTE_ Maps to
+		# 	_LT_ShowMain_GT__QUOTE_1|0_QUOTE_ Maps to
 		# ExeNoInterface property._LT_/ShowMain_GT_
-		#			_LT_ShowProgress_GT__QUOTE_1|0_QUOTE_ Maps to
+		# 	_LT_ShowProgress_GT__QUOTE_1|0_QUOTE_ Maps to
 		# ExeSilentProgress property._LT_/ShowProgress_GT_
-		#			_LT_WaitForSetup_GT__QUOTE_1|0_QUOTE_ Maps
+		# 	_LT_WaitForSetup_GT__QUOTE_1|0_QUOTE_ Maps
 		# to ExeWaitForSetup property._LT_/WaitForSetup_GT_
-		#			_LT_Encryption_GT__QUOTE_1|0_QUOTE_ 1=Yes,
+		# 	_LT_Encryption_GT__QUOTE_1|0_QUOTE_ 1=Yes,
 		# 0=No_LT_/Encryption_GT_
-		#			_LT_KeyLength_GT_128|192|256_LT_/KeyLength_GT_
-		#			_LT_SetupExe_GT_EXE
+		# 	_LT_KeyLength_GT_128|192|256_LT_/KeyLength_GT_
+		# 	_LT_SetupExe_GT_EXE
 		# to run after extracting. (Maps to AutoRun
 		# property)_LT_/SetupExe_GT_
-		#			_LT_UnzipDir_GT_Pre-defined unzip directory. (Maps to ExeUnzipDir
+		# 	_LT_UnzipDir_GT_Pre-defined unzip directory. (Maps to ExeUnzipDir
 		# property)_GT_
-		#			_LT_DefaultDir_GT_Default unzip directory to appear in the main dialog. 
+		# 	_LT_DefaultDir_GT_Default unzip directory to appear in the main dialog. 
 		#
 		# (Maps to ExeDefaultDir property)_LT_/DefaultDir_GT_
-		#			_LT_IconFile_GT_Icon file to be used
+		# 	_LT_IconFile_GT_Icon file to be used
 		# (Maps to ExeIconFile property)_LT_/IconFile_GT_
-		#			_LT_Url_GT_Maps to ExeSourceUrl
+		# 	_LT_Url_GT_Maps to ExeSourceUrl
 		# property._LT_/Url_GT_
-		#			_LT_MainTitle_GT_Maps to ExeTitle
+		# 	_LT_MainTitle_GT_Maps to ExeTitle
 		# property._LT_/MainTitle_GT_
-		#			_LT_MainCaption_GT_Maps to ExeUnzipCaption
+		# 	_LT_MainCaption_GT_Maps to ExeUnzipCaption
 		# property._LT_/MainCaption_GT_
-		#			_LT_FinTitle_GT_Title for the finish notifier
+		# 	_LT_FinTitle_GT_Title for the finish notifier
 		# dialog._LT_/FinTitle_GT_
-		#			_LT_FinCaption_GT_Caption for the finish notifier
+		# 	_LT_FinCaption_GT_Caption for the finish notifier
 		# dialog._LT_/FinTitle_GT_
-		#			_LT_ProgressTitle_GT_Title for the progress
+		# 	_LT_ProgressTitle_GT_Title for the progress
 		# dialog._LT_/ProgressTitle_GT_
-		#			_LT_ProgressCaption_GT_Caption for the progress
+		# 	_LT_ProgressCaption_GT_Caption for the progress
 		# dialog._LT_/ProgressCaption_GT_
-		#			_LT_PwTitle_GT_Title for the password challenge
+		# 	_LT_PwTitle_GT_Title for the password challenge
 		# dialog._LT_/PwTitle_GT_
-		#			_LT_PwCaption_GT_Caption for the password challenge
+		# 	_LT_PwCaption_GT_Caption for the password challenge
 		# dialog._LT_/PwCaption_GT_
-		#		_LT_/SfxConfig_GT_
-		#		
-		#		A self-extracting EXE can be run
+		# _LT_/SfxConfig_GT_
+		# 
+		# A self-extracting EXE can be run
 		# from the command line with the "-log {logFilePath}" option to create a log with information for
 		# debugging.
 		#
@@ -1185,6 +1179,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# If _TRUE_, then files that cannot be read due to "access denied" (i.e. a file permission error) will
@@ -1353,8 +1349,8 @@ module Chilkat
 
 		# _TRUE_ if the Zip should be password-protected using older Zip 2.0 encryption, commonly referred to
 		# as "password-protection".
-		#		
-		#		This property is set when a zip archive is opened by any of
+		# 
+		# This property is set when a zip archive is opened by any of
 		# the Open* methods, such as OpenZip, OpenFromMemory, etc.
 		#
 		# @return [TrueClass, FalseClass]
@@ -1362,8 +1358,8 @@ module Chilkat
 
 		# _TRUE_ if the Zip should be password-protected using older Zip 2.0 encryption, commonly referred to
 		# as "password-protection".
-		#		
-		#		This property is set when a zip archive is opened by any of
+		# 
+		# This property is set when a zip archive is opened by any of
 		# the Open* methods, such as OpenZip, OpenFromMemory, etc.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -1397,8 +1393,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -1413,8 +1409,8 @@ module Chilkat
 
 		# This property is only valid in programming environment and languages that allow for event
 		# callbacks.
-		#		
-		#		Sets the value to be defined as 100% complete for the purpose of PercentDone
+		# 
+		# Sets the value to be defined as 100% complete for the purpose of PercentDone
 		# event callbacks. The defaut value of 100 means that at most 100 event PercentDone callbacks will
 		# occur in a method that (1) is event enabled and (2) is such that it is possible to measure progress
 		# as a percentage completed. This property may be set to larger numbers to get more fine-grained
@@ -1425,6 +1421,8 @@ module Chilkat
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_PercentDoneScale(newval) end
 
 		# The temporary directory to use when unzipping files. When running in ASP or ASP.NET, the default
@@ -1460,8 +1458,8 @@ module Chilkat
 		# If set to _TRUE_, the component will set the "text flag" for each file having these filename
 		# extensions: .txt, .xml, .htm, and .html. It will also preserve the "text flag" for existing zips
 		# that are opened and rewritten. By default, this property is set to _FALSE_. 
-		#		
-		#		It is
+		# 
+		# It is
 		# generally not necessary to set the text flag for a zip entry.
 		#
 		# @return [TrueClass, FalseClass]
@@ -1470,8 +1468,8 @@ module Chilkat
 		# If set to _TRUE_, the component will set the "text flag" for each file having these filename
 		# extensions: .txt, .xml, .htm, and .html. It will also preserve the "text flag" for existing zips
 		# that are opened and rewritten. By default, this property is set to _FALSE_. 
-		#		
-		#		It is
+		# 
+		# It is
 		# generally not necessary to set the text flag for a zip entry.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -1479,8 +1477,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1489,8 +1487,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -1526,7 +1524,7 @@ module Chilkat
 		# Starting in v9.4.1, Chilkat Zip will automatically unzip ZIPX files using any of the following
 		# compression methods: BZIP2, PPMd, LZMA, and Deflate64 ("Deflate64" is a trademark of PKWare,
 		# Inc.)
-		#		This property, however, controls whether or not a ZipX is automatically produced where
+		# This property, however, controls whether or not a ZipX is automatically produced where
 		# the best compression algorithm for each file is automatically chosen based on file type. This
 		# property is for writing zip archives. It does not apply to when unzipping ZIPX archives, Chilkat Zip
 		# automatically handles the various compression algorithms when unzipping.
@@ -1537,7 +1535,7 @@ module Chilkat
 		# Starting in v9.4.1, Chilkat Zip will automatically unzip ZIPX files using any of the following
 		# compression methods: BZIP2, PPMd, LZMA, and Deflate64 ("Deflate64" is a trademark of PKWare,
 		# Inc.)
-		#		This property, however, controls whether or not a ZipX is automatically produced where
+		# This property, however, controls whether or not a ZipX is automatically produced where
 		# the best compression algorithm for each file is automatically chosen based on file type. This
 		# property is for writing zip archives. It does not apply to when unzipping ZIPX archives, Chilkat Zip
 		# automatically handles the various compression algorithms when unzipping.
@@ -1585,8 +1583,8 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Embeds a Zip file into an EXE
 		# as a custom resource. This resource can be opened by the EXE containing it at runtime by using the
 		# OpenMyEmbedded method.
-		#		
-		#		Important: In Visual Studio 2010, the linker has a property
+		# 
+		# Important: In Visual Studio 2010, the linker has a property
 		# "Randomized Base Address" (Project Properties/Linker) that defaults to "YES", but the default is
 		# "NO" in Visual Studio 2008. (The property is nonexistent in Visual Studio 2005 and earlier.) This
 		# enables ASLR ( Address Space Layout Randomization) in Vista and up, and prevents the proper code
@@ -1597,7 +1595,7 @@ module Chilkat
 		# @param resourceName [String]
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AddEmbedded(exeFilename, resourceName, zipFilename)
 			# ...
 		end
@@ -1609,22 +1607,22 @@ module Chilkat
 		# benefit. In fact, it is possible that attempting to compress already-compressed data results in a
 		# slightly increased size. The Zip file format allows for files to be "stored" rather than compressed.
 		# This allows the file data to be streamed directly into a .zip without compression.
-		#		
-		#		An
+		# 
+		# An
 		# instance of the Zip object has an internal list of "no compress" extensions. A filename with a "no
 		# compress" extension is "stored" rather than compressed. Additional "no compress" extensions may be
 		# added by calling this method (once per file extension). You should pass the file extension, such as
 		# ".xyz" in ARG1. 
-		#		
-		#		"no compress" extensions may be removed by calling
+		# 
+		# "no compress" extensions may be removed by calling
 		# RemoveNoCompressExtension.
-		#		
-		#		The default "no compress" extensions are: .zip, .gif, .jpg,
+		# 
+		# The default "no compress" extensions are: .zip, .gif, .jpg,
 		# .gz, .rar, .jar, .tgz, .bz2, .z, .rpm, .msi, .png
 		#
 		# @param fileExtension [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def AddNoCompressExtension(fileExtension)
 			# ...
 		end
@@ -1635,18 +1633,18 @@ module Chilkat
 		# Creates a new Zip entry and initializes it with already-compressed data that is Base64 encoded. (The
 		# ZipEntry.CopyBase64 method can be used to retrieve the compressed data in Base64
 		# format.)
-		#		
-		#		Note 1: This method only updates the zip object. To update (rewrite) a zip
+		# 
+		# Note 1: This method only updates the zip object. To update (rewrite) a zip
 		# file, either the WriteZip or WriteZipAndClose method would need to be called.
-		#		
-		#		Note 2:
+		# 
+		# Note 2:
 		# It is assumed that the compressed data is unencrypted deflated data. (Meaning data compressed using
 		# the "deflate" compression algorithm.)
 		#
 		# @param fileName [String]
 		# @param encodedCompressedData [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendBase64(fileName, encodedCompressedData)
 			# ...
 		end
@@ -1657,19 +1655,19 @@ module Chilkat
 		# Append memory data that is already Zip-compressed to the Zip object. The ZipEntry object containing
 		# the compressed data is returned. Note: This method appends the compressed data for a single zip
 		# entry. To load an entire in-memory .zip, call OpenFromMemory instead.
-		#		
-		#		Note 1: This
+		# 
+		# Note 1: This
 		# method only updates the zip object. To update (rewrite) a zip file, either the WriteZip or
 		# WriteZipAndClose method would need to be called.
-		#		
-		#		Note 2: It is assumed that the
+		# 
+		# Note 2: It is assumed that the
 		# compressed data is unencrypted deflated data. (Meaning data compressed using the "deflate"
 		# compression algorithm.)
 		#
 		# @param filename [String]
 		# @param inData [CkByteData]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendCompressed(filename, inData)
 			# ...
 		end
@@ -1679,14 +1677,14 @@ module Chilkat
 		#
 		# Appends in-memory data as a new entry to a Zip object. The ZipEntry object containing the data is
 		# returned.
-		#		
-		#		Note: This method only updates the zip object. To update (rewrite) a zip
+		# 
+		# Note: This method only updates the zip object. To update (rewrite) a zip
 		# file, either the WriteZip or WriteZipAndClose method would need to be called.
 		#
 		# @param fileName [String]
 		# @param inData [CkByteData]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendData(fileName, inData)
 			# ...
 		end
@@ -1697,18 +1695,18 @@ module Chilkat
 		# Appends in-memory data as a new entry to a Zip object. The ARG1 is the filename of the entry as it
 		# will appear within the zip. The ARG2 is the encoding of the ARG3, such as "base64", "hex", etc. The
 		# full list of encodings is listed at the web page linked below. 
-		#		
-		#		Returns the zip entry
+		# 
+		# Returns the zip entry
 		# object.
-		#		
-		#		Note: This method only updates the zip object. To update (rewrite) a zip file,
+		# 
+		# Note: This method only updates the zip object. To update (rewrite) a zip file,
 		# either the WriteZip or WriteZipAndClose method would need to be called.
 		#
 		# @param filename [String]
 		# @param encoding [String]
 		# @param data [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendDataEncoded(filename, encoding, data)
 			# ...
 		end
@@ -1719,15 +1717,15 @@ module Chilkat
 		# Appends one or more files to the Zip object. The filePattern can use the "*" wildcard character for
 		# 0 or more of any characterSet recurse equal to True to recursively add all subdirectories, or False
 		# to only add files in the current directory.
-		#		
-		#		Note: This method only updates the zip
+		# 
+		# Note: This method only updates the zip
 		# object. To update (rewrite) a zip file, either the WriteZip or WriteZipAndClose method would need to
 		# be called.
 		#
 		# @param filePattern [String]
 		# @param recurse [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendFiles(filePattern, recurse)
 			# ...
 		end
@@ -1740,15 +1738,15 @@ module Chilkat
 		# whether directories are recursively traversed. Set ARG2 equal to _TRUE_ to append files and
 		# subdirectories in the directory tree. Set ARG2 equal to _FALSE_ to add files only from the indicated
 		# directory.
-		#		
-		#		The ARG3 only applies when the ARG1 is an absolute path pattern, such as
+		# 
+		# The ARG3 only applies when the ARG1 is an absolute path pattern, such as
 		# "C:/temp/abc/*.txt". If ARG3 is _TRUE_, then the absolute path will be included in the zip entry
 		# filenames as relative paths. For example, "temp/abc/xyz.txt". 
-		#		The ARG4, ARG4, and ARG5 flags
+		# The ARG4, ARG4, and ARG5 flags
 		# only apply when on the Windows operating system. These flags control whether files with the Archive,
 		# Hidden, or System attributes are included.
-		#		
-		#		Note: This method does not write the zip
+		# 
+		# Note: This method does not write the zip
 		# archive. It simply adds references to the files that will be included in the .zip when the WriteZip
 		# or WriteZipAndClose methods are eventually called. Files and/or data may be added to the zip object
 		# by calling any combination of the Append* methods before finally writing the zip via one of the
@@ -1761,7 +1759,7 @@ module Chilkat
 		# @param includeHidden [TrueClass, FalseClass]
 		# @param includeSystem [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendFilesEx(filePattern, recurse, saveExtraPath, archiveOnly, includeHidden, includeSystem)
 			# ...
 		end
@@ -1772,18 +1770,18 @@ module Chilkat
 		# Creates a new Zip entry and initializes it with already-compressed data that is hexidecimal encoded.
 		# (The ZipEntry.CopyHex method can be used to retrieve the compressed data in Hex
 		# format.)
-		#		
-		#		Note 1: This method only updates the zip object. To update (rewrite) a zip
+		# 
+		# Note 1: This method only updates the zip object. To update (rewrite) a zip
 		# file, either the WriteZip or WriteZipAndClose method would need to be called.
-		#		
-		#		Note 2:
+		# 
+		# Note 2:
 		# It is assumed that the compressed data is unencrypted deflated data. (Meaning data compressed using
 		# the "deflate" compression algorithm.)
 		#
 		# @param fileName [String]
 		# @param encodedCompressedData [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendHex(fileName, encodedCompressedData)
 			# ...
 		end
@@ -1793,14 +1791,14 @@ module Chilkat
 		#
 		# This method is the same as calling AppendFiles multiple times - once for each file pattern in
 		# fileSpecs
-		#		
-		#		Note: This method only updates the zip object. To update (rewrite) a zip
+		# 
+		# Note: This method only updates the zip object. To update (rewrite) a zip
 		# file, either the WriteZip or WriteZipAndClose method would need to be called.
 		#
 		# @param fileSpecs [CkStringArray]
 		# @param recurse [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendMultiple(fileSpecs, recurse)
 			# ...
 		end
@@ -1810,18 +1808,18 @@ module Chilkat
 		#
 		# Appends a new and empty entry to the Zip object and returns the ZipEntry object. Data can be
 		# appended to the entry by calling ZipEntry.AppendData.
-		#		Important: To append an already-existing
+		# Important: To append an already-existing
 		# file, call the AppendOneFileOrDir method. The AppendNew method inserts a new and empty file entry
 		# within the Zip object. The purpose of AppendNew is to either create an empty file within the Zip, or
 		# to create a new file entry which can then be filled with data by calling the entry's AppendData
 		# method.
-		#		
-		#		Note: This method only updates the zip object. To update (rewrite) a zip file,
+		# 
+		# Note: This method only updates the zip object. To update (rewrite) a zip file,
 		# either the WriteZip or WriteZipAndClose method would need to be called.
 		#
 		# @param fileName [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendNew(fileName)
 			# ...
 		end
@@ -1833,13 +1831,13 @@ module Chilkat
 		# directory does not need to exist on the local filesystem when calling this method. The ARG1 is
 		# simply a string that is used as the directory path for the entry added to the zip. The zip entry
 		# object is returned.
-		#		
-		#		Note: This method only updates the zip object. To update (rewrite)
+		# 
+		# Note: This method only updates the zip object. To update (rewrite)
 		# a zip file, either the WriteZip or WriteZipAndClose method would need to be called.
 		#
 		# @param dirName [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendNewDir(dirName)
 			# ...
 		end
@@ -1855,7 +1853,7 @@ module Chilkat
 		# @param fileOrDirPath [String]
 		# @param saveExtraPath [TrueClass, FalseClass]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendOneFileOrDir(fileOrDirPath, saveExtraPath)
 			# ...
 		end
@@ -1866,15 +1864,15 @@ module Chilkat
 		# Adds an in-memory string to the Zip object. The ARG2 argument is converted to the ANSI charset
 		# before being added to the Zip. If the Zip were written to disk by calling WriteZip, and later
 		# unzipped, the entry would unzip to an ANSI text file.
-		#		
-		#		Note: This method only updates
+		# 
+		# Note: This method only updates
 		# the zip object. To update (rewrite) a zip file, either the WriteZip or WriteZipAndClose method would
 		# need to be called.
 		#
 		# @param internalZipFilepath [String]
 		# @param textData [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendString(internalZipFilepath, textData)
 			# ...
 		end
@@ -1885,15 +1883,15 @@ module Chilkat
 		# Same as AppendString, but allows the charset to be specified. The ARG2 is converted to ARG3 before
 		# being added to the zip. The ARG1 is the path of the file that will be stored within the
 		# zip.
-		#		
-		#		Note: This method only updates the zip object. To update (rewrite) a zip file,
+		# 
+		# Note: This method only updates the zip object. To update (rewrite) a zip file,
 		# either the WriteZip or WriteZipAndClose method would need to be called.
 		#
 		# @param internalZipFilepath [String]
 		# @param textData [String]
 		# @param charset [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def AppendString2(internalZipFilepath, textData, charset)
 			# ...
 		end
@@ -1905,7 +1903,7 @@ module Chilkat
 		#
 		# @param zipFileName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendZip(zipFileName)
 			# ...
 		end
@@ -1918,7 +1916,7 @@ module Chilkat
 		# called.)
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def CloseZip()
 			# ...
 		end
@@ -1930,7 +1928,7 @@ module Chilkat
 		#
 		# @param entry [CkZipEntry]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def DeleteEntry(entry)
 			# ...
 		end
@@ -1945,7 +1943,7 @@ module Chilkat
 		#
 		# @param dirName [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ExcludeDir(dirName)
 			# ...
 		end
@@ -1958,7 +1956,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Extract(dirPath)
 			# ...
 		end
@@ -1973,7 +1971,7 @@ module Chilkat
 		# @param exePath [String]
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExtractExe(exePath, dirPath)
 			# ...
 		end
@@ -1985,7 +1983,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExtractInto(dirPath)
 			# ...
 		end
@@ -1998,7 +1996,7 @@ module Chilkat
 		# @param dirPath [String]
 		# @param pattern [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExtractMatching(dirPath, pattern)
 			# ...
 		end
@@ -2011,7 +2009,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ExtractNewer(dirPath)
 			# ...
 		end
@@ -2025,7 +2023,7 @@ module Chilkat
 		# @param entry [CkZipEntry]
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		# @deprecated This method has been deprecated. Do not use it.
 		def ExtractOne(entry, dirPath)
 			# ...
@@ -2038,7 +2036,7 @@ module Chilkat
 		# until a NULL is returned.
 		#
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def FirstEntry()
 			# ...
 		end
@@ -2052,7 +2050,7 @@ module Chilkat
 		#
 		# @param pattern [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def FirstMatchingEntry(pattern)
 			# ...
 		end
@@ -2064,7 +2062,7 @@ module Chilkat
 		#
 		# @param outXml [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetDirectoryAsXML(outXml)
 			# ...
 		end
@@ -2075,7 +2073,7 @@ module Chilkat
 		# Return the contents of the Zip file directory in an XML formatted string
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def getDirectoryAsXML()
 			# ...
 		end
@@ -2088,7 +2086,7 @@ module Chilkat
 		#
 		# @param entryID [Fixnum]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def GetEntryByID(entryID)
 			# ...
 		end
@@ -2101,7 +2099,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def GetEntryByIndex(index)
 			# ...
 		end
@@ -2114,7 +2112,7 @@ module Chilkat
 		#
 		# @param entryName [String]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def GetEntryByName(entryName)
 			# ...
 		end
@@ -2125,7 +2123,7 @@ module Chilkat
 		# Returns the current collection of exclusion patterns that have been set by SetExclusions.
 		#
 		#
-		# @return [CkStringArray] 
+		# @return [CkStringArray]
 		def GetExclusions()
 			# ...
 		end
@@ -2139,7 +2137,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetExeConfigParam(name, outStr)
 			# ...
 		end
@@ -2152,7 +2150,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def getExeConfigParam(name)
 			# ...
 		end
@@ -2166,7 +2164,7 @@ module Chilkat
 		# @param fileName [String]
 		# @param beforeIndex [Fixnum]
 		#
-		# @return [CkZipEntry] 
+		# @return [CkZipEntry]
 		def InsertNew(fileName, beforeIndex)
 			# ...
 		end
@@ -2180,7 +2178,7 @@ module Chilkat
 		#
 		# @param fileExtension [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsNoCompressExtension(fileExtension)
 			# ...
 		end
@@ -2192,7 +2190,7 @@ module Chilkat
 		#
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsPasswordProtected(zipFilename)
 			# ...
 		end
@@ -2203,7 +2201,7 @@ module Chilkat
 		# Returns True if the class is already unlocked, otherwise returns False.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -2216,7 +2214,7 @@ module Chilkat
 		#
 		# @param zipFilePath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def NewZip(zipFilePath)
 			# ...
 		end
@@ -2225,8 +2223,8 @@ module Chilkat
 		# Method: OpenBd
 		#
 		# Open a Zip contained in ARG1. 
-		#		
-		#		When a zip is opened, the PasswordProtect and Encryption
+		# 
+		# When a zip is opened, the PasswordProtect and Encryption
 		# properties will be appropriately set. If the zip is password protected (i.e. uses older Zip 2.0
 		# encrypion), then the PasswordProtect property will be set to _TRUE_. If the zip is strong encrypted,
 		# the Encryption property will be set to a value 1 through 4, where 4 indicates WinZip compatible AES
@@ -2234,7 +2232,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenBd(binData)
 			# ...
 		end
@@ -2248,7 +2246,7 @@ module Chilkat
 		# @param exeFilename [String]
 		# @param resourceName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenEmbedded(exeFilename, resourceName)
 			# ...
 		end
@@ -2257,8 +2255,8 @@ module Chilkat
 		# Method: OpenFromByteData
 		#
 		# Same as OpenFromMemory.
-		#		
-		#		When a zip is opened, the PasswordProtect and Encryption
+		# 
+		# When a zip is opened, the PasswordProtect and Encryption
 		# properties will be appropriately set. If the zip is password protected (i.e. uses older Zip 2.0
 		# encrypion), then the PasswordProtect property will be set to _TRUE_. If the zip is strong encrypted,
 		# the Encryption property will be set to a value 1 through 4, where 4 indicates WinZip compatible AES
@@ -2266,7 +2264,7 @@ module Chilkat
 		#
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenFromByteData(byteData)
 			# ...
 		end
@@ -2276,8 +2274,8 @@ module Chilkat
 		#
 		# Open a Zip that is completely in-memory. This allows for Zip files to be opened from non-filesystem
 		# sources, such as a database.
-		#		
-		#		When a zip is opened, the PasswordProtect and Encryption
+		# 
+		# When a zip is opened, the PasswordProtect and Encryption
 		# properties will be appropriately set. If the zip is password protected (i.e. uses older Zip 2.0
 		# encrypion), then the PasswordProtect property will be set to _TRUE_. If the zip is strong encrypted,
 		# the Encryption property will be set to a value 1 through 4, where 4 indicates WinZip compatible AES
@@ -2285,7 +2283,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenFromMemory(inData)
 			# ...
 		end
@@ -2298,7 +2296,7 @@ module Chilkat
 		#
 		# @param resourceName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenMyEmbedded(resourceName)
 			# ...
 		end
@@ -2309,8 +2307,8 @@ module Chilkat
 		# Opens a Zip archive. Encrypted and password-protected zips may be opened without providing the
 		# password, but their contents may not be unzipped unless the correct password is provided via the
 		# DecryptPassword proprety, or the SetPassword method.
-		#		
-		#		When a zip is opened, the
+		# 
+		# When a zip is opened, the
 		# PasswordProtect and Encryption properties will be appropriately set. If the zip is password
 		# protected (i.e. uses older Zip 2.0 encrypion), then the PasswordProtect property will be set to
 		# _TRUE_. If the zip is strong encrypted, the Encryption property will be set to a value 1 through 4,
@@ -2318,7 +2316,7 @@ module Chilkat
 		#
 		# @param zipPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def OpenZip(zipPath)
 			# ...
 		end
@@ -2332,7 +2330,7 @@ module Chilkat
 		#
 		# @param ZipFileName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def QuickAppend(ZipFileName)
 			# ...
 		end
@@ -2346,7 +2344,7 @@ module Chilkat
 		# @param exeFilename [String]
 		# @param resourceName [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveEmbedded(exeFilename, resourceName)
 			# ...
 		end
@@ -2359,7 +2357,7 @@ module Chilkat
 		#
 		# @param fileExtension [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def RemoveNoCompressExtension(fileExtension)
 			# ...
 		end
@@ -2374,7 +2372,7 @@ module Chilkat
 		# @param resourceName [String]
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReplaceEmbedded(exeFilename, resourceName, zipFilename)
 			# ...
 		end
@@ -2386,7 +2384,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -2398,16 +2396,16 @@ module Chilkat
 		# (i.e. an entry that is contained within an opened .zip, cannot be changed.) The default compression
 		# level is 6. A compression level of 0 is equivalent to no compression. The maximum compression level
 		# is 9.
-		#		
-		#		The zip.SetCompressionLevel method must be called after appending the files (i.e.
+		# 
+		# The zip.SetCompressionLevel method must be called after appending the files (i.e.
 		# after the calls to AppendFile*, AppendData, or AppendOneFileOrDir).
-		#		
-		#		A single call to
+		# 
+		# A single call to
 		# SetCompressionLevel will set the compression level for all existing file and data entries.
 		#
 		# @param level [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetCompressionLevel(level)
 			# ...
 		end
@@ -2421,7 +2419,7 @@ module Chilkat
 		#
 		# @param excludePatterns [CkStringArray]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetExclusions(excludePatterns)
 			# ...
 		end
@@ -2431,14 +2429,14 @@ module Chilkat
 		#
 		# Sets a self-extractor property that is embedded in the resultant EXE created by the WriteExe or
 		# WriteExe2 methods. The ARG1 is one of the XML tags listed in the ExeXmlConfig property. 
-		#		For
+		# For
 		# example, to specify the text for the self-extractor's main dialog unzip button, ARG1 would be
 		# "MainUnzipBtn".
 		#
 		# @param paramName [String]
 		# @param paramValue [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetExeConfigParam(paramName, paramValue)
 			# ...
 		end
@@ -2450,7 +2448,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SetPassword(password)
 			# ...
 		end
@@ -2464,7 +2462,7 @@ module Chilkat
 		#
 		# @param regCode [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(regCode)
 			# ...
 		end
@@ -2477,7 +2475,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def Unzip(dirPath)
 			# ...
 		end
@@ -2492,7 +2490,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def UnzipInto(dirPath)
 			# ...
 		end
@@ -2508,7 +2506,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param verbose [TrueClass, FalseClass]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def UnzipMatching(dirPath, pattern, verbose)
 			# ...
 		end
@@ -2522,7 +2520,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param verbose [TrueClass, FalseClass]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def UnzipMatchingInto(dirPath, pattern, verbose)
 			# ...
 		end
@@ -2535,7 +2533,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def UnzipNewer(dirPath)
 			# ...
 		end
@@ -2547,7 +2545,7 @@ module Chilkat
 		# password is valid, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def VerifyPassword()
 			# ...
 		end
@@ -2561,7 +2559,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteBd(binData)
 			# ...
 		end
@@ -2572,27 +2570,27 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Writes an MS-Windows
 		# self-extracting executable. There are no limitations on the total size, individual file size, or
 		# number of files that can be added to a self-extracting EXE. 
-		#		If the resultant EXE will
+		# If the resultant EXE will
 		# automatically accept these command-line arguments when run:
-		#		
-		#		-log
+		# 
+		# -log
 		# logFileName
-		#		Creates a log file that lists the settings embedded within the EXE and logs the
+		# Creates a log file that lists the settings embedded within the EXE and logs the
 		# errors, warnings, and other information about the self-extraction.
-		#		-unzipDir
+		# -unzipDir
 		# unzipDirectoryPath
-		#		Unzips to this directory path without user intervention.
-		#		-pwd
+		# Unzips to this directory path without user intervention.
+		# -pwd
 		# password
-		#		Specifies the password for an encrypted EXE
-		#		-ap autoRunParams
-		#		Specifies
+		# Specifies the password for an encrypted EXE
+		# -ap autoRunParams
+		# Specifies
 		# the command line parameters to be passed to the AutoRun executable (embedded within the EXE).
 		#
 		#
 		# @param exeFilename [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteExe(exeFilename)
 			# ...
 		end
@@ -2603,16 +2601,16 @@ module Chilkat
 		# (Relevant only when running on a Microsoft Windows operating system.) Writes a self-extracting
 		# MS-Windows EXE with no limitations on total file size and no limitations on the size of any one file
 		# contained within. 
-		#		
-		#		The 1st argument is the pre-existing EXE housing that is to be used.
+		# 
+		# The 1st argument is the pre-existing EXE housing that is to be used.
 		# Essentially,
-		#		the self-extracting EXE is a concatenation of the EXE housing and the
+		# the self-extracting EXE is a concatenation of the EXE housing and the
 		# compressed/encrypted data.
-		#		The 2nd argument is the name of the EXE to create or overwrite.
-		# #		
-		#		A housing for use with WriteExe2 can be found
+		# The 2nd argument is the name of the EXE to create or overwrite.
+		# # 
+		# A housing for use with WriteExe2 can be found
 		# here:
-		#		http://www.chilkatsoft.com/d2/SaExtract.zip
+		# http://www.chilkatsoft.com/d2/SaExtract.zip
 		#
 		# @param exePath [String]
 		# @param destExePath [String]
@@ -2620,7 +2618,7 @@ module Chilkat
 		# @param keyLength [Fixnum]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteExe2(exePath, destExePath, bAesEncrypt, keyLength, password)
 			# ...
 		end
@@ -2633,7 +2631,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteExeToMemory(outBytes)
 			# ...
 		end
@@ -2646,7 +2644,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteToMemory(outData)
 			# ...
 		end
@@ -2661,7 +2659,7 @@ module Chilkat
 		# the old zip file format are exceeded.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteZip()
 			# ...
 		end
@@ -2676,7 +2674,7 @@ module Chilkat
 		# exceeded.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteZipAndClose()
 			# ...
 		end

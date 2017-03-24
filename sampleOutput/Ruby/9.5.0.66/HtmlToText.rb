@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -239,22 +239,22 @@ module Chilkat
 
 		# If _TRUE_, then link URL's are preserved inline. For example, the following HTML
 		# fragment:
-		#		
-		#		
-		#		_LT_p>Test _LT_a
+		# 
+		# 
+		# _LT_p>Test _LT_a
 		# href="http://www.chilkatsoft.com/">chilkat_LT_/a>_LT_/p>
-		#		
-		#		converts to:
-		#		
-		#		Test
+		# 
+		# converts to:
+		# 
+		# Test
 		# chilkat _LT_http://www.chilkatsoft.com/>
-		#		
-		#		If this property is _FALSE_, the above HTML
+		# 
+		# If this property is _FALSE_, the above HTML
 		# would convert to:
-		#		
-		#		Test chilkat
-		#		
-		#		The default value of this property is
+		# 
+		# Test chilkat
+		# 
+		# The default value of this property is
 		# _TRUE_.
 		#
 		# @return [TrueClass, FalseClass]
@@ -262,22 +262,22 @@ module Chilkat
 
 		# If _TRUE_, then link URL's are preserved inline. For example, the following HTML
 		# fragment:
-		#		
-		#		
-		#		_LT_p>Test _LT_a
+		# 
+		# 
+		# _LT_p>Test _LT_a
 		# href="http://www.chilkatsoft.com/">chilkat_LT_/a>_LT_/p>
-		#		
-		#		converts to:
-		#		
-		#		Test
+		# 
+		# converts to:
+		# 
+		# Test
 		# chilkat _LT_http://www.chilkatsoft.com/>
-		#		
-		#		If this property is _FALSE_, the above HTML
+		# 
+		# If this property is _FALSE_, the above HTML
 		# would convert to:
-		#		
-		#		Test chilkat
-		#		
-		#		The default value of this property is
+		# 
+		# Test chilkat
+		# 
+		# The default value of this property is
 		# _TRUE_.
 		#
 		# @param newval [TrueClass, FalseClass]
@@ -285,8 +285,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -295,8 +295,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -335,7 +335,7 @@ module Chilkat
 		# Returns _TRUE_ if the component is already unlocked. Otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def IsUnlocked()
 			# ...
 		end
@@ -350,7 +350,7 @@ module Chilkat
 		# @param srcCharset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ReadFileToString(filename, srcCharset, outStr)
 			# ...
 		end
@@ -364,7 +364,7 @@ module Chilkat
 		# @param filename [String]
 		# @param srcCharset [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def readFileToString(filename, srcCharset)
 			# ...
 		end
@@ -376,7 +376,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -389,7 +389,7 @@ module Chilkat
 		# @param html [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToText(html, outStr)
 			# ...
 		end
@@ -401,7 +401,7 @@ module Chilkat
 		#
 		# @param html [String]
 		#
-		# @return [String] 
+		# @return [String]
 		def toText(html)
 			# ...
 		end
@@ -411,13 +411,13 @@ module Chilkat
 		#
 		# Unlocks the component. An arbitrary unlock code may be passed to automatically begin a 30-day
 		# trial.
-		#		
-		#		This class is included with the Chilkat HTML-to-XML conversion component
+		# 
+		# This class is included with the Chilkat HTML-to-XML conversion component
 		# license.
 		#
 		# @param code [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def UnlockComponent(code)
 			# ...
 		end
@@ -433,7 +433,7 @@ module Chilkat
 		# @param filename [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def WriteStringToFile(stringToWrite, filename, charset)
 			# ...
 		end

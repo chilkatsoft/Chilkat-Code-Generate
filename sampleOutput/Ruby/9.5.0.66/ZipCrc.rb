@@ -42,8 +42,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -52,8 +52,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -68,7 +68,7 @@ module Chilkat
 		# After the last chunk has been processed, the EndStream method is called to return the CRC.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def BeginStream()
 			# ...
 		end
@@ -81,7 +81,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def CalculateCrc(data)
 			# ...
 		end
@@ -93,7 +93,7 @@ module Chilkat
 		# to MoreData.
 		#
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def EndStream()
 			# ...
 		end
@@ -105,7 +105,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def FileCrc(path)
 			# ...
 		end
@@ -117,7 +117,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def MoreData(data)
 			# ...
 		end
@@ -130,7 +130,7 @@ module Chilkat
 		# @param crc [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def ToHex(crc, outStr)
 			# ...
 		end
@@ -142,7 +142,7 @@ module Chilkat
 		#
 		# @param crc [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def toHex(crc)
 			# ...
 		end

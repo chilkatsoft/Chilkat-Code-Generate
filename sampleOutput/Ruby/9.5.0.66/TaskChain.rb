@@ -5,13 +5,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -30,13 +30,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -53,13 +53,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -76,13 +76,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -105,7 +105,7 @@ module Chilkat
 		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
 		# application to abort the Wait method. If HeartbeatMs is 0 (the default), no AbortCheck event
 		# callbacks will fire.
-		#		Note: An asynchronous task chain running in a background thread (in one
+		# Note: An asynchronous task chain running in a background thread (in one
 		# of the thread pool threads) does not fire events. The task chain's event callbacks pertain only to
 		# the Wait method.
 		#
@@ -117,13 +117,15 @@ module Chilkat
 		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
 		# application to abort the Wait method. If HeartbeatMs is 0 (the default), no AbortCheck event
 		# callbacks will fire.
-		#		Note: An asynchronous task chain running in a background thread (in one
+		# Note: An asynchronous task chain running in a background thread (in one
 		# of the thread pool threads) does not fire events. The task chain's event callbacks pertain only to
 		# the Wait method.
 		#
 		# @param newval [Bignum]
 		#
 		# @event
+		#
+		# @!method
 		def put_HeartbeatMs(newval) end
 
 		# _TRUE_ if the task status is "empty" or "loaded". When a task chain is inert, it has been loaded but
@@ -261,58 +263,58 @@ module Chilkat
 		def get_NumTasks() end
 
 		# The current status of the task chain. Possible values are:
-		#		
-		#		"empty" -- No tasks have yet
+		# 
+		# "empty" -- No tasks have yet
 		# been appended to the task chain. 
-		#		"loaded" -- The task chain has been loaded (appended) with
+		# "loaded" -- The task chain has been loaded (appended) with
 		# one or more task objects.
-		#		"queued" -- The task chain is in the thread pool's queue of tasks
+		# "queued" -- The task chain is in the thread pool's queue of tasks
 		# awaiting to be run.
-		#		"running" -- The task chain is currently running.
-		#		"canceled" -- The
+		# "running" -- The task chain is currently running.
+		# "canceled" -- The
 		# task chain was canceled before it entered the "running" state.
-		#		"aborted" -- The task chain was
+		# "aborted" -- The task chain was
 		# canceled while it was in the running state.
-		#		"completed" -- The task chain completed. 
+		# "completed" -- The task chain completed. 
 		#
 		#
 		# @return [String]
 		def get_Status() end
 
 		# The current status of the task chain. Possible values are:
-		#		
-		#		"empty" -- No tasks have yet
+		# 
+		# "empty" -- No tasks have yet
 		# been appended to the task chain. 
-		#		"loaded" -- The task chain has been loaded (appended) with
+		# "loaded" -- The task chain has been loaded (appended) with
 		# one or more task objects.
-		#		"queued" -- The task chain is in the thread pool's queue of tasks
+		# "queued" -- The task chain is in the thread pool's queue of tasks
 		# awaiting to be run.
-		#		"running" -- The task chain is currently running.
-		#		"canceled" -- The
+		# "running" -- The task chain is currently running.
+		# "canceled" -- The
 		# task chain was canceled before it entered the "running" state.
-		#		"aborted" -- The task chain was
+		# "aborted" -- The task chain was
 		# canceled while it was in the running state.
-		#		"completed" -- The task chain completed. 
+		# "completed" -- The task chain completed. 
 		#
 		#
 		# @return [String]
 		def status() end
 
 		# The current status of the task as an integer value. Possible values are:
-		#		
-		#		1 -- "empty"
+		# 
+		# 1 -- "empty"
 		# -- No tasks have yet been appended to the task chain. 
-		#		2 -- "loaded" -- The task chain has
+		# 2 -- "loaded" -- The task chain has
 		# been loaded (appended) with one or more task objects.
-		#		3 -- "queued" -- The task chain is in
+		# 3 -- "queued" -- The task chain is in
 		# the thread pool's queue of tasks awaiting to be run.
-		#		4 -- "running" -- The task chain is
+		# 4 -- "running" -- The task chain is
 		# currently running.
-		#		5 -- "canceled" -- The task chain was canceled before it entered the
+		# 5 -- "canceled" -- The task chain was canceled before it entered the
 		# "running" state.
-		#		6 -- "aborted" -- The task chain was canceled while it was in the running
+		# 6 -- "aborted" -- The task chain was canceled while it was in the running
 		# state.
-		#		7 -- "completed" -- The task chain completed. 
+		# 7 -- "completed" -- The task chain completed. 
 		#
 		#
 		# @return [Bignum]
@@ -334,8 +336,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -344,8 +346,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -386,7 +388,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Append(task)
 			# ...
 		end
@@ -397,7 +399,7 @@ module Chilkat
 		# Cancels execution of the asynchronous task chain.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Cancel()
 			# ...
 		end
@@ -409,7 +411,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [CkTask] 
+		# @return [CkTask]
 		def GetTask(index)
 			# ...
 		end
@@ -420,11 +422,11 @@ module Chilkat
 		# If a taskCompleted callback function is passed in , then the task chain is started on Node's
 		# internal thread pool. Each task in the chain will run, one after the other. If no callback function
 		# is passed, the task chain runs synchronously.
-		#		Queues the task chain to run on the internal
+		# Queues the task chain to run on the internal
 		# Chilkat thread pool. Each task in the chain will run, one after the other.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Run()
 			# ...
 		end
@@ -436,7 +438,7 @@ module Chilkat
 		# been run.
 		#
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RunSynchronously()
 			# ...
 		end
@@ -448,7 +450,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -460,7 +462,7 @@ module Chilkat
 		#
 		# @param numMs [Fixnum]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SleepMs(numMs)
 			# ...
 		end
@@ -476,7 +478,7 @@ module Chilkat
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Wait(maxWaitMs)
 			# ...
 		end

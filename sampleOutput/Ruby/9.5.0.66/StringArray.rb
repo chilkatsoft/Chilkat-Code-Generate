@@ -1,8 +1,8 @@
 module Chilkat
 	class CkStringArray 
 		# The number of strings contained within the object's internal array (i.e. ordered collection).
-		# #		
-		#		Important: This is an object that contains a collection of strings. Although the
+		# # 
+		# Important: This is an object that contains a collection of strings. Although the
 		# class/object name includes the word "Array", it should not be confused with an array in the sense of
 		# the primitive array type used in a given programming language.
 		#
@@ -26,13 +26,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -51,13 +51,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -74,13 +74,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -97,13 +97,13 @@ module Chilkat
 		# occurs, it is possible to see the context in which the problem occurred, as well as a history of all
 		# Chilkat calls up to the point of the problem. The VerboseLogging property can be set to provide more
 		# detailed information.
-		#		
-		#		This property is typically used for debugging the rare cases
+		# 
+		# This property is typically used for debugging the rare cases
 		# where a Chilkat method call hangs or generates an exception that halts program execution (i.e.
 		# crashes). 
-		#		A hang or crash should generally never happen. The typical causes of a hang
+		# A hang or crash should generally never happen. The typical causes of a hang
 		# are:
-		#		
+		# 
 		# a timeout related property was set to 0 to explicitly indicate that an infinite
 		# timeout is desired, 
 		# the hang is actually a hang within an event callback (i.e. it is a hang
@@ -265,8 +265,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -275,8 +275,8 @@ module Chilkat
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
 		# (the default), then "const char *" arguments are interpreted as ANSI strings.
-		#		
-		#		Also,
+		# 
+		# Also,
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
@@ -316,7 +316,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Append(str)
 			# ...
 		end
@@ -329,7 +329,7 @@ module Chilkat
 		#
 		# @param encodedStr [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def AppendSerialized(encodedStr)
 			# ...
 		end
@@ -340,7 +340,7 @@ module Chilkat
 		# Remove all strings from the internal collection.
 		#
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Clear()
 			# ...
 		end
@@ -353,7 +353,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Contains(str)
 			# ...
 		end
@@ -367,7 +367,7 @@ module Chilkat
 		# @param findStr [String]
 		# @param startIndex [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def Find(findStr, startIndex)
 			# ...
 		end
@@ -377,14 +377,14 @@ module Chilkat
 		#
 		# Finds the first string that matches the ARG1. The search begins at ARG2. If the string is not found,
 		# -1 is returned. The first string in the array is at index 0.
-		#		
-		#		The ARG1 may contain zero
+		# 
+		# The ARG1 may contain zero
 		# or more asterisk chars, each of which matches 0 or more of any character.
 		#
 		# @param matchPattern [String]
 		# @param startIndex [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def FindFirstMatch(matchPattern, startIndex)
 			# ...
 		end
@@ -398,7 +398,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def GetString(index, outStr)
 			# ...
 		end
@@ -411,7 +411,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def getString(index)
 			# ...
 		end
@@ -423,7 +423,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [Fixnum] 
+		# @return [Fixnum]
 		def GetStringLen(index)
 			# ...
 		end
@@ -437,7 +437,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def InsertAt(index, str)
 			# ...
 		end
@@ -449,7 +449,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LastString(outStr)
 			# ...
 		end
@@ -460,7 +460,7 @@ module Chilkat
 		# Returns the last string in the internal collection.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def lastString()
 			# ...
 		end
@@ -474,7 +474,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromFile(path)
 			# ...
 		end
@@ -488,7 +488,7 @@ module Chilkat
 		# @param path [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadFromFile2(path, charset)
 			# ...
 		end
@@ -500,7 +500,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def LoadFromText(str)
 			# ...
 		end
@@ -512,7 +512,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -524,7 +524,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Pop(outStr)
 			# ...
 		end
@@ -535,7 +535,7 @@ module Chilkat
 		# Returns the last string and removes it from the internal collection.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def pop()
 			# ...
 		end
@@ -547,7 +547,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Prepend(str)
 			# ...
 		end
@@ -559,7 +559,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Remove(str)
 			# ...
 		end
@@ -571,7 +571,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def RemoveAt(index)
 			# ...
 		end
@@ -584,7 +584,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param str [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def ReplaceAt(index, str)
 			# ...
 		end
@@ -596,7 +596,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveLastError(path)
 			# ...
 		end
@@ -609,7 +609,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param saveToPath [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveNthToFile(index, saveToPath)
 			# ...
 		end
@@ -622,7 +622,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToFile(path)
 			# ...
 		end
@@ -636,7 +636,7 @@ module Chilkat
 		# @param saveToPath [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToFile2(saveToPath, charset)
 			# ...
 		end
@@ -648,7 +648,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def SaveToText(outStr)
 			# ...
 		end
@@ -659,7 +659,7 @@ module Chilkat
 		# Writes the collection of strings to a single string, one per line (separated by CRLF line endings).
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def saveToText()
 			# ...
 		end
@@ -672,7 +672,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def Serialize(outStr)
 			# ...
 		end
@@ -684,7 +684,7 @@ module Chilkat
 		# string collection can be re-created by calling the AppendSerialized method.
 		#
 		#
-		# @return [String] 
+		# @return [String]
 		def serialize()
 			# ...
 		end
@@ -697,7 +697,7 @@ module Chilkat
 		#
 		# @param ascending [TrueClass, FalseClass]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Sort(ascending)
 			# ...
 		end
@@ -711,7 +711,7 @@ module Chilkat
 		# @param str [String]
 		# @param boundary [String]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def SplitAndAppend(str, boundary)
 			# ...
 		end
@@ -724,7 +724,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass] 
+		# @return [TrueClass, FalseClass]
 		def StrAt(index, outStr)
 			# ...
 		end
@@ -736,7 +736,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [String] 
+		# @return [String]
 		def strAt(index)
 			# ...
 		end
@@ -748,7 +748,7 @@ module Chilkat
 		#
 		# @param stringArrayObj [CkStringArray]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Subtract(stringArrayObj)
 			# ...
 		end
@@ -761,7 +761,7 @@ module Chilkat
 		#
 		# @param stringArrayObj [CkStringArray]
 		#
-		# @return [nil] 
+		# @return [nil]
 		def Union(stringArrayObj)
 			# ...
 		end
