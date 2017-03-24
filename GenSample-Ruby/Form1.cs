@@ -263,7 +263,7 @@ namespace GenSample
             if (!lowerCaseAlt && (xmethod.m_gt == 1 || xmethod.m_gt == 6))
                 sbOut.Append("\t\t# @param " + xmethod.CppOutputArgName + " [" + xmethod.CppOutputArgCppType.Replace(" &", "") + "]\r\n");
             
-            sbOut.Append("\t\t# @return [" + rtnType + "]\r\n");
+            sbOut.Append("\t\t#\r\n\t\t# @return [" + rtnType + "]\r\n");
             if (xmethod.Deprecated)
                 sbOut.Append("\t\t# @deprecated This method has been deprecated. Do not use it.\r\n");
 
