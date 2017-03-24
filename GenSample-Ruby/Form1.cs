@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChilkatApi;
@@ -116,9 +117,39 @@ namespace GenSample
             sbOut.Append("end\r\n");
             return true;
         }
+        private List<string> chunkSplit(string str, int chunkSize)
+        {
+            str = Regex.Replace(str, "<.*?>", String.Empty);
+
+          
+            str = str.Replace("\n", "\r\n\t\t#\t\t");
+            return str.Split(' ')
+                .Aggregate(new[] { "" }.ToList(), (a, x) =>
+                {
+                    var last = a[a.Count - 1];
+                    if ((last + " " + x).Length > chunkSize)
+                    {
+                        a.Add(x);
+                    }
+                    else
+                    {
+                        a[a.Count - 1] = (last + " " + x).Trim();
+                    }
+                    return a;
+                });
+        }
 
         bool generateProperty(XProperty xprop, XClass xclass, StringBuilder sbOut, Chilkat.Log log, bool lowerCaseAlt = false)
         {
+            // lets add description...
+            IEnumerable<string> chunked = chunkSplit(xprop.Descrip, 100);
+
+            foreach (var chunk in chunked)
+            {
+                sbOut.Append("\t\t# " + chunk.Trim() + "\r\n");
+            }
+            sbOut.Append("\t\t#\r\n");
+
             // All properties have getters..
             // Types can be emitted using an existing conversion, or you could write your own..
             string klass = m_types.gtToRubyDuck(xprop.m_gt, xprop.GenericType);
@@ -154,6 +185,9 @@ namespace GenSample
             if (!lowerCaseAlt && xprop.HasCppOutputArg && (!xprop.ReadOnly || xprop.IsBaseEntry))
                 sbOut.Append("\t\t# @param " + param + " [" + klass + "]\r\n\t\t#\r\n");
 
+         
+
+           
 
             sbOut.Append("\t\t# @return [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
             if (xprop.Deprecated)
@@ -191,6 +225,15 @@ namespace GenSample
                 if (xprop.Deprecated)
                     sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
                 sbOut.Append("\t\t#\r\n");*/
+                // lets add description...
+                chunked = chunkSplit(xprop.Descrip, 100);
+
+                foreach (var chunk in chunked)
+                {
+                    sbOut.Append("\t\t# " + chunk.Trim() + "\r\n");
+                }
+                sbOut.Append("\t\t#\r\n");
+
                 sbOut.Append("\t\t# @param newval [" + ChilkatTypes.genericToRubyPrimitive(xprop.m_gt) + "]\r\n");
 
                 if (xprop.IsEventRelated())
@@ -218,6 +261,15 @@ namespace GenSample
         bool generateMethod(XMethod xmethod, XClass xclass, StringBuilder sbOut, Chilkat.Log log, bool lowerCaseAlt = false)
         {
             sbOut.Append("\r\n\t\t# Method: " + xmethod.EntryName + "\r\n\t\t#\r\n");
+            // lets add description...
+            IEnumerable<string> chunked = chunkSplit(xmethod.Descrip, 100);
+
+            foreach (var chunk in chunked)
+            {
+                sbOut.Append("\t\t# " + chunk.Trim() + "\r\n");
+            }
+            sbOut.Append("\t\t#\r\n");
+
             //if (xmethod.Deprecated)
             //    sbOut.Append("\t\t# This method has been deprecated. Do not use it.\r\n");
             //sbOut.Append("\t\t# ==== Attributes\r\n\t\t#\r\n");
@@ -256,7 +308,7 @@ namespace GenSample
             foreach (MethodArg arg in xmethod.Args)
             {
                 //if (i > 1) sbOut.Append(", ");
-                sbOut.Append("\t\t# @param " + arg.Name + " [" + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "]\r\n");
+                sbOut.Append("\t\t# @param " + arg.Name + " [" + m_types.gtToRubyDuck(arg.Gt, arg.DataType) + "]\r\n");                
                 i++;
             }
 
