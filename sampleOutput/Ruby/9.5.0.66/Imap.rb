@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,19 +17,19 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# When _TRUE_ (the default) the Append method will mark the email appended to a mailbox as already
 		# seen. Otherwise an appended email will be initialized to have a status of unseen.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AppendSeen() end
 
 		# When _TRUE_ (the default) the Append method will mark the email appended to a mailbox as already
 		# seen. Otherwise an appended email will be initialized to have a status of unseen.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AppendSeen(newval) end
 
 		# The UID of the last email appended to a mailbox via an Append* method. (Not all IMAP servers report
@@ -126,7 +126,7 @@ module Chilkat
 		# this property and never download attachments. Also, signed and/or encrypted emails will always be
 		# downloaded in full (with attachments) regardless of this property setting.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoDownloadAttachments() end
 
 		# If set to _TRUE_, then all Fetch* methods will also automatically download attachments. If set to
@@ -137,7 +137,7 @@ module Chilkat
 		# this property and never download attachments. Also, signed and/or encrypted emails will always be
 		# downloaded in full (with attachments) regardless of this property setting.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoDownloadAttachments(newval) end
 
 		# If _TRUE_, then the following will occur when a connection is made to an IMAP server:
@@ -147,7 +147,7 @@ module Chilkat
 		# = 143, sets Ssl = _FALSE_
 		# The default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoFix() end
 
 		# If _TRUE_, then the following will occur when a connection is made to an IMAP server:
@@ -157,7 +157,7 @@ module Chilkat
 		# = 143, sets Ssl = _FALSE_
 		# The default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoFix(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
@@ -514,7 +514,7 @@ module Chilkat
 		# The SessionLog contains the raw
 		# commands sent to the IMAP server, and the raw responses received from the IMAP server.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepSessionLog() end
 
 		# Turns the in-memory session logging on or off. If on, the session log can be obtained via the
@@ -523,7 +523,7 @@ module Chilkat
 		# The SessionLog contains the raw
 		# commands sent to the IMAP server, and the raw responses received from the IMAP server.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepSessionLog(newval) end
 
 		# The MIME source of the email last appended during a call to AppendMail, or AppendMime.
@@ -631,7 +631,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -651,7 +651,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The raw data of the last response from the IMAP server. (Useful for debugging if problems occur.)
@@ -751,13 +751,13 @@ module Chilkat
 		# Set to true to prevent the mail flags (such as the "Seen" flag) from being set when email is
 		# retrieved. The default value of this property is false.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PeekMode() end
 
 		# Set to true to prevent the mail flags (such as the "Seen" flag) from being set when email is
 		# retrieved. The default value of this property is false.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PeekMode(newval) end
 
 		# This property is only valid in programming environment and languages that allow for event
@@ -809,13 +809,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# The maximum amount of time (in seconds) that incoming data is allowed to stall while reading any
@@ -846,14 +846,14 @@ module Chilkat
 		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
 		# this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_RequireSslCertVerify() end
 
 		# If _TRUE_, then the IMAP client will verify the server's SSL certificate. The certificate is
 		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
 		# this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_RequireSslCertVerify(newval) end
 
 		# The "CHARSET" to be used in searches issued by the Search method. The default value is "UTF-8". (If
@@ -1171,7 +1171,7 @@ module Chilkat
 		# is 993. If you set this property = _TRUE_, it is likely that you should also set the Port property =
 		# 993.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Ssl() end
 
 		# _TRUE_ if the IMAP connection should be TLS/SSL. 
@@ -1179,7 +1179,7 @@ module Chilkat
 		# is 993. If you set this property = _TRUE_, it is likely that you should also set the Port property =
 		# 993.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Ssl(newval) end
 
 		# Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections. The default
@@ -1589,7 +1589,7 @@ module Chilkat
 		# Read-only property that returns _TRUE_ if the IMAP server's digital certificate was verified when
 		# connecting via SSL / TLS.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SslServerCertVerified() end
 
 		# If _TRUE_, then the Connect method will (internallly) convert the connection to TLS/SSL via the
@@ -1598,7 +1598,7 @@ module Chilkat
 		# the "Ssl" property is set to _TRUE_ and the IMAP client connects to the well-known TLS/SSL IMAP port
 		# of 993.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_StartTls() end
 
 		# If _TRUE_, then the Connect method will (internallly) convert the connection to TLS/SSL via the
@@ -1607,7 +1607,7 @@ module Chilkat
 		# the "Ssl" property is set to _TRUE_ and the IMAP client connects to the well-known TLS/SSL IMAP port
 		# of 993.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_StartTls(newval) end
 
 		# Contains the current or last negotiated TLS cipher suite. If no TLS connection has yet to be
@@ -1783,7 +1783,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1793,21 +1793,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1830,7 +1830,7 @@ module Chilkat
 		# @param pfxBytes [CkByteData]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceData(pfxBytes, pfxPassword)
 			# ...
 		end
@@ -1849,7 +1849,7 @@ module Chilkat
 		# @param pfxFilePath [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceFile(pfxFilePath, pfxPassword)
 			# ...
 		end
@@ -1862,7 +1862,7 @@ module Chilkat
 		# @param mailbox [String]
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendMail(mailbox, email)
 			# ...
 		end
@@ -1875,7 +1875,7 @@ module Chilkat
 		# @param mailbox [String]
 		# @param mimeText [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendMime(mailbox, mimeText)
 			# ...
 		end
@@ -1890,7 +1890,7 @@ module Chilkat
 		# @param mimeText [String]
 		# @param internalDate [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AppendMimeWithDate(mailbox, mimeText, internalDate)
 			# ...
@@ -1905,7 +1905,7 @@ module Chilkat
 		# @param mimeText [String]
 		# @param internalDateStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendMimeWithDateStr(mailbox, mimeText, internalDateStr)
 			# ...
 		end
@@ -1918,12 +1918,12 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		# @param mimeText [String]
-		# @param seen [TrueClass, FalseClass]
-		# @param flagged [TrueClass, FalseClass]
-		# @param answered [TrueClass, FalseClass]
-		# @param draft [TrueClass, FalseClass]
+		# @param seen [Boolean]
+		# @param flagged [Boolean]
+		# @param answered [Boolean]
+		# @param draft [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendMimeWithFlags(mailbox, mimeText, seen, flagged, answered, draft)
 			# ...
 		end
@@ -1936,12 +1936,12 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		# @param sbMime [CkStringBuilder]
-		# @param seen [TrueClass, FalseClass]
-		# @param flagged [TrueClass, FalseClass]
-		# @param answered [TrueClass, FalseClass]
-		# @param draft [TrueClass, FalseClass]
+		# @param seen [Boolean]
+		# @param flagged [Boolean]
+		# @param answered [Boolean]
+		# @param draft [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendMimeWithFlagsSb(mailbox, sbMime, seen, flagged, answered, draft)
 			# ...
 		end
@@ -1953,7 +1953,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Capability(outStr)
 			# ...
 		end
@@ -1975,7 +1975,7 @@ module Chilkat
 		# Returns _TRUE_ if the underlying TCP socket is connected to the IMAP server.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CheckConnection()
 			# ...
 		end
@@ -2014,7 +2014,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CloseMailbox(mailbox)
 			# ...
 		end
@@ -2034,7 +2034,7 @@ module Chilkat
 		#
 		# @param domainName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Connect(domainName)
 			# ...
 		end
@@ -2047,10 +2047,10 @@ module Chilkat
 		# UID. If ARG2 is _FALSE_, then ARG1 represents a sequence number.
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		# @param copyToMailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Copy(msgId, bUid, copyToMailbox)
 			# ...
 		end
@@ -2064,7 +2064,7 @@ module Chilkat
 		# @param messageSet [CkMessageSet]
 		# @param copyToMailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CopyMultiple(messageSet, copyToMailbox)
 			# ...
 		end
@@ -2079,7 +2079,7 @@ module Chilkat
 		# @param count [Fixnum]
 		# @param copyToMailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CopySequence(startSeqNum, count, copyToMailbox)
 			# ...
 		end
@@ -2091,7 +2091,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateMailbox(mailbox)
 			# ...
 		end
@@ -2103,7 +2103,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteMailbox(mailbox)
 			# ...
 		end
@@ -2115,7 +2115,7 @@ module Chilkat
 		# the disconnect was not clean -- and this can typically be ignored.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Disconnect()
 			# ...
 		end
@@ -2128,7 +2128,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExamineMailbox(mailbox)
 			# ...
 		end
@@ -2139,7 +2139,7 @@ module Chilkat
 		# Permanently removes from the currently selected mailbox all messages that have the Deleted flag set.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Expunge()
 			# ...
 		end
@@ -2151,7 +2151,7 @@ module Chilkat
 		# and closes the mailbox.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExpungeAndClose()
 			# ...
 		end
@@ -2192,7 +2192,7 @@ module Chilkat
 		# @param attachmentIndex [Fixnum]
 		# @param saveToPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchAttachment(emailObject, attachmentIndex, saveToPath)
 			# ...
 		end
@@ -2207,7 +2207,7 @@ module Chilkat
 		# @param attachmentIndex [Fixnum]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchAttachmentBd(email, attachmentIndex, binData)
 			# ...
 		end
@@ -2223,7 +2223,7 @@ module Chilkat
 		# @param attachIndex [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchAttachmentBytes(email, attachIndex, outBytes)
 			# ...
 		end
@@ -2241,7 +2241,7 @@ module Chilkat
 		# @param charset [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchAttachmentSb(email, attachmentIndex, charset, sb)
 			# ...
 		end
@@ -2259,7 +2259,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchAttachmentString(emailObject, attachmentIndex, charset, outStr)
 			# ...
 		end
@@ -2350,10 +2350,10 @@ module Chilkat
 		#
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		# @param outStrFlags [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchFlags(msgId, bUid, outStrFlags)
 			# ...
 		end
@@ -2382,7 +2382,7 @@ module Chilkat
 		#
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		#
 		# @return [String]
 		def fetchFlags(msgId, bUid)
@@ -2465,7 +2465,7 @@ module Chilkat
 		# represents a sequence number.
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		#
 		# @return [CkEmail]
 		def FetchSingle(msgId, bUid)
@@ -2480,10 +2480,10 @@ module Chilkat
 		# represents a UID. If bUid is false, then msgID represents a sequence number.
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		# @param outStrMime [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchSingleAsMime(msgId, bUid, outStrMime)
 			# ...
 		end
@@ -2496,7 +2496,7 @@ module Chilkat
 		# represents a UID. If bUid is false, then msgID represents a sequence number.
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		#
 		# @return [String]
 		def fetchSingleAsMime(msgId, bUid)
@@ -2511,10 +2511,10 @@ module Chilkat
 		# true, then msgID represents a UID. If bUid is false, then msgID represents a sequence number.
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		# @param sbMime [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchSingleAsMimeSb(msgId, bUid, sbMime)
 			# ...
 		end
@@ -2531,7 +2531,7 @@ module Chilkat
 		# represents a sequence number.
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		#
 		# @return [CkEmail]
 		def FetchSingleHeader(msgId, bUid)
@@ -2544,10 +2544,10 @@ module Chilkat
 		# Fetches and returns the MIME of a single email header.
 		#
 		# @param msgId [Fixnum]
-		# @param bUID [TrueClass, FalseClass]
+		# @param bUID [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchSingleHeaderAsMime(msgId, bUID, outStr)
 			# ...
 		end
@@ -2558,7 +2558,7 @@ module Chilkat
 		# Fetches and returns the MIME of a single email header.
 		#
 		# @param msgId [Fixnum]
-		# @param bUID [TrueClass, FalseClass]
+		# @param bUID [Boolean]
 		#
 		# @return [String]
 		def fetchSingleHeaderAsMime(msgId, bUID)
@@ -2586,7 +2586,7 @@ module Chilkat
 		# @param attachIndex [Fixnum]
 		# @param outStrFilename [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMailAttachFilename(email, attachIndex, outStrFilename)
 			# ...
 		end
@@ -2639,7 +2639,7 @@ module Chilkat
 		# @param mailbox [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMailboxStatus(mailbox, outStr)
 			# ...
 		end
@@ -2721,7 +2721,7 @@ module Chilkat
 		# @param quotaRoot [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetQuota(quotaRoot, outStr)
 			# ...
 		end
@@ -2748,7 +2748,7 @@ module Chilkat
 		# @param mailboxName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetQuotaRoot(mailboxName, outStr)
 			# ...
 		end
@@ -2785,7 +2785,7 @@ module Chilkat
 		# @param name [String]
 		# @param capabilityResponse [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasCapability(name, capabilityResponse)
 			# ...
 		end
@@ -2851,7 +2851,7 @@ module Chilkat
 		# @param timeoutMs [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IdleCheck(timeoutMs, outStr)
 			# ...
 		end
@@ -2927,7 +2927,7 @@ module Chilkat
 		# Sends a command to the IMAP server to stop receiving real-time updates.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IdleDone()
 			# ...
 		end
@@ -2938,7 +2938,7 @@ module Chilkat
 		# Sends an IDLE command to the IMAP server to begin receiving real-time updates.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IdleStart()
 			# ...
 		end
@@ -2955,7 +2955,7 @@ module Chilkat
 		# state.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsConnected()
 			# ...
 		end
@@ -2966,7 +2966,7 @@ module Chilkat
 		# Returns _TRUE_ if already logged into an IMAP server, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsLoggedIn()
 			# ...
 		end
@@ -2977,7 +2977,7 @@ module Chilkat
 		# Returns _TRUE_ if the component is unlocked, _FALSE_ if not.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -3205,7 +3205,7 @@ module Chilkat
 		# @param loginName [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Login(loginName, password)
 			# ...
 		end
@@ -3216,7 +3216,7 @@ module Chilkat
 		# Logs out of the IMAP server.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Logout()
 			# ...
 		end
@@ -3231,7 +3231,7 @@ module Chilkat
 		# @param messageSet [CkMessageSet]
 		# @param destFolder [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MoveMessages(messageSet, destFolder)
 			# ...
 		end
@@ -3244,7 +3244,7 @@ module Chilkat
 		# connection to the IMAP server is up and active.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Noop()
 			# ...
 		end
@@ -3258,7 +3258,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RefetchMailFlags(email)
 			# ...
 		end
@@ -3271,7 +3271,7 @@ module Chilkat
 		# @param fromMailbox [String]
 		# @param toMailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenameMailbox(fromMailbox, toMailbox)
 			# ...
 		end
@@ -3283,7 +3283,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -3538,7 +3538,7 @@ module Chilkat
 		#
 		#
 		# @param criteria [String]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		#
 		# @return [CkMessageSet]
 		def Search(criteria, bUid)
@@ -3556,7 +3556,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SelectMailbox(mailbox)
 			# ...
 		end
@@ -3569,7 +3569,7 @@ module Chilkat
 		# @param cmd [String]
 		# @param outRawResponse [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendRawCommand(cmd, outRawResponse)
 			# ...
 		end
@@ -3595,7 +3595,7 @@ module Chilkat
 		# @param cmd [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendRawCommandB(cmd, outBytes)
 			# ...
 		end
@@ -3609,7 +3609,7 @@ module Chilkat
 		# @param cmd [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendRawCommandC(cmd, outBytes)
 			# ...
 		end
@@ -3628,7 +3628,7 @@ module Chilkat
 		#
 		# @param csp [CkCsp]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCSP(csp)
 			# ...
 		end
@@ -3640,7 +3640,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDecryptCert(cert)
 			# ...
 		end
@@ -3654,7 +3654,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param key [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDecryptCert2(cert, key)
 			# ...
 		end
@@ -3670,11 +3670,11 @@ module Chilkat
 		# is _FALSE_, then ARG1 represents a sequence number.
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		# @param flagName [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFlag(msgId, bUid, flagName, value)
 			# ...
 		end
@@ -3691,7 +3691,7 @@ module Chilkat
 		# @param flagName [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFlags(messageSet, flagName, value)
 			# ...
 		end
@@ -3721,7 +3721,7 @@ module Chilkat
 		# @param flagName [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMailFlag(email, flagName, value)
 			# ...
 		end
@@ -3743,7 +3743,7 @@ module Chilkat
 		# @param resource [String]
 		# @param quota [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetQuota(quotaRoot, resource, quota)
 			# ...
 		end
@@ -3758,7 +3758,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -3778,7 +3778,7 @@ module Chilkat
 		# @param pemDataOrFilename [String]
 		# @param pemPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPem(pemDataOrFilename, pemPassword)
 			# ...
 		end
@@ -3794,7 +3794,7 @@ module Chilkat
 		# @param pfxFilename [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPfx(pfxFilename, pfxPassword)
 			# ...
 		end
@@ -3812,7 +3812,7 @@ module Chilkat
 		# @param sshLogin [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshAuthenticatePk(sshLogin, privateKey)
 			# ...
 		end
@@ -3839,7 +3839,7 @@ module Chilkat
 		# @param sshLogin [String]
 		# @param sshPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshAuthenticatePw(sshLogin, sshPassword)
 			# ...
 		end
@@ -3850,7 +3850,7 @@ module Chilkat
 		# Closes the SSH tunnel previously opened by SshOpenTunnel.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshCloseTunnel()
 			# ...
 		end
@@ -3878,7 +3878,7 @@ module Chilkat
 		# @param sshHostname [String]
 		# @param sshPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshOpenTunnel(sshHostname, sshPort)
 			# ...
 		end
@@ -3906,7 +3906,7 @@ module Chilkat
 		# @param sshServerHostname [String]
 		# @param sshPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SshTunnel(sshServerHostname, sshPort)
 			# ...
@@ -3929,11 +3929,11 @@ module Chilkat
 		# flags off.
 		#
 		# @param msgId [Fixnum]
-		# @param bUid [TrueClass, FalseClass]
+		# @param bUid [Boolean]
 		# @param flagNames [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def StoreFlags(msgId, bUid, flagNames, value)
 			# ...
 		end
@@ -3945,7 +3945,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Subscribe(mailbox)
 			# ...
 		end
@@ -3960,7 +3960,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -3972,7 +3972,7 @@ module Chilkat
 		#
 		# @param mailbox [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Unsubscribe(mailbox)
 			# ...
 		end
@@ -3988,7 +3988,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -4006,7 +4006,7 @@ module Chilkat
 		#
 		# @param ssh [CkSsh]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseSsh(ssh)
 			# ...
 		end
@@ -4020,7 +4020,7 @@ module Chilkat
 		#
 		# @param tunnel [CkSocket]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseSshTunnel(tunnel)
 			# ...
 		end

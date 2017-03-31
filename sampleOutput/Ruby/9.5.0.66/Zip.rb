@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# When files are added to a Zip archive, they are appended from this directory. For example, to add
@@ -134,7 +134,7 @@ module Chilkat
 		# 
 		# The default AutoTemp value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoTemp() end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) This option applies to
@@ -153,7 +153,7 @@ module Chilkat
 		# 
 		# The default AutoTemp value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoTemp(newval) end
 
 		# If _TRUE_ then all methods that get or search for zip entries by name will use case-sensitive
@@ -162,7 +162,7 @@ module Chilkat
 		# The default
 		# value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_CaseSensitive() end
 
 		# If _TRUE_ then all methods that get or search for zip entries by name will use case-sensitive
@@ -171,7 +171,7 @@ module Chilkat
 		# The default
 		# value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_CaseSensitive(newval) end
 
 		# Set this to _TRUE_ to clear the FILE_ATTRIBUTE_ARCHIVE file attribute of each file during a zipping
@@ -179,7 +179,7 @@ module Chilkat
 		# 
 		# The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ClearArchiveAttribute() end
 
 		# Set this to _TRUE_ to clear the FILE_ATTRIBUTE_ARCHIVE file attribute of each file during a zipping
@@ -187,19 +187,19 @@ module Chilkat
 		# 
 		# The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ClearArchiveAttribute(newval) end
 
 		# If _TRUE_, the read-only attribute is automatically cleared when unzipping. The default value of
 		# this property is _FALSE_, which leaves the read-only attribute unchanged when unzipping.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ClearReadOnlyAttr() end
 
 		# If _TRUE_, the read-only attribute is automatically cleared when unzipping. The default value of
 		# this property is _FALSE_, which leaves the read-only attribute unchanged when unzipping.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ClearReadOnlyAttr(newval) end
 
 		# The global Zip file comment.
@@ -370,12 +370,12 @@ module Chilkat
 
 		# If _TRUE_, discards all file path information when zipping. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_DiscardPaths() end
 
 		# If _TRUE_, discards all file path information when zipping. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_DiscardPaths(newval) end
 
 		# Indicate whether the Zip is to be strong encrypted or not. Valid values are 0 (not encrypted) or 4
@@ -513,7 +513,7 @@ module Chilkat
 		# button text of the finish notifier dialog may be customized by calling SetExeConfigParam. The
 		# default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ExeFinishNotifier() end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) If set to _TRUE_, a "Finished"
@@ -521,7 +521,7 @@ module Chilkat
 		# button text of the finish notifier dialog may be customized by calling SetExeConfigParam. The
 		# default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ExeFinishNotifier(newval) end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
@@ -587,7 +587,7 @@ module Chilkat
 		# dialog will be displayed. The password dialog may be suppressed if the password is provided on the
 		# command line via the -pwd command-line option.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ExeNoInterface() end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
@@ -607,7 +607,7 @@ module Chilkat
 		# dialog will be displayed. The password dialog may be suppressed if the password is provided on the
 		# command line via the -pwd command-line option.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ExeNoInterface(newval) end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) Determines whether a progress
@@ -617,7 +617,7 @@ module Chilkat
 		# ExeNoInterface = _TRUE_, then a progress-only dialog is displayed if ExeSilentProgress = _FALSE_.
 		# The default value of ExeSilentProgress is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ExeSilentProgress() end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) Determines whether a progress
@@ -627,7 +627,7 @@ module Chilkat
 		# ExeNoInterface = _TRUE_, then a progress-only dialog is displayed if ExeSilentProgress = _FALSE_.
 		# The default value of ExeSilentProgress is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ExeSilentProgress(newval) end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) Applies to creating
@@ -777,7 +777,7 @@ module Chilkat
 		# dialog (or process if running silently with no user-interface), is allowed to exit prior to the
 		# completion of the AutoRun EXE. The default value is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ExeWaitForSetup() end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) If _TRUE_, the self-extracting
@@ -785,7 +785,7 @@ module Chilkat
 		# dialog (or process if running silently with no user-interface), is allowed to exit prior to the
 		# completion of the AutoRun EXE. The default value is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ExeWaitForSetup(newval) end
 
 		# (Relevant only when running on a Microsoft Windows operating system.) Allows for an XML config
@@ -1160,7 +1160,7 @@ module Chilkat
 		# _TRUE_ if the opened zip contained file format errors (that were not severe enough to prevent the
 		# zip from being opened and parsed).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_HasZipFormatErrors() end
 
 		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
@@ -1188,7 +1188,7 @@ module Chilkat
 		# If _FALSE_, then the "access denied" filesystem errors are not ignored and any occurrence will cause
 		# the zip writing to fail. The default value is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IgnoreAccessDenied() end
 
 		# If _TRUE_, then files that cannot be read due to "access denied" (i.e. a file permission error) will
@@ -1196,7 +1196,7 @@ module Chilkat
 		# If _FALSE_, then the "access denied" filesystem errors are not ignored and any occurrence will cause
 		# the zip writing to fail. The default value is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_IgnoreAccessDenied(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -1270,7 +1270,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -1290,7 +1290,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -1337,14 +1337,14 @@ module Chilkat
 		# means that already-existing files will be overwritten. Set this property = _FALSE_ to prevent
 		# existing files from being overwritten when unzipping.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_OverwriteExisting() end
 
 		# Determines whether existing files are overwritten during unzipping. The default is _TRUE_, which
 		# means that already-existing files will be overwritten. Set this property = _FALSE_ to prevent
 		# existing files from being overwritten when unzipping.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_OverwriteExisting(newval) end
 
 		# _TRUE_ if the Zip should be password-protected using older Zip 2.0 encryption, commonly referred to
@@ -1353,7 +1353,7 @@ module Chilkat
 		# This property is set when a zip archive is opened by any of
 		# the Open* methods, such as OpenZip, OpenFromMemory, etc.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PasswordProtect() end
 
 		# _TRUE_ if the Zip should be password-protected using older Zip 2.0 encryption, commonly referred to
@@ -1362,7 +1362,7 @@ module Chilkat
 		# This property is set when a zip archive is opened by any of
 		# the Open* methods, such as OpenZip, OpenFromMemory, etc.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PasswordProtect(newval) end
 
 		# A prefix that is added to each filename when zipping. One might set the PathPrefix to "subdir/" so
@@ -1462,7 +1462,7 @@ module Chilkat
 		# It is
 		# generally not necessary to set the text flag for a zip entry.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_TextFlag() end
 
 		# If set to _TRUE_, the component will set the "text flag" for each file having these filename
@@ -1472,7 +1472,7 @@ module Chilkat
 		# It is
 		# generally not necessary to set the text flag for a zip entry.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_TextFlag(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1482,7 +1482,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1492,21 +1492,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1529,7 +1529,7 @@ module Chilkat
 		# property is for writing zip archives. It does not apply to when unzipping ZIPX archives, Chilkat Zip
 		# automatically handles the various compression algorithms when unzipping.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Zipx() end
 
 		# Starting in v9.4.1, Chilkat Zip will automatically unzip ZIPX files using any of the following
@@ -1540,7 +1540,7 @@ module Chilkat
 		# property is for writing zip archives. It does not apply to when unzipping ZIPX archives, Chilkat Zip
 		# automatically handles the various compression algorithms when unzipping.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Zipx(newval) end
 
 		# The default compression algorithm to be used when creating ZIPX archives. The default value is
@@ -1595,7 +1595,7 @@ module Chilkat
 		# @param resourceName [String]
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddEmbedded(exeFilename, resourceName, zipFilename)
 			# ...
 		end
@@ -1723,9 +1723,9 @@ module Chilkat
 		# be called.
 		#
 		# @param filePattern [String]
-		# @param recurse [TrueClass, FalseClass]
+		# @param recurse [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendFiles(filePattern, recurse)
 			# ...
 		end
@@ -1753,13 +1753,13 @@ module Chilkat
 		# Write* methods.
 		#
 		# @param filePattern [String]
-		# @param recurse [TrueClass, FalseClass]
-		# @param saveExtraPath [TrueClass, FalseClass]
-		# @param archiveOnly [TrueClass, FalseClass]
-		# @param includeHidden [TrueClass, FalseClass]
-		# @param includeSystem [TrueClass, FalseClass]
+		# @param recurse [Boolean]
+		# @param saveExtraPath [Boolean]
+		# @param archiveOnly [Boolean]
+		# @param includeHidden [Boolean]
+		# @param includeSystem [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendFilesEx(filePattern, recurse, saveExtraPath, archiveOnly, includeHidden, includeSystem)
 			# ...
 		end
@@ -1796,9 +1796,9 @@ module Chilkat
 		# file, either the WriteZip or WriteZipAndClose method would need to be called.
 		#
 		# @param fileSpecs [CkStringArray]
-		# @param recurse [TrueClass, FalseClass]
+		# @param recurse [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendMultiple(fileSpecs, recurse)
 			# ...
 		end
@@ -1851,9 +1851,9 @@ module Chilkat
 		# will be "./temp/xyz/test.txt". If however, ARG1 contains a relative path, then ARG2 has no effect.
 		#
 		# @param fileOrDirPath [String]
-		# @param saveExtraPath [TrueClass, FalseClass]
+		# @param saveExtraPath [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendOneFileOrDir(fileOrDirPath, saveExtraPath)
 			# ...
 		end
@@ -1903,7 +1903,7 @@ module Chilkat
 		#
 		# @param zipFileName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendZip(zipFileName)
 			# ...
 		end
@@ -1928,7 +1928,7 @@ module Chilkat
 		#
 		# @param entry [CkZipEntry]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteEntry(entry)
 			# ...
 		end
@@ -1956,7 +1956,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Extract(dirPath)
 			# ...
 		end
@@ -1971,7 +1971,7 @@ module Chilkat
 		# @param exePath [String]
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExtractExe(exePath, dirPath)
 			# ...
 		end
@@ -1983,7 +1983,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExtractInto(dirPath)
 			# ...
 		end
@@ -1996,7 +1996,7 @@ module Chilkat
 		# @param dirPath [String]
 		# @param pattern [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExtractMatching(dirPath, pattern)
 			# ...
 		end
@@ -2009,7 +2009,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExtractNewer(dirPath)
 			# ...
 		end
@@ -2023,7 +2023,7 @@ module Chilkat
 		# @param entry [CkZipEntry]
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def ExtractOne(entry, dirPath)
 			# ...
@@ -2062,7 +2062,7 @@ module Chilkat
 		#
 		# @param outXml [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetDirectoryAsXML(outXml)
 			# ...
 		end
@@ -2137,7 +2137,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetExeConfigParam(name, outStr)
 			# ...
 		end
@@ -2178,7 +2178,7 @@ module Chilkat
 		#
 		# @param fileExtension [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsNoCompressExtension(fileExtension)
 			# ...
 		end
@@ -2190,7 +2190,7 @@ module Chilkat
 		#
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsPasswordProtected(zipFilename)
 			# ...
 		end
@@ -2201,7 +2201,7 @@ module Chilkat
 		# Returns True if the class is already unlocked, otherwise returns False.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -2214,7 +2214,7 @@ module Chilkat
 		#
 		# @param zipFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def NewZip(zipFilePath)
 			# ...
 		end
@@ -2232,7 +2232,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenBd(binData)
 			# ...
 		end
@@ -2246,7 +2246,7 @@ module Chilkat
 		# @param exeFilename [String]
 		# @param resourceName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenEmbedded(exeFilename, resourceName)
 			# ...
 		end
@@ -2264,7 +2264,7 @@ module Chilkat
 		#
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenFromByteData(byteData)
 			# ...
 		end
@@ -2283,7 +2283,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenFromMemory(inData)
 			# ...
 		end
@@ -2296,7 +2296,7 @@ module Chilkat
 		#
 		# @param resourceName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenMyEmbedded(resourceName)
 			# ...
 		end
@@ -2316,7 +2316,7 @@ module Chilkat
 		#
 		# @param zipPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenZip(zipPath)
 			# ...
 		end
@@ -2330,7 +2330,7 @@ module Chilkat
 		#
 		# @param ZipFileName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickAppend(ZipFileName)
 			# ...
 		end
@@ -2344,7 +2344,7 @@ module Chilkat
 		# @param exeFilename [String]
 		# @param resourceName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveEmbedded(exeFilename, resourceName)
 			# ...
 		end
@@ -2372,7 +2372,7 @@ module Chilkat
 		# @param resourceName [String]
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReplaceEmbedded(exeFilename, resourceName, zipFilename)
 			# ...
 		end
@@ -2384,7 +2384,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -2462,7 +2462,7 @@ module Chilkat
 		#
 		# @param regCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(regCode)
 			# ...
 		end
@@ -2504,7 +2504,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		# @param pattern [String]
-		# @param verbose [TrueClass, FalseClass]
+		# @param verbose [Boolean]
 		#
 		# @return [Fixnum]
 		def UnzipMatching(dirPath, pattern, verbose)
@@ -2518,7 +2518,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		# @param pattern [String]
-		# @param verbose [TrueClass, FalseClass]
+		# @param verbose [Boolean]
 		#
 		# @return [Fixnum]
 		def UnzipMatchingInto(dirPath, pattern, verbose)
@@ -2545,7 +2545,7 @@ module Chilkat
 		# password is valid, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyPassword()
 			# ...
 		end
@@ -2559,7 +2559,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteBd(binData)
 			# ...
 		end
@@ -2590,7 +2590,7 @@ module Chilkat
 		#
 		# @param exeFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteExe(exeFilename)
 			# ...
 		end
@@ -2614,11 +2614,11 @@ module Chilkat
 		#
 		# @param exePath [String]
 		# @param destExePath [String]
-		# @param bAesEncrypt [TrueClass, FalseClass]
+		# @param bAesEncrypt [Boolean]
 		# @param keyLength [Fixnum]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteExe2(exePath, destExePath, bAesEncrypt, keyLength, password)
 			# ...
 		end
@@ -2631,7 +2631,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteExeToMemory(outBytes)
 			# ...
 		end
@@ -2644,7 +2644,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteToMemory(outData)
 			# ...
 		end
@@ -2659,7 +2659,7 @@ module Chilkat
 		# the old zip file format are exceeded.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteZip()
 			# ...
 		end
@@ -2674,7 +2674,7 @@ module Chilkat
 		# exceeded.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteZipAndClose()
 			# ...
 		end

@@ -85,7 +85,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def appendFile(path)
 			# ...
 		end
@@ -97,7 +97,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def appendFileW(path)
 			# ...
 		end
@@ -109,7 +109,7 @@ module Chilkat
 		# determines whether the big endian or little endian byte ordering is used.
 		#
 		# @param intValue [Fixnum]
-		# @param littleEndian [TrueClass, FalseClass]
+		# @param littleEndian [Boolean]
 		#
 		# @return [nil]
 		def appendInt(intValue, littleEndian)
@@ -150,7 +150,7 @@ module Chilkat
 		# determines whether the big endian or little endian byte ordering is used.
 		#
 		# @param shortValue [Fixnum]
-		# @param littleEndian [TrueClass, FalseClass]
+		# @param littleEndian [Boolean]
 		#
 		# @return [nil]
 		def appendShort(shortValue, littleEndian)
@@ -189,7 +189,7 @@ module Chilkat
 		#
 		# @param byteDataObj [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def beginsWith(byteDataObj)
 			# ...
 		end
@@ -202,7 +202,7 @@ module Chilkat
 		# @param pByteData [Object]
 		# @param szByteData [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def beginsWith2(pByteData, szByteData)
 			# ...
 		end
@@ -284,7 +284,7 @@ module Chilkat
 		#
 		# @param expectedNumBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ensureBuffer(expectedNumBytes)
 			# ...
 		end
@@ -296,7 +296,7 @@ module Chilkat
 		#
 		# @param compareBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def equals(compareBytes)
 			# ...
 		end
@@ -310,7 +310,7 @@ module Chilkat
 		# @param pCompareBytes [Object]
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def equals2(pCompareBytes, numBytes)
 			# ...
 		end
@@ -512,7 +512,7 @@ module Chilkat
 		# Returns _TRUE_ if all the bytes are in the range 0x00 to 0x7F.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def is7bit()
 			# ...
 		end
@@ -524,7 +524,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def loadFile(path)
 			# ...
 		end
@@ -536,7 +536,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def loadFileW(path)
 			# ...
 		end
@@ -567,7 +567,7 @@ module Chilkat
 		#
 		# @param expectedNumBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def preAllocate(expectedNumBytes)
 			# ...
@@ -619,7 +619,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def saveFile(path)
 			# ...
 		end
@@ -631,7 +631,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def saveFileW(path)
 			# ...
 		end

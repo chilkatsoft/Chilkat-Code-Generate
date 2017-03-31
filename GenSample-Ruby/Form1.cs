@@ -298,7 +298,7 @@ namespace GenSample
           
             string rtnType = m_types.gtToRubyDuck(xmethod.m_gt, xmethod.GenericType);
             if (!lowerCaseAlt && xmethod.CppMethodReturnGt == 4)
-                rtnType = "TrueClass, FalseClass";
+                rtnType = "Boolean";
 
             int i = 1;
             /*foreach (MethodArg arg in xmethod.Args)

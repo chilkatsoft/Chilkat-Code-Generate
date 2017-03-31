@@ -4,14 +4,14 @@ module Chilkat
 		# XML listing of the contents in the XmlListing property. The format of the XML contained in
 		# XmlListing is identical to what is returned by the ListXml method. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_CaptureXmlListing() end
 
 		# If _TRUE_, then untar methods, such as Untar, UntarGz, UntarBz2, and UntarZ, will also capture an
 		# XML listing of the contents in the XmlListing property. The format of the XML contained in
 		# XmlListing is identical to what is returned by the ListXml method. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_CaptureXmlListing(newval) end
 
 		# Character encoding to be used when interpreting filenames within .tar archives for untar operations.
@@ -321,7 +321,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -341,7 +341,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -370,13 +370,13 @@ module Chilkat
 		# Determines whether pattern matching for the MustMatch and MustNotMatch properties is case-sensitive
 		# or not. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_MatchCaseSensitive() end
 
 		# Determines whether pattern matching for the MustMatch and MustNotMatch properties is case-sensitive
 		# or not. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_MatchCaseSensitive(newval) end
 
 		# If set, then file paths must match this pattern when creating TAR archives, or when extracting from
@@ -491,14 +491,14 @@ module Chilkat
 		# character when untarring. This protects your system from unknowingly untarring files into important
 		# system directories, such as C:\Windows\system32. The default value is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_NoAbsolutePaths() end
 
 		# If _TRUE_, then absolute paths are converted to relative paths by removing the leading "/" or "\"
 		# character when untarring. This protects your system from unknowingly untarring files into important
 		# system directories, such as C:\Windows\system32. The default value is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_NoAbsolutePaths(newval) end
 
 		# The total number of directory roots set by calling AddDirRoot (i.e. the number of times AddDirRoot
@@ -562,7 +562,7 @@ module Chilkat
 		# _TRUE_, which enables an application to get the contents of a TAR archive without extracting. The
 		# default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SuppressOutput() end
 
 		# If _TRUE_, then untar methods, such as Untar, UntarGz, UntarBz2, and UntarZ, do not produce any
@@ -570,45 +570,45 @@ module Chilkat
 		# _TRUE_, which enables an application to get the contents of a TAR archive without extracting. The
 		# default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SuppressOutput(newval) end
 
 		# This property is deprecated. Applications should instead use the MatchCaseSensitive property. Until
 		# this property is officially removed, it will behave the same as the MatchCaseSensitive property.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UntarCaseSensitive() end
 
 		# This property is deprecated. Applications should instead use the MatchCaseSensitive property. Until
 		# this property is officially removed, it will behave the same as the MatchCaseSensitive property.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UntarCaseSensitive(newval) end
 
 		# Similar to the VerboseLogging property. If set to _TRUE_, then information about each file/directory
 		# extracted in an untar method call is logged to LastErrorText (or LastErrorXml / LastErrorHtml). The
 		# default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UntarDebugLog() end
 
 		# Similar to the VerboseLogging property. If set to _TRUE_, then information about each file/directory
 		# extracted in an untar method call is logged to LastErrorText (or LastErrorXml / LastErrorHtml). The
 		# default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UntarDebugLog(newval) end
 
 		# If _TRUE_, then discard all path information when untarring. This causes all files to be untarred
 		# into a single directory. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UntarDiscardPaths() end
 
 		# If _TRUE_, then discard all path information when untarring. This causes all files to be untarred
 		# into a single directory. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UntarDiscardPaths(newval) end
 
 		# The directory path where files are extracted when untarring. The default value is ".", meaning that
@@ -732,7 +732,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -742,21 +742,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -832,7 +832,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDirRoot(dirPath)
 			# ...
 		end
@@ -852,7 +852,7 @@ module Chilkat
 		# @param rootPrefix [String]
 		# @param rootPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDirRoot2(rootPrefix, rootPath)
 			# ...
 		end
@@ -866,7 +866,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddFile(path)
 			# ...
 		end
@@ -882,7 +882,7 @@ module Chilkat
 		# @param dataPath [String]
 		# @param debPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateDeb(controlPath, dataPath, debPath)
 			# ...
 		end
@@ -898,7 +898,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetDirRoot(index, outStr)
 			# ...
 		end
@@ -926,7 +926,7 @@ module Chilkat
 		# @param tarPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ListXml(tarPath, outStr)
 			# ...
 		end
@@ -950,7 +950,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -964,7 +964,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -992,7 +992,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UntarBz2(tarPath)
 			# ...
 		end
@@ -1007,7 +1007,7 @@ module Chilkat
 		# @param matchPattern [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UntarFirstMatchingToMemory(tarFileBytes, matchPattern, outBytes)
 			# ...
 		end
@@ -1035,7 +1035,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UntarGz(tarPath)
 			# ...
 		end
@@ -1048,7 +1048,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UntarZ(tarPath)
 			# ...
 		end
@@ -1061,7 +1061,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyTar(tarPath)
 			# ...
 		end
@@ -1074,7 +1074,7 @@ module Chilkat
 		#
 		# @param tarPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteTar(tarPath)
 			# ...
 		end
@@ -1087,7 +1087,7 @@ module Chilkat
 		#
 		# @param bz2Path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteTarBz2(bz2Path)
 			# ...
 		end
@@ -1100,7 +1100,7 @@ module Chilkat
 		#
 		# @param gzPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteTarGz(gzPath)
 			# ...
 		end

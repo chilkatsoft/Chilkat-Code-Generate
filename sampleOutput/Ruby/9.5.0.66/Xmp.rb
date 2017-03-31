@@ -165,7 +165,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -185,7 +185,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -219,13 +219,13 @@ module Chilkat
 		# Determines whether structures are stored with rdf:parseType="Resource", or within an
 		# "rdf:Description" sub-node.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_StructInnerDescrip() end
 
 		# Determines whether structures are stored with rdf:parseType="Resource", or within an
 		# "rdf:Description" sub-node.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_StructInnerDescrip(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -235,7 +235,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -245,21 +245,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -286,7 +286,7 @@ module Chilkat
 		# @param propName [String]
 		# @param values [CkStringArray]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddArray(xml, arrType, propName, values)
 			# ...
 		end
@@ -319,7 +319,7 @@ module Chilkat
 		# @param propName [String]
 		# @param propVal [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AddSimpleDate(iXml, propName, propVal)
 			# ...
@@ -336,7 +336,7 @@ module Chilkat
 		# @param propName [String]
 		# @param propVal [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddSimpleInt(iXml, propName, propVal)
 			# ...
 		end
@@ -352,7 +352,7 @@ module Chilkat
 		# @param propName [String]
 		# @param propVal [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddSimpleStr(iXml, propName, propVal)
 			# ...
 		end
@@ -370,7 +370,7 @@ module Chilkat
 		# @param propName [String]
 		# @param propValue [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddStructProp(iChilkatXml, structName, propName, propValue)
 			# ...
 		end
@@ -385,7 +385,7 @@ module Chilkat
 		#
 		# @param iXml [CkXml]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Append(iXml)
 			# ...
 		end
@@ -399,7 +399,7 @@ module Chilkat
 		# @param d [Object]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def DateToString(d, outStr)
 			# ...
@@ -467,7 +467,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetSimpleDate(iXml, propName)
 			# ...
@@ -497,7 +497,7 @@ module Chilkat
 		# @param propName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSimpleStr(iXml, propName, outStr)
 			# ...
 		end
@@ -542,7 +542,7 @@ module Chilkat
 		# @param propName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetStructValue(iXml, structName, propName, outStr)
 			# ...
 		end
@@ -569,7 +569,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadAppFile(filename)
 			# ...
 		end
@@ -582,7 +582,7 @@ module Chilkat
 		# @param fileData [CkByteData]
 		# @param ext [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFromBuffer(fileData, ext)
 			# ...
 		end
@@ -605,7 +605,7 @@ module Chilkat
 		# to rewrite the JPG or TIFF file with the XMP metadata removed.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveAllEmbedded()
 			# ...
 		end
@@ -618,7 +618,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveArray(iXml, propName)
 			# ...
 		end
@@ -631,7 +631,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveEmbedded(index)
 			# ...
 		end
@@ -656,7 +656,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param propName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveSimple(iXml, propName)
 			# ...
 		end
@@ -669,7 +669,7 @@ module Chilkat
 		# @param iXml [CkXml]
 		# @param structName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveStruct(iXml, structName)
 			# ...
 		end
@@ -683,7 +683,7 @@ module Chilkat
 		# @param structName [String]
 		# @param propName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveStructProp(iXml, structName, propName)
 			# ...
 		end
@@ -696,7 +696,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveAppFile(filename)
 			# ...
 		end
@@ -708,7 +708,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -720,7 +720,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveToBuffer(outBytes)
 			# ...
 		end
@@ -733,7 +733,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def StringToDate(str)
 			# ...
@@ -748,7 +748,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

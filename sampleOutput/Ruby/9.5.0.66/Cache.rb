@@ -176,7 +176,7 @@ module Chilkat
 
 		# _TRUE_ if the LastExpirationFetched is before the current date/time. Otherwise _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastHitExpired() end
 
 		# The key of the last item fetched from cache. (For web pages, the key is typically the canonicalized
@@ -208,7 +208,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -228,7 +228,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -297,7 +297,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -307,21 +307,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -387,7 +387,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteFromCache(key)
 			# ...
 		end
@@ -443,7 +443,7 @@ module Chilkat
 		# @param key [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchFromCache(key, outBytes)
 			# ...
 		end
@@ -460,7 +460,7 @@ module Chilkat
 		# @param key [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchText(key, outStr)
 			# ...
 		end
@@ -489,7 +489,7 @@ module Chilkat
 		# @param key [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEtag(key, outStr)
 			# ...
 		end
@@ -513,7 +513,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetExpiration(key)
 			# ...
@@ -539,7 +539,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetExpirationStr(url, outStr)
 			# ...
 		end
@@ -564,7 +564,7 @@ module Chilkat
 		# @param key [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFilename(key, outStr)
 			# ...
 		end
@@ -589,7 +589,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRoot(index, outStr)
 			# ...
 		end
@@ -613,7 +613,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsCached(key)
 			# ...
 		end
@@ -625,7 +625,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -643,7 +643,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemTextData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveText(key, expireDateTime, eTag, itemTextData)
 			# ...
@@ -659,7 +659,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemTextData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveTextDt(key, expireDateTime, eTag, itemTextData)
 			# ...
 		end
@@ -675,7 +675,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemTextData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveTextNoExpire(key, eTag, itemTextData)
 			# ...
 		end
@@ -690,7 +690,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemTextData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveTextStr(key, expireDateTime, eTag, itemTextData)
 			# ...
 		end
@@ -712,7 +712,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveToCache(key, expireDateTime, eTag, itemData)
 			# ...
@@ -728,7 +728,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveToCacheDt(key, expireDateTime, eTag, itemData)
 			# ...
 		end
@@ -744,7 +744,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveToCacheNoExpire(key, eTag, itemData)
 			# ...
 		end
@@ -759,7 +759,7 @@ module Chilkat
 		# @param eTag [String]
 		# @param itemData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveToCacheStr(key, expireDateTime, eTag, itemData)
 			# ...
 		end
@@ -772,7 +772,7 @@ module Chilkat
 		# @param key [String]
 		# @param expireDateTime [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def UpdateExpiration(key, expireDateTime)
 			# ...
@@ -786,7 +786,7 @@ module Chilkat
 		# @param key [String]
 		# @param expireDateTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateExpirationDt(key, expireDateTime)
 			# ...
 		end
@@ -799,7 +799,7 @@ module Chilkat
 		# @param key [String]
 		# @param expireDateTime [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateExpirationStr(key, expireDateTime)
 			# ...
 		end

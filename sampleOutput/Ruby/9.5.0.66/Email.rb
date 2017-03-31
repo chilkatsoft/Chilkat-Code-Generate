@@ -250,7 +250,7 @@ module Chilkat
 
 		# _TRUE_ if the email arrived encrypted and was successfully decrypted, otherwise _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Decrypted() end
 
 		# The date/time from the "Date" header in UTC/GMT standard time. Use the LocalDate property to get the
@@ -611,7 +611,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -631,7 +631,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -815,7 +815,7 @@ module Chilkat
 		# filename of the attachment (or related item) within the email object is updated and can be retrieved
 		# by the program to determine the actual file(s) created.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_OverwriteExisting() end
 
 		# When _TRUE_ (the default) the methods to save email attachments and related items will overwrite
@@ -824,7 +824,7 @@ module Chilkat
 		# filename of the attachment (or related item) within the email object is updated and can be retrieved
 		# by the program to determine the actual file(s) created.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_OverwriteExisting(newval) end
 
 		# When an email is sent encrypted (using PKCS7 public-key encryption), this selects the underlying
@@ -964,23 +964,23 @@ module Chilkat
 		# If _TRUE_, then header fields added via the AddHeaderField or AddHeaderField2 methods are prepended
 		# to the top of the header as opposed to appended to the bottom. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PrependHeaders() end
 
 		# If _TRUE_, then header fields added via the AddHeaderField or AddHeaderField2 methods are prepended
 		# to the top of the header as opposed to appended to the bottom. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PrependHeaders(newval) end
 
 		# _TRUE_ if this email was originally received with encryption, otherwise _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ReceivedEncrypted() end
 
 		# _TRUE_ if this email was originally received with a digital signature, otherwise _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ReceivedSigned() end
 
 		# Sets the "Reply-To" header field to the specified email address.
@@ -1008,23 +1008,23 @@ module Chilkat
 		# Set to _TRUE_ if you want the email to request a return-receipt when received by the recipient. The
 		# default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ReturnReceipt() end
 
 		# Set to _TRUE_ if you want the email to request a return-receipt when received by the recipient. The
 		# default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ReturnReceipt(newval) end
 
 		# Set to _TRUE_ if this email should be sent encrypted.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SendEncrypted() end
 
 		# Set to _TRUE_ if this email should be sent encrypted.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SendEncrypted(newval) end
 
 		# The sender's address for this email message.
@@ -1099,18 +1099,18 @@ module Chilkat
 
 		# Set to _TRUE_ if this email should be sent with a digital signature.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SendSigned() end
 
 		# Set to _TRUE_ if this email should be sent with a digital signature.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SendSigned(newval) end
 
 		# _TRUE_ if the email was received with one or more digital signatures, and if all the signatures were
 		# validated indicating that the email was not altered. Otherwise this property is set to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SignaturesValid() end
 
 		# If the email was received digitally signed, this property contains the fields of the cert's
@@ -1218,14 +1218,14 @@ module Chilkat
 		# links to the related files (images and style sheets) that were unpacked to the filesystem. Otherwise
 		# absolute paths are used. The default value is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UnpackUseRelPaths() end
 
 		# Applies to the UnpackHtml method. If _TRUE_, then relative paths are used within the HTML for the
 		# links to the related files (images and style sheets) that were unpacked to the filesystem. Otherwise
 		# absolute paths are used. The default value is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UnpackUseRelPaths(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1235,7 +1235,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1245,21 +1245,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1284,7 +1284,7 @@ module Chilkat
 		# @param binData [CkBinData]
 		# @param contentType [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddAttachmentBd(filename, binData, contentType)
 			# ...
 		end
@@ -1312,7 +1312,7 @@ module Chilkat
 		# @param friendlyName [String]
 		# @param emailAddress [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddBcc(friendlyName, emailAddress)
 			# ...
 		end
@@ -1325,7 +1325,7 @@ module Chilkat
 		# @param friendlyName [String]
 		# @param emailAddress [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddCC(friendlyName, emailAddress)
 			# ...
 		end
@@ -1338,7 +1338,7 @@ module Chilkat
 		# @param fileName [String]
 		# @param content [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDataAttachment(fileName, content)
 			# ...
 		end
@@ -1353,7 +1353,7 @@ module Chilkat
 		# @param content [CkByteData]
 		# @param contentType [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDataAttachment2(fileName, content, contentType)
 			# ...
 		end
@@ -1375,7 +1375,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddEncryptCert(cert)
 			# ...
 		end
@@ -1389,7 +1389,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStrContentType [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddFileAttachment(path, outStrContentType)
 			# ...
 		end
@@ -1415,7 +1415,7 @@ module Chilkat
 		# @param path [String]
 		# @param contentType [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddFileAttachment2(path, contentType)
 			# ...
 		end
@@ -1463,7 +1463,7 @@ module Chilkat
 		#
 		# @param body [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddHtmlAlternativeBody(body)
 			# ...
 		end
@@ -1503,7 +1503,7 @@ module Chilkat
 		# @param icalContent [String]
 		# @param methodName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddiCalendarAlternativeBody(icalContent, methodName)
 			# ...
 		end
@@ -1516,7 +1516,7 @@ module Chilkat
 		#
 		# @param commaSeparatedAddresses [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddMultipleBcc(commaSeparatedAddresses)
 			# ...
 		end
@@ -1529,7 +1529,7 @@ module Chilkat
 		#
 		# @param commaSeparatedAddresses [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddMultipleCC(commaSeparatedAddresses)
 			# ...
 		end
@@ -1542,7 +1542,7 @@ module Chilkat
 		#
 		# @param commaSeparatedAddresses [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddMultipleTo(commaSeparatedAddresses)
 			# ...
 		end
@@ -1561,7 +1561,7 @@ module Chilkat
 		# @param pfxBytes [CkByteData]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceData(pfxBytes, pfxPassword)
 			# ...
 		end
@@ -1580,7 +1580,7 @@ module Chilkat
 		# @param pfxFilePath [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceFile(pfxFilePath, pfxPassword)
 			# ...
 		end
@@ -1594,7 +1594,7 @@ module Chilkat
 		#
 		# @param body [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPlainTextAlternativeBody(body)
 			# ...
 		end
@@ -1609,7 +1609,7 @@ module Chilkat
 		# @param binData [CkBinData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddRelatedBd(filename, binData, outStr)
 			# ...
 		end
@@ -1637,7 +1637,7 @@ module Chilkat
 		# @param binData [CkBinData]
 		# @param fileNameInHtml [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddRelatedBd2(binData, fileNameInHtml)
 			# ...
 		end
@@ -1653,7 +1653,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddRelatedData(fileName, inData, outStr)
 			# ...
 		end
@@ -1718,7 +1718,7 @@ module Chilkat
 		# @param szBytes [Fixnum]
 		# @param outStrContentId [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddRelatedDataP(nameInHtml, pBytes, szBytes, outStrContentId)
 			# ...
 		end
@@ -1749,7 +1749,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStrContentID [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddRelatedFile(path, outStrContentID)
 			# ...
 		end
@@ -1787,7 +1787,7 @@ module Chilkat
 		# @param filenameOnDisk [String]
 		# @param filenameInHtml [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddRelatedFile2(filenameOnDisk, filenameInHtml)
 			# ...
 		end
@@ -1821,7 +1821,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outCid [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddRelatedString(nameInHtml, str, charset, outCid)
 			# ...
 		end
@@ -1872,7 +1872,7 @@ module Chilkat
 		# @param path [String]
 		# @param content [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddStringAttachment(path, content)
 			# ...
 		end
@@ -1893,7 +1893,7 @@ module Chilkat
 		# @param content [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddStringAttachment2(path, content, charset)
 			# ...
 		end
@@ -1907,7 +1907,7 @@ module Chilkat
 		# @param friendlyName [String]
 		# @param emailAddress [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddTo(friendlyName, emailAddress)
 			# ...
 		end
@@ -1920,7 +1920,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AesDecrypt(password)
 			# ...
 		end
@@ -1937,7 +1937,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AesEncrypt(password)
 			# ...
 		end
@@ -1962,9 +1962,9 @@ module Chilkat
 		# @param prefix [String]
 		# @param saveDir [String]
 		# @param urlPath [String]
-		# @param cleanFiles [TrueClass, FalseClass]
+		# @param cleanFiles [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AspUnpack(prefix, saveDir, urlPath, cleanFiles)
 			# ...
 		end
@@ -1977,10 +1977,10 @@ module Chilkat
 		# @param prefix [String]
 		# @param saveDir [String]
 		# @param urlPath [String]
-		# @param cleanFiles [TrueClass, FalseClass]
+		# @param cleanFiles [Boolean]
 		# @param outHtml [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AspUnpack2(prefix, saveDir, urlPath, cleanFiles, outHtml)
 			# ...
 		end
@@ -1994,7 +1994,7 @@ module Chilkat
 		#
 		# @param mimeBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AttachMessage(mimeBytes)
 			# ...
 		end
@@ -2008,7 +2008,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outEncodedStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BEncodeBytes(inData, charset, outEncodedStr)
 			# ...
 		end
@@ -2036,7 +2036,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outEncodedStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BEncodeString(str, charset, outEncodedStr)
 			# ...
 		end
@@ -2125,10 +2125,10 @@ module Chilkat
 		# 16-byte MD5 hash is folded to 8 bytes with an XOR to produce a shorter key.
 		#
 		# @param encoding [String]
-		# @param bFold [TrueClass, FalseClass]
+		# @param bFold [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def ComputeGlobalKey(encoding, bFold, outStr)
 			# ...
@@ -2149,7 +2149,7 @@ module Chilkat
 		# 16-byte MD5 hash is folded to 8 bytes with an XOR to produce a shorter key.
 		#
 		# @param encoding [String]
-		# @param bFold [TrueClass, FalseClass]
+		# @param bFold [Boolean]
 		#
 		# @return [String]
 		# @deprecated This method has been deprecated. Do not use it.
@@ -2190,10 +2190,10 @@ module Chilkat
 		# with an XOR to produce a shorter key.
 		#
 		# @param encoding [String]
-		# @param bFold [TrueClass, FalseClass]
+		# @param bFold [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ComputeGlobalKey2(encoding, bFold, outStr)
 			# ...
 		end
@@ -2231,7 +2231,7 @@ module Chilkat
 		# with an XOR to produce a shorter key.
 		#
 		# @param encoding [String]
-		# @param bFold [TrueClass, FalseClass]
+		# @param bFold [Boolean]
 		#
 		# @return [String]
 		def computeGlobalKey2(encoding, bFold)
@@ -2246,7 +2246,7 @@ module Chilkat
 		#
 		# @param humanReadableMessage [String]
 		# @param xmlStatusFields [String]
-		# @param bHeaderOnly [TrueClass, FalseClass]
+		# @param bHeaderOnly [Boolean]
 		#
 		# @return [CkEmail]
 		def CreateDsn(humanReadableMessage, xmlStatusFields, bHeaderOnly)
@@ -2274,7 +2274,7 @@ module Chilkat
 		#
 		# @param humanReadableMessage [String]
 		# @param xmlStatusFields [String]
-		# @param bHeaderOnly [TrueClass, FalseClass]
+		# @param bHeaderOnly [Boolean]
 		#
 		# @return [CkEmail]
 		def CreateMdn(humanReadableMessage, xmlStatusFields, bHeaderOnly)
@@ -2307,7 +2307,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param outPath [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateTempMht(inFilename, outPath)
 			# ...
 		end
@@ -2373,7 +2373,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DropSingleAttachment(index)
 			# ...
 		end
@@ -2416,7 +2416,7 @@ module Chilkat
 		#
 		# @param outStrFilename [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GenerateFilename(outStrFilename)
 			# ...
 		end
@@ -2443,7 +2443,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrBody [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAlternativeBody(index, outStrBody)
 			# ...
 		end
@@ -2470,7 +2470,7 @@ module Chilkat
 		# @param contentType [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAlternativeBodyByContentType(contentType, outStr)
 			# ...
 		end
@@ -2496,7 +2496,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrContentType [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAlternativeContentType(index, outStrContentType)
 			# ...
 		end
@@ -2523,7 +2523,7 @@ module Chilkat
 		# @param fieldName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAltHeaderField(index, fieldName, outStr)
 			# ...
 		end
@@ -2572,7 +2572,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachedMessageAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
@@ -2629,7 +2629,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachedMessageFilename(index, outStr)
 			# ...
 		end
@@ -2679,7 +2679,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachmentAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
@@ -2706,7 +2706,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrContentID [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachmentContentID(index, outStrContentID)
 			# ...
 		end
@@ -2731,7 +2731,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrContentType [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachmentContentType(index, outStrContentType)
 			# ...
 		end
@@ -2756,7 +2756,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachmentData(index, outData)
 			# ...
 		end
@@ -2769,7 +2769,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrFilename [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachmentFilename(index, outStrFilename)
 			# ...
 		end
@@ -2795,7 +2795,7 @@ module Chilkat
 		# @param fieldName [String]
 		# @param outFieldValue [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachmentHeader(attachIndex, fieldName, outFieldValue)
 			# ...
 		end
@@ -2836,7 +2836,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachmentString(index, charset, outStr)
 			# ...
 		end
@@ -2864,7 +2864,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStrData [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttachmentStringCrLf(index, charset, outStrData)
 			# ...
 		end
@@ -2890,7 +2890,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBcc(index, outStr)
 			# ...
 		end
@@ -2915,7 +2915,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBccAddr(index, outStr)
 			# ...
 		end
@@ -2940,7 +2940,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBccName(index, outStr)
 			# ...
 		end
@@ -2965,7 +2965,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCC(index, outStr)
 			# ...
 		end
@@ -2990,7 +2990,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCcAddr(index, outStr)
 			# ...
 		end
@@ -3015,7 +3015,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCcName(index, outStr)
 			# ...
 		end
@@ -3059,7 +3059,7 @@ module Chilkat
 		# @param fieldName [String]
 		# @param outFieldValue [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetDeliveryStatusInfo(fieldName, outFieldValue)
 			# ...
 		end
@@ -3165,7 +3165,7 @@ module Chilkat
 		# @param path [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileContent(path, outData)
 			# ...
 		end
@@ -3178,7 +3178,7 @@ module Chilkat
 		# @param fieldName [String]
 		# @param outStrFieldData [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderField(fieldName, outStrFieldData)
 			# ...
 		end
@@ -3207,7 +3207,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrFieldName [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderFieldName(index, outStrFieldName)
 			# ...
 		end
@@ -3240,7 +3240,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrFieldValue [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderFieldValue(index, outStrFieldValue)
 			# ...
 		end
@@ -3268,7 +3268,7 @@ module Chilkat
 		#
 		# @param outStrBody [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHtmlBody(outStrBody)
 			# ...
 		end
@@ -3336,7 +3336,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMbHeaderField(fieldName, charset, outBytes)
 			# ...
 		end
@@ -3352,7 +3352,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMbHtmlBody(charset, outData)
 			# ...
 		end
@@ -3366,7 +3366,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMbPlainTextBody(charset, outData)
 			# ...
 		end
@@ -3379,7 +3379,7 @@ module Chilkat
 		#
 		# @param outStrMime [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMime(outStrMime)
 			# ...
 		end
@@ -3404,7 +3404,7 @@ module Chilkat
 		#
 		# @param bindat [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMimeBd(bindat)
 			# ...
 		end
@@ -3416,7 +3416,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMimeBinary(outBytes)
 			# ...
 		end
@@ -3429,7 +3429,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMimeSb(sb)
 			# ...
 		end
@@ -3449,11 +3449,11 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		# @param contentType [String]
-		# @param inlineOnly [TrueClass, FalseClass]
-		# @param excludeAttachments [TrueClass, FalseClass]
+		# @param inlineOnly [Boolean]
+		# @param excludeAttachments [Boolean]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetNthBinaryPartOfType(index, contentType, inlineOnly, excludeAttachments, outBytes)
 			# ...
 		end
@@ -3473,11 +3473,11 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		# @param contentType [String]
-		# @param inlineOnly [TrueClass, FalseClass]
-		# @param excludeAttachments [TrueClass, FalseClass]
+		# @param inlineOnly [Boolean]
+		# @param excludeAttachments [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetNthTextPartOfType(index, contentType, inlineOnly, excludeAttachments, outStr)
 			# ...
 		end
@@ -3497,8 +3497,8 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		# @param contentType [String]
-		# @param inlineOnly [TrueClass, FalseClass]
-		# @param excludeAttachments [TrueClass, FalseClass]
+		# @param inlineOnly [Boolean]
+		# @param excludeAttachments [Boolean]
 		#
 		# @return [String]
 		def getNthTextPartOfType(index, contentType, inlineOnly, excludeAttachments)
@@ -3518,8 +3518,8 @@ module Chilkat
 		# are the attachments will (of course) be missing.
 		#
 		# @param contentType [String]
-		# @param inlineOnly [TrueClass, FalseClass]
-		# @param excludeAttachments [TrueClass, FalseClass]
+		# @param inlineOnly [Boolean]
+		# @param excludeAttachments [Boolean]
 		#
 		# @return [Fixnum]
 		def GetNumPartsOfType(contentType, inlineOnly, excludeAttachments)
@@ -3533,7 +3533,7 @@ module Chilkat
 		#
 		# @param outStrBody [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPlainTextBody(outStrBody)
 			# ...
 		end
@@ -3559,7 +3559,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRelatedAttr(index, fieldName, attrName, outStr)
 			# ...
 		end
@@ -3587,7 +3587,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrContentID [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRelatedContentID(index, outStrContentID)
 			# ...
 		end
@@ -3614,7 +3614,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRelatedContentLocation(index, outStr)
 			# ...
 		end
@@ -3640,7 +3640,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrContentType [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRelatedContentType(index, outStrContentType)
 			# ...
 		end
@@ -3666,7 +3666,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outBuffer [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRelatedData(index, outBuffer)
 			# ...
 		end
@@ -3680,7 +3680,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrFilename [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRelatedFilename(index, outStrFilename)
 			# ...
 		end
@@ -3708,7 +3708,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStrData [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRelatedString(index, charset, outStrData)
 			# ...
 		end
@@ -3737,7 +3737,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRelatedStringCrLf(index, charset, outStr)
 			# ...
 		end
@@ -3764,7 +3764,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStrPattern [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReplacePattern(index, outStrPattern)
 			# ...
 		end
@@ -3790,7 +3790,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReplaceString(index, outStr)
 			# ...
 		end
@@ -3817,7 +3817,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReplaceString2(pattern, outStr)
 			# ...
 		end
@@ -3851,7 +3851,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReport(index, outStr)
 			# ...
 		end
@@ -3918,7 +3918,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetTo(index, outStr)
 			# ...
 		end
@@ -3943,7 +3943,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetToAddr(index, outStr)
 			# ...
 		end
@@ -3968,7 +3968,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetToName(index, outStr)
 			# ...
 		end
@@ -3992,7 +3992,7 @@ module Chilkat
 		#
 		# @param outStrXml [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetXml(outStrXml)
 			# ...
 		end
@@ -4017,9 +4017,9 @@ module Chilkat
 		#
 		# @param fieldName [String]
 		# @param valuePattern [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasHeaderMatching(fieldName, valuePattern, caseSensitive)
 			# ...
 		end
@@ -4030,7 +4030,7 @@ module Chilkat
 		# Returns true if the email has an HTML body.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasHtmlBody()
 			# ...
 		end
@@ -4041,7 +4041,7 @@ module Chilkat
 		# Returns true if the email has a plain-text body.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasPlainTextBody()
 			# ...
 		end
@@ -4052,7 +4052,7 @@ module Chilkat
 		# Returns true if the email is a multipart/report email.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsMultipartReport()
 			# ...
 		end
@@ -4065,10 +4065,10 @@ module Chilkat
 		# is specified by ARG3.
 		#
 		# @param filePath [String]
-		# @param isHtml [TrueClass, FalseClass]
+		# @param isHtml [Boolean]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadBodyFromFile(filePath, isHtml, charset)
 			# ...
 		end
@@ -4080,7 +4080,7 @@ module Chilkat
 		#
 		# @param mimePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadEml(mimePath)
 			# ...
 		end
@@ -4092,7 +4092,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -4104,7 +4104,7 @@ module Chilkat
 		#
 		# @param xmlPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXml(xmlPath)
 			# ...
 		end
@@ -4117,7 +4117,7 @@ module Chilkat
 		#
 		# @param xmlStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXmlString(xmlStr)
 			# ...
 		end
@@ -4131,7 +4131,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outEncodedStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QEncodeBytes(inData, charset, outEncodedStr)
 			# ...
 		end
@@ -4159,7 +4159,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outEncodedStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QEncodeString(str, charset, outEncodedStr)
 			# ...
 		end
@@ -4260,7 +4260,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveAllAttachments(dirPath)
 			# ...
 		end
@@ -4274,7 +4274,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveAttachedFile(index, dirPath)
 			# ...
 		end
@@ -4286,7 +4286,7 @@ module Chilkat
 		#
 		# @param emlFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveEml(emlFilePath)
 			# ...
 		end
@@ -4298,7 +4298,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -4313,7 +4313,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveRelatedItem(index, dirPath)
 			# ...
 		end
@@ -4325,7 +4325,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveXml(path)
 			# ...
 		end
@@ -4340,7 +4340,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAttachmentCharset(index, charset)
 			# ...
 		end
@@ -4354,7 +4354,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param disposition [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAttachmentDisposition(index, disposition)
 			# ...
 		end
@@ -4367,7 +4367,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAttachmentFilename(index, filename)
 			# ...
 		end
@@ -4384,7 +4384,7 @@ module Chilkat
 		# @param disposition [String]
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBinaryBody(byteData, contentType, disposition, filename)
 			# ...
 		end
@@ -4402,7 +4402,7 @@ module Chilkat
 		#
 		# @param csp [CkCsp]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCSP(csp)
 			# ...
 		end
@@ -4417,7 +4417,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDecryptCert(cert)
 			# ...
 		end
@@ -4436,7 +4436,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param key [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDecryptCert2(cert, key)
 			# ...
 		end
@@ -4448,7 +4448,7 @@ module Chilkat
 		#
 		# @param dt [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDt(dt)
 			# ...
 		end
@@ -4494,7 +4494,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetEncryptCert(cert)
 			# ...
 		end
@@ -4507,7 +4507,7 @@ module Chilkat
 		#
 		# @param bindat [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromMimeBd(bindat)
 			# ...
 		end
@@ -4522,7 +4522,7 @@ module Chilkat
 		#
 		# @param mimeBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromMimeBytes(mimeBytes)
 			# ...
 		end
@@ -4539,7 +4539,7 @@ module Chilkat
 		# @param mimeBytes [CkByteData]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromMimeBytes2(mimeBytes, charset)
 			# ...
 		end
@@ -4552,7 +4552,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromMimeSb(sb)
 			# ...
 		end
@@ -4565,7 +4565,7 @@ module Chilkat
 		#
 		# @param mimeText [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromMimeText(mimeText)
 			# ...
 		end
@@ -4577,7 +4577,7 @@ module Chilkat
 		#
 		# @param xmlStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromXmlText(xmlStr)
 			# ...
 		end
@@ -4604,7 +4604,7 @@ module Chilkat
 		# @param charset [String]
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMbHtmlBody(charset, inData)
 			# ...
 		end
@@ -4619,7 +4619,7 @@ module Chilkat
 		# @param charset [String]
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMbPlainTextBody(charset, inData)
 			# ...
 		end
@@ -4632,7 +4632,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetRelatedFilename(index, path)
 			# ...
 		end
@@ -4653,7 +4653,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param replaceString [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetReplacePattern(pattern, replaceString)
 			# ...
 		end
@@ -4667,7 +4667,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSigningCert(cert)
 			# ...
 		end
@@ -4687,7 +4687,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param key [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSigningCert2(cert, key)
 			# ...
 		end
@@ -4714,7 +4714,7 @@ module Chilkat
 		#
 		# @param e [CkEmail]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UidlEquals(e)
 			# ...
 		end
@@ -4729,7 +4729,7 @@ module Chilkat
 		# @param htmlFilename [String]
 		# @param partsSubdir [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnpackHtml(unpackDir, htmlFilename, partsSubdir)
 			# ...
 		end
@@ -4755,7 +4755,7 @@ module Chilkat
 		# email contains multiple Zip file attachments, each Zip is expanded and replaced with the contents.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnzipAttachments()
 			# ...
 		end
@@ -4771,7 +4771,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -4784,7 +4784,7 @@ module Chilkat
 		#
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ZipAttachments(zipFilename)
 			# ...
 		end

@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# _TRUE_ if the stream supports reading. Otherwise _FALSE_. 
@@ -28,7 +28,7 @@ module Chilkat
 		# at a particular moment in time.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_CanRead() end
 
 		# _TRUE_ if the stream supports writing. Otherwise _FALSE_.
@@ -39,14 +39,14 @@ module Chilkat
 		# at a particular moment in time.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_CanWrite() end
 
 		# _TRUE_ if it is known for sure that data is ready and waiting to be read. _FALSE_ if it is not known
 		# for sure (it may be that data is immediately available, but reading the stream with a ReadTimeoutMs
 		# of 0, which is to poll the stream, is the way to find out).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_DataAvailable() end
 
 		# If set to a file path, causes each Chilkat method or property call to automatically append it's
@@ -162,12 +162,12 @@ module Chilkat
 		# _TRUE_ if the end-of-stream has already been reached. When the stream has already ended, all calls
 		# to Read* methods will return _FALSE_ with the ReadFailReason set to 3 (already at end-of-stream).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EndOfStream() end
 
 		# _TRUE_ if the stream is closed for writing. Once closed, no more data may be written to the stream.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsWriteClosed() end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -241,7 +241,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -261,7 +261,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -494,7 +494,7 @@ module Chilkat
 		# Also, if _TRUE_, then include the BOM when writing a string via the WriteString method. The default
 		# value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_StringBom() end
 
 		# If _TRUE_, then include the BOM when creating a string source via SetSourceString where the charset
@@ -502,7 +502,7 @@ module Chilkat
 		# Also, if _TRUE_, then include the BOM when writing a string via the WriteString method. The default
 		# value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_StringBom(newval) end
 
 		# Indicates the expected character encoding, such as utf-8, windows-1256, utf-16, etc. for methods
@@ -550,7 +550,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -560,21 +560,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -626,7 +626,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadBytes(outBytes)
 			# ...
 		end
@@ -641,7 +641,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadBytesENC(encoding, outStr)
 			# ...
 		end
@@ -669,7 +669,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadNBytes(numBytes, outBytes)
 			# ...
 		end
@@ -685,7 +685,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadNBytesENC(numBytes, encoding, outStr)
 			# ...
 		end
@@ -715,7 +715,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadString(outStr)
 			# ...
 		end
@@ -749,7 +749,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadToCRLF(outStr)
 			# ...
 		end
@@ -790,7 +790,7 @@ module Chilkat
 		# @param matchStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadUntilMatch(matchStr, outStr)
 			# ...
 		end
@@ -840,7 +840,7 @@ module Chilkat
 		# all data has been written to the sink.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RunStream()
 			# ...
 		end
@@ -852,7 +852,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -865,7 +865,7 @@ module Chilkat
 		#
 		# @param strm [CkStream]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSinkStream(strm)
 			# ...
 		end
@@ -877,7 +877,7 @@ module Chilkat
 		#
 		# @param sourceData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSourceBytes(sourceData)
 			# ...
 		end
@@ -890,7 +890,7 @@ module Chilkat
 		#
 		# @param strm [CkStream]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSourceStream(strm)
 			# ...
 		end
@@ -904,7 +904,7 @@ module Chilkat
 		# @param srcStr [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSourceString(srcStr, charset)
 			# ...
 		end
@@ -919,7 +919,7 @@ module Chilkat
 		# @param propertyName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ToDecimalStr(propertyName, outStr)
 			# ...
 		end
@@ -945,7 +945,7 @@ module Chilkat
 		#
 		# @param byteVal [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteByte(byteVal)
 			# ...
 		end
@@ -957,7 +957,7 @@ module Chilkat
 		#
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteBytes(byteData)
 			# ...
 		end
@@ -971,7 +971,7 @@ module Chilkat
 		# @param byteData [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteBytesENC(byteData, encoding)
 			# ...
 		end
@@ -982,7 +982,7 @@ module Chilkat
 		# Indicates that no more data will be written to the stream.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteClose()
 			# ...
 		end
@@ -996,7 +996,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteString(str)
 			# ...
 		end

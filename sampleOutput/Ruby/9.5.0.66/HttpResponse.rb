@@ -268,7 +268,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -288,7 +288,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -359,7 +359,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -369,21 +369,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -405,7 +405,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBodyBd(binData)
 			# ...
 		end
@@ -417,7 +417,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBodySb(sb)
 			# ...
 		end
@@ -431,7 +431,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCookieDomain(index, outStr)
 			# ...
 		end
@@ -457,7 +457,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetCookieExpires(index)
 			# ...
@@ -472,7 +472,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCookieExpiresStr(index, outStr)
 			# ...
 		end
@@ -499,7 +499,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCookieName(index, outStr)
 			# ...
 		end
@@ -526,7 +526,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCookiePath(index, outStr)
 			# ...
 		end
@@ -553,7 +553,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCookieValue(index, outStr)
 			# ...
 		end
@@ -579,7 +579,7 @@ module Chilkat
 		# @param fieldName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderField(fieldName, outStr)
 			# ...
 		end
@@ -606,7 +606,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderFieldAttr(fieldName, attrName, outStr)
 			# ...
 		end
@@ -634,7 +634,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderName(index, outStr)
 			# ...
 		end
@@ -661,7 +661,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderValue(index, outStr)
 			# ...
 		end
@@ -688,7 +688,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -700,7 +700,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveBodyBinary(path)
 			# ...
 		end
@@ -716,10 +716,10 @@ module Chilkat
 		# To save the HTTP response body exactly as-is (with no line-ending
 		# manipulation), then call SaveBodyBinary.
 		#
-		# @param bCrlf [TrueClass, FalseClass]
+		# @param bCrlf [Boolean]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveBodyText(bCrlf, path)
 			# ...
 		end
@@ -731,7 +731,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -750,7 +750,7 @@ module Chilkat
 		# @param paramName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UrlEncParamValue(encodedParamString, paramName, outStr)
 			# ...
 		end

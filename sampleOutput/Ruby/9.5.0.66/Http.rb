@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# The Accept header field to be automatically included with GET requests issued by QuickGet or
@@ -104,7 +104,7 @@ module Chilkat
 		# uncompressed content. The default value is _TRUE_, which means the server, if it chooses, may send a
 		# gzipped response.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AllowGzip() end
 
 		# Controls whether the "Accept-Encoding: gzip" header is added to HTTP requests sent via any method
@@ -113,33 +113,33 @@ module Chilkat
 		# uncompressed content. The default value is _TRUE_, which means the server, if it chooses, may send a
 		# gzipped response.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AllowGzip(newval) end
 
 		# If this property is set to _FALSE_, then no MIME header folding will be automatically applied to any
 		# request header. The default is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AllowHeaderFolding() end
 
 		# If this property is set to _FALSE_, then no MIME header folding will be automatically applied to any
 		# request header. The default is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AllowHeaderFolding(newval) end
 
 		# If set to true, the "Host" header field will automatically be added to the request header for any
 		# QuickGet or QuickGetStr method calls. The value of the Host header field is taken from the hostname
 		# part of the URL passed to QuickGet/QuickGetStr.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoAddHostHeader() end
 
 		# If set to true, the "Host" header field will automatically be added to the request header for any
 		# QuickGet or QuickGetStr method calls. The value of the Host header field is taken from the hostname
 		# part of the URL passed to QuickGet/QuickGetStr.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoAddHostHeader(newval) end
 
 		# The AWS Access Key to be used with the Amazon S3 methods listed below.
@@ -365,7 +365,7 @@ module Chilkat
 		# known in advance, then an application may set the appropriate property, such as NtlmAuth to _TRUE_
 		# so that the extra (internal) round-trip is not required.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_BasicAuth() end
 
 		# If HTTP basic authentication is needed, this property must be set to _TRUE_. The HTTP protocol
@@ -385,7 +385,7 @@ module Chilkat
 		# known in advance, then an application may set the appropriate property, such as NtlmAuth to _TRUE_
 		# so that the extra (internal) round-trip is not required.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_BasicAuth(newval) end
 
 		# When a background-enabled method is run asynchronously in a background thread, the last-error
@@ -480,7 +480,7 @@ module Chilkat
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_BgTaskFinished() end
 
@@ -495,7 +495,7 @@ module Chilkat
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_BgTaskRunning() end
 
@@ -506,7 +506,7 @@ module Chilkat
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_BgTaskSuccess() end
 
@@ -790,13 +790,13 @@ module Chilkat
 		# Setting this property to _TRUE_ causes the HTTP component to use digest authentication. The default
 		# value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_DigestAuth() end
 
 		# Setting this property to _TRUE_ causes the HTTP component to use digest authentication. The default
 		# value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_DigestAuth(newval) end
 
 		# If the KeepEventLog property is set to _TRUE_, then this property will contain the number of events
@@ -819,7 +819,7 @@ module Chilkat
 		# cache but is not fresh, the HTTP component will issue a revalidate request and update the cache
 		# appropriately according to the response.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_FetchFromCache() end
 
 		# Set to true if pages should be fetched from cache when possible. Only HTTP GET requests are cached.
@@ -828,7 +828,7 @@ module Chilkat
 		# cache but is not fresh, the HTTP component will issue a revalidate request and update the cache
 		# appropriately according to the response.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_FetchFromCache(newval) end
 
 		# If an HTTP GET was redirected (as indicated by the WasRedirected property), this property will
@@ -852,13 +852,13 @@ module Chilkat
 		# If true, then 301, 302, 303, and 307 redirects are automatically followed when calling QuickGet and
 		# QuickGetStr. FollowRedirects is true by default.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_FollowRedirects() end
 
 		# If true, then 301, 302, 303, and 307 redirects are automatically followed when calling QuickGet and
 		# QuickGetStr. FollowRedirects is true by default.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_FollowRedirects(newval) end
 
 		# The freshness algorithm to use when determining the freshness of a cached HTTP GET response. A value
@@ -914,7 +914,7 @@ module Chilkat
 		# The default
 		# value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IgnoreMustRevalidate() end
 
 		# Some HTTP responses contain a "Cache-Control: must-revalidate" header. If this is present, the
@@ -924,7 +924,7 @@ module Chilkat
 		# The default
 		# value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_IgnoreMustRevalidate(newval) end
 
 		# Some HTTP responses contain headers of various types that indicate that the page should not be
@@ -932,7 +932,7 @@ module Chilkat
 		# The default
 		# value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IgnoreNoCache() end
 
 		# Some HTTP responses contain headers of various types that indicate that the page should not be
@@ -940,7 +940,7 @@ module Chilkat
 		# The default
 		# value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_IgnoreNoCache(newval) end
 
 		# If _TRUE_, an in-memory event log is kept for any method that communicates with an HTTP server (such
@@ -1033,7 +1033,7 @@ module Chilkat
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_KeepEventLog() end
 
@@ -1127,7 +1127,7 @@ module Chilkat
 		# programming introduced in Chilkat v9.5.0.52. Applications should use the new model, which is
 		# identified by methods having names ending with "Async" and return a task object.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def put_KeepEventLog(newval) end
@@ -1135,13 +1135,13 @@ module Chilkat
 		# If _TRUE_, then the response body, if text, is saved to the LastResponseBody property for all
 		# methods that do not return an HttpResponse object. The default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepResponseBody() end
 
 		# If _TRUE_, then the response body, if text, is saved to the LastResponseBody property for all
 		# methods that do not return an HttpResponse object. The default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepResponseBody(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -1237,7 +1237,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -1257,7 +1257,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The value of the Last-Modified header in the last HTTP response received by the HTTP component.
@@ -1455,25 +1455,25 @@ module Chilkat
 		# If set to _TRUE_, then the appropriate headers to mimic Mozilla/FireFox are automatically added to
 		# requests sent via the QuickGet and QuickGetStr methods.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_MimicFireFox() end
 
 		# If set to _TRUE_, then the appropriate headers to mimic Mozilla/FireFox are automatically added to
 		# requests sent via the QuickGet and QuickGetStr methods.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_MimicFireFox(newval) end
 
 		# If set to _TRUE_, then the appropriate headers to mimic Internet Explorer are automatically added to
 		# requests sent via the QuickGet and QuickGetStr methods.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_MimicIE() end
 
 		# If set to _TRUE_, then the appropriate headers to mimic Internet Explorer are automatically added to
 		# requests sent via the QuickGet and QuickGetStr methods.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_MimicIE(newval) end
 
 		# The freshness period for a document in cache will not be less than this value (in minutes). The
@@ -1495,7 +1495,7 @@ module Chilkat
 		# Note: The NegotiateAuth property is only available for the Microsoft Windows
 		# operating system.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_NegotiateAuth() end
 
 		# Set this property equal to _TRUE_ for Negotiate authentication. Negotiate authentication will
@@ -1505,21 +1505,21 @@ module Chilkat
 		# Note: The NegotiateAuth property is only available for the Microsoft Windows
 		# operating system.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_NegotiateAuth(newval) end
 
 		# Setting this property to _TRUE_ causes the HTTP component to use NTLM authentication (also known as
 		# IWA -- or Integrated Windows Authentication) when authentication with an HTTP server. The default
 		# value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_NtlmAuth() end
 
 		# Setting this property to _TRUE_ causes the HTTP component to use NTLM authentication (also known as
 		# IWA -- or Integrated Windows Authentication) when authentication with an HTTP server. The default
 		# value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_NtlmAuth(newval) end
 
 		# The number of directory levels to be used under each cache root. The default is 0, meaning that each
@@ -1574,7 +1574,7 @@ module Chilkat
 		# obtained from the other OAuth* properties, such as OAuthConsumerKey, OAuthConsumerSecret,
 		# OAuthRealm, etc.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_OAuth1() end
 
 		# If _TRUE_ then causes an OAuth Authorization header to be added to any request sent by the HTTP
@@ -1597,7 +1597,7 @@ module Chilkat
 		# obtained from the other OAuth* properties, such as OAuthConsumerKey, OAuthConsumerSecret,
 		# OAuthRealm, etc.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_OAuth1(newval) end
 
 		# The OAuth 1.0 callback URL. Defaults to "oob".
@@ -1871,13 +1871,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# Set this to "basic" if you know in advance that Basic authentication is to be used for the HTTP
@@ -2194,40 +2194,40 @@ module Chilkat
 		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
 		# this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_RequireSslCertVerify() end
 
 		# If _TRUE_, then the HTTP client will verify the server's SSL certificate. The certificate is
 		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
 		# this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_RequireSslCertVerify(newval) end
 
 		# If _TRUE_, then all S3_* methods will use a secure SSL/TLS connection for communications. (If
 		# _TRUE_, Chilkat uses TLS 1.2) The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_S3Ssl() end
 
 		# If _TRUE_, then all S3_* methods will use a secure SSL/TLS connection for communications. (If
 		# _TRUE_, Chilkat uses TLS 1.2) The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_S3Ssl(newval) end
 
 		# If this property is _TRUE_, cookies are automatically persisted to XML files in the directory
 		# specified by the CookiesDir property (or in memory if CookieDir = "memory"). Both CookiesDir and
 		# SaveCookies must be set for cookies to be persisted.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SaveCookies() end
 
 		# If this property is _TRUE_, cookies are automatically persisted to XML files in the directory
 		# specified by the CookiesDir property (or in memory if CookieDir = "memory"). Both CookiesDir and
 		# SaveCookies must be set for cookies to be persisted.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SaveCookies(newval) end
 
 		# The buffer size to be used with the underlying TCP/IP socket for sending. The default value is
@@ -2245,13 +2245,13 @@ module Chilkat
 		# If _TRUE_, then cookies previously persisted to the CookiesDir are automatically added to all HTTP
 		# requests. Only cookies matching the domain and path are added.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SendCookies() end
 
 		# If _TRUE_, then cookies previously persisted to the CookiesDir are automatically added to all HTTP
 		# requests. Only cookies matching the domain and path are added.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SendCookies(newval) end
 
 		# Enables file-based session logging. If set to a filename (or relative/absolute filepath), then the
@@ -3044,12 +3044,12 @@ module Chilkat
 
 		# Controls whether the cache is automatically updated with the responses from HTTP GET requests.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UpdateCache() end
 
 		# Controls whether the cache is automatically updated with the responses from HTTP GET requests.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UpdateCache(newval) end
 
 		# If _TRUE_, then background-enabled methods will run in a background thread. Normally, a method will
@@ -3084,7 +3084,7 @@ module Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_UseBgThread() end
 
@@ -3120,19 +3120,19 @@ module Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def put_UseBgThread(newval) end
 
 		# If _TRUE_, the proxy host/port used by Internet Explorer will also be used by Chilkat HTTP.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseIEProxy() end
 
 		# If _TRUE_, the proxy host/port used by Internet Explorer will also be used by Chilkat HTTP.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseIEProxy(newval) end
 
 		# The UserAgent header field to be automatically included with GET requests issued by QuickGet or
@@ -3184,7 +3184,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -3194,21 +3194,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -3225,7 +3225,7 @@ module Chilkat
 
 		# Indicates whether the last HTTP GET was redirected.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_WasRedirected() end
 
 
@@ -3264,7 +3264,7 @@ module Chilkat
 		# @param headerFieldName [String]
 		# @param headerFieldValue [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AddQuickHeader(headerFieldName, headerFieldValue)
 			# ...
@@ -3345,7 +3345,7 @@ module Chilkat
 		# is needed, the object will close the least recently used connection.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CloseAllConnections()
 			# ...
 		end
@@ -3375,7 +3375,7 @@ module Chilkat
 		# @param url [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Download(url, localFilePath)
 			# ...
 		end
@@ -3388,7 +3388,7 @@ module Chilkat
 		# @param url [String]
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadAppend(url, filename)
 			# ...
 		end
@@ -3401,7 +3401,7 @@ module Chilkat
 		# @param url [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadBd(url, binData)
 			# ...
 		end
@@ -3420,7 +3420,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadHash(url, hashAlgorithm, encoding, outStr)
 			# ...
 		end
@@ -3453,7 +3453,7 @@ module Chilkat
 		# @param charset [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadSb(url, charset, sb)
 			# ...
 		end
@@ -3472,7 +3472,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def EventLogName(index, outStr)
 			# ...
@@ -3510,7 +3510,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def EventLogValue(index, outStr)
 			# ...
@@ -3549,7 +3549,7 @@ module Chilkat
 		# @param htmlContent [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExtractMetaRefreshUrl(htmlContent, outStr)
 			# ...
 		end
@@ -3594,7 +3594,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def G_SvcOauthAccessToken(iss, scope, subEmail, numSec, cert, outStr)
 			# ...
 		end
@@ -3636,7 +3636,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def G_SvcOauthAccessToken2(claimParams, numSec, cert, outStr)
 			# ...
 		end
@@ -3665,7 +3665,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GenTimeStamp(outStr)
 			# ...
 		end
@@ -3691,7 +3691,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCacheRoot(index, outStr)
 			# ...
 		end
@@ -3719,7 +3719,7 @@ module Chilkat
 		# @param domain [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCookieXml(domain, outStr)
 			# ...
 		end
@@ -3748,7 +3748,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetDomain(url, outStr)
 			# ...
 		end
@@ -3790,7 +3790,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRequestHeader(name, outStr)
 			# ...
 		end
@@ -3834,7 +3834,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetUrlPath(url, outStr)
 			# ...
 		end
@@ -3861,7 +3861,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasRequestHeader(name)
 			# ...
 		end
@@ -3874,7 +3874,7 @@ module Chilkat
 		# a 30-day trial period.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -3895,8 +3895,8 @@ module Chilkat
 		# @param url [String]
 		# @param byteData [CkByteData]
 		# @param contentType [String]
-		# @param md5 [TrueClass, FalseClass]
-		# @param gzip [TrueClass, FalseClass]
+		# @param md5 [Boolean]
+		# @param gzip [Boolean]
 		#
 		# @return [CkHttpResponse]
 		def PBinary(verb, url, byteData, contentType, md5, gzip)
@@ -3924,11 +3924,11 @@ module Chilkat
 		# @param url [String]
 		# @param byteData [CkByteData]
 		# @param contentType [String]
-		# @param md5 [TrueClass, FalseClass]
-		# @param gzip [TrueClass, FalseClass]
+		# @param md5 [Boolean]
+		# @param gzip [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PostBinary(url, byteData, contentType, md5, gzip, outStr)
 			# ...
 		end
@@ -3954,8 +3954,8 @@ module Chilkat
 		# @param url [String]
 		# @param byteData [CkByteData]
 		# @param contentType [String]
-		# @param md5 [TrueClass, FalseClass]
-		# @param gzip [TrueClass, FalseClass]
+		# @param md5 [Boolean]
+		# @param gzip [Boolean]
 		#
 		# @return [String]
 		def postBinary(url, byteData, contentType, md5, gzip)
@@ -4050,8 +4050,8 @@ module Chilkat
 		# @param textData [String]
 		# @param charset [String]
 		# @param contentType [String]
-		# @param md5 [TrueClass, FalseClass]
-		# @param gzip [TrueClass, FalseClass]
+		# @param md5 [Boolean]
+		# @param gzip [Boolean]
 		#
 		# @return [CkHttpResponse]
 		def PText(verb, url, textData, charset, contentType, md5, gzip)
@@ -4076,11 +4076,11 @@ module Chilkat
 		# @param url [String]
 		# @param byteData [CkByteData]
 		# @param contentType [String]
-		# @param md5 [TrueClass, FalseClass]
-		# @param gzip [TrueClass, FalseClass]
+		# @param md5 [Boolean]
+		# @param gzip [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutBinary(url, byteData, contentType, md5, gzip, outStr)
 			# ...
 		end
@@ -4103,8 +4103,8 @@ module Chilkat
 		# @param url [String]
 		# @param byteData [CkByteData]
 		# @param contentType [String]
-		# @param md5 [TrueClass, FalseClass]
-		# @param gzip [TrueClass, FalseClass]
+		# @param md5 [Boolean]
+		# @param gzip [Boolean]
 		#
 		# @return [String]
 		def putBinary(url, byteData, contentType, md5, gzip)
@@ -4131,11 +4131,11 @@ module Chilkat
 		# @param textData [String]
 		# @param charset [String]
 		# @param contentType [String]
-		# @param md5 [TrueClass, FalseClass]
-		# @param gzip [TrueClass, FalseClass]
+		# @param md5 [Boolean]
+		# @param gzip [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutText(url, textData, charset, contentType, md5, gzip, outStr)
 			# ...
 		end
@@ -4160,8 +4160,8 @@ module Chilkat
 		# @param textData [String]
 		# @param charset [String]
 		# @param contentType [String]
-		# @param md5 [TrueClass, FalseClass]
-		# @param gzip [TrueClass, FalseClass]
+		# @param md5 [Boolean]
+		# @param gzip [Boolean]
 		#
 		# @return [String]
 		def putText(url, textData, charset, contentType, md5, gzip)
@@ -4179,7 +4179,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickDeleteStr(url, outStr)
 			# ...
 		end
@@ -4217,7 +4217,7 @@ module Chilkat
 		# @param url [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickGet(url, outData)
 			# ...
 		end
@@ -4231,7 +4231,7 @@ module Chilkat
 		# @param url [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickGetBd(url, binData)
 			# ...
 		end
@@ -4259,7 +4259,7 @@ module Chilkat
 		# @param url [String]
 		# @param sbContent [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickGetSb(url, sbContent)
 			# ...
 		end
@@ -4280,7 +4280,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickGetStr(url, outStr)
 			# ...
 		end
@@ -4316,7 +4316,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickPutStr(url, outStr)
 			# ...
 		end
@@ -4349,7 +4349,7 @@ module Chilkat
 		#
 		# @param headerFieldName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveQuickHeader(headerFieldName)
 			# ...
 		end
@@ -4378,7 +4378,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenderGet(url, outStr)
 			# ...
 		end
@@ -4407,7 +4407,7 @@ module Chilkat
 		# @param url [String]
 		# @param targetFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ResumeDownload(url, targetFilename)
 			# ...
 		end
@@ -4422,7 +4422,7 @@ module Chilkat
 		#
 		# @param bucketPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_CreateBucket(bucketPath)
 			# ...
 		end
@@ -4434,7 +4434,7 @@ module Chilkat
 		#
 		# @param bucketPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_DeleteBucket(bucketPath)
 			# ...
 		end
@@ -4463,7 +4463,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_DeleteObject(bucketPath, objectName)
 			# ...
 		end
@@ -4478,7 +4478,7 @@ module Chilkat
 		# @param objectName [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_DownloadBytes(bucketPath, objectName, outBytes)
 			# ...
 		end
@@ -4492,7 +4492,7 @@ module Chilkat
 		# @param objectName [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_DownloadFile(bucketPath, objectName, localFilePath)
 			# ...
 		end
@@ -4508,7 +4508,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_DownloadString(bucketPath, objectName, charset, outStr)
 			# ...
 		end
@@ -4555,7 +4555,7 @@ module Chilkat
 		# @param expire [CkDateTime]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_GenerateUrl(bucket, path, expire, outStr)
 			# ...
 		end
@@ -4598,14 +4598,14 @@ module Chilkat
 		# The ARG4 is a string naming the AWS service, such as "s3". If ARG1 is _TRUE_, then the URL
 		# begins with "https://", otherwise it begins with "http://".
 		#
-		# @param useHttps [TrueClass, FalseClass]
+		# @param useHttps [Boolean]
 		# @param bucketName [String]
 		# @param path [String]
 		# @param numSecondsValid [Fixnum]
 		# @param awsService [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_GenerateUrlV4(useHttps, bucketName, path, numSecondsValid, awsService, outStr)
 			# ...
 		end
@@ -4632,7 +4632,7 @@ module Chilkat
 		# The ARG4 is a string naming the AWS service, such as "s3". If ARG1 is _TRUE_, then the URL
 		# begins with "https://", otherwise it begins with "http://".
 		#
-		# @param useHttps [TrueClass, FalseClass]
+		# @param useHttps [Boolean]
 		# @param bucketName [String]
 		# @param path [String]
 		# @param numSecondsValid [Fixnum]
@@ -4662,7 +4662,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_ListBucketObjects(bucketPath, outStr)
 			# ...
 		end
@@ -4697,7 +4697,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_ListBuckets(outStr)
 			# ...
 		end
@@ -4727,7 +4727,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_UploadBytes(contentBytes, contentType, bucketPath, objectName)
 			# ...
 		end
@@ -4745,7 +4745,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_UploadFile(localFilePath, contentType, bucketPath, objectName)
 			# ...
 		end
@@ -4766,7 +4766,7 @@ module Chilkat
 		# @param bucketPath [String]
 		# @param objectName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def S3_UploadString(objectContent, charset, contentType, bucketPath, objectName)
 			# ...
 		end
@@ -4778,7 +4778,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -4793,7 +4793,7 @@ module Chilkat
 		# @param domain [String]
 		# @param cookieXml [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCookieXml(domain, cookieXml)
 			# ...
 		end
@@ -4806,7 +4806,7 @@ module Chilkat
 		#
 		# @param privKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetOAuthRsaKey(privKey)
 			# ...
 		end
@@ -4845,7 +4845,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -4859,7 +4859,7 @@ module Chilkat
 		# @param pemDataOrPath [String]
 		# @param pemPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPem(pemDataOrPath, pemPassword)
 			# ...
 		end
@@ -4873,7 +4873,7 @@ module Chilkat
 		# @param pfxPath [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPfx(pfxPath, pfxPassword)
 			# ...
 		end
@@ -4900,7 +4900,7 @@ module Chilkat
 		#
 		# @param domain [String]
 		# @param port [Fixnum]
-		# @param ssl [TrueClass, FalseClass]
+		# @param ssl [Boolean]
 		# @param req [CkHttpRequest]
 		#
 		# @return [CkHttpResponse]
@@ -4917,7 +4917,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -4930,7 +4930,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UrlDecode(str, outStr)
 			# ...
 		end
@@ -4955,7 +4955,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UrlEncode(str, outStr)
 			# ...
 		end
@@ -4982,7 +4982,7 @@ module Chilkat
 		# @param xmlIn [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def XmlRpc(urlEndpoint, xmlIn, outStr)
 			# ...
 		end
@@ -5010,7 +5010,7 @@ module Chilkat
 		# @param xmlIn [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def XmlRpcPut(urlEndpoint, xmlIn, outStr)
 			# ...
 		end

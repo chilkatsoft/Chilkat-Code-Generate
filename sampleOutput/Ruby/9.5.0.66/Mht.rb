@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# When processing an HTML file or string (not a website URL), this defines the base URL to be used
@@ -206,50 +206,50 @@ module Chilkat
 
 		# When _TRUE_ causes the Mht class to be much more verbose in its logging. The default is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_DebugTagCleaning() end
 
 		# When _TRUE_ causes the Mht class to be much more verbose in its logging. The default is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_DebugTagCleaning(newval) end
 
 		# Controls whether images are embedded in the MHT/EML, or whether the IMG SRC attributes are left as
 		# external URL references. If false, the IMG SRC tags are converted to absolute URLs (if necessary)
 		# and the images are not embedded within the MHT/EML.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmbedImages() end
 
 		# Controls whether images are embedded in the MHT/EML, or whether the IMG SRC attributes are left as
 		# external URL references. If false, the IMG SRC tags are converted to absolute URLs (if necessary)
 		# and the images are not embedded within the MHT/EML.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmbedImages(newval) end
 
 		# If _TRUE_, only images found on the local filesystem (i.e. links to files) will be embedded within
 		# the MHT.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmbedLocalOnly() end
 
 		# If _TRUE_, only images found on the local filesystem (i.e. links to files) will be embedded within
 		# the MHT.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmbedLocalOnly(newval) end
 
 		# If _TRUE_, page parts such as images, style sheets, etc. will be fetched from the disk cache if
 		# possible. The disk cache root may be defined by calling AddCacheRoot. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_FetchFromCache() end
 
 		# If _TRUE_, page parts such as images, style sheets, etc. will be fetched from the disk cache if
 		# possible. The disk cache root may be defined by calling AddCacheRoot. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_FetchFromCache(newval) end
 
 		# The time interval, in milliseconds, between AbortCheck event callbacks. The heartbeat/AbortCheck
@@ -281,7 +281,7 @@ module Chilkat
 		# FetchFromCache is set to _TRUE_)
 		# The default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IgnoreMustRevalidate() end
 
 		# Some HTTP responses contain a "Cache-Control: must-revalidate" header. If this is present, the
@@ -291,7 +291,7 @@ module Chilkat
 		# FetchFromCache is set to _TRUE_)
 		# The default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_IgnoreMustRevalidate(newval) end
 
 		# Some HTTP responses contain headers of various types that indicate that the page should not be
@@ -299,7 +299,7 @@ module Chilkat
 		# The default
 		# value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IgnoreNoCache() end
 
 		# Some HTTP responses contain headers of various types that indicate that the page should not be
@@ -307,7 +307,7 @@ module Chilkat
 		# The default
 		# value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_IgnoreNoCache(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -381,7 +381,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -401,7 +401,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -431,14 +431,14 @@ module Chilkat
 		# HTML. If set to _TRUE_, then all scripts are removed, if set to _FALSE_ (the default) then scripts
 		# are not removed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_NoScripts() end
 
 		# Only applies when creating MHT files. Scripts are always removed when creating EML or emails from
 		# HTML. If set to _TRUE_, then all scripts are removed, if set to _FALSE_ (the default) then scripts
 		# are not removed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_NoScripts(newval) end
 
 		# Setting this property to _TRUE_ causes the MHT component to use NTLM authentication (also known as
@@ -446,7 +446,7 @@ module Chilkat
 		# The
 		# default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_NtlmAuth() end
 
 		# Setting this property to _TRUE_ causes the MHT component to use NTLM authentication (also known as
@@ -454,7 +454,7 @@ module Chilkat
 		# The
 		# default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_NtlmAuth(newval) end
 
 		# The number of directory levels to be used under each cache root. The default is 0, meaning that each
@@ -490,13 +490,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# This property provides a means for the noscript option to be selected when possible. If
@@ -504,7 +504,7 @@ module Chilkat
 		# content is kept. If _TRUE_ (the default), then scripts are preserved and the noscript options are
 		# discarded.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferMHTScripts() end
 
 		# This property provides a means for the noscript option to be selected when possible. If
@@ -512,7 +512,7 @@ module Chilkat
 		# content is kept. If _TRUE_ (the default), then scripts are preserved and the noscript options are
 		# discarded.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferMHTScripts(newval) end
 
 		# (Optional) A proxy host:port if a proxy is necessary to access the Internet. The proxy string should
@@ -619,14 +619,14 @@ module Chilkat
 		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
 		# this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_RequireSslCertVerify() end
 
 		# If _TRUE_, then the HTTP client will verify the server's SSL certificate. The certificate is
 		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
 		# this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_RequireSslCertVerify(newval) end
 
 		# The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation). This property is only used
@@ -758,7 +758,7 @@ module Chilkat
 		# # 
 		# Note: The default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UnpackDirect() end
 
 		# If _TRUE_, then the UnpackMHT and UnpackMHTString methods will unpack the MHT directly with no
@@ -774,33 +774,33 @@ module Chilkat
 		# # 
 		# Note: The default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UnpackDirect(newval) end
 
 		# Controls whether absolute or relative paths are used when referencing images in the unpacked HTML.
 		# The default value is _TRUE_ indicating that relative paths will be used. To use absolute paths, set
 		# this property value equal to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UnpackUseRelPaths() end
 
 		# Controls whether absolute or relative paths are used when referencing images in the unpacked HTML.
 		# The default value is _TRUE_ indicating that relative paths will be used. To use absolute paths, set
 		# this property value equal to _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UnpackUseRelPaths(newval) end
 
 		# Controls whether the cache is automatically updated with the responses from HTTP GET requests. If
 		# _TRUE_, the disk cache is updated, if _FALSE_ (the default), the cache is not updated.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UpdateCache() end
 
 		# Controls whether the cache is automatically updated with the responses from HTTP GET requests. If
 		# _TRUE_, the disk cache is updated, if _FALSE_ (the default), the cache is not updated.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UpdateCache(newval) end
 
 		# Controls whether CID URLs are used for embedded references when generating MHT or EML documents. If
@@ -811,7 +811,7 @@ module Chilkat
 		# The default value of this property
 		# is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseCids() end
 
 		# Controls whether CID URLs are used for embedded references when generating MHT or EML documents. If
@@ -822,7 +822,7 @@ module Chilkat
 		# The default value of this property
 		# is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseCids(newval) end
 
 		# If _TRUE_, a "filename" attribute is added to each Content-Disposition MIME header field for each
@@ -830,7 +830,7 @@ module Chilkat
 		# The
 		# default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseFilename() end
 
 		# If _TRUE_, a "filename" attribute is added to each Content-Disposition MIME header field for each
@@ -838,17 +838,17 @@ module Chilkat
 		# The
 		# default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseFilename(newval) end
 
 		# If _TRUE_, the proxy host/port used by Internet Explorer will also be used by Chilkat MHT.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseIEProxy() end
 
 		# If _TRUE_, the proxy host/port used by Internet Explorer will also be used by Chilkat MHT.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseIEProxy(newval) end
 
 		# If _TRUE_, an "inline" attribute is added to each Content-Disposition MIME header field for each
@@ -856,7 +856,7 @@ module Chilkat
 		# The
 		# default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseInline() end
 
 		# If _TRUE_, an "inline" attribute is added to each Content-Disposition MIME header field for each
@@ -864,7 +864,7 @@ module Chilkat
 		# The
 		# default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseInline(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -874,7 +874,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -884,21 +884,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1058,7 +1058,7 @@ module Chilkat
 		# @param url_or_htmlFilepath [String]
 		# @param emlPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAndSaveEML(url_or_htmlFilepath, emlPath)
 			# ...
 		end
@@ -1072,7 +1072,7 @@ module Chilkat
 		# @param url_or_htmlFilepath [String]
 		# @param mhtPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAndSaveMHT(url_or_htmlFilepath, mhtPath)
 			# ...
 		end
@@ -1087,7 +1087,7 @@ module Chilkat
 		# @param zipEntryFilename [String]
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAndZipEML(url_or_htmlFilepath, zipEntryFilename, zipFilename)
 			# ...
 		end
@@ -1102,7 +1102,7 @@ module Chilkat
 		# @param zipEntryFilename [String]
 		# @param zipFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAndZipMHT(url_or_htmlFilepath, zipEntryFilename, zipFilename)
 			# ...
 		end
@@ -1116,7 +1116,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCacheRoot(index, outStr)
 			# ...
 		end
@@ -1142,7 +1142,7 @@ module Chilkat
 		# @param url_or_htmlFilepath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEML(url_or_htmlFilepath, outStr)
 			# ...
 		end
@@ -1167,7 +1167,7 @@ module Chilkat
 		# @param url_or_htmlFilepath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMHT(url_or_htmlFilepath, outStr)
 			# ...
 		end
@@ -1193,7 +1193,7 @@ module Chilkat
 		# @param htmlText [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HtmlToEML(htmlText, outStr)
 			# ...
 		end
@@ -1220,7 +1220,7 @@ module Chilkat
 		# @param html [String]
 		# @param emlFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HtmlToEMLFile(html, emlFilename)
 			# ...
 		end
@@ -1234,7 +1234,7 @@ module Chilkat
 		# @param htmlText [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HtmlToMHT(htmlText, outStr)
 			# ...
 		end
@@ -1261,7 +1261,7 @@ module Chilkat
 		# @param html [String]
 		# @param mhtFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HtmlToMHTFile(html, mhtFilename)
 			# ...
 		end
@@ -1272,7 +1272,7 @@ module Chilkat
 		# Returns _TRUE_ if the MHT component is unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -1307,7 +1307,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1320,7 +1320,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -1337,7 +1337,7 @@ module Chilkat
 		# @param htmlFilename [String]
 		# @param partsSubDir [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnpackMHT(mhtFilename, unpackDir, htmlFilename, partsSubDir)
 			# ...
 		end
@@ -1352,7 +1352,7 @@ module Chilkat
 		# @param htmlFilename [String]
 		# @param partsSubDir [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnpackMHTString(mhtString, unpackDir, htmlFilename, partsSubDir)
 			# ...
 		end

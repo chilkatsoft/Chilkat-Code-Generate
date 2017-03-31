@@ -81,13 +81,13 @@ module Chilkat
 		# If _TRUE_, this file may only be appended. This property is only supported by servers running SFTP
 		# v6 or later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsAppendOnly() end
 
 		# If _TRUE_, the file should be included in backup / archive operations. This property is only
 		# supported by servers running SFTP v6 or later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsArchive() end
 
 		# This attribute applies only to directories. This attribute means
@@ -96,7 +96,7 @@ module Chilkat
 		# compared without regard to case. This property is only supported by
 		# servers running SFTP v6 or later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsCaseInsensitive() end
 
 		# The file is stored on disk using file-system level transparent
@@ -104,12 +104,12 @@ module Chilkat
 		# affect the file data on the wire. This property is only supported by servers running SFTP v6 or
 		# later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsCompressed() end
 
 		# If _TRUE_, this is a directory.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsDirectory() end
 
 		# The file is stored on disk using file-system level transparent
@@ -118,12 +118,12 @@ module Chilkat
 		# (for either READ or WRITE requests.) This property is only
 		# supported by servers running SFTP v6 or later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsEncrypted() end
 
 		# If _TRUE_, the file SHOULD NOT be shown to user unless specifically requested.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsHidden() end
 
 		# The file cannot be deleted or renamed, no hard link can be created
@@ -140,18 +140,18 @@ module Chilkat
 		# This property
 		# is only supported by servers running SFTP v6 or later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsImmutable() end
 
 		# If _TRUE_, the file is read-only. This property is only supported by servers running SFTP v6 or
 		# later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsReadOnly() end
 
 		# _TRUE_ if this is a normal file (not a directory or any of the other non-file types).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsRegular() end
 
 		# The file is a sparse file; this means that file blocks that have
@@ -173,25 +173,25 @@ module Chilkat
 		# 
 		# This property is only supported by servers running SFTP v6 or later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsSparse() end
 
 		# _TRUE_ if this is a symbolic link.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsSymLink() end
 
 		# When the file is modified, the changes are written synchronously
 		# to the disk. This property is
 		# only supported by servers running SFTP v6 or later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsSync() end
 
 		# _TRUE_ if the file is part of the operating system. This property is only supported by servers
 		# running SFTP v6 or later.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsSystem() end
 
 		# The last-access date and time.
@@ -227,7 +227,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -247,7 +247,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The last-modified date and time.
@@ -339,7 +339,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -349,7 +349,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 

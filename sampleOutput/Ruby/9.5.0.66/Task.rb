@@ -99,7 +99,7 @@ module Chilkat
 		# thread's queue, was waiting for a pool thread to become available, and was then canceled prior to
 		# the task actually starting.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Finished() end
 
 		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
@@ -131,21 +131,21 @@ module Chilkat
 		# _TRUE_ if the task status is "empty" or "loaded". When a task is inert, it has been loaded but is
 		# not scheduled to run yet.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Inert() end
 
 		# Determines if the in-memory progress info event log is kept. The default value is _FALSE_ and
 		# therefore no log is kept. To enable progress info logging, set this property equal to _TRUE_ (prior
 		# to running the task).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepProgressLog() end
 
 		# Determines if the in-memory progress info event log is kept. The default value is _FALSE_ and
 		# therefore no log is kept. To enable progress info logging, set this property equal to _TRUE_ (prior
 		# to running the task).
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepProgressLog(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -219,7 +219,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -239,7 +239,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -268,7 +268,7 @@ module Chilkat
 		# _TRUE_ if the task status is "queued" or "running". When a task is live, it is either already
 		# running, or is on the thread pool thread's queue waiting for a thread to become available.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Live() end
 
 		# Indicates the percent completion while the task is running. The percent completed information is
@@ -404,7 +404,7 @@ module Chilkat
 		# only valid for those methods where the LastMethodSuccess property would be valid had the method been
 		# called synchronously.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_TaskSuccess() end
 
 		# An application may use this property to attach some user-specific information with the task, which
@@ -440,7 +440,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -450,21 +450,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -503,7 +503,7 @@ module Chilkat
 		# and was canceled or aborted. The method returns _FALSE_ if the task has any other status.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Cancel()
 			# ...
 		end
@@ -526,7 +526,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CopyResultBytes(outBytes)
 			# ...
 		end
@@ -537,7 +537,7 @@ module Chilkat
 		# Returns the boolean result of the task.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetResultBool()
 			# ...
 		end
@@ -550,7 +550,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetResultBytes(outBytes)
 			# ...
 		end
@@ -573,7 +573,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetResultString(outStr)
 			# ...
 		end
@@ -597,7 +597,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ProgressInfoName(index, outStr)
 			# ...
 		end
@@ -622,7 +622,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ProgressInfoValue(index, outStr)
 			# ...
 		end
@@ -660,7 +660,7 @@ module Chilkat
 		# task to run on the internal Chilkat thread pool.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Run()
 			# ...
 		end
@@ -671,7 +671,7 @@ module Chilkat
 		# Runs the task synchronously. Then this method returns after the task has been run.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RunSynchronously()
 			# ...
 		end
@@ -683,7 +683,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -711,7 +711,7 @@ module Chilkat
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Wait(maxWaitMs)
 			# ...
 		end

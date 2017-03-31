@@ -180,7 +180,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -200,7 +200,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -263,7 +263,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -273,21 +273,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -337,7 +337,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetJwk(outStr)
 			# ...
 		end
@@ -390,7 +390,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetJwkThumbprint(hashAlg, outStr)
 			# ...
 		end
@@ -465,7 +465,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs1(outBytes)
 			# ...
 		end
@@ -528,7 +528,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs1ENC(encoding, outStr)
 			# ...
 		end
@@ -603,7 +603,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs1Pem(outStr)
 			# ...
 		end
@@ -684,7 +684,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs8(outData)
 			# ...
 		end
@@ -698,7 +698,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs8ENC(encoding, outStr)
 			# ...
 		end
@@ -725,7 +725,7 @@ module Chilkat
 		# @param password [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs8Encrypted(password, outBytes)
 			# ...
 		end
@@ -741,7 +741,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs8EncryptedENC(encoding, password, outStr)
 			# ...
 		end
@@ -770,7 +770,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs8EncryptedPem(password, outStr)
 			# ...
 		end
@@ -795,7 +795,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPkcs8Pem(outStr)
 			# ...
 		end
@@ -830,7 +830,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetRsaDer(outData)
 			# ...
@@ -844,7 +844,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetRsaPem(outStr)
 			# ...
@@ -905,7 +905,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetXml(outStr)
 			# ...
 		end
@@ -990,7 +990,7 @@ module Chilkat
 		# @param pemStr [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadEncryptedPem(pemStr, password)
 			# ...
 		end
@@ -1006,7 +1006,7 @@ module Chilkat
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadEncryptedPemFile(path, password)
 			# ...
 		end
@@ -1049,7 +1049,7 @@ module Chilkat
 		#
 		# @param jsonStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadJwk(jsonStr)
 			# ...
 		end
@@ -1120,7 +1120,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPem(str)
 			# ...
 		end
@@ -1132,7 +1132,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPemFile(path)
 			# ...
 		end
@@ -1147,7 +1147,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPkcs1(data)
 			# ...
 		end
@@ -1162,7 +1162,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPkcs1File(path)
 			# ...
 		end
@@ -1195,7 +1195,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPkcs8(data)
 			# ...
 		end
@@ -1227,7 +1227,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPkcs8Encrypted(data, password)
 			# ...
 		end
@@ -1243,7 +1243,7 @@ module Chilkat
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPkcs8EncryptedFile(path, password)
 			# ...
 		end
@@ -1258,7 +1258,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPkcs8File(path)
 			# ...
 		end
@@ -1274,7 +1274,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPvk(data, password)
 			# ...
 		end
@@ -1290,7 +1290,7 @@ module Chilkat
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPvkFile(path, password)
 			# ...
 		end
@@ -1329,7 +1329,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDer(data)
 			# ...
@@ -1349,7 +1349,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDerFile(path)
 			# ...
@@ -1399,7 +1399,7 @@ module Chilkat
 		#
 		# @param xml [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXml(xml)
 			# ...
 		end
@@ -1414,7 +1414,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXmlFile(path)
 			# ...
 		end
@@ -1426,7 +1426,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1438,7 +1438,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SavePemFile(path)
 			# ...
 		end
@@ -1450,7 +1450,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SavePkcs1File(path)
 			# ...
 		end
@@ -1464,7 +1464,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SavePkcs8EncryptedFile(password, path)
 			# ...
 		end
@@ -1478,7 +1478,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SavePkcs8EncryptedPemFile(password, path)
 			# ...
 		end
@@ -1490,7 +1490,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SavePkcs8File(path)
 			# ...
 		end
@@ -1502,7 +1502,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SavePkcs8PemFile(path)
 			# ...
 		end
@@ -1517,7 +1517,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaDerFile(path)
 			# ...
@@ -1533,7 +1533,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaPemFile(path)
 			# ...
@@ -1546,7 +1546,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveXmlFile(path)
 			# ...
 		end

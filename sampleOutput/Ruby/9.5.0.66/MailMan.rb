@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# Prevents sending any email if any of the addresses in the recipient list are rejected by the SMTP
@@ -27,7 +27,7 @@ module Chilkat
 		# Note: An SMTP server only knows the
 		# validity of email addresses within the domain it controls.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AllOrNone() end
 
 		# Prevents sending any email if any of the addresses in the recipient list are rejected by the SMTP
@@ -37,7 +37,7 @@ module Chilkat
 		# Note: An SMTP server only knows the
 		# validity of email addresses within the domain it controls.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AllOrNone(newval) end
 
 		# If _TRUE_, then the following will occur when a connection is made to an SMTP or POP3
@@ -49,7 +49,7 @@ module Chilkat
 		# 4) If the MailPort property = 110, sets PopSsl  _FALSE_
 		# The default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoFix() end
 
 		# If _TRUE_, then the following will occur when a connection is made to an SMTP or POP3
@@ -61,7 +61,7 @@ module Chilkat
 		# 4) If the MailPort property = 110, sets PopSsl  _FALSE_
 		# The default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoFix(newval) end
 
 		# Controls whether a unique Message-ID header is auto-generated for each email sent.
@@ -76,7 +76,7 @@ module Chilkat
 		# To turn off automatic Message-ID generation,
 		# set this property to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoGenMessageId() end
 
 		# Controls whether a unique Message-ID header is auto-generated for each email sent.
@@ -91,7 +91,7 @@ module Chilkat
 		# To turn off automatic Message-ID generation,
 		# set this property to _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoGenMessageId(newval) end
 
 		# If _TRUE_, then the SMTP "RSET" command is automatically sent to ensure that the SMTP connection is
@@ -101,7 +101,7 @@ module Chilkat
 		# Important: This property only applies when an email is sent
 		# on an already-open SMTP connection.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoSmtpRset() end
 
 		# If _TRUE_, then the SMTP "RSET" command is automatically sent to ensure that the SMTP connection is
@@ -111,7 +111,7 @@ module Chilkat
 		# Important: This property only applies when an email is sent
 		# on an already-open SMTP connection.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoSmtpRset(newval) end
 
 		# If _TRUE_, then digitally signed and/or encrypted email when downloaded from a mail server is
@@ -127,7 +127,7 @@ module Chilkat
 		# provides a means for downloading email where the .p7m (or .p7s) attachments are are to be treated as
 		# simple attachments and the desire is to access or save the original .p7m/.p7s files.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoUnwrapSecurity() end
 
 		# If _TRUE_, then digitally signed and/or encrypted email when downloaded from a mail server is
@@ -143,7 +143,7 @@ module Chilkat
 		# provides a means for downloading email where the .p7m (or .p7s) attachments are are to be treated as
 		# simple attachments and the desire is to access or save the original .p7m/.p7s files.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoUnwrapSecurity(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
@@ -439,7 +439,7 @@ module Chilkat
 		# IncludeRootCert property is also _TRUE_, then the root CA certificate is also included in the S/MIME
 		# signature.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmbedCertChain() end
 
 		# If _TRUE_, causes the digital certificate chain to be embedded in signed emails. The certificates in
@@ -447,7 +447,7 @@ module Chilkat
 		# IncludeRootCert property is also _TRUE_, then the root CA certificate is also included in the S/MIME
 		# signature.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmbedCertChain(newval) end
 
 		# An expression that is applied to any of the following method calls when present: LoadXmlFile,
@@ -770,7 +770,7 @@ module Chilkat
 		# QUIT command and close the session. If your program sets ImmediateDelete to _FALSE_, it must make
 		# sure to call Pop3EndSession to ensure that messages marked for deletion are actually deleted.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ImmediateDelete() end
 
 		# If _TRUE_ (the default) then any method that deletes an email from the POP3 server will also issue a
@@ -783,21 +783,21 @@ module Chilkat
 		# QUIT command and close the session. If your program sets ImmediateDelete to _FALSE_, it must make
 		# sure to call Pop3EndSession to ensure that messages marked for deletion are actually deleted.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ImmediateDelete(newval) end
 
 		# Controls whether the root certificate in the chain of authentication (i.e. the CA root certificate)
 		# is included within the S/MIME signature of a signed email. Note: This property only applies if the
 		# EmbedCertChain property is also _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IncludeRootCert() end
 
 		# Controls whether the root certificate in the chain of authentication (i.e. the CA root certificate)
 		# is included within the S/MIME signature of a signed email. Note: This property only applies if the
 		# EmbedCertChain property is also _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_IncludeRootCert(newval) end
 
 		# Returns _TRUE_ if still connected to the POP3 server. Otherwise returns _FALSE_.
@@ -811,7 +811,7 @@ module Chilkat
 		# _TRUE_ if the server has disconnected, but the client has not attempted to communicate with the
 		# server since the disconnect.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsPop3Connected() end
 
 		# Returns _TRUE_ if still connected to the SMTP server. Otherwise returns _FALSE_ (if there was never
@@ -826,7 +826,7 @@ module Chilkat
 		# the server has disconnected, but the client has not attempted to communicate with the server since
 		# the disconnect.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsSmtpConnected() end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -900,7 +900,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -920,7 +920,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The name of the file created in the SMTPQ's queue directory for the last email sent via SendQ,
@@ -1109,13 +1109,13 @@ module Chilkat
 		# When set to _TRUE_, signed emails are sent using opaque signing. The default is to send clear-text
 		# (multipart/signed) emails.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_OpaqueSigning() end
 
 		# When set to _TRUE_, signed emails are sent using opaque signing. The default is to send clear-text
 		# (multipart/signed) emails.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_OpaqueSigning(newval) end
 
 		# The filename attribute to be used in the Content-Disposition header field when sending a PCKS7
@@ -1257,7 +1257,7 @@ module Chilkat
 		# Note: If SPA (i.e. NTLM) authentication does not succeed, set the
 		# Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Pop3SPA() end
 
 		# Controls whether SPA authentication for POP3 is used or not. To use SPA authentication, set this
@@ -1267,13 +1267,13 @@ module Chilkat
 		# Note: If SPA (i.e. NTLM) authentication does not succeed, set the
 		# Global.DefaultNtlmVersion property equal to 1 and then retry.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Pop3SPA(newval) end
 
 		# When connecting via SSL, this property is _TRUE_ if the POP3 server's SSL certificate was verified.
 		# Otherwise it is set to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Pop3SslServerCertVerified() end
 
 		# If _TRUE_, then an unencrypted connection (typically on port 110) is automatically converted to a
@@ -1283,7 +1283,7 @@ module Chilkat
 		# SSL/TLS from the beginning. Setting the Pop3Stls property = _TRUE_ indicates that the POP3 client
 		# will initially connect unencrypted and then convert to TLS.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Pop3Stls() end
 
 		# If _TRUE_, then an unencrypted connection (typically on port 110) is automatically converted to a
@@ -1293,7 +1293,7 @@ module Chilkat
 		# SSL/TLS from the beginning. Setting the Pop3Stls property = _TRUE_ indicates that the POP3 client
 		# will initially connect unencrypted and then convert to TLS.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Pop3Stls(newval) end
 
 		# The POP3 password.
@@ -1360,14 +1360,14 @@ module Chilkat
 		# determine if your POP3 server can accept TLS/SSL connections. Also, be sure to set the MailPort
 		# property to the TLS/SSL POP3 port number, which is typically 995.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PopSsl() end
 
 		# Controls whether TLS/SSL is used when reading email from a POP3 server. Note: Check first to
 		# determine if your POP3 server can accept TLS/SSL connections. Also, be sure to set the MailPort
 		# property to the TLS/SSL POP3 port number, which is typically 995.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PopSsl(newval) end
 
 		# The POP3 login name.
@@ -1411,13 +1411,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# The maximum time to wait, in seconds, if the POP3 or SMTP server stops responding. The default value
@@ -1437,7 +1437,7 @@ module Chilkat
 		# The default value of this property is _FALSE_. (Obviously, this only applies to SSL/TLS
 		# connections.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_RequireSslCertVerify() end
 
 		# If _TRUE_, then the mailman will verify the SMTP or POP3 server's SSL certificate when connecting.
@@ -1445,21 +1445,21 @@ module Chilkat
 		# The default value of this property is _FALSE_. (Obviously, this only applies to SSL/TLS
 		# connections.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_RequireSslCertVerify(newval) end
 
 		# Controls whether the Date header field is reset to the current date/time when an email is loaded
 		# from LoadMbx, LoadEml, LoadMime, LoadXml, or LoadXmlString. The default is _FALSE_ (to not reset the
 		# date). To automatically reset the date, set this property equal to _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ResetDateOnLoad() end
 
 		# Controls whether the Date header field is reset to the current date/time when an email is loaded
 		# from LoadMbx, LoadEml, LoadMime, LoadXml, or LoadXmlString. The default is _FALSE_ (to not reset the
 		# date). To automatically reset the date, set this property equal to _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ResetDateOnLoad(newval) end
 
 		# The buffer size to be used with the underlying TCP/IP socket for sending. The default value is
@@ -1481,7 +1481,7 @@ module Chilkat
 		# sent, the first 3 having 100 BCC recipients, and the last email with 50 BCC recipients.The default
 		# value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SendIndividual() end
 
 		# Determines how emails are sent to distribution lists. If _TRUE_, emails are sent to each recipient
@@ -1491,7 +1491,7 @@ module Chilkat
 		# sent, the first 3 having 100 BCC recipients, and the last email with 50 BCC recipients.The default
 		# value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SendIndividual(newval) end
 
 		# The MailMan will not try to retrieve mail messages from a POP3 server that are greater than this
@@ -1810,14 +1810,14 @@ module Chilkat
 		# it. The default is _TRUE_. Setting this property equal to _FALSE_ will prevent the SMTP pipelining
 		# feature from being used.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SmtpPipelining() end
 
 		# Controls whether SMTP pipelining is automatically used when the SMTP server indicates support for
 		# it. The default is _TRUE_. Setting this property equal to _FALSE_ will prevent the SMTP pipelining
 		# feature from being used.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SmtpPipelining(newval) end
 
 		# The port number of the SMTP server used to send email. Only needs to be set if the SMTP server is
@@ -1852,18 +1852,18 @@ module Chilkat
 
 		# When set to _TRUE_, causes the mailman to connect to the SMTP server via the TLS/SSL protocol.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SmtpSsl() end
 
 		# When set to _TRUE_, causes the mailman to connect to the SMTP server via the TLS/SSL protocol.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SmtpSsl(newval) end
 
 		# If using SSL, this property will be set to _TRUE_ if the SMTP server's SSL certificate was verified
 		# when establishing the connection. Otherwise it is set to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SmtpSslServerCertVerified() end
 
 		# The login for logging into the SMTP server. Use this only if your SMTP server requires
@@ -2507,13 +2507,13 @@ module Chilkat
 		# When set to _TRUE_, causes the mailman to issue a STARTTLS command to switch over to a secure
 		# SSL/TLS connection prior to authenticating and sending email. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_StartTLS() end
 
 		# When set to _TRUE_, causes the mailman to issue a STARTTLS command to switch over to a secure
 		# SSL/TLS connection prior to authenticating and sending email. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_StartTLS(newval) end
 
 		# Contains the current or last negotiated TLS cipher suite. If no TLS connection has yet to be
@@ -2669,13 +2669,13 @@ module Chilkat
 		# If _TRUE_, will automatically use APOP authentication if the POP3 server supports it. The default
 		# value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseApop() end
 
 		# If _TRUE_, will automatically use APOP authentication if the POP3 server supports it. The default
 		# value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseApop(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -2685,7 +2685,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -2695,21 +2695,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -2738,7 +2738,7 @@ module Chilkat
 		# @param pfxData [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceData(pfxData, password)
 			# ...
 		end
@@ -2757,7 +2757,7 @@ module Chilkat
 		# @param pfxFilePath [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceFile(pfxFilePath, password)
 			# ...
 		end
@@ -2830,7 +2830,7 @@ module Chilkat
 		# connection.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CloseSmtpConnection()
 			# ...
 		end
@@ -2864,7 +2864,7 @@ module Chilkat
 		#
 		# @param emailBundle [CkEmailBundle]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteBundle(emailBundle)
 			# ...
 		end
@@ -2889,7 +2889,7 @@ module Chilkat
 		#
 		# @param msgnum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteByMsgnum(msgnum)
 			# ...
 		end
@@ -2910,7 +2910,7 @@ module Chilkat
 		#
 		# @param uidl [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteByUidl(uidl)
 			# ...
 		end
@@ -2931,7 +2931,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteEmail(email)
 			# ...
 		end
@@ -2953,7 +2953,7 @@ module Chilkat
 		#
 		# @param uidlArray [CkStringArray]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteMultiple(uidlArray)
 			# ...
 		end
@@ -3004,7 +3004,7 @@ module Chilkat
 		# @param uidl [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchMime(uidl, outData)
 			# ...
 		end
@@ -3026,7 +3026,7 @@ module Chilkat
 		# @param msgnum [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchMimeByMsgnum(msgnum, outBytes)
 			# ...
 		end
@@ -3214,7 +3214,7 @@ module Chilkat
 		#
 		# @param outXml [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMailboxInfoXml(outXml)
 			# ...
 		end
@@ -3330,7 +3330,7 @@ module Chilkat
 		# Returns _TRUE_ if the SMTP server supports DSN, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsSmtpDsnCapable()
 			# ...
 		end
@@ -3341,7 +3341,7 @@ module Chilkat
 		# Returns _TRUE_ if the mailman is already unlocked, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -3467,7 +3467,7 @@ module Chilkat
 		# @param emailAddress [String]
 		# @param outStrHostname [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MxLookup(emailAddress, outStrHostname)
 			# ...
 		end
@@ -3510,7 +3510,7 @@ module Chilkat
 		# SmtpAuthenticate.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSmtpConnection()
 			# ...
 		end
@@ -3530,7 +3530,7 @@ module Chilkat
 		# connected and authenticated.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop3Authenticate()
 			# ...
 		end
@@ -3550,7 +3550,7 @@ module Chilkat
 		# potential external causes of blockage.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop3BeginSession()
 			# ...
 		end
@@ -3578,7 +3578,7 @@ module Chilkat
 		# connection fails, make sure to check all potential external causes of blockage.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop3Connect()
 			# ...
 		end
@@ -3590,7 +3590,7 @@ module Chilkat
 		# marked for deletion will be deleted at this time.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop3EndSession()
 			# ...
 		end
@@ -3604,7 +3604,7 @@ module Chilkat
 		# This method should always return _TRUE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop3EndSessionNoQuit()
 			# ...
 		end
@@ -3616,7 +3616,7 @@ module Chilkat
 		# connection open, or to verify that the POP3 connection (session) is open and functioning.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop3Noop()
 			# ...
 		end
@@ -3630,7 +3630,7 @@ module Chilkat
 		# starting point.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop3Reset()
 			# ...
 		end
@@ -3646,7 +3646,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop3SendRawCommand(command, charset, outStr)
 			# ...
 		end
@@ -3678,7 +3678,7 @@ module Chilkat
 		# @param body [String]
 		# @param smtpServer [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickSend(fromAddr, toAddr, subject, body, smtpServer)
 			# ...
 		end
@@ -3699,7 +3699,7 @@ module Chilkat
 		# @param email [CkEmail]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenderToMime(email, outStr)
 			# ...
 		end
@@ -3733,7 +3733,7 @@ module Chilkat
 		# @param email [CkEmail]
 		# @param renderedMime [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenderToMimeBd(email, renderedMime)
 			# ...
 		end
@@ -3750,7 +3750,7 @@ module Chilkat
 		# @param email [CkEmail]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenderToMimeBytes(email, outBytes)
 			# ...
 		end
@@ -3764,7 +3764,7 @@ module Chilkat
 		# @param email [CkEmail]
 		# @param renderedMime [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenderToMimeSb(email, renderedMime)
 			# ...
 		end
@@ -3776,7 +3776,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -3795,7 +3795,7 @@ module Chilkat
 		#
 		# @param bundle [CkEmailBundle]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendBundle(bundle)
 			# ...
 		end
@@ -3818,7 +3818,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendEmail(email)
 			# ...
 		end
@@ -3842,7 +3842,7 @@ module Chilkat
 		# @param recipients [String]
 		# @param mimeSource [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendMime(fromAddr, recipients, mimeSource)
 			# ...
 		end
@@ -3863,7 +3863,7 @@ module Chilkat
 		# @param recipients [String]
 		# @param mimeSource [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendMimeBytes(fromAddr, recipients, mimeSource)
 			# ...
 		end
@@ -3878,7 +3878,7 @@ module Chilkat
 		# @param recipients [String]
 		# @param mimeData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SendMimeBytesQ(from, recipients, mimeData)
 			# ...
@@ -3898,7 +3898,7 @@ module Chilkat
 		# @param recipients [String]
 		# @param mimeSource [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SendMimeQ(fromAddr, recipients, mimeSource)
 			# ...
@@ -3914,7 +3914,7 @@ module Chilkat
 		# @param distListFilename [String]
 		# @param mimeSource [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendMimeToList(fromAddr, distListFilename, mimeSource)
 			# ...
 		end
@@ -3948,7 +3948,7 @@ module Chilkat
 		#
 		# @param email [CkEmail]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SendQ(email)
 			# ...
@@ -3971,7 +3971,7 @@ module Chilkat
 		# @param email [CkEmail]
 		# @param queueDir [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SendQ2(email, queueDir)
 			# ...
@@ -3985,7 +3985,7 @@ module Chilkat
 		# @param emailObj [CkEmail]
 		# @param recipientList [CkStringArray]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendToDistributionList(emailObj, recipientList)
 			# ...
 		end
@@ -4004,7 +4004,7 @@ module Chilkat
 		#
 		# @param csp [CkCsp]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCSP(csp)
 			# ...
 		end
@@ -4016,7 +4016,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDecryptCert(cert)
 			# ...
 		end
@@ -4035,7 +4035,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param privateKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDecryptCert2(cert, privateKey)
 			# ...
 		end
@@ -4049,7 +4049,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -4062,7 +4062,7 @@ module Chilkat
 		# @param pemDataOrFilename [String]
 		# @param pemPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPem(pemDataOrFilename, pemPassword)
 			# ...
 		end
@@ -4075,7 +4075,7 @@ module Chilkat
 		# @param pfxFilename [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPfx(pfxFilename, pfxPassword)
 			# ...
 		end
@@ -4095,7 +4095,7 @@ module Chilkat
 		# and authenticated.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SmtpAuthenticate()
 			# ...
 		end
@@ -4123,7 +4123,7 @@ module Chilkat
 		# connection fails, make sure to check all potential external causes of blockage.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SmtpConnect()
 			# ...
 		end
@@ -4136,7 +4136,7 @@ module Chilkat
 		# connection if it does not already exist.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SmtpNoop()
 			# ...
 		end
@@ -4151,7 +4151,7 @@ module Chilkat
 		# probably not even possible with the Chilkat mail component.)
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SmtpReset()
 			# ...
 		end
@@ -4168,10 +4168,10 @@ module Chilkat
 		#
 		# @param command [String]
 		# @param charset [String]
-		# @param bEncodeBase64 [TrueClass, FalseClass]
+		# @param bEncodeBase64 [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SmtpSendRawCommand(command, charset, bEncodeBase64, outStr)
 			# ...
 		end
@@ -4188,7 +4188,7 @@ module Chilkat
 		#
 		# @param command [String]
 		# @param charset [String]
-		# @param bEncodeBase64 [TrueClass, FalseClass]
+		# @param bEncodeBase64 [Boolean]
 		#
 		# @return [String]
 		def smtpSendRawCommand(command, charset, bEncodeBase64)
@@ -4208,7 +4208,7 @@ module Chilkat
 		# @param bSmtp [String]
 		# @param sshUsername [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshAuthenticatePk(bSmtp, sshUsername)
 			# ...
 		end
@@ -4234,7 +4234,7 @@ module Chilkat
 		# @param bSmtp [String]
 		# @param sshLogin [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshAuthenticatePw(bSmtp, sshLogin)
 			# ...
 		end
@@ -4245,7 +4245,7 @@ module Chilkat
 		# Closes the SSH tunnel for SMTP or POP3.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshCloseTunnel()
 			# ...
 		end
@@ -4276,7 +4276,7 @@ module Chilkat
 		# @param sshHostname [String]
 		# @param sshPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshOpenTunnel(sshHostname, sshPort)
 			# ...
 		end
@@ -4304,11 +4304,11 @@ module Chilkat
 		# Important: This method is deprecated.
 		# Programs should instead call SshOpenTunnel. (The only change is in the name of the method.)
 		#
-		# @param bSmtp [TrueClass, FalseClass]
+		# @param bSmtp [Boolean]
 		# @param sshServerHostname [String]
 		# @param sshPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SshTunnel(bSmtp, sshServerHostname, sshPort)
 			# ...
@@ -4352,7 +4352,7 @@ module Chilkat
 		#
 		# @param code [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(code)
 			# ...
 		end
@@ -4368,7 +4368,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -4387,7 +4387,7 @@ module Chilkat
 		#
 		# @param ssh [CkSsh]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseSsh(ssh)
 			# ...
 		end
@@ -4401,7 +4401,7 @@ module Chilkat
 		#
 		# @param tunnel [CkSocket]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseSshTunnel(tunnel)
 			# ...
 		end
@@ -4413,7 +4413,7 @@ module Chilkat
 		# _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyPopConnection()
 			# ...
 		end
@@ -4425,7 +4425,7 @@ module Chilkat
 		# _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyPopLogin()
 			# ...
 		end
@@ -4443,7 +4443,7 @@ module Chilkat
 		# @param email [CkEmail]
 		# @param badAddrs [CkStringArray]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyRecips(email, badAddrs)
 			# ...
 		end
@@ -4455,7 +4455,7 @@ module Chilkat
 		# _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifySmtpConnection()
 			# ...
 		end
@@ -4467,7 +4467,7 @@ module Chilkat
 		# _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifySmtpLogin()
 			# ...
 		end

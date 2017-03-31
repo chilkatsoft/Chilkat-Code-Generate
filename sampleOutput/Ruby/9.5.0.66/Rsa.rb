@@ -277,7 +277,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -297,7 +297,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -339,7 +339,7 @@ module Chilkat
 		# encryption/decryption. No changes are required if doing signature creation/verification.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LittleEndian() end
 
 		# The default value is _FALSE_, which means that signatures and encrypted output will be created using
@@ -358,19 +358,19 @@ module Chilkat
 		# encryption/decryption. No changes are required if doing signature creation/verification.
 		#
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LittleEndian(newval) end
 
 		# If _TRUE_, skips unpadding when decrypting. The default is _FALSE_. This property value is typically
 		# left unchanged.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_NoUnpad() end
 
 		# If _TRUE_, skips unpadding when decrypting. The default is _FALSE_. This property value is typically
 		# left unchanged.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_NoUnpad(newval) end
 
 		# The number of bits of the key generated or imported into this RSA encryption object. Keys ranging in
@@ -424,7 +424,7 @@ module Chilkat
 		# signatures, this property controls whether RSA-PSS or PKCS1 v1.5 is used. If _TRUE_, then the
 		# RSA-PSS signature scheme is used. The default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_OaepPadding() end
 
 		# Controls whether Optimal Asymmetric Encryption Padding (OAEP) is used for the padding scheme (for
@@ -440,7 +440,7 @@ module Chilkat
 		# signatures, this property controls whether RSA-PSS or PKCS1 v1.5 is used. If _TRUE_, then the
 		# RSA-PSS signature scheme is used. The default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_OaepPadding(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -450,7 +450,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -460,21 +460,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -500,10 +500,10 @@ module Chilkat
 		# LittleEndian property = _FALSE_.
 		#
 		# @param inData [CkByteData]
-		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param usePrivateKey [Boolean]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptBytes(inData, usePrivateKey, outData)
 			# ...
 		end
@@ -518,10 +518,10 @@ module Chilkat
 		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param str [String]
-		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @param bUsePrivateKey [Boolean]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptBytesENC(str, bUsePrivateKey, outData)
 			# ...
 		end
@@ -541,10 +541,10 @@ module Chilkat
 		# = _FALSE_.
 		#
 		# @param binarySig [CkByteData]
-		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param usePrivateKey [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptString(binarySig, usePrivateKey, outStr)
 			# ...
 		end
@@ -564,7 +564,7 @@ module Chilkat
 		# = _FALSE_.
 		#
 		# @param binarySig [CkByteData]
-		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param usePrivateKey [Boolean]
 		#
 		# @return [String]
 		def decryptString(binarySig, usePrivateKey)
@@ -581,10 +581,10 @@ module Chilkat
 		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param encodedSig [String]
-		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param usePrivateKey [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptStringENC(encodedSig, usePrivateKey, outStr)
 			# ...
 		end
@@ -599,7 +599,7 @@ module Chilkat
 		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param encodedSig [String]
-		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param usePrivateKey [Boolean]
 		#
 		# @return [String]
 		def decryptStringENC(encodedSig, usePrivateKey)
@@ -617,10 +617,10 @@ module Chilkat
 		# LittleEndian property = _FALSE_.
 		#
 		# @param binaryData [CkByteData]
-		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param usePrivateKey [Boolean]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptBytes(binaryData, usePrivateKey, outData)
 			# ...
 		end
@@ -635,10 +635,10 @@ module Chilkat
 		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param data [CkByteData]
-		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @param bUsePrivateKey [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptBytesENC(data, bUsePrivateKey, outStr)
 			# ...
 		end
@@ -653,7 +653,7 @@ module Chilkat
 		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param data [CkByteData]
-		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @param bUsePrivateKey [Boolean]
 		#
 		# @return [String]
 		def encryptBytesENC(data, bUsePrivateKey)
@@ -673,10 +673,10 @@ module Chilkat
 		# = _FALSE_.
 		#
 		# @param stringToEncrypt [String]
-		# @param usePrivateKey [TrueClass, FalseClass]
+		# @param usePrivateKey [Boolean]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptString(stringToEncrypt, usePrivateKey, outData)
 			# ...
 		end
@@ -691,10 +691,10 @@ module Chilkat
 		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param str [String]
-		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @param bUsePrivateKey [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptStringENC(str, bUsePrivateKey, outStr)
 			# ...
 		end
@@ -709,7 +709,7 @@ module Chilkat
 		# Important: If trying to match OpenSSL results, set the LittleEndian property  _FALSE_.
 		#
 		# @param str [String]
-		# @param bUsePrivateKey [TrueClass, FalseClass]
+		# @param bUsePrivateKey [Boolean]
 		#
 		# @return [String]
 		def encryptStringENC(str, bUsePrivateKey)
@@ -724,7 +724,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExportPrivateKey(outStr)
 			# ...
 		end
@@ -762,7 +762,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExportPublicKey(outStr)
 			# ...
 		end
@@ -806,7 +806,7 @@ module Chilkat
 		#
 		# @param numBits [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GenerateKey(numBits)
 			# ...
 		end
@@ -840,7 +840,7 @@ module Chilkat
 		#
 		# @param xmlKey [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ImportPrivateKey(xmlKey)
 			# ...
 		end
@@ -853,7 +853,7 @@ module Chilkat
 		#
 		# @param key [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ImportPrivateKeyObj(key)
 			# ...
 		end
@@ -883,7 +883,7 @@ module Chilkat
 		#
 		# @param xmlKey [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ImportPublicKey(xmlKey)
 			# ...
 		end
@@ -896,7 +896,7 @@ module Chilkat
 		#
 		# @param key [CkPublicKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ImportPublicKeyObj(key)
 			# ...
 		end
@@ -910,7 +910,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSslSignBytes(data, outBytes)
 			# ...
 		end
@@ -925,7 +925,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSslSignBytesENC(data, outStr)
 			# ...
 		end
@@ -953,7 +953,7 @@ module Chilkat
 		# @param str [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSslSignString(str, outBytes)
 			# ...
 		end
@@ -967,7 +967,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSslSignStringENC(str, outStr)
 			# ...
 		end
@@ -994,7 +994,7 @@ module Chilkat
 		# @param signature [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSslVerifyBytes(signature, outBytes)
 			# ...
 		end
@@ -1009,7 +1009,7 @@ module Chilkat
 		# @param str [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSslVerifyBytesENC(str, outBytes)
 			# ...
 		end
@@ -1023,7 +1023,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSslVerifyString(data, outStr)
 			# ...
 		end
@@ -1051,7 +1051,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenSslVerifyStringENC(str, outStr)
 			# ...
 		end
@@ -1077,7 +1077,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1102,7 +1102,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignBytes(binaryData, hashAlgorithm, outData)
 			# ...
 		end
@@ -1129,7 +1129,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignBytesENC(binaryData, hashAlgorithm, outStr)
 			# ...
 		end
@@ -1169,7 +1169,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignHash(hashBytes, hashAlg, outBytes)
 			# ...
 		end
@@ -1183,7 +1183,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignHashENC(encodedHash, hashAlg, outStr)
 			# ...
 		end
@@ -1221,7 +1221,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignString(strToBeHashed, hashAlgorithm, outData)
 			# ...
 		end
@@ -1248,7 +1248,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignStringENC(strToBeHashed, hashAlgorithm, outStr)
 			# ...
 		end
@@ -1287,7 +1287,7 @@ module Chilkat
 		# @param filename [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SnkToXml(filename, outStr)
 			# ...
 		end
@@ -1311,7 +1311,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -1327,7 +1327,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param signatureBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyBytes(originalData, hashAlgorithm, signatureBytes)
 			# ...
 		end
@@ -1346,7 +1346,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyBytesENC(originalData, hashAlgorithm, encodedSig)
 			# ...
 		end
@@ -1360,7 +1360,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param sigBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyHash(hashBytes, hashAlg, sigBytes)
 			# ...
 		end
@@ -1374,7 +1374,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyHashENC(encodedHash, hashAlg, encodedSig)
 			# ...
 		end
@@ -1386,7 +1386,7 @@ module Chilkat
 		#
 		# @param xml [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyPrivateKey(xml)
 			# ...
 		end
@@ -1402,7 +1402,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param binarySig [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyString(originalString, hashAlgorithm, binarySig)
 			# ...
 		end
@@ -1421,7 +1421,7 @@ module Chilkat
 		# @param hashAlgorithm [String]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyStringENC(originalString, hashAlgorithm, encodedSig)
 			# ...
 		end

@@ -4,14 +4,14 @@ module Chilkat
 		# When set to _FALSE_, a Load* method replaces the contents of this PEM object. The default is
 		# _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AppendMode() end
 
 		# When set to _TRUE_, each of the Load* methods appends to the current contents of this PEM object.
 		# When set to _FALSE_, a Load* method replaces the contents of this PEM object. The default is
 		# _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AppendMode(newval) end
 
 		# If set to a file path, causes each Chilkat method or property call to automatically append it's
@@ -199,7 +199,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -219,7 +219,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -368,7 +368,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -378,21 +378,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -415,9 +415,9 @@ module Chilkat
 		# automatically added.
 		#
 		# @param cert [CkCert]
-		# @param includeChain [TrueClass, FalseClass]
+		# @param includeChain [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddCert(cert, includeChain)
 			# ...
 		end
@@ -435,7 +435,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param itemData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddItem(itemType, encoding, itemData)
 			# ...
 		end
@@ -447,7 +447,7 @@ module Chilkat
 		#
 		# @param privateKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPrivateKey(privateKey)
 			# ...
 		end
@@ -460,7 +460,7 @@ module Chilkat
 		# @param privKey [CkPrivateKey]
 		# @param certChain [CkCertChain]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPrivateKey2(privKey, certChain)
 			# ...
 		end
@@ -472,7 +472,7 @@ module Chilkat
 		#
 		# @param pubkey [CkPublicKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPublicKey(pubkey)
 			# ...
 		end
@@ -483,7 +483,7 @@ module Chilkat
 		# Removes all content from this PEM object.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Clear()
 			# ...
 		end
@@ -516,7 +516,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedItem(itemType, itemSubType, encoding, index, outStr)
 			# ...
 		end
@@ -572,7 +572,7 @@ module Chilkat
 		#
 		# @param p7bData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadP7b(p7bData)
 			# ...
 		end
@@ -584,7 +584,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadP7bFile(path)
 			# ...
 		end
@@ -598,7 +598,7 @@ module Chilkat
 		# @param pemContent [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPem(pemContent, password)
 			# ...
 		end
@@ -612,7 +612,7 @@ module Chilkat
 		# @param path [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPemFile(path, password)
 			# ...
 		end
@@ -624,7 +624,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveCert(index)
 			# ...
 		end
@@ -636,7 +636,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemovePrivateKey(index)
 			# ...
 		end
@@ -648,7 +648,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -706,7 +706,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ToPem(outStr)
 			# ...
 		end
@@ -821,15 +821,15 @@ module Chilkat
 		# CERTIFICATE----- 
 		#
 		#
-		# @param extendedAttrs [TrueClass, FalseClass]
-		# @param noKeys [TrueClass, FalseClass]
-		# @param noCerts [TrueClass, FalseClass]
-		# @param noCaCerts [TrueClass, FalseClass]
+		# @param extendedAttrs [Boolean]
+		# @param noKeys [Boolean]
+		# @param noCerts [Boolean]
+		# @param noCaCerts [Boolean]
 		# @param encryptAlg [String]
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ToPemEx(extendedAttrs, noKeys, noCerts, noCaCerts, encryptAlg, password, outStr)
 			# ...
 		end
@@ -903,10 +903,10 @@ module Chilkat
 		# CERTIFICATE----- 
 		#
 		#
-		# @param extendedAttrs [TrueClass, FalseClass]
-		# @param noKeys [TrueClass, FalseClass]
-		# @param noCerts [TrueClass, FalseClass]
-		# @param noCaCerts [TrueClass, FalseClass]
+		# @param extendedAttrs [Boolean]
+		# @param noKeys [Boolean]
+		# @param noCerts [Boolean]
+		# @param noCaCerts [Boolean]
 		# @param encryptAlg [String]
 		# @param password [String]
 		#

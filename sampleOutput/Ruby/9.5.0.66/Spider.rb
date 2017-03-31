@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,17 +17,17 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# If set the 1 (true) the spider will avoid all HTTPS URLs. The default is 0 (false).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AvoidHttps() end
 
 		# If set the 1 (true) the spider will avoid all HTTPS URLs. The default is 0 (false).
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AvoidHttps(newval) end
 
 		# Specifies a cache directory to use for spidering. If either of the FetchFromCache or UpdateCache
@@ -67,13 +67,13 @@ module Chilkat
 		# If equal to 1 (true), then the query portion of all URLs are automatically removed when adding to
 		# the unspidered list. The default value is 0 (false).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ChopAtQuery() end
 
 		# If equal to 1 (true), then the query portion of all URLs are automatically removed when adding to
 		# the unspidered list. The default value is 0 (false).
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ChopAtQuery(newval) end
 
 		# The maximum number of seconds to wait while connecting to an HTTP server.
@@ -193,13 +193,13 @@ module Chilkat
 		# If equal to 1 (true) then pages are fetched from cache when possible. If 0, the cache is ignored.
 		# The default value is 1. Regardless, if no CacheDir is set then the cache is not used.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_FetchFromCache() end
 
 		# If equal to 1 (true) then pages are fetched from cache when possible. If 0, the cache is ignored.
 		# The default value is 1. Regardless, if no CacheDir is set then the cache is not used.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_FetchFromCache(newval) end
 
 		# The number of milliseconds between each AbortCheck event callback. The AbortCheck callback allows an
@@ -278,7 +278,7 @@ module Chilkat
 
 		# Equal to 1 if the last page spidered was fetched from the cache. Otherwise equal to 0.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastFromCache() end
 
 		# The HTML text of the last paged fetched by the spider.
@@ -338,7 +338,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -358,7 +358,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The last-modification date of the last URL spidered.
@@ -462,13 +462,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# The domain name of a proxy host if an HTTP proxy is used.
@@ -568,13 +568,13 @@ module Chilkat
 		# If equal to 1 (true) then pages saved to the cache. If 0, the cache is ignored. The default value is
 		# 1. Regardless, if no CacheDir is set then the cache is not used.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UpdateCache() end
 
 		# If equal to 1 (true) then pages saved to the cache. If 0, the cache is ignored. The default value is
 		# 1. Regardless, if no CacheDir is set then the cache is not used.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UpdateCache(newval) end
 
 		# The value of the HTTP user-agent header field to be sent with HTTP requests. The default value is
@@ -610,7 +610,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -620,21 +620,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -739,7 +739,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CanonicalizeUrl(url, outStr)
 			# ...
 		end
@@ -818,7 +818,7 @@ module Chilkat
 		# LastFromCache, and LastModDate.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CrawlNext()
 			# ...
 		end
@@ -833,7 +833,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FetchRobotsText(outStr)
 			# ...
 		end
@@ -860,7 +860,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAvoidPattern(index, outStr)
 			# ...
 		end
@@ -885,7 +885,7 @@ module Chilkat
 		# @param domain [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBaseDomain(domain, outStr)
 			# ...
 		end
@@ -910,7 +910,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFailedUrl(index, outStr)
 			# ...
 		end
@@ -935,7 +935,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetOutboundLink(index, outStr)
 			# ...
 		end
@@ -960,7 +960,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSpideredUrl(index, outStr)
 			# ...
 		end
@@ -985,7 +985,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetUnspideredUrl(index, outStr)
 			# ...
 		end
@@ -1011,7 +1011,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetUrlDomain(url, outStr)
 			# ...
 		end
@@ -1051,7 +1051,7 @@ module Chilkat
 		# page to be loaded differently the next time.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RecrawlLast()
 			# ...
 		end
@@ -1063,7 +1063,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end

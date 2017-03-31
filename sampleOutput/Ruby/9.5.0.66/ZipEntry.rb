@@ -282,7 +282,7 @@ module Chilkat
 
 		# True if the Zip entry is a directory, false if it is a file.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsDirectory() end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -356,7 +356,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -376,7 +376,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -408,7 +408,7 @@ module Chilkat
 		# this bit flag is only provided to satisfy certain cases where another application might be sensitive
 		# to the flag.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_TextFlag() end
 
 		# Controls whether the "text flag" of the internal file attributes for this entry within the zip is
@@ -417,7 +417,7 @@ module Chilkat
 		# this bit flag is only provided to satisfy certain cases where another application might be sensitive
 		# to the flag.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_TextFlag(newval) end
 
 		# The size in bytes of this entry's file data when uncompressed.
@@ -447,7 +447,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -457,21 +457,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -493,7 +493,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendData(inData)
 			# ...
 		end
@@ -507,7 +507,7 @@ module Chilkat
 		# @param strContent [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendString(strContent, charset)
 			# ...
 		end
@@ -525,7 +525,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Copy(outData)
 			# ...
 		end
@@ -541,7 +541,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CopyToBase64(outStr)
 			# ...
 		end
@@ -572,7 +572,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CopyToHex(outStr)
 			# ...
 		end
@@ -601,7 +601,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Extract(dirPath)
 			# ...
 		end
@@ -613,7 +613,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExtractInto(dirPath)
 			# ...
 		end
@@ -636,7 +636,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Inflate(outData)
 			# ...
 		end
@@ -672,7 +672,7 @@ module Chilkat
 		#
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReplaceData(inData)
 			# ...
 		end
@@ -686,7 +686,7 @@ module Chilkat
 		# @param strContent [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReplaceString(strContent, charset)
 			# ...
 		end
@@ -698,7 +698,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -733,7 +733,7 @@ module Chilkat
 		# @param srcCharset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnzipToString(lineEndingBehavior, srcCharset, outStr)
 			# ...
 		end

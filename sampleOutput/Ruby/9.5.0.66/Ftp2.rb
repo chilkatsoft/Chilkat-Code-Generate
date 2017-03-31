@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# Some FTP servers require an Account name in addition to login/password. This property can be set for
@@ -109,7 +109,7 @@ module Chilkat
 		# listings, especially for last-mod date/time information. If usage of the MLSD command is turned off,
 		# it may adversely affect the quality and availability of other information.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AllowMlsd() end
 
 		# If _TRUE_, then uses the MLSD command to fetch directory listings when the FTP server supports MLSD.
@@ -121,7 +121,7 @@ module Chilkat
 		# listings, especially for last-mod date/time information. If usage of the MLSD command is turned off,
 		# it may adversely affect the quality and availability of other information.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AllowMlsd(newval) end
 
 		# The number of bytes received during an asynchronous FTP download. This property is updated in
@@ -225,7 +225,7 @@ module Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncFinished() end
 
@@ -270,7 +270,7 @@ module Chilkat
 		# should use the new model, which is identified by methods having names ending with "Async" and return
 		# a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncSuccess() end
 
@@ -278,14 +278,14 @@ module Chilkat
 		# FTP servers accept either. AuthTls is more commonly used. If a particular server has trouble with
 		# AuthTls, try AuthSsl instead.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AuthSsl() end
 
 		# Same as AuthTls, except the command sent to the FTP server is "AUTH SSL" instead of "AUTH TLS". Most
 		# FTP servers accept either. AuthTls is more commonly used. If a particular server has trouble with
 		# AuthTls, try AuthSsl instead.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AuthSsl(newval) end
 
 		# Set this to _TRUE_ to switch to a TLS 1.0 encrypted channel. This property should be set prior to
@@ -296,7 +296,7 @@ module Chilkat
 		# This keeps all data transmissions encrypted, but clears the control channel so that commands are
 		# sent unencrypted, thus allowing the router to translate network IP numbers in FTP commands.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AuthTls() end
 
 		# Set this to _TRUE_ to switch to a TLS 1.0 encrypted channel. This property should be set prior to
@@ -307,7 +307,7 @@ module Chilkat
 		# This keeps all data transmissions encrypted, but clears the control channel so that commands are
 		# sent unencrypted, thus allowing the router to translate network IP numbers in FTP commands.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AuthTls(newval) end
 
 		# When _TRUE_ (which is the default value), a "FEAT" command is automatically sent to the FTP server
@@ -319,7 +319,7 @@ module Chilkat
 		# 
 		# Set this property to _FALSE_ to prevent the FEAT command from being sent.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoFeat() end
 
 		# When _TRUE_ (which is the default value), a "FEAT" command is automatically sent to the FTP server
@@ -331,7 +331,7 @@ module Chilkat
 		# 
 		# Set this property to _FALSE_ to prevent the FEAT command from being sent.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoFeat(newval) end
 
 		# If _TRUE_, then the following will occur when a connection is made to an FTP server:
@@ -341,7 +341,7 @@ module Chilkat
 		# the Port property = 21, sets Ssl = _FALSE_
 		# The default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoFix() end
 
 		# If _TRUE_, then the following will occur when a connection is made to an FTP server:
@@ -351,21 +351,21 @@ module Chilkat
 		# the Port property = 21, sets Ssl = _FALSE_
 		# The default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoFix(newval) end
 
 		# Forces the component to retrieve each file's size prior to downloading for the purpose of monitoring
 		# percentage completion progress. For many FTP servers, this is not required and therefore for
 		# performance reasons this property defaults to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoGetSizeForProgress() end
 
 		# Forces the component to retrieve each file's size prior to downloading for the purpose of monitoring
 		# percentage completion progress. For many FTP servers, this is not required and therefore for
 		# performance reasons this property defaults to _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoGetSizeForProgress(newval) end
 
 		# When _TRUE_ (which is the default value), then an "OPTS UTF8 ON" command is automatically sent when
@@ -375,7 +375,7 @@ module Chilkat
 		# Set this property to _FALSE_ to prevent the "OPTS UTF8 ON" command from
 		# being sent.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoOptsUtf8() end
 
 		# When _TRUE_ (which is the default value), then an "OPTS UTF8 ON" command is automatically sent when
@@ -385,7 +385,7 @@ module Chilkat
 		# Set this property to _FALSE_ to prevent the "OPTS UTF8 ON" command from
 		# being sent.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoOptsUtf8(newval) end
 
 		# If _TRUE_ then the UseEpsv property is automatically set upon connecting to the FTP server. The
@@ -398,7 +398,7 @@ module Chilkat
 		# passive data connection cannot be established, make sure to test with both the AutoSetUseEpsv and
 		# UseEpsv properties set equal to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoSetUseEpsv() end
 
 		# If _TRUE_ then the UseEpsv property is automatically set upon connecting to the FTP server. The
@@ -411,7 +411,7 @@ module Chilkat
 		# passive data connection cannot be established, make sure to test with both the AutoSetUseEpsv and
 		# UseEpsv properties set equal to _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoSetUseEpsv(newval) end
 
 		# When _TRUE_ (which is the default value), a "SYST" command is automatically sent to the FTP server
@@ -420,7 +420,7 @@ module Chilkat
 		# causes trouble (which is rare), this behavior can be turned off by setting this property equal to
 		# _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoSyst() end
 
 		# When _TRUE_ (which is the default value), a "SYST" command is automatically sent to the FTP server
@@ -429,7 +429,7 @@ module Chilkat
 		# causes trouble (which is rare), this behavior can be turned off by setting this property equal to
 		# _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoSyst(newval) end
 
 		# Many FTP servers support the XCRC command. The Chilkat FTP component will automatically know if XCRC
@@ -443,7 +443,7 @@ module Chilkat
 		# To prevent
 		# XCRC checking, set this property to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AutoXcrc() end
 
 		# Many FTP servers support the XCRC command. The Chilkat FTP component will automatically know if XCRC
@@ -457,7 +457,7 @@ module Chilkat
 		# To prevent
 		# XCRC checking, set this property to _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AutoXcrc(newval) end
 
 		# If set to a non-zero value, the FTP2 component will bandwidth throttle all downloads to this value.
@@ -675,7 +675,7 @@ module Chilkat
 		# True if the FTP2 component was able to establish a TCP/IP connection to the FTP server after calling
 		# Connect.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ConnectVerified() end
 
 		# Used to control CRLF line endings when downloading text files in ASCII mode. The default value is
@@ -1003,7 +1003,7 @@ module Chilkat
 		# This is a read-only property. It will be set to _TRUE_ if the FTP2 component detects that your FTP
 		# server supports MODE Z. Otherwise it is set to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_HasModeZ() end
 
 		# This is the number of milliseconds between each AbortCheck event callback. The AbortCheck callback
@@ -1215,19 +1215,19 @@ module Chilkat
 		# Note: Accessing this property may cause a NOOP command to be sent to
 		# the FTP server.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsConnected() end
 
 		# Turns the in-memory session logging on or off. If on, the session log can be obtained via the
 		# SessionLog property.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepSessionLog() end
 
 		# Turns the in-memory session logging on or off. If on, the session log can be obtained via the
 		# SessionLog property.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepSessionLog(newval) end
 
 		# Enables internal features that can help when downloading extremely large files. In some cases, if
@@ -1238,7 +1238,7 @@ module Chilkat
 		# The default value of this property is _FALSE_. This property should only be set to _TRUE_
 		# if this sort of problem is encountered.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LargeFileMeasures() end
 
 		# Enables internal features that can help when downloading extremely large files. In some cases, if
@@ -1249,7 +1249,7 @@ module Chilkat
 		# The default value of this property is _FALSE_. This property should only be set to _TRUE_
 		# if this sort of problem is encountered.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LargeFileMeasures(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -1323,7 +1323,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -1343,7 +1343,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# Contains the last control-channel reply. For example: "550 Failed to change directory." or "250
@@ -1435,7 +1435,7 @@ module Chilkat
 
 		# True if the FTP2 component was able to login to the FTP server after calling Connect.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LoginVerified() end
 
 		# Important: This property is deprecated. Applications should instead call the GetDirCount
@@ -1462,19 +1462,19 @@ module Chilkat
 		# to download a file. Set to _TRUE_ if a partial transfer was received. Set to _FALSE_ if nothing was
 		# received, or if the full file was received.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PartialTransfer() end
 
 		# Set to _TRUE_ for FTP to operate in passive mode, otherwise set to _FALSE_ for non-passive (.i.e.
 		# "active" or "port" mode). The default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Passive() end
 
 		# Set to _TRUE_ for FTP to operate in passive mode, otherwise set to _FALSE_ for non-passive (.i.e.
 		# "active" or "port" mode). The default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Passive(newval) end
 
 		# This can handle problems that may arise when an FTP server is located behind a NAT router. FTP
@@ -1485,7 +1485,7 @@ module Chilkat
 		# the PASV response and replace it with the IP address of the already-established control connection.
 		# The default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PassiveUseHostAddr() end
 
 		# This can handle problems that may arise when an FTP server is located behind a NAT router. FTP
@@ -1496,7 +1496,7 @@ module Chilkat
 		# the PASV response and replace it with the IP address of the already-established control connection.
 		# The default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PassiveUseHostAddr(newval) end
 
 		# Password for logging into the FTP server.
@@ -1568,13 +1568,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# If _TRUE_, the NLST command is used instead of LIST when fetching a directory listing. This can help
@@ -1583,7 +1583,7 @@ module Chilkat
 		# The
 		# default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferNlst() end
 
 		# If _TRUE_, the NLST command is used instead of LIST when fetching a directory listing. This can help
@@ -1592,7 +1592,7 @@ module Chilkat
 		# The
 		# default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferNlst(newval) end
 
 		# Progress monitoring for FTP downloads rely on the FTP server indicating the file size within the
@@ -1899,7 +1899,7 @@ module Chilkat
 		# certificate is expired, or if the cert's signature is invalid, the connection is not allowed. The
 		# default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_RequireSslCertVerify() end
 
 		# If _TRUE_, then the FTP2 client will verify the server's SSL certificate. The server's certificate
@@ -1908,19 +1908,19 @@ module Chilkat
 		# certificate is expired, or if the cert's signature is invalid, the connection is not allowed. The
 		# default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_RequireSslCertVerify(newval) end
 
 		# Both uploads and downloads may be resumed by simply setting this property = _TRUE_ and re-calling
 		# the upload or download method.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_RestartNext() end
 
 		# Both uploads and downloads may be resumed by simply setting this property = _TRUE_ and re-calling
 		# the upload or download method.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_RestartNext(newval) end
 
 		# The buffer size to be used with the underlying TCP/IP socket for sending. The default value is 65536
@@ -1951,13 +1951,13 @@ module Chilkat
 
 		# This property is deprecated and has no effect.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_SkipFinalReply() end
 
 		# This property is deprecated and has no effect.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def put_SkipFinalReply(newval) end
@@ -2143,13 +2143,13 @@ module Chilkat
 		# Use TLS/SSL for FTP connections. You would typically set Ssl = _TRUE_ when connecting to port 990 on
 		# FTP servers that support TLS/SSL mode. Note: It is more common to use AuthTls.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Ssl() end
 
 		# Use TLS/SSL for FTP connections. You would typically set Ssl = _TRUE_ when connecting to port 990 on
 		# FTP servers that support TLS/SSL mode. Note: It is more common to use AuthTls.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Ssl(newval) end
 
 		# Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections. The default
@@ -2563,7 +2563,7 @@ module Chilkat
 		# Read-only property that returns _TRUE_ if the FTP server's digital certificate was verified when
 		# connecting via SSL / TLS.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SslServerCertVerified() end
 
 		# The paths of the files uploaded or downloaded in the last call to SyncDeleteTree, SyncLocalDir,
@@ -2864,7 +2864,7 @@ module Chilkat
 		# data connection cannot be established, make sure to test with both the AutoSetUseEpsv and UseEpsv
 		# properties set equal to _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseEpsv() end
 
 		# If _TRUE_, the FTP2 component will use the EPSV command instead of PASV for passive mode data
@@ -2879,7 +2879,7 @@ module Chilkat
 		# data connection cannot be established, make sure to test with both the AutoSetUseEpsv and UseEpsv
 		# properties set equal to _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseEpsv(newval) end
 
 		# Username for logging into the FTP server. Defaults to "anonymous".
@@ -2911,7 +2911,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -2921,21 +2921,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -2962,7 +2962,7 @@ module Chilkat
 		# @param localFilePath [String]
 		# @param remoteFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendFile(localFilePath, remoteFilePath)
 			# ...
 		end
@@ -2975,7 +2975,7 @@ module Chilkat
 		# @param remoteFilename [String]
 		# @param content [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendFileFromBinaryData(remoteFilename, content)
 			# ...
 		end
@@ -2989,7 +2989,7 @@ module Chilkat
 		# @param textData [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendFileFromTextData(remoteFilename, textData, charset)
 			# ...
 		end
@@ -3030,7 +3030,7 @@ module Chilkat
 		# @param localFilename [String]
 		# @param remoteFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncAppendFileStart(localFilename, remoteFilename)
 			# ...
@@ -3056,7 +3056,7 @@ module Chilkat
 		# @param remoteFilename [String]
 		# @param localFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncGetFileStart(remoteFilename, localFilename)
 			# ...
@@ -3082,7 +3082,7 @@ module Chilkat
 		# @param localFilename [String]
 		# @param remoteFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncPutFileStart(localFilename, remoteFilename)
 			# ...
@@ -3100,7 +3100,7 @@ module Chilkat
 		#
 		# @param remoteDirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChangeRemoteDir(remoteDirPath)
 			# ...
 		end
@@ -3114,7 +3114,7 @@ module Chilkat
 		# Note: This may cause a NOOP command to be sent to the FTP server.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CheckConnection()
 			# ...
 		end
@@ -3130,7 +3130,7 @@ module Chilkat
 		# program would typically clear the control channel after authenticating.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ClearControlChannel()
 			# ...
 		end
@@ -3181,7 +3181,7 @@ module Chilkat
 		# If the connection fails, make sure to check all potential external causes of blockage.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Connect()
 			# ...
 		end
@@ -3201,7 +3201,7 @@ module Chilkat
 		# to check all potential external causes of blockage.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConnectOnly()
 			# ...
 		end
@@ -3219,7 +3219,7 @@ module Chilkat
 		# needed.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertToTls()
 			# ...
 		end
@@ -3235,7 +3235,7 @@ module Chilkat
 		# @param localDir [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreatePlan(localDir, outStr)
 			# ...
 		end
@@ -3267,7 +3267,7 @@ module Chilkat
 		#
 		# @param remoteDirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateRemoteDir(remoteDirPath)
 			# ...
 		end
@@ -3297,7 +3297,7 @@ module Chilkat
 		#
 		# @param remoteFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteRemoteFile(remoteFilePath)
 			# ...
 		end
@@ -3315,7 +3315,7 @@ module Chilkat
 		# http://www.example-code.com/
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteTree()
 			# ...
 		end
@@ -3361,7 +3361,7 @@ module Chilkat
 		#
 		# @param outXmlReport [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DetermineSettings(outXmlReport)
 			# ...
 		end
@@ -3406,7 +3406,7 @@ module Chilkat
 		#
 		# @param outStrXml [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DirTreeXml(outStrXml)
 			# ...
 		end
@@ -3433,7 +3433,7 @@ module Chilkat
 		# Disconnects from the FTP server, ending the current session.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Disconnect()
 			# ...
 		end
@@ -3453,7 +3453,7 @@ module Chilkat
 		#
 		# @param localRoot [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadTree(localRoot)
 			# ...
 		end
@@ -3482,7 +3482,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Feat(outStr)
 			# ...
 		end
@@ -3563,7 +3563,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetCreateFTime(index)
 			# ...
@@ -3577,7 +3577,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetCreateTime(index)
 			# ...
@@ -3603,7 +3603,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetCreateTimeByName(filename)
 			# ...
@@ -3631,7 +3631,7 @@ module Chilkat
 		# @param filename [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCreateTimeByNameStr(filename, outStr)
 			# ...
 		end
@@ -3672,7 +3672,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCreateTimeStr(index, outStr)
 			# ...
 		end
@@ -3698,7 +3698,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCurrentRemoteDir(outStr)
 			# ...
 		end
@@ -3748,7 +3748,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFile(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -3765,7 +3765,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileBd(remoteFilePath, binData)
 			# ...
 		end
@@ -3779,7 +3779,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFilename(index, outStr)
 			# ...
 		end
@@ -3810,7 +3810,7 @@ module Chilkat
 		# @param charset [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileSb(remoteFilePath, charset, sb)
 			# ...
 		end
@@ -3831,7 +3831,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetGroup(index, outStr)
 			# ...
 		end
@@ -3864,7 +3864,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetIsDirectory(index)
 			# ...
 		end
@@ -3877,7 +3877,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetIsSymbolicLink(index)
 			# ...
 		end
@@ -3926,7 +3926,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetLastAccessFTime(index)
 			# ...
@@ -3940,7 +3940,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetLastAccessTime(index)
 			# ...
@@ -3962,7 +3962,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetLastAccessTimeByName(filename)
 			# ...
@@ -3985,7 +3985,7 @@ module Chilkat
 		# @param filename [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetLastAccessTimeByNameStr(filename, outStr)
 			# ...
 		end
@@ -4021,7 +4021,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetLastAccessTimeStr(index, outStr)
 			# ...
 		end
@@ -4084,7 +4084,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetLastModifiedFTime(index)
 			# ...
@@ -4098,7 +4098,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetLastModifiedTime(index)
 			# ...
@@ -4119,7 +4119,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetLastModifiedTimeByName(filename)
 			# ...
@@ -4142,7 +4142,7 @@ module Chilkat
 		# @param filename [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetLastModifiedTimeByNameStr(filename, outStr)
 			# ...
 		end
@@ -4178,7 +4178,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetLastModifiedTimeStr(index, outStr)
 			# ...
 		end
@@ -4213,7 +4213,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetOwner(index, outStr)
 			# ...
 		end
@@ -4478,7 +4478,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPermissions(index, outStr)
 			# ...
 		end
@@ -4738,7 +4738,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPermType(index, outStr)
 			# ...
 		end
@@ -4766,7 +4766,7 @@ module Chilkat
 		# @param remoteFilename [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRemoteFileBinaryData(remoteFilename, outData)
 			# ...
 		end
@@ -4781,7 +4781,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRemoteFileTextC(remoteFilename, charset, outStr)
 			# ...
 		end
@@ -4812,7 +4812,7 @@ module Chilkat
 		# @param remoteFilename [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetRemoteFileTextData(remoteFilename, outStr)
 			# ...
 		end
@@ -4908,7 +4908,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSizeStr(index, outStr)
 			# ...
 		end
@@ -4944,7 +4944,7 @@ module Chilkat
 		# @param filename [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSizeStrByName(filename, outStr)
 			# ...
 		end
@@ -4991,7 +4991,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param outStrRawListing [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetTextDirListing(pattern, outStrRawListing)
 			# ...
 		end
@@ -5018,7 +5018,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param outStrXmlListing [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetXmlDirListing(pattern, outStrXmlListing)
 			# ...
 		end
@@ -5042,7 +5042,7 @@ module Chilkat
 		# Return true if the component is already unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -5095,7 +5095,7 @@ module Chilkat
 		# @param remotePath [String]
 		# @param chunkSize [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LargeFileUpload(localPath, remotePath, chunkSize)
 			# ...
 		end
@@ -5113,7 +5113,7 @@ module Chilkat
 		# AutoSyst properties equal to _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoginAfterConnectOnly()
 			# ...
 		end
@@ -5185,7 +5185,7 @@ module Chilkat
 		# @param remoteDirPattern [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def NlstXml(remoteDirPattern, outStr)
 			# ...
 		end
@@ -5223,7 +5223,7 @@ module Chilkat
 		# Issues a no-op command to the FTP server.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Noop()
 			# ...
 		end
@@ -5240,7 +5240,7 @@ module Chilkat
 		# @param localFilePath [String]
 		# @param remoteFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutFile(localFilePath, remoteFilePath)
 			# ...
 		end
@@ -5257,7 +5257,7 @@ module Chilkat
 		# @param binData [CkBinData]
 		# @param remoteFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutFileBd(binData, remoteFilePath)
 			# ...
 		end
@@ -5270,7 +5270,7 @@ module Chilkat
 		# @param remoteFilename [String]
 		# @param content [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutFileFromBinaryData(remoteFilename, content)
 			# ...
 		end
@@ -5284,7 +5284,7 @@ module Chilkat
 		# @param textData [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutFileFromTextData(remoteFilename, textData, charset)
 			# ...
 		end
@@ -5300,10 +5300,10 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		# @param charset [String]
-		# @param includeBom [TrueClass, FalseClass]
+		# @param includeBom [Boolean]
 		# @param remoteFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutFileSb(sb, charset, includeBom, remoteFilePath)
 			# ...
 		end
@@ -5321,7 +5321,7 @@ module Chilkat
 		# @param plan [String]
 		# @param alreadyDoneFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutPlan(plan, alreadyDoneFilename)
 			# ...
 		end
@@ -5335,7 +5335,7 @@ module Chilkat
 		#
 		# @param localDir [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PutTree(localDir)
 			# ...
 		end
@@ -5347,7 +5347,7 @@ module Chilkat
 		#
 		# @param cmd [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Quote(cmd)
 			# ...
 		end
@@ -5363,7 +5363,7 @@ module Chilkat
 		#
 		# @param remoteDirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveRemoteDir(remoteDirPath)
 			# ...
 		end
@@ -5382,7 +5382,7 @@ module Chilkat
 		# @param existingRemoteFilePath [String]
 		# @param newRemoteFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenameRemoteFile(existingRemoteFilePath, newRemoteFilePath)
 			# ...
 		end
@@ -5394,7 +5394,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -5407,7 +5407,7 @@ module Chilkat
 		# @param cmd [String]
 		# @param outReply [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendCommand(cmd, outReply)
 			# ...
 		end
@@ -5434,7 +5434,7 @@ module Chilkat
 		# downloads, and directory listings) are compressed.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetModeZ()
 			# ...
 		end
@@ -5487,7 +5487,7 @@ module Chilkat
 		#
 		# @param option [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetOption(option)
 			# ...
 		end
@@ -5501,7 +5501,7 @@ module Chilkat
 		# @param dt [Object]
 		# @param remoteFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetRemoteFileDateTime(dt, remoteFilename)
 			# ...
@@ -5518,7 +5518,7 @@ module Chilkat
 		# @param dateTimeStr [String]
 		# @param remoteFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetRemoteFileDateTimeStr(dateTimeStr, remoteFilename)
 			# ...
 		end
@@ -5532,7 +5532,7 @@ module Chilkat
 		# @param dt [CkDateTime]
 		# @param remoteFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetRemoteFileDt(dt, remoteFilename)
 			# ...
 		end
@@ -5560,7 +5560,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -5576,7 +5576,7 @@ module Chilkat
 		# @param pemDataOrFilename [String]
 		# @param pemPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPem(pemDataOrFilename, pemPassword)
 			# ...
 		end
@@ -5589,7 +5589,7 @@ module Chilkat
 		# @param pfxFilename [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPfx(pfxFilename, pfxPassword)
 			# ...
 		end
@@ -5600,7 +5600,7 @@ module Chilkat
 		# Set the FTP transfer mode to us-ascii.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetTypeAscii()
 			# ...
 		end
@@ -5611,7 +5611,7 @@ module Chilkat
 		# Set the FTP transfer mode to binary.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetTypeBinary()
 			# ...
 		end
@@ -5625,7 +5625,7 @@ module Chilkat
 		#
 		# @param siteCommand [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Site(siteCommand)
 			# ...
 		end
@@ -5649,7 +5649,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Stat(outStr)
 			# ...
 		end
@@ -5676,7 +5676,7 @@ module Chilkat
 		#
 		# @param localRoot [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SyncDeleteRemote(localRoot)
 			# ...
 		end
@@ -5693,7 +5693,7 @@ module Chilkat
 		# @param localRoot [String]
 		# @param mode [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SyncLocalDir(localRoot, mode)
 			# ...
 		end
@@ -5725,7 +5725,7 @@ module Chilkat
 		# @param localRoot [String]
 		# @param mode [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SyncLocalTree(localRoot, mode)
 			# ...
 		end
@@ -5752,7 +5752,7 @@ module Chilkat
 		# @param localRoot [String]
 		# @param mode [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SyncRemoteTree(localRoot, mode)
 			# ...
 		end
@@ -5773,10 +5773,10 @@ module Chilkat
 		#
 		# @param localDirPath [String]
 		# @param mode [Fixnum]
-		# @param bDescend [TrueClass, FalseClass]
-		# @param bPreviewOnly [TrueClass, FalseClass]
+		# @param bDescend [Boolean]
+		# @param bPreviewOnly [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SyncRemoteTree2(localDirPath, mode, bDescend, bPreviewOnly)
 			# ...
 		end
@@ -5790,7 +5790,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Syst(outStr)
 			# ...
 		end
@@ -5816,7 +5816,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

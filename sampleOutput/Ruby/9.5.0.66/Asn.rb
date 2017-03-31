@@ -2,19 +2,19 @@ module Chilkat
 	class CkAsn 
 		# The ASN.1 item's boolean value if it is a boolean item.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_BoolValue() end
 
 		# The ASN.1 item's boolean value if it is a boolean item.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_BoolValue(newval) end
 
 		# _TRUE_ if this ASN.1 item is a constructed item. Sequence and Set items are constructed and can
 		# contain sub-items. All other tags (boolean, integer, octets, utf8String, etc.) are primitive
 		# (non-constructed).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Constructed() end
 
 		# The ASN.1 item's content if it is an ASN.1 string type (such as Utf8String, BmpString,
@@ -218,7 +218,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -238,7 +238,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -353,7 +353,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -363,21 +363,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -405,7 +405,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendBigInt(encodedBytes, encoding)
 			# ...
 		end
@@ -423,7 +423,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendBits(encodedBytes, encoding)
 			# ...
 		end
@@ -434,9 +434,9 @@ module Chilkat
 		# Appends an ASN.1 boolean item to the caller's sub-items. Items may only be appended to constructed
 		# data types such as Sequence and Set.
 		#
-		# @param value [TrueClass, FalseClass]
+		# @param value [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendBool(value)
 			# ...
 		end
@@ -448,7 +448,7 @@ module Chilkat
 		#
 		# @param tag [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendContextConstructed(tag)
 			# ...
 		end
@@ -466,7 +466,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendContextPrimitive(tag, encodedBytes, encoding)
 			# ...
 		end
@@ -479,7 +479,7 @@ module Chilkat
 		#
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendInt(value)
 			# ...
 		end
@@ -491,7 +491,7 @@ module Chilkat
 		# types such as Sequence and Set.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendNull()
 			# ...
 		end
@@ -508,7 +508,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendOctets(encodedBytes, encoding)
 			# ...
 		end
@@ -521,7 +521,7 @@ module Chilkat
 		#
 		# @param oid [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendOid(oid)
 			# ...
 		end
@@ -532,7 +532,7 @@ module Chilkat
 		# Appends an ASN.1 sequence item to the caller's sub-items.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendSequence()
 			# ...
 		end
@@ -544,7 +544,7 @@ module Chilkat
 		# point to the newly appended sequence item.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendSequence2()
 			# ...
 		end
@@ -567,7 +567,7 @@ module Chilkat
 		# Appends an ASN.1 set item to the caller's sub-items.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendSet()
 			# ...
 		end
@@ -579,7 +579,7 @@ module Chilkat
 		# the newly appended set item.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendSet2()
 			# ...
 		end
@@ -607,7 +607,7 @@ module Chilkat
 		# @param strType [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendString(strType, value)
 			# ...
 		end
@@ -624,7 +624,7 @@ module Chilkat
 		# @param timeFormat [String]
 		# @param dateTimeStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendTime(timeFormat, dateTimeStr)
 			# ...
 		end
@@ -636,7 +636,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AsnToXml(outStr)
 			# ...
 		end
@@ -659,7 +659,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteSubItem(index)
 			# ...
 		end
@@ -671,7 +671,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBinaryDer(outBytes)
 			# ...
 		end
@@ -687,7 +687,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedContent(encoding, outStr)
 			# ...
 		end
@@ -716,7 +716,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedDer(encoding, outStr)
 			# ...
 		end
@@ -765,7 +765,7 @@ module Chilkat
 		#
 		# @param xmlStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadAsnXml(xmlStr)
 			# ...
 		end
@@ -777,7 +777,7 @@ module Chilkat
 		#
 		# @param derBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadBinary(derBytes)
 			# ...
 		end
@@ -789,7 +789,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadBinaryFile(path)
 			# ...
 		end
@@ -803,7 +803,7 @@ module Chilkat
 		# @param asnContent [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadEncoded(asnContent, encoding)
 			# ...
 		end
@@ -815,7 +815,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -831,7 +831,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetEncodedContent(encodedBytes, encoding)
 			# ...
 		end
@@ -843,7 +843,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteBinaryDer(path)
 			# ...
 		end
