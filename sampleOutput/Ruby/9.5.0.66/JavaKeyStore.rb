@@ -165,7 +165,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -185,7 +185,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -234,7 +234,7 @@ module Chilkat
 		# certificate. If _FALSE_, then incomplete certificate chains are allowed. The default value is
 		# _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_RequireCompleteChain() end
 
 		# If _TRUE_, then adding a private key to the JKS only succeeds if the certificate chain can be
@@ -242,7 +242,7 @@ module Chilkat
 		# certificate. If _FALSE_, then incomplete certificate chains are allowed. The default value is
 		# _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_RequireCompleteChain(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -252,7 +252,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -262,21 +262,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# If _TRUE_, then the keystore's keyed digest is required to pass validation (password required) for
@@ -284,7 +284,7 @@ module Chilkat
 		# may be loaded into memory without password validation (if a null or empty string is passed to the
 		# load method). The default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerifyKeyedDigest() end
 
 		# If _TRUE_, then the keystore's keyed digest is required to pass validation (password required) for
@@ -292,7 +292,7 @@ module Chilkat
 		# may be loaded into memory without password validation (if a null or empty string is passed to the
 		# load method). The default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerifyKeyedDigest(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -340,7 +340,7 @@ module Chilkat
 		# @param alias [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfx(pfx, alias, password)
 			# ...
 		end
@@ -369,7 +369,7 @@ module Chilkat
 		# @param alias [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPrivateKey(cert, alias, password)
 			# ...
 		end
@@ -394,7 +394,7 @@ module Chilkat
 		# @param alias [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddSecretKey(encodedKeyBytes, encoding, algorithm, alias, password)
 			# ...
 		end
@@ -407,7 +407,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param alias [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddTrustedCert(cert, alias)
 			# ...
 		end
@@ -421,7 +421,7 @@ module Chilkat
 		# @param oldPassword [String]
 		# @param newPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChangePassword(index, oldPassword, newPassword)
 			# ...
 		end
@@ -432,7 +432,7 @@ module Chilkat
 		# Finds and returns the certificate chain for the private key with the specified alias.
 		#
 		# @param alias [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
 		# @return [CkCertChain]
 		def FindCertChain(alias, caseSensitive)
@@ -446,7 +446,7 @@ module Chilkat
 		#
 		# @param password [String]
 		# @param alias [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
 		# @return [CkPrivateKey]
 		def FindPrivateKey(password, alias, caseSensitive)
@@ -459,7 +459,7 @@ module Chilkat
 		# Finds and returns the trusted certificate with the specified alias.
 		#
 		# @param alias [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
 		# @return [CkCert]
 		def FindTrustedCert(alias, caseSensitive)
@@ -500,7 +500,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPrivateKeyAlias(index, outStr)
 			# ...
 		end
@@ -528,7 +528,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSecretKey(password, index, encoding, outStr)
 			# ...
 		end
@@ -556,7 +556,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSecretKeyAlias(index, outStr)
 			# ...
 		end
@@ -595,7 +595,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetTrustedCertAlias(index, outStr)
 			# ...
 		end
@@ -621,7 +621,7 @@ module Chilkat
 		# @param password [String]
 		# @param jksData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadBinary(password, jksData)
 			# ...
 		end
@@ -635,7 +635,7 @@ module Chilkat
 		# @param jksEncData [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadEncoded(password, jksEncData, encoding)
 			# ...
 		end
@@ -648,7 +648,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFile(password, path)
 			# ...
 		end
@@ -661,7 +661,7 @@ module Chilkat
 		# @param password [String]
 		# @param jwkSet [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadJwkSet(password, jwkSet)
 			# ...
 		end
@@ -676,7 +676,7 @@ module Chilkat
 		# @param entryType [Fixnum]
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveEntry(entryType, index)
 			# ...
 		end
@@ -688,7 +688,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -704,7 +704,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param alias [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAlias(entryType, index, alias)
 			# ...
 		end
@@ -719,7 +719,7 @@ module Chilkat
 		# @param password [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ToBinary(password, outBytes)
 			# ...
 		end
@@ -736,7 +736,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ToEncodedString(password, encoding, outStr)
 			# ...
 		end
@@ -767,7 +767,7 @@ module Chilkat
 		# @param password [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ToFile(password, path)
 			# ...
 		end
@@ -781,7 +781,7 @@ module Chilkat
 		# @param password [String]
 		# @param sbJwkSet [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ToJwkSet(password, sbJwkSet)
 			# ...
 		end
@@ -819,7 +819,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -832,7 +832,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseCertVault(vault)
 			# ...
 		end

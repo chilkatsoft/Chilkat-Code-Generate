@@ -17,7 +17,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -37,7 +37,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The number of bytes contained within the object.
@@ -52,7 +52,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -62,7 +62,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 
@@ -72,7 +72,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendBd(binData)
 			# ...
 		end
@@ -84,7 +84,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendBinary(data)
 			# ...
 		end
@@ -98,7 +98,7 @@ module Chilkat
 		#
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendBom(charset)
 			# ...
 		end
@@ -113,7 +113,7 @@ module Chilkat
 		# @param encData [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendEncoded(encData, encoding)
 			# ...
 		end
@@ -128,7 +128,7 @@ module Chilkat
 		# @param sb [CkStringBuilder]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendEncodedSb(sb, encoding)
 			# ...
 		end
@@ -141,7 +141,7 @@ module Chilkat
 		# @param sb [CkStringBuilder]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendSb(sb, charset)
 			# ...
 		end
@@ -155,7 +155,7 @@ module Chilkat
 		# @param str [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendString(str, charset)
 			# ...
 		end
@@ -166,7 +166,7 @@ module Chilkat
 		# Clears the contents.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Clear()
 			# ...
 		end
@@ -178,7 +178,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ContentsEqual(binData)
 			# ...
 		end
@@ -190,7 +190,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBinary(outBytes)
 			# ...
 		end
@@ -204,7 +204,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBinaryChunk(offset, numBytes, outBytes)
 			# ...
 		end
@@ -219,7 +219,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncoded(encoding, outStr)
 			# ...
 		end
@@ -250,7 +250,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedChunk(offset, numBytes, encoding, outStr)
 			# ...
 		end
@@ -281,7 +281,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedSb(encoding, sb)
 			# ...
 		end
@@ -293,7 +293,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadBinary(data)
 			# ...
 		end
@@ -308,7 +308,7 @@ module Chilkat
 		# @param encData [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadEncoded(encData, encoding)
 			# ...
 		end
@@ -320,7 +320,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFile(path)
 			# ...
 		end
@@ -333,7 +333,7 @@ module Chilkat
 		# @param offset [Fixnum]
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveChunk(offset, numBytes)
 			# ...
 		end
@@ -345,7 +345,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFile(path)
 			# ...
 		end

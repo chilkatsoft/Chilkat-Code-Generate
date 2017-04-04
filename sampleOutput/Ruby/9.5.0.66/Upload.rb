@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# If non-zero, limits (throttles) the upload bandwidth to approximately this maximum number of bytes
@@ -191,7 +191,7 @@ module Chilkat
 		# client can abort prior to uploading the data.
 		# The default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Expect100Continue() end
 
 		# When _TRUE_, the request header will included an "Expect: 100-continue" header field. This indicates
@@ -201,7 +201,7 @@ module Chilkat
 		# client can abort prior to uploading the data.
 		# The default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Expect100Continue(newval) end
 
 		# This property is only valid in programming environment and languages that allow for event
@@ -339,7 +339,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -359,7 +359,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -579,13 +579,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# The domain name of a proxy host if an HTTP proxy is used. Do not include the "http://". The domain
@@ -715,7 +715,7 @@ module Chilkat
 		# 443
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Ssl() end
 
 		# Set this to _TRUE_ if the upload is to HTTPS. For example, if the target of the upload
@@ -730,7 +730,7 @@ module Chilkat
 		# 443
 		#
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Ssl(newval) end
 
 		# Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections. The default
@@ -1273,7 +1273,7 @@ module Chilkat
 		# BeginUpload, and then periodically checking the value of this property to determine when the upload
 		# is complete.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UploadInProgress() end
 
 		# Set to _TRUE_ (success) or _FALSE_ (failed) after an asynchronous upload completes or aborts due to
@@ -1281,7 +1281,7 @@ module Chilkat
 		# _FALSE_. It will then check the value of this property to determine if the upload was successful or
 		# not.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UploadSuccess() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1291,7 +1291,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1301,21 +1301,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1394,7 +1394,7 @@ module Chilkat
 		# determine success (_TRUE_) or failure (_FALSE_).
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BeginUpload()
 			# ...
 		end
@@ -1406,7 +1406,7 @@ module Chilkat
 		# AddFileReference once for each file (prior to calling this method).
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BlockingUpload()
 			# ...
 		end
@@ -1440,7 +1440,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1468,7 +1468,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UploadToMemory(outData)
 			# ...
 		end

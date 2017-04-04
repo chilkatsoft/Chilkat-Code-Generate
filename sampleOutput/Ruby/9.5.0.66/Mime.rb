@@ -495,7 +495,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -515,7 +515,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -824,25 +824,25 @@ module Chilkat
 		# Controls whether extra (informative) header fields are added to the MIME message when unwrapping
 		# security.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UnwrapExtras() end
 
 		# Controls whether extra (informative) header fields are added to the MIME message when unwrapping
 		# security.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UnwrapExtras(newval) end
 
 		# Controls whether the boilerplate text "This is a multi-part message in MIME format." is used as the
 		# body content of a multipart MIME part.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseMmDescription() end
 
 		# Controls whether the boilerplate text "This is a multi-part message in MIME format." is used as the
 		# body content of a multipart MIME part.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseMmDescription(newval) end
 
 		# If _TRUE_, then the Content-Type header fields created by Chilkat will use "x-pkcs7" instead of
@@ -877,7 +877,7 @@ module Chilkat
 		# The default value of this property is _TRUE_, meaning that "x-"
 		# is used by default.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseXPkcs7() end
 
 		# If _TRUE_, then the Content-Type header fields created by Chilkat will use "x-pkcs7" instead of
@@ -912,7 +912,7 @@ module Chilkat
 		# The default value of this property is _TRUE_, meaning that "x-"
 		# is used by default.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseXPkcs7(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -922,7 +922,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -932,21 +932,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -985,7 +985,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDecryptCert(cert)
 			# ...
 		end
@@ -998,7 +998,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDetachedSignature(cert)
 			# ...
 		end
@@ -1012,9 +1012,9 @@ module Chilkat
 		# contains the original content of the calling object, and the second contains the digital signature.
 		#
 		# @param cert [CkCert]
-		# @param transferHeaderFields [TrueClass, FalseClass]
+		# @param transferHeaderFields [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDetachedSignature2(cert, transferHeaderFields)
 			# ...
 		end
@@ -1030,7 +1030,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param privateKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDetachedSignaturePk(cert, privateKey)
 			# ...
 		end
@@ -1046,9 +1046,9 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		# @param privateKey [CkPrivateKey]
-		# @param transferHeaderFields [TrueClass, FalseClass]
+		# @param transferHeaderFields [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDetachedSignaturePk2(cert, privateKey, transferHeaderFields)
 			# ...
 		end
@@ -1062,7 +1062,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddEncryptCert(cert)
 			# ...
 		end
@@ -1075,7 +1075,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddHeaderField(name, value)
 			# ...
 		end
@@ -1094,7 +1094,7 @@ module Chilkat
 		# @param pfxFileData [CkByteData]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceData(pfxFileData, pfxPassword)
 			# ...
 		end
@@ -1113,7 +1113,7 @@ module Chilkat
 		# @param pfxFilePath [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceFile(pfxFilePath, password)
 			# ...
 		end
@@ -1127,7 +1127,7 @@ module Chilkat
 		#
 		# @param mime [CkMime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendPart(mime)
 			# ...
 		end
@@ -1140,7 +1140,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendPartFromFile(filename)
 			# ...
 		end
@@ -1193,7 +1193,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AsnBodyToXml(outStr)
 			# ...
 		end
@@ -1277,7 +1277,7 @@ module Chilkat
 		# MIME until it is decrypted.) Therefore, the ContainsSignedParts method would return _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ContainsEncryptedParts()
 			# ...
 		end
@@ -1301,7 +1301,7 @@ module Chilkat
 		# MIME produced by calling ConvertToSigned.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ContainsSignedParts()
 			# ...
 		end
@@ -1373,7 +1373,7 @@ module Chilkat
 		#
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertToMultipartAlt()
 			# ...
 		end
@@ -1431,7 +1431,7 @@ module Chilkat
 		#
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertToMultipartMixed()
 			# ...
 		end
@@ -1448,7 +1448,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertToSigned(cert)
 			# ...
 		end
@@ -1464,7 +1464,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param privateKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertToSignedPk(cert, privateKey)
 			# ...
 		end
@@ -1485,7 +1485,7 @@ module Chilkat
 		#
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Decrypt()
 			# ...
 		end
@@ -1499,7 +1499,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param privateKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Decrypt2(cert, privateKey)
 			# ...
 		end
@@ -1511,7 +1511,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptUsingCert(cert)
 			# ...
 		end
@@ -1527,7 +1527,7 @@ module Chilkat
 		# @param pfxData [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptUsingPfxData(pfxData, password)
 			# ...
 		end
@@ -1541,7 +1541,7 @@ module Chilkat
 		# @param pfxFilePath [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptUsingPfxFile(pfxFilePath, pfxPassword)
 			# ...
 		end
@@ -1554,7 +1554,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Encrypt(cert)
 			# ...
 		end
@@ -1566,7 +1566,7 @@ module Chilkat
 		# added by calling AddEncryptCert (once per certificate). See the example code below:
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptN()
 			# ...
 		end
@@ -1607,7 +1607,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBodyBinary(outData)
 			# ...
 		end
@@ -1620,7 +1620,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBodyDecoded(outStr)
 			# ...
 		end
@@ -1646,7 +1646,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBodyEncoded(outStr)
 			# ...
 		end
@@ -1684,7 +1684,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEntireBody(outStr)
 			# ...
 		end
@@ -1707,7 +1707,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEntireHead(outStr)
 			# ...
 		end
@@ -1731,7 +1731,7 @@ module Chilkat
 		# @param fieldName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderField(fieldName, outStr)
 			# ...
 		end
@@ -1774,7 +1774,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderFieldAttribute(name, attrName, outStr)
 			# ...
 		end
@@ -1817,7 +1817,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderFieldName(index, outStr)
 			# ...
 		end
@@ -1842,7 +1842,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHeaderFieldValue(index, outStr)
 			# ...
 		end
@@ -1866,7 +1866,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMime(outStr)
 			# ...
 		end
@@ -1889,7 +1889,7 @@ module Chilkat
 		#
 		# @param bindat [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMimeBd(bindat)
 			# ...
 		end
@@ -1901,7 +1901,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMimeBytes(outBytes)
 			# ...
 		end
@@ -1913,7 +1913,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetMimeSb(sb)
 			# ...
 		end
@@ -1940,7 +1940,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetSignatureSigningTime(index)
 			# ...
@@ -1954,7 +1954,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSignatureSigningTimeStr(index, outStr)
 			# ...
 		end
@@ -2005,7 +2005,7 @@ module Chilkat
 		# @param fmt [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetStructure(fmt, outStr)
 			# ...
 		end
@@ -2030,7 +2030,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetXml(outStr)
 			# ...
 		end
@@ -2056,7 +2056,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasSignatureSigningTime(index)
 			# ...
 		end
@@ -2067,7 +2067,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message contains application data, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsApplicationData()
 			# ...
 		end
@@ -2079,7 +2079,7 @@ module Chilkat
 		# considered an attachment if the Content-Disposition header field contains the value "attachment".
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsAttachment()
 			# ...
 		end
@@ -2090,7 +2090,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message contains audio data, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsAudio()
 			# ...
 		end
@@ -2101,7 +2101,7 @@ module Chilkat
 		# Returns _TRUE_ if the MIME message is PKCS7 encrypted, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsEncrypted()
 			# ...
 		end
@@ -2112,7 +2112,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME body is HTML, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsHtml()
 			# ...
 		end
@@ -2123,7 +2123,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message contains image data, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsImage()
 			# ...
 		end
@@ -2135,7 +2135,7 @@ module Chilkat
 		# multipart/alternative, etc.), otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsMultipart()
 			# ...
 		end
@@ -2146,7 +2146,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message is multipart/alternative, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsMultipartAlternative()
 			# ...
 		end
@@ -2157,7 +2157,7 @@ module Chilkat
 		# Return true if the MIME message is multipart/mixed, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsMultipartMixed()
 			# ...
 		end
@@ -2168,7 +2168,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message is multipart/related, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsMultipartRelated()
 			# ...
 		end
@@ -2179,7 +2179,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message body is plain text, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsPlainText()
 			# ...
 		end
@@ -2190,7 +2190,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message is PKCS7 digitally signed, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsSigned()
 			# ...
 		end
@@ -2202,7 +2202,7 @@ module Chilkat
 		# text/xml, etc., otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsText()
 			# ...
 		end
@@ -2213,7 +2213,7 @@ module Chilkat
 		# Returns _TRUE_ if the component is already unlocked, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -2224,7 +2224,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message contains video data, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsVideo()
 			# ...
 		end
@@ -2235,7 +2235,7 @@ module Chilkat
 		# Return _TRUE_ if the MIME message body is XML, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsXml()
 			# ...
 		end
@@ -2247,7 +2247,7 @@ module Chilkat
 		#
 		# @param mimeMsg [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadMime(mimeMsg)
 			# ...
 		end
@@ -2259,7 +2259,7 @@ module Chilkat
 		#
 		# @param bindat [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadMimeBd(bindat)
 			# ...
 		end
@@ -2271,7 +2271,7 @@ module Chilkat
 		#
 		# @param binData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadMimeBytes(binData)
 			# ...
 		end
@@ -2283,7 +2283,7 @@ module Chilkat
 		#
 		# @param fileName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadMimeFile(fileName)
 			# ...
 		end
@@ -2295,7 +2295,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadMimeSb(sb)
 			# ...
 		end
@@ -2307,7 +2307,7 @@ module Chilkat
 		#
 		# @param xml [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXml(xml)
 			# ...
 		end
@@ -2319,7 +2319,7 @@ module Chilkat
 		#
 		# @param fileName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXmlFile(fileName)
 			# ...
 		end
@@ -2332,7 +2332,7 @@ module Chilkat
 		#
 		# @param mimeObject [CkMime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def NewMessageRfc822(mimeObject)
 			# ...
 		end
@@ -2344,7 +2344,7 @@ module Chilkat
 		# to be an empty mulipart/alternative message.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def NewMultipartAlternative()
 			# ...
 		end
@@ -2356,7 +2356,7 @@ module Chilkat
 		# to be an empty mulipart/mixed message.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def NewMultipartMixed()
 			# ...
 		end
@@ -2368,7 +2368,7 @@ module Chilkat
 		# to be an empty mulipart/related message.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def NewMultipartRelated()
 			# ...
 		end
@@ -2380,7 +2380,7 @@ module Chilkat
 		# field are removed. Otherwise, only the 1st occurrence is removed.
 		#
 		# @param fieldName [String]
-		# @param bAllOccurrences [TrueClass, FalseClass]
+		# @param bAllOccurrences [Boolean]
 		#
 		# @return [nil]
 		def RemoveHeaderField(fieldName, bAllOccurrences)
@@ -2394,7 +2394,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemovePart(index)
 			# ...
 		end
@@ -2407,7 +2407,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveBody(filename)
 			# ...
 		end
@@ -2419,7 +2419,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -2432,7 +2432,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveMime(filename)
 			# ...
 		end
@@ -2444,7 +2444,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveXml(filename)
 			# ...
 		end
@@ -2468,7 +2468,7 @@ module Chilkat
 		#
 		# @param binData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBodyFromBinary(binData)
 			# ...
 		end
@@ -2481,7 +2481,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBodyFromEncoded(encoding, str)
 			# ...
 		end
@@ -2499,7 +2499,7 @@ module Chilkat
 		#
 		# @param fileName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBodyFromFile(fileName)
 			# ...
 		end
@@ -2522,7 +2522,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBodyFromHtml(str)
 			# ...
 		end
@@ -2545,7 +2545,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBodyFromPlainText(str)
 			# ...
 		end
@@ -2568,7 +2568,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBodyFromXml(str)
 			# ...
 		end
@@ -2586,7 +2586,7 @@ module Chilkat
 		#
 		# @param csp [CkCsp]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCSP(csp)
 			# ...
 		end
@@ -2600,7 +2600,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetHeaderField(name, value)
 			# ...
 		end
@@ -2612,7 +2612,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetVerifyCert(cert)
 			# ...
 		end
@@ -2626,7 +2626,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -2648,7 +2648,7 @@ module Chilkat
 		# layer, and then decrypt the "enveloped data".
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnwrapSecurity()
 			# ...
 		end
@@ -2702,7 +2702,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -2720,7 +2720,7 @@ module Chilkat
 		# correctly pre-installed on the computer.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Verify()
 			# ...
 		end

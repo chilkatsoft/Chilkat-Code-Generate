@@ -126,7 +126,7 @@ module Chilkat
 		# 
 		# The default value is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmitCompact() end
 
 		# If _TRUE_ then the Emit method outputs in the most compact form possible (a single-line with no
@@ -135,7 +135,7 @@ module Chilkat
 		# 
 		# The default value is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmitCompact(newval) end
 
 		# If _TRUE_ then the Emit method uses CRLF line-endings when emitting the non-compact (pretty-print)
@@ -146,7 +146,7 @@ module Chilkat
 		# The default value is
 		# _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmitCrLf() end
 
 		# If _TRUE_ then the Emit method uses CRLF line-endings when emitting the non-compact (pretty-print)
@@ -157,7 +157,7 @@ module Chilkat
 		# The default value is
 		# _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmitCrLf(newval) end
 
 		# The value of the "i" index to be used when evaluating a JSON path.
@@ -261,7 +261,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -281,7 +281,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -319,7 +319,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -329,21 +329,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -367,7 +367,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddArrayAt(index, name)
 			# ...
 		end
@@ -380,9 +380,9 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		# @param name [String]
-		# @param value [TrueClass, FalseClass]
+		# @param value [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddBoolAt(index, name, value)
 			# ...
 		end
@@ -397,7 +397,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddIntAt(index, name, value)
 			# ...
 		end
@@ -411,7 +411,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddNullAt(index, name)
 			# ...
 		end
@@ -427,7 +427,7 @@ module Chilkat
 		# @param name [String]
 		# @param numericStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddNumberAt(index, name, numericStr)
 			# ...
 		end
@@ -441,7 +441,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddObjectAt(index, name)
 			# ...
 		end
@@ -456,7 +456,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddStringAt(index, name, value)
 			# ...
 		end
@@ -479,9 +479,9 @@ module Chilkat
 		# Appends a new boolean member. (This is the same as passing -1 to the AddBoolAt method.)
 		#
 		# @param name [String]
-		# @param value [TrueClass, FalseClass]
+		# @param value [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendBool(name, value)
 			# ...
 		end
@@ -494,7 +494,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendInt(name, value)
 			# ...
 		end
@@ -519,7 +519,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendString(name, value)
 			# ...
 		end
@@ -556,7 +556,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BoolAt(index)
 			# ...
 		end
@@ -568,7 +568,7 @@ module Chilkat
 		#
 		# @param jsonPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BoolOf(jsonPath)
 			# ...
 		end
@@ -591,7 +591,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Delete(name)
 			# ...
 		end
@@ -603,7 +603,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteAt(index)
 			# ...
 		end
@@ -615,7 +615,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Emit(outStr)
 			# ...
 		end
@@ -638,7 +638,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EmitSb(sb)
 			# ...
 		end
@@ -652,7 +652,7 @@ module Chilkat
 		# @param arrayPath [String]
 		# @param relPath [String]
 		# @param value [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
 		# @return [CkJsonObject]
 		def FindRecord(arrayPath, relPath, value, caseSensitive)
@@ -668,11 +668,11 @@ module Chilkat
 		# @param arrayPath [String]
 		# @param relPath [String]
 		# @param value [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		# @param retRelPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FindRecordString(arrayPath, relPath, value, caseSensitive, retRelPath, outStr)
 			# ...
 		end
@@ -686,7 +686,7 @@ module Chilkat
 		# @param arrayPath [String]
 		# @param relPath [String]
 		# @param value [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		# @param retRelPath [String]
 		#
 		# @return [String]
@@ -706,7 +706,7 @@ module Chilkat
 		# @param name [String]
 		# @param data [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FirebaseApplyEvent(name, data)
 			# ...
 		end
@@ -720,7 +720,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param jsonData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FirebasePatch(jsonPath, jsonData)
 			# ...
 		end
@@ -737,7 +737,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FirebasePut(jsonPath, value)
 			# ...
 		end
@@ -763,7 +763,7 @@ module Chilkat
 		#
 		# @param jsonPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasMember(jsonPath)
 			# ...
 		end
@@ -811,7 +811,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsNullAt(index)
 			# ...
 		end
@@ -823,7 +823,7 @@ module Chilkat
 		#
 		# @param jsonPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsNullOf(jsonPath)
 			# ...
 		end
@@ -835,7 +835,7 @@ module Chilkat
 		#
 		# @param json [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Load(json)
 			# ...
 		end
@@ -847,7 +847,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFile(path)
 			# ...
 		end
@@ -859,7 +859,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadSb(sb)
 			# ...
 		end
@@ -872,7 +872,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def NameAt(index, outStr)
 			# ...
 		end
@@ -922,7 +922,7 @@ module Chilkat
 		# @param oldName [String]
 		# @param newName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Rename(oldName, newName)
 			# ...
 		end
@@ -935,7 +935,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenameAt(index, name)
 			# ...
 		end
@@ -947,7 +947,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -958,9 +958,9 @@ module Chilkat
 		# Sets the boolean value of the Nth member. Indexing is 0-based (the 1st member is at index 0).
 		#
 		# @param index [Fixnum]
-		# @param value [TrueClass, FalseClass]
+		# @param value [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBoolAt(index, value)
 			# ...
 		end
@@ -971,9 +971,9 @@ module Chilkat
 		# Sets the boolean value at the specified ARG1.
 		#
 		# @param jsonPath [String]
-		# @param value [TrueClass, FalseClass]
+		# @param value [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBoolOf(jsonPath, value)
 			# ...
 		end
@@ -986,7 +986,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetIntAt(index, value)
 			# ...
 		end
@@ -999,7 +999,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetIntOf(jsonPath, value)
 			# ...
 		end
@@ -1011,7 +1011,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetNullAt(index)
 			# ...
 		end
@@ -1023,7 +1023,7 @@ module Chilkat
 		#
 		# @param jsonPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetNullOf(jsonPath)
 			# ...
 		end
@@ -1038,7 +1038,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetNumberAt(index, value)
 			# ...
 		end
@@ -1052,7 +1052,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetNumberOf(jsonPath, value)
 			# ...
 		end
@@ -1065,7 +1065,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetStringAt(index, value)
 			# ...
 		end
@@ -1078,7 +1078,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetStringOf(jsonPath, value)
 			# ...
 		end
@@ -1104,7 +1104,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def StringAt(index, outStr)
 			# ...
 		end
@@ -1129,7 +1129,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def StringOf(jsonPath, outStr)
 			# ...
 		end
@@ -1176,9 +1176,9 @@ module Chilkat
 		# automatically created as needed.
 		#
 		# @param jsonPath [String]
-		# @param value [TrueClass, FalseClass]
+		# @param value [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateBool(jsonPath, value)
 			# ...
 		end
@@ -1192,7 +1192,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateInt(jsonPath, value)
 			# ...
 		end
@@ -1205,7 +1205,7 @@ module Chilkat
 		#
 		# @param jsonPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateNull(jsonPath)
 			# ...
 		end
@@ -1219,7 +1219,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param numericStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateNumber(jsonPath, numericStr)
 			# ...
 		end
@@ -1233,7 +1233,7 @@ module Chilkat
 		# @param jsonPath [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateString(jsonPath, value)
 			# ...
 		end

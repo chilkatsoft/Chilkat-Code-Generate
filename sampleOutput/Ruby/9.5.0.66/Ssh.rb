@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# Set to one of the following values if a call to AuthenticatePw, AuthenticatePk, or AuthenticatePwPk
@@ -95,7 +95,7 @@ module Chilkat
 		# ^? 	127 	7F 	DEL 	Delete
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_CaretControl() end
 
 		# Controls whether the caret character '^' is interpreted as indicating a control character. The
@@ -151,7 +151,7 @@ module Chilkat
 		# ^? 	127 	7F 	DEL 	Delete
 		#
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_CaretControl(newval) end
 
 		# If a request to open a channel fails, this property contains a code that identifies the reason for
@@ -415,7 +415,7 @@ module Chilkat
 		# immediately after the connection is seemingly established (i.e. during authentication), then check
 		# to see if disabling compression resolves the problem.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EnableCompression() end
 
 		# Enables or disables the use of compression w/ the SSH connection. The default value is _TRUE_,
@@ -427,7 +427,7 @@ module Chilkat
 		# immediately after the connection is seemingly established (i.e. during authentication), then check
 		# to see if disabling compression resolves the problem.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EnableCompression(newval) end
 
 		# Set to one of the following encryption algorithms to force that cipher to be used. By default, the
@@ -701,7 +701,7 @@ module Chilkat
 		# property will only be set to _FALSE_ by calling Disconnect, or by the failure of another method call
 		# such that the disconnection is detected.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsConnected() end
 
 		# Controls whether communications to/from the SSH server are saved to the SessionLog property. The
@@ -709,7 +709,7 @@ module Chilkat
 		# will continuously grow as SSH activity transpires. The purpose of the KeepSessionLog / SessionLog
 		# properties is to help in debugging any future problems that may arise.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepSessionLog() end
 
 		# Controls whether communications to/from the SSH server are saved to the SessionLog property. The
@@ -717,7 +717,7 @@ module Chilkat
 		# will continuously grow as SSH activity transpires. The purpose of the KeepSessionLog / SessionLog
 		# properties is to help in debugging any future problems that may arise.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepSessionLog(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -791,7 +791,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -811,7 +811,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -868,19 +868,19 @@ module Chilkat
 		# the following format, where vertical bar characters encapsulate the old and new passwords:
 		# # |oldPassword|newPassword|
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PasswordChangeRequested() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# The maximum amount of time to allow for reading messages/data from the SSH server. This is different
@@ -1123,7 +1123,7 @@ module Chilkat
 		# therefore it is not possible to differentiate stderr output from stdout. In summary: This feature
 		# will not work for most SSH servers.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_StderrToStdout() end
 
 		# If _TRUE_, then stderr is redirected to stdout. In this case, channel output for both stdout and
@@ -1140,21 +1140,21 @@ module Chilkat
 		# therefore it is not possible to differentiate stderr output from stdout. In summary: This feature
 		# will not work for most SSH servers.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_StderrToStdout(newval) end
 
 		# Controls whether the TCP_NODELAY socket option is used for the underlying TCP/IP socket. The default
 		# value is _TRUE_. This disables the Nagle algorithm and allows for better performance when small
 		# amounts of data are sent to/from the SSH server.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_TcpNoDelay() end
 
 		# Controls whether the TCP_NODELAY socket option is used for the underlying TCP/IP socket. The default
 		# value is _TRUE_. This disables the Nagle algorithm and allows for better performance when small
 		# amounts of data are sent to/from the SSH server.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_TcpNoDelay(newval) end
 
 		# If a user authentication banner message is received during authentication, it will be made available
@@ -1198,7 +1198,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1208,21 +1208,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1250,7 +1250,7 @@ module Chilkat
 		# @param username [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
@@ -1273,7 +1273,7 @@ module Chilkat
 		# @param login [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePw(login, password)
 			# ...
 		end
@@ -1291,7 +1291,7 @@ module Chilkat
 		# @param password [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
@@ -1303,7 +1303,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelIsOpen(channelNum)
 			# ...
 		end
@@ -1447,7 +1447,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelReceivedClose(channelNum)
 			# ...
 		end
@@ -1461,7 +1461,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelReceivedEof(channelNum)
 			# ...
 		end
@@ -1473,7 +1473,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelReceivedExitStatus(channelNum)
 			# ...
 		end
@@ -1487,7 +1487,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelReceiveToClose(channelNum)
 			# ...
 		end
@@ -1507,9 +1507,9 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param matchPattern [String]
 		# @param charset [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelReceiveUntilMatch(channelNum, matchPattern, charset, caseSensitive)
 			# ...
 		end
@@ -1523,9 +1523,9 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param matchPatterns [CkStringArray]
 		# @param charset [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelReceiveUntilMatchN(channelNum, matchPatterns, charset, caseSensitive)
 			# ...
 		end
@@ -1555,7 +1555,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelSendClose(channelNum)
 			# ...
 		end
@@ -1568,7 +1568,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelSendData(channelNum, byteData)
 			# ...
 		end
@@ -1582,7 +1582,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelSendEof(channelNum)
 			# ...
 		end
@@ -1598,7 +1598,7 @@ module Chilkat
 		# @param textData [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChannelSendString(channelNum, textData, charset)
 			# ...
 		end
@@ -1609,7 +1609,7 @@ module Chilkat
 		# Returns _TRUE_ if the underlying TCP socket is connected to the SSH server.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CheckConnection()
 			# ...
 		end
@@ -1643,7 +1643,7 @@ module Chilkat
 		# @param domainName [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Connect(domainName, port)
 			# ...
 		end
@@ -1663,7 +1663,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConnectThroughSsh(ssh, hostname, port)
 			# ...
 		end
@@ -1718,7 +1718,7 @@ module Chilkat
 		# @param response [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ContinueKeyboardAuth(response, outStr)
 			# ...
 		end
@@ -1825,7 +1825,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetChannelType(index, outStr)
 			# ...
 		end
@@ -1852,7 +1852,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReceivedData(channelNum, outBytes)
 			# ...
 		end
@@ -1866,7 +1866,7 @@ module Chilkat
 		# @param maxNumBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReceivedDataN(channelNum, maxNumBytes, outBytes)
 			# ...
 		end
@@ -1898,7 +1898,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReceivedStderr(channelNum, outBytes)
 			# ...
 		end
@@ -1915,7 +1915,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReceivedStderrText(channelNum, charset, outStr)
 			# ...
 		end
@@ -1947,7 +1947,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReceivedText(channelNum, charset, outStr)
 			# ...
 		end
@@ -1979,7 +1979,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetReceivedTextS(channelNum, substr, charset, outStr)
 			# ...
 		end
@@ -2063,7 +2063,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PeekReceivedText(channelNum, charset, outStr)
 			# ...
 		end
@@ -2140,7 +2140,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QuickCommand(command, charset, outStr)
 			# ...
 		end
@@ -2207,7 +2207,7 @@ module Chilkat
 		# application will not even realize that an underlying key re-exchange occurred.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReKey()
 			# ...
 		end
@@ -2219,7 +2219,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -2233,7 +2233,7 @@ module Chilkat
 		# first open a channel prior to sending an IGNORE message).
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendIgnore()
 			# ...
 		end
@@ -2260,7 +2260,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param commandLine [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqExec(channelNum, commandLine)
 			# ...
 		end
@@ -2296,7 +2296,7 @@ module Chilkat
 		# @param widthInPixels [Fixnum]
 		# @param heightInPixels [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqPty(channelNum, termType, widthInChars, heightInChars, widthInPixels, heightInPixels)
 			# ...
 		end
@@ -2310,7 +2310,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqSetEnv(channelNum, name, value)
 			# ...
 		end
@@ -2325,7 +2325,7 @@ module Chilkat
 		#
 		# @param channelNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqShell(channelNum)
 			# ...
 		end
@@ -2340,7 +2340,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param signalName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqSignal(channelNum, signalName)
 			# ...
 		end
@@ -2354,7 +2354,7 @@ module Chilkat
 		# @param channelNum [Fixnum]
 		# @param subsystemName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqSubsystem(channelNum, subsystemName)
 			# ...
 		end
@@ -2371,7 +2371,7 @@ module Chilkat
 		# @param pixWidth [Fixnum]
 		# @param pixHeight [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqWindowChange(channelNum, widthInChars, heightInRows, pixWidth, pixHeight)
 			# ...
 		end
@@ -2384,12 +2384,12 @@ module Chilkat
 		# for when or why it would be needed.
 		#
 		# @param channelNum [Fixnum]
-		# @param singleConnection [TrueClass, FalseClass]
+		# @param singleConnection [Boolean]
 		# @param authProt [String]
 		# @param authCookie [String]
 		# @param screenNum [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqX11Forwarding(channelNum, singleConnection, authProt, authCookie, screenNum)
 			# ...
 		end
@@ -2400,9 +2400,9 @@ module Chilkat
 		# This method should be ignored and not used.
 		#
 		# @param channelNum [Fixnum]
-		# @param clientCanDo [TrueClass, FalseClass]
+		# @param clientCanDo [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqXonXoff(channelNum, clientCanDo)
 			# ...
 		end
@@ -2478,7 +2478,7 @@ module Chilkat
 		# @param ttyName [String]
 		# @param ttyValue [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetTtyMode(ttyName, ttyValue)
 			# ...
 		end
@@ -2516,7 +2516,7 @@ module Chilkat
 		# @param login [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def StartKeyboardAuth(login, outStr)
 			# ...
 		end
@@ -2568,7 +2568,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# Contains the bytes downloaded from a remote file via the AccumulateBytes method call. Each call to
@@ -310,7 +310,7 @@ module Chilkat
 		# 
 		# Note: Caching only occurs when filenames are used, not handles.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EnableCache() end
 
 		# Controls whether the component keeps an internal file size & attribute cache. The cache affects the
@@ -326,7 +326,7 @@ module Chilkat
 		# 
 		# Note: Caching only occurs when filenames are used, not handles.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EnableCache(newval) end
 
 		# Enables or disables the use of compression w/ the SSH connection. The default value is _TRUE_,
@@ -338,7 +338,7 @@ module Chilkat
 		# immediately after the connection is seemingly established (i.e. during authentication), then check
 		# to see if disabling compression resolves the problem.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EnableCompression() end
 
 		# Enables or disables the use of compression w/ the SSH connection. The default value is _TRUE_,
@@ -350,7 +350,7 @@ module Chilkat
 		# immediately after the connection is seemingly established (i.e. during authentication), then check
 		# to see if disabling compression resolves the problem.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EnableCompression(newval) end
 
 		# Automatically set during the InitializeSftp method if the server sends a filename-charset name-value
@@ -444,13 +444,13 @@ module Chilkat
 		# If set to _TRUE_, forces the client to choose version 3 of the SFTP protocol, even if the server
 		# supports a higher version. The default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ForceV3() end
 
 		# If set to _TRUE_, forces the client to choose version 3 of the SFTP protocol, even if the server
 		# supports a higher version. The default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ForceV3(newval) end
 
 		# This is the number of milliseconds between each AbortCheck event callback. The AbortCheck callback
@@ -670,13 +670,13 @@ module Chilkat
 		# If _TRUE_, then the ReadDir method will include the "." and ".." directories in its results. The
 		# default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IncludeDotDirs() end
 
 		# If _TRUE_, then the ReadDir method will include the "." and ".." directories in its results. The
 		# default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_IncludeDotDirs(newval) end
 
 		# The InitializeSftp method call opens a channel for the SFTP session. If the request to open a
@@ -714,7 +714,7 @@ module Chilkat
 		# or InitializeSftp has already succeeded. It only means that the connection has been established by
 		# calling Connect.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsConnected() end
 
 		# Controls whether communications to/from the SFTP server are saved to the SessionLog property. The
@@ -722,7 +722,7 @@ module Chilkat
 		# will continuously grow as SFTP activity transpires. The purpose of the KeepSessionLog / SessionLog
 		# properties is to help in debugging any future problems that may arise.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepSessionLog() end
 
 		# Controls whether communications to/from the SFTP server are saved to the SessionLog property. The
@@ -730,7 +730,7 @@ module Chilkat
 		# will continuously grow as SFTP activity transpires. The purpose of the KeepSessionLog / SessionLog
 		# properties is to help in debugging any future problems that may arise.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepSessionLog(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -804,7 +804,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -824,7 +824,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -868,7 +868,7 @@ module Chilkat
 		# the following format, where vertical bar characters encapsulate the old and new passwords:
 		# # |oldPassword|newPassword|
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PasswordChangeRequested() end
 
 		# This property is only valid in programming environment and languages that allow for event
@@ -908,13 +908,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# If _TRUE_, then the file last-modified and create date/time will be preserved for downloaded and
@@ -930,7 +930,7 @@ module Chilkat
 		# date/times are always preserved ini the SyncTreeDownload and SyncTreeUpload methods.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreserveDate() end
 
 		# If _TRUE_, then the file last-modified and create date/time will be preserved for downloaded and
@@ -946,7 +946,7 @@ module Chilkat
 		# date/times are always preserved ini the SyncTreeDownload and SyncTreeUpload methods.
 		#
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreserveDate(newval) end
 
 		# The negotiated SFTP protocol version, which should be a value between 3 and 6 inclusive. When the
@@ -1344,14 +1344,14 @@ module Chilkat
 		# algorithm). The default value of this property is _FALSE_. Setting this value to _TRUE_ disables the
 		# delay of sending successive small packets on the network.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_TcpNoDelay() end
 
 		# This property controls the use of the internal TCP_NODELAY socket option (which disables the Nagle
 		# algorithm). The default value of this property is _FALSE_. Setting this value to _TRUE_ disables the
 		# delay of sending successive small packets on the network.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_TcpNoDelay(newval) end
 
 		# The chunk size to use when uploading files via the UploadFile or UploadFileByName methods. The
@@ -1373,13 +1373,13 @@ module Chilkat
 		# If _TRUE_, then date/times are returned as UTC times. If _FALSE_ (the default) then date/times are
 		# returned as local times.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UtcMode() end
 
 		# If _TRUE_, then date/times are returned as UTC times. If _FALSE_ (the default) then date/times are
 		# returned as local times.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UtcMode(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1389,7 +1389,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1399,21 +1399,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1457,7 +1457,7 @@ module Chilkat
 		# @param n2 [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Add64(n1, n2, outStr)
 			# ...
 		end
@@ -1489,7 +1489,7 @@ module Chilkat
 		# @param username [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
@@ -1513,7 +1513,7 @@ module Chilkat
 		# @param login [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePw(login, password)
 			# ...
 		end
@@ -1531,7 +1531,7 @@ module Chilkat
 		# @param password [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
@@ -1578,7 +1578,7 @@ module Chilkat
 		#
 		# @param handle [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CloseHandle(handle)
 			# ...
 		end
@@ -1607,7 +1607,7 @@ module Chilkat
 		# @param domainName [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Connect(domainName, port)
 			# ...
 		end
@@ -1627,7 +1627,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConnectThroughSsh(sshConn, hostname, port)
 			# ...
 		end
@@ -1678,9 +1678,9 @@ module Chilkat
 		#
 		# @param localFilename [String]
 		# @param remoteFilename [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CopyFileAttr(localFilename, remoteFilename, isHandle)
 			# ...
 		end
@@ -1692,7 +1692,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateDir(path)
 			# ...
 		end
@@ -1716,7 +1716,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadBd(remoteFilePath, binData)
 			# ...
 		end
@@ -1731,7 +1731,7 @@ module Chilkat
 		# @param handle [String]
 		# @param toFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadFile(handle, toFilename)
 			# ...
 		end
@@ -1747,7 +1747,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -1761,7 +1761,7 @@ module Chilkat
 		# @param charset [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DownloadSb(remoteFilePath, charset, sb)
 			# ...
 		end
@@ -1775,7 +1775,7 @@ module Chilkat
 		#
 		# @param handle [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Eof(handle)
 			# ...
 		end
@@ -1792,8 +1792,8 @@ module Chilkat
 		# date/time.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [CkDateTime]
 		def GetFileCreateDt(pathOrHandle, bFollowLinks, bIsHandle)
@@ -1812,10 +1812,10 @@ module Chilkat
 		# date/time.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileCreateTime(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1827,11 +1827,11 @@ module Chilkat
 		# The same as GetFileCreateTime, except the date/time is returned as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileCreateTimeStr(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -1842,8 +1842,8 @@ module Chilkat
 		# The same as GetFileCreateTime, except the date/time is returned as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [String]
 		def getFileCreateTimeStr(pathOrHandle, bFollowLinks, bIsHandle)
@@ -1862,11 +1862,11 @@ module Chilkat
 		# Instead, the decimal GID of the file is returned.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileGroup(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -1883,8 +1883,8 @@ module Chilkat
 		# Instead, the decimal GID of the file is returned.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [String]
 		def getFileGroup(pathOrHandle, bFollowLinks, bIsHandle)
@@ -1899,10 +1899,10 @@ module Chilkat
 		# be _FALSE_. If ARG2 is _TRUE_, then symbolic links will be followed on the server.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileLastAccess(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1916,8 +1916,8 @@ module Chilkat
 		# be _FALSE_. If ARG2 is _TRUE_, then symbolic links will be followed on the server.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [CkDateTime]
 		def GetFileLastAccessDt(pathOrHandle, bFollowLinks, bIsHandle)
@@ -1930,11 +1930,11 @@ module Chilkat
 		# The same as GetFileLastAccess, except the date/time is returned as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileLastAccessStr(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -1945,8 +1945,8 @@ module Chilkat
 		# The same as GetFileLastAccess, except the date/time is returned as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [String]
 		def getFileLastAccessStr(pathOrHandle, bFollowLinks, bIsHandle)
@@ -1961,10 +1961,10 @@ module Chilkat
 		# should be _FALSE_. If ARG2 is _TRUE_, then symbolic links will be followed on the server.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetFileLastModified(pathOrHandle, bFollowLinks, bIsHandle)
 			# ...
@@ -1978,8 +1978,8 @@ module Chilkat
 		# should be _FALSE_. If ARG2 is _TRUE_, then symbolic links will be followed on the server.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [CkDateTime]
 		def GetFileLastModifiedDt(pathOrHandle, bFollowLinks, bIsHandle)
@@ -1992,11 +1992,11 @@ module Chilkat
 		# The same as GetFileLastModified, except the date/time is returned as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileLastModifiedStr(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -2007,8 +2007,8 @@ module Chilkat
 		# The same as GetFileLastModified, except the date/time is returned as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [String]
 		def getFileLastModifiedStr(pathOrHandle, bFollowLinks, bIsHandle)
@@ -2027,11 +2027,11 @@ module Chilkat
 		# Instead, the decimal UID of the file is returned.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileOwner(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -2048,8 +2048,8 @@ module Chilkat
 		# Instead, the decimal UID of the file is returned.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [String]
 		def getFileOwner(pathOrHandle, bFollowLinks, bIsHandle)
@@ -2064,8 +2064,8 @@ module Chilkat
 		# should be _FALSE_. If ARG2 is _TRUE_, then symbolic links will be followed on the server.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [Fixnum]
 		def GetFilePermissions(pathOrHandle, bFollowLinks, bIsHandle)
@@ -2081,8 +2081,8 @@ module Chilkat
 		# should be _FALSE_. If ARG2 is _TRUE_, then symbolic links will be followed on the server.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [Fixnum]
 		def GetFileSize32(pathOrHandle, bFollowLinks, bIsHandle)
@@ -2098,8 +2098,8 @@ module Chilkat
 		# be followed on the server.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [Bignum]
 		def GetFileSize64(pathOrHandle, bFollowLinks, bIsHandle)
@@ -2119,11 +2119,11 @@ module Chilkat
 		# ReadFileBytes64s allow for 64-bit values to be passed as strings.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileSizeStr(pathOrHandle, bFollowLinks, bIsHandle, outStr)
 			# ...
 		end
@@ -2141,8 +2141,8 @@ module Chilkat
 		# ReadFileBytes64s allow for 64-bit values to be passed as strings.
 		#
 		# @param pathOrHandle [String]
-		# @param bFollowLinks [TrueClass, FalseClass]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bFollowLinks [Boolean]
+		# @param bIsHandle [Boolean]
 		#
 		# @return [String]
 		def getFileSizeStr(pathOrHandle, bFollowLinks, bIsHandle)
@@ -2165,7 +2165,7 @@ module Chilkat
 		# occurred when trying to open the SFTP session channel).
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def InitializeSftp()
 			# ...
 		end
@@ -2177,7 +2177,7 @@ module Chilkat
 		#
 		# @param handle [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LastReadFailed(handle)
 			# ...
 		end
@@ -2238,7 +2238,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenDir(path, outStr)
 			# ...
 		end
@@ -2465,7 +2465,7 @@ module Chilkat
 		# @param createDisposition [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenFile(remotePath, access, createDisposition, outStr)
 			# ...
 		end
@@ -2675,7 +2675,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileBytes(handle, numBytes, outBytes)
 			# ...
 		end
@@ -2695,7 +2695,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileBytes32(handle, offset, numBytes, outBytes)
 			# ...
 		end
@@ -2714,7 +2714,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileBytes64(handle, offset, numBytes, outBytes)
 			# ...
 		end
@@ -2737,7 +2737,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileBytes64s(handle, offset, numBytes, outBytes)
 			# ...
 		end
@@ -2764,7 +2764,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileText(handle, numBytes, charset, outStr)
 			# ...
 		end
@@ -2815,7 +2815,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileText32(handle, offset, numBytes, charset, outStr)
 			# ...
 		end
@@ -2864,7 +2864,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileText64(handle, offset, numBytes, charset, outStr)
 			# ...
 		end
@@ -2913,7 +2913,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileText64s(handle, offset, numBytes, charset, outStr)
 			# ...
 		end
@@ -2975,7 +2975,7 @@ module Chilkat
 		# @param composePath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RealPath(originalPath, composePath, outStr)
 			# ...
 		end
@@ -3025,7 +3025,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveDir(path)
 			# ...
 		end
@@ -3037,7 +3037,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveFile(filename)
 			# ...
 		end
@@ -3050,7 +3050,7 @@ module Chilkat
 		# @param oldPath [String]
 		# @param newPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RenameFileOrDir(oldPath, newPath)
 			# ...
 		end
@@ -3066,7 +3066,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ResumeDownloadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -3082,7 +3082,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ResumeUploadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -3094,7 +3094,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -3108,7 +3108,7 @@ module Chilkat
 		# channel prior to sending an IGNORE message).
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendIgnore()
 			# ...
 		end
@@ -3124,10 +3124,10 @@ module Chilkat
 		# setting the create date/time.
 		#
 		# @param pathOrHandle [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		# @param createDateTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCreateDt(pathOrHandle, isHandle, createDateTime)
 			# ...
 		end
@@ -3143,10 +3143,10 @@ module Chilkat
 		# setting the create date/time.
 		#
 		# @param pathOrHandle [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		# @param createDateTime [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetCreateTime(pathOrHandle, isHandle, createDateTime)
 			# ...
@@ -3158,10 +3158,10 @@ module Chilkat
 		# The same as SetCreateTime, except the date/time is passed as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bIsHandle [Boolean]
 		# @param dateTimeStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCreateTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -3174,10 +3174,10 @@ module Chilkat
 		# _FALSE_.
 		#
 		# @param pathOrHandle [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		# @param accessDateTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetLastAccessDt(pathOrHandle, isHandle, accessDateTime)
 			# ...
 		end
@@ -3190,10 +3190,10 @@ module Chilkat
 		# _FALSE_.
 		#
 		# @param pathOrHandle [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		# @param accessDateTime [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetLastAccessTime(pathOrHandle, isHandle, accessDateTime)
 			# ...
@@ -3205,10 +3205,10 @@ module Chilkat
 		# The same as SetLastAccessTime, except the date/time is passed as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bIsHandle [Boolean]
 		# @param dateTimeStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetLastAccessTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -3221,10 +3221,10 @@ module Chilkat
 		# to _FALSE_.
 		#
 		# @param pathOrHandle [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		# @param modifiedDateTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetLastModifiedDt(pathOrHandle, isHandle, modifiedDateTime)
 			# ...
 		end
@@ -3237,10 +3237,10 @@ module Chilkat
 		# to _FALSE_.
 		#
 		# @param pathOrHandle [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		# @param modifiedDateTime [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SetLastModifiedTime(pathOrHandle, isHandle, modifiedDateTime)
 			# ...
@@ -3252,10 +3252,10 @@ module Chilkat
 		# The same as SetLastModifiedTime, except the date/time is passed as an RFC822 formatted string.
 		#
 		# @param pathOrHandle [String]
-		# @param bIsHandle [TrueClass, FalseClass]
+		# @param bIsHandle [Boolean]
 		# @param dateTimeStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetLastModifiedTimeStr(pathOrHandle, bIsHandle, dateTimeStr)
 			# ...
 		end
@@ -3271,11 +3271,11 @@ module Chilkat
 		# setting the owner and group.
 		#
 		# @param pathOrHandle [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		# @param owner [String]
 		# @param group [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetOwnerAndGroup(pathOrHandle, isHandle, owner, group)
 			# ...
 		end
@@ -3288,10 +3288,10 @@ module Chilkat
 		# _FALSE_.
 		#
 		# @param pathOrHandle [String]
-		# @param isHandle [TrueClass, FalseClass]
+		# @param isHandle [Boolean]
 		# @param permissions [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetPermissions(pathOrHandle, isHandle, permissions)
 			# ...
 		end
@@ -3321,9 +3321,9 @@ module Chilkat
 		# @param remoteRoot [String]
 		# @param localRoot [String]
 		# @param mode [Fixnum]
-		# @param recurse [TrueClass, FalseClass]
+		# @param recurse [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SyncTreeDownload(remoteRoot, localRoot, mode, recurse)
 			# ...
 		end
@@ -3351,9 +3351,9 @@ module Chilkat
 		# @param localBaseDir [String]
 		# @param remoteBaseDir [String]
 		# @param mode [Fixnum]
-		# @param bRecurse [TrueClass, FalseClass]
+		# @param bRecurse [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SyncTreeUpload(localBaseDir, remoteBaseDir, mode, bRecurse)
 			# ...
 		end
@@ -3373,7 +3373,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -3386,7 +3386,7 @@ module Chilkat
 		# @param binData [CkBinData]
 		# @param remoteFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UploadBd(binData, remoteFilePath)
 			# ...
 		end
@@ -3401,7 +3401,7 @@ module Chilkat
 		# @param handle [String]
 		# @param fromFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UploadFile(handle, fromFilename)
 			# ...
 		end
@@ -3418,7 +3418,7 @@ module Chilkat
 		# @param remoteFilePath [String]
 		# @param localFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UploadFileByName(remoteFilePath, localFilePath)
 			# ...
 		end
@@ -3431,9 +3431,9 @@ module Chilkat
 		# @param sb [CkStringBuilder]
 		# @param remoteFilePath [String]
 		# @param charset [String]
-		# @param includeBom [TrueClass, FalseClass]
+		# @param includeBom [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UploadSb(sb, remoteFilePath, charset, includeBom)
 			# ...
 		end
@@ -3446,7 +3446,7 @@ module Chilkat
 		# @param handle [String]
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFileBytes(handle, byteData)
 			# ...
 		end
@@ -3461,7 +3461,7 @@ module Chilkat
 		# @param offset [Fixnum]
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFileBytes32(handle, offset, data)
 			# ...
 		end
@@ -3476,7 +3476,7 @@ module Chilkat
 		# @param offset64 [Bignum]
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFileBytes64(handle, offset64, data)
 			# ...
 		end
@@ -3492,7 +3492,7 @@ module Chilkat
 		# @param offset64 [String]
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFileBytes64s(handle, offset64, data)
 			# ...
 		end
@@ -3515,7 +3515,7 @@ module Chilkat
 		# @param charset [String]
 		# @param textData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFileText(handle, charset, textData)
 			# ...
 		end
@@ -3534,7 +3534,7 @@ module Chilkat
 		# @param charset [String]
 		# @param textData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFileText32(handle, offset32, charset, textData)
 			# ...
 		end
@@ -3553,7 +3553,7 @@ module Chilkat
 		# @param charset [String]
 		# @param textData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFileText64(handle, offset64, charset, textData)
 			# ...
 		end
@@ -3573,7 +3573,7 @@ module Chilkat
 		# @param charset [String]
 		# @param textData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFileText64s(handle, offset64, charset, textData)
 			# ...
 		end

@@ -135,7 +135,7 @@ namespace ChilkatApi
             }
             else if (gt == GT_BOOL)
             {
-                return "TrueClass, FalseClass";
+                return "Boolean";
             }
             else if (gt == GT_CPP_SZ_BYTEDATA)
             {
@@ -1390,7 +1390,7 @@ namespace ChilkatApi
             if (gt == GT_STRING) return "String";
             if (gt == GT_INT) return "Fixnum";
             if (gt == GT_INT64) return "Bignum";
-            if (gt == GT_BOOL) return "TrueClass, FalseClass";
+            if (gt == GT_BOOL) return "Boolean";
             if (gt == GT_DATE) return "Object";
             if (gt == GT_BYTES) return "CkByteData";
 

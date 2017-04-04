@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# Contains an in-memory log of the listen thread. This will only contain content if the KeepAcceptLog
@@ -226,7 +226,7 @@ module Chilkat
 		# SOCKS5 is used, then the InboundSocksUsername and InboundSocksPassword may be set to the required
 		# login/password for a client to gain access.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_DynamicPortForwarding() end
 
 		# If _TRUE_, then this behaves as a SOCKS proxy server for inbound connections. When this property is
@@ -237,7 +237,7 @@ module Chilkat
 		# SOCKS5 is used, then the InboundSocksUsername and InboundSocksPassword may be set to the required
 		# login/password for a client to gain access.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_DynamicPortForwarding(newval) end
 
 		# Set after connecting to an SSH server. The format of the fingerprint looks like this: "ssh-rsa 1024
@@ -510,29 +510,29 @@ module Chilkat
 
 		# _TRUE_ if a background thread is running and accepting connections.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsAccepting() end
 
 		# If _TRUE_, then an in-memory log of the listen thread is kept. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepAcceptLog() end
 
 		# If _TRUE_, then an in-memory log of the listen thread is kept. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepAcceptLog(newval) end
 
 		# If _TRUE_, then a log of the SSH tunnel thread activity is kept in memory. The default value is
 		# _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepTunnelLog() end
 
 		# If _TRUE_, then a log of the SSH tunnel thread activity is kept in memory. The default value is
 		# _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepTunnelLog(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -606,7 +606,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -626,7 +626,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -967,14 +967,14 @@ module Chilkat
 		# value is _FALSE_. Setting this property equal to _TRUE_ disables the Nagle algorithm and allows for
 		# better performance when small amounts of data are sent.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_TcpNoDelay() end
 
 		# Controls whether the TCP_NODELAY socket option is used for the underlying TCP/IP socket. The default
 		# value is _FALSE_. Setting this property equal to _TRUE_ disables the Nagle algorithm and allows for
 		# better performance when small amounts of data are sent.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_TcpNoDelay(newval) end
 
 		# Contains an in-memory log of the SSH tunnel thread. This will only contain content if the
@@ -1032,7 +1032,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1042,21 +1042,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1084,7 +1084,7 @@ module Chilkat
 		# @param username [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePk(username, privateKey)
 			# ...
 		end
@@ -1107,7 +1107,7 @@ module Chilkat
 		# @param login [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePw(login, password)
 			# ...
 		end
@@ -1125,7 +1125,7 @@ module Chilkat
 		# @param password [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AuthenticatePwPk(username, password, privateKey)
 			# ...
 		end
@@ -1145,7 +1145,7 @@ module Chilkat
 		#
 		# @param listenPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BeginAccepting(listenPort)
 			# ...
 		end
@@ -1156,9 +1156,9 @@ module Chilkat
 		# Closes the SSH tunnel and disconnects all existing clients. If ARG1 is _TRUE_, the method will wait
 		# for the tunnel and client threads to exit before returning.
 		#
-		# @param waitForThreads [TrueClass, FalseClass]
+		# @param waitForThreads [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CloseTunnel(waitForThreads)
 			# ...
 		end
@@ -1171,7 +1171,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Connect(hostname, port)
 			# ...
 		end
@@ -1191,7 +1191,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param port [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConnectThroughSsh(ssh, hostname, port)
 			# ...
 		end
@@ -1202,9 +1202,9 @@ module Chilkat
 		# Disconnects all clients, keeping the SSH tunnel open. If ARG1 is _TRUE_, the method will wait for
 		# the client threads to exit before returning.
 		#
-		# @param waitForThreads [TrueClass, FalseClass]
+		# @param waitForThreads [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DisconnectAllClients(waitForThreads)
 			# ...
 		end
@@ -1216,7 +1216,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetCurrentState(outStr)
 			# ...
 		end
@@ -1239,7 +1239,7 @@ module Chilkat
 		# was never established).
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsSshConnected()
 			# ...
 		end
@@ -1251,7 +1251,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1263,9 +1263,9 @@ module Chilkat
 		# BeginAccepting. If ARG1 is _TRUE_, the method will wait for the listen thread to exit before
 		# returning.
 		#
-		# @param waitForThread [TrueClass, FalseClass]
+		# @param waitForThread [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def StopAccepting(waitForThread)
 			# ...
 		end
@@ -1280,7 +1280,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end

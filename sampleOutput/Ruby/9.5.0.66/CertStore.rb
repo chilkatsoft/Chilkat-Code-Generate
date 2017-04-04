@@ -6,7 +6,7 @@ module Chilkat
 		# would trigger the Windows OS to display a security warning dialog. The default value of this
 		# property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AvoidWindowsPkAccess() end
 
 		# Applies only when running on a Microsoft Windows operating system. If _TRUE_, then any method that
@@ -15,7 +15,7 @@ module Chilkat
 		# would trigger the Windows OS to display a security warning dialog. The default value of this
 		# property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AvoidWindowsPkAccess(newval) end
 
 		# If set to a file path, causes each Chilkat method or property call to automatically append it's
@@ -183,7 +183,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -203,7 +203,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -248,7 +248,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -258,21 +258,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -296,7 +296,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddCertificate(cert)
 			# ...
 		end
@@ -310,7 +310,7 @@ module Chilkat
 		#
 		# @param filename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateFileStore(filename)
 			# ...
 		end
@@ -323,7 +323,7 @@ module Chilkat
 		# certificate store. Certificates may be added by calling AddCertificate.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateMemoryStore()
 			# ...
 		end
@@ -339,7 +339,7 @@ module Chilkat
 		# @param regRoot [String]
 		# @param regPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateRegistryStore(regRoot, regPath)
 			# ...
 		end
@@ -499,7 +499,7 @@ module Chilkat
 		#
 		# @param pemPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPemFile(pemPath)
 			# ...
 		end
@@ -511,7 +511,7 @@ module Chilkat
 		#
 		# @param pemString [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPemStr(pemString)
 			# ...
 		end
@@ -526,7 +526,7 @@ module Chilkat
 		# @param pfxData [CkByteData]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPfxData(pfxData, password)
 			# ...
 		end
@@ -542,7 +542,7 @@ module Chilkat
 		# @param szByteData [Fixnum]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPfxData2(pByteData, szByteData, password)
 			# ...
 		end
@@ -557,7 +557,7 @@ module Chilkat
 		# @param pfxFilename [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadPfxFile(pfxFilename, password)
 			# ...
 		end
@@ -574,9 +574,9 @@ module Chilkat
 		# the Find* methods. An application may also iterate from 0 to NumCertficates-1 and call
 		# GetCertificate to access each certificate by index.
 		#
-		# @param readOnly [TrueClass, FalseClass]
+		# @param readOnly [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenChilkatStore(readOnly)
 			# ...
 		end
@@ -593,9 +593,9 @@ module Chilkat
 		# certificates within the store may be searched via the Find* methods. An application may also iterate
 		# from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.
 		#
-		# @param readOnly [TrueClass, FalseClass]
+		# @param readOnly [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenCurrentUserStore(readOnly)
 			# ...
 		end
@@ -610,9 +610,9 @@ module Chilkat
 		# access each certificate by index.
 		#
 		# @param filename [String]
-		# @param readOnly [TrueClass, FalseClass]
+		# @param readOnly [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenFileStore(filename, readOnly)
 			# ...
 		end
@@ -629,9 +629,9 @@ module Chilkat
 		# certificates within the store may be searched via the Find* methods. An application may also iterate
 		# from 0 to NumCertficates-1 and call GetCertificate to access each certificate by index.
 		#
-		# @param readOnly [TrueClass, FalseClass]
+		# @param readOnly [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenLocalSystemStore(readOnly)
 			# ...
 		end
@@ -649,9 +649,9 @@ module Chilkat
 		# methods. An application may also iterate from 0 to NumCertficates-1 and call GetCertificate to
 		# access each certificate by index.
 		#
-		# @param readOnly [TrueClass, FalseClass]
+		# @param readOnly [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenOutlookStore(readOnly)
 			# ...
 		end
@@ -670,9 +670,9 @@ module Chilkat
 		#
 		# @param regRoot [String]
 		# @param regPath [String]
-		# @param readOnly [TrueClass, FalseClass]
+		# @param readOnly [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenRegistryStore(regRoot, regPath, readOnly)
 			# ...
 		end
@@ -717,9 +717,9 @@ module Chilkat
 		#
 		# @param storeLocation [String]
 		# @param storeName [String]
-		# @param readOnly [TrueClass, FalseClass]
+		# @param readOnly [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenWindowsStore(storeLocation, storeName, readOnly)
 			# ...
 		end
@@ -734,7 +734,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveCertificate(cert)
 			# ...
 		end
@@ -746,7 +746,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end

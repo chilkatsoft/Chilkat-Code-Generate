@@ -100,7 +100,7 @@ module Chilkat
 		# 
 		# The default value is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmitCompact() end
 
 		# If _TRUE_ then the Emit method outputs in the most compact form possible (a single-line with no
@@ -109,7 +109,7 @@ module Chilkat
 		# 
 		# The default value is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmitCompact(newval) end
 
 		# If _TRUE_ then the Emit method uses CRLF line-endings when emitting the non-compact (pretty-print)
@@ -120,7 +120,7 @@ module Chilkat
 		# The default value is
 		# _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmitCrlf() end
 
 		# If _TRUE_ then the Emit method uses CRLF line-endings when emitting the non-compact (pretty-print)
@@ -131,7 +131,7 @@ module Chilkat
 		# The default value is
 		# _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmitCrlf(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -205,7 +205,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -225,7 +225,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -263,7 +263,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -273,21 +273,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -310,7 +310,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddArrayAt(index)
 			# ...
 		end
@@ -322,9 +322,9 @@ module Chilkat
 		# append, pass an ARG1 of -1. Indexing is 0-based (the 1st member is at index 0).
 		#
 		# @param index [Fixnum]
-		# @param value [TrueClass, FalseClass]
+		# @param value [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddBoolAt(index, value)
 			# ...
 		end
@@ -338,7 +338,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddIntAt(index, value)
 			# ...
 		end
@@ -351,7 +351,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddNullAt(index)
 			# ...
 		end
@@ -366,7 +366,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param numericStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddNumberAt(index, numericStr)
 			# ...
 		end
@@ -379,7 +379,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddObjectAt(index)
 			# ...
 		end
@@ -393,7 +393,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddStringAt(index, value)
 			# ...
 		end
@@ -419,7 +419,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BoolAt(index)
 			# ...
 		end
@@ -431,7 +431,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeleteAt(index)
 			# ...
 		end
@@ -447,7 +447,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Emit(outStr)
 			# ...
 		end
@@ -477,7 +477,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EmitSb(sb)
 			# ...
 		end
@@ -503,7 +503,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsNullAt(index)
 			# ...
 		end
@@ -519,7 +519,7 @@ module Chilkat
 		#
 		# @param jsonArray [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Load(jsonArray)
 			# ...
 		end
@@ -535,7 +535,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadSb(sb)
 			# ...
 		end
@@ -560,7 +560,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -571,9 +571,9 @@ module Chilkat
 		# Sets the boolean value of the Nth array element. Indexing is 0-based (the 1st member is at index 0).
 		#
 		# @param index [Fixnum]
-		# @param value [TrueClass, FalseClass]
+		# @param value [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBoolAt(index, value)
 			# ...
 		end
@@ -586,7 +586,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetIntAt(index, value)
 			# ...
 		end
@@ -598,7 +598,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetNullAt(index)
 			# ...
 		end
@@ -613,7 +613,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetNumberAt(index, value)
 			# ...
 		end
@@ -626,7 +626,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetStringAt(index, value)
 			# ...
 		end
@@ -640,7 +640,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def StringAt(index, outStr)
 			# ...
 		end

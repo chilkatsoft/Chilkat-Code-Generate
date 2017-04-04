@@ -106,7 +106,7 @@ module Chilkat
 
 		# Returns _TRUE_ if the current open file is at the end-of-file.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EndOfFile() end
 
 		# This property is set by the following methods: FileOpen, OpenForRead, OpenForWrite,
@@ -226,7 +226,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -246,7 +246,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -279,7 +279,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -289,21 +289,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -325,7 +325,7 @@ module Chilkat
 		#
 		# @param text [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendAnsi(text)
 			# ...
 		end
@@ -338,7 +338,7 @@ module Chilkat
 		# @param str [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendText(str, charset)
 			# ...
 		end
@@ -349,7 +349,7 @@ module Chilkat
 		# Appends the 2-byte Unicode BOM (little endian) to the currently open file.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendUnicodeBOM()
 			# ...
 		end
@@ -360,7 +360,7 @@ module Chilkat
 		# Appends the 3-byte utf-8 BOM to the currently open file.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendUtf8BOM()
 			# ...
 		end
@@ -373,7 +373,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DirAutoCreate(dirPath)
 			# ...
 		end
@@ -385,7 +385,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DirCreate(dirPath)
 			# ...
 		end
@@ -397,7 +397,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DirDelete(dirPath)
 			# ...
 		end
@@ -409,7 +409,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DirEnsureExists(filePath)
 			# ...
 		end
@@ -436,7 +436,7 @@ module Chilkat
 		# @param filePath1 [String]
 		# @param filePath2 [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileContentsEqual(filePath1, filePath2)
 			# ...
 		end
@@ -448,9 +448,9 @@ module Chilkat
 		#
 		# @param existingFilepath [String]
 		# @param newFilepath [String]
-		# @param failIfExists [TrueClass, FalseClass]
+		# @param failIfExists [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileCopy(existingFilepath, newFilepath, failIfExists)
 			# ...
 		end
@@ -462,7 +462,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileDelete(filePath)
 			# ...
 		end
@@ -474,7 +474,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileExists(filePath)
 			# ...
 		end
@@ -541,7 +541,7 @@ module Chilkat
 		# @param createDisposition [Fixnum]
 		# @param attributes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileOpen(filePath, accessMode, shareMode, createDisposition, attributes)
 			# ...
 		end
@@ -555,7 +555,7 @@ module Chilkat
 		# @param maxNumBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileRead(maxNumBytes, outBytes)
 			# ...
 		end
@@ -569,7 +569,7 @@ module Chilkat
 		# @param maxNumBytes [Fixnum]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileReadBd(maxNumBytes, binData)
 			# ...
 		end
@@ -582,7 +582,7 @@ module Chilkat
 		# @param existingFilepath [String]
 		# @param newFilepath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileRename(existingFilepath, newFilepath)
 			# ...
 		end
@@ -603,7 +603,7 @@ module Chilkat
 		# @param offset [Fixnum]
 		# @param origin [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileSeek(offset, origin)
 			# ...
 		end
@@ -627,7 +627,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileWrite(data)
 			# ...
 		end
@@ -643,7 +643,7 @@ module Chilkat
 		# @param offset [Fixnum]
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FileWriteBd(binData, offset, numBytes)
 			# ...
 		end
@@ -662,7 +662,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GenBlockId(index, length, encoding, outStr)
 			# ...
 		end
@@ -705,7 +705,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetDirectoryName(path, outStr)
 			# ...
 		end
@@ -748,7 +748,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetExtension(path, outStr)
 			# ...
 		end
@@ -785,7 +785,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileName(path, outStr)
 			# ...
 		end
@@ -822,7 +822,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetFileNameWithoutExtension(path, outStr)
 			# ...
 		end
@@ -884,7 +884,7 @@ module Chilkat
 		# @param prefix [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetTempFilename(dirPath, prefix, outStr)
 			# ...
 		end
@@ -915,7 +915,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenForAppend(filePath)
 			# ...
 		end
@@ -929,7 +929,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenForRead(filePath)
 			# ...
 		end
@@ -946,7 +946,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenForReadWrite(filePath)
 			# ...
 		end
@@ -962,7 +962,7 @@ module Chilkat
 		#
 		# @param filePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpenForWrite(filePath)
 			# ...
 		end
@@ -977,7 +977,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadBinaryToEncoded(filePath, encoding, outStr)
 			# ...
 		end
@@ -1007,7 +1007,7 @@ module Chilkat
 		# @param blockSize [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadBlock(blockIndex, blockSize, outBytes)
 			# ...
 		end
@@ -1020,7 +1020,7 @@ module Chilkat
 		# @param filePath [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadEntireFile(filePath, outBytes)
 			# ...
 		end
@@ -1035,7 +1035,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStrFileContents [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadEntireTextFile(filePath, charset, outStrFileContents)
 			# ...
 		end
@@ -1064,7 +1064,7 @@ module Chilkat
 		# @param partExtension [String]
 		# @param reassembledFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReassembleFile(partsDirPath, partPrefix, partExtension, reassembledFilename)
 			# ...
 		end
@@ -1092,7 +1092,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1104,7 +1104,7 @@ module Chilkat
 		#
 		# @param dirPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCurrentDir(dirPath)
 			# ...
 		end
@@ -1120,7 +1120,7 @@ module Chilkat
 		# @param lastAccessTime [CkDateTime]
 		# @param lastModTime [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFileTimes(filePath, createTime, lastAccessTime, lastModTime)
 			# ...
 		end
@@ -1133,7 +1133,7 @@ module Chilkat
 		# @param filePath [String]
 		# @param lastModified [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetLastModified(filePath, lastModified)
 			# ...
 		end
@@ -1149,7 +1149,7 @@ module Chilkat
 		# @param partSize [Fixnum]
 		# @param destDir [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SplitFile(fileToSplit, partPrefix, partExtension, partSize, destDir)
 			# ...
 		end
@@ -1161,7 +1161,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def TreeDelete(path)
 			# ...
 		end
@@ -1174,7 +1174,7 @@ module Chilkat
 		# @param filePath [String]
 		# @param fileData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteEntireFile(filePath, fileData)
 			# ...
 		end
@@ -1188,9 +1188,9 @@ module Chilkat
 		# @param filePath [String]
 		# @param textData [String]
 		# @param charset [String]
-		# @param includedPreamble [TrueClass, FalseClass]
+		# @param includedPreamble [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteEntireTextFile(filePath, textData, charset, includedPreamble)
 			# ...
 		end

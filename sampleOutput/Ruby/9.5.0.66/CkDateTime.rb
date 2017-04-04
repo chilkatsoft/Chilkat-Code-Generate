@@ -178,7 +178,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -198,7 +198,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -241,7 +241,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -251,21 +251,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -287,7 +287,7 @@ module Chilkat
 		#
 		# @param numDays [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddDays(numDays)
 			# ...
 		end
@@ -299,7 +299,7 @@ module Chilkat
 		#
 		# @param numSeconds [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddSeconds(numSeconds)
 			# ...
 		end
@@ -344,9 +344,9 @@ module Chilkat
 		# 
 		# ARG1 indicates whether a local or UTC time is returned.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAsDateTime(bLocal)
 			# ...
 		end
@@ -382,7 +382,7 @@ module Chilkat
 		# in the
 		# context of an explicit or default calendar.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [Bignum]
 		def GetAsDateTimeTicks(bLocal)
@@ -417,7 +417,7 @@ module Chilkat
 		# two-second 
 		# 	increments. (So if the "second" value is 15, it actually represents 30 seconds.)
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [Fixnum]
 		def GetAsDosDate(bLocal)
@@ -444,7 +444,7 @@ module Chilkat
 		# } 	FILETIME;
 		#
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param fTime [Object]
 		#
 		# @return [nil]
@@ -478,10 +478,10 @@ module Chilkat
 		# problem was discovered just after releasing v9.5.0.65. It will be fixed in the next version update.
 		#
 		# @param formatStr [String]
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAsIso8601(formatStr, bLocal, outStr)
 			# ...
 		end
@@ -512,7 +512,7 @@ module Chilkat
 		# problem was discovered just after releasing v9.5.0.65. It will be fixed in the next version update.
 		#
 		# @param formatStr [String]
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [String]
 		def getAsIso8601(formatStr, bLocal)
@@ -532,7 +532,7 @@ module Chilkat
 		# represented as
 		# fractional days.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [Float]
 		def GetAsOleDate(bLocal)
@@ -548,10 +548,10 @@ module Chilkat
 		# ARG1 indicates whether a local or UTC time is
 		# returned.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAsRfc822(bLocal, outStr)
 			# ...
 		end
@@ -565,7 +565,7 @@ module Chilkat
 		# ARG1 indicates whether a local or UTC time is
 		# returned.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [String]
 		def getAsRfc822(bLocal)
@@ -608,9 +608,9 @@ module Chilkat
 		# SYSTEMTIME;
 		#
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAsSystemTime(bLocal)
 			# ...
 		end
@@ -625,10 +625,10 @@ module Chilkat
 		# ARG1 indicates
 		# whether a local or UTC time is returned.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAsTimestamp(bLocal, outStr)
 			# ...
 		end
@@ -643,7 +643,7 @@ module Chilkat
 		# ARG1 indicates
 		# whether a local or UTC time is returned.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [String]
 		def getAsTimestamp(bLocal)
@@ -655,7 +655,7 @@ module Chilkat
 		#
 		# Returns the date/time in a Unix "struct tm" structure.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param tmbuf [Object]
 		#
 		# @return [nil]
@@ -691,7 +691,7 @@ module Chilkat
 		# implementation omits methods that use 64-bit integers because there is no means for passing or
 		# returning 64-bit integers in ActiveX.)
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [Fixnum]
 		def GetAsUnixTime(bLocal)
@@ -706,7 +706,7 @@ module Chilkat
 		# ARG1
 		# indicates whether a local or UTC time is returned.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [Bignum]
 		def GetAsUnixTime64(bLocal)
@@ -721,7 +721,7 @@ module Chilkat
 		# ARG1 indicates
 		# whether a local or UTC time is returned.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [Float]
 		def GetAsUnixTimeDbl(bLocal)
@@ -735,10 +735,10 @@ module Chilkat
 		# # 
 		# ARG1 indicates whether the date/time returned is local or UTC.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAsUnixTimeStr(bLocal, outStr)
 			# ...
 		end
@@ -750,7 +750,7 @@ module Chilkat
 		# # 
 		# ARG1 indicates whether the date/time returned is local or UTC.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [String]
 		def getAsUnixTimeStr(bLocal)
@@ -763,7 +763,7 @@ module Chilkat
 		# Returns the high-order 16-bit integer of the date/time in DOS format. (See GetAsDosDate for more
 		# information.)
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [Fixnum]
 		def GetDosDateHigh(bLocal)
@@ -776,7 +776,7 @@ module Chilkat
 		# Returns the low-order 16-bit integer of the date/time in DOS format. (See GetAsDosDate for more
 		# information.)
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [Fixnum]
 		def GetDosDateLow(bLocal)
@@ -788,7 +788,7 @@ module Chilkat
 		#
 		# Gets the date/time as a Chilkat "Dt" object.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		#
 		# @return [CkDtObj]
 		def GetDtObj(bLocal)
@@ -802,7 +802,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -814,7 +814,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -829,7 +829,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Serialize(outStr)
 			# ...
 		end
@@ -854,7 +854,7 @@ module Chilkat
 		# Sets the date/time from the current system time.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromCurrentSystemTime()
 			# ...
 		end
@@ -867,10 +867,10 @@ module Chilkat
 		# ARG1 indicates whether the
 		# passed in date/time is local or UTC.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param dt [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromDateTime(bLocal, dt)
 			# ...
 		end
@@ -883,10 +883,10 @@ module Chilkat
 		# 
 		# ARG1 indicates whether the passed in date/time is local or UTC.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param ticks [Bignum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromDateTimeTicks(bLocal, ticks)
 			# ...
 		end
@@ -896,10 +896,10 @@ module Chilkat
 		#
 		# Sets the date/time from a 32-bit DOS date/time bitmask. See GetAsDosDate for more information.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param t [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromDosDate(bLocal, t)
 			# ...
 		end
@@ -913,11 +913,11 @@ module Chilkat
 		# ARG1 indicates whether the
 		# passed in date/time is local or UTC.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param datePart [Fixnum]
 		# @param timePart [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromDosDate2(bLocal, datePart, timePart)
 			# ...
 		end
@@ -929,7 +929,7 @@ module Chilkat
 		#
 		# @param dt [CkDtObj]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromDtObj(dt)
 			# ...
 		end
@@ -954,10 +954,10 @@ module Chilkat
 		# } 	FILETIME;
 		#
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param fTime [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromFileTime(bLocal, fTime)
 			# ...
 		end
@@ -970,7 +970,7 @@ module Chilkat
 		#
 		# @param ntpSeconds [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromNtpTime(ntpSeconds)
 			# ...
 		end
@@ -985,10 +985,10 @@ module Chilkat
 		# Note: This method was not working correctly. The problem was
 		# discovered just after releasing v9.5.0.65. It will be fixed in the next version update.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param dt [Float]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromOleDate(bLocal, dt)
 			# ...
 		end
@@ -1000,7 +1000,7 @@ module Chilkat
 		#
 		# @param rfc822Str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromRfc822(rfc822Str)
 			# ...
 		end
@@ -1041,10 +1041,10 @@ module Chilkat
 		# SYSTEMTIME;
 		#
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param sysTime [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromSystemTime(bLocal, sysTime)
 			# ...
 		end
@@ -1060,7 +1060,7 @@ module Chilkat
 		#
 		# @param timestamp [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromTimestamp(timestamp)
 			# ...
 		end
@@ -1070,10 +1070,10 @@ module Chilkat
 		#
 		# Sets the date/time from a Unix "struct tm" structure.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param tmbuf [Object]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromTmStruct(bLocal, tmbuf)
 			# ...
 		end
@@ -1086,10 +1086,10 @@ module Chilkat
 		# 
 		# ARG1 indicates whether the passed in date/time is local or UTC.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param t [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromUnixTime(bLocal, t)
 			# ...
 		end
@@ -1103,10 +1103,10 @@ module Chilkat
 		# ARG1 indicates whether the passed in
 		# date/time is local or UTC.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param t [Bignum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromUnixTime64(bLocal, t)
 			# ...
 		end
@@ -1120,10 +1120,10 @@ module Chilkat
 		# ARG1 indicates whether the passed in
 		# date/time is local or UTC.
 		#
-		# @param bLocal [TrueClass, FalseClass]
+		# @param bLocal [Boolean]
 		# @param d [Float]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetFromUnixTimeDbl(bLocal, d)
 			# ...
 		end

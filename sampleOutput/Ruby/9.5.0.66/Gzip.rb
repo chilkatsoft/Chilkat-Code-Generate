@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# Specifies an optional comment string that can be embedded within the .gz when any Compress* method
@@ -287,7 +287,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -307,7 +307,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The last-modification date/time to be embedded within the .gz when a Compress* method is called. By
@@ -375,13 +375,13 @@ module Chilkat
 		# If set to _TRUE_, the file produced by an Uncompress* method will use the current date/time for the
 		# last-modification date instead of the date/time found within the Gzip format.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_UseCurrentDate() end
 
 		# If set to _TRUE_, the file produced by an Uncompress* method will use the current date/time for the
 		# last-modification date instead of the date/time found within the Gzip format.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_UseCurrentDate(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -391,7 +391,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -401,21 +401,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -438,7 +438,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressFile(inFilename, destPath)
 			# ...
 		end
@@ -454,7 +454,7 @@ module Chilkat
 		# @param embeddedFilename [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressFile2(inFilename, embeddedFilename, destPath)
 			# ...
 		end
@@ -467,7 +467,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressFileToMem(inFilename, outData)
 			# ...
 		end
@@ -480,7 +480,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressMemory(inData, outData)
 			# ...
 		end
@@ -493,7 +493,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressMemToFile(inData, destPath)
 			# ...
 		end
@@ -508,7 +508,7 @@ module Chilkat
 		# @param destCharset [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressString(inStr, destCharset, outBytes)
 			# ...
 		end
@@ -526,7 +526,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressStringENC(inStr, charset, encoding, outStr)
 			# ...
 		end
@@ -559,7 +559,7 @@ module Chilkat
 		# @param destCharset [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressStringToFile(inStr, destCharset, destPath)
 			# ...
 		end
@@ -574,7 +574,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Decode(encodedStr, encoding, outBytes)
 			# ...
 		end
@@ -596,7 +596,7 @@ module Chilkat
 		# @param outputEncoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DeflateStringENC(inString, charsetName, outputEncoding, outStr)
 			# ...
 		end
@@ -632,7 +632,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Encode(byteData, encoding, outStr)
 			# ...
 		end
@@ -659,7 +659,7 @@ module Chilkat
 		#
 		# @param inGzFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExamineFile(inGzFilename)
 			# ...
 		end
@@ -672,7 +672,7 @@ module Chilkat
 		#
 		# @param inGzData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ExamineMemory(inGzData)
 			# ...
 		end
@@ -701,7 +701,7 @@ module Chilkat
 		# @param inputEncoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def InflateStringENC(inString, convertFromCharset, inputEncoding, outStr)
 			# ...
 		end
@@ -729,7 +729,7 @@ module Chilkat
 		# Returns _TRUE_ if the component has been unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -743,7 +743,7 @@ module Chilkat
 		# @param path [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFile(path, outBytes)
 			# ...
 		end
@@ -755,7 +755,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -768,7 +768,7 @@ module Chilkat
 		#
 		# @param dt [CkDateTime]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDt(dt)
 			# ...
 		end
@@ -782,7 +782,7 @@ module Chilkat
 		# @param srcPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UncompressFile(srcPath, destPath)
 			# ...
 		end
@@ -795,7 +795,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UncompressFileToMem(inFilename, outData)
 			# ...
 		end
@@ -811,7 +811,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UncompressFileToString(gzFilename, charset, outStr)
 			# ...
 		end
@@ -839,7 +839,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UncompressMemory(inData, outData)
 			# ...
 		end
@@ -852,7 +852,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UncompressMemToFile(inData, destPath)
 			# ...
 		end
@@ -868,7 +868,7 @@ module Chilkat
 		# @param inCharset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UncompressString(inData, inCharset, outStr)
 			# ...
 		end
@@ -902,7 +902,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UncompressStringENC(inStr, charset, encoding, outStr)
 			# ...
 		end
@@ -932,7 +932,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -947,9 +947,9 @@ module Chilkat
 		#
 		# @param tgzFilename [String]
 		# @param destDir [String]
-		# @param bNoAbsolute [TrueClass, FalseClass]
+		# @param bNoAbsolute [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnTarGz(tgzFilename, destDir, bNoAbsolute)
 			# ...
 		end
@@ -962,7 +962,7 @@ module Chilkat
 		# @param path [String]
 		# @param binaryData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFile(path, binaryData)
 			# ...
 		end
@@ -976,7 +976,7 @@ module Chilkat
 		# @param xfldData [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def XfdlToXml(xfldData, outStr)
 			# ...
 		end

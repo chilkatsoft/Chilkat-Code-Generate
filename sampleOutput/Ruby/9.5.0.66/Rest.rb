@@ -4,14 +4,14 @@ module Chilkat
 		# request header. The default is _TRUE_. This property is provided to satisfy certain providers, such
 		# as Quickbooks, that require all MIME headers to be single unfolded lines regardless of length.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AllowHeaderFolding() end
 
 		# If this property is set to _FALSE_, then no MIME header folding will be automatically applied to any
 		# request header. The default is _TRUE_. This property is provided to satisfy certain providers, such
 		# as Quickbooks, that require all MIME headers to be single unfolded lines regardless of length.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AllowHeaderFolding(newval) end
 
 		# Controls whether non us-ascii HTTP request headers are automatically Q/B encoded. The default value
@@ -24,7 +24,7 @@ module Chilkat
 		# If this property is set to _FALSE_, then no Q/B
 		# encoding is applied to any request header.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AllowHeaderQB() end
 
 		# Controls whether non us-ascii HTTP request headers are automatically Q/B encoded. The default value
@@ -37,7 +37,7 @@ module Chilkat
 		# If this property is set to _FALSE_, then no Q/B
 		# encoding is applied to any request header.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AllowHeaderQB(newval) end
 
 		# The value of the Authorization HTTP request header (if needed).
@@ -337,7 +337,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -357,7 +357,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The full MIME header (not including the HTTP start line which contains the status code and status
@@ -482,7 +482,7 @@ module Chilkat
 		# server sends an HTTP response in the chunked encoding, it is not possible to measure percent
 		# completion because the HTTP client has no way of knowing the total size of the HTTP response.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PercentDoneOnSend() end
 
 		# This property only applies to the FullRequest* methods, which are methods that both send an HTTP
@@ -497,7 +497,7 @@ module Chilkat
 		# server sends an HTTP response in the chunked encoding, it is not possible to measure percent
 		# completion because the HTTP client has no way of knowing the total size of the HTTP response.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PercentDoneOnSend(newval) end
 
 		# The full response MIME header (not including the HTTP start line which contains the status code and
@@ -533,7 +533,7 @@ module Chilkat
 		# Transfer-Encoding: chunked upload. If _FALSE_, then the chunked transfer encoding is used. The
 		# default value of this property is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_StreamNonChunked() end
 
 		# If _TRUE_, then methods that upload data are sent non-chunked if possible. For example, if the
@@ -542,7 +542,7 @@ module Chilkat
 		# Transfer-Encoding: chunked upload. If _FALSE_, then the chunked transfer encoding is used. The
 		# default value of this property is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_StreamNonChunked(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -552,7 +552,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -562,21 +562,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -599,7 +599,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddHeader(name, value)
 			# ...
 		end
@@ -633,7 +633,7 @@ module Chilkat
 		# @param domain [String]
 		# @param mwsSecretKey [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddMwsSignature(httpVerb, uriPath, domain, mwsSecretKey)
 			# ...
 		end
@@ -646,7 +646,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddQueryParam(name, value)
 			# ...
 		end
@@ -659,7 +659,7 @@ module Chilkat
 		#
 		# @param queryString [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddQueryParams(queryString)
 			# ...
 		end
@@ -673,7 +673,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddQueryParamSb(name, value)
 			# ...
 		end
@@ -684,7 +684,7 @@ module Chilkat
 		# Removes all HTTP request headers.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ClearAllHeaders()
 			# ...
 		end
@@ -696,7 +696,7 @@ module Chilkat
 		# request after a multipart request has just been sent.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ClearAllParts()
 			# ...
 		end
@@ -707,7 +707,7 @@ module Chilkat
 		# Clears all query parameters.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ClearAllQueryParams()
 			# ...
 		end
@@ -738,10 +738,10 @@ module Chilkat
 		#
 		# @param hostname [String]
 		# @param port [Fixnum]
-		# @param tls [TrueClass, FalseClass]
-		# @param autoReconnect [TrueClass, FalseClass]
+		# @param tls [Boolean]
+		# @param autoReconnect [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Connect(hostname, port, tls, autoReconnect)
 			# ...
 		end
@@ -756,7 +756,7 @@ module Chilkat
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Disconnect(maxWaitMs)
 			# ...
 		end
@@ -773,7 +773,7 @@ module Chilkat
 		# @param binData [CkBinData]
 		# @param responseBody [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestBd(httpVerb, uriPath, binData, responseBody)
 			# ...
 		end
@@ -792,7 +792,7 @@ module Chilkat
 		# @param bodyBytes [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestBinary(httpVerb, uriPath, bodyBytes, outStr)
 			# ...
 		end
@@ -829,7 +829,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestFormUrlEncoded(httpVerb, uriPath, outStr)
 			# ...
 		end
@@ -864,7 +864,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestMultipart(httpVerb, uriPath, outStr)
 			# ...
 		end
@@ -898,7 +898,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestNoBody(httpVerb, uriPath, outStr)
 			# ...
 		end
@@ -930,7 +930,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestNoBodyBd(httpVerb, uriPath, binData)
 			# ...
 		end
@@ -944,7 +944,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestNoBodySb(httpVerb, uriPath, sb)
 			# ...
 		end
@@ -961,7 +961,7 @@ module Chilkat
 		# @param requestBody [CkStringBuilder]
 		# @param responseBody [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestSb(httpVerb, uriPath, requestBody, responseBody)
 			# ...
 		end
@@ -980,7 +980,7 @@ module Chilkat
 		# @param stream [CkStream]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestStream(httpVerb, uriPath, stream, outStr)
 			# ...
 		end
@@ -1017,7 +1017,7 @@ module Chilkat
 		# @param bodyText [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FullRequestString(httpVerb, uriPath, bodyText, outStr)
 			# ...
 		end
@@ -1050,7 +1050,7 @@ module Chilkat
 		#
 		# @param responseBody [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadRespBd(responseBody)
 			# ...
 		end
@@ -1064,7 +1064,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadRespBodyBinary(outBytes)
 			# ...
 		end
@@ -1077,9 +1077,9 @@ module Chilkat
 		# response is binary, then ARG2 is ignored.
 		#
 		# @param stream [CkStream]
-		# @param autoSetStreamCharset [TrueClass, FalseClass]
+		# @param autoSetStreamCharset [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadRespBodyStream(stream, autoSetStreamCharset)
 			# ...
 		end
@@ -1093,7 +1093,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadRespBodyString(outStr)
 			# ...
 		end
@@ -1139,7 +1139,7 @@ module Chilkat
 		#
 		# @param responseBody [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadRespSb(responseBody)
 			# ...
 		end
@@ -1163,7 +1163,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveHeader(name)
 			# ...
 		end
@@ -1175,7 +1175,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveQueryParam(name)
 			# ...
 		end
@@ -1188,7 +1188,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ResponseHdrByName(name, outStr)
 			# ...
 		end
@@ -1214,7 +1214,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ResponseHdrName(index, outStr)
 			# ...
 		end
@@ -1241,7 +1241,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ResponseHdrValue(index, outStr)
 			# ...
 		end
@@ -1266,7 +1266,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1282,7 +1282,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param body [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqBd(httpVerb, uriPath, body)
 			# ...
 		end
@@ -1298,7 +1298,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param body [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqBinaryBody(httpVerb, uriPath, body)
 			# ...
 		end
@@ -1314,7 +1314,7 @@ module Chilkat
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqFormUrlEncoded(httpVerb, uriPath)
 			# ...
 		end
@@ -1328,7 +1328,7 @@ module Chilkat
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqMultipart(httpVerb, uriPath)
 			# ...
 		end
@@ -1342,7 +1342,7 @@ module Chilkat
 		# @param httpVerb [String]
 		# @param uriPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqNoBody(httpVerb, uriPath)
 			# ...
 		end
@@ -1358,7 +1358,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param bodySb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqSb(httpVerb, uriPath, bodySb)
 			# ...
 		end
@@ -1374,7 +1374,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param stream [CkStream]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqStreamBody(httpVerb, uriPath, stream)
 			# ...
 		end
@@ -1390,7 +1390,7 @@ module Chilkat
 		# @param uriPath [String]
 		# @param bodyText [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendReqStringBody(httpVerb, uriPath, bodyText)
 			# ...
 		end
@@ -1404,7 +1404,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthAws]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAuthAws(authProvider)
 			# ...
 		end
@@ -1416,7 +1416,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthAzureAD]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAuthAzureAD(authProvider)
 			# ...
 		end
@@ -1430,7 +1430,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthAzureSAS]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAuthAzureSas(authProvider)
 			# ...
 		end
@@ -1442,7 +1442,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthAzureStorage]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAuthAzureStorage(authProvider)
 			# ...
 		end
@@ -1459,7 +1459,7 @@ module Chilkat
 		# @param username [String]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAuthBasic(username, password)
 			# ...
 		end
@@ -1471,7 +1471,7 @@ module Chilkat
 		#
 		# @param authProvider [CkAuthGoogle]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAuthGoogle(authProvider)
 			# ...
 		end
@@ -1484,9 +1484,9 @@ module Chilkat
 		# passed in query parameters. Otherwise it is passed in an Authorization header.
 		#
 		# @param authProvider [CkOAuth1]
-		# @param useQueryParams [TrueClass, FalseClass]
+		# @param useQueryParams [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAuthOAuth1(authProvider, useQueryParams)
 			# ...
 		end
@@ -1501,7 +1501,7 @@ module Chilkat
 		#
 		# @param authProvider [CkOAuth2]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAuthOAuth2(authProvider)
 			# ...
 		end
@@ -1514,7 +1514,7 @@ module Chilkat
 		#
 		# @param bodyData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMultipartBodyBd(bodyData)
 			# ...
 		end
@@ -1527,7 +1527,7 @@ module Chilkat
 		#
 		# @param bodyData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMultipartBodyBinary(bodyData)
 			# ...
 		end
@@ -1540,7 +1540,7 @@ module Chilkat
 		#
 		# @param bodySb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMultipartBodySb(bodySb)
 			# ...
 		end
@@ -1553,7 +1553,7 @@ module Chilkat
 		#
 		# @param stream [CkStream]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMultipartBodyStream(stream)
 			# ...
 		end
@@ -1566,7 +1566,7 @@ module Chilkat
 		#
 		# @param bodyText [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMultipartBodyString(bodyText)
 			# ...
 		end
@@ -1589,10 +1589,10 @@ module Chilkat
 		# response is binary, then ARG2 is ignored.
 		#
 		# @param expectedStatus [Fixnum]
-		# @param autoSetStreamCharset [TrueClass, FalseClass]
+		# @param autoSetStreamCharset [Boolean]
 		# @param responseStream [CkStream]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetResponseBodyStream(expectedStatus, autoSetStreamCharset, responseStream)
 			# ...
 		end
@@ -1614,9 +1614,9 @@ module Chilkat
 		# class's Connect method.
 		#
 		# @param connection [CkSocket]
-		# @param autoReconnect [TrueClass, FalseClass]
+		# @param autoReconnect [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseConnection(connection, autoReconnect)
 			# ...
 		end

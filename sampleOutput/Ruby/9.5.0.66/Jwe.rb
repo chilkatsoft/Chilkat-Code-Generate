@@ -165,7 +165,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -185,7 +185,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -221,7 +221,7 @@ module Chilkat
 		# recipients exist, or if any unprotected headers exist, then JWE JSON Serialization is used
 		# regardless of this property setting.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferCompact() end
 
 		# Controls whether the JWE Compact Serialization or JWE JSON Serialization is preferred when creating
@@ -229,7 +229,7 @@ module Chilkat
 		# recipients exist, or if any unprotected headers exist, then JWE JSON Serialization is used
 		# regardless of this property setting.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferCompact(newval) end
 
 		# Controls whether the flattened serialization is preferred when JWE JSON Serialization is used. The
@@ -237,7 +237,7 @@ module Chilkat
 		# recipients exist, then the general (non-flattened) JWE JSON Serialization is used regardless of this
 		# property setting.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferFlattened() end
 
 		# Controls whether the flattened serialization is preferred when JWE JSON Serialization is used. The
@@ -245,7 +245,7 @@ module Chilkat
 		# recipients exist, then the general (non-flattened) JWE JSON Serialization is used regardless of this
 		# property setting.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferFlattened(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -255,7 +255,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -265,21 +265,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -330,7 +330,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Decrypt(index, charset, outStr)
 			# ...
 		end
@@ -385,7 +385,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param bd [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptBd(index, bd)
 			# ...
 		end
@@ -404,7 +404,7 @@ module Chilkat
 		# @param charset [String]
 		# @param contentSb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptSb(index, charset, contentSb)
 			# ...
 		end
@@ -440,7 +440,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Encrypt(content, charset, outStr)
 			# ...
 		end
@@ -489,7 +489,7 @@ module Chilkat
 		# @param contentBd [CkBinData]
 		# @param jweSb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptBd(contentBd, jweSb)
 			# ...
 		end
@@ -504,7 +504,7 @@ module Chilkat
 		# @param charset [String]
 		# @param jweSb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptSb(contentSb, charset, jweSb)
 			# ...
 		end
@@ -533,7 +533,7 @@ module Chilkat
 		#
 		# @param paramName [String]
 		# @param paramValue [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
 		# @return [Fixnum]
 		def FindRecipient(paramName, paramValue, caseSensitive)
@@ -547,7 +547,7 @@ module Chilkat
 		#
 		# @param jwe [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadJwe(jwe)
 			# ...
 		end
@@ -559,7 +559,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadJweSb(sb)
 			# ...
 		end
@@ -571,7 +571,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -586,7 +586,7 @@ module Chilkat
 		# @param aad [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAad(aad, charset)
 			# ...
 		end
@@ -599,7 +599,7 @@ module Chilkat
 		#
 		# @param aad [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetAadBd(aad)
 			# ...
 		end
@@ -623,7 +623,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetPassword(index, password)
 			# ...
 		end
@@ -647,7 +647,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param privKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetPrivateKey(index, privKey)
 			# ...
 		end
@@ -659,7 +659,7 @@ module Chilkat
 		#
 		# @param json [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetProtectedHeader(json)
 			# ...
 		end
@@ -683,7 +683,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param pubKey [CkPublicKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetPublicKey(index, pubKey)
 			# ...
 		end
@@ -697,7 +697,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param json [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetRecipientHeader(index, json)
 			# ...
 		end
@@ -709,7 +709,7 @@ module Chilkat
 		#
 		# @param json [CkJsonObject]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetUnprotectedHeader(json)
 			# ...
 		end
@@ -743,7 +743,7 @@ module Chilkat
 		# @param encodedKey [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetWrappingKey(index, encodedKey, encoding)
 			# ...
 		end

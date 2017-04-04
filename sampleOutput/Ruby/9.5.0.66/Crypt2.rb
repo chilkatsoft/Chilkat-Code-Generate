@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# The BCrypt work factor to be used for the BCryptHash and BCryptVerify. This is the log2 of the
@@ -56,14 +56,14 @@ module Chilkat
 		# Controls whether bytes are 4321 swapped on decryption. This helps in handling byte-ordering issues
 		# with cross-platform applications.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_ByteSwapOnDecrypt() end
 
 		# Controls whether bytes are 4321 swapped on decryption. This helps in handling byte-ordering issues
 		# with cross-platform applications.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		#
 		# @deprecated This method has been deprecated. Do not use it.
 		def put_ByteSwapOnDecrypt(newval) end
@@ -71,13 +71,13 @@ module Chilkat
 		# Applies to all methods that create PKCS7 signatures. To create a CAdES-BES signature, set this
 		# property equal to _TRUE_. The default value of this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_CadesEnabled() end
 
 		# Applies to all methods that create PKCS7 signatures. To create a CAdES-BES signature, set this
 		# property equal to _TRUE_. The default value of this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_CadesEnabled(newval) end
 
 		# Applies to all methods that create PKCS7 signatures. To create a CAdES-EPES signature, set the
@@ -1034,7 +1034,7 @@ module Chilkat
 		# component will buffer the data. When the final chunk is passed, the output is padded to the
 		# algorithm's block size according to the PaddingScheme.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_FirstChunk() end
 
 		# Chilkat Crypt2 provides the ability to feed the encryption/decryption methods with chunks of data.
@@ -1061,7 +1061,7 @@ module Chilkat
 		# component will buffer the data. When the final chunk is passed, the output is padded to the
 		# algorithm's block size according to the PaddingScheme.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_FirstChunk(newval) end
 
 		# Selects the hash algorithm used by methods that create hashes. The valid choices are "sha1",
@@ -1171,13 +1171,13 @@ module Chilkat
 		# Only applies when creating digital signatures. If _TRUE_ (the default), then additional certificates
 		# (if any) in the chain of authentication are included in the PKCS7 digital signature.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IncludeCertChain() end
 
 		# Only applies when creating digital signatures. If _TRUE_ (the default), then additional certificates
 		# (if any) in the chain of authentication are included in the PKCS7 digital signature.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_IncludeCertChain(newval) end
 
 		# The initial counter for the ChaCha20 encryption algorithm. The default value is 0.
@@ -1248,12 +1248,12 @@ module Chilkat
 
 		# (See the description for the FirstChunk property.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastChunk() end
 
 		# (See the description for the FirstChunk property.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastChunk(newval) end
 
 		# Provides information in HTML format about the last method/property called. If a method call returns
@@ -1317,7 +1317,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -1337,7 +1337,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -1595,7 +1595,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1605,7 +1605,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# When UU encoding, this is the filename to be embedded in UU encoded output. The default is
@@ -1664,14 +1664,14 @@ module Chilkat
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1714,7 +1714,7 @@ module Chilkat
 		# @param pfxBytes [CkByteData]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceData(pfxBytes, pfxPassword)
 			# ...
 		end
@@ -1733,7 +1733,7 @@ module Chilkat
 		# @param pfxFilePath [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddPfxSourceFile(pfxFilePath, pfxPassword)
 			# ...
 		end
@@ -1761,7 +1761,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AesKeyUnwrap(kek, wrappedKeyData, encoding, outStr)
 			# ...
 		end
@@ -1818,7 +1818,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AesKeyWrap(kek, keyData, encoding, outStr)
 			# ...
 		end
@@ -1861,7 +1861,7 @@ module Chilkat
 		# @param password [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BCryptHash(password, outStr)
 			# ...
 		end
@@ -1888,7 +1888,7 @@ module Chilkat
 		# @param password [String]
 		# @param bcryptHash [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BCryptVerify(password, bcryptHash)
 			# ...
 		end
@@ -1903,7 +1903,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BytesToString(inData, charset, outStr)
 			# ...
 		end
@@ -1931,7 +1931,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ByteSwap4321(data, outBytes)
 			# ...
 		end
@@ -1945,7 +1945,7 @@ module Chilkat
 		# @param srcFile [String]
 		# @param destFile [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CkDecryptFile(srcFile, destFile)
 			# ...
 		end
@@ -1959,7 +1959,7 @@ module Chilkat
 		# @param srcFile [String]
 		# @param destFile [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CkEncryptFile(srcFile, destFile)
 			# ...
 		end
@@ -1985,7 +1985,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressBytes(data, outData)
 			# ...
 		end
@@ -1999,7 +1999,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressBytesENC(data, outStr)
 			# ...
 		end
@@ -2031,7 +2031,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressString(str, outData)
 			# ...
 		end
@@ -2053,7 +2053,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CompressStringENC(str, outStr)
 			# ...
 		end
@@ -2126,7 +2126,7 @@ module Chilkat
 		# @param inFilePath [String]
 		# @param sigFilePath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateDetachedSignature(inFilePath, sigFilePath)
 			# ...
 		end
@@ -2145,7 +2145,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param p7mPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateP7M(inFilename, p7mPath)
 			# ...
 		end
@@ -2163,7 +2163,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param p7sPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CreateP7S(inFilename, p7sPath)
 			# ...
 		end
@@ -2179,7 +2179,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Decode(str, encoding, outData)
 			# ...
 		end
@@ -2196,7 +2196,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecodeString(inStr, charset, encoding, outStr)
 			# ...
 		end
@@ -2227,7 +2227,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptBytes(data, outData)
 			# ...
 		end
@@ -2243,7 +2243,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptBytesENC(str, outData)
 			# ...
 		end
@@ -2258,7 +2258,7 @@ module Chilkat
 		# @param encodedEncryptedData [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptEncoded(encodedEncryptedData, outStr)
 			# ...
 		end
@@ -2286,7 +2286,7 @@ module Chilkat
 		#
 		# @param strm [CkStream]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptStream(strm)
 			# ...
 		end
@@ -2302,7 +2302,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptString(data, outStr)
 			# ...
 		end
@@ -2333,7 +2333,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptStringENC(str, outStr)
 			# ...
 		end
@@ -2365,7 +2365,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Encode(byteData, encoding, outStr)
 			# ...
 		end
@@ -2399,7 +2399,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncodeBytes(pByteData, szByteData, encoding, outStr)
 			# ...
 		end
@@ -2436,7 +2436,7 @@ module Chilkat
 		# @param toEncodingName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncodeString(strToEncode, charsetName, toEncodingName, outStr)
 			# ...
 		end
@@ -2470,7 +2470,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptBytes(data, outData)
 			# ...
 		end
@@ -2488,7 +2488,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptBytesENC(data, outStr)
 			# ...
 		end
@@ -2521,7 +2521,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptEncoded(str, outStr)
 			# ...
 		end
@@ -2550,7 +2550,7 @@ module Chilkat
 		#
 		# @param strm [CkStream]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptStream(strm)
 			# ...
 		end
@@ -2650,7 +2650,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptString(str, outData)
 			# ...
 		end
@@ -2673,7 +2673,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptStringENC(str, outStr)
 			# ...
 		end
@@ -2716,7 +2716,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GenEncodedSecretKey(password, encoding, outStr)
 			# ...
 		end
@@ -2759,7 +2759,7 @@ module Chilkat
 		# @param password [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GenerateSecretKey(password, outData)
 			# ...
 		end
@@ -2772,7 +2772,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GenerateUuid(outStr)
 			# ...
 		end
@@ -2798,7 +2798,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GenRandomBytesENC(numBytes, outStr)
 			# ...
 		end
@@ -2839,7 +2839,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedAad(encoding, outStr)
 			# ...
 		end
@@ -2874,7 +2874,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedAuthTag(encoding, outStr)
 			# ...
 		end
@@ -2906,7 +2906,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outIV [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedIV(encoding, outIV)
 			# ...
 		end
@@ -2933,7 +2933,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outKey [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedKey(encoding, outKey)
 			# ...
 		end
@@ -2960,7 +2960,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncodedSalt(encoding, outStr)
 			# ...
 		end
@@ -3004,7 +3004,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetSignatureSigningTime(index)
 			# ...
@@ -3018,7 +3018,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSignatureSigningTimeStr(index, outStr)
 			# ...
 		end
@@ -3076,7 +3076,7 @@ module Chilkat
 		# @param bd [CkBinData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashBdENC(bd, outStr)
 			# ...
 		end
@@ -3107,7 +3107,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashBeginBytes(data)
 			# ...
 		end
@@ -3121,7 +3121,7 @@ module Chilkat
 		#
 		# @param strData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashBeginString(strData)
 			# ...
 		end
@@ -3138,7 +3138,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashBytes(data, outData)
 			# ...
 		end
@@ -3155,7 +3155,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashBytesENC(data, outStr)
 			# ...
 		end
@@ -3187,7 +3187,7 @@ module Chilkat
 		# @param path [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashFile(path, outBytes)
 			# ...
 		end
@@ -3206,7 +3206,7 @@ module Chilkat
 		# @param path [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashFileENC(path, outStr)
 			# ...
 		end
@@ -3236,7 +3236,7 @@ module Chilkat
 		#
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashFinal(outBytes)
 			# ...
 		end
@@ -3249,7 +3249,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashFinalENC(outStr)
 			# ...
 		end
@@ -3273,7 +3273,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashMoreBytes(data)
 			# ...
 		end
@@ -3285,7 +3285,7 @@ module Chilkat
 		#
 		# @param strData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashMoreString(strData)
 			# ...
 		end
@@ -3313,7 +3313,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashString(str, outData)
 			# ...
 		end
@@ -3338,7 +3338,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HashStringENC(str, outStr)
 			# ...
 		end
@@ -3376,7 +3376,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasSignatureSigningTime(index)
 			# ...
 		end
@@ -3407,7 +3407,7 @@ module Chilkat
 		# @param inBytes [CkByteData]
 		# @param outHmac [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def HmacBytes(inBytes, outHmac)
 			# ...
@@ -3432,7 +3432,7 @@ module Chilkat
 		# @param inBytes [CkByteData]
 		# @param outEncodedHmac [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def HmacBytesENC(inBytes, outEncodedHmac)
 			# ...
@@ -3480,7 +3480,7 @@ module Chilkat
 		# @param inText [String]
 		# @param outHmac [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def HmacString(inText, outHmac)
 			# ...
@@ -3505,7 +3505,7 @@ module Chilkat
 		# @param inText [String]
 		# @param outEncodedHmac [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def HmacStringENC(inText, outEncodedHmac)
 			# ...
@@ -3543,7 +3543,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def InflateBytes(data, outData)
 			# ...
 		end
@@ -3557,7 +3557,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def InflateBytesENC(str, outData)
 			# ...
 		end
@@ -3571,7 +3571,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def InflateString(data, outStr)
 			# ...
 		end
@@ -3598,7 +3598,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def InflateStringENC(str, outStr)
 			# ...
 		end
@@ -3622,7 +3622,7 @@ module Chilkat
 		# Returns true if the component is unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -3637,7 +3637,7 @@ module Chilkat
 		# @param bd [CkBinData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MacBdENC(bd, outStr)
 			# ...
 		end
@@ -3665,7 +3665,7 @@ module Chilkat
 		# @param inBytes [CkByteData]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MacBytes(inBytes, outBytes)
 			# ...
 		end
@@ -3680,7 +3680,7 @@ module Chilkat
 		# @param inBytes [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MacBytesENC(inBytes, outStr)
 			# ...
 		end
@@ -3708,7 +3708,7 @@ module Chilkat
 		# @param inText [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MacString(inText, outBytes)
 			# ...
 		end
@@ -3723,7 +3723,7 @@ module Chilkat
 		# @param inText [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MacStringENC(inText, outStr)
 			# ...
 		end
@@ -3752,7 +3752,7 @@ module Chilkat
 		# @param strPassword [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MySqlAesDecrypt(strEncryptedHex, strPassword, outStr)
 			# ...
 		end
@@ -3782,7 +3782,7 @@ module Chilkat
 		# @param strPassword [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def MySqlAesEncrypt(strData, strPassword, outStr)
 			# ...
 		end
@@ -3812,7 +3812,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpaqueSignBytes(data, outData)
 			# ...
 		end
@@ -3829,7 +3829,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpaqueSignBytesENC(data, outStr)
 			# ...
 		end
@@ -3865,7 +3865,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpaqueSignString(str, outData)
 			# ...
 		end
@@ -3887,7 +3887,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpaqueSignStringENC(str, outStr)
 			# ...
 		end
@@ -3922,7 +3922,7 @@ module Chilkat
 		# @param p7s [CkByteData]
 		# @param outOriginal [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpaqueVerifyBytes(p7s, outOriginal)
 			# ...
 		end
@@ -3936,7 +3936,7 @@ module Chilkat
 		# @param p7s [String]
 		# @param outOriginal [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpaqueVerifyBytesENC(p7s, outOriginal)
 			# ...
 		end
@@ -3950,7 +3950,7 @@ module Chilkat
 		# @param p7s [CkByteData]
 		# @param outOriginal [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpaqueVerifyString(p7s, outOriginal)
 			# ...
 		end
@@ -3977,7 +3977,7 @@ module Chilkat
 		# @param p7s [String]
 		# @param outOriginal [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def OpaqueVerifyStringENC(p7s, outOriginal)
 			# ...
 		end
@@ -4020,7 +4020,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pbkdf1(password, charset, hashAlg, salt, iterationCount, outputKeyBitLen, encoding, outStr)
 			# ...
 		end
@@ -4085,7 +4085,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pbkdf2(password, charset, hashAlg, salt, iterationCount, outputKeyBitLen, encoding, outStr)
 			# ...
 		end
@@ -4136,7 +4136,7 @@ module Chilkat
 		# @param pkcs7 [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pkcs7ExtractDigest(signerIndex, pkcs7, outStr)
 			# ...
 		end
@@ -4186,7 +4186,7 @@ module Chilkat
 		# @param filename [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFile(filename, outBytes)
 			# ...
 		end
@@ -4205,7 +4205,7 @@ module Chilkat
 		# @param toEncoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReEncode(encodedData, fromEncoding, toEncoding, outStr)
 			# ...
 		end
@@ -4235,7 +4235,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -4254,7 +4254,7 @@ module Chilkat
 		#
 		# @param csp [CkCsp]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetCSP(csp)
 			# ...
 		end
@@ -4271,7 +4271,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDecryptCert(cert)
 			# ...
 		end
@@ -4286,7 +4286,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param key [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetDecryptCert2(cert, key)
 			# ...
 		end
@@ -4304,7 +4304,7 @@ module Chilkat
 		# @param aadStr [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetEncodedAad(aadStr, encoding)
 			# ...
 		end
@@ -4323,7 +4323,7 @@ module Chilkat
 		# @param authTagStr [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetEncodedAuthTag(authTagStr, encoding)
 			# ...
 		end
@@ -4379,7 +4379,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetEncryptCert(cert)
 			# ...
 		end
@@ -4458,7 +4458,7 @@ module Chilkat
 		#
 		# @param keyBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMacKeyBytes(keyBytes)
 			# ...
 		end
@@ -4472,7 +4472,7 @@ module Chilkat
 		# @param key [String]
 		# @param encoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMacKeyEncoded(key, encoding)
 			# ...
 		end
@@ -4484,7 +4484,7 @@ module Chilkat
 		#
 		# @param key [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetMacKeyString(key)
 			# ...
 		end
@@ -4535,7 +4535,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSigningCert(cert)
 			# ...
 		end
@@ -4548,7 +4548,7 @@ module Chilkat
 		# @param cert [CkCert]
 		# @param privateKey [CkPrivateKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSigningCert2(cert, privateKey)
 			# ...
 		end
@@ -4560,7 +4560,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetVerifyCert(cert)
 			# ...
 		end
@@ -4575,7 +4575,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Shorten(inData, numBytes, outBytes)
 			# ...
 		end
@@ -4589,7 +4589,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignBytes(data, outData)
 			# ...
 		end
@@ -4604,7 +4604,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignBytesENC(data, outStr)
 			# ...
 		end
@@ -4637,7 +4637,7 @@ module Chilkat
 		# @param str [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignString(str, outData)
 			# ...
 		end
@@ -4658,7 +4658,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SignStringENC(str, outStr)
 			# ...
 		end
@@ -4693,7 +4693,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def StringToBytes(inStr, charset, outBytes)
 			# ...
 		end
@@ -4707,7 +4707,7 @@ module Chilkat
 		# @param ending [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def TrimEndingWith(inStr, ending, outStr)
 			# ...
 		end
@@ -4732,7 +4732,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -4748,7 +4748,7 @@ module Chilkat
 		#
 		# @param vault [CkXmlCertVault]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseCertVault(vault)
 			# ...
 		end
@@ -4761,7 +4761,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param sig [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyBytes(data, sig)
 			# ...
 		end
@@ -4777,7 +4777,7 @@ module Chilkat
 		# @param data [CkByteData]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyBytesENC(data, encodedSig)
 			# ...
 		end
@@ -4792,7 +4792,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param p7sFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyDetachedSignature(inFilename, p7sFilename)
 			# ...
 		end
@@ -4806,7 +4806,7 @@ module Chilkat
 		# @param p7mPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyP7M(p7mPath, destPath)
 			# ...
 		end
@@ -4820,7 +4820,7 @@ module Chilkat
 		# @param inFilename [String]
 		# @param p7sFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyP7S(inFilename, p7sFilename)
 			# ...
 		end
@@ -4835,7 +4835,7 @@ module Chilkat
 		# @param str [String]
 		# @param sig [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyString(str, sig)
 			# ...
 		end
@@ -4850,7 +4850,7 @@ module Chilkat
 		# @param str [String]
 		# @param encodedSig [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyStringENC(str, encodedSig)
 			# ...
 		end
@@ -4863,7 +4863,7 @@ module Chilkat
 		# @param filename [String]
 		# @param fileData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFile(filename, fileData)
 			# ...
 		end

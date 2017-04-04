@@ -2,12 +2,12 @@ module Chilkat
 	class CkXml 
 		# When True, causes an XML node's content to be encapsulated in a CDATA section.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Cdata() end
 
 		# When True, causes an XML node's content to be encapsulated in a CDATA section.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Cdata(newval) end
 
 		# The content of the XML node. It is the text between the open and close tags, not including child
@@ -202,28 +202,28 @@ module Chilkat
 		# utf-8, utf-16, etc. The defautl value is _FALSE_. This only applies when writing XML files. It does
 		# not apply when getting the XML as a string via the GetXml method.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmitBom() end
 
 		# If _TRUE_, then emit the BOM (byte order mark, also known as a preamble) for encodings such as
 		# utf-8, utf-16, etc. The defautl value is _FALSE_. This only applies when writing XML files. It does
 		# not apply when getting the XML as a string via the GetXml method.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmitBom(newval) end
 
 		# If _TRUE_, then GetXml and GetXmlSb emit compact XML. The XML emitted has no unnecessary whitespace,
 		# incuding no end-of-lines (CR's and/or LF's). The default value is _FALSE_, which maintains backward
 		# compatibility.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmitCompact() end
 
 		# If _TRUE_, then GetXml and GetXmlSb emit compact XML. The XML emitted has no unnecessary whitespace,
 		# incuding no end-of-lines (CR's and/or LF's). The default value is _FALSE_, which maintains backward
 		# compatibility.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmitCompact(newval) end
 
 		# If _TRUE_, then the XML declaration is emitted for methods (such as GetXml or SaveXml) where the XML
@@ -231,7 +231,7 @@ module Chilkat
 		# XML declaration is not emitted. (The XML declaration is the 1st line of an XML document starting
 		# with "_LT_?xml ...".
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EmitXmlDecl() end
 
 		# If _TRUE_, then the XML declaration is emitted for methods (such as GetXml or SaveXml) where the XML
@@ -239,7 +239,7 @@ module Chilkat
 		# XML declaration is not emitted. (The XML declaration is the 1st line of an XML document starting
 		# with "_LT_?xml ...".
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EmitXmlDecl(newval) end
 
 		# This is the encoding attribute in the XML declaration, such as "utf-8" or "iso-8859-1". The default
@@ -403,7 +403,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -423,7 +423,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -465,12 +465,12 @@ module Chilkat
 
 		# If true (or 1 for ActiveX), then all Sort* methods use case insensitive sorting.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SortCaseInsensitive() end
 
 		# If true (or 1 for ActiveX), then all Sort* methods use case insensitive sorting.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SortCaseInsensitive(newval) end
 
 		# This is the standalone attribute in the XML declaration. This property can be set from any node in
@@ -479,7 +479,7 @@ module Chilkat
 		# _LT_?xml ... standalone="yes">
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Standalone() end
 
 		# This is the standalone attribute in the XML declaration. This property can be set from any node in
@@ -488,7 +488,7 @@ module Chilkat
 		# _LT_?xml ... standalone="yes">
 		#
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Standalone(newval) end
 
 		# The XML node's tag.
@@ -526,7 +526,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -536,21 +536,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -577,7 +577,7 @@ module Chilkat
 		# @param skipTags [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AccumulateTagContent(tag, skipTags, outStr)
 			# ...
 		end
@@ -607,7 +607,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddAttribute(name, value)
 			# ...
 		end
@@ -620,7 +620,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddAttributeInt(name, value)
 			# ...
 		end
@@ -633,7 +633,7 @@ module Chilkat
 		#
 		# @param tree [CkXml]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddChildTree(tree)
 			# ...
 		end
@@ -728,7 +728,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendToContent(str)
 			# ...
 		end
@@ -746,7 +746,7 @@ module Chilkat
 		# @param charset [String]
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BEncodeContent(charset, inData)
 			# ...
 		end
@@ -762,9 +762,9 @@ module Chilkat
 		#
 		# @param tagPath [String]
 		# @param pattern [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChildContentMatches(tagPath, pattern, caseSensitive)
 			# ...
 		end
@@ -827,7 +827,7 @@ module Chilkat
 		# @param pathCmd [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ChilkatPath(pathCmd, outStr)
 			# ...
 		end
@@ -911,9 +911,9 @@ module Chilkat
 		# Return true if the node's content matches a wildcarded pattern.
 		#
 		# @param pattern [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ContentMatches(pattern, caseSensitive)
 			# ...
 		end
@@ -950,7 +950,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecodeContent(outData)
 			# ...
 		end
@@ -964,7 +964,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecodeEntities(str, outStr)
 			# ...
 		end
@@ -990,7 +990,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DecryptContent(password)
 			# ...
 		end
@@ -1003,7 +1003,7 @@ module Chilkat
 		#
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EncryptContent(password)
 			# ...
 		end
@@ -1069,7 +1069,7 @@ module Chilkat
 		#
 		# @param tagPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FindChild2(tagPath)
 			# ...
 		end
@@ -1126,7 +1126,7 @@ module Chilkat
 		# Updates the internal reference of the caller to point to its first child.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FirstChild2()
 			# ...
 		end
@@ -1139,7 +1139,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttributeName(index, outStr)
 			# ...
 		end
@@ -1164,7 +1164,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttributeValue(index, outStr)
 			# ...
 		end
@@ -1201,7 +1201,7 @@ module Chilkat
 		# @param name [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetAttrValue(name, outStr)
 			# ...
 		end
@@ -1236,12 +1236,12 @@ module Chilkat
 		# Returns binary content of an XML node as a byte array. The content may have been Zip compressed, AES
 		# encrypted, or both. Unzip compression and AES decryption flags should be set appropriately.
 		#
-		# @param unzipFlag [TrueClass, FalseClass]
-		# @param decryptFlag [TrueClass, FalseClass]
+		# @param unzipFlag [Boolean]
+		# @param decryptFlag [Boolean]
 		# @param password [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetBinaryContent(unzipFlag, decryptFlag, password, outData)
 			# ...
 		end
@@ -1265,7 +1265,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetChild2(index)
 			# ...
 		end
@@ -1282,7 +1282,7 @@ module Chilkat
 		#
 		# @param tagPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetChildBoolValue(tagPath)
 			# ...
 		end
@@ -1298,7 +1298,7 @@ module Chilkat
 		# @param tagPath [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetChildContent(tagPath, outStr)
 			# ...
 		end
@@ -1326,7 +1326,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetChildContentByIndex(index, outStr)
 			# ...
 		end
@@ -1379,7 +1379,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetChildTag(index, outStr)
 			# ...
 		end
@@ -1404,7 +1404,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetChildTagByIndex(index, outStr)
 			# ...
 		end
@@ -1489,7 +1489,7 @@ module Chilkat
 		# @param tag [String]
 		# @param n [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetNthChildWithTag2(tag, n)
 			# ...
 		end
@@ -1511,7 +1511,7 @@ module Chilkat
 		# Updates the internal reference of the caller to its parent.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetParent2()
 			# ...
 		end
@@ -1558,7 +1558,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetXml(outStr)
 			# ...
 		end
@@ -1583,7 +1583,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetXmlSb(sb)
 			# ...
 		end
@@ -1595,7 +1595,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasAttribute(name)
 			# ...
 		end
@@ -1608,7 +1608,7 @@ module Chilkat
 		# @param name [String]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasAttrWithValue(name, value)
 			# ...
 		end
@@ -1620,7 +1620,7 @@ module Chilkat
 		#
 		# @param content [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasChildWithContent(content)
 			# ...
 		end
@@ -1636,7 +1636,7 @@ module Chilkat
 		#
 		# @param tagPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasChildWithTag(tagPath)
 			# ...
 		end
@@ -1653,7 +1653,7 @@ module Chilkat
 		# @param tagPath [String]
 		# @param content [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HasChildWithTagAndContent(tagPath, content)
 			# ...
 		end
@@ -1706,7 +1706,7 @@ module Chilkat
 		# Updates the internal reference of the caller to its last child.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LastChild2()
 			# ...
 		end
@@ -1717,9 +1717,9 @@ module Chilkat
 		# Loads XML from the contents of a StringBuilder object.
 		#
 		# @param sb [CkStringBuilder]
-		# @param autoTrim [TrueClass, FalseClass]
+		# @param autoTrim [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadSb(sb, autoTrim)
 			# ...
 		end
@@ -1732,7 +1732,7 @@ module Chilkat
 		#
 		# @param xmlData [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXml(xmlData)
 			# ...
 		end
@@ -1744,9 +1744,9 @@ module Chilkat
 		# auto-trimmed from each node's content.
 		#
 		# @param xmlData [String]
-		# @param autoTrim [TrueClass, FalseClass]
+		# @param autoTrim [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXml2(xmlData, autoTrim)
 			# ...
 		end
@@ -1759,7 +1759,7 @@ module Chilkat
 		#
 		# @param fileName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXmlFile(fileName)
 			# ...
 		end
@@ -1771,9 +1771,9 @@ module Chilkat
 		# is auto-trimmed from each node's content.
 		#
 		# @param fileName [String]
-		# @param autoTrim [TrueClass, FalseClass]
+		# @param autoTrim [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadXmlFile2(fileName, autoTrim)
 			# ...
 		end
@@ -1877,7 +1877,7 @@ module Chilkat
 		# Updates the internal reference of the caller to its next sibling.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def NextSibling2()
 			# ...
 		end
@@ -1924,7 +1924,7 @@ module Chilkat
 		# Updates the internal reference of the caller to its previous sibling.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PreviousSibling2()
 			# ...
 		end
@@ -1942,7 +1942,7 @@ module Chilkat
 		# @param charset [String]
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def QEncodeContent(charset, inData)
 			# ...
 		end
@@ -1953,7 +1953,7 @@ module Chilkat
 		# Removes all attributes from an XML node. Should always return True.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveAllAttributes()
 			# ...
 		end
@@ -1976,7 +1976,7 @@ module Chilkat
 		#
 		# @param name [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveAttribute(name)
 			# ...
 		end
@@ -2039,11 +2039,11 @@ module Chilkat
 		# Saves a node's binary content to a file.
 		#
 		# @param filename [String]
-		# @param unzipFlag [TrueClass, FalseClass]
-		# @param decryptFlag [TrueClass, FalseClass]
+		# @param unzipFlag [Boolean]
+		# @param decryptFlag [Boolean]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveBinaryContent(filename, unzipFlag, decryptFlag, password)
 			# ...
 		end
@@ -2055,7 +2055,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -2067,7 +2067,7 @@ module Chilkat
 		#
 		# @param fileName [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveXml(fileName)
 			# ...
 		end
@@ -2102,7 +2102,7 @@ module Chilkat
 		# @param afterPtr [CkXml]
 		# @param contentPattern [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SearchAllForContent2(afterPtr, contentPattern)
 			# ...
 		end
@@ -2142,7 +2142,7 @@ module Chilkat
 		# @param attr [String]
 		# @param valuePattern [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SearchForAttribute2(afterPtr, tag, attr, valuePattern)
 			# ...
 		end
@@ -2180,7 +2180,7 @@ module Chilkat
 		# @param tag [String]
 		# @param contentPattern [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SearchForContent2(afterPtr, tag, contentPattern)
 			# ...
 		end
@@ -2214,7 +2214,7 @@ module Chilkat
 		# @param afterPtr [CkXml]
 		# @param tag [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SearchForTag2(afterPtr, tag)
 			# ...
 		end
@@ -2228,11 +2228,11 @@ module Chilkat
 		# data is AES encrypted using the Rijndael 128-bit symmetric-encryption algorithm.
 		#
 		# @param inData [CkByteData]
-		# @param zipFlag [TrueClass, FalseClass]
-		# @param encryptFlag [TrueClass, FalseClass]
+		# @param zipFlag [Boolean]
+		# @param encryptFlag [Boolean]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBinaryContent(inData, zipFlag, encryptFlag, password)
 			# ...
 		end
@@ -2244,11 +2244,11 @@ module Chilkat
 		#
 		# @param pByteData [Object]
 		# @param szByteData [Fixnum]
-		# @param zipFlag [TrueClass, FalseClass]
-		# @param encryptFlag [TrueClass, FalseClass]
+		# @param zipFlag [Boolean]
+		# @param encryptFlag [Boolean]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBinaryContent2(pByteData, szByteData, zipFlag, encryptFlag, password)
 			# ...
 		end
@@ -2260,11 +2260,11 @@ module Chilkat
 		# compressed and/or encrypted, and the result is base-64 encoded.
 		#
 		# @param filename [String]
-		# @param zipFlag [TrueClass, FalseClass]
-		# @param encryptFlag [TrueClass, FalseClass]
+		# @param zipFlag [Boolean]
+		# @param encryptFlag [Boolean]
 		# @param password [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetBinaryContentFromFile(filename, zipFlag, encryptFlag, password)
 			# ...
 		end
@@ -2275,7 +2275,7 @@ module Chilkat
 		# Sorts the direct child nodes by the value of a specified attribute.
 		#
 		# @param attrName [String]
-		# @param ascending [TrueClass, FalseClass]
+		# @param ascending [Boolean]
 		#
 		# @return [nil]
 		def SortByAttribute(attrName, ascending)
@@ -2289,7 +2289,7 @@ module Chilkat
 		# lexicographically as strings).
 		#
 		# @param attrName [String]
-		# @param ascending [TrueClass, FalseClass]
+		# @param ascending [Boolean]
 		#
 		# @return [nil]
 		def SortByAttributeInt(attrName, ascending)
@@ -2301,7 +2301,7 @@ module Chilkat
 		#
 		# Sorts the direct child nodes by content.
 		#
-		# @param ascending [TrueClass, FalseClass]
+		# @param ascending [Boolean]
 		#
 		# @return [nil]
 		def SortByContent(ascending)
@@ -2313,7 +2313,7 @@ module Chilkat
 		#
 		# Sorts the direct child nodes by tag.
 		#
-		# @param ascending [TrueClass, FalseClass]
+		# @param ascending [Boolean]
 		#
 		# @return [nil]
 		def SortByTag(ascending)
@@ -2327,7 +2327,7 @@ module Chilkat
 		#
 		# @param sortTag [String]
 		# @param attrName [String]
-		# @param ascending [TrueClass, FalseClass]
+		# @param ascending [Boolean]
 		#
 		# @return [nil]
 		def SortRecordsByAttribute(sortTag, attrName, ascending)
@@ -2340,7 +2340,7 @@ module Chilkat
 		# Sorts the direct child nodes by the content of the grandchild nodes.
 		#
 		# @param sortTag [String]
-		# @param ascending [TrueClass, FalseClass]
+		# @param ascending [Boolean]
 		#
 		# @return [nil]
 		def SortRecordsByContent(sortTag, ascending)
@@ -2354,7 +2354,7 @@ module Chilkat
 		# content is interpreted as an integer (not lexicographically as for strings).
 		#
 		# @param sortTag [String]
-		# @param ascending [TrueClass, FalseClass]
+		# @param ascending [Boolean]
 		#
 		# @return [nil]
 		def SortRecordsByContentInt(sortTag, ascending)
@@ -2368,7 +2368,7 @@ module Chilkat
 		#
 		# @param node [CkXml]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SwapNode(node)
 			# ...
 		end
@@ -2380,7 +2380,7 @@ module Chilkat
 		#
 		# @param tree [CkXml]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SwapTree(tree)
 			# ...
 		end
@@ -2394,7 +2394,7 @@ module Chilkat
 		# @param tagName [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def TagContent(tagName, outStr)
 			# ...
 		end
@@ -2419,7 +2419,7 @@ module Chilkat
 		#
 		# @param tag [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def TagEquals(tag)
 			# ...
 		end
@@ -2430,7 +2430,7 @@ module Chilkat
 		# Unzip the content of the XML node replacing it's content with the decompressed data.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnzipContent()
 			# ...
 		end
@@ -2442,7 +2442,7 @@ module Chilkat
 		# zip compressed.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnzipTree()
 			# ...
 		end
@@ -2454,10 +2454,10 @@ module Chilkat
 		# auto-created as needed.
 		#
 		# @param tagPath [String]
-		# @param autoCreate [TrueClass, FalseClass]
+		# @param autoCreate [Boolean]
 		# @param value [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateAt(tagPath, autoCreate, value)
 			# ...
 		end
@@ -2469,11 +2469,11 @@ module Chilkat
 		# along ARG1 are auto-created as needed.
 		#
 		# @param tagPath [String]
-		# @param autoCreate [TrueClass, FalseClass]
+		# @param autoCreate [Boolean]
 		# @param attrName [String]
 		# @param attrValue [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateAttrAt(tagPath, autoCreate, attrName, attrValue)
 			# ...
 		end
@@ -2487,7 +2487,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param attrValue [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateAttribute(attrName, attrValue)
 			# ...
 		end
@@ -2500,7 +2500,7 @@ module Chilkat
 		# @param attrName [String]
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpdateAttributeInt(attrName, value)
 			# ...
 		end
@@ -2546,7 +2546,7 @@ module Chilkat
 		# compressed data.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ZipContent()
 			# ...
 		end
@@ -2559,7 +2559,7 @@ module Chilkat
 		# calling UnzipTree. Note that the node name and attributes are unaffected.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ZipTree()
 			# ...
 		end

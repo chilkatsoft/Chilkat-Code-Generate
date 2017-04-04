@@ -149,7 +149,7 @@ module Chilkat
 		# property for all Chilkat objects. Thus it allows for an application to be entirely in "utf-8 mode"
 		# or "ANSI mode" without needing to explicity set the Utf8 property of every Chilkat object instance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_DefaultUtf8() end
 
 		# Applies only to programming languages where each class has the Utf8 property, and where strings are
@@ -169,7 +169,7 @@ module Chilkat
 		# property for all Chilkat objects. Thus it allows for an application to be entirely in "utf-8 mode"
 		# or "ANSI mode" without needing to explicity set the Utf8 property of every Chilkat object instance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_DefaultUtf8(newval) end
 
 		# If DNS caching is enabled, this is the time-to-live (in seconds) for a cached DNS lookup. A DNS
@@ -189,13 +189,13 @@ module Chilkat
 		# Controls whether DNS domain lookups (to resolve to IP addresses) are cached in memory. The default
 		# value is _FALSE_, meaning that DNS caching is disabled.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_EnableDnsCaching() end
 
 		# Controls whether DNS domain lookups (to resolve to IP addresses) are cached in memory. The default
 		# value is _FALSE_, meaning that DNS caching is disabled.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_EnableDnsCaching(newval) end
 
 		# If set to _TRUE_, then the binary data returned by any method will be persisted in memory in the
@@ -203,7 +203,7 @@ module Chilkat
 		# access large varbinary return values via temp tables. The method would be called, and then the
 		# LastBinaryResult property would be fetched to get the full contents of the returned string.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepBinaryResult() end
 
 		# If set to _TRUE_, then the binary data returned by any method will be persisted in memory in the
@@ -211,7 +211,7 @@ module Chilkat
 		# access large varbinary return values via temp tables. The method would be called, and then the
 		# LastBinaryResult property would be fetched to get the full contents of the returned string.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepBinaryResult(newval) end
 
 		# If set to _TRUE_, then the string returned by any method will be persisted in memory in the
@@ -219,7 +219,7 @@ module Chilkat
 		# access large string return values via temp tables. The method would be called, and then the
 		# LastStringResult property would be fetched to get the full contents of the returned string.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepStringResult() end
 
 		# If set to _TRUE_, then the string returned by any method will be persisted in memory in the
@@ -227,7 +227,7 @@ module Chilkat
 		# access large string return values via temp tables. The method would be called, and then the
 		# LastStringResult property would be fetched to get the full contents of the returned string.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepStringResult(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -301,7 +301,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -321,7 +321,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -412,7 +412,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -422,21 +422,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -457,7 +457,7 @@ module Chilkat
 		# Clears the global DNS cache.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DnsClearCache()
 			# ...
 		end
@@ -481,7 +481,7 @@ module Chilkat
 		# VBScript and VB6.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def FinalizeThreadPool()
 			# ...
 		end
@@ -493,7 +493,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -518,7 +518,7 @@ module Chilkat
 		#
 		# @param bundleUnlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockBundle(bundleUnlockCode)
 			# ...
 		end

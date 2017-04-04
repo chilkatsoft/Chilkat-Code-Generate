@@ -7,7 +7,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_AbortCurrent() end
 
 		# When set to _TRUE_, causes the currently running method to abort. Methods that always finish quickly
@@ -17,7 +17,7 @@ module Chilkat
 		# can be aborted. (A synchronous method call could be aborted by setting this property from a separate
 		# thread.)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_AbortCurrent(newval) end
 
 		# If a AcceptNextConnection method fails, this property can be checked to determine the reason for
@@ -75,7 +75,7 @@ module Chilkat
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncAcceptFinished() end
 
@@ -108,7 +108,7 @@ module Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncAcceptSuccess() end
 
@@ -121,7 +121,7 @@ module Chilkat
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncConnectFinished() end
 
@@ -154,7 +154,7 @@ module Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncConnectSuccess() end
 
@@ -165,7 +165,7 @@ module Chilkat
 		# asynchronous programming introduced in Chilkat v9.5.0.52. Applications should use the new model,
 		# which is identified by methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncDnsFinished() end
 
@@ -220,7 +220,7 @@ module Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncDnsSuccess() end
 
@@ -265,7 +265,7 @@ module Chilkat
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncReceiveFinished() end
 
@@ -298,7 +298,7 @@ module Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncReceiveSuccess() end
 
@@ -310,7 +310,7 @@ module Chilkat
 		# introduced in Chilkat v9.5.0.52. Applications should use the new model, which is identified by
 		# methods having names ending with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncSendFinished() end
 
@@ -343,7 +343,7 @@ module Chilkat
 		# v9.5.0.52. Applications should use the new model, which is identified by methods having names ending
 		# with "Async" and return a task object.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def get_AsyncSendSuccess() end
 
@@ -374,13 +374,13 @@ module Chilkat
 		# Applies to the SendCount and ReceiveCount methods. If BigEndian is set to _TRUE_ (the default) then
 		# the 4-byte count is in big endian format. Otherwise it is little endian.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_BigEndian() end
 
 		# Applies to the SendCount and ReceiveCount methods. If BigEndian is set to _TRUE_ (the default) then
 		# the 4-byte count is in big endian format. Otherwise it is little endian.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_BigEndian(newval) end
 
 		# The IP address to use for computers with multiple network interfaces or IP addresses.
@@ -801,33 +801,33 @@ module Chilkat
 
 		# Returns _TRUE_ if the socket is connected. Otherwise returns _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsConnected() end
 
 		# Controls whether the SO_KEEPALIVE socket option is used for the underlying TCP/IP socket. The
 		# default value is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepAlive() end
 
 		# Controls whether the SO_KEEPALIVE socket option is used for the underlying TCP/IP socket. The
 		# default value is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepAlive(newval) end
 
 		# Controls whether socket (or SSL) communications are logged to the SessionLog string property. To
 		# turn on session logging, set this property = _TRUE_, otherwise set to _FALSE_ (which is the default
 		# value).
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_KeepSessionLog() end
 
 		# Controls whether socket (or SSL) communications are logged to the SessionLog string property. To
 		# turn on session logging, set this property = _TRUE_, otherwise set to _FALSE_ (which is the default
 		# value).
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_KeepSessionLog(newval) end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -887,7 +887,7 @@ module Chilkat
 		# _TRUE_ if the last method called on this object failed. This provides an easier (less confusing) way
 		# of determining whether a method such as ReceiveBytes succeeded or failed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodFailed() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -907,7 +907,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -927,7 +927,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -957,14 +957,14 @@ module Chilkat
 		# AcceptNextConnection method calls) will use IPv6 and not IPv4. The default value is _FALSE_ for
 		# IPv4.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_ListenIpv6() end
 
 		# If set to _TRUE_, then a socket that listens for incoming connections (via the BindAndList and
 		# AcceptNextConnection method calls) will use IPv6 and not IPv4. The default value is _FALSE_ for
 		# IPv4.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_ListenIpv6(newval) end
 
 		# The BindAndListen method will find a random unused port to listen on if you bind to port 0. This
@@ -1112,13 +1112,13 @@ module Chilkat
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_PreferIpv6() end
 
 		# If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain. The default
 		# value of this property is _FALSE_, which will choose IPv4 over IPv6.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_PreferIpv6(newval) end
 
 		# Any method that receives data will increase the value of this property by the number of bytes
@@ -1224,14 +1224,14 @@ module Chilkat
 		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
 		# this property is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_RequireSslCertVerify() end
 
 		# If _TRUE_, then the SSL/TLS client will verify the server's SSL certificate. The certificate is
 		# expired, or if the cert's signature is invalid, the connection is not allowed. The default value of
 		# this property is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_RequireSslCertVerify(newval) end
 
 		# If this socket contains a collection of connected sockets (i.e. it is a "socket set") then method
@@ -1542,7 +1542,7 @@ module Chilkat
 		# socket option must be unset, set this property equal to _FALSE_ prior to calling BindAndListen or
 		# InitSslServer.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SoReuseAddr() end
 
 		# Sets the SO_REUSEADDR socket option for a socket that will bind to a port and listen for incoming
@@ -1550,7 +1550,7 @@ module Chilkat
 		# socket option must be unset, set this property equal to _FALSE_ prior to calling BindAndListen or
 		# InitSslServer.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SoReuseAddr(newval) end
 
 		# Sets the send buffer size socket option. Normally, this property should be left unchanged. The
@@ -1581,12 +1581,12 @@ module Chilkat
 
 		# Set this property to _TRUE_ if the socket requires an SSL connection. The default value is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Ssl() end
 
 		# Set this property to _TRUE_ if the socket requires an SSL connection. The default value is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Ssl(newval) end
 
 		# Provides a means for setting a list of ciphers that are allowed for SSL/TLS connections. The default
@@ -2035,14 +2035,14 @@ module Chilkat
 		# value is _FALSE_. Setting the value to _TRUE_ disables the Nagle algorithm and allows for better
 		# performance when small amounts of data are sent on the socket connection.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_TcpNoDelay() end
 
 		# Controls whether the TCP_NODELAY socket option is used for the underlying TCP/IP socket. The default
 		# value is _FALSE_. Setting the value to _TRUE_ disables the Nagle algorithm and allows for better
 		# performance when small amounts of data are sent on the socket connection.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_TcpNoDelay(newval) end
 
 		# Contains the current or last negotiated TLS cipher suite. If no TLS connection has yet to be
@@ -2232,7 +2232,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -2242,21 +2242,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -2308,7 +2308,7 @@ module Chilkat
 		#
 		# @param certAuthDN [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AddSslAcceptableClientCaDn(certAuthDN)
 			# ...
 		end
@@ -2367,7 +2367,7 @@ module Chilkat
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncAcceptStart(maxWaitMs)
 			# ...
@@ -2407,10 +2407,10 @@ module Chilkat
 		#
 		# @param hostname [String]
 		# @param port [Fixnum]
-		# @param ssl [TrueClass, FalseClass]
+		# @param ssl [Boolean]
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncConnectStart(hostname, port, ssl, maxWaitMs)
 			# ...
@@ -2452,7 +2452,7 @@ module Chilkat
 		# @param hostname [String]
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncDnsStart(hostname, maxWaitMs)
 			# ...
@@ -2486,7 +2486,7 @@ module Chilkat
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveBytes()
 			# ...
@@ -2504,7 +2504,7 @@ module Chilkat
 		#
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveBytesN(numBytes)
 			# ...
@@ -2522,7 +2522,7 @@ module Chilkat
 		# methods having names ending with "Async" and return a task object.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveString()
 			# ...
@@ -2541,7 +2541,7 @@ module Chilkat
 		# with "Async" and return a task object.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveToCRLF()
 			# ...
@@ -2561,7 +2561,7 @@ module Chilkat
 		#
 		# @param matchStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncReceiveUntilMatch(matchStr)
 			# ...
@@ -2597,7 +2597,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncSendByteData(data)
 			# ...
@@ -2615,7 +2615,7 @@ module Chilkat
 		#
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncSendBytes(byteData)
 			# ...
@@ -2634,7 +2634,7 @@ module Chilkat
 		#
 		# @param stringToSend [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def AsyncSendString(stringToSend)
 			# ...
@@ -2664,7 +2664,7 @@ module Chilkat
 		# @param port [Fixnum]
 		# @param backLog [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BindAndListen(port, backLog)
 			# ...
 		end
@@ -2677,7 +2677,7 @@ module Chilkat
 		# @param url [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BuildHttpGetRequest(url, outStr)
 			# ...
 		end
@@ -2748,7 +2748,7 @@ module Chilkat
 		#
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Close(maxWaitMs)
 			# ...
 		end
@@ -2778,10 +2778,10 @@ module Chilkat
 		#
 		# @param hostname [String]
 		# @param port [Fixnum]
-		# @param ssl [TrueClass, FalseClass]
+		# @param ssl [Boolean]
 		# @param maxWaitMs [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Connect(hostname, port, ssl, maxWaitMs)
 			# ...
 		end
@@ -2793,7 +2793,7 @@ module Chilkat
 		# received is unencrypted.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertFromSsl()
 			# ...
 		end
@@ -2804,7 +2804,7 @@ module Chilkat
 		# Converts a non-SSL/TLS connected socket to a secure channel using TLS/SSL.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertToSsl()
 			# ...
 		end
@@ -2846,7 +2846,7 @@ module Chilkat
 		# @param maxWaitMs [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def DnsLookup(hostname, maxWaitMs, outStr)
 			# ...
 		end
@@ -2911,7 +2911,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetSslAcceptableClientCaDn(index, outStr)
 			# ...
 		end
@@ -2955,7 +2955,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def InitSslServer(cert)
 			# ...
 		end
@@ -2966,7 +2966,7 @@ module Chilkat
 		# Returns _TRUE_ if the component is unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -2978,7 +2978,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -2990,7 +2990,7 @@ module Chilkat
 		# _FALSE_ if no data is waiting to be read.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def PollDataAvailable()
 			# ...
 		end
@@ -3004,7 +3004,7 @@ module Chilkat
 		#
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveBd(binData)
 			# ...
 		end
@@ -3018,7 +3018,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param binData [CkBinData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveBdN(numBytes, binData)
 			# ...
 		end
@@ -3030,9 +3030,9 @@ module Chilkat
 		# _TRUE_, then a value from 0 to 255 is returned in ReceivedInt. If ARG1 is _FALSE_, then a value from
 		# -128 to +127 is returned.
 		#
-		# @param bUnsigned [TrueClass, FalseClass]
+		# @param bUnsigned [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveByte(bUnsigned)
 			# ...
 		end
@@ -3045,7 +3045,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveBytes(outData)
 			# ...
 		end
@@ -3060,7 +3060,7 @@ module Chilkat
 		# @param encodingAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveBytesENC(encodingAlg, outStr)
 			# ...
 		end
@@ -3089,7 +3089,7 @@ module Chilkat
 		# @param numBytes [Fixnum]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveBytesN(numBytes, outData)
 			# ...
 		end
@@ -3104,7 +3104,7 @@ module Chilkat
 		#
 		# @param appendFilename [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveBytesToFile(appendFilename)
 			# ...
 		end
@@ -3129,10 +3129,10 @@ module Chilkat
 		# ReceivedInt will range from 0 to 65,535. If ARG2 is _FALSE_, the ReceivedInt will range from -32,768
 		# through 32,767.
 		#
-		# @param bigEndian [TrueClass, FalseClass]
-		# @param bUnsigned [TrueClass, FalseClass]
+		# @param bigEndian [Boolean]
+		# @param bUnsigned [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveInt16(bigEndian, bUnsigned)
 			# ...
 		end
@@ -3144,9 +3144,9 @@ module Chilkat
 		# property. Set ARG1 equal to _TRUE_ if the incoming 32-bit integer is in big-endian byte order.
 		# Otherwise set ARG1 equal to _FALSE_ for receving a little-endian integer.
 		#
-		# @param bigEndian [TrueClass, FalseClass]
+		# @param bigEndian [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveInt32(bigEndian)
 			# ...
 		end
@@ -3163,7 +3163,7 @@ module Chilkat
 		# @param encodingAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveNBytesENC(numBytes, encodingAlg, outStr)
 			# ...
 		end
@@ -3193,7 +3193,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveSb(sb)
 			# ...
 		end
@@ -3207,7 +3207,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveString(outStr)
 			# ...
 		end
@@ -3237,7 +3237,7 @@ module Chilkat
 		# @param maxByteCount [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveStringMaxN(maxByteCount, outStr)
 			# ...
 		end
@@ -3267,7 +3267,7 @@ module Chilkat
 		# @param lookForByte [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveStringUntilByte(lookForByte, outStr)
 			# ...
 		end
@@ -3294,7 +3294,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveToCRLF(outStr)
 			# ...
 		end
@@ -3321,7 +3321,7 @@ module Chilkat
 		# @param lookForByte [Fixnum]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveUntilByte(lookForByte, outBytes)
 			# ...
 		end
@@ -3337,7 +3337,7 @@ module Chilkat
 		# @param matchStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReceiveUntilMatch(matchStr, outStr)
 			# ...
 		end
@@ -3364,7 +3364,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -3446,7 +3446,7 @@ module Chilkat
 		# @param offset [Fixnum]
 		# @param numBytes [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendBd(binData, offset, numBytes)
 			# ...
 		end
@@ -3458,7 +3458,7 @@ module Chilkat
 		#
 		# @param value [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendByte(value)
 			# ...
 		end
@@ -3472,7 +3472,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendBytes(data)
 			# ...
 		end
@@ -3488,7 +3488,7 @@ module Chilkat
 		# @param encodedBytes [String]
 		# @param encodingAlg [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendBytesENC(encodedBytes, encodingAlg)
 			# ...
 		end
@@ -3503,7 +3503,7 @@ module Chilkat
 		#
 		# @param byteCount [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendCount(byteCount)
 			# ...
 		end
@@ -3516,9 +3516,9 @@ module Chilkat
 		# little-endian byte order.
 		#
 		# @param value [Fixnum]
-		# @param bigEndian [TrueClass, FalseClass]
+		# @param bigEndian [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendInt16(value, bigEndian)
 			# ...
 		end
@@ -3531,9 +3531,9 @@ module Chilkat
 		# little-endian byte order.
 		#
 		# @param value [Fixnum]
-		# @param bigEndian [TrueClass, FalseClass]
+		# @param bigEndian [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendInt32(value, bigEndian)
 			# ...
 		end
@@ -3550,7 +3550,7 @@ module Chilkat
 		#
 		# @param sb [CkStringBuilder]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendSb(sb)
 			# ...
 		end
@@ -3567,7 +3567,7 @@ module Chilkat
 		#
 		# @param stringToSend [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SendString(stringToSend)
 			# ...
 		end
@@ -3580,7 +3580,7 @@ module Chilkat
 		#
 		# @param cert [CkCert]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCert(cert)
 			# ...
 		end
@@ -3594,7 +3594,7 @@ module Chilkat
 		# @param pemDataOrFilename [String]
 		# @param pemPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPem(pemDataOrFilename, pemPassword)
 			# ...
 		end
@@ -3608,7 +3608,7 @@ module Chilkat
 		# @param pfxFilename [String]
 		# @param pfxPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SetSslClientCertPfx(pfxFilename, pfxPassword)
 			# ...
 		end
@@ -3638,7 +3638,7 @@ module Chilkat
 		# @param sshLogin [String]
 		# @param privateKey [CkSshKey]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshAuthenticatePk(sshLogin, privateKey)
 			# ...
 		end
@@ -3653,7 +3653,7 @@ module Chilkat
 		# @param sshLogin [String]
 		# @param sshPassword [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshAuthenticatePw(sshLogin, sshPassword)
 			# ...
 		end
@@ -3664,7 +3664,7 @@ module Chilkat
 		# Closes the SSH tunnel previously opened by SshOpenTunnel.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshCloseTunnel()
 			# ...
 		end
@@ -3680,7 +3680,7 @@ module Chilkat
 		#
 		# @param hostname [String]
 		# @param port [Fixnum]
-		# @param ssl [TrueClass, FalseClass]
+		# @param ssl [Boolean]
 		# @param maxWaitMs [Fixnum]
 		#
 		# @return [CkSocket]
@@ -3704,7 +3704,7 @@ module Chilkat
 		# @param sshHostname [String]
 		# @param sshPort [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SshOpenTunnel(sshHostname, sshPort)
 			# ...
 		end
@@ -3742,7 +3742,7 @@ module Chilkat
 		#
 		# @param sock [CkSocket]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def TakeSocket(sock)
 			# ...
 		end
@@ -3754,7 +3754,7 @@ module Chilkat
 		# handshake to establish new TLS security params.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def TlsRenegotiate()
 			# ...
 		end
@@ -3767,7 +3767,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -3833,7 +3833,7 @@ module Chilkat
 		#
 		# @param ssh [CkSsh]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UseSsh(ssh)
 			# ...
 		end

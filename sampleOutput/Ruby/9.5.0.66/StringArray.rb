@@ -12,13 +12,13 @@ module Chilkat
 		# If _TRUE_, strings are always automatically converted to use CRLF line endings. If _FALSE_, strings
 		# are automatically converted to use bare LF line endings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Crlf() end
 
 		# If _TRUE_, strings are always automatically converted to use CRLF line endings. If _FALSE_, strings
 		# are automatically converted to use bare LF line endings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Crlf(newval) end
 
 		# If set to a file path, causes each Chilkat method or property call to automatically append it's
@@ -186,7 +186,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -206,7 +206,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -240,27 +240,27 @@ module Chilkat
 		# If _TRUE_, whitespace, including carriage-returns and linefeeds, are automatically removed from the
 		# beginning and end of a string when added to the collection.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Trim() end
 
 		# If _TRUE_, whitespace, including carriage-returns and linefeeds, are automatically removed from the
 		# beginning and end of a string when added to the collection.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Trim(newval) end
 
 		# If _TRUE_, then duplicates are not allowed. When an attempt is made to insert a string that already
 		# exists, the duplicate insertion is silently suppressed and no error is returned. The default value
 		# is _FALSE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Unique() end
 
 		# If _TRUE_, then duplicates are not allowed. When an attempt is made to insert a string that already
 		# exists, the duplicate insertion is silently suppressed and no error is returned. The default value
 		# is _FALSE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Unique(newval) end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -270,7 +270,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -280,21 +280,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -316,7 +316,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Append(str)
 			# ...
 		end
@@ -329,7 +329,7 @@ module Chilkat
 		#
 		# @param encodedStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendSerialized(encodedStr)
 			# ...
 		end
@@ -353,7 +353,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Contains(str)
 			# ...
 		end
@@ -398,7 +398,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetString(index, outStr)
 			# ...
 		end
@@ -449,7 +449,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LastString(outStr)
 			# ...
 		end
@@ -474,7 +474,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFromFile(path)
 			# ...
 		end
@@ -488,7 +488,7 @@ module Chilkat
 		# @param path [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFromFile2(path, charset)
 			# ...
 		end
@@ -512,7 +512,7 @@ module Chilkat
 		#
 		# @param task [CkTask]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadTaskResult(task)
 			# ...
 		end
@@ -524,7 +524,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Pop(outStr)
 			# ...
 		end
@@ -571,7 +571,7 @@ module Chilkat
 		#
 		# @param index [Fixnum]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def RemoveAt(index)
 			# ...
 		end
@@ -596,7 +596,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -609,7 +609,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param saveToPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveNthToFile(index, saveToPath)
 			# ...
 		end
@@ -622,7 +622,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveToFile(path)
 			# ...
 		end
@@ -636,7 +636,7 @@ module Chilkat
 		# @param saveToPath [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveToFile2(saveToPath, charset)
 			# ...
 		end
@@ -648,7 +648,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveToText(outStr)
 			# ...
 		end
@@ -672,7 +672,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Serialize(outStr)
 			# ...
 		end
@@ -695,7 +695,7 @@ module Chilkat
 		# Sorts the strings in the collection in ascending or descending order. To sort in ascending order,
 		# set ARG1 to _TRUE_, otherwise set ARG1 equal to _FALSE_.
 		#
-		# @param ascending [TrueClass, FalseClass]
+		# @param ascending [Boolean]
 		#
 		# @return [nil]
 		def Sort(ascending)
@@ -724,7 +724,7 @@ module Chilkat
 		# @param index [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def StrAt(index, outStr)
 			# ...
 		end

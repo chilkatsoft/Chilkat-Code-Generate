@@ -118,7 +118,7 @@ module Chilkat
 
 		# Set to _TRUE_ when the last file or sub-directory has been iterated.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_DoneIterating() end
 
 		# The file size of the current file in the iteration. (0 if it is a directory.)
@@ -153,7 +153,7 @@ module Chilkat
 
 		# _TRUE_ if the current position is a sub-directory, _FALSE_ if it is a file.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_IsDirectory() end
 
 		# The binary data returned by the last (binary data returning) method called. Only available if
@@ -227,7 +227,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -247,7 +247,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -276,13 +276,13 @@ module Chilkat
 		# If _TRUE_, the iteration will be recursive. If _FALSE_ the iteration is non-recursive. The default
 		# value is _TRUE_.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Recurse() end
 
 		# If _TRUE_, the iteration will be recursive. If _FALSE_ the iteration is non-recursive. The default
 		# value is _TRUE_.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Recurse(newval) end
 
 		# The relative directory path of the current file or sub-directory. (Relative to the BaseDir)
@@ -302,7 +302,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -312,21 +312,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -353,7 +353,7 @@ module Chilkat
 		# error, but instead indicates that the end has been reached.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AdvancePosition()
 			# ...
 		end
@@ -371,7 +371,7 @@ module Chilkat
 		# but instead indicates 0 files/directories.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BeginIterate()
 			# ...
 		end
@@ -383,7 +383,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end

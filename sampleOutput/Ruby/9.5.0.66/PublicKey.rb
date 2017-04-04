@@ -175,7 +175,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -195,7 +195,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# The string return value of the last (string returning) method called. Only available if
@@ -228,7 +228,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -238,21 +238,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -273,10 +273,10 @@ module Chilkat
 		# Returns the public key in binary DER format. If the key type (such as RSA) supports both PKCS1 and
 		# PKCS8 formats, then ARG1 determine which format is returned.
 		#
-		# @param preferPkcs1 [TrueClass, FalseClass]
+		# @param preferPkcs1 [Boolean]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetDer(preferPkcs1, outBytes)
 			# ...
 		end
@@ -288,11 +288,11 @@ module Chilkat
 		# (such as RSA) supports both PKCS1 and PKCS8 formats, then ARG1 determine which format is returned.
 		# The ARG2 specifies the encoding, which is typically "base64".
 		#
-		# @param preferPkcs1 [TrueClass, FalseClass]
+		# @param preferPkcs1 [Boolean]
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncoded(preferPkcs1, encoding, outStr)
 			# ...
 		end
@@ -304,7 +304,7 @@ module Chilkat
 		# (such as RSA) supports both PKCS1 and PKCS8 formats, then ARG1 determine which format is returned.
 		# The ARG2 specifies the encoding, which is typically "base64".
 		#
-		# @param preferPkcs1 [TrueClass, FalseClass]
+		# @param preferPkcs1 [Boolean]
 		# @param encoding [String]
 		#
 		# @return [String]
@@ -338,7 +338,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetJwk(outStr)
 			# ...
 		end
@@ -382,7 +382,7 @@ module Chilkat
 		# @param hashAlg [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetJwkThumbprint(hashAlg, outStr)
 			# ...
 		end
@@ -410,7 +410,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetOpenSslDer(outData)
 			# ...
@@ -426,7 +426,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetOpenSslPem(outStr)
 			# ...
@@ -453,10 +453,10 @@ module Chilkat
 		# Returns the public key in PEM format. If the key type (such as RSA) supports both PKCS1 and PKCS8
 		# formats, then ARG1 determine which format is returned.
 		#
-		# @param preferPkcs1 [TrueClass, FalseClass]
+		# @param preferPkcs1 [Boolean]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetPem(preferPkcs1, outStr)
 			# ...
 		end
@@ -467,7 +467,7 @@ module Chilkat
 		# Returns the public key in PEM format. If the key type (such as RSA) supports both PKCS1 and PKCS8
 		# formats, then ARG1 determine which format is returned.
 		#
-		# @param preferPkcs1 [TrueClass, FalseClass]
+		# @param preferPkcs1 [Boolean]
 		#
 		# @return [String]
 		def getPem(preferPkcs1)
@@ -486,7 +486,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetPkcs1ENC(encoding, outStr)
 			# ...
@@ -521,7 +521,7 @@ module Chilkat
 		# @param encoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetPkcs8ENC(encoding, outStr)
 			# ...
@@ -554,7 +554,7 @@ module Chilkat
 		#
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def GetRsaDer(outData)
 			# ...
@@ -597,7 +597,7 @@ module Chilkat
 		#
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetXml(outStr)
 			# ...
 		end
@@ -650,7 +650,7 @@ module Chilkat
 		#
 		# @param keyStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadBase64(keyStr)
 			# ...
 		end
@@ -662,7 +662,7 @@ module Chilkat
 		#
 		# @param keyBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFromBinary(keyBytes)
 			# ...
 		end
@@ -679,7 +679,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFromFile(path)
 			# ...
 		end
@@ -695,7 +695,7 @@ module Chilkat
 		#
 		# @param keyString [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFromString(keyString)
 			# ...
 		end
@@ -710,7 +710,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadOpenSslDer(data)
 			# ...
@@ -726,7 +726,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadOpenSslDerFile(path)
 			# ...
@@ -742,7 +742,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadOpenSslPem(str)
 			# ...
@@ -758,7 +758,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadOpenSslPemFile(path)
 			# ...
@@ -774,7 +774,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadPkcs1Pem(str)
 			# ...
@@ -790,7 +790,7 @@ module Chilkat
 		#
 		# @param data [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDer(data)
 			# ...
@@ -806,7 +806,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadRsaDerFile(path)
 			# ...
@@ -822,7 +822,7 @@ module Chilkat
 		#
 		# @param xml [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadXml(xml)
 			# ...
@@ -838,7 +838,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def LoadXmlFile(path)
 			# ...
@@ -850,10 +850,10 @@ module Chilkat
 		# Saves the public key to a file in binary DER format. If the key type (such as RSA) supports both
 		# PKCS1 and PKCS8 formats, then ARG1 determine which format is returned.
 		#
-		# @param preferPkcs1 [TrueClass, FalseClass]
+		# @param preferPkcs1 [Boolean]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveDerFile(preferPkcs1, path)
 			# ...
 		end
@@ -865,7 +865,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -880,7 +880,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveOpenSslDerFile(path)
 			# ...
@@ -896,7 +896,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveOpenSslPemFile(path)
 			# ...
@@ -908,10 +908,10 @@ module Chilkat
 		# Saves the public key to a file in PEM format. If the key type (such as RSA) supports both PKCS1 and
 		# PKCS8 formats, then ARG1 determine which format is returned.
 		#
-		# @param preferPkcs1 [TrueClass, FalseClass]
+		# @param preferPkcs1 [Boolean]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SavePemFile(preferPkcs1, path)
 			# ...
 		end
@@ -926,7 +926,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		# @deprecated This method has been deprecated. Do not use it.
 		def SaveRsaDerFile(path)
 			# ...
@@ -939,7 +939,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveXmlFile(path)
 			# ...
 		end

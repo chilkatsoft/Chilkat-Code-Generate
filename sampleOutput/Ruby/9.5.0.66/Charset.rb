@@ -637,7 +637,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_LastMethodSuccess() end
 
 		# Indicate whether the last method call succeeded or failed. A value of _TRUE_ indicates success, a
@@ -657,7 +657,7 @@ module Chilkat
 		# not fit the above requirements will always set this property equal to _TRUE_. For example, a method
 		# that returns no value (such as a "void" in C++) will technically always succeed.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_LastMethodSuccess(newval) end
 
 		# If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact
@@ -715,14 +715,14 @@ module Chilkat
 		# the data can be examined via the LastInputAsHex/QP and LastOutputAsHex/QP properties. (for debugging
 		# purposes)
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_SaveLast() end
 
 		# Tells the component to keep the input/output byte data in memory after a conversion is complete so
 		# the data can be examined via the LastInputAsHex/QP and LastOutputAsHex/QP properties. (for debugging
 		# purposes)
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_SaveLast(newval) end
 
 		# Tells the charset converter the target charset for a conversion. Possible values
@@ -1122,7 +1122,7 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_Utf8() end
 
 		# When set to _TRUE_, all "const char *" arguments are interpreted as utf-8 strings. If set to _FALSE_
@@ -1132,21 +1132,21 @@ module Chilkat
 		# when set to _TRUE_, and Chilkat method returning a "const char *" is returning the utf-8
 		# representation. If set to _FALSE_, all "const char *" return values are ANSI strings.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_Utf8(newval) end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def get_VerboseLogging() end
 
 		# If set to _TRUE_, then the contents of LastErrorText (or LastErrorXml, or LastErrorHtml) may contain
 		# more verbose information. The default value is _FALSE_. Verbose logging should only be used for
 		# debugging. The potentially large quantity of logged information may adversely affect peformance.
 		#
-		# @param newval [TrueClass, FalseClass]
+		# @param newval [Boolean]
 		def put_VerboseLogging(newval) end
 
 		# Version of the component/library, such as "9.5.0.63"
@@ -1182,7 +1182,7 @@ module Chilkat
 		# @param codePage [Fixnum]
 		# @param outCharset [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def CodePageToCharset(codePage, outCharset)
 			# ...
 		end
@@ -1209,7 +1209,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertData(inData, outData)
 			# ...
 		end
@@ -1225,7 +1225,7 @@ module Chilkat
 		# @param inPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertFile(inPath, destPath)
 			# ...
 		end
@@ -1240,7 +1240,7 @@ module Chilkat
 		# @param inPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertFileNoPreamble(inPath, destPath)
 			# ...
 		end
@@ -1253,7 +1253,7 @@ module Chilkat
 		# @param inData [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertFromUnicode(inData, outBytes)
 			# ...
 		end
@@ -1266,7 +1266,7 @@ module Chilkat
 		# @param uniData [CkByteData]
 		# @param outMbData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertFromUtf16(uniData, outMbData)
 			# ...
 		end
@@ -1281,7 +1281,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outHtml [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertHtml(inData, outHtml)
 			# ...
 		end
@@ -1297,7 +1297,7 @@ module Chilkat
 		# @param inPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertHtmlFile(inPath, destPath)
 			# ...
 		end
@@ -1311,7 +1311,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertToUnicode(inData, outStr)
 			# ...
 		end
@@ -1337,7 +1337,7 @@ module Chilkat
 		# @param mbData [CkByteData]
 		# @param outUniData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ConvertToUtf16(mbData, outUniData)
 			# ...
 		end
@@ -1350,7 +1350,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EntityEncodeDec(str, outStr)
 			# ...
 		end
@@ -1375,7 +1375,7 @@ module Chilkat
 		# @param str [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EntityEncodeHex(str, outStr)
 			# ...
 		end
@@ -1400,7 +1400,7 @@ module Chilkat
 		# @param inData [CkByteData]
 		# @param outCharset [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHtmlCharset(inData, outCharset)
 			# ...
 		end
@@ -1425,7 +1425,7 @@ module Chilkat
 		# @param htmlFilePath [String]
 		# @param outCharset [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetHtmlFileCharset(htmlFilePath, outCharset)
 			# ...
 		end
@@ -1450,7 +1450,7 @@ module Chilkat
 		# @param inStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HtmlDecodeToStr(inStr, outStr)
 			# ...
 		end
@@ -1477,7 +1477,7 @@ module Chilkat
 		# @param inHtml [CkByteData]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HtmlEntityDecode(inHtml, outData)
 			# ...
 		end
@@ -1492,7 +1492,7 @@ module Chilkat
 		# @param inPath [String]
 		# @param destPath [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def HtmlEntityDecodeFile(inPath, destPath)
 			# ...
 		end
@@ -1503,7 +1503,7 @@ module Chilkat
 		# Returns true if the component is unlocked.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def IsUnlocked()
 			# ...
 		end
@@ -1516,7 +1516,7 @@ module Chilkat
 		# @param inStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LowerCase(inStr, outStr)
 			# ...
 		end
@@ -1541,7 +1541,7 @@ module Chilkat
 		# @param path [String]
 		# @param outData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFile(path, outData)
 			# ...
 		end
@@ -1556,7 +1556,7 @@ module Chilkat
 		# @param charset [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ReadFileToString(path, charset, outStr)
 			# ...
 		end
@@ -1582,7 +1582,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveLastError(path)
 			# ...
 		end
@@ -1622,7 +1622,7 @@ module Chilkat
 		#
 		# @param unlockCode [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UnlockComponent(unlockCode)
 			# ...
 		end
@@ -1635,7 +1635,7 @@ module Chilkat
 		# @param inStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UpperCase(inStr, outStr)
 			# ...
 		end
@@ -1660,7 +1660,7 @@ module Chilkat
 		# @param inStr [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def UrlDecodeStr(inStr, outStr)
 			# ...
 		end
@@ -1685,7 +1685,7 @@ module Chilkat
 		# @param charset [String]
 		# @param inData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyData(charset, inData)
 			# ...
 		end
@@ -1699,7 +1699,7 @@ module Chilkat
 		# @param charset [String]
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def VerifyFile(charset, path)
 			# ...
 		end
@@ -1712,7 +1712,7 @@ module Chilkat
 		# @param path [String]
 		# @param byteData [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteFile(path, byteData)
 			# ...
 		end
@@ -1727,7 +1727,7 @@ module Chilkat
 		# @param path [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def WriteStringToFile(textData, path, charset)
 			# ...
 		end

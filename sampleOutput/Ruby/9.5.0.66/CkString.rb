@@ -399,7 +399,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def AppendToFile(path, charsetEncoding)
 			# ...
 		end
@@ -502,7 +502,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def BeginsWith(str)
 			# ...
 		end
@@ -514,7 +514,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def beginsWith(substr)
 			# ...
 		end
@@ -527,7 +527,7 @@ module Chilkat
 		#
 		# @param strObj [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def beginsWithStr(strObj)
 			# ...
 		end
@@ -539,7 +539,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def beginsWithW(str)
 			# ...
 		end
@@ -673,7 +673,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Contains(substr)
 			# ...
 		end
@@ -686,7 +686,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def containsSubstring(substr)
 			# ...
 		end
@@ -698,7 +698,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def containsSubstringNoCase(substr)
 			# ...
 		end
@@ -710,7 +710,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def containsSubstringNoCaseW(substr)
 			# ...
 		end
@@ -722,7 +722,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def containsSubstringW(substr)
 			# ...
 		end
@@ -782,7 +782,7 @@ module Chilkat
 		# @param charsetEncoding [String]
 		# @param outBytes [CkByteData]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EmitMultibyte(charsetEncoding, outBytes)
 			# ...
 		end
@@ -805,7 +805,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def endsWith(substr)
 			# ...
 		end
@@ -817,7 +817,7 @@ module Chilkat
 		#
 		# @param substr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def EndsWith(substr)
 			# ...
 		end
@@ -829,7 +829,7 @@ module Chilkat
 		#
 		# @param substrObj [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def endsWithStr(substrObj)
 			# ...
 		end
@@ -841,7 +841,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def endsWithW(s)
 			# ...
 		end
@@ -875,7 +875,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def equals(str)
 			# ...
 		end
@@ -887,7 +887,7 @@ module Chilkat
 		#
 		# @param str [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def equalsIgnoreCase(str)
 			# ...
 		end
@@ -899,7 +899,7 @@ module Chilkat
 		#
 		# @param strObj [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def equalsIgnoreCaseStr(strObj)
 			# ...
 		end
@@ -911,7 +911,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def equalsIgnoreCaseW(s)
 			# ...
 		end
@@ -923,7 +923,7 @@ module Chilkat
 		#
 		# @param strObj [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def equalsStr(strObj)
 			# ...
 		end
@@ -935,7 +935,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def equalsW(s)
 			# ...
 		end
@@ -996,7 +996,7 @@ module Chilkat
 		# @param charsetEncoding [String]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def GetEncoded(binaryEncoding, charsetEncoding, outStr)
 			# ...
 		end
@@ -1247,7 +1247,7 @@ module Chilkat
 		# Returns _TRUE_ if the string object is empty, otherwise returns _FALSE_.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def isEmpty()
 			# ...
 		end
@@ -1282,7 +1282,7 @@ module Chilkat
 		# @param numChars [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Left(numChars, outStr)
 			# ...
 		end
@@ -1320,7 +1320,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def loadFile(path, charsetEncoding)
 			# ...
 		end
@@ -1335,7 +1335,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def LoadFile(path, charsetEncoding)
 			# ...
 		end
@@ -1348,7 +1348,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def loadFileW(path, charsetEncoding)
 			# ...
 		end
@@ -1381,7 +1381,7 @@ module Chilkat
 		#
 		# @param path [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def loadXmlFile(path)
 			# ...
 		end
@@ -1393,9 +1393,9 @@ module Chilkat
 		# characters. Case-sensitivity is controlled by , where 1 = case sensitive, 0 = case insensitive.
 		#
 		# @param strPattern [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Matches(strPattern, caseSensitive)
 			# ...
 		end
@@ -1408,7 +1408,7 @@ module Chilkat
 		#
 		# @param strPattern [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def matches(strPattern)
 			# ...
 		end
@@ -1421,7 +1421,7 @@ module Chilkat
 		#
 		# @param strPattern [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def matchesNoCase(strPattern)
 			# ...
 		end
@@ -1433,7 +1433,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def matchesNoCaseW(s)
 			# ...
 		end
@@ -1447,7 +1447,7 @@ module Chilkat
 		#
 		# @param strPatternObj [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def matchesStr(strPatternObj)
 			# ...
 		end
@@ -1459,7 +1459,7 @@ module Chilkat
 		#
 		# @param s [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def matchesW(s)
 			# ...
 		end
@@ -1474,7 +1474,7 @@ module Chilkat
 		# @param numChars [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Mid(index, numChars, outStr)
 			# ...
 		end
@@ -1534,7 +1534,7 @@ module Chilkat
 		# Converts the date string (in RFC 3339 format) to a Date type.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ParseDateRfc3339()
 			# ...
 		end
@@ -1545,7 +1545,7 @@ module Chilkat
 		# Converts the date string (in RFC 822 format) to a Date type.
 		#
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def ParseDateRfc822()
 			# ...
 		end
@@ -1747,7 +1747,7 @@ module Chilkat
 		#
 		# @param beginDelim [String]
 		# @param endDelim [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
 		# @return [nil]
 		def removeDelimited(beginDelim, endDelim, caseSensitive)
@@ -1761,7 +1761,7 @@ module Chilkat
 		#
 		# @param substr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def removeFirst(substr)
 			# ...
 		end
@@ -1855,7 +1855,7 @@ module Chilkat
 		# @param findStrObj [CkString]
 		# @param replaceStrObj [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def replaceFirst(findStrObj, replaceStrObj)
 			# ...
 		end
@@ -1883,7 +1883,7 @@ module Chilkat
 		# @param findStr [String]
 		# @param replaceStr [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def replaceFirstOccurance(findStr, replaceStr)
 			# ...
 		end
@@ -1897,7 +1897,7 @@ module Chilkat
 		# @param pattern [String]
 		# @param replacement [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def replaceFirstOccuranceW(pattern, replacement)
 			# ...
 		end
@@ -1910,7 +1910,7 @@ module Chilkat
 		# @param numChars [Fixnum]
 		# @param outStr [CkString]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def Right(numChars, outStr)
 			# ...
 		end
@@ -1937,7 +1937,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def SaveToFile(path, charsetEncoding)
 			# ...
 		end
@@ -1953,7 +1953,7 @@ module Chilkat
 		# @param path [String]
 		# @param charsetEncoding [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def saveToFile(path, charsetEncoding)
 			# ...
 		end
@@ -1966,7 +1966,7 @@ module Chilkat
 		# @param path [String]
 		# @param charset [String]
 		#
-		# @return [TrueClass, FalseClass]
+		# @return [Boolean]
 		def saveToFileW(path, charset)
 			# ...
 		end
@@ -2064,9 +2064,9 @@ module Chilkat
 		# returned CkStringArray object.
 		#
 		# @param delimiterChar [String]
-		# @param exceptDoubleQuoted [TrueClass, FalseClass]
-		# @param exceptEscaped [TrueClass, FalseClass]
-		# @param keepEmpty [TrueClass, FalseClass]
+		# @param exceptDoubleQuoted [Boolean]
+		# @param exceptEscaped [Boolean]
+		# @param keepEmpty [Boolean]
 		#
 		# @return [CkStringArray]
 		def split(delimiterChar, exceptDoubleQuoted, exceptEscaped, keepEmpty)
@@ -2079,9 +2079,9 @@ module Chilkat
 		# Same as "split", except a set of characters can be used for delimiters.
 		#
 		# @param delimiterChars [String]
-		# @param exceptDoubleQuoted [TrueClass, FalseClass]
-		# @param exceptEscaped [TrueClass, FalseClass]
-		# @param keepEmpty [TrueClass, FalseClass]
+		# @param exceptDoubleQuoted [Boolean]
+		# @param exceptEscaped [Boolean]
+		# @param keepEmpty [Boolean]
 		#
 		# @return [CkStringArray]
 		def split2(delimiterChars, exceptDoubleQuoted, exceptEscaped, keepEmpty)
@@ -2094,9 +2094,9 @@ module Chilkat
 		# The utf-16 version of the split2 method.
 		#
 		# @param splitCharSet [String]
-		# @param exceptDoubleQuoted [TrueClass, FalseClass]
-		# @param exceptEscaped [TrueClass, FalseClass]
-		# @param keepEmpty [TrueClass, FalseClass]
+		# @param exceptDoubleQuoted [Boolean]
+		# @param exceptEscaped [Boolean]
+		# @param keepEmpty [Boolean]
 		#
 		# @return [CkStringArray]
 		def split2W(splitCharSet, exceptDoubleQuoted, exceptEscaped, keepEmpty)
@@ -2123,7 +2123,7 @@ module Chilkat
 		# string than in ARG1; And a value less than zero indicates the opposite.
 		#
 		# @param str [String]
-		# @param caseSensitive [TrueClass, FalseClass]
+		# @param caseSensitive [Boolean]
 		#
 		# @return [Fixnum]
 		def StrComp(str, caseSensitive)
