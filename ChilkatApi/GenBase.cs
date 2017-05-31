@@ -19,19 +19,16 @@ namespace ChilkatApi
         public const string m_xmlApiDefPath = AppDataDir.BaseDir + "/appData/apiDef2";
 
         static public string m_generateForVersion = "9.5.0";
-        static public string m_generateForMicroVersion = "9.5.0.66";
+        static public string m_generateForMicroVersion = "9.5.0.68";
 
         static public string getVersionWithUnderscore() { return m_generateForVersion.Replace('.', '_'); }
 
         static public ChilkatTypes m_chilkatTypes = new ChilkatTypes();
 
-        public Chilkat.HtmlToText m_h2t = new Chilkat.HtmlToText();
 
         
         public GenBase()
             {
-            m_h2t.UnlockComponent("APIMANHtmlToXml_7CmEFNaHOK7b");
-            m_h2t.RightMargin = 80;
             }
 
         public bool ensureDirExists(string path)

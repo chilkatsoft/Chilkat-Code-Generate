@@ -8,7 +8,7 @@ namespace ChilkatApi
     {
     public class AppDataDir
         {
-        public const string BaseDir = "c:/ck2000";
+        public const string BaseDir = "../../../..";
 
         }
     }
