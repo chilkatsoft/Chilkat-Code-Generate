@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="748926903" license="Mht" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Mht.xml">
+<class XojoModuleId="748926903" sourceXmlPath="c:/ck2000/appData/apiDef2/Mht.xml" license="Bundle" hasEvents="1" baseProgress="1">
     <axName>ChilkatMht</axName>
     <dnName>Mht</dnName>
     <cppName>CkMht</cppName>
@@ -7,113 +7,165 @@
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="BaseUrl" axId="100">
             <gType>string</gType>
             <descrip>When processing an HTML file or string (not a website URL), this defines the base URL to be used when converting relative HREFs to absolute HREFs.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="ConnectTimeout" axId="101" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>The amount of time in seconds to wait before timing out when connecting to an HTTP server.  The default value is 10 seconds.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="DebugHtmlAfter" axId="102">
             <gType>string</gType>
             <descrip>A filename to save the result HTML when converting a URL, file, or HTML string. If problems are experienced, the before/after HTML can be analyzed to help determine the cause.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="DebugHtmlBefore" axId="103">
             <gType>string</gType>
             <descrip>A filename to save the input HTML when converting a URL, file, or HTML string. If problems are experienced, the before/after HTML can be analyzed to help determine the cause.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="DebugTagCleaning" axId="104" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>When _TRUE_ causes the Mht class to be much more verbose in its logging. The default is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="EmbedImages" axId="105">
             <gType>bool</gType>
             <descrip>Controls whether images are embedded in the MHT/EML, or whether the IMG SRC attributes are left as external URL references.  If false, the IMG SRC tags are converted to absolute URLs (if necessary) and the images are not embedded within the MHT/EML.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="EmbedLocalOnly" axId="106">
             <gType>bool</gType>
             <descrip>If _TRUE_, only images found on the local filesystem (i.e. links to files) will be embedded within the MHT.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="FetchFromCache" axId="107">
             <gType>bool</gType>
             <descrip>If _TRUE_, page parts such as images, style sheets, etc. will be fetched from the disk cache if possible.  The disk cache root may be defined by calling AddCacheRoot.  The default value is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="HeartbeatMs" axId="108">
             <gType>int</gType>
             <descrip>The time interval, in milliseconds, between AbortCheck event callbacks.  The heartbeat/AbortCheck provides a means for an application to abort any MHT method before completion.
 &lt;p&gt;The default value is 0, which means that no AbortCheck events will be fired.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="IgnoreMustRevalidate" axId="109">
             <gType>bool</gType>
             <descrip>Some HTTP responses contain a "Cache-Control: must-revalidate" header.  If this is present, the server is requesting that the client always issue a revalidate HTTP request instead of serving the page directly from cache.  If IgnoreMustRevalidate is set to _TRUE_, then Chilkat MHT will serve the page directly from cache without revalidating until the page is no longer fresh.  (assuming that FetchFromCache is set to _TRUE_)
 &lt;p&gt;The default value of this property is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="IgnoreNoCache" axId="110">
             <gType>bool</gType>
             <descrip>Some HTTP responses contain headers of various types that indicate that the page should not be cached.  Chilkat MHT will adhere to this unless this property is set to _TRUE_.
 &lt;p&gt;The default value of this property is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="NoScripts" axId="111">
             <gType>bool</gType>
             <descrip>Only applies when creating MHT files. Scripts are always removed when creating EML or emails from HTML. If set to _TRUE_, then all scripts are removed, if set to _FALSE_ (the default) then scripts are not removed.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="NtlmAuth" axId="112">
             <gType>bool</gType>
             <descrip>Setting this property to _TRUE_ causes the MHT component to use NTLM authentication (also known as IWA -- or Integrated Windows Authentication) when authentication with an HTTP server.
 &lt;p&gt;The default value of this property is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="NumCacheLevels" axId="113">
             <gType>int</gType>
             <descrip>The number of directory levels to be used under each cache root.  The default is 0, meaning that each cached item is stored in a cache root directory.  A value of 1 causes each cached page to be stored in one of 255 subdirectories named "0","1", "2", ..."255"  under a cache root.  A value of 2 causes two levels of subdirectories ("0..255/0..255") under each cache root.  The MHT control automatically creates subdirectories as needed.  The reason for mutliple levels is to alleviate problems that may arise when huge numbers of files are stored in a single directory.  For example, Windows Explorer does not behave well when trying to display the contents of directories with thousands of files.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumCacheRoots" axId="114">
             <gType>int</gType>
             <descrip>The number of cache roots to be used for the disk cache.  This allows the disk cache spread out over multiple disk drives.  Each cache root is a string indicating the drive letter and directory path.  For example, "E:\Cache".  To create a cache with four roots, call AddCacheRoot once for each directory root.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="PreferIpv6" read="1" write="1" ax="1" cpp="1" dn="1" axId="160">
             <gType>bool</gType>
             <descrip>If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain.   The default value of this property is _FALSE_, which will choose IPv4 over IPv6.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="PreferMHTScripts" axId="115">
             <gType>bool</gType>
             <descrip>This property provides a means for the noscript option to be selected when possible.  If PreferMHTScripts = _FALSE_, then scripts with noscript alternatives are removed and the noscript content is kept.  If _TRUE_ (the default), then scripts are preserved and the noscript options are discarded.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="Proxy" axId="116">
             <gType>string</gType>
             <descrip>(Optional) A proxy host:port if a proxy is necessary to access the Internet. The proxy string should be formatted as "hostname:port", such as "www.chilkatsoft.com:100".</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="ProxyLogin" axId="117">
             <gType>string</gType>
             <descrip>If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy login.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="ProxyPassword" axId="118">
             <gType>string</gType>
             <descrip>If an HTTP proxy is used and it requires authentication, this property specifies the HTTP proxy password.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="ReadTimeout" axId="119">
             <gType>int</gType>
             <descrip>The amount of time in seconds to wait before timing out when reading from an HTTP server.  The ReadTimeout is the amount of time that needs to elapse while no additional data is forthcoming.  During a long data transfer, if the data stream halts for more than this amount, it will timeout.    Otherwise, there is no limit on the length of time for the entire data transfer.
 &lt;p&gt;
 The default value is 20 seconds.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="RequireSslCertVerify" read="1" write="1" ax="1" cpp="1" dn="1" axId="159">
             <gType>bool</gType>
             <descrip>If _TRUE_, then the HTTP client will verify the server's SSL certificate.  The certificate is expired, or if the cert's signature is invalid, the connection is not allowed.  The default value of this property is _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksHostname" axId="120">
             <gType>string</gType>
             <descrip>The SOCKS4/SOCKS5 hostname or IPv4 address (in dotted decimal notation).  This property is only used if the SocksVersion property is set to 4 or 5).</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksPassword" axId="121">
             <gType>string</gType>
             <descrip>The SOCKS5 password (if required).  The SOCKS4 protocol does not include the use of a password, so this does not apply to SOCKS4.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksPort" axId="122">
             <gType>int</gType>
             <descrip>The SOCKS4/SOCKS5 proxy port.  The default value is 1080. 
 This property only applies if a SOCKS proxy is used (if the SocksVersion property is set to 4 or 5).</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksUsername" axId="123">
             <gType>string</gType>
             <descrip>The SOCKS4/SOCKS5 proxy username.  This property is only used if the SocksVersion property is set to 4 or 5).</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SocksVersion" axId="124">
             <gType>int</gType>
@@ -123,6 +175,8 @@ May be set to one of the following integer values:
 &lt;b&gt;0&lt;/b&gt; - No SOCKS proxy is used.  This is the default.&lt;br&gt;
 &lt;b&gt;4&lt;/b&gt; - Connect via a SOCKS4 proxy.&lt;br&gt;
 &lt;b&gt;5&lt;/b&gt; - Connect via a SOCKS5 proxy.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="UnpackDirect" read="1" write="1" ax="1" cpp="1" dn="1" axId="161">
             <gType>bool</gType>
@@ -132,51 +186,73 @@ Note: It  is only possible to directly unpack MHT files where the Content-Locati
 &lt;p&gt;
 Note: The default value of this property is _FALSE_.</descrip>
             <iversion>9.5.0.47</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property name="UnpackUseRelPaths" axId="125" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>Controls whether absolute or relative paths are used when referencing images in the unpacked HTML.  The default value is _TRUE_ indicating that relative paths will be used.   To use absolute paths, set this property value equal to _FALSE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UpdateCache" axId="126">
             <gType>bool</gType>
             <descrip>Controls whether the cache is automatically updated with the responses from HTTP GET requests.  If _TRUE_, the disk cache is updated, if _FALSE_ (the default), the cache is not updated.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UseCids" axId="127">
             <gType>bool</gType>
             <descrip>Controls whether CID URLs are used for embedded references when generating MHT or EML documents.  If UseCids is _FALSE_, then URLs are left unchanged and the embedded items will contain "content-location" headers that match the URLs in the HTML.  If _TRUE_, CIDs are generated and the URLs within the HTML are replaced with "CID:" links.
 &lt;p&gt;
 The default value of this property is _TRUE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UseFilename" axId="128">
             <gType>bool</gType>
             <descrip>If _TRUE_, a "filename" attribute is added to each Content-Disposition MIME header field for each embedded item (image, style sheet, etc.).  If _FALSE_, then no filename attribute is added.
 &lt;p&gt;The default value of this property is _TRUE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UseIEProxy" axId="129">
             <gType>bool</gType>
             <descrip>If _TRUE_, the proxy host/port used by Internet Explorer will also be used by Chilkat MHT.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="UseInline" axId="130">
             <gType>bool</gType>
             <descrip>If _TRUE_, an "inline" attribute is added to each Content-Disposition MIME header field for each embedded item (image, style sheet, etc.).  If _FALSE_, then no inline attribute is added.
 &lt;p&gt;The default value of this property is _TRUE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="WebSiteLogin" axId="131">
             <gType>string</gType>
             <descrip>(Optional) Specifies the login if a a Web page is accessed that requires a login</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="WebSiteLoginDomain" axId="132">
             <gType>string</gType>
             <descrip>The optional domain name to be used with NTLM / Kerberos / Negotiate authentication.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="WebSitePassword" axId="133">
             <gType>string</gType>
             <descrip>Optional) Specifies the password if a a Web page is accessed that requires a login and password</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="162">
             <gType>bool</gType>
             <descrip>When set to _TRUE_, causes the currently running method to abort.  Methods that always finish quickly (i.e.have no length file operations or network communications) are not affected.  If no method is running, then this property is automatically reset to _FALSE_ when the next method is called.  When the abort occurs, this property is reset to _FALSE_.  Both synchronous and asynchronous method calls can be aborted.  (A synchronous method call could be aborted by setting this property from a separate thread.)</descrip>
             <iversion>9.5.0.58</iversion>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <methods>
@@ -225,6 +301,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="name" type="string" objcName="name" />
                 <arg name="value" type="string" objcName="value" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="AddExternalStyleSheet" axId="136">
             <gType>void</gType>
@@ -241,12 +318,14 @@ The default value of this property is _TRUE_.</descrip>
             <args2>
                 <arg name="url" type="string" objcName="url" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ClearCustomHeaders" axId="137">
             <gType>void</gType>
             <args />
             <descrip>Removes all custom headers that may have accumulated from previous calls to AddCustomHeader.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ExcludeImagesMatching" axId="138">
             <gType>void</gType>
@@ -263,6 +342,7 @@ The default value of this property is _TRUE_.</descrip>
             <args2>
                 <arg name="pattern" type="string" objcName="pattern" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="GetAndSaveEML" axId="139">
             <gType>bool</gType>
@@ -287,6 +367,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="url_or_htmlFilepath" type="string" objcName="url" />
                 <arg name="emlPath" type="string" objcName="emlPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="GetAndSaveMHT" axId="140">
             <gType>bool</gType>
@@ -311,6 +392,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="url_or_htmlFilepath" type="string" objcName="url" />
                 <arg name="mhtPath" type="string" objcName="mhtPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="GetAndZipEML" axId="141">
             <gType>bool</gType>
@@ -343,6 +425,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="zipEntryFilename" type="string" objcName="zipEntryFilename" />
                 <arg name="zipFilename" type="string" objcName="zipPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="GetAndZipMHT" axId="142">
             <gType>bool</gType>
@@ -375,6 +458,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="zipEntryFilename" type="string" objcName="zipEntryFilename" />
                 <arg name="zipFilename" type="string" objcName="zipPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetCacheRoot" axId="143" outArgName="outStr">
             <gType>string</gType>
@@ -396,6 +480,7 @@ The default value of this property is _TRUE_.</descrip>
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method name="GetEML" axId="144" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
             <gType>string</gType>
@@ -444,6 +529,7 @@ The default value of this property is _TRUE_.</descrip>
             <args2>
                 <arg name="url_or_htmlFilepath" type="string" objcName="url" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="HtmlToEML" axId="148" outArgName="outStr">
             <gType>string</gType>
@@ -465,6 +551,7 @@ The default value of this property is _TRUE_.</descrip>
             <args2>
                 <arg name="htmlText" type="string" objcName="htmlText" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="HtmlToEMLFile" axId="149">
             <gType>bool</gType>
@@ -489,6 +576,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="html" type="string" objcName="html" />
                 <arg name="emlFilename" type="string" objcName="emlPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="HtmlToMHT" axId="151" outArgName="outStr">
             <gType>string</gType>
@@ -510,6 +598,7 @@ The default value of this property is _TRUE_.</descrip>
             <args2>
                 <arg name="htmlText" type="string" objcName="htmlText" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="HtmlToMHTFile" axId="152">
             <gType>bool</gType>
@@ -534,12 +623,14 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="html" type="string" objcName="html" />
                 <arg name="mhtFilename" type="string" objcName="mhtPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="IsUnlocked" axId="153">
             <gType>bool</gType>
             <args />
             <descrip>Returns _TRUE_ if the MHT component is unlocked.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="RemoveCustomHeader" axId="154">
             <gType>void</gType>
@@ -556,12 +647,14 @@ The default value of this property is _TRUE_.</descrip>
             <args2>
                 <arg name="name" type="string" objcName="name" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="RestoreDefaults" axId="155">
             <gType>void</gType>
             <args />
             <descrip>Restores the default property settings.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="156">
             <gType>bool</gType>
@@ -588,7 +681,7 @@ The default value of this property is _TRUE_.</descrip>
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -636,6 +729,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="htmlFilename" type="string" objcName="htmlFilename" />
                 <arg name="partsSubDir" type="string" objcName="partsSubDir" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="UnpackMHTString" axId="158">
             <gType>bool</gType>
@@ -676,6 +770,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="htmlFilename" type="string" objcName="htmlFilename" />
                 <arg name="partsSubDir" type="string" objcName="partsSubDir" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <genericName>Mht</genericName>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Charset" XojoModuleId="418497211" sourceXmlPath="C:/ck2000/appData/apiDef2/Charset.xml">
+<class XojoModuleId="418497211" sourceXmlPath="c:/ck2000/appData/apiDef2/Charset.xml" license="Bundle">
     <nextAxId>141</nextAxId>
     <dnName>Charset</dnName>
     <cppName>CkCharset</cppName>
@@ -7,10 +7,14 @@
         <property name="AltToCharset" read="1" write="1" ax="1" cpp="1" dn="1" axId="100">
             <gType>string</gType>
             <descrip>If the ErrorAction property is set to 6, then this property controls how errors are handled.  It specifies an alternate "To" charset.  When a character in the input data cannot be converted to the target charset, an attempt is made to convert it to the AltToCharset.  If that fails, the input character is dropped.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="ErrorAction" axId="101">
             <gType>int</gType>
             <descrip>Controls how errors are handled.  When a character in the input data cannot be converted to the target charset, the action taken is controlled by this property.  The possible settings are:  (0) drop the error characters, (1) substitute the data set by the SetErrorBytes or SetErrorString method, (2) convert to a hex-escaped string (&amp;#xXXXX), (3) RESERVED, (4) RESERVED, (5) RESERVED, (6) convert the error character to the AltToCharset instead, if that fails then drop the character, (7) Pass non-convertible characters to the output unchanged.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="FromCharset" axId="102">
             <gType>string</gType>
@@ -104,26 +108,38 @@ cp875
 koi8-r
 koi8-u
 &lt;/font&gt;&lt;/pre&gt;</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastInputAsHex" axId="103">
             <gType>string</gType>
             <descrip>If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact bytes that are sent to the converter to be seen (for debugging purposes).  This property shows the last input data in a hexidecimalized string.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastInputAsQP" axId="104">
             <gType>string</gType>
             <descrip>If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact bytes that are sent to the converter to be seen (for debugging purposes).  This property shows the last input data in a quoted-printable string.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastOutputAsHex" axId="105">
             <gType>string</gType>
             <descrip>If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact bytes that are sent to the converter to be seen (for debugging purposes).  This property shows the last output data in a hexidecimalized string.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="LastOutputAsQP" axId="106">
             <gType>string</gType>
             <descrip>If SaveLast is set to true, then the input and output of a conversion is saved to allow the exact bytes that are sent to the converter to be seen (for debugging purposes).  This property shows the last output data in a quoted-printable string.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SaveLast" axId="107">
             <gType>bool</gType>
             <descrip>Tells the component to keep the input/output byte data in memory after a conversion is complete so the data can be examined via the LastInputAsHex/QP and LastOutputAsHex/QP properties.  (for debugging purposes)</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="ToCharset" axId="108">
             <gType>string</gType>
@@ -217,6 +233,8 @@ cp875
 koi8-r
 koi8-u
 &lt;/font&gt;&lt;/pre&gt;</descrip>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <methods>
@@ -235,6 +253,7 @@ koi8-u
             <args2>
                 <arg name="charsetName" type="string" objcName="charsetName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="CodePageToCharset" axId="110" outArgName="outCharset">
             <gType>string</gType>
@@ -256,6 +275,7 @@ koi8-u
             <args2>
                 <arg name="codePage" type="int" objcName="codePage" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ConvertData" axId="111" outArgName="outData">
             <gType>bytes</gType>
@@ -277,6 +297,7 @@ koi8-u
             <args2>
                 <arg name="inData" type="bytes" objcName="inData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="ConvertFile" axId="112">
             <gType>bool</gType>
@@ -301,6 +322,12 @@ koi8-u
                 <arg name="inPath" type="string" objcName="srcPath" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2>
+                <link linkType="example">
+                    <url>charset_add_utf8_bom_to_file.asp</url>
+                    <text>Convert a File's Character Encoding from UTF-8 to UFT-8-BOM</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="ConvertFileNoPreamble" axId="113">
             <gType>bool</gType>
@@ -325,6 +352,7 @@ koi8-u
                 <arg name="inPath" type="string" objcName="srcPath" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2 />
         </method>
         <method name="ConvertFromUnicode" axId="136" ax="1" cpp="1" dn="1" outArgName="outBytes">
             <gType>bytes</gType>
@@ -346,6 +374,7 @@ koi8-u
             <args2>
                 <arg name="inData" type="string" objcName="inData" />
             </args2>
+            <links2 />
         </method>
         <method name="ConvertFromUtf16" ax="1" cpp="1" dn="1" axId="139" outArgName="outMbData">
             <gType>bytes</gType>
@@ -367,6 +396,7 @@ koi8-u
             <args2>
                 <arg name="uniData" type="bytes" objcName="uniData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ConvertHtml" axId="114" outArgName="outHtml">
             <gType>bytes</gType>
@@ -388,6 +418,7 @@ koi8-u
             <args2>
                 <arg name="inData" type="bytes" objcName="htmlIn" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="ConvertHtmlFile" axId="115">
             <gType>bool</gType>
@@ -412,6 +443,7 @@ koi8-u
                 <arg name="inPath" type="string" objcName="srcPath" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2 />
         </method>
         <method name="ConvertToUnicode" axId="137" ax="1" cpp="1" dn="1" outArgName="outStr">
             <gType>string</gType>
@@ -433,6 +465,7 @@ koi8-u
             <args2>
                 <arg name="inData" type="bytes" objcName="inData" />
             </args2>
+            <links2 />
         </method>
         <method name="ConvertToUtf16" ax="1" cpp="1" dn="1" axId="140" outArgName="outUniData">
             <gType>bytes</gType>
@@ -454,6 +487,7 @@ koi8-u
             <args2>
                 <arg name="mbData" type="bytes" objcName="mbData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="EntityEncodeDec" axId="116" outArgName="outStr">
             <gType>string</gType>
@@ -475,6 +509,7 @@ koi8-u
             <args2>
                 <arg name="str" type="string" objcName="inStr" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="EntityEncodeHex" axId="117" outArgName="outStr">
             <gType>string</gType>
@@ -496,6 +531,7 @@ koi8-u
             <args2>
                 <arg name="str" type="string" objcName="inStr" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetHtmlCharset" axId="118" outArgName="outCharset">
             <gType>string</gType>
@@ -517,6 +553,7 @@ koi8-u
             <args2>
                 <arg name="inData" type="bytes" objcName="htmlData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetHtmlFileCharset" axId="119" outArgName="outCharset">
             <gType>string</gType>
@@ -538,6 +575,7 @@ koi8-u
             <args2>
                 <arg name="htmlFilePath" type="string" objcName="htmlPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="HtmlDecodeToStr" axId="120" outArgName="outStr">
             <gType>string</gType>
@@ -559,6 +597,7 @@ koi8-u
             <args2>
                 <arg name="inStr" type="string" objcName="str" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="HtmlEntityDecode" axId="121" outArgName="outData">
             <gType>bytes</gType>
@@ -580,6 +619,7 @@ koi8-u
             <args2>
                 <arg name="inHtml" type="bytes" objcName="inData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="HtmlEntityDecodeFile" axId="122">
             <gType>bool</gType>
@@ -604,12 +644,14 @@ koi8-u
                 <arg name="inPath" type="string" objcName="srcPath" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="IsUnlocked" axId="123">
             <gType>bool</gType>
             <args />
             <descrip>Returns true if the component is unlocked.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="LowerCase" axId="124" outArgName="outStr">
             <gType>string</gType>
@@ -631,6 +673,7 @@ koi8-u
             <args2>
                 <arg name="inStr" type="string" objcName="inStr" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ReadFile" axId="125" outArgName="outData">
             <gType>bytes</gType>
@@ -652,6 +695,7 @@ koi8-u
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ReadFileToString" axId="126" outArgName="outStr">
             <gType>string</gType>
@@ -681,6 +725,7 @@ koi8-u
                 <arg name="path" type="string" objcName="path" />
                 <arg name="charset" type="string" objcName="srcCharset" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="SetErrorBytes" axId="127">
             <gType>void</gType>
@@ -697,6 +742,7 @@ koi8-u
             <args2>
                 <arg name="data" type="bytes" objcName="data" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="SetErrorString" axId="128">
             <gType>void</gType>
@@ -721,6 +767,7 @@ koi8-u
                 <arg name="str" type="string" objcName="str" />
                 <arg name="charset" type="string" objcName="charset" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="129">
             <gType>bool</gType>
@@ -747,7 +794,7 @@ koi8-u
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -776,6 +823,7 @@ koi8-u
             <args2>
                 <arg name="inStr" type="string" objcName="inStr" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="UrlDecodeStr" axId="131" outArgName="outStr">
             <gType>string</gType>
@@ -797,6 +845,7 @@ koi8-u
             <args2>
                 <arg name="inStr" type="string" objcName="inStr" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="VerifyData" axId="132">
             <gType>bool</gType>
@@ -821,6 +870,7 @@ koi8-u
                 <arg name="charset" type="string" objcName="charset" />
                 <arg name="inData" type="bytes" objcName="charData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="VerifyFile" axId="133">
             <gType>bool</gType>
@@ -845,6 +895,7 @@ koi8-u
                 <arg name="charset" type="string" objcName="charset" />
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="WriteFile" axId="134">
             <gType>bool</gType>
@@ -869,6 +920,7 @@ koi8-u
                 <arg name="path" type="string" objcName="path" />
                 <arg name="byteData" type="bytes" objcName="dataBuf" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="WriteStringToFile" axId="135">
             <gType>bool</gType>
@@ -901,6 +953,7 @@ koi8-u
                 <arg name="path" type="string" objcName="path" />
                 <arg name="charset" type="string" objcName="charset" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <genericName>Charset</genericName>

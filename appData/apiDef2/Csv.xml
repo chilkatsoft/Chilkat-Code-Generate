@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Free" XojoModuleId="227184472" sourceXmlPath="C:/ck2000/appData/apiDef2/Csv.xml">
+<class license="Free" XojoModuleId="227184472" sourceXmlPath="c:/ck2000/appData/apiDef2/Csv.xml">
     <nextAxId>126</nextAxId>
     <dnName>Csv</dnName>
     <cppName>CkCsv</cppName>
@@ -7,33 +7,47 @@
         <property name="AutoTrim" axId="105" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>If _TRUE_, then the strings returned by GetCell and GetCellByName are auto-trimmed of whitespace from both ends.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="Crlf" axId="100">
             <gType>bool</gType>
             <descrip>If _TRUE_, then CRLF line endings are used when saving the CSV to a file or to a string (i.e. for the methods SaveFile, SaveFile2, SaveToString).  If _FALSE_ then bare LF line-endings are used.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="Delimiter" axId="101">
             <gType>string</gType>
             <descrip>The character that separates fields in a record.  It is a comma by default.
 If the Delimiter property is not explicitly set, the CSV component will detect the delimiter when loading a CSV.  
 (Semicolons are typically used in locales where the comma is used as a decimal point.)</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="EscapeBackslash" read="1" write="1" ax="1" cpp="1" dn="1" axId="125">
             <gType>bool</gType>
             <descrip>If _TRUE_, then the backslash character is treated as an escape character when reading/writing CSVs.   The default is _FALSE_.</descrip>
             <iversion>9.5.0.44</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="HasColumnNames" axId="102">
             <gType>bool</gType>
             <descrip>Set to _TRUE_ prior to loading a CSV if the 1st record contains column names.   This allows the CSV parser to correctly load the column names and not treat them as data.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumColumns" axId="103">
             <gType>int</gType>
             <descrip>The number of columns in the 1st row, which may be the row containing column names if HasColumnNames is _TRUE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumRows" axId="104">
             <gType>int</gType>
             <descrip>The number of data rows.  If the CSV has column names, the 1st row is not included in the count.  Also, empty lines containing only whitespace characters that follow the last non-empty row are not included.</descrip>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <methods>
@@ -52,6 +66,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="DeleteColumnByName" axId="107">
             <gType>bool</gType>
@@ -68,6 +83,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="columnName" type="string" objcName="columnName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="DeleteRow" axId="108">
             <gType>bool</gType>
@@ -84,6 +100,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetCell" axId="109" outArgName="outStr">
             <gType>string</gType>
@@ -113,6 +130,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="row" type="int" objcName="row" />
                 <arg name="col" type="int" objcName="col" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetCellByName" axId="110" outArgName="outStr">
             <gType>string</gType>
@@ -142,6 +160,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="rowIndex" type="int" objcName="row" />
                 <arg name="columnName" type="string" objcName="columnName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetColumnName" axId="111" outArgName="outStr">
             <gType>string</gType>
@@ -163,6 +182,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetIndex" axId="112">
             <gType>int</gType>
@@ -179,6 +199,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="columnName" type="string" objcName="columnName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetNumCols" axId="113">
             <gType>int</gType>
@@ -195,6 +216,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="row" type="int" objcName="row" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="LoadFile" axId="114">
             <gType>bool</gType>
@@ -211,6 +233,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="LoadFile2" axId="115">
             <gType>bool</gType>
@@ -235,6 +258,12 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="filename" type="string" objcName="path" />
                 <arg name="charset" type="string" objcName="charset" />
             </args2>
+            <links2>
+                <link linkType="example">
+                    <url>csv_read_japanese_utf8.asp</url>
+                    <text>Read Japanese utf-8 CSV File</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="LoadFromString" axId="116">
             <gType>bool</gType>
@@ -251,6 +280,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="csvData" type="string" objcName="csvData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="RowMatches" axId="117">
             <gType>bool</gType>
@@ -283,6 +313,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="matchPattern" type="string" objcName="matchPattern" />
                 <arg name="caseSensitive" type="bool" objcName="bCaseSensitive" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SaveFile" axId="118">
             <gType>bool</gType>
@@ -299,6 +330,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SaveFile2" axId="119">
             <gType>bool</gType>
@@ -323,6 +355,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="filename" type="string" objcName="path" />
                 <arg name="charset" type="string" objcName="charset" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="SaveToString" axId="120" outArgName="outStr">
             <gType>string</gType>
@@ -335,6 +368,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             </args>
             <descrip>Writes the entire CSV document to a string variable.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SetCell" axId="121">
             <gType>bool</gType>
@@ -367,6 +401,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="col" type="int" objcName="col" />
                 <arg name="content" type="string" objcName="content" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SetCellByName" axId="122">
             <gType>bool</gType>
@@ -399,6 +434,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="columnName" type="string" objcName="columnName" />
                 <arg name="contentStr" type="string" objcName="content" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SetColumnName" axId="123">
             <gType>bool</gType>
@@ -423,6 +459,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="index" type="int" objcName="index" />
                 <arg name="columnName" type="string" objcName="columnName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SortByColumn" axId="124">
             <gType>bool</gType>
@@ -455,6 +492,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
                 <arg name="ascending" type="bool" objcName="bAscending" />
                 <arg name="caseSensitive" type="bool" objcName="bCaseSensitive" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <genericName>Csv</genericName>

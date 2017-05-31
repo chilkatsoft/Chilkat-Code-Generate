@@ -5,6 +5,7 @@ AuthAzureAD
 AuthAzureSAS
 AuthAzureStorage
 AuthGoogle
+AuthUtil
 BinData
 Bounce
 Bz2

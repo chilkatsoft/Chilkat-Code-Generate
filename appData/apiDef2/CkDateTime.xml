@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="917517706" sourceXmlPath="C:/ck2000/appData/apiDef2/CkDateTime.xml" license="Free">
-    <nextAxId>126</nextAxId>
+<class XojoModuleId="917517706" sourceXmlPath="c:/ck2000/appData/apiDef2/CkDateTime.xml" license="Free">
+    <nextAxId>128</nextAxId>
     <dnName>CkDateTime</dnName>
     <cppName>CkDateTime</cppName>
     <properties>
@@ -916,6 +916,36 @@ ARG2 indicates whether a local or UTC time is returned.
                 <link linkType="example">
                     <url>dateTime_iso_8601_format.asp</url>
                     <text>DateTime - Get in ISO 8601 Compatible Format</text>
+                </link>
+            </links2>
+        </method>
+        <method name="ExpiresWithin" axId="126" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="n" type="int" objcName="n" />
+                <arg name="units" type="string" objcName="units" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>dateTime_expiresWithin.asp</url>
+                    <text>Date/Time Expires Within N Seconds/Minutes/Hours/Days</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.67</iversion>
+            <descrip>Returns _TRUE_ if the date/time is within ARG1 seconds/minutes/hours/days of the current system date/time.  Otherwise returns _FALSE_.  The ARG2 can be "seconds", "minutes", "hours", or "days" (plural or singular).</descrip>
+        </method>
+        <method name="OlderThan" axId="127" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the date/time is older than the current system date/time by ARG1 seconds/minutes/hours/days.  Otherwise returns _FALSE_. The ARG2 can be "seconds", "minutes", "hours", or "days" (plural or singular).</descrip>
+            <args2>
+                <arg name="n" type="int" objcName="n" />
+                <arg name="units" type="string" objcName="units" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>dateTime_olderThan.asp</url>
+                    <text>Date/Time Older-Than N Seconds/Minutes/Hours/Days</text>
                 </link>
             </links2>
         </method>

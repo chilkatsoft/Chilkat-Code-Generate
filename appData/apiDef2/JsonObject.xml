@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/JsonObject.xml">
+<class sourceXmlPath="c:/ck2000/appData/apiDef2/JsonObject.xml" license="Free">
     <genericName>JsonObject</genericName>
     <cppName>CkJsonObject</cppName>
     <dnName>JsonObject</dnName>
@@ -1350,7 +1350,7 @@ The ARG1 is relative to this JSON object.  (This is effectively applying a Fireb
                 <arg name="index" type="int" objcName="index" />
             </args2>
         </method>
-        <method name="StringOf" axId="109" ax="1" cpp="1" dn="1" outArgName="outStr">
+        <method name="StringOf" axId="109" outArgName="outStr" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>Returns the string value at the specified ARG1.</descrip>
             <iversion>9.5.0.56</iversion>
@@ -1382,7 +1382,7 @@ The ARG1 is relative to this JSON object.  (This is effectively applying a Fireb
                 <arg name="jsonPath" type="string" objcName="jsonPath" />
             </args2>
         </method>
-        <method name="TypeAt" ax="1" cpp="1" dn="1" axId="164">
+        <method name="TypeAt" axId="164" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>Returns the type of data at the given ARG1.   Possible return values are:
 &lt;ol&gt;
@@ -1429,7 +1429,9 @@ Returns -1 if no member exists at the given ARG1.</descrip>
         </method>
         <method name="UpdateString" axId="167" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
-            <descrip>Updates or appends a new string member.  If the full path specified by ARG1 does not exist, it is automatically created as needed.</descrip>
+            <descrip>Updates or appends a new string member.  If the full path specified by ARG1 does not exist, it is automatically created as needed.
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; Prior to version 9.5.0.68, the string passed in to this method did not get properly JSON escaped.  This could cause problems if non-us-ascii chars are present, or if certain special chars such as quotes, CR's, or LF's are present.  Version 9.5.0.68 fixes the problem.</descrip>
             <args2>
                 <arg name="jsonPath" type="string" objcName="jsonPath" />
                 <arg name="value" type="string" objcName="value" />
@@ -1523,6 +1525,133 @@ Returns -1 if no member exists at the given ARG1.</descrip>
             <links2 />
             <descrip>Returns a copy of this JSON object.</descrip>
         </method>
+        <method name="EmitWithSubs" axId="175" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="subs" type="Hashtable" objcName="subs" />
+                <arg name="omitEmpty" type="bool" objcName="omitEmpty" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>json_predefine.asp</url>
+                    <text>Using Pre-defined JSON Templates</text>
+                </link>
+            </links2>
+            <descrip>Emits the JSON document with variable substitutions applied.  If ARG2 is _TRUE_, then members having empty strings or empty arrays are omitted.</descrip>
+        </method>
+        <method name="Predefine" axId="176" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>json_predefine.asp</url>
+                    <text>Using Pre-defined JSON Templates</text>
+                </link>
+            </links2>
+            <descrip>Adds or replaces this JSON to an internal global set of predefined JSON documents that can be subsequently loaded by ARG1.</descrip>
+        </method>
+        <method name="LoadPredefined" axId="177" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads this JSON object from a predefined document having a specified ARG1.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>json_predefine.asp</url>
+                    <text>Using Pre-defined JSON Templates</text>
+                </link>
+            </links2>
+        </method>
+        <method name="AppendStringArray" axId="178" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="values" type="StringTable" objcName="values" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>json_append_string_array.asp</url>
+                    <text>JSON Append String Array</text>
+                </link>
+            </links2>
+            <descrip>Appends an array of string values.</descrip>
+        </method>
+        <method name="FindObjectWithMember" axId="180" ax="1" cpp="1" dn="1">
+            <gType>JsonObject</gType>
+            <descrip>Recursively searches the JSON subtree rooted at the caller's node for a JSON object containing a member having a specified ARG1.  (If the caller is the root node of the entire JSON document, then the entire JSON document is searched.)  Returns the first match or _NULL_ if not found.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2 />
+        </method>
+        <method name="JsonTypeOf" axId="181" ax="1" cpp="1" dn="1" noPublish="1">
+            <gType>int</gType>
+            <args2>
+                <arg name="jsonPath" type="string" objcName="jsonPath" />
+            </args2>
+            <iversion>9.5.0.68</iversion>
+            <links2 />
+            <descrip>Returns the type of data at the given ARG1.   Possible return values are:
+&lt;ol&gt;
+&lt;li&gt;string&lt;/li&gt;
+&lt;li&gt;number&lt;/li&gt;
+&lt;li&gt;object&lt;/li&gt;
+&lt;li&gt;array&lt;/li&gt;
+&lt;li&gt;boolean&lt;/li&gt;
+&lt;li&gt;null&lt;/li&gt;
+&lt;/ol&gt;
+Returns -1 if no member exists at the given ARG1.</descrip>
+        </method>
+        <method name="StringOfSb" axId="182" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends the string value at the specified ARG1 to ARG2.</descrip>
+            <args2>
+                <arg name="jsonPath" type="string" objcName="jsonPath" />
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <iversion>9.5.0.68</iversion>
+            <links2 />
+        </method>
+        <method name="BytesOf" axId="183" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Appends the binary bytes at the specified ARG1 to ARG3.  The ARG2 indicates the encoding of the bytes, such as "base64", "hex", etc.</descrip>
+            <args2>
+                <arg name="jsonPath" type="string" objcName="jsonPath" />
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="bd" type="BinData" objcName="bd" />
+            </args2>
+            <iversion>9.5.0.68</iversion>
+            <links2 />
+        </method>
+        <method name="UpdateSb" axId="184" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Updates or appends a new string member with the contents of ARG2.  If the full path specified by ARG1 does not exist, it is automatically created as needed.</descrip>
+            <args2>
+                <arg name="jsonPath" type="string" objcName="jsonPath" />
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <iversion>9.5.0.68</iversion>
+            <links2 />
+        </method>
+        <method name="UpdateBd" axId="185" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Updates or appends a new string member with the encoded contents of ARG3.  If the full path specified by ARG1 does not exist, it is automatically created as needed.  The bytes contained in ARG3 are encoded according to ARG2 (such as "base64", "hex", etc.)</descrip>
+            <args2>
+                <arg name="jsonPath" type="string" objcName="jsonPath" />
+                <arg name="encoding" type="string" objcName="encoding" />
+                <arg name="bd" type="BinData" objcName="bd" />
+            </args2>
+            <iversion>9.5.0.68</iversion>
+            <links2 />
+        </method>
     </methods>
     <properties>
         <property name="DelimiterChar" read="1" write="1" ax="1" cpp="1" dn="1" axId="156">
@@ -1593,5 +1722,5 @@ The default value is _TRUE_.</descrip>
     <clsid>82DF90A6-29B8-4BFC-9433-76A7BC3E0E82</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>BDAB5180-01A8-4D6C-AD56-CFD444EA4C07</uuidMidl>
-    <nextAxId>175</nextAxId>
+    <nextAxId>189</nextAxId>
 </class>

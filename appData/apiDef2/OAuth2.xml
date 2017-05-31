@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Bundle" hasEvents="1" baseProgress="1" sourceXmlPath="C:/ck2000/appData/apiDef2/OAuth2.xml">
+<class sourceXmlPath="c:/ck2000/appData/apiDef2/OAuth2.xml" license="Bundle" hasEvents="1" baseProgress="1">
     <methods>
         <method name="StartAuth" read="1" write="1" axId="112" ax="1" cpp="1" dn="1">
             <gType>string</gType>
@@ -199,7 +199,7 @@ Consider Mozilla Thunderbird.  It is an application installed on your computer. 
             <iversion>9.5.0.59</iversion>
             <links2 />
         </property>
-        <property name="Scope" read="1" write="1" ax="1" cpp="1" dn="1" axId="108">
+        <property name="Scope" read="1" write="1" axId="108" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <args2 />
             <iversion>9.5.0.59</iversion>
@@ -383,6 +383,13 @@ In most cases, using a random unused port is the best choice.  In some OAuth2 si
             <descrip>Defaults to "localhost".  This should typically remain at the default value.  It is the loopback domain or IP address used for the redirect_uri.  For example, "http://localhost:2012/".   (assuming 2012 was used or randomly chosen as the listen port number)   If the desired redirect_uri is to be "http://127.0.0.1:2012/", then set this property equal to "127.0.0.1".</descrip>
             <links2 />
         </property>
+        <property name="Resource" axId="124" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>This is an optional setting that defines the "resource" query parameter.  For example, to call the Microsoft Graph API, set this property value to "https://graph.microsoft.com/".</descrip>
+            <args2 />
+            <iversion>9.5.0.67</iversion>
+            <links2 />
+        </property>
     </properties>
     <events />
     <genericName>OAuth2</genericName>
@@ -397,6 +404,6 @@ In other commonly used terminology, this OAuth2 class helps to implement "Three 
     <clsid>CC3B92E4-C58C-40FE-A271-E407A7775848</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>DD2EABF5-8988-4A8E-908C-AD7FFA38AE59</uuidMidl>
-    <nextAxId>124</nextAxId>
+    <nextAxId>125</nextAxId>
     <uuidEvents>69A83150-D270-46E6-871F-5B5E695AF017</uuidEvents>
 </class>

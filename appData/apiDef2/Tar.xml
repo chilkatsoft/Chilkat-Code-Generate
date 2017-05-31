@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="102387346" sourceXmlPath="c:/ck2000/appData/apiDef2/Tar.xml" license="Tar" hasEvents="1">
+<class XojoModuleId="102387346" sourceXmlPath="c:/ck2000/appData/apiDef2/Tar.xml" license="Bundle" hasEvents="1">
     <axName>ChilkatTar</axName>
     <dnName>Tar</dnName>
     <cppName>CkTar</cppName>
@@ -136,7 +136,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             <links2 />
             <args2 />
         </property>
-        <property name="UntarMatchPattern" axId="114" read="1" write="1" ax="1" cpp="1" dn="1">
+        <property name="UntarMatchPattern" axId="114" read="1" write="1" ax="1" cpp="1" dn="1" deprecated="1">
             <gType>string</gType>
             <descrip>This property is deprecated.  The MustMatch property should be used instead.  Until this property is officially removed from the API,  it is identical in behavior the MustMatch property.</descrip>
             <links2 />
@@ -279,7 +279,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -332,7 +332,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
                 <arg name="tarPath" type="string" objcName="tarPath" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="UntarFirstMatchingToMemory" axId="125" outArgName="outBytes">
+        <method name="UntarFirstMatchingToMemory" axId="125" outArgName="outBytes" ax="1" cpp="1" dn="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -355,7 +355,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
                     <objcName>outBytes</objcName>
                 </arg>
             </args>
-            <descrip>Memory-to-memory untar.  The first file matching the UntarMatchPattern property is extracted and returned.</descrip>
+            <descrip>Memory-to-memory untar.  The first file matching a pattern in the MustMatch property is extracted and returned.</descrip>
             <args2>
                 <arg name="tarFileBytes" type="bytes" objcName="tarFileBytes" />
                 <arg name="matchPattern" type="string" objcName="matchPattern" />

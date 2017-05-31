@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="609908384" license="Zip" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Gzip.xml">
+<class XojoModuleId="609908384" sourceXmlPath="c:/ck2000/appData/apiDef2/Gzip.xml" license="Zip" hasEvents="1" baseProgress="1">
     <axName>ChilkatGzip</axName>
     <dnName>Gzip</dnName>
     <cppName>CkGzip</cppName>
@@ -7,40 +7,58 @@
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="Comment" axId="100">
             <gType>string</gType>
             <descrip>Specifies an optional comment string that can be embedded within the .gz when any Compress* method is called.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="CompressionLevel" read="1" write="1" ax="1" cpp="1" dn="1" axId="136">
             <gType>int</gType>
             <descrip>The compression level to be used when compressing. The default is 6, which is the typical value used for zip utility programs when compressing data.  The compression level may range from 0 (no compression) to 9 (the most compression).  The benefits of trying to increase compression may not be worth the added expense in compression time.  In many cases (which is data dependent), the improvement in compression is minimal while the increase in computation time is significant.</descrip>
             <iversion>9.5.0.50</iversion>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="ExtraData" axId="101">
             <gType>bytes</gType>
             <descrip>Optional extra-data that can be included within a .gz when a Compress* method is called.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="Filename" axId="102">
             <gType>string</gType>
             <descrip>The filename that is embedded within the .gz during any Compress* method call.   When extracting from a .gz using applications such as WinZip, this will be the filename that is created.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="HeartbeatMs" axId="103" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>The number of milliseconds between each AbortCheck event callback.  The AbortCheck callback allows an application to abort any method call prior to completion.  If HeartbeatMs is 0 (the default), no AbortCheck event callbacks will fire.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="LastMod" axId="104" deprecated="1" noxojo="1">
             <gType>date</gType>
             <descrip>The last-modification date/time to be embedded within the .gz when a Compress* method is called.  By default, the current system date/time is used.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="LastModStr" axId="105">
             <gType>string</gType>
             <descrip>The same as the LastMod property, but allows the date/time to be get/set in RFC822 string format.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="UseCurrentDate" axId="106" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>If set to _TRUE_, the file produced by an Uncompress* method will use the current date/time for the last-modification date instead of the date/time found within the Gzip format.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="137">
             <gType>bool</gType>
             <descrip>When set to _TRUE_, causes the currently running method to abort.  Methods that always finish quickly (i.e.have no length file operations or network communications) are not affected.  If no method is running, then this property is automatically reset to _FALSE_ when the next method is called.  When the abort occurs, this property is reset to _FALSE_.  Both synchronous and asynchronous method calls can be aborted.  (A synchronous method call could be aborted by setting this property from a separate thread.)</descrip>
             <iversion>9.5.0.58</iversion>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <methods>
@@ -67,6 +85,7 @@
                 <arg name="inFilename" type="string" objcName="srcPath" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="CompressFile2" axId="108">
             <gType>bool</gType>
@@ -99,6 +118,7 @@
                 <arg name="embeddedFilename" type="string" objcName="embeddedFilename" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="CompressFileToMem" axId="109" outArgName="outData">
             <gType>bytes</gType>
@@ -120,6 +140,7 @@
             <args2>
                 <arg name="inFilename" type="string" objcName="srcPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="CompressMemToFile" axId="110">
             <gType>bool</gType>
@@ -144,6 +165,7 @@
                 <arg name="inData" type="bytes" objcName="db" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="CompressMemory" axId="111" outArgName="outData">
             <gType>bytes</gType>
@@ -165,6 +187,7 @@
             <args2>
                 <arg name="inData" type="bytes" objcName="dbIn" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="CompressString" axId="112" outArgName="outBytes">
             <gType>bytes</gType>
@@ -237,6 +260,7 @@
                 <arg name="charset" type="string" objcName="charset" />
                 <arg name="encoding" type="string" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="CompressStringToFile" axId="114">
             <gType>bool</gType>
@@ -304,6 +328,7 @@
                 <arg name="encodedStr" type="string" objcName="str" />
                 <arg name="encoding" type="string" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="DeflateStringENC" axId="116" outArgName="outStr">
             <gType>string</gType>
@@ -378,6 +403,7 @@ Note: The output of this method is compressed data with no Gzip file format.  Us
                 <arg name="byteData" type="bytes" objcName="byteData" />
                 <arg name="encoding" type="string" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ExamineFile" axId="118">
             <gType>bool</gType>
@@ -394,6 +420,7 @@ Note: The output of this method is compressed data with no Gzip file format.  Us
             <args2>
                 <arg name="inGzFilename" type="string" objcName="inGzPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ExamineMemory" axId="119">
             <gType>bool</gType>
@@ -410,12 +437,14 @@ Note: The output of this method is compressed data with no Gzip file format.  Us
             <args2>
                 <arg name="inGzData" type="bytes" objcName="inGzData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetDt" axId="120">
             <gType>CkDateTime</gType>
             <args />
             <descrip>Gets the last-modification date/time to be embedded within the .gz.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="InflateStringENC" axId="121" outArgName="outStr">
             <gType>string</gType>
@@ -454,12 +483,14 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
                 <arg name="convertFromCharset" type="string" objcName="charset" />
                 <arg name="inputEncoding" type="string" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="IsUnlocked" axId="122">
             <gType>bool</gType>
             <args />
             <descrip>Returns _TRUE_ if the component has been unlocked.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ReadFile" axId="123" outArgName="outBytes">
             <gType>bytes</gType>
@@ -481,6 +512,7 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SetDt" axId="124">
             <gType>bool</gType>
@@ -497,6 +529,7 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
             <args2>
                 <arg name="dt" type="CkDateTime" objcName="dt" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="UnTarGz" axId="125">
             <gType>bool</gType>
@@ -529,6 +562,7 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
                 <arg name="destDir" type="string" objcName="destDir" />
                 <arg name="bNoAbsolute" type="bool" objcName="bNoAbsolute" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="UncompressFile" axId="126">
             <gType>bool</gType>
@@ -553,6 +587,7 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
                 <arg name="srcPath" type="string" objcName="srcPath" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="UncompressFileToMem" axId="127" outArgName="outData">
             <gType>bytes</gType>
@@ -574,6 +609,7 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
             <args2>
                 <arg name="inFilename" type="string" objcName="srcPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="UncompressFileToString" axId="128" outArgName="outStr">
             <gType>string</gType>
@@ -633,8 +669,9 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
                 <arg name="inData" type="bytes" objcName="db" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
+            <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" name="UncompressMemory" axId="130" outArgName="outData">
+        <method name="UncompressMemory" axId="130" outArgName="outData" ax="1" cpp="1" dn="1" events="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -654,6 +691,7 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
             <args2>
                 <arg name="inData" type="bytes" objcName="dbIn" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="UncompressString" axId="131" outArgName="outStr">
             <gType>string</gType>
@@ -728,6 +766,7 @@ The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for quoted-printabl
                 <arg name="charset" type="string" objcName="charset" />
                 <arg name="encoding" type="string" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="133">
             <gType>bool</gType>
@@ -754,7 +793,7 @@ The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for quoted-printabl
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -786,6 +825,7 @@ The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for quoted-printabl
                 <arg name="path" type="string" objcName="path" />
                 <arg name="binaryData" type="bytes" objcName="binaryData" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="XfdlToXml" axId="135" outArgName="outStr">
             <gType>string</gType>
@@ -807,6 +847,25 @@ The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for quoted-printabl
             <args2>
                 <arg name="xfldData" type="string" objcName="xfdl" />
             </args2>
+            <links2 />
+        </method>
+        <method name="UncompressBd" axId="138" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="binDat" type="BinData" objcName="binDat" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.67</iversion>
+            <descrip>In-place ungzip the contents of ARG1.</descrip>
+        </method>
+        <method name="CompressBd" axId="139" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>In-place gzip the contents of ARG1.</descrip>
+            <args2>
+                <arg name="binDat" type="BinData" objcName="binDat" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2 />
         </method>
     </methods>
     <genericName>Gzip</genericName>
@@ -821,5 +880,5 @@ The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for quoted-printabl
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>773E5E45-1198-4429-A4CD-F77EFA8EE22D</uuidEvents>
     <uuidMidl>409F23C5-B973-4611-93DD-8FE839BC5860</uuidMidl>
-    <nextAxId>138</nextAxId>
+    <nextAxId>140</nextAxId>
 </class>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="428071739" sourceXmlPath="C:/ck2000/appData/apiDef2/Global.xml" license="Free">
+<class XojoModuleId="428071739" sourceXmlPath="c:/ck2000/appData/apiDef2/Global.xml" license="Free">
     <genericName>Global</genericName>
     <cppName>CkGlobal</cppName>
     <dnName>Global</dnName>
@@ -28,7 +28,12 @@ It is a good idea to call this method at the very end of a program, just before 
             <iversion>9.5.0.56</iversion>
             <args />
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example" async="1">
+                    <url>async_finalize_thread_pool_on_exit.asp</url>
+                    <text>Finalize Thread Pool on Program Exit</text>
+                </link>
+            </links2>
         </method>
         <method name="UnlockBundle" axId="105" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -36,7 +41,7 @@ It is a good idea to call this method at the very end of a program, just before 
 &lt;p&gt;
 After calling UnlockComponent once, the instance of the CLASS_NAME object may be discarded/deleted (assuming the programming language requires explicit deletes).  Multiple calls to UnlockComponent are harmless.  If the Chilkat API  is already unlocked, the duplicate calls to UnlockComponent are no-ops.
 &lt;p&gt;
-&lt;b&gt;Note: &lt;/b&gt;The CLASS_NAME's UnlockComponent method should only be called with a Bundle unlock code.  If an individual product license was purchased, the UnlockComponent method in the specifically licensed class should be called instead.</descrip>
+&lt;b&gt;Note: &lt;/b&gt;The CLASS_NAME's UnlockBundle method should only be called with a Bundle unlock code.  If an individual product license was purchased, the UnlockComponent method in the specifically licensed class should be called instead.</descrip>
             <iversion>9.5.0.49</iversion>
             <args>
                 <arg>
@@ -76,7 +81,12 @@ If there is a desire for the Chilkat library to use a specific ANSI code page re
             <gType>int</gType>
             <descrip>Selects the default NTLM protocol version to use for NTLM authentication for HTTP, POP3, IMAP, SMTP, and HTTP proxies.  The default value is 2.  This property may optionally be set to 1.</descrip>
             <iversion>9.5.0.52</iversion>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>ntlm_set_default_version.asp</url>
+                    <text>Set Default NTLM Protocol Version (v1 or v2)</text>
+                </link>
+            </links2>
             <args2 />
         </property>
         <property name="DefaultUtf8" axId="102" read="1" write="1" ax="1" cpp="1" dn="1" noWinRT="1">

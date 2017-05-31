@@ -1,15 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="609848371" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/PublicKey.xml">
-    <nextAxId>131</nextAxId>
+<class XojoModuleId="609848371" sourceXmlPath="c:/ck2000/appData/apiDef2/PublicKey.xml" license="Free">
+    <nextAxId>132</nextAxId>
     <dnName>PublicKey</dnName>
     <cppName>CkPublicKey</cppName>
     <properties>
-        <property name="KeyType" read="1" ax="1" cpp="1" dn="1" axId="118">
+        <property name="KeyType" axId="118" read="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>The type of public  key.  Can be "empty", "rsa", "dsa", or "ecc".</descrip>
             <iversion>9.5.0.52</iversion>
             <links2 />
             <args2 />
+        </property>
+        <property name="KeySize" axId="131" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <iversion>9.5.0.67</iversion>
+            <links2 />
+            <descrip>Gets the size (in bits) of the public key.  For example: 1024, 2048, etc.</descrip>
         </property>
     </properties>
     <methods>

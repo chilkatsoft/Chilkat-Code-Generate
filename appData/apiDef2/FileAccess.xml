@@ -118,7 +118,7 @@
             </args>
             <descrip>Same as DirEnsureExists, except the argument is a file path (the last part of the path is a filename and not a directory).  Creates all missing directories such that ARG1 may be created.</descrip>
             <args2>
-                <arg name="dirPath" type="string" objcName="path" />
+                <arg name="filePath" type="string" objcName="filePath" />
             </args2>
             <links2 />
         </method>
@@ -169,7 +169,7 @@
             </args>
             <descrip>Creates all directories necessary such that the entire ARG1 exists.</descrip>
             <args2>
-                <arg name="filePath" type="string" objcName="filePath" />
+                <arg name="dirPath" type="string" objcName="dirPath" />
             </args2>
             <links2 />
         </method>
@@ -1100,7 +1100,12 @@ If the open/create failed, then error information will be available in the FileO
                 <arg name="offset" type="int" objcName="offset" />
                 <arg name="numBytes" type="int" objcName="numBytes" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>unzip_binary_to_stream.asp</url>
+                    <text>Unzip Binary File to Stream</text>
+                </link>
+            </links2>
             <iversion>9.5.0.64</iversion>
         </method>
         <method name="GetFileName" axId="146" ax="1" cpp="1" dn="1" status="1">

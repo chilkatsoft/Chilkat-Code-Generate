@@ -775,7 +775,12 @@ Note: In many cases, the data within the XML is returned base64 encoded.  An app
             <args2>
                 <arg name="encodedCert" type="string" objcName="encodedCert" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>cert_get_key_size.asp</url>
+                    <text>Get a Certificate's Key Size</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="LoadFromBinary" axId="164">
             <gType>bool</gType>

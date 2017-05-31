@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="339043990" sourceXmlPath="C:/ck2000/appData/apiDef2/Imap.xml" license="Imap" hasEvents="1" baseProgress="1">
+<class XojoModuleId="339043990" license="Imap" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Imap.xml">
     <axName>ChilkatImap</axName>
     <dnName>Imap</dnName>
     <cppName>CkImap</cppName>
@@ -310,9 +310,10 @@ In summary, it is unlikely that this property needs to be changed.  It should on
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoRcvBuf" axId="132">
             <gType>int</gType>
-            <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 0, which indicates that the receive buffer size socket option should not be explicitly set (i.e. the system default value, which may vary from system to system, should be used).   
+            <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 4194304.
 &lt;p&gt;
-This property can be changed if download performance seems slow.  It is recommended to be a multiple of 4096.  To see the current system's default receive buffer size, examine the LastErrorText property after calling any method that establishes a connection.  It should be reported under the heading "SO_RCVBUF".  To boost performance, try setting it equal to 2, 3, or 4 times the default value.</descrip>
+This property can be increased if download performance seems slow.  It is recommended to be a multiple of 4096.
+			</descrip>
             <links>
                 <link>
                     <text>More Information about TCP performance and Buffer Sizes</text>
@@ -329,9 +330,9 @@ This property can be changed if download performance seems slow.  It is recommen
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoSndBuf" axId="133">
             <gType>int</gType>
-            <descrip>Sets the send buffer size socket option.   Normally, this property should be left unchanged.  The default value is 0, which indicates that the send buffer size socket option should not be explicitly set (i.e. the system default value, which may vary from system to system, should be used).   
+            <descrip>Sets the send buffer size socket option.   Normally, this property should be left unchanged.  The default value is 262144.   
 &lt;p&gt;
-This property can be changed if upload performance seems slow.  It is recommended to be a multiple of 4096.  To see the current system's default send buffer size, examine the LastErrorText property after calling any method that establishes a connection.  It should be reported under the heading "SO_SNDBUF".  To boost performance, try setting it equal to 2, 3, or 4 times the default value.</descrip>
+This property can be increased if upload performance seems slow.  It is recommended to be a multiple of 4096.  Testing with sizes such as 512K and 1MB is reasonable.</descrip>
             <links>
                 <link>
                     <text>More Information about TCP performance and Buffer Sizes</text>
@@ -809,12 +810,17 @@ The ARG1 contains the bytes of a PFX file  (also known as PKCS12 or .p12).</desc
             <args2 />
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" name="CheckForNewEmail" axId="152">
+        <method name="CheckForNewEmail" axId="152" ax="1" cpp="1" dn="1" events="1">
             <gType>MessageSet</gType>
             <args />
             <descrip>Checks for new email that has arrived since the mailbox was selected (via the SelectMailbox or ExamineMailbox methods), or since the last call to CheckForNewEmail (whichever was most recent).    This method works by closing and re-opening the currently selected mailbox, and then sending a "SEARCH" command for either RECENT emails, or emails having a UID greater than the UIDNEXT value.  A message set object containing the UID's of the new emails is returned, and this may be passed to methods such as FetchBundle to download the new emails.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/12124/imap-check-for-new-email-function</url>
+                    <text>More Information about Checking for New IMAP Email</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="ClearSessionLog" axId="153">
             <gType>void</gType>
@@ -823,7 +829,7 @@ The ARG1 contains the bytes of a PFX file  (also known as PKCS12 or .p12).</desc
             <args2 />
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="CloseMailbox" axId="154">
+        <method name="CloseMailbox" axId="154" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -834,7 +840,9 @@ The ARG1 contains the bytes of a PFX file  (also known as PKCS12 or .p12).</desc
                     <objcName>mailbox</objcName>
                 </arg>
             </args>
-            <descrip>Closes the currently selected mailbox.</descrip>
+            <descrip>Closes the currently selected mailbox.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The term "mailbox" and "folder" are synonymous. Whenever the word "mailbox" is used, it has the same meaning as "folder".</descrip>
             <args2>
                 <arg name="mailbox" type="string" objcName="mailbox" />
             </args2>
@@ -858,6 +866,10 @@ The ARG1 contains the bytes of a PFX file  (also known as PKCS12 or .p12).</desc
                 <link linkType="example" lang="csharp">
                     <text>IMAP Progress Monitoring</text>
                     <url>imap_progress.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>imap_icloud.asp</url>
+                    <text>Read iCloud Email Account using IMAP</text>
                 </link>
             </links2>
             <args2>
@@ -956,7 +968,7 @@ If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2 is _FALSE_, then ARG1 rep
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="CreateMailbox" axId="159">
+        <method name="CreateMailbox" axId="159" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -967,13 +979,15 @@ If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2 is _FALSE_, then ARG1 rep
                     <objcName>mailbox</objcName>
                 </arg>
             </args>
-            <descrip>Creates a new mailbox.</descrip>
+            <descrip>Creates a new mailbox.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The term "mailbox" and "folder" are synonymous. Whenever the word "mailbox" is used, it has the same meaning as "folder".</descrip>
             <args2>
                 <arg name="mailbox" type="string" objcName="mailbox" />
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="DeleteMailbox" axId="160">
+        <method name="DeleteMailbox" axId="160" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -984,7 +998,9 @@ If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2 is _FALSE_, then ARG1 rep
                     <objcName>mailbox</objcName>
                 </arg>
             </args>
-            <descrip>Deletes an existing mailbox.</descrip>
+            <descrip>Deletes an existing mailbox.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The term "mailbox" and "folder" are synonymous. Whenever the word "mailbox" is used, it has the same meaning as "folder".</descrip>
             <args2>
                 <arg name="mailbox" type="string" objcName="mailbox" />
             </args2>
@@ -997,7 +1013,7 @@ If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2 is _FALSE_, then ARG1 rep
             <args2 />
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="ExamineMailbox" axId="162">
+        <method name="ExamineMailbox" axId="162" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -1008,7 +1024,9 @@ If ARG2 is _TRUE_, then ARG1 represents a UID. If ARG2 is _FALSE_, then ARG1 rep
                     <objcName>mailbox</objcName>
                 </arg>
             </args>
-            <descrip>Selects a mailbox such that only read-only transactions are allowed.  This method would be called instead of SelectMailbox if the logged-on user has read-only permission.</descrip>
+            <descrip>Selects a mailbox such that only read-only transactions are allowed.  This method would be called instead of SelectMailbox if the logged-on user has read-only permission.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The term "mailbox" and "folder" are synonymous. Whenever the word "mailbox" is used, it has the same meaning as "folder".</descrip>
             <args2>
                 <arg name="mailbox" type="string" objcName="mailbox" />
             </args2>
@@ -1916,7 +1934,7 @@ The IsConnected method is useful for checking to see if the component is already
             <args2 />
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" name="ListMailboxes" axId="190">
+        <method name="ListMailboxes" axId="190" ax="1" cpp="1" dn="1" events="1">
             <gType>Mailboxes</gType>
             <args>
                 <arg>
@@ -1935,6 +1953,8 @@ The IsConnected method is useful for checking to see if the component is already
                 </arg>
             </args>
             <descrip>Returns a subset of the complete list of mailboxes available on the IMAP server. This method has the side-effect of setting the SeparatorChar property to the correct character used by the IMAP server, which is typically "/" or ".".  
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The term "mailbox" and "folder" are synonymous. Whenever the word "mailbox" is used, it has the same meaning as "folder". 
 &lt;p&gt;
 The reference and wildcardedMailbox parameters are passed unaltered to the IMAP LIST command:
 &lt;pre&gt;&lt;font size="2" face="MS Sans Serif"&gt;
@@ -2404,7 +2424,9 @@ The criteria is passed through to the low-level IMAP protocol unmodified, so the
             </args>
             <descrip>Selects a mailbox. A mailbox must be selected before some methods, such as Search or FetchSingle, can be called.  If the logged-on user does not have write-access to the mailbox, call ExamineMailbox instead.
 &lt;p&gt;
-Calling this method updates the NumMessages property.</descrip>
+Calling this method updates the NumMessages property.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The term "mailbox" and "folder" are synonymous. Whenever the word "mailbox" is used, it has the same meaning as "folder".</descrip>
             <links2>
                 <link linkType="external">
                     <text>Selecting Public Folders</text>
@@ -2968,7 +2990,7 @@ ARG4 should be 1 to turn the flags on, or 0 to turn the flags off.</descrip>
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="Subscribe" axId="214">
+        <method name="Subscribe" axId="214" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -2979,7 +3001,9 @@ ARG4 should be 1 to turn the flags on, or 0 to turn the flags off.</descrip>
                     <objcName>mailbox</objcName>
                 </arg>
             </args>
-            <descrip>Subscribe to an IMAP mailbox.</descrip>
+            <descrip>Subscribe to an IMAP mailbox.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The term "mailbox" and "folder" are synonymous. Whenever the word "mailbox" is used, it has the same meaning as "folder".</descrip>
             <args2>
                 <arg name="mailbox" type="string" objcName="mailbox" />
             </args2>
@@ -3010,7 +3034,7 @@ ARG4 should be 1 to turn the flags on, or 0 to turn the flags off.</descrip>
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">

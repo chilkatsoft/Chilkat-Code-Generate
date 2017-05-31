@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Zip" baseProgress="1" hasEvents="1" XojoModuleId="790934615" sourceXmlPath="c:/ck2000/appData/apiDef2/ZipEntry.xml">
+<class XojoModuleId="790934615" license="Zip" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/ZipEntry.xml">
     <axName>ChilkatZipEntry</axName>
     <dnName>ZipEntry</dnName>
     <cppName>CkZipEntry</cppName>
@@ -277,7 +277,7 @@ When the zip is written by calling WriteZip or WriteToMemory, all of the zip ent
             <args2 />
             <links2 />
         </method>
-        <method name="Inflate" axId="124" ax="1" cpp="1" dn="1" events="1" outArgName="outData">
+        <method name="Inflate" axId="124" outArgName="outData" ax="1" cpp="1" dn="1" events="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -384,7 +384,7 @@ When the zip is written by calling WriteZip or WriteToMemory, all of the zip ent
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" name="UnzipToString" axId="129" outArgName="outStr">
+        <method name="UnzipToString" axId="129" outArgName="outStr" ax="1" cpp="1" dn="1" events="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -429,6 +429,50 @@ The ARG2 tells the component how to interpret the bytes of the uncompressed file
                 <arg name="srcCharset" type="string" objcName="srcCharset" />
             </args2>
         </method>
+        <method name="UnzipToStream" axId="135" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Unzips a file within a Zip to a stream.  If called synchronously, the ARG1 must have a sink, such as a file or another stream object.  If called asynchronously, then the foreground thread can read the stream.</descrip>
+            <args2>
+                <arg name="toStream" type="Stream" objcName="toStream" />
+            </args2>
+            <links2>
+                <link linkType="example" async="1">
+                    <url>unzip_to_stream.asp</url>
+                    <text>Unzip One File to a Stream</text>
+                </link>
+                <link linkType="example">
+                    <url>unzip_binary_to_stream.asp</url>
+                    <text async="1">Unzip Binary File to Stream</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.67</iversion>
+        </method>
+        <method name="UnzipToBd" axId="136" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Unzips the entry contents into the ARG1.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2 />
+        </method>
+        <method name="UnzipToSb" axId="137" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Unzips a text file to the ARG3.  The contents of ARG3 are appended with the unzipped file. The ARG1 is as follows:&lt;br&gt;
+&lt;br&gt;
+0 = leave unchanged.&lt;br&gt;
+1 = convert all to bare LF's&lt;br&gt;
+2 = convert all to CRLF's&lt;br&gt;
+&lt;br&gt;
+The ARG2 tells the component how to interpret the bytes of the uncompressed file -- i.e. as utf-8, utf-16, windows-1252, etc.</descrip>
+            <args2>
+                <arg name="lineEndingBehavior" type="int" objcName="lineEndingBehavior" />
+                <arg name="srcCharset" type="string" objcName="srcCharset" />
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2 />
+        </method>
     </methods>
     <genericName>ZipEntry</genericName>
     <events>
@@ -442,5 +486,5 @@ The ARG2 tells the component how to interpret the bytes of the uncompressed file
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>6E032EEB-93BE-4DF6-B7A7-F7D582903936</uuidEvents>
     <uuidMidl>C68497C9-2779-48A4-9062-6DAD6EA5E1C6</uuidMidl>
-    <nextAxId>135</nextAxId>
+    <nextAxId>138</nextAxId>
 </class>

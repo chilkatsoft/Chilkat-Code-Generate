@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Html" XojoModuleId="606166535" sourceXmlPath="C:/ck2000/appData/apiDef2/HtmlToText.xml">
+<class XojoModuleId="606166535" sourceXmlPath="c:/ck2000/appData/apiDef2/HtmlToText.xml" license="Bundle">
     <nextAxId>108</nextAxId>
     <dnName>HtmlToText</dnName>
     <cppName>CkHtmlToText</cppName>
@@ -7,10 +7,14 @@
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="DecodeHtmlEntities" axId="102">
             <gType>bool</gType>
             <descrip>If _TRUE_, then  HTML entities are automatically decoded.  For example _AMP_amp; is automatically decoded to _AMP_.  If this property is set to _FALSE_, then HTML entities are not decoded.  The default value is _TRUE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="RightMargin" axId="100">
             <gType>int</gType>
             <descrip>Used to control wrapping of text.  The default value is 80.  When the text gets close to this margin, the converter will try to break the line at a SPACE character.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SuppressLinks" axId="101">
             <gType>bool</gType>
@@ -28,6 +32,8 @@ If this property is _FALSE_, the above HTML would convert to:
 Test chilkat
 &lt;/pre&gt;
 The default value of this property is _TRUE_.</descrip>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <methods>
@@ -36,6 +42,7 @@ The default value of this property is _TRUE_.</descrip>
             <args />
             <descrip>Returns _TRUE_ if the component is already unlocked.  Otherwise returns _FALSE_.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ReadFileToString" axId="103" outArgName="outStr">
             <gType>string</gType>
@@ -65,6 +72,7 @@ The default value of this property is _TRUE_.</descrip>
                 <arg name="filename" type="string" objcName="path" />
                 <arg name="srcCharset" type="string" objcName="srcCharset" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="ToText" axId="104" outArgName="outStr">
             <gType>string</gType>
@@ -86,6 +94,7 @@ The default value of this property is _TRUE_.</descrip>
             <args2>
                 <arg name="html" type="string" objcName="html" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="105">
             <gType>bool</gType>
@@ -114,7 +123,7 @@ This class is included with the Chilkat HTML-to-XML conversion component license
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -154,6 +163,7 @@ This class is included with the Chilkat HTML-to-XML conversion component license
                 <arg name="filename" type="string" objcName="path" />
                 <arg name="charset" type="string" objcName="charset" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <genericName>HtmlToText</genericName>

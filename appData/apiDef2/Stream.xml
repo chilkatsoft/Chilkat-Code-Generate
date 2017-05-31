@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Free" baseProgress="1" hasEvents="1" sourceXmlPath="C:/ck2000/appData/apiDef2/Stream.xml">
+<class license="Free" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Stream.xml">
     <genericName>Stream</genericName>
     <cppName>CkStream</cppName>
     <dnName>Stream</dnName>
@@ -8,7 +8,7 @@
 &lt;p&gt;
 Note: This class was added in Chilkat v9.5.0.56.  Initially it will seem somewhat useless, but over time, streaming functionality will be added to existing Chilkat classes and will be prevalent in new Chilkat classes.</description>
     <methods>
-        <method name="ReadBytes" axId="107" ax="1" cpp="1" dn="1" events="1" outArgName="outBytes">
+        <method name="ReadBytes" axId="107" outArgName="outBytes" ax="1" cpp="1" dn="1" events="1">
             <gType>bytes</gType>
             <descrip>Read as much data as is immediately available on the stream.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.</descrip>
             <iversion>9.5.0.56</iversion>
@@ -109,7 +109,7 @@ Note: This class was added in Chilkat v9.5.0.56.  Initially it will seem somewha
                 <arg name="encoding" type="string" objcName="encoding" />
             </args2>
         </method>
-        <method name="ReadString" axId="119" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+        <method name="ReadString" axId="119" outArgName="outStr" ax="1" cpp="1" dn="1" events="1">
             <gType>string</gType>
             <descrip>Read as much data as is immediately available on the stream.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.  The data is returned as a string.  The incoming bytes are interpreted according to the StringCharset property.  For example, if utf-8 bytes are expected, then StringCharset should be set to "utf-8" prior to calling ReadString.</descrip>
             <iversion>9.5.0.56</iversion>
@@ -393,6 +393,56 @@ This method will read the stream source and forward to the sink until the end-of
             </args2>
             <links2 />
         </method>
+        <method name="ReadBd" axId="142" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Read as much data as is immediately available on the stream.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.  The incoming data is appended to ARG1.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>unzip_binary_to_stream.asp</url>
+                    <text>Unzip Binary File to Stream</text>
+                </link>
+                <link linkType="example" async="1">
+                    <url>ftp_download_binary_file_to_stream.asp</url>
+                    <text>FTP Download Binary File to a Stream</text>
+                </link>
+            </links2>
+        </method>
+        <method name="ReadSb" axId="143" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Read as much data as is immediately available on the stream.  If no data is immediately available, it waits up to ReadTimeoutMs milliseconds for data to arrive.  The data is appended to ARG1.  The incoming bytes are interpreted according to the StringCharset property.  For example, if utf-8 bytes are expected, then StringCharset should be set to "utf-8" prior to calling ReadSb.</descrip>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2>
+                <link linkType="example" async="1">
+                    <url>unzip_to_stream.asp</url>
+                    <text>Unzip One File to a Stream</text>
+                </link>
+            </links2>
+        </method>
+        <method name="WriteBd" axId="144" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes the contents of ARG1 to the stream.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2 />
+        </method>
+        <method name="WriteSb" axId="145" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>Writes the contents of ARG1 to the stream. The actual bytes written are the byte representation of the string as indicated by the StringCharset property.  For example, to write utf-8 bytes, first set StringCharset equal to "utf-8" and then call WriteSb.</descrip>
+            <args2>
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+            </args2>
+            <iversion>9.5.0.67</iversion>
+            <links2 />
+        </method>
     </methods>
     <properties>
         <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="138">
@@ -611,5 +661,5 @@ This property defines the size (in bytes) of each part.  The SourceFilePart and 
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>6A7D825B-AFC7-4CAB-B503-2E7CFDA62FF9</uuidEvents>
     <uuidMidl>9DF35ADF-B748-4435-B6A5-0EA8397114D7</uuidMidl>
-    <nextAxId>142</nextAxId>
+    <nextAxId>146</nextAxId>
 </class>

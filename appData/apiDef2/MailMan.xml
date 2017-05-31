@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="389993292" sourceXmlPath="C:/ck2000/appData/apiDef2/MailMan.xml" license="Email" hasEvents="1">
+<class XojoModuleId="389993292" sourceXmlPath="c:/ck2000/appData/apiDef2/MailMan.xml" license="Email" hasEvents="1">
     <axName>ChilkatMailMan</axName>
     <dnName>MailMan</dnName>
     <cppName>CkMailMan</cppName>
@@ -672,9 +672,9 @@ If the Pop3SPA property is set, the PopUsername and PopPassword properties may b
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoRcvBuf" axId="154">
             <gType>int</gType>
-            <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 0, which indicates that the receive buffer size socket option should not be explicitly set (i.e. the system default value, which may vary from system to system, should be used).   
+            <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 4194304.
 &lt;p&gt;
-This property can be changed if download performance seems slow.  It is recommended to be a multiple of 4096.  To see the current system's default receive buffer size, examine the LastErrorText property after calling any method that establishes a connection.  It should be reported under the heading "SO_RCVBUF".  To boost performance, try setting it equal to 2, 3, or 4 times the default value.</descrip>
+This property can be increased if download performance seems slow.  It is recommended to be a multiple of 4096.</descrip>
             <links>
                 <link>
                     <text>More Information about TCP performance and Buffer Sizes</text>
@@ -691,11 +691,9 @@ This property can be changed if download performance seems slow.  It is recommen
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="SoSndBuf" axId="155">
             <gType>int</gType>
-            <descrip>Sets the send buffer size socket option.   Normally, this property should be left unchanged.  The default value is 0, which indicates that the send buffer size socket option should not be explicitly set (i.e. the system default value, which may vary from system to system, should be used).   
+            <descrip>Sets the send buffer size socket option.   Normally, this property should be left unchanged.  The default value is 262144.   
 &lt;p&gt;
-This property can be changed if upload performance seems slow.  It is recommended to be a multiple of 4096.  To see the current system's default send buffer size, examine the LastErrorText property after calling any method that establishes a connection.  It should be reported under the heading "SO_SNDBUF".  To boost performance, try setting it equal to 2, 3, or 4 times the default value.
-&lt;p&gt;
-Note: This property only applies to FTP data connections.  The control connection (for sending commands and getting responses) is not typically a performance issue.</descrip>
+This property can be increased if upload performance seems slow.  It is recommended to be a multiple of 4096.  Testing with sizes such as 512K and 1MB is reasonable.</descrip>
             <links>
                 <link>
                     <text>More Information about TCP performance and Buffer Sizes</text>
@@ -815,7 +813,7 @@ The default value is "default" which will choose the, which allows for the proto
             <args2 />
             <links2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="1" name="StartTLS" axId="161">
+        <property read="1" write="1" name="StartTLS" axId="161" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>When set to _TRUE_, causes the mailman to issue a STARTTLS command to switch over to a secure SSL/TLS connection prior to authenticating and sending email.  The default value is _FALSE_.</descrip>
             <links>
@@ -888,6 +886,15 @@ The following encodings are allowed: base64, hex, and any of the encodings indic
             <descrip>If _TRUE_, will automatically use APOP authentication if the POP3 server supports it.  The default value of this property is _FALSE_.</descrip>
             <args2 />
             <links2 />
+        </property>
+        <property name="StartTLSifPossible" axId="280" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>When set to _TRUE_, causes the mailman to do STARTTLS (if possible and supported by the server) to convert to a secure SSL/TLS connection prior to authenticating and sending email.  The default value is _TRUE_.
+&lt;p&gt;
+Note: Setting the StartTLS property = _TRUE_ causes STARTTLS to always be used, even if the SMTP server does not support it.  This property allows for a non-encrypted connection, whereas the StartTLS property disallows non-encrypted connections.</descrip>
+            <args2 />
+            <links2 />
+            <iversion>9.5.0.67</iversion>
         </property>
     </properties>
     <methods>
@@ -2572,14 +2579,14 @@ If ARG3 is _TRUE_, then the response is returned in Base64-encoded format.   Oth
                     <axType>string</axType>
                     <dnType>string</dnType>
                     <cppType>const char *</cppType>
-                    <argName>bSmtp</argName>
+                    <argName>sshLogin</argName>
                     <objcName>sshLogin</objcName>
                 </arg>
                 <arg>
                     <axType>SshKey</axType>
                     <dnType>SshKey</dnType>
                     <cppType>CkSshKey &amp;</cppType>
-                    <argName>sshUsername</argName>
+                    <argName>privateKey</argName>
                     <objcName>privateKey</objcName>
                 </arg>
             </args>
@@ -2587,7 +2594,7 @@ If ARG3 is _TRUE_, then the response is returned in Base64-encoded format.   Oth
 &lt;p&gt;
 Important: When reporting problems, please send the full contents of the LastErrorText property to support@chilkatsoft.com.</descrip>
             <args2>
-                <arg name="bSmtp" type="string" objcName="sshLogin" />
+                <arg name="sshLogin" type="string" objcName="sshLogin" />
                 <arg name="sshUsername" type="SshKey" objcName="privateKey" />
             </args2>
             <links2 />
@@ -2599,14 +2606,14 @@ Important: When reporting problems, please send the full contents of the LastErr
                     <axType>string</axType>
                     <dnType>string</dnType>
                     <cppType>const char *</cppType>
-                    <argName>bSmtp</argName>
+                    <argName>sshLogin</argName>
                     <objcName>sshLogin</objcName>
                 </arg>
                 <arg>
                     <axType>string</axType>
                     <dnType>string</dnType>
                     <cppType>const char *</cppType>
-                    <argName>sshLogin</argName>
+                    <argName>sshPassword</argName>
                     <objcName>sshPassword</objcName>
                 </arg>
             </args>
@@ -2628,8 +2635,8 @@ Important: When reporting problems, please send the full contents of the LastErr
                 </link>
             </links2>
             <args2>
-                <arg name="bSmtp" type="string" objcName="sshLogin" />
-                <arg name="sshLogin" type="string" objcName="sshPassword" />
+                <arg name="sshLogin" type="string" objcName="sshLogin" />
+                <arg name="sshPassword" type="string" objcName="sshPassword" />
             </args2>
         </method>
         <method name="SshCloseTunnel" axId="237" ax="1" cpp="1" dn="1" events="1" status="1">
@@ -2772,7 +2779,7 @@ A valid purchased unlock code for this object will always included the substring
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -2907,7 +2914,16 @@ Uses an existing SSH tunnel.  This is useful for sharing an existing SSH tunnel 
                 <arg name="email" type="Email" objcName="email" />
                 <arg name="renderedMime" type="StringBuilder" objcName="renderedMime" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>email_sign_rsassa_pss_sha256.asp</url>
+                    <text>Sign Email using RSASSA-PSS with SHA256</text>
+                </link>
+                <link linkType="example">
+                    <url>email_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
+            </links2>
             <descrip>The same as RenderToMime, except the MIME is rendered into ARG2.    The rendered MIME is appended to ARG2.</descrip>
             <iversion>9.5.0.62</iversion>
         </method>
@@ -3007,5 +3023,5 @@ Uses an existing SSH tunnel.  This is useful for sharing an existing SSH tunnel 
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>3AB70566-E8D9-474F-A244-5DA0260892C1</uuidEvents>
     <uuidMidl>7998B064-06E7-4960-ACEF-AAFF0A262487</uuidMidl>
-    <nextAxId>280</nextAxId>
+    <nextAxId>281</nextAxId>
 </class>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="205846349" sourceXmlPath="c:/ck2000/appData/apiDef2/Mime.xml" license="Mime">
+<class XojoModuleId="205846349" license="Bundle" sourceXmlPath="c:/ck2000/appData/apiDef2/Mime.xml">
     <axName>ChilkatMime</axName>
     <dnName>Mime</dnName>
     <cppName>CkMime</cppName>
@@ -213,7 +213,12 @@ then the value of the Name property is "starfish.gif".</descrip>
         <property name="Pkcs7CryptAlg" axId="113" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>When the MIME is encrypted (using PKCS7 public-key encryption), this selects the underlying symmetric encryption algorithm. Possible values are: "aes", "des", "3des", and "rc2".   The default value is "aes".</descrip>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>mime_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt MIME using RSAES-OAEP with SHA256 and AES-128 content encryption</text>
+                </link>
+            </links2>
             <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="Pkcs7KeyLength" axId="114">
@@ -233,7 +238,7 @@ then the value of the Protocol property is "application/x-pkcs7-signature".</des
             <links2 />
             <args2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SigningHashAlg" axId="116">
+        <property read="1" write="1" name="SigningHashAlg" axId="116" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>Selects the underlying hash algorithm used when creating signed (PKCS7) MIME.  Possible values are "sha1", "sha256", "sha384", "sha512", "md5", and "md2".</descrip>
             <links2 />
@@ -309,6 +314,44 @@ The default value of this property is _TRUE_, meaning that "x-" is used by defau
             <links2 />
             <args2 />
         </property>
+        <property name="SigningAlg" axId="220" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Selects the signature algorithm to be used when creating signed (PKCS7) MIME.  The default value is "PKCS1-v1_5".  This can be set to "RSASSA-PSS" (or simply "pss") to use the RSASSA-PSS signature scheme.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; This property only applies when signing with an RSA private key.  It does not apply for ECC or DSA private keys.</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>mime_sign_rsassa_pss.asp</url>
+                    <text>Sign MIME using RSASSA-PSS with SHA256</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.67</iversion>
+        </property>
+        <property name="OaepHash" axId="221" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>mime_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt MIME using RSAES-OAEP with SHA256 and AES-128 content encryption</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.67</iversion>
+            <descrip>Selects the hash algorithm for use within OAEP padding when encrypting MIME using RSAES-OAEP.  The valid choices are "sha1", "sha256", "sha384", "sha512",</descrip>
+        </property>
+        <property name="OaepPadding" axId="222" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>mime_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt MIME using RSAES-OAEP with SHA256 and AES-128 content encryption</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.67</iversion>
+            <descrip>Selects the RSA encryption scheme when encrypting MIME.  The default value is _FALSE_, which selects RSAES_PKCS1-V1_5.   If set to _TRUE_, then RSAES_OAEP is used.</descrip>
+        </property>
     </properties>
     <methods>
         <method name="AddContentLength" axId="120" ax="1" cpp="1" dn="1">
@@ -361,6 +404,10 @@ The default value of this property is _TRUE_, meaning that "x-" is used by defau
                 <link linkType="example">
                     <text>Example: Add S/MIME Signature using PFX</text>
                     <url>mime_sign_with_pfx.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>mime_sign_rsassa_pss.asp</url>
+                    <text>Sign MIME using RSASSA-PSS with SHA256</text>
                 </link>
             </links2>
             <args2>
@@ -796,6 +843,10 @@ Note: This is commonly referred to as an "opaque" signature.</descrip>
                     <text>Example Code: Create PKCS7 Attached/Opaque Signature (S/MIME)</text>
                     <url>mime_pkcs7_opaque_signature.asp</url>
                 </link>
+                <link linkType="example">
+                    <url>mime_sign_rsassa_pss.asp</url>
+                    <text>Sign MIME using RSASSA-PSS with SHA256</text>
+                </link>
             </links2>
             <args2>
                 <arg name="cert" type="Cert" objcName="cert" />
@@ -845,6 +896,10 @@ Note: This is commonly referred to as an "opaque" signature.</descrip>
                     <text>Example Code: PKCS7 Decrypt MIME</text>
                     <url>mime_pkcs7_decrypt.asp</url>
                 </link>
+                <link linkType="example">
+                    <url>mime_decrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Decrypt MIME using RSAES-OAEP with SHA256 and AES-128 content encryption</text>
+                </link>
             </links2>
             <args2 />
         </method>
@@ -871,6 +926,10 @@ Note: This is commonly referred to as an "opaque" signature.</descrip>
                 <link linkType="example">
                     <text>Example Code for Decrypt2</text>
                     <url>mime_Decrypt2.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>mime_decrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Decrypt MIME using RSAES-OAEP with SHA256 and AES-128 content encryption</text>
                 </link>
             </links2>
             <args2>
@@ -973,6 +1032,10 @@ Note: This is commonly referred to as an "opaque" signature.</descrip>
                     <text>Example Code: PKCS7 Encrypt MIME</text>
                     <url>mime_pkcs7_encrypt.asp</url>
                 </link>
+                <link linkType="example">
+                    <url>mime_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt MIME using RSAES-OAEP with SHA256 and AES-128 content encryption</text>
+                </link>
             </links2>
             <args2>
                 <arg name="cert" type="Cert" objcName="cert" />
@@ -1029,7 +1092,7 @@ Note: This is commonly referred to as an "opaque" signature.</descrip>
             </args2>
             <links2 />
         </method>
-        <method name="GetBodyBinary" axId="148" ax="1" cpp="1" dn="1" outArgName="outData">
+        <method name="GetBodyBinary" axId="148" outArgName="outData" ax="1" cpp="1" dn="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -1755,6 +1818,10 @@ In the above example, to access the value of the "protocol" attribute, call GetH
                     <url>mime_save_body.asp</url>
                     <text>Save a MIME Body to a File</text>
                 </link>
+                <link linkType="example">
+                    <url>mime_extract_binary_soap_mtom.asp</url>
+                    <text>Extract Files from Binary SOAP MTOM MIME</text>
+                </link>
             </links2>
             <args2>
                 <arg name="filename" type="string" objcName="path" />
@@ -2066,7 +2133,7 @@ One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the 
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -2230,11 +2297,20 @@ A PKCS7 signature usually embeds both the signing certificate with its public ke
             <iversion>9.5.0.62</iversion>
             <links2 />
         </method>
+        <method name="GetBodyBd" axId="219" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Returns the body of the MIME message in a BinData object.</descrip>
+            <args2>
+                <arg name="binDat" type="BinData" objcName="binDat" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.67</iversion>
+        </method>
     </methods>
     <genericName>Mime</genericName>
-    <description>Chilkat MIME allows you to easily create and manipulate MIME and S/MIME messages from within your applications.  ("Chilkat MIME" may be referred to as "Chilkat S/MIME" on some chilkatsoft.com web pages.  They are the same product.) The Chilkat MIME license also includes the Chilkat DKIM component/class/libs for creating and verifying DKIM / DomainKey signatures.</description>
+    <description>Chilkat MIME allows you to easily create and manipulate MIME and S/MIME messages from within your applications.</description>
     <clsid>13D60A54-46AE-4B1A-86F3-652A79EA88C6</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>45484EC9-E196-492F-8C1F-6D311F89036E</uuidMidl>
-    <nextAxId>219</nextAxId>
+    <nextAxId>223</nextAxId>
 </class>

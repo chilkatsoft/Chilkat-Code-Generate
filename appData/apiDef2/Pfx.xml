@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Free" XojoModuleId="122503894" sourceXmlPath="c:/ck2000/appData/apiDef2/Pfx.xml">
+<class XojoModuleId="122503894" sourceXmlPath="c:/ck2000/appData/apiDef2/Pfx.xml" license="Free">
     <genericName>Pfx</genericName>
     <cppName>CkPfx</cppName>
     <dnName>Pfx</dnName>
@@ -331,7 +331,12 @@
                 <arg name="password" type="string" objcName="password" />
                 <arg name="path" type="string" objcName="path" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>pfx_create_from_pem_files.asp</url>
+                    <text>Create .pfx/.p12 from Certificate and Private Key PEM Files</text>
+                </link>
+            </links2>
         </method>
         <method name="ToJavaKeyStore" ax="1" cpp="1" dn="1" axId="113">
             <gType>JavaKeyStore</gType>

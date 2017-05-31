@@ -289,3 +289,6 @@ ChilkatJwe
 Jws
 CkJws
 ChilkatJws
+AuthUtil
+CkAuthUtil
+ChilkatAuthUtil

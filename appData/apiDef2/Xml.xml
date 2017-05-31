@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="286071397" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/Xml.xml">
+<class XojoModuleId="286071397" sourceXmlPath="c:/ck2000/appData/apiDef2/Xml.xml" license="Free">
     <axName>ChilkatXml</axName>
     <dnName>Xml</dnName>
     <cppName>CkXml</cppName>
@@ -1069,7 +1069,7 @@ Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a seri
                 <arg name="name" type="string" objcName="name" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="GetAttrValueInt" axId="143">
+        <method name="GetAttrValueInt" axId="143" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <args>
                 <arg>
@@ -1080,7 +1080,7 @@ Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a seri
                     <objcName>name</objcName>
                 </arg>
             </args>
-            <descrip>Returns an attribute as an integer.</descrip>
+            <descrip>Returns an attribute as an integer.  Returns 0 if the attribute does not exist.</descrip>
             <links2>
                 <link linkType="example">
                     <text>Methods for Getting Attributes</text>
@@ -1145,7 +1145,7 @@ Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a seri
                 <arg name="index" type="int" objcName="index" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="GetAttributeValueInt" axId="146">
+        <method name="GetAttributeValueInt" axId="146" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <args>
                 <arg>
@@ -1156,7 +1156,7 @@ Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a seri
                     <objcName>index</objcName>
                 </arg>
             </args>
-            <descrip>Returns an attribute as an integer.</descrip>
+            <descrip>Returns an attribute as an integer.   Returns 0 if the attribute does not exist.</descrip>
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>

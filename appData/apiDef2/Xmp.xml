@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Xmp" XojoModuleId="258815322" sourceXmlPath="C:/ck2000/appData/apiDef2/Xmp.xml">
+<class XojoModuleId="258815322" sourceXmlPath="c:/ck2000/appData/apiDef2/Xmp.xml" license="Bundle">
     <nextAxId>133</nextAxId>
     <dnName>Xmp</dnName>
     <cppName>CkXmp</cppName>
@@ -7,10 +7,14 @@
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumEmbedded" axId="101">
             <gType>int</gType>
             <descrip>The number of XMP metadata documents found within the JPG or TIFF file loaded by LoadAppFile.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="StructInnerDescrip" axId="100">
             <gType>bool</gType>
             <descrip>Determines whether structures are stored with rdf:parseType="Resource", or within an "rdf:Description" sub-node.</descrip>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <methods>
@@ -83,6 +87,7 @@
                 <arg name="ns" type="string" objcName="ns" />
                 <arg name="uri" type="string" objcName="uri" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="AddSimpleDate" axId="104" deprecated="1" noxojo="1">
             <gType>bool</gType>
@@ -157,6 +162,7 @@
                 <arg name="propName" type="string" objcName="propName" />
                 <arg name="propVal" type="int" objcName="propVal" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="AddSimpleStr" axId="106">
             <gType>bool</gType>
@@ -189,6 +195,7 @@
                 <arg name="propName" type="string" objcName="propName" />
                 <arg name="propVal" type="string" objcName="propVal" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="AddStructProp" axId="107">
             <gType>bool</gType>
@@ -229,6 +236,7 @@
                 <arg name="propName" type="string" objcName="propName" />
                 <arg name="propValue" type="string" objcName="propVal" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="Append" axId="108">
             <gType>bool</gType>
@@ -245,6 +253,7 @@
             <args2>
                 <arg name="iXml" type="Xml" objcName="xml" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="DateToString" axId="109" deprecated="1" noxojo="1" outArgName="outStr">
             <gType>string</gType>
@@ -300,6 +309,7 @@
                 <arg name="iXml" type="Xml" objcName="xml" />
                 <arg name="propName" type="string" objcName="propName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetEmbedded" axId="111">
             <gType>Xml</gType>
@@ -316,6 +326,7 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetProperty" axId="112">
             <gType>Xml</gType>
@@ -340,6 +351,7 @@
                 <arg name="iXml" type="Xml" objcName="xml" />
                 <arg name="propName" type="string" objcName="propName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetSimpleDate" axId="113" deprecated="1" noxojo="1" outArgName="outSysTime">
             <gType systemtime="1">date</gType>
@@ -403,6 +415,7 @@
                 <arg name="iXml" type="Xml" objcName="xml" />
                 <arg name="propName" type="string" objcName="propName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetSimpleStr" axId="115" outArgName="outStr">
             <gType>string</gType>
@@ -462,6 +475,7 @@
                 <arg name="iXml" type="Xml" objcName="xml" />
                 <arg name="structName" type="string" objcName="structName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="GetStructValue" axId="117" outArgName="outStr">
             <gType>string</gType>
@@ -521,6 +535,7 @@
             <args2>
                 <arg name="filename" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="LoadFromBuffer" axId="119">
             <gType>bool</gType>
@@ -545,6 +560,7 @@
                 <arg name="fileData" type="bytes" objcName="byteData" />
                 <arg name="ext" type="string" objcName="ext" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="NewXmp" axId="120">
             <gType>Xml</gType>
@@ -563,6 +579,7 @@
             <args />
             <descrip>Removes all XMP metadata documents from an XMP object.  After calling this method, call SaveAppFile to rewrite the JPG or TIFF file with the XMP metadata removed.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="RemoveArray" axId="122">
             <gType>bool</gType>
@@ -587,6 +604,7 @@
                 <arg name="iXml" type="Xml" objcName="xml" />
                 <arg name="propName" type="string" objcName="propName" />
             </args2>
+            <links2 />
         </method>
         <method name="RemoveEmbedded" axId="123" ax="1" cpp="1" dn="1" windowsOnly="1" status="1">
             <gType>bool</gType>
@@ -603,6 +621,7 @@
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="RemoveNsMapping" axId="124">
             <gType>void</gType>
@@ -619,6 +638,7 @@
             <args2>
                 <arg name="ns" type="string" objcName="ns" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="RemoveSimple" axId="125">
             <gType>bool</gType>
@@ -643,6 +663,7 @@
                 <arg name="iXml" type="Xml" objcName="xml" />
                 <arg name="propName" type="string" objcName="propName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="RemoveStruct" axId="126">
             <gType>bool</gType>
@@ -667,6 +688,7 @@
                 <arg name="iXml" type="Xml" objcName="xml" />
                 <arg name="structName" type="string" objcName="structName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="RemoveStructProp" axId="127">
             <gType>bool</gType>
@@ -699,6 +721,7 @@
                 <arg name="structName" type="string" objcName="structName" />
                 <arg name="propName" type="string" objcName="propName" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="SaveAppFile" axId="128">
             <gType>bool</gType>
@@ -715,6 +738,7 @@
             <args2>
                 <arg name="filename" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="SaveToBuffer" axId="129" outArgName="outBytes">
             <gType>bytes</gType>
@@ -727,6 +751,7 @@
             </args>
             <descrip>Saves a JPG or TIFF image with updated XMP to a byte buffer.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="StringToDate" axId="130" deprecated="1" noxojo="1" outArgName="outSysTime">
             <gType systemtime="1">date</gType>
@@ -748,6 +773,7 @@
             <args2>
                 <arg name="str" type="string" objcName="str" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" name="UnlockComponent" axId="131">
             <gType>bool</gType>
@@ -774,7 +800,7 @@
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">

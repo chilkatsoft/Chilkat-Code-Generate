@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="626604223" sourceXmlPath="c:/ck2000/appData/apiDef2/Email.xml" license="Email">
+<class XojoModuleId="626604223" license="Email" sourceXmlPath="c:/ck2000/appData/apiDef2/Email.xml">
     <axName>ChilkatEmail</axName>
     <dnName>Email</dnName>
     <cppName>CkEmail</cppName>
@@ -271,7 +271,7 @@ Note: If an email is downloaded from an IMAP server without attachments, then th
             </links2>
             <args2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumBcc" axId="119">
+        <property name="NumBcc" axId="119" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>The number of blind carbon-copy email recipients.</descrip>
             <links>
@@ -440,6 +440,14 @@ The GetReport method may be called to get the body content of each "report" cont
                     <url>Send3DESMail.asp</url>
                     <text>Send Encrypted Email with a Selected Algorithm (AES, 3DES, etc.)</text>
                 </link>
+                <link linkType="example">
+                    <url>email_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
+                <link linkType="example">
+                    <url>smtp_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Send Encrypted Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
             </links2>
             <args2 />
         </property>
@@ -447,7 +455,12 @@ The GetReport method may be called to get the body content of each "report" cont
             <gType>int</gType>
             <descrip>When the email is sent encrypted (using PKCS7 public-key encryption), this selects the key length of the underlying symmetric encryption algorithm. The possible values allowed depend on the Pkcs7CryptAlg property.  For "aes", the key length may be 128, 192, or 256.  For "3des" the key length must be 192.  For "des" the key length must be 40.  For "rc2" the key length can be 40, 56, 64, or 128.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>email_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
+            </links2>
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="1" name="PreferredCharset" axId="130">
             <gType>string</gType>
@@ -553,6 +566,14 @@ This allows for charsets such as iso-2022-jp to be chosen instead of the default
                     <text>Select Cert for Encrypted Email</text>
                     <url>smtp_findCertForEncryptedEmail.asp</url>
                 </link>
+                <link linkType="example">
+                    <url>email_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
+                <link linkType="example">
+                    <url>smtp_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Send Encrypted Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
             </links2>
             <args2 />
         </property>
@@ -560,7 +581,12 @@ This allows for charsets such as iso-2022-jp to be chosen instead of the default
             <gType>bool</gType>
             <descrip>Set to _TRUE_ if this email should be sent with a digital signature.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smtp_send_signed_rsassa_pss_email.asp</url>
+                    <text>Send a Signed Email using RSASSA-PSS with SHA256</text>
+                </link>
+            </links2>
         </property>
         <property name="Sender" axId="302" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
@@ -599,7 +625,7 @@ It is like the DN (Distinguished Name), but without the "AttrName=" before each 
             <args2 />
             <links2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SigningHashAlg" axId="140">
+        <property name="SigningHashAlg" axId="140" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>Selects the underlying hash algorithm used when sending signed (PKCS7) email.  Possible values are "sha1", "sha256", "sha384", "sha512", "md5", and "md2".</descrip>
             <args2 />
@@ -642,6 +668,52 @@ Important:  Emails downloaded via the IMAP protocol do not have UIDL's.  UIDL's 
                 </link>
             </links2>
             <iversion>9.5.0.66</iversion>
+        </property>
+        <property name="SigningAlg" axId="324" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Selects the signature algorithm to be used when sending signed (PKCS7) email.  The default value is "PKCS1-v1_5".  This can be set to "RSASSA-PSS" (or simply "pss") to use the RSASSA-PSS signature scheme.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; This property only applies when signing with an RSA private key.  It does not apply for ECC or DSA private keys.</descrip>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>email_sign_rsassa_pss_sha256.asp</url>
+                    <text>Sign Email using RSASSA-PSS with SHA256</text>
+                </link>
+                <link linkType="example">
+                    <url>smtp_send_signed_rsassa_pss_email.asp</url>
+                    <text>Send a Signed Email using RSASSA-PSS with SHA256</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.67</iversion>
+        </property>
+        <property name="OaepPadding" axId="325" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2 />
+            <links2>
+                <link linkType="example">
+                    <url>email_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
+                <link linkType="example">
+                    <url>smtp_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Send Encrypted Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.67</iversion>
+            <descrip>Selects the RSA encryption scheme when encrypting email. The default value is _FALSE_, which selects RSAES_PKCS1-V1_5.   If set to _TRUE_, then RSAES_OAEP is used.</descrip>
+        </property>
+        <property name="OaepHash" axId="326" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2 />
+            <iversion>9.5.0.67</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>email_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
+            </links2>
+            <descrip>Selects the hash algorithm for use within OAEP padding when encrypting email using RSAES-OAEP.  The valid choices are "sha1", "sha256", "sha384", "sha512",</descrip>
         </property>
     </properties>
     <methods>
@@ -801,7 +873,7 @@ Important:  Emails downloaded via the IMAP protocol do not have UIDL's.  UIDL's 
                 </link>
             </links2>
         </method>
-        <method cpp="1" dn="1" ax="1" status="1" name="AddEncryptCert" axId="150">
+        <method name="AddEncryptCert" axId="150" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -814,13 +886,18 @@ Important:  Emails downloaded via the IMAP protocol do not have UIDL's.  UIDL's 
             </args>
             <descrip>Allows for certificates to be explicitly specified for sending encrypted email to one or more recipients.  Call this method once per certificate to be used.  The ClearEncryptCerts method may be called to clear the list of explicitly-specified certificates.  
 &lt;p&gt;
-Note: It is possible to send encrypted email without explicitly specifying the certificates.  The Chilkat email component will automatically search the registry-based Current-User and Local-Machine certificate stores for certs matching each of the recipients (To, CC, and BCC recipients).  
+Note: It is possible to send encrypted email without explicitly specifying the certificates.  On Windows computers, the registry-based Current-User and Local-Machine certificate stores are automatically searched for certs matching each of the recipients (To, CC, and BCC recipients).  
 &lt;p&gt;
-Note: The SentEncryptCert method is equivalent to calling ClearEncryptCerts followed by AddEncryptCert.</descrip>
+Note: The SetEncryptCert method is equivalent to calling ClearEncryptCerts followed by AddEncryptCert.</descrip>
             <args2>
                 <arg name="cert" type="Cert" objcName="cert" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>smtp_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Send Encrypted Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="AddFileAttachment" axId="151" outArgName="outStrContentType">
             <gType>string</gType>
@@ -2031,7 +2108,7 @@ To traverse the chain  to the root, one would  write a loop that on first iterat
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="GetAlternativeBody" axId="199" outArgName="outStrBody">
+        <method name="GetAlternativeBody" axId="199" outArgName="outStrBody" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -2290,7 +2367,7 @@ Content-Disposition: attachment
                 </link>
             </links2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="GetAttachmentData" axId="206" outArgName="outData">
+        <method name="GetAttachmentData" axId="206" outArgName="outData" ax="1" cpp="1" dn="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -4029,10 +4106,10 @@ One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the 
             </args2>
             <links2 />
         </method>
-        <method name="SetDecryptCert" cpp="1">
+        <method name="SetDecryptCert" axId="327" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
             <descrip>Allows for a certificate to be explicity provided for decryption.  When an email object is loaded via any method, such as LoadEml, SetFromMimeText, SetFromMimeBytes, etc., security layers (signatures and encryption) are automatically unwrapped.  This method could be called prior to calling a method that loads the email.</descrip>
-            <iversion>9.5.0.40</iversion>
+            <iversion>9.5.0.57</iversion>
             <args>
                 <arg>
                     <argName>cert</argName>
@@ -4047,7 +4124,7 @@ One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the 
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="0" ax="0" name="SetDecryptCert2">
+        <method name="SetDecryptCert2" axId="328" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -4065,7 +4142,7 @@ One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the 
                     <objcName>key</objcName>
                 </arg>
             </args>
-            <descrip>Allows for a certificate and private key to be explicity specified for decryptoin.  When an email object is loaded via any method, such as LoadEml, SetFromMimeText, SetFromMimeBytes, etc., security layers (signatures and encryption) are automatically unwrapped.  Decryption requires a private key.  On Windows-based systems, the private key is often pre-installed and nothing need be done to provide it because Chilkat will automatically find it and use it.  However, if not on a Windows system, or if the private key was not pre-installed, then it can be provided by this method, or via the AddPfxSourceFile / AddPfxSourceData methods.</descrip>
+            <descrip>Allows for a certificate and private key to be explicity specified for decryption.  When an email object is loaded via any method, such as LoadEml, SetFromMimeText, SetFromMimeBytes, etc., security layers (signatures and encryption) are automatically unwrapped.  Decryption requires a private key.  On Windows-based systems, the private key is often pre-installed and nothing need be done to provide it because Chilkat will automatically find it and use it.  However, if not on a Windows system, or if the private key was not pre-installed, then it can be provided by this method, or via the AddPfxSourceFile / AddPfxSourceData methods.</descrip>
             <links2>
                 <link linkType="external">
                     <text>Multipart/signed Email Handling</text>
@@ -4076,6 +4153,7 @@ One instance where SetCSP is necessary is when using the Crypto-Pro CSP for the 
                 <arg name="cert" type="Cert" objcName="cert" />
                 <arg name="key" type="PrivateKey" objcName="key" />
             </args2>
+            <iversion>9.5.0.57</iversion>
         </method>
         <method name="SetDt" axId="278" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -4167,6 +4245,10 @@ The email's subject, recipients, FROM address, and other headers are left unmodi
                 <link linkType="example">
                     <text>Using a .cer Certificate File for Encrypted Email</text>
                     <url>smtp_sendEncryptedCer.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>email_encrypt_rsaes_oaep_aes_128_sha256.asp</url>
+                    <text>Encrypt Email using RSAES-OAEP with AES-128 CBC and SHA256</text>
                 </link>
             </links2>
             <args2>
@@ -4390,7 +4472,12 @@ Note: Replacement patterns may be placed in any header field, and in both HTML a
             <args2>
                 <arg name="cert" type="Cert" objcName="cert" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>email_sign_rsassa_pss_sha256.asp</url>
+                    <text>Sign Email using RSASSA-PSS with SHA256</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="SetSigningCert2" axId="291">
             <gType>bool</gType>
@@ -4658,11 +4745,31 @@ The 16-byte MD5 hash is returned as an encoded string.  The ARG1 determines the 
             </links2>
             <iversion>9.5.0.66</iversion>
         </method>
+        <method name="GetAttachmentBd" axId="322" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Copies an attachment's binary data into ARG2.  The first attachment is at index 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.67</iversion>
+        </method>
+        <method name="GetAlternativeBodyBd" axId="323" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Returns contents of the Nth alternative body to ARG2.   The 1st alternative body is at index 0.   This method should only be called when the NumAlternatives property has a value greater than 0.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.67</iversion>
+        </method>
     </methods>
     <genericName>Email</genericName>
     <description>Represents a complete Email object.</description>
     <clsid>78EBC21F-0841-4D47-9DD4-E324F122205F</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>3EC2BC0F-8ECB-4008-AEB7-758972455492</uuidMidl>
-    <nextAxId>322</nextAxId>
+    <nextAxId>329</nextAxId>
 </class>
