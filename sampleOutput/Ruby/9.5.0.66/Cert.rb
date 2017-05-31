@@ -92,7 +92,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ıssuerC() end
+		def issuerC() end
 
 		# returns String
 		# @return [String]
@@ -100,7 +100,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ıssuerCN() end
+		def issuerCN() end
 
 		# returns String
 		# @return [String]
@@ -108,7 +108,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ıssuerDN() end
+		def issuerDN() end
 
 		# returns String
 		# @return [String]
@@ -116,7 +116,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ıssuerE() end
+		def issuerE() end
 
 		# returns String
 		# @return [String]
@@ -124,7 +124,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ıssuerL() end
+		def issuerL() end
 
 		# returns String
 		# @return [String]
@@ -132,7 +132,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ıssuerO() end
+		def issuerO() end
 
 		# returns String
 		# @return [String]
@@ -140,7 +140,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ıssuerOU() end
+		def issuerOU() end
 
 		# returns String
 		# @return [String]
@@ -148,7 +148,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ıssuerS() end
+		def issuerS() end
 
 		# returns String
 		# @return [String]

@@ -372,7 +372,7 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ınitializeFailReason() end
+		def initializeFailReason() end
 
 		# returns Bignum
 		# @return [Bignum]

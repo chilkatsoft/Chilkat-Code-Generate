@@ -27,6 +27,7 @@ namespace ChilkatApi
 
         public Chilkat.HtmlToText m_h2t = new Chilkat.HtmlToText();
 
+        
         public GenBase()
             {
             m_h2t.UnlockComponent("APIMANHtmlToXml_7CmEFNaHOK7b");
@@ -80,6 +81,29 @@ namespace ChilkatApi
                 System.IO.File.WriteAllText(path, fileContents);
                 return;
                 }
+
+            string curFileContents = System.IO.File.ReadAllText(path);
+            if (curFileContents.Equals(fileContents)) return;
+
+            // The file has been modified, so write it..
+            System.IO.File.WriteAllText(path, fileContents);
+            return;
+            }
+
+        static public void writeLinuxScriptIfModified(string path, string fileContents)
+            {
+            Chilkat.FileAccess fac = new Chilkat.FileAccess();
+            fac.DirAutoCreate(path);
+
+            // The file does not exist yet, so write it.
+            if (!System.IO.File.Exists(path))
+                {
+                System.IO.File.WriteAllText(path, fileContents);
+                return;
+                }
+
+            // Make sure to use bare-LF line endings.
+            fileContents = fileContents.Replace("\r", "");
 
             string curFileContents = System.IO.File.ReadAllText(path);
             if (curFileContents.Equals(fileContents)) return;

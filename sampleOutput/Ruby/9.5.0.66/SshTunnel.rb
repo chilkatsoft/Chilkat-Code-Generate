@@ -260,13 +260,13 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ınboundSocksPassword() end
+		def inboundSocksPassword() end
 
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def ınboundSocksPassword(newval) end
+		def inboundSocksPassword(newval) end
 
 		# returns String
 		# @return [String]
@@ -280,13 +280,13 @@ module Chilkat
 
 		# returns String
 		# @return [String]
-		def ınboundSocksUsername() end
+		def inboundSocksUsername() end
 
 		# ==== Attributes
 		# +newval+ - String
 		#
 		# @param newval [String]
-		def ınboundSocksUsername(newval) end
+		def inboundSocksUsername(newval) end
 
 		# returns Bignum
 		# @return [Bignum]

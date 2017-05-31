@@ -155,6 +155,13 @@ namespace ChilkatApi
                 return m_gt == ChilkatTypes.GT_INT;
                 }
             }
+        public bool IsInt64
+            {
+            get
+                {
+                return m_gt == ChilkatTypes.GT_INT64;
+                }
+            }
         public bool IsDate
             {
             get

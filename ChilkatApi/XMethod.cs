@@ -113,6 +113,11 @@ namespace ChilkatApi
             //    <gType>HttpResponse</gType>
             //    <cppType>CkHttpResponse *</cppType>
 
+            string returnType = xml.GetChildContent("gType");
+            // Is this an object?  If so, we'll add a link to the async_returnObject example
+            int returnGt = ChilkatTypes.genericToGt(returnType);
+
+
             xml.UpdateChildContent("gType", "Task");
             xml.UpdateChildContent("cppType", "CkTask *");
             xml.RemoveAttribute("status");	// It returns a Task object, not a status bool..
@@ -156,13 +161,14 @@ namespace ChilkatApi
                 xml.RemoveChild("links2");
 
                 Chilkat.Xml xmlLinks2 = xml.NewChild("links2", "");
+                Chilkat.Xml xmlLink;
 
-                Chilkat.Xml xmlLink = xmlLinks2.NewChild("link", "");
-                xmlLink.AddAttribute("skiplang", "nodejs");
+                xmlLink = xmlLinks2.NewChild("link", "");
+                xmlLink.AddAttribute("lang", "activex");
+                xmlLink.AddAttribute("linkType", "external");
                 xmlLink.AddAttribute("async", "1");
-                xmlLink.AddAttribute("linkType", "example");
-                xmlLink.NewChild2("text", "How to Run an Asynchronous Task");
-                xmlLink.NewChild2("url", "async_task.asp");
+                xmlLink.NewChild2("text", "VB6 Programs MUST Call FinalizeThreadPool Just Before Exiting");
+                xmlLink.NewChild2("url", "https://www.example-code.com/vb6/async_finalize_thread_pool_on_exit.asp");
 
                 xmlLink = xmlLinks2.NewChild("link", "");
                 xmlLink.AddAttribute("lang", "nodejs");
@@ -177,6 +183,23 @@ namespace ChilkatApi
                 xmlLink.AddAttribute("async", "1");
                 xmlLink.NewChild2("text", "Asynchronous Methods in VB6 - Be Very Careful with Callbacks");
                 xmlLink.NewChild2("url", "http://www.chilkatforum.com/questions/10870/asynchronous-methods-in-vb6-be-very-careful-with-callbacks");
+
+                xmlLink = xmlLinks2.NewChild("link", "");
+                xmlLink.AddAttribute("skiplang", "nodejs");
+                xmlLink.AddAttribute("async", "1");
+                xmlLink.AddAttribute("linkType", "example");
+                xmlLink.NewChild2("text", "How to Run an Asynchronous Task");
+                xmlLink.NewChild2("url", "async_task.asp");
+
+                if (returnGt == ChilkatTypes.GT_OBJECT)
+                    {
+                    xmlLink = xmlLinks2.NewChild("link", "");
+                    xmlLink.AddAttribute("skiplang", "nodejs");
+                    xmlLink.AddAttribute("async", "1");
+                    xmlLink.AddAttribute("linkType", "example");
+                    xmlLink.NewChild2("text", "How to Return an Object from an Async Task");
+                    xmlLink.NewChild2("url", "async_returnObject.asp");
+                    }
                 }
 
 

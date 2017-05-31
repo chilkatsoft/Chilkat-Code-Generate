@@ -10,6 +10,7 @@ namespace ChilkatApi
         {
         private Chilkat.Xml m_xml = null;
 
+
         private void setAttr(string tag, string value)
             {
             if ((value == null) || (value.Length == 0)) m_xml.RemoveAttribute(tag);

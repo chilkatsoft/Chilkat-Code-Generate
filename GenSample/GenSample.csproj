@@ -52,9 +52,9 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ChilkatDotNet45, Version=9.5.0.65, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=AMD64">
+    <Reference Include="ChilkatDotNet45, Version=9.5.0.68, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\chilkat-x64.9.5.0.65\lib\net45\ChilkatDotNet45.dll</HintPath>
+      <HintPath>packages\chilkat-x64.9.5.0.68\lib\net45\ChilkatDotNet45.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
