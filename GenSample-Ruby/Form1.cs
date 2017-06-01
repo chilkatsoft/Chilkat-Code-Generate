@@ -100,6 +100,10 @@ namespace GenSample
             {
                 XMethod xmethod = xclass.GetMethod(i);
 
+                if (xmethod.m_gt == ChilkatTypes.GT_CPP_MULTIBYTE_STRING) continue;
+                if (xmethod.m_gt == ChilkatTypes.GT_CPP_CUSTOM) continue;
+                if (xmethod.HasArgWithGt(ChilkatTypes.GT_CPP_CUSTOM)) continue;
+
                 // Skip some properties we may not want..
                 // (What you do here depends on your needs..)
                 //if (xmethod.Deprecated) continue;
