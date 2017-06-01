@@ -51,6 +51,8 @@ _ReSharper.Caches
 *.suo
 *.pdb
 obj/
+*.dll
+*.nupkg
 
 # Remove user specific settings
 
@@ -59,13 +61,10 @@ obj/
 # Ignore binaries..
 ChilkatApi/bin/
 ChilkatApi/obj/
-ChilkatApi/packages/
 
 GenSample/bin/
 GenSample/obj/
-GenSample/packages/
 
 GenSample-Ruby/bin/
 GenSample-Ruby/obj/
-GenSample-Ruby/packages/
 

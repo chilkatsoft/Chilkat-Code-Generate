@@ -59,6 +59,5 @@ obj/
 # Ignore binaries..
 
 bin/
-packages/
 
 
