@@ -49,9 +49,23 @@ Temporary Items
 _ReSharper.Caches
 .vs/
 *.suo
+*.pdb
 obj/
 
 # Remove user specific settings
 
 *.DotSettings.user
+
+# Ignore binaries..
+ChilkatApi/bin/
+ChilkatApi/obj/
+ChilkatApi/packages/
+
+GenSample/bin/
+GenSample/obj/
+GenSample/packages/
+
+GenSample-Ruby/bin/
+GenSample-Ruby/obj/
+GenSample-Ruby/packages/
 
