@@ -51,7 +51,6 @@ _ReSharper.Caches
 *.suo
 *.pdb
 obj/
-*.dll
 *.nupkg
 
 # Remove user specific settings
