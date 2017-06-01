@@ -49,6 +49,7 @@ Temporary Items
 _ReSharper.Caches
 .vs/
 *.suo
+*.v11.suo
 *.pdb
 obj/
 

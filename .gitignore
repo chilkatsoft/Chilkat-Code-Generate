@@ -49,6 +49,7 @@ Temporary Items
 _ReSharper.Caches
 .vs/
 *.suo
+*.v11.suo
 *.pdb
 obj/
 *.dll
@@ -68,3 +69,4 @@ GenSample/obj/
 GenSample-Ruby/bin/
 GenSample-Ruby/obj/
 
+*.suo
