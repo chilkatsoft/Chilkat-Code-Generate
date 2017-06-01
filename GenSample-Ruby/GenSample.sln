@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenSample", "GenSample.csproj", "{F2D96774-2A3A-4C32-9A68-72E0E2E6F2B3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenSample-Ruby", "GenSample-Ruby.csproj", "{F2D96774-2A3A-4C32-9A68-72E0E2E6F2B3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChilkatApi", "..\ChilkatApi\ChilkatApi.csproj", "{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}"
 EndProject
