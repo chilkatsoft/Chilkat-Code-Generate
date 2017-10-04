@@ -41,5 +41,9 @@ namespace ChilkatApi
             (Char.ToUpper(s[0]) + (s.Length > 1 ? s.Substring(1, s.Length - 1) : ""))
             : s;
             }
+
+
+
+
         }
     }

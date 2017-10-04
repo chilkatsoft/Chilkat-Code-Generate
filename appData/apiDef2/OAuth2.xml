@@ -93,6 +93,19 @@ The return value is the URL to be loaded (navigated to) in a popup or embedded b
 This method sets the socket object to be used for sending the requests to the token endpoint in the background thread. The ARG1 can be an already-connected socket, or a socket object that is not yet connected.  In some cases, such as for a connection through an SSH tunnel, the ARG1 must already be connected.  In other cases, an unconnected ARG1 can be provided because the purpose for providing the socket object is to specify settings such as for HTTP or SOCKS proxies.</descrip>
             <links2 />
         </method>
+        <method name="GetRedirectRequestParam" axId="126" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="paramName" type="string" objcName="paramName" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+            <descrip>Some OAuth2 providers can provide additional parameters in the redirect request sent to the local listener (i.e. the Chilkat background thread).  One such case is for QuickBooks, It contains a realmId parameter such as the following:
+&lt;pre&gt;
+http://localhost:55568/?state=xxxxxxxxxxxx&amp;code=xxxxxxxxxxxx&amp;realmId=1234567890
+&lt;/pre&gt;
+&lt;p&gt;After the OAuth2 authentication is completed, an application can call this method to get any of the parameter values.  For example, to get the realmId value, pass "realmId" in ARG1.</descrip>
+        </method>
     </methods>
     <properties>
         <property name="AuthorizationEndpoint" read="1" write="1" axId="102" ax="1" cpp="1" dn="1">
@@ -390,6 +403,25 @@ In most cases, using a random unused port is the best choice.  In some OAuth2 si
             <iversion>9.5.0.67</iversion>
             <links2 />
         </property>
+        <property name="ListenPortRangeEnd" axId="125" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If set, then an unused port will be chosen in the range from the ListenPort property to this property.  Some OAuth2 services, such as Google, require that callback URL's, including port numbers, be selected in advance.  This feature allows for a range of callback URL's to be specified to cope with the possibility that another application on the same computer might be using a particular port.
+&lt;p&gt;
+For example, a Google ClientID might be configured with a set of authorized callback URI's such as:
+&lt;ul&gt;
+&lt;li&gt;http://localhost:55110/&lt;/li&gt;
+&lt;li&gt;http://localhost:55112/&lt;/li&gt;
+&lt;li&gt;http://localhost:55113/&lt;/li&gt;
+&lt;li&gt;http://localhost:55114/&lt;/li&gt;
+&lt;li&gt;http://localhost:55115/&lt;/li&gt;
+&lt;li&gt;http://localhost:55116/&lt;/li&gt;
+&lt;li&gt;http://localhost:55117/&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In which case the ListenPort property would be set to 55110, and this property would be set to 55117.</descrip>
+            <args2 />
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+        </property>
     </properties>
     <events />
     <genericName>OAuth2</genericName>
@@ -404,6 +436,6 @@ In other commonly used terminology, this OAuth2 class helps to implement "Three 
     <clsid>CC3B92E4-C58C-40FE-A271-E407A7775848</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>DD2EABF5-8988-4A8E-908C-AD7FFA38AE59</uuidMidl>
-    <nextAxId>125</nextAxId>
+    <nextAxId>127</nextAxId>
     <uuidEvents>69A83150-D270-46E6-871F-5B5E695AF017</uuidEvents>
 </class>

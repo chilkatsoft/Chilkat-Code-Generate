@@ -110,7 +110,7 @@
             <links2 />
             <args2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IsAccepting" axId="112">
+        <property name="IsAccepting" axId="112" read="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>_TRUE_ if a background thread is running and accepting connections.</descrip>
             <links2 />
@@ -267,6 +267,13 @@ May be set to one of the following integer values:
             <iversion>9.5.0.58</iversion>
             <links2 />
             <args2 />
+        </property>
+        <property name="PreferIpv6" axId="164" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2 />
+            <links2 />
+            <descrip>If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain.   The default value of this property is _FALSE_, which will choose IPv4 over IPv6. </descrip>
+            <iversion>9.5.0.70</iversion>
         </property>
     </properties>
     <methods>
@@ -579,6 +586,6 @@ BeginAccepting starts a background thread that creates a socket, binds to the po
     <clsid>D01DB5A3-B9B7-4837-9874-FBA5BA171976</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>B777D3CD-07A8-4E22-9AB2-EC62B7160ABF</uuidMidl>
-    <nextAxId>164</nextAxId>
+    <nextAxId>165</nextAxId>
     <uuidEvents>8DDD06A6-7234-4309-AF8C-E41DD8BDA4FC</uuidEvents>
 </class>

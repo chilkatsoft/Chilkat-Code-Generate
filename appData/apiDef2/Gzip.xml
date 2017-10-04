@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="609908384" sourceXmlPath="c:/ck2000/appData/apiDef2/Gzip.xml" license="Zip" hasEvents="1" baseProgress="1">
+<class XojoModuleId="609908384" license="Zip" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Gzip.xml">
     <axName>ChilkatGzip</axName>
     <dnName>Gzip</dnName>
     <cppName>CkGzip</cppName>
@@ -587,7 +587,12 @@ The input string is first decoded according to ARG3.  (Possible values for ARG3 
                 <arg name="srcPath" type="string" objcName="srcPath" />
                 <arg name="destPath" type="string" objcName="destPath" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>gzip_uncompress_file.asp</url>
+                    <text>GZip Decompress File</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" events="1" name="UncompressFileToMem" axId="127" outArgName="outData">
             <gType>bytes</gType>
@@ -865,7 +870,12 @@ The ARG3 can be "Base64", "modBase64", "Base32", "UU", "QP" (for quoted-printabl
                 <arg name="binDat" type="BinData" objcName="binDat" />
             </args2>
             <iversion>9.5.0.67</iversion>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>gzip_compress_memory_encode_base64.asp</url>
+                    <text>Gzip Compress In Memory and Base64 Encode</text>
+                </link>
+            </links2>
         </method>
     </methods>
     <genericName>Gzip</genericName>

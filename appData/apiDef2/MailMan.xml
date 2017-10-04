@@ -2937,6 +2937,13 @@ Uses an existing SSH tunnel.  This is useful for sharing an existing SSH tunnel 
             <iversion>9.5.0.62</iversion>
             <descrip>The same as RenderToMimeBytes, except the MIME is rendered into ARG2.   The rendered MIME is appended to ARG2.</descrip>
         </method>
+        <method name="LastJsonData" axId="281" ax="1" cpp="1" dn="1">
+            <gType>JsonObject</gType>
+            <args2 />
+            <links2 />
+            <iversion>9.5.0.69</iversion>
+            <descrip>Provides information about what transpired in the last method called on this object instance.  For many methods, there is no information.  However, for some methods, details about what occurred can be obtained by getting the LastJsonData right after the method call returns.</descrip>
+        </method>
     </methods>
     <genericName>MailMan</genericName>
     <events>
@@ -3023,5 +3030,5 @@ Uses an existing SSH tunnel.  This is useful for sharing an existing SSH tunnel 
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>3AB70566-E8D9-474F-A244-5DA0260892C1</uuidEvents>
     <uuidMidl>7998B064-06E7-4960-ACEF-AAFF0A262487</uuidMidl>
-    <nextAxId>281</nextAxId>
+    <nextAxId>282</nextAxId>
 </class>

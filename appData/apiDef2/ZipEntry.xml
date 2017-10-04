@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="790934615" license="Zip" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/ZipEntry.xml">
+<class XojoModuleId="790934615" sourceXmlPath="c:/ck2000/appData/apiDef2/ZipEntry.xml" license="Zip" hasEvents="1" baseProgress="1">
     <axName>ChilkatZipEntry</axName>
     <dnName>ZipEntry</dnName>
     <cppName>CkZipEntry</cppName>
@@ -120,7 +120,7 @@ When the zip is written by calling WriteZip or WriteToMemory, all of the zip ent
             <links2 />
             <args2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="0" name="IsDirectory" axId="112">
+        <property name="IsDirectory" axId="112" read="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>True if the Zip entry is a directory, false if it is a file.</descrip>
             <links2 />
@@ -149,6 +149,20 @@ When the zip is written by calling WriteZip or WriteToMemory, all of the zip ent
             <descrip>The size in bytes (in decimal string format) of this zip entry's data when uncompressed.</descrip>
             <links2 />
             <args2 />
+        </property>
+        <property name="IsAesEncrypted" axId="138" read="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2 />
+            <links2 />
+            <iversion>9.5.0.69</iversion>
+            <descrip>_TRUE_ if the entry is AES encrypted.  This property can only be _TRUE_ for entries already contained in a .zip (i.e. entries obtained from a zip archive that was opened via OpenZip, OpenBd, OpenFromMemory, etc.)   The property is _FALSE_ if the entry contained in the zip is not AES encrypted.</descrip>
+        </property>
+        <property name="EncryptionKeyLen" axId="139" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+            <descrip>If this entry is AES encrypted, then this property contains the AES key length (128, 192, or 256).  If the entry is not AES encrypted, then the value is 0.</descrip>
         </property>
     </properties>
     <methods>
@@ -486,5 +500,5 @@ The ARG2 tells the component how to interpret the bytes of the uncompressed file
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>6E032EEB-93BE-4DF6-B7A7-F7D582903936</uuidEvents>
     <uuidMidl>C68497C9-2779-48A4-9062-6DAD6EA5E1C6</uuidMidl>
-    <nextAxId>138</nextAxId>
+    <nextAxId>140</nextAxId>
 </class>

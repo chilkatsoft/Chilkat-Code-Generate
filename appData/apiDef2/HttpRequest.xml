@@ -800,7 +800,12 @@ ARG2 indicates the charset, such as "utf-8" or "iso-8859-1", to be used.  The HT
             <args2>
                 <arg name="filePath" type="string" objcName="path" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>onedrive_streaming_file_upload.asp</url>
+                    <text>OneDrive -- Streaming File Upload</text>
+                </link>
+            </links2>
         </method>
         <method name="StreamChunkFromFile" ax="1" cpp="1" dn="1" status="1" axId="143">
             <gType>bool</gType>

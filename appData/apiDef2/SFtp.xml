@@ -315,8 +315,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             <gType>int</gType>
             <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 4194304.
 &lt;p&gt;
-This property can be increased if download performance seems slow.  It is recommended to be a multiple of 4096.
-			</descrip>
+This property can be increased if download performance seems slow.  It is recommended to be a multiple of 4096.</descrip>
             <links>
                 <link>
                     <text>More Information about TCP performance and Buffer Sizes</text>
@@ -764,7 +763,7 @@ Notes:&lt;br&gt;
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="CreateDir" axId="153">
+        <method name="CreateDir" axId="153" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -842,6 +841,10 @@ The last-modified date/time is only preserved when the PreserveDate property is 
                 <link linkType="example">
                     <url>async_sftp_progressInfo.asp</url>
                     <text>Async SFTP Progress Info</text>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/12894/how-to-change-directory-in-sshsftp</url>
+                    <text>Change Remote Directory in SFTP</text>
                 </link>
             </links2>
             <args2>
@@ -1525,7 +1528,7 @@ SFTP is Secure File Transfer over SSH. It is not the FTP protocol. There is no s
                 <arg name="path" type="string" objcName="path" />
             </args2>
         </method>
-        <method name="OpenFile" axId="176" ax="1" cpp="1" dn="1" events="1" outArgName="outStr">
+        <method name="OpenFile" axId="176" outArgName="outStr" ax="1" cpp="1" dn="1" events="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -1683,6 +1686,10 @@ This flag indicates that the client wishes to read or write a
                 <link linkType="external" lang="csharp_winrt">
                     <url>http://www.cknotes.com/c-sftp-upload-from-byte/</url>
                     <text>SFTP Upload from String and Byte[] Data</text>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/12894/how-to-change-directory-in-sshsftp</url>
+                    <text>Change Remote Directory in SFTP</text>
                 </link>
             </links2>
             <args2>
@@ -2787,6 +2794,10 @@ The last-modified date/time is only preserved if the PreserveDate property is se
                 <link linkType="example">
                     <text>SFTP Simplified Upload Example</text>
                     <url>sftp_uploadFileByName.asp</url>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/12894/how-to-change-directory-in-sshsftp</url>
+                    <text>Change Remote Directory in SFTP</text>
                 </link>
             </links2>
             <args2>

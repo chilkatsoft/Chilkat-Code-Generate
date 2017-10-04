@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="500368711" sourceXmlPath="c:/ck2000/appData/apiDef2/Crypt2.xml" license="Crypt" hasEvents="1" baseProgress="1">
+<class XojoModuleId="500368711" license="Crypt" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Crypt2.xml">
     <axName>ChilkatCrypt2</axName>
     <dnName>Crypt2</dnName>
     <cppName>CkCrypt2</cppName>
@@ -343,7 +343,12 @@ The purpose of the iteration count is to increase the computation required to en
             <gType>int</gType>
             <descrip>This property is set when a digital signature is verified.  It contains the number of signer certificates.  Each signing certificate can be retrieved by calling the GetSignerCert method, passing an index from 0 to NumSignerCerts-1.</descrip>
             <args2 />
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>pkcs7_extract_signature_digest.asp</url>
+                    <text>Extract PKCS7 Signature Digest</text>
+                </link>
+            </links2>
         </property>
         <property read="1" write="1" name="PaddingScheme" axId="120" ax="1" cpp="1" dn="1">
             <gType>int</gType>
@@ -645,7 +650,12 @@ The ARG1 contains the bytes of a PFX file  (also known as PKCS12 or .p12).</desc
                 <arg name="srcFile" type="string" objcName="srcFile" />
                 <arg name="destFile" type="string" objcName="destFile" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>crypt_aes_encrypt_file.asp</url>
+                    <text>AES Encrypt and Decrypt a File</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" events="1" status="1" name="CkEncryptFile" axId="136">
             <gType>bool</gType>
@@ -670,7 +680,16 @@ The ARG1 contains the bytes of a PFX file  (also known as PKCS12 or .p12).</desc
                 <arg name="srcFile" type="string" objcName="srcFile" />
                 <arg name="destFile" type="string" objcName="destFile" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>crypt_aes_encrypt_file.asp</url>
+                    <text>AES Encrypt and Decrypt a File</text>
+                </link>
+                <link linkType="example">
+                    <url>encrypt_file_using_x509_certificate.asp</url>
+                    <text>Encrypt File using X.509 Certificate using AES in CBC Mode</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="ClearEncryptCerts" axId="137">
             <gType>void</gType>
@@ -2990,7 +3009,12 @@ Note: Starting in version 9.5.0.47, if the ARG2 is set to one of the keywords "h
                 <arg name="signerIndex" type="int" objcName="signerIndex" />
                 <arg name="pkcs7" type="string" objcName="pkcs7" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>pkcs7_extract_signature_digest.asp</url>
+                    <text>Extract PKCS7 Signature Digest</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="RandomizeIV" axId="203">
             <gType>void</gType>
@@ -4287,6 +4311,13 @@ The hash algorithm is specified by the HashAlgorithm property,  The encoding is 
                 </link>
             </links2>
         </method>
+        <method name="LastJsonData" axId="282" ax="1" cpp="1" dn="1">
+            <gType>JsonObject</gType>
+            <args2 />
+            <links2 />
+            <iversion>9.5.0.70</iversion>
+            <descrip>Provides information about what transpired in the last method called.  For many methods, there is no information.  For some methods, details about what transpired can be obtained via LastJsonData.  For example, after calling a method to verify a signature, the LastJsonData will return JSON with details about the algorithms used for signature verification.</descrip>
+        </method>
     </methods>
     <genericName>Crypt2</genericName>
     <events>
@@ -4300,5 +4331,5 @@ The hash algorithm is specified by the HashAlgorithm property,  The encoding is 
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>8602FAD5-CB1D-487B-B73C-E30CCB497880</uuidEvents>
     <uuidMidl>380B144D-5AF4-4DC3-BBDF-AD8E25F16188</uuidMidl>
-    <nextAxId>282</nextAxId>
+    <nextAxId>283</nextAxId>
 </class>

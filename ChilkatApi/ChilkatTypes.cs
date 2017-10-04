@@ -1414,7 +1414,7 @@ namespace ChilkatApi
             if (gt == GT_CPP_SHORT) return "Fixnum";
             if (gt == GT_CPP_UNSIGNED_SHORT) return "Fixnum";
             if (gt == GT_UNSIGNED_INT) return "Fixnum";
-            
+
             if (gt == GT_OBJECT)
                 {
                 if (genericType.Length == 0) throw new Exception();

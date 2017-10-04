@@ -91,6 +91,8 @@ Upload
 Url
 Xml
 XmlCertVault
+XmlDSig
+XmlDSigGen
 Xmp
 Zip
 ZipCrc

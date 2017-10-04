@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="318802398" sourceXmlPath="C:/ck2000/appData/apiDef2/ZipCrc.xml" license="Zip" noBaseEntries="1" hasEvents="1" baseProgress="1">
+<class XojoModuleId="318802398" sourceXmlPath="c:/ck2000/appData/apiDef2/ZipCrc.xml" license="Zip" noBaseEntries="1" hasEvents="1" baseProgress="1">
     <genericName>ZipCrc</genericName>
     <cppName>CkZipCrc</cppName>
     <dnName>ZipCrc</dnName>
@@ -13,9 +13,9 @@
             <args2 />
             <links2 />
         </method>
-        <method name="CalculateCrc" ax="1" cpp="1" dn="1" axId="101">
+        <method name="CalculateCrc" axId="101" ax="1" cpp="1" dn="1">
             <gType>unsigned long</gType>
-            <descrip>Calculates a 32-bit CRC for in-memory byte data.  This is the 32-bit CRC that would be found in a Zip file header if a file containing the ARG1 was added to a zip archive.</descrip>
+            <descrip>Calculates a 32-bit CRC for in-memory byte data.  This is the 32-bit CRC that would be found in a Zip file header if a file containing the ARG1 was added to a zip archive.  Returns the CRC32 of the data.</descrip>
             <args>
                 <arg>
                     <argName>data</argName>
@@ -30,16 +30,15 @@
             </args2>
             <links2 />
         </method>
-        <method name="EndStream" ax="1" cpp="1" dn="1" axId="102">
+        <method name="EndStream" axId="102" ax="1" cpp="1" dn="1">
             <gType>unsigned long</gType>
-            <descrip>Finalizes and returns the Zip CRC value calculated by calling BeginStream followed by multiple calls to MoreData.</descrip>
+            <descrip>Finalizes and returns the Zip CRC value calculated by calling BeginStream followed by multiple calls to  MoreData. </descrip>
             <args />
             <args2 />
             <links2 />
         </method>
-        <method name="FileCrc" ax="1" cpp="1" dn="1" events="1" axId="103">
+        <method name="FileCrc" axId="103" ax="1" cpp="1" dn="1" events="1">
             <gType>unsigned long</gType>
-            <descrip>Adds additional data to the CRC currently being calculated. (See BeginStream for more information.)</descrip>
             <args>
                 <arg>
                     <argName>path</argName>
@@ -53,10 +52,10 @@
                 <arg name="path" type="string" objcName="path" />
             </args2>
             <links2 />
+            <descrip>Calculates the CRC32 of a file.  The data contained in the file is streamed for the calculation to keep the memory footprint small and constant.   Returns the CRC32 of the file.</descrip>
         </method>
         <method name="MoreData" axId="104" ax="1" cpp="1" dn="1">
             <gType>void</gType>
-            <descrip>Converts a 32-bit integer to a hexidecimal string.</descrip>
             <args>
                 <arg>
                     <argName>data</argName>
@@ -70,10 +69,11 @@
                 <arg name="data" type="bytes" objcName="data" />
             </args2>
             <links2 />
+            <descrip>Adds additional data to the CRC currently being calculated. (See BeginStream for more information.)</descrip>
         </method>
-        <method name="ToHex" ax="1" cpp="1" dn="1" axId="105" outArgName="outStr">
+        <method name="ToHex" axId="105" outArgName="outStr" ax="1" cpp="1" dn="1">
             <gType>string</gType>
-            <descrip>Converts a 32-bit integer to a hexidecimal string.</descrip>
+            <descrip>Converts a 32-bit integer to a hex string.</descrip>
             <args>
                 <arg>
                     <argName>crc</argName>

@@ -114,7 +114,7 @@ This global Utf8 property controls the default setting of the Utf8 property for 
             <links2 />
             <args2 />
         </property>
-        <property name="KeepBinaryResult" read="1" write="1" ax="1" axId="110" noWinRT="1">
+        <property name="KeepBinaryResult" read="1" write="1" axId="110" ax="1" noWinRT="1">
             <gType>bool</gType>
             <descrip>If set to _TRUE_, then the binary data  returned by any method will be persisted in memory in the LastBinaryResult property.  This allows for an ActiveX running in the SQL Server environment to access large varbinary return values via temp tables. The method would be called, and then the LastBinaryResult property would be fetched to get the full contents of the returned string.</descrip>
             <iversion>9.5.0.53</iversion>
@@ -166,10 +166,19 @@ This global Utf8 property controls the default setting of the Utf8 property for 
 &lt;p&gt;Note: If UnlockComponent or UnlockBundle is called with a purchased unlock code, the UnlockStatus is correctly set to the value 2.  This value is intentionally sticky.  If a subsequent and redundant call to UnlockComponent (or UnlockBundle)  happens, it is effectively a "No-Op" because the library is already unlocked.  The UnlockStatus will not change.
 &lt;p&gt;If however, if the 1st call resulted  in UnlockStatus = 1, and THEN the unlock method is called again with a purchased unlock code, the UnlockStatus should change from 1 to 2.</descrip>
         </property>
+        <property name="PreferIpv6" axId="113" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2 />
+            <iversion>9.5.0.70</iversion>
+            <links2 />
+            <descrip>If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain.   The default value of this property is _FALSE_, which will choose IPv4 over IPv6. 
+&lt;p&gt;
+Note: Setting this property has the effect of also setting the default value of the PreferIpv6 property for other classes.</descrip>
+        </property>
     </properties>
     <events />
     <clsid>B2429147-23BE-4A55-8EAE-2AFF2635815B</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>4995C839-42F3-4D4F-8A08-1BA24B5F5E8F</uuidMidl>
-    <nextAxId>113</nextAxId>
+    <nextAxId>114</nextAxId>
 </class>

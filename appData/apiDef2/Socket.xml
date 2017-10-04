@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="266543040" license="Socket" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Socket.xml">
+<class XojoModuleId="266543040" sourceXmlPath="c:/ck2000/appData/apiDef2/Socket.xml" license="Socket" hasEvents="1" baseProgress="1">
     <axName>ChilkatSocket</axName>
     <dnName>Socket</dnName>
     <cppName>CkSocket</cppName>
@@ -684,8 +684,7 @@ The "esc" encoding is a C-string like encoding, and is more compact than hex if 
             <gType>int</gType>
             <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 4194304.
 &lt;p&gt;
-This property can be increased if download performance seems slow.  It is recommended to be a multiple of 4096.
-			</descrip>
+This property can be increased if download performance seems slow.  It is recommended to be a multiple of 4096.</descrip>
             <links>
                 <link>
                     <text>More Information about TCP performance and Buffer Sizes</text>
@@ -1389,7 +1388,8 @@ To establish an SSL/TLS connection, set ARG3 = _TRUE_, otherwise set ARG3 = _FAL
 &lt;p&gt;
 Note: Connections do not automatically close because of inactivity.  A connection will remain open indefinitely even if there is no activity.
 &lt;p&gt;
-&lt;b&gt;Important: &lt;/b&gt; All TCP-based Internet communications, regardless of the protocol (such as HTTP, FTP, SSH, IMAP, POP3, SMTP, etc.), and regardless of SSL/TLS, begin with establishing a TCP connection to a remote host:port.  External security-related infrastructure such as software firewalls (Windows Firewall), hardware firewalls, anti-virus, at either source or destination (or both) can block the connection.  If the connection fails, make sure to check all potential external causes of blockage.</descrip>
+&lt;b&gt;Important: &lt;/b&gt; All TCP-based Internet communications, regardless of the protocol (such as HTTP, FTP, SSH, IMAP, POP3, SMTP, etc.), and regardless of SSL/TLS, begin with establishing a TCP connection to a remote host:port.  External security-related infrastructure such as software firewalls (Windows Firewall), hardware firewalls, anti-virus, at either source or destination (or both) can block the connection.  If the connection fails, make sure to check all potential external causes of blockage.
+&lt;p&gt;&lt;b&gt;Question: How do I Choose the TLS version, such as 1.2?&lt;/b&gt;  Answer: The client does not specifically choose the TLS version.  In the TLS handshake (which is what occurs internally in this method), the client tells the server the version of the TLS protocol it wishes to use, which should be the highest version is supports.  In this case, (at the time of this writing on 22-June-2017) it is TLS 1.2.  The server then chooses the TLS version that will actually be used.  In most cases it will be TLS 1.2.  The client can then choose to accept or reject the connection based on the TLS version chosen by the server.  By default, Chilkat will reject anything lower than SSL 3.0 (i.e. SSL 2.0 or lower is rejected).  The SslProtocol property can be set to change what is accepted by Chilkat.  For example, it can be set to "TLS 1.0 or higher".</descrip>
             <links2>
                 <link linkType="external">
                     <text>Chilkat Socket Programming: Important "Must Know" Concepts</text>
@@ -2582,6 +2582,41 @@ This is a blocking (synchronous) method.  It returns after the string has been s
             <links2 />
             <iversion>9.5.0.65</iversion>
         </method>
+        <method name="SendWakeOnLan" axId="267" ax="1" cpp="1" dn="1" noWinRT="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="macAddress" type="string" objcName="macAddress" />
+                <arg name="port" type="int" objcName="port" />
+                <arg name="ipBroadcastAddr" type="string" objcName="ipBroadcastAddr" />
+            </args2>
+            <links2>
+                <link linkType="external">
+                    <url>https://en.wikipedia.org/wiki/Wake-on-LAN</url>
+                    <text>For more information about Wake-on-LAN</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.69</iversion>
+            <descrip>Sends a "Wake on Lan" magic packet to a computer.    A Wake on Lan is a way to power on a computer remotely by sending a data packet known as a magic packet.  For this to work, the network card must have enabled the feature: “Power on Lan” or “Power on PCI Device“, which is done by accessing the BIOS of the machine.
+&lt;p&gt;
+The ARG1 is the MAC address (in hex) of the computer to wake.  A MAC address should be 6 bytes in length.  For example, "000102030405".   The ARG2 is the port which should be 7 or 9.  (Port number 9 is more commonly used.)  The ARG3 is the broadcast address of your network, which usually ends with *.255.  For example:  "192.168.1.255".
+&lt;p&gt;
+Your application does not call Connect prior to calling SendWakeOnLan.  To use this method, it's just a matter of instantiating an instance of this socket object and then call SendWakeOnLan.</descrip>
+        </method>
+        <method name="BindAndListenPortRange" axId="268" ax="1" cpp="1" dn="1" events="1">
+            <gType>int</gType>
+            <descrip>Binds a TCP socket to an unused port within a port range (ARG1 to ARG2) and configures it to listen for incoming connections.  The size of the backlog is passed in ARG2.  The ARG2 is necessary when multiple connections arrive at the same time, or close enough in time such that they cannot be serviced immediately.  (A typical value to use for ARG2 is 5.) This method should be called once prior to receiving incoming connection requests via the AcceptNextConnection method.
+&lt;p&gt;
+To bind and listen using IPv6, set the ListenIpv6 property = _TRUE_ prior to calling this method.
+&lt;p&gt;
+Returns the port number that was bound, or -1 if no port was available or if it failed for some other reason.</descrip>
+            <args2>
+                <arg name="beginPort" type="int" objcName="beginPort" />
+                <arg name="endPort" type="int" objcName="endPort" />
+                <arg name="backLog" type="int" objcName="backLog" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.69</iversion>
+        </method>
     </methods>
     <genericName>Socket</genericName>
     <events>
@@ -2595,5 +2630,5 @@ This is a blocking (synchronous) method.  It returns after the string has been s
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>8DB781F8-8225-45D1-87F8-AE0828601F98</uuidEvents>
     <uuidMidl>93FCA31B-08C3-4E72-836B-B31123F7C2CC</uuidMidl>
-    <nextAxId>267</nextAxId>
+    <nextAxId>269</nextAxId>
 </class>

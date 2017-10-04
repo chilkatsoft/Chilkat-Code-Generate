@@ -1530,7 +1530,7 @@ For example, to specify the text for the self-extractor's main dialog unzip butt
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">
@@ -1886,11 +1886,31 @@ Note: This method only updates the zip object.  To update (rewrite) a zip file, 
             <args2>
                 <arg name="binData" type="BinData" objcName="binData" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_enveloping_signature.asp</url>
+                    <text>Create Enveloping XML Digital Signature</text>
+                </link>
+            </links2>
             <iversion>9.5.0.66</iversion>
             <descrip>Open a Zip contained in ARG1.  
 &lt;p&gt;
 When a zip is opened, the PasswordProtect and Encryption properties will be appropriately set.  If the zip is password protected (i.e. uses older Zip 2.0 encrypion), then the PasswordProtect property will be set to _TRUE_.  If the zip is strong encrypted, the Encryption property will be set to a value 1 through 4, where 4 indicates WinZip compatible AES encryption.</descrip>
+        </method>
+        <method name="AppendBd" axId="204" ax="1" cpp="1" dn="1">
+            <gType>ZipEntry</gType>
+            <descrip>Appends the contents of ARG2 as a new entry to this zip object.  The zip entry object containing the data is returned.</descrip>
+            <args2>
+                <arg name="pathInZip" type="string" objcName="pathInZip" />
+                <arg name="byteData" type="BinData" objcName="byteData" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>cert_backup_windows_personal_certStore.asp</url>
+                    <text>Backup Windows Current User / Personal Certificates to a .zip</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.70</iversion>
         </method>
     </methods>
     <genericName>Zip</genericName>
@@ -2265,5 +2285,5 @@ When a zip is opened, the PasswordProtect and Encryption properties will be appr
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>F0C2D9C1-0B80-432D-A60C-0957A5A03AAE</uuidEvents>
     <uuidMidl>EFE9ADE4-0851-49E2-BC0B-AB26E0353B1B</uuidMidl>
-    <nextAxId>204</nextAxId>
+    <nextAxId>205</nextAxId>
 </class>

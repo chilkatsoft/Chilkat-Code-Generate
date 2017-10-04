@@ -25,7 +25,9 @@
         </property>
         <property name="DirPrefix" axId="102" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
-            <descrip>A prefix to be added to each file's path within the TAR archive as it is being created.  For example, if this property is set to the string "subdir1", then "subdir1/" will be prepended to each file's path within the TAR.</descrip>
+            <descrip>A prefix to be added to each file's path within the TAR archive as it is being created.  For example, if this property is set to the string "subdir1", then "subdir1/" will be prepended to each file's path within the TAR.
+&lt;p&gt;
+Note: This property does not apply to files added using the AddFile2 method, which directly specifies the path-in-tar.</descrip>
             <links2 />
             <args2 />
         </property>
@@ -192,7 +194,7 @@ Sets the value to be defined as 100% complete for the purpose of PercentDone eve
             </args2>
             <links2 />
         </method>
-        <method name="AddFile" ax="1" cpp="1" dn="1" status="1" axId="139">
+        <method name="AddFile" axId="139" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
             <descrip>Adds a local file to be included in the next call to one of the WriteTar* methods.  To include multiple files or directory trees in a .tar, call AddFile/AddDirRoot multiple times followed by a single call to WriteTar (or WriteTarGz, or WriteTarBz2).</descrip>
             <iversion>9.5.0.46</iversion>
@@ -550,6 +552,19 @@ The ARG1 adds a prefix to the path in the TAR  for all files added under this ro
             <iversion>9.5.0.66</iversion>
             <descrip>Creates a .deb Debian binary package archive from a control.tar.gz and data.tar.gz.  The ARG1 is the path to the control.tar.gz file (or equivalent), and the ARG2 is the path to the data.tar.gz file.  The output file path (.deb) is specified in ARG3.</descrip>
         </method>
+        <method name="AddFile2" axId="143" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Adds a local file to be included in the next call to one of the WriteTar* methods.  Allows for the path within the TAR to be specified.
+To include multiple files or directory trees in a .tar, call AddFile/AddFile2/AddDirRoot multiple times followed by a single call to WriteTar (or WriteTarGz, or WriteTarBz2).
+&lt;p&gt;
+Note: The DirPrefix property does not apply to files added via this method because this method explicilty specifies the path-in-tar.</descrip>
+            <args2>
+                <arg name="filePath" type="string" objcName="filePath" />
+                <arg name="pathWithinTar" type="string" objcName="pathWithinTar" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+        </method>
     </methods>
     <genericName>Tar</genericName>
     <events>
@@ -607,5 +622,5 @@ The ARG1 adds a prefix to the path in the TAR  for all files added under this ro
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>1BCCF756-2714-431F-A92A-30B7DFFF3A56</uuidEvents>
     <uuidMidl>6D9CB79B-EDFF-4B36-8A2B-E24A0D94838C</uuidMidl>
-    <nextAxId>143</nextAxId>
+    <nextAxId>144</nextAxId>
 </class>

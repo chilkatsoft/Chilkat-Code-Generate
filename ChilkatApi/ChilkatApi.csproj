@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}</ProjectGuid>
+    <ProjectGuid>{6DF0B266-79DE-42EB-927D-55C866171409}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ChilkatApi</RootNamespace>

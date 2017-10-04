@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class sourceXmlPath="c:/ck2000/appData/apiDef2/JsonObject.xml" license="Free">
+<class license="Free" sourceXmlPath="c:/ck2000/appData/apiDef2/JsonObject.xml">
     <genericName>JsonObject</genericName>
     <cppName>CkJsonObject</cppName>
     <dnName>JsonObject</dnName>
@@ -1376,6 +1376,10 @@ The ARG1 is relative to this JSON object.  (This is effectively applying a Fireb
                 <link linkType="example">
                     <url>json_paths.asp</url>
                     <text>JSON Paths</text>
+                </link>
+                <link linkType="example">
+                    <url>json_quoted_paths.asp</url>
+                    <text>JSON Paths that need Double Quotes</text>
                 </link>
             </links2>
             <args2>

@@ -8,14 +8,17 @@
     <methods>
         <method name="Cancel" axId="115" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
-            <descrip>Cancels an asynchronous task.  The expected behavior depends on the current status of the task as described here:
+            <descrip>Marks an asynchronous task for cancellation.  The expected behavior depends on the current status of the task as described here:
 &lt;ul&gt;
-&lt;li&gt;&lt;b&gt;"loaded"&lt;/b&gt; - If the task has been loaded but has not yet been queued to run in the thread pool, then there is no change. (There is nothing to cancel because the task's Run method has not yet been called.)
-&lt;li&gt;&lt;b&gt;"queued"&lt;/b&gt; - The task is marked as canceled and will not run.  The task's status changes immediately to "canceled".
-&lt;li&gt;&lt;b&gt;"running"&lt;/b&gt; - The already-running task is aborted.  The task's status will change to "aborted" after the aborted asynchronous method call returns.  The ResultErrorText property will contain the "LastErrorText" of the method call.  In the case where a task is aborted just at the time when it's completing, the task status may instead change to "completed" if the task completed just prior to the request to abort. 
-&lt;li&gt;&lt;b&gt;"canceled", "aborted", "completed"&lt;/b&gt; - In all these cases, the task has already finished, and there is no change in status.
+&lt;li&gt;&lt;b&gt;"loaded"&lt;/b&gt; - If the task has been loaded but has not yet been queued to run in the thread pool, then there is nothing to do. (There is nothing to cancel because the task's Run method has not yet been called.)  The task will remain in the "loaded" state.
+&lt;li&gt;&lt;b&gt;"queued"&lt;/b&gt; - The task is marked for cancellation, is dequeued, and will not run.  The task's status changes immediately to "canceled".
+&lt;li&gt;&lt;b&gt;"running"&lt;/b&gt; - The already-running task is marked for cancellation.  The task's status will &lt;b&gt;eventually&lt;/b&gt; change to "aborted" when the asynchronous method returns.  At that point in time, the ResultErrorText property will contain the "LastErrorText" of the method call.  In the case where a task is marked for cancellation just at the time it's completing, the task status may instead change to "completed". 
+&lt;li&gt;&lt;b&gt;"canceled", "aborted", "completed"&lt;/b&gt; - In these cases the task has already finished, and there will be no change in status.
 &lt;/ul&gt;
-The method returns _TRUE_ if the task was in the "queued" or "running" state and was canceled or aborted.  The method returns _FALSE_ if the task has any other status.</descrip>
+Cancel returns _TRUE_ if the task was in the "queued" or "running" state when it was marked for cancellation.  Cancel returns _FALSE_ if the task was in any other state.
+&lt;p&gt;&lt;b&gt;Important:&lt;/b&gt; Calling the Cancel method marks a task for cancellation.  It sets a flag in memory that the running task will soon notice and then abort.  It is important to realize that your application is likely calling Cancel from the main UI thread, whereas the asynchronous task is running in a background thread.  If the task was in the "running" state when Cancel was called, it will still be in the "running" state when Cancel returns.  It will take a short amount of time until the task actually aborts.  This is because operating systems schedule threads in time slices, and the thread needs one or more time slices to notice the cancellation flag and abort.  After calling Cancel, your application might wish to call the Wait method to wait  until the task has actually aborted, or it could periodically check the task's status and then react once the status changes to "aborted".
+
+</descrip>
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/CkByteData.xml">
+<class sourceXmlPath="c:/ck2000/appData/apiDef2/CkByteData.xml" license="Free">
     <dnName>CkByteData</dnName>
     <cppName>CkByteData</cppName>
     <properties />
     <methods>
-        <method name="append" cpp="1" noObjC="1">
+        <method name="append" axId="100" cpp="1" noObjC="1">
             <gType>void</gType>
             <args>
                 <arg>
@@ -17,8 +17,9 @@
             <args2>
                 <arg name="db" type="bytes" objcName="db" />
             </args2>
+            <links2 />
         </method>
-        <method cpp="1" dn="0" ax="0" name="append2">
+        <method dn="0" ax="0" name="append2" axId="101" cpp="1">
             <gType>void</gType>
             <args>
                 <arg>
@@ -37,6 +38,12 @@
                 <arg name="pByteData" type="cppBytes" objcName="pByteData" />
                 <arg name="szByteData" type="unsigned long" objcName="szByteData" />
             </args2>
+            <links2>
+                <link linkType="external" lang="java">
+                    <url>http://cknotes.com/java-to-copy-byte-tofrom-a-ckbytearray/</url>
+                    <text>append2 does not work.  See how to use appendByteArray instead.</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="0" ax="0" name="appendChar">
             <gType>void</gType>
@@ -51,6 +58,7 @@
             <args2>
                 <arg name="ch" type="char" objcName="ch" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendCharN">
             <gType>void</gType>
@@ -71,6 +79,7 @@
                 <arg name="ch" type="char" objcName="ch" />
                 <arg name="numTimes" type="int" objcName="numTimes" />
             </args2>
+            <links2 />
         </method>
         <method name="appendEncoded" cpp="1">
             <gType>void</gType>
@@ -91,6 +100,7 @@
                 <arg name="str" type="string" objcName="str" />
                 <arg name="encoding" type="string" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendEncodedW">
             <gType>void</gType>
@@ -111,6 +121,7 @@
                 <arg name="str" type="wideString" objcName="str" />
                 <arg name="encoding" type="wideString" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendFile">
             <gType>bool</gType>
@@ -125,6 +136,7 @@
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendFileW">
             <gType>bool</gType>
@@ -139,6 +151,7 @@
             <args2>
                 <arg name="path" type="wideString" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendInt">
             <gType>void</gType>
@@ -159,6 +172,7 @@
                 <arg name="intValue" type="int" objcName="intValue" />
                 <arg name="littleEndian" type="bool" objcName="littleEndian" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendRandom">
             <gType>void</gType>
@@ -173,6 +187,7 @@
             <args2>
                 <arg name="numBytes" type="int" objcName="numBytes" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendRange">
             <gType>void</gType>
@@ -199,6 +214,7 @@
                 <arg name="index" type="unsigned long" objcName="index" />
                 <arg name="numBytes" type="unsigned long" objcName="numBytes" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendShort">
             <gType>void</gType>
@@ -219,6 +235,7 @@
                 <arg name="shortValue" type="short" objcName="shortValue" />
                 <arg name="littleEndian" type="bool" objcName="littleEndian" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendStr">
             <gType>void</gType>
@@ -233,6 +250,7 @@
             <args2>
                 <arg name="str" type="string" objcName="str" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="appendStrW">
             <gType>void</gType>
@@ -253,6 +271,7 @@
                 <arg name="str" type="wideString" objcName="str" />
                 <arg name="charset" type="wideString" objcName="charset" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="beginsWith">
             <gType>bool</gType>
@@ -267,6 +286,7 @@
             <args2>
                 <arg name="byteDataObj" type="bytes" objcName="byteDataObj" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="beginsWith2">
             <gType>bool</gType>
@@ -287,6 +307,7 @@
                 <arg name="pByteData" type="cppBytes" objcName="pByteData" />
                 <arg name="szByteData" type="unsigned long" objcName="szByteData" />
             </args2>
+            <links2 />
         </method>
         <method name="borrowData" cpp="1" noSwig="1">
             <gType>void</gType>
@@ -320,12 +341,14 @@
             <args />
             <descrip>4321 byte swaps the data contained within the object.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="clear">
             <gType>void</gType>
             <args />
             <descrip>Clears the CkByteData object of all data.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method name="encode" cpp="1">
             <gType>void</gType>
@@ -346,6 +369,7 @@
                 <arg name="encoding" type="string" objcName="encoding" />
                 <arg name="str" type="CkString" objcName="str" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="encodeW">
             <gType>void</gType>
@@ -366,6 +390,7 @@
                 <arg name="encoding" type="wideString" objcName="encoding" />
                 <arg name="str" type="CkString" objcName="str" />
             </args2>
+            <links2 />
         </method>
         <method name="ensureBuffer" cpp="1" status="1">
             <gType>bool</gType>
@@ -380,6 +405,7 @@
             <args2>
                 <arg name="expectedNumBytes" type="unsigned long" objcName="expectedNumBytes" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="equals">
             <gType>bool</gType>
@@ -394,6 +420,7 @@
             <args2>
                 <arg name="compareBytes" type="bytes" objcName="compareBytes" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="equals2">
             <gType>bool</gType>
@@ -414,6 +441,7 @@
                 <arg name="pCompareBytes" type="cppBytes" objcName="pCompareBytes" />
                 <arg name="numBytes" type="unsigned long" objcName="numBytes" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="findBytes">
             <gType>int</gType>
@@ -428,6 +456,7 @@
             <args2>
                 <arg name="byteDataObj" type="bytes" objcName="byteDataObj" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="findBytes2">
             <gType>int</gType>
@@ -448,6 +477,7 @@
                 <arg name="findBytes" type="cppBytes" objcName="findBytes" />
                 <arg name="findBytesLen" type="unsigned long" objcName="findBytesLen" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="getByte">
             <gType>cppByte</gType>
@@ -462,13 +492,20 @@
             <args2>
                 <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
             </args2>
+            <links2 />
         </method>
-        <method name="getBytes" cpp="1" deprecated="1">
+        <method name="getBytes" axId="102" cpp="1" deprecated="1">
             <gType>cppBytes</gType>
             <args />
             <descrip>Returns a pointer to the bytes contained within the object.  Be very careful with the pointer that is returned.  If more data is appended to the object, an internal reallocation may occur such that the previously returned pointer is no longer valid.
 &lt;p&gt;This method is identical to the &lt;b&gt;getData&lt;/b&gt; method.  Use getData instead.</descrip>
             <args2 />
+            <links2>
+                <link linkType="external" lang="java">
+                    <url>http://cknotes.com/java-to-copy-byte-tofrom-a-ckbytearray/</url>
+                    <text>getBytes does not work.  See how to use toByteArray instead.</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="0" ax="0" name="getChar">
             <gType>char</gType>
@@ -483,12 +520,19 @@
             <args2>
                 <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
             </args2>
+            <links2 />
         </method>
-        <method dn="0" ax="0" name="getData" cpp="1">
+        <method name="getData" axId="103" cpp="1">
             <gType>cppBytes</gType>
             <args />
             <descrip>Returns a pointer to the internal buffer.  Be careful with this method because if additional data is appended, the data within the object may be relocated and the pointer may cease to be valid.</descrip>
             <args2 />
+            <links2>
+                <link linkType="external" lang="java">
+                    <url>http://cknotes.com/java-to-copy-byte-tofrom-a-ckbytearray/</url>
+                    <text>getData does not work.  See how to use toByteArray instead.</text>
+                </link>
+            </links2>
         </method>
         <method dn="0" ax="0" name="getDataAt" cpp="1">
             <gType>cppBytes</gType>
@@ -503,6 +547,7 @@
             <args2>
                 <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
             </args2>
+            <links2 />
         </method>
         <method name="getEncoded" cpp="1" noC="1" outArgName="outStr">
             <gType>mbString</gType>
@@ -523,6 +568,7 @@
             <args2>
                 <arg name="encoding" type="string" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="getEncodedW">
             <gType>wideString</gType>
@@ -537,6 +583,7 @@
             <args2>
                 <arg name="encoding" type="wideString" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="getInt">
             <gType>int</gType>
@@ -551,6 +598,7 @@
             <args2>
                 <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="getRange">
             <gType>cppBytes</gType>
@@ -571,6 +619,7 @@
                 <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
                 <arg name="numBytes" type="unsigned long" objcName="numBytes" />
             </args2>
+            <links2 />
         </method>
         <method noSwig="1" cpp="1" dn="0" ax="0" name="getShort">
             <gType>short</gType>
@@ -585,12 +634,14 @@
             <args2>
                 <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="getSize">
             <gType>unsigned long</gType>
             <args />
             <descrip>Returns the number of bytes in the data buffer.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method noSwig="1" cpp="1" dn="0" ax="0" name="getUInt">
             <gType>unsigned long</gType>
@@ -605,6 +656,7 @@
             <args2>
                 <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
             </args2>
+            <links2 />
         </method>
         <method noSwig="1" cpp="1" dn="0" ax="0" name="getUShort">
             <gType>unsigned short</gType>
@@ -619,12 +671,14 @@
             <args2>
                 <arg name="byteIndex" type="unsigned long" objcName="byteIndex" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="is7bit">
             <gType>bool</gType>
             <args />
             <descrip>Returns _TRUE_ if all the bytes are in the range 0x00 to 0x7F.</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="loadFile">
             <gType>bool</gType>
@@ -639,6 +693,7 @@
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="loadFileW">
             <gType>bool</gType>
@@ -653,6 +708,7 @@
             <args2>
                 <arg name="path" type="wideString" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="pad">
             <gType>void</gType>
@@ -673,6 +729,7 @@
                 <arg name="blockSize" type="int" objcName="blockSize" />
                 <arg name="paddingScheme" type="int" objcName="paddingScheme" />
             </args2>
+            <links2 />
         </method>
         <method name="preAllocate" cpp="1" deprecated="1">
             <gType>bool</gType>
@@ -688,6 +745,7 @@
             <args2>
                 <arg name="expectedNumBytes" type="unsigned long" objcName="expectedNumBytes" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="removeChunk">
             <gType>void</gType>
@@ -708,12 +766,14 @@
                 <arg name="startIndex" type="unsigned long" objcName="startIndex" />
                 <arg name="numBytes" type="unsigned long" objcName="numBytes" />
             </args2>
+            <links2 />
         </method>
         <method noSwig="1" cpp="1" dn="0" ax="0" name="removeData">
             <gType>cppBytes</gType>
             <args />
             <descrip>Removes the data from the CkByteData object.  The caller will receivea pointer to the memory buffer, and is responsible for deleting it.&lt;br&gt; Example: &lt;br&gt;	unsigned char *data = byteData.removeData();&lt;br&gt;	... do something with the data....&lt;br&gt;	delete [] data;</descrip>
             <args2 />
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="replaceChar">
             <gType>void</gType>
@@ -734,6 +794,7 @@
                 <arg name="existingByteValue" type="cppByte" objcName="existingByteValue" />
                 <arg name="replacementByteValue" type="cppByte" objcName="replacementByteValue" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="saveFile">
             <gType>bool</gType>
@@ -748,6 +809,7 @@
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="saveFileW">
             <gType>bool</gType>
@@ -762,6 +824,7 @@
             <args2>
                 <arg name="path" type="wideString" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="shorten">
             <gType>void</gType>
@@ -776,6 +839,7 @@
             <args2>
                 <arg name="numBytes" type="unsigned long" objcName="numBytes" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="to_ws">
             <gType>wideString</gType>
@@ -790,6 +854,7 @@
             <args2>
                 <arg name="charset" type="string" objcName="charset" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="0" ax="0" name="unpad">
             <gType>void</gType>
@@ -810,9 +875,11 @@
                 <arg name="blockSize" type="int" objcName="blockSize" />
                 <arg name="paddingScheme" type="int" objcName="paddingScheme" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <genericName>CkByteData</genericName>
     <description>Represents a chunk of byte data and provides methods for accessing it, adding to it, or saving and loading from files.</description>
     <axName>CkByteData</axName>
+    <nextAxId>104</nextAxId>
 </class>

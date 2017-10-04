@@ -167,9 +167,9 @@
             </args2>
             <links2 />
         </method>
-        <method name="Contains" ax="1" cpp="1" dn="1" axId="110">
+        <method name="Contains" axId="110" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
-            <descrip>Returns _TRUE_ if the ARG2 is contained within this object.   For case sensitive matching, set ARG2 equal to _TRUE_.  For case-insensitive, set ARG2 equal to _FALSE_.</descrip>
+            <descrip>Returns _TRUE_ if the ARG1 is contained within this object.   For case sensitive matching, set ARG2 equal to _TRUE_.  For case-insensitive, set ARG2 equal to _FALSE_.</descrip>
             <iversion>9.5.0.58</iversion>
             <args>
                 <arg>
@@ -365,7 +365,9 @@ Note: This method can only be called if the encoded content decodes to a string.
         </method>
         <method name="ReplaceWord" axId="126" ax="1" cpp="1" dn="1">
             <gType>int</gType>
-            <descrip>Replaces all word occurrences of a specified string in this instance with another specified string.  Returns the number of replacements made.</descrip>
+            <descrip>Replaces all word occurrences of a specified string in this instance with another specified string.  Returns the number of replacements made.
+&lt;p&gt;
+Important: This method is limited to replacing whole words in strings that only contains characters in the Latin1 charset (i.e. iso-8859-1 or Windows-1252).    A whole word can only contain alphanumeric chars where the alpha chars are restricted to those of the Latin1 alpha chars.  (The underscore character is also considered part of a word.)</descrip>
             <args2>
                 <arg name="value" type="string" objcName="value" />
                 <arg name="replacement" type="string" objcName="replacement" />
@@ -576,6 +578,17 @@ Note: This method can only be called if the encoded content decodes to a string.
             <iversion>9.5.0.67</iversion>
             <links2 />
         </method>
+        <method name="ContainsWord" axId="144" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Returns _TRUE_ if the ARG1 is contained within this object, but only if it is a whole word.  This method is limited to finding whole words in strings that only contains characters in the Latin1 charset (i.e. iso-8859-1 or Windows-1252).    A whole word can only contain alphanumeric chars where the alpha chars are restricted to those of the Latin1 alpha chars.  (The underscore character is also considered part of a word.)
+&lt;p&gt;For case sensitive matching, set ARG2 equal to _TRUE_.  For case-insensitive, set ARG2 equal to _FALSE_.</descrip>
+            <args2>
+                <arg name="word" type="string" objcName="word" />
+                <arg name="caseSensitive" type="bool" objcName="caseSensitive" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+        </method>
     </methods>
     <properties>
         <property name="Length" axId="107" read="1" ax="1" cpp="1" dn="1">
@@ -597,5 +610,5 @@ Note: This method can only be called if the encoded content decodes to a string.
     <clsid>92B5CBD6-68B3-4C17-A717-696CC27D893E</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>78C0A2E3-8712-4C8E-9FD0-24FB3E003A72</uuidMidl>
-    <nextAxId>144</nextAxId>
+    <nextAxId>145</nextAxId>
 </class>

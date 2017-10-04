@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="122503894" sourceXmlPath="c:/ck2000/appData/apiDef2/Pfx.xml" license="Free">
+<class XojoModuleId="122503894" license="Free" sourceXmlPath="c:/ck2000/appData/apiDef2/Pfx.xml">
     <genericName>Pfx</genericName>
     <cppName>CkPfx</cppName>
     <dnName>Pfx</dnName>
@@ -209,6 +209,10 @@
                 <link linkType="external">
                     <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
                     <text>List of Supported Encodings (Base64, Hex, etc.)</text>
+                </link>
+                <link linkType="example">
+                    <url>xmldsig_soap_wsse_SecurityTokenReference.asp</url>
+                    <text>Sign SOAP XML using a wsse:SecurityTokenReference</text>
                 </link>
             </links2>
             <args2>

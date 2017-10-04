@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="633173837" sourceXmlPath="C:/ck2000/appData/apiDef2/Asn.xml" license="Bundle">
+<class XojoModuleId="633173837" sourceXmlPath="c:/ck2000/appData/apiDef2/Asn.xml" license="Bundle">
     <genericName>Asn</genericName>
     <cppName>CkAsn</cppName>
     <dnName>Asn</dnName>

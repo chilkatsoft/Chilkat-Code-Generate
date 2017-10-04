@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<class sourceXmlPath="c:/ck2000/appData/apiDef2/XmlDSig.xml" license="Bundle">
+    <methods>
+        <method name="CanonicalizeXml" read="1" write="1" axId="101" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="xml" type="string" objcName="xml" />
+                <arg name="version" type="string" objcName="version" />
+                <arg name="withComments" type="bool" objcName="withComments" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_exclusive_canonicalization.asp</url>
+                    <text>XML Exclusive Canonicalization</text>
+                </link>
+                <link linkType="example">
+                    <url>xml_inclusive_canonicalization.asp</url>
+                    <text>XML Inclusive Canonicalization</text>
+                </link>
+            </links2>
+            <descrip>Applies XML canonicalization to the passed-in XML, and returns the canonicalized XML string.  The ARG2 may be one of the following:
+&lt;ul&gt;
+&lt;li&gt;"C14N" -- for Inclusive Canonical XML
+&lt;li&gt;"EXCL_C14N" -- for Exclusive Canonical XML
+&lt;/ul&gt;
+&lt;p&gt;If ARG3 is _TRUE_, then XML comments are included in the output.  If ARG3 is _FALSE_, then XML comments are excluded from the output.</descrip>
+        </method>
+        <method name="LoadSignature" axId="102" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="xmlSig" type="string" objcName="xmlSig" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.69</iversion>
+            <descrip>Loads an XML document containing 1 or more XML digital signatures.  An application would first load XML containing digital signature(s), then validate.  After loading, it is also possible to use various methods and properties to get information about the signature, such as the key info, references, etc.  If external data is referenced by the signature, it may be necessary to provide the referenced data prior to validating.
+&lt;p&gt;
+Note: When loading an XML document, the Selector property is automatically reset to 0, and the NumSignatures property is set to the number of XML digital signatures found.</descrip>
+        </method>
+        <method name="LoadSignatureSb" axId="103" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads an XML document containing one or more XML digital signatures from the contents of a StringBuilder object.  An application would first load the XML, then validate.  After loading, it is also possible to use various methods and properties to get information about the signature, such as the key info, references, etc.  If external data is referenced by the signature, it may be necessary to provide the referenced data prior to validating.
+&lt;p&gt;
+Note: When loading an XML document, the Selector property is automatically reset to 0, and the NumSignatures property is set to the number of XML digital signatures found.</descrip>
+            <args2>
+                <arg name="sbXmlSig" type="StringBuilder" objcName="sbXmlSig" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_with_rsa_key.asp</url>
+                    <text>Verify XML Digital Signature with an RSA Key</text>
+                </link>
+            </links2>
+        </method>
+        <method name="IsReferenceExternal" read="1" write="1" axId="105" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+            <descrip>Returns _TRUE_ if the reference at ARG1 is external.  Each external reference would first need to be provided by the application prior to validating the signature.</descrip>
+        </method>
+        <method name="ReferenceUri" axId="106" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+            <descrip>Returns the URI of the Nth reference specified by ARG1.  (The 1st reference is at index 0.)   URI's beginning with a pound sign ('#') are internal references.</descrip>
+        </method>
+        <method name="SetRefDataSb" axId="107" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="sb" type="StringBuilder" objcName="sb" />
+                <arg name="charset" type="string" objcName="charset" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+            <descrip>Provides the text data for the external reference at ARG1.   The ARG3 specifies the byte representation of the text, such as "utf-8", "utf-16", "windows-1252", etc.    (If in doubt, try utf-8 first.)</descrip>
+        </method>
+        <method name="SetRefDataBd" axId="108" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Provides the binary data for the external reference at ARG1.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_external_data_reference.asp</url>
+                    <text>Verify XML Signature with External Data Reference</text>
+                </link>
+            </links2>
+        </method>
+        <method name="SetRefDataFile" axId="109" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>Provides the data for the external reference at ARG1.   When validating the signature, the data contained in ARG2 will be streamed to compute the digest for validation.</descrip>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+                <arg name="path" type="string" objcName="path" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+        </method>
+        <method name="VerifyReferenceDigest" axId="110" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="index" type="int" objcName="index" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_sig_multiple_refs.asp</url>
+                    <text>Verify an XML Signature with Multiple References</text>
+                </link>
+            </links2>
+            <descrip>This method allows for an application to verify the digest for each reference separately.  This can be helpful if the full XMLDSIG validation fails, then one can test each referenced data's digest to see which, if any, fail to match.</descrip>
+        </method>
+        <method name="CanonicalizeFragment" axId="113" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Applies XML canonicalization to a fragment of the passed-in XML, and returns the canonicalized XML string.  The ARG2 identifies the XML element where output begins.  It is the XML element having an "id" attribute equal to ARG2.  The ARG3 may be one of the following:
+&lt;ul&gt;
+&lt;li&gt;"C14N" -- for Inclusive Canonical XML
+&lt;li&gt;"EXCL_C14N" -- for Exclusive Canonical XML
+&lt;/ul&gt;
+&lt;p&gt;The ARG4 only applies when the ARG3 is set to "EXCL_C14N".  The ARG4 may be an empty string, or a SPACE separated list of namespace prefixes.  It is the InclusiveNamespaces PrefixList, which is the list of namespaces that are propagated from ancestor elements for canonicalization purposes. 
+&lt;p&gt;If ARG5 is _TRUE_, then XML comments are included in the output.  If ARG5 is _FALSE_, then XML comments are excluded from the output.</descrip>
+            <args2>
+                <arg name="xml" type="string" objcName="xml" />
+                <arg name="fragmentId" type="string" objcName="fragmentId" />
+                <arg name="version" type="string" objcName="version" />
+                <arg name="prefixList" type="string" objcName="prefixList" />
+                <arg name="withComments" type="bool" objcName="withComments" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xml_canonicalize_fragment.asp</url>
+                    <text>Canonicalize XML Fragment</text>
+                </link>
+            </links2>
+        </method>
+        <method name="LoadSignatureBd" axId="114" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads an XML document containing one or more XML digital signatures from the contents of a BinData object.  An application would first load the XML, then validate.  After loading, it is also possible to use various methods and properties to get information about the signature, such as the key info, references, etc.  If external data is referenced by the signature, it may be necessary to provide the referenced data prior to validating.
+&lt;p&gt;
+Note: When loading an XML document, the Selector property is automatically reset to 0, and the NumSignatures property is set to the number of XML digital signatures found.</descrip>
+            <args2>
+                <arg name="binData" type="BinData" objcName="binData" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+        </method>
+        <method name="VerifySignature" axId="115" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="verifyReferenceDigests" type="bool" objcName="verifyReferenceDigests" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_with_rsa_key.asp</url>
+                    <text>Verify XML Digital Signature with an RSA Key</text>
+                </link>
+                <link linkType="example">
+                    <url>xmldsig_verify_wsse_securityTokenReference.asp</url>
+                    <text>Verify SOAP XML using a wsse:SecurityTokenReference</text>
+                </link>
+                <link linkType="example">
+                    <url>xmldsig_verify_x509Data_x509Certificate.asp</url>
+                    <text>Verify XML Signature having KeyInfo /  X509Data / X509Certificate</text>
+                </link>
+            </links2>
+            <descrip>Verifies the signature indicated by the Selector property.  If ARG1 is  _TRUE_, then the digest of each Reference within the signature's SignedInfo is also validated.</descrip>
+        </method>
+        <method name="GetKeyInfo" axId="116" ax="1" cpp="1" dn="1">
+            <gType>Xml</gType>
+            <descrip>Returns the KeyInfo XML for the signature indicated by the Selector property.  Returns _NULL_ if no KeyInfo exists.</descrip>
+            <args2 />
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_keyname.asp</url>
+                    <text>Verify XML Digital Signature having KeyName</text>
+                </link>
+            </links2>
+        </method>
+        <method name="GetPublicKey" axId="117" ax="1" cpp="1" dn="1">
+            <gType>PublicKey</gType>
+            <descrip>Returns the public key from the KeyInfo XML for the signature indicated by the Selector property.  Returns _NULL_ if no KeyInfo exists, or if no public key is actually contained in the KeyInfo.</descrip>
+            <args2 />
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+        </method>
+        <method name="UseCertVault" axId="118" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="certVault" type="XmlCertVault" objcName="certVault" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_x509Data_x509IssuerSerial.asp</url>
+                    <text>Verify XML Signature having KeyInfo /  X509Data / X509IssuerSerial</text>
+                </link>
+                <link linkType="example">
+                    <url>xmldsig_verify_x509Data_SKI.asp</url>
+                    <text>Verify XML Signature having KeyInfo /  X509Data / X509SKI</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.69</iversion>
+            <descrip>Adds an XML certificate vault to the object's internal list of sources to be searched for certificates having public keys when verifying an XML signature.  A single XML certificate vault may be used.  If UseCertVault is called multiple times, only the last certificate vault will be used, as each call to UseCertVault will replace the certificate vault provided in previous calls.</descrip>
+        </method>
+        <method name="SetHmacKey" axId="119" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="key" type="string" objcName="key" />
+                <arg name="encoding" type="string" objcName="encoding" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="external">
+                    <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
+                    <text>Binary Encodings Supported by Chilkat</text>
+                </link>
+                <link linkType="example">
+                    <url>xmldsig_verify_hmac.asp</url>
+                    <text>Verify HMAC XML Digital Signature</text>
+                </link>
+            </links2>
+            <descrip>Sets the HMAC key to be used if the Signature used an HMAC signing algorithm.  The ARG2 specifies the encoding of ARG1, and can be "hex", "base64", "ascii", or any of the binary encodings supported by Chilkat in the link below.</descrip>
+        </method>
+        <method name="SetPublicKey" axId="120" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Sets the public key to be used for verifying the signature indicated by the Selector property.  A public key only needs to be explicitly provided by the application for those XML signatures where the public key is not already available within the KeyInfo of the Signature.  In some cases, the KeyInfo within the Signature contains information about what public key was used for signing.  The application can use this information to retrieve the matching public key and provide it via this method.</descrip>
+            <args2>
+                <arg name="pubKey" type="PublicKey" objcName="pubKey" />
+            </args2>
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_keyname.asp</url>
+                    <text>Verify XML Digital Signature having KeyName</text>
+                </link>
+            </links2>
+        </method>
+    </methods>
+    <properties>
+        <property name="WithComments" axId="100" read="1" write="1" ax="1" cpp="1" dn="1" deprecated="1">
+            <gType>bool</gType>
+            <args2 />
+            <links2 />
+            <descrip>Note: This property is not actually used because the "with/without comments" behavior is passed as an argument to the CanonicalizeXml and CanonicalizeFragment methods.
+&lt;p&gt;
+Determines whether XML is canonicalized with or without comments.  The default value is _FALSE_.   (Set to _TRUE_ to canonicalize with XML comments.)</descrip>
+        </property>
+        <property name="NumReferences" axId="104" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_sig_multiple_refs.asp</url>
+                    <text>Verify an XML Signature with Multiple References</text>
+                </link>
+                <link linkType="example">
+                    <url>xmldsig_verify_multiple_signatures.asp</url>
+                    <text>Verify Multiple Signatures in XML</text>
+                </link>
+            </links2>
+            <descrip>The number of data objects referenced in the XML digital signature.  A data object may be self-contained within the loaded XML signature, or it may be an external URI reference.  An application can check each reference to see if it's external by calling IsReferenceExternal, and can get each reference URI by calling ReferenceUri.</descrip>
+        </property>
+        <property name="NumSignatures" axId="111" read="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <args2 />
+            <iversion>9.5.0.69</iversion>
+            <links2 />
+            <descrip>The number of digital signatures found within the loaded XML.  Each digital signature is composed of XML having the following structure:
+&lt;pre&gt;
+  _LT_Signature ID?_GT_ 
+     _LT_SignedInfo_GT_
+       _LT_CanonicalizationMethod/_GT_
+       _LT_SignatureMethod/_GT_
+       (_LT_Reference URI? _GT_
+         (_LT_Transforms_GT_)?
+         _LT_DigestMethod_GT_
+         _LT_DigestValue_GT_
+       _LT_/Reference_GT_)+
+     _LT_/SignedInfo_GT_
+     _LT_SignatureValue_GT_ 
+    (_LT_KeyInfo_GT_)?
+    (_LT_Object ID?_GT_)*
+ _LT_/Signature_GT_
+&lt;/pre&gt;
+Note: The "Signature" and other XML tags may be namespace prefixed.  
+&lt;p&gt;
+The Selector property is used to select which XML signature is in effect when validating or calling other methods or properties.</descrip>
+        </property>
+        <property name="Selector" axId="112" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>If the loaded XML contains multiple signatures, this property can be set to specify which signature is in effect when calling other methods or properties.  In most cases, the loaded XML contains a single signature and this property will remain at the default value of 0.</descrip>
+            <args2 />
+            <iversion>9.5.0.69</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_multiple_signatures.asp</url>
+                    <text>Verify Multiple Signatures in XML</text>
+                </link>
+            </links2>
+        </property>
+    </properties>
+    <events />
+    <genericName>XmlDSig</genericName>
+    <cppName>CkXmlDSig</cppName>
+    <dnName>XmlDSig</dnName>
+    <axName>ChilkatXmlDSig</axName>
+    <description>An API for validating XML Digital Signatures.  Use the XmlDSigGen class for creating XML Digital Signatures.</description>
+    <nextAxId>121</nextAxId>
+    <clsid>3A0FA677-D32D-4A7D-A809-9E39F6CB7E88</clsid>
+    <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
+    <uuidMidl>A488AA74-6A93-440C-B18D-26751B20625C</uuidMidl>
+</class>

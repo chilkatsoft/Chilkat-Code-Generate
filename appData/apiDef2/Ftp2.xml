@@ -77,47 +77,41 @@ When MLSD is used, the GetPermissions method will return the "perm fact" for a g
         </property>
         <property name="AsyncBytesReceived" axId="104" noxojo="1" read="1" ax="1" cpp="1" dn="1">
             <gType>unsigned long</gType>
-            <descrip>The number of bytes received during an asynchronous FTP download.  This property is updated in real-time and an application may periodically fetch and display it's value while the download is in progress.
-</descrip>
+            <descrip>The number of bytes received during an asynchronous FTP download.  This property is updated in real-time and an application may periodically fetch and display it's value while the download is in progress.</descrip>
             <args2 />
             <links2 />
         </property>
         <property name="AsyncBytesReceived64" read="1" noxojo="1" axId="305" cpp="1" dn="1">
             <gType>int64</gType>
-            <descrip>Same as AsyncBytesReceived, but returns the value as a 64-bit integer.
-</descrip>
+            <descrip>Same as AsyncBytesReceived, but returns the value as a 64-bit integer.</descrip>
             <args2 />
             <links2 />
         </property>
         <property name="AsyncBytesReceivedStr" axId="105" noxojo="1" read="1" ax="1" cpp="1">
             <gType>string</gType>
-            <descrip>The number of bytes received during an asynchronous FTP download.  This property is updated in real-time and an application may periodically fetch and display it's value while the download is in progress.
-</descrip>
+            <descrip>The number of bytes received during an asynchronous FTP download.  This property is updated in real-time and an application may periodically fetch and display it's value while the download is in progress.</descrip>
             <args2 />
             <links2 />
         </property>
         <property name="AsyncBytesSent" axId="106" read="1" noxojo="1" ax="1" cpp="1" dn="1">
             <gType>unsigned long</gType>
-            <descrip>The number of bytes sent during an asynchronous FTP upload.  This property is updated in real-time and an application may periodically fetch and display it's value while the upload is in progress.
-</descrip>
+            <descrip>The number of bytes sent during an asynchronous FTP upload.  This property is updated in real-time and an application may periodically fetch and display it's value while the upload is in progress.</descrip>
             <args2 />
             <links2 />
         </property>
         <property name="AsyncBytesSent64" noxojo="1" axId="306" read="1" cpp="1" dn="1">
             <gType>int64</gType>
-            <descrip>Same as AsyncBytesSent, but returns the value as a 64-bit integer.
-</descrip>
+            <descrip>Same as AsyncBytesSent, but returns the value as a 64-bit integer.</descrip>
             <args2 />
             <links2 />
         </property>
         <property name="AsyncBytesSentStr" axId="107" noxojo="1" read="1" ax="1" cpp="1">
             <gType>string</gType>
-            <descrip>The number of bytes sent during an asynchronous FTP upload.  This string property is updated in real-time and an application may periodically fetch and display it's value while the upload is in progress.
-</descrip>
+            <descrip>The number of bytes sent during an asynchronous FTP upload.  This string property is updated in real-time and an application may periodically fetch and display it's value while the upload is in progress.</descrip>
             <args2 />
             <links2 />
         </property>
-        <property name="AsyncFinished" axId="108" read="1" ax="1" cpp="1" dn="1" deprecated="1" noxojo="1">
+        <property name="AsyncFinished" axId="108" noxojo="1" read="1" ax="1" cpp="1" dn="1" deprecated="1">
             <gType>bool</gType>
             <descrip>Set to _TRUE_ if the asynchronous transfer (download or upload) is finished.
 &lt;p&gt;
@@ -125,7 +119,7 @@ This  functionality is replaced by the new model for asynchronous programming in
             <args2 />
             <links2 />
         </property>
-        <property name="AsyncLog" axId="109" read="1" ax="1" cpp="1" dn="1" deprecated="1" noxojo="1">
+        <property name="AsyncLog" axId="109" noxojo="1" read="1" ax="1" cpp="1" dn="1" deprecated="1">
             <gType>string</gType>
             <descrip>The last-error information for an asynchronous (background) file transfer.
 &lt;p&gt;
@@ -133,7 +127,7 @@ This  functionality is replaced by the new model for asynchronous programming in
             <args2 />
             <links2 />
         </property>
-        <property name="AsyncPercentDone" axId="278" read="1" ax="1" cpp="1" dn="1" deprecated="1" noxojo="1">
+        <property name="AsyncPercentDone" axId="278" read="1" noxojo="1" ax="1" cpp="1" dn="1" deprecated="1">
             <gType>unsigned long</gType>
             <descrip>The current percentage completed of an asynchronous FTP upload or download.  This property is updated in real-time and an application may periodically fetch and display it's value while the asynchronous data transfer is in progress.
 &lt;p&gt;
@@ -856,9 +850,11 @@ The default value is 60.</descrip>
             </links2>
             <args2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="1" name="SendBufferSize" axId="161">
+        <property name="SendBufferSize" axId="161" read="1" write="1" ax="1" cpp="1" dn="1" deprecated="1">
             <gType>int</gType>
-            <descrip>The buffer size to be used with the underlying TCP/IP socket for sending.  The default value is 65536 (64K).   Set it to a smaller value for more frequent percentage completion event callbacks.  A larger SendBufferSize may improve performance, but at the expense not having as frequent progress monitoring callbacks (if used and if supported by your programming language).</descrip>
+            <descrip>This property is now deprecated, and has no effect in Chilkat versions 9.5.0.69 and greater.
+&lt;p&gt;
+In the past, it affected how often percent completion callbacks were made.  Setting it to a smaller value caused more frequent percentage completion event callbacks.   The default value is 65536 (64K) and should generally not be changed.</descrip>
             <args2 />
             <links2 />
         </property>

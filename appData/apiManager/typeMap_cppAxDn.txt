@@ -292,3 +292,9 @@ ChilkatJws
 AuthUtil
 CkAuthUtil
 ChilkatAuthUtil
+XmlDSig
+CkXmlDSig
+ChilkatXmlDSig
+XmlDSigGen
+CkXmlDSigGen
+ChilkatXmlDSigGen

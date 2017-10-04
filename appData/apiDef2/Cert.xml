@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <class XojoModuleId="144475063" license="Free" sourceXmlPath="c:/ck2000/appData/apiDef2/Cert.xml">
-    <nextAxId>184</nextAxId>
+    <nextAxId>188</nextAxId>
     <dnName>Cert</dnName>
     <cppName>CkCert</cppName>
     <properties>
@@ -166,7 +166,12 @@ When a certificate is linked to a key container , the following properties will 
         <property cpp="1" dn="1" ax="1" noObjC="1" windowsOnly="1" read="1" write="0" name="PrivateKeyExportable" axId="123">
             <gType>bool</gType>
             <descrip>(Relevant only when running on a Microsoft Windows operating system.)  Indicates whether the private key was installed with security settings that allow it to be re-exported.</descrip>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>cert_backup_windows_personal_certStore.asp</url>
+                    <text>Backup Windows Current User / Personal Certificates to a .zip</text>
+                </link>
+            </links2>
             <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="Revoked" axId="124">
@@ -352,7 +357,7 @@ As of version 9.5.0.41, this  property pays attention to the new TrustedRoots cl
             <args2 />
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="ExportCertDer" axId="145" outArgName="outData">
+        <method name="ExportCertDer" axId="145" outArgName="outData" ax="1" cpp="1" dn="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -453,7 +458,7 @@ As of version 9.5.0.41, this  property pays attention to the new TrustedRoots cl
                 </link>
             </links2>
         </method>
-        <method name="ExportToPfxData" ax="1" cpp="1" dn="1" axId="174" outArgName="outBytes">
+        <method name="ExportToPfxData" axId="174" outArgName="outBytes" ax="1" cpp="1" dn="1">
             <gType>bytes</gType>
             <descrip>Exports the  certificate and private key (if available) to an in-memory PFX image. The ARG1 is what will be required to access the PFX contents at a later time.  If ARG2 is _TRUE_, then the certificates in the chain of authority are also included in the PFX.</descrip>
             <args>
@@ -484,7 +489,7 @@ As of version 9.5.0.41, this  property pays attention to the new TrustedRoots cl
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" windowsOnly="1" status="1" name="ExportToPfxFile" axId="152">
+        <method name="ExportToPfxFile" axId="152" ax="1" cpp="1" dn="1" windowsOnly="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -782,7 +787,7 @@ Note: In many cases, the data within the XML is returned base64 encoded.  An app
                 </link>
             </links2>
         </method>
-        <method cpp="1" dn="1" ax="1" status="1" name="LoadFromBinary" axId="164">
+        <method name="LoadFromBinary" axId="164" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -866,7 +871,7 @@ Note: In many cases, the data within the XML is returned base64 encoded.  An app
                 <arg name="strPem" type="string" objcName="strPem" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" status="1" name="LoadPfxData" axId="166">
+        <method name="LoadPfxData" axId="166" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -1080,6 +1085,55 @@ Note: In many cases, the data within the XML is returned base64 encoded.  An app
             <iversion>9.5.0.40</iversion>
             <args2 />
             <links2 />
+        </method>
+        <method name="ExportToPfxBd" axId="184" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Exports the  certificate and private key (if available) to ARG3. The ARG1 is what will be required to access the PFX contents at a later time.  If ARG2 is _TRUE_, then the certificates in the chain of authority are also included in the PFX.</descrip>
+            <args2>
+                <arg name="password" type="string" objcName="password" />
+                <arg name="includeCertChain" type="bool" objcName="includeCertChain" />
+                <arg name="pfxData" type="BinData" objcName="pfxData" />
+            </args2>
+            <iversion>9.5.0.70</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>cert_backup_windows_personal_certStore.asp</url>
+                    <text>Backup Windows Current User / Personal Certificates to a .zip</text>
+                </link>
+            </links2>
+        </method>
+        <method name="ExportCertDerBd" axId="185" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Exports the digital certificate in ASN.1 DER format to a BinData object.</descrip>
+            <args2>
+                <arg name="cerData" type="BinData" objcName="cerData" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>cert_backup_windows_personal_certStore.asp</url>
+                    <text>Backup Windows Current User / Personal Certificates to a .zip</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.70</iversion>
+        </method>
+        <method name="LoadPfxBd" axId="186" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads the certificate from the PFX contained in ARG1.   Note: If the PFX contains multiple certificates, the 1st certificate in the PFX is loaded.</descrip>
+            <args2>
+                <arg name="pfxData" type="BinData" objcName="pfxData" />
+                <arg name="password" type="string" objcName="password" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.70</iversion>
+        </method>
+        <method name="LoadFromBd" axId="187" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Loads an X.509 certificate from the ASN.1 DER encoded bytes contained in ARG1.</descrip>
+            <args2>
+                <arg name="certBytes" type="BinData" objcName="certBytes" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.70</iversion>
         </method>
     </methods>
     <genericName>Cert</genericName>

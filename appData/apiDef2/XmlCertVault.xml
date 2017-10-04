@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Free" XojoModuleId="824371720" sourceXmlPath="C:/ck2000/appData/apiDef2/XmlCertVault.xml">
+<class license="Free" XojoModuleId="824371720" sourceXmlPath="c:/ck2000/appData/apiDef2/XmlCertVault.xml">
     <genericName>XmlCertVault</genericName>
     <cppName>CkXmlCertVault</cppName>
     <dnName>XmlCertVault</dnName>
@@ -22,6 +22,7 @@
             <args2>
                 <arg name="cert" type="Cert" objcName="cert" />
             </args2>
+            <links2 />
         </method>
         <method name="AddCertBinary" ax="1" cpp="1" dn="1" status="1" axId="108">
             <gType>bool</gType>
@@ -39,6 +40,7 @@
             <args2>
                 <arg name="certBytes" type="bytes" objcName="certBytes" />
             </args2>
+            <links2 />
         </method>
         <method name="AddCertChain" ax="1" cpp="1" dn="1" status="1" axId="115">
             <gType>bool</gType>
@@ -56,6 +58,7 @@
             <args2>
                 <arg name="certChain" type="CertChain" objcName="certChain" />
             </args2>
+            <links2 />
         </method>
         <method name="AddCertEncoded" ax="1" cpp="1" dn="1" status="1" axId="112">
             <gType>bool</gType>
@@ -81,6 +84,7 @@
                 <arg name="encodedBytes" type="string" objcName="encodedBytes" />
                 <arg name="encoding" type="string" objcName="encoding" />
             </args2>
+            <links2 />
         </method>
         <method name="AddCertFile" axId="102" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -98,6 +102,7 @@
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method name="AddCertString" ax="1" cpp="1" dn="1" status="1" axId="110">
             <gType>bool</gType>
@@ -115,6 +120,12 @@
             <args2>
                 <arg name="certData" type="string" objcName="certData" />
             </args2>
+            <links2>
+                <link linkType="example">
+                    <url>xmldsig_verify_x509Data_x509IssuerSerial.asp</url>
+                    <text>Verify XML Signature having KeyInfo /  X509Data / X509IssuerSerial</text>
+                </link>
+            </links2>
         </method>
         <method name="AddPemFile" axId="103" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -140,6 +151,7 @@
                 <arg name="path" type="string" objcName="path" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="AddPfx" ax="1" cpp="1" dn="1" status="1" axId="114">
             <gType>bool</gType>
@@ -157,6 +169,7 @@
             <args2>
                 <arg name="pfx" type="Pfx" objcName="pfx" />
             </args2>
+            <links2 />
         </method>
         <method name="AddPfxBinary" ax="1" cpp="1" dn="1" status="1" axId="109">
             <gType>bool</gType>
@@ -182,6 +195,7 @@
                 <arg name="pfxBytes" type="bytes" objcName="pfxBytes" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="AddPfxEncoded" ax="1" cpp="1" dn="1" status="1" axId="111">
             <gType>bool</gType>
@@ -214,6 +228,7 @@
                 <arg name="encoding" type="string" objcName="encoding" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="AddPfxFile" axId="101" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -239,6 +254,7 @@
                 <arg name="path" type="string" objcName="path" />
                 <arg name="password" type="string" objcName="password" />
             </args2>
+            <links2 />
         </method>
         <method name="GetXml" axId="107" ax="1" cpp="1" dn="1" outArgName="outStr">
             <gType>string</gType>
@@ -252,6 +268,7 @@
             </args>
             <iversion>9.5.0.40</iversion>
             <args2 />
+            <links2 />
         </method>
         <method name="LoadXml" axId="105" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -269,6 +286,7 @@
             <args2>
                 <arg name="xml" type="string" objcName="xml" />
             </args2>
+            <links2 />
         </method>
         <method name="LoadXmlFile" axId="106" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -286,6 +304,7 @@
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
         <method name="SaveXml" axId="104" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -303,6 +322,7 @@
             <args2>
                 <arg name="path" type="string" objcName="path" />
             </args2>
+            <links2 />
         </method>
     </methods>
     <properties>
@@ -310,6 +330,8 @@
             <gType>string</gType>
             <descrip>The master password for the vault.  Certificates are stored unencrypted, but private keys are stored 256-bit AES encrypted using the individual PFX passwords.  The PFX passwords are stored 256-bit AES encrypted using the master password.   The master password is required to acces any of the private keys stored within the XML vault.</descrip>
             <iversion>9.5.0.40</iversion>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <events />
