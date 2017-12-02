@@ -175,10 +175,17 @@ This global Utf8 property controls the default setting of the Utf8 property for 
 &lt;p&gt;
 Note: Setting this property has the effect of also setting the default value of the PreferIpv6 property for other classes.</descrip>
         </property>
+        <property name="UsePkcsConstructedEncoding" axId="114" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2 />
+            <iversion>9.5.0.70</iversion>
+            <links2 />
+            <descrip>This property should typically be left at the default value of _FALSE_.  If set to _TRUE_, then Chilkat will use a constructed ASN.1 encoding for PCKS7 data.  (This is an internal implementation option that normally does not matter, and should not matter.  Some PKCS7 receiving systems might be picky, and this option can be used to satisfy this requirement.)</descrip>
+        </property>
     </properties>
     <events />
     <clsid>B2429147-23BE-4A55-8EAE-2AFF2635815B</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>4995C839-42F3-4D4F-8A08-1BA24B5F5E8F</uuidMidl>
-    <nextAxId>114</nextAxId>
+    <nextAxId>115</nextAxId>
 </class>

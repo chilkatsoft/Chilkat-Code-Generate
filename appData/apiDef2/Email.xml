@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="626604223" license="Email" sourceXmlPath="c:/ck2000/appData/apiDef2/Email.xml">
+<class XojoModuleId="626604223" sourceXmlPath="c:/ck2000/appData/apiDef2/Email.xml" license="Email">
     <axName>ChilkatEmail</axName>
     <dnName>Email</dnName>
     <cppName>CkEmail</cppName>
@@ -1967,10 +1967,12 @@ Computes a global unique key for the email.  The key is created by a digest-MD5 
                 <arg name="bHeaderOnly" type="bool" objcName="bHeaderOnly" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="CreateReply" axId="190">
+        <method name="CreateReply" axId="190" ax="1" cpp="1" dn="1">
             <gType>Email</gType>
             <args />
-            <descrip>Returns a copy of the Email object with the body and header fields changed so that the newly created email can be sent as a reply. After calling CreateReply, simply prepend additional information to the body, and call MailMan.SendEmail.</descrip>
+            <descrip>Returns a copy of the Email object with the body and header fields changed so that the newly created email can be sent as a reply. After calling CreateReply, simply prepend additional information to the body, and call MailMan.SendEmail.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; Attachments are not included in the returned reply email.  However, attached messages are included.  If an application does not wish to include the attached messages in a reply email, they can be removed by calling RemoveAttachedMessages on the reply email object.</descrip>
             <args2 />
             <links2 />
         </method>
@@ -2970,6 +2972,10 @@ The 1st header field is at index 0.  (All Chilkat indexing is 0-based.)</descrip
                 <link linkType="external" lang="activex">
                     <url>http://www.chilkatforum.com/questions/9342/sql-server-methods-that-return-long-strings</url>
                     <text>Long Strings Returned by ActiveX Methods in SQL Server</text>
+                </link>
+                <link linkType="external">
+                    <url>http://www.chilkatforum.com/questions/13011/chilkat-activex-mail-defaulting-to-quoted-printable-when-trying-to-send-8bit</url>
+                    <text>Note About Safeguarding 8bit and Binary MIME Bodies when Getting MIME as a String</text>
                 </link>
             </links2>
             <args2 />
@@ -4658,7 +4664,12 @@ The 16-byte MD5 hash is returned as an encoded string.  The ARG1 determines the 
             <args2>
                 <arg name="sb" type="StringBuilder" objcName="sb" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>load_mime_object_from_email_object.asp</url>
+                    <text>Load MIME Object from Email Object</text>
+                </link>
+            </links2>
             <iversion>9.5.0.62</iversion>
         </method>
         <method name="GetMimeBd" axId="313" ax="1" cpp="1" dn="1" status="1">

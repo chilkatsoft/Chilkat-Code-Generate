@@ -1351,6 +1351,23 @@ The ARG3 should be the domain of the request, such as one of the following:
             <links2 />
             <descrip>Clears all authentication settings.</descrip>
         </method>
+        <method name="AddPathParam" axId="175" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Adds or replaces a path parameter.   A path parameter is a string that will be replaced in any uriPath string passed to a method.   For example, if ARG1 is "fileId" and ARG2 is "1R_70heIyzIAu1_u0prXbYcaIiJRVkgBl", then a uriPath argument of "/drive/v3/files/fileId" will be transformed to "/drive/v3/files/1R_70heIyzIAu1_u0prXbYcaIiJRVkgBl" in a method call.</descrip>
+            <args2>
+                <arg name="name" type="string" objcName="name" />
+                <arg name="value" type="string" objcName="value" />
+            </args2>
+            <iversion>9.5.0.70</iversion>
+            <links2 />
+        </method>
+        <method name="ClearAllPathParams" axId="176" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <descrip>Clears all path parameters.</descrip>
+            <args2 />
+            <iversion>9.5.0.70</iversion>
+            <links2 />
+        </method>
     </methods>
     <properties>
         <property name="Authorization" axId="101" read="1" write="1" ax="1" cpp="1" dn="1">
@@ -1521,5 +1538,5 @@ If this property is set to _FALSE_, then no Q/B encoding is applied to any reque
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>FEE89395-5563-4248-BAB4-C290E474123E</uuidEvents>
     <uuidMidl>D985C806-44A2-4BBD-9FC4-EDD1CD82F03E</uuidMidl>
-    <nextAxId>175</nextAxId>
+    <nextAxId>177</nextAxId>
 </class>

@@ -298,3 +298,6 @@ ChilkatXmlDSig
 XmlDSigGen
 CkXmlDSigGen
 ChilkatXmlDSigGen
+WebSocket
+CkWebSocket
+ChilkatWebSocket

@@ -346,7 +346,7 @@ SSL/TLS:
             <args2 />
             <links2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="1" name="HttpProxyPort" axId="130">
+        <property read="1" write="1" name="HttpProxyPort" axId="130" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>If an HTTP proxy is to be used, set this property to the HTTP proxy port number.  (Two commonly used HTTP proxy ports are 8080 and 3128.)</descrip>
             <args2 />
@@ -915,6 +915,13 @@ The following encodings are allowed: base64, hex, and any of the encodings indic
                     <text>Bind and Listen on a Randomly Selected Unused Port</text>
                 </link>
             </links2>
+        </property>
+        <property name="HttpProxyForHttp" axId="269" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <args2 />
+            <links2 />
+            <descrip>If this connection is effectively used to send HTTP requests, then set this property to _TRUE_ when using an HTTP proxy.  The default value of this property is _FALSE_.</descrip>
+            <iversion>9.5.0.70</iversion>
         </property>
     </properties>
     <methods>
@@ -2630,5 +2637,5 @@ Returns the port number that was bound, or -1 if no port was available or if it 
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>8DB781F8-8225-45D1-87F8-AE0828601F98</uuidEvents>
     <uuidMidl>93FCA31B-08C3-4E72-836B-B31123F7C2CC</uuidMidl>
-    <nextAxId>269</nextAxId>
+    <nextAxId>270</nextAxId>
 </class>

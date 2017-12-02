@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="697794436" sourceXmlPath="C:/ck2000/appData/apiDef2/OAuth1.xml" license="Bundle">
+<class XojoModuleId="697794436" sourceXmlPath="c:/ck2000/appData/apiDef2/OAuth1.xml" license="Bundle">
     <genericName>OAuth1</genericName>
     <cppName>CkOAuth1</cppName>
     <dnName>OAuth1</dnName>
@@ -119,7 +119,7 @@
             <links2 />
             <args2 />
         </property>
-        <property name="ConsumerKey" read="1" write="1" ax="1" cpp="1" dn="1" axId="103">
+        <property name="ConsumerKey" read="1" write="1" axId="103" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>The consumer key.</descrip>
             <iversion>9.5.0.53</iversion>
@@ -168,9 +168,11 @@
             <links2 />
             <args2 />
         </property>
-        <property name="OauthUrl" read="1" write="1" ax="1" cpp="1" dn="1" axId="102">
+        <property name="OauthUrl" axId="102" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
-            <descrip>The OAuth URL, such as "http://echo.lab.madgex.com/echo.ashx".    See http://bettiolo.github.io/oauth-reference-page/ to compare Chilkat results with another tool's results.</descrip>
+            <descrip>The OAuth URL, such as "http://echo.lab.madgex.com/echo.ashx".    See http://bettiolo.github.io/oauth-reference-page/ to compare Chilkat results with another tool's results.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; The OAuthUrl should not include query parameters.  For example, do not set the OAuthUrl equal to &lt;pre&gt;https://rest.sandbox.netsuite.com/app/site/hosting/restlet.nl?script=165&amp;deploy=1&lt;/pre&gt; Instead, set OAuthUrl equal to &lt;pre&gt;https://rest.sandbox.netsuite.com/app/site/hosting/restlet.nl&lt;/pre&gt; and then subsequently call AddParam for each query parameter.</descrip>
             <iversion>9.5.0.53</iversion>
             <links2 />
             <args2 />
@@ -224,10 +226,17 @@
             <links2 />
             <args2 />
         </property>
+        <property name="Realm" axId="123" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <args2 />
+            <iversion>9.5.0.70</iversion>
+            <links2 />
+            <descrip>The realm (optional).</descrip>
+        </property>
     </properties>
     <events />
     <clsid>E59035A9-E94D-47E8-92BF-59A4EB1AAC83</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>47C1D4CA-692B-46D4-A127-5691075D0F6A</uuidMidl>
-    <nextAxId>123</nextAxId>
+    <nextAxId>124</nextAxId>
 </class>

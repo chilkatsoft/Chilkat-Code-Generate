@@ -2721,7 +2721,7 @@ If ARG4 is _FALSE_, then the local directory tree is not recursively descended.<
             </args>
             <descrip>Unlocks the component. This must be called once prior to calling any other method.  A fully-functional 30-day trial is automatically started when an arbitrary string is passed to this method.  For example, passing "Hello", or "abc123" will unlock the component for the 1st thirty days after the initial install.
 &lt;p&gt;
-A purchased unlock code for SFTP should contain the substring "SSH" (or it can be a Bundle unlock code) because SFTP is the Secure File Transfer protocol over SSH.  It is a sub-system of the SSH protocol.  It is not the FTP protocol.   If the Chilkat FTP2 component/library should be used for the FTP protocol.</descrip>
+A purchased unlock code for SFTP should contain the substring ".SS" or "SSH" (or it can be a Bundle unlock code) because SFTP is the Secure File Transfer protocol over SSH.  It is a sub-system of the SSH protocol.  It is not the FTP protocol.   If the Chilkat FTP2 component/library should be used for the FTP protocol.</descrip>
             <args2>
                 <arg name="unlockCode" type="string" objcName="unlockCode" />
             </args2>

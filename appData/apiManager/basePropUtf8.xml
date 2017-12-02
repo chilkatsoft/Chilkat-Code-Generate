@@ -39,7 +39,7 @@ Also, when set to _TRUE_, and Chilkat method returning a "const char *" is retur
             &lt;/ul&gt;
             &lt;p&gt;Note: Methods that do not fit the above requirements will always set this property equal to _TRUE_.  For example, a method that returns no value (such as a "void" in C++) will technically always succeed.
             </descrip>
-             <iversion>9.5.0.52</iversion>
+             <iversion></iversion>
        </property>
         
     </properties>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="286071397" sourceXmlPath="c:/ck2000/appData/apiDef2/Xml.xml" license="Free">
+<class XojoModuleId="286071397" license="Free" sourceXmlPath="c:/ck2000/appData/apiDef2/Xml.xml">
     <axName>ChilkatXml</axName>
     <dnName>Xml</dnName>
     <cppName>CkXml</cppName>
@@ -695,6 +695,10 @@ The &lt;i&gt;returnCommand&lt;/i&gt; can be any of the following:
                 <link linkType="example">
                     <text>ChilkatPath Sample Code</text>
                     <url>xml_ChilkatPath.asp</url>
+                </link>
+                <link linkType="example">
+                    <url>xml_get_attribute_using_path.asp</url>
+                    <text>Get XML Attribute Value by Path</text>
                 </link>
             </links2>
             <args2>
@@ -3236,6 +3240,10 @@ Beginning in version 9.5.0.64, the ARG1 can be a tag path.  A tag path is a seri
                 <link linkType="example">
                     <url>xml_ijk.asp</url>
                     <text>Demonstrate the XML  I, J, and K Properties</text>
+                </link>
+                <link linkType="example">
+                    <url>xml_get_attribute_using_path.asp</url>
+                    <text>Get XML Attribute Value by Path</text>
                 </link>
             </links2>
             <descrip>Returns the number of children for the node indicated by ARG1.   Returns -1 if the node at ARG1 does not exist.</descrip>

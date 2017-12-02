@@ -4,17 +4,18 @@
     <dnName>MailMan</dnName>
     <cppName>CkMailMan</cppName>
     <properties>
-        <property name="AbortCurrent" read="1" write="1" ax="1" cpp="1" dn="1" axId="277">
+        <property name="AbortCurrent" read="1" write="1" axId="277" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>When set to _TRUE_, causes the currently running method to abort.  Methods that always finish quickly (i.e.have no length file operations or network communications) are not affected.  If no method is running, then this property is automatically reset to _FALSE_ when the next method is called.  When the abort occurs, this property is reset to _FALSE_.  Both synchronous and asynchronous method calls can be aborted.  (A synchronous method call could be aborted by setting this property from a separate thread.)</descrip>
             <iversion>9.5.0.58</iversion>
             <args2 />
             <links2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="1" name="AllOrNone" axId="100">
+        <property name="AllOrNone" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>Prevents sending any email if any of the addresses in the recipient list are rejected by the SMTP server.  The default value is _FALSE_, which indicates that the mail sending should continue even if some email addresses are invalid. (Note: Not all SMTP servers check the validity of email addresses, and even for those that do, it is not 100% accurate.)
-&lt;p&gt;Note: An SMTP server only knows the validity of email addresses within the domain it controls.&lt;/p&gt;</descrip>
+&lt;p&gt;Note: An SMTP server only knows the validity of email addresses within the domain it controls.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Important:&lt;/b&gt; The AllOrNone property only works if SMTP pipelining is turned off.  By default, the SmtpPipelining property is turned on and has the value of _TRUE_.  If all-or-none behavior is desired, make sure to set SmtpPipelining equal to _FALSE_.</descrip>
             <args2 />
             <links2 />
         </property>

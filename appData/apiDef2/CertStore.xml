@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="366837545" license="Free" sourceXmlPath="C:/ck2000/appData/apiDef2/CertStore.xml">
+<class XojoModuleId="366837545" sourceXmlPath="c:/ck2000/appData/apiDef2/CertStore.xml" license="Free">
     <nextAxId>130</nextAxId>
     <dnName>CertStore</dnName>
     <cppName>CkCertStore</cppName>
@@ -100,7 +100,7 @@ Creates a registry-based certificate store.  ARG1 must be "CurrentUser" or "Loca
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="FindCertByRfc822Name" axId="108">
+        <method name="FindCertByRfc822Name" axId="108" ax="1" cpp="1" dn="1">
             <gType>Cert</gType>
             <args>
                 <arg>
@@ -111,8 +111,9 @@ Creates a registry-based certificate store.  ARG1 must be "CurrentUser" or "Loca
                     <objcName>name</objcName>
                 </arg>
             </args>
-            <descrip>Locates a certificate by its RFC 822 name and returns it if found.
-&lt;p&gt;Returns _NULL_ on failure.</descrip>
+            <descrip>Locates and returns a certificate by its RFC 822 name.
+&lt;p&gt;
+If multiple certificates match, then non-expired certificates will take precedence over expired certificates.  In other words, Chilkat will aways return the non-expired certificate over the expired certificate.  </descrip>
             <args2>
                 <arg name="name" type="string" objcName="name" />
             </args2>

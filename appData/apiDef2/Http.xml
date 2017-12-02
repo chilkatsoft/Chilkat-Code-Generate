@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="185062996" license="Http" hasEvents="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Http.xml">
+<class XojoModuleId="185062996" sourceXmlPath="c:/ck2000/appData/apiDef2/Http.xml" license="Http" hasEvents="1">
     <axName>ChilkatHttp</axName>
     <dnName>Http</dnName>
     <cppName>CkHttp</cppName>
@@ -2952,7 +2952,9 @@ the HTTP request that would've been sent and returns it.</descrip>
         </method>
         <method name="S3_GenerateUrl" axId="260" outArgName="outStr" ax="1" cpp="1" dn="1">
             <gType>string</gType>
-            <descrip>Generates a temporary pre-signed URL for Amazon S3 using AWS Signature V2.   (Call S3_GenerateUrlV4 to generate AWS Signature V4 pre-signed URLs.) Requires that the AwsSecretKey and AwsAccessKey be set to valid values prior to calling this method.</descrip>
+            <descrip>Generates a temporary pre-signed URL for Amazon S3 using AWS Signature V2.   (Call S3_GenerateUrlV4 to generate AWS Signature V4 pre-signed URLs.) Requires that the AwsSecretKey and AwsAccessKey be set to valid values prior to calling this method.
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; This method can only generate URLs that are for HTTP GET requests (i.e. URLs you can paste into a browser address bar).  This method does not generate URLs for POST, PUT, DELETE, etc.</descrip>
             <iversion>9.5.0.46</iversion>
             <args>
                 <arg>
@@ -3665,7 +3667,9 @@ https://&lt;AwsEndpoint&gt;/&lt;bucket_name&gt;/&lt;path&gt;
 &amp;X-Amz-SignedHeaders=host
 &amp;X-Amz-Signature=&lt;signature-value&gt;  
 &lt;/pre&gt;
-&lt;p&gt;The ARG5 is a string naming the AWS service, such as "s3".   If ARG1 is _TRUE_, then the URL begins with "https://", otherwise it begins with "http://".</descrip>
+&lt;p&gt;The ARG5 is a string naming the AWS service, such as "s3".   If ARG1 is _TRUE_, then the URL begins with "https://", otherwise it begins with "http://".
+&lt;p&gt;
+&lt;b&gt;Note:&lt;/b&gt; This method can only generate URLs that are for HTTP GET requests (i.e. URLs you can paste into a browser address bar).  This method does not generate URLs for POST, PUT, DELETE, etc.</descrip>
             <args2>
                 <arg name="useHttps" type="bool" objcName="useHttps" />
                 <arg name="bucketName" type="string" objcName="bucketName" />

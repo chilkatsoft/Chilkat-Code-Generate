@@ -339,7 +339,7 @@ The purpose of the iteration count is to increase the computation required to en
             </links2>
             <args2 />
         </property>
-        <property cpp="1" dn="1" ax="1" read="1" write="0" name="NumSignerCerts" axId="119">
+        <property name="NumSignerCerts" axId="119" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>This property is set when a digital signature is verified.  It contains the number of signer certificates.  Each signing certificate can be retrieved by calling the GetSignerCert method, passing an index from 0 to NumSignerCerts-1.</descrip>
             <args2 />
@@ -347,6 +347,10 @@ The purpose of the iteration count is to increase the computation required to en
                 <link linkType="example">
                     <url>pkcs7_extract_signature_digest.asp</url>
                     <text>Extract PKCS7 Signature Digest</text>
+                </link>
+                <link linkType="example">
+                    <url>crypt_verify_opaque_signature_get_certs.asp</url>
+                    <text>Verify Opaque Signature and Retrieve Signing Certificates</text>
                 </link>
             </links2>
         </property>
@@ -519,7 +523,12 @@ The default value is 10.</descrip>
             <args2>
                 <arg name="cert" type="Cert" objcName="cert" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>pkcs7_encrypt_with_multiple_certs.asp</url>
+                    <text>Encrypt a file to a PKCS7 encrypted message using multiple certificates from different users</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="AddPfxSourceData" axId="131">
             <gType>bool</gType>
@@ -1895,11 +1904,16 @@ Note: An application should first check to see if a signing date/time is availab
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>crypt_verify_opaque_signature_get_certs.asp</url>
+                    <text>Verify Opaque Signature and Retrieve Signing Certificates</text>
+                </link>
+            </links2>
         </method>
-        <method name="GetSignerCertChain" ax="1" cpp="1" dn="1" axId="240">
+        <method name="GetSignerCertChain" axId="240" ax="1" cpp="1" dn="1">
             <gType>CertChain</gType>
-            <descrip>Returns the full certificate chain for the Nth certificate used to sign the MIME message. Indexing begins at 0.</descrip>
+            <descrip>Returns the full certificate chain for the Nth certificate used to for signing. Indexing begins at 0.</descrip>
             <args>
                 <arg>
                     <argName>index</argName>
@@ -1913,7 +1927,12 @@ Note: An application should first check to see if a signing date/time is availab
             <args2>
                 <arg name="index" type="int" objcName="index" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>crypt_verify_opaque_signature_get_certs.asp</url>
+                    <text>Verify Opaque Signature and Retrieve Signing Certificates</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" name="HasSignatureSigningTime" axId="169">
             <gType>bool</gType>
@@ -2714,7 +2733,7 @@ This method expects the input to begin with an 8-byte header  composed of a 4-by
                 <arg name="str" type="string" objcName="str" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="OpaqueVerifyBytes" axId="197" outArgName="outOriginal">
+        <method name="OpaqueVerifyBytes" axId="197" outArgName="outOriginal" ax="1" cpp="1" dn="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -2730,13 +2749,15 @@ This method expects the input to begin with an 8-byte header  composed of a 4-by
                     <objcName>outOriginal</objcName>
                 </arg>
             </args>
-            <descrip>Verifies an opaque signature and returns the original data.  If the signature verification fails, the returned data will be 0 bytes in length.</descrip>
+            <descrip>Verifies an opaque signature and returns the original data.  If the signature verification fails, the returned data will be 0 bytes in length.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="p7s" type="bytes" objcName="p7s" />
             </args2>
             <links2 />
         </method>
-        <method name="OpaqueVerifyBytesENC" axId="198" ax="1" cpp="1" dn="1" outArgName="outOriginal">
+        <method name="OpaqueVerifyBytesENC" axId="198" outArgName="outOriginal" ax="1" cpp="1" dn="1">
             <gType>bytes</gType>
             <args>
                 <arg>
@@ -2752,7 +2773,9 @@ This method expects the input to begin with an 8-byte header  composed of a 4-by
                     <objcName>outOriginal</objcName>
                 </arg>
             </args>
-            <descrip>Verifies an opaque signature (encoded in string form) and returns the original data.  If the signature verification fails, the returned data will be 0 bytes in length.</descrip>
+            <descrip>Verifies an opaque signature (encoded in string form) and returns the original data.  If the signature verification fails, the returned data will be 0 bytes in length.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <links2>
                 <link linkType="external">
                     <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
@@ -2763,7 +2786,7 @@ This method expects the input to begin with an 8-byte header  composed of a 4-by
                 <arg name="p7s" type="string" objcName="p7s" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="OpaqueVerifyString" axId="199" outArgName="outOriginal">
+        <method name="OpaqueVerifyString" axId="199" outArgName="outOriginal" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -2779,13 +2802,15 @@ This method expects the input to begin with an 8-byte header  composed of a 4-by
                     <objcName>outOriginal</objcName>
                 </arg>
             </args>
-            <descrip>Verifies an opaque signature and returns the original string. If the signature verification fails, the returned string will be 0 characters in length.</descrip>
+            <descrip>Verifies an opaque signature and returns the original string. If the signature verification fails, the returned string will be 0 characters in length.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="p7s" type="bytes" objcName="p7s" />
             </args2>
             <links2 />
         </method>
-        <method name="OpaqueVerifyStringENC" axId="200" ax="1" cpp="1" dn="1" outArgName="outOriginal">
+        <method name="OpaqueVerifyStringENC" axId="200" outArgName="outOriginal" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -2801,7 +2826,9 @@ This method expects the input to begin with an 8-byte header  composed of a 4-by
                     <objcName>outOriginal</objcName>
                 </arg>
             </args>
-            <descrip>Verifies an opaque signature (encoded in string form) and returns the original data string. If the signature verification fails, the returned string will be 0 characters in length.</descrip>
+            <descrip>Verifies an opaque signature (encoded in string form) and returns the original data string. If the signature verification fails, the returned string will be 0 characters in length.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <links2>
                 <link linkType="external">
                     <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
@@ -3845,7 +3872,9 @@ There is no minimum or maximum password length.  The password string is transfor
                     <objcName>sigData</objcName>
                 </arg>
             </args>
-            <descrip>Verifies a byte array against a digital signature and returns true if the byte array is unaltered.</descrip>
+            <descrip>Verifies a byte array against a digital signature and returns true if the byte array is unaltered.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="data" type="bytes" objcName="bData1" />
                 <arg name="sig" type="bytes" objcName="sigData" />
@@ -3870,7 +3899,9 @@ There is no minimum or maximum password length.  The password string is transfor
                     <objcName>encodedSig</objcName>
                 </arg>
             </args>
-            <descrip>Verifies a byte array against a string-encoded digital signature and returns true if the byte array is unaltered.  This method can be used to verify a signature produced by SignBytesENC.  The EncodingMode property must be set prior to calling to match the encoding of the digital signature string ("Base64", "QP", or "Hex").</descrip>
+            <descrip>Verifies a byte array against a string-encoded digital signature and returns true if the byte array is unaltered.  This method can be used to verify a signature produced by SignBytesENC.  The EncodingMode property must be set prior to calling to match the encoding of the digital signature string ("Base64", "QP", or "Hex").
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <links2>
                 <link linkType="external">
                     <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
@@ -3882,7 +3913,7 @@ There is no minimum or maximum password length.  The password string is transfor
                 <arg name="encodedSig" type="string" objcName="encodedSig" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" name="VerifyDetachedSignature" axId="230">
+        <method name="VerifyDetachedSignature" axId="230" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -3900,7 +3931,9 @@ There is no minimum or maximum password length.  The password string is transfor
                     <objcName>sigFile</objcName>
                 </arg>
             </args>
-            <descrip>Verifies a .p7s (PKCS #7 Signature) against the original file (or exact copy of it).  If the ARG1 has not been modified, the return value is _TRUE_, otherwise it is _FALSE_.    This method is equivalent to VerifyP7S.</descrip>
+            <descrip>Verifies a .p7s (PKCS #7 Signature) against the original file (or exact copy of it).  If the ARG1 has not been modified, the return value is _TRUE_, otherwise it is _FALSE_.    This method is equivalent to VerifyP7S.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="inFilename" type="string" objcName="inFile" />
                 <arg name="p7sFilename" type="string" objcName="sigFile" />
@@ -3925,7 +3958,9 @@ There is no minimum or maximum password length.  The password string is transfor
                     <objcName>destPath</objcName>
                 </arg>
             </args>
-            <descrip>Verifies a .p7m file and extracts the original file from the .p7m.   Returns _TRUE_ if the signature is valid and the contents are unchanged.  Otherwise returns _FALSE_.</descrip>
+            <descrip>Verifies a .p7m file and extracts the original file from the .p7m.   Returns _TRUE_ if the signature is valid and the contents are unchanged.  Otherwise returns _FALSE_.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <links2>
                 <link linkType="example">
                     <text>Extract a File from a .p7m (PKCS7 Signed-Data)</text>
@@ -3963,7 +3998,9 @@ There is no minimum or maximum password length.  The password string is transfor
                     <objcName>p7sPath</objcName>
                 </arg>
             </args>
-            <descrip>Verifies a .p7s (PKCS #7 Signature) against the original file (or exact copy of it).  If the ARG1 has not been modified, the return value is _TRUE_, otherwise it is _FALSE_.</descrip>
+            <descrip>Verifies a .p7s (PKCS #7 Signature) against the original file (or exact copy of it).  If the ARG1 has not been modified, the return value is _TRUE_, otherwise it is _FALSE_.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="inFilename" type="string" objcName="inPath" />
                 <arg name="p7sFilename" type="string" objcName="p7sPath" />
@@ -3993,7 +4030,9 @@ There is no minimum or maximum password length.  The password string is transfor
                     <objcName>sigData</objcName>
                 </arg>
             </args>
-            <descrip>Verifies a string against a binary digital signature and returns true if the string is unaltered.  This method can be used to verify a signature produced by SignString.  The Charset property must be set to the charset that was used when creating the signature.</descrip>
+            <descrip>Verifies a string against a binary digital signature and returns true if the string is unaltered.  This method can be used to verify a signature produced by SignString.  The Charset property must be set to the charset that was used when creating the signature.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="str" type="string" objcName="str" />
                 <arg name="sig" type="bytes" objcName="sigData" />
@@ -4018,7 +4057,9 @@ There is no minimum or maximum password length.  The password string is transfor
                     <objcName>encodedSig</objcName>
                 </arg>
             </args>
-            <descrip>Verifies a string against a string-encoded digital signature and returns true if the string is unaltered.  This method can be used to verify a signature produced by SignStringENC.  The Charset and EncodingMode properties must be set to the same values that were used when creating the signature.</descrip>
+            <descrip>Verifies a string against a string-encoded digital signature and returns true if the string is unaltered.  This method can be used to verify a signature produced by SignStringENC.  The Charset and EncodingMode properties must be set to the same values that were used when creating the signature.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <links2>
                 <link linkType="external">
                     <url>http://www.cknotes.com/chilkat-binary-encoding-list/</url>
@@ -4269,7 +4310,9 @@ The hash algorithm is specified by the HashAlgorithm property,  The encoding is 
         </method>
         <method name="OpaqueVerifyBd" axId="279" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
-            <descrip>In-place verifies and unwraps the  PKCS7/CMS contents of ARG1.   If the signature is verified, the contents of ARG1 will be replaced with the original data, and the method returns _TRUE_.  If the signature is not verified, then the contents of ARG1 remain unchanged and the method returns _FALSE_.</descrip>
+            <descrip>In-place verifies and unwraps the  PKCS7/CMS contents of ARG1.   If the signature is verified, the contents of ARG1 will be replaced with the original data, and the method returns _TRUE_.  If the signature is not verified, then the contents of ARG1 remain unchanged and the method returns _FALSE_.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="bd" type="BinData" objcName="bd" />
             </args2>
@@ -4283,7 +4326,9 @@ The hash algorithm is specified by the HashAlgorithm property,  The encoding is 
         </method>
         <method name="VerifyBdENC" axId="280" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
-            <descrip>Verifies a digital signature against the original data contained in ARG1.  Returns _TRUE_ if the signature is verified.</descrip>
+            <descrip>Verifies a digital signature against the original data contained in ARG1.  Returns _TRUE_ if the signature is verified.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="data" type="BinData" objcName="data" />
                 <arg name="encodedSig" type="string" objcName="encodedSig" />
@@ -4298,7 +4343,9 @@ The hash algorithm is specified by the HashAlgorithm property,  The encoding is 
         </method>
         <method name="VerifySbENC" axId="281" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
-            <descrip>Verifies a digital signature against the original data contained in ARG1.  Returns _TRUE_ if the signature is verified.</descrip>
+            <descrip>Verifies a digital signature against the original data contained in ARG1.  Returns _TRUE_ if the signature is verified.
+&lt;p&gt;
+Note: The signer certificates can be retrieved after any Verify* method call by using the NumSignerCerts property and the GetSignerCert method.</descrip>
             <args2>
                 <arg name="sb" type="StringBuilder" objcName="sb" />
                 <arg name="encodedSig" type="string" objcName="encodedSig" />

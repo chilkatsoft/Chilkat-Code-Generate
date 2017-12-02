@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="205846349" sourceXmlPath="c:/ck2000/appData/apiDef2/Mime.xml" license="Bundle">
+<class XojoModuleId="205846349" license="Bundle" sourceXmlPath="c:/ck2000/appData/apiDef2/Mime.xml">
     <axName>ChilkatMime</axName>
     <dnName>Mime</dnName>
     <cppName>CkMime</cppName>
@@ -2285,7 +2285,12 @@ A PKCS7 signature usually embeds both the signing certificate with its public ke
             <args2>
                 <arg name="sb" type="StringBuilder" objcName="sb" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>load_mime_object_from_email_object.asp</url>
+                    <text>Load MIME Object from Email Object</text>
+                </link>
+            </links2>
             <iversion>9.5.0.62</iversion>
         </method>
         <method name="LoadMimeBd" axId="218" ax="1" cpp="1" dn="1" status="1">

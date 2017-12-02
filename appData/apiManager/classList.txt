@@ -89,6 +89,7 @@ TrustedRoots
 UnixCompress
 Upload
 Url
+WebSocket
 Xml
 XmlCertVault
 XmlDSig

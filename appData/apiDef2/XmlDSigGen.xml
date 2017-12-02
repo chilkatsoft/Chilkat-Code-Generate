@@ -261,7 +261,7 @@ For example, if we have the following SOAP XML and wish to insert the Signature 
 &amp;lt;SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"&amp;gt;
     &amp;lt;SOAP-ENV:Header&amp;gt;
 	&amp;lt;wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" SOAP-ENV:mustUnderstand="1"&amp;gt;
-		&lt;,b&gt;** The XML Signature is to be inserted here **&lt;/b&gt;
+		&lt;b&gt;** The XML Signature is to be inserted here **&lt;/b&gt;
 	&amp;lt;/wsse:Security&amp;gt;
     &amp;lt;/SOAP-ENV:Header&amp;gt;
 ...
