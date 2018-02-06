@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class sourceXmlPath="c:/ck2000/appData/apiDef2/Rest.xml" license="Bundle" hasEvents="1" baseProgress="1">
+<class license="Bundle" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Rest.xml">
     <genericName>Rest</genericName>
     <cppName>CkRest</cppName>
     <dnName>Rest</dnName>
@@ -1368,6 +1368,21 @@ The ARG3 should be the domain of the request, such as one of the following:
             <iversion>9.5.0.70</iversion>
             <links2 />
         </method>
+        <method name="SetAuthBasicSecure" axId="178" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="username" type="SecureString" objcName="username" />
+                <arg name="password" type="SecureString" objcName="password" />
+            </args2>
+            <iversion>9.5.0.71</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>rest_basic_auth_secure_strings.asp</url>
+                    <text>REST Basic Auth with Secure Strings</text>
+                </link>
+            </links2>
+            <descrip>The same as SetAuthBasic, but provides a more secure means for passing the arguments as secure string objects.</descrip>
+        </method>
     </methods>
     <properties>
         <property name="Authorization" axId="101" read="1" write="1" ax="1" cpp="1" dn="1">
@@ -1528,6 +1543,14 @@ If this property is set to _FALSE_, then no Q/B encoding is applied to any reque
             <iversion>9.5.0.63</iversion>
             <links2 />
         </property>
+        <property name="ConnectTimeoutMs" axId="177" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>int</gType>
+            <descrip>The maximum amount of time to wait for the connection to be accepted by the HTTP server.
+&lt;p&gt;&lt;b&gt;Note: &lt;/b&gt; Suprisingly, this property was forgotten and not added until Chilkat v9.5.0.71.</descrip>
+            <args2 />
+            <iversion>9.5.0.71</iversion>
+            <links2 />
+        </property>
     </properties>
     <events>
         <standard name="AbortCheck" />
@@ -1538,5 +1561,5 @@ If this property is set to _FALSE_, then no Q/B encoding is applied to any reque
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>FEE89395-5563-4248-BAB4-C290E474123E</uuidEvents>
     <uuidMidl>D985C806-44A2-4BBD-9FC4-EDD1CD82F03E</uuidMidl>
-    <nextAxId>177</nextAxId>
+    <nextAxId>179</nextAxId>
 </class>

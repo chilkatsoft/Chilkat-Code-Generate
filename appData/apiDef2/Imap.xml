@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="339043990" license="Imap" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Imap.xml">
+<class XojoModuleId="339043990" license="Bundle" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/Imap.xml">
     <axName>ChilkatImap</axName>
     <dnName>Imap</dnName>
     <cppName>CkImap</cppName>
@@ -312,8 +312,7 @@ In summary, it is unlikely that this property needs to be changed.  It should on
             <gType>int</gType>
             <descrip>Sets the receive buffer size socket option.   Normally, this property should be left unchanged.  The default value is 4194304.
 &lt;p&gt;
-This property can be increased if download performance seems slow.  It is recommended to be a multiple of 4096.
-			</descrip>
+This property can be increased if download performance seems slow.  It is recommended to be a multiple of 4096.</descrip>
             <links>
                 <link>
                     <text>More Information about TCP performance and Buffer Sizes</text>
@@ -2409,6 +2408,10 @@ The criteria is passed through to the low-level IMAP protocol unmodified, so the
                     <url>imap_search.asp</url>
                     <text>Search IMAP Mailbox for Email Matching Criteria</text>
                 </link>
+                <link linkType="example">
+                    <url>imap_delete_old_email.asp</url>
+                    <text>IMAP Delete Old Email (before a specified date)</text>
+                </link>
             </links2>
         </method>
         <method name="SelectMailbox" axId="198" ax="1" cpp="1" dn="1" events="1" status="1">
@@ -3189,6 +3192,21 @@ This is useful for sharing an existing SSH tunnel connection wth other objects. 
             <iversion>9.5.0.64</iversion>
             <descrip>Moves a set of messages from one mailbox to another.  Note: This is only possible if the IMAP server supports the "MOVE" extension.   The ARG1 contains message UIDs or sequence numbers for messages in the currently selected mailbox.  The ARG2 is the destination mailbox/folder.</descrip>
         </method>
+        <method name="LoginSecure" axId="247" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="loginName" type="SecureString" objcName="loginName" />
+                <arg name="password" type="SecureString" objcName="password" />
+            </args2>
+            <links2>
+                <link linkType="example">
+                    <url>imap_login_secure.asp</url>
+                    <text>IMAP Login Secure</text>
+                </link>
+            </links2>
+            <iversion>9.5.0.71</iversion>
+            <descrip>The same as Login, except the login name and password are passed as secure strings.</descrip>
+        </method>
     </methods>
     <genericName>Imap</genericName>
     <events>
@@ -3202,5 +3220,5 @@ This is useful for sharing an existing SSH tunnel connection wth other objects. 
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>99395A01-9851-4C8C-9C7E-CEA9E4FE5393</uuidEvents>
     <uuidMidl>2E0EB5F9-CD80-407B-B5F3-60AE67679967</uuidMidl>
-    <nextAxId>247</nextAxId>
+    <nextAxId>248</nextAxId>
 </class>

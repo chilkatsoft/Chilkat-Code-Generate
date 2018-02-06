@@ -16,9 +16,7 @@
 &lt;li&gt;&lt;b&gt;"canceled", "aborted", "completed"&lt;/b&gt; - In these cases the task has already finished, and there will be no change in status.
 &lt;/ul&gt;
 Cancel returns _TRUE_ if the task was in the "queued" or "running" state when it was marked for cancellation.  Cancel returns _FALSE_ if the task was in any other state.
-&lt;p&gt;&lt;b&gt;Important:&lt;/b&gt; Calling the Cancel method marks a task for cancellation.  It sets a flag in memory that the running task will soon notice and then abort.  It is important to realize that your application is likely calling Cancel from the main UI thread, whereas the asynchronous task is running in a background thread.  If the task was in the "running" state when Cancel was called, it will still be in the "running" state when Cancel returns.  It will take a short amount of time until the task actually aborts.  This is because operating systems schedule threads in time slices, and the thread needs one or more time slices to notice the cancellation flag and abort.  After calling Cancel, your application might wish to call the Wait method to wait  until the task has actually aborted, or it could periodically check the task's status and then react once the status changes to "aborted".
-
-</descrip>
+&lt;p&gt;&lt;b&gt;Important:&lt;/b&gt; Calling the Cancel method marks a task for cancellation.  It sets a flag in memory that the running task will soon notice and then abort.  It is important to realize that your application is likely calling Cancel from the main UI thread, whereas the asynchronous task is running in a background thread.  If the task was in the "running" state when Cancel was called, it will still be in the "running" state when Cancel returns.  It will take a short amount of time until the task actually aborts.  This is because operating systems schedule threads in time slices, and the thread needs one or more time slices to notice the cancellation flag and abort.  After calling Cancel, your application might wish to call the Wait method to wait  until the task has actually aborted, or it could periodically check the task's status and then react once the status changes to "aborted".</descrip>
             <iversion>9.5.0.52</iversion>
             <args />
             <args2 />
@@ -353,9 +351,11 @@ For example, if the synchronous version of the method returned a boolean, then i
             <args2 />
             <links2 />
         </property>
-        <property name="TaskSuccess" read="1" ax="1" cpp="1" dn="1" axId="124">
+        <property name="TaskSuccess" axId="124" read="1" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
-            <descrip>This is the value of the LastMethodSuccess property of the underlying task object.  This property is only valid for those methods where the LastMethodSuccess property would be valid had the method been called synchronously.</descrip>
+            <descrip>This is the value of the LastMethodSuccess property of the underlying task object.  This property is only valid for those methods where the LastMethodSuccess property would be valid had the method been called synchronously.
+&lt;p&gt;
+&lt;b&gt;Important:&lt;/b&gt; This property is only meaningful for cases where the underlying method call has a non-boolean return value (such as for methods that return strings, other Chilkat objects, or integers).   If the underlying method call returns a boolean, then call the GetResultBool() method instead to get the boolean return value.</descrip>
             <iversion>9.5.0.52</iversion>
             <args2 />
             <links2 />

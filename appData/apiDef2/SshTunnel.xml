@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="281310497" sourceXmlPath="c:/ck2000/appData/apiDef2/SshTunnel.xml" license="Ssh" hasEvents="1" baseProgress="1">
+<class XojoModuleId="281310497" license="Ssh" hasEvents="1" baseProgress="1" sourceXmlPath="c:/ck2000/appData/apiDef2/SshTunnel.xml">
     <axName>ChilkatSshTunnel</axName>
     <dnName>SshTunnel</dnName>
     <cppName>CkSshTunnel</cppName>
@@ -272,7 +272,7 @@ May be set to one of the following integer values:
             <gType>bool</gType>
             <args2 />
             <links2 />
-            <descrip>If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain.   The default value of this property is _FALSE_, which will choose IPv4 over IPv6. </descrip>
+            <descrip>If _TRUE_, then use IPv6 over IPv4 when both are supported for a particular domain.   The default value of this property is _FALSE_, which will choose IPv4 over IPv6.</descrip>
             <iversion>9.5.0.70</iversion>
         </property>
     </properties>
@@ -577,6 +577,32 @@ BeginAccepting starts a background thread that creates a socket, binds to the po
             <links2 />
             <descrip>Returns the current state of existing tunnels in an XML string.</descrip>
         </method>
+        <method name="AuthenticateSecPw" axId="165" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="login" type="SecureString" objcName="login" />
+                <arg name="password" type="SecureString" objcName="password" />
+            </args2>
+            <iversion>9.5.0.71</iversion>
+            <links2>
+                <link linkType="example">
+                    <url>ssh_tunnel_authenticate_secure.asp</url>
+                    <text>SSH Tunnel Authenticate Secure</text>
+                </link>
+            </links2>
+            <descrip>The same as AuthenticatePw, except the login and password strings are passed in secure string objects.</descrip>
+        </method>
+        <method name="AuthenticateSecPwPk" axId="166" ax="1" cpp="1" dn="1" events="1" status="1">
+            <gType>bool</gType>
+            <descrip>The same as AuthenticatePwPk, except the login and password strings are passed in secure string objects.</descrip>
+            <args2>
+                <arg name="username" type="SecureString" objcName="username" />
+                <arg name="password" type="SecureString" objcName="password" />
+                <arg name="privateKey" type="SshKey" objcName="privateKey" />
+            </args2>
+            <iversion>9.5.0.71</iversion>
+            <links2 />
+        </method>
     </methods>
     <events>
         <standard name="AbortCheck" />
@@ -586,6 +612,6 @@ BeginAccepting starts a background thread that creates a socket, binds to the po
     <clsid>D01DB5A3-B9B7-4837-9874-FBA5BA171976</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>B777D3CD-07A8-4E22-9AB2-EC62B7160ABF</uuidMidl>
-    <nextAxId>165</nextAxId>
+    <nextAxId>167</nextAxId>
     <uuidEvents>8DDD06A6-7234-4309-AF8C-E41DD8BDA4FC</uuidEvents>
 </class>

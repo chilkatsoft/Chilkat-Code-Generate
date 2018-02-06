@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="626604223" sourceXmlPath="c:/ck2000/appData/apiDef2/Email.xml" license="Email">
+<class XojoModuleId="626604223" sourceXmlPath="c:/ck2000/appData/apiDef2/Email.xml" license="Bundle">
     <axName>ChilkatEmail</axName>
     <dnName>Email</dnName>
     <cppName>CkEmail</cppName>
     <properties>
-        <property cpp="1" dn="1" ax="1" read="1" write="1" name="Body" axId="100">
+        <property name="Body" axId="100" read="1" write="1" ax="1" cpp="1" dn="1">
             <gType>string</gType>
             <descrip>The body of the email.  If the email has both HTML and plain-text bodies, this property returns the HTML body.  The GetHtmlBody and GetPlainTextBody methods can be used to access a specific body.  The HasHtmlBody and HasPlainTextBody methods can be used to determine the presence of a body.</descrip>
             <args2 />
@@ -714,6 +714,13 @@ Important:  Emails downloaded via the IMAP protocol do not have UIDL's.  UIDL's 
                 </link>
             </links2>
             <descrip>Selects the hash algorithm for use within OAEP padding when encrypting email using RSAES-OAEP.  The valid choices are "sha1", "sha256", "sha384", "sha512",</descrip>
+        </property>
+        <property name="OaepMgfHash" axId="329" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>string</gType>
+            <descrip>Selects the MGF hash algorithm for use within OAEP padding when encrypting email using RSAES-OAEP.  The valid choices are "sha1", "sha256", "sha384", "sha512",</descrip>
+            <args2 />
+            <iversion>9.5.0.71</iversion>
+            <links2 />
         </property>
     </properties>
     <methods>
@@ -4776,11 +4783,25 @@ The 16-byte MD5 hash is returned as an encoded string.  The ARG1 determines the 
             <links2 />
             <iversion>9.5.0.67</iversion>
         </method>
+        <method name="ApplyFixups" axId="331" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="fixups" type="string" objcName="fixups" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.71</iversion>
+            <descrip>Sometimes emails created by other software or systems are not formatted according to typical conventions.  This method provides a means to automatically fix certain problems. 
+&lt;p&gt;
+The ARG1 set to a comma-separated list of keywords that identify the fixups to be applied.  At the moment, there is only one fixup defined ("FixRelated")  as described here:
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;FixRelated&lt;/b&gt;: Fixes the email so that HTML related items (images for example) are properly located in the email MIME structure.  This prevents them from being seen as attachments.
+&lt;/li&gt;</descrip>
+        </method>
     </methods>
     <genericName>Email</genericName>
     <description>Represents a complete Email object.</description>
     <clsid>78EBC21F-0841-4D47-9DD4-E324F122205F</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>3EC2BC0F-8ECB-4008-AEB7-758972455492</uuidMidl>
-    <nextAxId>329</nextAxId>
+    <nextAxId>332</nextAxId>
 </class>

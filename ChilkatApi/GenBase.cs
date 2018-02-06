@@ -19,7 +19,21 @@ namespace ChilkatApi
         public const string m_xmlApiDefPath = AppDataDir.BaseDir + "/appData/apiDef2";
 
         static public string m_generateForVersion = "9.5.0";
-        static public string m_generateForMicroVersion = "9.5.0.69";
+
+        static private string m_genForMicroVersion = null;
+
+        public string GenerateForMicroVersion 
+            {
+            get
+                {
+                if (m_genForMicroVersion == null)
+                    {
+                    m_genForMicroVersion = System.IO.File.ReadAllText(@"C:\ck2000\appData\apiManager\generateForMicroVersion.txt").Trim();
+                    }
+                return m_genForMicroVersion;
+                }
+            }
+
 
         static public string getVersionWithUnderscore() { return m_generateForVersion.Replace('.', '_'); }
 

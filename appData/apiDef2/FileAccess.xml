@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <class XojoModuleId="177642767" sourceXmlPath="c:/ck2000/appData/apiDef2/FileAccess.xml" license="Free">
-    <nextAxId>151</nextAxId>
+    <nextAxId>152</nextAxId>
     <dnName>FileAccess</dnName>
     <cppName>CkFileAccess</cppName>
     <properties>
@@ -443,7 +443,7 @@ FILE_ATTRIBUTE_TEMPORARY	   0x00000100
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" name="FileSize" axId="121">
+        <method name="FileSize" axId="121" ax="1" cpp="1" dn="1" status="1">
             <gType>int</gType>
             <args>
                 <arg>
@@ -1191,6 +1191,24 @@ GetFileNameWithoutExtension('C:\mydir\') returns ''
             </args2>
             <links2 />
             <iversion>9.5.0.66</iversion>
+        </method>
+        <method name="GetFileTime" axId="151" ax="1" cpp="1" dn="1">
+            <gType>CkDateTime</gType>
+            <descrip>Gets one of the following date/times for a file:
+&lt;pre&gt;
+0: Last-modified
+1: Last-access
+2: Creation
+&lt;/pre&gt;
+The "ARG1" argument indicates which time to return.  The values can be 0, 1, or 2.  
+&lt;p&gt;
+Note: Linux filesystems do not keep a file's creation date/time.  In such a case, this method will return the last-modified time.</descrip>
+            <args2>
+                <arg name="path" type="string" objcName="path" />
+                <arg name="which" type="int" objcName="which" />
+            </args2>
+            <iversion>9.5.0.71</iversion>
+            <links2 />
         </method>
     </methods>
     <genericName>FileAccess</genericName>

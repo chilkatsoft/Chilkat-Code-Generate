@@ -254,7 +254,7 @@ For example, a successful JSON response for a Google API looks like this:
 &lt;/pre&gt;
 &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Not all responses are JSON.  A successful Facebook response is plain text and looks like this:
 &lt;pre&gt;
-access_token=EAAZALuOC1wAwBAKH6FKnxOkjfEPOIkYUlabbliyskquOfVbSkgVM3lUFtsiZDCGmT1H8TidCKWUMbQ3cOU38CZAEd82vrdOayDBJ0lYqWDTVmCsO95SiiZCX09X2lAoP5eZAdZC1RIwRIXbn2UBZBhYD5hSVBETBx6AZD&amp;expires=5134653
+access_token=EAAZALuOC1wAwBAKH6FKnxOkjfEP ... UBZBhYD5hSVBETBx6AZD&amp;expires=5134653
 &lt;/pre&gt;</descrip>
             <links2 />
         </property>

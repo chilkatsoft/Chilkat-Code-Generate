@@ -9,11 +9,15 @@ The ARG1 is the value of the &lt;b&gt;Id&lt;/b&gt; attribute of the &lt;b&gt;Obj
 &lt;p&gt;
 The ARG3 is the digest method and can be one of the following: "sha1", "sha256", "sha384", "sha512", "ripemd160", or "md5".
 &lt;p&gt;
-The ARG4 is the canonicalization method, and can be one of the following:
+The ARG4 is the canonicalization method, and can be one of the following. 
 &lt;ul&gt;
 &lt;li&gt;"C14N" -- for Inclusive Canonical XML (without comments)
 &lt;li&gt;"C14N_11" -- for Inclusive Canonical XML 1.1 (without comments)
 &lt;li&gt;"EXCL_C14N" -- for Exclusive Canonical XML (without comments)
+&lt;li&gt;"C14N_WithComments" -- for Inclusive Canonical XML (with comments)
+&lt;li&gt;"C14N_11_WithComments" -- for Inclusive Canonical XML 1.1 (with comments)
+&lt;li&gt;"EXCL_C14N_WithComments" -- for Exclusive Canonical XML (with comments)
+&lt;li&gt;&lt;b&gt;Note:&lt;/b&gt; The WithComments options are available in Chilkat v9.5.0.71 and later.
 &lt;/ul&gt;
 &lt;p&gt;
 The ARG5 is optional and is usually not needed.  Set this to the empty string unless it is desired to add a Type attribute to the Reference that is advisory only.</descrip>
@@ -49,6 +53,10 @@ The ARG3 is the canonicalization method, and can be one of the following:
 &lt;li&gt;"C14N" -- for Inclusive Canonical XML (without comments)
 &lt;li&gt;"C14N_11" -- for Inclusive Canonical XML 1.1 (without comments)
 &lt;li&gt;"EXCL_C14N" -- for Exclusive Canonical XML (without comments)
+&lt;li&gt;"C14N_WithComments" -- for Inclusive Canonical XML (with comments)
+&lt;li&gt;"C14N_11_WithComments" -- for Inclusive Canonical XML 1.1 (with comments)
+&lt;li&gt;"EXCL_C14N_WithComments" -- for Exclusive Canonical XML (with comments)
+&lt;li&gt;&lt;b&gt;Note:&lt;/b&gt; The WithComments options are available in Chilkat v9.5.0.71 and later.
 &lt;/ul&gt;
 &lt;p&gt;If exclusive canonicalization is selected, then the ARG4 can contain a space separated list of inclusive namespace prefixes.  For inclusive canonicalization, this argument is ignored.  In general, pass an empty string for this argument unless you have specific knowledge of namespace prefixes that need to be treated as inclusive when EXCL_C14N is used.
 &lt;p&gt;
@@ -304,9 +312,13 @@ For example, if we have the following SOAP XML and wish to insert the Signature 
             <links2 />
             <descrip>The canonicalization method to be used for the SignedInfo when creating the XML signature.
 &lt;ul&gt;
-&lt;li&gt;"C14N" -- for Inclusive Canonical XML 1.0 (without comments)
+&lt;li&gt;"C14N" -- for Inclusive Canonical XML (without comments)
 &lt;li&gt;"C14N_11" -- for Inclusive Canonical XML 1.1 (without comments)
 &lt;li&gt;"EXCL_C14N" -- for Exclusive Canonical XML (without comments)
+&lt;li&gt;"C14N_WithComments" -- for Inclusive Canonical XML (with comments)
+&lt;li&gt;"C14N_11_WithComments" -- for Inclusive Canonical XML 1.1 (with comments)
+&lt;li&gt;"EXCL_C14N_WithComments" -- for Exclusive Canonical XML (with comments)
+&lt;li&gt;&lt;b&gt;Note:&lt;/b&gt; The WithComments options are available in Chilkat v9.5.0.71 and later.
 &lt;/ul&gt;
 &lt;p&gt;
 The default value is "EXCL_C14N".</descrip>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Bounce" XojoModuleId="619536387" sourceXmlPath="C:/ck2000/appData/apiDef2/Bounce.xml">
+<class XojoModuleId="619536387" sourceXmlPath="c:/ck2000/appData/apiDef2/Bounce.xml" license="Bundle">
     <nextAxId>108</nextAxId>
     <dnName>Bounce</dnName>
     <cppName>CkBounce</cppName>
@@ -7,16 +7,22 @@
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="BounceAddress" axId="102">
             <gType>string</gType>
             <descrip>The bounced email address when a bounced email is recognized.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property cpp="1" dn="1" ax="1" read="1" write="0" name="BounceData" axId="100">
             <gType>string</gType>
             <descrip>The raw body of the bounced mail.</descrip>
+            <links2 />
+            <args2 />
         </property>
         <property name="BounceType" axId="101" read="1" ax="1" cpp="1" dn="1">
             <gType>int</gType>
             <descrip>A number representing the type of bounce that was recognized.&lt;br&gt;A value of 0 indicates "No Bounce". Other values are: &lt;br&gt;&lt;br&gt;1. Hard Bounce. The email could not be delivered and BounceAddress contains the failed email address. &lt;br&gt;2. Soft Bounce. A temporary condition exists causing the email delivery to fail. The BounceAddress property contains the failed email address. &lt;br&gt;3. General Bounced Mail, cannot determine if it is hard or soft, and the email address is not available. &lt;br&gt;4. General Bounced Mail, cannot determine if it is hard or soft, but an email address is available. &lt;br&gt;5. Mail Block. A bounce occured because the sender was blocked. &lt;br&gt;6. Auto-Reply/Out-of-Office email. &lt;br&gt;7. Transient message, such as "Delivery Status / No Action Required". &lt;br&gt;8. Subscribe request. &lt;br&gt;9. Unsubscribe request. &lt;br&gt;10. Virus email notification. &lt;br&gt;11. Suspected Bounce, but no other information is available &lt;br&gt;12. Challenge/Response - Auto-reply message sent by SPAM software where only verified email addresses are accepted. &lt;br&gt;13. Address Change Notification Messages. 
 &lt;br&gt;14. Success DSN indicating that the message was successfully relayed.
 &lt;br&gt;15. Abuse/fraud feedback report.</descrip>
+            <links2 />
+            <args2 />
         </property>
     </properties>
     <methods>
@@ -35,6 +41,7 @@
             <args2>
                 <arg name="email" type="Email" objcName="email" />
             </args2>
+            <links2 />
         </method>
         <method name="ExamineEml" axId="103" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -51,6 +58,7 @@
             <args2>
                 <arg name="emlFilename" type="string" objcName="emlPath" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="ExamineMime" axId="104">
             <gType>bool</gType>
@@ -67,6 +75,7 @@
             <args2>
                 <arg name="mimeText" type="string" objcName="mimeString" />
             </args2>
+            <links2 />
         </method>
         <method cpp="1" dn="1" ax="1" status="1" name="UnlockComponent" axId="105">
             <gType>bool</gType>
@@ -95,7 +104,7 @@ A purchased unlock code for the bounce component/library will included the subst
                     <url>http://www.cknotes.com/?p=315</url>
                 </link>
                 <link linkType="external">
-                    <text>Verify UnlockComponent Success w/ Purchased Unlock Code</text>
+                    <text>Verify UnlockComponent Success w/ Permanent Unlock Code</text>
                     <url>http://www.cknotes.com/?p=317</url>
                 </link>
                 <link linkType="external">

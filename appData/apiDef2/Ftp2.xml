@@ -1359,7 +1359,7 @@ This  functionality is replaced by the new model for asynchronous programming in
                 <arg name="remoteFilename" type="string" objcName="remoteFilename" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" status="1" name="ChangeRemoteDir" axId="187">
+        <method name="ChangeRemoteDir" axId="187" ax="1" cpp="1" dn="1" events="1" status="1">
             <gType>bool</gType>
             <args>
                 <arg>
@@ -1500,7 +1500,7 @@ If the ARG1 contains non-English characters, it may be necessary to set the DirL
                 <arg name="remoteDirPath" type="string" objcName="dir" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" name="DeleteMatching" axId="196">
+        <method name="DeleteMatching" axId="196" ax="1" cpp="1" dn="1" events="1">
             <gType>int</gType>
             <args>
                 <arg>
@@ -3337,7 +3337,7 @@ If the ARG1 or ARG2 contains non-English characters, it may be necessary to set 
             </args2>
             <links2 />
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" name="SendCommand" axId="252" outArgName="outReply">
+        <method name="SendCommand" axId="252" outArgName="outReply" ax="1" cpp="1" dn="1" events="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -3873,7 +3873,7 @@ Note: If ARG4 is set to _TRUE_, the remote directories (if they do not exist) ar
                 <arg name="bPreviewOnly" type="bool" objcName="bPreviewOnly" />
             </args2>
         </method>
-        <method cpp="1" dn="1" ax="1" events="1" name="Syst" axId="273" outArgName="outStr">
+        <method name="Syst" axId="273" outArgName="outStr" ax="1" cpp="1" dn="1" events="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -4010,6 +4010,15 @@ If the ARG2 contains non-English characters, it may be necessary to set the DirL
                 </link>
             </links2>
             <descrip>Downloads a file to a stream.  If called synchronously, the ARG1 must have a sink, such as a file or another stream object.  If called asynchronously, then the foreground thread can read the stream.</descrip>
+        </method>
+        <method name="SetPassword" axId="307" ax="1" cpp="1" dn="1" status="1">
+            <gType>bool</gType>
+            <args2>
+                <arg name="password" type="SecureString" objcName="password" />
+            </args2>
+            <links2 />
+            <iversion>9.5.0.71</iversion>
+            <descrip>Sets the password in a more secure way than setting the Password property.  Calling this method is the equivalent of setting the Password property.  </descrip>
         </method>
     </methods>
     <genericName>Ftp2</genericName>
@@ -4298,5 +4307,5 @@ If the ARG2 contains non-English characters, it may be necessary to set the DirL
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidEvents>D57DD27C-0065-41FA-ACB5-EBD8AB552A1E</uuidEvents>
     <uuidMidl>3A2BC588-F8E2-4BE3-A154-A3A99CF51E9F</uuidMidl>
-    <nextAxId>307</nextAxId>
+    <nextAxId>308</nextAxId>
 </class>

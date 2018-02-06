@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Crypt" XojoModuleId="936392738" sourceXmlPath="C:/ck2000/appData/apiDef2/Dsa.xml">
+<class license="Bundle" XojoModuleId="936392738" sourceXmlPath="C:/ck2000/appData/apiDef2/Dsa.xml">
     <nextAxId>142</nextAxId>
     <dnName>Dsa</dnName>
     <cppName>CkDsa</cppName>

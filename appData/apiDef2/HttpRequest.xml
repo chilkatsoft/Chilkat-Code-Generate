@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="717515581" sourceXmlPath="c:/ck2000/appData/apiDef2/HttpRequest.xml" license="Http">
+<class XojoModuleId="717515581" sourceXmlPath="c:/ck2000/appData/apiDef2/HttpRequest.xml" license="Bundle">
     <axName>ChilkatHttpRequest</axName>
     <dnName>HttpRequest</dnName>
     <cppName>CkHttpRequest</cppName>

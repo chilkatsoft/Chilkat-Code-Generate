@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Free" XojoModuleId="227184472" sourceXmlPath="c:/ck2000/appData/apiDef2/Csv.xml">
-    <nextAxId>126</nextAxId>
+<class XojoModuleId="227184472" sourceXmlPath="c:/ck2000/appData/apiDef2/Csv.xml" license="Free">
+    <nextAxId>127</nextAxId>
     <dnName>Csv</dnName>
     <cppName>CkCsv</cppName>
     <properties>
@@ -24,7 +24,7 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <links2 />
             <args2 />
         </property>
-        <property name="EscapeBackslash" read="1" write="1" ax="1" cpp="1" dn="1" axId="125">
+        <property name="EscapeBackslash" read="1" write="1" axId="125" ax="1" cpp="1" dn="1">
             <gType>bool</gType>
             <descrip>If _TRUE_, then the backslash character is treated as an escape character when reading/writing CSVs.   The default is _FALSE_.</descrip>
             <iversion>9.5.0.44</iversion>
@@ -48,6 +48,13 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
             <descrip>The number of data rows.  If the CSV has column names, the 1st row is not included in the count.  Also, empty lines containing only whitespace characters that follow the last non-empty row are not included.</descrip>
             <links2 />
             <args2 />
+        </property>
+        <property name="EnableQuotes" axId="126" read="1" write="1" ax="1" cpp="1" dn="1">
+            <gType>bool</gType>
+            <descrip>If _TRUE_, then the double-quote characters cause the quoted content, including CR's, LF's, and delimiter chars to be treated as normal text when  reading/writing CSVs.   The default is _TRUE_.</descrip>
+            <args2 />
+            <iversion>9.5.0.71</iversion>
+            <links2 />
         </property>
     </properties>
     <methods>
@@ -496,7 +503,6 @@ If the Delimiter property is not explicitly set, the CSV component will detect t
         </method>
     </methods>
     <genericName>Csv</genericName>
-    <description />
     <clsid>E9464A9F-B8D4-443D-88C3-DF3E9C6308AA</clsid>
     <typeid>004CB902-F437-4D01-BD85-9E18836DA5C2</typeid>
     <uuidMidl>3B8C1209-EEFB-408B-8FA3-A59EE8034072</uuidMidl>

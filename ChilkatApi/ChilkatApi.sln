@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChilkatApi", "ChilkatApi.csproj", "{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChilkatApi", "ChilkatApi.csproj", "{6DF0B266-79DE-42EB-927D-55C866171409}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,13 +11,13 @@ Global
 		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}.Debug|Any CPU.ActiveCfg = Debug|x64
-		{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}.Debug|x64.ActiveCfg = Debug|x64
-		{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}.Debug|x64.Build.0 = Debug|x64
-		{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}.Release|Any CPU.ActiveCfg = Debug|x64
-		{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}.Release|Any CPU.Build.0 = Debug|x64
-		{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}.Release|x64.ActiveCfg = Debug|x64
-		{2E3402ED-FC41-41A7-8AE0-7E2FFACB5DA2}.Release|x64.Build.0 = Debug|x64
+		{6DF0B266-79DE-42EB-927D-55C866171409}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6DF0B266-79DE-42EB-927D-55C866171409}.Debug|x64.ActiveCfg = Debug|x64
+		{6DF0B266-79DE-42EB-927D-55C866171409}.Debug|x64.Build.0 = Debug|x64
+		{6DF0B266-79DE-42EB-927D-55C866171409}.Release|Any CPU.ActiveCfg = Debug|x64
+		{6DF0B266-79DE-42EB-927D-55C866171409}.Release|Any CPU.Build.0 = Debug|x64
+		{6DF0B266-79DE-42EB-927D-55C866171409}.Release|x64.ActiveCfg = Debug|x64
+		{6DF0B266-79DE-42EB-927D-55C866171409}.Release|x64.Build.0 = Debug|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

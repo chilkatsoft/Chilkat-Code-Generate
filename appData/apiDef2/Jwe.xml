@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class sourceXmlPath="C:/ck2000/appData/apiDef2/Jwe.xml" license="Bundle">
+<class sourceXmlPath="c:/ck2000/appData/apiDef2/Jwe.xml" license="Bundle">
     <methods>
         <method name="SetProtectedHeader" axId="101" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -56,6 +56,8 @@
 RSA1_5
 RSA-OAEP
 RSA-OAEP-256
+RSA-OAEP-384  (added in Chilkat v9.5.0.71)
+RSA-OAEP-512  (added in Chilkat v9.5.0.71)
 &lt;/pre&gt;
 The ARG1 is the index of the recipient, where the 1st recipient is at index 0.  (The typical use case for JWEs is for a single recipient.)</descrip>
         </method>
@@ -156,8 +158,7 @@ The ARG1 is the index of the recipient, where the 1st recipient is at index 0.  
 &lt;li&gt;A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
 &lt;li&gt;A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
 &lt;li&gt;PBES2-HS256+A128KW, PBES2-HS384+A192KW, PBES2-HS512+A256KW with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-&lt;/ul&gt;
-</descrip>
+&lt;/ul&gt;</descrip>
         </method>
         <method name="EncryptSb" axId="109" ax="1" cpp="1" dn="1" status="1">
             <gType>bool</gType>
@@ -205,8 +206,7 @@ The ARG1 specifies which recipient key is used for decryption.  (Most JWEs have 
 &lt;li&gt;A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
 &lt;li&gt;A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
 &lt;li&gt;PBES2-HS256+A128KW, PBES2-HS384+A192KW, PBES2-HS512+A256KW with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM
-&lt;/ul&gt;
-</descrip>
+&lt;/ul&gt;</descrip>
             <args2>
                 <arg name="index" type="int" objcName="index" />
                 <arg name="charset" type="string" objcName="charset" />

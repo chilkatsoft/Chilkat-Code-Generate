@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="434281359" license="Free" sourceXmlPath="c:/ck2000/appData/apiDef2/PrivateKey.xml">
+<class XojoModuleId="434281359" sourceXmlPath="c:/ck2000/appData/apiDef2/PrivateKey.xml" license="Free">
     <nextAxId>144</nextAxId>
     <dnName>PrivateKey</dnName>
     <cppName>CkPrivateKey</cppName>
@@ -308,7 +308,7 @@ ECPrivateKey ::= SEQUENCE {
             <args2 />
             <links2 />
         </method>
-        <method name="GetRsaPem" axId="105" ax="1" cpp="1" dn="1" deprecated="1" outArgName="outStr">
+        <method name="GetRsaPem" axId="105" outArgName="outStr" ax="1" cpp="1" dn="1" deprecated="1">
             <gType>string</gType>
             <args>
                 <arg>
@@ -317,7 +317,7 @@ ECPrivateKey ::= SEQUENCE {
                     <objcName>outStr</objcName>
                 </arg>
             </args>
-            <descrip>Gets the private key in PKCS1 PEM format. This method is deprecated and is replaced by the GetPem method (given that this object may contain a non-RSA key).</descrip>
+            <descrip>Gets the private key in PKCS1 PEM format. This method is deprecated and is replaced by the GetPkcs1Pem and GetPkcs8Pem methods (given that this object may contain a non-RSA key).</descrip>
             <args2 />
             <links2 />
         </method>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class license="Crypt" XojoModuleId="206711247" sourceXmlPath="C:/ck2000/appData/apiDef2/Ntlm.xml">
+<class license="Bundle" XojoModuleId="206711247" sourceXmlPath="C:/ck2000/appData/apiDef2/Ntlm.xml">
     <nextAxId>125</nextAxId>
     <dnName>Ntlm</dnName>
     <cppName>CkNtlm</cppName>

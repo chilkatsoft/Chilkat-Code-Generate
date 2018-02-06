@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<class XojoModuleId="366837545" sourceXmlPath="c:/ck2000/appData/apiDef2/CertStore.xml" license="Free">
+<class XojoModuleId="366837545" license="Free" sourceXmlPath="c:/ck2000/appData/apiDef2/CertStore.xml">
     <nextAxId>130</nextAxId>
     <dnName>CertStore</dnName>
     <cppName>CkCertStore</cppName>
@@ -113,7 +113,7 @@ Creates a registry-based certificate store.  ARG1 must be "CurrentUser" or "Loca
             </args>
             <descrip>Locates and returns a certificate by its RFC 822 name.
 &lt;p&gt;
-If multiple certificates match, then non-expired certificates will take precedence over expired certificates.  In other words, Chilkat will aways return the non-expired certificate over the expired certificate.  </descrip>
+If multiple certificates match, then non-expired certificates will take precedence over expired certificates.  In other words, Chilkat will aways return the non-expired certificate over the expired certificate.</descrip>
             <args2>
                 <arg name="name" type="string" objcName="name" />
             </args2>
@@ -593,7 +593,12 @@ TrustedPublisher: Certificate store for directly trusted publishers.
                 <arg name="storeName" type="string" objcName="storeName" />
                 <arg name="readOnly" type="bool" objcName="readOnly" />
             </args2>
-            <links2 />
+            <links2>
+                <link linkType="example">
+                    <url>certStore_other_people.asp</url>
+                    <text>Find a Certificate in the "Other People" Windows Certificate Store</text>
+                </link>
+            </links2>
         </method>
         <method cpp="1" dn="1" ax="1" windowsOnly="1" status="1" name="RemoveCertificate" axId="126">
             <gType>bool</gType>

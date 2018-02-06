@@ -71,6 +71,7 @@ SFtp
 SFtpDir
 SFtpFile
 Scp
+SecureString
 ServerSentEvent
 Socket
 Spider

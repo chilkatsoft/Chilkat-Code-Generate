@@ -301,3 +301,6 @@ ChilkatXmlDSigGen
 WebSocket
 CkWebSocket
 ChilkatWebSocket
+SecureString
+CkSecureString
+ChilkatSecureString
