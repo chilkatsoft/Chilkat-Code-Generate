@@ -135,38 +135,42 @@ namespace ChilkatApi
 
             xml.RemoveChild("links");
 
-            bool bAlreadyHasAsyncExamples = false;
+            //bool bAlreadyHasAsyncExamples = false;
 
             // Check to see if this method already has async examples.
             // If so, when we leave it alone.
             // Otherwise, we add the default example..
-            RefdocLinks rdLinks = new RefdocLinks();
-            Chilkat.Xml xLinks2 = xml.FindChild("links2");
-            if (xLinks2 != null)
-                {
-                int numChildren = xLinks2.NumChildren;
-                for (int i = 0; i < numChildren; i++)
-                    {
-                    Chilkat.Xml xLink = xLinks2.GetChild(i);
-                    if (xLink.HasAttrWithValue("async", "1"))
-                        {
-                        bAlreadyHasAsyncExamples = true;
-                        break;
-                        }
-                    }
-                }
+            //RefdocLinks rdLinks = new RefdocLinks();
+           // Chilkat.Xml xLinks2 = xml.FindChild("links2");
+            //if (xLinks2 != null)
+            //    {
+            //    int numChildren = xLinks2.NumChildren;
+            //    for (int i = 0; i < numChildren; i++)
+            //        {
+            //        Chilkat.Xml xLink = xLinks2.GetChild(i);
+            //        if (xLink.HasAttrWithValue("async", "1"))
+            //            {
+            //            //bAlreadyHasAsyncExamples = true;
+            //            break;
+            //            }
+            //        }
+            //    }
 
-            if (!bAlreadyHasAsyncExamples)
-                {
-                xml.RemoveChild("links2");
+            //if (!bAlreadyHasAsyncExamples)
+            //    {
+            //    xml.RemoveChild("links2");
 
-                Chilkat.Xml xmlLinks2 = xml.NewChild("links2", "");
+            // Add to the links, because these standard links will be placed in the superscript link area..
+            Chilkat.Xml xmlLinks2 = xml.FindChild("links2");
+            if (xmlLinks2 == null) xmlLinks2 = xml.NewChild("links2", "");
+            
                 Chilkat.Xml xmlLink;
 
                 xmlLink = xmlLinks2.NewChild("link", "");
                 xmlLink.AddAttribute("lang", "activex");
                 xmlLink.AddAttribute("linkType", "external");
                 xmlLink.AddAttribute("async", "1");
+                xmlLink.AddAttribute("superscriptAsync", "1");
                 xmlLink.NewChild2("text", "VB6 Programs MUST Call FinalizeThreadPool Just Before Exiting");
                 xmlLink.NewChild2("url", "https://www.example-code.com/vb6/async_finalize_thread_pool_on_exit.asp");
 
@@ -174,6 +178,7 @@ namespace ChilkatApi
                 xmlLink.AddAttribute("lang", "nodejs");
                 xmlLink.AddAttribute("linkType", "external");
                 xmlLink.AddAttribute("async", "1");
+                xmlLink.AddAttribute("superscriptAsync", "1");
                 xmlLink.NewChild2("text", "How to Run a Node.js Asynchronous Task");
                 xmlLink.NewChild2("url", "http://www.cknotes.com/asynchronous-chilkat-methods-in-node-js/");
 
@@ -181,12 +186,14 @@ namespace ChilkatApi
                 xmlLink.AddAttribute("lang", "activex");
                 xmlLink.AddAttribute("linkType", "external");
                 xmlLink.AddAttribute("async", "1");
+                xmlLink.AddAttribute("superscriptAsync", "1");
                 xmlLink.NewChild2("text", "Asynchronous Methods in VB6 - Be Very Careful with Callbacks");
                 xmlLink.NewChild2("url", "http://www.chilkatforum.com/questions/10870/asynchronous-methods-in-vb6-be-very-careful-with-callbacks");
 
                 xmlLink = xmlLinks2.NewChild("link", "");
                 xmlLink.AddAttribute("skiplang", "nodejs");
                 xmlLink.AddAttribute("async", "1");
+                xmlLink.AddAttribute("superscriptAsync", "1");
                 xmlLink.AddAttribute("linkType", "example");
                 xmlLink.NewChild2("text", "How to Run an Asynchronous Task");
                 xmlLink.NewChild2("url", "async_task.asp");
@@ -196,11 +203,12 @@ namespace ChilkatApi
                     xmlLink = xmlLinks2.NewChild("link", "");
                     xmlLink.AddAttribute("skiplang", "nodejs");
                     xmlLink.AddAttribute("async", "1");
+                    xmlLink.AddAttribute("superscriptAsync", "1");
                     xmlLink.AddAttribute("linkType", "example");
                     xmlLink.NewChild2("text", "How to Return an Object from an Async Task");
                     xmlLink.NewChild2("url", "async_returnObject.asp");
                     }
-                }
+                //}
 
 
             return;

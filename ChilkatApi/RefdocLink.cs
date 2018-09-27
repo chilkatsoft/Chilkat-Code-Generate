@@ -97,6 +97,13 @@ namespace ChilkatApi
             set { setAttrBool("async", value); }
             }
 
+        // True if this link should be put in the superscript links for an Async alternative of the method. 
+        public bool AsyncSuperscript
+            {
+            get { return m_xml.HasAttrWithValue("superscriptAsync", "1"); }
+            set { setAttrBool("superscriptAsync", value); }
+            }
+
         public bool WindowsOnly
             {
             get { return m_xml.HasAttrWithValue("windowsOnly", "1"); }

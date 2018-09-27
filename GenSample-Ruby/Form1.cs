@@ -9,6 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChilkatApi;
+using System.Collections;
 
 
 namespace GenSample
@@ -25,19 +26,9 @@ namespace GenSample
         // Demonstrates how to iterate over Chilkat classes to generate wrappers for some programming language..
         private void button1_Click(object sender, EventArgs e)
         {
-            Chilkat.StringTable classList = new Chilkat.StringTable();
-            bool success = classList.AppendFromFile(1000, "utf-8", ChilkatApi.GenBase.ClassListFile);
-            if (!success)
-            {
-                MessageBox.Show("Failed to load class list, modify the value of AppDataDir.BaseDir");
-                return;
-            }
-
-            //MessageBox.Show("Number of classes = " + Convert.ToString(classList.Count));
-
-            for (int i = 0; i < classList.Count; i++)
-            {
-                string genericClassName = classList.StringAt(i);
+            ArrayList aGenericClassNames = GenBase.GetGenericClassNameList();
+            foreach (string genericClassName in aGenericClassNames)
+                {
                 if (!GenerateClass(genericClassName))
                 {
                     textBox1.Text += "Failed to generate " + genericClassName + "\r\n";
@@ -64,7 +55,7 @@ namespace GenSample
             StringBuilder sbSourceFile = new StringBuilder();
             if (!generateClassToSb(xclass, sbSourceFile, log)) return false;
 
-            GenBase.writeFileIfModified(AppDataDir.BaseDir + "/sampleOutput/Ruby/" + ChilkatApi.GenBase.m_generateForMicroVersion + "/" + genericClassName + ".rb", sbSourceFile.ToString());
+            GenBase.writeFileIfModified(txtOutputDir.Text + @"sampleOutput\Ruby\" + GenBase.GenerateForMicroVersion() + @"\" + genericClassName + ".rb", sbSourceFile.ToString());
 
             return true;
         }

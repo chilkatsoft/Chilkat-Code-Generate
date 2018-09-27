@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ChilkatApi;
+using System.Collections;
 
 
 namespace GenSample
@@ -24,19 +25,17 @@ namespace GenSample
         // Demonstrates how to iterate over Chilkat classes to generate wrappers for some programming language..
         private void button1_Click(object sender, EventArgs e)
             {
-            Chilkat.StringTable classList = new Chilkat.StringTable();
-            bool success = classList.AppendFromFile(1000, "utf-8", ChilkatApi.GenBase.ClassListFile);
-            if (!success)
+            string strClassListText = AppData.GetAppData("appData/apiManager/classList.txt");
+            if (strClassListText == null)
                 {
-                MessageBox.Show("Failed to load class list, modify the value of AppDataDir.BaseDir");
+                MessageBox.Show("Failed to get class list.");
                 return;
                 }
+            MessageBox.Show(strClassListText);
 
-            //MessageBox.Show("Number of classes = " + Convert.ToString(classList.Count));
-
-            for (int i = 0; i < classList.Count; i++)
+            ArrayList aGenericClassNames = GenBase.GetGenericClassNameList();
+            foreach (string genericClassName in aGenericClassNames)
                 {
-                string genericClassName = classList.StringAt(i);
                 if (!GenerateClass(genericClassName))
                     {
                     textBox1.Text += "Failed to generate " + genericClassName + "\r\n";
@@ -63,7 +62,7 @@ namespace GenSample
             StringBuilder sbSourceFile = new StringBuilder();
             if (!generateClassToSb(xclass,sbSourceFile,log)) return false;
 
-            GenBase.writeFileIfModified(AppDataDir.BaseDir + "/sampleOutput/" + genericClassName + ".au3", sbSourceFile.ToString());
+            GenBase.writeFileIfModified(txtOutputDir.Text + genericClassName + ".au3", sbSourceFile.ToString());
 
             return true;
             }

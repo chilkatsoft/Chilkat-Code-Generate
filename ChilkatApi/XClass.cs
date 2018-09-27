@@ -9,8 +9,6 @@ namespace ChilkatApi
     {
     public class XClass
 	{
-        public const string PATH_COMMON_LINKS_XML = AppDataDir.BaseDir + "/appData/apiManager/commonLinks.xml";
-
 	// Never let this be null.
 	private Chilkat.Xml m_xml = new Chilkat.Xml();
 
@@ -520,11 +518,14 @@ namespace ChilkatApi
             }
 
 
-	// Load common links, such as those for UnlockComponent, from C:\ck2000\appData\apiManager\commonLinks.xml
+	// Load common links, such as those for UnlockComponent, from appData\apiManager\commonLinks.xml
 	private bool integrateCommonLinks(Chilkat.Log log)
 	    {
+            // No need for refdoc links if we're not using this code for refdoc generation.
+            if (AppData.GitHubCodeBase) return true;
+
 	    Chilkat.Xml xmlCommon = new Chilkat.Xml();
-	    if (!xmlCommon.LoadXmlFile(PATH_COMMON_LINKS_XML))
+            if (!xmlCommon.LoadXmlFile(AppData.BaseDir + "/appData/apiManager/commonLinks.xml"))
 		{
 		log.LogError("Failed to load commonLinks.xml");
 		return false;
@@ -575,29 +576,48 @@ namespace ChilkatApi
             if (GenericName.Equals("CkString") || GenericName.Equals("CkByteData")) return true;
 
             Chilkat.Xml xmlBase = new Chilkat.Xml();
-            string baseXmlPath = NoBaseEntries ? GenBase.m_baseUtf8XmlPath : GenBase.m_baseEntriesXmlPath;
-            if (!xmlBase.LoadXmlFile(baseXmlPath))
+            //string baseXmlPath = NoBaseEntries ? GenBase.m_baseUtf8XmlPath : GenBase.m_baseEntriesXmlPath;
+
+            string strBaseEntriesXml = "";
+            if (NoBaseEntries)
+                {
+                strBaseEntriesXml = AppData.GetAppData("appData/apiManager/basePropUtf8.xml");
+                }
+            else
+                {
+                strBaseEntriesXml = AppData.GetAppData("appData/apiManager/baseEntries.xml");
+                }
+            if (!xmlBase.LoadXml(strBaseEntriesXml))
+            //if (!xmlBase.LoadXmlFile(baseXmlPath))
                 {
                 log.LogError("Failed to load baseEntries.xml");
                 return false;
                 }
-            xmlBase.AddOrUpdateAttribute("sourceXmlPath", baseXmlPath);
+            // No longer need this..
+            //xmlBase.AddOrUpdateAttribute("sourceXmlPath", baseXmlPath);
 
             addClassEntries(xmlBase);
             return true;
             }
 
+        static public string StandardEventsXmlStr = null;
+
         private bool loadStandardEvents(Chilkat.Log log)
             {
-            string standardEventsXmlPath = AppDataDir.BaseDir + "/appData/apiManager/standardEvents.xml";
-
             Chilkat.Xml xml = new Chilkat.Xml();
-            if (!xml.LoadXmlFile(standardEventsXmlPath))
+            if (StandardEventsXmlStr == null)
                 {
+                StandardEventsXmlStr = AppData.GetAppData("appData/apiManager/standardEvents.xml");
+                }
+
+            //if (!xml.LoadXmlFile(standardEventsXmlPath))
+            if (!xml.LoadXml(StandardEventsXmlStr))
+                    {
                 log.LogError("Failed to load standard events XML");
                 return false;
                 }
-            xml.AddOrUpdateAttribute("sourceXmlPath", standardEventsXmlPath);
+            // No longer need this..
+            //xml.AddOrUpdateAttribute("sourceXmlPath", standardEventsXmlPath);
 
             // The root of this XML document is an "events" node..
             int n = xml.NumChildren;
@@ -677,16 +697,19 @@ namespace ChilkatApi
             m_propList.Clear();
             m_eventList.Clear();
 
-            string path = GenBase.m_xmlApiDefPath + @"/" + className + ".xml";
-	    if (!m_xml.LoadXmlFile(path))
+            string strClassXml = AppData.GetAppData("appData/apiDef2/" + className + ".xml");
+            //string path = GenBase.m_xmlApiDefPath + @"/" + className + ".xml";
+	    //if (!m_xml.LoadXmlFile(path))
+            if (!m_xml.LoadXml(strClassXml))
 		{
-		log.LogData("failedToLoad", path);
+                log.LogData("failedToLoadClass", className);
 		return false;
 		}
             // Always indicate the source of the XML in the root node.
             // This makes it possible to save the entire XML document from any node
             // by getting the root XML node, then getting the sourceXmlPath, ...
-            m_xml.AddOrUpdateAttribute("sourceXmlPath", path);
+            // No longer need this..
+            //m_xml.AddOrUpdateAttribute("sourceXmlPath", path);
 
             addClassEntries(m_xml);
 
@@ -730,8 +753,12 @@ namespace ChilkatApi
 
 	public bool SaveClass(Chilkat.Log log)
 	    {
+            // The GitHubCodeBase is read-only w.r.t. app data..
+            if (AppData.GitHubCodeBase) return true;
+
             string path = GenBase.m_xmlApiDefPath + @"/" + GenericName + ".xml";
             bool success = m_xml.SaveXml(path);
+
 	    return success;
 	    }
 

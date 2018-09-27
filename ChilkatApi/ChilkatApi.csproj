@@ -20,11 +20,12 @@
     <PlatformTarget>x64</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <NoWarn>0162</NoWarn>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ChilkatDotNet45, Version=9.5.0.71, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=AMD64">
+    <Reference Include="ChilkatDotNet45, Version=9.5.0.75, Culture=neutral, PublicKeyToken=eb5fc1fc52ef09bd, processorArchitecture=AMD64">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>packages\chilkat-x64.9.5.0.71\lib\net45\ChilkatDotNet45.dll</HintPath>
+      <HintPath>packages\chilkat-x64.9.5.0.75\lib\net45\ChilkatDotNet45.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -35,7 +36,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppDataDir.cs" />
+    <Compile Include="AppData.cs" />
     <Compile Include="ChilkatTypes.cs" />
     <Compile Include="GenBase.cs" />
     <Compile Include="MethodArg.cs" />

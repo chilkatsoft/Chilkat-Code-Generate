@@ -3,35 +3,76 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections;
 
 namespace ChilkatApi
     {
     public class GenBase
         {
-        public const string ClassListFile = AppDataDir.BaseDir + "/appData/apiManager/classList.txt";
+        //public const string ClassListFile = AppData.BaseDir + "/appData/apiManager/classList.txt";
 
-        public const string PATH_GENERATE_BASE_DIR = AppDataDir.BaseDir + "/components";
+        public const string PATH_GENERATE_BASE_DIR = AppData.BaseDir + "/components";
 
-        public const string m_baseEntriesXmlPath = AppDataDir.BaseDir + "/appData/apiManager/baseEntries.xml";
-        // LastMethodSuccess is now part of the basePropUtf8.xml...
-        public const string m_baseUtf8XmlPath = AppDataDir.BaseDir + "/appData/apiManager/basePropUtf8.xml";
+        //public const string m_baseEntriesXmlPath = AppData.BaseDir + "/appData/apiManager/baseEntries.xml";
+        //public const string m_baseUtf8XmlPath = AppData.BaseDir + "/appData/apiManager/basePropUtf8.xml";
 
-        public const string m_xmlApiDefPath = AppDataDir.BaseDir + "/appData/apiDef2";
+        public const string m_xmlApiDefPath = AppData.BaseDir + "/appData/apiDef2";
+
+        static public string m_classListText = null;
 
         static public string m_generateForVersion = "9.5.0";
 
         static private string m_genForMicroVersion = null;
 
-        public string GenerateForMicroVersion 
+
+        static public string GenerateForMicroVersion()
+            {
+            if (m_genForMicroVersion == null)
+                {
+                m_genForMicroVersion = AppData.GetAppData("appData/apiManager/generateForMicroVersion.txt").Trim();
+                    //System.IO.File.ReadAllText(@"C:\ck2000\appData\apiManager\generateForMicroVersion.txt").Trim();
+                }
+            return m_genForMicroVersion;
+            }
+
+        static public string CurrentReleasedVersion
             {
             get
                 {
-                if (m_genForMicroVersion == null)
-                    {
-                    m_genForMicroVersion = System.IO.File.ReadAllText(@"C:\ck2000\appData\apiManager\generateForMicroVersion.txt").Trim();
-                    }
-                return m_genForMicroVersion;
+                return "9x5x0x75".Replace("x", ".");
                 }
+            }
+
+
+
+        static public ArrayList GetGenericClassNameList()
+            {
+            Chilkat.StringTable st = new Chilkat.StringTable();
+            if (m_classListText == null)
+                {
+                m_classListText = AppData.GetAppData("appData/apiManager/classList.txt");
+                if (m_classListText == null) return null;
+                }
+            Chilkat.StringBuilder sb = new Chilkat.StringBuilder();
+            sb.Append(m_classListText);
+
+            if (!st.AppendFromSb(sb))
+                {
+                return null;
+                }
+
+            ArrayList alist = new ArrayList();
+
+            int n = st.Count;
+            int i;
+            for (i = 0; i < n; i++)
+                {
+                string cname = st.StringAt(i);
+                if (string.IsNullOrWhiteSpace(cname)) continue;
+                alist.Add(cname);
+                }
+
+            return alist;
             }
 
 

@@ -40,18 +40,25 @@ namespace ChilkatApi
 
         public const int GT_CPP_CUSTOM = 222;	// "cppCustom", C/C++ type is in "cppType" attribute.
 
-        public const string TypeMapFilePath = AppDataDir.BaseDir + "/appData/apiManager/typeMap_cppAxDn.txt";
+        public const string TypeMapFilePath = AppData.BaseDir + "/appData/apiManager/typeMap_cppAxDn.txt";
 
+        static public string TypeMapFileContents = null;
 
         private Hashtable m_cppTypes = new Hashtable();
         private Hashtable m_axTypes = new Hashtable();
 
         public ChilkatTypes()
             {
-            string typeMapPath = TypeMapFilePath;
+            if (TypeMapFileContents == null)
+                {
+                TypeMapFileContents = AppData.GetAppData("appData/apiManager/typeMap_cppAxDn.txt");
+                }
+
+            //string typeMapPath = TypeMapFilePath;
 
             Chilkat.StringArray sa = new Chilkat.StringArray();
-            if (!sa.LoadFromFile(typeMapPath)) return;
+            //if (!sa.LoadFromFile(typeMapPath)) return;
+            sa.LoadFromText(TypeMapFileContents);
 
             int i = 0;
             int numTypes = sa.Count / 3;
@@ -1358,7 +1365,8 @@ namespace ChilkatApi
 	    if (gt == GT_CPP_SHORT) return "int";
 	    if (gt == GT_CPP_UNSIGNED_SHORT) return "int";
 	    if (gt == GT_UNSIGNED_INT) return "int";
-
+            if (gt == GT_CPP_MULTIBYTE_STRING) return "string";
+            
             if (gt == GT_OBJECT)
                 {
                 if (genericType.Length == 0) throw new Exception();
@@ -1539,6 +1547,10 @@ namespace ChilkatApi
                     {
                     return "Ck" + genericType;
                     }
+                }
+              else if (gt == GT_CPP_WIDE_CHAR)
+                {
+                return "wchar_t";
                 }
             else
                 {

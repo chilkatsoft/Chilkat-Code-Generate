@@ -283,22 +283,30 @@ namespace ChilkatApi
         // Return null for no links.
         private RefdocLinks initRefdocLinks()
             {
+            if (AppData.GitHubCodeBase) return null;
+
             Chilkat.Xml pXml = m_xml;
             Chilkat.Xml xml = new Chilkat.Xml();
 
             if (m_name.Equals("LastErrorText"))
                 {
-                if (!xml.LoadXmlFile(AppDataDir.BaseDir + "/appData/refdoc/LastErrorTextLinks.xml")) return null;
+                string strXml = AppData.GetAppData("appData/refdoc/LastErrorTextLinks.xml");
+                xml.LoadXml(strXml);
+                //if (!xml.LoadXmlFile(AppData.BaseDir + "/appData/refdoc/LastErrorTextLinks.xml")) return null;
                 pXml = xml;
                 }
             else if (m_name.Equals("UnlockComponent"))
                 {
-                if (!xml.LoadXmlFile(AppDataDir.BaseDir + "/appData/refdoc/UnlockComponentLinks.xml")) return null;
+                string strXml = AppData.GetAppData("appData/refdoc/UnlockComponentLinks.xml");
+                xml.LoadXml(strXml);
+                //if (!xml.LoadXmlFile(AppData.BaseDir + "/appData/refdoc/UnlockComponentLinks.xml")) return null;
                 pXml = xml;
                 }
             else if (m_name.Equals("Utf8"))
                 {
-                if (!xml.LoadXmlFile(AppDataDir.BaseDir + "/appData/refdoc/Utf8Links.xml")) return null;
+                string strXml = AppData.GetAppData("appData/refdoc/Utf8Links.xml");
+                xml.LoadXml(strXml);
+                //if (!xml.LoadXmlFile(AppData.BaseDir + "/appData/refdoc/Utf8Links.xml")) return null;
                 pXml = xml;
                 }
             else
