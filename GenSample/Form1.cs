@@ -25,14 +25,6 @@ namespace GenSample
         // Demonstrates how to iterate over Chilkat classes to generate wrappers for some programming language..
         private void button1_Click(object sender, EventArgs e)
             {
-            string strClassListText = AppData.GetAppData("appData/apiManager/classList.txt");
-            if (strClassListText == null)
-                {
-                MessageBox.Show("Failed to get class list.");
-                return;
-                }
-            MessageBox.Show(strClassListText);
-
             ArrayList aGenericClassNames = GenBase.GetGenericClassNameList();
             foreach (string genericClassName in aGenericClassNames)
                 {
