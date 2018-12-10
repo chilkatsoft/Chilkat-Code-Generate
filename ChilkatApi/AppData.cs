@@ -17,7 +17,7 @@ namespace ChilkatApi
         static public string GetAppData(string relativePath)
             {
             string url = "http://chilkatdownload.com/" + relativePath;
-            url = url.ToLower();
+            url = url.ToLowerInvariant();
             string txt = (string) m_cache[url];
             if (txt != null) return txt;
 
